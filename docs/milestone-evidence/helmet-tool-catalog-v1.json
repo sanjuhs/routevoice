@@ -1,0 +1,241 @@
+{
+  "schema_version": 1,
+  "catalog_id": "helmet-tools-v1",
+  "scope": "Product-interface proposal catalog. Tools are typed proposals only; deterministic firmware owns authorization and execution.",
+  "tools": [
+    {
+      "name": "set_helmet_light",
+      "description": "Set the helmet utility or visibility light.",
+      "safety_class": "safe_immediate",
+      "execution_authority": "supervisor_policy_mcu",
+      "moving_policy": "allowed_with_brightness_limit",
+      "offline": true,
+      "parameters": {"type": "object", "additionalProperties": false, "properties": {"on": {"type": "boolean"}, "brightness": {"type": "integer", "minimum": 0, "maximum": 100}}, "required": ["on"]}
+    },
+    {
+      "name": "read_battery",
+      "description": "Read battery percentage and charging state.",
+      "safety_class": "read_only",
+      "execution_authority": "supervisor_policy_mcu",
+      "moving_policy": "allowed",
+      "offline": true,
+      "parameters": {"type": "object", "additionalProperties": false, "properties": {}, "required": []}
+    },
+    {
+      "name": "read_device_health",
+      "description": "Read thermal, rail, watchdog, and accelerator health summaries.",
+      "safety_class": "read_only",
+      "execution_authority": "supervisor_policy_mcu",
+      "moving_policy": "allowed_summary_only",
+      "offline": true,
+      "parameters": {"type": "object", "additionalProperties": false, "properties": {}, "required": []}
+    },
+    {
+      "name": "read_connectivity",
+      "description": "Read paired-phone and intercom connectivity state.",
+      "safety_class": "read_only",
+      "execution_authority": "supervisor_policy_mcu",
+      "moving_policy": "allowed",
+      "offline": true,
+      "parameters": {"type": "object", "additionalProperties": false, "properties": {}, "required": []}
+    },
+    {
+      "name": "set_audio_volume",
+      "description": "Set bounded speaker volume through the audio limiter.",
+      "safety_class": "safe_immediate",
+      "execution_authority": "supervisor_policy_mcu",
+      "moving_policy": "allowed_with_audio_limit",
+      "offline": true,
+      "parameters": {"type": "object", "additionalProperties": false, "properties": {"percent": {"type": "integer", "minimum": 0, "maximum": 100}}, "required": ["percent"]}
+    },
+    {
+      "name": "mute_audio",
+      "description": "Request software audio mute; the physical mute remains independent.",
+      "safety_class": "safe_immediate",
+      "execution_authority": "supervisor_policy_mcu",
+      "moving_policy": "allowed",
+      "offline": true,
+      "parameters": {"type": "object", "additionalProperties": false, "properties": {"muted": {"type": "boolean"}}, "required": ["muted"]}
+    },
+    {
+      "name": "set_music_playback",
+      "description": "Control paired-phone music playback.",
+      "safety_class": "safe_immediate",
+      "execution_authority": "supervisor_policy_mcu",
+      "moving_policy": "allowed",
+      "offline": false,
+      "parameters": {"type": "object", "additionalProperties": false, "properties": {"action": {"type": "string", "enum": ["play", "pause", "next", "previous"]}}, "required": ["action"]}
+    },
+    {
+      "name": "get_music_status",
+      "description": "Read current track and playback state from the paired phone.",
+      "safety_class": "read_only",
+      "execution_authority": "supervisor_policy_mcu",
+      "moving_policy": "allowed_summary_only",
+      "offline": false,
+      "parameters": {"type": "object", "additionalProperties": false, "properties": {}, "required": []}
+    },
+    {
+      "name": "set_intercom_mode",
+      "description": "Join, leave, or mute a known intercom group.",
+      "safety_class": "confirmation_required",
+      "execution_authority": "supervisor_policy_mcu",
+      "moving_policy": "confirmation_must_be_voice_only",
+      "offline": true,
+      "parameters": {"type": "object", "additionalProperties": false, "properties": {"action": {"type": "string", "enum": ["join", "leave", "mute", "unmute"]}, "group_id": {"type": "string", "maxLength": 64}}, "required": ["action"]}
+    },
+    {
+      "name": "set_camera_recording",
+      "description": "Start or stop a paired camera after privacy policy checks.",
+      "safety_class": "confirmation_required",
+      "execution_authority": "supervisor_policy_mcu",
+      "moving_policy": "allowed_after_voice_confirmation",
+      "offline": true,
+      "parameters": {"type": "object", "additionalProperties": false, "properties": {"recording": {"type": "boolean"}}, "required": ["recording"]}
+    },
+    {
+      "name": "take_photo",
+      "description": "Capture one paired-camera still after privacy confirmation.",
+      "safety_class": "confirmation_required",
+      "execution_authority": "supervisor_policy_mcu",
+      "moving_policy": "allowed_after_voice_confirmation",
+      "offline": true,
+      "parameters": {"type": "object", "additionalProperties": false, "properties": {}, "required": []}
+    },
+    {
+      "name": "save_event_marker",
+      "description": "Save a timestamped marker in the local ride log.",
+      "safety_class": "safe_immediate",
+      "execution_authority": "supervisor_policy_mcu",
+      "moving_policy": "allowed",
+      "offline": true,
+      "parameters": {"type": "object", "additionalProperties": false, "properties": {"label": {"type": "string", "maxLength": 64}}, "required": []}
+    },
+    {
+      "name": "repeat_navigation_instruction",
+      "description": "Repeat the latest cached navigation instruction.",
+      "safety_class": "read_only",
+      "execution_authority": "supervisor_policy_mcu",
+      "moving_policy": "allowed",
+      "offline": true,
+      "parameters": {"type": "object", "additionalProperties": false, "properties": {}, "required": []}
+    },
+    {
+      "name": "navigate_to_saved_place",
+      "description": "Ask the paired phone to navigate to a pre-saved place identifier.",
+      "safety_class": "confirmation_required",
+      "execution_authority": "supervisor_policy_mcu",
+      "moving_policy": "voice_confirmation_no_text_entry",
+      "offline": false,
+      "parameters": {"type": "object", "additionalProperties": false, "properties": {"place_id": {"type": "string", "maxLength": 64}}, "required": ["place_id"]}
+    },
+    {
+      "name": "locate_parked_vehicle",
+      "description": "Read the last stored parked-vehicle location summary.",
+      "safety_class": "read_only",
+      "execution_authority": "supervisor_policy_mcu",
+      "moving_policy": "forbidden_detail_while_moving",
+      "offline": false,
+      "parameters": {"type": "object", "additionalProperties": false, "properties": {}, "required": []}
+    },
+    {
+      "name": "answer_call",
+      "description": "Answer the current paired-phone call.",
+      "safety_class": "confirmation_required",
+      "execution_authority": "supervisor_policy_mcu",
+      "moving_policy": "allowed_after_voice_confirmation",
+      "offline": false,
+      "parameters": {"type": "object", "additionalProperties": false, "properties": {}, "required": []}
+    },
+    {
+      "name": "reject_call",
+      "description": "Reject the current paired-phone call.",
+      "safety_class": "safe_immediate",
+      "execution_authority": "supervisor_policy_mcu",
+      "moving_policy": "allowed",
+      "offline": false,
+      "parameters": {"type": "object", "additionalProperties": false, "properties": {}, "required": []}
+    },
+    {
+      "name": "call_contact",
+      "description": "Call a contact resolved by a deterministic contact identifier.",
+      "safety_class": "confirmation_required",
+      "execution_authority": "supervisor_policy_mcu",
+      "moving_policy": "voice_confirmation_no_list_browsing",
+      "offline": false,
+      "parameters": {"type": "object", "additionalProperties": false, "properties": {"contact_id": {"type": "string", "maxLength": 64}}, "required": ["contact_id"]}
+    },
+    {
+      "name": "send_quick_message",
+      "description": "Send one allowlisted quick message to a deterministic contact identifier.",
+      "safety_class": "confirmation_required",
+      "execution_authority": "supervisor_policy_mcu",
+      "moving_policy": "allowlisted_template_and_voice_confirmation",
+      "offline": false,
+      "parameters": {"type": "object", "additionalProperties": false, "properties": {"contact_id": {"type": "string", "maxLength": 64}, "template_id": {"type": "string", "enum": ["running_late", "arrived", "call_me", "need_help_non_emergency"]}}, "required": ["contact_id", "template_id"]}
+    },
+    {
+      "name": "read_last_message",
+      "description": "Read the latest paired-phone message through privacy policy.",
+      "safety_class": "confirmation_required",
+      "execution_authority": "supervisor_policy_mcu",
+      "moving_policy": "summary_only_after_voice_confirmation",
+      "offline": false,
+      "parameters": {"type": "object", "additionalProperties": false, "properties": {}, "required": []}
+    },
+    {
+      "name": "start_voice_note",
+      "description": "Begin a locally marked voice-note recording.",
+      "safety_class": "confirmation_required",
+      "execution_authority": "supervisor_policy_mcu",
+      "moving_policy": "allowed_after_privacy_confirmation",
+      "offline": true,
+      "parameters": {"type": "object", "additionalProperties": false, "properties": {"label": {"type": "string", "maxLength": 64}}, "required": []}
+    },
+    {
+      "name": "stop_voice_note",
+      "description": "Stop an active voice-note recording.",
+      "safety_class": "safe_immediate",
+      "execution_authority": "supervisor_policy_mcu",
+      "moving_policy": "allowed",
+      "offline": true,
+      "parameters": {"type": "object", "additionalProperties": false, "properties": {}, "required": []}
+    },
+    {
+      "name": "share_live_location",
+      "description": "Ask the paired phone to share location with an allowlisted contact for a bounded duration.",
+      "safety_class": "confirmation_required",
+      "execution_authority": "supervisor_policy_mcu",
+      "moving_policy": "voice_confirmation_required",
+      "offline": false,
+      "parameters": {"type": "object", "additionalProperties": false, "properties": {"contact_id": {"type": "string", "maxLength": 64}, "minutes": {"type": "integer", "minimum": 5, "maximum": 120}}, "required": ["contact_id", "minutes"]}
+    },
+    {
+      "name": "set_do_not_disturb",
+      "description": "Set a bounded notification-suppression mode.",
+      "safety_class": "safe_immediate",
+      "execution_authority": "supervisor_policy_mcu",
+      "moving_policy": "allowed",
+      "offline": true,
+      "parameters": {"type": "object", "additionalProperties": false, "properties": {"enabled": {"type": "boolean"}}, "required": ["enabled"]}
+    },
+    {
+      "name": "request_emergency_call",
+      "description": "Submit an emergency-call request to a dedicated deterministic emergency controller.",
+      "safety_class": "emergency_deterministic",
+      "execution_authority": "deterministic_emergency_controller",
+      "moving_policy": "dedicated_confirmation_and_cancel_sequence",
+      "offline": false,
+      "parameters": {"type": "object", "additionalProperties": false, "properties": {"reason_code": {"type": "string", "enum": ["crash", "medical", "threat", "stranded", "unspecified"]}}, "required": ["reason_code"]}
+    },
+    {
+      "name": "cancel_pending_action",
+      "description": "Cancel the current uncommitted proposal or confirmation flow.",
+      "safety_class": "safe_immediate",
+      "execution_authority": "supervisor_policy_mcu",
+      "moving_policy": "always_allowed",
+      "offline": true,
+      "parameters": {"type": "object", "additionalProperties": false, "properties": {}, "required": []}
+    }
+  ]
+}
