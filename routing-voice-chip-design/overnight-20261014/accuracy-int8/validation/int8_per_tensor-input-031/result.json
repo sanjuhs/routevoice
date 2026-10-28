@@ -1,0 +1,45 @@
+{
+  "case_id": "int8_per_tensor-input-031",
+  "model": "int8_per_tensor",
+  "id": "2277-149897-0031",
+  "role": "validation",
+  "condition": "white_noise_10db",
+  "seed": null,
+  "reference": "HE TROUBLED OVER MANY LITTLE DETAILS AND TALKED PERFUNCTORILY TO EVERYBODY",
+  "input_float32_sha256": "1e01365a27e44ef96903a2c24a9001a7aa2b015802e7143f56b79616c5531d8a",
+  "hypothesis": "",
+  "normalized_tokens": [],
+  "edits": 11,
+  "reference_words": 11,
+  "hypothesis_words": 0,
+  "exact": false,
+  "lines": [
+    {
+      "text": "",
+      "start_time": 0.09599995613098145,
+      "duration": 4.288000106811523,
+      "is_complete": true,
+      "samples": 68608,
+      "input_float32_sha256": "9771870a284a113a3274c4f2430c72ef8a61bfd717578a30e594ba715947ea4f"
+    }
+  ],
+  "request_sha256": "fede5ef5d6d3a1fa2bb94c915835df96a207c05b9fe3fe17c6495802bac65ec8",
+  "worker_sha256": "4682e8a57db08e02a34f53b01f334f34faa3ca9a6546698f1e4650db359004b6",
+  "native_library_sha256": "1453a6c1c9072f3d05e9e5ae6ff423fae839e56631c5efb12bbd5c0280d04399",
+  "native_api_version": 30000,
+  "load_seconds": 0.0416358751244843,
+  "compute_seconds": 0.09492191695608199,
+  "audio_seconds": 4.405,
+  "process_cpu_seconds": 0.09503800000000001,
+  "voluntary_context_switches": 0,
+  "involuntary_context_switches": 27,
+  "system_load_average": [
+    10.689453125,
+    9.07080078125,
+    9.89208984375
+  ],
+  "options": null,
+  "flags": 0,
+  "process_id": 81097,
+  "isolation": "One audio clip/condition in a fresh native process; no previous utterance or VAD state."
+}

@@ -1,0 +1,24 @@
+\begin{figure*}[t]
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{tikzpicture}[font=\footnotesize,>=stealth,node distance=6mm,
+  box/.style={draw,rounded corners=1.5pt,minimum height=9mm,minimum width=17mm,align=center,inner sep=3pt},
+  new/.style={box,fill=blue!6}]
+\node[box] (in) {activation $a$\\(signed 9-bit)};
+\node[box,right=of in] (pp) {16 partials $a\!\cdot\!k$\\$\times$10 local copies};
+\node[box,right=9mm of pp] (lanes) {320 lanes\\select $+$ add\\27-bit accumulators};
+\node[new,right=9mm of lanes] (grp) {10 group\\registers\\(look-ahead)};
+\node[new,right=of grp] (corr) {$-\,\Sigma a\cdot z$\\(registered)};
+\node[new,right=of corr] (pipe) {elastic\\register};
+\node[box,right=of pipe] (fp) {FP32 affine\\HardFloat,\\3 stages};
+\node[box,below=8mm of pp] (arr) {index array $1280\times320\times4$\,b\\(external, mask-fixed)};
+\node[box,right=9mm of arr] (book) {16-entry books\\$\to$ UINT8};
+\draw[->] (in)--(pp); \draw[->] (pp)--(lanes);
+\draw[->] (arr)--(book); \draw[->] (book.north) -- (book.north |- lanes.south);
+\draw[->] (lanes)--(grp); \draw[->] (grp)--(corr); \draw[->] (corr)--(pipe); \draw[->] (pipe)--(fp);
+\draw[->] (fp.east) -- ++(6mm,0) node[right,align=left]{FP32\\out};
+\node[below=2mm of corr,font=\scriptsize,text=blue!60!black] {shaded: added for slow-corner closure (\S\ref{sec:closure})};
+\end{tikzpicture}}
+\caption{The $1280\times320$ projection engine. The index array sits outside the engine's physical top. One projection takes 4,165 cycles: 1,280 rows of LOAD/INDEX/ACCUM, one PREP cycle, and 320 output cycles.}
+\label{fig:engine}
+\end{figure*}

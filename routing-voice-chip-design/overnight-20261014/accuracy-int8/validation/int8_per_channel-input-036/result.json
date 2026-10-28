@@ -1,0 +1,73 @@
+{
+  "case_id": "int8_per_channel-input-036",
+  "model": "int8_per_channel",
+  "id": "6599-38591-0004",
+  "role": "validation",
+  "condition": "other",
+  "seed": null,
+  "reference": "IT WAS GARCILASO DE LA VEGA THE PRINCE OF SPANISH POESY THE SPANISH PETRARCH ACCORDING TO HIS FELLOW COUNTRYMEN",
+  "input_float32_sha256": "a0d5bfa2c7de295fd1db2193212224d2ddd104db48827c8796b1b40f5fb22469",
+  "hypothesis": "It was Garcilaso de la Vega, the prince of Spanish Posey, The Spanish petrarch, according to his fellow-countrymen",
+  "normalized_tokens": [
+    "it",
+    "was",
+    "garcilaso",
+    "de",
+    "la",
+    "vega",
+    "the",
+    "prince",
+    "of",
+    "spanish",
+    "posey",
+    "the",
+    "spanish",
+    "petrarch",
+    "according",
+    "to",
+    "his",
+    "fellow",
+    "countrymen"
+  ],
+  "edits": 1,
+  "reference_words": 19,
+  "hypothesis_words": 19,
+  "exact": false,
+  "lines": [
+    {
+      "text": "It was Garcilaso de la Vega, the prince of Spanish Posey,",
+      "start_time": 0.2239999771118164,
+      "duration": 4.0960001945495605,
+      "is_complete": true,
+      "samples": 65536,
+      "input_float32_sha256": "2674b00f419cfb7af54d5fe9fb56f94a2c39b01e35763adc47a5709281f4af81"
+    },
+    {
+      "text": "The Spanish petrarch, according to his fellow-countrymen",
+      "start_time": 4.159999847412109,
+      "duration": 3.5840001106262207,
+      "is_complete": true,
+      "samples": 57344,
+      "input_float32_sha256": "307c90a95597706da8b755e2696468cf7c63246445d3d243bc8ff125c7d8e484"
+    }
+  ],
+  "request_sha256": "25179b393badaac9518c7462edb1ba840ba2893ad74f529bf6774e12f6fb950c",
+  "worker_sha256": "4682e8a57db08e02a34f53b01f334f34faa3ca9a6546698f1e4650db359004b6",
+  "native_library_sha256": "1453a6c1c9072f3d05e9e5ae6ff423fae839e56631c5efb12bbd5c0280d04399",
+  "native_api_version": 30000,
+  "load_seconds": 0.03993333294056356,
+  "compute_seconds": 0.3064527080859989,
+  "audio_seconds": 7.79,
+  "process_cpu_seconds": 0.305881,
+  "voluntary_context_switches": 0,
+  "involuntary_context_switches": 85,
+  "system_load_average": [
+    10.6337890625,
+    9.0859375,
+    9.892578125
+  ],
+  "options": null,
+  "flags": 0,
+  "process_id": 81145,
+  "isolation": "One audio clip/condition in a fresh native process; no previous utterance or VAD state."
+}

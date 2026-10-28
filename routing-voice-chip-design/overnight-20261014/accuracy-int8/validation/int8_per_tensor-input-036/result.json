@@ -1,0 +1,53 @@
+{
+  "case_id": "int8_per_tensor-input-036",
+  "model": "int8_per_tensor",
+  "id": "6599-38591-0004",
+  "role": "validation",
+  "condition": "other",
+  "seed": null,
+  "reference": "IT WAS GARCILASO DE LA VEGA THE PRINCE OF SPANISH POESY THE SPANISH PETRARCH ACCORDING TO HIS FELLOW COUNTRYMEN",
+  "input_float32_sha256": "a0d5bfa2c7de295fd1db2193212224d2ddd104db48827c8796b1b40f5fb22469",
+  "hypothesis": " ",
+  "normalized_tokens": [],
+  "edits": 19,
+  "reference_words": 19,
+  "hypothesis_words": 0,
+  "exact": false,
+  "lines": [
+    {
+      "text": "",
+      "start_time": 0.2239999771118164,
+      "duration": 4.0960001945495605,
+      "is_complete": true,
+      "samples": 65536,
+      "input_float32_sha256": "2674b00f419cfb7af54d5fe9fb56f94a2c39b01e35763adc47a5709281f4af81"
+    },
+    {
+      "text": "",
+      "start_time": 4.159999847412109,
+      "duration": 3.5840001106262207,
+      "is_complete": true,
+      "samples": 57344,
+      "input_float32_sha256": "307c90a95597706da8b755e2696468cf7c63246445d3d243bc8ff125c7d8e484"
+    }
+  ],
+  "request_sha256": "1a7ad6cdab15c0f15af9571b45986ec8a8cf1beab7bf14d9369b29cd0ad0847b",
+  "worker_sha256": "4682e8a57db08e02a34f53b01f334f34faa3ca9a6546698f1e4650db359004b6",
+  "native_library_sha256": "1453a6c1c9072f3d05e9e5ae6ff423fae839e56631c5efb12bbd5c0280d04399",
+  "native_api_version": 30000,
+  "load_seconds": 0.04048337507992983,
+  "compute_seconds": 0.15950716705992818,
+  "audio_seconds": 7.79,
+  "process_cpu_seconds": 0.15968900000000003,
+  "voluntary_context_switches": 0,
+  "involuntary_context_switches": 15,
+  "system_load_average": [
+    10.6337890625,
+    9.0859375,
+    9.892578125
+  ],
+  "options": null,
+  "flags": 0,
+  "process_id": 81153,
+  "isolation": "One audio clip/condition in a fresh native process; no previous utterance or VAD state."
+}

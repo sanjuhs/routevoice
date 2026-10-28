@@ -1,0 +1,256 @@
+{
+  "unix": 1791929070.433187,
+  "method": "ditto --hfsCompression, SHA256 verified before atomic replace; transparent POSIX reads retain identical bytes",
+  "free_before_bytes": 28686622720,
+  "free_after_bytes": 29298950144,
+  "changes": [
+    {
+      "path": "pdks/gf180mcuD/libs.ref/gf180mcu_fd_io/gds/gf180mcu_fd_io.gds",
+      "sha256": "35fcaafb353e43900e3d8583fe1e0ad6c7d271ac4b1c533d49959a536dffd85e",
+      "bytes": 17722484,
+      "before_allocated_bytes": 17723392,
+      "after_allocated_bytes": 4755456,
+      "flags": 32
+    },
+    {
+      "path": "pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__ff_125C_1v98.lib",
+      "sha256": "8f6f05fc95a763da8c866e00f273cefacc1618bbd3054d5e45f57d6169ed86e6",
+      "bytes": 20369816,
+      "before_allocated_bytes": 20373504,
+      "after_allocated_bytes": 4214784,
+      "flags": 32
+    },
+    {
+      "path": "pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__ff_125C_3v60.lib",
+      "sha256": "f7d93ac4452c3388e27e8f88149c4f6a4ed1aaed344e93cec095914d374ed945",
+      "bytes": 20037494,
+      "before_allocated_bytes": 20037632,
+      "after_allocated_bytes": 4231168,
+      "flags": 32
+    },
+    {
+      "path": "pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__ff_125C_5v50.lib",
+      "sha256": "ed16198843afb3b0c4abbcdc109b55861273a773ba7eeaf01d9efe4059c43efe",
+      "bytes": 20201359,
+      "before_allocated_bytes": 20201472,
+      "after_allocated_bytes": 4202496,
+      "flags": 32
+    },
+    {
+      "path": "pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__ff_n40C_1v98.lib",
+      "sha256": "6c427537164dd384d705239b242a351063affe4b36b78b1482585246fdaf124a",
+      "bytes": 20486665,
+      "before_allocated_bytes": 20488192,
+      "after_allocated_bytes": 4083712,
+      "flags": 32
+    },
+    {
+      "path": "pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__ff_n40C_3v60.lib",
+      "sha256": "a222740b574d0699c8a416400bd9746ecb8556bc87a515ab7fb80f911e2cd74b",
+      "bytes": 20275104,
+      "before_allocated_bytes": 20275200,
+      "after_allocated_bytes": 4153344,
+      "flags": 32
+    },
+    {
+      "path": "pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__ff_n40C_5v50.lib",
+      "sha256": "6e04fbedf4279c89a73d6caebe55de27bd760f1aa7c24a4c015489724e4c2439",
+      "bytes": 20416204,
+      "before_allocated_bytes": 20418560,
+      "after_allocated_bytes": 4214784,
+      "flags": 32
+    },
+    {
+      "path": "pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__ss_125C_1v62.lib",
+      "sha256": "a87b443fa095c74d0eae599091a3d38415c69d1a14b9753a445b42eb269baf74",
+      "bytes": 20338320,
+      "before_allocated_bytes": 20340736,
+      "after_allocated_bytes": 4231168,
+      "flags": 32
+    },
+    {
+      "path": "pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__ss_125C_3v00.lib",
+      "sha256": "5d2f37ba6f43e33aeba26dc1da55c96394a862eeec4148043f1d48bdf65ccea6",
+      "bytes": 19934792,
+      "before_allocated_bytes": 19935232,
+      "after_allocated_bytes": 4165632,
+      "flags": 32
+    },
+    {
+      "path": "pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__ss_125C_4v50.lib",
+      "sha256": "4c2657ae12581bc18ed408f3fda0accd10b855118b9993070dbb360dfa3aa874",
+      "bytes": 20001645,
+      "before_allocated_bytes": 20004864,
+      "after_allocated_bytes": 4128768,
+      "flags": 32
+    },
+    {
+      "path": "pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__ss_n40C_1v62.lib",
+      "sha256": "0d5f11c4bda8614a0879a5696654a9e5e72189a7addd41ffe954727550dc83c8",
+      "bytes": 20291133,
+      "before_allocated_bytes": 20291584,
+      "after_allocated_bytes": 4059136,
+      "flags": 32
+    },
+    {
+      "path": "pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__ss_n40C_3v00.lib",
+      "sha256": "08847da4bb78d75ba004e79bb1540dd43fa8d4ed694b84ed5c182d0809520a93",
+      "bytes": 20110771,
+      "before_allocated_bytes": 20111360,
+      "after_allocated_bytes": 4083712,
+      "flags": 32
+    },
+    {
+      "path": "pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__ss_n40C_4v50.lib",
+      "sha256": "d1c2695498b2b0aec8520e9090799b5597fef0f6be992b0f23aa899c7163df76",
+      "bytes": 20121740,
+      "before_allocated_bytes": 20123648,
+      "after_allocated_bytes": 4067328,
+      "flags": 32
+    },
+    {
+      "path": "pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__tt_025C_1v80.lib",
+      "sha256": "9000042dd82b66d81d671cfc82120f27fe4721abbdfcbd0330e8f95f4ca45726",
+      "bytes": 20344550,
+      "before_allocated_bytes": 20344832,
+      "after_allocated_bytes": 4075520,
+      "flags": 32
+    },
+    {
+      "path": "pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__tt_025C_3v30.lib",
+      "sha256": "f9dee07cf158324934b0c59144d970a2e8313f43533ede6283ec3c136f82fe53",
+      "bytes": 20107439,
+      "before_allocated_bytes": 20111360,
+      "after_allocated_bytes": 4141056,
+      "flags": 32
+    },
+    {
+      "path": "pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__tt_025C_5v00.lib",
+      "sha256": "330aa9439255e3870ad7adfb987cd4d7bcfa7b6f9fb0cd0a712400e9bd80e38a",
+      "bytes": 20122761,
+      "before_allocated_bytes": 20123648,
+      "after_allocated_bytes": 4124672,
+      "flags": 32
+    },
+    {
+      "path": "pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu9t5v0/lib/gf180mcu_fd_sc_mcu9t5v0__ff_125C_1v98.lib",
+      "sha256": "d81eb037b2094e99114a3bb5346218d6aed0bef47aea05a40cc01f9cf58b373c",
+      "bytes": 20237589,
+      "before_allocated_bytes": 20238336,
+      "after_allocated_bytes": 4161536,
+      "flags": 32
+    },
+    {
+      "path": "pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu9t5v0/lib/gf180mcu_fd_sc_mcu9t5v0__ff_125C_3v60.lib",
+      "sha256": "b64f32b397097f2046e66ce7f9a4aaffc9a80c4c0bfd3c77385727268e81a016",
+      "bytes": 20166956,
+      "before_allocated_bytes": 20168704,
+      "after_allocated_bytes": 4169728,
+      "flags": 32
+    },
+    {
+      "path": "pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu9t5v0/lib/gf180mcu_fd_sc_mcu9t5v0__ff_125C_5v50.lib",
+      "sha256": "5614ceb6369e22530a7650cdd4d0362300239c6914a2f09abe65e6813a070407",
+      "bytes": 20081337,
+      "before_allocated_bytes": 20082688,
+      "after_allocated_bytes": 4177920,
+      "flags": 32
+    },
+    {
+      "path": "pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu9t5v0/lib/gf180mcu_fd_sc_mcu9t5v0__ff_n40C_1v98.lib",
+      "sha256": "4d52009bd66a01004f09fba3c75c446c6aa445f16fce632132040ccb26c54ec0",
+      "bytes": 20418006,
+      "before_allocated_bytes": 20418560,
+      "after_allocated_bytes": 4046848,
+      "flags": 32
+    },
+    {
+      "path": "pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu9t5v0/lib/gf180mcu_fd_sc_mcu9t5v0__ff_n40C_3v60.lib",
+      "sha256": "0b48b93d6800da325a2613ff6c0b998b230a1bbd28031f6da592e9ff30066602",
+      "bytes": 20245116,
+      "before_allocated_bytes": 20246528,
+      "after_allocated_bytes": 4153344,
+      "flags": 32
+    },
+    {
+      "path": "pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu9t5v0/lib/gf180mcu_fd_sc_mcu9t5v0__ff_n40C_5v50.lib",
+      "sha256": "8bc3577641d2edd6ead2a79979df2e6da4f64b4428ef1a33f3231a61c147063d",
+      "bytes": 20298089,
+      "before_allocated_bytes": 20299776,
+      "after_allocated_bytes": 4214784,
+      "flags": 32
+    },
+    {
+      "path": "pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu9t5v0/lib/gf180mcu_fd_sc_mcu9t5v0__ss_125C_1v62.lib",
+      "sha256": "66b3d29af2d43dcdc3cacfd95f5ca49fe2261976ad45afda1e0e54670a929ed7",
+      "bytes": 20082488,
+      "before_allocated_bytes": 20082688,
+      "after_allocated_bytes": 4075520,
+      "flags": 32
+    },
+    {
+      "path": "pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu9t5v0/lib/gf180mcu_fd_sc_mcu9t5v0__ss_125C_3v00.lib",
+      "sha256": "d83917f827021eadb159f6011905bf20de632533b2953abba89266a88c2b24af",
+      "bytes": 19900291,
+      "before_allocated_bytes": 19902464,
+      "after_allocated_bytes": 4136960,
+      "flags": 32
+    },
+    {
+      "path": "pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu9t5v0/lib/gf180mcu_fd_sc_mcu9t5v0__ss_125C_4v50.lib",
+      "sha256": "7a6499b8e1d6417a6e0a82193b9027e68af9eb72ddb6161d6d03a8ff6fa8fa0e",
+      "bytes": 19956945,
+      "before_allocated_bytes": 19959808,
+      "after_allocated_bytes": 4141056,
+      "flags": 32
+    },
+    {
+      "path": "pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu9t5v0/lib/gf180mcu_fd_sc_mcu9t5v0__ss_n40C_1v62.lib",
+      "sha256": "fdb43b2d63eb3d8e4374248b0e2cb06d49c5158263f8486fbd42e6a508f141ac",
+      "bytes": 20161953,
+      "before_allocated_bytes": 20164608,
+      "after_allocated_bytes": 4014080,
+      "flags": 32
+    },
+    {
+      "path": "pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu9t5v0/lib/gf180mcu_fd_sc_mcu9t5v0__ss_n40C_3v00.lib",
+      "sha256": "03238cd7c39382b10bd1ff526c37c9ac3c73cc92c01cd2c249cb86978bda9de3",
+      "bytes": 20048992,
+      "before_allocated_bytes": 20049920,
+      "after_allocated_bytes": 4108288,
+      "flags": 32
+    },
+    {
+      "path": "pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu9t5v0/lib/gf180mcu_fd_sc_mcu9t5v0__ss_n40C_4v50.lib",
+      "sha256": "5ea73fc4351c370c386b5f68bf5d0c6901ecd4c75f83a6e2d0620180854ba83b",
+      "bytes": 20118752,
+      "before_allocated_bytes": 20119552,
+      "after_allocated_bytes": 4108288,
+      "flags": 32
+    },
+    {
+      "path": "pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu9t5v0/lib/gf180mcu_fd_sc_mcu9t5v0__tt_025C_1v80.lib",
+      "sha256": "c0b6946a2d48a4604c687a29d3c8b1e05b3da5a42866b21592eaacfeae6e9ca7",
+      "bytes": 20252724,
+      "before_allocated_bytes": 20254720,
+      "after_allocated_bytes": 4087808,
+      "flags": 32
+    },
+    {
+      "path": "pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu9t5v0/lib/gf180mcu_fd_sc_mcu9t5v0__tt_025C_3v30.lib",
+      "sha256": "1157d0aa147dba75a214708197d7a046f970175d723cdec108025f6f06727c12",
+      "bytes": 20138795,
+      "before_allocated_bytes": 20140032,
+      "after_allocated_bytes": 4091904,
+      "flags": 32
+    },
+    {
+      "path": "pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu9t5v0/lib/gf180mcu_fd_sc_mcu9t5v0__tt_025C_5v00.lib",
+      "sha256": "84a68abb02893c4a03624466e4f55cba284ad9db0326255bb667fece652d8c60",
+      "bytes": 20028606,
+      "before_allocated_bytes": 20029440,
+      "after_allocated_bytes": 4104192,
+      "flags": 32
+    }
+  ]
+}

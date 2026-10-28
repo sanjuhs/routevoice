@@ -1,0 +1,62 @@
+{
+  "case_id": "fp32_baseline-input-014",
+  "model": "fp32_baseline",
+  "id": "7850-111771-0003",
+  "role": "validation",
+  "condition": "clean",
+  "seed": null,
+  "reference": "GENERAL HALLECK IN SPEAKING OF THIS BATTLE SAID",
+  "input_float32_sha256": "24b1f8ca940227b2eb8e3860616ce4a84188db7c781e5c3dafd65fabe9310e51",
+  "hypothesis": "General Hellick, In speaking of the spaddle, said.",
+  "normalized_tokens": [
+    "general",
+    "hellick",
+    "in",
+    "speaking",
+    "of",
+    "the",
+    "spaddle",
+    "said"
+  ],
+  "edits": 3,
+  "reference_words": 8,
+  "hypothesis_words": 8,
+  "exact": false,
+  "lines": [
+    {
+      "text": "General Hellick,",
+      "start_time": 0.09599995613098145,
+      "duration": 1.3440001010894775,
+      "is_complete": true,
+      "samples": 21504,
+      "input_float32_sha256": "8a58628b4e2ebd3634aff48144a77e5b50e0586839100906ee46f4fa3b4d5071"
+    },
+    {
+      "text": "In speaking of the spaddle, said.",
+      "start_time": 1.247999906539917,
+      "duration": 2.1760001182556152,
+      "is_complete": true,
+      "samples": 34816,
+      "input_float32_sha256": "64601d4d58e7fb8612039feb4ddcf2dd681520bdd04f733a9414b477f6becfb3"
+    }
+  ],
+  "request_sha256": "1f23c087b7a1692a4800976e04783fc3cfb99fa7afb08e2844ef8573007c8b80",
+  "worker_sha256": "4682e8a57db08e02a34f53b01f334f34faa3ca9a6546698f1e4650db359004b6",
+  "native_library_sha256": "1453a6c1c9072f3d05e9e5ae6ff423fae839e56631c5efb12bbd5c0280d04399",
+  "native_api_version": 30000,
+  "load_seconds": 0.041795208817347884,
+  "compute_seconds": 0.13525891583412886,
+  "audio_seconds": 3.425,
+  "process_cpu_seconds": 0.135391,
+  "voluntary_context_switches": 0,
+  "involuntary_context_switches": 15,
+  "system_load_average": [
+    10.0751953125,
+    8.81884765625,
+    9.83056640625
+  ],
+  "options": null,
+  "flags": 0,
+  "process_id": 80891,
+  "isolation": "One audio clip/condition in a fresh native process; no previous utterance or VAD state."
+}

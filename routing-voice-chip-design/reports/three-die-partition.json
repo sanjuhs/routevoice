@@ -1,0 +1,6399 @@
+{
+  "scope": "Proposed tensor partition; no physical capacity/throughput claim. Raw package bytes include duplicated tensors. Encoder name-based assignment is a candidate and needs verified graph slicing.",
+  "initializer_bytes": 44435754,
+  "bytes_by_proposed_die": {
+    "die2": 5059573,
+    "die3": 33518465,
+    "unresolved_encoder_shared": 18236,
+    "die1": 5839480
+  },
+  "tensor_count_by_proposed_die": {
+    "die2": 69,
+    "die3": 291,
+    "unresolved_encoder_shared": 38,
+    "die1": 87
+  },
+  "tensors": [
+    {
+      "graph": "adapter.ort",
+      "tensor": "val_9",
+      "bytes": 8,
+      "dtype": "INT64",
+      "shape": [
+        1
+      ],
+      "proposed_die": "die2",
+      "evidence": [
+        "adapter after encoder"
+      ]
+    },
+    {
+      "graph": "adapter.ort",
+      "tensor": "pos_embed.weight_zero_point",
+      "bytes": 1,
+      "dtype": "UINT8",
+      "shape": [],
+      "proposed_die": "die2",
+      "evidence": [
+        "adapter after encoder"
+      ]
+    },
+    {
+      "graph": "adapter.ort",
+      "tensor": "SliceAxesInitializer",
+      "bytes": 8,
+      "dtype": "INT64",
+      "shape": [
+        1
+      ],
+      "proposed_die": "die2",
+      "evidence": [
+        "adapter after encoder"
+      ]
+    },
+    {
+      "graph": "adapter.ort",
+      "tensor": "UnsqueezeAxesInitializer",
+      "bytes": 8,
+      "dtype": "INT64",
+      "shape": [
+        1
+      ],
+      "proposed_die": "die2",
+      "evidence": [
+        "adapter after encoder"
+      ]
+    },
+    {
+      "graph": "adapter.ort",
+      "tensor": "val_8",
+      "bytes": 8,
+      "dtype": "INT64",
+      "shape": [],
+      "proposed_die": "die2",
+      "evidence": [
+        "adapter after encoder"
+      ]
+    },
+    {
+      "graph": "adapter.ort",
+      "tensor": "pos_embed.weight_scale",
+      "bytes": 4,
+      "dtype": "FLOAT32",
+      "shape": [],
+      "proposed_die": "die2",
+      "evidence": [
+        "adapter after encoder"
+      ]
+    },
+    {
+      "graph": "adapter.ort",
+      "tensor": "pos_embed.weight_quantized",
+      "bytes": 1310720,
+      "dtype": "UINT8",
+      "shape": [
+        4096,
+        320
+      ],
+      "proposed_die": "die2",
+      "evidence": [
+        "adapter after encoder"
+      ]
+    },
+    {
+      "graph": "adapter.ort",
+      "tensor": "val_2",
+      "bytes": 8,
+      "dtype": "INT64",
+      "shape": [
+        1
+      ],
+      "proposed_die": "die2",
+      "evidence": [
+        "adapter after encoder"
+      ]
+    },
+    {
+      "graph": "adapter.ort",
+      "tensor": "val_1",
+      "bytes": 8,
+      "dtype": "INT64",
+      "shape": [],
+      "proposed_die": "die2",
+      "evidence": [
+        "adapter after encoder"
+      ]
+    },
+    {
+      "graph": "cross_kv.ort",
+      "tensor": "val_77",
+      "bytes": 8,
+      "dtype": "INT64",
+      "shape": [
+        1
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "cross_kv.ort",
+      "tensor": "cross_attn_blocks.5.attn.v_proj.weight_zero_point",
+      "bytes": 320,
+      "dtype": "UINT8",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "cross_kv.ort",
+      "tensor": "cross_attn_blocks.5.attn.v_proj.weight_quantized",
+      "bytes": 102400,
+      "dtype": "UINT8",
+      "shape": [
+        320,
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "cross_kv.ort",
+      "tensor": "cross_attn_blocks.4.attn.v_proj.weight_zero_point",
+      "bytes": 320,
+      "dtype": "UINT8",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "cross_kv.ort",
+      "tensor": "cross_attn_blocks.4.attn.v_proj.weight_quantized",
+      "bytes": 102400,
+      "dtype": "UINT8",
+      "shape": [
+        320,
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "cross_kv.ort",
+      "tensor": "cross_attn_blocks.4.attn.k_proj.weight_zero_point",
+      "bytes": 320,
+      "dtype": "UINT8",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "cross_kv.ort",
+      "tensor": "cross_attn_blocks.4.attn.k_proj.weight_quantized",
+      "bytes": 102400,
+      "dtype": "UINT8",
+      "shape": [
+        320,
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "cross_kv.ort",
+      "tensor": "cross_attn_blocks.3.attn.v_proj.weight_zero_point",
+      "bytes": 320,
+      "dtype": "UINT8",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "cross_kv.ort",
+      "tensor": "cross_attn_blocks.3.attn.k_proj.weight_quantized",
+      "bytes": 102400,
+      "dtype": "UINT8",
+      "shape": [
+        320,
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "cross_kv.ort",
+      "tensor": "cross_attn_blocks.2.attn.v_proj.weight_zero_point",
+      "bytes": 320,
+      "dtype": "UINT8",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "cross_kv.ort",
+      "tensor": "cross_attn_blocks.2.attn.k_proj.weight_zero_point",
+      "bytes": 320,
+      "dtype": "UINT8",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "cross_kv.ort",
+      "tensor": "cross_attn_blocks.1.attn.v_proj.weight_quantized",
+      "bytes": 102400,
+      "dtype": "UINT8",
+      "shape": [
+        320,
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "cross_kv.ort",
+      "tensor": "cross_attn_blocks.5.attn.k_proj.weight_zero_point",
+      "bytes": 320,
+      "dtype": "UINT8",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "cross_kv.ort",
+      "tensor": "cross_attn_blocks.3.attn.v_proj.weight_quantized",
+      "bytes": 102400,
+      "dtype": "UINT8",
+      "shape": [
+        320,
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "cross_kv.ort",
+      "tensor": "cross_attn_blocks.0.attn.k_proj.weight_zero_point",
+      "bytes": 320,
+      "dtype": "UINT8",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "cross_kv.ort",
+      "tensor": "cross_attn_blocks.2.attn.v_proj.weight_quantized",
+      "bytes": 102400,
+      "dtype": "UINT8",
+      "shape": [
+        320,
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "cross_kv.ort",
+      "tensor": "cross_attn_blocks.4.attn.k_proj.weight_scale",
+      "bytes": 1280,
+      "dtype": "FLOAT32",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "cross_kv.ort",
+      "tensor": "cross_attn_blocks.0.attn.v_proj.weight_quantized",
+      "bytes": 102400,
+      "dtype": "UINT8",
+      "shape": [
+        320,
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "cross_kv.ort",
+      "tensor": "cross_attn_blocks.5.attn.k_proj.weight_scale",
+      "bytes": 1280,
+      "dtype": "FLOAT32",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "cross_kv.ort",
+      "tensor": "cross_attn_blocks.4.attn.v_proj.weight_scale",
+      "bytes": 1280,
+      "dtype": "FLOAT32",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "cross_kv.ort",
+      "tensor": "cross_attn_blocks.5.attn.v_proj.weight_scale",
+      "bytes": 1280,
+      "dtype": "FLOAT32",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "cross_kv.ort",
+      "tensor": "cross_attn_blocks.1.attn.v_proj.weight_zero_point",
+      "bytes": 320,
+      "dtype": "UINT8",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "cross_kv.ort",
+      "tensor": "cross_attn_blocks.0.attn.v_proj.weight_scale",
+      "bytes": 1280,
+      "dtype": "FLOAT32",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "cross_kv.ort",
+      "tensor": "cross_attn_blocks.2.attn.v_proj.weight_scale",
+      "bytes": 1280,
+      "dtype": "FLOAT32",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "cross_kv.ort",
+      "tensor": "cross_attn_blocks.3.attn.k_proj.weight_scale",
+      "bytes": 1280,
+      "dtype": "FLOAT32",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "cross_kv.ort",
+      "tensor": "cross_attn_blocks.1.attn.k_proj.weight_quantized",
+      "bytes": 102400,
+      "dtype": "UINT8",
+      "shape": [
+        320,
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "cross_kv.ort",
+      "tensor": "cross_attn_blocks.1.attn.k_proj.weight_zero_point",
+      "bytes": 320,
+      "dtype": "UINT8",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "cross_kv.ort",
+      "tensor": "cross_attn_blocks.2.attn.k_proj.weight_scale",
+      "bytes": 1280,
+      "dtype": "FLOAT32",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "cross_kv.ort",
+      "tensor": "cross_attn_blocks.0.attn.v_proj.weight_zero_point",
+      "bytes": 320,
+      "dtype": "UINT8",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "cross_kv.ort",
+      "tensor": "val_9",
+      "bytes": 8,
+      "dtype": "INT64",
+      "shape": [
+        1
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "cross_kv.ort",
+      "tensor": "cross_attn_blocks.1.attn.v_proj.weight_scale",
+      "bytes": 1280,
+      "dtype": "FLOAT32",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "cross_kv.ort",
+      "tensor": "cross_attn_blocks.1.attn.k_proj.weight_scale",
+      "bytes": 1280,
+      "dtype": "FLOAT32",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "cross_kv.ort",
+      "tensor": "cross_attn_blocks.3.attn.k_proj.weight_zero_point",
+      "bytes": 320,
+      "dtype": "UINT8",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "cross_kv.ort",
+      "tensor": "cross_attn_blocks.3.attn.v_proj.weight_scale",
+      "bytes": 1280,
+      "dtype": "FLOAT32",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "cross_kv.ort",
+      "tensor": "cross_attn_blocks.5.attn.k_proj.weight_quantized",
+      "bytes": 102400,
+      "dtype": "UINT8",
+      "shape": [
+        320,
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "cross_kv.ort",
+      "tensor": "cross_attn_blocks.0.attn.k_proj.weight_scale",
+      "bytes": 1280,
+      "dtype": "FLOAT32",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "cross_kv.ort",
+      "tensor": "cross_attn_blocks.2.attn.k_proj.weight_quantized",
+      "bytes": 102400,
+      "dtype": "UINT8",
+      "shape": [
+        320,
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "cross_kv.ort",
+      "tensor": "cross_attn_blocks.0.attn.k_proj.weight_quantized",
+      "bytes": 102400,
+      "dtype": "UINT8",
+      "shape": [
+        320,
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "cross_kv.ort",
+      "tensor": "val_8",
+      "bytes": 8,
+      "dtype": "INT64",
+      "shape": [
+        1
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "cross_kv.ort",
+      "tensor": "val_6",
+      "bytes": 8,
+      "dtype": "INT64",
+      "shape": [
+        1
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "cross_kv.ort",
+      "tensor": "val_3",
+      "bytes": 8,
+      "dtype": "INT64",
+      "shape": [
+        1
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "splits_token_124",
+      "bytes": 16,
+      "dtype": "INT64",
+      "shape": [
+        2
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "splits_token_123",
+      "bytes": 16,
+      "dtype": "INT64",
+      "shape": [
+        2
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "splits_token_122",
+      "bytes": 16,
+      "dtype": "INT64",
+      "shape": [
+        2
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "splits_token_119",
+      "bytes": 16,
+      "dtype": "INT64",
+      "shape": [
+        2
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "splits_token_116",
+      "bytes": 16,
+      "dtype": "INT64",
+      "shape": [
+        2
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "splits_token_115",
+      "bytes": 16,
+      "dtype": "INT64",
+      "shape": [
+        2
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "splits_token_114",
+      "bytes": 16,
+      "dtype": "INT64",
+      "shape": [
+        2
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "splits_token_111",
+      "bytes": 16,
+      "dtype": "INT64",
+      "shape": [
+        2
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "splits_token_110",
+      "bytes": 16,
+      "dtype": "INT64",
+      "shape": [
+        2
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "splits_token_109",
+      "bytes": 16,
+      "dtype": "INT64",
+      "shape": [
+        2
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "splits_token_106",
+      "bytes": 16,
+      "dtype": "INT64",
+      "shape": [
+        2
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "splits_token_105",
+      "bytes": 16,
+      "dtype": "INT64",
+      "shape": [
+        2
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "splits_token_104",
+      "bytes": 16,
+      "dtype": "INT64",
+      "shape": [
+        2
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "splits_token_103",
+      "bytes": 16,
+      "dtype": "INT64",
+      "shape": [
+        2
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "splits_token_102",
+      "bytes": 16,
+      "dtype": "INT64",
+      "shape": [
+        2
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "splits_token_101",
+      "bytes": 16,
+      "dtype": "INT64",
+      "shape": [
+        2
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "splits_token_100",
+      "bytes": 48,
+      "dtype": "INT64",
+      "shape": [
+        6
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "squeeze_axes_token_92",
+      "bytes": 8,
+      "dtype": "INT64",
+      "shape": [
+        1
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "squeeze_axes_token_83",
+      "bytes": 8,
+      "dtype": "INT64",
+      "shape": [
+        1
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "squeeze_axes_token_76",
+      "bytes": 8,
+      "dtype": "INT64",
+      "shape": [
+        1
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "squeeze_axes_token_73",
+      "bytes": 8,
+      "dtype": "INT64",
+      "shape": [
+        1
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "squeeze_axes_token_70",
+      "bytes": 8,
+      "dtype": "INT64",
+      "shape": [
+        1
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "squeeze_axes_token_67",
+      "bytes": 8,
+      "dtype": "INT64",
+      "shape": [
+        1
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "squeeze_axes_token_89",
+      "bytes": 8,
+      "dtype": "INT64",
+      "shape": [
+        1
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "squeeze_axes_token_57",
+      "bytes": 8,
+      "dtype": "INT64",
+      "shape": [
+        1
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "squeeze_axes_token_54",
+      "bytes": 8,
+      "dtype": "INT64",
+      "shape": [
+        1
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "squeeze_axes_token_51",
+      "bytes": 8,
+      "dtype": "INT64",
+      "shape": [
+        1
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "splits",
+      "bytes": 48,
+      "dtype": "INT64",
+      "shape": [
+        6
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "squeeze_axes_token_42",
+      "bytes": 8,
+      "dtype": "INT64",
+      "shape": [
+        1
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "squeeze_axes_token_39",
+      "bytes": 8,
+      "dtype": "INT64",
+      "shape": [
+        1
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "squeeze_axes_token_86",
+      "bytes": 8,
+      "dtype": "INT64",
+      "shape": [
+        1
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "squeeze_axes_token_36",
+      "bytes": 8,
+      "dtype": "INT64",
+      "shape": [
+        1
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "splits_token_118",
+      "bytes": 16,
+      "dtype": "INT64",
+      "shape": [
+        2
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "squeeze_axes_token_33",
+      "bytes": 8,
+      "dtype": "INT64",
+      "shape": [
+        1
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "squeeze_axes_token_95",
+      "bytes": 8,
+      "dtype": "INT64",
+      "shape": [
+        1
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "cross_attn_blocks.5.ff.project_out.bias",
+      "bytes": 1280,
+      "dtype": "FLOAT32",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "val_1064_quantized",
+      "bytes": 409600,
+      "dtype": "UINT8",
+      "shape": [
+        1280,
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "val_1064_scale",
+      "bytes": 1280,
+      "dtype": "FLOAT32",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "squeeze_axes_token_45",
+      "bytes": 8,
+      "dtype": "INT64",
+      "shape": [
+        1
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "cross_attn_blocks.5.ff.project_in.proj.bias",
+      "bytes": 10240,
+      "dtype": "FLOAT32",
+      "shape": [
+        2560
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "val_1061_zero_point",
+      "bytes": 2560,
+      "dtype": "UINT8",
+      "shape": [
+        2560
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "val_360_quantized",
+      "bytes": 102400,
+      "dtype": "UINT8",
+      "shape": [
+        320,
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "val_1061_scale",
+      "bytes": 10240,
+      "dtype": "FLOAT32",
+      "shape": [
+        2560
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "val_23_zero_point",
+      "bytes": 320,
+      "dtype": "UINT8",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "val_1043_scale",
+      "bytes": 1280,
+      "dtype": "FLOAT32",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "add_1906",
+      "bytes": 1280,
+      "dtype": "FLOAT32",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "squeeze_axes_token_60",
+      "bytes": 8,
+      "dtype": "INT64",
+      "shape": [
+        1
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "val_899_quantized",
+      "bytes": 102400,
+      "dtype": "UINT8",
+      "shape": [
+        320,
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "val_898_zero_point",
+      "bytes": 320,
+      "dtype": "UINT8",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "val_186_scale",
+      "bytes": 1280,
+      "dtype": "FLOAT32",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "val_897_zero_point",
+      "bytes": 320,
+      "dtype": "UINT8",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "val_890_zero_point",
+      "bytes": 320,
+      "dtype": "UINT8",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "val_890_quantized",
+      "bytes": 409600,
+      "dtype": "UINT8",
+      "shape": [
+        1280,
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "val_898_scale",
+      "bytes": 1280,
+      "dtype": "FLOAT32",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "val_377_quantized",
+      "bytes": 102400,
+      "dtype": "UINT8",
+      "shape": [
+        320,
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "val_887_scale",
+      "bytes": 10240,
+      "dtype": "FLOAT32",
+      "shape": [
+        2560
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "val_360_scale",
+      "bytes": 1280,
+      "dtype": "FLOAT32",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "val_881_zero_point",
+      "bytes": 320,
+      "dtype": "UINT8",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "val_342_scale",
+      "bytes": 1280,
+      "dtype": "FLOAT32",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "val_869_zero_point",
+      "bytes": 320,
+      "dtype": "UINT8",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "splits_token_112",
+      "bytes": 16,
+      "dtype": "INT64",
+      "shape": [
+        2
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "add_1961",
+      "bytes": 1280,
+      "dtype": "FLOAT32",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "val_869_quantized",
+      "bytes": 102400,
+      "dtype": "UINT8",
+      "shape": [
+        320,
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "val_543_scale",
+      "bytes": 1280,
+      "dtype": "FLOAT32",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "add_1578",
+      "bytes": 1280,
+      "dtype": "FLOAT32",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "val_863_quantized",
+      "bytes": 102400,
+      "dtype": "UINT8",
+      "shape": [
+        320,
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "val_863_scale",
+      "bytes": 1280,
+      "dtype": "FLOAT32",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "val_863_zero_point",
+      "bytes": 320,
+      "dtype": "UINT8",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "val_725_zero_point",
+      "bytes": 320,
+      "dtype": "UINT8",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "splits_token_108",
+      "bytes": 16,
+      "dtype": "INT64",
+      "shape": [
+        2
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "val_724_zero_point",
+      "bytes": 320,
+      "dtype": "UINT8",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "val_724_quantized",
+      "bytes": 102400,
+      "dtype": "UINT8",
+      "shape": [
+        320,
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "splits_token_81",
+      "bytes": 48,
+      "dtype": "INT64",
+      "shape": [
+        6
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "val_723_zero_point",
+      "bytes": 320,
+      "dtype": "UINT8",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "val_723_quantized",
+      "bytes": 102400,
+      "dtype": "UINT8",
+      "shape": [
+        320,
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "val_725_scale",
+      "bytes": 1280,
+      "dtype": "FLOAT32",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "cross_attn_blocks.1.ff.project_in.proj.bias",
+      "bytes": 10240,
+      "dtype": "FLOAT32",
+      "shape": [
+        2560
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "val_869_scale",
+      "bytes": 1280,
+      "dtype": "FLOAT32",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "val_724_scale",
+      "bytes": 1280,
+      "dtype": "FLOAT32",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "add_1337",
+      "bytes": 1280,
+      "dtype": "FLOAT32",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "val_716_zero_point",
+      "bytes": 320,
+      "dtype": "UINT8",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "val_1043_quantized",
+      "bytes": 102400,
+      "dtype": "UINT8",
+      "shape": [
+        320,
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "val_899_zero_point",
+      "bytes": 320,
+      "dtype": "UINT8",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "squeeze_axes_token_98",
+      "bytes": 8,
+      "dtype": "INT64",
+      "shape": [
+        1
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "val_716_quantized",
+      "bytes": 409600,
+      "dtype": "UINT8",
+      "shape": [
+        1280,
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "val_1037_zero_point",
+      "bytes": 320,
+      "dtype": "UINT8",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "val_540_zero_point",
+      "bytes": 2560,
+      "dtype": "UINT8",
+      "shape": [
+        2560
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "cross_attn_blocks.3.ff.project_in.proj.bias",
+      "bytes": 10240,
+      "dtype": "FLOAT32",
+      "shape": [
+        2560
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "val_366_quantized",
+      "bytes": 819200,
+      "dtype": "UINT8",
+      "shape": [
+        320,
+        2560
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "val_725_quantized",
+      "bytes": 102400,
+      "dtype": "UINT8",
+      "shape": [
+        320,
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "val_713_zero_point",
+      "bytes": 2560,
+      "dtype": "UINT8",
+      "shape": [
+        2560
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "val_723_scale",
+      "bytes": 1280,
+      "dtype": "FLOAT32",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "val_713_quantized",
+      "bytes": 819200,
+      "dtype": "UINT8",
+      "shape": [
+        320,
+        2560
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "val_1055_zero_point",
+      "bytes": 320,
+      "dtype": "UINT8",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "val_196_quantized",
+      "bytes": 409600,
+      "dtype": "UINT8",
+      "shape": [
+        1280,
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "rotary.inv_freq",
+      "bytes": 64,
+      "dtype": "FLOAT32",
+      "shape": [
+        16
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "cross_attn_blocks.2.ff.project_in.proj.bias",
+      "bytes": 10240,
+      "dtype": "FLOAT32",
+      "shape": [
+        2560
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "val_713_scale",
+      "bytes": 10240,
+      "dtype": "FLOAT32",
+      "shape": [
+        2560
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "val_890_scale",
+      "bytes": 1280,
+      "dtype": "FLOAT32",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "val_707_zero_point",
+      "bytes": 320,
+      "dtype": "UINT8",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "val_707_quantized",
+      "bytes": 102400,
+      "dtype": "UINT8",
+      "shape": [
+        320,
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "add_1250",
+      "bytes": 1280,
+      "dtype": "FLOAT32",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "val_689_zero_point",
+      "bytes": 320,
+      "dtype": "UINT8",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "val_1064_zero_point",
+      "bytes": 320,
+      "dtype": "UINT8",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "val_551_zero_point",
+      "bytes": 320,
+      "dtype": "UINT8",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "val_550_zero_point",
+      "bytes": 320,
+      "dtype": "UINT8",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "val_552_scale",
+      "bytes": 1280,
+      "dtype": "FLOAT32",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "val_551_scale",
+      "bytes": 1280,
+      "dtype": "FLOAT32",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "add_1009",
+      "bytes": 1280,
+      "dtype": "FLOAT32",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "cross_attn_blocks.2.ff.project_out.bias",
+      "bytes": 1280,
+      "dtype": "FLOAT32",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "val_28",
+      "bytes": 8,
+      "dtype": "INT64",
+      "shape": [
+        1
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "val_1037_quantized",
+      "bytes": 102400,
+      "dtype": "UINT8",
+      "shape": [
+        320,
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "splits_token_113",
+      "bytes": 16,
+      "dtype": "INT64",
+      "shape": [
+        2
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "val_516_scale",
+      "bytes": 1280,
+      "dtype": "FLOAT32",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "val_196_zero_point",
+      "bytes": 320,
+      "dtype": "UINT8",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "val_543_zero_point",
+      "bytes": 320,
+      "dtype": "UINT8",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "add_1665",
+      "bytes": 1280,
+      "dtype": "FLOAT32",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "val_534_zero_point",
+      "bytes": 320,
+      "dtype": "UINT8",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "val_543_quantized",
+      "bytes": 409600,
+      "dtype": "UINT8",
+      "shape": [
+        1280,
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "val_899_scale",
+      "bytes": 1280,
+      "dtype": "FLOAT32",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "val_887_quantized",
+      "bytes": 819200,
+      "dtype": "UINT8",
+      "shape": [
+        320,
+        2560
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "val_192_quantized",
+      "bytes": 819200,
+      "dtype": "UINT8",
+      "shape": [
+        320,
+        2560
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "val_881_quantized",
+      "bytes": 102400,
+      "dtype": "UINT8",
+      "shape": [
+        320,
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "val_897_quantized",
+      "bytes": 102400,
+      "dtype": "UINT8",
+      "shape": [
+        320,
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "val_540_quantized",
+      "bytes": 819200,
+      "dtype": "UINT8",
+      "shape": [
+        320,
+        2560
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "val_898_quantized",
+      "bytes": 102400,
+      "dtype": "UINT8",
+      "shape": [
+        320,
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "add_977",
+      "bytes": 1280,
+      "dtype": "FLOAT32",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "embedding.weight_scale",
+      "bytes": 4,
+      "dtype": "FLOAT32",
+      "shape": [],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "val_552_quantized",
+      "bytes": 102400,
+      "dtype": "UINT8",
+      "shape": [
+        320,
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "val_534_scale",
+      "bytes": 1280,
+      "dtype": "FLOAT32",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "val_522_scale",
+      "bytes": 1280,
+      "dtype": "FLOAT32",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "val_897_scale",
+      "bytes": 1280,
+      "dtype": "FLOAT32",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "val_1055_scale",
+      "bytes": 1280,
+      "dtype": "FLOAT32",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "add_922",
+      "bytes": 1280,
+      "dtype": "FLOAT32",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "val_516_zero_point",
+      "bytes": 320,
+      "dtype": "UINT8",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "val_516_quantized",
+      "bytes": 102400,
+      "dtype": "UINT8",
+      "shape": [
+        320,
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "val_174_scale",
+      "bytes": 1280,
+      "dtype": "FLOAT32",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "val_378_quantized",
+      "bytes": 102400,
+      "dtype": "UINT8",
+      "shape": [
+        320,
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "val_377_zero_point",
+      "bytes": 320,
+      "dtype": "UINT8",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "val_695_quantized",
+      "bytes": 102400,
+      "dtype": "UINT8",
+      "shape": [
+        320,
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "val_540_scale",
+      "bytes": 10240,
+      "dtype": "FLOAT32",
+      "shape": [
+        2560
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "val_23_scale",
+      "bytes": 1280,
+      "dtype": "FLOAT32",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "val_369_quantized",
+      "bytes": 409600,
+      "dtype": "UINT8",
+      "shape": [
+        1280,
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "val_168_zero_point",
+      "bytes": 320,
+      "dtype": "UINT8",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "val_376_zero_point",
+      "bytes": 320,
+      "dtype": "UINT8",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "val_376_quantized",
+      "bytes": 102400,
+      "dtype": "UINT8",
+      "shape": [
+        320,
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "val_716_scale",
+      "bytes": 1280,
+      "dtype": "FLOAT32",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "val_192_zero_point",
+      "bytes": 2560,
+      "dtype": "UINT8",
+      "shape": [
+        2560
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "val_378_scale",
+      "bytes": 1280,
+      "dtype": "FLOAT32",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "cross_attn_blocks.4.ff.project_in.proj.bias",
+      "bytes": 10240,
+      "dtype": "FLOAT32",
+      "shape": [
+        2560
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "val_154",
+      "bytes": 16,
+      "dtype": "INT64",
+      "shape": [
+        2
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "val_377_scale",
+      "bytes": 1280,
+      "dtype": "FLOAT32",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "val_342_quantized",
+      "bytes": 102400,
+      "dtype": "UINT8",
+      "shape": [
+        320,
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "val_376_scale",
+      "bytes": 1280,
+      "dtype": "FLOAT32",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "splits_token_62",
+      "bytes": 48,
+      "dtype": "INT64",
+      "shape": [
+        6
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "add_681",
+      "bytes": 1280,
+      "dtype": "FLOAT32",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "val_550_quantized",
+      "bytes": 102400,
+      "dtype": "UINT8",
+      "shape": [
+        320,
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "val_348_zero_point",
+      "bytes": 320,
+      "dtype": "UINT8",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "splits_token_117",
+      "bytes": 16,
+      "dtype": "INT64",
+      "shape": [
+        2
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "embedding.weight_zero_point",
+      "bytes": 1,
+      "dtype": "UINT8",
+      "shape": [],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "val_534_quantized",
+      "bytes": 102400,
+      "dtype": "UINT8",
+      "shape": [
+        320,
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "val_348_scale",
+      "bytes": 1280,
+      "dtype": "FLOAT32",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "add_1633",
+      "bytes": 1280,
+      "dtype": "FLOAT32",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "val_1061_quantized",
+      "bytes": 819200,
+      "dtype": "UINT8",
+      "shape": [
+        320,
+        2560
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "add_1305",
+      "bytes": 1280,
+      "dtype": "FLOAT32",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "add_594",
+      "bytes": 1280,
+      "dtype": "FLOAT32",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "val_366_zero_point",
+      "bytes": 2560,
+      "dtype": "UINT8",
+      "shape": [
+        2560
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "val_205_zero_point",
+      "bytes": 320,
+      "dtype": "UINT8",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "squeeze_axes",
+      "bytes": 8,
+      "dtype": "INT64",
+      "shape": [
+        1
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "val_204_zero_point",
+      "bytes": 320,
+      "dtype": "UINT8",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "val_203_quantized",
+      "bytes": 102400,
+      "dtype": "UINT8",
+      "shape": [
+        320,
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "cross_attn_blocks.4.ff.project_out.bias",
+      "bytes": 1280,
+      "dtype": "FLOAT32",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "val_348_quantized",
+      "bytes": 102400,
+      "dtype": "UINT8",
+      "shape": [
+        320,
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "val_342_zero_point",
+      "bytes": 320,
+      "dtype": "UINT8",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "val_203_scale",
+      "bytes": 1280,
+      "dtype": "FLOAT32",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "val_369_zero_point",
+      "bytes": 320,
+      "dtype": "UINT8",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "val_205_quantized",
+      "bytes": 102400,
+      "dtype": "UINT8",
+      "shape": [
+        320,
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "val_23_quantized",
+      "bytes": 102400,
+      "dtype": "UINT8",
+      "shape": [
+        320,
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "val_689_quantized",
+      "bytes": 102400,
+      "dtype": "UINT8",
+      "shape": [
+        320,
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "val_186_quantized",
+      "bytes": 102400,
+      "dtype": "UINT8",
+      "shape": [
+        320,
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "val_366_scale",
+      "bytes": 10240,
+      "dtype": "FLOAT32",
+      "shape": [
+        2560
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "add_1993",
+      "bytes": 1280,
+      "dtype": "FLOAT32",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "val_695_zero_point",
+      "bytes": 320,
+      "dtype": "UINT8",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "val_550_scale",
+      "bytes": 1280,
+      "dtype": "FLOAT32",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "squeeze_axes_token_48",
+      "bytes": 8,
+      "dtype": "INT64",
+      "shape": [
+        1
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "val_360_zero_point",
+      "bytes": 320,
+      "dtype": "UINT8",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "add_266",
+      "bytes": 1280,
+      "dtype": "FLOAT32",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "val_162",
+      "bytes": 4,
+      "dtype": "FLOAT32",
+      "shape": [],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "val_369_scale",
+      "bytes": 1280,
+      "dtype": "FLOAT32",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "val_192_scale",
+      "bytes": 10240,
+      "dtype": "FLOAT32",
+      "shape": [
+        2560
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "add_321",
+      "bytes": 1280,
+      "dtype": "FLOAT32",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "val_186_zero_point",
+      "bytes": 320,
+      "dtype": "UINT8",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "splits_token_121",
+      "bytes": 16,
+      "dtype": "INT64",
+      "shape": [
+        2
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "val_378_zero_point",
+      "bytes": 320,
+      "dtype": "UINT8",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "val_4",
+      "bytes": 4,
+      "dtype": "FLOAT32",
+      "shape": [],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "add_649",
+      "bytes": 1280,
+      "dtype": "FLOAT32",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "val_174_zero_point",
+      "bytes": 320,
+      "dtype": "UINT8",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "val_881_scale",
+      "bytes": 1280,
+      "dtype": "FLOAT32",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "squeeze_axes_token_64",
+      "bytes": 8,
+      "dtype": "INT64",
+      "shape": [
+        1
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "val_27",
+      "bytes": 8,
+      "dtype": "INT64",
+      "shape": [
+        1
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "val_551_quantized",
+      "bytes": 102400,
+      "dtype": "UINT8",
+      "shape": [
+        320,
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "add_353",
+      "bytes": 1280,
+      "dtype": "FLOAT32",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "val_22_quantized",
+      "bytes": 102400,
+      "dtype": "UINT8",
+      "shape": [
+        320,
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "val_204_scale",
+      "bytes": 1280,
+      "dtype": "FLOAT32",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "squeeze_axes_token_79",
+      "bytes": 8,
+      "dtype": "INT64",
+      "shape": [
+        1
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "val_689_scale",
+      "bytes": 1280,
+      "dtype": "FLOAT32",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "val_887_zero_point",
+      "bytes": 2560,
+      "dtype": "UINT8",
+      "shape": [
+        2560
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "val_695_scale",
+      "bytes": 1280,
+      "dtype": "FLOAT32",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "val_58",
+      "bytes": 8,
+      "dtype": "INT64",
+      "shape": [
+        1
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "val_168_quantized",
+      "bytes": 102400,
+      "dtype": "UINT8",
+      "shape": [
+        320,
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "val_707_scale",
+      "bytes": 1280,
+      "dtype": "FLOAT32",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "val_174_quantized",
+      "bytes": 102400,
+      "dtype": "UINT8",
+      "shape": [
+        320,
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "val_522_zero_point",
+      "bytes": 320,
+      "dtype": "UINT8",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "val_205_scale",
+      "bytes": 1280,
+      "dtype": "FLOAT32",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "val_22_zero_point",
+      "bytes": 320,
+      "dtype": "UINT8",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "val_204_quantized",
+      "bytes": 102400,
+      "dtype": "UINT8",
+      "shape": [
+        320,
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "cross_attn_blocks.0.ff.project_out.bias",
+      "bytes": 1280,
+      "dtype": "FLOAT32",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "val_168_scale",
+      "bytes": 1280,
+      "dtype": "FLOAT32",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "squeeze_axes_token_30",
+      "bytes": 8,
+      "dtype": "INT64",
+      "shape": [
+        1
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "val_1055_quantized",
+      "bytes": 102400,
+      "dtype": "UINT8",
+      "shape": [
+        320,
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "val_21_zero_point",
+      "bytes": 320,
+      "dtype": "UINT8",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "val_50",
+      "bytes": 8,
+      "dtype": "INT64",
+      "shape": [
+        1
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "val_21_scale",
+      "bytes": 1280,
+      "dtype": "FLOAT32",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "val_22_scale",
+      "bytes": 1280,
+      "dtype": "FLOAT32",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "val_150",
+      "bytes": 8,
+      "dtype": "INT64",
+      "shape": [],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "val_80",
+      "bytes": 8,
+      "dtype": "INT64",
+      "shape": [
+        1
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "cross_attn_blocks.3.ff.project_out.bias",
+      "bytes": 1280,
+      "dtype": "FLOAT32",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "splits_token_107",
+      "bytes": 16,
+      "dtype": "INT64",
+      "shape": [
+        2
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "val_6",
+      "bytes": 4,
+      "dtype": "FLOAT32",
+      "shape": [],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "val_1043_zero_point",
+      "bytes": 320,
+      "dtype": "UINT8",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "val_196_scale",
+      "bytes": 1280,
+      "dtype": "FLOAT32",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "val_552_zero_point",
+      "bytes": 320,
+      "dtype": "UINT8",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "splits_token_120",
+      "bytes": 16,
+      "dtype": "INT64",
+      "shape": [
+        2
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "embedding.weight_quantized",
+      "bytes": 10485760,
+      "dtype": "UINT8",
+      "shape": [
+        32768,
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "val_1095",
+      "bytes": 16,
+      "dtype": "INT64",
+      "shape": [
+        2
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "add_25",
+      "bytes": 1280,
+      "dtype": "FLOAT32",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "val_18",
+      "bytes": 1280,
+      "dtype": "FLOAT32",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "cross_attn_blocks.0.ff.project_in.proj.bias",
+      "bytes": 10240,
+      "dtype": "FLOAT32",
+      "shape": [
+        2560
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "cross_attn_blocks.1.ff.project_out.bias",
+      "bytes": 1280,
+      "dtype": "FLOAT32",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "val_160",
+      "bytes": 16,
+      "dtype": "INT64",
+      "shape": [
+        2
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "val_522_quantized",
+      "bytes": 102400,
+      "dtype": "UINT8",
+      "shape": [
+        320,
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "val_25",
+      "bytes": 8,
+      "dtype": "INT64",
+      "shape": [
+        1
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "t_quantized",
+      "bytes": 10485760,
+      "dtype": "UINT8",
+      "shape": [
+        320,
+        32768
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "val_166",
+      "bytes": 8,
+      "dtype": "INT64",
+      "shape": [
+        1
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "val_81",
+      "bytes": 8,
+      "dtype": "INT64",
+      "shape": [
+        1
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "val_1037_scale",
+      "bytes": 1280,
+      "dtype": "FLOAT32",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "val_8",
+      "bytes": 8,
+      "dtype": "INT64",
+      "shape": [
+        1
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "val_149",
+      "bytes": 8,
+      "dtype": "INT64",
+      "shape": [],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "val_21_quantized",
+      "bytes": 102400,
+      "dtype": "UINT8",
+      "shape": [
+        320,
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "decoder_kv.ort",
+      "tensor": "val_203_zero_point",
+      "bytes": 320,
+      "dtype": "UINT8",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die3",
+      "evidence": [
+        "decoder-side graph"
+      ]
+    },
+    {
+      "graph": "encoder.ort",
+      "tensor": "const_transpose_optimizer_token_6",
+      "bytes": 32,
+      "dtype": "INT64",
+      "shape": [
+        4
+      ],
+      "proposed_die": "unresolved_encoder_shared",
+      "evidence": [
+        "proposed encoder block indices [] from names; scheduling/graph cut must be verified"
+      ]
+    },
+    {
+      "graph": "encoder.ort",
+      "tensor": "const_transpose_optimizer_token_4",
+      "bytes": 32,
+      "dtype": "INT64",
+      "shape": [
+        4
+      ],
+      "proposed_die": "unresolved_encoder_shared",
+      "evidence": [
+        "proposed encoder block indices [] from names; scheduling/graph cut must be verified"
+      ]
+    },
+    {
+      "graph": "encoder.ort",
+      "tensor": "const_transpose_optimizer_token_2",
+      "bytes": 32,
+      "dtype": "INT64",
+      "shape": [
+        4
+      ],
+      "proposed_die": "unresolved_encoder_shared",
+      "evidence": [
+        "proposed encoder block indices [] from names; scheduling/graph cut must be verified"
+      ]
+    },
+    {
+      "graph": "encoder.ort",
+      "tensor": "const_transpose_optimizer_token_0",
+      "bytes": 32,
+      "dtype": "INT64",
+      "shape": [
+        4
+      ],
+      "proposed_die": "unresolved_encoder_shared",
+      "evidence": [
+        "proposed encoder block indices [] from names; scheduling/graph cut must be verified"
+      ]
+    },
+    {
+      "graph": "encoder.ort",
+      "tensor": "const_transpose_optimizer",
+      "bytes": 32,
+      "dtype": "INT64",
+      "shape": [
+        4
+      ],
+      "proposed_die": "unresolved_encoder_shared",
+      "evidence": [
+        "proposed encoder block indices [] from names; scheduling/graph cut must be verified"
+      ]
+    },
+    {
+      "graph": "encoder.ort",
+      "tensor": "add_633",
+      "bytes": 1280,
+      "dtype": "FLOAT32",
+      "shape": [
+        320
+      ],
+      "proposed_die": "unresolved_encoder_shared",
+      "evidence": [
+        "proposed encoder block indices [] from names; scheduling/graph cut must be verified"
+      ]
+    },
+    {
+      "graph": "encoder.ort",
+      "tensor": "val_500_quantized",
+      "bytes": 409600,
+      "dtype": "UINT8",
+      "shape": [
+        1280,
+        320
+      ],
+      "proposed_die": "die2",
+      "evidence": [
+        "proposed encoder block indices [5] from names; scheduling/graph cut must be verified"
+      ]
+    },
+    {
+      "graph": "encoder.ort",
+      "tensor": "val_500_scale",
+      "bytes": 1280,
+      "dtype": "FLOAT32",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die2",
+      "evidence": [
+        "proposed encoder block indices [5] from names; scheduling/graph cut must be verified"
+      ]
+    },
+    {
+      "graph": "encoder.ort",
+      "tensor": "val_491_zero_point",
+      "bytes": 1280,
+      "dtype": "UINT8",
+      "shape": [
+        1280
+      ],
+      "proposed_die": "die2",
+      "evidence": [
+        "proposed encoder block indices [5] from names; scheduling/graph cut must be verified"
+      ]
+    },
+    {
+      "graph": "encoder.ort",
+      "tensor": "val_491_scale",
+      "bytes": 5120,
+      "dtype": "FLOAT32",
+      "shape": [
+        1280
+      ],
+      "proposed_die": "die2",
+      "evidence": [
+        "proposed encoder block indices [5] from names; scheduling/graph cut must be verified"
+      ]
+    },
+    {
+      "graph": "encoder.ort",
+      "tensor": "val_485_zero_point",
+      "bytes": 320,
+      "dtype": "UINT8",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die2",
+      "evidence": [
+        "proposed encoder block indices [5] from names; scheduling/graph cut must be verified"
+      ]
+    },
+    {
+      "graph": "encoder.ort",
+      "tensor": "val_485_scale",
+      "bytes": 1280,
+      "dtype": "FLOAT32",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die2",
+      "evidence": [
+        "proposed encoder block indices [5] from names; scheduling/graph cut must be verified"
+      ]
+    },
+    {
+      "graph": "encoder.ort",
+      "tensor": "val_441_zero_point",
+      "bytes": 320,
+      "dtype": "UINT8",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die2",
+      "evidence": [
+        "proposed encoder block indices [5] from names; scheduling/graph cut must be verified"
+      ]
+    },
+    {
+      "graph": "encoder.ort",
+      "tensor": "val_434_quantized",
+      "bytes": 102400,
+      "dtype": "UINT8",
+      "shape": [
+        320,
+        320
+      ],
+      "proposed_die": "die2",
+      "evidence": [
+        "proposed encoder block indices [5] from names; scheduling/graph cut must be verified"
+      ]
+    },
+    {
+      "graph": "encoder.ort",
+      "tensor": "val_427_quantized",
+      "bytes": 102400,
+      "dtype": "UINT8",
+      "shape": [
+        320,
+        320
+      ],
+      "proposed_die": "die2",
+      "evidence": [
+        "proposed encoder block indices [5] from names; scheduling/graph cut must be verified"
+      ]
+    },
+    {
+      "graph": "encoder.ort",
+      "tensor": "val_441_scale",
+      "bytes": 1280,
+      "dtype": "FLOAT32",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die2",
+      "evidence": [
+        "proposed encoder block indices [5] from names; scheduling/graph cut must be verified"
+      ]
+    },
+    {
+      "graph": "encoder.ort",
+      "tensor": "val_434_scale",
+      "bytes": 1280,
+      "dtype": "FLOAT32",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die2",
+      "evidence": [
+        "proposed encoder block indices [5] from names; scheduling/graph cut must be verified"
+      ]
+    },
+    {
+      "graph": "encoder.ort",
+      "tensor": "val_427_scale",
+      "bytes": 1280,
+      "dtype": "FLOAT32",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die2",
+      "evidence": [
+        "proposed encoder block indices [5] from names; scheduling/graph cut must be verified"
+      ]
+    },
+    {
+      "graph": "encoder.ort",
+      "tensor": "blocks.4.ff.project_out.bias",
+      "bytes": 1280,
+      "dtype": "FLOAT32",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die2",
+      "evidence": [
+        "proposed encoder block indices [4] from names; scheduling/graph cut must be verified"
+      ]
+    },
+    {
+      "graph": "encoder.ort",
+      "tensor": "val_418_zero_point",
+      "bytes": 320,
+      "dtype": "UINT8",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die2",
+      "evidence": [
+        "proposed encoder block indices [4] from names; scheduling/graph cut must be verified"
+      ]
+    },
+    {
+      "graph": "encoder.ort",
+      "tensor": "val_418_quantized",
+      "bytes": 409600,
+      "dtype": "UINT8",
+      "shape": [
+        1280,
+        320
+      ],
+      "proposed_die": "die2",
+      "evidence": [
+        "proposed encoder block indices [4] from names; scheduling/graph cut must be verified"
+      ]
+    },
+    {
+      "graph": "encoder.ort",
+      "tensor": "blocks.4.ff.project_in.0.bias",
+      "bytes": 5120,
+      "dtype": "FLOAT32",
+      "shape": [
+        1280
+      ],
+      "proposed_die": "die2",
+      "evidence": [
+        "proposed encoder block indices [4] from names; scheduling/graph cut must be verified"
+      ]
+    },
+    {
+      "graph": "encoder.ort",
+      "tensor": "val_409_zero_point",
+      "bytes": 1280,
+      "dtype": "UINT8",
+      "shape": [
+        1280
+      ],
+      "proposed_die": "die2",
+      "evidence": [
+        "proposed encoder block indices [4] from names; scheduling/graph cut must be verified"
+      ]
+    },
+    {
+      "graph": "encoder.ort",
+      "tensor": "val_409_quantized",
+      "bytes": 409600,
+      "dtype": "UINT8",
+      "shape": [
+        320,
+        1280
+      ],
+      "proposed_die": "die2",
+      "evidence": [
+        "proposed encoder block indices [4] from names; scheduling/graph cut must be verified"
+      ]
+    },
+    {
+      "graph": "encoder.ort",
+      "tensor": "add_505",
+      "bytes": 1280,
+      "dtype": "FLOAT32",
+      "shape": [
+        320
+      ],
+      "proposed_die": "unresolved_encoder_shared",
+      "evidence": [
+        "proposed encoder block indices [] from names; scheduling/graph cut must be verified"
+      ]
+    },
+    {
+      "graph": "encoder.ort",
+      "tensor": "val_485_quantized",
+      "bytes": 102400,
+      "dtype": "UINT8",
+      "shape": [
+        320,
+        320
+      ],
+      "proposed_die": "die2",
+      "evidence": [
+        "proposed encoder block indices [5] from names; scheduling/graph cut must be verified"
+      ]
+    },
+    {
+      "graph": "encoder.ort",
+      "tensor": "val_403_quantized",
+      "bytes": 102400,
+      "dtype": "UINT8",
+      "shape": [
+        320,
+        320
+      ],
+      "proposed_die": "die2",
+      "evidence": [
+        "proposed encoder block indices [4] from names; scheduling/graph cut must be verified"
+      ]
+    },
+    {
+      "graph": "encoder.ort",
+      "tensor": "val_352_zero_point",
+      "bytes": 320,
+      "dtype": "UINT8",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die2",
+      "evidence": [
+        "proposed encoder block indices [4] from names; scheduling/graph cut must be verified"
+      ]
+    },
+    {
+      "graph": "encoder.ort",
+      "tensor": "val_352_quantized",
+      "bytes": 102400,
+      "dtype": "UINT8",
+      "shape": [
+        320,
+        320
+      ],
+      "proposed_die": "die2",
+      "evidence": [
+        "proposed encoder block indices [4] from names; scheduling/graph cut must be verified"
+      ]
+    },
+    {
+      "graph": "encoder.ort",
+      "tensor": "val_491_quantized",
+      "bytes": 409600,
+      "dtype": "UINT8",
+      "shape": [
+        320,
+        1280
+      ],
+      "proposed_die": "die2",
+      "evidence": [
+        "proposed encoder block indices [5] from names; scheduling/graph cut must be verified"
+      ]
+    },
+    {
+      "graph": "encoder.ort",
+      "tensor": "val_359_scale",
+      "bytes": 1280,
+      "dtype": "FLOAT32",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die2",
+      "evidence": [
+        "proposed encoder block indices [4] from names; scheduling/graph cut must be verified"
+      ]
+    },
+    {
+      "graph": "encoder.ort",
+      "tensor": "val_345_scale",
+      "bytes": 1280,
+      "dtype": "FLOAT32",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die2",
+      "evidence": [
+        "proposed encoder block indices [4] from names; scheduling/graph cut must be verified"
+      ]
+    },
+    {
+      "graph": "encoder.ort",
+      "tensor": "val_336_zero_point",
+      "bytes": 320,
+      "dtype": "UINT8",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die2",
+      "evidence": [
+        "proposed encoder block indices [3] from names; scheduling/graph cut must be verified"
+      ]
+    },
+    {
+      "graph": "encoder.ort",
+      "tensor": "blocks.3.ff.project_in.0.bias",
+      "bytes": 5120,
+      "dtype": "FLOAT32",
+      "shape": [
+        1280
+      ],
+      "proposed_die": "die2",
+      "evidence": [
+        "proposed encoder block indices [3] from names; scheduling/graph cut must be verified"
+      ]
+    },
+    {
+      "graph": "encoder.ort",
+      "tensor": "val_336_scale",
+      "bytes": 1280,
+      "dtype": "FLOAT32",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die2",
+      "evidence": [
+        "proposed encoder block indices [3] from names; scheduling/graph cut must be verified"
+      ]
+    },
+    {
+      "graph": "encoder.ort",
+      "tensor": "val_327_scale",
+      "bytes": 5120,
+      "dtype": "FLOAT32",
+      "shape": [
+        1280
+      ],
+      "proposed_die": "die2",
+      "evidence": [
+        "proposed encoder block indices [3] from names; scheduling/graph cut must be verified"
+      ]
+    },
+    {
+      "graph": "encoder.ort",
+      "tensor": "val_321_zero_point",
+      "bytes": 320,
+      "dtype": "UINT8",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die2",
+      "evidence": [
+        "proposed encoder block indices [3] from names; scheduling/graph cut must be verified"
+      ]
+    },
+    {
+      "graph": "encoder.ort",
+      "tensor": "val_321_quantized",
+      "bytes": 102400,
+      "dtype": "UINT8",
+      "shape": [
+        320,
+        320
+      ],
+      "proposed_die": "die2",
+      "evidence": [
+        "proposed encoder block indices [3] from names; scheduling/graph cut must be verified"
+      ]
+    },
+    {
+      "graph": "encoder.ort",
+      "tensor": "val_345_zero_point",
+      "bytes": 320,
+      "dtype": "UINT8",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die2",
+      "evidence": [
+        "proposed encoder block indices [4] from names; scheduling/graph cut must be verified"
+      ]
+    },
+    {
+      "graph": "encoder.ort",
+      "tensor": "val_263_zero_point",
+      "bytes": 320,
+      "dtype": "UINT8",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die2",
+      "evidence": [
+        "proposed encoder block indices [3] from names; scheduling/graph cut must be verified"
+      ]
+    },
+    {
+      "graph": "encoder.ort",
+      "tensor": "val_54",
+      "bytes": 8,
+      "dtype": "INT64",
+      "shape": [
+        1
+      ],
+      "proposed_die": "unresolved_encoder_shared",
+      "evidence": [
+        "proposed encoder block indices [] from names; scheduling/graph cut must be verified"
+      ]
+    },
+    {
+      "graph": "encoder.ort",
+      "tensor": "val_254_scale",
+      "bytes": 1280,
+      "dtype": "FLOAT32",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die1",
+      "evidence": [
+        "proposed encoder block indices [2] from names; scheduling/graph cut must be verified"
+      ]
+    },
+    {
+      "graph": "encoder.ort",
+      "tensor": "add_550",
+      "bytes": 1280,
+      "dtype": "FLOAT32",
+      "shape": [
+        320
+      ],
+      "proposed_die": "unresolved_encoder_shared",
+      "evidence": [
+        "proposed encoder block indices [] from names; scheduling/graph cut must be verified"
+      ]
+    },
+    {
+      "graph": "encoder.ort",
+      "tensor": "val_403_zero_point",
+      "bytes": 320,
+      "dtype": "UINT8",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die2",
+      "evidence": [
+        "proposed encoder block indices [4] from names; scheduling/graph cut must be verified"
+      ]
+    },
+    {
+      "graph": "encoder.ort",
+      "tensor": "val_277_zero_point",
+      "bytes": 320,
+      "dtype": "UINT8",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die2",
+      "evidence": [
+        "proposed encoder block indices [3] from names; scheduling/graph cut must be verified"
+      ]
+    },
+    {
+      "graph": "encoder.ort",
+      "tensor": "val_245_quantized",
+      "bytes": 409600,
+      "dtype": "UINT8",
+      "shape": [
+        320,
+        1280
+      ],
+      "proposed_die": "die1",
+      "evidence": [
+        "proposed encoder block indices [2] from names; scheduling/graph cut must be verified"
+      ]
+    },
+    {
+      "graph": "encoder.ort",
+      "tensor": "val_162_zero_point",
+      "bytes": 1280,
+      "dtype": "UINT8",
+      "shape": [
+        1280
+      ],
+      "proposed_die": "die1",
+      "evidence": [
+        "proposed encoder block indices [1] from names; scheduling/graph cut must be verified"
+      ]
+    },
+    {
+      "graph": "encoder.ort",
+      "tensor": "val_162_scale",
+      "bytes": 5120,
+      "dtype": "FLOAT32",
+      "shape": [
+        1280
+      ],
+      "proposed_die": "die1",
+      "evidence": [
+        "proposed encoder block indices [1] from names; scheduling/graph cut must be verified"
+      ]
+    },
+    {
+      "graph": "encoder.ort",
+      "tensor": "val_195_quantized",
+      "bytes": 102400,
+      "dtype": "UINT8",
+      "shape": [
+        320,
+        320
+      ],
+      "proposed_die": "die1",
+      "evidence": [
+        "proposed encoder block indices [2] from names; scheduling/graph cut must be verified"
+      ]
+    },
+    {
+      "graph": "encoder.ort",
+      "tensor": "val_239_scale",
+      "bytes": 1280,
+      "dtype": "FLOAT32",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die1",
+      "evidence": [
+        "proposed encoder block indices [2] from names; scheduling/graph cut must be verified"
+      ]
+    },
+    {
+      "graph": "encoder.ort",
+      "tensor": "val_188_quantized",
+      "bytes": 102400,
+      "dtype": "UINT8",
+      "shape": [
+        320,
+        320
+      ],
+      "proposed_die": "die1",
+      "evidence": [
+        "proposed encoder block indices [2] from names; scheduling/graph cut must be verified"
+      ]
+    },
+    {
+      "graph": "encoder.ort",
+      "tensor": "val_8",
+      "bytes": 8,
+      "dtype": "INT64",
+      "shape": [],
+      "proposed_die": "unresolved_encoder_shared",
+      "evidence": [
+        "proposed encoder block indices [] from names; scheduling/graph cut must be verified"
+      ]
+    },
+    {
+      "graph": "encoder.ort",
+      "tensor": "val_181_zero_point",
+      "bytes": 320,
+      "dtype": "UINT8",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die1",
+      "evidence": [
+        "proposed encoder block indices [2] from names; scheduling/graph cut must be verified"
+      ]
+    },
+    {
+      "graph": "encoder.ort",
+      "tensor": "val_270_quantized",
+      "bytes": 102400,
+      "dtype": "UINT8",
+      "shape": [
+        320,
+        320
+      ],
+      "proposed_die": "die2",
+      "evidence": [
+        "proposed encoder block indices [3] from names; scheduling/graph cut must be verified"
+      ]
+    },
+    {
+      "graph": "encoder.ort",
+      "tensor": "val_195_scale",
+      "bytes": 1280,
+      "dtype": "FLOAT32",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die1",
+      "evidence": [
+        "proposed encoder block indices [2] from names; scheduling/graph cut must be verified"
+      ]
+    },
+    {
+      "graph": "encoder.ort",
+      "tensor": "val_7",
+      "bytes": 8,
+      "dtype": "INT64",
+      "shape": [],
+      "proposed_die": "unresolved_encoder_shared",
+      "evidence": [
+        "proposed encoder block indices [] from names; scheduling/graph cut must be verified"
+      ]
+    },
+    {
+      "graph": "encoder.ort",
+      "tensor": "val_188_scale",
+      "bytes": 1280,
+      "dtype": "FLOAT32",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die1",
+      "evidence": [
+        "proposed encoder block indices [2] from names; scheduling/graph cut must be verified"
+      ]
+    },
+    {
+      "graph": "encoder.ort",
+      "tensor": "val_345_quantized",
+      "bytes": 102400,
+      "dtype": "UINT8",
+      "shape": [
+        320,
+        320
+      ],
+      "proposed_die": "die2",
+      "evidence": [
+        "proposed encoder block indices [4] from names; scheduling/graph cut must be verified"
+      ]
+    },
+    {
+      "graph": "encoder.ort",
+      "tensor": "val_254_quantized",
+      "bytes": 409600,
+      "dtype": "UINT8",
+      "shape": [
+        1280,
+        320
+      ],
+      "proposed_die": "die1",
+      "evidence": [
+        "proposed encoder block indices [2] from names; scheduling/graph cut must be verified"
+      ]
+    },
+    {
+      "graph": "encoder.ort",
+      "tensor": "blocks.3.ff.project_out.bias",
+      "bytes": 1280,
+      "dtype": "FLOAT32",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die2",
+      "evidence": [
+        "proposed encoder block indices [3] from names; scheduling/graph cut must be verified"
+      ]
+    },
+    {
+      "graph": "encoder.ort",
+      "tensor": "val_49",
+      "bytes": 8,
+      "dtype": "INT64",
+      "shape": [
+        1
+      ],
+      "proposed_die": "unresolved_encoder_shared",
+      "evidence": [
+        "proposed encoder block indices [] from names; scheduling/graph cut must be verified"
+      ]
+    },
+    {
+      "graph": "encoder.ort",
+      "tensor": "add_235",
+      "bytes": 1280,
+      "dtype": "FLOAT32",
+      "shape": [
+        320
+      ],
+      "proposed_die": "unresolved_encoder_shared",
+      "evidence": [
+        "proposed encoder block indices [] from names; scheduling/graph cut must be verified"
+      ]
+    },
+    {
+      "graph": "encoder.ort",
+      "tensor": "blocks.1.ff.project_in.0.bias",
+      "bytes": 5120,
+      "dtype": "FLOAT32",
+      "shape": [
+        1280
+      ],
+      "proposed_die": "die1",
+      "evidence": [
+        "proposed encoder block indices [1] from names; scheduling/graph cut must be verified"
+      ]
+    },
+    {
+      "graph": "encoder.ort",
+      "tensor": "val_171_zero_point",
+      "bytes": 320,
+      "dtype": "UINT8",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die1",
+      "evidence": [
+        "proposed encoder block indices [1] from names; scheduling/graph cut must be verified"
+      ]
+    },
+    {
+      "graph": "encoder.ort",
+      "tensor": "val_263_scale",
+      "bytes": 1280,
+      "dtype": "FLOAT32",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die2",
+      "evidence": [
+        "proposed encoder block indices [3] from names; scheduling/graph cut must be verified"
+      ]
+    },
+    {
+      "graph": "encoder.ort",
+      "tensor": "blocks.5.ff.project_in.0.bias",
+      "bytes": 5120,
+      "dtype": "FLOAT32",
+      "shape": [
+        1280
+      ],
+      "proposed_die": "die2",
+      "evidence": [
+        "proposed encoder block indices [5] from names; scheduling/graph cut must be verified"
+      ]
+    },
+    {
+      "graph": "encoder.ort",
+      "tensor": "val_359_quantized",
+      "bytes": 102400,
+      "dtype": "UINT8",
+      "shape": [
+        320,
+        320
+      ],
+      "proposed_die": "die2",
+      "evidence": [
+        "proposed encoder block indices [4] from names; scheduling/graph cut must be verified"
+      ]
+    },
+    {
+      "graph": "encoder.ort",
+      "tensor": "val_171_scale",
+      "bytes": 1280,
+      "dtype": "FLOAT32",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die1",
+      "evidence": [
+        "proposed encoder block indices [1] from names; scheduling/graph cut must be verified"
+      ]
+    },
+    {
+      "graph": "encoder.ort",
+      "tensor": "val_270_scale",
+      "bytes": 1280,
+      "dtype": "FLOAT32",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die2",
+      "evidence": [
+        "proposed encoder block indices [3] from names; scheduling/graph cut must be verified"
+      ]
+    },
+    {
+      "graph": "encoder.ort",
+      "tensor": "blocks.5.ff.project_out.bias",
+      "bytes": 1280,
+      "dtype": "FLOAT32",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die2",
+      "evidence": [
+        "proposed encoder block indices [5] from names; scheduling/graph cut must be verified"
+      ]
+    },
+    {
+      "graph": "encoder.ort",
+      "tensor": "val_441_quantized",
+      "bytes": 102400,
+      "dtype": "UINT8",
+      "shape": [
+        320,
+        320
+      ],
+      "proposed_die": "die2",
+      "evidence": [
+        "proposed encoder block indices [5] from names; scheduling/graph cut must be verified"
+      ]
+    },
+    {
+      "graph": "encoder.ort",
+      "tensor": "val_263_quantized",
+      "bytes": 102400,
+      "dtype": "UINT8",
+      "shape": [
+        320,
+        320
+      ],
+      "proposed_die": "die2",
+      "evidence": [
+        "proposed encoder block indices [3] from names; scheduling/graph cut must be verified"
+      ]
+    },
+    {
+      "graph": "encoder.ort",
+      "tensor": "val_181_quantized",
+      "bytes": 102400,
+      "dtype": "UINT8",
+      "shape": [
+        320,
+        320
+      ],
+      "proposed_die": "die1",
+      "evidence": [
+        "proposed encoder block indices [2] from names; scheduling/graph cut must be verified"
+      ]
+    },
+    {
+      "graph": "encoder.ort",
+      "tensor": "val_28_zero_point",
+      "bytes": 320,
+      "dtype": "UINT8",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die1",
+      "evidence": [
+        "proposed encoder block indices [0] from names; scheduling/graph cut must be verified"
+      ]
+    },
+    {
+      "graph": "encoder.ort",
+      "tensor": "val_162_quantized",
+      "bytes": 409600,
+      "dtype": "UINT8",
+      "shape": [
+        320,
+        1280
+      ],
+      "proposed_die": "die1",
+      "evidence": [
+        "proposed encoder block indices [1] from names; scheduling/graph cut must be verified"
+      ]
+    },
+    {
+      "graph": "encoder.ort",
+      "tensor": "val_28_quantized",
+      "bytes": 102400,
+      "dtype": "UINT8",
+      "shape": [
+        320,
+        320
+      ],
+      "proposed_die": "die1",
+      "evidence": [
+        "proposed encoder block indices [0] from names; scheduling/graph cut must be verified"
+      ]
+    },
+    {
+      "graph": "encoder.ort",
+      "tensor": "val_254_zero_point",
+      "bytes": 320,
+      "dtype": "UINT8",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die1",
+      "evidence": [
+        "proposed encoder block indices [2] from names; scheduling/graph cut must be verified"
+      ]
+    },
+    {
+      "graph": "encoder.ort",
+      "tensor": "add_190",
+      "bytes": 1280,
+      "dtype": "FLOAT32",
+      "shape": [
+        320
+      ],
+      "proposed_die": "unresolved_encoder_shared",
+      "evidence": [
+        "proposed encoder block indices [] from names; scheduling/graph cut must be verified"
+      ]
+    },
+    {
+      "graph": "encoder.ort",
+      "tensor": "val_85",
+      "bytes": 4,
+      "dtype": "FLOAT32",
+      "shape": [],
+      "proposed_die": "unresolved_encoder_shared",
+      "evidence": [
+        "proposed encoder block indices [] from names; scheduling/graph cut must be verified"
+      ]
+    },
+    {
+      "graph": "encoder.ort",
+      "tensor": "val_188_zero_point",
+      "bytes": 320,
+      "dtype": "UINT8",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die1",
+      "evidence": [
+        "proposed encoder block indices [2] from names; scheduling/graph cut must be verified"
+      ]
+    },
+    {
+      "graph": "encoder.ort",
+      "tensor": "blocks.1.ff.project_out.bias",
+      "bytes": 1280,
+      "dtype": "FLOAT32",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die1",
+      "evidence": [
+        "proposed encoder block indices [1] from names; scheduling/graph cut must be verified"
+      ]
+    },
+    {
+      "graph": "encoder.ort",
+      "tensor": "val_336_quantized",
+      "bytes": 409600,
+      "dtype": "UINT8",
+      "shape": [
+        1280,
+        320
+      ],
+      "proposed_die": "die2",
+      "evidence": [
+        "proposed encoder block indices [3] from names; scheduling/graph cut must be verified"
+      ]
+    },
+    {
+      "graph": "encoder.ort",
+      "tensor": "val_156_zero_point",
+      "bytes": 320,
+      "dtype": "UINT8",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die1",
+      "evidence": [
+        "proposed encoder block indices [1] from names; scheduling/graph cut must be verified"
+      ]
+    },
+    {
+      "graph": "encoder.ort",
+      "tensor": "const_transpose_optimizer_token_8",
+      "bytes": 32,
+      "dtype": "INT64",
+      "shape": [
+        4
+      ],
+      "proposed_die": "unresolved_encoder_shared",
+      "evidence": [
+        "proposed encoder block indices [] from names; scheduling/graph cut must be verified"
+      ]
+    },
+    {
+      "graph": "encoder.ort",
+      "tensor": "val_112_scale",
+      "bytes": 1280,
+      "dtype": "FLOAT32",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die1",
+      "evidence": [
+        "proposed encoder block indices [1] from names; scheduling/graph cut must be verified"
+      ]
+    },
+    {
+      "graph": "encoder.ort",
+      "tensor": "val_321_scale",
+      "bytes": 1280,
+      "dtype": "FLOAT32",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die2",
+      "evidence": [
+        "proposed encoder block indices [3] from names; scheduling/graph cut must be verified"
+      ]
+    },
+    {
+      "graph": "encoder.ort",
+      "tensor": "val_87",
+      "bytes": 4,
+      "dtype": "FLOAT32",
+      "shape": [],
+      "proposed_die": "unresolved_encoder_shared",
+      "evidence": [
+        "proposed encoder block indices [] from names; scheduling/graph cut must be verified"
+      ]
+    },
+    {
+      "graph": "encoder.ort",
+      "tensor": "val_156_scale",
+      "bytes": 1280,
+      "dtype": "FLOAT32",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die1",
+      "evidence": [
+        "proposed encoder block indices [1] from names; scheduling/graph cut must be verified"
+      ]
+    },
+    {
+      "graph": "encoder.ort",
+      "tensor": "val_98_zero_point",
+      "bytes": 320,
+      "dtype": "UINT8",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die1",
+      "evidence": [
+        "proposed encoder block indices [1] from names; scheduling/graph cut must be verified"
+      ]
+    },
+    {
+      "graph": "encoder.ort",
+      "tensor": "val_239_zero_point",
+      "bytes": 320,
+      "dtype": "UINT8",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die1",
+      "evidence": [
+        "proposed encoder block indices [2] from names; scheduling/graph cut must be verified"
+      ]
+    },
+    {
+      "graph": "encoder.ort",
+      "tensor": "val_80_zero_point",
+      "bytes": 1280,
+      "dtype": "UINT8",
+      "shape": [
+        1280
+      ],
+      "proposed_die": "die1",
+      "evidence": [
+        "proposed encoder block indices [0] from names; scheduling/graph cut must be verified"
+      ]
+    },
+    {
+      "graph": "encoder.ort",
+      "tensor": "val_105_scale",
+      "bytes": 1280,
+      "dtype": "FLOAT32",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die1",
+      "evidence": [
+        "proposed encoder block indices [1] from names; scheduling/graph cut must be verified"
+      ]
+    },
+    {
+      "graph": "encoder.ort",
+      "tensor": "blocks.0.ff.project_out.bias",
+      "bytes": 1280,
+      "dtype": "FLOAT32",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die1",
+      "evidence": [
+        "proposed encoder block indices [0] from names; scheduling/graph cut must be verified"
+      ]
+    },
+    {
+      "graph": "encoder.ort",
+      "tensor": "val_112_quantized",
+      "bytes": 102400,
+      "dtype": "UINT8",
+      "shape": [
+        320,
+        320
+      ],
+      "proposed_die": "die1",
+      "evidence": [
+        "proposed encoder block indices [1] from names; scheduling/graph cut must be verified"
+      ]
+    },
+    {
+      "graph": "encoder.ort",
+      "tensor": "val_14_quantized",
+      "bytes": 102400,
+      "dtype": "UINT8",
+      "shape": [
+        320,
+        320
+      ],
+      "proposed_die": "die1",
+      "evidence": [
+        "proposed encoder block indices [0] from names; scheduling/graph cut must be verified"
+      ]
+    },
+    {
+      "graph": "encoder.ort",
+      "tensor": "val_98_scale",
+      "bytes": 1280,
+      "dtype": "FLOAT32",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die1",
+      "evidence": [
+        "proposed encoder block indices [1] from names; scheduling/graph cut must be verified"
+      ]
+    },
+    {
+      "graph": "encoder.ort",
+      "tensor": "val_434_zero_point",
+      "bytes": 320,
+      "dtype": "UINT8",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die2",
+      "evidence": [
+        "proposed encoder block indices [5] from names; scheduling/graph cut must be verified"
+      ]
+    },
+    {
+      "graph": "encoder.ort",
+      "tensor": "val_352_scale",
+      "bytes": 1280,
+      "dtype": "FLOAT32",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die2",
+      "evidence": [
+        "proposed encoder block indices [4] from names; scheduling/graph cut must be verified"
+      ]
+    },
+    {
+      "graph": "encoder.ort",
+      "tensor": "blocks.2.ff.project_out.bias",
+      "bytes": 1280,
+      "dtype": "FLOAT32",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die1",
+      "evidence": [
+        "proposed encoder block indices [2] from names; scheduling/graph cut must be verified"
+      ]
+    },
+    {
+      "graph": "encoder.ort",
+      "tensor": "val_245_scale",
+      "bytes": 5120,
+      "dtype": "FLOAT32",
+      "shape": [
+        1280
+      ],
+      "proposed_die": "die1",
+      "evidence": [
+        "proposed encoder block indices [2] from names; scheduling/graph cut must be verified"
+      ]
+    },
+    {
+      "graph": "encoder.ort",
+      "tensor": "val_327_quantized",
+      "bytes": 409600,
+      "dtype": "UINT8",
+      "shape": [
+        320,
+        1280
+      ],
+      "proposed_die": "die2",
+      "evidence": [
+        "proposed encoder block indices [3] from names; scheduling/graph cut must be verified"
+      ]
+    },
+    {
+      "graph": "encoder.ort",
+      "tensor": "add_340",
+      "bytes": 1280,
+      "dtype": "FLOAT32",
+      "shape": [
+        320
+      ],
+      "proposed_die": "unresolved_encoder_shared",
+      "evidence": [
+        "proposed encoder block indices [] from names; scheduling/graph cut must be verified"
+      ]
+    },
+    {
+      "graph": "encoder.ort",
+      "tensor": "val_89_scale",
+      "bytes": 1280,
+      "dtype": "FLOAT32",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die1",
+      "evidence": [
+        "proposed encoder block indices [0] from names; scheduling/graph cut must be verified"
+      ]
+    },
+    {
+      "graph": "encoder.ort",
+      "tensor": "val_105_quantized",
+      "bytes": 102400,
+      "dtype": "UINT8",
+      "shape": [
+        320,
+        320
+      ],
+      "proposed_die": "die1",
+      "evidence": [
+        "proposed encoder block indices [1] from names; scheduling/graph cut must be verified"
+      ]
+    },
+    {
+      "graph": "encoder.ort",
+      "tensor": "val_403_scale",
+      "bytes": 1280,
+      "dtype": "FLOAT32",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die2",
+      "evidence": [
+        "proposed encoder block indices [4] from names; scheduling/graph cut must be verified"
+      ]
+    },
+    {
+      "graph": "encoder.ort",
+      "tensor": "val_2",
+      "bytes": 8,
+      "dtype": "INT64",
+      "shape": [],
+      "proposed_die": "unresolved_encoder_shared",
+      "evidence": [
+        "proposed encoder block indices [] from names; scheduling/graph cut must be verified"
+      ]
+    },
+    {
+      "graph": "encoder.ort",
+      "tensor": "val_98_quantized",
+      "bytes": 102400,
+      "dtype": "UINT8",
+      "shape": [
+        320,
+        320
+      ],
+      "proposed_die": "die1",
+      "evidence": [
+        "proposed encoder block indices [1] from names; scheduling/graph cut must be verified"
+      ]
+    },
+    {
+      "graph": "encoder.ort",
+      "tensor": "blocks.0.ff.project_in.0.bias",
+      "bytes": 5120,
+      "dtype": "FLOAT32",
+      "shape": [
+        1280
+      ],
+      "proposed_die": "die1",
+      "evidence": [
+        "proposed encoder block indices [0] from names; scheduling/graph cut must be verified"
+      ]
+    },
+    {
+      "graph": "encoder.ort",
+      "tensor": "clone",
+      "bytes": 4,
+      "dtype": "FLOAT32",
+      "shape": [],
+      "proposed_die": "unresolved_encoder_shared",
+      "evidence": [
+        "proposed encoder block indices [] from names; scheduling/graph cut must be verified"
+      ]
+    },
+    {
+      "graph": "encoder.ort",
+      "tensor": "val_427_zero_point",
+      "bytes": 320,
+      "dtype": "UINT8",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die2",
+      "evidence": [
+        "proposed encoder block indices [5] from names; scheduling/graph cut must be verified"
+      ]
+    },
+    {
+      "graph": "encoder.ort",
+      "tensor": "val_80_quantized",
+      "bytes": 409600,
+      "dtype": "UINT8",
+      "shape": [
+        320,
+        1280
+      ],
+      "proposed_die": "die1",
+      "evidence": [
+        "proposed encoder block indices [0] from names; scheduling/graph cut must be verified"
+      ]
+    },
+    {
+      "graph": "encoder.ort",
+      "tensor": "val_80_scale",
+      "bytes": 5120,
+      "dtype": "FLOAT32",
+      "shape": [
+        1280
+      ],
+      "proposed_die": "die1",
+      "evidence": [
+        "proposed encoder block indices [0] from names; scheduling/graph cut must be verified"
+      ]
+    },
+    {
+      "graph": "encoder.ort",
+      "tensor": "val_74_zero_point",
+      "bytes": 320,
+      "dtype": "UINT8",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die1",
+      "evidence": [
+        "proposed encoder block indices [0] from names; scheduling/graph cut must be verified"
+      ]
+    },
+    {
+      "graph": "encoder.ort",
+      "tensor": "val_105_zero_point",
+      "bytes": 320,
+      "dtype": "UINT8",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die1",
+      "evidence": [
+        "proposed encoder block indices [1] from names; scheduling/graph cut must be verified"
+      ]
+    },
+    {
+      "graph": "encoder.ort",
+      "tensor": "val_74_scale",
+      "bytes": 1280,
+      "dtype": "FLOAT32",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die1",
+      "evidence": [
+        "proposed encoder block indices [0] from names; scheduling/graph cut must be verified"
+      ]
+    },
+    {
+      "graph": "encoder.ort",
+      "tensor": "add_610",
+      "bytes": 1280,
+      "dtype": "FLOAT32",
+      "shape": [
+        320
+      ],
+      "proposed_die": "unresolved_encoder_shared",
+      "evidence": [
+        "proposed encoder block indices [] from names; scheduling/graph cut must be verified"
+      ]
+    },
+    {
+      "graph": "encoder.ort",
+      "tensor": "val_74_quantized",
+      "bytes": 102400,
+      "dtype": "UINT8",
+      "shape": [
+        320,
+        320
+      ],
+      "proposed_die": "die1",
+      "evidence": [
+        "proposed encoder block indices [0] from names; scheduling/graph cut must be verified"
+      ]
+    },
+    {
+      "graph": "encoder.ort",
+      "tensor": "val_156_quantized",
+      "bytes": 102400,
+      "dtype": "UINT8",
+      "shape": [
+        320,
+        320
+      ],
+      "proposed_die": "die1",
+      "evidence": [
+        "proposed encoder block indices [1] from names; scheduling/graph cut must be verified"
+      ]
+    },
+    {
+      "graph": "encoder.ort",
+      "tensor": "zeros",
+      "bytes": 4,
+      "dtype": "FLOAT32",
+      "shape": [
+        1
+      ],
+      "proposed_die": "unresolved_encoder_shared",
+      "evidence": [
+        "proposed encoder block indices [] from names; scheduling/graph cut must be verified"
+      ]
+    },
+    {
+      "graph": "encoder.ort",
+      "tensor": "add_445",
+      "bytes": 1280,
+      "dtype": "FLOAT32",
+      "shape": [
+        320
+      ],
+      "proposed_die": "unresolved_encoder_shared",
+      "evidence": [
+        "proposed encoder block indices [] from names; scheduling/graph cut must be verified"
+      ]
+    },
+    {
+      "graph": "encoder.ort",
+      "tensor": "add_130",
+      "bytes": 1280,
+      "dtype": "FLOAT32",
+      "shape": [
+        320
+      ],
+      "proposed_die": "unresolved_encoder_shared",
+      "evidence": [
+        "proposed encoder block indices [] from names; scheduling/graph cut must be verified"
+      ]
+    },
+    {
+      "graph": "encoder.ort",
+      "tensor": "val_11",
+      "bytes": 1280,
+      "dtype": "FLOAT32",
+      "shape": [
+        320
+      ],
+      "proposed_die": "unresolved_encoder_shared",
+      "evidence": [
+        "proposed encoder block indices [] from names; scheduling/graph cut must be verified"
+      ]
+    },
+    {
+      "graph": "encoder.ort",
+      "tensor": "val_5",
+      "bytes": 8,
+      "dtype": "INT64",
+      "shape": [
+        1
+      ],
+      "proposed_die": "unresolved_encoder_shared",
+      "evidence": [
+        "proposed encoder block indices [] from names; scheduling/graph cut must be verified"
+      ]
+    },
+    {
+      "graph": "encoder.ort",
+      "tensor": "add_295",
+      "bytes": 1280,
+      "dtype": "FLOAT32",
+      "shape": [
+        320
+      ],
+      "proposed_die": "unresolved_encoder_shared",
+      "evidence": [
+        "proposed encoder block indices [] from names; scheduling/graph cut must be verified"
+      ]
+    },
+    {
+      "graph": "encoder.ort",
+      "tensor": "val_21_zero_point",
+      "bytes": 320,
+      "dtype": "UINT8",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die1",
+      "evidence": [
+        "proposed encoder block indices [0] from names; scheduling/graph cut must be verified"
+      ]
+    },
+    {
+      "graph": "encoder.ort",
+      "tensor": "val_21_scale",
+      "bytes": 1280,
+      "dtype": "FLOAT32",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die1",
+      "evidence": [
+        "proposed encoder block indices [0] from names; scheduling/graph cut must be verified"
+      ]
+    },
+    {
+      "graph": "encoder.ort",
+      "tensor": "val_50",
+      "bytes": 8,
+      "dtype": "INT64",
+      "shape": [
+        1
+      ],
+      "proposed_die": "unresolved_encoder_shared",
+      "evidence": [
+        "proposed encoder block indices [] from names; scheduling/graph cut must be verified"
+      ]
+    },
+    {
+      "graph": "encoder.ort",
+      "tensor": "add_25",
+      "bytes": 1280,
+      "dtype": "FLOAT32",
+      "shape": [
+        320
+      ],
+      "proposed_die": "unresolved_encoder_shared",
+      "evidence": [
+        "proposed encoder block indices [] from names; scheduling/graph cut must be verified"
+      ]
+    },
+    {
+      "graph": "encoder.ort",
+      "tensor": "val_28_scale",
+      "bytes": 1280,
+      "dtype": "FLOAT32",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die1",
+      "evidence": [
+        "proposed encoder block indices [0] from names; scheduling/graph cut must be verified"
+      ]
+    },
+    {
+      "graph": "encoder.ort",
+      "tensor": "val_245_zero_point",
+      "bytes": 1280,
+      "dtype": "UINT8",
+      "shape": [
+        1280
+      ],
+      "proposed_die": "die1",
+      "evidence": [
+        "proposed encoder block indices [2] from names; scheduling/graph cut must be verified"
+      ]
+    },
+    {
+      "graph": "encoder.ort",
+      "tensor": "val_6",
+      "bytes": 8,
+      "dtype": "INT64",
+      "shape": [
+        1
+      ],
+      "proposed_die": "unresolved_encoder_shared",
+      "evidence": [
+        "proposed encoder block indices [] from names; scheduling/graph cut must be verified"
+      ]
+    },
+    {
+      "graph": "encoder.ort",
+      "tensor": "val_239_quantized",
+      "bytes": 102400,
+      "dtype": "UINT8",
+      "shape": [
+        320,
+        320
+      ],
+      "proposed_die": "die1",
+      "evidence": [
+        "proposed encoder block indices [2] from names; scheduling/graph cut must be verified"
+      ]
+    },
+    {
+      "graph": "encoder.ort",
+      "tensor": "val_4",
+      "bytes": 8,
+      "dtype": "INT64",
+      "shape": [],
+      "proposed_die": "unresolved_encoder_shared",
+      "evidence": [
+        "proposed encoder block indices [] from names; scheduling/graph cut must be verified"
+      ]
+    },
+    {
+      "graph": "encoder.ort",
+      "tensor": "val_171_quantized",
+      "bytes": 409600,
+      "dtype": "UINT8",
+      "shape": [
+        1280,
+        320
+      ],
+      "proposed_die": "die1",
+      "evidence": [
+        "proposed encoder block indices [1] from names; scheduling/graph cut must be verified"
+      ]
+    },
+    {
+      "graph": "encoder.ort",
+      "tensor": "val_89_zero_point",
+      "bytes": 320,
+      "dtype": "UINT8",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die1",
+      "evidence": [
+        "proposed encoder block indices [0] from names; scheduling/graph cut must be verified"
+      ]
+    },
+    {
+      "graph": "encoder.ort",
+      "tensor": "val_500_zero_point",
+      "bytes": 320,
+      "dtype": "UINT8",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die2",
+      "evidence": [
+        "proposed encoder block indices [5] from names; scheduling/graph cut must be verified"
+      ]
+    },
+    {
+      "graph": "encoder.ort",
+      "tensor": "val_18",
+      "bytes": 8,
+      "dtype": "INT64",
+      "shape": [
+        1
+      ],
+      "proposed_die": "unresolved_encoder_shared",
+      "evidence": [
+        "proposed encoder block indices [] from names; scheduling/graph cut must be verified"
+      ]
+    },
+    {
+      "graph": "encoder.ort",
+      "tensor": "val_359_zero_point",
+      "bytes": 320,
+      "dtype": "UINT8",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die2",
+      "evidence": [
+        "proposed encoder block indices [4] from names; scheduling/graph cut must be verified"
+      ]
+    },
+    {
+      "graph": "encoder.ort",
+      "tensor": "val_112_zero_point",
+      "bytes": 320,
+      "dtype": "UINT8",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die1",
+      "evidence": [
+        "proposed encoder block indices [1] from names; scheduling/graph cut must be verified"
+      ]
+    },
+    {
+      "graph": "encoder.ort",
+      "tensor": "val_82",
+      "bytes": 4,
+      "dtype": "FLOAT32",
+      "shape": [],
+      "proposed_die": "unresolved_encoder_shared",
+      "evidence": [
+        "proposed encoder block indices [] from names; scheduling/graph cut must be verified"
+      ]
+    },
+    {
+      "graph": "encoder.ort",
+      "tensor": "val_52",
+      "bytes": 8,
+      "dtype": "INT64",
+      "shape": [
+        1
+      ],
+      "proposed_die": "unresolved_encoder_shared",
+      "evidence": [
+        "proposed encoder block indices [] from names; scheduling/graph cut must be verified"
+      ]
+    },
+    {
+      "graph": "encoder.ort",
+      "tensor": "val_270_zero_point",
+      "bytes": 320,
+      "dtype": "UINT8",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die2",
+      "evidence": [
+        "proposed encoder block indices [3] from names; scheduling/graph cut must be verified"
+      ]
+    },
+    {
+      "graph": "encoder.ort",
+      "tensor": "val_277_scale",
+      "bytes": 1280,
+      "dtype": "FLOAT32",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die2",
+      "evidence": [
+        "proposed encoder block indices [3] from names; scheduling/graph cut must be verified"
+      ]
+    },
+    {
+      "graph": "encoder.ort",
+      "tensor": "blocks.2.ff.project_in.0.bias",
+      "bytes": 5120,
+      "dtype": "FLOAT32",
+      "shape": [
+        1280
+      ],
+      "proposed_die": "die1",
+      "evidence": [
+        "proposed encoder block indices [2] from names; scheduling/graph cut must be verified"
+      ]
+    },
+    {
+      "graph": "encoder.ort",
+      "tensor": "val_72",
+      "bytes": 8,
+      "dtype": "INT64",
+      "shape": [
+        1
+      ],
+      "proposed_die": "unresolved_encoder_shared",
+      "evidence": [
+        "proposed encoder block indices [] from names; scheduling/graph cut must be verified"
+      ]
+    },
+    {
+      "graph": "encoder.ort",
+      "tensor": "val_89_quantized",
+      "bytes": 409600,
+      "dtype": "UINT8",
+      "shape": [
+        1280,
+        320
+      ],
+      "proposed_die": "die1",
+      "evidence": [
+        "proposed encoder block indices [0] from names; scheduling/graph cut must be verified"
+      ]
+    },
+    {
+      "graph": "encoder.ort",
+      "tensor": "val_418_scale",
+      "bytes": 1280,
+      "dtype": "FLOAT32",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die2",
+      "evidence": [
+        "proposed encoder block indices [4] from names; scheduling/graph cut must be verified"
+      ]
+    },
+    {
+      "graph": "encoder.ort",
+      "tensor": "val_409_scale",
+      "bytes": 5120,
+      "dtype": "FLOAT32",
+      "shape": [
+        1280
+      ],
+      "proposed_die": "die2",
+      "evidence": [
+        "proposed encoder block indices [4] from names; scheduling/graph cut must be verified"
+      ]
+    },
+    {
+      "graph": "encoder.ort",
+      "tensor": "val_195_zero_point",
+      "bytes": 320,
+      "dtype": "UINT8",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die1",
+      "evidence": [
+        "proposed encoder block indices [2] from names; scheduling/graph cut must be verified"
+      ]
+    },
+    {
+      "graph": "encoder.ort",
+      "tensor": "val_19",
+      "bytes": 8,
+      "dtype": "INT64",
+      "shape": [
+        1
+      ],
+      "proposed_die": "unresolved_encoder_shared",
+      "evidence": [
+        "proposed encoder block indices [] from names; scheduling/graph cut must be verified"
+      ]
+    },
+    {
+      "graph": "encoder.ort",
+      "tensor": "val_14_scale",
+      "bytes": 1280,
+      "dtype": "FLOAT32",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die1",
+      "evidence": [
+        "proposed encoder block indices [0] from names; scheduling/graph cut must be verified"
+      ]
+    },
+    {
+      "graph": "encoder.ort",
+      "tensor": "add_400",
+      "bytes": 1280,
+      "dtype": "FLOAT32",
+      "shape": [
+        320
+      ],
+      "proposed_die": "unresolved_encoder_shared",
+      "evidence": [
+        "proposed encoder block indices [] from names; scheduling/graph cut must be verified"
+      ]
+    },
+    {
+      "graph": "encoder.ort",
+      "tensor": "val_277_quantized",
+      "bytes": 102400,
+      "dtype": "UINT8",
+      "shape": [
+        320,
+        320
+      ],
+      "proposed_die": "die2",
+      "evidence": [
+        "proposed encoder block indices [3] from names; scheduling/graph cut must be verified"
+      ]
+    },
+    {
+      "graph": "encoder.ort",
+      "tensor": "val_327_zero_point",
+      "bytes": 1280,
+      "dtype": "UINT8",
+      "shape": [
+        1280
+      ],
+      "proposed_die": "die2",
+      "evidence": [
+        "proposed encoder block indices [3] from names; scheduling/graph cut must be verified"
+      ]
+    },
+    {
+      "graph": "encoder.ort",
+      "tensor": "val_21_quantized",
+      "bytes": 102400,
+      "dtype": "UINT8",
+      "shape": [
+        320,
+        320
+      ],
+      "proposed_die": "die1",
+      "evidence": [
+        "proposed encoder block indices [0] from names; scheduling/graph cut must be verified"
+      ]
+    },
+    {
+      "graph": "encoder.ort",
+      "tensor": "val_181_scale",
+      "bytes": 1280,
+      "dtype": "FLOAT32",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die1",
+      "evidence": [
+        "proposed encoder block indices [2] from names; scheduling/graph cut must be verified"
+      ]
+    },
+    {
+      "graph": "encoder.ort",
+      "tensor": "add_85",
+      "bytes": 1280,
+      "dtype": "FLOAT32",
+      "shape": [
+        320
+      ],
+      "proposed_die": "unresolved_encoder_shared",
+      "evidence": [
+        "proposed encoder block indices [] from names; scheduling/graph cut must be verified"
+      ]
+    },
+    {
+      "graph": "encoder.ort",
+      "tensor": "val_14_zero_point",
+      "bytes": 320,
+      "dtype": "UINT8",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die1",
+      "evidence": [
+        "proposed encoder block indices [0] from names; scheduling/graph cut must be verified"
+      ]
+    },
+    {
+      "graph": "frontend.model.ort",
+      "tensor": "sample_len_out",
+      "bytes": 8,
+      "dtype": "INT64",
+      "shape": [
+        1
+      ],
+      "proposed_die": "die1",
+      "evidence": [
+        "frontend graph"
+      ]
+    },
+    {
+      "graph": "frontend.model.ort",
+      "tensor": "conv1.conv.bias",
+      "bytes": 2560,
+      "dtype": "FLOAT32",
+      "shape": [
+        640
+      ],
+      "proposed_die": "die1",
+      "evidence": [
+        "frontend graph"
+      ]
+    },
+    {
+      "graph": "frontend.model.ort",
+      "tensor": "/Constant_15_output_0",
+      "bytes": 8,
+      "dtype": "INT64",
+      "shape": [
+        1
+      ],
+      "proposed_die": "die1",
+      "evidence": [
+        "frontend graph"
+      ]
+    },
+    {
+      "graph": "frontend.model.ort",
+      "tensor": "sample_buffer_out",
+      "bytes": 316,
+      "dtype": "FLOAT32",
+      "shape": [
+        1,
+        79
+      ],
+      "proposed_die": "die1",
+      "evidence": [
+        "frontend graph"
+      ]
+    },
+    {
+      "graph": "frontend.model.ort",
+      "tensor": "/cmvn/Constant_1_output_0",
+      "bytes": 4,
+      "dtype": "FLOAT32",
+      "shape": [],
+      "proposed_die": "die1",
+      "evidence": [
+        "frontend graph"
+      ]
+    },
+    {
+      "graph": "frontend.model.ort",
+      "tensor": "/Constant_7_output_0",
+      "bytes": 8,
+      "dtype": "INT64",
+      "shape": [],
+      "proposed_die": "die1",
+      "evidence": [
+        "frontend graph"
+      ]
+    },
+    {
+      "graph": "frontend.model.ort",
+      "tensor": "/cmvn/Constant_3_output_0",
+      "bytes": 4,
+      "dtype": "FLOAT32",
+      "shape": [],
+      "proposed_die": "die1",
+      "evidence": [
+        "frontend graph"
+      ]
+    },
+    {
+      "graph": "frontend.model.ort",
+      "tensor": "/Constant_21_output_0",
+      "bytes": 8,
+      "dtype": "INT64",
+      "shape": [
+        1
+      ],
+      "proposed_die": "die1",
+      "evidence": [
+        "frontend graph"
+      ]
+    },
+    {
+      "graph": "frontend.model.ort",
+      "tensor": "/Constant_20_output_0",
+      "bytes": 8,
+      "dtype": "INT64",
+      "shape": [
+        1
+      ],
+      "proposed_die": "die1",
+      "evidence": [
+        "frontend graph"
+      ]
+    },
+    {
+      "graph": "frontend.model.ort",
+      "tensor": "/cmvn/Constant_output_0",
+      "bytes": 8,
+      "dtype": "INT64",
+      "shape": [
+        1
+      ],
+      "proposed_die": "die1",
+      "evidence": [
+        "frontend graph"
+      ]
+    },
+    {
+      "graph": "frontend.model.ort",
+      "tensor": "/Concat_1_output_0",
+      "bytes": 24,
+      "dtype": "INT64",
+      "shape": [
+        3
+      ],
+      "proposed_die": "die1",
+      "evidence": [
+        "frontend graph"
+      ]
+    },
+    {
+      "graph": "frontend.model.ort",
+      "tensor": "conv2.conv.bias",
+      "bytes": 1280,
+      "dtype": "FLOAT32",
+      "shape": [
+        320
+      ],
+      "proposed_die": "die1",
+      "evidence": [
+        "frontend graph"
+      ]
+    },
+    {
+      "graph": "frontend.model.ort",
+      "tensor": "/Constant_output_0",
+      "bytes": 8,
+      "dtype": "INT64",
+      "shape": [],
+      "proposed_die": "die1",
+      "evidence": [
+        "frontend graph"
+      ]
+    },
+    {
+      "graph": "frontend.model.ort",
+      "tensor": "/Constant_1_output_0",
+      "bytes": 8,
+      "dtype": "INT64",
+      "shape": [],
+      "proposed_die": "die1",
+      "evidence": [
+        "frontend graph"
+      ]
+    },
+    {
+      "graph": "frontend.model.ort",
+      "tensor": "/comp/Exp_output_0",
+      "bytes": 4,
+      "dtype": "FLOAT32",
+      "shape": [],
+      "proposed_die": "die1",
+      "evidence": [
+        "frontend graph"
+      ]
+    },
+    {
+      "graph": "frontend.model.ort",
+      "tensor": "/Constant_5_output_0",
+      "bytes": 8,
+      "dtype": "INT64",
+      "shape": [
+        1
+      ],
+      "proposed_die": "die1",
+      "evidence": [
+        "frontend graph"
+      ]
+    },
+    {
+      "graph": "frontend.model.ort",
+      "tensor": "/Constant_6_output_0",
+      "bytes": 8,
+      "dtype": "INT64",
+      "shape": [],
+      "proposed_die": "die1",
+      "evidence": [
+        "frontend graph"
+      ]
+    },
+    {
+      "graph": "frontend.model.ort",
+      "tensor": "onnx::Unsqueeze_55",
+      "bytes": 8,
+      "dtype": "INT64",
+      "shape": [
+        1
+      ],
+      "proposed_die": "die1",
+      "evidence": [
+        "frontend graph"
+      ]
+    },
+    {
+      "graph": "frontend.weights.ort",
+      "tensor": "/weight/weight.0_1/Mul_output_0_zero_point",
+      "bytes": 2560,
+      "dtype": "FLOAT32",
+      "shape": [
+        1,
+        640,
+        1
+      ],
+      "proposed_die": "die1",
+      "evidence": [
+        "frontend graph"
+      ]
+    },
+    {
+      "graph": "frontend.weights.ort",
+      "tensor": "onnx::MatMul_128_add_tensor_zero_point",
+      "bytes": 1280,
+      "dtype": "FLOAT32",
+      "shape": [
+        1,
+        320
+      ],
+      "proposed_die": "die1",
+      "evidence": [
+        "frontend graph"
+      ]
+    },
+    {
+      "graph": "frontend.weights.ort",
+      "tensor": "/weight/weight.0/Mul_output_0_quantized",
+      "bytes": 1024000,
+      "dtype": "INT8",
+      "shape": [
+        640,
+        320,
+        5
+      ],
+      "proposed_die": "die1",
+      "evidence": [
+        "frontend graph"
+      ]
+    },
+    {
+      "graph": "frontend.weights.ort",
+      "tensor": "/weight/weight.0/Mul_output_0_scale",
+      "bytes": 2560,
+      "dtype": "FLOAT32",
+      "shape": [
+        640,
+        1,
+        1
+      ],
+      "proposed_die": "die1",
+      "evidence": [
+        "frontend graph"
+      ]
+    },
+    {
+      "graph": "frontend.weights.ort",
+      "tensor": "onnx::MatMul_128_add_tensor_scale",
+      "bytes": 1280,
+      "dtype": "FLOAT32",
+      "shape": [
+        1,
+        320
+      ],
+      "proposed_die": "die1",
+      "evidence": [
+        "frontend graph"
+      ]
+    },
+    {
+      "graph": "frontend.weights.ort",
+      "tensor": "/weight/weight.0_1/Mul_output_0_scale",
+      "bytes": 2560,
+      "dtype": "FLOAT32",
+      "shape": [
+        1,
+        640,
+        1
+      ],
+      "proposed_die": "die1",
+      "evidence": [
+        "frontend graph"
+      ]
+    },
+    {
+      "graph": "frontend.weights.ort",
+      "tensor": "/weight/weight.0_1/Mul_output_0_quantized",
+      "bytes": 1024000,
+      "dtype": "INT8",
+      "shape": [
+        320,
+        640,
+        5
+      ],
+      "proposed_die": "die1",
+      "evidence": [
+        "frontend graph"
+      ]
+    },
+    {
+      "graph": "frontend.weights.ort",
+      "tensor": "/weight/weight.0/Mul_output_0_zero_point",
+      "bytes": 2560,
+      "dtype": "FLOAT32",
+      "shape": [
+        640,
+        1,
+        1
+      ],
+      "proposed_die": "die1",
+      "evidence": [
+        "frontend graph"
+      ]
+    },
+    {
+      "graph": "frontend.weights.ort",
+      "tensor": "onnx::MatMul_128_add_tensor_quantized",
+      "bytes": 25600,
+      "dtype": "INT8",
+      "shape": [
+        80,
+        320
+      ],
+      "proposed_die": "die1",
+      "evidence": [
+        "frontend graph"
+      ]
+    }
+  ],
+  "interface_candidates": {
+    "encoder_boundary_fp32_payload_bps": 512000,
+    "encoder_boundary_int8_payload_bps_if_validated": 128000,
+    "excludes": "framing, scheduling, retransmission and control overhead"
+  },
+  "cache_examples": {
+    "fp32_self_kv_bytes_per_token": 15360,
+    "fp32_self_kv_bytes_at_100_tokens": 1536000,
+    "fp32_cross_kv_bytes_at_80_steps": 1228800,
+    "note": "Examples, not configured bounds or complete SRAM allocation"
+  },
+  "power_watts": null,
+  "silicon_area_mm2": null
+}

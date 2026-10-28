@@ -1,0 +1,4 @@
+{
+  "reason": "Mapped-engine netlist intentionally omits standard-cell supply ports until PDN. Linter generated huge PINMISSING warnings per cell. Terminated only W8 linter PID10334; retain first run. Next run disables only PINMISSING, retaining other lint.",
+  "classification": "flow-configuration failure, not circuit pass"
+}

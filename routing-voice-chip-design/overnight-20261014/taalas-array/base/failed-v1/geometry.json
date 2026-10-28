@@ -1,0 +1,48 @@
+{
+  "status": "cell_array_only",
+  "original_generator_sha256": "618d9ca19a6c3349eb70ba6c280a2ece9836d8da6395d3e368b00db666626f96",
+  "tile_count": 20,
+  "rows_per_tile": 64,
+  "lanes": 320,
+  "bits_per_lane": 4,
+  "tile_bit_cells": 81920,
+  "total_selections": 409600,
+  "total_bit_cells": 1638400,
+  "tile_bounds_um": [
+    0.31,
+    0.5,
+    926.0,
+    108.21000000000001
+  ],
+  "tile_dimensions_um": [
+    925.69,
+    107.71000000000001
+  ],
+  "tile_area_um2": 99706.06990000002,
+  "cell_only_um2_per_selection": 4.8684604443359385,
+  "sum_tile_area_um2": 1994121.3980000005,
+  "composition_dimensions_um": [
+    928.528,
+    108.22200000000001
+  ],
+  "composition_area_um2": 100487.157216,
+  "layout_to_bits": {
+    "compared_bits": 1638400,
+    "mismatches": 0,
+    "decoded_indices_sha256": "ba628b676d59721c268868d6720be1f58a4f8d4edfd9a26009403c9a8c4fce8e",
+    "method": "reopened GDS recursive Via1 polygon center membership at actual drain sites; independent of mask cell names"
+  },
+  "exclusions": [
+    "decoder",
+    "wordline and precharge drivers",
+    "precharge/sense/keeper",
+    "output latches",
+    "bank-selection mux",
+    "intertile wiring",
+    "PDN"
+  ],
+  "sha256": {
+    "tile0.gds": "bf6410c7352df37f71b0d02fc01d11e731e649b19aeac1b8b8c72f337e51b93f",
+    "array-core.gds": "28f00515baa6b1c06d4ac0a200616630189badebd8d6cfe2574682f820fa58bb"
+  }
+}

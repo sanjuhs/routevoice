@@ -1,0 +1,16 @@
+{
+  "stage": "unit-position",
+  "command": [
+    "/usr/bin/nice",
+    "-n",
+    "10",
+    "/opt/homebrew/bin/vvp",
+    "/Users/sanju/.local/state/routevoice-internal-runs/20261014/onchip-front/position.vvp"
+  ],
+  "cwd": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design",
+  "log": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/onchip-front/logs/20261014T010518-unit-position.log",
+  "started": "20261014T010518",
+  "exit_code": 0,
+  "pid": 15685,
+  "elapsed_seconds": 0.07731650001369417
+}

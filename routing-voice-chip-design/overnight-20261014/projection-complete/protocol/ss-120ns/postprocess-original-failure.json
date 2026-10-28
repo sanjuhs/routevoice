@@ -1,0 +1,5 @@
+{
+  "error": "Object of type bool is not JSON serializable",
+  "scope": "Reproduced original analyzer JSON serialization failure on retained completed trace; nativeSPICE complete; no native rerun",
+  "fix": "Convert numpy scalar via.item only at JSON serialization boundary; circuit, trace, analysis unchanged"
+}

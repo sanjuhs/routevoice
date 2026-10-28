@@ -1,0 +1,7 @@
+{
+  "stage": "prepare_credible.py first launch",
+  "failure": "SyntaxError: missing whitespace in conditional else32; subsequent shell line attempted OpenROAD before generation, which failed on missing Tcl. No layout result credited.",
+  "correction": "Fixed conditional syntax, generated all five cases, preflight Tcl existence added to runner.",
+  "log": "logs/credible_initial_missing_tcl.log",
+  "second_preparation_failure": "During addition of the book digital-access allowance, first versioned generation had KeyError pitch1280 after changing config key to pitch1280v2. Corrected all generator references before final EDA launch; no physical result credited."
+}

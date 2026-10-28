@@ -1,0 +1,28 @@
+{
+  "stage": "render",
+  "command": [
+    "/usr/bin/nice",
+    "-n",
+    "10",
+    "/usr/bin/env",
+    "DYLD_LIBRARY_PATH=/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/render-libs",
+    "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/.venv/bin/python",
+    "-I",
+    "-B",
+    "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/scripts/chip_integration_20261011_render_tokens_v1.py",
+    "--renderer",
+    "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/render/renderer",
+    "--tokenizer",
+    "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/render/tokenizer",
+    "--tokens",
+    "/Users/sanju/.local/state/routevoice-internal-runs/20261014/onchip-enc/actual/actual-winning-tokens.bin",
+    "--expected-text",
+    "Switch on the lights"
+  ],
+  "cwd": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design",
+  "log": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/onchip-enc/logs/20261014T020810-render.log",
+  "started": "20261014T020810",
+  "exit_code": 0,
+  "pid": 45050,
+  "elapsed_seconds": 0.13287879107519984
+}

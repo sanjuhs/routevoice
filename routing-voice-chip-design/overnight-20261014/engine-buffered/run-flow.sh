@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+set -uo pipefail
+. /nix/var/nix/profiles/default/etc/profile.d/nix.sh
+export NIX_REMOTE=local NIX_BUILD_SHELL=/bin/bash
+W=/workspace/rv/overnight-20261014/engine-buffered
+cd "$W"
+mkdir -p tmp logs evidence
+nix-shell /workspace/rv/tools/librelane/shell.nix --run "export TMPDIR=$W/tmp OMP_NUM_THREADS=12 OPENBLAS_NUM_THREADS=1 PYTHONDONTWRITEBYTECODE=1; librelane --manual-pdk --pdk gf180mcuD --pdk-root /workspace/rv/overnight-20261014/fabric-k64/pdks --design-dir $W --run-tag buf-v1 --jobs 12 $W/configs/array_port_buf.json" > logs/flow-buf-v1.log 2>&1
+rc=$?
+echo "$rc" > evidence/flow-buf-v1.exit
+echo "W9-STATUS: flow buf-v1 exited $rc" >> logs/flow-buf-v1.log
+exit "$rc"

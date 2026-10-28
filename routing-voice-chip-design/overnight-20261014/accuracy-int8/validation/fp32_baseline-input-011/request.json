@@ -1,0 +1,50 @@
+{
+  "id": "5536-43363-0015",
+  "role": "validation",
+  "condition": "white_noise_10db",
+  "seed": null,
+  "reference": "FIVE YEARS LATER HE REPEATED THE SERVICE AND AGAIN SAVED HIS PEOPLE FROM AWFUL SLAUGHTER",
+  "signal_file": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/accuracy-int8/inputs/input-011.npy",
+  "signal_file_sha256": "7a9f1f348ee83717f65d698af2746da32bb38457cd129d2249905c5700ebb9d6",
+  "input_float32_sha256": "bb761609475ebf8f350e81599481254a93c64971b2555c5eeeb0fd881c5e2072",
+  "case_id": "fp32_baseline-input-011",
+  "model": "fp32_baseline",
+  "model_directory": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/models/candidates/codebook-4bit-optimal-rectangular-k64",
+  "model_files": [
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/models/candidates/codebook-4bit-optimal-rectangular-k64/adapter.ort",
+      "sha256": "45df26581a00156f97a75d8f3a6efe9c4206a0ab9dd5b09b69419d489586d050"
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/models/candidates/codebook-4bit-optimal-rectangular-k64/cross_kv.ort",
+      "sha256": "a71065382d252270cee8fb57835a66cf5327297bcfe4f9a4180c5e71f636ed95"
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/models/candidates/codebook-4bit-optimal-rectangular-k64/decoder_kv.ort",
+      "sha256": "d4e358b41d3dea5d4e1eed95f01da79e36f631e32c2c114e27f269fa74e2d5f7"
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/models/candidates/codebook-4bit-optimal-rectangular-k64/encoder.ort",
+      "sha256": "34c9568cface06242b3b215c4bce01f3b48144e53342addc1c3d5c3603e72ffc"
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/models/candidates/codebook-4bit-optimal-rectangular-k64/frontend.model.ort",
+      "sha256": "5121b561417b638afce0c6c31b760e37c93cf97f80d9b0031aad1fe7b6f25d61"
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/models/candidates/codebook-4bit-optimal-rectangular-k64/frontend.weights.ort",
+      "sha256": "217da24ac6f522ebf02da8ef288e77d1ac68d50d4a6821433182e4fbf4204bbd"
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/models/candidates/codebook-4bit-optimal-rectangular-k64/streaming_config.json",
+      "sha256": "74fe5ddebd63b17caf59e8a3b18c17547ff7bce1642050edbb1c3962674f8950"
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/models/candidates/codebook-4bit-optimal-rectangular-k64/tokenizer.bin",
+      "sha256": "6884b35fd6377d4c4d32336a0bc152f36b64d1e45b6503683cdc238250a8472d"
+    }
+  ],
+  "native_library_sha256": "1453a6c1c9072f3d05e9e5ae6ff423fae839e56631c5efb12bbd5c0280d04399",
+  "trace": false,
+  "save_returned_pcm": false
+}

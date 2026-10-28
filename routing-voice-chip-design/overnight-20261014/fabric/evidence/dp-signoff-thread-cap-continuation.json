@@ -1,0 +1,29 @@
+{
+  "purpose": "Resume after successful global routing with explicit KLayout thread caps, retaining original run deadline.",
+  "original_outcome": {
+    "command": [
+      "bash",
+      "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/run_flow.sh",
+      "rv_fixed_proj320_dp",
+      "route200"
+    ],
+    "log": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/logs/rv_fixed_proj320_dp-route200.flow.log",
+    "exit_code": 143,
+    "stop_reason": null,
+    "elapsed_seconds": 6819.580605983734,
+    "minimum_free_bytes": 23859662848,
+    "limit_seconds": 7200,
+    "thread_limit": 8,
+    "nice": 10,
+    "minimum_required_free_gib": 22.0,
+    "start_unix": 1791937734.167464,
+    "flow_controls": {
+      "W2_FROM_STEP": "OpenROAD.ResizerTimingPostCTS",
+      "W2_INITIAL_STATE": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/runs/rv_fixed_proj320_dp-util20-200ns/24-openroad-stamidpnr-1/state_out.json",
+      "W2_NUM_THREADS": "4",
+      "W2_CONFIG_PATH": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/configs/rv_fixed_proj320_dp-util20-200ns.json"
+    }
+  },
+  "remaining_seconds": 376,
+  "decision": "No successful GRT checkpoint or no remaining budget; no continuation."
+}

@@ -1,0 +1,888 @@
+[
+  {
+    "run": "runs/rv_fixed_proj320_dp-io-microns",
+    "step": "runs/rv_fixed_proj320_dp-io-microns/07-openroad-stamidpnr",
+    "scope": "pre-route placement-estimated parasitics; not extracted/signoff",
+    "period_ns": 20.0,
+    "target_mhz": 50.0,
+    "fresh_step_metrics": {
+      "design__max_slew_violation__count__corner:nom_tt_025C_5v00": 402102,
+      "design__max_fanout_violation__count__corner:nom_tt_025C_5v00": 2884,
+      "design__max_cap_violation__count__corner:nom_tt_025C_5v00": 1748,
+      "power__internal__total": 44.4619,
+      "power__switching__total": 0.427843,
+      "power__leakage__total": 4.11242e-05,
+      "power__total": 44.8898,
+      "clock__skew__worst_hold__corner:nom_tt_025C_5v00": -37.8096,
+      "clock__skew__worst_setup__corner:nom_tt_025C_5v00": 36.507,
+      "timing__hold__ws__corner:nom_tt_025C_5v00": -159.115,
+      "timing__setup__ws__corner:nom_tt_025C_5v00": -41897.1,
+      "timing__hold__tns__corner:nom_tt_025C_5v00": -994859,
+      "timing__setup__tns__corner:nom_tt_025C_5v00": -100523000.0,
+      "timing__hold__wns__corner:nom_tt_025C_5v00": -159.115,
+      "timing__setup__wns__corner:nom_tt_025C_5v00": -41897.1,
+      "timing__hold_vio__count__corner:nom_tt_025C_5v00": 14111,
+      "timing__hold_r2r__ws__corner:nom_tt_025C_5v00": -26.2519,
+      "timing__hold_r2r_vio__count__corner:nom_tt_025C_5v00": 7479,
+      "timing__setup_vio__count__corner:nom_tt_025C_5v00": 14169,
+      "timing__setup_r2r__ws__corner:nom_tt_025C_5v00": -41897.1,
+      "timing__setup_r2r_vio__count__corner:nom_tt_025C_5v00": 2443,
+      "flow__warnings__count": 0,
+      "flow__errors__count": 0,
+      "flow__warnings__type_count": 0
+    },
+    "sta_corners": {
+      "nom_tt_025C_5v00": {
+        "hold_slack_ns": -159.115,
+        "setup_slack_ns": -41897.1
+      }
+    },
+    "typical_setup_slack_ns": -41897.1,
+    "typical_hold_slack_ns": -159.115,
+    "typical_setup_inferred_mhz": 0.023856612217925382
+  },
+  {
+    "run": "runs/rv_fixed_proj320_dp-pre-route-rtl-activity",
+    "step": "runs/rv_fixed_proj320_dp-pre-route-rtl-activity/01-openroad-stamidpnr",
+    "scope": "pre-route placement-estimated parasitics; not extracted/signoff",
+    "period_ns": 200.0,
+    "target_mhz": 5.0,
+    "fresh_step_metrics": {
+      "design__max_slew_violation__count__corner:nom_tt_025C_5v00": 15,
+      "design__max_fanout_violation__count__corner:nom_tt_025C_5v00": 930,
+      "design__max_cap_violation__count__corner:nom_tt_025C_5v00": 3,
+      "power__internal__total": 0.213919,
+      "power__switching__total": 0.180866,
+      "power__leakage__total": 6.61673e-05,
+      "power__total": 0.39485,
+      "clock__skew__worst_hold__corner:nom_tt_025C_5v00": -1.02906,
+      "clock__skew__worst_setup__corner:nom_tt_025C_5v00": 0.626494,
+      "timing__hold__ws__corner:nom_tt_025C_5v00": 0.548467,
+      "timing__setup__ws__corner:nom_tt_025C_5v00": 53.5032,
+      "timing__hold__tns__corner:nom_tt_025C_5v00": 0,
+      "timing__setup__tns__corner:nom_tt_025C_5v00": 0,
+      "timing__hold__wns__corner:nom_tt_025C_5v00": 0,
+      "timing__setup__wns__corner:nom_tt_025C_5v00": 0,
+      "timing__hold_vio__count__corner:nom_tt_025C_5v00": 0,
+      "timing__hold_r2r__ws__corner:nom_tt_025C_5v00": 0.548467,
+      "timing__hold_r2r_vio__count__corner:nom_tt_025C_5v00": 0,
+      "timing__setup_vio__count__corner:nom_tt_025C_5v00": 0,
+      "timing__setup_r2r__ws__corner:nom_tt_025C_5v00": 1e+30,
+      "timing__setup_r2r_vio__count__corner:nom_tt_025C_5v00": 0,
+      "flow__warnings__count": 0,
+      "flow__errors__count": 0,
+      "flow__warnings__type_count": 0
+    },
+    "sta_corners": {
+      "nom_tt_025C_5v00": {
+        "hold_slack_ns": 0.548467,
+        "setup_slack_ns": 53.5032
+      }
+    },
+    "typical_setup_slack_ns": 53.5032,
+    "typical_hold_slack_ns": 0.548467,
+    "typical_setup_inferred_mhz": 6.826087668809148,
+    "power": {
+      "default": {
+        "corner": "nom_tt_025C_5v00",
+        "components_mw": {
+          "internal": 145.67917590000002,
+          "switching": 99.42016751,
+          "leakage": 0.06615262828,
+          "total": 245.1654822
+        }
+      },
+      "vcd": {
+        "corner": "nom_tt_025C_5v00",
+        "components_mw": {
+          "internal": 213.91853690000002,
+          "switching": 180.8656901,
+          "leakage": 0.06616732571,
+          "total": 394.8503733
+        }
+      }
+    },
+    "vcd_annotated_pins": 42319,
+    "unannotated_pins": 1076008,
+    "vcd_valid_nonzero_annotation": true,
+    "annotation_limitation": "RTL top-level port activity: 42319 directly annotated pins; internal activity propagated/default. No gate-level glitch modelling. Zero matched pins is a failed annotation attempt.",
+    "annotated_pin_fraction": 0.037841346940563896,
+    "power_source_log": "runs/rv_fixed_proj320_dp-pre-route-rtl-activity/01-openroad-stamidpnr/openroad-stamidpnr.log"
+  },
+  {
+    "run": "runs/rv_fixed_proj320_dp-route200",
+    "step": "runs/rv_fixed_proj320_dp-route200/02-openroad-stamidpnr-2",
+    "scope": "pre-route placement-estimated parasitics; not extracted/signoff",
+    "period_ns": 200.0,
+    "target_mhz": 5.0,
+    "fresh_step_metrics": {
+      "design__max_slew_violation__count__corner:nom_tt_025C_5v00": 15,
+      "design__max_fanout_violation__count__corner:nom_tt_025C_5v00": 930,
+      "design__max_cap_violation__count__corner:nom_tt_025C_5v00": 3,
+      "power__internal__total": 0.145679,
+      "power__switching__total": 0.0994202,
+      "power__leakage__total": 6.61526e-05,
+      "power__total": 0.245165,
+      "clock__skew__worst_hold__corner:nom_tt_025C_5v00": -1.02906,
+      "clock__skew__worst_setup__corner:nom_tt_025C_5v00": 0.626494,
+      "timing__hold__ws__corner:nom_tt_025C_5v00": 0.548467,
+      "timing__setup__ws__corner:nom_tt_025C_5v00": 53.5032,
+      "timing__hold__tns__corner:nom_tt_025C_5v00": 0,
+      "timing__setup__tns__corner:nom_tt_025C_5v00": 0,
+      "timing__hold__wns__corner:nom_tt_025C_5v00": 0,
+      "timing__setup__wns__corner:nom_tt_025C_5v00": 0,
+      "timing__hold_vio__count__corner:nom_tt_025C_5v00": 0,
+      "timing__hold_r2r__ws__corner:nom_tt_025C_5v00": 0.548467,
+      "timing__hold_r2r_vio__count__corner:nom_tt_025C_5v00": 0,
+      "timing__setup_vio__count__corner:nom_tt_025C_5v00": 0,
+      "timing__setup_r2r__ws__corner:nom_tt_025C_5v00": 1e+30,
+      "timing__setup_r2r_vio__count__corner:nom_tt_025C_5v00": 0,
+      "flow__warnings__count": 0,
+      "flow__errors__count": 0,
+      "flow__warnings__type_count": 0
+    },
+    "sta_corners": {
+      "nom_tt_025C_5v00": {
+        "hold_slack_ns": 0.548467,
+        "setup_slack_ns": 53.5032
+      }
+    },
+    "typical_setup_slack_ns": 53.5032,
+    "typical_hold_slack_ns": 0.548467,
+    "typical_setup_inferred_mhz": 6.826087668809148
+  },
+  {
+    "run": "runs/rv_fixed_proj320_dp-typical-repair20",
+    "step": "runs/rv_fixed_proj320_dp-typical-repair20/05-openroad-stamidpnr-1",
+    "scope": "pre-route placement-estimated parasitics; not extracted/signoff",
+    "period_ns": 20.0,
+    "target_mhz": 50.0,
+    "fresh_step_metrics": {
+      "design__max_slew_violation__count__corner:nom_tt_025C_5v00": 418,
+      "design__max_fanout_violation__count__corner:nom_tt_025C_5v00": 937,
+      "design__max_cap_violation__count__corner:nom_tt_025C_5v00": 6,
+      "power__internal__total": 1.43155,
+      "power__switching__total": 0.970107,
+      "power__leakage__total": 6.25257e-05,
+      "power__total": 2.40172,
+      "clock__skew__worst_hold__corner:nom_tt_025C_5v00": -0.970343,
+      "clock__skew__worst_setup__corner:nom_tt_025C_5v00": 0.588892,
+      "timing__hold__ws__corner:nom_tt_025C_5v00": 0.566782,
+      "timing__setup__ws__corner:nom_tt_025C_5v00": -101.387,
+      "timing__hold__tns__corner:nom_tt_025C_5v00": 0,
+      "timing__setup__tns__corner:nom_tt_025C_5v00": -562796,
+      "timing__hold__wns__corner:nom_tt_025C_5v00": 0,
+      "timing__setup__wns__corner:nom_tt_025C_5v00": -101.387,
+      "timing__hold_vio__count__corner:nom_tt_025C_5v00": 0,
+      "timing__hold_r2r__ws__corner:nom_tt_025C_5v00": 0.566782,
+      "timing__hold_r2r_vio__count__corner:nom_tt_025C_5v00": 0,
+      "timing__setup_vio__count__corner:nom_tt_025C_5v00": 14130,
+      "timing__setup_r2r__ws__corner:nom_tt_025C_5v00": -16.4737,
+      "timing__setup_r2r_vio__count__corner:nom_tt_025C_5v00": 199,
+      "flow__warnings__count": 0,
+      "flow__errors__count": 0,
+      "flow__warnings__type_count": 0
+    },
+    "sta_corners": {
+      "nom_tt_025C_5v00": {
+        "hold_slack_ns": 0.566782,
+        "setup_slack_ns": -101.387
+      }
+    },
+    "typical_setup_slack_ns": -101.387,
+    "typical_hold_slack_ns": 0.566782,
+    "typical_setup_inferred_mhz": 8.238114460362313
+  },
+  {
+    "run": "runs/rv_fixed_proj320_dp-util20-200ns",
+    "step": "runs/rv_fixed_proj320_dp-util20-200ns/19-openroad-stamidpnr",
+    "scope": "pre-route placement-estimated parasitics; not extracted/signoff",
+    "period_ns": 200.0,
+    "target_mhz": 5.0,
+    "fresh_step_metrics": {
+      "design__max_slew_violation__count__corner:nom_tt_025C_5v00": 409680,
+      "design__max_fanout_violation__count__corner:nom_tt_025C_5v00": 2884,
+      "design__max_cap_violation__count__corner:nom_tt_025C_5v00": 2317,
+      "power__internal__total": 5.01696,
+      "power__switching__total": 0.0614247,
+      "power__leakage__total": 4.40608e-05,
+      "power__total": 5.07842,
+      "clock__skew__worst_hold__corner:nom_tt_025C_5v00": -38.1462,
+      "clock__skew__worst_setup__corner:nom_tt_025C_5v00": 32.8647,
+      "timing__hold__ws__corner:nom_tt_025C_5v00": -123.639,
+      "timing__setup__ws__corner:nom_tt_025C_5v00": -43073.6,
+      "timing__hold__tns__corner:nom_tt_025C_5v00": -756409,
+      "timing__setup__tns__corner:nom_tt_025C_5v00": -102020000.0,
+      "timing__hold__wns__corner:nom_tt_025C_5v00": -123.639,
+      "timing__setup__wns__corner:nom_tt_025C_5v00": -43073.6,
+      "timing__hold_vio__count__corner:nom_tt_025C_5v00": 14112,
+      "timing__hold_r2r__ws__corner:nom_tt_025C_5v00": -18.4984,
+      "timing__hold_r2r_vio__count__corner:nom_tt_025C_5v00": 7480,
+      "timing__setup_vio__count__corner:nom_tt_025C_5v00": 14157,
+      "timing__setup_r2r__ws__corner:nom_tt_025C_5v00": -43073.6,
+      "timing__setup_r2r_vio__count__corner:nom_tt_025C_5v00": 2443,
+      "flow__warnings__count": 0,
+      "flow__errors__count": 0,
+      "flow__warnings__type_count": 0
+    },
+    "sta_corners": {
+      "nom_tt_025C_5v00": {
+        "hold_slack_ns": -123.639,
+        "setup_slack_ns": -43073.6
+      }
+    },
+    "typical_setup_slack_ns": -43073.6,
+    "typical_hold_slack_ns": -123.639,
+    "typical_setup_inferred_mhz": 0.023108777638098058
+  },
+  {
+    "run": "runs/rv_fixed_proj320_dp-util20-200ns",
+    "step": "runs/rv_fixed_proj320_dp-util20-200ns/24-openroad-stamidpnr-1",
+    "scope": "pre-route placement-estimated parasitics; not extracted/signoff",
+    "period_ns": 200.0,
+    "target_mhz": 5.0,
+    "fresh_step_metrics": {
+      "design__max_slew_violation__count__corner:nom_tt_025C_5v00": 15,
+      "design__max_fanout_violation__count__corner:nom_tt_025C_5v00": 930,
+      "design__max_cap_violation__count__corner:nom_tt_025C_5v00": 3,
+      "power__internal__total": 0.145679,
+      "power__switching__total": 0.0994202,
+      "power__leakage__total": 6.61526e-05,
+      "power__total": 0.245165,
+      "clock__skew__worst_hold__corner:nom_tt_025C_5v00": -1.02906,
+      "clock__skew__worst_setup__corner:nom_tt_025C_5v00": 0.626494,
+      "timing__hold__ws__corner:nom_tt_025C_5v00": 0.548467,
+      "timing__setup__ws__corner:nom_tt_025C_5v00": 53.5032,
+      "timing__hold__tns__corner:nom_tt_025C_5v00": 0,
+      "timing__setup__tns__corner:nom_tt_025C_5v00": 0,
+      "timing__hold__wns__corner:nom_tt_025C_5v00": 0,
+      "timing__setup__wns__corner:nom_tt_025C_5v00": 0,
+      "timing__hold_vio__count__corner:nom_tt_025C_5v00": 0,
+      "timing__hold_r2r__ws__corner:nom_tt_025C_5v00": 0.548467,
+      "timing__hold_r2r_vio__count__corner:nom_tt_025C_5v00": 0,
+      "timing__setup_vio__count__corner:nom_tt_025C_5v00": 0,
+      "timing__setup_r2r__ws__corner:nom_tt_025C_5v00": 1e+30,
+      "timing__setup_r2r_vio__count__corner:nom_tt_025C_5v00": 0,
+      "flow__warnings__count": 0,
+      "flow__errors__count": 0,
+      "flow__warnings__type_count": 0
+    },
+    "sta_corners": {
+      "nom_tt_025C_5v00": {
+        "hold_slack_ns": 0.548467,
+        "setup_slack_ns": 53.5032
+      }
+    },
+    "typical_setup_slack_ns": 53.5032,
+    "typical_hold_slack_ns": 0.548467,
+    "typical_setup_inferred_mhz": 6.826087668809148
+  },
+  {
+    "run": "runs/rv_fixed_proj320_rom-physical20",
+    "step": "runs/rv_fixed_proj320_rom-physical20/25-openroad-stamidpnr",
+    "scope": "pre-route placement-estimated parasitics; not extracted/signoff",
+    "period_ns": 20.0,
+    "target_mhz": 50.0,
+    "fresh_step_metrics": {
+      "design__max_slew_violation__count__corner:nom_tt_025C_5v00": 694959,
+      "design__max_fanout_violation__count__corner:nom_tt_025C_5v00": 6309,
+      "design__max_cap_violation__count__corner:nom_tt_025C_5v00": 6968,
+      "power__internal__total": 48.0224,
+      "power__switching__total": 0.221861,
+      "power__leakage__total": 4.35483e-05,
+      "power__total": 48.2443,
+      "clock__skew__worst_hold__corner:nom_tt_025C_5v00": -34.933,
+      "clock__skew__worst_setup__corner:nom_tt_025C_5v00": 36.6561,
+      "timing__hold__ws__corner:nom_tt_025C_5v00": -156.455,
+      "timing__setup__ws__corner:nom_tt_025C_5v00": -34060.9,
+      "timing__hold__tns__corner:nom_tt_025C_5v00": -662715,
+      "timing__setup__tns__corner:nom_tt_025C_5v00": -239428000.0,
+      "timing__hold__wns__corner:nom_tt_025C_5v00": -156.455,
+      "timing__setup__wns__corner:nom_tt_025C_5v00": -34060.9,
+      "timing__hold_vio__count__corner:nom_tt_025C_5v00": 15344,
+      "timing__hold_r2r__ws__corner:nom_tt_025C_5v00": -49.8275,
+      "timing__hold_r2r_vio__count__corner:nom_tt_025C_5v00": 8106,
+      "timing__setup_vio__count__corner:nom_tt_025C_5v00": 15449,
+      "timing__setup_r2r__ws__corner:nom_tt_025C_5v00": -34060.9,
+      "timing__setup_r2r_vio__count__corner:nom_tt_025C_5v00": 7054,
+      "flow__warnings__count": 0,
+      "flow__errors__count": 0,
+      "flow__warnings__type_count": 0
+    },
+    "sta_corners": {
+      "nom_tt_025C_5v00": {
+        "hold_slack_ns": -156.455,
+        "setup_slack_ns": -34060.9
+      }
+    },
+    "typical_setup_slack_ns": -34060.9,
+    "typical_hold_slack_ns": -156.455,
+    "typical_setup_inferred_mhz": 0.029341948129304095
+  },
+  {
+    "run": "runs/rv_fixed_proj320_rom-pre-route-rtl-activity",
+    "step": "runs/rv_fixed_proj320_rom-pre-route-rtl-activity/01-openroad-stamidpnr",
+    "scope": "pre-route placement-estimated parasitics; not extracted/signoff",
+    "period_ns": 200.0,
+    "target_mhz": 5.0,
+    "fresh_step_metrics": {
+      "design__max_slew_violation__count__corner:nom_tt_025C_5v00": 0,
+      "design__max_fanout_violation__count__corner:nom_tt_025C_5v00": 991,
+      "design__max_cap_violation__count__corner:nom_tt_025C_5v00": 2,
+      "power__internal__total": 0.168115,
+      "power__switching__total": 0.137403,
+      "power__leakage__total": 6.57787e-05,
+      "power__total": 0.305583,
+      "clock__skew__worst_hold__corner:nom_tt_025C_5v00": -1.35525,
+      "clock__skew__worst_setup__corner:nom_tt_025C_5v00": 0.836588,
+      "timing__hold__ws__corner:nom_tt_025C_5v00": 0.556417,
+      "timing__setup__ws__corner:nom_tt_025C_5v00": 66.5473,
+      "timing__hold__tns__corner:nom_tt_025C_5v00": 0,
+      "timing__setup__tns__corner:nom_tt_025C_5v00": 0,
+      "timing__hold__wns__corner:nom_tt_025C_5v00": 0,
+      "timing__setup__wns__corner:nom_tt_025C_5v00": 0,
+      "timing__hold_vio__count__corner:nom_tt_025C_5v00": 0,
+      "timing__hold_r2r__ws__corner:nom_tt_025C_5v00": 0.556417,
+      "timing__hold_r2r_vio__count__corner:nom_tt_025C_5v00": 0,
+      "timing__setup_vio__count__corner:nom_tt_025C_5v00": 0,
+      "timing__setup_r2r__ws__corner:nom_tt_025C_5v00": 144.768,
+      "timing__setup_r2r_vio__count__corner:nom_tt_025C_5v00": 0,
+      "flow__warnings__count": 0,
+      "flow__errors__count": 0,
+      "flow__warnings__type_count": 0
+    },
+    "sta_corners": {
+      "nom_tt_025C_5v00": {
+        "hold_slack_ns": 0.556417,
+        "setup_slack_ns": 66.5473
+      }
+    },
+    "typical_setup_slack_ns": 66.5473,
+    "typical_hold_slack_ns": 0.556417,
+    "typical_setup_inferred_mhz": 7.493291630667645,
+    "power": {
+      "default": {
+        "corner": "nom_tt_025C_5v00",
+        "components_mw": {
+          "internal": 114.2743155,
+          "switching": 75.39650053,
+          "leakage": 0.06571351696,
+          "total": 189.7365302
+        }
+      },
+      "vcd": {
+        "corner": "nom_tt_025C_5v00",
+        "components_mw": {
+          "internal": 168.1146324,
+          "switching": 137.40272819999998,
+          "leakage": 0.06577867316,
+          "total": 305.58314920000004
+        }
+      }
+    },
+    "vcd_annotated_pins": 79,
+    "unannotated_pins": 1226425,
+    "vcd_valid_nonzero_annotation": true,
+    "annotation_limitation": "RTL top-level port activity: 79 directly annotated pins; internal activity propagated/default. No gate-level glitch modelling. Zero matched pins is a failed annotation attempt.",
+    "annotated_pin_fraction": 6.441071533398995e-05,
+    "power_source_log": "runs/rv_fixed_proj320_rom-pre-route-rtl-activity/01-openroad-stamidpnr/openroad-stamidpnr.log"
+  },
+  {
+    "run": "runs/rv_fixed_proj320_rom-route-util20-density35-noinflate-200ns",
+    "step": "runs/rv_fixed_proj320_rom-route-util20-density35-noinflate-200ns/02-openroad-stamidpnr-2",
+    "scope": "pre-route placement-estimated parasitics; not extracted/signoff",
+    "period_ns": 200.0,
+    "target_mhz": 5.0,
+    "fresh_step_metrics": {
+      "design__max_slew_violation__count__corner:nom_tt_025C_5v00": 0,
+      "design__max_fanout_violation__count__corner:nom_tt_025C_5v00": 991,
+      "design__max_cap_violation__count__corner:nom_tt_025C_5v00": 2,
+      "power__internal__total": 0.114274,
+      "power__switching__total": 0.0753965,
+      "power__leakage__total": 6.57135e-05,
+      "power__total": 0.189737,
+      "clock__skew__worst_hold__corner:nom_tt_025C_5v00": -1.35525,
+      "clock__skew__worst_setup__corner:nom_tt_025C_5v00": 0.836588,
+      "timing__hold__ws__corner:nom_tt_025C_5v00": 0.556417,
+      "timing__setup__ws__corner:nom_tt_025C_5v00": 66.5473,
+      "timing__hold__tns__corner:nom_tt_025C_5v00": 0,
+      "timing__setup__tns__corner:nom_tt_025C_5v00": 0,
+      "timing__hold__wns__corner:nom_tt_025C_5v00": 0,
+      "timing__setup__wns__corner:nom_tt_025C_5v00": 0,
+      "timing__hold_vio__count__corner:nom_tt_025C_5v00": 0,
+      "timing__hold_r2r__ws__corner:nom_tt_025C_5v00": 0.556417,
+      "timing__hold_r2r_vio__count__corner:nom_tt_025C_5v00": 0,
+      "timing__setup_vio__count__corner:nom_tt_025C_5v00": 0,
+      "timing__setup_r2r__ws__corner:nom_tt_025C_5v00": 144.768,
+      "timing__setup_r2r_vio__count__corner:nom_tt_025C_5v00": 0,
+      "flow__warnings__count": 0,
+      "flow__errors__count": 0,
+      "flow__warnings__type_count": 0
+    },
+    "sta_corners": {
+      "nom_tt_025C_5v00": {
+        "hold_slack_ns": 0.556417,
+        "setup_slack_ns": 66.5473
+      }
+    },
+    "typical_setup_slack_ns": 66.5473,
+    "typical_hold_slack_ns": 0.556417,
+    "typical_setup_inferred_mhz": 7.493291630667645
+  },
+  {
+    "run": "runs/rv_fixed_proj320_rom-util20-density35-noinflate-200ns",
+    "step": "runs/rv_fixed_proj320_rom-util20-density35-noinflate-200ns/04-openroad-stamidpnr",
+    "scope": "pre-route placement-estimated parasitics; not extracted/signoff",
+    "period_ns": 200.0,
+    "target_mhz": 5.0,
+    "fresh_step_metrics": {
+      "design__max_slew_violation__count__corner:nom_tt_025C_5v00": 687437,
+      "design__max_fanout_violation__count__corner:nom_tt_025C_5v00": 6309,
+      "design__max_cap_violation__count__corner:nom_tt_025C_5v00": 4890,
+      "power__internal__total": 5.66224,
+      "power__switching__total": 0.0459639,
+      "power__leakage__total": 4.67094e-05,
+      "power__total": 5.70825,
+      "clock__skew__worst_hold__corner:nom_tt_025C_5v00": -35.2947,
+      "clock__skew__worst_setup__corner:nom_tt_025C_5v00": 40.1572,
+      "timing__hold__ws__corner:nom_tt_025C_5v00": -142.256,
+      "timing__setup__ws__corner:nom_tt_025C_5v00": -52467.3,
+      "timing__hold__tns__corner:nom_tt_025C_5v00": -661735,
+      "timing__setup__tns__corner:nom_tt_025C_5v00": -332751000.0,
+      "timing__hold__wns__corner:nom_tt_025C_5v00": -142.256,
+      "timing__setup__wns__corner:nom_tt_025C_5v00": -52467.3,
+      "timing__hold_vio__count__corner:nom_tt_025C_5v00": 15347,
+      "timing__hold_r2r__ws__corner:nom_tt_025C_5v00": -106.798,
+      "timing__hold_r2r_vio__count__corner:nom_tt_025C_5v00": 12725,
+      "timing__setup_vio__count__corner:nom_tt_025C_5v00": 15449,
+      "timing__setup_r2r__ws__corner:nom_tt_025C_5v00": -52467.3,
+      "timing__setup_r2r_vio__count__corner:nom_tt_025C_5v00": 8215,
+      "flow__warnings__count": 0,
+      "flow__errors__count": 0,
+      "flow__warnings__type_count": 0
+    },
+    "sta_corners": {
+      "nom_tt_025C_5v00": {
+        "hold_slack_ns": -142.256,
+        "setup_slack_ns": -52467.3
+      }
+    },
+    "typical_setup_slack_ns": -52467.3,
+    "typical_hold_slack_ns": -142.256,
+    "typical_setup_inferred_mhz": 0.01898711344610413
+  },
+  {
+    "run": "runs/rv_fixed_proj320_rom-util20-density35-noinflate-200ns",
+    "step": "runs/rv_fixed_proj320_rom-util20-density35-noinflate-200ns/09-openroad-stamidpnr-1",
+    "scope": "pre-route placement-estimated parasitics; not extracted/signoff",
+    "period_ns": 200.0,
+    "target_mhz": 5.0,
+    "fresh_step_metrics": {
+      "design__max_slew_violation__count__corner:nom_tt_025C_5v00": 0,
+      "design__max_fanout_violation__count__corner:nom_tt_025C_5v00": 991,
+      "design__max_cap_violation__count__corner:nom_tt_025C_5v00": 2,
+      "power__internal__total": 0.114274,
+      "power__switching__total": 0.0753965,
+      "power__leakage__total": 6.57135e-05,
+      "power__total": 0.189737,
+      "clock__skew__worst_hold__corner:nom_tt_025C_5v00": -1.35525,
+      "clock__skew__worst_setup__corner:nom_tt_025C_5v00": 0.836588,
+      "timing__hold__ws__corner:nom_tt_025C_5v00": 0.556417,
+      "timing__setup__ws__corner:nom_tt_025C_5v00": 66.5473,
+      "timing__hold__tns__corner:nom_tt_025C_5v00": 0,
+      "timing__setup__tns__corner:nom_tt_025C_5v00": 0,
+      "timing__hold__wns__corner:nom_tt_025C_5v00": 0,
+      "timing__setup__wns__corner:nom_tt_025C_5v00": 0,
+      "timing__hold_vio__count__corner:nom_tt_025C_5v00": 0,
+      "timing__hold_r2r__ws__corner:nom_tt_025C_5v00": 0.556417,
+      "timing__hold_r2r_vio__count__corner:nom_tt_025C_5v00": 0,
+      "timing__setup_vio__count__corner:nom_tt_025C_5v00": 0,
+      "timing__setup_r2r__ws__corner:nom_tt_025C_5v00": 144.768,
+      "timing__setup_r2r_vio__count__corner:nom_tt_025C_5v00": 0,
+      "flow__warnings__count": 0,
+      "flow__errors__count": 0,
+      "flow__warnings__type_count": 0
+    },
+    "sta_corners": {
+      "nom_tt_025C_5v00": {
+        "hold_slack_ns": 0.556417,
+        "setup_slack_ns": 66.5473
+      }
+    },
+    "typical_setup_slack_ns": 66.5473,
+    "typical_hold_slack_ns": 0.556417,
+    "typical_setup_inferred_mhz": 7.493291630667645
+  },
+  {
+    "run": "runs/rv_fixed_proj64x320_rom-clock200",
+    "step": "runs/rv_fixed_proj64x320_rom-clock200/02-openroad-stamidpnr-2",
+    "scope": "pre-route placement-estimated parasitics; not extracted/signoff",
+    "period_ns": 200.0,
+    "target_mhz": 5.0,
+    "fresh_step_metrics": {
+      "design__max_slew_violation__count__corner:nom_tt_025C_5v00": 0,
+      "design__max_fanout_violation__count__corner:nom_tt_025C_5v00": 1042,
+      "design__max_cap_violation__count__corner:nom_tt_025C_5v00": 1,
+      "power__internal__total": 0.0883856,
+      "power__switching__total": 0.0622175,
+      "power__leakage__total": 4.12035e-05,
+      "power__total": 0.150644,
+      "clock__skew__worst_hold__corner:nom_tt_025C_5v00": -0.979557,
+      "clock__skew__worst_setup__corner:nom_tt_025C_5v00": 0.638291,
+      "timing__hold__ws__corner:nom_tt_025C_5v00": 0.597714,
+      "timing__setup__ws__corner:nom_tt_025C_5v00": 90.3294,
+      "timing__hold__tns__corner:nom_tt_025C_5v00": 0,
+      "timing__setup__tns__corner:nom_tt_025C_5v00": 0,
+      "timing__hold__wns__corner:nom_tt_025C_5v00": 0,
+      "timing__setup__wns__corner:nom_tt_025C_5v00": 0,
+      "timing__hold_vio__count__corner:nom_tt_025C_5v00": 0,
+      "timing__hold_r2r__ws__corner:nom_tt_025C_5v00": 0.597714,
+      "timing__hold_r2r_vio__count__corner:nom_tt_025C_5v00": 0,
+      "timing__setup_vio__count__corner:nom_tt_025C_5v00": 0,
+      "timing__setup_r2r__ws__corner:nom_tt_025C_5v00": 1e+30,
+      "timing__setup_r2r_vio__count__corner:nom_tt_025C_5v00": 0,
+      "flow__warnings__count": 0,
+      "flow__errors__count": 0,
+      "flow__warnings__type_count": 0
+    },
+    "sta_corners": {
+      "nom_tt_025C_5v00": {
+        "hold_slack_ns": 0.597714,
+        "setup_slack_ns": 90.3294
+      }
+    },
+    "typical_setup_slack_ns": 90.3294,
+    "typical_hold_slack_ns": 0.597714,
+    "typical_setup_inferred_mhz": 9.118213997187944
+  },
+  {
+    "run": "runs/rv_fixed_proj64x320_rom-pre-route-activity",
+    "step": "runs/rv_fixed_proj64x320_rom-pre-route-activity/01-openroad-stamidpnr",
+    "scope": "pre-route placement-estimated parasitics; not extracted/signoff",
+    "period_ns": 200.0,
+    "target_mhz": 5.0,
+    "fresh_step_metrics": {
+      "design__max_slew_violation__count__corner:nom_tt_025C_5v00": 0,
+      "design__max_fanout_violation__count__corner:nom_tt_025C_5v00": 1042,
+      "design__max_cap_violation__count__corner:nom_tt_025C_5v00": 1,
+      "power__internal__total": 0.0883856,
+      "power__switching__total": 0.0622175,
+      "power__leakage__total": 4.12035e-05,
+      "power__total": 0.150644,
+      "clock__skew__worst_hold__corner:nom_tt_025C_5v00": -0.979557,
+      "clock__skew__worst_setup__corner:nom_tt_025C_5v00": 0.638291,
+      "timing__hold__ws__corner:nom_tt_025C_5v00": 0.597714,
+      "timing__setup__ws__corner:nom_tt_025C_5v00": 90.3294,
+      "timing__hold__tns__corner:nom_tt_025C_5v00": 0,
+      "timing__setup__tns__corner:nom_tt_025C_5v00": 0,
+      "timing__hold__wns__corner:nom_tt_025C_5v00": 0,
+      "timing__setup__wns__corner:nom_tt_025C_5v00": 0,
+      "timing__hold_vio__count__corner:nom_tt_025C_5v00": 0,
+      "timing__hold_r2r__ws__corner:nom_tt_025C_5v00": 0.597714,
+      "timing__hold_r2r_vio__count__corner:nom_tt_025C_5v00": 0,
+      "timing__setup_vio__count__corner:nom_tt_025C_5v00": 0,
+      "timing__setup_r2r__ws__corner:nom_tt_025C_5v00": 1e+30,
+      "timing__setup_r2r_vio__count__corner:nom_tt_025C_5v00": 0,
+      "flow__warnings__count": 0,
+      "flow__errors__count": 0,
+      "flow__warnings__type_count": 0
+    },
+    "sta_corners": {
+      "nom_tt_025C_5v00": {
+        "hold_slack_ns": 0.597714,
+        "setup_slack_ns": 90.3294
+      }
+    },
+    "typical_setup_slack_ns": 90.3294,
+    "typical_hold_slack_ns": 0.597714,
+    "typical_setup_inferred_mhz": 9.118213997187944,
+    "power": {
+      "default": {
+        "corner": "nom_tt_025C_5v00",
+        "components_mw": {
+          "internal": 88.38564903,
+          "switching": 62.21752614,
+          "leakage": 0.04120349331,
+          "total": 150.6443769
+        }
+      },
+      "vcd": {
+        "corner": "nom_tt_025C_5v00",
+        "components_mw": {
+          "internal": 88.38564903,
+          "switching": 62.21752614,
+          "leakage": 0.04120349331,
+          "total": 150.6443769
+        }
+      }
+    },
+    "vcd_annotated_pins": 0,
+    "unannotated_pins": 843334,
+    "vcd_valid_nonzero_annotation": false,
+    "annotation_limitation": "RTL top-level port activity: 0 directly annotated pins; internal activity propagated/default. No gate-level glitch modelling. Zero matched pins is a failed annotation attempt.",
+    "annotated_pin_fraction": 0.0,
+    "power_source_log": "runs/rv_fixed_proj64x320_rom-pre-route-activity/01-openroad-stamidpnr/openroad-stamidpnr.log"
+  },
+  {
+    "run": "runs/rv_fixed_proj64x320_rom-pre-route-gate-cell-activity",
+    "step": "runs/rv_fixed_proj64x320_rom-pre-route-gate-cell-activity/01-openroad-stamidpnr",
+    "scope": "pre-route placement-estimated parasitics; not extracted/signoff",
+    "period_ns": 200.0,
+    "target_mhz": 5.0,
+    "fresh_step_metrics": {
+      "design__max_slew_violation__count__corner:nom_tt_025C_5v00": 0,
+      "design__max_fanout_violation__count__corner:nom_tt_025C_5v00": 1042,
+      "design__max_cap_violation__count__corner:nom_tt_025C_5v00": 1,
+      "power__internal__total": 0.0707943,
+      "power__switching__total": 0.0352571,
+      "power__leakage__total": 4.16236e-05,
+      "power__total": 0.106093,
+      "clock__skew__worst_hold__corner:nom_tt_025C_5v00": -0.979557,
+      "clock__skew__worst_setup__corner:nom_tt_025C_5v00": 0.638291,
+      "timing__hold__ws__corner:nom_tt_025C_5v00": 0.597714,
+      "timing__setup__ws__corner:nom_tt_025C_5v00": 90.3294,
+      "timing__hold__tns__corner:nom_tt_025C_5v00": 0,
+      "timing__setup__tns__corner:nom_tt_025C_5v00": 0,
+      "timing__hold__wns__corner:nom_tt_025C_5v00": 0,
+      "timing__setup__wns__corner:nom_tt_025C_5v00": 0,
+      "timing__hold_vio__count__corner:nom_tt_025C_5v00": 0,
+      "timing__hold_r2r__ws__corner:nom_tt_025C_5v00": 0.597714,
+      "timing__hold_r2r_vio__count__corner:nom_tt_025C_5v00": 0,
+      "timing__setup_vio__count__corner:nom_tt_025C_5v00": 0,
+      "timing__setup_r2r__ws__corner:nom_tt_025C_5v00": 1e+30,
+      "timing__setup_r2r_vio__count__corner:nom_tt_025C_5v00": 0,
+      "flow__warnings__count": 0,
+      "flow__errors__count": 0,
+      "flow__warnings__type_count": 0
+    },
+    "sta_corners": {
+      "nom_tt_025C_5v00": {
+        "hold_slack_ns": 0.597714,
+        "setup_slack_ns": 90.3294
+      }
+    },
+    "typical_setup_slack_ns": 90.3294,
+    "typical_hold_slack_ns": 0.597714,
+    "typical_setup_inferred_mhz": 9.118213997187944,
+    "power": {
+      "default": {
+        "corner": "nom_tt_025C_5v00",
+        "components_mw": {
+          "internal": 88.38564903,
+          "switching": 62.21752614,
+          "leakage": 0.04120349331,
+          "total": 150.6443769
+        }
+      },
+      "vcd": {
+        "corner": "nom_tt_025C_5v00",
+        "components_mw": {
+          "internal": 70.7943216,
+          "switching": 35.25714949,
+          "leakage": 0.04162357436,
+          "total": 106.09310119999999
+        }
+      }
+    },
+    "vcd_annotated_pins": 739686,
+    "unannotated_pins": 103648,
+    "vcd_valid_nonzero_annotation": true,
+    "annotation_limitation": "Zero-delay synthesis-netlist cell-pin activity. Inserted/changed physical cells rely on propagated/default activity; no routed glitches.",
+    "annotated_pin_fraction": 0.8770973303578417,
+    "power_source_log": "runs/rv_fixed_proj64x320_rom-pre-route-gate-cell-activity/01-openroad-stamidpnr/openroad-stamidpnr.log"
+  },
+  {
+    "run": "runs/rv_fixed_proj64x320_rom-pre-route-slash-activity",
+    "step": "runs/rv_fixed_proj64x320_rom-pre-route-slash-activity/01-openroad-stamidpnr",
+    "scope": "pre-route placement-estimated parasitics; not extracted/signoff",
+    "period_ns": 200.0,
+    "target_mhz": 5.0,
+    "fresh_step_metrics": {
+      "design__max_slew_violation__count__corner:nom_tt_025C_5v00": 0,
+      "design__max_fanout_violation__count__corner:nom_tt_025C_5v00": 1042,
+      "design__max_cap_violation__count__corner:nom_tt_025C_5v00": 1,
+      "power__internal__total": 0.0734714,
+      "power__switching__total": 0.0428957,
+      "power__leakage__total": 4.13391e-05,
+      "power__total": 0.116408,
+      "clock__skew__worst_hold__corner:nom_tt_025C_5v00": -0.979557,
+      "clock__skew__worst_setup__corner:nom_tt_025C_5v00": 0.638291,
+      "timing__hold__ws__corner:nom_tt_025C_5v00": 0.597714,
+      "timing__setup__ws__corner:nom_tt_025C_5v00": 90.3294,
+      "timing__hold__tns__corner:nom_tt_025C_5v00": 0,
+      "timing__setup__tns__corner:nom_tt_025C_5v00": 0,
+      "timing__hold__wns__corner:nom_tt_025C_5v00": 0,
+      "timing__setup__wns__corner:nom_tt_025C_5v00": 0,
+      "timing__hold_vio__count__corner:nom_tt_025C_5v00": 0,
+      "timing__hold_r2r__ws__corner:nom_tt_025C_5v00": 0.597714,
+      "timing__hold_r2r_vio__count__corner:nom_tt_025C_5v00": 0,
+      "timing__setup_vio__count__corner:nom_tt_025C_5v00": 0,
+      "timing__setup_r2r__ws__corner:nom_tt_025C_5v00": 1e+30,
+      "timing__setup_r2r_vio__count__corner:nom_tt_025C_5v00": 0,
+      "flow__warnings__count": 0,
+      "flow__errors__count": 0,
+      "flow__warnings__type_count": 0
+    },
+    "sta_corners": {
+      "nom_tt_025C_5v00": {
+        "hold_slack_ns": 0.597714,
+        "setup_slack_ns": 90.3294
+      }
+    },
+    "typical_setup_slack_ns": 90.3294,
+    "typical_hold_slack_ns": 0.597714,
+    "typical_setup_inferred_mhz": 9.118213997187944,
+    "power": {
+      "default": {
+        "corner": "nom_tt_025C_5v00",
+        "components_mw": {
+          "internal": 88.38564903,
+          "switching": 62.21752614,
+          "leakage": 0.04120349331,
+          "total": 150.6443769
+        }
+      },
+      "vcd": {
+        "corner": "nom_tt_025C_5v00",
+        "components_mw": {
+          "internal": 73.47136736,
+          "switching": 42.89568216,
+          "leakage": 0.04133906987,
+          "total": 116.4083853
+        }
+      }
+    },
+    "vcd_annotated_pins": 79,
+    "unannotated_pins": 843255,
+    "vcd_valid_nonzero_annotation": true,
+    "annotation_limitation": "RTL top-level port activity: 79 directly annotated pins; internal activity propagated/default. No gate-level glitch modelling. Zero matched pins is a failed annotation attempt.",
+    "annotated_pin_fraction": 9.367581527603535e-05,
+    "power_source_log": "runs/rv_fixed_proj64x320_rom-pre-route-slash-activity/01-openroad-stamidpnr/openroad-stamidpnr.log"
+  },
+  {
+    "run": "runs/rv_fixed_proj64x320_rom-restored",
+    "step": "runs/rv_fixed_proj64x320_rom-restored/31-openroad-stamidpnr",
+    "scope": "pre-route placement-estimated parasitics; not extracted/signoff",
+    "period_ns": 20.0,
+    "target_mhz": 50.0,
+    "fresh_step_metrics": {
+      "design__max_slew_violation__count__corner:nom_tt_025C_5v00": 459527,
+      "design__max_fanout_violation__count__corner:nom_tt_025C_5v00": 2563,
+      "design__max_cap_violation__count__corner:nom_tt_025C_5v00": 2076,
+      "power__internal__total": 44.9705,
+      "power__switching__total": 0.192605,
+      "power__leakage__total": 3.06196e-05,
+      "power__total": 45.1631,
+      "clock__skew__worst_hold__corner:nom_tt_025C_5v00": -40.5273,
+      "clock__skew__worst_setup__corner:nom_tt_025C_5v00": 32.18,
+      "timing__hold__ws__corner:nom_tt_025C_5v00": -143.23,
+      "timing__setup__ws__corner:nom_tt_025C_5v00": -28524,
+      "timing__hold__tns__corner:nom_tt_025C_5v00": -616998,
+      "timing__setup__tns__corner:nom_tt_025C_5v00": -92374500.0,
+      "timing__hold__wns__corner:nom_tt_025C_5v00": -143.23,
+      "timing__setup__wns__corner:nom_tt_025C_5v00": -28524,
+      "timing__hold_vio__count__corner:nom_tt_025C_5v00": 15385,
+      "timing__hold_r2r__ws__corner:nom_tt_025C_5v00": -31.3765,
+      "timing__hold_r2r_vio__count__corner:nom_tt_025C_5v00": 8067,
+      "timing__setup_vio__count__corner:nom_tt_025C_5v00": 15449,
+      "timing__setup_r2r__ws__corner:nom_tt_025C_5v00": -28524,
+      "timing__setup_r2r_vio__count__corner:nom_tt_025C_5v00": 6804,
+      "flow__warnings__count": 0,
+      "flow__errors__count": 0,
+      "flow__warnings__type_count": 0
+    },
+    "sta_corners": {
+      "nom_tt_025C_5v00": {
+        "hold_slack_ns": -143.23,
+        "setup_slack_ns": -28524
+      }
+    },
+    "typical_setup_slack_ns": -28524,
+    "typical_hold_slack_ns": -143.23,
+    "typical_setup_inferred_mhz": 0.03503363228699551
+  },
+  {
+    "run": "runs/rv_fixed_proj64x320_rom-util30",
+    "step": "runs/rv_fixed_proj64x320_rom-util30/19-openroad-stamidpnr",
+    "scope": "pre-route placement-estimated parasitics; not extracted/signoff",
+    "period_ns": 20.0,
+    "target_mhz": 50.0,
+    "fresh_step_metrics": {
+      "design__max_slew_violation__count__corner:nom_tt_025C_5v00": 479407,
+      "design__max_fanout_violation__count__corner:nom_tt_025C_5v00": 2563,
+      "design__max_cap_violation__count__corner:nom_tt_025C_5v00": 2839,
+      "power__internal__total": 49.0893,
+      "power__switching__total": 0.229694,
+      "power__leakage__total": 3.21876e-05,
+      "power__total": 49.319,
+      "clock__skew__worst_hold__corner:nom_tt_025C_5v00": -35.2412,
+      "clock__skew__worst_setup__corner:nom_tt_025C_5v00": 31.4896,
+      "timing__hold__ws__corner:nom_tt_025C_5v00": -166.303,
+      "timing__setup__ws__corner:nom_tt_025C_5v00": -35715.2,
+      "timing__hold__tns__corner:nom_tt_025C_5v00": -653991,
+      "timing__setup__tns__corner:nom_tt_025C_5v00": -120880000.0,
+      "timing__hold__wns__corner:nom_tt_025C_5v00": -166.303,
+      "timing__setup__wns__corner:nom_tt_025C_5v00": -35715.2,
+      "timing__hold_vio__count__corner:nom_tt_025C_5v00": 15385,
+      "timing__hold_r2r__ws__corner:nom_tt_025C_5v00": -22.3101,
+      "timing__hold_r2r_vio__count__corner:nom_tt_025C_5v00": 8074,
+      "timing__setup_vio__count__corner:nom_tt_025C_5v00": 15449,
+      "timing__setup_r2r__ws__corner:nom_tt_025C_5v00": -35715.2,
+      "timing__setup_r2r_vio__count__corner:nom_tt_025C_5v00": 6804,
+      "flow__warnings__count": 0,
+      "flow__errors__count": 0,
+      "flow__warnings__type_count": 0
+    },
+    "sta_corners": {
+      "nom_tt_025C_5v00": {
+        "hold_slack_ns": -166.303,
+        "setup_slack_ns": -35715.2
+      }
+    },
+    "typical_setup_slack_ns": -35715.2,
+    "typical_hold_slack_ns": -166.303,
+    "typical_setup_inferred_mhz": 0.027983612796346462
+  },
+  {
+    "run": "runs/rv_fixed_proj64x320_rom-util30",
+    "step": "runs/rv_fixed_proj64x320_rom-util30/24-openroad-stamidpnr-1",
+    "scope": "pre-route placement-estimated parasitics; not extracted/signoff",
+    "period_ns": 20.0,
+    "target_mhz": 50.0,
+    "fresh_step_metrics": {
+      "design__max_slew_violation__count__corner:nom_tt_025C_5v00": 0,
+      "design__max_fanout_violation__count__corner:nom_tt_025C_5v00": 1042,
+      "design__max_cap_violation__count__corner:nom_tt_025C_5v00": 1,
+      "power__internal__total": 0.883823,
+      "power__switching__total": 0.622147,
+      "power__leakage__total": 4.12035e-05,
+      "power__total": 1.50601,
+      "clock__skew__worst_hold__corner:nom_tt_025C_5v00": -0.979557,
+      "clock__skew__worst_setup__corner:nom_tt_025C_5v00": 0.638291,
+      "timing__hold__ws__corner:nom_tt_025C_5v00": 0.597714,
+      "timing__setup__ws__corner:nom_tt_025C_5v00": -47.2934,
+      "timing__hold__tns__corner:nom_tt_025C_5v00": 0,
+      "timing__setup__tns__corner:nom_tt_025C_5v00": -246116,
+      "timing__hold__wns__corner:nom_tt_025C_5v00": 0,
+      "timing__setup__wns__corner:nom_tt_025C_5v00": -47.2934,
+      "timing__hold_vio__count__corner:nom_tt_025C_5v00": 0,
+      "timing__hold_r2r__ws__corner:nom_tt_025C_5v00": 0.597714,
+      "timing__hold_r2r_vio__count__corner:nom_tt_025C_5v00": 0,
+      "timing__setup_vio__count__corner:nom_tt_025C_5v00": 14979,
+      "timing__setup_r2r__ws__corner:nom_tt_025C_5v00": -33.14,
+      "timing__setup_r2r_vio__count__corner:nom_tt_025C_5v00": 998,
+      "flow__warnings__count": 0,
+      "flow__errors__count": 0,
+      "flow__warnings__type_count": 0
+    },
+    "sta_corners": {
+      "nom_tt_025C_5v00": {
+        "hold_slack_ns": 0.597714,
+        "setup_slack_ns": -47.2934
+      }
+    },
+    "typical_setup_slack_ns": -47.2934,
+    "typical_hold_slack_ns": 0.597714,
+    "typical_setup_inferred_mhz": 14.860298335349382
+  }
+]

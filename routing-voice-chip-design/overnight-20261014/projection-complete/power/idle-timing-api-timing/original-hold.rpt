@@ -1,0 +1,27 @@
+Startpoint: a (input port clocked by virtual)
+Endpoint: y (output port clocked by virtual)
+Path Group: virtual
+Path Type: min
+
+      Delay        Time   Description
+-----------------------------------------------------------------
+   0.000000    0.000000   clock virtual (rise edge)
+   0.000000    0.000000   clock network delay (ideal)
+   0.000000    0.000000 ^ input external delay
+   0.000000    0.000000 ^ a (in)
+   0.173200    0.173200 v _cell_/ZN (gf180mcu_fd_sc_mcu7t5v0__inv_1)
+   0.000011    0.173211 v y (out)
+               0.173211   data arrival time
+
+   0.000000    0.000000   clock virtual (rise edge)
+   0.000000    0.000000   clock network delay (ideal)
+   0.000000    0.000000   clock reconvergence pessimism
+   0.000000    0.000000   output external delay
+               0.000000   data required time
+-----------------------------------------------------------------
+               0.000000   data required time
+              -0.173211   data arrival time
+-----------------------------------------------------------------
+               0.173211   slack (MET)
+
+

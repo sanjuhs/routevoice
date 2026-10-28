@@ -1,0 +1,21 @@
+from pathlib import Path
+W=Path(__file__).resolve().parent
+s=(W/'simulate-w5-source.py').read_text()
+s=s.replace("W=Path(__file__).resolve().parent;A=W.parents[1];R=A.parents[1];OLD=R/'experiments/taalas-access/mask-index-tall';PDK=R/'pdks/gf180mcuD/libs.tech/ngspice'", "W=Path(__file__).resolve().parent;R=W.parents[2];A=R/'overnight-20261014/taalas-array';OLD=R/'experiments/taalas-access/mask-index-tall';PDK=R/'pdks/gf180mcuD/libs.tech/ngspice'")
+a=s.index("seldata=json.loads((W/'selection.json')")
+b=s.index(';selected=',a)
+s=s[:a]+s[b+1:]
+s=s.replace(" if (O/'cap-ranking.json').exists() else candidate['local_bit_columns']",'')
+s=s.replace("group,local=divmod(n,16);x=geo['array_origin_um'][0]+2+group*11.56+local*.66+.33;rx=10+3.5*n+2.24;y=geo['fanout_start_y_um']+n*geo['fanout_pitch_um'];length=(geo['array_origin_um'][1]+.5-y)+abs(rx-x)+(y-2)","group,local=divmod(n,16);x=10+2+group*11.56+local*.66+.33;oy=(n%8)*14.4;rx=10+(n//16)*11.56+((n//8)%2)*5.28+2.24;y=oy+12.5;length=(126.5-125)+(125-y)+abs(rx-x)+(y-(oy+2))")
+s=s.replace("'W5-STATUS: tall slice'","'W6-STATUS: stacked slice'")
+s=s.replace("D.mkdir(exist_ok=True)","D.mkdir(exist_ok=False)")
+s=s.replace("timeout=600", "timeout=600")
+s=s.replace("'/opt/homebrew/bin/ngspice'", "'ngspice'")
+s=s.replace("# Retained one-strap model", "# Reused W5 one-strap model")
+s=s.replace("'scope':'16fullheight", "'scope':'New eight-row pitch-matched W6 layout.16fullheight")
+s=s.replace("'source_gds_sha256':meta['source_gds_sha256']}","'source_gds_sha256':meta['source_gds_sha256'],'full_row_energy_pj':None,'full_bank_timing_proven':False}")
+(W/'simulate.py').write_text(s)
+s=(W/'normalize-w5-source.py').read_text();s=s.replace("A=W.parents[1]", "A=W.parents[2]/'overnight-20261014/taalas-array'")
+s=s.replace("image=np.load(A/'indices.npy')[b::1280//H,g*32:(g+1)*32]", "image=np.load(O/'image.npy')")
+s=s.replace("f'logicalrow={b}+{1280//H}*localrow'", "'logicalrow=localrow'")
+(W/'normalize.py').write_text(s)

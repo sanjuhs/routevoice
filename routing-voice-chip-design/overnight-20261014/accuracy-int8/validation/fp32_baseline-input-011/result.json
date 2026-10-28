@@ -1,0 +1,62 @@
+{
+  "case_id": "fp32_baseline-input-011",
+  "model": "fp32_baseline",
+  "id": "5536-43363-0015",
+  "role": "validation",
+  "condition": "white_noise_10db",
+  "seed": null,
+  "reference": "FIVE YEARS LATER HE REPEATED THE SERVICE AND AGAIN SAVED HIS PEOPLE FROM AWFUL SLAUGHTER",
+  "input_float32_sha256": "bb761609475ebf8f350e81599481254a93c64971b2555c5eeeb0fd881c5e2072",
+  "hypothesis": "Five years later he repealed in his service and again saved his people from office water",
+  "normalized_tokens": [
+    "five",
+    "years",
+    "later",
+    "he",
+    "repealed",
+    "in",
+    "his",
+    "service",
+    "and",
+    "again",
+    "saved",
+    "his",
+    "people",
+    "from",
+    "office",
+    "water"
+  ],
+  "edits": 5,
+  "reference_words": 15,
+  "hypothesis_words": 16,
+  "exact": false,
+  "lines": [
+    {
+      "text": "Five years later he repealed in his service and again saved his people from office water",
+      "start_time": 0.09599995613098145,
+      "duration": 4.640000343322754,
+      "is_complete": true,
+      "samples": 74240,
+      "input_float32_sha256": "7f1aeaa5b14c58d600cc292fb43b3d865a2c157a3a6c225e6b01b288bee0aca4"
+    }
+  ],
+  "request_sha256": "996f38159a50f772508cea9549ab2960c10f593482f495782988898a032a7a30",
+  "worker_sha256": "4682e8a57db08e02a34f53b01f334f34faa3ca9a6546698f1e4650db359004b6",
+  "native_library_sha256": "1453a6c1c9072f3d05e9e5ae6ff423fae839e56631c5efb12bbd5c0280d04399",
+  "native_api_version": 30000,
+  "load_seconds": 0.04575558309443295,
+  "compute_seconds": 0.18015483301132917,
+  "audio_seconds": 4.74,
+  "process_cpu_seconds": 0.179379,
+  "voluntary_context_switches": 0,
+  "involuntary_context_switches": 40,
+  "system_load_average": [
+    10.0751953125,
+    8.81884765625,
+    9.83056640625
+  ],
+  "options": null,
+  "flags": 0,
+  "process_id": 80804,
+  "isolation": "One audio clip/condition in a fresh native process; no previous utterance or VAD state."
+}

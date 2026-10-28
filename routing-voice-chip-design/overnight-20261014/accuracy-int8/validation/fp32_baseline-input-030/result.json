@@ -1,0 +1,57 @@
+{
+  "case_id": "fp32_baseline-input-030",
+  "model": "fp32_baseline",
+  "id": "2277-149897-0031",
+  "role": "validation",
+  "condition": "clean",
+  "seed": null,
+  "reference": "HE TROUBLED OVER MANY LITTLE DETAILS AND TALKED PERFUNCTORILY TO EVERYBODY",
+  "input_float32_sha256": "844b55342f4d8ff1775d25ef5f53b36072ee17b766132b156fde11d20d1d14bf",
+  "hypothesis": "He troubled over many little details and talked profunctorily to everybody.",
+  "normalized_tokens": [
+    "he",
+    "troubled",
+    "over",
+    "many",
+    "little",
+    "details",
+    "and",
+    "talked",
+    "profunctorily",
+    "to",
+    "everybody"
+  ],
+  "edits": 1,
+  "reference_words": 11,
+  "hypothesis_words": 11,
+  "exact": false,
+  "lines": [
+    {
+      "text": "He troubled over many little details and talked profunctorily to everybody.",
+      "start_time": 0.09599995613098145,
+      "duration": 4.288000106811523,
+      "is_complete": true,
+      "samples": 68608,
+      "input_float32_sha256": "7d55165d036ebb128ab198346ea1fed1b0aa88f5ad5e5e55bb29ca2a04c5761c"
+    }
+  ],
+  "request_sha256": "d12ac94305143336336ee4690cb83a38995098e1361a4463da217394f5a8b3fb",
+  "worker_sha256": "4682e8a57db08e02a34f53b01f334f34faa3ca9a6546698f1e4650db359004b6",
+  "native_library_sha256": "1453a6c1c9072f3d05e9e5ae6ff423fae839e56631c5efb12bbd5c0280d04399",
+  "native_api_version": 30000,
+  "load_seconds": 0.04459700011648238,
+  "compute_seconds": 0.1660518329590559,
+  "audio_seconds": 4.405,
+  "process_cpu_seconds": 0.16593999999999995,
+  "voluntary_context_switches": 0,
+  "involuntary_context_switches": 57,
+  "system_load_average": [
+    10.57568359375,
+    9.021484375,
+    9.8798828125
+  ],
+  "options": null,
+  "flags": 0,
+  "process_id": 81075,
+  "isolation": "One audio clip/condition in a fresh native process; no previous utterance or VAD state."
+}

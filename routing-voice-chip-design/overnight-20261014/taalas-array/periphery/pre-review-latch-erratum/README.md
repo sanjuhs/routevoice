@@ -1,0 +1,1 @@
+Superseded statements preserved for audit. The index_latch register was unused and removed by synthesis; these earlier documents incorrectly credited physical index-capture flops. Read ../LATCH-ERRATUM.md and corrected current results.

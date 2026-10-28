@@ -1,0 +1,29 @@
+{
+  "passed": true,
+  "services": {
+    "frontend_immutable": {
+      "native_bytes": 8298240,
+      "rtl_replies": 55720960,
+      "host_replies": 0,
+      "mismatches": 0
+    },
+    "producer_positions": {
+      "native_bytes": 1310720,
+      "rtl_replies": 2560,
+      "host_replies": 0,
+      "mismatches": 0
+    }
+  },
+  "total_native_bytes": 9608960,
+  "comparisons": 18,
+  "tokens": [
+    28176,
+    373,
+    278,
+    26068,
+    2
+  ],
+  "text": "Switch on the lights",
+  "positive_seconds": 3308.2698258750606,
+  "source_and_binary_hashes_stable": true
+}

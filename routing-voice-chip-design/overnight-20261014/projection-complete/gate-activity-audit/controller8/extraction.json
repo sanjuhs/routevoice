@@ -1,0 +1,10 @@
+{
+  "source_netlist": "overnight-20261014/projection-complete/gate-native/complete-mapped.nl.v",
+  "source_sha256": "ff2d3d39a70e0c5928022359d667de8f02eb3fa3f1a67b721607d7eeae4647f8",
+  "cell_count": 29,
+  "cells_preserved_verbatim": true,
+  "cell_block_sha256": "9463477c35c706457644d8969494e6f498902362a79ed35462d4a2e87f5a3cd0",
+  "testbench_sha256": "e4fdbda72eadfc9f20d8f263dc6059497107e4c226e70775ed090215a594a68f",
+  "scope": "Exact mapped wrapper controller cone only; engine handshake inputs are driven as a diagnostic stimulus.",
+  "oracle_correction": "Initial PRE expectation incorrectly assumed phase bit2; actual mapped _10467_ D=_00002_ is phase bit4, so correct PRE is0x10. Initial logs preserved; DONE and IDLE captures already passed both simulators."
+}

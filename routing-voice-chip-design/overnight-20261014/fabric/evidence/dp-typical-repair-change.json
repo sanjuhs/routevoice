@@ -1,0 +1,7 @@
+{
+  "config": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/configs/rv_fixed_proj320_dp-typical-repair.json",
+  "change": "Optimize resizer at nom_tt only; retain full nine-corner STA_CORNERS for extracted final checking. No PDN/DRC/LVS/antenna/signoff checker disabled.",
+  "reason": "RepairDesign profile repeatedly in OpenSTA seedInputDelayArrival with 42,240 array inputs; no completed repair checkpoint after over 24 minutes. Reuse completed placement/STA checkpoint.",
+  "source_state": "runs/rv_fixed_proj320_dp-io-microns/07-openroad-stamidpnr/state_out.json",
+  "unix": 1791934406.883313
+}

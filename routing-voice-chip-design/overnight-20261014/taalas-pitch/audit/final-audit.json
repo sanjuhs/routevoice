@@ -1,0 +1,240 @@
+{
+  "generated_utc": "2026-10-13T22:55:45.434792+00:00",
+  "status": "audit_complete_with_explicit_incomplete_TT120ns_evidence",
+  "independent_audit_scope": "DirectGDS geometry/area; source+receipt cap review (no independent1.124GBstream reread); independent savedtrace analysis, no timinganalyzer imports",
+  "receipts": {
+    "geometry-audit.json": {
+      "sha256": "68d855269ab4e4f402163aa3c4d6e8d78ef4cdf68669a7468b6abfd64bb04381",
+      "data": {
+        "geometry": [
+          {
+            "rows": 64,
+            "gds_sha256": "a94a98e936a59619f7009a2a55354cc4498b442f0d348aa474ea96589b1f7f73",
+            "bounds_um": [
+              0.0,
+              0.04,
+              1004.0,
+              234.21
+            ],
+            "dimensions_um": [
+              1004.0,
+              234.17000000000002
+            ],
+            "area_um2": 235106.68000000002,
+            "um2_per_selection": 11.479818359375,
+            "route_and_pin_geometry_checks": 13070,
+            "pass_all": true,
+            "scope": "Direct GDS M2/M3/M4 joins, via2/via3,1280 OUT labels on metal,receiver supply/PC eight-row spines. Does not prove all-layer connectivity or electrical integrity."
+          },
+          {
+            "rows": 1280,
+            "gds_sha256": "fd75915d1d8b7bc053e91b0141bd1400d4f05d1319bdfebfd8cac4449b2235b0",
+            "bounds_um": [
+              0.0,
+              0.04,
+              1004.0,
+              2258.85
+            ],
+            "dimensions_um": [
+              1004.0,
+              2258.81
+            ],
+            "area_um2": 2267845.2399999998,
+            "um2_per_selection": 5.53673154296875,
+            "route_and_pin_geometry_checks": 13070,
+            "pass_all": true,
+            "scope": "Direct GDS M2/M3/M4 joins, via2/via3,1280 OUT labels on metal,receiver supply/PC eight-row spines. Does not prove all-layer connectivity or electrical integrity."
+          }
+        ],
+        "area_audit": {
+          "uniform_model_mm2": 174.17051443199998,
+          "october_array_receiver_mm2": 164.837,
+          "october_other_components_mm2": 56.583999999999996,
+          "mixed_mm2": 230.75451443199998,
+          "mixed_increase_over_october_mm2": 9.333514431999987,
+          "native_local_bit_pitch_um": 0.66,
+          "average_pitch_including_every16_corridor_um": 0.7225,
+          "bank_width_per_bitline_um": 0.784375
+        }
+      }
+    },
+    "final-cap-receipt-audit.json": {
+      "sha256": "025a973c2b815cbcbee663247e0474dd5ea487da578f277a4b3b9eeb4dfc3edc",
+      "data": {
+        "export_rank_compare_hashes_consistent": true,
+        "rank_all1280_ids_unique_and_sorted": true,
+        "all_rc_proxy_units_recomputed_match": true,
+        "highest_C_and_RC_column": 1153,
+        "capacitance_ff": "680.09041",
+        "exact_candidate_incident_pair_count": 2632,
+        "changed_pairs": 0,
+        "maximum_connected_drains": 714,
+        "scope": "JSON/source audit, not independent reread of1.124GBcapstream; pair equality concerns onlycandidate1153."
+      }
+    },
+    "final-timing-trace-audit.json": {
+      "sha256": "6c0e0b651083bc3f927b7044d2273b58d2df06b898843170d3b5a9b2aaacce3b",
+      "data": [
+        {
+          "case": "timing/r1280-g09/typical-60ns-s32",
+          "independent_trace_recomputation_matches": true,
+          "failures": {
+            "output": 0,
+            "raw": 0,
+            "precharge": 0,
+            "phase": 0
+          },
+          "capture_checks": 320,
+          "aperture20ns_failures": 0,
+          "maximum_sampled_settle_ns": 15.415282000000005,
+          "partial_source_energy_pj": {
+            "pr": 94.95037961326362,
+            "pw": 1.3636880675963245,
+            "pp": 9.637610904662541,
+            "pa": -0.18891804127859863
+          },
+          "partial_total_pj": 105.76276054424389,
+          "max_step_ns": 0.20000020000000515
+        },
+        {
+          "case": "timing/r1280-g09/ss-60ns-s32",
+          "independent_trace_recomputation_matches": true,
+          "failures": {
+            "output": 0,
+            "raw": 0,
+            "precharge": 0,
+            "phase": 0
+          },
+          "capture_checks": 320,
+          "aperture20ns_failures": 18,
+          "maximum_sampled_settle_ns": 23.443325000000016,
+          "partial_source_energy_pj": {
+            "pr": 75.28079342581749,
+            "pw": 1.1194546719298555,
+            "pp": 7.839488676209204,
+            "pa": 0.20138866064388994
+          },
+          "partial_total_pj": 84.44112543460044,
+          "max_step_ns": 0.2000003999999953
+        },
+        {
+          "case": "timing/r1280-g09-fullcontrol/ss-60ns-s32",
+          "independent_trace_recomputation_matches": true,
+          "failures": {
+            "output": 0,
+            "raw": 0,
+            "precharge": 63,
+            "phase": 10
+          },
+          "capture_checks": 320,
+          "aperture20ns_failures": 80,
+          "maximum_sampled_settle_ns": 32.353378,
+          "partial_source_energy_pj": {
+            "pr": 255.81738066269878,
+            "pw": 8.201268733144028,
+            "pp": 60.35058058343169,
+            "pa": -2.083071136962778
+          },
+          "partial_total_pj": 322.28615884231175,
+          "max_step_ns": 0.20000019999999194
+        },
+        {
+          "case": "timing/r1280-g09-fullcontrol-guarded/ss-120ns-s32",
+          "independent_trace_recomputation_matches": true,
+          "failures": {
+            "output": 0,
+            "raw": 0,
+            "precharge": 0,
+            "phase": 0
+          },
+          "capture_checks": 320,
+          "aperture20ns_failures": 80,
+          "maximum_sampled_settle_ns": 31.68838240000001,
+          "partial_source_energy_pj": {
+            "pr": 78.2932866084614,
+            "pw": 8.20366205875305,
+            "pp": 63.16506759128587,
+            "pa": 0.19799637918657323
+          },
+          "partial_total_pj": 149.86001263768688,
+          "max_step_ns": 0.20000000000001503
+        }
+      ]
+    },
+    "guarded-physical-deck-audit.json": {
+      "sha256": "67e55846b135958b2f6b008298270bac931235c764387ae7c2b08602e30e2c28",
+      "data": {
+        "physical_lines_byte_identical": true,
+        "sha256": "9d5bd543d50c5e9171b1edbf410b1bae004af12f29c607e562158879c8aa6c58",
+        "scope": "SS60nsfailed vsSS120nsguarded;MOS/R/C/model/temp/supplies/options/columnmeters preserved;stimulusphases allowedtochange",
+        "tt_companion": {
+          "MOS_C_modelpaths_solver_columnmeters_equal_SS": true,
+          "resistor_connectivity_equal": true,
+          "same_guarded_protocol": true,
+          "intentional_PVT": "TTtypical3.3V25C,sheet0.104ohm/square;SSss2.97V125C,sheet0.138632ohm/square"
+        }
+      }
+    }
+  },
+  "full_control_60ns_protocol_pass": false,
+  "full_row_energy_known": false,
+  "complete_macro_proven": false,
+  "pending": [],
+  "corrected_reporting_issue": "Timing-candidate MOS energy is not maximum selected-column energy",
+  "report": "FINAL-AUDIT.md",
+  "guarded_full_control_SS120ns_protocol_pass": true,
+  "guarded_full_control_TT120ns": {
+    "status": "resource_incomplete",
+    "reason": "authorized diskguard terminated original nativeprocess before22GiBfloor",
+    "minimum_free_gib": 22.132843017578125,
+    "last_logged_transient_ns": 869.81,
+    "required_transient_ns": 1200,
+    "final_trace_available": false,
+    "timing_pass": null,
+    "energy_pj": null,
+    "convergence_failure_proven": false
+  },
+  "remaining_design_evidence_gaps": [
+    "Guarded full-control TT120ns completion",
+    "Complete simultaneous row energy",
+    "Complete physical macro timing and PDN/escape/periphery"
+  ],
+  "resource_stop_receipt": {
+    "path": "timing/r1280-g09-fullcontrol-guarded/typical-120ns-s32/watchdog-extension.json",
+    "sha256": "db88aee2030076916d419ddbf6228b1faa21ff249dbbcde33521efc2a9ca009c",
+    "data": {
+      "authorization": "Parent explicitly authorized safe owned-watchdog extension to absolute2400s, preserving native TT circuit/tolerances/process. Stop only identified Python wait; resume on native exit or absolute bound. User22GiB disk floor unchanged.",
+      "parent_pid": 30688,
+      "child_pid": 30714,
+      "parent_process": "30688 30672 SN   11:09 .venv/bin/python overnight-20261014/taalas-pitch/timing/guarded_full_control_tt.py --directory r1280-g09-fullcontrol-guarded",
+      "child_process": "30714 30688 RN   11:05 ngspice -b test.cir",
+      "child_cwd": "p30714\nfcwd\nn/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/taalas-pitch/timing/r1280-g09-fullcontrol-guarded/typical-120ns-s32\n",
+      "original_timeout_seconds": 1200,
+      "new_absolute_timeout_seconds": 2400,
+      "elapsed_parent_before_stop_seconds": 669,
+      "deadline_utc": "2026-10-13T23:19:58.304023+00:00",
+      "subprocess_wait_source_sha256": "773f67be387e442975136954e06b0113780c904d6075cb6957d5cfa7d3ad5fbd",
+      "actions": [
+        {
+          "utc": "2026-10-13T22:51:10.304363+00:00",
+          "action": "Validated owned parent/native child/cwd and wait-before-timeout implementation"
+        },
+        {
+          "utc": "2026-10-13T22:51:10.304584+00:00",
+          "action": "SIGSTOP sent only to Python watchdog; original native TT process continues"
+        },
+        {
+          "utc": "2026-10-13T22:54:15.024634+00:00",
+          "action": "22.2GiB reserve reached; SIGTERM sent only to owned native TT process"
+        },
+        {
+          "utc": "2026-10-13T22:54:15.025002+00:00",
+          "action": "SIGCONT sent to original watchdog; original runner owns exit/status/trace analysis"
+        }
+      ],
+      "minimum_free_gib": 22.132843017578125,
+      "status": "disk_guard"
+    }
+  },
+  "report_sha256": "18f6c8cb626e19ce55d28f7ad881e2beb7f46b26f443f071e4aaa0a331336175"
+}

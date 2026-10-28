@@ -1,0 +1,3311 @@
+{
+  "scope": "Raw integer projection primitive, pre-silicon tool estimates. No whole-recognizer or custom-cell result.",
+  "metric_caveat": "LibreLane raw state metrics accumulate and may include stale metrics inherited from earlier stages/corners. Normalized sta_corners is populated only from extracted post-PnR STA.",
+  "generation": {
+    "source": "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/cross/coefficients.bin",
+    "source_sha256": "f25cb6ca33ef3ee3f92a3b4914c5887333fcfe57dcd440b30f1d8f100a9b4ffc",
+    "image0_sha256": "7d846127db6f9366e919ca1530fad6470ddf680fc44e3e6f248924893179d4e2",
+    "shape": [
+      320,
+      320
+    ],
+    "layout": "W[k,n]=image[k*320+n]",
+    "reconstruction_assertions": 102400,
+    "books": 1600,
+    "book_size": 16,
+    "vectors": 32,
+    "random_vectors": 20,
+    "seed": 20261014,
+    "activation_bits": 9,
+    "representative_bits": 8,
+    "index_bits": 4,
+    "partial_product_bits": 13,
+    "product_bits": 17,
+    "accumulator_bits": 27,
+    "asum_bits": 18,
+    "pipeline_latency_after_last_input_cycles": 1,
+    "start_to_done_unstalled_cycles": 321
+  },
+  "initial_clock_period_ns": 20,
+  "variants": {
+    "rv_fixed_proj320_rom": {
+      "rows": 320,
+      "outputs": 320,
+      "weight_positions": 102400,
+      "verification_level": "RTL simulation against original-byte NumPy INT64 oracle",
+      "verification": {
+        "vectors_passed": 32,
+        "random_vectors": 20,
+        "exact_comparisons": 10272,
+        "failures": 0
+      },
+      "physical_runs": [
+        {
+          "run_directory": "runs/rv_fixed_proj320_rom-v1",
+          "last_completed_step": "05-yosys-jsonheader",
+          "supervisor": {
+            "command": [
+              "bash",
+              "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/run_flow.sh",
+              "rv_fixed_proj320_rom",
+              "v1"
+            ],
+            "log": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/logs/rv_fixed_proj320_rom-v1.flow.log",
+            "exit_code": -15,
+            "stop_reason": "supervisor interrupted: ",
+            "elapsed_seconds": 103.53919100761414,
+            "minimum_free_bytes": 28504743936,
+            "limit_seconds": 7200,
+            "thread_limit": 8,
+            "nice": 10,
+            "start_unix": 1791919541.44391
+          },
+          "last_started_step": "06-yosys-synthesis",
+          "flow_log": "logs/rv_fixed_proj320_rom-v1.flow.log"
+        },
+        {
+          "run_directory": "runs/rv_fixed_proj320_rom-condensed",
+          "last_completed_step": "05-yosys-jsonheader",
+          "supervisor": {
+            "command": [
+              "bash",
+              "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/run_flow.sh",
+              "rv_fixed_proj320_rom",
+              "condensed"
+            ],
+            "log": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/logs/rv_fixed_proj320_rom-condensed.flow.log",
+            "exit_code": -15,
+            "stop_reason": "disk safety margin: free below 22 GiB",
+            "elapsed_seconds": 100.1167778968811,
+            "minimum_free_bytes": 22879318016,
+            "limit_seconds": 7200,
+            "thread_limit": 8,
+            "nice": 10,
+            "start_unix": 1791919651.646028
+          },
+          "last_started_step": "06-yosys-synthesis",
+          "flow_log": "logs/rv_fixed_proj320_rom-condensed.flow.log"
+        },
+        {
+          "run_directory": "runs/rv_fixed_proj320_rom-synthesis-retry",
+          "last_completed_step": "06-yosys-synthesis",
+          "supervisor": {
+            "command": [
+              "bash",
+              "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/run_flow.sh",
+              "rv_fixed_proj320_rom",
+              "synthesis-retry"
+            ],
+            "log": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/logs/rv_fixed_proj320_rom-synthesis-retry.flow.log",
+            "exit_code": 0,
+            "stop_reason": null,
+            "elapsed_seconds": 635.9863002300262,
+            "minimum_free_bytes": 25408712704,
+            "limit_seconds": 3600,
+            "thread_limit": 8,
+            "nice": 10,
+            "minimum_required_free_gib": 23.5,
+            "start_unix": 1791933813.7806048,
+            "flow_controls": {
+              "W2_TO_STEP": "Yosys.Synthesis",
+              "W2_NUM_THREADS": "1",
+              "W2_MIN_FREE_GIB": "23.5",
+              "W2_LIMIT_SECONDS": "3600"
+            }
+          },
+          "last_started_step": "06-yosys-synthesis",
+          "flow_log": "logs/rv_fixed_proj320_rom-synthesis-retry.flow.log"
+        },
+        {
+          "run_directory": "runs/rv_fixed_proj320_rom-physical20",
+          "last_completed_step": "25-openroad-stamidpnr",
+          "supervisor": {
+            "command": [
+              "bash",
+              "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/run_flow.sh",
+              "rv_fixed_proj320_rom",
+              "physical20"
+            ],
+            "log": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/logs/rv_fixed_proj320_rom-physical20.flow.log",
+            "exit_code": -15,
+            "stop_reason": "supervisor interrupted: ",
+            "elapsed_seconds": 3714.539592027664,
+            "minimum_free_bytes": 24006971392,
+            "limit_seconds": 6564,
+            "thread_limit": 8,
+            "nice": 10,
+            "minimum_required_free_gib": 22.0,
+            "start_unix": 1791934584.585721,
+            "flow_controls": {
+              "W2_FROM_STEP": "Checker.YosysUnmappedCells",
+              "W2_TO_STEP": "OpenROAD.STAMidPNR-1",
+              "W2_INITIAL_STATE": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/runs/rv_fixed_proj320_rom-synthesis-retry/06-yosys-synthesis/state_out.json",
+              "W2_NUM_THREADS": "4",
+              "W2_CONFIG_PATH": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/configs/rv_fixed_proj320_rom-physical20.json",
+              "W2_LIMIT_SECONDS": "6564"
+            }
+          },
+          "last_started_step": "26-openroad-repairdesignpostgpl",
+          "flow_log": "logs/rv_fixed_proj320_rom-physical20.flow.log"
+        },
+        {
+          "run_directory": "runs/rv_fixed_proj320_rom-util20-200ns",
+          "last_completed_step": "15-odb-applydeftemplate",
+          "supervisor": {
+            "command": [
+              "bash",
+              "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/run_flow.sh",
+              "rv_fixed_proj320_rom",
+              "util20-200ns"
+            ],
+            "log": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/logs/rv_fixed_proj320_rom-util20-200ns.flow.log",
+            "exit_code": 2,
+            "stop_reason": null,
+            "elapsed_seconds": 680.9481060504913,
+            "minimum_free_bytes": 23859703808,
+            "limit_seconds": 2833,
+            "thread_limit": 8,
+            "nice": 10,
+            "minimum_required_free_gib": 22.0,
+            "start_unix": 1791938315.2427719,
+            "flow_controls": {
+              "W2_FROM_STEP": "OpenROAD.Floorplan",
+              "W2_TO_STEP": "OpenROAD.STAMidPNR-1",
+              "W2_INITIAL_STATE": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/evidence/full-rom-util20-200ns-initial-state.json",
+              "W2_NUM_THREADS": "4",
+              "W2_CONFIG_PATH": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/configs/rv_fixed_proj320_rom-util20-200ns.json",
+              "W2_LIMIT_SECONDS": "2833"
+            }
+          },
+          "last_started_step": "16-openroad-globalplacement",
+          "flow_log": "logs/rv_fixed_proj320_rom-util20-200ns.flow.log"
+        },
+        {
+          "run_directory": "runs/rv_fixed_proj320_rom-util20-density35-200ns",
+          "last_completed_step": null,
+          "supervisor": {
+            "command": [
+              "bash",
+              "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/run_flow.sh",
+              "rv_fixed_proj320_rom",
+              "util20-density35-200ns"
+            ],
+            "log": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/logs/rv_fixed_proj320_rom-util20-density35-200ns.flow.log",
+            "exit_code": 2,
+            "stop_reason": null,
+            "elapsed_seconds": 570.7427549362183,
+            "minimum_free_bytes": 25645719552,
+            "limit_seconds": 2126,
+            "thread_limit": 8,
+            "nice": 10,
+            "minimum_required_free_gib": 22.0,
+            "start_unix": 1791939022.567343,
+            "flow_controls": {
+              "W2_FROM_STEP": "OpenROAD.GlobalPlacement",
+              "W2_TO_STEP": "OpenROAD.STAMidPNR-1",
+              "W2_INITIAL_STATE": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/runs/rv_fixed_proj320_rom-util20-200ns/15-odb-applydeftemplate/state_out.json",
+              "W2_NUM_THREADS": "4",
+              "W2_CONFIG_PATH": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/configs/rv_fixed_proj320_rom-util20-density35-200ns.json",
+              "W2_LIMIT_SECONDS": "2126"
+            }
+          },
+          "last_started_step": "01-openroad-globalplacement",
+          "flow_log": "logs/rv_fixed_proj320_rom-util20-density35-200ns.flow.log"
+        },
+        {
+          "run_directory": "runs/rv_fixed_proj320_rom-util20-density35-noinflate-200ns",
+          "last_completed_step": "09-openroad-stamidpnr-1",
+          "supervisor": {
+            "command": [
+              "bash",
+              "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/run_flow.sh",
+              "rv_fixed_proj320_rom",
+              "util20-density35-noinflate-200ns"
+            ],
+            "log": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/logs/rv_fixed_proj320_rom-util20-density35-noinflate-200ns.flow.log",
+            "exit_code": 0,
+            "stop_reason": null,
+            "elapsed_seconds": 1046.477478981018,
+            "minimum_free_bytes": 24824983552,
+            "limit_seconds": 1520,
+            "thread_limit": 4,
+            "nice": 10,
+            "minimum_required_free_gib": 22.0,
+            "start_unix": 1791939627.699893,
+            "flow_controls": {
+              "W2_FROM_STEP": "OpenROAD.GlobalPlacement",
+              "W2_TO_STEP": "OpenROAD.STAMidPNR-1",
+              "W2_INITIAL_STATE": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/runs/rv_fixed_proj320_rom-util20-200ns/15-odb-applydeftemplate/state_out.json",
+              "W2_NUM_THREADS": "4",
+              "W2_CONFIG_PATH": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/configs/rv_fixed_proj320_rom-util20-density35-noinflate-200ns.json",
+              "W2_LIMIT_SECONDS": "1520"
+            }
+          },
+          "last_started_step": "09-openroad-stamidpnr-1",
+          "flow_log": "logs/rv_fixed_proj320_rom-util20-density35-noinflate-200ns.flow.log"
+        },
+        {
+          "run_directory": "runs/rv_fixed_proj320_rom-route-util20-density35-noinflate-200ns",
+          "last_completed_step": "02-openroad-stamidpnr-2",
+          "supervisor": {
+            "command": [
+              "bash",
+              "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/run_flow.sh",
+              "rv_fixed_proj320_rom",
+              "route-util20-density35-noinflate-200ns"
+            ],
+            "log": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/logs/rv_fixed_proj320_rom-route-util20-density35-noinflate-200ns.flow.log",
+            "exit_code": 1,
+            "stop_reason": null,
+            "elapsed_seconds": 465.6412253379822,
+            "minimum_free_bytes": 24137785344,
+            "limit_seconds": 473,
+            "thread_limit": 4,
+            "nice": 10,
+            "minimum_required_free_gib": 22.0,
+            "start_unix": 1791940675.327654,
+            "flow_controls": {
+              "W2_FROM_STEP": "OpenROAD.ResizerTimingPostCTS",
+              "W2_INITIAL_STATE": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/runs/rv_fixed_proj320_rom-util20-density35-noinflate-200ns/09-openroad-stamidpnr-1/state_out.json",
+              "W2_NUM_THREADS": "4",
+              "W2_CONFIG_PATH": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/configs/rv_fixed_proj320_rom-util20-density35-noinflate-200ns.json",
+              "W2_LIMIT_SECONDS": "473"
+            }
+          },
+          "last_started_step": "03-openroad-globalrouting",
+          "flow_log": "logs/rv_fixed_proj320_rom-route-util20-density35-noinflate-200ns.flow.log",
+          "termination_reason": "Existing full-ROM time budget; stop leaf OpenROAD 12 seconds before supervisor deadline to permit LibreLane log buffer closure. This is not a tool-reported routing violation.",
+          "termination_evidence": "evidence/full-rom-time-limit-log-preservation.json"
+        },
+        {
+          "run_directory": "runs/rv_fixed_proj320_rom-pre-route-render",
+          "last_completed_step": "01-klayout-render",
+          "supervisor": {
+            "command": [
+              "bash",
+              "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/run_flow.sh",
+              "rv_fixed_proj320_rom",
+              "pre-route-render"
+            ],
+            "log": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/logs/rv_fixed_proj320_rom-pre-route-render.flow.log",
+            "exit_code": 0,
+            "stop_reason": null,
+            "elapsed_seconds": 10.016768217086792,
+            "minimum_free_bytes": 25088196608,
+            "limit_seconds": 600,
+            "thread_limit": 1,
+            "nice": 10,
+            "minimum_required_free_gib": 23.0,
+            "start_unix": 1791941181.449924,
+            "flow_controls": {
+              "W2_FROM_STEP": "KLayout.Render",
+              "W2_TO_STEP": "KLayout.Render",
+              "W2_INITIAL_STATE": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/evidence/rv_fixed_proj320_rom-pre-route-render-state.json",
+              "W2_NUM_THREADS": "1",
+              "W2_CONFIG_PATH": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/configs/rv_fixed_proj320_rom-util20-density35-noinflate-200ns.json",
+              "W2_MIN_FREE_GIB": "23",
+              "W2_LIMIT_SECONDS": "600"
+            }
+          },
+          "last_started_step": "01-klayout-render",
+          "flow_log": "logs/rv_fixed_proj320_rom-pre-route-render.flow.log"
+        },
+        {
+          "run_directory": "runs/rv_fixed_proj320_rom-pre-route-rtl-activity",
+          "last_completed_step": "01-openroad-stamidpnr",
+          "supervisor": {
+            "command": [
+              "bash",
+              "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/run_flow.sh",
+              "rv_fixed_proj320_rom",
+              "pre-route-rtl-activity"
+            ],
+            "log": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/logs/rv_fixed_proj320_rom-pre-route-rtl-activity.flow.log",
+            "exit_code": 0,
+            "stop_reason": null,
+            "elapsed_seconds": 115.16942405700684,
+            "minimum_free_bytes": 24911536128,
+            "limit_seconds": 600,
+            "thread_limit": 1,
+            "nice": 10,
+            "minimum_required_free_gib": 23.0,
+            "start_unix": 1791941181.812031,
+            "flow_controls": {
+              "W2_FROM_STEP": "OpenROAD.STAMidPNR",
+              "W2_TO_STEP": "OpenROAD.STAMidPNR",
+              "W2_INITIAL_STATE": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/evidence/rv_fixed_proj320_rom-pre-route-rtl-activity-minimal-state.json",
+              "W2_NUM_THREADS": "1",
+              "W2_CONFIG_PATH": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/configs/rv_fixed_proj320_rom-pre-route-rtl-activity.json",
+              "W2_VCD": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/tmp/rv_fixed_proj320_rom-pre-route-rtl-activity.vcd",
+              "W2_MIN_FREE_GIB": "23",
+              "W2_LIMIT_SECONDS": "600"
+            }
+          },
+          "last_started_step": "01-openroad-stamidpnr",
+          "flow_log": "logs/rv_fixed_proj320_rom-pre-route-rtl-activity.flow.log"
+        }
+      ],
+      "cycles_start_to_done_no_stalls": 321,
+      "minimum_start_interval_without_readout_cycles": 322,
+      "cycles_including_320_clocked_reads": 641,
+      "accepted_activation_cycles": 320,
+      "readout_cycles_if_clocked_one_output_per_cycle": 320,
+      "cycles_full_320_matvec": 321,
+      "us_at_requested_50MHz": 6.42,
+      "synthesized_cell_count": 265388,
+      "synthesized_cell_area_um2": 5674712.735993,
+      "die_area_um2": 28612630.055625,
+      "core_area_um2": 28353067.097599998,
+      "utilization": 0.378911,
+      "sta_corners": {},
+      "achieved_mhz": null,
+      "sta_inferred_mhz": null,
+      "drc": null,
+      "lvs": null,
+      "antenna": null,
+      "power_mw": null,
+      "power_corner": null,
+      "power_activity_source": null,
+      "mm2_per_weight": null,
+      "um2_per_weight": null,
+      "mw_per_weight_at_achieved_clock": null,
+      "us_per_full_320_matvec_at_achieved_clock": null,
+      "layout_png": null,
+      "expected_extracted_corners": [
+        "max_ff_n40C_5v50",
+        "max_ss_125C_4v50",
+        "max_tt_025C_5v00",
+        "min_ff_n40C_5v50",
+        "min_ss_125C_4v50",
+        "min_tt_025C_5v00",
+        "nom_ff_n40C_5v50",
+        "nom_ss_125C_4v50",
+        "nom_tt_025C_5v00"
+      ],
+      "complete_extracted_corner_matrix": false,
+      "gate_verification": {
+        "variant": "rv_fixed_proj320_rom",
+        "level": "Zero-delay mapped netlist, GF180 FUNCTIONAL models, Verilator (two-state); no SDF timing simulation",
+        "netlist": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/runs/rv_fixed_proj320_rom-synthesis-retry/06-yosys-synthesis/rv_fixed_proj320_rom.nl.v",
+        "netlist_sha256": "2f957c3f5e1dfeb063207d5438d68d49280ec65778d087300902de245543ec86",
+        "clock_period_ns": 20,
+        "previous_attempt": "evidence/rv_fixed_proj320_rom.gate-verification.json.before-resume",
+        "thread_caps": {
+          "build": 2,
+          "simulation": 1
+        },
+        "phases": [
+          {
+            "phase": "compile",
+            "command": [
+              "nice",
+              "-n",
+              "10",
+              "make",
+              "-C",
+              "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/tb/gate_obj_rv_fixed_proj320_rom",
+              "-f",
+              "Vtb.mk",
+              "-j",
+              "2"
+            ],
+            "log": "logs/rv_fixed_proj320_rom.gate-resume-compile.log",
+            "exit_code": 0
+          },
+          {
+            "phase": "simulate",
+            "command": [
+              "nice",
+              "-n",
+              "10",
+              "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/tb/gate_obj_rv_fixed_proj320_rom/Vtb"
+            ],
+            "log": "logs/rv_fixed_proj320_rom.gate-resume-simulate.log",
+            "exit_code": 0
+          }
+        ],
+        "minimum_free_gib": 22.7,
+        "verification": {
+          "vectors_passed": 32,
+          "random_vectors": 20,
+          "exact_comparisons": 10272,
+          "failures": 0
+        },
+        "elapsed_seconds": 153.43858790397644,
+        "stop_reason": null,
+        "executable_sha256": "b8d2f024e44a3a30c9dac903ed1a9044accfe061f057cbe0aa2e40258775fba4"
+      },
+      "latest_completed_step": "02-openroad-stamidpnr-2",
+      "synthesis_metrics": {
+        "design__lint_error__count": 0,
+        "design__lint_timing_construct__count": 0,
+        "design__lint_warning__count": 0,
+        "design__inferred_latch__count": 0,
+        "design__instance__count": 265388,
+        "design__instance__area": 5674712.735993,
+        "design__instance_unmapped__count": 0,
+        "synthesis__check_error__count": 0
+      },
+      "latest_measured_metrics": {
+        "design__lint_error__count": 0,
+        "design__lint_timing_construct__count": 0,
+        "design__lint_warning__count": 0,
+        "design__inferred_latch__count": 0,
+        "design__instance__count": 530870,
+        "design__instance__area": 10743300,
+        "design__instance_unmapped__count": 0,
+        "synthesis__check_error__count": 0,
+        "design__max_slew_violation__count__corner:nom_tt_025C_5v00": 0,
+        "design__max_fanout_violation__count__corner:nom_tt_025C_5v00": 991,
+        "design__max_cap_violation__count__corner:nom_tt_025C_5v00": 2,
+        "power__internal__total": 0.114274,
+        "power__switching__total": 0.0753965,
+        "power__leakage__total": 6.57135e-05,
+        "power__total": 0.189737,
+        "clock__skew__worst_hold__corner:nom_tt_025C_5v00": -1.35525,
+        "clock__skew__worst_setup__corner:nom_tt_025C_5v00": 0.836588,
+        "timing__hold__ws__corner:nom_tt_025C_5v00": 0.556417,
+        "timing__setup__ws__corner:nom_tt_025C_5v00": 66.5473,
+        "timing__hold__tns__corner:nom_tt_025C_5v00": 0,
+        "timing__setup__tns__corner:nom_tt_025C_5v00": 0,
+        "timing__hold__wns__corner:nom_tt_025C_5v00": 0,
+        "timing__setup__wns__corner:nom_tt_025C_5v00": 0,
+        "timing__hold_vio__count__corner:nom_tt_025C_5v00": 0,
+        "timing__hold_r2r__ws__corner:nom_tt_025C_5v00": 0.556417,
+        "timing__hold_r2r_vio__count__corner:nom_tt_025C_5v00": 0,
+        "timing__setup_vio__count__corner:nom_tt_025C_5v00": 0,
+        "timing__setup_r2r__ws__corner:nom_tt_025C_5v00": 144.768,
+        "timing__setup_r2r_vio__count__corner:nom_tt_025C_5v00": 0,
+        "design__max_slew_violation__count__corner:nom_ss_125C_4v50": 619637,
+        "design__max_fanout_violation__count__corner:nom_ss_125C_4v50": 6308,
+        "design__max_cap_violation__count__corner:nom_ss_125C_4v50": 756,
+        "clock__skew__worst_hold__corner:nom_ss_125C_4v50": -19.88353182826315,
+        "clock__skew__worst_setup__corner:nom_ss_125C_4v50": 19.88353182826315,
+        "timing__hold__ws__corner:nom_ss_125C_4v50": 1.248912453249895,
+        "timing__setup__ws__corner:nom_ss_125C_4v50": -11234.926523106684,
+        "timing__hold__tns__corner:nom_ss_125C_4v50": 0,
+        "timing__setup__tns__corner:nom_ss_125C_4v50": -69642709.67512809,
+        "timing__hold__wns__corner:nom_ss_125C_4v50": 0,
+        "timing__setup__wns__corner:nom_ss_125C_4v50": -11234.926523106684,
+        "timing__hold_vio__count__corner:nom_ss_125C_4v50": 0,
+        "timing__hold_r2r__ws__corner:nom_ss_125C_4v50": 1.248912,
+        "timing__hold_r2r_vio__count__corner:nom_ss_125C_4v50": 0,
+        "timing__setup_vio__count__corner:nom_ss_125C_4v50": 15422,
+        "timing__setup_r2r__ws__corner:nom_ss_125C_4v50": -8172.37207,
+        "timing__setup_r2r_vio__count__corner:nom_ss_125C_4v50": 7025,
+        "design__max_slew_violation__count__corner:nom_ff_n40C_5v50": 488665,
+        "design__max_fanout_violation__count__corner:nom_ff_n40C_5v50": 6308,
+        "design__max_cap_violation__count__corner:nom_ff_n40C_5v50": 594,
+        "clock__skew__worst_hold__corner:nom_ff_n40C_5v50": -8.138495441257598,
+        "clock__skew__worst_setup__corner:nom_ff_n40C_5v50": 8.138495441257598,
+        "timing__hold__ws__corner:nom_ff_n40C_5v50": 0.2291772114727342,
+        "timing__setup__ws__corner:nom_ff_n40C_5v50": -3228.6171521246506,
+        "timing__hold__tns__corner:nom_ff_n40C_5v50": 0,
+        "timing__setup__tns__corner:nom_ff_n40C_5v50": -22891035.950876184,
+        "timing__hold__wns__corner:nom_ff_n40C_5v50": 0,
+        "timing__setup__wns__corner:nom_ff_n40C_5v50": -3228.6171521246506,
+        "timing__hold_vio__count__corner:nom_ff_n40C_5v50": 0,
+        "timing__hold_r2r__ws__corner:nom_ff_n40C_5v50": 0.229177,
+        "timing__hold_r2r_vio__count__corner:nom_ff_n40C_5v50": 0,
+        "timing__setup_vio__count__corner:nom_ff_n40C_5v50": 15395,
+        "timing__setup_r2r__ws__corner:nom_ff_n40C_5v50": -2920.861084,
+        "timing__setup_r2r_vio__count__corner:nom_ff_n40C_5v50": 7025,
+        "design__max_slew_violation__count": 0,
+        "design__max_fanout_violation__count": 991,
+        "design__max_cap_violation__count": 2,
+        "clock__skew__worst_hold": -1.35525,
+        "clock__skew__worst_setup": 0.836588,
+        "timing__hold__ws": 0.556417,
+        "timing__setup__ws": 66.5473,
+        "timing__hold__tns": 0,
+        "timing__setup__tns": 0,
+        "timing__hold__wns": 0,
+        "timing__setup__wns": 0,
+        "timing__hold_vio__count": 0,
+        "timing__hold_r2r__ws": 0.556417,
+        "timing__hold_r2r_vio__count": 0,
+        "timing__setup_vio__count": 0,
+        "timing__setup_r2r__ws": 144.768,
+        "timing__setup_r2r_vio__count": 0,
+        "design__die__bbox": "0.0 0.0 5340.125 5358.045",
+        "design__core__bbox": "6.72 15.68 5332.88 5339.04",
+        "design__io": 81,
+        "design__die__area": 28612600,
+        "design__core__area": 28353100,
+        "design__instance__count__stdcell": 530870,
+        "design__instance__area__stdcell": 10743300,
+        "design__instance__count__macros": 0,
+        "design__instance__area__macros": 0,
+        "design__instance__count__padcells": 0,
+        "design__instance__area__padcells": 0,
+        "design__instance__count__cover": 0,
+        "design__instance__area__cover": 0,
+        "design__instance__utilization": 0.378911,
+        "design__instance__utilization__stdcell": 0.378911,
+        "design__rows": 1358,
+        "design__rows:GF018hv5v_mcu_sc7": 1358,
+        "design__sites": 12915938,
+        "design__sites:GF018hv5v_mcu_sc7": 12915938,
+        "design__instance__count__class:inverter": 5749,
+        "design__instance__area__class:inverter": 50564.2,
+        "design__instance__count__class:sequential_cell": 15392,
+        "design__instance__area__class:sequential_cell": 984802,
+        "design__instance__count__class:multi_input_combinational_cell": 244247,
+        "design__instance__area__class:multi_input_combinational_cell": 4800730,
+        "flow__warnings__count": 0,
+        "flow__errors__count": 0,
+        "flow__warnings__count:ODB-0220": 1,
+        "flow__warnings__type_count": 0,
+        "flow__warnings__count:ORD-0039": 1,
+        "design__instance__count__class:endcap_cell": 2716,
+        "design__instance__area__class:endcap_cell": 11924.3,
+        "design__instance__count__class:tap_cell": 184296,
+        "design__instance__area__class:tap_cell": 809133,
+        "design__power_grid_violation__count__net:VSS": 0,
+        "design__power_grid_violation__count__net:VDD": 0,
+        "design__power_grid_violation__count": 0,
+        "floorplan__design__io": 79,
+        "design__io__hpwl": 390427129,
+        "flow__warnings__count:GPL-0325": 1,
+        "timing__drv__floating__nets": 2,
+        "timing__drv__floating__pins": 0,
+        "design__instance__displacement__total": 0,
+        "design__instance__displacement__mean": 0,
+        "design__instance__displacement__max": 0,
+        "route__wirelength__estimated": 65673100,
+        "design__violations": 0,
+        "design__instance__count__class:timing_repair_buffer": 75885,
+        "design__instance__area__class:timing_repair_buffer": 3956640,
+        "flow__warnings__count:RSZ-0020": 1,
+        "design__instance__count__class:clock_buffer": 2179,
+        "design__instance__area__class:clock_buffer": 121588,
+        "design__instance__count__class:clock_inverter": 406,
+        "design__instance__area__class:clock_inverter": 7915.89,
+        "design__instance__count__setup_buffer": 0,
+        "design__instance__count__hold_buffer": 0
+      },
+      "latest_physical_instance_count": 530870,
+      "latest_physical_instance_area_um2": 10743300,
+      "measurement_run": "runs/rv_fixed_proj320_rom-route-util20-density35-noinflate-200ns",
+      "measurement_clock_period_ns": 200.0,
+      "target_mhz": 5.0,
+      "utilization_percent": 37.8911,
+      "pdn_connectivity_violations": 0,
+      "area_scope": "allocated floorplan; routing not complete",
+      "physical_check_metrics": {
+        "design__power_grid_violation__count__net:VSS": 0,
+        "design__power_grid_violation__count__net:VDD": 0,
+        "design__power_grid_violation__count": 0
+      },
+      "allocated_floorplan_um2_per_weight": 279.42021538696287,
+      "allocated_floorplan_mm2_per_weight": 0.0002794202153869629,
+      "synthesized_cell_area_mm2": 5.674712735992999,
+      "synthesized_cell_um2_per_weight": 55.41711656243164,
+      "pre_route_checkpoints": [
+        {
+          "run": "runs/rv_fixed_proj320_rom-physical20",
+          "step": "runs/rv_fixed_proj320_rom-physical20/25-openroad-stamidpnr",
+          "scope": "pre-route placement-estimated parasitics; not extracted/signoff",
+          "period_ns": 20.0,
+          "target_mhz": 50.0,
+          "fresh_step_metrics": {
+            "design__max_slew_violation__count__corner:nom_tt_025C_5v00": 694959,
+            "design__max_fanout_violation__count__corner:nom_tt_025C_5v00": 6309,
+            "design__max_cap_violation__count__corner:nom_tt_025C_5v00": 6968,
+            "power__internal__total": 48.0224,
+            "power__switching__total": 0.221861,
+            "power__leakage__total": 4.35483e-05,
+            "power__total": 48.2443,
+            "clock__skew__worst_hold__corner:nom_tt_025C_5v00": -34.933,
+            "clock__skew__worst_setup__corner:nom_tt_025C_5v00": 36.6561,
+            "timing__hold__ws__corner:nom_tt_025C_5v00": -156.455,
+            "timing__setup__ws__corner:nom_tt_025C_5v00": -34060.9,
+            "timing__hold__tns__corner:nom_tt_025C_5v00": -662715,
+            "timing__setup__tns__corner:nom_tt_025C_5v00": -239428000.0,
+            "timing__hold__wns__corner:nom_tt_025C_5v00": -156.455,
+            "timing__setup__wns__corner:nom_tt_025C_5v00": -34060.9,
+            "timing__hold_vio__count__corner:nom_tt_025C_5v00": 15344,
+            "timing__hold_r2r__ws__corner:nom_tt_025C_5v00": -49.8275,
+            "timing__hold_r2r_vio__count__corner:nom_tt_025C_5v00": 8106,
+            "timing__setup_vio__count__corner:nom_tt_025C_5v00": 15449,
+            "timing__setup_r2r__ws__corner:nom_tt_025C_5v00": -34060.9,
+            "timing__setup_r2r_vio__count__corner:nom_tt_025C_5v00": 7054,
+            "flow__warnings__count": 0,
+            "flow__errors__count": 0,
+            "flow__warnings__type_count": 0
+          },
+          "sta_corners": {
+            "nom_tt_025C_5v00": {
+              "hold_slack_ns": -156.455,
+              "setup_slack_ns": -34060.9
+            }
+          },
+          "typical_setup_slack_ns": -34060.9,
+          "typical_hold_slack_ns": -156.455,
+          "typical_setup_inferred_mhz": 0.029341948129304095
+        },
+        {
+          "run": "runs/rv_fixed_proj320_rom-pre-route-rtl-activity",
+          "step": "runs/rv_fixed_proj320_rom-pre-route-rtl-activity/01-openroad-stamidpnr",
+          "scope": "pre-route placement-estimated parasitics; not extracted/signoff",
+          "period_ns": 200.0,
+          "target_mhz": 5.0,
+          "fresh_step_metrics": {
+            "design__max_slew_violation__count__corner:nom_tt_025C_5v00": 0,
+            "design__max_fanout_violation__count__corner:nom_tt_025C_5v00": 991,
+            "design__max_cap_violation__count__corner:nom_tt_025C_5v00": 2,
+            "power__internal__total": 0.168115,
+            "power__switching__total": 0.137403,
+            "power__leakage__total": 6.57787e-05,
+            "power__total": 0.305583,
+            "clock__skew__worst_hold__corner:nom_tt_025C_5v00": -1.35525,
+            "clock__skew__worst_setup__corner:nom_tt_025C_5v00": 0.836588,
+            "timing__hold__ws__corner:nom_tt_025C_5v00": 0.556417,
+            "timing__setup__ws__corner:nom_tt_025C_5v00": 66.5473,
+            "timing__hold__tns__corner:nom_tt_025C_5v00": 0,
+            "timing__setup__tns__corner:nom_tt_025C_5v00": 0,
+            "timing__hold__wns__corner:nom_tt_025C_5v00": 0,
+            "timing__setup__wns__corner:nom_tt_025C_5v00": 0,
+            "timing__hold_vio__count__corner:nom_tt_025C_5v00": 0,
+            "timing__hold_r2r__ws__corner:nom_tt_025C_5v00": 0.556417,
+            "timing__hold_r2r_vio__count__corner:nom_tt_025C_5v00": 0,
+            "timing__setup_vio__count__corner:nom_tt_025C_5v00": 0,
+            "timing__setup_r2r__ws__corner:nom_tt_025C_5v00": 144.768,
+            "timing__setup_r2r_vio__count__corner:nom_tt_025C_5v00": 0,
+            "flow__warnings__count": 0,
+            "flow__errors__count": 0,
+            "flow__warnings__type_count": 0
+          },
+          "sta_corners": {
+            "nom_tt_025C_5v00": {
+              "hold_slack_ns": 0.556417,
+              "setup_slack_ns": 66.5473
+            }
+          },
+          "typical_setup_slack_ns": 66.5473,
+          "typical_hold_slack_ns": 0.556417,
+          "typical_setup_inferred_mhz": 7.493291630667645,
+          "power": {
+            "default": {
+              "corner": "nom_tt_025C_5v00",
+              "components_mw": {
+                "internal": 114.2743155,
+                "switching": 75.39650053,
+                "leakage": 0.06571351696,
+                "total": 189.7365302
+              }
+            },
+            "vcd": {
+              "corner": "nom_tt_025C_5v00",
+              "components_mw": {
+                "internal": 168.1146324,
+                "switching": 137.40272819999998,
+                "leakage": 0.06577867316,
+                "total": 305.58314920000004
+              }
+            }
+          },
+          "vcd_annotated_pins": 79,
+          "unannotated_pins": 1226425,
+          "vcd_valid_nonzero_annotation": true,
+          "annotation_limitation": "RTL top-level port activity: 79 directly annotated pins; internal activity propagated/default. No gate-level glitch modelling. Zero matched pins is a failed annotation attempt.",
+          "annotated_pin_fraction": 6.441071533398995e-05,
+          "power_source_log": "runs/rv_fixed_proj320_rom-pre-route-rtl-activity/01-openroad-stamidpnr/openroad-stamidpnr.log"
+        },
+        {
+          "run": "runs/rv_fixed_proj320_rom-route-util20-density35-noinflate-200ns",
+          "step": "runs/rv_fixed_proj320_rom-route-util20-density35-noinflate-200ns/02-openroad-stamidpnr-2",
+          "scope": "pre-route placement-estimated parasitics; not extracted/signoff",
+          "period_ns": 200.0,
+          "target_mhz": 5.0,
+          "fresh_step_metrics": {
+            "design__max_slew_violation__count__corner:nom_tt_025C_5v00": 0,
+            "design__max_fanout_violation__count__corner:nom_tt_025C_5v00": 991,
+            "design__max_cap_violation__count__corner:nom_tt_025C_5v00": 2,
+            "power__internal__total": 0.114274,
+            "power__switching__total": 0.0753965,
+            "power__leakage__total": 6.57135e-05,
+            "power__total": 0.189737,
+            "clock__skew__worst_hold__corner:nom_tt_025C_5v00": -1.35525,
+            "clock__skew__worst_setup__corner:nom_tt_025C_5v00": 0.836588,
+            "timing__hold__ws__corner:nom_tt_025C_5v00": 0.556417,
+            "timing__setup__ws__corner:nom_tt_025C_5v00": 66.5473,
+            "timing__hold__tns__corner:nom_tt_025C_5v00": 0,
+            "timing__setup__tns__corner:nom_tt_025C_5v00": 0,
+            "timing__hold__wns__corner:nom_tt_025C_5v00": 0,
+            "timing__setup__wns__corner:nom_tt_025C_5v00": 0,
+            "timing__hold_vio__count__corner:nom_tt_025C_5v00": 0,
+            "timing__hold_r2r__ws__corner:nom_tt_025C_5v00": 0.556417,
+            "timing__hold_r2r_vio__count__corner:nom_tt_025C_5v00": 0,
+            "timing__setup_vio__count__corner:nom_tt_025C_5v00": 0,
+            "timing__setup_r2r__ws__corner:nom_tt_025C_5v00": 144.768,
+            "timing__setup_r2r_vio__count__corner:nom_tt_025C_5v00": 0,
+            "flow__warnings__count": 0,
+            "flow__errors__count": 0,
+            "flow__warnings__type_count": 0
+          },
+          "sta_corners": {
+            "nom_tt_025C_5v00": {
+              "hold_slack_ns": 0.556417,
+              "setup_slack_ns": 66.5473
+            }
+          },
+          "typical_setup_slack_ns": 66.5473,
+          "typical_hold_slack_ns": 0.556417,
+          "typical_setup_inferred_mhz": 7.493291630667645
+        },
+        {
+          "run": "runs/rv_fixed_proj320_rom-util20-density35-noinflate-200ns",
+          "step": "runs/rv_fixed_proj320_rom-util20-density35-noinflate-200ns/04-openroad-stamidpnr",
+          "scope": "pre-route placement-estimated parasitics; not extracted/signoff",
+          "period_ns": 200.0,
+          "target_mhz": 5.0,
+          "fresh_step_metrics": {
+            "design__max_slew_violation__count__corner:nom_tt_025C_5v00": 687437,
+            "design__max_fanout_violation__count__corner:nom_tt_025C_5v00": 6309,
+            "design__max_cap_violation__count__corner:nom_tt_025C_5v00": 4890,
+            "power__internal__total": 5.66224,
+            "power__switching__total": 0.0459639,
+            "power__leakage__total": 4.67094e-05,
+            "power__total": 5.70825,
+            "clock__skew__worst_hold__corner:nom_tt_025C_5v00": -35.2947,
+            "clock__skew__worst_setup__corner:nom_tt_025C_5v00": 40.1572,
+            "timing__hold__ws__corner:nom_tt_025C_5v00": -142.256,
+            "timing__setup__ws__corner:nom_tt_025C_5v00": -52467.3,
+            "timing__hold__tns__corner:nom_tt_025C_5v00": -661735,
+            "timing__setup__tns__corner:nom_tt_025C_5v00": -332751000.0,
+            "timing__hold__wns__corner:nom_tt_025C_5v00": -142.256,
+            "timing__setup__wns__corner:nom_tt_025C_5v00": -52467.3,
+            "timing__hold_vio__count__corner:nom_tt_025C_5v00": 15347,
+            "timing__hold_r2r__ws__corner:nom_tt_025C_5v00": -106.798,
+            "timing__hold_r2r_vio__count__corner:nom_tt_025C_5v00": 12725,
+            "timing__setup_vio__count__corner:nom_tt_025C_5v00": 15449,
+            "timing__setup_r2r__ws__corner:nom_tt_025C_5v00": -52467.3,
+            "timing__setup_r2r_vio__count__corner:nom_tt_025C_5v00": 8215,
+            "flow__warnings__count": 0,
+            "flow__errors__count": 0,
+            "flow__warnings__type_count": 0
+          },
+          "sta_corners": {
+            "nom_tt_025C_5v00": {
+              "hold_slack_ns": -142.256,
+              "setup_slack_ns": -52467.3
+            }
+          },
+          "typical_setup_slack_ns": -52467.3,
+          "typical_hold_slack_ns": -142.256,
+          "typical_setup_inferred_mhz": 0.01898711344610413
+        },
+        {
+          "run": "runs/rv_fixed_proj320_rom-util20-density35-noinflate-200ns",
+          "step": "runs/rv_fixed_proj320_rom-util20-density35-noinflate-200ns/09-openroad-stamidpnr-1",
+          "scope": "pre-route placement-estimated parasitics; not extracted/signoff",
+          "period_ns": 200.0,
+          "target_mhz": 5.0,
+          "fresh_step_metrics": {
+            "design__max_slew_violation__count__corner:nom_tt_025C_5v00": 0,
+            "design__max_fanout_violation__count__corner:nom_tt_025C_5v00": 991,
+            "design__max_cap_violation__count__corner:nom_tt_025C_5v00": 2,
+            "power__internal__total": 0.114274,
+            "power__switching__total": 0.0753965,
+            "power__leakage__total": 6.57135e-05,
+            "power__total": 0.189737,
+            "clock__skew__worst_hold__corner:nom_tt_025C_5v00": -1.35525,
+            "clock__skew__worst_setup__corner:nom_tt_025C_5v00": 0.836588,
+            "timing__hold__ws__corner:nom_tt_025C_5v00": 0.556417,
+            "timing__setup__ws__corner:nom_tt_025C_5v00": 66.5473,
+            "timing__hold__tns__corner:nom_tt_025C_5v00": 0,
+            "timing__setup__tns__corner:nom_tt_025C_5v00": 0,
+            "timing__hold__wns__corner:nom_tt_025C_5v00": 0,
+            "timing__setup__wns__corner:nom_tt_025C_5v00": 0,
+            "timing__hold_vio__count__corner:nom_tt_025C_5v00": 0,
+            "timing__hold_r2r__ws__corner:nom_tt_025C_5v00": 0.556417,
+            "timing__hold_r2r_vio__count__corner:nom_tt_025C_5v00": 0,
+            "timing__setup_vio__count__corner:nom_tt_025C_5v00": 0,
+            "timing__setup_r2r__ws__corner:nom_tt_025C_5v00": 144.768,
+            "timing__setup_r2r_vio__count__corner:nom_tt_025C_5v00": 0,
+            "flow__warnings__count": 0,
+            "flow__errors__count": 0,
+            "flow__warnings__type_count": 0
+          },
+          "sta_corners": {
+            "nom_tt_025C_5v00": {
+              "hold_slack_ns": 0.556417,
+              "setup_slack_ns": 66.5473
+            }
+          },
+          "typical_setup_slack_ns": 66.5473,
+          "typical_hold_slack_ns": 0.556417,
+          "typical_setup_inferred_mhz": 7.493291630667645
+        }
+      ],
+      "pre_route_typical_timing": {
+        "scope": "pre-route placement-estimated parasitics; not extracted/signoff",
+        "step": "runs/rv_fixed_proj320_rom-route-util20-density35-noinflate-200ns/02-openroad-stamidpnr-2",
+        "period_ns": 200.0,
+        "target_mhz": 5.0,
+        "typical_setup_slack_ns": 66.5473,
+        "typical_hold_slack_ns": 0.556417,
+        "typical_setup_inferred_mhz": 7.493291630667645
+      },
+      "pre_route_selected_power": {
+        "scope": "pre-route placement-estimated parasitics; not extracted/signoff",
+        "step": "runs/rv_fixed_proj320_rom-pre-route-rtl-activity/01-openroad-stamidpnr",
+        "period_ns": 200.0,
+        "target_mhz": 5.0,
+        "power": {
+          "default": {
+            "corner": "nom_tt_025C_5v00",
+            "components_mw": {
+              "internal": 114.2743155,
+              "switching": 75.39650053,
+              "leakage": 0.06571351696,
+              "total": 189.7365302
+            }
+          },
+          "vcd": {
+            "corner": "nom_tt_025C_5v00",
+            "components_mw": {
+              "internal": 168.1146324,
+              "switching": 137.40272819999998,
+              "leakage": 0.06577867316,
+              "total": 305.58314920000004
+            }
+          }
+        },
+        "vcd_annotated_pins": 79,
+        "unannotated_pins": 1226425,
+        "annotated_pin_fraction": 6.441071533398995e-05,
+        "annotation_limitation": "RTL top-level port activity: 79 directly annotated pins; internal activity propagated/default. No gate-level glitch modelling. Zero matched pins is a failed annotation attempt.",
+        "mw_per_weight_at_unqualified_target": {
+          "default": 0.001852895802734375,
+          "vcd": 0.0029842104414062503
+        },
+        "us_per_projection_at_unqualified_target": 64.2
+      },
+      "pre_route_layout_png": "rv_fixed_proj320_rom-PRE-ROUTE-NOT-SIGNOFF.png",
+      "signoff_status": "incomplete: no extracted final timing/signoff result"
+    },
+    "rv_fixed_proj320_dp": {
+      "rows": 320,
+      "outputs": 320,
+      "weight_positions": 102400,
+      "verification_level": "RTL simulation against original-byte NumPy INT64 oracle",
+      "verification": {
+        "vectors_passed": 32,
+        "random_vectors": 20,
+        "exact_comparisons": 10272,
+        "failures": 0
+      },
+      "physical_runs": [
+        {
+          "run_directory": "runs/rv_fixed_proj320_dp-synthesis",
+          "last_completed_step": "06-yosys-synthesis",
+          "supervisor": {
+            "command": [
+              "bash",
+              "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/run_flow.sh",
+              "rv_fixed_proj320_dp",
+              "synthesis"
+            ],
+            "log": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/logs/rv_fixed_proj320_dp-synthesis.flow.log",
+            "exit_code": 0,
+            "stop_reason": null,
+            "elapsed_seconds": 495.4601421356201,
+            "minimum_free_bytes": 26954055680,
+            "limit_seconds": 7200,
+            "thread_limit": 8,
+            "nice": 10,
+            "start_unix": 1791924427.404927,
+            "flow_controls": {
+              "W2_TO_STEP": "Yosys.Synthesis",
+              "W2_NUM_THREADS": "1"
+            }
+          },
+          "last_started_step": "06-yosys-synthesis",
+          "flow_log": "logs/rv_fixed_proj320_dp-synthesis.flow.log"
+        },
+        {
+          "run_directory": "runs/rv_fixed_proj320_dp-precheck",
+          "last_completed_step": "06-openroad-staprepnr",
+          "supervisor": {
+            "command": [
+              "bash",
+              "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/run_flow.sh",
+              "rv_fixed_proj320_dp",
+              "precheck"
+            ],
+            "log": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/logs/rv_fixed_proj320_dp-precheck.flow.log",
+            "exit_code": 0,
+            "stop_reason": null,
+            "elapsed_seconds": 350.31878185272217,
+            "minimum_free_bytes": 24304025600,
+            "limit_seconds": 7200,
+            "thread_limit": 8,
+            "nice": 10,
+            "start_unix": 1791925167.2544441,
+            "flow_controls": {
+              "W2_FROM_STEP": "Checker.YosysUnmappedCells",
+              "W2_TO_STEP": "OpenROAD.STAPrePNR",
+              "W2_INITIAL_STATE": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/runs/rv_fixed_proj320_dp-synthesis/06-yosys-synthesis/state_out.json",
+              "W2_NUM_THREADS": "1"
+            }
+          },
+          "last_started_step": "06-openroad-staprepnr",
+          "flow_log": "logs/rv_fixed_proj320_dp-precheck.flow.log"
+        },
+        {
+          "run_directory": "runs/rv_fixed_proj320_dp-physical20",
+          "last_completed_step": "12-openroad-globalplacementskipio",
+          "supervisor": {
+            "command": [
+              "bash",
+              "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/run_flow.sh",
+              "rv_fixed_proj320_dp",
+              "physical20"
+            ],
+            "log": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/logs/rv_fixed_proj320_dp-physical20.flow.log",
+            "exit_code": 1,
+            "stop_reason": null,
+            "elapsed_seconds": 95.0663800239563,
+            "minimum_free_bytes": 24846655488,
+            "limit_seconds": 7200,
+            "thread_limit": 8,
+            "nice": 10,
+            "start_unix": 1791932410.06935,
+            "flow_controls": {
+              "W2_FROM_STEP": "OpenROAD.Floorplan",
+              "W2_TO_STEP": "OpenROAD.STAMidPNR-1",
+              "W2_INITIAL_STATE": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/runs/rv_fixed_proj320_dp-precheck/06-openroad-staprepnr/state_out.json"
+            }
+          },
+          "last_started_step": "13-openroad-ioplacement",
+          "flow_log": "logs/rv_fixed_proj320_dp-physical20.flow.log"
+        },
+        {
+          "run_directory": "runs/rv_fixed_proj320_dp-io-microns",
+          "last_completed_step": "07-openroad-stamidpnr",
+          "supervisor": {
+            "command": [
+              "bash",
+              "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/run_flow.sh",
+              "rv_fixed_proj320_dp",
+              "io-microns"
+            ],
+            "log": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/logs/rv_fixed_proj320_dp-io-microns.flow.log",
+            "exit_code": -15,
+            "stop_reason": "supervisor interrupted: ",
+            "elapsed_seconds": 1853.6120567321777,
+            "minimum_free_bytes": 24782868480,
+            "limit_seconds": 7200,
+            "thread_limit": 8,
+            "nice": 10,
+            "start_unix": 1791932553.3212302,
+            "flow_controls": {
+              "W2_FROM_STEP": "OpenROAD.IOPlacement",
+              "W2_TO_STEP": "OpenROAD.STAMidPNR-1",
+              "W2_INITIAL_STATE": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/runs/rv_fixed_proj320_dp-physical20/12-openroad-globalplacementskipio/state_out.json"
+            }
+          },
+          "last_started_step": "08-openroad-repairdesignpostgpl",
+          "flow_log": "logs/rv_fixed_proj320_dp-io-microns.flow.log"
+        },
+        {
+          "run_directory": "runs/rv_fixed_proj320_dp-typical-repair20",
+          "last_completed_step": "05-openroad-stamidpnr-1",
+          "supervisor": {
+            "command": [
+              "bash",
+              "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/run_flow.sh",
+              "rv_fixed_proj320_dp",
+              "typical-repair20"
+            ],
+            "log": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/logs/rv_fixed_proj320_dp-typical-repair20.flow.log",
+            "exit_code": 0,
+            "stop_reason": null,
+            "elapsed_seconds": 1106.6027917861938,
+            "minimum_free_bytes": 24727973888,
+            "limit_seconds": 7200,
+            "thread_limit": 8,
+            "nice": 10,
+            "minimum_required_free_gib": 22.0,
+            "start_unix": 1791934411.246942,
+            "flow_controls": {
+              "W2_FROM_STEP": "OpenROAD.RepairDesignPostGPL",
+              "W2_TO_STEP": "OpenROAD.STAMidPNR-1",
+              "W2_INITIAL_STATE": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/runs/rv_fixed_proj320_dp-io-microns/07-openroad-stamidpnr/state_out.json",
+              "W2_CONFIG_PATH": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/configs/rv_fixed_proj320_dp-typical-repair.json"
+            }
+          },
+          "last_started_step": "05-openroad-stamidpnr-1",
+          "flow_log": "logs/rv_fixed_proj320_dp-typical-repair20.flow.log"
+        },
+        {
+          "run_directory": "runs/rv_fixed_proj320_dp-util20-200ns",
+          "last_completed_step": "24-openroad-stamidpnr-1",
+          "supervisor": {
+            "command": [
+              "bash",
+              "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/run_flow.sh",
+              "rv_fixed_proj320_dp",
+              "util20-200ns"
+            ],
+            "log": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/logs/rv_fixed_proj320_dp-util20-200ns.flow.log",
+            "exit_code": 0,
+            "stop_reason": null,
+            "elapsed_seconds": 1782.5934929847717,
+            "minimum_free_bytes": 24150220800,
+            "limit_seconds": 7200,
+            "thread_limit": 8,
+            "nice": 10,
+            "minimum_required_free_gib": 22.0,
+            "start_unix": 1791935749.4271328,
+            "flow_controls": {
+              "W2_FROM_STEP": "OpenROAD.Floorplan",
+              "W2_TO_STEP": "OpenROAD.STAMidPNR-1",
+              "W2_INITIAL_STATE": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/evidence/dp-util20-200ns-initial-state.json",
+              "W2_NUM_THREADS": "4",
+              "W2_CONFIG_PATH": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/configs/rv_fixed_proj320_dp-util20-200ns.json"
+            }
+          },
+          "last_started_step": "24-openroad-stamidpnr-1",
+          "flow_log": "logs/rv_fixed_proj320_dp-util20-200ns.flow.log"
+        },
+        {
+          "run_directory": "runs/rv_fixed_proj320_dp-pre-route-render",
+          "last_completed_step": "01-klayout-render",
+          "supervisor": {
+            "command": [
+              "bash",
+              "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/run_flow.sh",
+              "rv_fixed_proj320_dp",
+              "pre-route-render"
+            ],
+            "log": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/logs/rv_fixed_proj320_dp-pre-route-render.flow.log",
+            "exit_code": 0,
+            "stop_reason": null,
+            "elapsed_seconds": 10.011457204818726,
+            "minimum_free_bytes": 26482417664,
+            "limit_seconds": 600,
+            "thread_limit": 8,
+            "nice": 10,
+            "minimum_required_free_gib": 23.0,
+            "start_unix": 1791937800.648151,
+            "flow_controls": {
+              "W2_FROM_STEP": "KLayout.Render",
+              "W2_TO_STEP": "KLayout.Render",
+              "W2_INITIAL_STATE": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/evidence/rv_fixed_proj320_dp-pre-route-render-state.json",
+              "W2_NUM_THREADS": "1",
+              "W2_CONFIG_PATH": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/configs/rv_fixed_proj320_dp-util20-200ns.json",
+              "W2_MIN_FREE_GIB": "23",
+              "W2_LIMIT_SECONDS": "600"
+            }
+          },
+          "last_started_step": "01-klayout-render",
+          "flow_log": "logs/rv_fixed_proj320_dp-pre-route-render.flow.log"
+        },
+        {
+          "run_directory": "runs/rv_fixed_proj320_dp-pre-route-rtl-activity",
+          "last_completed_step": "01-openroad-stamidpnr",
+          "supervisor": {
+            "command": [
+              "bash",
+              "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/run_flow.sh",
+              "rv_fixed_proj320_dp",
+              "pre-route-rtl-activity"
+            ],
+            "log": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/logs/rv_fixed_proj320_dp-pre-route-rtl-activity.flow.log",
+            "exit_code": 0,
+            "stop_reason": null,
+            "elapsed_seconds": 215.25258326530457,
+            "minimum_free_bytes": 25829322752,
+            "limit_seconds": 900,
+            "thread_limit": 8,
+            "nice": 10,
+            "minimum_required_free_gib": 23.0,
+            "start_unix": 1791937735.5201778,
+            "flow_controls": {
+              "W2_FROM_STEP": "OpenROAD.STAMidPNR",
+              "W2_TO_STEP": "OpenROAD.STAMidPNR",
+              "W2_INITIAL_STATE": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/evidence/rv_fixed_proj320_dp-pre-route-rtl-activity-minimal-state.json",
+              "W2_NUM_THREADS": "1",
+              "W2_CONFIG_PATH": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/configs/rv_fixed_proj320_dp-pre-route-rtl-activity.json",
+              "W2_VCD": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/tmp/rv_fixed_proj320_dp-pre-route-rtl-activity.vcd",
+              "W2_MIN_FREE_GIB": "23",
+              "W2_LIMIT_SECONDS": "900"
+            }
+          },
+          "last_started_step": "01-openroad-stamidpnr",
+          "flow_log": "logs/rv_fixed_proj320_dp-pre-route-rtl-activity.flow.log"
+        },
+        {
+          "run_directory": "runs/rv_fixed_proj320_dp-route200",
+          "last_completed_step": "02-openroad-stamidpnr-2",
+          "supervisor": null,
+          "last_started_step": "03-openroad-globalrouting",
+          "flow_log": "logs/rv_fixed_proj320_dp-route200.flow.log"
+        }
+      ],
+      "cycles_start_to_done_no_stalls": 321,
+      "minimum_start_interval_without_readout_cycles": 322,
+      "cycles_including_320_clocked_reads": 641,
+      "accepted_activation_cycles": 320,
+      "readout_cycles_if_clocked_one_output_per_cycle": 320,
+      "cycles_full_320_matvec": 321,
+      "us_at_requested_50MHz": 6.42,
+      "synthesized_cell_count": 222596,
+      "synthesized_cell_area_um2": 5276646.143998,
+      "die_area_um2": 26613756.218,
+      "core_area_um2": 26376030.463999998,
+      "utilization": 0.447516,
+      "sta_corners": {},
+      "achieved_mhz": null,
+      "sta_inferred_mhz": null,
+      "drc": null,
+      "lvs": null,
+      "antenna": null,
+      "power_mw": null,
+      "power_corner": null,
+      "power_activity_source": null,
+      "mm2_per_weight": null,
+      "um2_per_weight": null,
+      "mw_per_weight_at_achieved_clock": null,
+      "us_per_full_320_matvec_at_achieved_clock": null,
+      "layout_png": null,
+      "expected_extracted_corners": [
+        "max_ff_n40C_5v50",
+        "max_ss_125C_4v50",
+        "max_tt_025C_5v00",
+        "min_ff_n40C_5v50",
+        "min_ss_125C_4v50",
+        "min_tt_025C_5v00",
+        "nom_ff_n40C_5v50",
+        "nom_ss_125C_4v50",
+        "nom_tt_025C_5v00"
+      ],
+      "complete_extracted_corner_matrix": false,
+      "gate_verification": {
+        "variant": "rv_fixed_proj320_dp",
+        "level": "Zero-delay mapped netlist, GF180 FUNCTIONAL models, Verilator (two-state); no SDF timing simulation",
+        "netlist": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/runs/rv_fixed_proj320_dp-synthesis/06-yosys-synthesis/rv_fixed_proj320_dp.nl.v",
+        "netlist_sha256": "d45ee3155fd540c57927087ed68fcccff8a4572c38196876b1ebb5fe4fe461a2",
+        "thread_caps": {
+          "build": 4,
+          "simulation": 1
+        },
+        "limit_seconds": 1200,
+        "phases": [
+          {
+            "phase": "compile",
+            "command": [
+              "nice",
+              "-n",
+              "10",
+              "verilator",
+              "--binary",
+              "--timing",
+              "--top-module",
+              "tb",
+              "--build-jobs",
+              "4",
+              "--threads",
+              "1",
+              "--output-split",
+              "15000",
+              "--output-split-cfuncs",
+              "5000",
+              "-Wno-fatal",
+              "-DFUNCTIONAL",
+              "-DDUT=rv_fixed_proj320_dp",
+              "-DROWS=320",
+              "--Mdir",
+              "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/tb/gate_obj_rv_fixed_proj320_dp",
+              "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/verilog/primitives.v",
+              "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/verilog/gf180mcu_fd_sc_mcu7t5v0.v",
+              "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/runs/rv_fixed_proj320_dp-synthesis/06-yosys-synthesis/rv_fixed_proj320_dp.nl.v",
+              "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/tb/tb_gate.sv",
+              "-DEXTERNAL"
+            ],
+            "log": "logs/rv_fixed_proj320_dp.gate-compile.log",
+            "exit_code": 0
+          },
+          {
+            "phase": "simulate",
+            "command": [
+              "nice",
+              "-n",
+              "10",
+              "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/tb/gate_obj_rv_fixed_proj320_dp/Vtb"
+            ],
+            "log": "logs/rv_fixed_proj320_dp.gate-simulate.log",
+            "exit_code": 0
+          }
+        ],
+        "elapsed_seconds": 360.5335021018982,
+        "stop_reason": null,
+        "verification": {
+          "vectors_passed": 32,
+          "random_vectors": 20,
+          "exact_comparisons": 10272,
+          "failures": 0
+        }
+      },
+      "latest_completed_step": "02-openroad-stamidpnr-2",
+      "synthesis_metrics": {
+        "design__lint_error__count": 0,
+        "design__lint_timing_construct__count": 0,
+        "design__lint_warning__count": 0,
+        "design__inferred_latch__count": 0,
+        "design__instance__count": 222596,
+        "design__instance__area": 5276646.143998,
+        "design__instance_unmapped__count": 0,
+        "synthesis__check_error__count": 0
+      },
+      "latest_measured_metrics": {
+        "design__lint_error__count": 0,
+        "design__lint_timing_construct__count": 0,
+        "design__lint_warning__count": 0,
+        "design__inferred_latch__count": 0,
+        "design__instance__count": 484129,
+        "design__instance__area": 11803700,
+        "design__instance_unmapped__count": 0,
+        "synthesis__check_error__count": 0,
+        "design__max_slew_violation__count__corner:nom_tt_025C_5v00": 15,
+        "design__max_fanout_violation__count__corner:nom_tt_025C_5v00": 930,
+        "design__max_cap_violation__count__corner:nom_tt_025C_5v00": 3,
+        "power__internal__total": 0.145679,
+        "power__switching__total": 0.0994202,
+        "power__leakage__total": 6.61526e-05,
+        "power__total": 0.245165,
+        "clock__skew__worst_hold__corner:nom_tt_025C_5v00": -1.02906,
+        "clock__skew__worst_setup__corner:nom_tt_025C_5v00": 0.626494,
+        "timing__hold__ws__corner:nom_tt_025C_5v00": 0.548467,
+        "timing__setup__ws__corner:nom_tt_025C_5v00": 53.5032,
+        "timing__hold__tns__corner:nom_tt_025C_5v00": 0,
+        "timing__setup__tns__corner:nom_tt_025C_5v00": 0,
+        "timing__hold__wns__corner:nom_tt_025C_5v00": 0,
+        "timing__setup__wns__corner:nom_tt_025C_5v00": 0,
+        "timing__hold_vio__count__corner:nom_tt_025C_5v00": 0,
+        "timing__hold_r2r__ws__corner:nom_tt_025C_5v00": 0.548467,
+        "timing__hold_r2r_vio__count__corner:nom_tt_025C_5v00": 0,
+        "timing__setup_vio__count__corner:nom_tt_025C_5v00": 0,
+        "timing__setup_r2r__ws__corner:nom_tt_025C_5v00": 1000000000000000000000000000000,
+        "timing__setup_r2r_vio__count__corner:nom_tt_025C_5v00": 0,
+        "design__max_slew_violation__count__corner:nom_ss_125C_4v50": 381084,
+        "design__max_fanout_violation__count__corner:nom_ss_125C_4v50": 2883,
+        "design__max_cap_violation__count__corner:nom_ss_125C_4v50": 818,
+        "clock__skew__worst_hold__corner:nom_ss_125C_4v50": -18.250875105568333,
+        "clock__skew__worst_setup__corner:nom_ss_125C_4v50": 18.250875105568333,
+        "timing__hold__ws__corner:nom_ss_125C_4v50": 1.2471077856723272,
+        "timing__setup__ws__corner:nom_ss_125C_4v50": -9946.36894510713,
+        "timing__hold__tns__corner:nom_ss_125C_4v50": 0,
+        "timing__setup__tns__corner:nom_ss_125C_4v50": -42904955.61707386,
+        "timing__hold__wns__corner:nom_ss_125C_4v50": 0,
+        "timing__setup__wns__corner:nom_ss_125C_4v50": -9946.36894510713,
+        "timing__hold_vio__count__corner:nom_ss_125C_4v50": 0,
+        "timing__hold_r2r__ws__corner:nom_ss_125C_4v50": 1.247108,
+        "timing__hold_r2r_vio__count__corner:nom_ss_125C_4v50": 0,
+        "timing__setup_vio__count__corner:nom_ss_125C_4v50": 14139,
+        "timing__setup_r2r__ws__corner:nom_ss_125C_4v50": -9946.370117,
+        "timing__setup_r2r_vio__count__corner:nom_ss_125C_4v50": 1912,
+        "design__max_slew_violation__count__corner:nom_ff_n40C_5v50": 319216,
+        "design__max_fanout_violation__count__corner:nom_ff_n40C_5v50": 2883,
+        "design__max_cap_violation__count__corner:nom_ff_n40C_5v50": 706,
+        "clock__skew__worst_hold__corner:nom_ff_n40C_5v50": -7.482607634182391,
+        "clock__skew__worst_setup__corner:nom_ff_n40C_5v50": 7.482607634182391,
+        "timing__hold__ws__corner:nom_ff_n40C_5v50": 0.22856578388020515,
+        "timing__setup__ws__corner:nom_ff_n40C_5v50": -3551.9893667276588,
+        "timing__hold__tns__corner:nom_ff_n40C_5v50": 0,
+        "timing__setup__tns__corner:nom_ff_n40C_5v50": -14988987.199196553,
+        "timing__hold__wns__corner:nom_ff_n40C_5v50": 0,
+        "timing__setup__wns__corner:nom_ff_n40C_5v50": -3551.9893667276588,
+        "timing__hold_vio__count__corner:nom_ff_n40C_5v50": 0,
+        "timing__hold_r2r__ws__corner:nom_ff_n40C_5v50": 0.228566,
+        "timing__hold_r2r_vio__count__corner:nom_ff_n40C_5v50": 0,
+        "timing__setup_vio__count__corner:nom_ff_n40C_5v50": 14112,
+        "timing__setup_r2r__ws__corner:nom_ff_n40C_5v50": -3551.989258,
+        "timing__setup_r2r_vio__count__corner:nom_ff_n40C_5v50": 1820,
+        "design__max_slew_violation__count": 15,
+        "design__max_fanout_violation__count": 930,
+        "design__max_cap_violation__count": 3,
+        "clock__skew__worst_hold": -1.02906,
+        "clock__skew__worst_setup": 0.626494,
+        "timing__hold__ws": 0.548467,
+        "timing__setup__ws": 53.5032,
+        "timing__hold__tns": 0,
+        "timing__setup__tns": 0,
+        "timing__hold__wns": 0,
+        "timing__setup__wns": 0,
+        "timing__hold_vio__count": 0,
+        "timing__hold_r2r__ws": 0.548467,
+        "timing__hold_r2r_vio__count": 0,
+        "timing__setup_vio__count": 0,
+        "timing__setup_r2r__ws": 1000000000000000000000000000000,
+        "timing__setup_r2r_vio__count": 0,
+        "design__die__bbox": "0.0 0.0 5149.9 5167.82",
+        "design__core__bbox": "6.72 15.68 5143.04 5150.88",
+        "design__io": 42321,
+        "design__die__area": 26613800,
+        "design__core__area": 26376000,
+        "design__instance__count__stdcell": 484129,
+        "design__instance__area__stdcell": 11803700,
+        "design__instance__count__macros": 0,
+        "design__instance__area__macros": 0,
+        "design__instance__count__padcells": 0,
+        "design__instance__area__padcells": 0,
+        "design__instance__count__cover": 0,
+        "design__instance__area__cover": 0,
+        "design__instance__utilization": 0.447516,
+        "design__instance__utilization__stdcell": 0.447516,
+        "design__rows": 1310,
+        "design__rows:GF018hv5v_mcu_sc7": 1310,
+        "design__sites": 12015320,
+        "design__sites:GF018hv5v_mcu_sc7": 12015320,
+        "design__instance__count__class:inverter": 5946,
+        "design__instance__area__class:inverter": 52254.5,
+        "design__instance__count__class:sequential_cell": 14112,
+        "design__instance__area__class:sequential_cell": 901909,
+        "design__instance__count__class:multi_input_combinational_cell": 202538,
+        "design__instance__area__class:multi_input_combinational_cell": 4433170,
+        "flow__warnings__count": 0,
+        "flow__errors__count": 0,
+        "flow__warnings__count:ODB-0220": 1,
+        "flow__warnings__type_count": 0,
+        "flow__warnings__count:ORD-0039": 1,
+        "design__instance__count__class:endcap_cell": 2620,
+        "design__instance__area__class:endcap_cell": 11502.8,
+        "design__instance__count__class:tap_cell": 171232,
+        "design__instance__area__class:tap_cell": 751777,
+        "design__power_grid_violation__count__net:VSS": 0,
+        "design__power_grid_violation__count__net:VDD": 0,
+        "design__power_grid_violation__count": 0,
+        "floorplan__design__io": 42319,
+        "design__io__hpwl": 112149097165,
+        "flow__warnings__count:GRT-0281": 41,
+        "timing__drv__floating__nets": 2,
+        "timing__drv__floating__pins": 0,
+        "design__instance__displacement__total": 0,
+        "design__instance__displacement__mean": 0,
+        "design__instance__displacement__max": 0,
+        "route__wirelength__estimated": 71285800,
+        "design__violations": 0,
+        "design__instance__count__class:timing_repair_buffer": 85465,
+        "design__instance__area__class:timing_repair_buffer": 5550220,
+        "flow__warnings__count:RSZ-0020": 1,
+        "design__instance__count__class:clock_buffer": 1773,
+        "design__instance__area__class:clock_buffer": 94292.6,
+        "design__instance__count__class:clock_inverter": 443,
+        "design__instance__area__class:clock_inverter": 8578.84,
+        "design__instance__count__setup_buffer": 0,
+        "design__instance__count__hold_buffer": 0
+      },
+      "latest_physical_instance_count": 484129,
+      "latest_physical_instance_area_um2": 11803700,
+      "measurement_run": "runs/rv_fixed_proj320_dp-route200",
+      "measurement_clock_period_ns": 200.0,
+      "target_mhz": 5.0,
+      "utilization_percent": 44.7516,
+      "pdn_connectivity_violations": 0,
+      "area_scope": "allocated floorplan; routing not complete",
+      "physical_check_metrics": {
+        "design__power_grid_violation__count__net:VSS": 0,
+        "design__power_grid_violation__count__net:VDD": 0,
+        "design__power_grid_violation__count": 0
+      },
+      "allocated_floorplan_um2_per_weight": 259.89996306640626,
+      "allocated_floorplan_mm2_per_weight": 0.00025989996306640626,
+      "synthesized_cell_area_mm2": 5.276646143998,
+      "synthesized_cell_um2_per_weight": 51.529747499980466,
+      "pre_route_checkpoints": [
+        {
+          "run": "runs/rv_fixed_proj320_dp-io-microns",
+          "step": "runs/rv_fixed_proj320_dp-io-microns/07-openroad-stamidpnr",
+          "scope": "pre-route placement-estimated parasitics; not extracted/signoff",
+          "period_ns": 20.0,
+          "target_mhz": 50.0,
+          "fresh_step_metrics": {
+            "design__max_slew_violation__count__corner:nom_tt_025C_5v00": 402102,
+            "design__max_fanout_violation__count__corner:nom_tt_025C_5v00": 2884,
+            "design__max_cap_violation__count__corner:nom_tt_025C_5v00": 1748,
+            "power__internal__total": 44.4619,
+            "power__switching__total": 0.427843,
+            "power__leakage__total": 4.11242e-05,
+            "power__total": 44.8898,
+            "clock__skew__worst_hold__corner:nom_tt_025C_5v00": -37.8096,
+            "clock__skew__worst_setup__corner:nom_tt_025C_5v00": 36.507,
+            "timing__hold__ws__corner:nom_tt_025C_5v00": -159.115,
+            "timing__setup__ws__corner:nom_tt_025C_5v00": -41897.1,
+            "timing__hold__tns__corner:nom_tt_025C_5v00": -994859,
+            "timing__setup__tns__corner:nom_tt_025C_5v00": -100523000.0,
+            "timing__hold__wns__corner:nom_tt_025C_5v00": -159.115,
+            "timing__setup__wns__corner:nom_tt_025C_5v00": -41897.1,
+            "timing__hold_vio__count__corner:nom_tt_025C_5v00": 14111,
+            "timing__hold_r2r__ws__corner:nom_tt_025C_5v00": -26.2519,
+            "timing__hold_r2r_vio__count__corner:nom_tt_025C_5v00": 7479,
+            "timing__setup_vio__count__corner:nom_tt_025C_5v00": 14169,
+            "timing__setup_r2r__ws__corner:nom_tt_025C_5v00": -41897.1,
+            "timing__setup_r2r_vio__count__corner:nom_tt_025C_5v00": 2443,
+            "flow__warnings__count": 0,
+            "flow__errors__count": 0,
+            "flow__warnings__type_count": 0
+          },
+          "sta_corners": {
+            "nom_tt_025C_5v00": {
+              "hold_slack_ns": -159.115,
+              "setup_slack_ns": -41897.1
+            }
+          },
+          "typical_setup_slack_ns": -41897.1,
+          "typical_hold_slack_ns": -159.115,
+          "typical_setup_inferred_mhz": 0.023856612217925382
+        },
+        {
+          "run": "runs/rv_fixed_proj320_dp-pre-route-rtl-activity",
+          "step": "runs/rv_fixed_proj320_dp-pre-route-rtl-activity/01-openroad-stamidpnr",
+          "scope": "pre-route placement-estimated parasitics; not extracted/signoff",
+          "period_ns": 200.0,
+          "target_mhz": 5.0,
+          "fresh_step_metrics": {
+            "design__max_slew_violation__count__corner:nom_tt_025C_5v00": 15,
+            "design__max_fanout_violation__count__corner:nom_tt_025C_5v00": 930,
+            "design__max_cap_violation__count__corner:nom_tt_025C_5v00": 3,
+            "power__internal__total": 0.213919,
+            "power__switching__total": 0.180866,
+            "power__leakage__total": 6.61673e-05,
+            "power__total": 0.39485,
+            "clock__skew__worst_hold__corner:nom_tt_025C_5v00": -1.02906,
+            "clock__skew__worst_setup__corner:nom_tt_025C_5v00": 0.626494,
+            "timing__hold__ws__corner:nom_tt_025C_5v00": 0.548467,
+            "timing__setup__ws__corner:nom_tt_025C_5v00": 53.5032,
+            "timing__hold__tns__corner:nom_tt_025C_5v00": 0,
+            "timing__setup__tns__corner:nom_tt_025C_5v00": 0,
+            "timing__hold__wns__corner:nom_tt_025C_5v00": 0,
+            "timing__setup__wns__corner:nom_tt_025C_5v00": 0,
+            "timing__hold_vio__count__corner:nom_tt_025C_5v00": 0,
+            "timing__hold_r2r__ws__corner:nom_tt_025C_5v00": 0.548467,
+            "timing__hold_r2r_vio__count__corner:nom_tt_025C_5v00": 0,
+            "timing__setup_vio__count__corner:nom_tt_025C_5v00": 0,
+            "timing__setup_r2r__ws__corner:nom_tt_025C_5v00": 1e+30,
+            "timing__setup_r2r_vio__count__corner:nom_tt_025C_5v00": 0,
+            "flow__warnings__count": 0,
+            "flow__errors__count": 0,
+            "flow__warnings__type_count": 0
+          },
+          "sta_corners": {
+            "nom_tt_025C_5v00": {
+              "hold_slack_ns": 0.548467,
+              "setup_slack_ns": 53.5032
+            }
+          },
+          "typical_setup_slack_ns": 53.5032,
+          "typical_hold_slack_ns": 0.548467,
+          "typical_setup_inferred_mhz": 6.826087668809148,
+          "power": {
+            "default": {
+              "corner": "nom_tt_025C_5v00",
+              "components_mw": {
+                "internal": 145.67917590000002,
+                "switching": 99.42016751,
+                "leakage": 0.06615262828,
+                "total": 245.1654822
+              }
+            },
+            "vcd": {
+              "corner": "nom_tt_025C_5v00",
+              "components_mw": {
+                "internal": 213.91853690000002,
+                "switching": 180.8656901,
+                "leakage": 0.06616732571,
+                "total": 394.8503733
+              }
+            }
+          },
+          "vcd_annotated_pins": 42319,
+          "unannotated_pins": 1076008,
+          "vcd_valid_nonzero_annotation": true,
+          "annotation_limitation": "RTL top-level port activity: 42319 directly annotated pins; internal activity propagated/default. No gate-level glitch modelling. Zero matched pins is a failed annotation attempt.",
+          "annotated_pin_fraction": 0.037841346940563896,
+          "power_source_log": "runs/rv_fixed_proj320_dp-pre-route-rtl-activity/01-openroad-stamidpnr/openroad-stamidpnr.log"
+        },
+        {
+          "run": "runs/rv_fixed_proj320_dp-route200",
+          "step": "runs/rv_fixed_proj320_dp-route200/02-openroad-stamidpnr-2",
+          "scope": "pre-route placement-estimated parasitics; not extracted/signoff",
+          "period_ns": 200.0,
+          "target_mhz": 5.0,
+          "fresh_step_metrics": {
+            "design__max_slew_violation__count__corner:nom_tt_025C_5v00": 15,
+            "design__max_fanout_violation__count__corner:nom_tt_025C_5v00": 930,
+            "design__max_cap_violation__count__corner:nom_tt_025C_5v00": 3,
+            "power__internal__total": 0.145679,
+            "power__switching__total": 0.0994202,
+            "power__leakage__total": 6.61526e-05,
+            "power__total": 0.245165,
+            "clock__skew__worst_hold__corner:nom_tt_025C_5v00": -1.02906,
+            "clock__skew__worst_setup__corner:nom_tt_025C_5v00": 0.626494,
+            "timing__hold__ws__corner:nom_tt_025C_5v00": 0.548467,
+            "timing__setup__ws__corner:nom_tt_025C_5v00": 53.5032,
+            "timing__hold__tns__corner:nom_tt_025C_5v00": 0,
+            "timing__setup__tns__corner:nom_tt_025C_5v00": 0,
+            "timing__hold__wns__corner:nom_tt_025C_5v00": 0,
+            "timing__setup__wns__corner:nom_tt_025C_5v00": 0,
+            "timing__hold_vio__count__corner:nom_tt_025C_5v00": 0,
+            "timing__hold_r2r__ws__corner:nom_tt_025C_5v00": 0.548467,
+            "timing__hold_r2r_vio__count__corner:nom_tt_025C_5v00": 0,
+            "timing__setup_vio__count__corner:nom_tt_025C_5v00": 0,
+            "timing__setup_r2r__ws__corner:nom_tt_025C_5v00": 1e+30,
+            "timing__setup_r2r_vio__count__corner:nom_tt_025C_5v00": 0,
+            "flow__warnings__count": 0,
+            "flow__errors__count": 0,
+            "flow__warnings__type_count": 0
+          },
+          "sta_corners": {
+            "nom_tt_025C_5v00": {
+              "hold_slack_ns": 0.548467,
+              "setup_slack_ns": 53.5032
+            }
+          },
+          "typical_setup_slack_ns": 53.5032,
+          "typical_hold_slack_ns": 0.548467,
+          "typical_setup_inferred_mhz": 6.826087668809148
+        },
+        {
+          "run": "runs/rv_fixed_proj320_dp-typical-repair20",
+          "step": "runs/rv_fixed_proj320_dp-typical-repair20/05-openroad-stamidpnr-1",
+          "scope": "pre-route placement-estimated parasitics; not extracted/signoff",
+          "period_ns": 20.0,
+          "target_mhz": 50.0,
+          "fresh_step_metrics": {
+            "design__max_slew_violation__count__corner:nom_tt_025C_5v00": 418,
+            "design__max_fanout_violation__count__corner:nom_tt_025C_5v00": 937,
+            "design__max_cap_violation__count__corner:nom_tt_025C_5v00": 6,
+            "power__internal__total": 1.43155,
+            "power__switching__total": 0.970107,
+            "power__leakage__total": 6.25257e-05,
+            "power__total": 2.40172,
+            "clock__skew__worst_hold__corner:nom_tt_025C_5v00": -0.970343,
+            "clock__skew__worst_setup__corner:nom_tt_025C_5v00": 0.588892,
+            "timing__hold__ws__corner:nom_tt_025C_5v00": 0.566782,
+            "timing__setup__ws__corner:nom_tt_025C_5v00": -101.387,
+            "timing__hold__tns__corner:nom_tt_025C_5v00": 0,
+            "timing__setup__tns__corner:nom_tt_025C_5v00": -562796,
+            "timing__hold__wns__corner:nom_tt_025C_5v00": 0,
+            "timing__setup__wns__corner:nom_tt_025C_5v00": -101.387,
+            "timing__hold_vio__count__corner:nom_tt_025C_5v00": 0,
+            "timing__hold_r2r__ws__corner:nom_tt_025C_5v00": 0.566782,
+            "timing__hold_r2r_vio__count__corner:nom_tt_025C_5v00": 0,
+            "timing__setup_vio__count__corner:nom_tt_025C_5v00": 14130,
+            "timing__setup_r2r__ws__corner:nom_tt_025C_5v00": -16.4737,
+            "timing__setup_r2r_vio__count__corner:nom_tt_025C_5v00": 199,
+            "flow__warnings__count": 0,
+            "flow__errors__count": 0,
+            "flow__warnings__type_count": 0
+          },
+          "sta_corners": {
+            "nom_tt_025C_5v00": {
+              "hold_slack_ns": 0.566782,
+              "setup_slack_ns": -101.387
+            }
+          },
+          "typical_setup_slack_ns": -101.387,
+          "typical_hold_slack_ns": 0.566782,
+          "typical_setup_inferred_mhz": 8.238114460362313
+        },
+        {
+          "run": "runs/rv_fixed_proj320_dp-util20-200ns",
+          "step": "runs/rv_fixed_proj320_dp-util20-200ns/19-openroad-stamidpnr",
+          "scope": "pre-route placement-estimated parasitics; not extracted/signoff",
+          "period_ns": 200.0,
+          "target_mhz": 5.0,
+          "fresh_step_metrics": {
+            "design__max_slew_violation__count__corner:nom_tt_025C_5v00": 409680,
+            "design__max_fanout_violation__count__corner:nom_tt_025C_5v00": 2884,
+            "design__max_cap_violation__count__corner:nom_tt_025C_5v00": 2317,
+            "power__internal__total": 5.01696,
+            "power__switching__total": 0.0614247,
+            "power__leakage__total": 4.40608e-05,
+            "power__total": 5.07842,
+            "clock__skew__worst_hold__corner:nom_tt_025C_5v00": -38.1462,
+            "clock__skew__worst_setup__corner:nom_tt_025C_5v00": 32.8647,
+            "timing__hold__ws__corner:nom_tt_025C_5v00": -123.639,
+            "timing__setup__ws__corner:nom_tt_025C_5v00": -43073.6,
+            "timing__hold__tns__corner:nom_tt_025C_5v00": -756409,
+            "timing__setup__tns__corner:nom_tt_025C_5v00": -102020000.0,
+            "timing__hold__wns__corner:nom_tt_025C_5v00": -123.639,
+            "timing__setup__wns__corner:nom_tt_025C_5v00": -43073.6,
+            "timing__hold_vio__count__corner:nom_tt_025C_5v00": 14112,
+            "timing__hold_r2r__ws__corner:nom_tt_025C_5v00": -18.4984,
+            "timing__hold_r2r_vio__count__corner:nom_tt_025C_5v00": 7480,
+            "timing__setup_vio__count__corner:nom_tt_025C_5v00": 14157,
+            "timing__setup_r2r__ws__corner:nom_tt_025C_5v00": -43073.6,
+            "timing__setup_r2r_vio__count__corner:nom_tt_025C_5v00": 2443,
+            "flow__warnings__count": 0,
+            "flow__errors__count": 0,
+            "flow__warnings__type_count": 0
+          },
+          "sta_corners": {
+            "nom_tt_025C_5v00": {
+              "hold_slack_ns": -123.639,
+              "setup_slack_ns": -43073.6
+            }
+          },
+          "typical_setup_slack_ns": -43073.6,
+          "typical_hold_slack_ns": -123.639,
+          "typical_setup_inferred_mhz": 0.023108777638098058
+        },
+        {
+          "run": "runs/rv_fixed_proj320_dp-util20-200ns",
+          "step": "runs/rv_fixed_proj320_dp-util20-200ns/24-openroad-stamidpnr-1",
+          "scope": "pre-route placement-estimated parasitics; not extracted/signoff",
+          "period_ns": 200.0,
+          "target_mhz": 5.0,
+          "fresh_step_metrics": {
+            "design__max_slew_violation__count__corner:nom_tt_025C_5v00": 15,
+            "design__max_fanout_violation__count__corner:nom_tt_025C_5v00": 930,
+            "design__max_cap_violation__count__corner:nom_tt_025C_5v00": 3,
+            "power__internal__total": 0.145679,
+            "power__switching__total": 0.0994202,
+            "power__leakage__total": 6.61526e-05,
+            "power__total": 0.245165,
+            "clock__skew__worst_hold__corner:nom_tt_025C_5v00": -1.02906,
+            "clock__skew__worst_setup__corner:nom_tt_025C_5v00": 0.626494,
+            "timing__hold__ws__corner:nom_tt_025C_5v00": 0.548467,
+            "timing__setup__ws__corner:nom_tt_025C_5v00": 53.5032,
+            "timing__hold__tns__corner:nom_tt_025C_5v00": 0,
+            "timing__setup__tns__corner:nom_tt_025C_5v00": 0,
+            "timing__hold__wns__corner:nom_tt_025C_5v00": 0,
+            "timing__setup__wns__corner:nom_tt_025C_5v00": 0,
+            "timing__hold_vio__count__corner:nom_tt_025C_5v00": 0,
+            "timing__hold_r2r__ws__corner:nom_tt_025C_5v00": 0.548467,
+            "timing__hold_r2r_vio__count__corner:nom_tt_025C_5v00": 0,
+            "timing__setup_vio__count__corner:nom_tt_025C_5v00": 0,
+            "timing__setup_r2r__ws__corner:nom_tt_025C_5v00": 1e+30,
+            "timing__setup_r2r_vio__count__corner:nom_tt_025C_5v00": 0,
+            "flow__warnings__count": 0,
+            "flow__errors__count": 0,
+            "flow__warnings__type_count": 0
+          },
+          "sta_corners": {
+            "nom_tt_025C_5v00": {
+              "hold_slack_ns": 0.548467,
+              "setup_slack_ns": 53.5032
+            }
+          },
+          "typical_setup_slack_ns": 53.5032,
+          "typical_hold_slack_ns": 0.548467,
+          "typical_setup_inferred_mhz": 6.826087668809148
+        }
+      ],
+      "pre_route_typical_timing": {
+        "scope": "pre-route placement-estimated parasitics; not extracted/signoff",
+        "step": "runs/rv_fixed_proj320_dp-route200/02-openroad-stamidpnr-2",
+        "period_ns": 200.0,
+        "target_mhz": 5.0,
+        "typical_setup_slack_ns": 53.5032,
+        "typical_hold_slack_ns": 0.548467,
+        "typical_setup_inferred_mhz": 6.826087668809148
+      },
+      "pre_route_selected_power": {
+        "scope": "pre-route placement-estimated parasitics; not extracted/signoff",
+        "step": "runs/rv_fixed_proj320_dp-pre-route-rtl-activity/01-openroad-stamidpnr",
+        "period_ns": 200.0,
+        "target_mhz": 5.0,
+        "power": {
+          "default": {
+            "corner": "nom_tt_025C_5v00",
+            "components_mw": {
+              "internal": 145.67917590000002,
+              "switching": 99.42016751,
+              "leakage": 0.06615262828,
+              "total": 245.1654822
+            }
+          },
+          "vcd": {
+            "corner": "nom_tt_025C_5v00",
+            "components_mw": {
+              "internal": 213.91853690000002,
+              "switching": 180.8656901,
+              "leakage": 0.06616732571,
+              "total": 394.8503733
+            }
+          }
+        },
+        "vcd_annotated_pins": 42319,
+        "unannotated_pins": 1076008,
+        "annotated_pin_fraction": 0.037841346940563896,
+        "annotation_limitation": "RTL top-level port activity: 42319 directly annotated pins; internal activity propagated/default. No gate-level glitch modelling. Zero matched pins is a failed annotation attempt.",
+        "mw_per_weight_at_unqualified_target": {
+          "default": 0.002394194162109375,
+          "vcd": 0.0038559606767578124
+        },
+        "us_per_projection_at_unqualified_target": 64.2
+      },
+      "pre_route_layout_png": "rv_fixed_proj320_dp-PRE-ROUTE-NOT-SIGNOFF.png",
+      "signoff_status": "incomplete: no extracted final timing/signoff result"
+    },
+    "rv_fixed_proj64x320_rom": {
+      "rows": 64,
+      "outputs": 320,
+      "weight_positions": 20480,
+      "verification_level": "RTL simulation against original-byte NumPy INT64 oracle",
+      "verification": {
+        "vectors_passed": 32,
+        "random_vectors": 20,
+        "exact_comparisons": 10272,
+        "failures": 0
+      },
+      "physical_runs": [
+        {
+          "run_directory": "runs/rv_fixed_proj64x320_rom-v1",
+          "last_completed_step": "05-yosys-jsonheader",
+          "supervisor": {
+            "command": [
+              "bash",
+              "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/run_flow.sh",
+              "rv_fixed_proj64x320_rom",
+              "v1"
+            ],
+            "log": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/logs/rv_fixed_proj64x320_rom-v1.flow.log",
+            "exit_code": 1,
+            "stop_reason": null,
+            "elapsed_seconds": 10.008490085601807,
+            "minimum_free_bytes": 29083512832,
+            "limit_seconds": 7200,
+            "thread_limit": 8,
+            "nice": 10,
+            "start_unix": 1791919881.7868118
+          },
+          "last_started_step": "05-yosys-jsonheader",
+          "flow_log": "logs/rv_fixed_proj64x320_rom-v1.flow.log"
+        },
+        {
+          "run_directory": "runs/rv_fixed_proj64x320_rom-restored",
+          "last_completed_step": "31-openroad-stamidpnr",
+          "supervisor": {
+            "command": [
+              "bash",
+              "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/run_flow.sh",
+              "rv_fixed_proj64x320_rom",
+              "restored"
+            ],
+            "log": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/logs/rv_fixed_proj64x320_rom-restored.flow.log",
+            "exit_code": 2,
+            "stop_reason": null,
+            "elapsed_seconds": 1636.4445760250092,
+            "minimum_free_bytes": 25678524416,
+            "limit_seconds": 7200,
+            "thread_limit": 8,
+            "nice": 10,
+            "start_unix": 1791919920.967783
+          },
+          "last_started_step": "32-openroad-repairdesignpostgpl",
+          "flow_log": "logs/rv_fixed_proj64x320_rom-restored.flow.log"
+        },
+        {
+          "run_directory": "runs/rv_fixed_proj64x320_rom-util30",
+          "last_completed_step": "24-openroad-stamidpnr-1",
+          "supervisor": {
+            "command": [
+              "bash",
+              "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/run_flow.sh",
+              "rv_fixed_proj64x320_rom",
+              "util30"
+            ],
+            "log": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/logs/rv_fixed_proj64x320_rom-util30.flow.log",
+            "exit_code": -15,
+            "stop_reason": "supervisor interrupted: ",
+            "elapsed_seconds": 3942.620747089386,
+            "minimum_free_bytes": 23698194432,
+            "limit_seconds": 7200,
+            "thread_limit": 8,
+            "nice": 10,
+            "start_unix": 1791921691.115809,
+            "flow_controls": {
+              "W2_FROM_STEP": "OpenROAD.Floorplan",
+              "W2_INITIAL_STATE": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/runs/rv_fixed_proj64x320_rom-restored/12-openroad-staprepnr/state_out.json"
+            }
+          },
+          "last_started_step": "25-openroad-resizertimingpostcts",
+          "flow_log": "logs/rv_fixed_proj64x320_rom-util30.flow.log"
+        },
+        {
+          "run_directory": "runs/rv_fixed_proj64x320_rom-clock200",
+          "last_completed_step": "02-openroad-stamidpnr-2",
+          "supervisor": {
+            "command": [
+              "bash",
+              "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/run_flow.sh",
+              "rv_fixed_proj64x320_rom",
+              "clock200"
+            ],
+            "log": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/logs/rv_fixed_proj64x320_rom-clock200.flow.log",
+            "exit_code": -15,
+            "stop_reason": "disk safety margin: free below 22 GiB",
+            "elapsed_seconds": 5890.263544082642,
+            "minimum_free_bytes": 23609778176,
+            "limit_seconds": 7200,
+            "thread_limit": 8,
+            "nice": 10,
+            "start_unix": 1791925656.8089678,
+            "flow_controls": {
+              "W2_FROM_STEP": "OpenROAD.ResizerTimingPostCTS",
+              "W2_INITIAL_STATE": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/evidence/slice-200ns-initial-state.json",
+              "W2_CONFIG_PATH": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/configs/rv_fixed_proj64x320_rom-200ns.json"
+            }
+          },
+          "last_started_step": "03-openroad-globalrouting",
+          "flow_log": "logs/rv_fixed_proj64x320_rom-clock200.flow.log"
+        },
+        {
+          "run_directory": "runs/rv_fixed_proj64x320_rom-pre-route-activity",
+          "last_completed_step": "01-openroad-stamidpnr",
+          "supervisor": {
+            "command": [
+              "bash",
+              "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/run_flow.sh",
+              "rv_fixed_proj64x320_rom",
+              "pre-route-activity"
+            ],
+            "log": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/logs/rv_fixed_proj64x320_rom-pre-route-activity.flow.log",
+            "exit_code": 0,
+            "stop_reason": null,
+            "elapsed_seconds": 75.06585693359375,
+            "minimum_free_bytes": 26459058176,
+            "limit_seconds": 7200,
+            "thread_limit": 8,
+            "nice": 10,
+            "start_unix": 1791931069.57558,
+            "flow_controls": {
+              "W2_FROM_STEP": "OpenROAD.STAMidPNR",
+              "W2_TO_STEP": "OpenROAD.STAMidPNR",
+              "W2_INITIAL_STATE": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/runs/rv_fixed_proj64x320_rom-clock200/02-openroad-stamidpnr-2/state_out.json",
+              "W2_NUM_THREADS": "1",
+              "W2_CONFIG_PATH": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/configs/rv_fixed_proj64x320_rom-pre-route-activity.json",
+              "W2_VCD": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/tmp/rv_fixed_proj64x320_rom-pre-route-activity.vcd"
+            }
+          },
+          "last_started_step": "01-openroad-stamidpnr",
+          "flow_log": "logs/rv_fixed_proj64x320_rom-pre-route-activity.flow.log"
+        },
+        {
+          "run_directory": "runs/rv_fixed_proj64x320_rom-pre-route-slash-activity",
+          "last_completed_step": "01-openroad-stamidpnr",
+          "supervisor": {
+            "command": [
+              "bash",
+              "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/run_flow.sh",
+              "rv_fixed_proj64x320_rom",
+              "pre-route-slash-activity"
+            ],
+            "log": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/logs/rv_fixed_proj64x320_rom-pre-route-slash-activity.flow.log",
+            "exit_code": 0,
+            "stop_reason": null,
+            "elapsed_seconds": 105.09431791305542,
+            "minimum_free_bytes": 25444749312,
+            "limit_seconds": 7200,
+            "thread_limit": 8,
+            "nice": 10,
+            "start_unix": 1791931336.584867,
+            "flow_controls": {
+              "W2_FROM_STEP": "OpenROAD.STAMidPNR",
+              "W2_TO_STEP": "OpenROAD.STAMidPNR",
+              "W2_INITIAL_STATE": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/runs/rv_fixed_proj64x320_rom-clock200/02-openroad-stamidpnr-2/state_out.json",
+              "W2_NUM_THREADS": "1",
+              "W2_CONFIG_PATH": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/configs/rv_fixed_proj64x320_rom-pre-route-slash-activity.json",
+              "W2_VCD": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/tmp/rv_fixed_proj64x320_rom-pre-route-slash-activity.vcd"
+            }
+          },
+          "last_started_step": "01-openroad-stamidpnr",
+          "flow_log": "logs/rv_fixed_proj64x320_rom-pre-route-slash-activity.flow.log"
+        },
+        {
+          "run_directory": "runs/rv_fixed_proj64x320_rom-preroute-render",
+          "last_completed_step": "01-klayout-render",
+          "supervisor": {
+            "command": [
+              "bash",
+              "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/run_flow.sh",
+              "rv_fixed_proj64x320_rom",
+              "preroute-render"
+            ],
+            "log": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/logs/rv_fixed_proj64x320_rom-preroute-render.flow.log",
+            "exit_code": 0,
+            "stop_reason": null,
+            "elapsed_seconds": 10.00846791267395,
+            "minimum_free_bytes": 26507079680,
+            "limit_seconds": 7200,
+            "thread_limit": 8,
+            "nice": 10,
+            "start_unix": 1791932669.744013,
+            "flow_controls": {
+              "W2_FROM_STEP": "KLayout.Render",
+              "W2_TO_STEP": "KLayout.Render",
+              "W2_INITIAL_STATE": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/runs/rv_fixed_proj64x320_rom-clock200/02-openroad-stamidpnr-2/state_out.json",
+              "W2_NUM_THREADS": "1",
+              "W2_CONFIG_PATH": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/configs/rv_fixed_proj64x320_rom-200ns.json"
+            }
+          },
+          "last_started_step": "01-klayout-render",
+          "flow_log": "logs/rv_fixed_proj64x320_rom-preroute-render.flow.log"
+        },
+        {
+          "run_directory": "runs/rv_fixed_proj64x320_rom-pre-route-gate-cell-activity",
+          "last_completed_step": "01-openroad-stamidpnr",
+          "supervisor": {
+            "command": [
+              "bash",
+              "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/run_flow.sh",
+              "rv_fixed_proj64x320_rom",
+              "pre-route-gate-cell-activity"
+            ],
+            "log": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/logs/rv_fixed_proj64x320_rom-pre-route-gate-cell-activity.flow.log",
+            "exit_code": 0,
+            "stop_reason": null,
+            "elapsed_seconds": 100.16428518295288,
+            "minimum_free_bytes": 26337497088,
+            "limit_seconds": 900,
+            "thread_limit": 8,
+            "nice": 10,
+            "minimum_required_free_gib": 23.0,
+            "start_unix": 1791933837.6293938,
+            "flow_controls": {
+              "W2_FROM_STEP": "OpenROAD.STAMidPNR",
+              "W2_TO_STEP": "OpenROAD.STAMidPNR",
+              "W2_INITIAL_STATE": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/runs/rv_fixed_proj64x320_rom-clock200/02-openroad-stamidpnr-2/state_out.json",
+              "W2_NUM_THREADS": "1",
+              "W2_CONFIG_PATH": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/configs/rv_fixed_proj64x320_rom-pre-route-gate-cell-activity.json",
+              "W2_VCD": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/vectors/rv_fixed_proj64x320_rom.gate-cell-pins-power-200ns.normalized.vcd.gz",
+              "W2_MIN_FREE_GIB": "23",
+              "W2_LIMIT_SECONDS": "900"
+            }
+          },
+          "last_started_step": "01-openroad-stamidpnr",
+          "flow_log": "logs/rv_fixed_proj64x320_rom-pre-route-gate-cell-activity.flow.log"
+        }
+      ],
+      "cycles_start_to_done_no_stalls": 65,
+      "minimum_start_interval_without_readout_cycles": 66,
+      "cycles_including_320_clocked_reads": 385,
+      "accepted_activation_cycles": 64,
+      "readout_cycles_if_clocked_one_output_per_cycle": 320,
+      "cycles_full_320_matvec": null,
+      "us_at_requested_50MHz": 1.3,
+      "synthesized_cell_count": 190460,
+      "synthesized_cell_area_um2": 4229742.092804,
+      "die_area_um2": 14267763.9168,
+      "core_area_um2": 14085906.912,
+      "utilization": 0.442854,
+      "sta_corners": {},
+      "achieved_mhz": null,
+      "sta_inferred_mhz": null,
+      "drc": null,
+      "lvs": null,
+      "antenna": null,
+      "power_mw": null,
+      "power_corner": null,
+      "power_activity_source": null,
+      "mm2_per_weight": null,
+      "um2_per_weight": null,
+      "mw_per_weight_at_achieved_clock": null,
+      "us_per_full_320_matvec_at_achieved_clock": null,
+      "layout_png": null,
+      "expected_extracted_corners": [
+        "max_ff_n40C_5v50",
+        "max_ss_125C_4v50",
+        "max_tt_025C_5v00",
+        "min_ff_n40C_5v50",
+        "min_ss_125C_4v50",
+        "min_tt_025C_5v00",
+        "nom_ff_n40C_5v50",
+        "nom_ss_125C_4v50",
+        "nom_tt_025C_5v00"
+      ],
+      "complete_extracted_corner_matrix": false,
+      "gate_verification": {
+        "variant": "rv_fixed_proj64x320_rom",
+        "level": "Zero-delay mapped netlist, GF180 FUNCTIONAL models, Verilator (two-state); no SDF timing simulation",
+        "netlist": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/runs/rv_fixed_proj64x320_rom-restored/06-yosys-synthesis/rv_fixed_proj64x320_rom.nl.v",
+        "netlist_sha256": "d080daf116b6202cb5fbf31ae53918a07ed31f5d4825aef14263a62a2daee5a7",
+        "thread_caps": {
+          "build": 4,
+          "simulation": 1
+        },
+        "limit_seconds": 1200,
+        "phases": [
+          {
+            "phase": "compile",
+            "command": [
+              "nice",
+              "-n",
+              "10",
+              "verilator",
+              "--binary",
+              "--timing",
+              "--top-module",
+              "tb",
+              "--build-jobs",
+              "4",
+              "--threads",
+              "1",
+              "--output-split",
+              "15000",
+              "--output-split-cfuncs",
+              "5000",
+              "-Wno-fatal",
+              "-DFUNCTIONAL",
+              "-DDUT=rv_fixed_proj64x320_rom",
+              "-DROWS=64",
+              "--Mdir",
+              "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/tb/gate_obj_rv_fixed_proj64x320_rom",
+              "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/verilog/primitives.v",
+              "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/verilog/gf180mcu_fd_sc_mcu7t5v0.v",
+              "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/runs/rv_fixed_proj64x320_rom-restored/06-yosys-synthesis/rv_fixed_proj64x320_rom.nl.v",
+              "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/tb/tb_gate.sv"
+            ],
+            "log": "logs/rv_fixed_proj64x320_rom.gate-compile.log",
+            "exit_code": 0
+          },
+          {
+            "phase": "simulate",
+            "command": [
+              "nice",
+              "-n",
+              "10",
+              "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/tb/gate_obj_rv_fixed_proj64x320_rom/Vtb"
+            ],
+            "log": "logs/rv_fixed_proj64x320_rom.gate-simulate.log",
+            "exit_code": 0
+          }
+        ],
+        "elapsed_seconds": 183.2914958000183,
+        "stop_reason": null,
+        "verification": {
+          "vectors_passed": 32,
+          "random_vectors": 20,
+          "exact_comparisons": 10272,
+          "failures": 0
+        }
+      },
+      "latest_completed_step": "02-openroad-stamidpnr-2",
+      "synthesis_metrics": {
+        "design__lint_error__count": 0,
+        "design__lint_timing_construct__count": 0,
+        "design__lint_warning__count": 0,
+        "design__inferred_latch__count": 0,
+        "design__instance__count": 190460,
+        "design__instance__area": 4229742.092804,
+        "design__instance_unmapped__count": 0,
+        "synthesis__check_error__count": 0
+      },
+      "latest_measured_metrics": {
+        "design__lint_error__count": 0,
+        "design__lint_timing_construct__count": 0,
+        "design__lint_warning__count": 0,
+        "design__inferred_latch__count": 0,
+        "design__instance__count": 335794,
+        "design__instance__area": 6238010,
+        "design__instance_unmapped__count": 0,
+        "synthesis__check_error__count": 0,
+        "design__max_slew_violation__count__corner:nom_tt_025C_5v00": 0,
+        "design__max_fanout_violation__count__corner:nom_tt_025C_5v00": 1042,
+        "design__max_cap_violation__count__corner:nom_tt_025C_5v00": 1,
+        "power__internal__total": 0.0883856,
+        "power__switching__total": 0.0622175,
+        "power__leakage__total": 4.12035e-05,
+        "power__total": 0.150644,
+        "clock__skew__worst_hold__corner:nom_tt_025C_5v00": -0.979557,
+        "clock__skew__worst_setup__corner:nom_tt_025C_5v00": 0.638291,
+        "timing__hold__ws__corner:nom_tt_025C_5v00": 0.597714,
+        "timing__setup__ws__corner:nom_tt_025C_5v00": 90.3294,
+        "timing__hold__tns__corner:nom_tt_025C_5v00": 0,
+        "timing__setup__tns__corner:nom_tt_025C_5v00": 0,
+        "timing__hold__wns__corner:nom_tt_025C_5v00": 0,
+        "timing__setup__wns__corner:nom_tt_025C_5v00": 0,
+        "timing__hold_vio__count__corner:nom_tt_025C_5v00": 0,
+        "timing__hold_r2r__ws__corner:nom_tt_025C_5v00": 0.597714,
+        "timing__hold_r2r_vio__count__corner:nom_tt_025C_5v00": 0,
+        "timing__setup_vio__count__corner:nom_tt_025C_5v00": 0,
+        "timing__setup_r2r__ws__corner:nom_tt_025C_5v00": 1000000000000000000000000000000,
+        "timing__setup_r2r_vio__count__corner:nom_tt_025C_5v00": 0,
+        "design__max_slew_violation__count__corner:nom_ss_125C_4v50": 424859,
+        "design__max_fanout_violation__count__corner:nom_ss_125C_4v50": 2562,
+        "design__max_cap_violation__count__corner:nom_ss_125C_4v50": 741,
+        "clock__skew__worst_hold__corner:nom_ss_125C_4v50": -19.88353182826315,
+        "clock__skew__worst_setup__corner:nom_ss_125C_4v50": 19.88353182826315,
+        "timing__hold__ws__corner:nom_ss_125C_4v50": 1.2445362870299634,
+        "timing__setup__ws__corner:nom_ss_125C_4v50": -9687.27572511721,
+        "timing__hold__tns__corner:nom_ss_125C_4v50": 0,
+        "timing__setup__tns__corner:nom_ss_125C_4v50": -48808576.05691447,
+        "timing__hold__wns__corner:nom_ss_125C_4v50": 0,
+        "timing__setup__wns__corner:nom_ss_125C_4v50": -9687.27572511721,
+        "timing__hold_vio__count__corner:nom_ss_125C_4v50": 0,
+        "timing__hold_r2r__ws__corner:nom_ss_125C_4v50": 1.244536,
+        "timing__hold_r2r_vio__count__corner:nom_ss_125C_4v50": 0,
+        "timing__setup_vio__count__corner:nom_ss_125C_4v50": 15422,
+        "timing__setup_r2r__ws__corner:nom_ss_125C_4v50": -7150.006348,
+        "timing__setup_r2r_vio__count__corner:nom_ss_125C_4v50": 1537,
+        "design__max_slew_violation__count__corner:nom_ff_n40C_5v50": 337368,
+        "design__max_fanout_violation__count__corner:nom_ff_n40C_5v50": 2562,
+        "design__max_cap_violation__count__corner:nom_ff_n40C_5v50": 508,
+        "clock__skew__worst_hold__corner:nom_ff_n40C_5v50": -8.138495441257598,
+        "clock__skew__worst_setup__corner:nom_ff_n40C_5v50": 8.138495441257598,
+        "timing__hold__ws__corner:nom_ff_n40C_5v50": 0.22769681229425484,
+        "timing__setup__ws__corner:nom_ff_n40C_5v50": -2812.269565266627,
+        "timing__hold__tns__corner:nom_ff_n40C_5v50": 0,
+        "timing__setup__tns__corner:nom_ff_n40C_5v50": -16309937.923487201,
+        "timing__hold__wns__corner:nom_ff_n40C_5v50": 0,
+        "timing__setup__wns__corner:nom_ff_n40C_5v50": -2812.269565266627,
+        "timing__hold_vio__count__corner:nom_ff_n40C_5v50": 0,
+        "timing__hold_r2r__ws__corner:nom_ff_n40C_5v50": 0.227697,
+        "timing__hold_r2r_vio__count__corner:nom_ff_n40C_5v50": 0,
+        "timing__setup_vio__count__corner:nom_ff_n40C_5v50": 15392,
+        "timing__setup_r2r__ws__corner:nom_ff_n40C_5v50": -2560.720947,
+        "timing__setup_r2r_vio__count__corner:nom_ff_n40C_5v50": 1537,
+        "design__max_slew_violation__count": 0,
+        "design__max_fanout_violation__count": 1042,
+        "design__max_cap_violation__count": 1,
+        "clock__skew__worst_hold": -0.979557,
+        "clock__skew__worst_setup": 0.638291,
+        "timing__hold__ws": 0.597714,
+        "timing__setup__ws": 90.3294,
+        "timing__hold__tns": 0,
+        "timing__setup__tns": 0,
+        "timing__hold__wns": 0,
+        "timing__setup__wns": 0,
+        "timing__hold_vio__count": 0,
+        "timing__hold_r2r__ws": 0.597714,
+        "timing__hold_r2r_vio__count": 0,
+        "timing__setup_vio__count": 0,
+        "timing__setup_r2r__ws": 1000000000000000000000000000000,
+        "timing__setup_r2r_vio__count": 0,
+        "design__die__bbox": "0.0 0.0 3768.32 3786.24",
+        "design__core__bbox": "6.72 15.68 3761.52 3767.12",
+        "design__io": 81,
+        "design__die__area": 14267800,
+        "design__core__area": 14085900,
+        "design__instance__count__stdcell": 335794,
+        "design__instance__area__stdcell": 6238010,
+        "design__instance__count__macros": 0,
+        "design__instance__area__macros": 0,
+        "design__instance__count__padcells": 0,
+        "design__instance__area__padcells": 0,
+        "design__instance__count__cover": 0,
+        "design__instance__area__cover": 0,
+        "design__instance__utilization": 0.442854,
+        "design__instance__utilization__stdcell": 0.442854,
+        "design__rows": 957,
+        "design__rows:GF018hv5v_mcu_sc7": 957,
+        "design__sites": 6416685,
+        "design__sites:GF018hv5v_mcu_sc7": 6416685,
+        "design__instance__count__class:inverter": 5709,
+        "design__instance__area__class:inverter": 50151.5,
+        "design__instance__count__class:sequential_cell": 15392,
+        "design__instance__area__class:sequential_cell": 980741,
+        "design__instance__count__class:multi_input_combinational_cell": 169359,
+        "design__instance__area__class:multi_input_combinational_cell": 3236290,
+        "flow__warnings__count": 0,
+        "flow__errors__count": 0,
+        "flow__warnings__count:ODB-0220": 1,
+        "flow__warnings__type_count": 0,
+        "flow__warnings__count:ORD-0039": 1,
+        "design__instance__count__class:endcap_cell": 1914,
+        "design__instance__area__class:endcap_cell": 8403.23,
+        "design__instance__count__class:tap_cell": 91596,
+        "design__instance__area__class:tap_cell": 402143,
+        "design__power_grid_violation__count__net:VSS": 0,
+        "design__power_grid_violation__count__net:VDD": 0,
+        "design__power_grid_violation__count": 0,
+        "floorplan__design__io": 79,
+        "design__io__hpwl": 268856483,
+        "flow__warnings__count:GRT-0281": 29,
+        "timing__drv__floating__nets": 2,
+        "timing__drv__floating__pins": 0,
+        "design__instance__displacement__total": 0,
+        "design__instance__displacement__mean": 0,
+        "design__instance__displacement__max": 0,
+        "route__wirelength__estimated": 46783400,
+        "design__violations": 0,
+        "design__instance__count__class:timing_repair_buffer": 49438,
+        "design__instance__area__class:timing_repair_buffer": 1452390,
+        "flow__warnings__count:RSZ-0020": 1,
+        "flow__warnings__count:STA-1140": 6,
+        "design__instance__count__class:clock_buffer": 2011,
+        "design__instance__area__class:clock_buffer": 101199,
+        "design__instance__count__class:clock_inverter": 375,
+        "design__instance__area__class:clock_inverter": 6686.58,
+        "design__instance__count__setup_buffer": 0,
+        "design__instance__count__hold_buffer": 0
+      },
+      "latest_physical_instance_count": 335794,
+      "latest_physical_instance_area_um2": 6238010,
+      "measurement_run": "runs/rv_fixed_proj64x320_rom-clock200",
+      "measurement_clock_period_ns": 200.0,
+      "target_mhz": 5.0,
+      "utilization_percent": 44.2854,
+      "pdn_connectivity_violations": 0,
+      "area_scope": "allocated floorplan; routing not complete",
+      "physical_check_metrics": {
+        "design__power_grid_violation__count__net:VSS": 0,
+        "design__power_grid_violation__count__net:VDD": 0,
+        "design__power_grid_violation__count": 0
+      },
+      "allocated_floorplan_um2_per_weight": 696.66816,
+      "allocated_floorplan_mm2_per_weight": 0.0006966681599999999,
+      "synthesized_cell_area_mm2": 4.229742092804,
+      "synthesized_cell_um2_per_weight": 206.5303756251953,
+      "pre_route_checkpoints": [
+        {
+          "run": "runs/rv_fixed_proj64x320_rom-clock200",
+          "step": "runs/rv_fixed_proj64x320_rom-clock200/02-openroad-stamidpnr-2",
+          "scope": "pre-route placement-estimated parasitics; not extracted/signoff",
+          "period_ns": 200.0,
+          "target_mhz": 5.0,
+          "fresh_step_metrics": {
+            "design__max_slew_violation__count__corner:nom_tt_025C_5v00": 0,
+            "design__max_fanout_violation__count__corner:nom_tt_025C_5v00": 1042,
+            "design__max_cap_violation__count__corner:nom_tt_025C_5v00": 1,
+            "power__internal__total": 0.0883856,
+            "power__switching__total": 0.0622175,
+            "power__leakage__total": 4.12035e-05,
+            "power__total": 0.150644,
+            "clock__skew__worst_hold__corner:nom_tt_025C_5v00": -0.979557,
+            "clock__skew__worst_setup__corner:nom_tt_025C_5v00": 0.638291,
+            "timing__hold__ws__corner:nom_tt_025C_5v00": 0.597714,
+            "timing__setup__ws__corner:nom_tt_025C_5v00": 90.3294,
+            "timing__hold__tns__corner:nom_tt_025C_5v00": 0,
+            "timing__setup__tns__corner:nom_tt_025C_5v00": 0,
+            "timing__hold__wns__corner:nom_tt_025C_5v00": 0,
+            "timing__setup__wns__corner:nom_tt_025C_5v00": 0,
+            "timing__hold_vio__count__corner:nom_tt_025C_5v00": 0,
+            "timing__hold_r2r__ws__corner:nom_tt_025C_5v00": 0.597714,
+            "timing__hold_r2r_vio__count__corner:nom_tt_025C_5v00": 0,
+            "timing__setup_vio__count__corner:nom_tt_025C_5v00": 0,
+            "timing__setup_r2r__ws__corner:nom_tt_025C_5v00": 1e+30,
+            "timing__setup_r2r_vio__count__corner:nom_tt_025C_5v00": 0,
+            "flow__warnings__count": 0,
+            "flow__errors__count": 0,
+            "flow__warnings__type_count": 0
+          },
+          "sta_corners": {
+            "nom_tt_025C_5v00": {
+              "hold_slack_ns": 0.597714,
+              "setup_slack_ns": 90.3294
+            }
+          },
+          "typical_setup_slack_ns": 90.3294,
+          "typical_hold_slack_ns": 0.597714,
+          "typical_setup_inferred_mhz": 9.118213997187944
+        },
+        {
+          "run": "runs/rv_fixed_proj64x320_rom-pre-route-activity",
+          "step": "runs/rv_fixed_proj64x320_rom-pre-route-activity/01-openroad-stamidpnr",
+          "scope": "pre-route placement-estimated parasitics; not extracted/signoff",
+          "period_ns": 200.0,
+          "target_mhz": 5.0,
+          "fresh_step_metrics": {
+            "design__max_slew_violation__count__corner:nom_tt_025C_5v00": 0,
+            "design__max_fanout_violation__count__corner:nom_tt_025C_5v00": 1042,
+            "design__max_cap_violation__count__corner:nom_tt_025C_5v00": 1,
+            "power__internal__total": 0.0883856,
+            "power__switching__total": 0.0622175,
+            "power__leakage__total": 4.12035e-05,
+            "power__total": 0.150644,
+            "clock__skew__worst_hold__corner:nom_tt_025C_5v00": -0.979557,
+            "clock__skew__worst_setup__corner:nom_tt_025C_5v00": 0.638291,
+            "timing__hold__ws__corner:nom_tt_025C_5v00": 0.597714,
+            "timing__setup__ws__corner:nom_tt_025C_5v00": 90.3294,
+            "timing__hold__tns__corner:nom_tt_025C_5v00": 0,
+            "timing__setup__tns__corner:nom_tt_025C_5v00": 0,
+            "timing__hold__wns__corner:nom_tt_025C_5v00": 0,
+            "timing__setup__wns__corner:nom_tt_025C_5v00": 0,
+            "timing__hold_vio__count__corner:nom_tt_025C_5v00": 0,
+            "timing__hold_r2r__ws__corner:nom_tt_025C_5v00": 0.597714,
+            "timing__hold_r2r_vio__count__corner:nom_tt_025C_5v00": 0,
+            "timing__setup_vio__count__corner:nom_tt_025C_5v00": 0,
+            "timing__setup_r2r__ws__corner:nom_tt_025C_5v00": 1e+30,
+            "timing__setup_r2r_vio__count__corner:nom_tt_025C_5v00": 0,
+            "flow__warnings__count": 0,
+            "flow__errors__count": 0,
+            "flow__warnings__type_count": 0
+          },
+          "sta_corners": {
+            "nom_tt_025C_5v00": {
+              "hold_slack_ns": 0.597714,
+              "setup_slack_ns": 90.3294
+            }
+          },
+          "typical_setup_slack_ns": 90.3294,
+          "typical_hold_slack_ns": 0.597714,
+          "typical_setup_inferred_mhz": 9.118213997187944,
+          "power": {
+            "default": {
+              "corner": "nom_tt_025C_5v00",
+              "components_mw": {
+                "internal": 88.38564903,
+                "switching": 62.21752614,
+                "leakage": 0.04120349331,
+                "total": 150.6443769
+              }
+            },
+            "vcd": {
+              "corner": "nom_tt_025C_5v00",
+              "components_mw": {
+                "internal": 88.38564903,
+                "switching": 62.21752614,
+                "leakage": 0.04120349331,
+                "total": 150.6443769
+              }
+            }
+          },
+          "vcd_annotated_pins": 0,
+          "unannotated_pins": 843334,
+          "vcd_valid_nonzero_annotation": false,
+          "annotation_limitation": "RTL top-level port activity: 0 directly annotated pins; internal activity propagated/default. No gate-level glitch modelling. Zero matched pins is a failed annotation attempt.",
+          "annotated_pin_fraction": 0.0,
+          "power_source_log": "runs/rv_fixed_proj64x320_rom-pre-route-activity/01-openroad-stamidpnr/openroad-stamidpnr.log"
+        },
+        {
+          "run": "runs/rv_fixed_proj64x320_rom-pre-route-gate-cell-activity",
+          "step": "runs/rv_fixed_proj64x320_rom-pre-route-gate-cell-activity/01-openroad-stamidpnr",
+          "scope": "pre-route placement-estimated parasitics; not extracted/signoff",
+          "period_ns": 200.0,
+          "target_mhz": 5.0,
+          "fresh_step_metrics": {
+            "design__max_slew_violation__count__corner:nom_tt_025C_5v00": 0,
+            "design__max_fanout_violation__count__corner:nom_tt_025C_5v00": 1042,
+            "design__max_cap_violation__count__corner:nom_tt_025C_5v00": 1,
+            "power__internal__total": 0.0707943,
+            "power__switching__total": 0.0352571,
+            "power__leakage__total": 4.16236e-05,
+            "power__total": 0.106093,
+            "clock__skew__worst_hold__corner:nom_tt_025C_5v00": -0.979557,
+            "clock__skew__worst_setup__corner:nom_tt_025C_5v00": 0.638291,
+            "timing__hold__ws__corner:nom_tt_025C_5v00": 0.597714,
+            "timing__setup__ws__corner:nom_tt_025C_5v00": 90.3294,
+            "timing__hold__tns__corner:nom_tt_025C_5v00": 0,
+            "timing__setup__tns__corner:nom_tt_025C_5v00": 0,
+            "timing__hold__wns__corner:nom_tt_025C_5v00": 0,
+            "timing__setup__wns__corner:nom_tt_025C_5v00": 0,
+            "timing__hold_vio__count__corner:nom_tt_025C_5v00": 0,
+            "timing__hold_r2r__ws__corner:nom_tt_025C_5v00": 0.597714,
+            "timing__hold_r2r_vio__count__corner:nom_tt_025C_5v00": 0,
+            "timing__setup_vio__count__corner:nom_tt_025C_5v00": 0,
+            "timing__setup_r2r__ws__corner:nom_tt_025C_5v00": 1e+30,
+            "timing__setup_r2r_vio__count__corner:nom_tt_025C_5v00": 0,
+            "flow__warnings__count": 0,
+            "flow__errors__count": 0,
+            "flow__warnings__type_count": 0
+          },
+          "sta_corners": {
+            "nom_tt_025C_5v00": {
+              "hold_slack_ns": 0.597714,
+              "setup_slack_ns": 90.3294
+            }
+          },
+          "typical_setup_slack_ns": 90.3294,
+          "typical_hold_slack_ns": 0.597714,
+          "typical_setup_inferred_mhz": 9.118213997187944,
+          "power": {
+            "default": {
+              "corner": "nom_tt_025C_5v00",
+              "components_mw": {
+                "internal": 88.38564903,
+                "switching": 62.21752614,
+                "leakage": 0.04120349331,
+                "total": 150.6443769
+              }
+            },
+            "vcd": {
+              "corner": "nom_tt_025C_5v00",
+              "components_mw": {
+                "internal": 70.7943216,
+                "switching": 35.25714949,
+                "leakage": 0.04162357436,
+                "total": 106.09310119999999
+              }
+            }
+          },
+          "vcd_annotated_pins": 739686,
+          "unannotated_pins": 103648,
+          "vcd_valid_nonzero_annotation": true,
+          "annotation_limitation": "Zero-delay synthesis-netlist cell-pin activity. Inserted/changed physical cells rely on propagated/default activity; no routed glitches.",
+          "annotated_pin_fraction": 0.8770973303578417,
+          "power_source_log": "runs/rv_fixed_proj64x320_rom-pre-route-gate-cell-activity/01-openroad-stamidpnr/openroad-stamidpnr.log"
+        },
+        {
+          "run": "runs/rv_fixed_proj64x320_rom-pre-route-slash-activity",
+          "step": "runs/rv_fixed_proj64x320_rom-pre-route-slash-activity/01-openroad-stamidpnr",
+          "scope": "pre-route placement-estimated parasitics; not extracted/signoff",
+          "period_ns": 200.0,
+          "target_mhz": 5.0,
+          "fresh_step_metrics": {
+            "design__max_slew_violation__count__corner:nom_tt_025C_5v00": 0,
+            "design__max_fanout_violation__count__corner:nom_tt_025C_5v00": 1042,
+            "design__max_cap_violation__count__corner:nom_tt_025C_5v00": 1,
+            "power__internal__total": 0.0734714,
+            "power__switching__total": 0.0428957,
+            "power__leakage__total": 4.13391e-05,
+            "power__total": 0.116408,
+            "clock__skew__worst_hold__corner:nom_tt_025C_5v00": -0.979557,
+            "clock__skew__worst_setup__corner:nom_tt_025C_5v00": 0.638291,
+            "timing__hold__ws__corner:nom_tt_025C_5v00": 0.597714,
+            "timing__setup__ws__corner:nom_tt_025C_5v00": 90.3294,
+            "timing__hold__tns__corner:nom_tt_025C_5v00": 0,
+            "timing__setup__tns__corner:nom_tt_025C_5v00": 0,
+            "timing__hold__wns__corner:nom_tt_025C_5v00": 0,
+            "timing__setup__wns__corner:nom_tt_025C_5v00": 0,
+            "timing__hold_vio__count__corner:nom_tt_025C_5v00": 0,
+            "timing__hold_r2r__ws__corner:nom_tt_025C_5v00": 0.597714,
+            "timing__hold_r2r_vio__count__corner:nom_tt_025C_5v00": 0,
+            "timing__setup_vio__count__corner:nom_tt_025C_5v00": 0,
+            "timing__setup_r2r__ws__corner:nom_tt_025C_5v00": 1e+30,
+            "timing__setup_r2r_vio__count__corner:nom_tt_025C_5v00": 0,
+            "flow__warnings__count": 0,
+            "flow__errors__count": 0,
+            "flow__warnings__type_count": 0
+          },
+          "sta_corners": {
+            "nom_tt_025C_5v00": {
+              "hold_slack_ns": 0.597714,
+              "setup_slack_ns": 90.3294
+            }
+          },
+          "typical_setup_slack_ns": 90.3294,
+          "typical_hold_slack_ns": 0.597714,
+          "typical_setup_inferred_mhz": 9.118213997187944,
+          "power": {
+            "default": {
+              "corner": "nom_tt_025C_5v00",
+              "components_mw": {
+                "internal": 88.38564903,
+                "switching": 62.21752614,
+                "leakage": 0.04120349331,
+                "total": 150.6443769
+              }
+            },
+            "vcd": {
+              "corner": "nom_tt_025C_5v00",
+              "components_mw": {
+                "internal": 73.47136736,
+                "switching": 42.89568216,
+                "leakage": 0.04133906987,
+                "total": 116.4083853
+              }
+            }
+          },
+          "vcd_annotated_pins": 79,
+          "unannotated_pins": 843255,
+          "vcd_valid_nonzero_annotation": true,
+          "annotation_limitation": "RTL top-level port activity: 79 directly annotated pins; internal activity propagated/default. No gate-level glitch modelling. Zero matched pins is a failed annotation attempt.",
+          "annotated_pin_fraction": 9.367581527603535e-05,
+          "power_source_log": "runs/rv_fixed_proj64x320_rom-pre-route-slash-activity/01-openroad-stamidpnr/openroad-stamidpnr.log"
+        },
+        {
+          "run": "runs/rv_fixed_proj64x320_rom-restored",
+          "step": "runs/rv_fixed_proj64x320_rom-restored/31-openroad-stamidpnr",
+          "scope": "pre-route placement-estimated parasitics; not extracted/signoff",
+          "period_ns": 20.0,
+          "target_mhz": 50.0,
+          "fresh_step_metrics": {
+            "design__max_slew_violation__count__corner:nom_tt_025C_5v00": 459527,
+            "design__max_fanout_violation__count__corner:nom_tt_025C_5v00": 2563,
+            "design__max_cap_violation__count__corner:nom_tt_025C_5v00": 2076,
+            "power__internal__total": 44.9705,
+            "power__switching__total": 0.192605,
+            "power__leakage__total": 3.06196e-05,
+            "power__total": 45.1631,
+            "clock__skew__worst_hold__corner:nom_tt_025C_5v00": -40.5273,
+            "clock__skew__worst_setup__corner:nom_tt_025C_5v00": 32.18,
+            "timing__hold__ws__corner:nom_tt_025C_5v00": -143.23,
+            "timing__setup__ws__corner:nom_tt_025C_5v00": -28524,
+            "timing__hold__tns__corner:nom_tt_025C_5v00": -616998,
+            "timing__setup__tns__corner:nom_tt_025C_5v00": -92374500.0,
+            "timing__hold__wns__corner:nom_tt_025C_5v00": -143.23,
+            "timing__setup__wns__corner:nom_tt_025C_5v00": -28524,
+            "timing__hold_vio__count__corner:nom_tt_025C_5v00": 15385,
+            "timing__hold_r2r__ws__corner:nom_tt_025C_5v00": -31.3765,
+            "timing__hold_r2r_vio__count__corner:nom_tt_025C_5v00": 8067,
+            "timing__setup_vio__count__corner:nom_tt_025C_5v00": 15449,
+            "timing__setup_r2r__ws__corner:nom_tt_025C_5v00": -28524,
+            "timing__setup_r2r_vio__count__corner:nom_tt_025C_5v00": 6804,
+            "flow__warnings__count": 0,
+            "flow__errors__count": 0,
+            "flow__warnings__type_count": 0
+          },
+          "sta_corners": {
+            "nom_tt_025C_5v00": {
+              "hold_slack_ns": -143.23,
+              "setup_slack_ns": -28524
+            }
+          },
+          "typical_setup_slack_ns": -28524,
+          "typical_hold_slack_ns": -143.23,
+          "typical_setup_inferred_mhz": 0.03503363228699551
+        },
+        {
+          "run": "runs/rv_fixed_proj64x320_rom-util30",
+          "step": "runs/rv_fixed_proj64x320_rom-util30/19-openroad-stamidpnr",
+          "scope": "pre-route placement-estimated parasitics; not extracted/signoff",
+          "period_ns": 20.0,
+          "target_mhz": 50.0,
+          "fresh_step_metrics": {
+            "design__max_slew_violation__count__corner:nom_tt_025C_5v00": 479407,
+            "design__max_fanout_violation__count__corner:nom_tt_025C_5v00": 2563,
+            "design__max_cap_violation__count__corner:nom_tt_025C_5v00": 2839,
+            "power__internal__total": 49.0893,
+            "power__switching__total": 0.229694,
+            "power__leakage__total": 3.21876e-05,
+            "power__total": 49.319,
+            "clock__skew__worst_hold__corner:nom_tt_025C_5v00": -35.2412,
+            "clock__skew__worst_setup__corner:nom_tt_025C_5v00": 31.4896,
+            "timing__hold__ws__corner:nom_tt_025C_5v00": -166.303,
+            "timing__setup__ws__corner:nom_tt_025C_5v00": -35715.2,
+            "timing__hold__tns__corner:nom_tt_025C_5v00": -653991,
+            "timing__setup__tns__corner:nom_tt_025C_5v00": -120880000.0,
+            "timing__hold__wns__corner:nom_tt_025C_5v00": -166.303,
+            "timing__setup__wns__corner:nom_tt_025C_5v00": -35715.2,
+            "timing__hold_vio__count__corner:nom_tt_025C_5v00": 15385,
+            "timing__hold_r2r__ws__corner:nom_tt_025C_5v00": -22.3101,
+            "timing__hold_r2r_vio__count__corner:nom_tt_025C_5v00": 8074,
+            "timing__setup_vio__count__corner:nom_tt_025C_5v00": 15449,
+            "timing__setup_r2r__ws__corner:nom_tt_025C_5v00": -35715.2,
+            "timing__setup_r2r_vio__count__corner:nom_tt_025C_5v00": 6804,
+            "flow__warnings__count": 0,
+            "flow__errors__count": 0,
+            "flow__warnings__type_count": 0
+          },
+          "sta_corners": {
+            "nom_tt_025C_5v00": {
+              "hold_slack_ns": -166.303,
+              "setup_slack_ns": -35715.2
+            }
+          },
+          "typical_setup_slack_ns": -35715.2,
+          "typical_hold_slack_ns": -166.303,
+          "typical_setup_inferred_mhz": 0.027983612796346462
+        },
+        {
+          "run": "runs/rv_fixed_proj64x320_rom-util30",
+          "step": "runs/rv_fixed_proj64x320_rom-util30/24-openroad-stamidpnr-1",
+          "scope": "pre-route placement-estimated parasitics; not extracted/signoff",
+          "period_ns": 20.0,
+          "target_mhz": 50.0,
+          "fresh_step_metrics": {
+            "design__max_slew_violation__count__corner:nom_tt_025C_5v00": 0,
+            "design__max_fanout_violation__count__corner:nom_tt_025C_5v00": 1042,
+            "design__max_cap_violation__count__corner:nom_tt_025C_5v00": 1,
+            "power__internal__total": 0.883823,
+            "power__switching__total": 0.622147,
+            "power__leakage__total": 4.12035e-05,
+            "power__total": 1.50601,
+            "clock__skew__worst_hold__corner:nom_tt_025C_5v00": -0.979557,
+            "clock__skew__worst_setup__corner:nom_tt_025C_5v00": 0.638291,
+            "timing__hold__ws__corner:nom_tt_025C_5v00": 0.597714,
+            "timing__setup__ws__corner:nom_tt_025C_5v00": -47.2934,
+            "timing__hold__tns__corner:nom_tt_025C_5v00": 0,
+            "timing__setup__tns__corner:nom_tt_025C_5v00": -246116,
+            "timing__hold__wns__corner:nom_tt_025C_5v00": 0,
+            "timing__setup__wns__corner:nom_tt_025C_5v00": -47.2934,
+            "timing__hold_vio__count__corner:nom_tt_025C_5v00": 0,
+            "timing__hold_r2r__ws__corner:nom_tt_025C_5v00": 0.597714,
+            "timing__hold_r2r_vio__count__corner:nom_tt_025C_5v00": 0,
+            "timing__setup_vio__count__corner:nom_tt_025C_5v00": 14979,
+            "timing__setup_r2r__ws__corner:nom_tt_025C_5v00": -33.14,
+            "timing__setup_r2r_vio__count__corner:nom_tt_025C_5v00": 998,
+            "flow__warnings__count": 0,
+            "flow__errors__count": 0,
+            "flow__warnings__type_count": 0
+          },
+          "sta_corners": {
+            "nom_tt_025C_5v00": {
+              "hold_slack_ns": 0.597714,
+              "setup_slack_ns": -47.2934
+            }
+          },
+          "typical_setup_slack_ns": -47.2934,
+          "typical_hold_slack_ns": 0.597714,
+          "typical_setup_inferred_mhz": 14.860298335349382
+        }
+      ],
+      "pre_route_typical_timing": {
+        "scope": "pre-route placement-estimated parasitics; not extracted/signoff",
+        "step": "runs/rv_fixed_proj64x320_rom-clock200/02-openroad-stamidpnr-2",
+        "period_ns": 200.0,
+        "target_mhz": 5.0,
+        "typical_setup_slack_ns": 90.3294,
+        "typical_hold_slack_ns": 0.597714,
+        "typical_setup_inferred_mhz": 9.118213997187944
+      },
+      "pre_route_selected_power": {
+        "scope": "pre-route placement-estimated parasitics; not extracted/signoff",
+        "step": "runs/rv_fixed_proj64x320_rom-pre-route-gate-cell-activity/01-openroad-stamidpnr",
+        "period_ns": 200.0,
+        "target_mhz": 5.0,
+        "power": {
+          "default": {
+            "corner": "nom_tt_025C_5v00",
+            "components_mw": {
+              "internal": 88.38564903,
+              "switching": 62.21752614,
+              "leakage": 0.04120349331,
+              "total": 150.6443769
+            }
+          },
+          "vcd": {
+            "corner": "nom_tt_025C_5v00",
+            "components_mw": {
+              "internal": 70.7943216,
+              "switching": 35.25714949,
+              "leakage": 0.04162357436,
+              "total": 106.09310119999999
+            }
+          }
+        },
+        "vcd_annotated_pins": 739686,
+        "unannotated_pins": 103648,
+        "annotated_pin_fraction": 0.8770973303578417,
+        "annotation_limitation": "Zero-delay synthesis-netlist cell-pin activity. Inserted/changed physical cells rely on propagated/default activity; no routed glitches.",
+        "mw_per_weight_at_unqualified_target": {
+          "default": 0.0073556824658203126,
+          "vcd": 0.00518032720703125
+        },
+        "us_per_projection_at_unqualified_target": 13.0
+      },
+      "pre_route_layout_png": "rv_fixed_proj64x320_rom-PRE-ROUTE-NOT-SIGNOFF.png",
+      "signoff_status": "incomplete: no extracted final timing/signoff result"
+    }
+  },
+  "attempt_receipts": {
+    "rv_fixed_proj320_dp-typical-repair20.supervisor.json": {
+      "command": [
+        "bash",
+        "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/run_flow.sh",
+        "rv_fixed_proj320_dp",
+        "typical-repair20"
+      ],
+      "log": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/logs/rv_fixed_proj320_dp-typical-repair20.flow.log",
+      "exit_code": 0,
+      "stop_reason": null,
+      "elapsed_seconds": 1106.6027917861938,
+      "minimum_free_bytes": 24727973888,
+      "limit_seconds": 7200,
+      "thread_limit": 8,
+      "nice": 10,
+      "minimum_required_free_gib": 22.0,
+      "start_unix": 1791934411.246942,
+      "flow_controls": {
+        "W2_FROM_STEP": "OpenROAD.RepairDesignPostGPL",
+        "W2_TO_STEP": "OpenROAD.STAMidPNR-1",
+        "W2_INITIAL_STATE": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/runs/rv_fixed_proj320_dp-io-microns/07-openroad-stamidpnr/state_out.json",
+        "W2_CONFIG_PATH": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/configs/rv_fixed_proj320_dp-typical-repair.json"
+      }
+    },
+    "rv_fixed_proj64x320_rom-clock200.supervisor.json": {
+      "command": [
+        "bash",
+        "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/run_flow.sh",
+        "rv_fixed_proj64x320_rom",
+        "clock200"
+      ],
+      "log": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/logs/rv_fixed_proj64x320_rom-clock200.flow.log",
+      "exit_code": -15,
+      "stop_reason": "disk safety margin: free below 22 GiB",
+      "elapsed_seconds": 5890.263544082642,
+      "minimum_free_bytes": 23609778176,
+      "limit_seconds": 7200,
+      "thread_limit": 8,
+      "nice": 10,
+      "start_unix": 1791925656.8089678,
+      "flow_controls": {
+        "W2_FROM_STEP": "OpenROAD.ResizerTimingPostCTS",
+        "W2_INITIAL_STATE": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/evidence/slice-200ns-initial-state.json",
+        "W2_CONFIG_PATH": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/configs/rv_fixed_proj64x320_rom-200ns.json"
+      }
+    },
+    "rv_fixed_proj320_rom-pre-route-rtl-activity.supervisor.json": {
+      "command": [
+        "bash",
+        "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/run_flow.sh",
+        "rv_fixed_proj320_rom",
+        "pre-route-rtl-activity"
+      ],
+      "log": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/logs/rv_fixed_proj320_rom-pre-route-rtl-activity.flow.log",
+      "exit_code": 0,
+      "stop_reason": null,
+      "elapsed_seconds": 115.16942405700684,
+      "minimum_free_bytes": 24911536128,
+      "limit_seconds": 600,
+      "thread_limit": 1,
+      "nice": 10,
+      "minimum_required_free_gib": 23.0,
+      "start_unix": 1791941181.812031,
+      "flow_controls": {
+        "W2_FROM_STEP": "OpenROAD.STAMidPNR",
+        "W2_TO_STEP": "OpenROAD.STAMidPNR",
+        "W2_INITIAL_STATE": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/evidence/rv_fixed_proj320_rom-pre-route-rtl-activity-minimal-state.json",
+        "W2_NUM_THREADS": "1",
+        "W2_CONFIG_PATH": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/configs/rv_fixed_proj320_rom-pre-route-rtl-activity.json",
+        "W2_VCD": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/tmp/rv_fixed_proj320_rom-pre-route-rtl-activity.vcd",
+        "W2_MIN_FREE_GIB": "23",
+        "W2_LIMIT_SECONDS": "600"
+      }
+    },
+    "rv_fixed_proj320_dp-synthesis.supervisor.json": {
+      "command": [
+        "bash",
+        "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/run_flow.sh",
+        "rv_fixed_proj320_dp",
+        "synthesis"
+      ],
+      "log": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/logs/rv_fixed_proj320_dp-synthesis.flow.log",
+      "exit_code": 0,
+      "stop_reason": null,
+      "elapsed_seconds": 495.4601421356201,
+      "minimum_free_bytes": 26954055680,
+      "limit_seconds": 7200,
+      "thread_limit": 8,
+      "nice": 10,
+      "start_unix": 1791924427.404927,
+      "flow_controls": {
+        "W2_TO_STEP": "Yosys.Synthesis",
+        "W2_NUM_THREADS": "1"
+      }
+    },
+    "rv_fixed_proj320_rom-util20-200ns.supervisor.json": {
+      "command": [
+        "bash",
+        "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/run_flow.sh",
+        "rv_fixed_proj320_rom",
+        "util20-200ns"
+      ],
+      "log": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/logs/rv_fixed_proj320_rom-util20-200ns.flow.log",
+      "exit_code": 2,
+      "stop_reason": null,
+      "elapsed_seconds": 680.9481060504913,
+      "minimum_free_bytes": 23859703808,
+      "limit_seconds": 2833,
+      "thread_limit": 8,
+      "nice": 10,
+      "minimum_required_free_gib": 22.0,
+      "start_unix": 1791938315.2427719,
+      "flow_controls": {
+        "W2_FROM_STEP": "OpenROAD.Floorplan",
+        "W2_TO_STEP": "OpenROAD.STAMidPNR-1",
+        "W2_INITIAL_STATE": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/evidence/full-rom-util20-200ns-initial-state.json",
+        "W2_NUM_THREADS": "4",
+        "W2_CONFIG_PATH": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/configs/rv_fixed_proj320_rom-util20-200ns.json",
+        "W2_LIMIT_SECONDS": "2833"
+      }
+    },
+    "rv_fixed_proj64x320_rom-util30.supervisor.json": {
+      "command": [
+        "bash",
+        "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/run_flow.sh",
+        "rv_fixed_proj64x320_rom",
+        "util30"
+      ],
+      "log": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/logs/rv_fixed_proj64x320_rom-util30.flow.log",
+      "exit_code": -15,
+      "stop_reason": "supervisor interrupted: ",
+      "elapsed_seconds": 3942.620747089386,
+      "minimum_free_bytes": 23698194432,
+      "limit_seconds": 7200,
+      "thread_limit": 8,
+      "nice": 10,
+      "start_unix": 1791921691.115809,
+      "flow_controls": {
+        "W2_FROM_STEP": "OpenROAD.Floorplan",
+        "W2_INITIAL_STATE": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/runs/rv_fixed_proj64x320_rom-restored/12-openroad-staprepnr/state_out.json"
+      }
+    },
+    "rv_fixed_proj320_rom-v1.supervisor.json": {
+      "command": [
+        "bash",
+        "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/run_flow.sh",
+        "rv_fixed_proj320_rom",
+        "v1"
+      ],
+      "log": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/logs/rv_fixed_proj320_rom-v1.flow.log",
+      "exit_code": -15,
+      "stop_reason": "supervisor interrupted: ",
+      "elapsed_seconds": 103.53919100761414,
+      "minimum_free_bytes": 28504743936,
+      "limit_seconds": 7200,
+      "thread_limit": 8,
+      "nice": 10,
+      "start_unix": 1791919541.44391
+    },
+    "rv_fixed_proj320_dp-io-microns.supervisor.json": {
+      "command": [
+        "bash",
+        "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/run_flow.sh",
+        "rv_fixed_proj320_dp",
+        "io-microns"
+      ],
+      "log": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/logs/rv_fixed_proj320_dp-io-microns.flow.log",
+      "exit_code": -15,
+      "stop_reason": "supervisor interrupted: ",
+      "elapsed_seconds": 1853.6120567321777,
+      "minimum_free_bytes": 24782868480,
+      "limit_seconds": 7200,
+      "thread_limit": 8,
+      "nice": 10,
+      "start_unix": 1791932553.3212302,
+      "flow_controls": {
+        "W2_FROM_STEP": "OpenROAD.IOPlacement",
+        "W2_TO_STEP": "OpenROAD.STAMidPNR-1",
+        "W2_INITIAL_STATE": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/runs/rv_fixed_proj320_dp-physical20/12-openroad-globalplacementskipio/state_out.json"
+      }
+    },
+    "rv_fixed_proj64x320_rom-preroute-render.supervisor.json": {
+      "command": [
+        "bash",
+        "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/run_flow.sh",
+        "rv_fixed_proj64x320_rom",
+        "preroute-render"
+      ],
+      "log": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/logs/rv_fixed_proj64x320_rom-preroute-render.flow.log",
+      "exit_code": 0,
+      "stop_reason": null,
+      "elapsed_seconds": 10.00846791267395,
+      "minimum_free_bytes": 26507079680,
+      "limit_seconds": 7200,
+      "thread_limit": 8,
+      "nice": 10,
+      "start_unix": 1791932669.744013,
+      "flow_controls": {
+        "W2_FROM_STEP": "KLayout.Render",
+        "W2_TO_STEP": "KLayout.Render",
+        "W2_INITIAL_STATE": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/runs/rv_fixed_proj64x320_rom-clock200/02-openroad-stamidpnr-2/state_out.json",
+        "W2_NUM_THREADS": "1",
+        "W2_CONFIG_PATH": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/configs/rv_fixed_proj64x320_rom-200ns.json"
+      }
+    },
+    "rv_fixed_proj320_rom-route-util20-density35-noinflate-200ns.supervisor.json": {
+      "command": [
+        "bash",
+        "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/run_flow.sh",
+        "rv_fixed_proj320_rom",
+        "route-util20-density35-noinflate-200ns"
+      ],
+      "log": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/logs/rv_fixed_proj320_rom-route-util20-density35-noinflate-200ns.flow.log",
+      "exit_code": 1,
+      "stop_reason": null,
+      "elapsed_seconds": 465.6412253379822,
+      "minimum_free_bytes": 24137785344,
+      "limit_seconds": 473,
+      "thread_limit": 4,
+      "nice": 10,
+      "minimum_required_free_gib": 22.0,
+      "start_unix": 1791940675.327654,
+      "flow_controls": {
+        "W2_FROM_STEP": "OpenROAD.ResizerTimingPostCTS",
+        "W2_INITIAL_STATE": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/runs/rv_fixed_proj320_rom-util20-density35-noinflate-200ns/09-openroad-stamidpnr-1/state_out.json",
+        "W2_NUM_THREADS": "4",
+        "W2_CONFIG_PATH": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/configs/rv_fixed_proj320_rom-util20-density35-noinflate-200ns.json",
+        "W2_LIMIT_SECONDS": "473"
+      }
+    },
+    "rv_fixed_proj320_dp-v1.supervisor.json": {
+      "command": [
+        "bash",
+        "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/run_flow.sh",
+        "rv_fixed_proj320_dp",
+        "v1"
+      ],
+      "status": "not_started",
+      "stop_reason": "disk safety margin: free below 22 GiB",
+      "minimum_free_bytes": 21132218368,
+      "exit_code": null,
+      "elapsed_seconds": 0,
+      "limit_seconds": 7200,
+      "thread_limit": 8,
+      "nice": 10,
+      "start_unix": 1791919853.719347
+    },
+    "rv_fixed_proj64x320_rom-pre-route-slash-activity.supervisor.json": {
+      "command": [
+        "bash",
+        "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/run_flow.sh",
+        "rv_fixed_proj64x320_rom",
+        "pre-route-slash-activity"
+      ],
+      "log": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/logs/rv_fixed_proj64x320_rom-pre-route-slash-activity.flow.log",
+      "exit_code": 0,
+      "stop_reason": null,
+      "elapsed_seconds": 105.09431791305542,
+      "minimum_free_bytes": 25444749312,
+      "limit_seconds": 7200,
+      "thread_limit": 8,
+      "nice": 10,
+      "start_unix": 1791931336.584867,
+      "flow_controls": {
+        "W2_FROM_STEP": "OpenROAD.STAMidPNR",
+        "W2_TO_STEP": "OpenROAD.STAMidPNR",
+        "W2_INITIAL_STATE": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/runs/rv_fixed_proj64x320_rom-clock200/02-openroad-stamidpnr-2/state_out.json",
+        "W2_NUM_THREADS": "1",
+        "W2_CONFIG_PATH": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/configs/rv_fixed_proj64x320_rom-pre-route-slash-activity.json",
+        "W2_VCD": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/tmp/rv_fixed_proj64x320_rom-pre-route-slash-activity.vcd"
+      }
+    },
+    "rv_fixed_proj320_dp-pre-route-render.supervisor.json": {
+      "command": [
+        "bash",
+        "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/run_flow.sh",
+        "rv_fixed_proj320_dp",
+        "pre-route-render"
+      ],
+      "log": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/logs/rv_fixed_proj320_dp-pre-route-render.flow.log",
+      "exit_code": 0,
+      "stop_reason": null,
+      "elapsed_seconds": 10.011457204818726,
+      "minimum_free_bytes": 26482417664,
+      "limit_seconds": 600,
+      "thread_limit": 8,
+      "nice": 10,
+      "minimum_required_free_gib": 23.0,
+      "start_unix": 1791937800.648151,
+      "flow_controls": {
+        "W2_FROM_STEP": "KLayout.Render",
+        "W2_TO_STEP": "KLayout.Render",
+        "W2_INITIAL_STATE": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/evidence/rv_fixed_proj320_dp-pre-route-render-state.json",
+        "W2_NUM_THREADS": "1",
+        "W2_CONFIG_PATH": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/configs/rv_fixed_proj320_dp-util20-200ns.json",
+        "W2_MIN_FREE_GIB": "23",
+        "W2_LIMIT_SECONDS": "600"
+      }
+    },
+    "rv_fixed_proj64x320_rom-pre-route-gate-cell-activity.supervisor.json": {
+      "command": [
+        "bash",
+        "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/run_flow.sh",
+        "rv_fixed_proj64x320_rom",
+        "pre-route-gate-cell-activity"
+      ],
+      "log": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/logs/rv_fixed_proj64x320_rom-pre-route-gate-cell-activity.flow.log",
+      "exit_code": 0,
+      "stop_reason": null,
+      "elapsed_seconds": 100.16428518295288,
+      "minimum_free_bytes": 26337497088,
+      "limit_seconds": 900,
+      "thread_limit": 8,
+      "nice": 10,
+      "minimum_required_free_gib": 23.0,
+      "start_unix": 1791933837.6293938,
+      "flow_controls": {
+        "W2_FROM_STEP": "OpenROAD.STAMidPNR",
+        "W2_TO_STEP": "OpenROAD.STAMidPNR",
+        "W2_INITIAL_STATE": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/runs/rv_fixed_proj64x320_rom-clock200/02-openroad-stamidpnr-2/state_out.json",
+        "W2_NUM_THREADS": "1",
+        "W2_CONFIG_PATH": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/configs/rv_fixed_proj64x320_rom-pre-route-gate-cell-activity.json",
+        "W2_VCD": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/vectors/rv_fixed_proj64x320_rom.gate-cell-pins-power-200ns.normalized.vcd.gz",
+        "W2_MIN_FREE_GIB": "23",
+        "W2_LIMIT_SECONDS": "900"
+      }
+    },
+    "rv_fixed_proj64x320_rom-v1.supervisor.json": {
+      "command": [
+        "bash",
+        "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/run_flow.sh",
+        "rv_fixed_proj64x320_rom",
+        "v1"
+      ],
+      "log": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/logs/rv_fixed_proj64x320_rom-v1.flow.log",
+      "exit_code": 1,
+      "stop_reason": null,
+      "elapsed_seconds": 10.008490085601807,
+      "minimum_free_bytes": 29083512832,
+      "limit_seconds": 7200,
+      "thread_limit": 8,
+      "nice": 10,
+      "start_unix": 1791919881.7868118
+    },
+    "rv_fixed_proj320_dp-precheck.supervisor.json": {
+      "command": [
+        "bash",
+        "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/run_flow.sh",
+        "rv_fixed_proj320_dp",
+        "precheck"
+      ],
+      "log": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/logs/rv_fixed_proj320_dp-precheck.flow.log",
+      "exit_code": 0,
+      "stop_reason": null,
+      "elapsed_seconds": 350.31878185272217,
+      "minimum_free_bytes": 24304025600,
+      "limit_seconds": 7200,
+      "thread_limit": 8,
+      "nice": 10,
+      "start_unix": 1791925167.2544441,
+      "flow_controls": {
+        "W2_FROM_STEP": "Checker.YosysUnmappedCells",
+        "W2_TO_STEP": "OpenROAD.STAPrePNR",
+        "W2_INITIAL_STATE": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/runs/rv_fixed_proj320_dp-synthesis/06-yosys-synthesis/state_out.json",
+        "W2_NUM_THREADS": "1"
+      }
+    },
+    "rv_fixed_proj320_rom-util20-density35-200ns.supervisor.json": {
+      "command": [
+        "bash",
+        "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/run_flow.sh",
+        "rv_fixed_proj320_rom",
+        "util20-density35-200ns"
+      ],
+      "log": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/logs/rv_fixed_proj320_rom-util20-density35-200ns.flow.log",
+      "exit_code": 2,
+      "stop_reason": null,
+      "elapsed_seconds": 570.7427549362183,
+      "minimum_free_bytes": 25645719552,
+      "limit_seconds": 2126,
+      "thread_limit": 8,
+      "nice": 10,
+      "minimum_required_free_gib": 22.0,
+      "start_unix": 1791939022.567343,
+      "flow_controls": {
+        "W2_FROM_STEP": "OpenROAD.GlobalPlacement",
+        "W2_TO_STEP": "OpenROAD.STAMidPNR-1",
+        "W2_INITIAL_STATE": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/runs/rv_fixed_proj320_rom-util20-200ns/15-odb-applydeftemplate/state_out.json",
+        "W2_NUM_THREADS": "4",
+        "W2_CONFIG_PATH": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/configs/rv_fixed_proj320_rom-util20-density35-200ns.json",
+        "W2_LIMIT_SECONDS": "2126"
+      }
+    },
+    "rv_fixed_proj320_rom-physical20.supervisor.json": {
+      "command": [
+        "bash",
+        "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/run_flow.sh",
+        "rv_fixed_proj320_rom",
+        "physical20"
+      ],
+      "log": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/logs/rv_fixed_proj320_rom-physical20.flow.log",
+      "exit_code": -15,
+      "stop_reason": "supervisor interrupted: ",
+      "elapsed_seconds": 3714.539592027664,
+      "minimum_free_bytes": 24006971392,
+      "limit_seconds": 6564,
+      "thread_limit": 8,
+      "nice": 10,
+      "minimum_required_free_gib": 22.0,
+      "start_unix": 1791934584.585721,
+      "flow_controls": {
+        "W2_FROM_STEP": "Checker.YosysUnmappedCells",
+        "W2_TO_STEP": "OpenROAD.STAMidPNR-1",
+        "W2_INITIAL_STATE": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/runs/rv_fixed_proj320_rom-synthesis-retry/06-yosys-synthesis/state_out.json",
+        "W2_NUM_THREADS": "4",
+        "W2_CONFIG_PATH": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/configs/rv_fixed_proj320_rom-physical20.json",
+        "W2_LIMIT_SECONDS": "6564"
+      }
+    },
+    "rv_fixed_proj320_rom-pre-route-render.supervisor.json": {
+      "command": [
+        "bash",
+        "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/run_flow.sh",
+        "rv_fixed_proj320_rom",
+        "pre-route-render"
+      ],
+      "log": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/logs/rv_fixed_proj320_rom-pre-route-render.flow.log",
+      "exit_code": 0,
+      "stop_reason": null,
+      "elapsed_seconds": 10.016768217086792,
+      "minimum_free_bytes": 25088196608,
+      "limit_seconds": 600,
+      "thread_limit": 1,
+      "nice": 10,
+      "minimum_required_free_gib": 23.0,
+      "start_unix": 1791941181.449924,
+      "flow_controls": {
+        "W2_FROM_STEP": "KLayout.Render",
+        "W2_TO_STEP": "KLayout.Render",
+        "W2_INITIAL_STATE": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/evidence/rv_fixed_proj320_rom-pre-route-render-state.json",
+        "W2_NUM_THREADS": "1",
+        "W2_CONFIG_PATH": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/configs/rv_fixed_proj320_rom-util20-density35-noinflate-200ns.json",
+        "W2_MIN_FREE_GIB": "23",
+        "W2_LIMIT_SECONDS": "600"
+      }
+    },
+    "rv_fixed_proj64x320_rom-restored.supervisor.json": {
+      "command": [
+        "bash",
+        "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/run_flow.sh",
+        "rv_fixed_proj64x320_rom",
+        "restored"
+      ],
+      "log": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/logs/rv_fixed_proj64x320_rom-restored.flow.log",
+      "exit_code": 2,
+      "stop_reason": null,
+      "elapsed_seconds": 1636.4445760250092,
+      "minimum_free_bytes": 25678524416,
+      "limit_seconds": 7200,
+      "thread_limit": 8,
+      "nice": 10,
+      "start_unix": 1791919920.967783
+    },
+    "rv_fixed_proj320_rom-util20-density35-noinflate-200ns.supervisor.json": {
+      "command": [
+        "bash",
+        "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/run_flow.sh",
+        "rv_fixed_proj320_rom",
+        "util20-density35-noinflate-200ns"
+      ],
+      "log": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/logs/rv_fixed_proj320_rom-util20-density35-noinflate-200ns.flow.log",
+      "exit_code": 0,
+      "stop_reason": null,
+      "elapsed_seconds": 1046.477478981018,
+      "minimum_free_bytes": 24824983552,
+      "limit_seconds": 1520,
+      "thread_limit": 4,
+      "nice": 10,
+      "minimum_required_free_gib": 22.0,
+      "start_unix": 1791939627.699893,
+      "flow_controls": {
+        "W2_FROM_STEP": "OpenROAD.GlobalPlacement",
+        "W2_TO_STEP": "OpenROAD.STAMidPNR-1",
+        "W2_INITIAL_STATE": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/runs/rv_fixed_proj320_rom-util20-200ns/15-odb-applydeftemplate/state_out.json",
+        "W2_NUM_THREADS": "4",
+        "W2_CONFIG_PATH": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/configs/rv_fixed_proj320_rom-util20-density35-noinflate-200ns.json",
+        "W2_LIMIT_SECONDS": "1520"
+      }
+    },
+    "rv_fixed_proj64x320_rom-pre-route-activity.supervisor.json": {
+      "command": [
+        "bash",
+        "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/run_flow.sh",
+        "rv_fixed_proj64x320_rom",
+        "pre-route-activity"
+      ],
+      "log": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/logs/rv_fixed_proj64x320_rom-pre-route-activity.flow.log",
+      "exit_code": 0,
+      "stop_reason": null,
+      "elapsed_seconds": 75.06585693359375,
+      "minimum_free_bytes": 26459058176,
+      "limit_seconds": 7200,
+      "thread_limit": 8,
+      "nice": 10,
+      "start_unix": 1791931069.57558,
+      "flow_controls": {
+        "W2_FROM_STEP": "OpenROAD.STAMidPNR",
+        "W2_TO_STEP": "OpenROAD.STAMidPNR",
+        "W2_INITIAL_STATE": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/runs/rv_fixed_proj64x320_rom-clock200/02-openroad-stamidpnr-2/state_out.json",
+        "W2_NUM_THREADS": "1",
+        "W2_CONFIG_PATH": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/configs/rv_fixed_proj64x320_rom-pre-route-activity.json",
+        "W2_VCD": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/tmp/rv_fixed_proj64x320_rom-pre-route-activity.vcd"
+      }
+    },
+    "rv_fixed_proj320_rom-synthesis-retry.supervisor.json": {
+      "command": [
+        "bash",
+        "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/run_flow.sh",
+        "rv_fixed_proj320_rom",
+        "synthesis-retry"
+      ],
+      "log": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/logs/rv_fixed_proj320_rom-synthesis-retry.flow.log",
+      "exit_code": 0,
+      "stop_reason": null,
+      "elapsed_seconds": 635.9863002300262,
+      "minimum_free_bytes": 25408712704,
+      "limit_seconds": 3600,
+      "thread_limit": 8,
+      "nice": 10,
+      "minimum_required_free_gib": 23.5,
+      "start_unix": 1791933813.7806048,
+      "flow_controls": {
+        "W2_TO_STEP": "Yosys.Synthesis",
+        "W2_NUM_THREADS": "1",
+        "W2_MIN_FREE_GIB": "23.5",
+        "W2_LIMIT_SECONDS": "3600"
+      }
+    },
+    "rv_fixed_proj320_dp-physical20.supervisor.json": {
+      "command": [
+        "bash",
+        "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/run_flow.sh",
+        "rv_fixed_proj320_dp",
+        "physical20"
+      ],
+      "log": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/logs/rv_fixed_proj320_dp-physical20.flow.log",
+      "exit_code": 1,
+      "stop_reason": null,
+      "elapsed_seconds": 95.0663800239563,
+      "minimum_free_bytes": 24846655488,
+      "limit_seconds": 7200,
+      "thread_limit": 8,
+      "nice": 10,
+      "start_unix": 1791932410.06935,
+      "flow_controls": {
+        "W2_FROM_STEP": "OpenROAD.Floorplan",
+        "W2_TO_STEP": "OpenROAD.STAMidPNR-1",
+        "W2_INITIAL_STATE": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/runs/rv_fixed_proj320_dp-precheck/06-openroad-staprepnr/state_out.json"
+      }
+    },
+    "rv_fixed_proj320_dp-util20-200ns.supervisor.json": {
+      "command": [
+        "bash",
+        "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/run_flow.sh",
+        "rv_fixed_proj320_dp",
+        "util20-200ns"
+      ],
+      "log": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/logs/rv_fixed_proj320_dp-util20-200ns.flow.log",
+      "exit_code": 0,
+      "stop_reason": null,
+      "elapsed_seconds": 1782.5934929847717,
+      "minimum_free_bytes": 24150220800,
+      "limit_seconds": 7200,
+      "thread_limit": 8,
+      "nice": 10,
+      "minimum_required_free_gib": 22.0,
+      "start_unix": 1791935749.4271328,
+      "flow_controls": {
+        "W2_FROM_STEP": "OpenROAD.Floorplan",
+        "W2_TO_STEP": "OpenROAD.STAMidPNR-1",
+        "W2_INITIAL_STATE": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/evidence/dp-util20-200ns-initial-state.json",
+        "W2_NUM_THREADS": "4",
+        "W2_CONFIG_PATH": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/configs/rv_fixed_proj320_dp-util20-200ns.json"
+      }
+    },
+    "rv_fixed_proj320_rom-condensed.supervisor.json": {
+      "command": [
+        "bash",
+        "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/run_flow.sh",
+        "rv_fixed_proj320_rom",
+        "condensed"
+      ],
+      "log": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/logs/rv_fixed_proj320_rom-condensed.flow.log",
+      "exit_code": -15,
+      "stop_reason": "disk safety margin: free below 22 GiB",
+      "elapsed_seconds": 100.1167778968811,
+      "minimum_free_bytes": 22879318016,
+      "limit_seconds": 7200,
+      "thread_limit": 8,
+      "nice": 10,
+      "start_unix": 1791919651.646028
+    },
+    "rv_fixed_proj320_dp-pre-route-rtl-activity.supervisor.json": {
+      "command": [
+        "bash",
+        "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/run_flow.sh",
+        "rv_fixed_proj320_dp",
+        "pre-route-rtl-activity"
+      ],
+      "log": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/logs/rv_fixed_proj320_dp-pre-route-rtl-activity.flow.log",
+      "exit_code": 0,
+      "stop_reason": null,
+      "elapsed_seconds": 215.25258326530457,
+      "minimum_free_bytes": 25829322752,
+      "limit_seconds": 900,
+      "thread_limit": 8,
+      "nice": 10,
+      "minimum_required_free_gib": 23.0,
+      "start_unix": 1791937735.5201778,
+      "flow_controls": {
+        "W2_FROM_STEP": "OpenROAD.STAMidPNR",
+        "W2_TO_STEP": "OpenROAD.STAMidPNR",
+        "W2_INITIAL_STATE": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/evidence/rv_fixed_proj320_dp-pre-route-rtl-activity-minimal-state.json",
+        "W2_NUM_THREADS": "1",
+        "W2_CONFIG_PATH": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/configs/rv_fixed_proj320_dp-pre-route-rtl-activity.json",
+        "W2_VCD": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/tmp/rv_fixed_proj320_dp-pre-route-rtl-activity.vcd",
+        "W2_MIN_FREE_GIB": "23",
+        "W2_LIMIT_SECONDS": "900"
+      }
+    }
+  },
+  "generated_at_utc": "2026-10-14T01:34:34.695849+00:00"
+}

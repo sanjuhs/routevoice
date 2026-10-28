@@ -1,0 +1,53 @@
+{
+  "case_id": "int8_per_tensor-input-045",
+  "model": "int8_per_tensor",
+  "id": "8288-274162-0058",
+  "role": "validation",
+  "condition": "other",
+  "seed": null,
+  "reference": "YOU ARE MISTAKEN MONSIEUR REPLIED RAOUL THE WOMAN I MEAN WILL TELL ME ALL THE EVIL SHE POSSIBLY CAN",
+  "input_float32_sha256": "1b26590e919f4856bb826cb4e0e4466d779201198914301d2cf1c94ea63d06cc",
+  "hypothesis": " ",
+  "normalized_tokens": [],
+  "edits": 19,
+  "reference_words": 19,
+  "hypothesis_words": 0,
+  "exact": false,
+  "lines": [
+    {
+      "text": "",
+      "start_time": 0.2879999876022339,
+      "duration": 2.7199997901916504,
+      "is_complete": true,
+      "samples": 43520,
+      "input_float32_sha256": "fc515d1369f8f9726e99111c85daa6373052ce6a1127bcb2a484f32a74f3e46a"
+    },
+    {
+      "text": "",
+      "start_time": 2.944000005722046,
+      "duration": 3.615999937057495,
+      "is_complete": true,
+      "samples": 57856,
+      "input_float32_sha256": "0e0f5d3f8fdbdbd440793334b80a69860cc8e1924708138b2fbdc6fd0a7b2444"
+    }
+  ],
+  "request_sha256": "035ef65a99a09182a9aca0059c049a3d798d577e61551118458317bd93c37273",
+  "worker_sha256": "4682e8a57db08e02a34f53b01f334f34faa3ca9a6546698f1e4650db359004b6",
+  "native_library_sha256": "1453a6c1c9072f3d05e9e5ae6ff423fae839e56631c5efb12bbd5c0280d04399",
+  "native_api_version": 30000,
+  "load_seconds": 0.0406231249216944,
+  "compute_seconds": 0.13693854096345603,
+  "audio_seconds": 6.59,
+  "process_cpu_seconds": 0.13708099999999998,
+  "voluntary_context_switches": 0,
+  "involuntary_context_switches": 22,
+  "system_load_average": [
+    10.60986328125,
+    9.1318359375,
+    9.8994140625
+  ],
+  "options": null,
+  "flags": 0,
+  "process_id": 81253,
+  "isolation": "One audio clip/condition in a fresh native process; no previous utterance or VAD state."
+}

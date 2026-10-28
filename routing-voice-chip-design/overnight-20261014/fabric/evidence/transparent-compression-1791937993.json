@@ -1,0 +1,80 @@
+{
+  "unix": 1791937993.890856,
+  "method": "ditto --hfsCompression, SHA256 verified before atomic replace; transparent POSIX reads retain identical bytes",
+  "free_before_bytes": 25596338176,
+  "free_after_bytes": 26278367232,
+  "changes": [
+    {
+      "path": "runs/rv_fixed_proj320_dp-pre-route-render/final/def/rv_fixed_proj320_dp.def",
+      "sha256": "e9a43ca42fd5684d722339c10e34b1193b889a1ada982e1fe5ecf0ffd08848d6",
+      "bytes": 94867310,
+      "before_allocated_bytes": 94867456,
+      "after_allocated_bytes": 14729216,
+      "flags": 32
+    },
+    {
+      "path": "runs/rv_fixed_proj320_dp-pre-route-rtl-activity/01-openroad-stamidpnr/max.rpt",
+      "sha256": "16f40f42b66af7d0adbcdd880a4ba5864823817846e0ce9c19d8277c9b235dd9",
+      "bytes": 24083331,
+      "before_allocated_bytes": 24084480,
+      "after_allocated_bytes": 4243456,
+      "flags": 32
+    },
+    {
+      "path": "runs/rv_fixed_proj320_dp-pre-route-rtl-activity/01-openroad-stamidpnr/min.rpt",
+      "sha256": "fdbae9846b08b4af2679c1af8a51ee5fd900293d4c9e4506796b2055dcd00cc4",
+      "bytes": 8259163,
+      "before_allocated_bytes": 8261632,
+      "after_allocated_bytes": 1064960,
+      "flags": 32
+    },
+    {
+      "path": "runs/rv_fixed_proj320_dp-pre-route-rtl-activity/01-openroad-stamidpnr/openroad-stamidpnr.log",
+      "sha256": "8c9e91b16ce73ec00bee6ad87203c92817994920acb79601b20f05c79e362813",
+      "bytes": 32458102,
+      "before_allocated_bytes": 32509952,
+      "after_allocated_bytes": 5308416,
+      "flags": 32
+    },
+    {
+      "path": "runs/rv_fixed_proj320_dp-pre-route-rtl-activity/final/odb/rv_fixed_proj320_dp.odb",
+      "sha256": "feff494d945bfff7142ac5ba9960ef4ceefdb43aa2ab54d47d940e785894885b",
+      "bytes": 228637259,
+      "before_allocated_bytes": 228638720,
+      "after_allocated_bytes": 57700352,
+      "flags": 32
+    },
+    {
+      "path": "runs/rv_fixed_proj320_dp-route200/01-openroad-resizertimingpostcts/rv_fixed_proj320_dp.def",
+      "sha256": "e9a43ca42fd5684d722339c10e34b1193b889a1ada982e1fe5ecf0ffd08848d6",
+      "bytes": 94867310,
+      "before_allocated_bytes": 100933632,
+      "after_allocated_bytes": 14729216,
+      "flags": 32
+    },
+    {
+      "path": "runs/rv_fixed_proj320_dp-route200/01-openroad-resizertimingpostcts/rv_fixed_proj320_dp.nl.v",
+      "sha256": "eb81e32d43a3bf95b60eea250ed48d503f371ebc05df9d81b05cd1b949c62039",
+      "bytes": 50182562,
+      "before_allocated_bytes": 50184192,
+      "after_allocated_bytes": 8421376,
+      "flags": 32
+    },
+    {
+      "path": "runs/rv_fixed_proj320_dp-route200/01-openroad-resizertimingpostcts/rv_fixed_proj320_dp.odb",
+      "sha256": "feff494d945bfff7142ac5ba9960ef4ceefdb43aa2ab54d47d940e785894885b",
+      "bytes": 228637259,
+      "before_allocated_bytes": 228638720,
+      "after_allocated_bytes": 57810944,
+      "flags": 32
+    },
+    {
+      "path": "runs/rv_fixed_proj320_dp-route200/01-openroad-resizertimingpostcts/rv_fixed_proj320_dp.pnl.v",
+      "sha256": "85ed424ad0dc4011ec7d5bc739523329a9014543186c05c58616a8cfc4470089",
+      "bytes": 72971672,
+      "before_allocated_bytes": 86425600,
+      "after_allocated_bytes": 8507392,
+      "flags": 32
+    }
+  ]
+}

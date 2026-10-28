@@ -1,0 +1,53 @@
+{
+   "creator": "Yosys 0.62 (git sha1 7326bb7d6641500ecb285c291a54a662cb1e76cf, clang++ 21.1.2 -fPIC -O3)",
+   "invocation": "stat -json ",
+   "modules": {
+      "\\u02849": {
+         "num_wires":         714204,
+         "num_wire_bits":     999231,
+         "num_pub_wires":     221,
+         "num_pub_wire_bits": 165936,
+         "num_ports":         42,
+         "num_port_bits":     427,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         939385,
+         "num_submodules":       0,
+         "num_cells_by_type": {
+            "CCU2C": 193,
+            "L6MUX21": 85677,
+            "LUT4": 512758,
+            "MULT18X18D": 4,
+            "PFUMX": 175408,
+            "TRELLIS_DPR16X4": 160,
+            "TRELLIS_FF": 165184,
+            "u02743": 1
+         }
+      }
+   },
+      "design": {
+         "num_wires":         714204,
+         "num_wire_bits":     999231,
+         "num_pub_wires":     221,
+         "num_pub_wire_bits": 165936,
+         "num_ports":         42,
+         "num_port_bits":     427,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         939385,
+         "num_submodules":       0,
+         "num_cells_by_type": {
+            "CCU2C": 193,
+            "L6MUX21": 85677,
+            "LUT4": 512758,
+            "MULT18X18D": 4,
+            "PFUMX": 175408,
+            "TRELLIS_DPR16X4": 160,
+            "TRELLIS_FF": 165184,
+            "u02743": 1
+         }
+      }
+}
+

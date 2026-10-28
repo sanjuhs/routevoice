@@ -1,0 +1,86 @@
+{
+  "status": "No qualified complete-projection gate activity trace; diagnosis finalized without full-design root cause",
+  "source_reading_compliance": "Required W8 skill, source notes, patent descriptions/claims, plan, and approved proposal were previously read; all writes remained under projection-complete.",
+  "full_projection_gate_pass": false,
+  "qualified_active_VCD": null,
+  "qualified_idle_VCD": null,
+  "actual_projection_OpenSTA_annotation_run": false,
+  "actual_projection_annotation_fraction": null,
+  "actual_projection_power_W": null,
+  "projection_energy_J": null,
+  "v1_failure": {
+    "reason": "Four missing real vector/reference readmem files",
+    "compressed_local": "invalid-v1/gate-speech-v1-invalid-missing-vectors.vcd.gz",
+    "receipt": "invalid-v1/INVALID-RECEIPT.json"
+  },
+  "v2_failure": {
+    "reason": "All-zero wrapper phase after first postreset edge; no input transfer; walltimeout124",
+    "compressed_local": "invalid-v2/gate-speech-v2-invalid-startup-all-zero.vcd.gz",
+    "receipt": "invalid-v2/INVALID-RECEIPT.json",
+    "duration_seconds": 0.000407691,
+    "raw_sha256": "0b5efdf70aa2df48b4458ae78dce0fed8dff0a30c604f4b0ff50daa22fc38c94"
+  },
+  "observed_full_design_signals": {
+    "snapshot_ps": 339290000,
+    "phase_q_reset_10ns": "00000001",
+    "phase_q_after_30ns": "00000000",
+    "done_D7_high_interval_ps": [
+      20000,
+      30000
+    ],
+    "done_Q7_captures_high_at_30ns": false,
+    "engine_in_ready_after_50ns": 1,
+    "wrapper_in_ready": 0,
+    "engine_step_enable": 0,
+    "tb_r": 0,
+    "tb_c": 0
+  },
+  "isolated_probes": {
+    "two_ff_native_5_050": {
+      "pass": true,
+      "compile_exit": 0,
+      "simulation_exit": 0,
+      "receipt": "udp-cascade/local-verilator-5.050-w8-flags/results.json"
+    },
+    "two_ff_pod_5_044": {
+      "pass": true,
+      "compile_exit": 0,
+      "simulation_exit": 0,
+      "receipt": "udp-cascade/pod-verilator-5.044-w8-flags/results.json"
+    },
+    "two_ff_iverilog": {
+      "pass": true,
+      "compile_exit": 0,
+      "simulation_exit": 0,
+      "receipt": "udp-cascade/local-iverilog/results.json"
+    },
+    "eight_ff_native_5_050": {
+      "pass": true,
+      "compile_exit": 0,
+      "simulation_exit": 0,
+      "receipt": "controller8/local-verilator-5.050-v2/results.json"
+    },
+    "eight_ff_pod_5_044": {
+      "pass": true,
+      "compile_exit": 0,
+      "simulation_exit": 0,
+      "receipt": "controller8/pod-verilator-5.044-v2/results.json"
+    }
+  },
+  "probe_PDK_source_hashes_identical_across_versions": true,
+  "root_cause_conclusion": "Unresolved in full-design simulation. Both2FF and exact29-cell8FF mapped-controller probes pass5.044 and5.050; no generic simulator-version bug is established.",
+  "preserved_diagnostic_attempts": [
+    "udp-cascade/pod-verilator-5.044: unusedHOLD weak-strength parser error before applying exactW8 exclusion defines",
+    "controller8 initial runs: incorrect PRE state oracle0x04, corrected to actualmapped0x10; original logs/testbench retained"
+  ],
+  "gzip_OpenSTA_API_fixture": {
+    "local": "annotation-gzip-api-fixture/results.json",
+    "pod": "annotation-gzip-pod-fixture/results.json",
+    "both_direct_VCD_pins": 4,
+    "both_total_pins": 4,
+    "scope": "Tiny one-inverter API fixture only; not completeprojection coverage"
+  },
+  "no_additional_full_builds_power_or_idle": "Per parent stop instruction after GRT failure and native storage-guard stop",
+  "raw_invalid_VCDs_retained_on_pod": true,
+  "native_retry_outcome": "Parent reports storage guard before compile completion; no native VCD. Native FIFO was never read or tailed by this agent."
+}

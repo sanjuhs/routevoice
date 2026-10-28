@@ -1,0 +1,53 @@
+{
+  "w5_row_decoder": {
+    "stdout": "PASS 64 rows,64 disabled checks\n/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/taalas-array/periphery/decoder_tb.v:6: $finish called at 128 (1s)\n",
+    "netlist": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/taalas-array/periphery/runs/decoderb-v1/final/nl/w5_row_decoder.nl.v",
+    "command": [
+      "/nix/store/yczxlrrywxp7q2aavm4b3zrj3lpmq18a-devshell-dir/bin/iverilog",
+      "-g2012",
+      "-DFUNCTIONAL",
+      "-s",
+      "tb",
+      "-o",
+      "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/taalas-array/periphery/decoder.sim",
+      "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/taalas-array/periphery/decoder_tb.v",
+      "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/taalas-array/periphery/runs/decoderb-v1/final/nl/w5_row_decoder.nl.v",
+      "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/verilog/gf180mcu_fd_sc_mcu7t5v0.v",
+      "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/verilog/primitives.v"
+    ]
+  },
+  "w5_bank_mux128": {
+    "stdout": "PASS 8x32 bank values+disable and2560 onehot bank-bit paths\n/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/taalas-array/periphery/mux128_tb.v:11: $finish called at 3072 (1s)\n",
+    "netlist": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/taalas-array/periphery/runs/mux128b-v1/final/nl/w5_bank_mux128.nl.v",
+    "command": [
+      "/nix/store/yczxlrrywxp7q2aavm4b3zrj3lpmq18a-devshell-dir/bin/iverilog",
+      "-g2012",
+      "-DFUNCTIONAL",
+      "-s",
+      "tb",
+      "-o",
+      "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/taalas-array/periphery/mux128.sim",
+      "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/taalas-array/periphery/mux128_tb.v",
+      "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/taalas-array/periphery/runs/mux128b-v1/final/nl/w5_bank_mux128.nl.v",
+      "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/verilog/gf180mcu_fd_sc_mcu7t5v0.v",
+      "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/verilog/primitives.v"
+    ]
+  },
+  "w5_bank_decoder": {
+    "stdout": "PASS 32 bank addresses+32 disabled checks\n/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/taalas-array/periphery/bankdec_tb.v:6: $finish called at 64 (1s)\n",
+    "netlist": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/taalas-array/periphery/runs/bankdec-v1/final/nl/w5_bank_decoder.nl.v",
+    "command": [
+      "/nix/store/yczxlrrywxp7q2aavm4b3zrj3lpmq18a-devshell-dir/bin/iverilog",
+      "-g2012",
+      "-DFUNCTIONAL",
+      "-s",
+      "tb",
+      "-o",
+      "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/taalas-array/periphery/bankdec.sim",
+      "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/taalas-array/periphery/bankdec_tb.v",
+      "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/taalas-array/periphery/runs/bankdec-v1/final/nl/w5_bank_decoder.nl.v",
+      "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/verilog/gf180mcu_fd_sc_mcu7t5v0.v",
+      "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/verilog/primitives.v"
+    ]
+  }
+}

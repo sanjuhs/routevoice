@@ -1,0 +1,56 @@
+{
+  "case_id": "int8_per_channel-input-032",
+  "model": "int8_per_channel",
+  "id": "116-288048-0027",
+  "role": "validation",
+  "condition": "other",
+  "seed": null,
+  "reference": "HOW MANY SELF DELUDED PROPHETS THESE EXTRAVAGANT CLAIMS HAVE PRODUCED",
+  "input_float32_sha256": "790c82f31baf38d0e015eb91c2011d0145130f0cc2bb23430daa7e4147e2291b",
+  "hypothesis": "How many self-deluded prophets these extravagant claims have produced?",
+  "normalized_tokens": [
+    "how",
+    "many",
+    "self",
+    "deluded",
+    "prophets",
+    "these",
+    "extravagant",
+    "claims",
+    "have",
+    "produced"
+  ],
+  "edits": 0,
+  "reference_words": 10,
+  "hypothesis_words": 10,
+  "exact": true,
+  "lines": [
+    {
+      "text": "How many self-deluded prophets these extravagant claims have produced?",
+      "start_time": 0.19199997186660767,
+      "duration": 3.935999870300293,
+      "is_complete": true,
+      "samples": 62976,
+      "input_float32_sha256": "3817f2d79484fd35a80d90fb972f309cef05e195738c3509906713028103d730"
+    }
+  ],
+  "request_sha256": "e1b408e23f59ffdb8695d0e2c910592f70660e26cf1f4acacbb3914b368b094e",
+  "worker_sha256": "4682e8a57db08e02a34f53b01f334f34faa3ca9a6546698f1e4650db359004b6",
+  "native_library_sha256": "1453a6c1c9072f3d05e9e5ae6ff423fae839e56631c5efb12bbd5c0280d04399",
+  "native_api_version": 30000,
+  "load_seconds": 0.04012025007978082,
+  "compute_seconds": 0.16759249987080693,
+  "audio_seconds": 4.14,
+  "process_cpu_seconds": 0.16772299999999996,
+  "voluntary_context_switches": 0,
+  "involuntary_context_switches": 19,
+  "system_load_average": [
+    10.689453125,
+    9.07080078125,
+    9.89208984375
+  ],
+  "options": null,
+  "flags": 0,
+  "process_id": 81105,
+  "isolation": "One audio clip/condition in a fresh native process; no previous utterance or VAD state."
+}

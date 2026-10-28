@@ -1,0 +1,241 @@
+{
+  "path": "/workspace/rv/overnight-20261014/projection-complete/evidence/gate-speech-v2-invalid-startup-all-zero.vcd",
+  "bytes": 217060564,
+  "sha256": "0b5efdf70aa2df48b4458ae78dce0fed8dff0a30c604f4b0ff50daa22fc38c94",
+  "mtime_ns": 1791936692886860510,
+  "header_scope_count": 651211,
+  "header_variable_declarations": 4244119,
+  "declared_bits_including_aliases": 4248769,
+  "sample_actual_leaf_scopes": [
+    "tb/dut/_03944_",
+    "tb/dut/_03944_/gf180mcu_fd_sc_mcu7t5v0__clkinv_inst",
+    "tb/dut/_03945_",
+    "tb/dut/_03945_/gf180mcu_fd_sc_mcu7t5v0__clkinv_inst",
+    "tb/dut/_03946_",
+    "tb/dut/_03946_/gf180mcu_fd_sc_mcu7t5v0__clkinv_inst",
+    "tb/dut/_03947_",
+    "tb/dut/_03947_/gf180mcu_fd_sc_mcu7t5v0__clkinv_inst",
+    "tb/dut/_03948_",
+    "tb/dut/_03948_/gf180mcu_fd_sc_mcu7t5v0__clkinv_inst",
+    "tb/dut/_03949_",
+    "tb/dut/_03949_/gf180mcu_fd_sc_mcu7t5v0__clkinv_inst"
+  ],
+  "sample_actual_leaf_pins": [
+    {
+      "scope": "tb/dut/_03944_",
+      "reference": "I",
+      "width": 1
+    },
+    {
+      "scope": "tb/dut/_03944_",
+      "reference": "ZN",
+      "width": 1
+    },
+    {
+      "scope": "tb/dut/_03944_/gf180mcu_fd_sc_mcu7t5v0__clkinv_inst",
+      "reference": "I",
+      "width": 1
+    },
+    {
+      "scope": "tb/dut/_03944_/gf180mcu_fd_sc_mcu7t5v0__clkinv_inst",
+      "reference": "ZN",
+      "width": 1
+    },
+    {
+      "scope": "tb/dut/_03945_",
+      "reference": "I",
+      "width": 1
+    },
+    {
+      "scope": "tb/dut/_03945_",
+      "reference": "ZN",
+      "width": 1
+    },
+    {
+      "scope": "tb/dut/_03945_/gf180mcu_fd_sc_mcu7t5v0__clkinv_inst",
+      "reference": "I",
+      "width": 1
+    },
+    {
+      "scope": "tb/dut/_03945_/gf180mcu_fd_sc_mcu7t5v0__clkinv_inst",
+      "reference": "ZN",
+      "width": 1
+    },
+    {
+      "scope": "tb/dut/_03946_",
+      "reference": "I",
+      "width": 1
+    },
+    {
+      "scope": "tb/dut/_03946_",
+      "reference": "ZN",
+      "width": 1
+    },
+    {
+      "scope": "tb/dut/_03946_/gf180mcu_fd_sc_mcu7t5v0__clkinv_inst",
+      "reference": "I",
+      "width": 1
+    },
+    {
+      "scope": "tb/dut/_03946_/gf180mcu_fd_sc_mcu7t5v0__clkinv_inst",
+      "reference": "ZN",
+      "width": 1
+    },
+    {
+      "scope": "tb/dut/_03947_",
+      "reference": "I",
+      "width": 1
+    },
+    {
+      "scope": "tb/dut/_03947_",
+      "reference": "ZN",
+      "width": 1
+    },
+    {
+      "scope": "tb/dut/_03947_/gf180mcu_fd_sc_mcu7t5v0__clkinv_inst",
+      "reference": "I",
+      "width": 1
+    },
+    {
+      "scope": "tb/dut/_03947_/gf180mcu_fd_sc_mcu7t5v0__clkinv_inst",
+      "reference": "ZN",
+      "width": 1
+    },
+    {
+      "scope": "tb/dut/_03948_",
+      "reference": "I",
+      "width": 1
+    },
+    {
+      "scope": "tb/dut/_03948_",
+      "reference": "ZN",
+      "width": 1
+    },
+    {
+      "scope": "tb/dut/_03948_/gf180mcu_fd_sc_mcu7t5v0__clkinv_inst",
+      "reference": "I",
+      "width": 1
+    },
+    {
+      "scope": "tb/dut/_03948_/gf180mcu_fd_sc_mcu7t5v0__clkinv_inst",
+      "reference": "ZN",
+      "width": 1
+    },
+    {
+      "scope": "tb/dut/_03949_",
+      "reference": "I",
+      "width": 1
+    },
+    {
+      "scope": "tb/dut/_03949_",
+      "reference": "ZN",
+      "width": 1
+    },
+    {
+      "scope": "tb/dut/_03949_/gf180mcu_fd_sc_mcu7t5v0__clkinv_inst",
+      "reference": "I",
+      "width": 1
+    },
+    {
+      "scope": "tb/dut/_03949_/gf180mcu_fd_sc_mcu7t5v0__clkinv_inst",
+      "reference": "ZN",
+      "width": 1
+    },
+    {
+      "scope": "tb/dut/_03950_",
+      "reference": "I",
+      "width": 1
+    },
+    {
+      "scope": "tb/dut/_03950_",
+      "reference": "ZN",
+      "width": 1
+    },
+    {
+      "scope": "tb/dut/_03950_/gf180mcu_fd_sc_mcu7t5v0__clkinv_inst",
+      "reference": "I",
+      "width": 1
+    },
+    {
+      "scope": "tb/dut/_03950_/gf180mcu_fd_sc_mcu7t5v0__clkinv_inst",
+      "reference": "ZN",
+      "width": 1
+    },
+    {
+      "scope": "tb/dut/_03951_",
+      "reference": "I",
+      "width": 1
+    },
+    {
+      "scope": "tb/dut/_03951_",
+      "reference": "ZN",
+      "width": 1
+    },
+    {
+      "scope": "tb/dut/_03951_/gf180mcu_fd_sc_mcu7t5v0__clkinv_inst",
+      "reference": "I",
+      "width": 1
+    },
+    {
+      "scope": "tb/dut/_03951_/gf180mcu_fd_sc_mcu7t5v0__clkinv_inst",
+      "reference": "ZN",
+      "width": 1
+    },
+    {
+      "scope": "tb/dut/_03952_",
+      "reference": "I",
+      "width": 1
+    },
+    {
+      "scope": "tb/dut/_03952_",
+      "reference": "ZN",
+      "width": 1
+    },
+    {
+      "scope": "tb/dut/_03952_/gf180mcu_fd_sc_mcu7t5v0__clkinv_inst",
+      "reference": "I",
+      "width": 1
+    },
+    {
+      "scope": "tb/dut/_03952_/gf180mcu_fd_sc_mcu7t5v0__clkinv_inst",
+      "reference": "ZN",
+      "width": 1
+    },
+    {
+      "scope": "tb/dut/_03953_",
+      "reference": "I",
+      "width": 1
+    },
+    {
+      "scope": "tb/dut/_03953_",
+      "reference": "ZN",
+      "width": 1
+    },
+    {
+      "scope": "tb/dut/_03953_/gf180mcu_fd_sc_mcu7t5v0__clkinv_inst",
+      "reference": "I",
+      "width": 1
+    },
+    {
+      "scope": "tb/dut/_03953_/gf180mcu_fd_sc_mcu7t5v0__clkinv_inst",
+      "reference": "ZN",
+      "width": 1
+    }
+  ],
+  "timescale_declaration": [
+    "$timescale 1ps $end"
+  ],
+  "timescale_seconds": 1e-12,
+  "first_timestamp": 0,
+  "last_timestamp": 407691000,
+  "duration_seconds": 0.000407691,
+  "scope_for_STA_to_test": "tb/dut",
+  "STA_annotation_coverage_measured": false,
+  "zero_delay_gate_activity": true,
+  "header_and_values_not_rewritten": true,
+  "file_stable_during_read": true,
+  "status": "INVALID: startup phase all-zero; no projection completed",
+  "exit_code": 124,
+  "eligible_for_power_or_annotation": false,
+  "correctness_qualified": false
+}

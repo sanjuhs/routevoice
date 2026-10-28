@@ -1,0 +1,15 @@
+unpacking 'https://api.flakehub.com/f/pinned/edolstra/flake-compat/1.1.0/01948eb7-9cba-704f-bbf3-3fa956735b52/source.tar.gz' into the Git cache...
+=== DESIGN AREA ===
+Design area 6434584 um^2 40% utilization.
+=== DEFAULT ACTIVITY ===
+Group                  Internal  Switching    Leakage      Total
+                          Power      Power      Power      Power (Watts)
+----------------------------------------------------------------
+Sequential             1.25e-01   7.32e-04   2.12e-06   1.26e-01  25.8%
+Combinational          1.26e-01   2.35e-01   1.61e-05   3.61e-01  74.2%
+Clock                  0.00e+00   0.00e+00   2.32e-06   2.32e-06   0.0%
+Macro                  0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+Pad                    0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+----------------------------------------------------------------
+Total                  2.50e-01   2.36e-01   2.06e-05   4.87e-01 100.0%
+                          51.5%      48.5%       0.0%

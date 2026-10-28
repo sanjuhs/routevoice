@@ -1,0 +1,1322 @@
+{
+  "generated_utc": "2026-10-13T21:24:00.265316+00:00",
+  "scope": "Measured array+analogreadout partialmacro rectangles; global decoder/mux/control/outputlatches and fullPG excluded",
+  "complete_macro": false,
+  "variants": [
+    {
+      "rows_per_bank": 64,
+      "banks": 20,
+      "readout_count": 25600,
+      "assembly_dimensions_um": [
+        4669.7,
+        4780.0
+      ],
+      "partial_macro_area_um2": 22321166.0,
+      "partial_macro_um2_per_selection": 54.4950341796875,
+      "gds": "timing/full-readout/partial-full-readout.gds",
+      "gds_sha256": "687c9fe476c42e6e4120e8dcdff2a572d81d7fae35cd8e45ce887d6533cab1f4",
+      "drc_markers": 0,
+      "all_bits_mismatches": 0,
+      "full_bank_lvs": {
+        "pass": true,
+        "devices": 87040,
+        "source": "integrated/lvs-result.json"
+      },
+      "timing_method": "Retained32lane bank0; idealWL/PC, extractedC, no distributedR; prechargeW1.44",
+      "worst_sampled_settling_ns_after_wl_command": {
+        "typical": 2.9758479999999934,
+        "ss": 4.390495299999998
+      },
+      "energy_pj_per_sampled_read": {
+        "typical": 77.70851794466924,
+        "ss": 62.274524626290145
+      },
+      "energy_scope": "32lane extractedC bank0 net source energy at20ns; idealcontrols, no distributedR",
+      "minimum_common_tested_TT_SS_passing_interval_ns": 20,
+      "conditional_slice_interleave_factor_for20ns": 1,
+      "full320lane_bank_read_time_ns": null,
+      "full320lane_bank_energy_pj": null,
+      "complete_macro_timing_proven": false
+    },
+    {
+      "rows_per_bank": 320,
+      "banks": 4,
+      "readout_count": 5120,
+      "bank_dimensions_um": [
+        4669.7,
+        651.0
+      ],
+      "assembly_dimensions_um": [
+        4669.7,
+        2664.0
+      ],
+      "partial_macro_area_um2": 12440080.799999999,
+      "partial_macro_um2_per_selection": 30.371291015624998,
+      "area_reduction_vs64_percent": 44.26778242677825,
+      "gds": "tall-bank/r320/assembly.gds",
+      "gds_sha256": "47aac92ac91926b171468351b1f4127fa4a4ba6b3b1518f153d2c4302acbaa0e",
+      "drc_markers": 0,
+      "drc": {
+        "gds_sha256": "47aac92ac91926b171468351b1f4127fa4a4ba6b3b1518f153d2c4302acbaa0e",
+        "markers": 0,
+        "categories": {},
+        "seconds": 204.40235512517393,
+        "scope": "GF180 FEOL BEOL connectivity offgrid; density/antenna excluded",
+        "threads": 2
+      },
+      "layout_readback": {
+        "compared_indices": 409600,
+        "compared_bits": 1638400,
+        "mismatches": 0,
+        "programmed_ones": 820801,
+        "recovered_indices_sha256": "ba628b676d59721c268868d6720be1f58a4f8d4edfd9a26009403c9a8c4fce8e",
+        "method": "reopened actualGDS maskVia1 center readback; reconstructed logical row order from explicit striped map"
+      },
+      "independent_layout_readback": {
+        "gds": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/taalas-array/tall-bank/r320/assembly.gds",
+        "gds_sha256": "47aac92ac91926b171468351b1f4127fa4a4ba6b3b1518f153d2c4302acbaa0e",
+        "identity": {
+          "packed_sha256": "864fcdc7ec80be2dbb99d76361db338345fb02a1a26d7aaa4a1b40696b921907",
+          "unpacked_sha256": "ba628b676d59721c268868d6720be1f58a4f8d4edfd9a26009403c9a8c4fce8e",
+          "w2b_rtl_sha256": "de720f1e7c93c405729025cd9395850bc75e35c3eb602a1b67c4ad58d1ed4dbf",
+          "all409600_indices_match": true
+        },
+        "row_mapping": "logical_row=bank+4*local_row",
+        "method": "Reopened GDS recursive Via1 polygon centers at reviewed transistor drain coordinates; not label or mask-cell-name values",
+        "banks": [
+          {
+            "bank": 0,
+            "compared_selections": 102400,
+            "compared_bits": 409600,
+            "selection_mismatches": 0,
+            "bit_mismatches": 0,
+            "programmed_ones": 205513,
+            "observed_sha256": "d63c302c28ab1d74ebd850a162222846369e26401149ed881fd06b483f26ec2b",
+            "expected_sha256": "d63c302c28ab1d74ebd850a162222846369e26401149ed881fd06b483f26ec2b"
+          },
+          {
+            "bank": 1,
+            "compared_selections": 102400,
+            "compared_bits": 409600,
+            "selection_mismatches": 0,
+            "bit_mismatches": 0,
+            "programmed_ones": 205135,
+            "observed_sha256": "ed1d5e3c8ee87085b7344e6930a6b7278942a9ba6da66fc4d426c24a09b76632",
+            "expected_sha256": "ed1d5e3c8ee87085b7344e6930a6b7278942a9ba6da66fc4d426c24a09b76632"
+          },
+          {
+            "bank": 2,
+            "compared_selections": 102400,
+            "compared_bits": 409600,
+            "selection_mismatches": 0,
+            "bit_mismatches": 0,
+            "programmed_ones": 205109,
+            "observed_sha256": "a71859da99f4bf113ebd2cbab696ec901b4fcb8c450f996f06ce830b4f874bc7",
+            "expected_sha256": "a71859da99f4bf113ebd2cbab696ec901b4fcb8c450f996f06ce830b4f874bc7"
+          },
+          {
+            "bank": 3,
+            "compared_selections": 102400,
+            "compared_bits": 409600,
+            "selection_mismatches": 0,
+            "bit_mismatches": 0,
+            "programmed_ones": 205044,
+            "observed_sha256": "079d35148b33c4650cb5c1860e5cf594442345e2a76c547cc14c354c5ee6b6d7",
+            "expected_sha256": "079d35148b33c4650cb5c1860e5cf594442345e2a76c547cc14c354c5ee6b6d7"
+          }
+        ],
+        "all_match": true
+      },
+      "full_bank_lvs": {
+        "pass": true,
+        "bank": 3,
+        "devices": 414720,
+        "source": "tall-bank/verification/results.json"
+      },
+      "row_mapping": "logical_row = bank + bank_count * local_row",
+      "exclusions": [
+        "row decoder and physical WL drivers",
+        "physicalPCdriver/phasecontrol",
+        "global bank output mux and output latches",
+        "global interbank signal/PDN integration",
+        "fullbank simultaneouscurrent/distributedRC timing"
+      ],
+      "timing_method": "pre2std4 stockdrivers, actualMagicC, geometry-derived distributedR; sampled16active columns+128receivers",
+      "timing_status": "sampled_evidence_only",
+      "timing_directory": "r320-g2",
+      "timing_cases": [
+        {
+          "path": "r320-g2/ss-20ns-s32/result.json",
+          "corner": "ss",
+          "voltage_v": 2.97,
+          "temperature_c": 125,
+          "period_ns": 20.0,
+          "protocol_pass": false,
+          "failures": {
+            "output": 116,
+            "raw": 100,
+            "precharge": 0,
+            "phase": 0
+          },
+          "maximum_sampled_settled_ns_after_wl_command": 1.7763568394002505e-14,
+          "twenty_ns_after_wl_probe": {
+            "tested": false,
+            "data_failures": null,
+            "scope": "Buffer-input WL command to data only; decoder/phase-launch/setup/latch/mux excluded"
+          },
+          "partial_source_energy_pj_per_sampled_read": {
+            "pr": 30.467386760007116,
+            "pw": 1.1158345182127078,
+            "pp": 7.239136657205122,
+            "pa": 0.10094866215730355
+          },
+          "energy_scope": "Finite-window net source energy over repeated sequence; only observed endpoint states compared, not all internal stored charge. Partial16active-column group plus128receivers/selectedWL/PC buffers; not complete bank energy.",
+          "energy_window_ns": [
+            140.0,
+            280.0
+          ],
+          "maximum_observed_endpoint_voltage_difference_v": 0.0002153400000000083,
+          "samples_checked": 448,
+          "sampled_local_row_sequence": [
+            0,
+            3,
+            319,
+            318,
+            19,
+            6,
+            7
+          ],
+          "sequence_repeats": 2,
+          "pattern_override": null,
+          "integration_and_stimulus_source": "r320-g2/ss-20ns-s32/test.cir",
+          "selected_bit_columns": [
+            112,
+            113,
+            114,
+            115,
+            116,
+            117,
+            118,
+            119,
+            120,
+            121,
+            122,
+            123,
+            124,
+            125,
+            126,
+            127
+          ],
+          "active_array_devices": 5120,
+          "receiver_devices": 512,
+          "protocol": {
+            "period_ns": 20.0,
+            "pc_off_ns": 4.666666666666667,
+            "wl_start_ns": 8.666666666666668,
+            "wl_fall_start_ns": 17.8,
+            "wl_fall_end_ns": 18.0,
+            "pc_on_start_ns": 19.8,
+            "sample_ns": [
+              14.0,
+              19.5
+            ],
+            "edge_ns": 0.2,
+            "phase_family": "pre2std4;14/60fraction precharge plus fixed4ns guard"
+          },
+          "source_gds_sha256": "b1e93444fd267b46a622917846e324fe13258e11a1b7bc008d7a247b47938b45",
+          "deck_sha256": "e63d3e75a5d70e558a5c0d04da4c5d30d32fce08e126fcd41e67a25ed3af49dd",
+          "trace_sha256": "ba0d8c516e0407551a7ca4d283960844c058594c9b1a4387d316ab6fa0fd0483",
+          "wall_seconds": 85.49711162503809
+        },
+        {
+          "path": "r320-g2/ss-40ns-s32/result.json",
+          "corner": "ss",
+          "voltage_v": 2.97,
+          "temperature_c": 125,
+          "period_ns": 40.0,
+          "protocol_pass": true,
+          "failures": {
+            "output": 0,
+            "raw": 0,
+            "precharge": 0,
+            "phase": 0
+          },
+          "maximum_sampled_settled_ns_after_wl_command": 8.919739666666638,
+          "twenty_ns_after_wl_probe": {
+            "tested": true,
+            "data_failures": 0,
+            "scope": "Buffer-input WL command to data only; decoder/phase-launch/setup/latch/mux excluded"
+          },
+          "partial_source_energy_pj_per_sampled_read": {
+            "pr": 32.984760571884614,
+            "pw": 1.1178661078695251,
+            "pp": 7.238599356961678,
+            "pa": 0.09738496068068232
+          },
+          "energy_scope": "Finite-window net source energy over repeated sequence; only observed endpoint states compared, not all internal stored charge. Partial16active-column group plus128receivers/selectedWL/PC buffers; not complete bank energy.",
+          "energy_window_ns": [
+            280.0,
+            560.0
+          ],
+          "maximum_observed_endpoint_voltage_difference_v": 4.510000000035319e-05,
+          "samples_checked": 448,
+          "sampled_local_row_sequence": [
+            0,
+            3,
+            319,
+            318,
+            19,
+            6,
+            7
+          ],
+          "sequence_repeats": 2,
+          "pattern_override": null,
+          "integration_and_stimulus_source": "r320-g2/ss-40ns-s32/test.cir",
+          "selected_bit_columns": [
+            112,
+            113,
+            114,
+            115,
+            116,
+            117,
+            118,
+            119,
+            120,
+            121,
+            122,
+            123,
+            124,
+            125,
+            126,
+            127
+          ],
+          "active_array_devices": 5120,
+          "receiver_devices": 512,
+          "protocol": {
+            "period_ns": 40.0,
+            "pc_off_ns": 9.333333333333334,
+            "wl_start_ns": 13.333333333333334,
+            "wl_fall_start_ns": 37.8,
+            "wl_fall_end_ns": 38.0,
+            "pc_on_start_ns": 39.8,
+            "sample_ns": [
+              34.0,
+              39.5
+            ],
+            "edge_ns": 0.2,
+            "phase_family": "pre2std4;14/60fraction precharge plus fixed4ns guard"
+          },
+          "source_gds_sha256": "b1e93444fd267b46a622917846e324fe13258e11a1b7bc008d7a247b47938b45",
+          "deck_sha256": "77f8604fc953ce1d213957d06152dc5d5eb776705a9acdce223a3a3603d0f54d",
+          "trace_sha256": "a5246608b772a71ddb00cda5f566a1685c573616f872b3b09ae36e9ffeae7dda",
+          "wall_seconds": 106.98119975021109
+        },
+        {
+          "path": "r320-g2/ss-60ns-s32/result.json",
+          "corner": "ss",
+          "voltage_v": 2.97,
+          "temperature_c": 125,
+          "period_ns": 60.0,
+          "protocol_pass": true,
+          "failures": {
+            "output": 0,
+            "raw": 0,
+            "precharge": 0,
+            "phase": 0
+          },
+          "maximum_sampled_settled_ns_after_wl_command": 8.89390800000001,
+          "twenty_ns_after_wl_probe": {
+            "tested": true,
+            "data_failures": 0,
+            "scope": "Buffer-input WL command to data only; decoder/phase-launch/setup/latch/mux excluded"
+          },
+          "partial_source_energy_pj_per_sampled_read": {
+            "pr": 33.27492845877077,
+            "pw": 1.1226013579074576,
+            "pp": 7.2292161308491005,
+            "pa": 0.11361748924342185
+          },
+          "energy_scope": "Finite-window net source energy over repeated sequence; only observed endpoint states compared, not all internal stored charge. Partial16active-column group plus128receivers/selectedWL/PC buffers; not complete bank energy.",
+          "energy_window_ns": [
+            420.0,
+            840.0
+          ],
+          "maximum_observed_endpoint_voltage_difference_v": 2.2239999999840165e-05,
+          "samples_checked": 448,
+          "sampled_local_row_sequence": [
+            0,
+            3,
+            319,
+            318,
+            19,
+            6,
+            7
+          ],
+          "sequence_repeats": 2,
+          "pattern_override": null,
+          "integration_and_stimulus_source": "r320-g2/ss-60ns-s32/test.cir",
+          "selected_bit_columns": [
+            112,
+            113,
+            114,
+            115,
+            116,
+            117,
+            118,
+            119,
+            120,
+            121,
+            122,
+            123,
+            124,
+            125,
+            126,
+            127
+          ],
+          "active_array_devices": 5120,
+          "receiver_devices": 512,
+          "protocol": {
+            "period_ns": 60.0,
+            "pc_off_ns": 14.0,
+            "wl_start_ns": 18.0,
+            "wl_fall_start_ns": 57.8,
+            "wl_fall_end_ns": 58.0,
+            "pc_on_start_ns": 59.8,
+            "sample_ns": [
+              54.0,
+              59.5
+            ],
+            "edge_ns": 0.2,
+            "phase_family": "pre2std4;14/60fraction precharge plus fixed4ns guard"
+          },
+          "source_gds_sha256": "b1e93444fd267b46a622917846e324fe13258e11a1b7bc008d7a247b47938b45",
+          "deck_sha256": "0170ed57fbca20253c141ef9cb1aa28d666c367810cd46c0ea3526f93d481451",
+          "trace_sha256": "375236331aeb638fea83323952d1c9cceae93cca202d551b181d5ea720e03c41",
+          "wall_seconds": 111.60114391683601
+        },
+        {
+          "path": "r320-g2/typical-20ns-s32/result.json",
+          "corner": "typical",
+          "voltage_v": 3.3,
+          "temperature_c": 25,
+          "period_ns": 20.0,
+          "protocol_pass": false,
+          "failures": {
+            "output": 14,
+            "raw": 8,
+            "precharge": 0,
+            "phase": 0
+          },
+          "maximum_sampled_settled_ns_after_wl_command": 5.2584571333333265,
+          "twenty_ns_after_wl_probe": {
+            "tested": false,
+            "data_failures": null,
+            "scope": "Buffer-input WL command to data only; decoder/phase-launch/setup/latch/mux excluded"
+          },
+          "partial_source_energy_pj_per_sampled_read": {
+            "pr": 40.23570013073714,
+            "pw": 1.3605483805705008,
+            "pp": 8.89627386207385,
+            "pa": -0.29482138059227125
+          },
+          "energy_scope": "Finite-window net source energy over repeated sequence; only observed endpoint states compared, not all internal stored charge. Partial16active-column group plus128receivers/selectedWL/PC buffers; not complete bank energy.",
+          "energy_window_ns": [
+            140.0,
+            280.0
+          ],
+          "maximum_observed_endpoint_voltage_difference_v": 6.141950000000673e-05,
+          "samples_checked": 448,
+          "sampled_local_row_sequence": [
+            0,
+            3,
+            319,
+            318,
+            19,
+            6,
+            7
+          ],
+          "sequence_repeats": 2,
+          "pattern_override": null,
+          "integration_and_stimulus_source": "r320-g2/typical-20ns-s32/test.cir",
+          "selected_bit_columns": [
+            112,
+            113,
+            114,
+            115,
+            116,
+            117,
+            118,
+            119,
+            120,
+            121,
+            122,
+            123,
+            124,
+            125,
+            126,
+            127
+          ],
+          "active_array_devices": 5120,
+          "receiver_devices": 512,
+          "protocol": {
+            "period_ns": 20.0,
+            "pc_off_ns": 4.666666666666667,
+            "wl_start_ns": 8.666666666666668,
+            "wl_fall_start_ns": 17.8,
+            "wl_fall_end_ns": 18.0,
+            "pc_on_start_ns": 19.8,
+            "sample_ns": [
+              14.0,
+              19.5
+            ],
+            "edge_ns": 0.2,
+            "phase_family": "pre2std4;14/60fraction precharge plus fixed4ns guard"
+          },
+          "source_gds_sha256": "b1e93444fd267b46a622917846e324fe13258e11a1b7bc008d7a247b47938b45",
+          "deck_sha256": "e5010f416b79343ea7b54214e78d30bcfe7099f18df4bd15643df3cbe646fab3",
+          "trace_sha256": "309a9218d7fca275c5ac25b00161981575ad910e16d1a65a9f92728cc6ab2dac",
+          "wall_seconds": 90.82665033312514
+        },
+        {
+          "path": "r320-g2/typical-40ns-s32/result.json",
+          "corner": "typical",
+          "voltage_v": 3.3,
+          "temperature_c": 25,
+          "period_ns": 40.0,
+          "protocol_pass": true,
+          "failures": {
+            "output": 0,
+            "raw": 0,
+            "precharge": 0,
+            "phase": 0
+          },
+          "maximum_sampled_settled_ns_after_wl_command": 5.816472666666678,
+          "twenty_ns_after_wl_probe": {
+            "tested": true,
+            "data_failures": 0,
+            "scope": "Buffer-input WL command to data only; decoder/phase-launch/setup/latch/mux excluded"
+          },
+          "partial_source_energy_pj_per_sampled_read": {
+            "pr": 41.387669273474636,
+            "pw": 1.360674735635168,
+            "pp": 8.894072940967437,
+            "pa": -0.2982347675483304
+          },
+          "energy_scope": "Finite-window net source energy over repeated sequence; only observed endpoint states compared, not all internal stored charge. Partial16active-column group plus128receivers/selectedWL/PC buffers; not complete bank energy.",
+          "energy_window_ns": [
+            280.0,
+            560.0
+          ],
+          "maximum_observed_endpoint_voltage_difference_v": 2.0547650000000105e-05,
+          "samples_checked": 448,
+          "sampled_local_row_sequence": [
+            0,
+            3,
+            319,
+            318,
+            19,
+            6,
+            7
+          ],
+          "sequence_repeats": 2,
+          "pattern_override": null,
+          "integration_and_stimulus_source": "r320-g2/typical-40ns-s32/test.cir",
+          "selected_bit_columns": [
+            112,
+            113,
+            114,
+            115,
+            116,
+            117,
+            118,
+            119,
+            120,
+            121,
+            122,
+            123,
+            124,
+            125,
+            126,
+            127
+          ],
+          "active_array_devices": 5120,
+          "receiver_devices": 512,
+          "protocol": {
+            "period_ns": 40.0,
+            "pc_off_ns": 9.333333333333334,
+            "wl_start_ns": 13.333333333333334,
+            "wl_fall_start_ns": 37.8,
+            "wl_fall_end_ns": 38.0,
+            "pc_on_start_ns": 39.8,
+            "sample_ns": [
+              34.0,
+              39.5
+            ],
+            "edge_ns": 0.2,
+            "phase_family": "pre2std4;14/60fraction precharge plus fixed4ns guard"
+          },
+          "source_gds_sha256": "b1e93444fd267b46a622917846e324fe13258e11a1b7bc008d7a247b47938b45",
+          "deck_sha256": "24127ea4f9b9bef22bde59e23c3fe2b2c9caccdeef4fcfd9c4171cd42bea1e1c",
+          "trace_sha256": "b849fb2d1aeeaf00d5423e5d65f28937bd3cf91ac0f087ea516e05a6119bb3b0",
+          "wall_seconds": 121.06100666685961
+        },
+        {
+          "path": "r320-g2/typical-60ns-s32/result.json",
+          "corner": "typical",
+          "voltage_v": 3.3,
+          "temperature_c": 25,
+          "period_ns": 60.0,
+          "protocol_pass": true,
+          "failures": {
+            "output": 0,
+            "raw": 0,
+            "precharge": 0,
+            "phase": 0
+          },
+          "maximum_sampled_settled_ns_after_wl_command": 5.821609000000024,
+          "twenty_ns_after_wl_probe": {
+            "tested": true,
+            "data_failures": 0,
+            "scope": "Buffer-input WL command to data only; decoder/phase-launch/setup/latch/mux excluded"
+          },
+          "partial_source_energy_pj_per_sampled_read": {
+            "pr": 41.41250426205625,
+            "pw": 1.3607163926086272,
+            "pp": 8.895137487382751,
+            "pa": -0.296985442169273
+          },
+          "energy_scope": "Finite-window net source energy over repeated sequence; only observed endpoint states compared, not all internal stored charge. Partial16active-column group plus128receivers/selectedWL/PC buffers; not complete bank energy.",
+          "energy_window_ns": [
+            420.0,
+            840.0
+          ],
+          "maximum_observed_endpoint_voltage_difference_v": 1.2400929999999838e-05,
+          "samples_checked": 448,
+          "sampled_local_row_sequence": [
+            0,
+            3,
+            319,
+            318,
+            19,
+            6,
+            7
+          ],
+          "sequence_repeats": 2,
+          "pattern_override": null,
+          "integration_and_stimulus_source": "r320-g2/typical-60ns-s32/test.cir",
+          "selected_bit_columns": [
+            112,
+            113,
+            114,
+            115,
+            116,
+            117,
+            118,
+            119,
+            120,
+            121,
+            122,
+            123,
+            124,
+            125,
+            126,
+            127
+          ],
+          "active_array_devices": 5120,
+          "receiver_devices": 512,
+          "protocol": {
+            "period_ns": 60.0,
+            "pc_off_ns": 14.0,
+            "wl_start_ns": 18.0,
+            "wl_fall_start_ns": 57.8,
+            "wl_fall_end_ns": 58.0,
+            "pc_on_start_ns": 59.8,
+            "sample_ns": [
+              54.0,
+              59.5
+            ],
+            "edge_ns": 0.2,
+            "phase_family": "pre2std4;14/60fraction precharge plus fixed4ns guard"
+          },
+          "source_gds_sha256": "b1e93444fd267b46a622917846e324fe13258e11a1b7bc008d7a247b47938b45",
+          "deck_sha256": "44213f5679a5df87cc9af38b43d1517c1d275dbb44bc17de0d3ac24e1321c876",
+          "trace_sha256": "19b2f39d27ebfd71f719563c4e04d6de2218d753c95196b3b0ef8121a371b9df",
+          "wall_seconds": 139.3880230828654
+        }
+      ],
+      "corners": {
+        "typical": {
+          "minimum_tested_passing_complete_protocol_interval_ns": 40.0,
+          "tested_periods_ns": [
+            20.0,
+            40.0,
+            60.0
+          ],
+          "failing_periods_ns": [
+            20.0
+          ],
+          "conditional_slice_interleave_factor_for20ns": 2,
+          "four_striped_banks_cover_measured_reuse_interval": true,
+          "qualification": "Sampled32lane slice protocol only; minimum among tested profiles, not globally optimized minimum. Threshold delay is not reused as an initiation interval."
+        },
+        "ss": {
+          "minimum_tested_passing_complete_protocol_interval_ns": 40.0,
+          "tested_periods_ns": [
+            20.0,
+            40.0,
+            60.0
+          ],
+          "failing_periods_ns": [
+            20.0
+          ],
+          "conditional_slice_interleave_factor_for20ns": 2,
+          "four_striped_banks_cover_measured_reuse_interval": true,
+          "qualification": "Sampled32lane slice protocol only; minimum among tested profiles, not globally optimized minimum. Threshold delay is not reused as an initiation interval."
+        }
+      },
+      "timing_timeouts": [],
+      "timing_numerical_failures": [
+        {
+          "path": "r320-g2/typical-40ns-s32-failed-pulse/FAILURE.json",
+          "status": "incomplete numerical failure",
+          "time_ns": 39.8,
+          "physical_protocol_claim": null
+        },
+        {
+          "path": "r320-g2/ss-20ns-s32-failed-trapezoidal/FAILURE.json",
+          "status": "incomplete numerical failure",
+          "time_ns": 19.8,
+          "trouble_node": "vagg111#branch",
+          "physical_protocol_claim": null
+        },
+        {
+          "path": "r320-g2/ss-20ns-s32-failed-gear/FAILURE.json",
+          "status": "incomplete numerical failure with Gear2",
+          "time_ns": 19.8,
+          "physical_protocol_claim": null
+        },
+        {
+          "path": "r320-g2/ss-40ns-s32-failed-pulse/FAILURE.json",
+          "status": "incomplete numerical failure",
+          "time_ns": 39.8,
+          "physical_protocol_claim": null
+        },
+        {
+          "path": "r320-g2/ss-20ns-s32-failed-power-probe/FAILURE.json",
+          "classification": "numerical_transient_failure",
+          "time_ns": 19.8,
+          "reason": "ngspice timestep too small, trouble node pr (isolated behavioral power monitor)",
+          "physical_protocol_pass": null,
+          "qualification": "Incomplete waveform, no read or energy credit. Retry removes isolated behavioral power monitors and evaluates the identical source-power equations as vectors after transient; no device or driver/cap/R/stimulus change."
+        }
+      ],
+      "worst_sampled_settling_ns_after_wl_command": {
+        "typical": 5.821609000000024,
+        "ss": 8.919739666666638
+      },
+      "worst_sampled_settling_case_paths": {
+        "typical": "r320-g2/typical-60ns-s32/result.json",
+        "ss": "r320-g2/ss-40ns-s32/result.json"
+      },
+      "energy_pj_per_sampled_read": {
+        "typical": 51.34418218252891,
+        "ss": 41.4386109973965
+      },
+      "energy_case_paths": {
+        "typical": "r320-g2/typical-40ns-s32/result.json",
+        "ss": "r320-g2/ss-40ns-s32/result.json"
+      },
+      "energy_scope": "Sum of recorded pr/pw/pp/pa finite-window sources;16active columns+128receivers, selectedWL/PC buffers and idealaggressors; not1280bit row energy",
+      "minimum_common_tested_TT_SS_passing_interval_ns": 40.0,
+      "conditional_slice_interleave_factor_for20ns": 2,
+      "full320lane_bank_read_time_ns": null,
+      "full320lane_bank_energy_pj": null,
+      "complete_macro_timing_proven": false
+    },
+    {
+      "rows_per_bank": 1280,
+      "banks": 1,
+      "readout_count": 1280,
+      "bank_dimensions_um": [
+        4669.7,
+        2249.0
+      ],
+      "assembly_dimensions_um": [
+        4669.7,
+        2249.0
+      ],
+      "partial_macro_area_um2": 10502155.299999999,
+      "partial_macro_um2_per_selection": 25.64002758789062,
+      "area_reduction_vs64_percent": 52.94979079497908,
+      "gds": "tall-bank/r1280/assembly.gds",
+      "gds_sha256": "4ba39b3401ef5d2cd5b1ed43066ccfb9a92bf56cf73a979b856342fbbae7afb3",
+      "drc_markers": 0,
+      "drc": {
+        "gds_sha256": "4ba39b3401ef5d2cd5b1ed43066ccfb9a92bf56cf73a979b856342fbbae7afb3",
+        "markers": 0,
+        "categories": {},
+        "seconds": 652.5998672919814,
+        "scope": "GF180 FEOL BEOL connectivity offgrid; density/antenna excluded",
+        "threads": 2
+      },
+      "layout_readback": {
+        "compared_indices": 409600,
+        "compared_bits": 1638400,
+        "mismatches": 0,
+        "programmed_ones": 820801,
+        "recovered_indices_sha256": "ba628b676d59721c268868d6720be1f58a4f8d4edfd9a26009403c9a8c4fce8e",
+        "method": "reopened actualGDS maskVia1 center readback; reconstructed logical row order from explicit striped map"
+      },
+      "independent_layout_readback": {
+        "gds": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/taalas-array/tall-bank/r1280/assembly.gds",
+        "gds_sha256": "4ba39b3401ef5d2cd5b1ed43066ccfb9a92bf56cf73a979b856342fbbae7afb3",
+        "identity": {
+          "packed_sha256": "864fcdc7ec80be2dbb99d76361db338345fb02a1a26d7aaa4a1b40696b921907",
+          "unpacked_sha256": "ba628b676d59721c268868d6720be1f58a4f8d4edfd9a26009403c9a8c4fce8e",
+          "w2b_rtl_sha256": "de720f1e7c93c405729025cd9395850bc75e35c3eb602a1b67c4ad58d1ed4dbf",
+          "all409600_indices_match": true
+        },
+        "rows_per_bank": 1280,
+        "row_mapping": "logical_row=bank+1*local_row",
+        "method": "Reopened GDS recursive Via1 polygon centers at reviewed transistor drain coordinates; not label or mask-cell-name values",
+        "banks": [
+          {
+            "bank": 0,
+            "compared_selections": 409600,
+            "compared_bits": 1638400,
+            "selection_mismatches": 0,
+            "bit_mismatches": 0,
+            "programmed_ones": 820801,
+            "observed_sha256": "ba628b676d59721c268868d6720be1f58a4f8d4edfd9a26009403c9a8c4fce8e",
+            "expected_sha256": "ba628b676d59721c268868d6720be1f58a4f8d4edfd9a26009403c9a8c4fce8e"
+          }
+        ],
+        "all_match": true
+      },
+      "full_bank_lvs": {
+        "pass": null,
+        "status": "Not run; optional variant has slice topology check only"
+      },
+      "row_mapping": "logical_row = bank + bank_count * local_row",
+      "exclusions": [
+        "row decoder and physical WL drivers",
+        "physicalPCdriver/phasecontrol",
+        "global bank output mux and output latches",
+        "global interbank signal/PDN integration",
+        "fullbank simultaneouscurrent/distributedRC timing"
+      ],
+      "timing_method": "pre2std4 stockdrivers, actualMagicC, geometry-derived distributedR; sampled16active columns+128receivers",
+      "timing_status": "sampled_evidence_only",
+      "timing_directory": "r1280-compact-v1",
+      "timing_cases": [
+        {
+          "path": "r1280-compact-v1/ss-60ns-s32/result.json",
+          "corner": "ss",
+          "voltage_v": 2.97,
+          "temperature_c": 125,
+          "period_ns": 60.0,
+          "protocol_pass": true,
+          "failures": {
+            "output": 0,
+            "raw": 0,
+            "precharge": 0,
+            "phase": 0
+          },
+          "maximum_sampled_settled_ns_after_wl_command": 22.54119799999998,
+          "twenty_ns_after_wl_probe": {
+            "tested": true,
+            "data_failures": 6,
+            "scope": "Buffer-input WL command to data only; decoder/phase-launch/setup/latch/mux excluded"
+          },
+          "partial_source_energy_pj_per_sampled_read": {
+            "pr": 92.06416872460282,
+            "pw": 1.115267333240406,
+            "pp": 7.239523646989723,
+            "pa": -0.05310924340958037
+          },
+          "energy_scope": "Finite-window net source energy over repeated sequence; only observed endpoint states compared, not all internal stored charge. Partial16active-column group plus128receivers/selectedWL/PC buffers; not complete bank energy.",
+          "energy_window_ns": [
+            120.0,
+            240.0
+          ],
+          "maximum_observed_endpoint_voltage_difference_v": 0.0006712140000001421,
+          "samples_checked": 128,
+          "sampled_local_row_sequence": [
+            1278,
+            1279
+          ],
+          "sequence_repeats": 2,
+          "pattern_override": {
+            "rows": [
+              1278,
+              1279
+            ],
+            "scope": "Reduced optional1280 far1/far0 alternating sequence repeatedtwice, fourcycles; excludes nearrows and maximumtransition coverage"
+          },
+          "integration_and_stimulus_source": "r1280-compact-v1/ss-60ns-s32/test.cir",
+          "selected_bit_columns": [
+            112,
+            113,
+            114,
+            115,
+            116,
+            117,
+            118,
+            119,
+            120,
+            121,
+            122,
+            123,
+            124,
+            125,
+            126,
+            127
+          ],
+          "active_array_devices": 20480,
+          "receiver_devices": 512,
+          "protocol": {
+            "period_ns": 60.0,
+            "pc_off_ns": 14.0,
+            "wl_start_ns": 18.0,
+            "wl_fall_start_ns": 57.8,
+            "wl_fall_end_ns": 58.0,
+            "pc_on_start_ns": 59.8,
+            "sample_ns": [
+              54.0,
+              59.5
+            ],
+            "edge_ns": 0.2,
+            "phase_family": "pre2std4;14/60fraction precharge plus fixed4ns guard"
+          },
+          "source_gds_sha256": "866de11f1a02e782cf8ae43c3c0d4debc0240147ef74e1a7c75c5a7e2efbee67",
+          "deck_sha256": "234048069e2ee8c01e717fcfe29e7995bb7f24fc0d0ff819fa7fc5b0c4e29943",
+          "trace_sha256": "fb02e8a3aecaec0d06bae6253c6e9eaed15b33da8842c0e02a49410934dbb1a7",
+          "wall_seconds": 137.3783498329576
+        },
+        {
+          "path": "r1280-compact-v1/typical-60ns-s32/result.json",
+          "corner": "typical",
+          "voltage_v": 3.3,
+          "temperature_c": 25,
+          "period_ns": 60.0,
+          "protocol_pass": true,
+          "failures": {
+            "output": 0,
+            "raw": 0,
+            "precharge": 0,
+            "phase": 0
+          },
+          "maximum_sampled_settled_ns_after_wl_command": 14.676458699999998,
+          "twenty_ns_after_wl_probe": {
+            "tested": true,
+            "data_failures": 0,
+            "scope": "Buffer-input WL command to data only; decoder/phase-launch/setup/latch/mux excluded"
+          },
+          "partial_source_energy_pj_per_sampled_read": {
+            "pr": 117.12240862117856,
+            "pw": 1.3580090991566158,
+            "pp": 8.896469533076253,
+            "pa": -0.44274842043025786
+          },
+          "energy_scope": "Finite-window net source energy over repeated sequence; only observed endpoint states compared, not all internal stored charge. Partial16active-column group plus128receivers/selectedWL/PC buffers; not complete bank energy.",
+          "energy_window_ns": [
+            120.0,
+            240.0
+          ],
+          "maximum_observed_endpoint_voltage_difference_v": 0.00022192650000003172,
+          "samples_checked": 128,
+          "sampled_local_row_sequence": [
+            1278,
+            1279
+          ],
+          "sequence_repeats": 2,
+          "pattern_override": {
+            "rows": [
+              1278,
+              1279
+            ],
+            "scope": "Reduced optional1280 far1/far0 alternating sequence repeatedtwice, fourcycles; excludes nearrows and maximumtransition coverage"
+          },
+          "integration_and_stimulus_source": "r1280-compact-v1/typical-60ns-s32/test.cir",
+          "selected_bit_columns": [
+            112,
+            113,
+            114,
+            115,
+            116,
+            117,
+            118,
+            119,
+            120,
+            121,
+            122,
+            123,
+            124,
+            125,
+            126,
+            127
+          ],
+          "active_array_devices": 20480,
+          "receiver_devices": 512,
+          "protocol": {
+            "period_ns": 60.0,
+            "pc_off_ns": 14.0,
+            "wl_start_ns": 18.0,
+            "wl_fall_start_ns": 57.8,
+            "wl_fall_end_ns": 58.0,
+            "pc_on_start_ns": 59.8,
+            "sample_ns": [
+              54.0,
+              59.5
+            ],
+            "edge_ns": 0.2,
+            "phase_family": "pre2std4;14/60fraction precharge plus fixed4ns guard"
+          },
+          "source_gds_sha256": "866de11f1a02e782cf8ae43c3c0d4debc0240147ef74e1a7c75c5a7e2efbee67",
+          "deck_sha256": "dafe63a843a37a00d4c4138653122df82b5c075fffb11cb67765b0121123d419",
+          "trace_sha256": "4a32ab944e9f3ea5b7798c019faa8e318531e883242e0a52036a80107eec88cd",
+          "wall_seconds": 150.13217629189603
+        }
+      ],
+      "corners": {
+        "typical": {
+          "minimum_tested_passing_complete_protocol_interval_ns": 60.0,
+          "tested_periods_ns": [
+            60.0
+          ],
+          "failing_periods_ns": [],
+          "conditional_slice_interleave_factor_for20ns": 3,
+          "four_striped_banks_cover_measured_reuse_interval": null,
+          "qualification": "Sampled32lane slice protocol only; minimum among tested profiles, not globally optimized minimum. Threshold delay is not reused as an initiation interval."
+        },
+        "ss": {
+          "minimum_tested_passing_complete_protocol_interval_ns": 60.0,
+          "tested_periods_ns": [
+            60.0
+          ],
+          "failing_periods_ns": [],
+          "conditional_slice_interleave_factor_for20ns": 3,
+          "four_striped_banks_cover_measured_reuse_interval": null,
+          "qualification": "Sampled32lane slice protocol only; minimum among tested profiles, not globally optimized minimum. Threshold delay is not reused as an initiation interval."
+        }
+      },
+      "timing_timeouts": [],
+      "timing_numerical_failures": [],
+      "worst_sampled_settling_ns_after_wl_command": {
+        "typical": 14.676458699999998,
+        "ss": 24.35063100000002
+      },
+      "worst_sampled_settling_case_paths": {
+        "typical": "r1280-compact-v1/typical-60ns-s32/result.json",
+        "ss": "r1280-v1/ss-60ns-s32/result.json"
+      },
+      "energy_pj_per_sampled_read": {
+        "typical": 126.93413883298118,
+        "ss": 100.36585046142338
+      },
+      "energy_case_paths": {
+        "typical": "r1280-compact-v1/typical-60ns-s32/result.json",
+        "ss": "r1280-compact-v1/ss-60ns-s32/result.json"
+      },
+      "energy_scope": "Sum of recorded pr/pw/pp/pa finite-window sources;16active columns+128receivers, selectedWL/PC buffers and idealaggressors; not1280bit row energy",
+      "minimum_common_tested_TT_SS_passing_interval_ns": 60.0,
+      "conditional_slice_interleave_factor_for20ns": 3,
+      "full320lane_bank_read_time_ns": null,
+      "full320lane_bank_energy_pj": null,
+      "complete_macro_timing_proven": false
+    }
+  ],
+  "source_timing_results": "tall-bank/timing/results.json",
+  "source_verification_results": "tall-bank/verification/results.json",
+  "preserved_timing_failures": [
+    "r320-v1/excluded-first-prototype/: stopped initial prototype extra15ohm drain term; excluded",
+    "r320-g2/typical-40ns-s32-failed-pulse/FAILURE.json",
+    "r320-g2/ss-20ns-s32-failed-trapezoidal/FAILURE.json",
+    "r320-g2/ss-20ns-s32-failed-gear/FAILURE.json",
+    "r320-g2/ss-40ns-s32-failed-pulse/FAILURE.json",
+    "r320-g2/ss-20ns-s32-failed-power-probe/FAILURE.json"
+  ],
+  "supplemental_fullbank_control_load_sensitivity": [
+    {
+      "path": "r320-global-load-v1/ss-40ns-s32/result.json",
+      "corner": "ss",
+      "period_ns": 40.0,
+      "protocol_pass": true,
+      "failures": {
+        "output": 0,
+        "raw": 0,
+        "precharge": 0,
+        "phase": 0
+      },
+      "maximum_sampled_settled_ns_after_wl_command": 9.075878666666663,
+      "partial_source_energy_pj_per_sampled_read": {
+        "pr": 33.076000781016624,
+        "pw": 13.739882979863328,
+        "pp": 71.1921985761898,
+        "pa": 0.09420209209635252
+      },
+      "twenty_ns_after_wl_probe": [
+        {
+          "cycle": 0,
+          "ns_after_wl_command": 20,
+          "data_failures": 0,
+          "excludes_decoder_setup_latch_and_mux": true
+        },
+        {
+          "cycle": 1,
+          "ns_after_wl_command": 20,
+          "data_failures": 0,
+          "excludes_decoder_setup_latch_and_mux": true
+        },
+        {
+          "cycle": 2,
+          "ns_after_wl_command": 20,
+          "data_failures": 0,
+          "excludes_decoder_setup_latch_and_mux": true
+        },
+        {
+          "cycle": 3,
+          "ns_after_wl_command": 20,
+          "data_failures": 0,
+          "excludes_decoder_setup_latch_and_mux": true
+        },
+        {
+          "cycle": 4,
+          "ns_after_wl_command": 20,
+          "data_failures": 0,
+          "excludes_decoder_setup_latch_and_mux": true
+        },
+        {
+          "cycle": 5,
+          "ns_after_wl_command": 20,
+          "data_failures": 0,
+          "excludes_decoder_setup_latch_and_mux": true
+        },
+        {
+          "cycle": 6,
+          "ns_after_wl_command": 20,
+          "data_failures": 0,
+          "excludes_decoder_setup_latch_and_mux": true
+        },
+        {
+          "cycle": 7,
+          "ns_after_wl_command": 20,
+          "data_failures": 0,
+          "excludes_decoder_setup_latch_and_mux": true
+        },
+        {
+          "cycle": 8,
+          "ns_after_wl_command": 20,
+          "data_failures": 0,
+          "excludes_decoder_setup_latch_and_mux": true
+        },
+        {
+          "cycle": 9,
+          "ns_after_wl_command": 20,
+          "data_failures": 0,
+          "excludes_decoder_setup_latch_and_mux": true
+        },
+        {
+          "cycle": 10,
+          "ns_after_wl_command": 20,
+          "data_failures": 0,
+          "excludes_decoder_setup_latch_and_mux": true
+        },
+        {
+          "cycle": 11,
+          "ns_after_wl_command": 20,
+          "data_failures": 0,
+          "excludes_decoder_setup_latch_and_mux": true
+        },
+        {
+          "cycle": 12,
+          "ns_after_wl_command": 20,
+          "data_failures": 0,
+          "excludes_decoder_setup_latch_and_mux": true
+        },
+        {
+          "cycle": 13,
+          "ns_after_wl_command": 20,
+          "data_failures": 0,
+          "excludes_decoder_setup_latch_and_mux": true
+        }
+      ],
+      "samples_checked": 448,
+      "scope": "Full320lane WL/PC loading sensitivity with measured controlmetalC, geometryglobalrailR,10unplacedstockdrivers percontrol anddummyothergate loads. Data/current remain16actual columns and128physicalreceivers; not physically placed fullbank qualification.",
+      "source_gds_sha256": "b1e93444fd267b46a622917846e324fe13258e11a1b7bc008d7a247b47938b45",
+      "deck_sha256": "b079078a17dcf2968004404d27822bf798bc252f76ba540e4d92ca5b0d11e28f",
+      "trace_sha256": "a85e2c993a07c726902f662fd8e5fd6af852402affb1b170b7374c3fb0e0198c",
+      "additional_model": {
+        "control_caps_source": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/taalas-array/tall-bank/verification/bank3-v1/control-capacitance.json",
+        "control_caps_json_sha256": "3f429fde7906e90e6e9f186877ae249cd537a893df5f1c9639205f9ffc071fb7",
+        "full_extracted_cap_sha256": "b8738626fff43829c5c76122ceca9d9252f451c32ce421f920947514f04e2a92",
+        "physical_gate_counts": {
+          "selected_WL": 1280,
+          "PC": 1280
+        },
+        "added_gate_loads": {
+          "access_nmos_peractiveWL": 1152,
+          "precharge_pmos": 1152
+        },
+        "driver_counts": {
+          "buf4_peractiveWL": 10,
+          "buf20_PC": 10
+        },
+        "global_rail_model": "10nodes at468umspacing; .38um M3; geometryR0.104Ohm/square tempco.00333/K; added measured fullbank-minuslocal explicit incidentC evenly allocated10nodes toground",
+        "full_control_cap_ff": {
+          "PC": 925.6118800000321,
+          "WL0": 533.6689200000005,
+          "WL3": 612.401090000004,
+          "WL6": 612.4017700000044,
+          "WL7": 534.1121600000004,
+          "WL19": 612.4015700000025,
+          "WL318": 614.1420500000047,
+          "WL319": 533.6565000000019
+        },
+        "retained_local_control_cap_ff": {
+          "PC": 91.00322,
+          "WL0": 24.97541,
+          "WL3": 26.3351,
+          "WL6": 26.334889999999998,
+          "WL7": 24.69595,
+          "WL19": 26.33513,
+          "WL318": 26.50163,
+          "WL319": 24.97551
+        },
+        "qualifications": [
+          "Drivers are unplaced ideal-distributed instances with common ideal command inputs; no verified broadcast-input delivery or actual driver location",
+          "Other9subbank gate loads use groundedS/D accessMOS and VDD-tiedS/D prechargePMOS; not exact active-array Miller/current loading",
+          "Global incidentC collapsed toground for sensitivity, not exact distributed coupling extraction",
+          "All10PC and all10localWL terminal phase margins checked; only selected16real-array columns have data/precharge checks",
+          "rdd energy now includes1152dummy prechargegate displacement currents; still not fullbank energy"
+        ]
+      }
+    }
+  ],
+  "additional1280_fullpattern_cases": [
+    {
+      "path": "r1280-v1/ss-60ns-s32/result.json",
+      "corner": "ss",
+      "period_ns": 60.0,
+      "protocol_pass": true,
+      "failures": {
+        "output": 0,
+        "raw": 0,
+        "precharge": 0,
+        "phase": 0
+      },
+      "maximum_sampled_settled_ns_after_wl_command": 24.35063100000002,
+      "partial_source_energy_pj_per_sampled_read": {
+        "pr": 93.1737481196442,
+        "pw": 1.1206477365661827,
+        "pp": 7.25059391031728,
+        "pa": 0.169640655642592
+      },
+      "twenty_ns_after_wl_probe": [
+        {
+          "cycle": 0,
+          "ns_after_wl_command": 20,
+          "data_failures": 1,
+          "excludes_decoder_setup_latch_and_mux": true
+        },
+        {
+          "cycle": 1,
+          "ns_after_wl_command": 20,
+          "data_failures": 3,
+          "excludes_decoder_setup_latch_and_mux": true
+        },
+        {
+          "cycle": 2,
+          "ns_after_wl_command": 20,
+          "data_failures": 0,
+          "excludes_decoder_setup_latch_and_mux": true
+        },
+        {
+          "cycle": 3,
+          "ns_after_wl_command": 20,
+          "data_failures": 3,
+          "excludes_decoder_setup_latch_and_mux": true
+        },
+        {
+          "cycle": 4,
+          "ns_after_wl_command": 20,
+          "data_failures": 0,
+          "excludes_decoder_setup_latch_and_mux": true
+        },
+        {
+          "cycle": 5,
+          "ns_after_wl_command": 20,
+          "data_failures": 1,
+          "excludes_decoder_setup_latch_and_mux": true
+        },
+        {
+          "cycle": 6,
+          "ns_after_wl_command": 20,
+          "data_failures": 3,
+          "excludes_decoder_setup_latch_and_mux": true
+        },
+        {
+          "cycle": 7,
+          "ns_after_wl_command": 20,
+          "data_failures": 1,
+          "excludes_decoder_setup_latch_and_mux": true
+        },
+        {
+          "cycle": 8,
+          "ns_after_wl_command": 20,
+          "data_failures": 3,
+          "excludes_decoder_setup_latch_and_mux": true
+        },
+        {
+          "cycle": 9,
+          "ns_after_wl_command": 20,
+          "data_failures": 0,
+          "excludes_decoder_setup_latch_and_mux": true
+        },
+        {
+          "cycle": 10,
+          "ns_after_wl_command": 20,
+          "data_failures": 3,
+          "excludes_decoder_setup_latch_and_mux": true
+        },
+        {
+          "cycle": 11,
+          "ns_after_wl_command": 20,
+          "data_failures": 0,
+          "excludes_decoder_setup_latch_and_mux": true
+        },
+        {
+          "cycle": 12,
+          "ns_after_wl_command": 20,
+          "data_failures": 1,
+          "excludes_decoder_setup_latch_and_mux": true
+        },
+        {
+          "cycle": 13,
+          "ns_after_wl_command": 20,
+          "data_failures": 3,
+          "excludes_decoder_setup_latch_and_mux": true
+        }
+      ],
+      "samples_checked": 448,
+      "scope": "16fullheight active columns,112ideal legal-state BL aggressors also driving their real receivers, all128physicalpre2receivers; extracted stockbuf4WL/buf20PC. GeometryR signaljoin+arrayWL/BL/one2umgroundstrap. Groundendpoint/global supply and input phases ideal. No full320lane WL/PC rail load, simultaneous allarraycurrent, decoder/latch/mux.",
+      "source_gds_sha256": "866de11f1a02e782cf8ae43c3c0d4debc0240147ef74e1a7c75c5a7e2efbee67",
+      "deck_sha256": "c031bc343e762594e604e2f2e93e8419194ee17e39d143ad6a4d261cd81d5d45",
+      "trace_sha256": "12091fc48f88d6dea9293a57c1bc91b987da8491e1afb591b58baff58e5f3305",
+      "additional_model": null
+    }
+  ],
+  "all_timing_timeouts": [],
+  "baseline_method_comparable": false,
+  "full_row_energy_pj": null,
+  "complete_projection_area_um2": null,
+  "limitations": [
+    "16actual active fullheight columns with geometry-R array and actual extracted joinC/R; other112bitlines ideal legal-state aggressors also drive their physical receiver channels",
+    "All128physical receiver channels and stockbuf4WL/buf20PC; grounded-source/drain dummy MOS approximate omitted selected-row gate/Miller loads",
+    "One2umgroundstrap with ideal endpoints; actual global/VSSreturn supplyR and full simultaneouscurrent unqualified",
+    "Full320lane commonWL/PC globalwireload excluded from primary cases; supplemental sensitivity separate if available",
+    "10fF assumed outputloads; decoder/phasecontroller/latch/mux and global banks unimplemented",
+    "Geometry resistance plus redistributed extracted capacitance is not automatic distributedRPEX; no mismatch/yield qualification",
+    "Energy finite-window net source components, not all internal endpoint charge matched and not fullbank energy"
+  ]
+}

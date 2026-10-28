@@ -1,0 +1,30 @@
+{
+  "DESIGN_NAME": "rv_fixed_proj64x320_rom",
+  "VERILOG_FILES": [
+    "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/rtl/rv_fixed_proj64x320_rom.sv"
+  ],
+  "CLOCK_PORT": "clk",
+  "CLOCK_PERIOD": 200,
+  "FP_CORE_UTIL": 30,
+  "PL_TARGET_DENSITY_PCT": 55,
+  "DRT_THREADS": 1,
+  "STA_THREADS": 1,
+  "RUN_MAGIC_DRC": true,
+  "RUN_KLAYOUT_DRC": true,
+  "RUN_LVS": true,
+  "RUN_CTS": true,
+  "RUN_DRT": true,
+  "RUN_FILL_INSERTION": true,
+  "RUN_MCSTA": true,
+  "RUN_SPEF_EXTRACTION": true,
+  "RUN_ANTENNA_REPAIR": true,
+  "PL_MAX_DISPLACEMENT_X": 1500,
+  "PL_MAX_DISPLACEMENT_Y": 800,
+  "DEDUPLICATE_CORNERS": true,
+  "PNR_SDC_FILE": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/configs/rv_fixed_proj64x320_rom-200ns.sdc",
+  "SIGNOFF_SDC_FILE": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/configs/rv_fixed_proj64x320_rom-200ns.sdc",
+  "STA_CORNERS": [
+    "nom_tt_025C_5v00"
+  ],
+  "STA_EXTRA_CORNER_TCL_FILE": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/evidence/rv_fixed_proj64x320_rom-pre-route-gate-cell-activity-power-hook.tcl"
+}

@@ -1,0 +1,15 @@
+{
+  "status": "INVALID FAILURE ARTIFACT - DO NOT ANNOTATE OR USE FOR POWER",
+  "reason": "Correct real vectors were staged, but wrapper entered all-zero one-hot phase after30ns. No input or output transfer observed; process reached wall timeout124.",
+  "compressed_local_path": "overnight-20261014/projection-complete/gate-activity-audit/invalid-v2/gate-speech-v2-invalid-startup-all-zero.vcd.gz",
+  "compressed_bytes": 24986046,
+  "compressed_sha256": "f55856adddb34bfe2debb7844927d87fcbf10e2bd25b6db66f4d08681536faa2",
+  "matches_remote_compressed_SHA": true,
+  "raw_remote_retained_as": "/workspace/rv/overnight-20261014/projection-complete/evidence/gate-speech-v2-invalid-startup-all-zero.vcd",
+  "raw_sha256": "0b5efdf70aa2df48b4458ae78dce0fed8dff0a30c604f4b0ff50daa22fc38c94",
+  "raw_bytes": 217060564,
+  "duration_seconds": 0.000407691,
+  "gzip_integrity_verified_remotely": true,
+  "power_or_annotation_run": false,
+  "Mac_free_GiB_when_verified": 24.99695587158203
+}

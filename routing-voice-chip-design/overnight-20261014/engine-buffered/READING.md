@@ -1,0 +1,9 @@
+# W9 source and contract review
+
+Read repository skill, complete preserved source-notes (including final proposal and limitations), patent atlas, architecture/numerics and implementation workflow. Relevant primary description/claims: US20250123802A1 shared products/readable cells, access transistor/wordline/bitline and serialized/parallel transport; US20260023566A1 hardware codebook pointer alternatives, fixed connectivity with programmable representatives. Saved primary texts were used from experiments/common-v9-start-handoff-source-20261004-v1/reading-basis-v2/.
+
+The current project plan is ../plan.md, not this repository root; its 13 October pause is superseded by the user's 14 October authorization and W9 brief. Read approved docs/ROUTEVOICE-PROPOSED-PHYSICAL-GOAL-2026-10-13.md plus W2b CONTRACT.md, PHYSICAL-NOTES.md, COMMANDS.md, configs/array_port.json, evidence/pre-route-diagnostics.json and mapped replay/activity scripts and evidence.
+
+W9 scope is the W2b ARRAY-PORT engine with synthesis fanout repair. V4 adds ten mirrored row-register/decode domains; numerical tables, interface and schedule remain unchanged, subject to full regression. Four-bit index, UINT8 representatives, signed nine-bit activation, signed 13-bit radix partials, signed 17-bit products, 27-bit accumulators and FP32 affine output remain distinct. This engine excludes the custom array/readout; results cannot establish complete projection or recognizer cost. One access-transistor patent disclosure is not a whole-chip area claim.
+
+Local writes confined to this directory. EDA and simulations use the existing cloud pod, no creation/deletion. W9 launch uses 12 jobs; detailed router 12, STA 4. No git. Local disk floor 22 GiB; large physical artifacts remain remote until a bounded retrieval is selected. Lead's global spend/termination guard remains controlling.

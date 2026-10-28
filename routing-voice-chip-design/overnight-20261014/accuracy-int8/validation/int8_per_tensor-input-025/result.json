@@ -1,0 +1,53 @@
+{
+  "case_id": "int8_per_tensor-input-025",
+  "model": "int8_per_tensor",
+  "id": "652-130726-0008",
+  "role": "validation",
+  "condition": "white_noise_10db",
+  "seed": null,
+  "reference": "IF YOU KNOW HOW TO ORDER AND DO NOT CARE TO COUNT THE COST WHEN YOU ORDER PROBABLY THE BEST DINNER AT THESE RESTAURANTS CAN BE HAD AT EITHER BLANCO'S OR THE POODLE DOG",
+  "input_float32_sha256": "649f6c5612ff12d1b802cb3a58333d7fc75d0afbd8c5a214e3f79f31375c3ab5",
+  "hypothesis": " ",
+  "normalized_tokens": [],
+  "edits": 34,
+  "reference_words": 34,
+  "hypothesis_words": 0,
+  "exact": false,
+  "lines": [
+    {
+      "text": "",
+      "start_time": 0.3199999928474426,
+      "duration": 4.25600004196167,
+      "is_complete": true,
+      "samples": 68096,
+      "input_float32_sha256": "3a9a8642af01ab3e7d7bd1a3bfa18990d4bae287bd8118d2620da88794fbbcbb"
+    },
+    {
+      "text": "",
+      "start_time": 4.351999759674072,
+      "duration": 4.927999973297119,
+      "is_complete": true,
+      "samples": 78848,
+      "input_float32_sha256": "c95f2aa08d4953c19c7bc80d73bac08d7d630eae361638c6b389adb75e3f0e38"
+    }
+  ],
+  "request_sha256": "837b8458ff28307165fe724b178e907d3b0d665c2af07db91ab1d57ee4e1b38e",
+  "worker_sha256": "4682e8a57db08e02a34f53b01f334f34faa3ca9a6546698f1e4650db359004b6",
+  "native_library_sha256": "1453a6c1c9072f3d05e9e5ae6ff423fae839e56631c5efb12bbd5c0280d04399",
+  "native_api_version": 30000,
+  "load_seconds": 0.040205417200922966,
+  "compute_seconds": 0.1884080828167498,
+  "audio_seconds": 9.305,
+  "process_cpu_seconds": 0.18856099999999998,
+  "voluntary_context_switches": 0,
+  "involuntary_context_switches": 21,
+  "system_load_average": [
+    10.4521484375,
+    8.9716796875,
+    9.86767578125
+  ],
+  "options": null,
+  "flags": 0,
+  "process_id": 81033,
+  "isolation": "One audio clip/condition in a fresh native process; no previous utterance or VAD state."
+}

@@ -1,0 +1,40 @@
+{
+  "unix": 1791935655.512788,
+  "method": "ditto --hfsCompression, SHA256 verified before atomic replace; transparent POSIX reads retain identical bytes",
+  "free_before_bytes": 25639124992,
+  "free_after_bytes": 25720119296,
+  "changes": [
+    {
+      "path": "runs/rv_fixed_proj320_dp-typical-repair20/05-openroad-stamidpnr-1/max.rpt",
+      "sha256": "31169140b597a1e3dd9dd8d2fc9203473af3bac8e28ac08e9af90fa7f2a35294",
+      "bytes": 26122532,
+      "before_allocated_bytes": 26124288,
+      "after_allocated_bytes": 4243456,
+      "flags": 32
+    },
+    {
+      "path": "runs/rv_fixed_proj320_dp-typical-repair20/05-openroad-stamidpnr-1/min.rpt",
+      "sha256": "14d0ee967206d55d7f7221b7d35bc1bf7437c804093d96e5428dae3912b9b0d5",
+      "bytes": 7632027,
+      "before_allocated_bytes": 8392704,
+      "after_allocated_bytes": 937984,
+      "flags": 32
+    },
+    {
+      "path": "runs/rv_fixed_proj320_dp-typical-repair20/05-openroad-stamidpnr-1/openroad-stamidpnr-1.log",
+      "sha256": "7ad1d419cdb6a469f050757e5e2274a324a90a3203fb898f1ba66d816625c027",
+      "bytes": 34607897,
+      "before_allocated_bytes": 35655680,
+      "after_allocated_bytes": 5292032,
+      "flags": 32
+    },
+    {
+      "path": "runs/rv_fixed_proj320_dp-typical-repair20/final/json_h/rv_fixed_proj320_dp.h.json",
+      "sha256": "2d4597fc57908c501c804475a5c2c38d5c4e68967c52dbb315e6f74fb3c74be9",
+      "bytes": 23476381,
+      "before_allocated_bytes": 23478272,
+      "after_allocated_bytes": 2138112,
+      "flags": 32
+    }
+  ]
+}

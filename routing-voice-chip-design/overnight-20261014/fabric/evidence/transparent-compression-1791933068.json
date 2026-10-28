@@ -1,0 +1,24 @@
+{
+  "unix": 1791933068.220994,
+  "method": "ditto --hfsCompression, SHA256 verified before atomic replace; transparent POSIX reads retain identical bytes",
+  "free_before_bytes": 26544840704,
+  "free_after_bytes": 26609823744,
+  "changes": [
+    {
+      "path": "runs/rv_fixed_proj320_dp-io-microns/07-openroad-stamidpnr/checks.rpt",
+      "sha256": "395d46c714b9c76fb8fc6d87b86030f6fccad3f75d0aa02d3bf6f3a68030edaa",
+      "bytes": 34154522,
+      "before_allocated_bytes": 34607104,
+      "after_allocated_bytes": 5476352,
+      "flags": 32
+    },
+    {
+      "path": "runs/rv_fixed_proj320_dp-io-microns/07-openroad-stamidpnr/openroad-stamidpnr.log",
+      "sha256": "ee71a3ecdb9612102a55e376a155c6b392f3e3ac51431d12c7d13392ca25f35b",
+      "bytes": 42818809,
+      "before_allocated_bytes": 42995712,
+      "after_allocated_bytes": 7118848,
+      "flags": 32
+    }
+  ]
+}

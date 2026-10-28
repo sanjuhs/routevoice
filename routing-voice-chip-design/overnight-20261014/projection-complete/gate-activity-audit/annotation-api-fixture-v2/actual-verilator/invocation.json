@@ -1,0 +1,29 @@
+{
+  "command": [
+    "/nix/store/sc7lam0v6gsfzzcn993qcnkdzkzvnsk9-opensta/bin/sta",
+    "-no_splash",
+    "-exit",
+    "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/projection-complete/gate-activity-audit/annotation_only.tcl"
+  ],
+  "environment": {
+    "W8_LIB_LIST": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric-k64/pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__tt_025C_3v30.lib",
+    "W8_MACRO_LIB": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/projection-complete/macro/PITCH_BANK_R1280.lib",
+    "W8_NETLIST": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/projection-complete/power/escaped-api/probe.v",
+    "W8_TOP": "probe",
+    "W8_CLOCK_PORT": "a",
+    "W8_VCD": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/projection-complete/power/escaped-api/actual-verilator.vcd",
+    "W8_OUT_DIR": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/projection-complete/gate-activity-audit/annotation-api-fixture-v2/actual-verilator"
+  },
+  "source_hashes": {
+    "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric-k64/pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__tt_025C_3v30.lib": "f9dee07cf158324934b0c59144d970a2e8313f43533ede6283ec3c136f82fe53",
+    "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/projection-complete/macro/PITCH_BANK_R1280.lib": "6008dd5e970e9a1078bf6f98c4d5d21edb926973949e2c1c2be04d5782e25815",
+    "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/projection-complete/power/escaped-api/probe.v": "e18809610c68aaa7be4601a9f462c85b072a215d3166b7d49e331b827cdfd910",
+    "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/projection-complete/gate-activity-audit/annotation_only.tcl": "7bf6d9a2e9acd072d8619df33c610b23b9b81521b5538fa24f05cf6959265300"
+  },
+  "scope": "tb/dut",
+  "SPEF_read": false,
+  "SDC_read": false,
+  "cpu_affinity": null,
+  "annotation_clock_period_ns": 20,
+  "entire_annotation_budget_seconds": 600
+}

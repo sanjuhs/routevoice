@@ -1,0 +1,28 @@
+{
+  "stage": "placed netlist, pre-route annotation probe only",
+  "scope": "tb/dut",
+  "total_reported_pins": 1253320,
+  "direct_vcd_pin_activities": 1388,
+  "unannotated_pins": 1251932,
+  "direct_pin_fraction": 0.0011074585899849998,
+  "coverage": "Top-level pins only. No internal leaf pin activity matched the RTL net names.",
+  "header_only_flattening_improved_coverage": false,
+  "value_change_stream_preserved": true,
+  "power_measured": false,
+  "power_limitation": "A subsequent power estimate using this VCD will have measured top-level activity and propagated/default internal activity; not a fully gate-annotated estimate.",
+  "reports": [
+    "evidence/array_port-pre-route-activity-dot-scope.rpt",
+    "evidence/array_port-pre-route-activity-hierarchical.rpt",
+    "evidence/array_port-pre-route-activity-annotation.rpt"
+  ],
+  "tool_api_help": "logs/power-help.log",
+  "original_vcd": "evidence/array_port-speech.vcd",
+  "preferred_vcd_for_power": "evidence/array_port-speech.vcd",
+  "input_hashes": {
+    "runs/array_port-v2/28-openroad-globalplacement/rv_k64_array_port.nl.v": "dedf4f230f2232cc42b519101a85e53fca521248f50f22131bec9896829d822c",
+    "runs/array_port-v2/28-openroad-globalplacement/rv_k64_array_port.sdc": "98083af47caf8b16cceaf5ed814455a3d1d677fcdf857c57c8f8849d9a90faf3",
+    "activity_probe.tcl": "f14281448c6e13238c7fb513cff4d451026ec7c31518d89a028078870637fccf",
+    "evidence/array_port-speech.vcd": "e5bc55e49691a182b70edc99b69a43397ee1291e2cb6940073086e998a42d45e",
+    "evidence/array_port-speech-flat.vcd": "f090ba733b4a93c5c62a982a64ec4e22867810b35cf059efb69dbbf06a71c36e"
+  }
+}

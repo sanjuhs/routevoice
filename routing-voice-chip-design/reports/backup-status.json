@@ -1,0 +1,26 @@
+{
+  "snapshot_commit": "dcbc9680d42851ab6442f99a1a04fb2b60b91708",
+  "github_push": "verified successful",
+  "huggingface_repository": "sanjuhs/route-voice-hardware-backup",
+  "huggingface_upload": "verified",
+  "artifact_archive_bytes": 3070709760,
+  "scope": "Snapshot before new chip design; credentials, installed runtimes and caches excluded. Concurrent changes after snapshot are outside this backup.",
+  "huggingface_commit": "0b39f7630620909d90857c1d84b5d95d09ad6d23",
+  "huggingface_files": [
+    {
+      "file": "2026-09-06-pre-routing/source.bundle",
+      "bytes": 712897847,
+      "sha256": "15d3fb7baf4404d7ec7a22a6007d432bc77cb7c0f91a6411b0d9f36173a9e427"
+    },
+    {
+      "file": "2026-09-06-pre-routing/model-sources.json",
+      "bytes": 1717,
+      "sha256": "ebe7e77c1c4d0366ebe230e8237cbe645564ba424334377098aa22e5355e29a7"
+    },
+    {
+      "file": "2026-09-06-pre-routing/artifacts.tar",
+      "bytes": 3070709760,
+      "sha256": "12ef7ec827bf36e7dfb5973d5a19aaa8ffd998a1c143165c2375f60ed2ca2191"
+    }
+  ]
+}

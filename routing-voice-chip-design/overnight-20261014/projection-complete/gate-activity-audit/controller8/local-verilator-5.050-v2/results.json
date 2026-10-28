@@ -1,0 +1,37 @@
+{
+  "mode": "verilator",
+  "command": [
+    "/opt/homebrew/bin/verilator",
+    "-DFUNCTIONAL",
+    "-DGF180MCU_FD_SC_MCU7T5V0__HOLD_V",
+    "-DGF180MCU_FD_SC_MCU7T5V0__HOLD_FUNC_V",
+    "--binary",
+    "--timing",
+    "--trace",
+    "--trace-underscore",
+    "--top-module",
+    "tb",
+    "-Wno-fatal",
+    "-j",
+    "1",
+    "--Mdir",
+    "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/projection-complete/gate-activity-audit/controller8/local-verilator-5.050-v2/obj",
+    "-o",
+    "sim",
+    "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric-k64/pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/verilog/primitives.v",
+    "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric-k64/pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/verilog/gf180mcu_fd_sc_mcu7t5v0.v",
+    "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/projection-complete/gate-activity-audit/controller8/tb.sv"
+  ],
+  "simulation_command": [
+    "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/projection-complete/gate-activity-audit/controller8/local-verilator-5.050-v2/obj/sim"
+  ],
+  "sources_sha256": {
+    "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric-k64/pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/verilog/primitives.v": "ccc0f447f71ce35c635e08d49eb0ed77aa2ec91cf31d8e3e45a246114d3cae92",
+    "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric-k64/pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/verilog/gf180mcu_fd_sc_mcu7t5v0.v": "9a21c5f98200acfe77d8ba52067164e0802284dc1c1e117f0e64fb6ac42eb64b",
+    "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/projection-complete/gate-activity-audit/controller8/tb.sv": "e4fdbda72eadfc9f20d8f263dc6059497107e4c226e70775ed090215a594a68f"
+  },
+  "scope": "Tiny exact-cell cascade diagnostic; not projection correctness evidence",
+  "compile_exit": 0,
+  "simulation_exit": 0,
+  "pass": true
+}

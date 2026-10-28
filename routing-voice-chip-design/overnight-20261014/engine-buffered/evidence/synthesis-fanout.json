@@ -1,0 +1,619 @@
+{
+  "netlist_json": "runs/buf-v4/01-yosys-synthesis/rv_k64_array_port.nl.v.json",
+  "sha256": "9cc138f121deecf5911c747b4beed512442fd744f4e071bd7e4ed82133afad69",
+  "method": "Mapped cell input-pin loads; excludes clock and constant nodes from max signal fanout.",
+  "max_signal_fanout": 16,
+  "max_nonclock_nontie_fanout": 16,
+  "max_tie_cell_fanout": 0,
+  "signal_nets_over_16": 0,
+  "clock_loads": 11784,
+  "cells": 340582,
+  "buffers": 19045,
+  "top_signal_nets": [
+    {
+      "bit": 1392,
+      "loads": 16,
+      "names": [
+        "$abc$2168572$new_n24929"
+      ],
+      "drivers": [
+        "$abc$2168572$auto$blifparse.cc:397:parse_blif$2168574/Z"
+      ]
+    },
+    {
+      "bit": 1393,
+      "loads": 16,
+      "names": [
+        "$abc$2168572$new_n24930"
+      ],
+      "drivers": [
+        "$abc$2168572$auto$blifparse.cc:397:parse_blif$2168575/Z"
+      ]
+    },
+    {
+      "bit": 1412,
+      "loads": 16,
+      "names": [
+        "$abc$2168572$new_n24942"
+      ],
+      "drivers": [
+        "$abc$2168572$auto$blifparse.cc:397:parse_blif$2168587/Z"
+      ]
+    },
+    {
+      "bit": 1430,
+      "loads": 16,
+      "names": [
+        "$abc$2168572$new_n24967"
+      ],
+      "drivers": [
+        "$abc$2168572$auto$blifparse.cc:397:parse_blif$2168612/Z"
+      ]
+    },
+    {
+      "bit": 1431,
+      "loads": 16,
+      "names": [
+        "$abc$2168572$new_n24968"
+      ],
+      "drivers": [
+        "$abc$2168572$auto$blifparse.cc:397:parse_blif$2168613/Z"
+      ]
+    },
+    {
+      "bit": 1441,
+      "loads": 16,
+      "names": [
+        "$abc$2168572$new_n24976"
+      ],
+      "drivers": [
+        "$abc$2168572$auto$blifparse.cc:397:parse_blif$2168621/Z"
+      ]
+    },
+    {
+      "bit": 1442,
+      "loads": 16,
+      "names": [
+        "$abc$2168572$new_n24977"
+      ],
+      "drivers": [
+        "$abc$2168572$auto$blifparse.cc:397:parse_blif$2168622/Z"
+      ]
+    },
+    {
+      "bit": 1452,
+      "loads": 16,
+      "names": [
+        "$abc$2168572$new_n24987"
+      ],
+      "drivers": [
+        "$abc$2168572$auto$blifparse.cc:397:parse_blif$2168632/Z"
+      ]
+    },
+    {
+      "bit": 1462,
+      "loads": 16,
+      "names": [
+        "$abc$2168572$new_n24996"
+      ],
+      "drivers": [
+        "$abc$2168572$auto$blifparse.cc:397:parse_blif$2168641/Z"
+      ]
+    },
+    {
+      "bit": 1466,
+      "loads": 16,
+      "names": [
+        "$abc$2168572$new_n25000"
+      ],
+      "drivers": [
+        "$abc$2168572$auto$blifparse.cc:397:parse_blif$2168645/Z"
+      ]
+    },
+    {
+      "bit": 1467,
+      "loads": 16,
+      "names": [
+        "$abc$2168572$new_n25001"
+      ],
+      "drivers": [
+        "$abc$2168572$auto$blifparse.cc:397:parse_blif$2168646/Z"
+      ]
+    },
+    {
+      "bit": 1474,
+      "loads": 16,
+      "names": [
+        "$abc$2168572$new_n25007"
+      ],
+      "drivers": [
+        "$abc$2168572$auto$blifparse.cc:397:parse_blif$2168652/Z"
+      ]
+    },
+    {
+      "bit": 1475,
+      "loads": 16,
+      "names": [
+        "$abc$2168572$new_n25008"
+      ],
+      "drivers": [
+        "$abc$2168572$auto$blifparse.cc:397:parse_blif$2168653/ZN"
+      ]
+    },
+    {
+      "bit": 1482,
+      "loads": 16,
+      "names": [
+        "$abc$2168572$new_n25012"
+      ],
+      "drivers": [
+        "$abc$2168572$auto$blifparse.cc:397:parse_blif$2168657/Z"
+      ]
+    },
+    {
+      "bit": 1478,
+      "loads": 16,
+      "names": [
+        "$abc$2168572$new_n25010"
+      ],
+      "drivers": [
+        "$abc$2168572$auto$blifparse.cc:397:parse_blif$2168655/Z"
+      ]
+    },
+    {
+      "bit": 1476,
+      "loads": 16,
+      "names": [
+        "$abc$2168572$new_n25009"
+      ],
+      "drivers": [
+        "$abc$2168572$auto$blifparse.cc:397:parse_blif$2168654/Z"
+      ]
+    },
+    {
+      "bit": 1496,
+      "loads": 16,
+      "names": [
+        "$abc$2168572$new_n25021"
+      ],
+      "drivers": [
+        "$abc$2168572$auto$blifparse.cc:397:parse_blif$2168666/Z"
+      ]
+    },
+    {
+      "bit": 1498,
+      "loads": 16,
+      "names": [
+        "$abc$2168572$new_n25023"
+      ],
+      "drivers": [
+        "$abc$2168572$auto$blifparse.cc:397:parse_blif$2168668/Z"
+      ]
+    },
+    {
+      "bit": 1470,
+      "loads": 16,
+      "names": [
+        "$abc$2168572$new_n25004"
+      ],
+      "drivers": [
+        "$abc$2168572$auto$blifparse.cc:397:parse_blif$2168649/Z"
+      ]
+    },
+    {
+      "bit": 1465,
+      "loads": 16,
+      "names": [
+        "$abc$2168572$new_n24999"
+      ],
+      "drivers": [
+        "$abc$2168572$auto$blifparse.cc:397:parse_blif$2168644/Z"
+      ]
+    },
+    {
+      "bit": 1506,
+      "loads": 16,
+      "names": [
+        "$abc$2168572$new_n25030"
+      ],
+      "drivers": [
+        "$abc$2168572$auto$blifparse.cc:397:parse_blif$2168675/Z"
+      ]
+    },
+    {
+      "bit": 1509,
+      "loads": 16,
+      "names": [
+        "$abc$2168572$new_n25033"
+      ],
+      "drivers": [
+        "$abc$2168572$auto$blifparse.cc:397:parse_blif$2168678/Z"
+      ]
+    },
+    {
+      "bit": 1511,
+      "loads": 16,
+      "names": [
+        "$abc$2168572$new_n25035"
+      ],
+      "drivers": [
+        "$abc$2168572$auto$blifparse.cc:397:parse_blif$2168680/Z"
+      ]
+    },
+    {
+      "bit": 1514,
+      "loads": 16,
+      "names": [
+        "$abc$2168572$new_n25039"
+      ],
+      "drivers": [
+        "$abc$2168572$auto$blifparse.cc:397:parse_blif$2168684/Z"
+      ]
+    },
+    {
+      "bit": 1515,
+      "loads": 16,
+      "names": [
+        "$abc$2168572$new_n25040"
+      ],
+      "drivers": [
+        "$abc$2168572$auto$blifparse.cc:397:parse_blif$2168685/Z"
+      ]
+    },
+    {
+      "bit": 1537,
+      "loads": 16,
+      "names": [
+        "$abc$2168572$new_n25062"
+      ],
+      "drivers": [
+        "$abc$2168572$auto$blifparse.cc:397:parse_blif$2168707/Z"
+      ]
+    },
+    {
+      "bit": 1554,
+      "loads": 16,
+      "names": [
+        "$abc$2168572$new_n25079"
+      ],
+      "drivers": [
+        "$abc$2168572$auto$blifparse.cc:397:parse_blif$2168724/Z"
+      ]
+    },
+    {
+      "bit": 1562,
+      "loads": 16,
+      "names": [
+        "$abc$2168572$new_n25087"
+      ],
+      "drivers": [
+        "$abc$2168572$auto$blifparse.cc:397:parse_blif$2168732/Z"
+      ]
+    },
+    {
+      "bit": 1563,
+      "loads": 16,
+      "names": [
+        "$abc$2168572$new_n25088"
+      ],
+      "drivers": [
+        "$abc$2168572$auto$blifparse.cc:397:parse_blif$2168733/Z"
+      ]
+    },
+    {
+      "bit": 1569,
+      "loads": 16,
+      "names": [
+        "$abc$2168572$new_n25094"
+      ],
+      "drivers": [
+        "$abc$2168572$auto$blifparse.cc:397:parse_blif$2168739/Z"
+      ]
+    },
+    {
+      "bit": 1574,
+      "loads": 16,
+      "names": [
+        "$abc$2168572$new_n25099"
+      ],
+      "drivers": [
+        "$abc$2168572$auto$blifparse.cc:397:parse_blif$2168744/Z"
+      ]
+    },
+    {
+      "bit": 1593,
+      "loads": 16,
+      "names": [
+        "$abc$2168572$new_n25118"
+      ],
+      "drivers": [
+        "$abc$2168572$auto$blifparse.cc:397:parse_blif$2168763/Z"
+      ]
+    },
+    {
+      "bit": 1604,
+      "loads": 16,
+      "names": [
+        "$abc$2168572$new_n25129"
+      ],
+      "drivers": [
+        "$abc$2168572$auto$blifparse.cc:397:parse_blif$2168774/Z"
+      ]
+    },
+    {
+      "bit": 1605,
+      "loads": 16,
+      "names": [
+        "$abc$2168572$new_n25130"
+      ],
+      "drivers": [
+        "$abc$2168572$auto$blifparse.cc:397:parse_blif$2168775/Z"
+      ]
+    },
+    {
+      "bit": 1599,
+      "loads": 16,
+      "names": [
+        "$abc$2168572$new_n25124"
+      ],
+      "drivers": [
+        "$abc$2168572$auto$blifparse.cc:397:parse_blif$2168769/Z"
+      ]
+    },
+    {
+      "bit": 1606,
+      "loads": 16,
+      "names": [
+        "$abc$2168572$new_n25131"
+      ],
+      "drivers": [
+        "$abc$2168572$auto$blifparse.cc:397:parse_blif$2168776/Z"
+      ]
+    },
+    {
+      "bit": 1608,
+      "loads": 16,
+      "names": [
+        "$abc$2168572$new_n25133"
+      ],
+      "drivers": [
+        "$abc$2168572$auto$blifparse.cc:397:parse_blif$2168778/ZN"
+      ]
+    },
+    {
+      "bit": 1609,
+      "loads": 16,
+      "names": [
+        "$abc$2168572$new_n25134"
+      ],
+      "drivers": [
+        "$abc$2168572$auto$blifparse.cc:397:parse_blif$2168779/Z"
+      ]
+    },
+    {
+      "bit": 1613,
+      "loads": 16,
+      "names": [
+        "$abc$2168572$new_n25138"
+      ],
+      "drivers": [
+        "$abc$2168572$auto$blifparse.cc:397:parse_blif$2168783/Z"
+      ]
+    },
+    {
+      "bit": 1610,
+      "loads": 16,
+      "names": [
+        "$abc$2168572$new_n25135"
+      ],
+      "drivers": [
+        "$abc$2168572$auto$blifparse.cc:397:parse_blif$2168780/Z"
+      ]
+    }
+  ],
+  "duplicated_row_nets": {
+    "0": {
+      "0": 341883,
+      "10": 32529,
+      "1": 341886,
+      "2": 341889,
+      "3": 341892,
+      "4": 341895,
+      "5": 341898,
+      "6": 32381,
+      "7": 32379,
+      "8": 32432,
+      "9": 32430
+    },
+    "1": {
+      "0": 341855,
+      "10": 46087,
+      "1": 341858,
+      "2": 341861,
+      "3": 341864,
+      "4": 341867,
+      "5": 341870,
+      "6": 46095,
+      "7": 46093,
+      "8": 46150,
+      "9": 46154
+    },
+    "2": {
+      "0": 341825,
+      "10": 59848,
+      "1": 341828,
+      "2": 341832,
+      "3": 341835,
+      "4": 341839,
+      "5": 341842,
+      "6": 59858,
+      "7": 59855,
+      "8": 59846,
+      "9": 59850
+    },
+    "3": {
+      "0": 341797,
+      "10": 73489,
+      "1": 341800,
+      "2": 341803,
+      "3": 341806,
+      "4": 341809,
+      "5": 341812,
+      "6": 73504,
+      "7": 73498,
+      "8": 73495,
+      "9": 73491
+    },
+    "4": {
+      "0": 341767,
+      "10": 87231,
+      "1": 341770,
+      "2": 341773,
+      "3": 341776,
+      "4": 341779,
+      "5": 341782,
+      "6": 87239,
+      "7": 87237,
+      "8": 87295,
+      "9": 87293
+    },
+    "5": {
+      "0": 341737,
+      "10": 100975,
+      "1": 341740,
+      "2": 341743,
+      "3": 341747,
+      "4": 341750,
+      "5": 341754,
+      "6": 100930,
+      "7": 100958,
+      "8": 100981,
+      "9": 100978
+    },
+    "6": {
+      "0": 341709,
+      "10": 114899,
+      "1": 341712,
+      "2": 341715,
+      "3": 341718,
+      "4": 341721,
+      "5": 341724,
+      "6": 114768,
+      "7": 114766,
+      "8": 114761,
+      "9": 114759
+    },
+    "7": {
+      "0": 341679,
+      "10": 128683,
+      "1": 341682,
+      "2": 341685,
+      "3": 341688,
+      "4": 341691,
+      "5": 341694,
+      "6": 128502,
+      "7": 128500,
+      "8": 128492,
+      "9": 128490
+    },
+    "8": {
+      "0": 341648,
+      "10": 142069,
+      "1": 341651,
+      "2": 341654,
+      "3": 341657,
+      "4": 341662,
+      "5": 341665,
+      "6": 142077,
+      "7": 142074,
+      "8": 142179,
+      "9": 142177
+    },
+    "9": {
+      "0": 341616,
+      "10": 155867,
+      "1": 341623,
+      "2": 341626,
+      "3": 341629,
+      "4": 341632,
+      "5": 341635,
+      "6": 155881,
+      "7": 155878,
+      "8": 155873,
+      "9": 155870
+    }
+  },
+  "duplicated_row_bit6_distinct": 10,
+  "duplicated_row_decode_fanout": {
+    "0": {
+      "10": 1,
+      "6": 1,
+      "7": 1,
+      "8": 1,
+      "9": 1
+    },
+    "1": {
+      "10": 1,
+      "6": 5,
+      "7": 4,
+      "8": 1,
+      "9": 1
+    },
+    "2": {
+      "10": 5,
+      "6": 1,
+      "7": 5,
+      "8": 5,
+      "9": 1
+    },
+    "3": {
+      "10": 1,
+      "6": 3,
+      "7": 1,
+      "8": 1,
+      "9": 1
+    },
+    "4": {
+      "10": 1,
+      "6": 3,
+      "7": 2,
+      "8": 1,
+      "9": 1
+    },
+    "5": {
+      "10": 1,
+      "6": 5,
+      "7": 2,
+      "8": 4,
+      "9": 1
+    },
+    "6": {
+      "10": 1,
+      "6": 4,
+      "7": 1,
+      "8": 1,
+      "9": 3
+    },
+    "7": {
+      "10": 1,
+      "6": 1,
+      "7": 1,
+      "8": 3,
+      "9": 1
+    },
+    "8": {
+      "10": 3,
+      "6": 2,
+      "7": 1,
+      "8": 1,
+      "9": 1
+    },
+    "9": {
+      "10": 1,
+      "6": 1,
+      "7": 1,
+      "8": 1,
+      "9": 1
+    }
+  }
+}

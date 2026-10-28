@@ -1,0 +1,19 @@
+{
+  "rank_command": [
+    ".venv/bin/python",
+    "overnight-20261014/taalas-pitch/timing/rank_fullbank_caps.py",
+    "--spice",
+    "overnight-20261014/taalas-pitch/timing/fullbank-caps/extracted-cap.spice.gz",
+    "--geometry",
+    "overnight-20261014/taalas-pitch/r1280-v2/geometry.json",
+    "--extraction-input",
+    "overnight-20261014/taalas-pitch/verification/r1280-v2/input.json",
+    "--output",
+    "rank.json"
+  ],
+  "source_sha256": {
+    "export_fullbank_caps.py": "5efaecb11a58d2e5c30c6a234d63649b3abe6a8beb86d292aaa678dc114f7596",
+    "rank_fullbank_caps.py": "59234204a68448f2af651c94dc5ce0259234fc74a1aed9b530599144a72240f9"
+  },
+  "qualification": "Source snapshots made immediately after successful export/rank; sources not changed between execution and snapshot. Single-thread nice jobs; exporter uses one additional gzip stream thread."
+}

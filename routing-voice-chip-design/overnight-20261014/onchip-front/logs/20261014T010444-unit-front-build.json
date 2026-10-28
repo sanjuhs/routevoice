@@ -1,0 +1,27 @@
+{
+  "stage": "unit-front-build",
+  "command": [
+    "/usr/bin/nice",
+    "-n",
+    "10",
+    "/opt/homebrew/bin/verilator",
+    "--cc",
+    "--exe",
+    "--build",
+    "-j",
+    "6",
+    "--top-module",
+    "rv_onchip_frontend_v1",
+    "--Mdir",
+    "/Users/sanju/.local/state/routevoice-internal-runs/20261014/onchip-front/unit-front",
+    "-Wno-fatal",
+    "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/onchip-front/rv_onchip_frontend_v1.sv",
+    "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/onchip-front/responder_test.cpp"
+  ],
+  "cwd": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design",
+  "log": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/onchip-front/logs/20261014T010444-unit-front-build.log",
+  "started": "20261014T010444",
+  "exit_code": 0,
+  "pid": 15435,
+  "elapsed_seconds": 1.8107034161221236
+}

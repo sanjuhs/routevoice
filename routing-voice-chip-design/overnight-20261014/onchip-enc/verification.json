@@ -1,0 +1,305 @@
+{
+  "producer_statistics": {
+    "jobs": 5,
+    "faults": 0,
+    "resets": 0,
+    "starts": 5,
+    "epochs": 5,
+    "layer_releases": 30,
+    "checks": 10556970,
+    "logits": 163840,
+    "body_requests": 1392000,
+    "body_replies": 1392000,
+    "body_extras": 0,
+    "compact_fixed_requests": 787200,
+    "compact_fixed_replies": 787200,
+    "compact_fixed_extras": 0,
+    "compact_memory_requests": 1650,
+    "compact_memory_replies": 1650,
+    "compact_memory_extras": 0,
+    "packet_checks": 5280,
+    "prefix_checks": 2640,
+    "fixed_drain_waits": 0,
+    "memory_drain_waits": 0,
+    "terminal_preoffers": 0,
+    "terminal_orphans": 0,
+    "clocks": 312578648
+  },
+  "whole": {
+    "tokens": 5,
+    "logits": 163840,
+    "actual_encoded_packets": 2560,
+    "actual_encoded_ACKs": 2560,
+    "host_encoded_feeds": 0,
+    "frames": 64,
+    "chunks": 16,
+    "features": 20480,
+    "encoded_values": 20480,
+    "encoder_layers": 6,
+    "source_packets": 2560,
+    "source_host_feeds": 0,
+    "common_clocks": 312578649,
+    "encoder_clocks": 55302920,
+    "frontend_checks": 368640,
+    "encoder_write_checks": 849920,
+    "encoder_read_checks": 1935360
+  },
+  "conservation": {
+    "frontend_requests": 85064960,
+    "frontend_replies": 85064960,
+    "copier_requests": 20480,
+    "copier_replies": 20480,
+    "encoder_requests": 2295680,
+    "encoder_replies": 2295680,
+    "head_requests": 368640,
+    "head_replies": 368640,
+    "O_requests": 15360,
+    "O_replies": 15360,
+    "flags": 1
+  },
+  "onboard_learned_conservation": {
+    "offers": 9600,
+    "ACKs": 9600,
+    "native_rows": 9600,
+    "native_words": 38400,
+    "owner": 0,
+    "idle": 1,
+    "fault": 0,
+    "host_response_feeds": 0
+  },
+  "onboard_frontend_conservation": {
+    "requests": 29344000,
+    "replies": 29344000,
+    "initialized_reads": 28913920,
+    "due_writes": 430080,
+    "write_ACKs": 430080,
+    "alias_ACKs": 20480,
+    "serialized_values": 20480,
+    "idle": 1,
+    "fault": 0,
+    "need_clock": 0,
+    "host_mutable_response_feeds": 0
+  },
+  "onboard_conservation": {
+    "mutable_requests": 348160,
+    "mutable_replies": 348160,
+    "mutable_response_packets": 348160,
+    "mutable_response_checks": 2785280,
+    "alias_requests": 2560,
+    "alias_replies": 2560,
+    "alias_serialized_values": 20480,
+    "bank_idle": 1,
+    "bank_fault": 0,
+    "router_fault": 0
+  },
+  "onboard_history_conservation": {
+    "requests": 1650,
+    "replies": 1650,
+    "initialized_reads": 990,
+    "initialized_commit_packets": 330,
+    "published_prefix": 5,
+    "idle": 1,
+    "fault": 0
+  },
+  "onboard_producer_conservation": {
+    "requests": 363840,
+    "replies": 363840,
+    "initialized_reads": 199680,
+    "initialized_write_ACKs": 159360,
+    "idle": 1,
+    "fault": 0
+  },
+  "onboard_metadata_conservation": {
+    "requests": 4800,
+    "replies": 4800,
+    "actual_packet_checks": 4800,
+    "idle": 1,
+    "fault": 0,
+    "need_clock": 0,
+    "host_response_feeds": 0
+  },
+  "onboard_KV_book_conservation": {
+    "requests": 153600,
+    "replies": 153600,
+    "row_checks": 153600,
+    "byte_checks": 49152000,
+    "idle": 1,
+    "fault": 0,
+    "need_clock": 0,
+    "host_response_feeds": 0
+  },
+  "onboard_tied_table_conservation": {
+    "index_requests": 206400,
+    "index_replies": 206400,
+    "index_packet_checks": 206400,
+    "index_word_checks": 6604800,
+    "embedding_requests": 25,
+    "embedding_beats": 400,
+    "head_starts": 25600,
+    "head_beats": 409600,
+    "head_commits": 25600,
+    "book_word_checks": 3280000,
+    "idle": 1,
+    "fault": 0,
+    "need_clock": 0,
+    "owner": 0,
+    "host_response_feeds": 0
+  },
+  "source_conservation": {
+    "setups": 1,
+    "requests": 363840,
+    "replies": 363840,
+    "extras": 0,
+    "fixed_requests": 153600,
+    "fixed_replies": 153600,
+    "position_requests": 2560,
+    "position_replies": 2560,
+    "fresh_offers": 2560,
+    "fresh_retired": 2560,
+    "encoded_writes": 2560,
+    "adapter_writes": 2560,
+    "code_writes": 640,
+    "KV_writes": 153600,
+    "code_reads": 38400,
+    "packets": 153600,
+    "scalars": 1228800,
+    "K_checks": 614400,
+    "V_checks": 614400,
+    "holds": 0,
+    "stale_waits": 0,
+    "late_refusals": 0,
+    "code_invariance": 30,
+    "source_releases": 1
+  },
+  "control_scope": {
+    "host_token_starts": 0,
+    "host_winner_feedback": 0,
+    "host_source_release": 0,
+    "host_encoder_release": 0,
+    "history_cap": 66,
+    "old_wrong_release_test_rerun": 0,
+    "connected_negative_suite_required": 1,
+    "host_encoder_mutable_reply_feeds": 0,
+    "host_encoded_alias_reply_feeds": 0
+  },
+  "actual_outputs": {
+    "actual-frontend-features.bin": {
+      "path": "/Users/sanju/.local/state/routevoice-internal-runs/20261014/onchip-enc/actual/actual-frontend-features.bin",
+      "bytes": 81920,
+      "sha256": "4a5a44a877b36db4ef695fe237076798720c52be88387e7c1d5cf34491e40294"
+    },
+    "actual-encoded.bin": {
+      "path": "/Users/sanju/.local/state/routevoice-internal-runs/20261014/onchip-enc/actual/actual-encoded.bin",
+      "bytes": 81920,
+      "sha256": "45af702c1fd64ef05d6abd95bb3b5406371091ffda8c8502d3dac006178b2b37"
+    },
+    "actual-adapter.bin": {
+      "path": "/Users/sanju/.local/state/routevoice-internal-runs/20261014/onchip-enc/actual/actual-adapter.bin",
+      "bytes": 81920,
+      "sha256": "bf057ae0550a7c89c3ad6ef5bae97629c761f0d6d1fd62f00617d9b0d235108c"
+    },
+    "actual-codes.bin": {
+      "path": "/Users/sanju/.local/state/routevoice-internal-runs/20261014/onchip-enc/actual/actual-codes.bin",
+      "bytes": 20480,
+      "sha256": "61ca856debf4453d04e5add275d987ecbce12d47a39135c72e38a53d3c07f638"
+    },
+    "actual-layer0-k_cross.bin": {
+      "path": "/Users/sanju/.local/state/routevoice-internal-runs/20261014/onchip-enc/actual/actual-layer0-k_cross.bin",
+      "bytes": 81920,
+      "sha256": "07e3fe48e10a178af8ba19db17de2c5bb7f6ebbc7372a5bf2b4f63a5a89821c8"
+    },
+    "actual-layer0-v_cross.bin": {
+      "path": "/Users/sanju/.local/state/routevoice-internal-runs/20261014/onchip-enc/actual/actual-layer0-v_cross.bin",
+      "bytes": 81920,
+      "sha256": "e7682674e16dbcb4eeec611dd3ed1ac7d876d9066a76319996afdf90c311f984"
+    },
+    "actual-layer1-k_cross.bin": {
+      "path": "/Users/sanju/.local/state/routevoice-internal-runs/20261014/onchip-enc/actual/actual-layer1-k_cross.bin",
+      "bytes": 81920,
+      "sha256": "dd93c06393dce87aef0ed4cd94944df7d6c33610b543af8ed4edad969d1ae614"
+    },
+    "actual-layer1-v_cross.bin": {
+      "path": "/Users/sanju/.local/state/routevoice-internal-runs/20261014/onchip-enc/actual/actual-layer1-v_cross.bin",
+      "bytes": 81920,
+      "sha256": "94b6b2ad276a811f2684436a4263f205c54bc567ce0461bd3219a38221f6cf56"
+    },
+    "actual-layer2-k_cross.bin": {
+      "path": "/Users/sanju/.local/state/routevoice-internal-runs/20261014/onchip-enc/actual/actual-layer2-k_cross.bin",
+      "bytes": 81920,
+      "sha256": "38c209060c473988b05d74ea39c00aba54c04957ad3cfdf0ab8fb4ac3092d7b4"
+    },
+    "actual-layer2-v_cross.bin": {
+      "path": "/Users/sanju/.local/state/routevoice-internal-runs/20261014/onchip-enc/actual/actual-layer2-v_cross.bin",
+      "bytes": 81920,
+      "sha256": "3d777bbc3181072c7f081d082b4896f69c591fdd39a51c7c6e5e56cc2dad4aaa"
+    },
+    "actual-layer3-k_cross.bin": {
+      "path": "/Users/sanju/.local/state/routevoice-internal-runs/20261014/onchip-enc/actual/actual-layer3-k_cross.bin",
+      "bytes": 81920,
+      "sha256": "d257af09908047949d6449788cd2034aaa0660f14f4c62bd213c56bea5188f73"
+    },
+    "actual-layer3-v_cross.bin": {
+      "path": "/Users/sanju/.local/state/routevoice-internal-runs/20261014/onchip-enc/actual/actual-layer3-v_cross.bin",
+      "bytes": 81920,
+      "sha256": "819dc71ef8571c942e45b7fbf153d46d8dbf83c21dd733d8c8e580e65da0278d"
+    },
+    "actual-layer4-k_cross.bin": {
+      "path": "/Users/sanju/.local/state/routevoice-internal-runs/20261014/onchip-enc/actual/actual-layer4-k_cross.bin",
+      "bytes": 81920,
+      "sha256": "1863cfa983f4b2c62fdece75669c8480bd1624f5d7528bdf350ddf8e6239bae8"
+    },
+    "actual-layer4-v_cross.bin": {
+      "path": "/Users/sanju/.local/state/routevoice-internal-runs/20261014/onchip-enc/actual/actual-layer4-v_cross.bin",
+      "bytes": 81920,
+      "sha256": "93fc37979e89ee1766870a9de5e620d5638fa1e115c76f52467f0100c9228cee"
+    },
+    "actual-layer5-k_cross.bin": {
+      "path": "/Users/sanju/.local/state/routevoice-internal-runs/20261014/onchip-enc/actual/actual-layer5-k_cross.bin",
+      "bytes": 81920,
+      "sha256": "9f70c21b0ec089327f37c416b87bb6d2826c291203c70296ae55d420c7d14c04"
+    },
+    "actual-layer5-v_cross.bin": {
+      "path": "/Users/sanju/.local/state/routevoice-internal-runs/20261014/onchip-enc/actual/actual-layer5-v_cross.bin",
+      "bytes": 81920,
+      "sha256": "392a6dd463829d656f0206ce370cf0f20685f99d18d51b1ba097137c84a14a45"
+    },
+    "actual-winning-tokens.bin": {
+      "path": "/Users/sanju/.local/state/routevoice-internal-runs/20261014/onchip-enc/actual/actual-winning-tokens.bin",
+      "bytes": 20,
+      "sha256": "db5ba30fbd619dd81f27fe55489118a962fa204058eecb7fb1b77bc8a416f537"
+    },
+    "actual-final-rows.bin": {
+      "path": "/Users/sanju/.local/state/routevoice-internal-runs/20261014/onchip-enc/actual/actual-final-rows.bin",
+      "bytes": 6400,
+      "sha256": "42699492fd8558a4189feef339ec607312e7043cdc4cce4992b18c2415f90d77"
+    }
+  },
+  "passed": true,
+  "services": {
+    "encoder_QKV": {
+      "rtl_replies": 368640,
+      "host_replies": 0,
+      "mismatches": 0
+    },
+    "encoder_O": {
+      "rtl_replies": 15360,
+      "host_replies": 0,
+      "mismatches": 0
+    },
+    "encoder_immutable": {
+      "rtl_replies": 1947520,
+      "host_replies": 0,
+      "mismatches": 0
+    }
+  },
+  "tokens": [
+    28176,
+    373,
+    278,
+    26068,
+    2
+  ],
+  "positive_log": "overnight-20261014/onchip-enc/logs/20261014T011032-positive.log",
+  "elapsed_seconds": 3451.00429466716,
+  "postflight_source_sha256": "532b451c2c2fbc10db67ce3e96c95381dabb60245fd22ad9eacedfa78afa5573"
+}

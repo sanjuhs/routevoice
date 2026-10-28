@@ -1,0 +1,16 @@
+ INFO nix-installer v2.35.1
+ INFO Step: Create an APFS volume `Nix Store` for Nix on `disk3` and add it to `/etc/fstab` mounting on `/nix`
+ INFO Step: Provision Nix
+ INFO Step: Create build users (UID 351-382) and group (GID 350)
+ INFO Step: Configure Time Machine exclusions
+ INFO Step: Configure Nix
+ INFO Step: Configuring zsh to support using Nix in non-interactive shells
+ INFO Step: Create a `launchctl` plist to put Nix into your PATH
+ INFO Step: Configure upstream Nix daemon service
+ INFO Step: Remove directory `/nix/temp-install-dir`
+ INFO Waiting up to 10s for Nix daemon socket
+ INFO Running self test for shell sh
+ INFO Running self test for shell bash
+ INFO Running self test for shell zsh
+Nix was installed successfully!
+To get started using Nix, open a new shell or run `. /nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh`

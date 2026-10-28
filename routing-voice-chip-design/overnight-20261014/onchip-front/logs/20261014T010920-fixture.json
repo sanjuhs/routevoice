@@ -1,0 +1,25 @@
+{
+  "stage": "fixture",
+  "command": [
+    "/usr/bin/nice",
+    "-n",
+    "10",
+    "/Users/sanju/.local/state/routevoice-internal-runs/20261014/onchip-front/obj/Vrv_allonchip_top_w1c",
+    "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/frontend",
+    "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/encoder",
+    "/Users/sanju/.local/state/routevoice-internal-runs/20261014/onchip-front/actual",
+    "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/decoder",
+    "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/self",
+    "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/cross",
+    "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/ff",
+    "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/head",
+    "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/producer",
+    "fixture"
+  ],
+  "cwd": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design",
+  "log": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/onchip-front/logs/20261014T010920-fixture.log",
+  "started": "20261014T010920",
+  "exit_code": 0,
+  "pid": 21008,
+  "elapsed_seconds": 1.4190703749191016
+}

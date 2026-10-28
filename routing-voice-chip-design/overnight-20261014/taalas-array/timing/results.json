@@ -1,0 +1,950 @@
+{
+  "scope": "Measured actual 64x32 K64 slice and physical receiver strip, separately extracted lumped capacitance with ideal zero-length joining",
+  "identity": {
+    "source_packed": "models/candidates/codebook-4bit-optimal-rectangular-k64/packed/encoder.ort-095.indices.bin",
+    "packed_sha256": "864fcdc7ec80be2dbb99d76361db338345fb02a1a26d7aaa4a1b40696b921907",
+    "rtl_sha256": "de720f1e7c93c405729025cd9395850bc75e35c3eb602a1b67c4ad58d1ed4dbf",
+    "w2b_unpacked_hash_matches": true,
+    "rtl_indices_compared": 409600,
+    "tile": 17,
+    "bank": 1,
+    "global_row_start": 1088,
+    "global_column_start": 32,
+    "maximum_connected_drains": 50,
+    "total_connected_drains": 4191,
+    "maximum_population_local_column": 26,
+    "maximum_population_bit": 3,
+    "selection_basis": "Maximum connected-drain population over 20*10 real 64x32 banks; tie break total connected drains. Proxy for load, not electrically proven worst-case. All 64 rows physically present; bounded transient rows reported separately."
+  },
+  "array_sha256": "e107a7e172731b2c5cac6ee010575e410230b558ba61db621bd50c2fdf73d202",
+  "receiver_sha256": "5211a3f04e5a7c0ec9f8c58eddc3155306f15c88bac0eabb3e002ae3cdf0bed7",
+  "cases": [
+    {
+      "corner": "typical",
+      "voltage_v": 3.3,
+      "temperature_c": 25,
+      "period_ns": 25,
+      "evaluate_start_ns": 2.5,
+      "capture_ns": 17.500000000000004,
+      "checked_bits": 1024,
+      "addressed_local_rows": [
+        0,
+        1,
+        6,
+        7,
+        15,
+        31,
+        47,
+        63
+      ],
+      "raw_70_30_failures": 0,
+      "restored_90_10_failures": 0,
+      "maximum_sampled_settled_time_ns_after_evaluate": 1.5776083999999928,
+      "mean_net_source_energy_pj_per_32_lane_row_read": 54.58468391384162,
+      "maximum_net_source_energy_pj_per_32_lane_row_read": 58.84380006553295,
+      "mean_energy_pj_per_four_bit_index": 1.7057713723075507,
+      "excludes_startup_row": 0,
+      "deck_sha256": "c8a3dd50b8a90644eababe3fafa49badc2d5929dc4d1472a205b3ca4fa93dfc2",
+      "trace_sha256": "b70324a00334249d4b291ab747c4d5ce7c8cd70bb2ad3fa1deb33f5429b819b0",
+      "wall_seconds": 39.674445083132014,
+      "rows": [
+        {
+          "local_row": 0,
+          "raw_failures": 0,
+          "restored_failures": 0,
+          "min_undischarged_bitline_fraction": 0.9999995454545455,
+          "max_discharged_bitline_fraction": 4.799440618768338e-06
+        },
+        {
+          "local_row": 1,
+          "raw_failures": 0,
+          "restored_failures": 0,
+          "min_undischarged_bitline_fraction": 0.9999995757575758,
+          "max_discharged_bitline_fraction": 6.17287337885624e-06
+        },
+        {
+          "local_row": 6,
+          "raw_failures": 0,
+          "restored_failures": 0,
+          "min_undischarged_bitline_fraction": 0.9999994799763443,
+          "max_discharged_bitline_fraction": 4.53867603848659e-06
+        },
+        {
+          "local_row": 7,
+          "raw_failures": 0,
+          "restored_failures": 0,
+          "min_undischarged_bitline_fraction": 0.9999994636363637,
+          "max_discharged_bitline_fraction": 4.275632239375755e-06
+        },
+        {
+          "local_row": 15,
+          "raw_failures": 0,
+          "restored_failures": 0,
+          "min_undischarged_bitline_fraction": 0.9999995181818183,
+          "max_discharged_bitline_fraction": 4.184562040655997e-06
+        },
+        {
+          "local_row": 31,
+          "raw_failures": 0,
+          "restored_failures": 0,
+          "min_undischarged_bitline_fraction": 0.9999995,
+          "max_discharged_bitline_fraction": 5.054831827877448e-06
+        },
+        {
+          "local_row": 47,
+          "raw_failures": 0,
+          "restored_failures": 0,
+          "min_undischarged_bitline_fraction": 0.9999994787878789,
+          "max_discharged_bitline_fraction": 3.1287681879144194e-06
+        },
+        {
+          "local_row": 63,
+          "raw_failures": 0,
+          "restored_failures": 0,
+          "min_undischarged_bitline_fraction": 0.9999994585957213,
+          "max_discharged_bitline_fraction": 2.4192887202742905e-06
+        }
+      ]
+    },
+    {
+      "corner": "ss",
+      "voltage_v": 2.97,
+      "temperature_c": 125,
+      "period_ns": 25,
+      "evaluate_start_ns": 2.5,
+      "capture_ns": 17.500000000000004,
+      "checked_bits": 1024,
+      "addressed_local_rows": [
+        0,
+        1,
+        6,
+        7,
+        15,
+        31,
+        47,
+        63
+      ],
+      "raw_70_30_failures": 0,
+      "restored_90_10_failures": 0,
+      "maximum_sampled_settled_time_ns_after_evaluate": 2.4236961499999996,
+      "mean_net_source_energy_pj_per_32_lane_row_read": 44.405356863382636,
+      "maximum_net_source_energy_pj_per_32_lane_row_read": 47.852365161668494,
+      "mean_energy_pj_per_four_bit_index": 1.3876674019807074,
+      "excludes_startup_row": 0,
+      "deck_sha256": "94500d059824aec622327111ec67f8463c935a3f7448580c8692059ecc4d8dbc",
+      "trace_sha256": "50fe3c3cfe8965f8fb3d973355cb9023d321ef9bd9b62c2d0f4842f6f404a42b",
+      "wall_seconds": 37.14880820806138,
+      "rows": [
+        {
+          "local_row": 0,
+          "raw_failures": 0,
+          "restored_failures": 0,
+          "min_undischarged_bitline_fraction": 0.9999957403566477,
+          "max_discharged_bitline_fraction": 1.1096920647545223e-05
+        },
+        {
+          "local_row": 1,
+          "raw_failures": 0,
+          "restored_failures": 0,
+          "min_undischarged_bitline_fraction": 0.9999965480328417,
+          "max_discharged_bitline_fraction": 1.4168169599997909e-05
+        },
+        {
+          "local_row": 6,
+          "raw_failures": 0,
+          "restored_failures": 0,
+          "min_undischarged_bitline_fraction": 0.9999949749656188,
+          "max_discharged_bitline_fraction": 9.757222670425206e-06
+        },
+        {
+          "local_row": 7,
+          "raw_failures": 0,
+          "restored_failures": 0,
+          "min_undischarged_bitline_fraction": 0.9999955441382976,
+          "max_discharged_bitline_fraction": 9.44315426719724e-06
+        },
+        {
+          "local_row": 15,
+          "raw_failures": 0,
+          "restored_failures": 0,
+          "min_undischarged_bitline_fraction": 0.9999960438296565,
+          "max_discharged_bitline_fraction": 9.820529672447127e-06
+        },
+        {
+          "local_row": 31,
+          "raw_failures": 0,
+          "restored_failures": 0,
+          "min_undischarged_bitline_fraction": 0.9999959809282155,
+          "max_discharged_bitline_fraction": 1.1210915774692252e-05
+        },
+        {
+          "local_row": 47,
+          "raw_failures": 0,
+          "restored_failures": 0,
+          "min_undischarged_bitline_fraction": 0.999995252196633,
+          "max_discharged_bitline_fraction": 7.124483171812772e-06
+        },
+        {
+          "local_row": 63,
+          "raw_failures": 0,
+          "restored_failures": 0,
+          "min_undischarged_bitline_fraction": 0.999995490930101,
+          "max_discharged_bitline_fraction": 5.553576270809423e-06
+        }
+      ]
+    },
+    {
+      "corner": "typical",
+      "voltage_v": 3.3,
+      "temperature_c": 25,
+      "period_ns": 20,
+      "evaluate_start_ns": 2.5,
+      "capture_ns": 12.500000000000002,
+      "checked_bits": 1024,
+      "addressed_local_rows": [
+        0,
+        1,
+        6,
+        7,
+        15,
+        31,
+        47,
+        63
+      ],
+      "raw_70_30_failures": 0,
+      "restored_90_10_failures": 0,
+      "maximum_sampled_settled_time_ns_after_evaluate": 1.5723297300000003,
+      "mean_net_source_energy_pj_per_32_lane_row_read": 54.58516001735507,
+      "maximum_net_source_energy_pj_per_32_lane_row_read": 58.841283194620125,
+      "mean_energy_pj_per_four_bit_index": 1.705786250542346,
+      "excludes_startup_row": 0,
+      "deck_sha256": "5e6471a23e7e87e27d93558cf7c9d4c4064a4af4d99c46df64de857a382dd7d7",
+      "trace_sha256": "07070034571fe23999c0574153905531fadb926f81322bc55258118dbd8013d9",
+      "wall_seconds": 37.18380325008184,
+      "rows": [
+        {
+          "local_row": 0,
+          "raw_failures": 0,
+          "restored_failures": 0,
+          "min_undischarged_bitline_fraction": 0.9999982241194425,
+          "max_discharged_bitline_fraction": 7.321913479350399e-06
+        },
+        {
+          "local_row": 1,
+          "raw_failures": 0,
+          "restored_failures": 0,
+          "min_undischarged_bitline_fraction": 0.999998852763971,
+          "max_discharged_bitline_fraction": 9.497922903297834e-06
+        },
+        {
+          "local_row": 6,
+          "raw_failures": 0,
+          "restored_failures": 0,
+          "min_undischarged_bitline_fraction": 0.9999982099894219,
+          "max_discharged_bitline_fraction": 6.753934498582387e-06
+        },
+        {
+          "local_row": 7,
+          "raw_failures": 0,
+          "restored_failures": 0,
+          "min_undischarged_bitline_fraction": 0.999998667046868,
+          "max_discharged_bitline_fraction": 6.562854375450942e-06
+        },
+        {
+          "local_row": 15,
+          "raw_failures": 0,
+          "restored_failures": 0,
+          "min_undischarged_bitline_fraction": 0.9999986984368437,
+          "max_discharged_bitline_fraction": 6.6672891891894755e-06
+        },
+        {
+          "local_row": 31,
+          "raw_failures": 0,
+          "restored_failures": 0,
+          "min_undischarged_bitline_fraction": 0.9999986246470789,
+          "max_discharged_bitline_fraction": 8.027736437396006e-06
+        },
+        {
+          "local_row": 47,
+          "raw_failures": 0,
+          "restored_failures": 0,
+          "min_undischarged_bitline_fraction": 0.9999982786737819,
+          "max_discharged_bitline_fraction": 4.7678962472891925e-06
+        },
+        {
+          "local_row": 63,
+          "raw_failures": 0,
+          "restored_failures": 0,
+          "min_undischarged_bitline_fraction": 0.9999984858344243,
+          "max_discharged_bitline_fraction": 3.5829636432205998e-06
+        }
+      ]
+    },
+    {
+      "corner": "ss",
+      "voltage_v": 2.97,
+      "temperature_c": 125,
+      "period_ns": 20,
+      "evaluate_start_ns": 2.5,
+      "capture_ns": 12.500000000000002,
+      "checked_bits": 1024,
+      "addressed_local_rows": [
+        0,
+        1,
+        6,
+        7,
+        15,
+        31,
+        47,
+        63
+      ],
+      "raw_70_30_failures": 0,
+      "restored_90_10_failures": 0,
+      "maximum_sampled_settled_time_ns_after_evaluate": 2.4236961499999996,
+      "mean_net_source_energy_pj_per_32_lane_row_read": 44.40475066362883,
+      "maximum_net_source_energy_pj_per_32_lane_row_read": 47.85228284746523,
+      "mean_energy_pj_per_four_bit_index": 1.387648458238401,
+      "excludes_startup_row": 0,
+      "deck_sha256": "eeba4c6ba30693263cbc9de80b56fc8ae2b73cc6149b4a3f2873fd73d7ad9885",
+      "trace_sha256": "282140019d37ef83cb2bfacab3337901256e67b1db4b0fb6a63248d0da2fd1cd",
+      "wall_seconds": 33.67912737512961,
+      "rows": [
+        {
+          "local_row": 0,
+          "raw_failures": 0,
+          "restored_failures": 0,
+          "min_undischarged_bitline_fraction": 0.999859345363771,
+          "max_discharged_bitline_fraction": 3.80588466707605e-05
+        },
+        {
+          "local_row": 1,
+          "raw_failures": 0,
+          "restored_failures": 0,
+          "min_undischarged_bitline_fraction": 0.9998671844391783,
+          "max_discharged_bitline_fraction": 2.7392699365018586e-05
+        },
+        {
+          "local_row": 6,
+          "raw_failures": 0,
+          "restored_failures": 0,
+          "min_undischarged_bitline_fraction": 0.9998697935513345,
+          "max_discharged_bitline_fraction": 2.559311103051873e-05
+        },
+        {
+          "local_row": 7,
+          "raw_failures": 0,
+          "restored_failures": 0,
+          "min_undischarged_bitline_fraction": 0.9998569796058047,
+          "max_discharged_bitline_fraction": 2.6304509227995696e-05
+        },
+        {
+          "local_row": 15,
+          "raw_failures": 0,
+          "restored_failures": 0,
+          "min_undischarged_bitline_fraction": 0.9998654688048673,
+          "max_discharged_bitline_fraction": 2.7632317947527934e-05
+        },
+        {
+          "local_row": 31,
+          "raw_failures": 0,
+          "restored_failures": 0,
+          "min_undischarged_bitline_fraction": 0.9998963328748955,
+          "max_discharged_bitline_fraction": 2.1484956339569357e-05
+        },
+        {
+          "local_row": 47,
+          "raw_failures": 0,
+          "restored_failures": 0,
+          "min_undischarged_bitline_fraction": 0.9998912805589899,
+          "max_discharged_bitline_fraction": 2.059150380678916e-05
+        },
+        {
+          "local_row": 63,
+          "raw_failures": 0,
+          "restored_failures": 0,
+          "min_undischarged_bitline_fraction": 0.9998555669689158,
+          "max_discharged_bitline_fraction": 2.115358653645266e-05
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "Highest connected-drain population is a risk proxy, not electrically proven worst-case column",
+    "No distributed wire resistance",
+    "Ideal WL, precharge and supply drivers",
+    "Separate array and receiver geometries joined by ideal zero-length wires",
+    "Only 32 lanes; full 320-lane wordline loading and global clock/precharge distribution excluded",
+    "10fF assumed output loads; latch and bank mux timing/energy absent",
+    "No complete macro row-read time, macro energy or real-time recognizer proof"
+  ],
+  "layout_checks": {
+    "drc_markers": 0,
+    "drc_scope": "FEOL BEOL connectivity offgrid; excludes antenna/density",
+    "extracted_bit_tuples_matched": 8192,
+    "physical_lvs": "Exact extracted device and frozen-bit connectivity graph comparison, not independent LVS"
+  },
+  "capacitance": {
+    "scope": "Sum of incident extracted lumped coupling/ground capacitance per bitline; does not include MOS intrinsic capacitance or distributed R",
+    "minimum_ff": 22.836369999999974,
+    "maximum_ff": 36.53484,
+    "maximum_node": "IDX26_3",
+    "population_selected_node": "IDX26_3",
+    "population_selected_node_ff": 36.53484,
+    "all_bitline_incident_ff": {
+      "IDX1_0": 32.78718000000002,
+      "IDX18_1": 32.92474000000003,
+      "IDX24_1": 32.32744000000003,
+      "IDX14_0": 31.615360000000024,
+      "IDX8_2": 33.13304000000004,
+      "IDX6_0": 31.371660000000027,
+      "IDX17_1": 31.95052000000001,
+      "IDX25_1": 32.785120000000035,
+      "IDX9_1": 32.59264000000002,
+      "IDX23_1": 32.940430000000035,
+      "IDX27_1": 31.874370000000027,
+      "IDX17_3": 31.076350000000055,
+      "IDX6_3": 33.57031000000001,
+      "IDX2_0": 33.51439000000002,
+      "IDX31_1": 32.04374000000001,
+      "IDX19_3": 27.91451000000004,
+      "IDX31_2": 31.697180000000003,
+      "IDX17_0": 32.68419000000001,
+      "IDX3_3": 28.45029000000005,
+      "IDX17_2": 33.566740000000024,
+      "IDX31_0": 31.069159999999986,
+      "IDX25_0": 34.288480000000035,
+      "IDX20_2": 30.795030000000015,
+      "IDX15_1": 32.25954000000002,
+      "IDX2_3": 32.19647000000001,
+      "IDX4_2": 31.23177,
+      "IDX23_3": 26.159550000000028,
+      "IDX24_2": 32.34933000000004,
+      "IDX26_1": 31.56484000000001,
+      "IDX15_0": 32.30260000000001,
+      "IDX5_1": 31.12958000000004,
+      "IDX14_1": 32.783820000000034,
+      "IDX14_2": 32.78510000000002,
+      "IDX10_3": 34.39136000000001,
+      "IDX31_3": 22.836369999999974,
+      "IDX10_1": 32.296210000000016,
+      "IDX16_0": 27.275670000000027,
+      "IDX0_2": 34.16090000000004,
+      "IDX29_2": 32.34463000000002,
+      "IDX19_2": 33.25356000000003,
+      "IDX3_1": 34.30204000000003,
+      "IDX30_0": 33.02208000000001,
+      "IDX12_3": 31.81474000000001,
+      "IDX21_0": 32.92809000000002,
+      "IDX1_1": 32.245910000000016,
+      "IDX27_3": 27.965930000000025,
+      "IDX0_3": 29.81178000000002,
+      "IDX22_0": 32.73158000000002,
+      "IDX19_0": 31.62225000000001,
+      "IDX13_1": 32.245800000000045,
+      "IDX9_2": 31.025720000000014,
+      "IDX21_1": 31.809670000000033,
+      "IDX27_0": 33.17543000000002,
+      "IDX8_1": 31.002680000000016,
+      "IDX18_2": 31.66879,
+      "IDX15_2": 33.112000000000045,
+      "IDX13_3": 32.539110000000015,
+      "IDX7_0": 32.79052000000001,
+      "IDX21_2": 31.46179000000002,
+      "IDX26_2": 33.36227000000002,
+      "IDX23_2": 32.816180000000045,
+      "IDX30_3": 32.762760000000064,
+      "IDX28_1": 32.03160000000002,
+      "IDX5_2": 33.36092000000002,
+      "IDX12_1": 31.34996000000002,
+      "IDX28_2": 32.31105000000002,
+      "IDX6_1": 32.57806000000003,
+      "IDX11_1": 32.50370000000004,
+      "IDX24_3": 32.546600000000026,
+      "IDX8_3": 32.25115000000002,
+      "IDX20_3": 32.79041000000001,
+      "IDX12_2": 33.184510000000024,
+      "IDX18_3": 34.25037000000001,
+      "IDX15_3": 25.99811000000002,
+      "IDX10_0": 32.59063000000002,
+      "IDX14_3": 33.172010000000014,
+      "IDX24_0": 26.05659000000002,
+      "IDX20_1": 32.81622000000002,
+      "IDX3_0": 32.54660000000002,
+      "IDX25_2": 32.68093000000003,
+      "IDX20_0": 27.701500000000006,
+      "IDX26_0": 32.192450000000036,
+      "IDX11_3": 26.959780000000034,
+      "IDX30_2": 32.045990000000046,
+      "IDX2_1": 32.10383000000002,
+      "IDX22_2": 32.784990000000036,
+      "IDX4_3": 34.53607000000002,
+      "IDX0_0": 27.30768999999999,
+      "IDX18_0": 31.704810000000023,
+      "IDX13_0": 32.00401000000003,
+      "IDX1_3": 33.70677000000002,
+      "IDX9_3": 31.563980000000022,
+      "IDX26_3": 36.53484,
+      "IDX4_0": 26.959829999999997,
+      "IDX27_2": 33.343570000000035,
+      "IDX29_1": 31.51216000000002,
+      "IDX25_3": 31.666870000000007,
+      "IDX22_1": 31.07716000000003,
+      "IDX7_2": 31.787250000000032,
+      "IDX7_3": 28.185940000000034,
+      "IDX16_2": 32.40069000000006,
+      "IDX22_3": 31.41343000000006,
+      "IDX28_3": 32.879970000000014,
+      "IDX5_0": 31.65726,
+      "IDX1_2": 32.34765000000002,
+      "IDX23_0": 33.47087000000002,
+      "IDX29_0": 33.02928,
+      "IDX19_1": 32.45224000000001,
+      "IDX13_2": 31.949370000000016,
+      "IDX10_2": 31.32199000000003,
+      "IDX4_1": 33.253530000000005,
+      "IDX29_3": 32.43275000000003,
+      "IDX0_1": 32.906230000000015,
+      "IDX12_0": 26.53396000000002,
+      "IDX2_2": 32.438230000000004,
+      "IDX3_2": 30.23094000000002,
+      "IDX21_3": 32.10305000000002,
+      "IDX30_1": 33.701200000000014,
+      "IDX11_0": 31.67370000000002,
+      "IDX5_3": 33.899100000000026,
+      "IDX8_0": 27.650140000000047,
+      "IDX6_2": 32.156440000000025,
+      "IDX16_1": 33.150540000000035,
+      "IDX9_0": 32.44034,
+      "IDX16_3": 31.134370000000004,
+      "IDX11_2": 31.735790000000037,
+      "IDX7_1": 32.15670000000002,
+      "IDX28_0": 27.01125
+    }
+  },
+  "complete_macro_read_time_ns": null,
+  "complete_macro_energy_pj_per_1280_bit_row": null,
+  "schedule": {
+    "index_reads_per_projection": 1280,
+    "integer_engine_cycles": 4160,
+    "fp32_engine_cycles": 4163,
+    "source_contract": "overnight-20261014/fabric-k64/CONTRACT.md",
+    "at_20ns": {
+      "sequential_index_read_time_us": 25.6,
+      "integer_engine_time_us": 83.2,
+      "fp32_engine_time_us": 83.26
+    },
+    "at_25ns": {
+      "sequential_index_read_time_us": 32.0,
+      "integer_engine_time_us": 104.0,
+      "fp32_engine_time_us": 104.075
+    },
+    "interpretation": "Arithmetic durations if the entire integrated system meets chosen period. 4160 is engine cycles, not row reads. These partial slice measurements cannot establish loaded macro timing or complete real-time recognizer throughput."
+  },
+  "provenance": {
+    "overnight-20261014/taalas-array/timing/prepare_slice.py": "09d44fd14899916a859337c676962e5c472c73a2e3f6ec0bc4afadb2730228d8",
+    "overnight-20261014/taalas-array/timing/generate_slice.py": "79fe8139cd29ba8d54119b7f51ac76ba6fdf748d8c93273129ad06dbd646bb0d",
+    "overnight-20261014/taalas-array/timing/check_slice.py": "11ef9452d884efa64b3dd5353e359cd168b18174b100abeb171c37b2f10899c9",
+    "overnight-20261014/taalas-array/timing/simulate_slice.py": "ead13f061f3eee4ccd2f7757015e73bd16c7b41c3301ef011a3de840f775824d",
+    "overnight-20261014/taalas-array/timing/index-array.gds": "407400c8d6e6d10623b12ab7cb803f20a188314378c23dde81f0f047a3377da2",
+    "overnight-20261014/taalas-array/timing/index-array.spice": "38e260d1821dd1c09ce6d9fc91000515f1f26a3cf87b1769e143c1152f0f0d5a",
+    "pdks/gf180mcuD/libs.tech/ngspice/design.ngspice": "091cb530bf85160a1f07878fb81f789ca367d018991c8ab41a584cd1a85c6692",
+    "pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice": "677822db50bf8968f77854bb455006ac5c245deb46ecfc8b352934e752135c46",
+    "experiments/taalas-access/main.drc": "d30bf2852c3fd568e125c8b326729524c90eb263860492105f4faa27a18a33f0"
+  },
+  "joined_bank0": {
+    "scope": "Measured physical joined bank0 array and receiver strip with actual routed join capacitance",
+    "array_sha256": "f2121955fc4c8dbb53fdbb09b30480a715c42edfc5107883348b4cf0cc30eb19",
+    "image_region": {
+      "rows": [
+        0,
+        64
+      ],
+      "columns": [
+        0,
+        32
+      ]
+    },
+    "layout_checks": {
+      "input_source": "overnight-20261014/taalas-array/integrated/joined-bank0.gds",
+      "input_sha256": "46a2d5e173ea7e735f9e8770728a7922bbc3b375b2cc8554cd0b7b9eb2b01f46",
+      "drc_markers": 0,
+      "categories": {},
+      "drc_scope": "FEOL BEOL connectivity offgrid; excludes antenna/density"
+    },
+    "netgen_lvs": {
+      "circuits_match_uniquely": true,
+      "reference_transistors": 8704,
+      "scope": "Independent native Netgen transistor schematic vs flattened Magic layout with unique existing nodes promoted as pins; vendor setup",
+      "comparison_sha256": "0b7d9d63fff62724a819ae1548758d86302e06eb8911edef6e0242d80fd42a3e",
+      "property_error_summary_present": false,
+      "pass": true,
+      "canonicalization": "Bijection over4454 existing node names; no merges; lvs-node-bijection.json"
+    },
+    "netgen_negative_control": {
+      "negative_control": "First access device width doubled from0.36um to0.72um in independent reference only",
+      "mismatch_detected": true,
+      "interpretation": "Netgen can print circuits match uniquely for topology while separately reporting device property errors. Negative width change triggers that property error; both conditions checked separately."
+    },
+    "cases": [
+      {
+        "corner": "typical",
+        "voltage_v": 3.3,
+        "temperature_c": 25,
+        "period_ns": 25,
+        "evaluate_start_ns": 2.5,
+        "capture_ns": 17.500000000000004,
+        "checked_bits": 1024,
+        "addressed_local_rows": [
+          0,
+          1,
+          6,
+          7,
+          15,
+          31,
+          47,
+          63
+        ],
+        "raw_70_30_failures": 0,
+        "restored_90_10_failures": 0,
+        "maximum_sampled_settled_time_ns_after_evaluate": 2.975845999999986,
+        "mean_net_source_energy_pj_per_32_lane_row_read": 77.71682449619935,
+        "maximum_net_source_energy_pj_per_32_lane_row_read": 85.08676301974631,
+        "mean_energy_pj_per_four_bit_index": 2.4286507655062297,
+        "excludes_startup_row": 0,
+        "deck_sha256": "e46c434db802ab1d1c35296a28f10a8813a58c20e224b724c53b732b8d211a6b",
+        "trace_sha256": "254d8be0ea835ee30ac55a204e62625dffdb2c7566289491238b66f665bb5766",
+        "wall_seconds": 39.78021112503484,
+        "rows": [
+          {
+            "local_row": 0,
+            "raw_failures": 0,
+            "restored_failures": 0,
+            "min_undischarged_bitline_fraction": 0.9995907058607467,
+            "max_discharged_bitline_fraction": 8.230271212055487e-05
+          },
+          {
+            "local_row": 1,
+            "raw_failures": 0,
+            "restored_failures": 0,
+            "min_undischarged_bitline_fraction": 0.9996673282922474,
+            "max_discharged_bitline_fraction": 8.137558965101372e-05
+          },
+          {
+            "local_row": 6,
+            "raw_failures": 0,
+            "restored_failures": 0,
+            "min_undischarged_bitline_fraction": 0.9996108837080437,
+            "max_discharged_bitline_fraction": 7.770241914080726e-05
+          },
+          {
+            "local_row": 7,
+            "raw_failures": 0,
+            "restored_failures": 0,
+            "min_undischarged_bitline_fraction": 0.999687312494017,
+            "max_discharged_bitline_fraction": 9.177101367613747e-05
+          },
+          {
+            "local_row": 15,
+            "raw_failures": 0,
+            "restored_failures": 0,
+            "min_undischarged_bitline_fraction": 0.9997473282433941,
+            "max_discharged_bitline_fraction": 7.598916320700086e-05
+          },
+          {
+            "local_row": 31,
+            "raw_failures": 0,
+            "restored_failures": 0,
+            "min_undischarged_bitline_fraction": 0.9996282167477092,
+            "max_discharged_bitline_fraction": 7.813231341817016e-05
+          },
+          {
+            "local_row": 47,
+            "raw_failures": 0,
+            "restored_failures": 0,
+            "min_undischarged_bitline_fraction": 0.9997171380717091,
+            "max_discharged_bitline_fraction": 7.078422106723523e-05
+          },
+          {
+            "local_row": 63,
+            "raw_failures": 0,
+            "restored_failures": 0,
+            "min_undischarged_bitline_fraction": 0.9996380610750546,
+            "max_discharged_bitline_fraction": 6.159697619673187e-05
+          }
+        ]
+      },
+      {
+        "corner": "ss",
+        "voltage_v": 2.97,
+        "temperature_c": 125,
+        "period_ns": 25,
+        "evaluate_start_ns": 2.5,
+        "capture_ns": 17.500000000000004,
+        "checked_bits": 1024,
+        "addressed_local_rows": [
+          0,
+          1,
+          6,
+          7,
+          15,
+          31,
+          47,
+          63
+        ],
+        "raw_70_30_failures": 0,
+        "restored_90_10_failures": 0,
+        "maximum_sampled_settled_time_ns_after_evaluate": 4.37762499999998,
+        "mean_net_source_energy_pj_per_32_lane_row_read": 62.375217772951196,
+        "maximum_net_source_energy_pj_per_32_lane_row_read": 68.15506114482385,
+        "mean_energy_pj_per_four_bit_index": 1.9492255554047249,
+        "excludes_startup_row": 0,
+        "deck_sha256": "bb96b661bf2d0e92e712aadba11d1780aa458cad26a6319fbc4ed3eab6cf1bac",
+        "trace_sha256": "632cd75d09fdddc3f3c0a3e351582ea975843b207bcd33c81117f6784053c5ab",
+        "wall_seconds": 40.74131375015713,
+        "rows": [
+          {
+            "local_row": 0,
+            "raw_failures": 0,
+            "restored_failures": 0,
+            "min_undischarged_bitline_fraction": 0.9941465543255205,
+            "max_discharged_bitline_fraction": 0.0013287275825715223
+          },
+          {
+            "local_row": 1,
+            "raw_failures": 0,
+            "restored_failures": 0,
+            "min_undischarged_bitline_fraction": 0.9929601884169911,
+            "max_discharged_bitline_fraction": 0.0017465921137490622
+          },
+          {
+            "local_row": 6,
+            "raw_failures": 0,
+            "restored_failures": 0,
+            "min_undischarged_bitline_fraction": 0.9936682968888888,
+            "max_discharged_bitline_fraction": 0.0017216429407777693
+          },
+          {
+            "local_row": 7,
+            "raw_failures": 0,
+            "restored_failures": 0,
+            "min_undischarged_bitline_fraction": 0.9934134875080404,
+            "max_discharged_bitline_fraction": 0.0018993379103825216
+          },
+          {
+            "local_row": 15,
+            "raw_failures": 0,
+            "restored_failures": 0,
+            "min_undischarged_bitline_fraction": 0.9943269007572929,
+            "max_discharged_bitline_fraction": 0.0016790880474168793
+          },
+          {
+            "local_row": 31,
+            "raw_failures": 0,
+            "restored_failures": 0,
+            "min_undischarged_bitline_fraction": 0.9939072968409697,
+            "max_discharged_bitline_fraction": 0.0013444237680889917
+          },
+          {
+            "local_row": 47,
+            "raw_failures": 0,
+            "restored_failures": 0,
+            "min_undischarged_bitline_fraction": 0.9938870186767678,
+            "max_discharged_bitline_fraction": 0.0013514733245471148
+          },
+          {
+            "local_row": 63,
+            "raw_failures": 0,
+            "restored_failures": 0,
+            "min_undischarged_bitline_fraction": 0.994547512381899,
+            "max_discharged_bitline_fraction": 0.0014714371617049104
+          }
+        ]
+      },
+      {
+        "corner": "typical",
+        "voltage_v": 3.3,
+        "temperature_c": 25,
+        "period_ns": 20,
+        "evaluate_start_ns": 2.5,
+        "capture_ns": 12.500000000000002,
+        "checked_bits": 1024,
+        "addressed_local_rows": [
+          0,
+          1,
+          6,
+          7,
+          15,
+          31,
+          47,
+          63
+        ],
+        "raw_70_30_failures": 0,
+        "restored_90_10_failures": 0,
+        "maximum_sampled_settled_time_ns_after_evaluate": 2.9758479999999934,
+        "mean_net_source_energy_pj_per_32_lane_row_read": 77.70851794466924,
+        "maximum_net_source_energy_pj_per_32_lane_row_read": 85.07724575007788,
+        "mean_energy_pj_per_four_bit_index": 2.4283911857709137,
+        "excludes_startup_row": 0,
+        "deck_sha256": "1ef53b34a905a7d463d9cb97ee7dc24289f9103527400a653b27efd95764a7d4",
+        "trace_sha256": "773878bd7daa2cc602a9c2318f23047af73bb638f71f19e22cbf57f8b4fc517d",
+        "wall_seconds": 39.556383749935776,
+        "rows": [
+          {
+            "local_row": 0,
+            "raw_failures": 0,
+            "restored_failures": 0,
+            "min_undischarged_bitline_fraction": 0.9948123744784255,
+            "max_discharged_bitline_fraction": 0.0011586524288506738
+          },
+          {
+            "local_row": 1,
+            "raw_failures": 0,
+            "restored_failures": 0,
+            "min_undischarged_bitline_fraction": 0.9936899283773697,
+            "max_discharged_bitline_fraction": 0.0015103793797269596
+          },
+          {
+            "local_row": 6,
+            "raw_failures": 0,
+            "restored_failures": 0,
+            "min_undischarged_bitline_fraction": 0.9944228111000171,
+            "max_discharged_bitline_fraction": 0.0014807394770431047
+          },
+          {
+            "local_row": 7,
+            "raw_failures": 0,
+            "restored_failures": 0,
+            "min_undischarged_bitline_fraction": 0.9941224652091831,
+            "max_discharged_bitline_fraction": 0.0016517464816991811
+          },
+          {
+            "local_row": 15,
+            "raw_failures": 0,
+            "restored_failures": 0,
+            "min_undischarged_bitline_fraction": 0.9950098327316486,
+            "max_discharged_bitline_fraction": 0.0014400431070140595
+          },
+          {
+            "local_row": 31,
+            "raw_failures": 0,
+            "restored_failures": 0,
+            "min_undischarged_bitline_fraction": 0.9945656449050182,
+            "max_discharged_bitline_fraction": 0.0011801056752966828
+          },
+          {
+            "local_row": 47,
+            "raw_failures": 0,
+            "restored_failures": 0,
+            "min_undischarged_bitline_fraction": 0.9945719308390789,
+            "max_discharged_bitline_fraction": 0.001175206281780058
+          },
+          {
+            "local_row": 63,
+            "raw_failures": 0,
+            "restored_failures": 0,
+            "min_undischarged_bitline_fraction": 0.995174415661285,
+            "max_discharged_bitline_fraction": 0.0012649811296937556
+          }
+        ]
+      },
+      {
+        "corner": "ss",
+        "voltage_v": 2.97,
+        "temperature_c": 125,
+        "period_ns": 20,
+        "evaluate_start_ns": 2.5,
+        "capture_ns": 12.500000000000002,
+        "checked_bits": 1024,
+        "addressed_local_rows": [
+          0,
+          1,
+          6,
+          7,
+          15,
+          31,
+          47,
+          63
+        ],
+        "raw_70_30_failures": 0,
+        "restored_90_10_failures": 0,
+        "maximum_sampled_settled_time_ns_after_evaluate": 4.390495299999998,
+        "mean_net_source_energy_pj_per_32_lane_row_read": 62.274524626290145,
+        "maximum_net_source_energy_pj_per_32_lane_row_read": 68.01923506305137,
+        "mean_energy_pj_per_four_bit_index": 1.946078894571567,
+        "excludes_startup_row": 0,
+        "deck_sha256": "7dd91b91c6dd68939f0c0cc6bc20561037a02ad6c144828107b7009121f75405",
+        "trace_sha256": "5d791f9044fc75cb0a199daba57d580b490a952d4dc8ebb4e7093f4946161a93",
+        "wall_seconds": 32.62740787491202,
+        "rows": [
+          {
+            "local_row": 0,
+            "raw_failures": 0,
+            "restored_failures": 0,
+            "min_undischarged_bitline_fraction": 0.9601441745913764,
+            "max_discharged_bitline_fraction": 0.007841876414627903
+          },
+          {
+            "local_row": 1,
+            "raw_failures": 0,
+            "restored_failures": 0,
+            "min_undischarged_bitline_fraction": 0.9539206341971285,
+            "max_discharged_bitline_fraction": 0.011302402118327762
+          },
+          {
+            "local_row": 6,
+            "raw_failures": 0,
+            "restored_failures": 0,
+            "min_undischarged_bitline_fraction": 0.9581659593743204,
+            "max_discharged_bitline_fraction": 0.011114936995598205
+          },
+          {
+            "local_row": 7,
+            "raw_failures": 0,
+            "restored_failures": 0,
+            "min_undischarged_bitline_fraction": 0.9570329464685603,
+            "max_discharged_bitline_fraction": 0.012091044919879662
+          },
+          {
+            "local_row": 15,
+            "raw_failures": 0,
+            "restored_failures": 0,
+            "min_undischarged_bitline_fraction": 0.9608138151675151,
+            "max_discharged_bitline_fraction": 0.010921922288586938
+          },
+          {
+            "local_row": 31,
+            "raw_failures": 0,
+            "restored_failures": 0,
+            "min_undischarged_bitline_fraction": 0.9578534134521212,
+            "max_discharged_bitline_fraction": 0.008039336210329434
+          },
+          {
+            "local_row": 47,
+            "raw_failures": 0,
+            "restored_failures": 0,
+            "min_undischarged_bitline_fraction": 0.9591013518141686,
+            "max_discharged_bitline_fraction": 0.00825904231944962
+          },
+          {
+            "local_row": 63,
+            "raw_failures": 0,
+            "restored_failures": 0,
+            "min_undischarged_bitline_fraction": 0.9615304699428959,
+            "max_discharged_bitline_fraction": 0.009908511123970303
+          }
+        ]
+      }
+    ],
+    "limitations": [
+      "Bank0 geometry is tested; not worst-bank timing proof",
+      "No distributed wire resistance",
+      "Ideal WL, precharge and supply drivers",
+      "Only 32 lanes; full 320-lane wordline loading and global clock/precharge distribution excluded",
+      "10fF assumed output loads; latch and bank mux timing/energy absent",
+      "No complete macro row-read time, macro energy or real-time recognizer proof"
+    ],
+    "complete_macro_read_time_ns": null,
+    "complete_macro_energy_pj": null
+  },
+  "joined_bank0_report": "joined-bank0-v2/RESULTS.md"
+}

@@ -1,0 +1,189 @@
+{
+  "protocol": {
+    "period_ns": 60.0,
+    "pc_off_ns": 14.0,
+    "wl_start_ns": 18.0,
+    "wl_fall_start_ns": 57.8,
+    "wl_fall_end_ns": 58.0,
+    "pc_on_start_ns": 59.8,
+    "sample_ns": [
+      54.0,
+      59.5
+    ],
+    "edge_ns": 0.2,
+    "phase_family": "pre2std4;14/60fraction precharge plus fixed4ns guard"
+  },
+  "rows": 320,
+  "selected": [
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63
+  ],
+  "addresses": [
+    0,
+    319,
+    316,
+    179,
+    91,
+    92,
+    318,
+    0,
+    319,
+    316,
+    179,
+    91,
+    92,
+    318
+  ],
+  "base_sequence": [
+    0,
+    319,
+    316,
+    179,
+    91,
+    92,
+    318
+  ],
+  "base_sequence_length": 7,
+  "active_rows": [
+    0,
+    91,
+    92,
+    179,
+    316,
+    318,
+    319
+  ],
+  "segments": 32,
+  "array_devices": 5120,
+  "receiver_devices": 512,
+  "driver_hashes": {
+    "4": "0d12ca9bfc5db3e194a792b2654c4fc0b46e2d4b08d286345683b2920ec31c1b",
+    "20": "d0075017b8f30dd09ef50f53e6b2acbf68c7d52c0506a0b19b9acff1609965d4"
+  },
+  "source_gds_sha256": "7422489c818edaa16a55a6380b67e377a225037e7687e1a95b3ef873c425de27",
+  "array_cap_sha256": "c407204981cec40cdacbb2152c3f0412490c628d6f442dc2de3492165493cd42",
+  "joined_cap_sha256": "46d536b817daca9e5ad8bc3a2dadbc35508a4cc8ae3944e5a19615be5265fd06",
+  "metal_sheet_ohm_square": 0.104,
+  "array_height_um": 533.9499999999999,
+  "bitline_array_ohm": 146.1336842105263,
+  "signal_join_resistance": {
+    "48": {
+      "length_um": 243.73000000000002,
+      "ohm": 126.70505263157895,
+      "via_count": 4
+    },
+    "49": {
+      "length_um": 246.57000000000002,
+      "ohm": 127.48231578947369,
+      "via_count": 4
+    },
+    "50": {
+      "length_um": 249.41000000000003,
+      "ohm": 128.25957894736842,
+      "via_count": 4
+    },
+    "51": {
+      "length_um": 252.25,
+      "ohm": 129.03684210526313,
+      "via_count": 4
+    },
+    "52": {
+      "length_um": 255.09,
+      "ohm": 129.8141052631579,
+      "via_count": 4
+    },
+    "53": {
+      "length_um": 257.93,
+      "ohm": 130.59136842105264,
+      "via_count": 4
+    },
+    "54": {
+      "length_um": 260.77,
+      "ohm": 131.36863157894737,
+      "via_count": 4
+    },
+    "55": {
+      "length_um": 263.61,
+      "ohm": 132.1458947368421,
+      "via_count": 4
+    },
+    "56": {
+      "length_um": 266.45,
+      "ohm": 132.92315789473685,
+      "via_count": 4
+    },
+    "57": {
+      "length_um": 269.29,
+      "ohm": 133.70042105263158,
+      "via_count": 4
+    },
+    "58": {
+      "length_um": 272.13,
+      "ohm": 134.47768421052632,
+      "via_count": 4
+    },
+    "59": {
+      "length_um": 274.97,
+      "ohm": 135.25494736842106,
+      "via_count": 4
+    },
+    "60": {
+      "length_um": 277.81,
+      "ohm": 136.0322105263158,
+      "via_count": 4
+    },
+    "61": {
+      "length_um": 280.65,
+      "ohm": 136.8094736842105,
+      "via_count": 4
+    },
+    "62": {
+      "length_um": 283.49,
+      "ohm": 137.58673684210527,
+      "via_count": 4
+    },
+    "63": {
+      "length_um": 286.33,
+      "ohm": 138.36399999999998,
+      "via_count": 4
+    }
+  },
+  "retained_array_cap_ff": 2324.097069999717,
+  "retained_join_receiver_cap_ff": 3915.942280000005,
+  "array_to_joined_negative_pair_delta_ff": 0.5541999999999998,
+  "selected_incident_cap_ff": {
+    "48": 179.7445800000001,
+    "49": 204.06076000000078,
+    "50": 200.98358000000042,
+    "51": 206.12458000000015,
+    "52": 206.6093800000002,
+    "53": 207.20072000000107,
+    "54": 202.2538400000009,
+    "55": 215.09499000000156,
+    "56": 204.3046400000009,
+    "57": 205.58925000000153,
+    "58": 208.0472500000003,
+    "59": 205.27271000000047,
+    "60": 203.34829000000082,
+    "61": 212.0111600000014,
+    "62": 209.12532000000078,
+    "63": 190.5339500000001
+  },
+  "expanded_capacitors": 21404,
+  "cap_allocation": "For each exact extracted joined capacitor pair, array-distributed portion=min(newarrayC,newjoinedC); remainder at receiver/join end unless WL/OPEN fixes row. Negative pair delta is recorded, not clipped into extra capacitance. Only joined actual C is simulated.",
+  "scope": "16fullheight active columns,112ideal legal-state BL aggressors also driving their real receivers, all128physicalpre2receivers; extracted stockbuf4WL/buf20PC. GeometryR signaljoin+arrayWL/BL/one2umgroundstrap. Groundendpoint/global supply and input phases ideal. No full320lane WL/PC rail load, simultaneous allarraycurrent, decoder/latch/mux."
+}

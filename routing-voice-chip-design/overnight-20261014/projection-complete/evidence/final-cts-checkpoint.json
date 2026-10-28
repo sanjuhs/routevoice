@@ -1,0 +1,25 @@
+{
+  "scope": "Last completed CTS checkpoint; not routed/signoff layout",
+  "source_state": "runs/complete-v3/32-openroad-stamidpnr-2/state_out.json",
+  "files": [
+    {
+      "kind": "def",
+      "gzip": "final-cts.def.gz",
+      "source_bytes": 92300558,
+      "source_sha256": "58f996097d1b9247f71cc89e293c9b88d8b80b3236bb656fb036226730b1d1c1",
+      "gzip_bytes": 11532775,
+      "gzip_sha256": "d61c92dc575d96587e80504f3e5e2a12cb7c8e582c6c247c4adf1b72249cc95c",
+      "local_verified": true
+    },
+    {
+      "kind": "nl",
+      "gzip": "final-cts.nl.v.gz",
+      "source_bytes": 72677132,
+      "source_sha256": "5ca4a047783d801b87e639270ae794c4ba4f15b68172c6a3c2547e8969c99cd1",
+      "gzip_bytes": 8699023,
+      "gzip_sha256": "f26c4de806c73eb2ea15b2db8bb78e94616fe35181bbf29fbb2ed4faf57e6a7b",
+      "local_verified": true
+    }
+  ],
+  "receipt_note": "Reconstructed from retained save_checkpoint stdout; original same-basenameJSON replaced by render sidecar. Script now uses distinct-checkpoint suffix. Downloaded data hashes verified separately."
+}

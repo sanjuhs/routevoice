@@ -1,0 +1,175 @@
+{
+  "ledger_sha256": "5a32856cb240e3a5d4fd81f972a2624c32a41eee860b3ac8336b88c1cb8f7e8f",
+  "tensors": [
+    {
+      "rom_role": "linear_weights.bin",
+      "tensor_name": "onnx::MatMul_128_add_tensor_add_tensor",
+      "shape": [
+        80,
+        320
+      ],
+      "dtype": "float32",
+      "elements": 25600,
+      "sha256": "1b14d3d00a9d640726adb7983f7f85111d5a70468c5c583b14621d15fb2d919f",
+      "rom_path": "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/frontend/shared/linear_weights.bin",
+      "per_output_channel_axis": 1,
+      "quantized_in_W7": true
+    },
+    {
+      "rom_role": "conv1_weights.bin",
+      "tensor_name": "/weight/weight.0/Mul_output_0_add_tensor",
+      "shape": [
+        640,
+        320,
+        5
+      ],
+      "dtype": "float32",
+      "elements": 1024000,
+      "sha256": "f78e8257037f675b95bac352e500ad6678b2b932c15763c034d861a633b8f521",
+      "rom_path": "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/frontend/shared/conv1_weights.bin",
+      "per_output_channel_axis": 0,
+      "quantized_in_W7": true
+    },
+    {
+      "rom_role": "conv2_weights.bin",
+      "tensor_name": "/weight/weight.0_1/Mul_output_0_add_tensor",
+      "shape": [
+        320,
+        640,
+        5
+      ],
+      "dtype": "float32",
+      "elements": 1024000,
+      "sha256": "13ef6595619a6c8b2fe5a6dc7b4078a44d48a0f113c8156c8bf54d7e0fa87997",
+      "rom_path": "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/frontend/shared/conv2_weights.bin",
+      "per_output_channel_axis": 0,
+      "quantized_in_W7": true
+    },
+    {
+      "rom_role": "conv1_bias.bin",
+      "tensor_name": "conv1.conv.bias",
+      "shape": [
+        640
+      ],
+      "dtype": "float32",
+      "elements": 640,
+      "sha256": "7ad3904e16f8466edca6996a3dabde88f2eefc1a0ad023d48c2d39a5b4973ee2",
+      "rom_path": "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/frontend/shared/conv1_bias.bin",
+      "per_output_channel_axis": null,
+      "quantized_in_W7": false
+    },
+    {
+      "rom_role": "conv2_bias.bin",
+      "tensor_name": "conv2.conv.bias",
+      "shape": [
+        320
+      ],
+      "dtype": "float32",
+      "elements": 320,
+      "sha256": "355244333061a76f48ac524104bb0e6bcf433546bac68adbd8231addfca062a5",
+      "rom_path": "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/frontend/shared/conv2_bias.bin",
+      "per_output_channel_axis": null,
+      "quantized_in_W7": false
+    }
+  ],
+  "total_fp32_rom_bytes": 8298240,
+  "source_loader_initializers": [
+    {
+      "name": "/weight/weight.0_1/Mul_output_0_zero_point",
+      "shape": [
+        1,
+        640,
+        1
+      ],
+      "onnx_dtype": 1,
+      "bytes": 2560,
+      "sha256": "cc3c78bc58e3ad6bde98104d4a8675de39e6a641e64081c20529a166a351ecea"
+    },
+    {
+      "name": "onnx::MatMul_128_add_tensor_zero_point",
+      "shape": [
+        1,
+        320
+      ],
+      "onnx_dtype": 1,
+      "bytes": 1280,
+      "sha256": "b38d58a3b9c3efd1bce463fb4430e4706b1ba40907cebb61e375e302f66afbbe"
+    },
+    {
+      "name": "/weight/weight.0/Mul_output_0_quantized",
+      "shape": [
+        640,
+        320,
+        5
+      ],
+      "onnx_dtype": 3,
+      "bytes": 1024000,
+      "sha256": "10e0955076d451102d17969417eb94cfa587f8dfb620d208fb15dc3945868652"
+    },
+    {
+      "name": "/weight/weight.0/Mul_output_0_scale",
+      "shape": [
+        640,
+        1,
+        1
+      ],
+      "onnx_dtype": 1,
+      "bytes": 2560,
+      "sha256": "60fba5045aa5dac283003ec904ab29eb1e5fbbbf00665164403c44f232c8d651"
+    },
+    {
+      "name": "onnx::MatMul_128_add_tensor_scale",
+      "shape": [
+        1,
+        320
+      ],
+      "onnx_dtype": 1,
+      "bytes": 1280,
+      "sha256": "83c71a0b324d53819eebb89b736f34ecaf7b3510aaaea3774aea67d708f5a89a"
+    },
+    {
+      "name": "/weight/weight.0_1/Mul_output_0_scale",
+      "shape": [
+        1,
+        640,
+        1
+      ],
+      "onnx_dtype": 1,
+      "bytes": 2560,
+      "sha256": "c24c93bafe7702b05f8dda974c3d00c8d8e0f729d51f37af0984dc26a1ce48f2"
+    },
+    {
+      "name": "/weight/weight.0_1/Mul_output_0_quantized",
+      "shape": [
+        320,
+        640,
+        5
+      ],
+      "onnx_dtype": 3,
+      "bytes": 1024000,
+      "sha256": "8a477dc831c6268856578f9f8b576a86e91be88a1cfae026b3533c44164c6c5e"
+    },
+    {
+      "name": "/weight/weight.0/Mul_output_0_zero_point",
+      "shape": [
+        640,
+        1,
+        1
+      ],
+      "onnx_dtype": 1,
+      "bytes": 2560,
+      "sha256": "e846e5947e681749dca2b6038e6a272bfa4252fad1530dc9df5c105cab75c68a"
+    },
+    {
+      "name": "onnx::MatMul_128_add_tensor_quantized",
+      "shape": [
+        80,
+        320
+      ],
+      "onnx_dtype": 3,
+      "bytes": 25600,
+      "sha256": "c90667fdad5cc2bb2fd6eefca84eaa2093e5691e16700b958609a0689d85b65a"
+    }
+  ],
+  "finding": "Source loader already uses INT8 codes times FP32 scales plus FP32 offsets; Conv2 broadcasts along input channels. W7 requantizes expanded ROM values symmetrically along output channels or per tensor. Biases remain FP32."
+}

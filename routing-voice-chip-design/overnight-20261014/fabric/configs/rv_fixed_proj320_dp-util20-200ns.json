@@ -1,0 +1,37 @@
+{
+  "DESIGN_NAME": "rv_fixed_proj320_dp",
+  "VERILOG_FILES": [
+    "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/rtl/rv_fixed_proj320_dp.sv"
+  ],
+  "CLOCK_PORT": "clk",
+  "CLOCK_PERIOD": 200.0,
+  "FP_CORE_UTIL": 20,
+  "PL_TARGET_DENSITY_PCT": 55,
+  "DRT_THREADS": 4,
+  "STA_THREADS": 2,
+  "RUN_MAGIC_DRC": true,
+  "RUN_KLAYOUT_DRC": true,
+  "RUN_LVS": true,
+  "RUN_CTS": true,
+  "RUN_DRT": true,
+  "RUN_FILL_INSERTION": true,
+  "RUN_MCSTA": true,
+  "RUN_SPEF_EXTRACTION": true,
+  "RUN_ANTENNA_REPAIR": true,
+  "IO_PIN_H_LAYER": "Metal1 Metal3 Metal5",
+  "IO_PIN_V_LAYER": "Metal2 Metal4",
+  "IO_PIN_MIN_DISTANCE": 0.56,
+  "IO_PIN_MIN_DISTANCE_IN_TRACKS": false,
+  "IO_PIN_H_THICKNESS_MULT": 1,
+  "IO_PIN_V_THICKNESS_MULT": 1,
+  "DEDUPLICATE_CORNERS": true,
+  "PL_MAX_DISPLACEMENT_X": 1500,
+  "PL_MAX_DISPLACEMENT_Y": 800,
+  "RSZ_CORNERS": [
+    "nom_tt_025C_5v00"
+  ],
+  "PNR_SDC_FILE": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/configs/rv_fixed_proj320_dp-200ns.sdc",
+  "SIGNOFF_SDC_FILE": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/configs/rv_fixed_proj320_dp-200ns.sdc",
+  "KLAYOUT_XOR_THREADS": 4,
+  "KLAYOUT_DRC_THREADS": 4
+}

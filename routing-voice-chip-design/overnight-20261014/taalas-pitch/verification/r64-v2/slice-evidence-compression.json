@@ -1,0 +1,150 @@
+{
+  "utc": "2026-10-13T22:57:54.282264+00:00",
+  "authorization": "Parent explicitly requested sequential archival of these five completed 64-row evidence files; process inventory confirmed no EDA jobs, and each file is checked for readers.",
+  "status": "complete",
+  "files": [
+    {
+      "native": "W6_PITCH_BANK_FLAT.ext",
+      "archive": "W6_PITCH_BANK_FLAT.ext.gz",
+      "status": "complete",
+      "raw_removed": true,
+      "reader_checks": [
+        {
+          "utc": "2026-10-13T22:57:54.509954+00:00",
+          "returncode": 1,
+          "stdout": "",
+          "stderr": ""
+        },
+        {
+          "utc": "2026-10-13T22:57:55.207034+00:00",
+          "returncode": 1,
+          "stdout": "",
+          "stderr": ""
+        }
+      ],
+      "native_sha256": "1a8639558d513836b4e15a38f721c528a2acfe80d5b315ee26623c93f41b9f6d",
+      "native_bytes": 65204420,
+      "archive_bytes": 4743705,
+      "decompressed_sha256": "1a8639558d513836b4e15a38f721c528a2acfe80d5b315ee26623c93f41b9f6d",
+      "decompressed_bytes": 65204420,
+      "archive_sha256": "44deacf709b9eadc006f0c4034e09f51f40ed05f7caad08814384b46cc61b050",
+      "recovered_bytes": 60460715,
+      "elapsed_seconds": 0.929233541013673
+    },
+    {
+      "native": "extracted.spice",
+      "archive": "extracted.spice.gz",
+      "status": "complete",
+      "raw_removed": true,
+      "reader_checks": [
+        {
+          "utc": "2026-10-13T22:57:55.444096+00:00",
+          "returncode": 1,
+          "stdout": "",
+          "stderr": ""
+        },
+        {
+          "utc": "2026-10-13T22:57:55.765896+00:00",
+          "returncode": 1,
+          "stdout": "",
+          "stderr": ""
+        }
+      ],
+      "native_sha256": "1475c697d25aae42b5c079c8bbe5a12ffd8048f998a9b4cf4addc9545e12dd64",
+      "native_bytes": 16100659,
+      "archive_bytes": 1011488,
+      "decompressed_sha256": "1475c697d25aae42b5c079c8bbe5a12ffd8048f998a9b4cf4addc9545e12dd64",
+      "decompressed_bytes": 16100659,
+      "archive_sha256": "7996d94d87c85a575850eea9c6d097abc605064bd4c409c91215c634f5bbcf95",
+      "recovered_bytes": 15089171,
+      "elapsed_seconds": 0.5560244170483202
+    },
+    {
+      "native": "canonical.spice",
+      "archive": "canonical.spice.gz",
+      "status": "complete",
+      "raw_removed": true,
+      "reader_checks": [
+        {
+          "utc": "2026-10-13T22:57:56.002936+00:00",
+          "returncode": 1,
+          "stdout": "",
+          "stderr": ""
+        },
+        {
+          "utc": "2026-10-13T22:57:56.313863+00:00",
+          "returncode": 1,
+          "stdout": "",
+          "stderr": ""
+        }
+      ],
+      "native_sha256": "7c59b3351af697abcb5306c97abf6debde3fd31b4f7fbd8721ac1a6a78c2d881",
+      "native_bytes": 8383845,
+      "archive_bytes": 753938,
+      "decompressed_sha256": "7c59b3351af697abcb5306c97abf6debde3fd31b4f7fbd8721ac1a6a78c2d881",
+      "decompressed_bytes": 8383845,
+      "archive_sha256": "edd15581ef925277444f2611f97d67a329cabf0eed4b3facbeb21c0d965a1d49",
+      "recovered_bytes": 7629907,
+      "elapsed_seconds": 0.5466789589263499
+    },
+    {
+      "native": "reference.spice",
+      "archive": "reference.spice.gz",
+      "status": "complete",
+      "raw_removed": true,
+      "reader_checks": [
+        {
+          "utc": "2026-10-13T22:57:56.541994+00:00",
+          "returncode": 1,
+          "stdout": "",
+          "stderr": ""
+        },
+        {
+          "utc": "2026-10-13T22:57:56.814231+00:00",
+          "returncode": 1,
+          "stdout": "",
+          "stderr": ""
+        }
+      ],
+      "native_sha256": "b0c25467d6a93988c2c2d2985a4c9bb07b5cfb2d3955cf91e2fe58495a9c984b",
+      "native_bytes": 5365886,
+      "archive_bytes": 497504,
+      "decompressed_sha256": "b0c25467d6a93988c2c2d2985a4c9bb07b5cfb2d3955cf91e2fe58495a9c984b",
+      "decompressed_bytes": 5365886,
+      "archive_sha256": "a5d5ca34eaf2db7463b0ae202bc39da8274d607e8b822f3a91849e9aa6277b66",
+      "recovered_bytes": 4868382,
+      "elapsed_seconds": 0.4995893749874085
+    },
+    {
+      "native": "reference-wrong-width.spice",
+      "archive": "reference-wrong-width.spice.gz",
+      "status": "complete",
+      "raw_removed": true,
+      "reader_checks": [
+        {
+          "utc": "2026-10-13T22:57:57.050340+00:00",
+          "returncode": 1,
+          "stdout": "",
+          "stderr": ""
+        },
+        {
+          "utc": "2026-10-13T22:57:57.339205+00:00",
+          "returncode": 1,
+          "stdout": "",
+          "stderr": ""
+        }
+      ],
+      "native_sha256": "f0b3a38349397f2d94e35c56688583dd182df5ac5382cc7f79f1ab9cd41190da",
+      "native_bytes": 5365886,
+      "archive_bytes": 497510,
+      "decompressed_sha256": "f0b3a38349397f2d94e35c56688583dd182df5ac5382cc7f79f1ab9cd41190da",
+      "decompressed_bytes": 5365886,
+      "archive_sha256": "66b98cc457d062d7b28be98b110a73c391c7e680d01f57e7d135a537f99c2983",
+      "recovered_bytes": 4868376,
+      "elapsed_seconds": 0.5248493750113994
+    }
+  ],
+  "minimum_free_gib": 22.27914810180664,
+  "recovered_bytes": 92916551,
+  "reproduction": "For each required file run gzip -dc NAME.gz > NAME in this directory, then verify SHA256 equals native_sha256 before rerunning compare/Netgen. Allocate native_bytes plus22GiB reserve; no regeneration of original extraction is required."
+}

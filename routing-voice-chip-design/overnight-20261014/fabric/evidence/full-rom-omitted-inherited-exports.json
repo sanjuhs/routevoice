@@ -1,0 +1,10 @@
+{
+  "reason": "Obsolete pre-placement SDF/LIB exports are not inputs to PnR; omit references from this new continuation to avoid duplicate snapshots. Complete originals remain in the preserved precheck state. Final extracted STA remains enabled and generates fresh views.",
+  "omitted": {
+    "sdf": {
+      "nom_tt_025C_5v00": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/runs/rv_fixed_proj320_rom-physical20/06-openroad-staprepnr/nom_tt_025C_5v00/rv_fixed_proj320_rom__nom_tt_025C_5v00.sdf",
+      "nom_ss_125C_4v50": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/runs/rv_fixed_proj320_rom-physical20/06-openroad-staprepnr/nom_ss_125C_4v50/rv_fixed_proj320_rom__nom_ss_125C_4v50.sdf",
+      "nom_ff_n40C_5v50": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/runs/rv_fixed_proj320_rom-physical20/06-openroad-staprepnr/nom_ff_n40C_5v50/rv_fixed_proj320_rom__nom_ff_n40C_5v50.sdf"
+    }
+  }
+}

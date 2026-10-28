@@ -1,0 +1,299 @@
+{
+  "source": "Exact ODB master width times height, multiplied by actual instance occurrences",
+  "units_per_um": 2000,
+  "breakdown": {
+    "macro": {
+      "count": 1,
+      "area_um2": 2267885.4
+    },
+    "tap": {
+      "count": 114907,
+      "area_um2": 504487.69279999996
+    },
+    "endcap": {
+      "count": 3442,
+      "area_um2": 15111.7568
+    },
+    "other_standard_cells": {
+      "count": 325604,
+      "area_um2": 6434728.294399998
+    }
+  },
+  "all_instances": 443954,
+  "all_instance_area_um2": 9222213.143999998,
+  "masters": {
+    "gf180mcu_fd_sc_mcu7t5v0__clkinv_1": {
+      "instances": 10396,
+      "width_um": 2.24,
+      "height_um": 3.92,
+      "type": "CORE",
+      "area_um2_per_instance": 8.7808
+    },
+    "gf180mcu_fd_sc_mcu7t5v0__and2_1": {
+      "instances": 4660,
+      "width_um": 4.48,
+      "height_um": 3.92,
+      "type": "CORE",
+      "area_um2_per_instance": 17.5616
+    },
+    "gf180mcu_fd_sc_mcu7t5v0__nor2_1": {
+      "instances": 40853,
+      "width_um": 3.36,
+      "height_um": 3.92,
+      "type": "CORE",
+      "area_um2_per_instance": 13.1712
+    },
+    "gf180mcu_fd_sc_mcu7t5v0__nand3_1": {
+      "instances": 19571,
+      "width_um": 3.92,
+      "height_um": 3.92,
+      "type": "CORE",
+      "area_um2_per_instance": 15.3664
+    },
+    "gf180mcu_fd_sc_mcu7t5v0__or4_1": {
+      "instances": 134,
+      "width_um": 6.72,
+      "height_um": 3.92,
+      "type": "CORE",
+      "area_um2_per_instance": 26.3424
+    },
+    "gf180mcu_fd_sc_mcu7t5v0__aoi21_1": {
+      "instances": 22171,
+      "width_um": 4.48,
+      "height_um": 3.92,
+      "type": "CORE",
+      "area_um2_per_instance": 17.5616
+    },
+    "gf180mcu_fd_sc_mcu7t5v0__or2_1": {
+      "instances": 4741,
+      "width_um": 4.48,
+      "height_um": 3.92,
+      "type": "CORE",
+      "area_um2_per_instance": 17.5616
+    },
+    "gf180mcu_fd_sc_mcu7t5v0__nand2_1": {
+      "instances": 63410,
+      "width_um": 2.8,
+      "height_um": 3.92,
+      "type": "CORE",
+      "area_um2_per_instance": 10.976
+    },
+    "gf180mcu_fd_sc_mcu7t5v0__oai31_1": {
+      "instances": 1872,
+      "width_um": 6.16,
+      "height_um": 3.92,
+      "type": "CORE",
+      "area_um2_per_instance": 24.1472
+    },
+    "gf180mcu_fd_sc_mcu7t5v0__or3_1": {
+      "instances": 505,
+      "width_um": 5.6,
+      "height_um": 3.92,
+      "type": "CORE",
+      "area_um2_per_instance": 21.952
+    },
+    "gf180mcu_fd_sc_mcu7t5v0__nand4_1": {
+      "instances": 7146,
+      "width_um": 5.04,
+      "height_um": 3.92,
+      "type": "CORE",
+      "area_um2_per_instance": 19.7568
+    },
+    "gf180mcu_fd_sc_mcu7t5v0__nor3_1": {
+      "instances": 6654,
+      "width_um": 4.48,
+      "height_um": 3.92,
+      "type": "CORE",
+      "area_um2_per_instance": 17.5616
+    },
+    "gf180mcu_fd_sc_mcu7t5v0__nor4_1": {
+      "instances": 1260,
+      "width_um": 5.6,
+      "height_um": 3.92,
+      "type": "CORE",
+      "area_um2_per_instance": 21.952
+    },
+    "gf180mcu_fd_sc_mcu7t5v0__oai21_1": {
+      "instances": 20047,
+      "width_um": 4.48,
+      "height_um": 3.92,
+      "type": "CORE",
+      "area_um2_per_instance": 17.5616
+    },
+    "gf180mcu_fd_sc_mcu7t5v0__dffq_1": {
+      "instances": 12973,
+      "width_um": 16.24,
+      "height_um": 3.92,
+      "type": "CORE",
+      "area_um2_per_instance": 63.6608
+    },
+    "PITCH_BANK_R1280": {
+      "instances": 1,
+      "width_um": 1004.0,
+      "height_um": 2258.85,
+      "type": "BLOCK",
+      "area_um2_per_instance": 2267885.4
+    },
+    "gf180mcu_fd_sc_mcu7t5v0__buf_20": {
+      "instances": 1281,
+      "width_um": 34.72,
+      "height_um": 3.92,
+      "type": "CORE",
+      "area_um2_per_instance": 136.1024
+    },
+    "gf180mcu_fd_sc_mcu7t5v0__xnor2_1": {
+      "instances": 5267,
+      "width_um": 7.28,
+      "height_um": 3.92,
+      "type": "CORE",
+      "area_um2_per_instance": 28.537599999999998
+    },
+    "gf180mcu_fd_sc_mcu7t5v0__and3_1": {
+      "instances": 1118,
+      "width_um": 5.6,
+      "height_um": 3.92,
+      "type": "CORE",
+      "area_um2_per_instance": 21.952
+    },
+    "gf180mcu_fd_sc_mcu7t5v0__xor2_1": {
+      "instances": 9970,
+      "width_um": 6.72,
+      "height_um": 3.92,
+      "type": "CORE",
+      "area_um2_per_instance": 26.3424
+    },
+    "gf180mcu_fd_sc_mcu7t5v0__aoi22_1": {
+      "instances": 46306,
+      "width_um": 5.04,
+      "height_um": 3.92,
+      "type": "CORE",
+      "area_um2_per_instance": 19.7568
+    },
+    "gf180mcu_fd_sc_mcu7t5v0__and4_1": {
+      "instances": 1147,
+      "width_um": 6.16,
+      "height_um": 3.92,
+      "type": "CORE",
+      "area_um2_per_instance": 24.1472
+    },
+    "gf180mcu_fd_sc_mcu7t5v0__oai32_1": {
+      "instances": 1560,
+      "width_um": 6.72,
+      "height_um": 3.92,
+      "type": "CORE",
+      "area_um2_per_instance": 26.3424
+    },
+    "gf180mcu_fd_sc_mcu7t5v0__aoi221_1": {
+      "instances": 13034,
+      "width_um": 6.16,
+      "height_um": 3.92,
+      "type": "CORE",
+      "area_um2_per_instance": 24.1472
+    },
+    "gf180mcu_fd_sc_mcu7t5v0__oai22_1": {
+      "instances": 3896,
+      "width_um": 5.6,
+      "height_um": 3.92,
+      "type": "CORE",
+      "area_um2_per_instance": 21.952
+    },
+    "gf180mcu_fd_sc_mcu7t5v0__oai211_1": {
+      "instances": 7373,
+      "width_um": 5.6,
+      "height_um": 3.92,
+      "type": "CORE",
+      "area_um2_per_instance": 21.952
+    },
+    "gf180mcu_fd_sc_mcu7t5v0__aoi211_1": {
+      "instances": 4029,
+      "width_um": 5.6,
+      "height_um": 3.92,
+      "type": "CORE",
+      "area_um2_per_instance": 21.952
+    },
+    "gf180mcu_fd_sc_mcu7t5v0__oai221_1": {
+      "instances": 2621,
+      "width_um": 6.72,
+      "height_um": 3.92,
+      "type": "CORE",
+      "area_um2_per_instance": 26.3424
+    },
+    "gf180mcu_fd_sc_mcu7t5v0__aoi222_1": {
+      "instances": 8159,
+      "width_um": 7.84,
+      "height_um": 3.92,
+      "type": "CORE",
+      "area_um2_per_instance": 30.7328
+    },
+    "gf180mcu_fd_sc_mcu7t5v0__mux2_2": {
+      "instances": 286,
+      "width_um": 8.4,
+      "height_um": 3.92,
+      "type": "CORE",
+      "area_um2_per_instance": 32.928
+    },
+    "gf180mcu_fd_sc_mcu7t5v0__oai33_1": {
+      "instances": 59,
+      "width_um": 8.4,
+      "height_um": 3.92,
+      "type": "CORE",
+      "area_um2_per_instance": 32.928
+    },
+    "gf180mcu_fd_sc_mcu7t5v0__oai222_1": {
+      "instances": 316,
+      "width_um": 8.4,
+      "height_um": 3.92,
+      "type": "CORE",
+      "area_um2_per_instance": 32.928
+    },
+    "gf180mcu_fd_sc_mcu7t5v0__xor3_1": {
+      "instances": 2035,
+      "width_um": 12.88,
+      "height_um": 3.92,
+      "type": "CORE",
+      "area_um2_per_instance": 50.489599999999996
+    },
+    "gf180mcu_fd_sc_mcu7t5v0__xnor3_1": {
+      "instances": 709,
+      "width_um": 13.44,
+      "height_um": 3.92,
+      "type": "CORE",
+      "area_um2_per_instance": 52.6848
+    },
+    "gf180mcu_fd_sc_mcu7t5v0__mux4_1": {
+      "instances": 43,
+      "width_um": 17.92,
+      "height_um": 3.92,
+      "type": "CORE",
+      "area_um2_per_instance": 70.2464
+    },
+    "gf180mcu_fd_sc_mcu7t5v0__tiel": {
+      "instances": 1,
+      "width_um": 2.24,
+      "height_um": 3.92,
+      "type": "CORE_TIELOW",
+      "area_um2_per_instance": 8.7808
+    },
+    "gf180mcu_fd_sc_mcu7t5v0__buf_1": {
+      "instances": 1,
+      "width_um": 3.36,
+      "height_um": 3.92,
+      "type": "CORE",
+      "area_um2_per_instance": 13.1712
+    },
+    "gf180mcu_fd_sc_mcu7t5v0__endcap": {
+      "instances": 3442,
+      "width_um": 1.12,
+      "height_um": 3.92,
+      "type": "ENDCAP_PRE",
+      "area_um2_per_instance": 4.3904
+    },
+    "gf180mcu_fd_sc_mcu7t5v0__filltie": {
+      "instances": 114907,
+      "width_um": 1.12,
+      "height_um": 3.92,
+      "type": "CORE_WELLTAP",
+      "area_um2_per_instance": 4.3904
+    }
+  }
+}

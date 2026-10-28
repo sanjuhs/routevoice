@@ -1,0 +1,13 @@
+# W5 digital periphery boundary
+
+The physical decoder accepts `enable,row[5:0]` and supplies 64 one-hot wordlines. It contains the explicit GF180 `buf_4` stages in the source, plus whatever physical repair cells the saved implementation inserted. Its chosen 100 fF output loading is an external boundary assumption, not the extracted load of the parent array. Decoder address changes must occur while enable is low. Enable must remain low for invalid row-bank numbers 20..31.
+
+The 20:1 mux128 accepts `bank[4:0]`, `enable`, and `bank_data[2559:0]`. Slice `bank_data[128*b+:128]` corresponds to bank b. Ten instances cover the full 1280-bit row. Their output bits map to `frozen_index_bits[128*s+:128]` for slice s. Each slice contains its own bank-address decoding; ten-instance area must count it ten times. Invalid banks and disabled reads produce zero. The physical mux boundary excludes long routes connecting twenty tile banks and excludes parent-bank power/enable distribution.
+
+W2b already owns all 1280 output capture bits: `fabric-k64/rtl/engine.sv` declares `index_latch` at line 16 and captures `frozen_index_bits` in INDEX at line 107399. Those flops remain within ARRAY-PORT routed area. Adding macro-local edge-triggered latches would add physical state and a cycle/clock interface; do not double-count or silently introduce them. A truthful whole projection includes these existing physical flops and an explicitly timed macro read to their setup edge.
+
+`array_read_enable=state==INDEX && step_enable`; the current 4160 integer cycles comprise 1280 LOAD,1280 INDEX,1280 ACCUM,320 output beats. There are 1280 distinct row reads per unstalled projection, not 4160. Treat 4160 reads as a separate conservative stress workload only.
+
+Precharge and evaluation need explicit nonoverlap. PC=array_read_enable (PMOS precharge active low) immediately starts precharge on enable falling while the decoded wordline can remain high for its propagation delay. The standalone decoder/mux does not implement or characterize an autonomous nonoverlap generator. An externally prescribed SPICE PC/WL waveform cannot establish compatibility with the bare asynchronous W2b interface. Parent must supply a qualified phase controller or retain this as an open integration item.
+
+All supplied periphery GDS/LEF views are physical standalone submacros. Their isolation DRC/LVS does not prove the composed tile or the full macro; all inter-macro signal wires, address distribution, power continuity, and final parent extraction require independent checks. VDD/VSS physical ports are on Metal4/Metal5. The small macro PDN has been routed; IR/EM are not established.

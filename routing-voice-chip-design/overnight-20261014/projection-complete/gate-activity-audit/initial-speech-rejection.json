@@ -1,0 +1,17 @@
+{
+  "status": "initial gate trace rejected before idle or STA annotation",
+  "reason": "Simulator reported missing compiled absolute $readmem files for real activations, expected outputs, scales, and integer-all data. A PASS cannot establish correctness for missing inputs/reference data.",
+  "reported_missing_basenames": [
+    "integer-all.hex",
+    "inputs.hex",
+    "expected.hex",
+    "activation-scales.hex"
+  ],
+  "automatic_monitor_pid": 14943,
+  "monitor_stopped": true,
+  "idle_started_by_this_monitor": false,
+  "annotation_started": false,
+  "original_simulation_stopped_by_this_agent": false,
+  "UTC_recorded": "2026-10-13T23:36:01.921992+00:00",
+  "next_action_owner": "Parent handles runtime input-path resolution and preserves invalid trace."
+}

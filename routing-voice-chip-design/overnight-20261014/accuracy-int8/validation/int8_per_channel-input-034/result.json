@@ -1,0 +1,65 @@
+{
+  "case_id": "int8_per_channel-input-034",
+  "model": "int8_per_channel",
+  "id": "2506-169427-0004",
+  "role": "validation",
+  "condition": "other",
+  "seed": null,
+  "reference": "WHAT INCLINED EUGENIUS TO THE SAME OPINION WAS AS FOLLOWS",
+  "input_float32_sha256": "2b6522d9ee0df778824e1f6a3d41ce6fd29e21dbb2a9826977e1e6778467162b",
+  "hypothesis": "Would incline to genius to the same pain, Was as follows.",
+  "normalized_tokens": [
+    "would",
+    "incline",
+    "to",
+    "genius",
+    "to",
+    "the",
+    "same",
+    "pain",
+    "was",
+    "as",
+    "follows"
+  ],
+  "edits": 5,
+  "reference_words": 10,
+  "hypothesis_words": 11,
+  "exact": false,
+  "lines": [
+    {
+      "text": "Would incline to genius to the same pain,",
+      "start_time": 0.35199999809265137,
+      "duration": 2.9119999408721924,
+      "is_complete": true,
+      "samples": 46592,
+      "input_float32_sha256": "bbc32a5713cdd37375f2172ea05826eb86b509f1a7a857b146bae6916ff96aea"
+    },
+    {
+      "text": "Was as follows.",
+      "start_time": 2.944000005722046,
+      "duration": 1.5360000133514404,
+      "is_complete": true,
+      "samples": 24576,
+      "input_float32_sha256": "3e3ba4bff42f327faf2b95974cd0be4a322c586df0daf9b47ce4bd6f136e28bb"
+    }
+  ],
+  "request_sha256": "35f6eabf2c77f99a12d487a867a05f255faebfd0c726f15340a3ee15481a83e5",
+  "worker_sha256": "4682e8a57db08e02a34f53b01f334f34faa3ca9a6546698f1e4650db359004b6",
+  "native_library_sha256": "1453a6c1c9072f3d05e9e5ae6ff423fae839e56631c5efb12bbd5c0280d04399",
+  "native_api_version": 30000,
+  "load_seconds": 0.04323358298279345,
+  "compute_seconds": 0.16557816695421934,
+  "audio_seconds": 4.66,
+  "process_cpu_seconds": 0.16549499999999998,
+  "voluntary_context_switches": 0,
+  "involuntary_context_switches": 37,
+  "system_load_average": [
+    10.689453125,
+    9.07080078125,
+    9.89208984375
+  ],
+  "options": null,
+  "flags": 0,
+  "process_id": 81123,
+  "isolation": "One audio clip/condition in a fresh native process; no previous utterance or VAD state."
+}

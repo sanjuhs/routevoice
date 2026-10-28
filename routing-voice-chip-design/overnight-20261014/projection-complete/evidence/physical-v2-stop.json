@@ -1,0 +1,4 @@
+{
+  "reason": "Stopped before synthesis to add reset nonoverlap drain and to fix Liberty parser threshold attributes. Repeated mapped-netlist lint costs memory/time and is skipped in v3; RTL Verilator functional compile and downstream Yosys hierarchy/check retained.",
+  "classification": "development interruption, no physical pass"
+}

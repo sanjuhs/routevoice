@@ -1,0 +1,116 @@
+{
+  "corner": "synthetic-TT-fixture-not-projection",
+  "workload_kind": "active",
+  "scope": "Postroute STA model estimate: standard cells and modeled net charging; excludes uncharacterized array internal dynamic and leakage",
+  "activity_coverage": {
+    "categories": {
+      "vcd": 4,
+      "unannotated": 0
+    },
+    "total_reported_pins": 4,
+    "direct_vcd_pins": 4,
+    "direct_vcd_pin_fraction": 1.0,
+    "unannotated_pins": 0,
+    "scope": "OpenSTA pin activity-source counts, not nets, capacitance-weighted coverage or switching coverage"
+  },
+  "activity_power": {
+    "groups": {
+      "Sequential": {
+        "internal_W": 0.0,
+        "switching_W": 0.0,
+        "leakage_W": 0.0,
+        "total_W": 0.0
+      },
+      "Combinational": {
+        "internal_W": 2.077842964e-06,
+        "switching_W": 6.374634268e-06,
+        "leakage_W": 3.308075341e-11,
+        "total_W": 8.452509974e-06
+      },
+      "Clock": {
+        "internal_W": 0.0,
+        "switching_W": 0.0,
+        "leakage_W": 0.0,
+        "total_W": 0.0
+      },
+      "Macro": {
+        "internal_W": 0.0,
+        "switching_W": 0.0,
+        "leakage_W": 0.0,
+        "total_W": 0.0
+      },
+      "Pad": {
+        "internal_W": 0.0,
+        "switching_W": 0.0,
+        "leakage_W": 0.0,
+        "total_W": 0.0
+      },
+      "Total": {
+        "internal_W": 2.077842964e-06,
+        "switching_W": 6.374634268e-06,
+        "leakage_W": 3.308075341e-11,
+        "total_W": 8.452509974e-06,
+        "dynamic_W": 8.452477232e-06
+      }
+    },
+    "total": {
+      "internal_W": 2.077842964e-06,
+      "switching_W": 6.374634268e-06,
+      "leakage_W": 3.308075341e-11,
+      "total_W": 8.452509974e-06,
+      "dynamic_W": 8.452477232e-06
+    }
+  },
+  "default_power": null,
+  "default_power_omission_note": "Explicitly omitted by W8_SKIP_DEFAULT_POWER=1; activity power and annotation remain required.",
+  "parasitic_annotation_report": "Found 0 unannotated drivers.\nFound 0 partially unannotated drivers.\n",
+  "vcd": {
+    "timescale_seconds": 1e-12,
+    "first_timestamp": 0,
+    "last_timestamp": 41000,
+    "duration_seconds": 4.0999999999999997e-08,
+    "declarations": 8,
+    "scope_declarations": 4,
+    "duration_scope": "Entire emitted VCD; includes reset and drain if dumped"
+  },
+  "completed_projections_in_trace": 1,
+  "observed_simulation_window_projection_rate_per_second": 24390243.902439028,
+  "supported_physical_rate_proven": false,
+  "modeled_dynamic_J_per_projection_in_trace": 3.4655156651199997e-13,
+  "modeled_total_J_per_projection_in_trace": 3.46552908934e-13,
+  "requested_rate_projection": null,
+  "array_measured_energy_J_per_read": null,
+  "array_measured_reads_energy_J_per_projection": null,
+  "complete_projection_energy_J": null,
+  "complete_projection_power_W": null,
+  "limitations": [
+    "Gate simulation without SDF is zero-delay activity: no extracted-delay glitches or timing correctness evidence.",
+    "Entire VCD window is normalized; reset, load, drain and idle cycles are included if dumped.",
+    "Direct pin coverage alone does not prove representative activity or correct mapped-cell waveforms.",
+    "Unannotated activity may be propagated or defaulted by OpenSTA; retain measured coverage.",
+    "Macro proxy has no internal power or leakage tables; a zero Macro report is not measured zero power.",
+    "Macro pin load and slew assumptions affect modeled driver and net charging.",
+    "W6 partial extracted energy cannot be multiplied into a measured full-row result.",
+    "Any later array-energy addition must avoid double-counting drivers and net charging already in this report.",
+    "An observed simulation rate does not establish timing closure or achievable silicon throughput."
+  ],
+  "provenance": {
+    "inputs_sha256": {
+      "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric-k64/pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__tt_025C_3v30.lib": "f9dee07cf158324934b0c59144d970a2e8313f43533ede6283ec3c136f82fe53",
+      "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/projection-complete/macro/PITCH_BANK_R1280.lib": "6008dd5e970e9a1078bf6f98c4d5d21edb926973949e2c1c2be04d5782e25815",
+      "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/projection-complete/power/escaped-api/probe.v": "e18809610c68aaa7be4601a9f462c85b072a215d3166b7d49e331b827cdfd910",
+      "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/projection-complete/power/escaped-api/probe.sdc": "78242fac8f5fa1d3c4591b879e6428411959090358270f4b9a9555c502934273",
+      "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/projection-complete/power/escaped-api/probe.spef": "b1cbb377b2df3d43471322858e3fa12a9d94832ae24d25a6b1a97ba5f6515cb2",
+      "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/projection-complete/power/escaped-api/actual-verilator.vcd": "d7a1e67758b1443dc366d929e9681ae1f4069e63c9f1511ee4ff18bf7cff2442"
+    },
+    "scope": "tb/dut",
+    "correctness_scope": "Synthetic one-inverter API fixture, not projection evidence",
+    "activity_netlist_sha256": null,
+    "activity_netlist_matches_STA_netlist": null,
+    "activity_is_zero_delay": true,
+    "skip_default_power": true,
+    "script_sha256": "2e9669ae53df225b78c11331d1e668b03e32c0964d994c02d596a2c6daefccf9",
+    "design_signature_sha256": "1ee4a508da4872db37a76a4e8789f62f9890182389bade897190a2cbf1ed9dad"
+  },
+  "warnings": []
+}

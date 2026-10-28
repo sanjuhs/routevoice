@@ -1,0 +1,13 @@
+{
+  "parent_authorization": "Parent message: safely extend existing watchdog to720s without restarting native job,2026-10-14",
+  "method": "Suspend only Python waiting launcher; independent supervisor enforces720s from log birth before ngspice launch. Resume after child becomes zombie/exits; CPython3.12 _wait checks waitpid before timeout. Native simulation is not restarted or suspended.",
+  "launcher_pid": 80495,
+  "ngspice_pid": 80571,
+  "original_limit_seconds": 480,
+  "new_limit_seconds": 720,
+  "guard_start_epoch": 1791928473.0785518,
+  "extension_epoch": 1791928712.294822,
+  "deadline_epoch": 1791929193.0785518,
+  "outcome": "native child completed",
+  "supervisor_completed_epoch": 1791928977.6245089
+}

@@ -1,0 +1,24 @@
+{
+  "unix": 1791939796.8339431,
+  "method": "ditto --hfsCompression, SHA256 verified before atomic replace; transparent POSIX reads retain identical bytes",
+  "free_before_bytes": 25654362112,
+  "free_after_bytes": 25870667776,
+  "changes": [
+    {
+      "path": "runs/rv_fixed_proj320_rom-util20-density35-noinflate-200ns/01-openroad-globalplacement/rv_fixed_proj320_rom.def",
+      "sha256": "2acfaf0781e2cf786c9b7747f03e9f966c73b648b0da2887cb2978c4bba2a4c8",
+      "bytes": 80313582,
+      "before_allocated_bytes": 84385792,
+      "after_allocated_bytes": 14118912,
+      "flags": 32
+    },
+    {
+      "path": "runs/rv_fixed_proj320_rom-util20-density35-noinflate-200ns/01-openroad-globalplacement/rv_fixed_proj320_rom.odb",
+      "sha256": "491e34a98f7c5ee8c85a121fcf3db0fd7a02438abf29e073ab761b1cfe884a41",
+      "bytes": 202792945,
+      "before_allocated_bytes": 202792960,
+      "after_allocated_bytes": 55574528,
+      "flags": 32
+    }
+  ]
+}

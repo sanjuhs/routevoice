@@ -1,0 +1,49 @@
+{
+  "unix": 1791935814.374969,
+  "method": "APFS cp -c copy-on-write, exact content hash checked before atomic replacement",
+  "nominal_duplicate_bytes_shared": 437146549,
+  "changes": [
+    {
+      "path": "runs/rv_fixed_proj320_dp-util20-200ns/04-odb-setpowerconnections/rv_fixed_proj320_dp.odb",
+      "clone_source": "runs/rv_fixed_proj320_dp-util20-200ns/01-openroad-floorplan/rv_fixed_proj320_dp.odb",
+      "sha256": "fc4889f4811d6bc8d47a40a675759b1688db51bfa2a2ad2bc901000a2bd722f6",
+      "bytes": 137800941
+    },
+    {
+      "path": "runs/rv_fixed_proj320_dp-util20-200ns/06-openroad-cutrows/rv_fixed_proj320_dp.odb",
+      "clone_source": "runs/rv_fixed_proj320_dp-util20-200ns/01-openroad-floorplan/rv_fixed_proj320_dp.odb",
+      "sha256": "fc4889f4811d6bc8d47a40a675759b1688db51bfa2a2ad2bc901000a2bd722f6",
+      "bytes": 137800941
+    },
+    {
+      "path": "runs/rv_fixed_proj320_dp-util20-200ns/04-odb-setpowerconnections/rv_fixed_proj320_dp.def",
+      "clone_source": "runs/rv_fixed_proj320_dp-util20-200ns/01-openroad-floorplan/rv_fixed_proj320_dp.def",
+      "sha256": "a0c31842fa19833a1d67a9a0c4d20200a89c65e11569e77aa043e59600c0e6c8",
+      "bytes": 38246959
+    },
+    {
+      "path": "runs/rv_fixed_proj320_dp-util20-200ns/06-openroad-cutrows/rv_fixed_proj320_dp.def",
+      "clone_source": "runs/rv_fixed_proj320_dp-util20-200ns/01-openroad-floorplan/rv_fixed_proj320_dp.def",
+      "sha256": "a0c31842fa19833a1d67a9a0c4d20200a89c65e11569e77aa043e59600c0e6c8",
+      "bytes": 38246959
+    },
+    {
+      "path": "runs/rv_fixed_proj320_dp-util20-200ns/01-openroad-floorplan/rv_fixed_proj320_dp.nl.v",
+      "clone_source": "runs/rv_fixed_proj320_dp-physical20/01-openroad-floorplan/rv_fixed_proj320_dp.nl.v",
+      "sha256": "52cad6888dd81c20a487f850a5aaf2c472d12cc5571a4d2109f99befb60d13e0",
+      "bytes": 30596412
+    },
+    {
+      "path": "runs/rv_fixed_proj320_dp-util20-200ns/09-openroad-generatepdn/rv_fixed_proj320_dp.sdc",
+      "clone_source": "runs/rv_fixed_proj320_dp-util20-200ns/07-openroad-tapendcapinsertion/rv_fixed_proj320_dp.sdc",
+      "sha256": "4dbfabc7be94a083defcea3d27405d1887a483ed2a8c5470eb82d7daa4e21172",
+      "bytes": 10502143
+    },
+    {
+      "path": "runs/rv_fixed_proj320_dp-util20-200ns/01-openroad-floorplan/rv_fixed_proj320_dp.pnl.v",
+      "clone_source": "runs/rv_fixed_proj320_dp-physical20/01-openroad-floorplan/rv_fixed_proj320_dp.pnl.v",
+      "sha256": "8540309616e6d80428736928cad3c09c70372df371056deaa5b2f355592b369c",
+      "bytes": 43952194
+    }
+  ]
+}

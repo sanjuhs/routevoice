@@ -1,0 +1,5 @@
+Pattern: _cell_/ZN
+Matched pins: 1
+Setup multiplier: 3; hold multiplier: 2
+Original reports preserve supplied SDC constraints. Verify the input SDC contains the intended single-cycle baseline.
+Macro library uses a PC-to-output44ns proxy and omits independent WL-to-output arcs. Neither scenario qualifies full-bank timing.

@@ -1,0 +1,19 @@
+{
+  "status": "resource_aborted_incomplete_transient",
+  "termination_reason": "Authorized disk guard crossed22.2GiB buffer before mandatory22GiBfloor; SIGTERM sent only to nativeTT process and originalwatchdog resumed.",
+  "native_returncode": -15,
+  "source_of_native_returncode": "Original Python subprocess runner assertion reported AssertionError:-15 in completed execution session98574.",
+  "last_progress_reference_ns": 869.81,
+  "required_end_time_ns": 1200,
+  "minimum_available_gib": 22.132843017578125,
+  "watchdog_receipt": "watchdog-extension.json",
+  "watchdog_receipt_sha256": "db88aee2030076916d419ddbf6228b1faa21ff249dbbcde33521efc2a9ca009c",
+  "deck_sha256": "2cae87bff37ca49594d09e0d23d6f04beee3ab8f17869ef00c41b9d7d20a178a",
+  "final_trace_produced": false,
+  "timing_result_ns": null,
+  "energy_pj": null,
+  "physical_protocol_pass": null,
+  "convergence_failure": null,
+  "qualification": "Externally resource-aborted before transient completion; not a measured circuit/timing failure or simulator convergence diagnosis. Retain exact deck,build,log,source snapshots,watchdog receipt.",
+  "recorded_utc": "2026-10-13T22:55:19.514857+00:00"
+}

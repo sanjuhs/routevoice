@@ -1,0 +1,117 @@
+{
+  "gds": "pdk/gf180mcu_fd_ip_sram__sram512x8m8wm1.gds",
+  "source": "pdks/gf180mcuD/libs.ref/gf180mcu_fd_ip_sram/gds/gf180mcu_fd_ip_sram__sram512x8m8wm1.gds",
+  "sha256": "40d76d3ccfc8779c9db9f1db7a0bbccbbaf12c4627a3fa5b59049f23eef7d915",
+  "dbu_um": 0.001,
+  "cells": [
+    {
+      "name": "018SRAM_cell1_512x8m81",
+      "bbox_dbu": [
+        -340,
+        -340,
+        3340,
+        4840
+      ],
+      "width_um": 3.68,
+      "height_um": 5.18,
+      "area_um2": 19.0624
+    },
+    {
+      "name": "018SRAM_strap1_512x8m81",
+      "bbox_dbu": [
+        -340,
+        -340,
+        3340,
+        4840
+      ],
+      "width_um": 3.68,
+      "height_um": 5.18,
+      "area_um2": 19.0624
+    },
+    {
+      "name": "018SRAM_strap1_bndry_512x8m81",
+      "bbox_dbu": [
+        -340,
+        -340,
+        3340,
+        4840
+      ],
+      "width_um": 3.68,
+      "height_um": 5.18,
+      "area_um2": 19.0624
+    },
+    {
+      "name": "018SRAM_strap1_2x_512x8m81",
+      "bbox_dbu": [
+        -340,
+        -4840,
+        3340,
+        4840
+      ],
+      "width_um": 3.68,
+      "height_um": 9.68,
+      "area_um2": 35.6224
+    },
+    {
+      "name": "018SRAM_strap1_2x_bndry_512x8m81",
+      "bbox_dbu": [
+        -340,
+        -4840,
+        3340,
+        4840
+      ],
+      "width_um": 3.68,
+      "height_um": 9.68,
+      "area_um2": 35.6224
+    },
+    {
+      "name": "018SRAM_cell1_2x_512x8m81",
+      "bbox_dbu": [
+        -340,
+        -340,
+        3340,
+        9340
+      ],
+      "width_um": 3.68,
+      "height_um": 9.68,
+      "area_um2": 35.6224
+    },
+    {
+      "name": "018SRAM_cell1_dummy_512x8m81",
+      "bbox_dbu": [
+        -340,
+        -340,
+        3340,
+        4840
+      ],
+      "width_um": 3.68,
+      "height_um": 5.18,
+      "area_um2": 19.0624
+    },
+    {
+      "name": "018SRAM_cell1_cutPC_512x8m81",
+      "bbox_dbu": [
+        -340,
+        -340,
+        3340,
+        4840
+      ],
+      "width_um": 3.68,
+      "height_um": 5.18,
+      "area_um2": 19.0624
+    },
+    {
+      "name": "018SRAM_cell1_dummy_R_512x8m81",
+      "bbox_dbu": [
+        -340,
+        -340,
+        3340,
+        4840
+      ],
+      "width_um": 3.68,
+      "height_um": 5.18,
+      "area_um2": 19.0624
+    }
+  ],
+  "scope": "MEASURED cell GDS bounding boxes;17.8um2/bit planning pitch from2-bit pair box; strap/edge/peripheral efficiency separate"
+}

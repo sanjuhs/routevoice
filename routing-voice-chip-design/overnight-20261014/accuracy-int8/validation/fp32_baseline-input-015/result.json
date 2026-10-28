@@ -1,0 +1,62 @@
+{
+  "case_id": "fp32_baseline-input-015",
+  "model": "fp32_baseline",
+  "id": "7850-111771-0003",
+  "role": "validation",
+  "condition": "white_noise_10db",
+  "seed": null,
+  "reference": "GENERAL HALLECK IN SPEAKING OF THIS BATTLE SAID",
+  "input_float32_sha256": "0cae4bc2e0d9c0d06b39cf5274451fa8749f92453be9d160957220dbdda459b0",
+  "hypothesis": "General Helles. In speaking of his battle set",
+  "normalized_tokens": [
+    "general",
+    "helles",
+    "in",
+    "speaking",
+    "of",
+    "his",
+    "battle",
+    "set"
+  ],
+  "edits": 3,
+  "reference_words": 8,
+  "hypothesis_words": 8,
+  "exact": false,
+  "lines": [
+    {
+      "text": "General Helles.",
+      "start_time": 0.09599995613098145,
+      "duration": 1.28000009059906,
+      "is_complete": true,
+      "samples": 20480,
+      "input_float32_sha256": "cec786c362ec9bac985312c0168dc1d26277b4a9f6f5428052e9137df183c531"
+    },
+    {
+      "text": "In speaking of his battle set",
+      "start_time": 1.2799999713897705,
+      "duration": 2.1440000534057617,
+      "is_complete": true,
+      "samples": 34304,
+      "input_float32_sha256": "fcd46f2bf03391b8055b170af82b9c921eeae8f04c86988e7f94aff316fc63ef"
+    }
+  ],
+  "request_sha256": "5578e057dc5afd543a700a00d4c4a1991a3a65874b323457c02a96a7147ac376",
+  "worker_sha256": "4682e8a57db08e02a34f53b01f334f34faa3ca9a6546698f1e4650db359004b6",
+  "native_library_sha256": "1453a6c1c9072f3d05e9e5ae6ff423fae839e56631c5efb12bbd5c0280d04399",
+  "native_api_version": 30000,
+  "load_seconds": 0.04429587512277067,
+  "compute_seconds": 0.12204400007613003,
+  "audio_seconds": 3.425,
+  "process_cpu_seconds": 0.121939,
+  "voluntary_context_switches": 0,
+  "involuntary_context_switches": 43,
+  "system_load_average": [
+    10.62939453125,
+    8.95458984375,
+    9.87255859375
+  ],
+  "options": null,
+  "flags": 0,
+  "process_id": 80899,
+  "isolation": "One audio clip/condition in a fresh native process; no previous utterance or VAD state."
+}

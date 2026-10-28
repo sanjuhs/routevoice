@@ -1,0 +1,61 @@
+{
+  "case_id": "int8_per_tensor-input-002",
+  "model": "int8_per_tensor",
+  "id": "2428-83705-0018",
+  "role": "validation",
+  "condition": "clean",
+  "seed": null,
+  "reference": "IT TURNED OUT THAT SHE HAD A LITTLE MONEY OF HER OWN ABOUT A HUNDRED AND THIRTY POUNDS A YEAR",
+  "input_float32_sha256": "032b3db9a969306bf9c494af968c91dc705c4f210dbf3f675569e14d44e4045d",
+  "hypothesis": "  ",
+  "normalized_tokens": [],
+  "edits": 20,
+  "reference_words": 20,
+  "hypothesis_words": 0,
+  "exact": false,
+  "lines": [
+    {
+      "text": "",
+      "start_time": 0.35199999809265137,
+      "duration": 1.343999981880188,
+      "is_complete": true,
+      "samples": 21504,
+      "input_float32_sha256": "56be0e19c75f43e9a314563eda06a8a7f63a2c736d25ce4036a8cd61bfd7cdea"
+    },
+    {
+      "text": "",
+      "start_time": 1.5679998397827148,
+      "duration": 2.30400013923645,
+      "is_complete": true,
+      "samples": 36864,
+      "input_float32_sha256": "1687fb3cea4268c8d5d8dc14ab4ce09fd609bc84f1c0a8f704ced364a39d7e09"
+    },
+    {
+      "text": "",
+      "start_time": 3.7119998931884766,
+      "duration": 2.1440000534057617,
+      "is_complete": true,
+      "samples": 34304,
+      "input_float32_sha256": "25719e98fd06cd9cabca2348124a01368be902ff4d3d777c1e282de3978bd06e"
+    }
+  ],
+  "request_sha256": "2970df5942c57c91a969fc7fdd2a3152b7c5b6d57858f81731365cfa1799c9fe",
+  "worker_sha256": "4682e8a57db08e02a34f53b01f334f34faa3ca9a6546698f1e4650db359004b6",
+  "native_library_sha256": "1453a6c1c9072f3d05e9e5ae6ff423fae839e56631c5efb12bbd5c0280d04399",
+  "native_api_version": 30000,
+  "load_seconds": 0.04229324986226857,
+  "compute_seconds": 0.1400400409474969,
+  "audio_seconds": 5.885,
+  "process_cpu_seconds": 0.13882500000000003,
+  "voluntary_context_switches": 0,
+  "involuntary_context_switches": 77,
+  "system_load_average": [
+    9.49853515625,
+    8.6748046875,
+    9.79345703125
+  ],
+  "options": null,
+  "flags": 0,
+  "process_id": 80441,
+  "isolation": "One audio clip/condition in a fresh native process; no previous utterance or VAD state."
+}

@@ -1,0 +1,793 @@
+{
+  "passed": true,
+  "ordered_project_compiler_inputs": [
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/experiments/voice-e2e-20261012-hardfloat-context-widths-v1/divSqrtRecFN_small-compatible.v",
+      "bytes": 16797,
+      "sha256": "a60d88d3e7cc63bba8a35271682de07f64f9164a0d83b293f2fcaefdf01faae9"
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/experiments/adapter-session-full-f500-native-prep-20261002-v2/generated-inputs/taalas_decoder_rotary_coefficients.sv",
+      "bytes": 60336,
+      "sha256": "afe6face5b5201d63ccb3af79cca30e02e6aa6f74f09362fa6fde5993c41038c"
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/experiments/adapter-session-full-f500-native-prep-20261002-v2/generated-inputs/taalas_embedding_dq_lut.sv",
+      "bytes": 7038,
+      "sha256": "17042e5b5078abe2f9f65c2b2bb23dacc39674355f25e5b5dd5c14bd9f9cd229"
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/experiments/adapter-session-full-f500-native-prep-20261002-v2/generated-inputs/taalas_head_shared_array.sv",
+      "bytes": 2044,
+      "sha256": "2c445d83120098243015138a10090c82aa4f406d5de766ec72fd53d16caacc83"
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/experiments/adapter-session-full-f500-native-prep-20261002-v2/generated-inputs/taalas_head_shared_consumer.sv",
+      "bytes": 42512,
+      "sha256": "fea466a266688bd8eb7899cd030258fa9bf8edfff359d2b2622f1c29c2c5b2c1"
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/experiments/adapter-session-full-f500-native-prep-20261002-v2/generated-inputs/taalas_head_shared_products.sv",
+      "bytes": 15529,
+      "sha256": "f814216431f32469ecfeaf6b18e1a87870a95aef7da120a94a6a4c7b5d13b642"
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/experiments/chip-integration-20261011-row-and-index-widths-v1/rv_pcm_frontend_encoder_common_clock_numeric_v3.sv",
+      "bytes": 18199,
+      "sha256": "a70f6a96524817b1d7820082c618269751b54271b691bfe0e3ec00d68d09a2b2"
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/experiments/chip-integration-20261011-common-clock-numeric-v5/rv_phase_clock_enables.sv",
+      "bytes": 622,
+      "sha256": "e9eab76359b9cc5d716c5bba2f5e9520fb0b901ef0b9a4dfe68a8cca334b03e8"
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/experiments/chip-integration-20261012-routevoice-remaining-widths-v1/rv_frontend_encoder_bridge.sv",
+      "bytes": 10564,
+      "sha256": "ef0c34be1b1a9e9536fe638225727b37a15dc1f5b2e65092782243b214b6e64f"
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/experiments/chip-integration-20261011-four-stage-common-clock-v9/rv_shared_encoded_port_v1.sv",
+      "bytes": 6647,
+      "sha256": "9d556e4452f2e94c70fa23a2be67df3046bc0be81d69a73d7f297d2368449ef1"
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/experiments/chip-integration-20261012-routevoice-remaining-widths-v1/rv_frames_taalas_adapter_cross_session_f500.sv",
+      "bytes": 20620,
+      "sha256": "5b98234b1ea258f9d7f76aeceba74547fcdceb0db04edd52a513f3ae7b3c367a"
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/experiments/chip-integration-20261011-frames-v4/rtl/rv_frames_taalas_adapter_global_dql_retiring_f500.sv",
+      "bytes": 13244,
+      "sha256": "1c47f67067c80cdd25e5c37a626a7f64c77e52be9d4df9358519c896a70788ac"
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/experiments/chip-integration-20261012-routevoice-remaining-widths-v1/rv_frames_taalas_adapter_position_f500.sv",
+      "bytes": 6845,
+      "sha256": "a1cbda4a74b51417ec1ba138ebc868fc83107a3d2fe11a453df7fbd63a0b6735"
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/experiments/runtime-array-index-widths-20261012-v1/rv_frames_taalas_attention_head_query_stream.sv",
+      "bytes": 9263,
+      "sha256": "f067e9662457eee552b04817d816803af53c591c34c00b0a9e679bf07c2344c2"
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/experiments/chip-integration-20261012-routevoice-remaining-widths-v1/rv_frames_taalas_attention_mask_sparse_certified_bank.sv",
+      "bytes": 6550,
+      "sha256": "2cf768a9e0168d5d50ec4d31e429e722e61fb4d65592cf5ffe6a56273c7a144c"
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/experiments/q8-learned-fulltables-f64-attention-o-source-proposal-20261012-v3/rv_frames_taalas_attention_o_fixed_row_q8.sv",
+      "bytes": 9922,
+      "sha256": "74d1214ac5330937ecc3aba2676d19fac4ffbbed31aea9c97154b0ab95ec25af"
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/experiments/q8-learned-fulltables-f64-attention-o-source-proposal-20261012-v4/taalas_parallel_integer_resolved_candidate_v1.sv",
+      "bytes": 1903,
+      "sha256": "b1edfb3766e1250d8331f03a13d4068789b84ea6885f0e0dfb0b3f1263c1b607"
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/experiments/q8-learned-fulltables-f64-attention-o-source-proposal-20261012-v4/rv_q8_generic_integer_projection_attention_v1.sv",
+      "bytes": 3591,
+      "sha256": "8b7a7f66267902eff9da075e19c1b4a95932266244af36b6c7b0f620aa81d2f0"
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/experiments/q8-learned-fulltables-f64-attention-o-source-proposal-20261012-v4/rv_q8_resolved_affine_candidate_v1.sv",
+      "bytes": 2849,
+      "sha256": "dbd7877b29fab3bb171175c677920c483b57108aa4bb6e792aeddcfbd41c3b3f"
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/experiments/q8-learned-fulltables-f64-attention-o-source-proposal-20261012-v4/rv_q8_digit_products_shiftadd_v1.sv",
+      "bytes": 614,
+      "sha256": "c8b87b59bdac6e87f2289396169fd0274b26c02dd21927c1f1d75db25008483b"
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/experiments/q8-learned-fulltables-f64-attention-o-source-proposal-20261012-v4/rv_q8_zero_correction_shiftadd_v1.sv",
+      "bytes": 709,
+      "sha256": "c4cd5afbbaf3ad54958850c5b6795547500b4131f6db931e47b2791737acfb66"
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/experiments/chip-integration-20261012-routevoice-remaining-widths-v1/rv_frames_taalas_attention_owned_rows.sv",
+      "bytes": 9453,
+      "sha256": "bf0132b84836d3dd866070dc68e10b740c22244b59917addb45af08cdc3054c5"
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/experiments/chip-integration-20261012-routevoice-remaining-widths-v1/rv_frames_taalas_attention_softmax_row_v2.sv",
+      "bytes": 7355,
+      "sha256": "3cecd9dcf53db43ad180812fbc044e4adfd61e7956ed730c359529ccb939d0c2"
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/experiments/chip-integration-20261012-routevoice-remaining-widths-v1/rv_frames_taalas_cross_attention_continuous_bank.sv",
+      "bytes": 2754,
+      "sha256": "96a62f0317462a30be41d959e24abbc9da1ecc47b433205fdb722159bcb9c0d1"
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/experiments/chip-integration-20261012-routevoice-remaining-widths-v1/rv_frames_taalas_decoder_cross_all_heads_dql_q1.sv",
+      "bytes": 8017,
+      "sha256": "5542b1fc42d66e71932b4c014beaf392bd76cc9a8e62a182b5c1640b17f16e2b"
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/experiments/chip-integration-20261012-routevoice-remaining-widths-v1/rv_frames_taalas_decoder_cross_o_q1.sv",
+      "bytes": 8441,
+      "sha256": "cc3986498e6281251ca7dd1a23ad37a38b0a062f19f56044d420e4bc5fb598de"
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/experiments/chip-integration-20261012-routevoice-remaining-widths-v1/rv_frames_taalas_decoder_cross_query_o_q1.sv",
+      "bytes": 10897,
+      "sha256": "f8f19aa9a32e450d1abc90a3a585c3956888cdafee8f78517db263da031e7029"
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/experiments/runtime-array-index-widths-20261012-v1/rv_frames_taalas_decoder_cross_variable_attention_q1.sv",
+      "bytes": 8364,
+      "sha256": "6f883dc61e29865e7b59f52765c4942f78472c7189acc25a0ae70baa7d0a0ed6"
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/experiments/runtime-array-index-widths-20261012-v1/rv_frames_taalas_decoder_cross_variable_softmax_q1.sv",
+      "bytes": 7100,
+      "sha256": "b75bc0b7f19d647bfc3dba769833821c6de854a8488d347b28648b7ccd170e13"
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/experiments/chip-integration-20261012-routevoice-remaining-widths-v1/rv_frames_taalas_decoder_layer_compact_q1.sv",
+      "bytes": 27571,
+      "sha256": "7a86df4aef2f89c4857c39cb9723d6859a536e07580d3447a5fff9b2fe6eb869"
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/experiments/chip-integration-20261012-routevoice-remaining-widths-v1/rv_frames_taalas_decoder_token_body_compact_joinable_q1.sv",
+      "bytes": 32390,
+      "sha256": "bf8bedef6dffdabc62a7dde2e00006b3b6b37d1788c08afc18126ba59bfc81bc"
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/experiments/chip-integration-20261012-routevoice-remaining-widths-v1/rv_frames_taalas_decoder_token_compact_joinable_q1.sv",
+      "bytes": 26463,
+      "sha256": "254e396a5610e252ba282a8ba27cd6ccadd1d267dd9554a22c2021d4a4c95012"
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/experiments/voice-e2e-20261011-whole-word-boolean-widths-v1/rv_frames_taalas_dql_sealed_source_q32_scatter.sv",
+      "bytes": 12762,
+      "sha256": "39ce5cf5209f337d7db5e06aebb7b4cbc92d46e74201b640d0cf208a2c5eea6f"
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/experiments/chip-integration-20261012-routevoice-remaining-widths-v1/rv_frames_taalas_encoder_feed_forward_presummed.sv",
+      "bytes": 11123,
+      "sha256": "595e95264571eda7d47f0d1ee9038827d80ab5a1acd2f57c015ac5260f5a7c49"
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/experiments/common-v9-ffdown-and-generic-comparison-width-source-20261011-v1/rv_frames_taalas_encoder_ff_presummed_down_q8.sv",
+      "bytes": 17727,
+      "sha256": "e218188ba2728abae4c61b45d808591d3591785c3aebd99127e0fba53e76c365"
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/experiments/voice-e2e-20261011-attention-finalnorm-widths-v1/rv_frames_taalas_encoder_final_norm_f500.sv",
+      "bytes": 8777,
+      "sha256": "9035325c8bcdef5cccee45bdeb0adbcdd697f2b4e76837b1f61ebef6fdf759cc"
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/experiments/chip-integration-20261012-head40-output-widths-v1/rv_frames_taalas_encoder_head40_query_stream_layers_q8.sv",
+      "bytes": 14841,
+      "sha256": "e60c1b7766baf7dcba2f80e78a6b8050b5fda486c9f7ba9a0943fea5abb8c60b"
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/experiments/chip-integration-20261011-frames-v4/rtl/rv_frames_taalas_encoder_norm_query_retiring_context_layers_q8.sv",
+      "bytes": 14225,
+      "sha256": "5703723ac76bd20a1db640d48aa74006791ff413a4127cd22a06462277a431f8"
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/experiments/chip-integration-20261012-routevoice-remaining-widths-v1/rv_frames_taalas_encoder_norm_sealed_q32.sv",
+      "bytes": 9344,
+      "sha256": "83b05a19202f41bec07249daab6965b4d823da4438e3d63b9cbcb1c60c179da0"
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/experiments/root-history-query-operand-widths-20261011-v1/rv_frames_taalas_encoder_query_heads_retiring_dql_layers_q8.sv",
+      "bytes": 14781,
+      "sha256": "076ee9c74188f014d86a84535178cb3218d5bade21c29a25964dba161f85a169"
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/experiments/chip-integration-20261012-routevoice-remaining-widths-v1/rv_frames_taalas_encoder_query_six_layers_f500.sv",
+      "bytes": 15834,
+      "sha256": "203086f0b1642ce3d8ee727222ec5721185df31a7bebdbddd935dc03f28aeeee"
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/experiments/chip-integration-20261011-frames-v4/rtl/rv_frames_taalas_encoder_residual_o_reload_q8_v2.sv",
+      "bytes": 12742,
+      "sha256": "36b05dbaa2ea4f7d86d6ce2a0c38797af8bbdaa5dcee1c4d4dfeb2717d73861f"
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/experiments/chip-integration-20261012-routevoice-remaining-widths-v1/rv_frames_taalas_encoder_residual_query_code_alias_layers_q8.sv",
+      "bytes": 18522,
+      "sha256": "99a1e979fafb05a92fc6828eb12034ce0c77f17549d24e2f2da88baf6ebbaaac"
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/experiments/chip-integration-20261012-routevoice-remaining-widths-v1/rv_encoded_bank_transfer_v4.sv",
+      "bytes": 4246,
+      "sha256": "ca55b327f392339bb178d4e7cb6b44650b34f6386682b718d6de3aab194ae843"
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/experiments/common-v9-f64-eos-producer-block-source-20261011-v3/rv_retained_encoder_adapter_eos_common_clock_v3.sv",
+      "bytes": 30319,
+      "sha256": "e849db81ac9dbc55ab06d70e09b76297e9c6e985eddda2297d58ca503a248934"
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/experiments/chip-integration-20261012-routevoice-remaining-widths-v1/rv_frames_taalas_adapter_session_compact_token_release_v1.sv",
+      "bytes": 43442,
+      "sha256": "1ebd16eb5d7c0a21eea0e52c19de78e870f8e2434bbb7f47cef9d85ddf8026a1"
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/experiments/common-v9-pcm-channels4-20261011-v1/taalas_pcm16_frontend_channels4_chunk1280.sv",
+      "bytes": 2059,
+      "sha256": "7562e68351f46bef3f7357658ca0fd16ceca1aa91349222420668a70bfe02390"
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/experiments/common-v9-pcm-channels4-20261011-v1/taalas_pcm16_to_fp32.sv",
+      "bytes": 809,
+      "sha256": "963ae21949870b073e40c66820b58ffdac533f0a569051efa6d599fc9db5944c"
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/experiments/voice-e2e-20261011-frontend-address-widths-v1/taalas_frontend_conv_chain_channels4_window4.sv",
+      "bytes": 10351,
+      "sha256": "5e6f574238314f094835b8468df6ae8e10c3ee7686733ffc49f65f81b5cae90b"
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/experiments/root-history-query-operand-widths-20261011-v1/taalas_frontend_history_owner_channels4_window4.sv",
+      "bytes": 8219,
+      "sha256": "f68ad569c4657e50b370a68e7b5c60ef27e0e58d60ff0407af66b52090f9cf0c"
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/experiments/frontend-four-channel-chronology-prep-v1/taalas_frontend_preprocess_projection_conv_channels4_window4.sv",
+      "bytes": 7587,
+      "sha256": "4b89266eb85cb79898455bfdd017927d648075160c30afa48794c0e6bfab1235"
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/experiments/chip-integration-20261012-routevoice-remaining-widths-v1/taalas_frontend_projection_conv_channels4_window4.sv",
+      "bytes": 9917,
+      "sha256": "75e5fda1ce2c5ef1bfd99f843c4c7404ebd22ce367acf96798f0c8f359495fd7"
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/experiments/root-frontend-conv-operand-width-source-20261011-v1/taalas_frontend_conv_channels4_window4.sv",
+      "bytes": 11758,
+      "sha256": "ff3ef50bb6bb320d24934be64be260f016d8879cd1c052f235213dc320c21adc"
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/taalas_adapter_position_q8.sv",
+      "bytes": 2569,
+      "sha256": "7eac45bde6a4e22e1c4b155379752ca5f23d0625d9a55466513252104932fa36"
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/taalas_asinh_host.sv",
+      "bytes": 4686,
+      "sha256": "d6ea2e1812642fd78c71a450f8f9d4806ad7c1edcb2ad1ba30f37b2a6758244c"
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/taalas_attention_panel_bank.sv",
+      "bytes": 3261,
+      "sha256": "e364afbe52a18fd9ff04a93233f84b264045e7f691694e4f8da511eb8dd31bed"
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/taalas_attention_qk_bank.sv",
+      "bytes": 4020,
+      "sha256": "a098d7fc07e7801363b389552cf6932dc60e92a0cc1d761fec461fb9286f854d"
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/taalas_attention_softmax_exp.sv",
+      "bytes": 5019,
+      "sha256": "d15e6c325b0a669d621455b45e8ddc6281373b2e3433662bfc9a5ba52df3739c"
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/taalas_attention_softmax_reciprocal.sv",
+      "bytes": 1669,
+      "sha256": "8405931e27fefe95c20a8e86f97f2fca5897bfd9cca43d17dc3e99e76e37c9de"
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/experiments/chip-integration-20261012-routevoice-remaining-widths-v1/taalas_book_page_cache.sv",
+      "bytes": 2771,
+      "sha256": "d1884b8921c087c1db1ac82c7d8e79baba3d0d6a9599d48b0509840fa703ff7d"
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/experiments/chip-integration-20261012-routevoice-remaining-widths-v1/taalas_compact_history_layer_self_o_q1.sv",
+      "bytes": 20727,
+      "sha256": "0c4e0b646940950603c96f928408d57eda7be2db07fb386b8c71fab16930b124"
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/taalas_compact_history_token_barrier_q1.sv",
+      "bytes": 20616,
+      "sha256": "d37f7cce02242301abaeb1801d09b0b9dacebfe6d8dee3f49b76ef6138faed14"
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/taalas_cross_attention_continuous_bank.sv",
+      "bytes": 2701,
+      "sha256": "4ac05cea68621d27e80e80126aba7f516d428a0b95437918385ccfa2c7074c71"
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/experiments/chip-integration-20261012-routevoice-remaining-widths-v1/taalas_decoder_all_heads_dql_q1.sv",
+      "bytes": 7705,
+      "sha256": "1b8e8fe23d76cb83cebcc5666b6e7a1bae95dadedaa7ea27b6ccf11dc0bd2c2f"
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/experiments/chip-integration-20261011-row-and-index-widths-v1/taalas_decoder_ff_q1.sv",
+      "bytes": 14829,
+      "sha256": "1ce653b0851e60f5a725cf259524fdf43f46aa31b9fdbae672c902407e612da2"
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/taalas_decoder_norm_q_q1.sv",
+      "bytes": 11654,
+      "sha256": "1ffc836dae8d72d63d7e2ad96b77d9ad71bfc73b86668ef8fe55200f5c36de2f"
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/taalas_decoder_quickgelu_gate.sv",
+      "bytes": 4323,
+      "sha256": "b91c3fcecf8b97d19f3b8e46384a4f7d6a89575c95e4a8a7d7d1e3c5a6f1addc"
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/taalas_decoder_rotary_q1.sv",
+      "bytes": 3917,
+      "sha256": "147e273d8812962e857097fb6414cac0b3afaf9578ca35bf48bb0849ae5d0211"
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/experiments/runtime-array-index-widths-20261012-v1/taalas_decoder_self_attention_q1.sv",
+      "bytes": 7424,
+      "sha256": "af799291a90e075da4ffd4c68ecff48d5c186f234fde43b5ce1d96141c5e63dc"
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/taalas_decoder_self_o_q1.sv",
+      "bytes": 8103,
+      "sha256": "0fcd4383fd048fe1e95c0dce621509edb508dadcd120f020aba75c6ffbdb5cb6"
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/taalas_decoder_self_softmax_q1.sv",
+      "bytes": 6343,
+      "sha256": "2ec8ff159e428c25097b124a46955e655d8b3e2a4e27321fa11594b3e899d016"
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/taalas_decoder_shared_domain_q1.sv",
+      "bytes": 17919,
+      "sha256": "ec0555b1b6043f5614e000af4de4042f88648be915e89570846ad1893de84fa2"
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/taalas_decoder_skipnorm320.sv",
+      "bytes": 6418,
+      "sha256": "44d1f7628831ef8606aa08c4d61f5af1706e18cc96ceddabe38b327a1c654b05"
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/taalas_dql_divide.sv",
+      "bytes": 1044,
+      "sha256": "71541de82161d94837a8e77e681ae0cd0e4798f8d45d6232d038aac63830e23c"
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/taalas_dql_parameters.sv",
+      "bytes": 2943,
+      "sha256": "97301ac9418ad7b283029f3010e46e78ae4e8afbc2595d66abe9bf37af00b436"
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/taalas_dql_retirable_source_q32.sv",
+      "bytes": 12884,
+      "sha256": "7954bac316275da37916d802a9c45386115369c9ac128fa261ee51e13014bc14"
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/taalas_dql_sealed_source_q32.sv",
+      "bytes": 12094,
+      "sha256": "51bb9b9c8cc7190ee61d02128b4716bbd6f90d9bfe70477368ca2de2ad6ca200"
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/taalas_dql_value.sv",
+      "bytes": 2315,
+      "sha256": "49536a1f01317f9e0835596861a2f3f0e3457a49bb0a54584919b4124ff4c1c5"
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/taalas_dql_value_bank.sv",
+      "bytes": 3965,
+      "sha256": "80b2a70f37b094d8303ac99a73935af9a54604cb267e32b1ebc0c7c038703849"
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/taalas_dynamic_fp32_fma.sv",
+      "bytes": 1846,
+      "sha256": "16febe5b8ac175b44b9c1c545e0bf10875daed519a09c15455a45c786da1c07c"
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/taalas_embedding_gather_h8.sv",
+      "bytes": 5435,
+      "sha256": "94c1061229a6820bb5d6b8db7d8c5d93c5c33dac381c43f34de185d6661a4fd3"
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/taalas_encoder_erf.sv",
+      "bytes": 4486,
+      "sha256": "683c40330029b24b63e4edac330c33bee553746d3fd304a40516ca57910282d6"
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/taalas_encoder_final_norm_scale.sv",
+      "bytes": 4298,
+      "sha256": "fcd508ed598291bde4f8dbc7a088cf32af62eb3e5fee528b62ac7eebf0a28fd0"
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/taalas_encoder_final_skipnorm320.sv",
+      "bytes": 6597,
+      "sha256": "e057626a2f6b2cd5b94f18edc302aeea489a8decfcab6b0df24c692741397e3f"
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/taalas_encoder_gelu.sv",
+      "bytes": 2446,
+      "sha256": "7fcaf08a42f40b4369af1104d5cc28189ab7618257e2b8302f3943bba34af6a8"
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/taalas_encoder_gelu_bank.sv",
+      "bytes": 3780,
+      "sha256": "4ff94be049bf86ce900599c5894e2e3f27fb61ec73ebfad9b9b42b659a7fb9d4"
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/taalas_encoder_head40_q8.sv",
+      "bytes": 3306,
+      "sha256": "036f7a53356a035babc1bf1c15844e9113113ed42cbbb27d76f12a318df10b21"
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/taalas_encoder_norm320.sv",
+      "bytes": 5287,
+      "sha256": "1a435c0ee3837dab357bfe136b30775c0e88728f27560d28ab2c17cec1dae79a"
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/taalas_encoder_norm_divsqrt.sv",
+      "bytes": 1036,
+      "sha256": "b3645fe91500fd113ff9ddd9e557cdf9702345db87a54ddb972abb2a1e42490b"
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/taalas_encoder_residual_norm_scale.sv",
+      "bytes": 4447,
+      "sha256": "1d5ff13f25a731d18a18293c9923e9a7296e76a7e1b6d84f4a0a108d8ce70497"
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/taalas_fp32_affine_bank.sv",
+      "bytes": 2277,
+      "sha256": "6bb689673d9652c48ad422c1f7fce623c1ec57c5d888f5dc1c2140c77291426c"
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/taalas_fp32_scale.sv",
+      "bytes": 1650,
+      "sha256": "784b3948185aa05b6d3b83c85eebfb154e688f9b2d13bb6780a27ec802723eb5"
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/experiments/runtime-array-index-widths-20261012-v1/taalas_frontend_cmvn80_v2.sv",
+      "bytes": 6231,
+      "sha256": "7f7032bf53101c699bc559929cb2617600820e885d20540da7d4aefb56db61d2"
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/taalas_frontend_cmvn_asinh80.sv",
+      "bytes": 3654,
+      "sha256": "76d40500d06d22a6abc663db1a252fc0543a2c138a63ec61b78bb8f765fec70f"
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/taalas_frontend_conv_dot4.sv",
+      "bytes": 3527,
+      "sha256": "545a04d9a22e4db533d9d487f6cccca2b67684da3a815825a1ed9f0f4d98a584"
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/taalas_frontend_linear_full.sv",
+      "bytes": 5195,
+      "sha256": "bdd15cd52c9e955af9e4481ba6a6e6aace4e20faa5f12427879ad60b071aaed6"
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/taalas_frontend_preprocess1280.sv",
+      "bytes": 4743,
+      "sha256": "f9b818811d4c7cf283643488ae1aa54931b2e61235c2ca3c31c755f7b2a4e288"
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/taalas_frontend_quickgelu.sv",
+      "bytes": 3603,
+      "sha256": "6008c8d819fc4cd9effe49b55824f2b5cff7d4f6cde2995a0ebd5d004385d737"
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/experiments/common-v9-ffdown-and-generic-comparison-width-source-20261011-v1/taalas_generic_integer_projection.sv",
+      "bytes": 3360,
+      "sha256": "2876cc9eae58cdc1213a98702ac22018372a6634e96e586eec13d110bd3b34f1"
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/taalas_head_argmax_h8.sv",
+      "bytes": 3302,
+      "sha256": "5671449e7b39871394e4c227b356117ce10dc25e11cf37ffaf4427182a908963"
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/taalas_head_full_h8.sv",
+      "bytes": 9090,
+      "sha256": "6d71d6d6efac84ffd53d22ee890d186671f88accdcb8c8902f9959572a19998f"
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/taalas_head_shared_cached.sv",
+      "bytes": 3359,
+      "sha256": "38d82781d0e06e7b314ca6f07ca5f7f9426926570a48f06937e59d0ffd337cd2"
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/taalas_parallel_integer_resolved.sv",
+      "bytes": 1878,
+      "sha256": "a998263947ff70bf88d3d7b22e500b56f0bd7d7bd9bdbcef6e0aa4bb7b6cd635"
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/taalas_parallel_projection_resolved_affine.sv",
+      "bytes": 2844,
+      "sha256": "a42652bab0af48392d1141ea56bb312d95d8e09f814bb5e61c67d65b8af49107"
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/taalas_projection_resolved_unbiased_q1.sv",
+      "bytes": 2682,
+      "sha256": "26ba87475768c2b3a4ea0af52423c81dfad10c55a2d0f6ea74cc5f51df5890bb"
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/taalas_shared_fp32_fma_pipeline.sv",
+      "bytes": 1639,
+      "sha256": "4e4f1e41fc15efb76c0afabb8f154d80de47f2818b89277286451d8a51785197"
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/experiments/common-v9-hardfloat-arm-specialize-width-source-20261011-v1/HardFloat_specialize.v",
+      "bytes": 6953,
+      "sha256": "9cb96a76de5f50727edda11d823db92a5f39b5acb93a3cc3788ffd2a1e1e100e"
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/experiments/voice-e2e-20261012-hardfloat-seven-widths-v1/HardFloat_primitives.v",
+      "bytes": 7611,
+      "sha256": "41d35d11f3b642626654f0b635a3b8b27adfcf959fb96e9e259ba7f98326de39"
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/experiments/runtime-hardfloat-rawfn-round-context-20261012-v1/HardFloat_rawFN.v",
+      "bytes": 18827,
+      "sha256": "e46c5861d15775b51f359d7e3053bf1193dff7062432c4b925e73a3c5c9a7dbc"
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/experiments/runtime-hardfloat-add-muladd-rawfn-widths-20261011-v1/addRecFN.v",
+      "bytes": 11984,
+      "sha256": "22b29adead1f19855d70f213b8c30295f068385cdaa957541e09245804e3f45d"
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/experiments/voice-e2e-20261012-hardfloat-context-widths-v1/fNToRecFN.v",
+      "bytes": 4328,
+      "sha256": "7983195089c4b397c1280f44848e1a45948d296b4a5ad5602ad46fa0b1e490c3"
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/experiments/voice-e2e-20261012-hardfloat-seven-widths-v1/iNToRecFN.v",
+      "bytes": 5415,
+      "sha256": "7d1deff9fc9fcf61f45ec2c9b3571f81c30e31adf3580b8883679cfa95694d4d"
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/third_party/hardfloat/HardFloat-1/source/isSigNaNRecFN.v",
+      "bytes": 2316,
+      "sha256": "77e37250ec9c18c4484c23eda48bfcf7df8dec1a3d3b2c1a1e5804386a25de8b"
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/experiments/runtime-hardfloat-add-muladd-rawfn-widths-20261011-v1/mulAddRecFN.v",
+      "bytes": 21037,
+      "sha256": "93eebfbb5742cf9b16094cc239b4d03bb1654c78e4e5837e8cecdabfdc09f50f"
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/experiments/voice-e2e-20261012-hardfloat-seven-widths-v1/mulRecFN.v",
+      "bytes": 9464,
+      "sha256": "083f73dfd37314913ddacb7d7c2fba9ccdeaaf1eb1a615bcebe91d1a3a29994c"
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/experiments/voice-e2e-20261012-hardfloat-context-widths-v1/recFNToFN.v",
+      "bytes": 4398,
+      "sha256": "840a3bd68b8c3ccdddee3854c3ce4dd289ce6f0425cbf3bb5ead1b38cf407b3f"
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/experiments/voice-e2e-20261012-hardfloat-seven-widths-v1/recFNToIN.v",
+      "bytes": 7717,
+      "sha256": "0c070b1c1da91be6e0e88be1b85966d279001cb945d7e5e30bcb61b0bcba623a"
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/third_party/hardfloat/HardFloat-1/source/recFNToRecFN.v",
+      "bytes": 4789,
+      "sha256": "3ec9a39057e64d7fb42893c12f0e19b36af7226669ba53671d6abe19db0722fc"
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/onchip-front/four_stage.cpp",
+      "bytes": 30521,
+      "sha256": "ed85442b0b8e498277fe9ab4a7fafd1624b3293edd59221764fe89216deb159b"
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/experiments/chip-integration-20261011-encoder-memory-integration-v2/rv_encoder_bank_consumer_edge_v1.sv",
+      "bytes": 4223,
+      "sha256": "f527a86be0dac2b9372bb2f47961e8a15efe53379ec2ab99932e8223a6cac36d"
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/experiments/chip-integration-20261012-encoder-bank-reply-ownership-source-v1/rv_encoder_memory_router_v6.sv",
+      "bytes": 9843,
+      "sha256": "0b29a37f9e1f5afb1614fe533edc3701723b19151a6f5b36d8a9f44f2cbe088d"
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/experiments/chip-integration-20261012-frontend-mutable-fulltables-connected-source-v3/rv_pcm_encoder_greedy_history_producer_KV_tables_parent_v1.sv",
+      "bytes": 57044,
+      "sha256": "c8da80496e041837a4accb612b990e6e6a13fc1f8f484bd751ca893eb9de118a"
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/experiments/chip-integration-20261012-history-producer-metadata-KV-tables-connected-source-v2/rv_pcm_encoder_greedy_history_producer_KV_tables_clock_v1.sv",
+      "bytes": 57853,
+      "sha256": "150df5feb3d947e6c1d3c798d2cd55066c969fb0e593df837ea0d4d70a2cb546"
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/experiments/chip-integration-20261012-history-producer-metadata-KV-tables-connected-source-v2/rv_greedy_real_decoder_tables_f64_v1.sv",
+      "bytes": 44128,
+      "sha256": "db31fd99e71b6b1f9d32654ff0a022b6d1380c53beaa6e765bd378f59899c37d"
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/experiments/common-v9-greedy-token-sequencer-source-20261011-v2/rv_greedy_token_sequencer_v2.sv",
+      "bytes": 8417,
+      "sha256": "6c476596bd2d3c0cad972c8f5da3699803e8772f30c2ee6ae1e6876249e56766"
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/experiments/chip-integration-20261012-history-producer-metadata-KV-tables-connected-source-v2/rv_pcm_encoder_greedy_history_producer_KV_tables_onboard_v1.sv",
+      "bytes": 56951,
+      "sha256": "ef7b428c1ecbf168c0b6152a6236f888e95690daa546d37286cc1a3c6d81e985"
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/experiments/chip-integration-20261012-learned-phase-gate-initialization-source-v1/rv_greedy_history_phase_gates_v1.sv",
+      "bytes": 835,
+      "sha256": "a7fbc02a9063b267d414784e721f12c90605de400718b7dfdc30a2d434c88d0a"
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/experiments/chip-integration-20261012-compact-history-connected-source-v1/rv_compact_history_backend_nexus_v1.sv",
+      "bytes": 2849,
+      "sha256": "1e5c9e95bb6cb8b9cd5dd2fdd06d01798055cb4a5d3e7704061ca55ad6be0d71"
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/experiments/chip-integration-20261012-compact-history-storage-source-v1/rv_compact_history_storage_v1.sv",
+      "bytes": 4326,
+      "sha256": "69fa3e9bd1c38634b4c729c3375a65394213021e31f4fd6cd18ac404201c954a"
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/experiments/chip-integration-20261012-producer-mutable-storage-source-v4/rv_producer_mutable_storage_v1.sv",
+      "bytes": 4290,
+      "sha256": "ec9f1cfc3df749e0b0984ac0e1b895856660b6d637f023deb08f4429fdba5417"
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/experiments/chip-integration-20261012-producer-mutable-storage-source-v4/rv_producer_mutable_memory_nexus_v1.sv",
+      "bytes": 6719,
+      "sha256": "4396fd79af63387685148cf8b0fe2b6a22709f88c26f348c232ae69e19d1baf7"
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/experiments/chip-integration-20261012-producer-metadata-ROM-source-v2/rv_producer_metadata_rom_service_v1.sv",
+      "bytes": 93487,
+      "sha256": "aba906f77d8b81b576930858e99d7976e31ef56d4218aec114edc05153282eb6"
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/experiments/chip-integration-20261012-history-producer-metadata-KV-tables-connected-source-v2/rv_pcm_encoder_greedy_history_producer_metadata_KV_tables_parent_v1.sv",
+      "bytes": 54584,
+      "sha256": "8eb748611363e0cdc411c904a65d192418b1b38ba13c75db511b314c8a5a1233"
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/experiments/chip-integration-20261012-source-KV-book-index-service-source-v1/rv_source_KV_book_index_service_v1.sv",
+      "bytes": 2527097,
+      "sha256": "7f107dc43d8d0db5738e34e5ad1cd90191f91b789fe4e1de14bfd46552e2b594"
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/experiments/chip-integration-20261012-source-KV-book-production-nexus-source-v1/rv_source_KV_book_port_nexus_v1.sv",
+      "bytes": 2218,
+      "sha256": "17a08dffbeb6194e009cef95c33bd4eb67fa327f8362ccabe4911c29a89770be"
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/experiments/chip-integration-20261012-source-KV-book-production-nexus-source-v1/rv_greedy_history_KV_phase_gates_v1.sv",
+      "bytes": 1095,
+      "sha256": "077c95b78cf2121b342bbcb7201275cbf9c71317e0638680c143a3ad8560b6d6"
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/experiments/chip-integration-20261012-frontend-learned-norm-connected-source-v3/rv_pcm_encoder_greedy_history_producer_metadata_KV_tables_onboard_v1.sv",
+      "bytes": 58255,
+      "sha256": "52662e624e2c062ab3675b57f6feeacf56b8f1f4ec6cfad90020e38b4544832b"
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/experiments/chip-integration-20261012-history-producer-metadata-KV-tables-connected-source-v2/rv_tied_table_services_nexus_v3.sv",
+      "bytes": 8014,
+      "sha256": "5821a4e12e9305216ecdc392a794770ee8a5e3e447f954600c4041b8eae80d6a"
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/experiments/chip-integration-20261012-tied-book-loader-source-v3/rv_tied_book_loader_v3.sv",
+      "bytes": 7696131,
+      "sha256": "548020ee071e889a71cda0a8f2b3ea42e03cc6c6a6476ea3e770f5d49cb029d5"
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/experiments/chip-integration-20261012-tied-index-service-source-v1/rv_tied_index_service_v1.sv",
+      "bytes": 11707213,
+      "sha256": "5053bf0957b6e11034f6231dd61b40d53da5cca35575b88ddafc9f4bf542b45b"
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/experiments/root-frontend-mutable-storage-source-20261012-v3/rv_frontend_mutable_storage_v3.sv",
+      "bytes": 4692,
+      "sha256": "3d0b96cba3d33d9afe5245a34a2898f404e19a30e016ed48f589354b4fc43640"
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/experiments/chip-integration-20261012-frontend-mutable-fulltables-connected-source-v3/rv_frontend_mutable_services_nexus_v1.sv",
+      "bytes": 11474,
+      "sha256": "afdbfaddbc991679aee1f76baf0f229094d2ae16880fb2d84e7103674887dfd7"
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/experiments/chip-integration-20261012-frontend-learned-norm-connected-source-v3/rv_pcm_encoder_greedy_frontend_history_producer_metadata_KV_tables_onboard_v1.sv",
+      "bytes": 60956,
+      "sha256": "0e8046e6afa96710345a3e184564a7657ac8f783b64f30954f119831db7fe931"
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/experiments/chip-integration-20261012-decoder-learned-norm-production-readout-source-v3/rv_decoder_learned_norm_readout_v1.sv",
+      "bytes": 139301,
+      "sha256": "61c293b4ee060f5b1d44168f924b3199555980ef2cf1b64b21d07f2691730322"
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/onchip-front/rv_allonchip_top_w1c.sv",
+      "bytes": 60256,
+      "sha256": "6e2c3d120a8c14a41bc0c60de531daafb05cc80034d65901c9f1fd37f8ab4a53"
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/onchip-front/rv_onchip_frontend_v1.sv",
+      "bytes": 3982,
+      "sha256": "ef324f556f2615a2e62690b8a1980a639b1f6a0ab04639ef4ad85062b1c2c7a9"
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/onchip-front/rv_source_position_immutable_rom_v1.sv",
+      "bytes": 2715,
+      "sha256": "ad01eb752131c5d3569476421af450ab4f03bde213b69ee8224ae7976a063a41"
+    }
+  ],
+  "host_copies": [
+    {
+      "file": "encoder_services.hpp",
+      "changed": false,
+      "original_sha256": "e2e45e12f1f4e62236548229735b1d9a019455a155dda73d47e21591554ba921",
+      "copy_sha256": "e2e45e12f1f4e62236548229735b1d9a019455a155dda73d47e21591554ba921"
+    },
+    {
+      "file": "four_stage.cpp",
+      "changed": true,
+      "original_sha256": "fad438b203fc633827f075ece7e88d2c3964b78137e7118899408ccca30532b9",
+      "copy_sha256": "ed85442b0b8e498277fe9ab4a7fafd1624b3293edd59221764fe89216deb159b"
+    },
+    {
+      "file": "frontend_services.hpp",
+      "changed": true,
+      "original_sha256": "014708029a0dd6ae7bc0a3e20931ca04c3853389c62cb802d1eb13169d0ca422",
+      "copy_sha256": "1acc84da153fa9ba7b22cc0d4ece877758a055050ba07978f812e52c3a06988e"
+    },
+    {
+      "file": "greedy_observer.hpp",
+      "changed": false,
+      "original_sha256": "05ef4d56edd39526e8f7fd3622427f99f2f1b7f172004fc3d1a66c2a8dfc0f18",
+      "copy_sha256": "05ef4d56edd39526e8f7fd3622427f99f2f1b7f172004fc3d1a66c2a8dfc0f18"
+    },
+    {
+      "file": "learned_observer.hpp",
+      "changed": false,
+      "original_sha256": "70badf2fb73624174684bd4626efa4a5742feffad4d233ed41b3e96a7b2157ef",
+      "copy_sha256": "70badf2fb73624174684bd4626efa4a5742feffad4d233ed41b3e96a7b2157ef"
+    },
+    {
+      "file": "producer_services.hpp",
+      "changed": false,
+      "original_sha256": "4ee34abb82f760a0321b9954f04c20ffebf39c6171beba1d43e486d3b6ad146a",
+      "copy_sha256": "4ee34abb82f760a0321b9954f04c20ffebf39c6171beba1d43e486d3b6ad146a"
+    },
+    {
+      "file": "taalas_adapter_session_compact_token_services_f500_v1.hpp",
+      "changed": true,
+      "original_sha256": "1bb64dcb65a808c79d10d827f14217b297ac0faaf6e8adb78d4e594f4016ddaf",
+      "copy_sha256": "92ec5e096cdaac3b3d3c1376d1eea32eb6db8f41bbbb82888458105fc6ea62c6"
+    },
+    {
+      "file": "taalas_decoder_token_compact_services.hpp",
+      "changed": false,
+      "original_sha256": "4ff7c5b39f1f823c1e589f88d5268bf5013d2b38f21456f7e82954830e8a65f3",
+      "copy_sha256": "4ff7c5b39f1f823c1e589f88d5268bf5013d2b38f21456f7e82954830e8a65f3"
+    }
+  ],
+  "position_rtl_unmodified": true,
+  "position_host_drivers": 0,
+  "frontend_host_response_valid_only_zero": true
+}

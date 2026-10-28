@@ -1,0 +1,152 @@
+{
+  "unix": 1791934893.924978,
+  "method": "ditto --hfsCompression, SHA256 verified before atomic replace; transparent POSIX reads retain identical bytes",
+  "free_before_bytes": 24732246016,
+  "free_after_bytes": 26023849984,
+  "changes": [
+    {
+      "path": "runs/rv_fixed_proj320_rom-physical20/12-openroad-cutrows/rv_fixed_proj320_rom.def",
+      "sha256": "7265b98e70912e03d9d533530b99920cd2075cc2fb9d649b50902e6fc24590e2",
+      "bytes": 38664678,
+      "before_allocated_bytes": 38666240,
+      "after_allocated_bytes": 8454144,
+      "flags": 32
+    },
+    {
+      "path": "runs/rv_fixed_proj320_rom-physical20/12-openroad-cutrows/rv_fixed_proj320_rom.odb",
+      "sha256": "81ed518f572deb750b4edda5f5c3cf9881970705ff6ca46c518970d51dd1f6db",
+      "bytes": 153939700,
+      "before_allocated_bytes": 153939968,
+      "after_allocated_bytes": 37801984,
+      "flags": 32
+    },
+    {
+      "path": "runs/rv_fixed_proj320_rom-physical20/13-openroad-tapendcapinsertion/rv_fixed_proj320_rom.def",
+      "sha256": "83b9ccd6e2b0f25e88509cf33d4816cac7c6825e0488dd493394a3aa3f80f773",
+      "bytes": 52585966,
+      "before_allocated_bytes": 53321728,
+      "after_allocated_bytes": 9478144,
+      "flags": 32
+    },
+    {
+      "path": "runs/rv_fixed_proj320_rom-physical20/13-openroad-tapendcapinsertion/rv_fixed_proj320_rom.nl.v",
+      "sha256": "34bf52e24eada221e3faac69e1a10fc20a2e45894d031b18e0f630566aaa4b4b",
+      "bytes": 44035137,
+      "before_allocated_bytes": 44036096,
+      "after_allocated_bytes": 7401472,
+      "flags": 32
+    },
+    {
+      "path": "runs/rv_fixed_proj320_rom-physical20/13-openroad-tapendcapinsertion/rv_fixed_proj320_rom.odb",
+      "sha256": "54d0a62470165bac754aef6c9812415a5c56398f04409d65fd22e66d732efe7e",
+      "bytes": 182967929,
+      "before_allocated_bytes": 182968320,
+      "after_allocated_bytes": 45154304,
+      "flags": 32
+    },
+    {
+      "path": "runs/rv_fixed_proj320_rom-physical20/13-openroad-tapendcapinsertion/rv_fixed_proj320_rom.pnl.v",
+      "sha256": "d9981d38bd4561b8083829e1c3fb6c68251d3a78323d7c9083022e8cb44fb415",
+      "bytes": 62958367,
+      "before_allocated_bytes": 62959616,
+      "after_allocated_bytes": 8441856,
+      "flags": 32
+    },
+    {
+      "path": "runs/rv_fixed_proj320_rom-physical20/15-openroad-generatepdn/rv_fixed_proj320_rom.def",
+      "sha256": "b41c6a044dfde23adecde39f773e76f5502dc9f86f61d58e250d18769e6b63ec",
+      "bytes": 61011955,
+      "before_allocated_bytes": 61997056,
+      "after_allocated_bytes": 10551296,
+      "flags": 32
+    },
+    {
+      "path": "runs/rv_fixed_proj320_rom-physical20/15-openroad-generatepdn/rv_fixed_proj320_rom.nl.v",
+      "sha256": "18cbe3e5cc6c05d16167ab87bf3a82d1823a793b578166189001308868971e84",
+      "bytes": 44035179,
+      "before_allocated_bytes": 44036096,
+      "after_allocated_bytes": 7458816,
+      "flags": 32
+    },
+    {
+      "path": "runs/rv_fixed_proj320_rom-physical20/15-openroad-generatepdn/rv_fixed_proj320_rom.odb",
+      "sha256": "2b8209bc81686314f75fac44cde008929cf51b93f2d48636676af498568214ac",
+      "bytes": 186665415,
+      "before_allocated_bytes": 186667008,
+      "after_allocated_bytes": 46157824,
+      "flags": 32
+    },
+    {
+      "path": "runs/rv_fixed_proj320_rom-physical20/15-openroad-generatepdn/rv_fixed_proj320_rom.pnl.v",
+      "sha256": "27cfe568d9fea9a7408feed25f452a358d917dc3102217b2e01d3e1dc6d0bd65",
+      "bytes": 62958387,
+      "before_allocated_bytes": 62959616,
+      "after_allocated_bytes": 8425472,
+      "flags": 32
+    },
+    {
+      "path": "runs/rv_fixed_proj320_rom-physical20/18-openroad-globalplacementskipio/rv_fixed_proj320_rom.def",
+      "sha256": "87b104d461bc436aadf7f5b49169267c938eadd80e426c4ae8e2cea8aa00db26",
+      "bytes": 69222298,
+      "before_allocated_bytes": 83890176,
+      "after_allocated_bytes": 13656064,
+      "flags": 32
+    },
+    {
+      "path": "runs/rv_fixed_proj320_rom-physical20/18-openroad-globalplacementskipio/rv_fixed_proj320_rom.nl.v",
+      "sha256": "34bf52e24eada221e3faac69e1a10fc20a2e45894d031b18e0f630566aaa4b4b",
+      "bytes": 44035137,
+      "before_allocated_bytes": 44036096,
+      "after_allocated_bytes": 7393280,
+      "flags": 32
+    },
+    {
+      "path": "runs/rv_fixed_proj320_rom-physical20/18-openroad-globalplacementskipio/rv_fixed_proj320_rom.odb",
+      "sha256": "775b666dfb56035746d2ed5b3618618a92f0e2ae6f2ec0b48ffa1b6702fed040",
+      "bytes": 186665415,
+      "before_allocated_bytes": 186667008,
+      "after_allocated_bytes": 51417088,
+      "flags": 32
+    },
+    {
+      "path": "runs/rv_fixed_proj320_rom-physical20/18-openroad-globalplacementskipio/rv_fixed_proj320_rom.pnl.v",
+      "sha256": "80fecf33b32878070839b84663594ae26914339b91d9207261638ffc4a77faef",
+      "bytes": 62958387,
+      "before_allocated_bytes": 62959616,
+      "after_allocated_bytes": 8417280,
+      "flags": 32
+    },
+    {
+      "path": "runs/rv_fixed_proj320_rom-physical20/19-openroad-ioplacement/rv_fixed_proj320_rom.def",
+      "sha256": "322ec957f6f399a72052dd53ff3e781fb3d7b8309df1c430fbb7856b0a8c537e",
+      "bytes": 69230172,
+      "before_allocated_bytes": 84000768,
+      "after_allocated_bytes": 13352960,
+      "flags": 32
+    },
+    {
+      "path": "runs/rv_fixed_proj320_rom-physical20/19-openroad-ioplacement/rv_fixed_proj320_rom.nl.v",
+      "sha256": "34bf52e24eada221e3faac69e1a10fc20a2e45894d031b18e0f630566aaa4b4b",
+      "bytes": 44035137,
+      "before_allocated_bytes": 44036096,
+      "after_allocated_bytes": 8110080,
+      "flags": 32
+    },
+    {
+      "path": "runs/rv_fixed_proj320_rom-physical20/19-openroad-ioplacement/rv_fixed_proj320_rom.odb",
+      "sha256": "adf29f3afe1f99c8d88b6d17b964550f32ccd237e5fb9ef1cd594d10426ab3fa",
+      "bytes": 186668891,
+      "before_allocated_bytes": 186671104,
+      "after_allocated_bytes": 52150272,
+      "flags": 32
+    },
+    {
+      "path": "runs/rv_fixed_proj320_rom-physical20/19-openroad-ioplacement/rv_fixed_proj320_rom.pnl.v",
+      "sha256": "80fecf33b32878070839b84663594ae26914339b91d9207261638ffc4a77faef",
+      "bytes": 62958387,
+      "before_allocated_bytes": 62959616,
+      "after_allocated_bytes": 8425472,
+      "flags": 32
+    }
+  ]
+}

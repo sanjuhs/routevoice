@@ -1,0 +1,96 @@
+{
+  "unix": 1791933960.140011,
+  "method": "ditto --hfsCompression, SHA256 verified before atomic replace; transparent POSIX reads retain identical bytes",
+  "free_before_bytes": 25855053824,
+  "free_after_bytes": 26303062016,
+  "changes": [
+    {
+      "path": "runs/rv_fixed_proj320_rom-synthesis-retry/05-yosys-jsonheader/rv_fixed_proj320_rom.h.json",
+      "sha256": "7e4caf2ee71614aa8b6a874d7f03067c7bc8560b9290ba83cd62c8266e9c7b5d",
+      "bytes": 27851026,
+      "before_allocated_bytes": 27852800,
+      "after_allocated_bytes": 3162112,
+      "flags": 32
+    },
+    {
+      "path": "runs/rv_fixed_proj64x320_rom-pre-route-gate-cell-activity/01-openroad-stamidpnr/max.rpt",
+      "sha256": "686a9356ac34df04f04aa331c1055712cf8496caca78b768bfb856ded3a2fb43",
+      "bytes": 21141023,
+      "before_allocated_bytes": 21143552,
+      "after_allocated_bytes": 4198400,
+      "flags": 32
+    },
+    {
+      "path": "runs/rv_fixed_proj64x320_rom-pre-route-gate-cell-activity/01-openroad-stamidpnr/min.rpt",
+      "sha256": "b532ce0e3306c374aa2da7ea7457f074373f2d964b080cef74c6b029a6d3a523",
+      "bytes": 7618596,
+      "before_allocated_bytes": 7622656,
+      "after_allocated_bytes": 970752,
+      "flags": 32
+    },
+    {
+      "path": "runs/rv_fixed_proj64x320_rom-pre-route-gate-cell-activity/01-openroad-stamidpnr/openroad-stamidpnr.log",
+      "sha256": "9e4e7f0ebc09144dba225ab38a29d4022e279cc0b1cf83b3c22bd8fd911b505f",
+      "bytes": 28865207,
+      "before_allocated_bytes": 29364224,
+      "after_allocated_bytes": 5296128,
+      "flags": 32
+    },
+    {
+      "path": "runs/rv_fixed_proj64x320_rom-pre-route-gate-cell-activity/final/json_h/rv_fixed_proj64x320_rom.h.json",
+      "sha256": "b14af5f0b74a8debf0940167a4191ee7f4c632cdd9dcb99f6685cd9e5b2349c5",
+      "bytes": 24475417,
+      "before_allocated_bytes": 24477696,
+      "after_allocated_bytes": 2138112,
+      "flags": 32
+    },
+    {
+      "path": "runs/rv_fixed_proj64x320_rom-pre-route-gate-cell-activity/final/sdf/nom_ff_n40C_5v50/rv_fixed_proj64x320_rom__nom_ff_n40C_5v50.sdf",
+      "sha256": "a96308acf2ee335bea8e55deef1330a438c14681731327d89eda5923702180c2",
+      "bytes": 198127302,
+      "before_allocated_bytes": 198127616,
+      "after_allocated_bytes": 39886848,
+      "flags": 32
+    },
+    {
+      "path": "runs/rv_fixed_proj64x320_rom-pre-route-gate-cell-activity/final/sdf/nom_ss_125C_4v50/rv_fixed_proj64x320_rom__nom_ss_125C_4v50.sdf",
+      "sha256": "75d3208c533850de1cf45384960e2f4be4f8aa524e5ff224c7c986238abb081d",
+      "bytes": 199578854,
+      "before_allocated_bytes": 199581696,
+      "after_allocated_bytes": 42496000,
+      "flags": 32
+    },
+    {
+      "path": "runs/rv_fixed_proj64x320_rom-pre-route-gate-cell-activity/final/sdf/nom_tt_025C_5v00/rv_fixed_proj64x320_rom__nom_tt_025C_5v00.sdf",
+      "sha256": "c146e93ffc044e7576def2137864ad7b2f90de8fa6bb5ef69c7195e8fef67511",
+      "bytes": 198814367,
+      "before_allocated_bytes": 198815744,
+      "after_allocated_bytes": 40394752,
+      "flags": 32
+    },
+    {
+      "path": "runs/rv_fixed_proj64x320_rom-preroute-render/final/sdf/nom_ff_n40C_5v50/rv_fixed_proj64x320_rom__nom_ff_n40C_5v50.sdf",
+      "sha256": "a96308acf2ee335bea8e55deef1330a438c14681731327d89eda5923702180c2",
+      "bytes": 198127302,
+      "before_allocated_bytes": 198127616,
+      "after_allocated_bytes": 39337984,
+      "flags": 32
+    },
+    {
+      "path": "runs/rv_fixed_proj64x320_rom-preroute-render/final/sdf/nom_ss_125C_4v50/rv_fixed_proj64x320_rom__nom_ss_125C_4v50.sdf",
+      "sha256": "75d3208c533850de1cf45384960e2f4be4f8aa524e5ff224c7c986238abb081d",
+      "bytes": 199578854,
+      "before_allocated_bytes": 199581696,
+      "after_allocated_bytes": 41992192,
+      "flags": 32
+    },
+    {
+      "path": "runs/rv_fixed_proj64x320_rom-preroute-render/final/sdf/nom_tt_025C_5v00/rv_fixed_proj64x320_rom__nom_tt_025C_5v00.sdf",
+      "sha256": "c146e93ffc044e7576def2137864ad7b2f90de8fa6bb5ef69c7195e8fef67511",
+      "bytes": 198814367,
+      "before_allocated_bytes": 198815744,
+      "after_allocated_bytes": 40960000,
+      "flags": 32
+    }
+  ]
+}

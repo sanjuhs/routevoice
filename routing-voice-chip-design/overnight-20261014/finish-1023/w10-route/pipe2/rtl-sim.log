@@ -1,0 +1,59 @@
+vector=0 cycles=4165 reads=1280
+vector=1 cycles=5590 reads=1280
+vector=2 cycles=5671 reads=1280
+vector=3 cycles=5574 reads=1280
+vector=4 cycles=5588 reads=1280
+vector=5 cycles=5687 reads=1280
+vector=6 cycles=5693 reads=1280
+vector=7 cycles=5700 reads=1280
+vector=8 cycles=5571 reads=1280
+vector=9 cycles=5472 reads=1280
+vector=10 cycles=5680 reads=1280
+vector=11 cycles=5589 reads=1280
+vector=12 cycles=5543 reads=1280
+vector=13 cycles=5549 reads=1280
+vector=14 cycles=5541 reads=1280
+vector=15 cycles=5587 reads=1280
+vector=16 cycles=5572 reads=1280
+vector=17 cycles=5590 reads=1280
+vector=18 cycles=5610 reads=1280
+vector=19 cycles=5730 reads=1280
+vector=20 cycles=5588 reads=1280
+vector=21 cycles=5509 reads=1280
+vector=22 cycles=5618 reads=1280
+vector=23 cycles=5665 reads=1280
+vector=24 cycles=5462 reads=1280
+vector=25 cycles=5588 reads=1280
+vector=26 cycles=5481 reads=1280
+vector=27 cycles=5651 reads=1280
+vector=28 cycles=5681 reads=1280
+vector=29 cycles=5606 reads=1280
+vector=30 cycles=5637 reads=1280
+vector=31 cycles=5663 reads=1280
+vector=32 cycles=5712 reads=1280
+vector=33 cycles=5570 reads=1280
+vector=34 cycles=5555 reads=1280
+vector=35 cycles=5619 reads=1280
+vector=36 cycles=5640 reads=1280
+vector=37 cycles=5609 reads=1280
+vector=38 cycles=5595 reads=1280
+vector=39 cycles=5529 reads=1280
+vector=40 cycles=5639 reads=1280
+vector=41 cycles=5454 reads=1280
+vector=42 cycles=5626 reads=1280
+vector=43 cycles=5598 reads=1280
+vector=44 cycles=5562 reads=1280
+vector=45 cycles=5680 reads=1280
+vector=46 cycles=5651 reads=1280
+vector=47 cycles=5641 reads=1280
+vector=48 cycles=5555 reads=1280
+vector=49 cycles=5666 reads=1280
+vector=50 cycles=5491 reads=1280
+vector=51 cycles=5608 reads=1280
+vector=52 cycles=5535 reads=1280
+vector=53 cycles=5619 reads=1280
+PASS vectors=54 outputs=17280 cycles=     301005 stalls=     104077 aborts=4 unstalled_cycles=4163
+- tb_array_port_pipe2.sv:63: Verilog $finish
+- S i m u l a t i o n   R e p o r t: Verilator 5.050 2026-07-01
+- Verilator: $finish at 6ms; walltime 0.392 s; speed 15.545 ms/s
+- Verilator: cpu 0.383 s on 1 threads; allocated 3 MB

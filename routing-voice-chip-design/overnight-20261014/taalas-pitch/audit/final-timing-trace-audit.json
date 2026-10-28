@@ -1,0 +1,86 @@
+[
+  {
+    "case": "timing/r1280-g09/typical-60ns-s32",
+    "independent_trace_recomputation_matches": true,
+    "failures": {
+      "output": 0,
+      "raw": 0,
+      "precharge": 0,
+      "phase": 0
+    },
+    "capture_checks": 320,
+    "aperture20ns_failures": 0,
+    "maximum_sampled_settle_ns": 15.415282000000005,
+    "partial_source_energy_pj": {
+      "pr": 94.95037961326362,
+      "pw": 1.3636880675963245,
+      "pp": 9.637610904662541,
+      "pa": -0.18891804127859863
+    },
+    "partial_total_pj": 105.76276054424389,
+    "max_step_ns": 0.20000020000000515
+  },
+  {
+    "case": "timing/r1280-g09/ss-60ns-s32",
+    "independent_trace_recomputation_matches": true,
+    "failures": {
+      "output": 0,
+      "raw": 0,
+      "precharge": 0,
+      "phase": 0
+    },
+    "capture_checks": 320,
+    "aperture20ns_failures": 18,
+    "maximum_sampled_settle_ns": 23.443325000000016,
+    "partial_source_energy_pj": {
+      "pr": 75.28079342581749,
+      "pw": 1.1194546719298555,
+      "pp": 7.839488676209204,
+      "pa": 0.20138866064388994
+    },
+    "partial_total_pj": 84.44112543460044,
+    "max_step_ns": 0.2000003999999953
+  },
+  {
+    "case": "timing/r1280-g09-fullcontrol/ss-60ns-s32",
+    "independent_trace_recomputation_matches": true,
+    "failures": {
+      "output": 0,
+      "raw": 0,
+      "precharge": 63,
+      "phase": 10
+    },
+    "capture_checks": 320,
+    "aperture20ns_failures": 80,
+    "maximum_sampled_settle_ns": 32.353378,
+    "partial_source_energy_pj": {
+      "pr": 255.81738066269878,
+      "pw": 8.201268733144028,
+      "pp": 60.35058058343169,
+      "pa": -2.083071136962778
+    },
+    "partial_total_pj": 322.28615884231175,
+    "max_step_ns": 0.20000019999999194
+  },
+  {
+    "case": "timing/r1280-g09-fullcontrol-guarded/ss-120ns-s32",
+    "independent_trace_recomputation_matches": true,
+    "failures": {
+      "output": 0,
+      "raw": 0,
+      "precharge": 0,
+      "phase": 0
+    },
+    "capture_checks": 320,
+    "aperture20ns_failures": 80,
+    "maximum_sampled_settle_ns": 31.68838240000001,
+    "partial_source_energy_pj": {
+      "pr": 78.2932866084614,
+      "pw": 8.20366205875305,
+      "pp": 63.16506759128587,
+      "pa": 0.19799637918657323
+    },
+    "partial_total_pj": 149.86001263768688,
+    "max_step_ns": 0.20000000000001503
+  }
+]

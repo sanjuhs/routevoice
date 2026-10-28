@@ -1,0 +1,37 @@
+{
+  "status": "joined_array_and_analog_readout_only",
+  "tile_selections": 20480,
+  "tile_bitcells": 81920,
+  "receiver_channels": 1280,
+  "receiver_transistors": 5120,
+  "tile_bounds_um": [
+    0.7000000000000001,
+    0.04,
+    4669.7,
+    220.0
+  ],
+  "tile_dimensions_um": [
+    4669.0,
+    219.96
+  ],
+  "tile_area_um2": 1026993.24,
+  "partial_um2_per_selection": 50.146154296875,
+  "subbank_dimensions_um": [
+    450.89,
+    218.17000000000002
+  ],
+  "channel_routing": "actual M2 bitline legs, M3 fanout horizontal tracks, M4 receiver legs;128 tracks at0.66um; zero ideal joins",
+  "wordlines": "actual commonM3 wires across10subbanks; decoder/driver external",
+  "exclusions": [
+    "row decoder/driver integration",
+    "precharge/evaluate nonoverlap control/driver",
+    "20-way bank select",
+    "output capture flops (owned by W2b engine)",
+    "complete PDN integrity",
+    "distributedRC and integrated timing"
+  ],
+  "source_sha256": {
+    "experiments/taalas-access/mask-index-comparator/generate_layout.py": "618d9ca19a6c3349eb70ba6c280a2ece9836d8da6395d3e368b00db666626f96",
+    "experiments/taalas-access/mask-index-comparator/receiver-strip/generate_layout.py": "422510dab0af75d936700ca819d301fd6700e78b9a8209737baccd6525c20f9f"
+  }
+}

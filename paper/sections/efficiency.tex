@@ -1,0 +1,43 @@
+\section{Making It Faster and More Efficient}
+\label{sec:efficiency}
+
+We separate improvements to the \emph{design}, which change area or energy, from improvements to the \emph{flow}, which change how long it takes to reach a verified design.
+
+\subsection{Design}
+\paragraph{Map mutable state to SRAM.}
+The full-recognizer synthesis puts 8.17\,M mutable bits into flip-flops. At \SI{1198}{mm^2}, that is the single largest gap between our RTL and a manufacturable chip. Open GF180 SRAM macros and a bridge design that replays the full clip with 160 macros already exist. Integrating them is engineering work, not research.
+
+\paragraph{Time-share datapaths.}
+The RTL instantiates separate arithmetic for each service. A small number of projection engines, scheduled over all matrices, would replace most of that logic. The scheduling question is the one raised in \cref{sec:architecture}: how many engine-equivalents real-time streaming really needs.
+
+\paragraph{Lower the activity, not just the clock.}
+Combinational logic draws 75\% of engine power (\SI{142}{mW} of \SI{188}{mW}). The 320 accumulators and partial-product selectors toggle on every accumulation cycle. Three changes would each cut that activity:
+\begin{itemize}
+\item gate the clock of lanes whose selected product is zero;
+\item narrow the accumulators to the bound proven on the actual matrix;
+\item operand-isolate the FP32 stage outside the output phase.
+\end{itemize}
+We have not yet measured these savings; the real-speech activity trace makes them straightforward to evaluate.
+
+\paragraph{Voltage and node.}
+GF180's \SI{3.3}{V} 7-track library is the least energy-efficient option we could have chosen. The engine meets \SI{150}{ns} with $+67$\,ns of slack at TT. A lower supply (where the library supports it), or the 9-track 5\,V cells avoided, would trade that slack for energy. First-order $CV^2$ scaling~\cite{horowitz2014energy} suggests that moving to \SI{28}{nm} at about \SI{0.9}{V} would cut energy per operation by one to two orders of magnitude. Real gains are smaller, because wire capacitance scales worse than transistors. Index density would rise by a similar factor.
+The whole model's index banks (\SI{175}{mm^2} here) would then fit in a few tens of mm\textsuperscript{2}.
+
+\subsection{Flow}
+The project's own history shows where the time went and what would have saved it.
+
+\begin{enumerate}
+\item \textbf{Route a short diagnostic first.} Three-iteration global-route diagnostics took 25--61 minutes and found the congestion cause. Full routing attempts without that diagnostic burned about 11 hours in global routing and about 1 hour per detailed-routing iteration without converging. Only start a full route once the diagnostic overflow is small: overflow of 575 routed in hours, while 260\,k never did.
+\item \textbf{Fix wiring and depth in RTL, not with die area or repair settings.} A die 1.6 times larger cut overflow by only 24\%, while local register copies cut it by 92\% at the same area. Two aggressive repair passes moved slow-corner slack by 4\,ns, while one RTL pipeline change moved it by 58\,ns and reduced overflow from 575 to 9. When the same endpoints fail after repair, pipeline.
+\item \textbf{Pick a reachable clock early.} Repairing toward \SI{20}{ns} grew area by 26\% and never finished, because the datapath was about \SI{145}{ns} deep. At \SI{150}{ns} the design closed.
+\item \textbf{Audit fanout at synthesis.} Capping fanout at 16 cut estimated power $10.8\times$ and turned placement from hours into minutes.
+\item \textbf{Calibrate pre-route timing once.} Estimated slow-corner slack after global routing was 72\,ns optimistic for die-spanning paths. One calibration against a routed result was enough to stop a doomed run early (fix~1) and to predict that fix~2 would close.
+\item \textbf{Check that repair loops converged, not just stopped.} The last 11 antenna violations remained only because the router's post-route repair loop ends after three rounds by default, while it was still halving the count each round. Raising the limit to ten cleared them with no design change. Read iteration logs, not just final counts.
+\item \textbf{Signoff dominates wall time.} KLayout DRC takes about 2 hours on every run, comparable to detailed routing. Run signoff only on candidates that already meet timing, and parallelise or tile the DRC deck.
+\item \textbf{Most of the work fits on a laptop.} Every engine flow (4--9.5 hours) ran on the laptop at zero cloud cost. Whole-design synthesis needed big memory only when attempted flat; per-module synthesis under 6\,GB per process completed every unit.
+\item \textbf{Bill only for active compute.} Roughly 21 of the 47 rented hours were idle. An idle-CPU auto-stop, plus checking worker process state rather than worker reports, would have saved over a third of the cloud spend (about \$13 of \$34.82).
+\item \textbf{Check format compatibility early.} An activity-file syntax mismatch between simulator and timing analyser, and a cell-name format bug in a buffering script, each cost a full run cycle.
+\end{enumerate}
+
+In aggregate, the engine went from its first RTL contract (13--14 October) to a routed, all-corner-closed layout clean on DRC, LVS and antenna checks (24 October) in eleven calendar days, including a five-day pause. The final timing fix, including the abandoned first attempt, took about seven hours from diagnosis to all-corner routed timing.
+With the practices above applied from the start, we estimate the same result could be reached in two to three days.

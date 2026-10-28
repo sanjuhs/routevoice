@@ -1,0 +1,11 @@
+{
+  "source": "vectors/rv_fixed_proj320_rom.power.vcd.gz",
+  "output": "vectors/rv_fixed_proj320_rom.power-200ns.vcd.gz",
+  "source_clock_period_ns": 20,
+  "clock_period_ns": 200,
+  "timestamp_multiplier": 10,
+  "timestamp_count": 8046,
+  "last_timestamp_ps": 643000000,
+  "uncompressed_sha256": "35c51be7859701cfa02e32e0fe039a503e622512106e1ac1349cdb80197ae793",
+  "note": "Same five random vectors and readout workload. Only timestamp spacing changed; not a gate-level glitch simulation."
+}

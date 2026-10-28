@@ -1,0 +1,41 @@
+{
+  "w5_latch128": {
+    "markers": 0,
+    "categories": {},
+    "command": [
+      "nice",
+      "-n",
+      "10",
+      "/nix/store/yczxlrrywxp7q2aavm4b3zrj3lpmq18a-devshell-dir/bin/klayout",
+      "-b",
+      "-r",
+      "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/taalas-array/periphery/main.drc",
+      "-rd",
+      "input=/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/taalas-array/periphery/handoff-latch128/w5_latch128.gds",
+      "-rd",
+      "report=/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/taalas-array/periphery/w5_latch128.lyrdb",
+      "-rd",
+      "topcell=w5_latch128",
+      "-rd",
+      "feol=true",
+      "-rd",
+      "beol=true",
+      "-rd",
+      "conn_drc=true",
+      "-rd",
+      "offgrid=true",
+      "-rd",
+      "metal_top=11K",
+      "-rd",
+      "metal_level=5LM",
+      "-rd",
+      "mim_option=B",
+      "-rd",
+      "run_mode=deep",
+      "-rd",
+      "thr=1"
+    ],
+    "scope": "GF180 FEOL BEOL connectivity offgrid; density and antenna excluded",
+    "gds_sha256": "8faa7e9931eb5e8937124568021036d5beebd00b1f4b995ba5dc09388ac6adb7"
+  }
+}

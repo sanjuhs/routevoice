@@ -1,0 +1,31 @@
+{
+  "unix": 1791940552.554534,
+  "method": "APFS cp -c copy-on-write, exact content hash checked before atomic replacement",
+  "nominal_duplicate_bytes_shared": 467970002,
+  "changes": [
+    {
+      "path": "runs/rv_fixed_proj320_rom-util20-density35-noinflate-200ns/07-openroad-detailedplacement/rv_fixed_proj320_rom.nl.v",
+      "clone_source": "runs/rv_fixed_proj320_rom-util20-density35-noinflate-200ns/05-openroad-repairdesignpostgpl/rv_fixed_proj320_rom.nl.v",
+      "sha256": "77b38494e5b175ea3c09dcd53d63a1c117dce517624503d99e49c90b1d8cb1d8",
+      "bytes": 55078171
+    },
+    {
+      "path": "runs/rv_fixed_proj320_rom-util20-density35-noinflate-200ns/07-openroad-detailedplacement/rv_fixed_proj320_rom.odb",
+      "clone_source": "runs/rv_fixed_proj320_rom-util20-density35-noinflate-200ns/05-openroad-repairdesignpostgpl/rv_fixed_proj320_rom.odb",
+      "sha256": "e775a71cf767705b336abec609190e0f5db22d3e6c8eaff07b65015342dd80fb",
+      "bytes": 239934827
+    },
+    {
+      "path": "runs/rv_fixed_proj320_rom-util20-density35-noinflate-200ns/07-openroad-detailedplacement/rv_fixed_proj320_rom.def",
+      "clone_source": "runs/rv_fixed_proj320_rom-util20-density35-noinflate-200ns/05-openroad-repairdesignpostgpl/rv_fixed_proj320_rom.def",
+      "sha256": "9e8509f61a0365f605eb2550dd963a342b584db382a6b1e4f9a8df37dd2d4cda",
+      "bytes": 92914123
+    },
+    {
+      "path": "runs/rv_fixed_proj320_rom-util20-density35-noinflate-200ns/07-openroad-detailedplacement/rv_fixed_proj320_rom.pnl.v",
+      "clone_source": "runs/rv_fixed_proj320_rom-util20-density35-noinflate-200ns/05-openroad-repairdesignpostgpl/rv_fixed_proj320_rom.pnl.v",
+      "sha256": "ea831651c446b9b9c676f930415ffc77da8b4e1d82d5e04b932623312215b7b1",
+      "bytes": 80042881
+    }
+  ]
+}

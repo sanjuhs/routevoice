@@ -1,0 +1,90 @@
+{
+  "case_id": "fp32_baseline-input-006",
+  "model": "fp32_baseline",
+  "id": "2086-149220-0018",
+  "role": "validation",
+  "condition": "clean",
+  "seed": null,
+  "reference": "I PREFER TO THINK AND SO WOULD MISS HEPZIBAH THAT THEY RECOGNIZE THE FAMILY TONE FOR YOU ARE A PYNCHEON",
+  "input_float32_sha256": "df257a289a240fdb6b649d2d67cc7109e685ac4d6d28505c42f03f5274d81971",
+  "hypothesis": "I prefer to think, And so would Miss Hapsiver. That they recognized the family tone. For you are a pension.",
+  "normalized_tokens": [
+    "i",
+    "prefer",
+    "to",
+    "think",
+    "and",
+    "so",
+    "would",
+    "miss",
+    "hapsiver",
+    "that",
+    "they",
+    "recognized",
+    "the",
+    "family",
+    "tone",
+    "for",
+    "you",
+    "are",
+    "a",
+    "pension"
+  ],
+  "edits": 3,
+  "reference_words": 20,
+  "hypothesis_words": 20,
+  "exact": false,
+  "lines": [
+    {
+      "text": "I prefer to think,",
+      "start_time": 0.15999996662139893,
+      "duration": 1.5040000677108765,
+      "is_complete": true,
+      "samples": 24064,
+      "input_float32_sha256": "9ad5f95a3183cb91fd1a4feb09d8ea99c66be03d254de7b9015d9679a754f0a4"
+    },
+    {
+      "text": "And so would Miss Hapsiver.",
+      "start_time": 1.4719998836517334,
+      "duration": 1.696000099182129,
+      "is_complete": true,
+      "samples": 27136,
+      "input_float32_sha256": "ecca5bc8d0f4ae25ecc790c40da41ce73dac7b26bf16011e08740d95f6d6ca78"
+    },
+    {
+      "text": "That they recognized the family tone.",
+      "start_time": 2.944000005722046,
+      "duration": 2.240000009536743,
+      "is_complete": true,
+      "samples": 35840,
+      "input_float32_sha256": "2bcabf3e52c8b226309a3cb2306589be344fa6966bf0ce8cd67fd534a092c575"
+    },
+    {
+      "text": "For you are a pension.",
+      "start_time": 5.0879998207092285,
+      "duration": 1.6000003814697266,
+      "is_complete": true,
+      "samples": 25600,
+      "input_float32_sha256": "55e96035a66fd820db2167e16235f37052acaef184ce4ed09f2f7cf7b93177a8"
+    }
+  ],
+  "request_sha256": "46e0b49cedc8754928d61bbddc5a043f3cd048ae063751a992bac0c21b9c9568",
+  "worker_sha256": "4682e8a57db08e02a34f53b01f334f34faa3ca9a6546698f1e4650db359004b6",
+  "native_library_sha256": "1453a6c1c9072f3d05e9e5ae6ff423fae839e56631c5efb12bbd5c0280d04399",
+  "native_api_version": 30000,
+  "load_seconds": 0.04333308292552829,
+  "compute_seconds": 0.2764155410695821,
+  "audio_seconds": 6.83,
+  "process_cpu_seconds": 0.27033299999999993,
+  "voluntary_context_switches": 0,
+  "involuntary_context_switches": 53,
+  "system_load_average": [
+    9.29833984375,
+    8.64697265625,
+    9.77685546875
+  ],
+  "options": null,
+  "flags": 0,
+  "process_id": 80497,
+  "isolation": "One audio clip/condition in a fresh native process; no previous utterance or VAD state."
+}

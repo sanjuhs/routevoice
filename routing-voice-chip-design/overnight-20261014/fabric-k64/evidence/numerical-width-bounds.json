@@ -1,0 +1,13 @@
+{
+  "scope": "Worst-case absolute bounds for independently chosen centered activation integers in [-255,255], over the fixed selected matrix. Does not prove control or physical timing.",
+  "shared_radix16_partial_max_abs": 3825,
+  "shared_partial_signed_bits": 13,
+  "UINT8_product_max_abs": 65025,
+  "product_signed_bits": 17,
+  "uncorrected_accumulator_max_abs": 60787155,
+  "uncorrected_accumulator_signed_bits": 27,
+  "uncorrected_accumulator_positive_limit": 67108863,
+  "zero_point_correction_max_abs": 61689600,
+  "corrected_dot_max_abs": 10149255,
+  "corrected_output_signed_bits": 32
+}

@@ -1,0 +1,33 @@
+{
+  "netlist_path": "overnight-20261014/projection-complete/power/escaped-api/probe.v",
+  "netlist_sha256": "e18809610c68aaa7be4601a9f462c85b072a215d3166b7d49e331b827cdfd910",
+  "vcd_path": "overnight-20261014/projection-complete/power/escaped-api/actual-verilator.vcd",
+  "header_complete": true,
+  "standard_cell_instances_in_netlist": 1,
+  "standard_cell_instances_with_exact_literal_leaf_scope": 1,
+  "direct_variable_declarations_in_matched_leaf_scopes": 2,
+  "matched_cell_types": {
+    "gf180mcu_fd_sc_mcu7t5v0__inv_1": 1
+  },
+  "literal_pin_samples": [
+    {
+      "scope_literal": "tb/dut/engine._cell_",
+      "instance": "engine._cell_",
+      "cell": "gf180mcu_fd_sc_mcu7t5v0__inv_1",
+      "pin_reference_literal": "I",
+      "width": 1,
+      "value_identifier": "\""
+    },
+    {
+      "scope_literal": "tb/dut/engine._cell_",
+      "instance": "engine._cell_",
+      "cell": "gf180mcu_fd_sc_mcu7t5v0__inv_1",
+      "pin_reference_literal": "ZN",
+      "width": 1,
+      "value_identifier": "#"
+    }
+  ],
+  "name_normalization": "Strip Verilog escape backslash only; no VCD rewrite or hierarchy remapping.",
+  "OpenSTA_annotation_coverage_measured": false,
+  "warning": "Header instance and declaration counts are not timing-pin coverage or verified activity annotation."
+}

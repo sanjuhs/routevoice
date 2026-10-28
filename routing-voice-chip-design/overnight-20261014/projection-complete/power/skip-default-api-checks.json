@@ -1,0 +1,21 @@
+{
+  "scope": "Synthetic one-inverter fixture only; no projection power result",
+  "checks": [
+    {
+      "skip_default_power": "1",
+      "exit_code": 0,
+      "default_is_null": true,
+      "default_report_exists": false,
+      "direct_vcd_pins": 4,
+      "activity_power_total_W": 8.452509974e-06
+    },
+    {
+      "skip_default_power": "0",
+      "exit_code": 0,
+      "default_is_null": false,
+      "default_report_exists": true,
+      "direct_vcd_pins": 4,
+      "activity_power_total_W": 8.452509974e-06
+    }
+  ]
+}

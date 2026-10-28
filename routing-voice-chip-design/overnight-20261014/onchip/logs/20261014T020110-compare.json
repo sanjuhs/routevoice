@@ -1,0 +1,17 @@
+{
+  "stage": "compare",
+  "command": [
+    "/usr/bin/nice",
+    "-n",
+    "10",
+    "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/.venv/bin/python",
+    "-B",
+    "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/onchip/compare_outputs.py"
+  ],
+  "cwd": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design",
+  "log": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/onchip/logs/20261014T020110-compare.log",
+  "started": "20261014T020110",
+  "exit_code": 0,
+  "pid": 41740,
+  "elapsed_seconds": 0.040809249971061945
+}

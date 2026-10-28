@@ -1,0 +1,314 @@
+{
+  "cap_ranking_sha256": "e5abfcc0d521a97d2633a2a75ad1b3f4837d5a204e8539946ef18e3e53f6af11",
+  "pattern_override_sha256": "223fc269f12201dbd775e9720fcdf7d1e737287c1b0dc3e14af50252b606f2bb",
+  "source_geometry_sha256": "38276461fd82312b843a7058306d0fd91b1acfea01f8fd70322c3be4e5567b6a",
+  "image_file_sha256": "a98ee6519c94323c7fad9f6ead73998a562c132ebd78bdbd37eae1f7b53ea052",
+  "column_meter": "Each selected column has a separate zero-volt series source rdd\u2192column_vddN feeding only its four receiver devices, including wells. Observational MOS supply/well energy includes device-model junctions but excludes explicit extracted VDD coupling-capacitor source current, which remains on global rdd; excludes sharedWL/PCdrivers and idealaggressor work. Not entire column energy. Included within pr, do not add twice.",
+  "pattern_override": {
+    "rows": [
+      3,
+      0,
+      1279,
+      1278,
+      1186
+    ],
+    "scope": "Repeated near/far1/0 of explicitly selected candidate plus maximum simultaneous selected-column discharge row. Not exhaustive transitions."
+  },
+  "stimulus_representation": "Explicit PWL PC phases avoid near-coincident PULSE arithmetic versus aggressor PWL breakpoints at fractional protocols; intended phase times unchanged",
+  "protocol": {
+    "period_ns": 120,
+    "pc_off_ns": 30.0,
+    "wl_start_ns": 55.0,
+    "wl_fall_start_ns": 105.8,
+    "wl_fall_end_ns": 106.0,
+    "pc_on_start_ns": 119.8,
+    "sample_ns": [
+      102.0,
+      119.5
+    ],
+    "edge_ns": 0.2,
+    "phase_family": "Conservative120ns full-control sensitivity:30ns precharge,25ns PC-off guard,13.8ns WL-release guard; selected after preserved60ns failure, not minimum-period search."
+  },
+  "rows": 1280,
+  "selected": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+  ],
+  "addresses": [
+    3,
+    0,
+    1279,
+    1278,
+    1186,
+    3,
+    0,
+    1279,
+    1278,
+    1186
+  ],
+  "peak_ranked_bit_column": 1,
+  "base_sequence": [
+    3,
+    0,
+    1279,
+    1278,
+    1186
+  ],
+  "base_sequence_length": 5,
+  "active_rows": [
+    0,
+    3,
+    1186,
+    1278,
+    1279
+  ],
+  "segments": 32,
+  "array_devices": 20480,
+  "receiver_devices": 512,
+  "driver_hashes": {
+    "4": "0d12ca9bfc5db3e194a792b2654c4fc0b46e2d4b08d286345683b2920ec31c1b",
+    "20": "d0075017b8f30dd09ef50f53e6b2acbf68c7d52c0506a0b19b9acff1609965d4"
+  },
+  "source_gds_sha256": "d167253fbbc8159dd2eb82e3a9e8b4869a94651335accac5cabe9cae24b76467",
+  "array_cap_sha256": "783da5329d8f07d7871a40349a1e4fb2c6601ff3354d0032d14cb7cfa65bc048",
+  "joined_cap_sha256": "5fe8a42af98535a4dd41b9a25ec0328e4928df63cfe4c4f36de5982947ffec52",
+  "metal_sheet_ohm_square": 0.13863199999999998,
+  "array_height_um": 2132.35,
+  "bitline_array_ohm": 777.9261715789471,
+  "signal_join_resistance": {
+    "0": {
+      "length_um": 124.5,
+      "ohm": 105.42022105263158,
+      "via_count": 4
+    },
+    "1": {
+      "length_um": 110.75999999999999,
+      "ohm": 100.40757978947367,
+      "via_count": 4
+    },
+    "2": {
+      "length_um": 97.02,
+      "ohm": 95.39493852631578,
+      "via_count": 4
+    },
+    "3": {
+      "length_um": 83.28,
+      "ohm": 90.3822972631579,
+      "via_count": 4
+    },
+    "4": {
+      "length_um": 69.53999999999999,
+      "ohm": 85.36965599999999,
+      "via_count": 4
+    },
+    "5": {
+      "length_um": 55.8,
+      "ohm": 80.3570147368421,
+      "via_count": 4
+    },
+    "6": {
+      "length_um": 42.059999999999995,
+      "ohm": 75.3443734736842,
+      "via_count": 4
+    },
+    "7": {
+      "length_um": 28.32,
+      "ohm": 70.33173221052631,
+      "via_count": 4
+    },
+    "8": {
+      "length_um": 124.5,
+      "ohm": 105.42022105263158,
+      "via_count": 4
+    },
+    "9": {
+      "length_um": 110.75999999999999,
+      "ohm": 100.40757978947367,
+      "via_count": 4
+    },
+    "10": {
+      "length_um": 97.02,
+      "ohm": 95.39493852631578,
+      "via_count": 4
+    },
+    "11": {
+      "length_um": 83.28,
+      "ohm": 90.3822972631579,
+      "via_count": 4
+    },
+    "12": {
+      "length_um": 69.53999999999999,
+      "ohm": 85.36965599999999,
+      "via_count": 4
+    },
+    "13": {
+      "length_um": 55.8,
+      "ohm": 80.3570147368421,
+      "via_count": 4
+    },
+    "14": {
+      "length_um": 42.059999999999995,
+      "ohm": 75.3443734736842,
+      "via_count": 4
+    },
+    "15": {
+      "length_um": 28.320000000000004,
+      "ohm": 70.33173221052631,
+      "via_count": 4
+    }
+  },
+  "retained_array_cap_ff": 8737.970520000961,
+  "retained_join_receiver_cap_ff": 1651.0167700000031,
+  "array_to_joined_negative_pair_delta_ff": 0.6020000000000003,
+  "selected_incident_cap_ff": {
+    "0": 585.0315299999936,
+    "1": 680.0904100000098,
+    "2": 654.8873200000028,
+    "3": 656.8645499999957,
+    "4": 659.361370000003,
+    "5": 656.7963400000007,
+    "6": 652.4953400000045,
+    "7": 642.1962400000033,
+    "8": 662.0117599999932,
+    "9": 664.2314100000013,
+    "10": 660.7920000000076,
+    "11": 665.4243700000052,
+    "12": 657.3996299999988,
+    "13": 663.3242000000023,
+    "14": 656.2253100000091,
+    "15": 582.8466699999979
+  },
+  "expanded_capacitors": 72466,
+  "power_observation": "Posttransient vector equations; removed isolated behavioral power monitor nodes after20ns numerical failure, no feedback into physical circuit",
+  "cap_allocation": "For each exact extracted joined capacitor pair, array-distributed portion=min(newarrayC,newjoinedC); remainder at receiver/join end unless WL/OPEN fixes row. Negative pair delta is recorded, not clipped into extra capacitance. Only joined actual C is simulated.",
+  "scope": "Full1280-column WL/PC loading sensitivity with actual fullbank controlmetalC, geometry-derived ten-node commonrailR, one unplacedstockbuf4 peractiveWL/onebuf20PC, and1152dummyothergate loads. Data/current remain16actual columns,112idealaggressors and128physicalreceivers. Not a physically placed fullbank timing/energy qualification.",
+  "phase_precharge_nodes": [
+    "pcglobal0",
+    "pcglobal1",
+    "pcglobal2",
+    "pcglobal3",
+    "pcglobal4",
+    "pcglobal5",
+    "pcglobal6",
+    "pcglobal7",
+    "pcglobal8",
+    "pc"
+  ],
+  "phase_wordline_nodes": [
+    "wl0g0",
+    "wl0g1",
+    "wl0g2",
+    "wl0g3",
+    "wl0g4",
+    "wl0g5",
+    "wl0g6",
+    "wl0g7",
+    "wl0g8",
+    "wl0",
+    "wl3g0",
+    "wl3g1",
+    "wl3g2",
+    "wl3g3",
+    "wl3g4",
+    "wl3g5",
+    "wl3g6",
+    "wl3g7",
+    "wl3g8",
+    "wl3",
+    "wl1186g0",
+    "wl1186g1",
+    "wl1186g2",
+    "wl1186g3",
+    "wl1186g4",
+    "wl1186g5",
+    "wl1186g6",
+    "wl1186g7",
+    "wl1186g8",
+    "wl1186",
+    "wl1278g0",
+    "wl1278g1",
+    "wl1278g2",
+    "wl1278g3",
+    "wl1278g4",
+    "wl1278g5",
+    "wl1278g6",
+    "wl1278g7",
+    "wl1278g8",
+    "wl1278",
+    "wl1279g0",
+    "wl1279g1",
+    "wl1279g2",
+    "wl1279g3",
+    "wl1279g4",
+    "wl1279g5",
+    "wl1279g6",
+    "wl1279g7",
+    "wl1279g8",
+    "wl1279"
+  ],
+  "global_control_load_sensitivity": {
+    "control_caps_source": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/taalas-pitch/timing/fullbank-caps/rank.json",
+    "control_caps_json_sha256": "d63368f4db7fd2343dc3c1fe80409bc8a53c69c7380235dfeee396fe9c6fd2ce",
+    "full_extracted_cap_sha256": "23e661e2aada06ed095adbba7308d64681101b0ec28cec8c180d7e60fc4af734",
+    "physical_gate_counts": {
+      "selected_WL": 1280,
+      "PC": 1280
+    },
+    "added_gate_loads": {
+      "access_nmos_peractiveWL": 1152,
+      "precharge_pmos": 1152
+    },
+    "driver_counts": {
+      "buf4_peractiveWL": 1,
+      "buf20_PC": 1
+    },
+    "global_rail_model": "Ten RC nodes100um apart, lumped at right boundary of each group; firstWLnode103.48um from driver, firstPCnode96.4um from driver.0.38umM3,0.104ohm/square tempco0.00333/K. Additional measured fullbank-minuslocal incidentC evenly allocated ten grounded lumps. This is a loading sensitivity, not a native extracted distributed net or proven physical discretization.",
+    "full_control_cap_ff": {
+      "PC": 1819.78719,
+      "WL0": 264.61117,
+      "WL3": 273.70184,
+      "WL1186": 272.95443,
+      "WL1278": 274.70487,
+      "WL1279": 258.18226
+    },
+    "retained_local_control_cap_ff": {
+      "PC": 151.56014,
+      "WL0": 25.61496,
+      "WL3": 26.40637,
+      "WL1186": 26.33501,
+      "WL1278": 26.50139,
+      "WL1279": 24.97554
+    },
+    "qualifications": [
+      "One unplaced stockbuf4 per activeWL and one unplacedstockbuf20PC at left of macro. Same driver count as primary harness; no favorable driver replication. Ideal command distribution to drivers.",
+      "Other9subbank gate loads use groundedS/D accessMOS and VDD-tiedS/D prechargePMOS; not exact actual-array Miller/current loading.",
+      "Global incidentC collapsed toground for sensitivity; actual mutual coupling and two-dimensional eight-rowPCnetwork are not retained. No conservative-bound claim.",
+      "All tenPC/allWL terminal phase margins checked; only selected16real-array columns have data/precharge checks.",
+      "rdd energy includes dummy precharge-gate displacement; remains partial source energy, not fullbank energy."
+    ]
+  },
+  "transient_timeout_seconds": 1200,
+  "guarded_protocol_followup": {
+    "failed_case": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/taalas-pitch/timing/r1280-g09-fullcontrol/ss-60ns-s32/result.json",
+    "failed_case_sha256": "e4ffbce22e57da6dd6cebd57ab0341f4c5bb656e811836f8bfd24fc02a65bced",
+    "control_diagnostic": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/taalas-pitch/timing/r1280-g09-fullcontrol/ss-60ns-s32/control-delay-diagnostic.json",
+    "control_diagnostic_sha256": "205affcceaaffd65d23cd284d0f21443296e61c4528450b4ab8e3399c90769a8",
+    "physical_circuit_lines_byte_identical": true,
+    "physical_circuit_sha256": "9d5bd543d50c5e9171b1edbf410b1bae004af12f29c607e562158879c8aa6c58",
+    "definition": "Every MOS/R/C, supply value, model inclusion, PVT and solver option unchanged byte-for-byte; only commanded phase/read/sample times and transient duration differ. Not a minimum timing search or placed-control implementation."
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "case_id": "int8_per_channel-input-023",
+  "model": "int8_per_channel",
+  "id": "3170-137482-0029",
+  "role": "validation",
+  "condition": "white_noise_10db",
+  "seed": null,
+  "reference": "HE ENTREATED ME TO TELL HIM THE TRUTH",
+  "input_float32_sha256": "3727ccfe8acbd763b4a8e93128dff939566bc346c89d7edd7a33a74a4eef477d",
+  "hypothesis": "He entreated me to tell him the truth.",
+  "normalized_tokens": [
+    "he",
+    "entreated",
+    "me",
+    "to",
+    "tell",
+    "him",
+    "the",
+    "truth"
+  ],
+  "edits": 0,
+  "reference_words": 8,
+  "hypothesis_words": 8,
+  "exact": true,
+  "lines": [
+    {
+      "text": "He entreated me to tell him the truth.",
+      "start_time": 0.19199997186660767,
+      "duration": 2.496000051498413,
+      "is_complete": true,
+      "samples": 39936,
+      "input_float32_sha256": "20bbfd3c2a9bc7fbd3c8ee63bee0126e82cacb905eaf3e3a75873b0e0c246d68"
+    }
+  ],
+  "request_sha256": "e14441de5eabc189c5e714f7d5220d9d5a4676eac8f85b1e89298f9818a6e54c",
+  "worker_sha256": "4682e8a57db08e02a34f53b01f334f34faa3ca9a6546698f1e4650db359004b6",
+  "native_library_sha256": "1453a6c1c9072f3d05e9e5ae6ff423fae839e56631c5efb12bbd5c0280d04399",
+  "native_api_version": 30000,
+  "load_seconds": 0.038431999972090125,
+  "compute_seconds": 0.10820883396081626,
+  "audio_seconds": 2.905,
+  "process_cpu_seconds": 0.108229,
+  "voluntary_context_switches": 0,
+  "involuntary_context_switches": 29,
+  "system_load_average": [
+    10.4521484375,
+    8.9716796875,
+    9.86767578125
+  ],
+  "options": null,
+  "flags": 0,
+  "process_id": 81002,
+  "isolation": "One audio clip/condition in a fresh native process; no previous utterance or VAD state."
+}

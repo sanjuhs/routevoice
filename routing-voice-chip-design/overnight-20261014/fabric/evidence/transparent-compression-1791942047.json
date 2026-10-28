@@ -1,0 +1,40 @@
+{
+  "unix": 1791942047.303659,
+  "method": "ditto --hfsCompression, SHA256 verified before atomic replace; transparent POSIX reads retain identical bytes",
+  "free_before_bytes": 24504397824,
+  "free_after_bytes": 24763744256,
+  "changes": [
+    {
+      "path": "tmp/rv_fixed_proj320_dp-pre-route-rtl-activity.vcd",
+      "sha256": "8641dadd08ecf79645a5d2aaa0ff623be715a6eea675b7d395035eb8209073c9",
+      "bytes": 127199336,
+      "before_allocated_bytes": 127201280,
+      "after_allocated_bytes": 43442176,
+      "flags": 32
+    },
+    {
+      "path": "tmp/rv_fixed_proj320_rom-pre-route-rtl-activity.vcd",
+      "sha256": "35c51be7859701cfa02e32e0fe039a503e622512106e1ac1349cdb80197ae793",
+      "bytes": 191717634,
+      "before_allocated_bytes": 191721472,
+      "after_allocated_bytes": 66199552,
+      "flags": 32
+    },
+    {
+      "path": "tmp/rv_fixed_proj64x320_rom-pre-route-activity.vcd",
+      "sha256": "afa4b9b146e95cd6ce83ebd595304dfe3ef5b0e8ea986aa53253d7c27cca0e32",
+      "bytes": 38305978,
+      "before_allocated_bytes": 38309888,
+      "after_allocated_bytes": 13369344,
+      "flags": 32
+    },
+    {
+      "path": "tmp/rv_fixed_proj64x320_rom-pre-route-slash-activity.vcd",
+      "sha256": "afa4b9b146e95cd6ce83ebd595304dfe3ef5b0e8ea986aa53253d7c27cca0e32",
+      "bytes": 38305978,
+      "before_allocated_bytes": 38309888,
+      "after_allocated_bytes": 13094912,
+      "flags": 32
+    }
+  ]
+}

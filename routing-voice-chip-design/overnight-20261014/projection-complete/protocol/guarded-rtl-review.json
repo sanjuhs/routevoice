@@ -1,0 +1,51 @@
+{
+  "scope": "Read-only source/retained-log review; no new simulations, EDA, cloud or implementation changes",
+  "row_period_cycles": 9,
+  "target_clock_ns": 20,
+  "target_derived_row_period_ns": 180,
+  "unstalled_projection_cycles_excluding_start": 11843,
+  "cycle_derivation": "9*1280+320+3",
+  "target_derived_projection_latency_us": 236.86,
+  "retained_RTL_log": "logs/rtl-simulation.log:1,55",
+  "full_bank_physical_timing_proved": false,
+  "exact_W6_60ns_waveform_reproduced": false,
+  "dual_edge_20ns_alone_reproduces_original_edges": false,
+  "sustained_60ns_rows_implemented": false,
+  "functional_mismatch_found_in_source_review": false,
+  "reporting_gaps": [
+    "Mapped onehot evaluation OR can potentially glitch during active-state handoff; actual pulse propagation and PC/WL nonoverlap not measured. Binary3bit hazard is not actualmappedencoding.",
+    "PC-only timing proxy omits WL/decoder arcs and real min/hold behavior",
+    "3/2macro-only multicycle scenario is conditional and needs full1280pin coverage; future WLarcs would have2cycles not3",
+    "Digital abort tests do not characterize analog reset",
+    "Gate testbench has4abortcases and no internal readcountassertion, unlike RTL11abortcases",
+    "Sustained vector throughput must include next-start boundary and physical/stall constraints"
+  ],
+  "source_hashes": {
+    "rtl/rv_k64_projection_complete.sv": "b2b3fdf7a0b8cfbc6b169117dd91d0b65352d25ec239e1f8fac114db8d54619f",
+    "CONTRACT.md": "534d47d802bacd6540c45e267cfd8b3c93b18e99100e62d437f78d116389dcb3",
+    "logs/rtl-simulation.log": "8cf1d4c1551e4243aa9251cad23840303b5b597d8b23dfd361d28a582752fc8b",
+    "tb/complete.sv": "1ed95929ce41c15cbab59c8adeee2b292c94dec626818dc6641f915d2c092ebe",
+    "tb/gate_full.sv": "fe99a6007be84a2cbf7eab857ed947fc5f0453026eafcbfb47bd61dd1e986d40",
+    "tb/bank_model.sv": "d0042e9a4f05fdae7b33e7cc90922dc31a8b384e4cfc40e065ccb6dbd2fb4af0",
+    "power/postroute_timing.tcl": "2d5d00e548caa292343d8c964db3f833d28abef16109f54f89dcbb353a79f532",
+    "macro/timing-model.json": "5f8380f804afb33f25924b8cce65b6e4cb411c0cef10b49b66628c9d2b599093",
+    "evidence/complete-mapped.nl.v.gz": "6fdf6d75ef0fe61bcce88d3926f39d1654f6afb085389939f8bb9cf57a723b69"
+  },
+  "mapped_phase_encoding": "one_hot_confirmed_from_retained_synthesis_netlist",
+  "mapped_phase_bit_state": {
+    "0": "RELEASE",
+    "1": "IDLE",
+    "2": "EVAL2",
+    "3": "GUARD",
+    "4": "PRE",
+    "5": "HOLD",
+    "6": "EVAL1",
+    "7": "DONE"
+  },
+  "mapped_control_cones": {
+    "_03978_": "_01595_=phase[2]|phase[6]|phase[5]",
+    "_05003_": "pc_logic=phase[3]|phase[0]|_01595_",
+    "precharge_driver": "buf20(pc_logic)->PC",
+    "example_wordline": "_01595_ through reset/address NAND4 _03981_ and NOR3 _03982_ to decoder[184].selected, then buf20"
+  }
+}

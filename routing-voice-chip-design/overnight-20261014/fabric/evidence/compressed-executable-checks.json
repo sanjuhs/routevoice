@@ -1,0 +1,45 @@
+{
+  "unix": 1791943286.071382,
+  "checks": [
+    {
+      "binary": "tb/gate_obj_rv_fixed_proj320_rom/Vtb",
+      "sha256": "b8d2f024e44a3a30c9dac903ed1a9044accfe061f057cbe0aa2e40258775fba4",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/tb/gate_obj_rv_fixed_proj320_rom/Vtb"
+      ],
+      "cwd": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric",
+      "exit_code": 0,
+      "log": "logs/rv_fixed_proj320_rom.compressed-executable-check.log",
+      "verification": {
+        "vectors": 32,
+        "random": 20,
+        "checks": 10272,
+        "failures": 0
+      },
+      "scope": "Rerun only to validate transparent executable compression; no new vector set or VCD generated."
+    },
+    {
+      "binary": "tb/gate_activity_obj_rv_fixed_proj64x320_rom/Vtb",
+      "sha256": "0ebe71bb335eeb16a9dc6e6b102c44545ba31dc750a6620019eda9db6f8851b0",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/tb/gate_activity_obj_rv_fixed_proj64x320_rom/Vtb"
+      ],
+      "cwd": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric",
+      "exit_code": 0,
+      "log": "logs/rv_fixed_proj64x320_rom.compressed-executable-check.log",
+      "verification": {
+        "vectors": 5,
+        "random": 5,
+        "checks": 1605,
+        "failures": 0
+      },
+      "scope": "Rerun only to validate transparent executable compression; no new vector set or VCD generated."
+    }
+  ]
+}

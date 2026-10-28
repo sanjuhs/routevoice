@@ -1,0 +1,1936 @@
+Hey ChatGPT, can you put out the routing-wise project that I have been talking to you about in Codex and other places? We talked about the frozen weight large language model as one approach where everything just routes, where the routing itself is the weight, and everything is like lookups and all. It's like turnerized as well.
+
+Can you first show that and explain that technology to my friend? Show me how it will look on chip and how we would embed something like a 15-million-parameter model, or at least a part that is 15 million parameters, into a 180 nm die. Can you show it to my friend? This is the routing part. How much of SRAM, how much of DRAM, how much of everything is it using? In routing, we don't even need all that. It's direct connections. That's what I want to show. This is the first approach which I was discussing with my friend, which is super, super low sub-watt performance for doing speech-to-text and all of that. 
+
+Yeah — this is the RoutingVoice-180 idea we were discussing, and there’s a very clean way to explain it to your friend.
+
+The key sentence is:
+
+The topology of the silicon is the weight.
+
+Instead of building a processor and then storing 15 million weights in SRAM/DRAM, you train the network first, freeze it, ternarize it, and then compile the trained weight matrices into the physical connectivity of the ASIC itself.
+
+RoutingVoice-180: the basic idea
+
+Suppose an ordinary neural-network layer computes
+
+$$ y_i=\sum_j w_{ij}x_j $$
+
+Normally you have something like:
+
+        WEIGHT SRAM
+            │
+            ▼
+x ─────► multiplier ─────► accumulator
+         x weight
+
+Every inference involves repeatedly fetching w, moving it to compute, multiplying, accumulating, fetching the next weight, and so on.
+
+Our version deliberately constrains the weights to:
+
+$$ w \in \{-1,0,+1\} $$
+
+This is what you were calling "turnerized" — the usual term is ternarized.
+
+BitNet b1.58 is a real example of this model family: its weights take exactly {-1, 0, +1}, corresponding theoretically to \(\log_2(3)\approx1.58\) bits per weight.
+
+Now look what happens in hardware:
+
+WEIGHT = +1                    WEIGHT = -1
+                                             
+ x ──────────────► ADD         x ──────────────► SUBTRACT
+
+
+WEIGHT = 0
+
+ x        NO CONNECTION
+
+So instead of storing:
+
+w[1234] = +1
+w[1235] =  0
+w[1236] = -1
+
+and reading those values during inference, you manufacture:
+
+x1234 ─────────► + accumulator
+x1235             nothing
+x1236 ─────────► - accumulator
+
+The existence and destination of the connection encode the parameter.
+
+That is the part I think your friend will find interesting.
+
+What the chip looks like
+
+A conceptual 15M-weight RoutingVoice-180 speech chip could look something like this:
+
+ ┌──────────────────────────────────────────────────────────────┐
+ │                     ROUTINGVOICE-180                         │
+ │                         180 nm                               │
+ │                                                              │
+ │  ┌───────────┐  ┌──────────────┐   ┌──────────────────────┐ │
+ │  │ MIC / I2S │─►│ AUDIO BUFFER │──►│ FEATURE FRONT END    │ │
+ │  │ PDM / ADC │  │  32–64 KB    │   │ Conv / filter bank   │ │
+ │  └───────────┘  └──────────────┘   └──────────┬───────────┘ │
+ │                                                │             │
+ │  ╔════════════════════════════════════════════════════════╗  │
+ │  ║             FROZEN MODEL = PHYSICAL WIRES             ║  │
+ │  ║                                                        ║  │
+ │  ║   ROUTE TILE 0          ROUTE TILE 1                   ║  │
+ │  ║   ~1.9M weights         ~1.9M weights                  ║  │
+ │  ║                                                        ║  │
+ │  ║   + ─► ADD             + ─► ADD                        ║  │
+ │  ║   0 ─► NOTHING         0 ─► NOTHING                    ║  │
+ │  ║   - ─► SUB             - ─► SUB                        ║  │
+ │  ║                                                        ║  │
+ │  ║   ROUTE TILE 2          ROUTE TILE 3                   ║  │
+ │  ║                                                        ║  │
+ │  ║   ROUTE TILE 4          ROUTE TILE 5                   ║  │
+ │  ║                                                        ║  │
+ │  ║   ROUTE TILE 6          ROUTE TILE 7                   ║  │
+ │  ║                                                        ║  │
+ │  ║             ~15 MILLION LOGICAL WEIGHTS                ║  │
+ │  ╚════════════════════════════════════════════════════════╝  │
+ │                             │                                │
+ │                             ▼                                │
+ │              ┌─────────────────────────┐                    │
+ │              │ ADD/SUB ACCUMULATORS    │                    │
+ │              │ normalization / scaling │                    │
+ │              └────────────┬────────────┘                    │
+ │                           │                                  │
+ │        ┌──────────────────▼────────────────┐                 │
+ │        │ LIVE ACTIVATION / STATE SRAM     │                 │
+ │        │ approximately 128–256 KB         │                 │
+ │        └──────────────────┬────────────────┘                 │
+ │                           │                                  │
+ │                    Fixed routing again                       │
+ │                           │                                  │
+ │                           ▼                                  │
+ │                 ┌────────────────────┐                       │
+ │                 │ CTC / TOKEN HEAD   │                       │
+ │                 └─────────┬──────────┘                       │
+ │                           ▼                                  │
+ │                       "HELLO"                                │
+ │                                                              │
+ │  Tiny MCU │ boot ROM │ clock │ DMA │ power management       │
+ └──────────────────────────────────────────────────────────────┘
+
+There isn't a giant block marked 15M MODEL SRAM.
+
+That's the point.
+
+Just how much memory disappears?
+
+Take a 15-million-parameter model.
+
+Representation	Weight storage
+FP32	60 MB
+FP16	30 MB
+INT8	15 MB
+INT4	7.5 MB
+2-bit packed ternary	3.75 MB
+Information-theoretic ternary minimum	~2.97 MB
+RoutingVoice hardwired weights	0 bytes of weight SRAM/DRAM
+
+And this matters enormously on 180 nm.
+
+A published 180 nm SRAM implementation reported a 6T SRAM cell of about 5.59 µm². At that density, merely the raw bit cells for 30 Mbits — the 2-bit representation of our 15M weights — would occupy about 168 mm², before much of the peripheral circuitry. A historical 16-Mbit 180 nm SRAM demonstration occupied a 207 mm² die.
+
+So trying to make:
+
+15M parameters
+×
+2-bit SRAM
+
+on an old process is exactly the wrong architecture.
+
+But there is an intermediate possibility: ROM
+
+Because the model never changes, we don't actually need SRAM.
+
+A 0.18 µm via-programmed ROM design demonstrated a 0.749 µm² bit cell, dramatically denser than SRAM.
+
+Thirty million ROM bits at that raw cell density would be roughly:
+
+$$ 30M\times0.749\mu m^2 \approx22.5mm^2 $$
+
+before decoding, sensing, routing and other overhead.
+
+Another SMIC 0.18 µm mask-ROM implementation achieved 16 Kbit in 0.050 mm², demonstrating how much more area-efficient immutable storage can be than conventional SRAM.
+
+So there are really three designs:
+
+              NORMAL ASIC
+
+  SRAM/DRAM ─── weights ───► MAC array
+               BAD at 180nm
+
+
+               ROM ASIC
+
+  mask ROM ─── weights ───► add/sub array
+               MUCH BETTER
+
+
+            ROUTINGVOICE ASIC
+
+    the physical routing IS the weights
+                       │
+                       ▼
+                add/sub network
+
+             NO WEIGHT FETCH
+
+The third one is the extreme version we were discussing.
+
+What remains in SRAM?
+
+This is where I would modify one thing from saying "we don't need SRAM."
+
+We don't need weight SRAM.
+
+We absolutely still need a little working memory.
+
+For a streaming speech-to-text design I'd aim for roughly:
+
+Memory	RoutingVoice-180 target
+Weight SRAM	0
+Weight DRAM	0
+External HBM	0
+External PSRAM	ideally 0
+Audio FIFO	~32–64 KB
+Ping-pong activation buffers	~64–128 KB
+Streaming recurrent/SSM state	~32–64 KB
+Accumulator/local state	~16–32 KB equivalent
+Token/control buffers	~8–16 KB
+Total working SRAM	~128–256 KB target
+Boot/config ROM	~32–64 KB
+
+That's why I would not put a conventional Transformer with a large KV cache into the first RoutingVoice-180.
+
+I would use something streaming:
+
+audio
+ ↓
+small convolutional frontend
+ ↓
+SSM / TCN / recurrent speech encoder
+ ↓
+fixed ternary projections
+ ↓
+CTC / small transducer head
+ ↓
+text
+
+Now your state remains bounded rather than growing continuously with sequence length.
+
+How 15 million parameters actually become silicon
+
+Imagine one matrix has these weights:
+
+        INPUT
+
+        A   B   C   D
+
+Y0      +   0   -   +
+Y1      0   +   +   0
+Y2      -   -   0   +
+
+Software sees:
+
+$$ W = \begin{bmatrix} 1&0&-1&1\\ 0&1&1&0\\ -1&-1&0&1 \end{bmatrix} $$
+
+The ASIC compiler sees:
+
+A ────────────────► Y0 ADD
+B                       X
+C ────────────────► Y0 SUB
+D ────────────────► Y0 ADD
+
+
+A                       X
+B ────────────────► Y1 ADD
+C ────────────────► Y1 ADD
+D                       X
+
+
+A ────────────────► Y2 SUB
+B ────────────────► Y2 SUB
+C                       X
+D ────────────────► Y2 ADD
+
+Therefore:
+
+$$ Y_0=A-C+D $$ $$ Y_1=B+C $$ $$ Y_2=-A-B+D $$
+
+There is no:
+
+load weight
+decode weight
+multiply
+
+at all.
+
+It's just:
+
+signal arrives
+    ↓
+wire carries it
+    ↓
+adder/subtractor
+
+There may still be a small scaling multiplication after a block because ternary neural networks usually retain scaling factors, normalization, activation quantization, etc. BitNet itself does not literally eliminate every multiply everywhere; it makes the large matrix multiplications predominantly additions/subtractions rather than conventional weight multiplies.
+
+Why power can become crazy low
+
+This is probably the strongest part of your idea.
+
+The energy hierarchy in conventional ML hardware is roughly:
+
+ADD
+ │
+ │ cheap
+ ▼
+
+MULTIPLY
+ │
+ │ more expensive
+ ▼
+
+REGISTER ACCESS
+ │
+ ▼
+
+SRAM ACCESS
+ │
+ │ considerably more expensive
+ ▼
+
+DRAM ACCESS
+ │
+ │ enormously more expensive
+ ▼
+
+A classic 45 nm reference found approximately 0.03 pJ for an 8-bit add, compared with 5 pJ for a small SRAM read and around 640 pJ for a DRAM read. The absolute values change on 180 nm, but the architectural lesson remains: moving model weights can cost dramatically more energy than simple arithmetic.
+
+RoutingVoice attacks both sides:
+
+NO DRAM weight read
+        +
+NO SRAM weight read
+        +
+NO general multiplication
+        +
+NO large weight buses
+        +
+fixed schedule
+        +
+clock gating
+        +
+small live memory
+        +
+low clock frequency
+
+That's why sub-watt is a credible engineering objective.
+
+I would not promise your friend "50 mW" yet. For a real 15M speech model on 180 nm, before RTL synthesis and physical design, my sensible first design target would be something like:
+
+$$ \boxed{0.2-0.8\text{ W active}} $$
+
+with an aggressive goal toward the bottom of that range.
+
+Speech is particularly friendly because the input itself is slow. You're not rendering a billion pixels per second; new acoustic frames arrive on the order of milliseconds.
+
+A first-pass 180 nm die budget
+
+And this is where I would put some engineering reality around our earlier discussion.
+
+Something like:
+
+               ~10 mm
+      ┌───────────────────────────┐
+      │ I/O / POWER / CLOCK       │
+      ├───────────────────────────┤
+      │                           │
+      │   FIXED ROUTING TILE      │
+      │   FIXED ROUTING TILE      │
+      │                           │
+      │   FIXED ROUTING TILE      │
+      │   FIXED ROUTING TILE      │
+      │                           │
+      ├──────────────┬────────────┤
+      │ 128–256 KB   │ ADD / SUB  │
+      │ LIVE SRAM    │ TREES      │
+      ├──────────────┴────────────┤
+      │ AUDIO │ CTC │ MCU │ ROM   │
+      └───────────────────────────┘
+               ~10 mm
+
+I would use approximately this feasibility budget, rather than presenting it as a finished physical-design result:
+
+Block	Very rough 180 nm area target
+Fixed 15M-weight routing fabric	~20–50 mm²
+Add/sub/normalization machinery	~10–25 mm²
+128–256 KB SRAM	~10–30 mm²
+Speech frontend + output head	~5–10 mm²
+Controller/ROM/clock/power	~3–8 mm²
+Pads + routing margin	~10–20 mm²
+Likely first-pass die	~60–120 mm²
+
+So think roughly:
+
+$$ \boxed{8\times8\text{ mm to }11\times11\text{ mm}} $$
+
+as a reasonable starting hypothesis for a highly optimized 180 nm implementation.
+
+That number could move substantially after real placement and routing. The biggest unknown isn't transistor count — it's metal congestion and fan-out.
+
+And that's the catch.
+
+The one thing we cannot do
+
+We can't naïvely make:
+
+15,000,000 arbitrary long wires
+
+crossing one another all over the die.
+
+At that point the idea dies from routing congestion.
+
+The network therefore has to be trained for the silicon architecture.
+
+The full approach I'd use is:
+
+Train a ~15M speech model.
+Ternarize it to −1 / 0 / +1.
+Encourage lots of 0s.
+Impose structured sparsity, not random sparsity.
+Divide every large matrix into small hardware tiles.
+Constrain fan-in/fan-out.
+Freeze the network.
+Convert each matrix into structural RTL/netlists.
+Replace +1 weights with positive routes.
+Replace −1 weights with negative routes.
+Delete 0 connections.
+Synthesize only the adders, registers and control that remain.
+Place and route it using the actual 180 nm PDK.
+
+So the neural-network training knows something about the eventual physical topology.
+
+That's the version I think has a chance of being genuinely beautiful.
+
+And interestingly, this idea now has a real-world cousin
+
+Taalas publicly unveiled essentially the same general philosophy, albeit at vastly larger scale and using its own proprietary architecture.
+
+Taalas says it takes a trained AI model and transforms it into custom silicon, merging storage and computation instead of using a normal memory/compute boundary. Its first HC1 device hard-wires Llama 3.1 8B; Taalas reports 17,000 tokens/s/user. Their chip is 6 nm, 815 mm² and 53 billion transistors, so it is emphatically not our little edge chip — but the important part is that hard-wiring frozen models into silicon is no longer just a thought experiment.
+
+Taalas' first silicon uses a mixture of 3-bit and 6-bit parameters, whereas RoutingVoice-180 would push the philosophy much further by combining a tiny model, ternary weights, streaming state and a very old inexpensive process.
+
+So the one-slide explanation to your friend is basically:
+
+GPU: "Here are 15 million numbers. Read them from memory billions of times."
+
+RoutingVoice-180: "We already know the 15 million numbers forever. Why store and read them at all? Manufacture the answer into the wiring."
+
+And that is the first RoutingVoice approach we were talking about.
+
+Ternarization
+
+What if it's a very dense network, and what if there are many, many connections, many wires that are routing? Let's imagine it's a dense 15-million-parameter thing, then what happens? Anyhow, it must go through activations where your accumulators will be 8-bit, and so on and so forth. Let us take the example of the latest TTS that I was talking about, which was Inflection, in a similar project. Can you just tell me how the math would look when you do that? 
+
+Yes — and this is where the distinction between “weights as wiring” and “wiring is free” becomes extremely important.
+
+For a dense 10–15M parameter network, the architecture can still eliminate weight SRAM/DRAM, but the cost moves into metal routing, fan-out, reduction trees, switching capacitance, and accumulator logic.
+
+Inflect-Micro-v2 is a great concrete example. It has 9,356,513 complete parameters, including the waveform generator—so there is no hidden external vocoder. Its published architecture includes 96 text-hidden channels, 768 FFN channels, 192 latent channels, a 320-channel initial decoder, 3 transformer encoder layers, 4 flow blocks, and 24 kHz audio output.
+
+1. Start with one dense frozen layer
+
+Say we have:
+
+$$ x\in\mathbb{Z}^{N} $$
+
+with INT8 activations
+
+$$ x_j\in[-127,127] $$
+
+and after ternary training:
+
+$$ w_{ij}\in\{-1,+1\} $$
+
+I'm deliberately assuming completely dense here: essentially no zero weights.
+
+The layer is:
+
+$$ a_i=\sum_{j=1}^{N}w_{ij}x_j $$
+
+Normally:
+
+weight SRAM
+    ↓
+  weight × activation
+    ↓
+ accumulator
+
+Our ASIC instead becomes:
+
+                       OUTPUT i
+
+x0 ───── + ───────────┐
+x1 ───── - ───────────┤
+x2 ───── + ───────────┤
+x3 ───── + ───────────┤
+x4 ───── - ───────────┤
+                       ▼
+                REDUCTION TREE
+                       │
+                       ▼
+                 wide accumulator
+                       │
+                  scale / norm
+                       │
+                       ▼
+                     INT8
+
+There is still:
+
+$$ \boxed{0\text{ weight-memory accesses}} $$
+
+and:
+
+$$ \boxed{0\text{ weight multiplications}} $$
+
+but there are a hell of a lot of connections.
+
+2. Your accumulator won't actually be 8-bit
+
+This is an important correction.
+
+The input and output activations can be 8-bit.
+
+The accumulator generally cannot.
+
+Imagine four INT8 activations:
+
+$$ x=[100,-20,50,7] $$
+
+and
+
+$$ w=[+1,-1,+1,+1] $$
+
+Then:
+
+$$ a= 100-(-20)+50+7 $$ $$ a=177 $$
+
+But INT8 only goes to 127.
+
+We haven't even summed four values yet and we've overflowed.
+
+So the architecture is actually:
+
+ INT8         INT8
+activation    activation
+    │             │
+    └──────┬──────┘
+           ↓
+       add/subtract
+           │
+           ▼
+     WIDE ACCUMULATOR
+        15–20 bits
+           │
+           ▼
+    scale / normalize
+           │
+           ▼
+      requantize
+           │
+           ▼
+          INT8
+3. We can calculate accumulator width exactly
+
+If every activation satisfies:
+
+$$ |x|\le127 $$
+
+and an output has fan-in \(N\),
+
+worst case:
+
+$$ |A_{\max}|=127N $$
+
+Therefore the signed accumulator needs:
+
+$$ \boxed{ B_{\mathrm{acc}} = 1+ \left\lceil \log_2(127N+1) \right\rceil } $$
+
+So:
+
+Dense fan-in	Worst-case sum	Accumulator
+32	4,064	13 bits
+64	8,128	14 bits
+96	12,192	15 bits
+192	24,384	16 bits
+320	40,640	17 bits
+576	73,152	18 bits
+768	97,536	18 bits
+1,024	130,048	18 bits
+2,048	260,096	19 bits
+
+Then after the dot product:
+
+$$ q_i= \operatorname{clip}_{8} \left( \operatorname{round} \left( s_i A_i \right) \right) $$
+
+where \(s_i\) is a learned/calibrated scale.
+
+So perhaps:
+
+18-bit accumulator
+       │
+       × scale
+       │
+       ▼
+ round / saturate
+       │
+       ▼
+ 8-bit activation
+
+That 8-bit value is what gets routed into the next layer.
+
+4. Now take an Inflect-sized layer
+
+Inflect-Micro-v2 has:
+
+$$ d_\text{hidden}=96 $$
+
+and:
+
+$$ d_\text{FF}=768 $$
+
+according to its published model specification.
+
+Imagine, for simplicity, a dense projection:
+
+$$ 96\rightarrow768 $$
+
+The weight matrix is:
+
+$$ W\in\mathbb{R}^{768\times96} $$
+
+That's:
+
+$$ 768\times96 = 73,728 $$
+
+weights.
+
+Ternarize them:
+
+$$ W\rightarrow \{-1,+1\}^{768\times96} $$
+
+Now we've got:
+
+$$ \boxed{73,728\text{ fixed signed connections}} $$
+
+but zero stored weights.
+
+Each of the 768 output neurons receives 96 signals.
+
+So output #37 might physically represent:
+
+$$ y_{37} = +x_0 -x_1 +x_2 +x_3 -x_4 +\cdots -x_{95} $$
+
+The 96 values are reduced into one result.
+
+5. How many adders?
+
+A straightforward binary tree adding \(N\) things needs roughly:
+
+$$ N-1 $$
+
+addition operations.
+
+Therefore one 96-input output requires:
+
+$$ 95 $$
+
+adds/subtracts.
+
+There are 768 outputs.
+
+Therefore a completely spatially-unrolled implementation needs roughly:
+
+$$ 768\times95 = 72,960 $$
+
+adder nodes.
+
+Just for this one projection.
+
+Then suppose you have a reverse projection:
+
+$$ 768\rightarrow96 $$
+
+It contains:
+
+$$ 96\times768 = 73,728 $$
+
+weights again.
+
+The reduction logic is approximately:
+
+$$ 96\times767 = 73,632 $$
+
+adder nodes.
+
+So the pair is roughly:
+
+$$ 147,456\text{ frozen weights} $$
+
+and
+
+$$ 146,592\text{ reduction operations} $$
+
+if you unroll everything spatially.
+
+This is why dense hardwired neural networks become enormous very quickly.
+
+6. Now scale that to 15M parameters
+
+Suppose:
+
+$$ P=15,000,000 $$
+
+and almost every weight is nonzero.
+
+Then the physical network has approximately:
+
+$$ \boxed{15,000,000\text{ signed connection endpoints}} $$
+
+If every activation is physically transported as an 8-bit parallel bus, the naive routing equivalent becomes:
+
+$$ 15M\times8 $$
+
+or:
+
+$$ \boxed{120,000,000\text{ bit-level sink connections}} $$
+
+That's the problem.
+
+Not SRAM.
+
+Not DRAM.
+
+Not multipliers.
+
+Metal.
+7. This is what the dense chip starts looking like
+
+Naively:
+
+         8-bit x0
+        ═══════════════════════════╗
+         ║ ║ ║ ║ ║ ║ ║ ║ ║ ║     ║
+         ║ ║ ║ ║ ║ ║ ║ ║ ║ ║     ║
+         ║ ║ ║ ║ ║ ║ ║ ║ ║ ║     ║
+         ║ ║ ║ ║ ║ ║ ║ ║ ║ ║     ║
+         ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼     ▼
+       thousands of destination neurons
+
+         8-bit x1
+        ═══════════════════════════════╗
+          ║ ║ ║ ║ ║ ║ ║ ║ ║ ║ ║     ║
+          ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼     ▼
+
+                  ...
+
+         8-bit xN
+        ═══════════════════════════════╗
+
+You get extraordinary fan-out.
+
+And at 180 nm those wires have:
+
+resistance
+capacitance
+repeaters
+buffers
+spacing requirements
+metal-layer congestion
+dynamic switching energy.
+
+So we traded:
+
+3.75 MB of 2-bit weight storage
+
+for:
+
+millions of fixed physical connections.
+
+That can absolutely be a good trade.
+
+But it isn't automatically a good trade.
+
+8. In fact, dense routing can dominate power
+
+The basic dynamic-power equation is:
+
+$$ P_{\rm dynamic} = \alpha C V^2 f $$
+
+where:
+
+\(\alpha\) = switching activity
+\(C\) = switched capacitance
+\(V\) = voltage
+\(f\) = switching frequency.
+
+For our fixed network:
+
+$$ C_{\rm total} \approx \sum_{e=1}^{15M} C_e $$
+
+So:
+
+$$ P_{\rm routing} \approx \alpha f V^2 \sum C_e $$
+
+This is the critical equation for RoutingVoice/ RoutingTTS.
+
+SRAM power is gone.
+
+But now:
+
+$$ \boxed{\text{wire capacitance becomes the weight cost}} $$
+
+That's a nice way to think about it.
+
+9. So there is a second trick: bit-serial activations
+
+This is probably the approach I would actually investigate.
+
+Don't transmit this:
+
+x = 10110101
+
+8 wires
+════════
+════════
+════════
+════════
+════════
+════════
+════════
+════════
+
+Instead transmit:
+
+cycle 0: bit 0
+cycle 1: bit 1
+cycle 2: bit 2
+...
+cycle 7: bit 7
+
+One physical line.
+
+Eight cycles.
+
+Now instead of effectively:
+
+$$ 15M\times8 = 120M $$
+
+bit-level parallel connections,
+
+you approach:
+
+$$ \boxed{15M\text{ single-bit connection endpoints}} $$
+
+with eight times more cycles.
+
+For a tiny low-power TTS ASIC this may be an excellent trade.
+
+10. And ternary math becomes ridiculously simple bit-serially
+
+Take one activation bit plane \(b\).
+
+Separate the connections into:
+
+$$ P_i=\{j:w_{ij}=+1\} $$
+
+and:
+
+$$ N_i=\{j:w_{ij}=-1\} $$
+
+Then for that bit:
+
+$$ S_i^{(b)} = \sum_{j\in P_i}x_j^{(b)} - \sum_{j\in N_i}x_j^{(b)} $$
+
+These are effectively population counts.
+
+So hardware becomes:
+
+                  one activation bit
+
+                       │
+            ┌──────────┴─────────┐
+            │                    │
+
+       + weight routes      - weight routes
+            │                    │
+            ▼                    ▼
+         popcount             popcount
+            │                    │
+            └─────── SUB ────────┘
+                       │
+                       ▼
+                 shift by bit #
+                       │
+                       ▼
+                wide accumulator
+
+No INT8 multipliers.
+
+And the fixed weight's + or - is just which reduction network the signal enters.
+
+That's extremely attractive.
+
+11. This changes what “the routing is the weight” really means
+
+The dumb version is:
+
+One gigantic arbitrary 15M-edge spiderweb.
+
+I don't think that's the chip we should build.
+
+The better version is:
+
+              GLOBAL ACTIVATION BUS
+                       │
+                       ▼
+
+       ┌──────────────────────────┐
+       │       MATRIX TILE        │
+       │                          │
+       │ x0 ── + ────────┐       │
+       │ x1 ── - ──────┐ │       │
+       │ x2 ── + ────┐ │ │       │
+       │             ▼ ▼ ▼       │
+       │        local reduction   │
+       │             │            │
+       └─────────────┼────────────┘
+                     │
+                     ▼
+
+       ┌──────────────────────────┐
+       │       MATRIX TILE        │
+       │     fixed local wires    │
+       └──────────────────────────┘
+
+Perhaps:
+
+$$ 32\times32 $$
+
+or
+
+$$ 64\times64 $$
+
+fixed-routing tiles.
+
+Within each tile, the model is literally physical wiring.
+
+Between tiles, we use a much smaller structured bus.
+
+12. A 64×64 tile
+
+A dense tile contains:
+
+$$ 64\times64=4096 $$
+
+weights.
+
+All 4,096 can be frozen into wiring.
+
+But instead of running:
+
+$$ 4096\times8 $$
+
+parallel signals across the die, you locally distribute 64 activations to the tile.
+
+                 64 INPUTS
+                     │
+            ┌────────┴─────────┐
+            │                  │
+      ┌───────────────────────────┐
+      │                           │
+      │  4096 FIXED CONNECTIONS   │
+      │                           │
+      │    + / - / optional 0     │
+      │                           │
+      │  LOCAL REDUCTION TREES    │
+      │                           │
+      └───────────────────────────┘
+                     │
+                 64 outputs
+
+So long-distance traffic becomes roughly:
+
+$$ 64\text{ inputs} + 64\text{ outputs} $$
+
+rather than thousands of arbitrary die-wide wires.
+
+That's a radically more manufacturable architecture.
+
+13. And we can time-multiplex without bringing weight memory back
+
+This is another important distinction.
+
+Suppose a tile processes 64 connections per clock instead of all 4,096 simultaneously.
+
+Normally time multiplexing implies:
+
+“Fetch the next 64 weights.”
+
+Not here.
+
+We can have eight or sixteen fixed routing phases.
+
+For example:
+
+CLOCK 0
+fixed group A
+      ↓
+accumulator
+
+CLOCK 1
+fixed group B
+      ↓
+same accumulator
+
+CLOCK 2
+fixed group C
+      ↓
+same accumulator
+
+The connectivity for each phase remains compiled into logic.
+
+No model DRAM appears.
+
+No model SRAM appears.
+
+We simply trade:
+
+$$ \text{area} \leftrightarrow \text{cycles} $$
+
+while retaining:
+
+$$ \boxed{\text{zero weight bandwidth}} $$
+
+That's probably the sweet spot.
+
+14. Now apply this specifically to Inflect
+
+Inflect isn't just one giant matrix.
+
+Its deployed path contains a phoneme/text encoder, duration machinery, latent generation, coupling flows and a neural waveform decoder.
+
+So imagine:
+
+TEXT
+ │
+ ▼
+phonemes
+ │
+ ▼
+┌───────────────────────┐
+│ Transformer Encoder   │
+│ 96 channels           │
+│ 3 layers              │
+└─────────┬─────────────┘
+          │
+          ▼
+┌───────────────────────┐
+│ Duration / Alignment  │
+└─────────┬─────────────┘
+          │
+          ▼
+┌───────────────────────┐
+│ Latent representation │
+│ 192 channels          │
+└─────────┬─────────────┘
+          │
+          ▼
+┌───────────────────────┐
+│ 4 coupling flows      │
+└─────────┬─────────────┘
+          │
+          ▼
+┌───────────────────────┐
+│ Waveform decoder      │
+│ starts ~320 channels  │
+│ upsample 8×8×2×2      │
+└─────────┬─────────────┘
+          │
+          ▼
+      24 kHz AUDIO
+
+Those published widths and upsampling factors come from the current Inflect-Micro-v2 release.
+
+15. Convolutions work similarly
+
+A TTS decoder contains lots of convolution-like operations.
+
+For a convolution:
+
+$$ y_{o,t} = \sum_{i=1}^{C_{\rm in}} \sum_{k=1}^{K} w_{o,i,k} x_{i,t+k} $$
+
+If:
+
+$$ w\in\{-1,+1\} $$
+
+then:
+
+$$ y_{o,t} = \sum_{\{i,k:w=+1\}} x_{i,t+k} - \sum_{\{i,k:w=-1\}} x_{i,t+k} $$
+
+Again:
+
+no multiplications.
+
+Suppose:
+
+$$ C_{\rm in}=192 $$
+
+and kernel:
+
+$$ K=3. $$
+
+Each output has fan-in:
+
+$$ 192\times3 = 576 $$
+
+values.
+
+Worst-case INT8 accumulation:
+
+$$ 127\times576 = 73,152 $$
+
+which means roughly an:
+
+$$ \boxed{18\text{-bit accumulator}} $$
+
+before requantization.
+
+Then:
+
+576 × INT8 inputs
+        │
+        ▼
+ fixed +/- routing
+        │
+        ▼
+   18-bit sum
+        │
+        ▼
+ scale / nonlinearity
+        │
+        ▼
+      INT8
+
+This pattern repeats.
+
+16. But there is one major thing that cannot become frozen wiring
+
+Inflect has a Transformer text encoder.
+
+The learned Q/K/V matrices can be frozen:
+
+$$ Q=XW_Q $$ $$ K=XW_K $$ $$ V=XW_V $$
+
+The \(W_Q,W_K,W_V\) weights can all become fixed routing.
+
+But then attention calculates:
+
+$$ QK^T $$
+
+and both Q and K are activations.
+
+Neither one is fixed.
+
+Therefore:
+
+$$ QK^T $$
+
+still requires dynamic multiplication/addition—or some quantized approximation.
+
+Likewise:
+
+normalization,
+nonlinear activations,
+stochastic sampling,
+dynamic attention,
+some flow operations,
+
+cannot simply become wires.
+
+So a real Inflect ASIC would probably look like:
+
+╔═══════════════════════════════════════╗
+║        90–95% FIXED DATAPATH         ║
+║                                       ║
+║ convolution weights                   ║
+║ projection weights                    ║
+║ decoder weights                       ║
+║ flow-network weights                  ║
+║                                       ║
+║      HARDWIRED / FIXED ROUTING        ║
+╚═══════════════════╤═══════════════════╝
+                    │
+                    ▼
+          ┌────────────────────┐
+          │ tiny dynamic ALU   │
+          │                    │
+          │ attention          │
+          │ normalization      │
+          │ activation funcs   │
+          │ scaling            │
+          │ sampling           │
+          └────────────────────┘
+
+That's much more realistic than claiming the whole neural network literally becomes passive wiring.
+
+17. What happens to SRAM?
+
+Even for dense Inflect:
+
+Weight SRAM
+$$ \boxed{0} $$
+
+potentially.
+
+Weight DRAM
+$$ \boxed{0} $$
+
+potentially.
+
+Activation SRAM
+
+Still required.
+
+For example, a 192-channel INT8 tensor containing 512 frames is:
+
+$$ 192\times512 = 98,304\text{ bytes} $$
+
+or approximately:
+
+$$ \boxed{96\text{ KiB}} $$
+
+A 320-channel tensor over the same hypothetical window would be:
+
+$$ 320\times512 = 163,840\text{ bytes} $$
+
+about:
+
+$$ \boxed{160\text{ KiB}} $$
+
+So with ping-pong buffers, scratch state, accumulators etc., you're talking hundreds of KB of working SRAM, rather than several megabytes of model weight memory.
+
+That distinction remains extremely valuable at 180 nm.
+
+18. The decoder is actually where I'd pay the most attention
+
+Inflect produces the final waveform at:
+
+$$ 24,000\text{ samples/sec}. $$
+
+And its published upsampling stack is:
+
+$$ 8\times8\times2\times2 = 256\times. $$
+
+So layers near the bottom of the network execute at increasingly high temporal rates.
+
+That means:
+
+Even though the weights aren't being fetched, the wires and adders are switching a lot.
+
+For TTS, the real power equation becomes:
+
+$$ P \approx (\text{operations/second}) \times (\text{switching energy per operation}) $$
+
+rather than merely:
+
+$$ P\propto\text{parameter count}. $$
+
+That's why a 9M TTS model can conceivably be more demanding than a 15M classifier running once a second.
+
+19. So, dense 15M: can we still do it?
+Naive version
+15M parameters
+      ↓
+15M physical ± routes
+      ↓
+8 bits each
+      ↓
+120M equivalent bit endpoints
+      ↓
+giant full-width reduction trees
+
+At 180 nm, I would be very skeptical of this implementation.
+
+Not because the model weights don't fit.
+
+Because the wiring doesn't fit gracefully.
+
+20. But this version is much more believable
+            15M frozen parameters
+                     │
+                     ▼
+             64×64 local tiles
+                     │
+          ┌──────────┴──────────┐
+          │                     │
+       bit serial          local fan-out
+          │                     │
+          └──────────┬──────────┘
+                     ▼
+             compressor trees
+                     │
+                     ▼
+             15–20 bit ACC
+                     │
+                     ▼
+               requantize
+                     │
+                     ▼
+                  INT8
+                     │
+                     ▼
+                next tile
+
+Perhaps with:
+
+INT8 activations
+15–20 bit accumulators
+ternary fixed weights
+1-bit or 2-bit physical activation transport
+local 32×32 or 64×64 routing tiles
+4–16 cycle accumulation
+activation SRAM only
+no external DRAM
+no weight SRAM
+a tiny dynamic math unit for attention/norm/etc.
+
+And because Inflect itself is only 9.36M complete parameters, I'd prototype the actual model before bothering to invent a 15M version.
+
+The biggest conceptual takeaway
+
+There's a lovely progression here:
+
+Conventional accelerator
+$$ \boxed{\text{weight cost}=\text{memory + memory movement}} $$
+Fully hardwired dense accelerator
+$$ \boxed{\text{weight cost}=\text{wire capacitance + routing area}} $$
+The architecture we probably want
+$$ \boxed{ \text{weight cost} = \text{small local fixed interconnect} } $$
+
+while reusing that physical structure temporally.
+
+So I would slightly evolve the original RoutingVoice idea. Don't think “15 million gigantic wires.” Think “15 million immutable local connectivity decisions.”
+
+That's much closer to something you could plausibly get through place-and-route at 180 nm while still preserving the beautiful part of the idea: the model weights never need to be fetched at inference time.
+
+Sorry, I meant speech-to-text from Moonshine.
+
+RoutingSpeech-180 (Moonshine-class STT accelerator)
+
+Assume using three dice to make the speech-to-text module, and then see what can be done.
+
+Quantization: the INT8 / 8-bit quantized runtime. It uses mixed precision: some operations and attention caches remain floating point.
+Actual model package: approximately 45.2 MB.
+ASIC target: the final full-model fixed-point format is still being validated.
+
+This is the current one which I have working, so can you have a look at this?
+
+Yes — RoutingSpeech-180 with Moonshine Streaming Tiny across three 180 nm dies is a much better concrete case.
+
+And your 45.2 MB INT8/mixed-precision package is believable: the current Moonshine Streaming Tiny is documented as a 6-encoder/6-decoder streaming ASR model with 320-wide hidden states, 1280-wide FFNs, eight attention heads and a 32,768-token vocabulary. Its published Q8 GGUF is about 48 MB, very close to your working 45.2 MB package. The official model card calls it 34M parameters, although packaged tensor sizes differ depending on implementation/quantization, so for ASIC work I would trust your actual tensor manifest rather than infer “45.2 MB = 45.2M weights.”
+
+Moonshine's own runtime also does almost exactly what you described: it typically quantizes weights and heavy matrix multiplications to 8-bit, while keeping the initial audio frontend at at least 16-bit floating-point precision because that stage sees the raw waveform.
+
+RoutingSpeech-180: three-die picture
+
+I'd initially partition it like this:
+
+             ROUTINGSPEECH-180
+          Moonshine-class STT ASIC
+
+16 kHz microphone
+       │
+       ▼
+┌──────────────────────────┐
+│ DIE 1                    │
+│ AUDIO + EARLY ENCODER    │
+│                          │
+│ B16/FP16 frontend        │
+│ ↓                        │
+│ encoder blocks 0–2       │
+│ fixed INT8 matrices      │
+│ local attention state    │
+└───────────┬──────────────┘
+            │
+       320-wide state
+            │
+            ▼
+┌──────────────────────────┐
+│ DIE 2                    │
+│ LATE ENCODER / ADAPTER   │
+│                          │
+│ encoder blocks 3–5       │
+│ sliding-window attention │
+│ fixed projections        │
+│ encoder-state buffering  │
+└───────────┬──────────────┘
+            │
+       320-wide state
+            │
+            ▼
+┌──────────────────────────┐
+│ DIE 3                    │
+│ TEXT DECODER             │
+│                          │
+│ decoder transformer      │
+│ cross attention          │
+│ token embedding          │
+│ vocabulary projection    │
+│ 32,768-way output        │
+└───────────┬──────────────┘
+            │
+            ▼
+       TRANSCRIPTION
+
+The beauty of splitting between layers is that millions of internal connections stay on each die.
+
+Only the activations cross the die boundary.
+
+Moonshine Streaming produces roughly 50-Hz encoder features. A 320-wide INT8 vector therefore needs only:
+
+$$ 320\times8\times50 = 128,000\ {\rm bits/s}. $$
+
+That's:
+
+$$ \boxed{0.128\ {\rm Mbit/s}} $$
+
+between encoder dies.
+
+That's almost nothing for a chip-to-chip link.
+
+So three dies are actually quite attractive.
+
+The important correction about your current INT8 model
+
+There are really two versions of RoutingSpeech.
+
+Version A — freeze your current INT8 Moonshine exactly
+
+Weights are:
+
+$$ w_{ij}\in[-127,127]. $$
+
+This absolutely can be hardwired.
+
+But an arbitrary INT8 coefficient isn't simply:
+
++ wire
+- wire
+no wire
+
+Instead the synthesis tool turns constant multiplication into shifts and additions.
+
+For example:
+
+$$ 73x = 64x+8x+x $$
+
+or:
+
+$$ 73x=(x\ll6)+(x\ll3)+x. $$
+
+So a fixed weight of 73 becomes:
+
+                 x
+          ┌──────┼───────┐
+          │      │       │
+        <<6    <<3      <<0
+          │      │       │
+          └── ADD ┴── ADD┘
+                 │
+                 ▼
+                73x
+
+And:
+
+$$ -43x = -\left(32x+8x+2x+x\right). $$
+
+Again, shifts are effectively wiring.
+
+So even INT8 weights can be compiled into topology.
+
+But there is more arithmetic than the ternary case.
+
+A real Moonshine-sized example
+
+Take one of Moonshine Streaming Tiny's ordinary:
+
+$$ 320\rightarrow320 $$
+
+linear projections.
+
+That's:
+
+$$ 320\times320 = 102,400 $$
+
+fixed coefficients.
+
+For one output:
+
+$$ y_i= \sum_{j=0}^{319} w_{ij}x_j. $$
+
+Assume:
+
+$$ w,x\in INT8. $$
+
+The largest single product is approximately:
+
+$$ 127\times127 = 16,129. $$
+
+So each product needs roughly 15 bits.
+
+Now add 320 of them:
+
+$$ 16,129\times320 = 5,161,280. $$
+
+Your accumulator therefore needs approximately:
+
+$$ \boxed{24\ {\rm bits}} $$
+
+—not 8 bits.
+
+Then:
+
+320 × INT8 activations
+        │
+        ▼
+320 fixed INT8 coefficients
+        │
+        ▼
+constant shift/add network
+        │
+        ▼
+     24-bit sum
+        │
+        ▼
+   scale / norm
+        │
+        ▼
+     requantize
+        │
+        ▼
+      INT8
+
+So your intuition was right that activations can stay 8-bit, but the internal accumulation path must be wider.
+
+And look at the 1280-wide FFN
+
+Moonshine's FFN width is:
+
+$$ 1280. $$
+
+Consider the reverse projection:
+
+$$ 1280\rightarrow320. $$
+
+One output contains:
+
+$$ 1280 $$
+
+INT8×INT8 terms.
+
+Maximum sum:
+
+$$ 1280\times16129 = 20,645,120. $$
+
+So now you need roughly a:
+
+$$ \boxed{26\text{-bit accumulator}}. $$
+
+That gives us a useful first ASIC rule:
+
+Operation	Input	Weight	Accumulator
+320-fan-in matrix	INT8	INT8	~24 bit
+1280-fan-in matrix	INT8	INT8	~26 bit
+320-fan-in ternary	INT8	±1	~17 bit
+1280-fan-in ternary	INT8	±1	~19 bit
+
+And that table explains why I remain very interested in eventually retraining Moonshine specifically for ternary/2-bit fixed weights.
+
+How much uglier is dense INT8 routing?
+
+This is the central question.
+
+Suppose a coefficient is:
+
+01101001
+
+A normal accelerator stores those eight bits.
+
+RoutingSpeech doesn't.
+
+Instead, synthesis could interpret them as something like:
+
+$$ w x = (x\ll6)+(x\ll5)+(x\ll3)+x $$
+
+and manufacture only those paths.
+
+So instead of:
+
+$$ \text{weight cost} = 8\text{ SRAM bits}, $$
+
+you get:
+
+$$ \text{weight cost} = \text{fixed routes} + \text{constant-add reduction logic}. $$
+
+For one coefficient, brilliant.
+
+For tens of millions of dense coefficients, however, this becomes enormous.
+
+That's exactly the physical-design question the FPGA experiment should answer.
+
+What happens if all ~45 MB were naïvely considered wiring?
+
+Don't do:
+
+$$ 45.2\ {\rm MB}/3 \approx15.1\ {\rm MB/die} $$
+
+and conclude that's what each die needs.
+
+That package includes some combination of:
+
+quantized tensors,
+floating tensors,
+metadata,
+graph structure,
+alignment,
+possibly duplicated/static tensors.
+
+What we actually need is:
+
+for every tensor:
+    name
+    shape
+    datatype
+    byte count
+    execution frequency
+    can freeze?
+    can quantize?
+    can ternarize?
+    needs runtime storage?
+
+Then the model changes from a 45.2 MB file into a physical computation graph.
+
+That's the thing we tape out.
+
+There is another very important Moonshine advantage
+
+Moonshine Streaming uses bounded sliding-window attention in the encoder rather than forcing every speech frame to attend to the entire history.
+
+The current Tiny encoder is six layers wide, 320 dimensions, with local windows such as (16,4) and (16,0). The four-frame right context corresponds to roughly 80 ms of lookahead.
+
+That is extremely good news for an ASIC.
+
+Instead of:
+
+$$ KV\ memory\propto\text{entire speech duration}, $$
+
+much of the encoder state can stay bounded.
+
+For FP16 K/V with 320 dimensions and approximately 20 locally relevant frames:
+
+$$ 20\times320\times2(K,V)\times2\text{ bytes} \approx25.6KB $$
+
+per layer.
+
+Across six layers:
+
+$$ \approx154KB. $$
+
+That's a very manageable order of magnitude.
+
+The decoder cache is more annoying
+
+The autoregressive decoder still has historical K/V state.
+
+For 320 dimensions, six layers and FP16 K/V:
+
+$$ 6 \times 2 \times 320 \times 2 = 7,680\ {\rm bytes/token}. $$
+
+So 100 generated tokens would be:
+
+$$ 768KB. $$
+
+200 tokens:
+
+$$ 1.54MB. $$
+
+That's no longer negligible on 180 nm.
+
+So one of the biggest RoutingSpeech-180 experiments should be:
+
+$$ FP16\ KV \rightarrow INT8\ KV? $$
+
+or perhaps:
+
+$$ 12\text{-bit fixed point}. $$
+
+If WER barely moves, that's a huge win.
+
+And this is exactly why your “final full fixed-point format is still being validated” matters
+
+I would consider these the four silicon gates:
+
+Gate 1 — current model
+INT8 MatMuls
++
+B16 frontend
++
+floating attention state
+
+We know this works in software.
+
+Moonshine itself uses essentially this approach.
+
+Gate 2
+INT8 weights
+INT8 activations
+FP16 frontend
+FP16 attention cache
+
+Almost directly translatable to hardware.
+
+Gate 3
+INT8 weights
+INT8 activations
+FP16 only where absolutely necessary
+INT8/INT12 cache
+
+This is where the 180 nm implementation gets attractive.
+
+Gate 4
+
+Eventually:
+
+2–4 bit / ternary fixed weights
+INT8 activation
+wide fixed accumulator
+INT8 cache where possible
+
+Now RoutingSpeech starts becoming extremely small and low power.
+
+What I would actually put on each die
+
+Rather than force exactly one third of the file onto each die, I would optimize by activity and wiring locality.
+
+Die 1 — Audio + hot encoder
+16 kHz PCM
+ ↓
+B16 frontend
+ ↓
+320-wide representation
+ ↓
+Encoder 0
+ ↓
+Encoder 1
+ ↓
+Encoder 2
+
+These blocks execute continuously at ~50 frames/s.
+
+They benefit enormously from no weight movement.
+
+Die 2 — Remaining encoder
+Encoder 3
+ ↓
+Encoder 4
+ ↓
+Encoder 5
+ ↓
+adapter
+ ↓
+encoder-state output
+
+Again, all dense connectivity stays local.
+
+Only a 320-wide vector crosses between dies.
+
+Die 3 — decoder
+encoder state
+      +
+previous tokens
+      │
+      ▼
+decoder layers
+      │
+      ▼
+32,768-way vocabulary
+      │
+      ▼
+token
+
+And here's where I'd make one deliberate architectural compromise.
+
+I would NOT hardwire the entire vocabulary table as giant global routing
+
+Moonshine has a:
+
+$$ 32,768 $$
+
+token vocabulary.
+
+A straightforward 320 → 32768 output matrix contains:
+
+$$ 320\times32768 = \boxed{10,485,760} $$
+
+coefficients.
+
+That's over 10 million coefficients in one matrix.
+
+But it only runs when Moonshine produces another text token — a handful of times per second.
+
+Making 10.5M dense connections into a giant parallel circuit just to use it ~5–7 times/sec is a terrible area trade.
+
+This is where I would use mask ROM.
+
+Importantly, it's still:
+
+permanently burned into the ASIC,
+immutable,
+zero DRAM,
+zero external weight storage,
+much denser than SRAM.
+
+So my practical RoutingSpeech isn't dogmatic.
+
+It becomes:
+
+HIGH-RATE MATRIX
+        ↓
+HARDWIRED CONSTANT DATAPATH
+
+LOW-RATE GIANT LOOKUP
+        ↓
+MASK ROM
+
+That's much smarter.
+
+The architecture I'd actually tape out
+              ROUTINGSPEECH-180
+
+        ┌──────────┐
+Mic ───►│  DIE 1   │
+        │          │
+        │ FP16/B16 │
+        │ frontend │
+        │          │
+        │ fixed    │
+        │ encoder  │
+        └────┬─────┘
+             │
+        320 × INT8
+             │
+             ▼
+        ┌──────────┐
+        │  DIE 2   │
+        │          │
+        │ fixed    │
+        │ encoder  │
+        │          │
+        │ local KV │
+        │ SRAM     │
+        └────┬─────┘
+             │
+        320 × INT8
+             │
+             ▼
+        ┌───────────────┐
+        │ DIE 3         │
+        │               │
+        │ fixed decoder │
+        │ dynamic attn  │
+        │               │
+        │ KV SRAM       │
+        │               │
+        │ MASK ROM      │
+        │ vocab/embed   │
+        └───────┬───────┘
+                ▼
+              TEXT
+Memory target
+
+A realistic first goal would be roughly:
+
+Storage	Three-die RoutingSpeech
+External DRAM for weights	0
+External SRAM for weights	0
+Weight SRAM	0 ideally
+Fixed high-use weights	hardwired constants
+Huge low-use immutable tables	mask ROM
+Encoder working SRAM	~0.2–0.5 MB
+Decoder/KV SRAM	~0.5–2 MB initially
+tiny control/boot ROM	tens of KB
+floating-point island	frontend + unavoidable operations
+
+The exact SRAM number is going to depend heavily on the cache experiment.
+
+Would three 180 nm dies make this feasible?
+
+Much more feasible than one die.
+
+But I would distinguish two versions.
+
+Three dies + completely dense INT8 fully spatial model
+
+I am still skeptical.
+
+The raw wiring and constant-adder network could become enormous.
+
+Three dies + fixed INT8, tiled/time-multiplexed datapaths + mask ROM for huge low-rate matrices
+
+This I think is genuinely worth prototyping.
+
+And it preserves the central idea:
+
+$$ \boxed{\text{No general-purpose model-weight memory system}} $$
+
+You aren't repeatedly moving a 45 MB model around.
+
+The silicon itself already knows the model.
+
+The most interesting number
+
+For the encoder alone, a representative Moonshine layer has matrices like:
+
+$$ 320\times320 $$
+
+and:
+
+$$ 320\times1280. $$
+
+At ~50 frames/sec, just the major linear transformations across six encoder layers are on the order of hundreds of millions of multiply-equivalent operations per second.
+
+But with fixed coefficients, those become:
+
+$$ \text{route} + \text{shift} + \text{add} $$
+
+instead of:
+
+$$ \text{SRAM read} + \text{weight transport} + \text{general multiplier}. $$
+
+That is precisely the workload where this architecture has a chance to win.
+
+So for RoutingSpeech-180, I would now define the project slightly more precisely as:
+
+A three-die, 180 nm, Moonshine-class streaming STT accelerator where frequently executed INT8 weights are compiled into fixed constant datapaths, low-frequency immutable tables use mask ROM, only live activations/attention state occupy SRAM, and no external model DRAM is required.
+
+That version is substantially more physically believable than trying to turn every byte of the 45.2 MB file into one enormous nest of wires — while still being very much the architecture you've been describing.

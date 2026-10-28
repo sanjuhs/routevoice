@@ -1,0 +1,42 @@
+{
+  "scope": "annotation-only, mapped design, zero-delay unmodified VCD",
+  "results": [
+    {
+      "vcd_path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/projection-complete/power/escaped-api/actual-verilator.vcd",
+      "exit_code": 0,
+      "timed_out": false,
+      "wall_seconds": 0.29686254193075,
+      "coverage": {
+        "categories": {
+          "vcd": 4,
+          "unannotated": 0
+        },
+        "total_reported_pins": 4,
+        "direct_vcd_pins": 4,
+        "direct_vcd_pin_fraction": 1.0,
+        "meaning": "Native OpenSTA activity-source pin counts, not switching coverage or power accuracy."
+      },
+      "scope": "tb/dut",
+      "read_vcd_name_rewriting": false,
+      "power_reported": false,
+      "timing_reported": false,
+      "design_stage": "matching mapped synthesis netlist",
+      "error_lines": []
+    }
+  ],
+  "all_requested_checks_completed": true,
+  "wall_seconds": 0.2977648749947548,
+  "source_hashes": {
+    "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric-k64/pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__tt_025C_3v30.lib": "f9dee07cf158324934b0c59144d970a2e8313f43533ede6283ec3c136f82fe53",
+    "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/projection-complete/macro/PITCH_BANK_R1280.lib": "6008dd5e970e9a1078bf6f98c4d5d21edb926973949e2c1c2be04d5782e25815",
+    "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/projection-complete/power/escaped-api/probe.v": "e18809610c68aaa7be4601a9f462c85b072a215d3166b7d49e331b827cdfd910",
+    "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/projection-complete/gate-activity-audit/annotation_only.tcl": "7bf6d9a2e9acd072d8619df33c610b23b9b81521b5538fa24f05cf6959265300"
+  },
+  "power_W": null,
+  "routed_timing": null,
+  "SPEF_read": false,
+  "limitations": [
+    "Mapped activity coverage does not establish routed-netlist coverage.",
+    "No SDF glitches, physical timing, or array internal energy established."
+  ]
+}

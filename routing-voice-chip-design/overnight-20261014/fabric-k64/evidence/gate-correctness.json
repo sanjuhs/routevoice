@@ -1,0 +1,57 @@
+{
+  "array_port": {
+    "status": "pass",
+    "stage": "mapped synthesis netlist, zero-delay functional cells; not routed or SDF timing verification",
+    "guard": {
+      "pid": 34759,
+      "elapsed_s": 2556.536497116089,
+      "free_gib": 24.894256591796875,
+      "status": "functional_completion_observed",
+      "adopted_after_monitor_failure": true,
+      "os_exit_status_available": false,
+      "gate_threads": 1,
+      "reason": null,
+      "returncode": null,
+      "normal_finish_in_log": true
+    },
+    "log": "logs/array_port-gate-simulation.log",
+    "integer_internal_checks": false,
+    "vectors": 54,
+    "fp32_outputs": 17280,
+    "cycles": 300952,
+    "stall_events": 104112,
+    "reset_tests": 4,
+    "unstalled_cycles": 4163,
+    "log_sha256": "86546343e19b8237a67e24599f10a52a7217eec37c5bf149b170d11c91fdc3e1",
+    "testbench_sha256": "400db06635c132a63f50fcae556a374dd2baf23386d3ae60b60455181be279fa",
+    "netlist_sha256": "6013dfbe3ab69fce253c1799b8d8e5c1138cd3318a6d25922c59b216b67f6d73"
+  },
+  "sc_rom": {
+    "status": "pass",
+    "stage": "mapped synthesis netlist, zero-delay functional cells; not routed or SDF timing verification",
+    "guard": {
+      "pid": 39718,
+      "elapsed_s": 4988.508466959,
+      "paused_for_thread_budget": false,
+      "physical_worker_thread_budget": [
+        3,
+        0
+      ],
+      "gate_threads": 1,
+      "status": "completed",
+      "returncode": 0,
+      "reason": null
+    },
+    "log": "logs/sc_rom-gate-simulation.log",
+    "integer_internal_checks": false,
+    "vectors": 54,
+    "fp32_outputs": 17280,
+    "cycles": 300952,
+    "stall_events": 104112,
+    "reset_tests": 4,
+    "unstalled_cycles": 4163,
+    "log_sha256": "a56a410230009a1d87ac8bb5d0edafc0e963f0daf746231b386b6ed86f2b3330",
+    "testbench_sha256": "36d89ff477b717072188bdefffa5f6cd7f78cf4d497c49fbc4f19d0a6bdcdfd0",
+    "netlist_sha256": "c33a7a878910560dcc9ed5d2b8ee5258a4ee8775b1615be52674eb6c3216fbfe"
+  }
+}

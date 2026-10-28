@@ -1,0 +1,247 @@
+{
+  "status": "Standalone physical transparent latch strip verified; capture_gate source and whole-macro timing unqualified",
+  "run": "runs/latch128b-v1",
+  "dimensions_um": [
+    450,
+    80
+  ],
+  "outline_area_um2": 36000,
+  "cell_area_excluding_fill_um2": 7345.14,
+  "latches": 128,
+  "gate_tree": "buf20 -> four buf8 -> sixteen buf4 -> 128 latq1; explicit gate tree, CTS disabled",
+  "final_netlist_cell_counts": {
+    "gf180mcu_fd_sc_mcu7t5v0__fillcap_32": 66,
+    "gf180mcu_fd_sc_mcu7t5v0__fillcap_8": 81,
+    "gf180mcu_fd_sc_mcu7t5v0__fillcap_4": 116,
+    "gf180mcu_fd_sc_mcu7t5v0__fill_1": 86,
+    "gf180mcu_fd_sc_mcu7t5v0__fill_2": 81,
+    "gf180mcu_fd_sc_mcu7t5v0__fillcap_64": 46,
+    "gf180mcu_fd_sc_mcu7t5v0__fillcap_16": 61,
+    "gf180mcu_fd_sc_mcu7t5v0__endcap": 28,
+    "gf180mcu_fd_sc_mcu7t5v0__filltie": 170,
+    "gf180mcu_fd_sc_mcu7t5v0__latq_1": 128,
+    "gf180mcu_fd_sc_mcu7t5v0__buf_4": 16,
+    "gf180mcu_fd_sc_mcu7t5v0__buf_8": 4,
+    "gf180mcu_fd_sc_mcu7t5v0__buf_20": 1
+  },
+  "ports": {
+    "index_in": 128,
+    "index_out": 128,
+    "capture_gate": 1,
+    "power": [
+      "VDD",
+      "VSS"
+    ],
+    "total": 259
+  },
+  "klayout": {
+    "w5_latch128": {
+      "markers": 0,
+      "categories": {},
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "/nix/store/yczxlrrywxp7q2aavm4b3zrj3lpmq18a-devshell-dir/bin/klayout",
+        "-b",
+        "-r",
+        "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/taalas-array/periphery/main.drc",
+        "-rd",
+        "input=/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/taalas-array/periphery/handoff-latch128/w5_latch128.gds",
+        "-rd",
+        "report=/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/taalas-array/periphery/w5_latch128.lyrdb",
+        "-rd",
+        "topcell=w5_latch128",
+        "-rd",
+        "feol=true",
+        "-rd",
+        "beol=true",
+        "-rd",
+        "conn_drc=true",
+        "-rd",
+        "offgrid=true",
+        "-rd",
+        "metal_top=11K",
+        "-rd",
+        "metal_level=5LM",
+        "-rd",
+        "mim_option=B",
+        "-rd",
+        "run_mode=deep",
+        "-rd",
+        "thr=1"
+      ],
+      "scope": "GF180 FEOL BEOL connectivity offgrid; density and antenna excluded",
+      "gds_sha256": "8faa7e9931eb5e8937124568021036d5beebd00b1f4b995ba5dc09388ac6adb7"
+    }
+  },
+  "magic_drc_markers": 0,
+  "netgen_lvs_counts": {
+    "design__lvs_device_difference__count": 0,
+    "design__lvs_net_difference__count": 0,
+    "design__lvs_property_fail__count": 0,
+    "design__lvs_error__count": 0,
+    "design__lvs_unmatched_device__count": 0,
+    "design__lvs_unmatched_net__count": 0,
+    "design__lvs_unmatched_pin__count": 0
+  },
+  "functional": {
+    "command": [
+      "/nix/store/yczxlrrywxp7q2aavm4b3zrj3lpmq18a-devshell-dir/bin/iverilog",
+      "-g2012",
+      "-DFUNCTIONAL",
+      "-s",
+      "tb",
+      "-o",
+      "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/taalas-array/periphery/latch.sim",
+      "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/taalas-array/periphery/latch_tb.v",
+      "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/taalas-array/periphery/runs/latch128b-v1/final/nl/w5_latch128.nl.v",
+      "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/verilog/gf180mcu_fd_sc_mcu7t5v0.v",
+      "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/verilog/primitives.v"
+    ],
+    "stdout": "PASS latch transparent/hold checks=1411 all128bits,128randomcaptures,no reset assumption\n/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/taalas-array/periphery/latch_tb.v:23: $finish called at 1667000 (1ps)\n",
+    "scope": "Routed gate-netlist zero-delay functional behavior; not analog pulse/setup/hold qualification",
+    "netlist_sha256": "09ae542e2ef4d287b70687b4b492c0f30990d10b4895319ed3c06c0f3319474c",
+    "testbench_sha256": "96e7d2956683b3160c81661471c7d279121c3ddc3338ba762a5270f2409ddb20"
+  },
+  "functional_checks": 1411,
+  "extracted_sta": {
+    "corners": {
+      "nom_tt_025C_3v30": {
+        "design__max_slew_violation__count": 0,
+        "design__max_cap_violation__count": 0,
+        "timing__hold__ws": 5.679895825550207,
+        "timing__setup__ws": 0,
+        "timing__hold__tns": 0,
+        "timing__setup__tns": 0,
+        "timing__hold__wns": 0,
+        "timing__setup__wns": 0
+      },
+      "nom_ss_125C_3v00": {
+        "design__max_slew_violation__count": 0,
+        "design__max_cap_violation__count": 0,
+        "timing__hold__ws": 7.549992844612404,
+        "timing__setup__ws": 0,
+        "timing__hold__tns": 0,
+        "timing__setup__tns": 0,
+        "timing__hold__wns": 0,
+        "timing__setup__wns": 0
+      },
+      "nom_ff_n40C_3v60": {
+        "design__max_slew_violation__count": 0,
+        "design__max_cap_violation__count": 0,
+        "timing__hold__ws": 4.878020792035349,
+        "timing__setup__ws": 0,
+        "timing__hold__tns": 0,
+        "timing__setup__tns": 0,
+        "timing__hold__wns": 0,
+        "timing__setup__wns": 0
+      },
+      "min_tt_025C_3v30": {
+        "design__max_slew_violation__count": 0,
+        "design__max_cap_violation__count": 0,
+        "timing__hold__ws": 5.672245944604977,
+        "timing__setup__ws": 0,
+        "timing__hold__tns": 0,
+        "timing__setup__tns": 0,
+        "timing__hold__wns": 0,
+        "timing__setup__wns": 0
+      },
+      "min_ss_125C_3v00": {
+        "design__max_slew_violation__count": 0,
+        "design__max_cap_violation__count": 0,
+        "timing__hold__ws": 7.535035919601643,
+        "timing__setup__ws": 0,
+        "timing__hold__tns": 0,
+        "timing__setup__tns": 0,
+        "timing__hold__wns": 0,
+        "timing__setup__wns": 0
+      },
+      "min_ff_n40C_3v60": {
+        "design__max_slew_violation__count": 0,
+        "design__max_cap_violation__count": 0,
+        "timing__hold__ws": 4.873559915796243,
+        "timing__setup__ws": 0,
+        "timing__hold__tns": 0,
+        "timing__setup__tns": 0,
+        "timing__hold__wns": 0,
+        "timing__setup__wns": 0
+      },
+      "max_tt_025C_3v30": {
+        "design__max_slew_violation__count": 0,
+        "design__max_cap_violation__count": 0,
+        "timing__hold__ws": 5.6889783383269314,
+        "timing__setup__ws": 0,
+        "timing__hold__tns": 0,
+        "timing__setup__tns": 0,
+        "timing__hold__wns": 0,
+        "timing__setup__wns": 0
+      },
+      "max_ss_125C_3v00": {
+        "design__max_slew_violation__count": 0,
+        "design__max_cap_violation__count": 0,
+        "timing__hold__ws": 7.567809704215484,
+        "timing__setup__ws": 0,
+        "timing__hold__tns": 0,
+        "timing__setup__tns": 0,
+        "timing__hold__wns": 0,
+        "timing__setup__wns": 0
+      },
+      "max_ff_n40C_3v60": {
+        "design__max_slew_violation__count": 0,
+        "design__max_cap_violation__count": 0,
+        "timing__hold__ws": 4.883366294005495,
+        "timing__setup__ws": 0,
+        "timing__hold__tns": 0,
+        "timing__setup__tns": 0,
+        "timing__hold__wns": 0,
+        "timing__setup__wns": 0
+      }
+    },
+    "report_directory": "runs/latch128b-v1/53-openroad-stapostpnr",
+    "assumed_capture_gate_period_ns": 20,
+    "assumed_duty_cycle": 0.5,
+    "input_delay_ns": 4,
+    "output_delay_ns": 4,
+    "uncertainty_ns": 0.25,
+    "output_load_ff": 10,
+    "qualification": "Positive level-sensitive latch timing with borrowing and declared gate waveform; no qualified phase-control waveform, no complete macro read path, SS Liberty3.00V not SPICE2.97V.",
+    "whole_macro_read_time_ns": null
+  },
+  "ten_strip_arithmetic": {
+    "instances": 10,
+    "output_bits": 1280,
+    "outline_area_um2": 360000,
+    "outline_area_mm2": 0.36,
+    "outline_um2_per_projection_selection": 0.87890625,
+    "cell_area_excluding_fill_um2": 73451.40000000001,
+    "qualification": "Sum of ten standalone outlines; routing, gate distribution and placement not implemented."
+  },
+  "preserved_failure": {
+    "run": "runs/latch128-v1",
+    "reason": "Root buf20 directly drove sixteen buf4; one max-cap violation, reported maxSS gate_root/Z 0.214366pF exceeds0.2pF. Revised tree adds four buf8; original preserved."
+  },
+  "commands": [
+    "bash overnight-20261014/taalas-array/periphery/run.sh latch128b",
+    ".venv/bin/python overnight-20261014/taalas-array/periphery/export_latch.py",
+    ".venv/bin/python overnight-20261014/taalas-array/periphery/test_latch.py",
+    ".venv/bin/python overnight-20261014/taalas-array/periphery/check_latch_drc.py"
+  ],
+  "artifacts": {
+    "handoff-latch128/w5_latch128.lef": "1b6f3d638ddcf5d8b3bb30cb8848fcb0e01a9815a633f98fad019ae14cc52582",
+    "handoff-latch128/w5_latch128-pins.json": "36cea5990e2512cb4ed7f651832a544310e83a4db791dccd3a02e25a49a86657",
+    "handoff-latch128/w5_latch128.gds": "8faa7e9931eb5e8937124568021036d5beebd00b1f4b995ba5dc09388ac6adb7",
+    "handoff-latch128/w5_latch128.nl.v": "09ae542e2ef4d287b70687b4b492c0f30990d10b4895319ed3c06c0f3319474c",
+    "handoff-latch128/w5_latch128.spice": "00c8e5a0100dfcb33cb2fd380da82e36cfcd476608b766a617ee04a0b022817f",
+    "handoff-latch128/w5_latch128-metrics.json": "7182c67ab81cd891bb5d4715b3fa7851e4fed74f95ffa069e5ab54cb20e1c581",
+    "handoff-latch128/w5_latch128.def": "89711e4c565dd895d3183792c76cba776962918cbcca07d6a25803241d26257a"
+  },
+  "limitations": [
+    "capture_gate must not be wired directly to array_read_enable without phase/setup/hold qualification.",
+    "No reset; first valid transparent read must precede consumption.",
+    "Gate functional test is zero-delay, not SDF or transistor simulation.",
+    "No integrated mux-to-latch routes, external gate distribution or W2b codebook capture timing.",
+    "KLayout FEOL/BEOL/connectivity/offgrid only; density and antenna excluded.",
+    "No latch energy estimate or SS2.97V transistor timing."
+  ]
+}

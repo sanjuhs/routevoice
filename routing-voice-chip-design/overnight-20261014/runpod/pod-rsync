@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# rsync to/from the overnight pod: pod-rsync <rsync args>  (use pod: prefix for remote paths)
+args=(); for a in "$@"; do args+=("${a/#pod:/root@${POD_HOST:-213.192.2.99}:}"); done
+exec rsync -a -e "ssh -i $HOME/.ssh/id_ed25519 -o StrictHostKeyChecking=accept-new -p ${POD_PORT:-41109}" "${args[@]}"

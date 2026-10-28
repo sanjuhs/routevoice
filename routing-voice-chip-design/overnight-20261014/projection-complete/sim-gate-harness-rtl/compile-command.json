@@ -1,0 +1,19 @@
+[
+  "verilator",
+  "--binary",
+  "--timing",
+  "--autoflush",
+  "--top-module",
+  "tb",
+  "-Wno-fatal",
+  "-j",
+  "2",
+  "--Mdir",
+  "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/projection-complete/sim-gate-harness-rtl/obj",
+  "-o",
+  "sim",
+  "-I/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric-k64/hf",
+  "-I/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric-k64/hf/ARM-VFPv2",
+  "-f",
+  "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/projection-complete/sim-gate-harness-rtl/sim-files.f"
+]

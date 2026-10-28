@@ -1,0 +1,199 @@
+{
+  "cap_ranking_sha256": "e5abfcc0d521a97d2633a2a75ad1b3f4837d5a204e8539946ef18e3e53f6af11",
+  "pattern_override_sha256": "223fc269f12201dbd775e9720fcdf7d1e737287c1b0dc3e14af50252b606f2bb",
+  "source_geometry_sha256": "38276461fd82312b843a7058306d0fd91b1acfea01f8fd70322c3be4e5567b6a",
+  "image_file_sha256": "a98ee6519c94323c7fad9f6ead73998a562c132ebd78bdbd37eae1f7b53ea052",
+  "column_meter": "Each selected column has a separate zero-volt series source rdd\u2192column_vddN feeding only its four receiver devices, including wells. Observational MOS supply/well energy includes device-model junctions but excludes explicit extracted VDD coupling-capacitor source current, which remains on global rdd; excludes sharedWL/PCdrivers and idealaggressor work. Not entire column energy. Included within pr, do not add twice.",
+  "pattern_override": {
+    "rows": [
+      3,
+      0,
+      1279,
+      1278,
+      1186
+    ],
+    "scope": "Repeated near/far1/0 of explicitly selected candidate plus maximum simultaneous selected-column discharge row. Not exhaustive transitions."
+  },
+  "stimulus_representation": "Explicit PWL PC phases avoid near-coincident PULSE arithmetic versus aggressor PWL breakpoints at fractional protocols; intended phase times unchanged",
+  "protocol": {
+    "period_ns": 60.0,
+    "pc_off_ns": 14.0,
+    "wl_start_ns": 18.0,
+    "wl_fall_start_ns": 57.8,
+    "wl_fall_end_ns": 58.0,
+    "pc_on_start_ns": 59.8,
+    "sample_ns": [
+      54.0,
+      59.5
+    ],
+    "edge_ns": 0.2,
+    "phase_family": "pre2std4;14/60fraction precharge plus fixed4ns guard"
+  },
+  "rows": 1280,
+  "selected": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+  ],
+  "addresses": [
+    3,
+    0,
+    1279,
+    1278,
+    1186,
+    3,
+    0,
+    1279,
+    1278,
+    1186
+  ],
+  "peak_ranked_bit_column": 1,
+  "base_sequence": [
+    3,
+    0,
+    1279,
+    1278,
+    1186
+  ],
+  "base_sequence_length": 5,
+  "active_rows": [
+    0,
+    3,
+    1186,
+    1278,
+    1279
+  ],
+  "segments": 32,
+  "array_devices": 20480,
+  "receiver_devices": 512,
+  "driver_hashes": {
+    "4": "0d12ca9bfc5db3e194a792b2654c4fc0b46e2d4b08d286345683b2920ec31c1b",
+    "20": "d0075017b8f30dd09ef50f53e6b2acbf68c7d52c0506a0b19b9acff1609965d4"
+  },
+  "source_gds_sha256": "d167253fbbc8159dd2eb82e3a9e8b4869a94651335accac5cabe9cae24b76467",
+  "array_cap_sha256": "783da5329d8f07d7871a40349a1e4fb2c6601ff3354d0032d14cb7cfa65bc048",
+  "joined_cap_sha256": "5fe8a42af98535a4dd41b9a25ec0328e4928df63cfe4c4f36de5982947ffec52",
+  "metal_sheet_ohm_square": 0.13863199999999998,
+  "array_height_um": 2132.35,
+  "bitline_array_ohm": 777.9261715789471,
+  "signal_join_resistance": {
+    "0": {
+      "length_um": 124.5,
+      "ohm": 105.42022105263158,
+      "via_count": 4
+    },
+    "1": {
+      "length_um": 110.75999999999999,
+      "ohm": 100.40757978947367,
+      "via_count": 4
+    },
+    "2": {
+      "length_um": 97.02,
+      "ohm": 95.39493852631578,
+      "via_count": 4
+    },
+    "3": {
+      "length_um": 83.28,
+      "ohm": 90.3822972631579,
+      "via_count": 4
+    },
+    "4": {
+      "length_um": 69.53999999999999,
+      "ohm": 85.36965599999999,
+      "via_count": 4
+    },
+    "5": {
+      "length_um": 55.8,
+      "ohm": 80.3570147368421,
+      "via_count": 4
+    },
+    "6": {
+      "length_um": 42.059999999999995,
+      "ohm": 75.3443734736842,
+      "via_count": 4
+    },
+    "7": {
+      "length_um": 28.32,
+      "ohm": 70.33173221052631,
+      "via_count": 4
+    },
+    "8": {
+      "length_um": 124.5,
+      "ohm": 105.42022105263158,
+      "via_count": 4
+    },
+    "9": {
+      "length_um": 110.75999999999999,
+      "ohm": 100.40757978947367,
+      "via_count": 4
+    },
+    "10": {
+      "length_um": 97.02,
+      "ohm": 95.39493852631578,
+      "via_count": 4
+    },
+    "11": {
+      "length_um": 83.28,
+      "ohm": 90.3822972631579,
+      "via_count": 4
+    },
+    "12": {
+      "length_um": 69.53999999999999,
+      "ohm": 85.36965599999999,
+      "via_count": 4
+    },
+    "13": {
+      "length_um": 55.8,
+      "ohm": 80.3570147368421,
+      "via_count": 4
+    },
+    "14": {
+      "length_um": 42.059999999999995,
+      "ohm": 75.3443734736842,
+      "via_count": 4
+    },
+    "15": {
+      "length_um": 28.320000000000004,
+      "ohm": 70.33173221052631,
+      "via_count": 4
+    }
+  },
+  "retained_array_cap_ff": 8737.970520000961,
+  "retained_join_receiver_cap_ff": 1651.0167700000031,
+  "array_to_joined_negative_pair_delta_ff": 0.6020000000000003,
+  "selected_incident_cap_ff": {
+    "0": 585.0315299999936,
+    "1": 680.0904100000098,
+    "2": 654.8873200000028,
+    "3": 656.8645499999957,
+    "4": 659.361370000003,
+    "5": 656.7963400000007,
+    "6": 652.4953400000045,
+    "7": 642.1962400000033,
+    "8": 662.0117599999932,
+    "9": 664.2314100000013,
+    "10": 660.7920000000076,
+    "11": 665.4243700000052,
+    "12": 657.3996299999988,
+    "13": 663.3242000000023,
+    "14": 656.2253100000091,
+    "15": 582.8466699999979
+  },
+  "expanded_capacitors": 72466,
+  "power_observation": "Posttransient vector equations; removed isolated behavioral power monitor nodes after20ns numerical failure, no feedback into physical circuit",
+  "cap_allocation": "For each exact extracted joined capacitor pair, array-distributed portion=min(newarrayC,newjoinedC); remainder at receiver/join end unless WL/OPEN fixes row. Negative pair delta is recorded, not clipped into extra capacitance. Only joined actual C is simulated.",
+  "scope": "New eight-row pitch-matched W6 layout.16fullheight active columns,112ideal legal-state BL aggressors also driving their real receivers, all128physicalpre2receivers; extracted stockbuf4WL/buf20PC. GeometryR signaljoin+arrayWL/BL/one2umgroundstrap. Groundendpoint/global supply and input phases ideal. No full320lane WL/PC rail load, simultaneous allarraycurrent, decoder/latch/mux."
+}

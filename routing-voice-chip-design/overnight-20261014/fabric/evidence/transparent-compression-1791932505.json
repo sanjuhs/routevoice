@@ -1,0 +1,136 @@
+{
+  "unix": 1791932505.836052,
+  "method": "ditto --hfsCompression, SHA256 verified before atomic replace; transparent POSIX reads retain identical bytes",
+  "free_before_bytes": 24714989568,
+  "free_after_bytes": 25691516928,
+  "changes": [
+    {
+      "path": "runs/rv_fixed_proj320_dp-physical20/01-openroad-floorplan/rv_fixed_proj320_dp.def",
+      "sha256": "2bfdbfef0d634bc67475ca7c340cbc584d76ae2cabe00349b77962e50e24afd5",
+      "bytes": 38228964,
+      "before_allocated_bytes": 38232064,
+      "after_allocated_bytes": 7385088,
+      "flags": 32
+    },
+    {
+      "path": "runs/rv_fixed_proj320_dp-physical20/01-openroad-floorplan/rv_fixed_proj320_dp.nl.v",
+      "sha256": "52cad6888dd81c20a487f850a5aaf2c472d12cc5571a4d2109f99befb60d13e0",
+      "bytes": 30596412,
+      "before_allocated_bytes": 30597120,
+      "after_allocated_bytes": 6332416,
+      "flags": 32
+    },
+    {
+      "path": "runs/rv_fixed_proj320_dp-physical20/01-openroad-floorplan/rv_fixed_proj320_dp.odb",
+      "sha256": "c327abdd13b75355d0cceb3cd4406d428a75cc59924dab7e37af9ef05afc1517",
+      "bytes": 137786828,
+      "before_allocated_bytes": 137789440,
+      "after_allocated_bytes": 32542720,
+      "flags": 32
+    },
+    {
+      "path": "runs/rv_fixed_proj320_dp-physical20/01-openroad-floorplan/rv_fixed_proj320_dp.pnl.v",
+      "sha256": "8540309616e6d80428736928cad3c09c70372df371056deaa5b2f355592b369c",
+      "bytes": 43952194,
+      "before_allocated_bytes": 43954176,
+      "after_allocated_bytes": 6332416,
+      "flags": 32
+    },
+    {
+      "path": "runs/rv_fixed_proj320_dp-physical20/04-odb-setpowerconnections/rv_fixed_proj320_dp.def",
+      "sha256": "2bfdbfef0d634bc67475ca7c340cbc584d76ae2cabe00349b77962e50e24afd5",
+      "bytes": 38228964,
+      "before_allocated_bytes": 38232064,
+      "after_allocated_bytes": 7401472,
+      "flags": 32
+    },
+    {
+      "path": "runs/rv_fixed_proj320_dp-physical20/04-odb-setpowerconnections/rv_fixed_proj320_dp.odb",
+      "sha256": "c327abdd13b75355d0cceb3cd4406d428a75cc59924dab7e37af9ef05afc1517",
+      "bytes": 137786828,
+      "before_allocated_bytes": 137789440,
+      "after_allocated_bytes": 32555008,
+      "flags": 32
+    },
+    {
+      "path": "runs/rv_fixed_proj320_dp-physical20/06-openroad-cutrows/rv_fixed_proj320_dp.def",
+      "sha256": "2bfdbfef0d634bc67475ca7c340cbc584d76ae2cabe00349b77962e50e24afd5",
+      "bytes": 38228964,
+      "before_allocated_bytes": 38232064,
+      "after_allocated_bytes": 7397376,
+      "flags": 32
+    },
+    {
+      "path": "runs/rv_fixed_proj320_dp-physical20/06-openroad-cutrows/rv_fixed_proj320_dp.odb",
+      "sha256": "c327abdd13b75355d0cceb3cd4406d428a75cc59924dab7e37af9ef05afc1517",
+      "bytes": 137786828,
+      "before_allocated_bytes": 137789440,
+      "after_allocated_bytes": 32542720,
+      "flags": 32
+    },
+    {
+      "path": "runs/rv_fixed_proj320_dp-physical20/07-openroad-tapendcapinsertion/rv_fixed_proj320_dp.def",
+      "sha256": "e73beb807852c0fcba873c5d1c1bd9eb6c0504a6051211c3026e6bb9986fff36",
+      "bytes": 51158776,
+      "before_allocated_bytes": 52203520,
+      "after_allocated_bytes": 8437760,
+      "flags": 32
+    },
+    {
+      "path": "runs/rv_fixed_proj320_dp-physical20/07-openroad-tapendcapinsertion/rv_fixed_proj320_dp.nl.v",
+      "sha256": "83d6795cdce42bc740a7f29b4c286364840e89eb772ee2b4b155729324e22bea",
+      "bytes": 38037793,
+      "before_allocated_bytes": 38039552,
+      "after_allocated_bytes": 6340608,
+      "flags": 32
+    },
+    {
+      "path": "runs/rv_fixed_proj320_dp-physical20/07-openroad-tapendcapinsertion/rv_fixed_proj320_dp.odb",
+      "sha256": "7aec9aa8f724c09e2f753a5ddaed9d17cd2d1b7ac1c86100ff62cd8ae797aa17",
+      "bytes": 164778541,
+      "before_allocated_bytes": 164782080,
+      "after_allocated_bytes": 38825984,
+      "flags": 32
+    },
+    {
+      "path": "runs/rv_fixed_proj320_dp-physical20/07-openroad-tapendcapinsertion/rv_fixed_proj320_dp.pnl.v",
+      "sha256": "69787b121b677f1e74932c94f37bc4f847f938292496a75c2232ff6c77595512",
+      "bytes": 54182687,
+      "before_allocated_bytes": 54185984,
+      "after_allocated_bytes": 6311936,
+      "flags": 32
+    },
+    {
+      "path": "runs/rv_fixed_proj320_dp-physical20/09-openroad-generatepdn/rv_fixed_proj320_dp.def",
+      "sha256": "39e6d59e0e888883bd73e33df690881d449e0c873c78d46abe3e73e970c09c49",
+      "bytes": 59003773,
+      "before_allocated_bytes": 59150336,
+      "after_allocated_bytes": 9449472,
+      "flags": 32
+    },
+    {
+      "path": "runs/rv_fixed_proj320_dp-physical20/09-openroad-generatepdn/rv_fixed_proj320_dp.nl.v",
+      "sha256": "a2adff10e7ec91d26b14a9c4ea51073aeb2a515a05e2b72dd4cdc1d321249676",
+      "bytes": 38037835,
+      "before_allocated_bytes": 38039552,
+      "after_allocated_bytes": 6356992,
+      "flags": 32
+    },
+    {
+      "path": "runs/rv_fixed_proj320_dp-physical20/09-openroad-generatepdn/rv_fixed_proj320_dp.odb",
+      "sha256": "e993f943a36dbc3c39c651535ecfae5175f79b395b0a31f4d304a056cdd4fadf",
+      "bytes": 168231131,
+      "before_allocated_bytes": 168235008,
+      "after_allocated_bytes": 39907328,
+      "flags": 32
+    },
+    {
+      "path": "runs/rv_fixed_proj320_dp-physical20/09-openroad-generatepdn/rv_fixed_proj320_dp.pnl.v",
+      "sha256": "f8e14b9fda4bb93b1f4f0a87ffbbc33b59cdf6fa103ace8cb99a37e222ef756e",
+      "bytes": 54182707,
+      "before_allocated_bytes": 54185984,
+      "after_allocated_bytes": 6729728,
+      "flags": 32
+    }
+  ]
+}

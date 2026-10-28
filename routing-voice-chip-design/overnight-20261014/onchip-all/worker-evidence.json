@@ -1,0 +1,29 @@
+[
+  {
+    "worker": "onchip",
+    "positive_metadata": "overnight-20261014/onchip/logs/20261014T010334-positive.json",
+    "positive_exit_code": 0,
+    "elapsed_seconds": 3414.9211061659735,
+    "native_hashes_matched": 18,
+    "common_clocks": 312578649,
+    "clock_marker_checked": true
+  },
+  {
+    "worker": "onchip-enc",
+    "positive_metadata": "overnight-20261014/onchip-enc/logs/20261014T011032-positive.json",
+    "positive_exit_code": 0,
+    "elapsed_seconds": 3451.00429466716,
+    "native_hashes_matched": 18,
+    "common_clocks": 312578649,
+    "clock_marker_checked": true
+  },
+  {
+    "worker": "onchip-front",
+    "positive_metadata": "overnight-20261014/onchip-front/logs/20261014T010943-positive.json",
+    "positive_exit_code": 0,
+    "elapsed_seconds": 3308.2698258750606,
+    "native_hashes_matched": 18,
+    "common_clocks": 312578649,
+    "clock_marker_checked": true
+  }
+]

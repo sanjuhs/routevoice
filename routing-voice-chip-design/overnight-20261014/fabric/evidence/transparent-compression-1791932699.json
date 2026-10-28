@@ -1,0 +1,64 @@
+{
+  "unix": 1791932699.4579892,
+  "method": "ditto --hfsCompression, SHA256 verified before atomic replace; transparent POSIX reads retain identical bytes",
+  "free_before_bytes": 26384523264,
+  "free_after_bytes": 26757939200,
+  "changes": [
+    {
+      "path": "runs/rv_fixed_proj64x320_rom-preroute-render/final/json_h/rv_fixed_proj64x320_rom.h.json",
+      "sha256": "b14af5f0b74a8debf0940167a4191ee7f4c632cdd9dcb99f6685cd9e5b2349c5",
+      "bytes": 24475417,
+      "before_allocated_bytes": 24477696,
+      "after_allocated_bytes": 1814528,
+      "flags": 32
+    },
+    {
+      "path": "runs/rv_fixed_proj64x320_rom-preroute-render/final/sdf/nom_ff_n40C_5v50/rv_fixed_proj64x320_rom__nom_ff_n40C_5v50.sdf",
+      "sha256": "a96308acf2ee335bea8e55deef1330a438c14681731327d89eda5923702180c2",
+      "bytes": 198127302,
+      "before_allocated_bytes": 198127616,
+      "after_allocated_bytes": 39051264,
+      "flags": 32
+    },
+    {
+      "path": "runs/rv_fixed_proj64x320_rom-preroute-render/final/sdf/nom_ss_125C_4v50/rv_fixed_proj64x320_rom__nom_ss_125C_4v50.sdf",
+      "sha256": "75d3208c533850de1cf45384960e2f4be4f8aa524e5ff224c7c986238abb081d",
+      "bytes": 199578854,
+      "before_allocated_bytes": 199581696,
+      "after_allocated_bytes": 42008576,
+      "flags": 32
+    },
+    {
+      "path": "runs/rv_fixed_proj64x320_rom-preroute-render/final/sdf/nom_tt_025C_5v00/rv_fixed_proj64x320_rom__nom_tt_025C_5v00.sdf",
+      "sha256": "c146e93ffc044e7576def2137864ad7b2f90de8fa6bb5ef69c7195e8fef67511",
+      "bytes": 198814367,
+      "before_allocated_bytes": 198815744,
+      "after_allocated_bytes": 40906752,
+      "flags": 32
+    },
+    {
+      "path": "runs/rv_fixed_proj64x320_rom-restored/12-openroad-staprepnr/nom_ff_n40C_5v50/rv_fixed_proj64x320_rom__nom_ff_n40C_5v50.sdf",
+      "sha256": "a96308acf2ee335bea8e55deef1330a438c14681731327d89eda5923702180c2",
+      "bytes": 198127302,
+      "before_allocated_bytes": 198127616,
+      "after_allocated_bytes": 39907328,
+      "flags": 32
+    },
+    {
+      "path": "runs/rv_fixed_proj64x320_rom-restored/12-openroad-staprepnr/nom_ss_125C_4v50/rv_fixed_proj64x320_rom__nom_ss_125C_4v50.sdf",
+      "sha256": "75d3208c533850de1cf45384960e2f4be4f8aa524e5ff224c7c986238abb081d",
+      "bytes": 199578854,
+      "before_allocated_bytes": 199581696,
+      "after_allocated_bytes": 41984000,
+      "flags": 32
+    },
+    {
+      "path": "runs/rv_fixed_proj64x320_rom-restored/12-openroad-staprepnr/nom_tt_025C_5v00/rv_fixed_proj64x320_rom__nom_tt_025C_5v00.sdf",
+      "sha256": "c146e93ffc044e7576def2137864ad7b2f90de8fa6bb5ef69c7195e8fef67511",
+      "bytes": 198814367,
+      "before_allocated_bytes": 198815744,
+      "after_allocated_bytes": 40919040,
+      "flags": 32
+    }
+  ]
+}

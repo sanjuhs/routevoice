@@ -1,0 +1,53 @@
+{
+  "case_id": "int8_per_tensor-input-046",
+  "model": "int8_per_tensor",
+  "id": "6267-65525-0023",
+  "role": "validation",
+  "condition": "other",
+  "seed": null,
+  "reference": "I LOVE LIFE AND ITS BLOOM AND BRILLIANCY I LOVE MEETING NEW PEOPLE I LOVE THE RIPPLE OF MUSIC THE HUM OF LAUGHTER AND CONVERSATION",
+  "input_float32_sha256": "378a151cbfbecccd15cdac643120525f492a36fea49f009ebab8cc8d77616943",
+  "hypothesis": " ",
+  "normalized_tokens": [],
+  "edits": 25,
+  "reference_words": 25,
+  "hypothesis_words": 0,
+  "exact": false,
+  "lines": [
+    {
+      "text": "",
+      "start_time": 0.0,
+      "duration": 1.312000036239624,
+      "is_complete": true,
+      "samples": 20992,
+      "input_float32_sha256": "4c307636b0b7a53096860f504ea168f96947f5fa9dd3f88d820fc33c212b3851"
+    },
+    {
+      "text": "",
+      "start_time": 1.1519999504089355,
+      "duration": 9.600000381469727,
+      "is_complete": true,
+      "samples": 153600,
+      "input_float32_sha256": "a2616ec4b2686ce832094c2c0ed72e54fdd28ff1888a56829d7a21c4231e6dc4"
+    }
+  ],
+  "request_sha256": "2e07557fb9cf08b65bbe9d3d546d962b6ceb339df9b4434d2e3513613a90a30a",
+  "worker_sha256": "4682e8a57db08e02a34f53b01f334f34faa3ca9a6546698f1e4650db359004b6",
+  "native_library_sha256": "1453a6c1c9072f3d05e9e5ae6ff423fae839e56631c5efb12bbd5c0280d04399",
+  "native_api_version": 30000,
+  "load_seconds": 0.040997374802827835,
+  "compute_seconds": 0.23491866700351238,
+  "audio_seconds": 10.765,
+  "process_cpu_seconds": 0.233654,
+  "voluntary_context_switches": 0,
+  "involuntary_context_switches": 74,
+  "system_load_average": [
+    10.640625,
+    9.16259765625,
+    9.90576171875
+  ],
+  "options": null,
+  "flags": 0,
+  "process_id": 81265,
+  "isolation": "One audio clip/condition in a fresh native process; no previous utterance or VAD state."
+}

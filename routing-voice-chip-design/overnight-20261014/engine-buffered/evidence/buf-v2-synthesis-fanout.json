@@ -1,0 +1,412 @@
+{
+  "netlist_json": "runs/buf-v2/01-yosys-synthesis/rv_k64_array_port.nl.v.json",
+  "sha256": "ef3e7aacac0af8ac3f48fbc0380bca0313179fedb212395e02f474a51b08b340",
+  "method": "Mapped cell input-pin loads; excludes clock and constant nodes from max signal fanout.",
+  "max_signal_fanout": 11359,
+  "max_nonclock_nontie_fanout": 11359,
+  "max_tie_cell_fanout": 0,
+  "signal_nets_over_16": 1292,
+  "clock_loads": 11674,
+  "cells": 324440,
+  "buffers": 6643,
+  "top_signal_nets": [
+    {
+      "bit": 3,
+      "loads": 11359,
+      "names": [
+        "reset"
+      ],
+      "drivers": []
+    },
+    {
+      "bit": 104,
+      "loads": 4068,
+      "names": [
+        "array_row[6]"
+      ],
+      "drivers": [
+        "$auto$ff.cc:337:slice$534160/Q"
+      ]
+    },
+    {
+      "bit": 162084,
+      "loads": 2588,
+      "names": [
+        "projection.engine.partial[1][10]"
+      ],
+      "drivers": [
+        "$auto$ff.cc:337:slice$545451/Q"
+      ]
+    },
+    {
+      "bit": 161883,
+      "loads": 2561,
+      "names": [
+        "projection.engine.partial[1][3]"
+      ],
+      "drivers": [
+        "$auto$ff.cc:337:slice$545446/Q"
+      ]
+    },
+    {
+      "bit": 161901,
+      "loads": 2561,
+      "names": [
+        "projection.engine.partial[1][4]"
+      ],
+      "drivers": [
+        "$auto$ff.cc:337:slice$545447/Q"
+      ]
+    },
+    {
+      "bit": 161937,
+      "loads": 2561,
+      "names": [
+        "projection.engine.partial[1][5]"
+      ],
+      "drivers": [
+        "$auto$ff.cc:337:slice$545448/Q"
+      ]
+    },
+    {
+      "bit": 161965,
+      "loads": 2561,
+      "names": [
+        "projection.engine.partial[1][6]"
+      ],
+      "drivers": [
+        "$auto$ff.cc:337:slice$545449/Q"
+      ]
+    },
+    {
+      "bit": 162009,
+      "loads": 2561,
+      "names": [
+        "projection.engine.partial[1][7]"
+      ],
+      "drivers": [
+        "$auto$ff.cc:337:slice$545450/Q"
+      ]
+    },
+    {
+      "bit": 161831,
+      "loads": 2460,
+      "names": [
+        "projection.engine.partial[1][2]"
+      ],
+      "drivers": [
+        "$auto$ff.cc:337:slice$545493/Q"
+      ]
+    },
+    {
+      "bit": 161788,
+      "loads": 2432,
+      "names": [
+        "projection.engine.partial[10][1]"
+      ],
+      "drivers": [
+        "$auto$ff.cc:337:slice$545532/Q"
+      ]
+    },
+    {
+      "bit": 161811,
+      "loads": 2172,
+      "names": [
+        "projection.engine.partial[10][2]"
+      ],
+      "drivers": [
+        "$auto$ff.cc:337:slice$545518/Q"
+      ]
+    },
+    {
+      "bit": 161877,
+      "loads": 1921,
+      "names": [
+        "projection.engine.partial[12][5]"
+      ],
+      "drivers": [
+        "$auto$ff.cc:337:slice$545455/Q"
+      ]
+    },
+    {
+      "bit": 161899,
+      "loads": 1921,
+      "names": [
+        "projection.engine.partial[12][6]"
+      ],
+      "drivers": [
+        "$auto$ff.cc:337:slice$545456/Q"
+      ]
+    },
+    {
+      "bit": 161933,
+      "loads": 1921,
+      "names": [
+        "projection.engine.partial[12][7]"
+      ],
+      "drivers": [
+        "$auto$ff.cc:337:slice$545457/Q"
+      ]
+    },
+    {
+      "bit": 161976,
+      "loads": 1921,
+      "names": [
+        "projection.engine.partial[12][8]"
+      ],
+      "drivers": [
+        "$auto$ff.cc:337:slice$545458/Q"
+      ]
+    },
+    {
+      "bit": 162020,
+      "loads": 1921,
+      "names": [
+        "projection.engine.partial[12][9]"
+      ],
+      "drivers": [
+        "$auto$ff.cc:337:slice$545459/Q"
+      ]
+    },
+    {
+      "bit": 162080,
+      "loads": 1921,
+      "names": [
+        "projection.engine.partial[12][10]"
+      ],
+      "drivers": [
+        "$auto$ff.cc:337:slice$545460/Q"
+      ]
+    },
+    {
+      "bit": 162121,
+      "loads": 1921,
+      "names": [
+        "projection.engine.partial[12][11]"
+      ],
+      "drivers": [
+        "$auto$ff.cc:337:slice$545461/Q"
+      ]
+    },
+    {
+      "bit": 162154,
+      "loads": 1921,
+      "names": [
+        "projection.engine.partial[12][12]"
+      ],
+      "drivers": [
+        "$auto$ff.cc:337:slice$545462/Q"
+      ]
+    },
+    {
+      "bit": 105,
+      "loads": 1888,
+      "names": [
+        "array_row[7]"
+      ],
+      "drivers": [
+        "$auto$ff.cc:337:slice$534161/Q"
+      ]
+    },
+    {
+      "bit": 161841,
+      "loads": 1865,
+      "names": [
+        "projection.engine.partial[11][2]"
+      ],
+      "drivers": [
+        "$auto$ff.cc:337:slice$545506/Q"
+      ]
+    },
+    {
+      "bit": 108,
+      "loads": 1492,
+      "names": [
+        "array_row[10]"
+      ],
+      "drivers": [
+        "$auto$ff.cc:337:slice$534164/Q"
+      ]
+    },
+    {
+      "bit": 161798,
+      "loads": 1387,
+      "names": [
+        "projection.engine.partial[11][1]"
+      ],
+      "drivers": [
+        "$auto$ff.cc:337:slice$545533/Q"
+      ]
+    },
+    {
+      "bit": 162204,
+      "loads": 1304,
+      "names": [
+        "projection.engine.partial[3][11]"
+      ],
+      "drivers": [
+        "$auto$ff.cc:337:slice$545463/Q"
+      ]
+    },
+    {
+      "bit": 161865,
+      "loads": 1281,
+      "names": [
+        "projection.engine.partial[10][4]"
+      ],
+      "drivers": [
+        "$auto$ff.cc:337:slice$545468/Q"
+      ]
+    },
+    {
+      "bit": 161876,
+      "loads": 1281,
+      "names": [
+        "projection.engine.partial[14][4]"
+      ],
+      "drivers": [
+        "$auto$ff.cc:337:slice$545481/Q"
+      ]
+    },
+    {
+      "bit": 161906,
+      "loads": 1281,
+      "names": [
+        "projection.engine.partial[10][5]"
+      ],
+      "drivers": [
+        "$auto$ff.cc:337:slice$545469/Q"
+      ]
+    },
+    {
+      "bit": 161910,
+      "loads": 1281,
+      "names": [
+        "projection.engine.partial[14][5]"
+      ],
+      "drivers": [
+        "$auto$ff.cc:337:slice$545482/Q"
+      ]
+    },
+    {
+      "bit": 161925,
+      "loads": 1281,
+      "names": [
+        "projection.engine.partial[14][6]"
+      ],
+      "drivers": [
+        "$auto$ff.cc:337:slice$545483/Q"
+      ]
+    },
+    {
+      "bit": 161936,
+      "loads": 1281,
+      "names": [
+        "projection.engine.partial[10][6]"
+      ],
+      "drivers": [
+        "$auto$ff.cc:337:slice$545470/Q"
+      ]
+    },
+    {
+      "bit": 161969,
+      "loads": 1281,
+      "names": [
+        "projection.engine.partial[10][7]"
+      ],
+      "drivers": [
+        "$auto$ff.cc:337:slice$545471/Q"
+      ]
+    },
+    {
+      "bit": 161975,
+      "loads": 1281,
+      "names": [
+        "projection.engine.partial[14][7]"
+      ],
+      "drivers": [
+        "$auto$ff.cc:337:slice$545484/Q"
+      ]
+    },
+    {
+      "bit": 162012,
+      "loads": 1281,
+      "names": [
+        "projection.engine.partial[14][8]"
+      ],
+      "drivers": [
+        "$auto$ff.cc:337:slice$545485/Q"
+      ]
+    },
+    {
+      "bit": 162014,
+      "loads": 1281,
+      "names": [
+        "projection.engine.partial[10][8]"
+      ],
+      "drivers": [
+        "$auto$ff.cc:337:slice$545472/Q"
+      ]
+    },
+    {
+      "bit": 162076,
+      "loads": 1281,
+      "names": [
+        "projection.engine.partial[10][9]"
+      ],
+      "drivers": [
+        "$auto$ff.cc:337:slice$545473/Q"
+      ]
+    },
+    {
+      "bit": 162079,
+      "loads": 1281,
+      "names": [
+        "projection.engine.partial[14][9]"
+      ],
+      "drivers": [
+        "$auto$ff.cc:337:slice$545486/Q"
+      ]
+    },
+    {
+      "bit": 162125,
+      "loads": 1281,
+      "names": [
+        "projection.engine.partial[14][10]"
+      ],
+      "drivers": [
+        "$auto$ff.cc:337:slice$545487/Q"
+      ]
+    },
+    {
+      "bit": 162126,
+      "loads": 1281,
+      "names": [
+        "projection.engine.partial[10][10]"
+      ],
+      "drivers": [
+        "$auto$ff.cc:337:slice$545474/Q"
+      ]
+    },
+    {
+      "bit": 162153,
+      "loads": 1281,
+      "names": [
+        "projection.engine.partial[14][11]"
+      ],
+      "drivers": [
+        "$auto$ff.cc:337:slice$545488/Q"
+      ]
+    },
+    {
+      "bit": 162160,
+      "loads": 1281,
+      "names": [
+        "projection.engine.partial[10][11]"
+      ],
+      "drivers": [
+        "$auto$ff.cc:337:slice$545475/Q"
+      ]
+    }
+  ]
+}

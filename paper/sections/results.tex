@@ -1,0 +1,81 @@
+\section{Results}
+\label{sec:results}
+
+We report three kinds of evidence, in decreasing order of completeness:
+\begin{itemize}
+\item functional bit-exactness of the whole recognizer;
+\item a fully routed and signoff-checked projection engine;
+\item synthesizability of the whole recognizer for both silicon and FPGA.
+\end{itemize}
+Unless noted, every number was re-read from tool output by the lead before it was recorded (\cref{sec:method}). Source files are listed in \cref{app:artifacts}.
+
+\subsection{Bit-exact recognition from index and codebook weights}
+The full recognizer RTL decodes the clip ``Switch on the lights'' to the token sequence $[28176, 373, 278, 26068, 2]$. Every weight is served as a 4-bit index into a 16-entry codebook, one codebook per 64-weight group. All 18 checked output hashes match the reference, and the run takes \num{312578649} clocks, identical to the earlier byte-ROM design. Two further clips (``Plant present.'' and ``Seasonable.'') also match on all 18 hashes.
+
+\Cref{tab:storage} shows the storage this needs. Weight storage falls from \SI{28.64}{MB} to \SI{17.50}{MB} ($-38.9\%$), and decoding the stored form back reproduces all \num{28641280} original bytes with zero mismatches. Exhaustive RTL checks of the lookup responders cover \num{565960} encoder/decoder packets, \num{2074560} frontend packets and \num{163840} position packets.
+
+The test set is small. It establishes that the hardware representation is \emph{exact} with respect to the quantized model, not that the quantized model is accurate. Accuracy of the codebook quantization itself was measured in software on held-out speech (\cref{sec:representation}).
+
+\begin{table}[t]
+\centering\small
+\caption{On-chip storage of the full recognizer after index$+$codebook conversion.}
+\label{tab:storage}
+\begin{tabular}{@{}lr@{}}
+\toprule
+Component & Bytes\\
+\midrule
+4-bit indices (\num{78970880} bits) & \num{9871360}\\
+16-entry UINT8 books (one per 64 weights) & \num{4935680}\\
+Affine INT8 frontend (lossless) & \num{2073600}\\
+Metadata (scales, zero points, biases) & \num{616960}\\
+\midrule
+Total (original: \num{28641280}) & \textbf{\num{17497600}}\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Routed projection engine}
+The $1280\times320$ engine top contains the arithmetic and output stages for \num{409600} four-bit selections. The fixed index array sits outside it and is supplied by the test bench. Physical design used LibreLane on GF180MCU-D (7-track cells, 5 metal layers) at \SI{150}{ns}.
+
+The final design is ``fix~2'' in \cref{sec:closure}, after an antenna close-out pass. On a \SI{22.84}{mm^2} die it has \num{1146232} standard cells (54.0\% utilization) and \SI{68.9}{m} of routed wire. Signoff results:
+\begin{itemize}
+\item detailed routing: zero violations;
+\item Magic DRC: zero violations;
+\item KLayout DRC (main GF180 deck): zero violations;
+\item GDS XOR between the Magic and KLayout streams: zero differences;
+\item antenna: zero violating nets or pins;
+\item LVS (Netgen): circuits match uniquely, with zero device, net, pin or property differences.
+\end{itemize}
+Setup and hold are met in all nine PVT/RC corners; the slowest is SS with worst-case RC at $+8.10$\,ns, and the worst hold slack is $+0.32$\,ns. Slew and capacitance-limit warnings remain in every iteration, at about \num{390000} and \num{21000} at TT; they do not cause setup or hold failures and are listed as open work.
+
+Each projection takes 4,165 cycles, so one engine at \SI{6.67}{MHz} sustains about \SI{0.66}{GMAC/s}. That meets the recognizer's real-time load of about \SI{0.6}{GMAC/s}.
+
+\begin{figure*}[t]
+\centering
+\includegraphics[width=0.49\textwidth]{figures/layout-weight-cells.jpg}\hfill
+\includegraphics[width=0.49\textwidth]{figures/layout-engine-cells.jpg}
+\caption{Layout close-ups rendered from the GDS (Via1 amber, Metal1 blue, poly and diffusion beneath; fill hidden). \emph{Left:} \SI{10.4}{\micro m}-wide window of weight bank \texttt{W13\_ENC0\_B00}. Each 4-bit index uses four mask-programmed access transistors; the irregular Via1 pattern over the regular cell grid sets the stored bits. \emph{Right:} \SI{29.5}{\micro m}-wide window of the routed $1280\times320$ engine (fix~2): standard cells of the select-and-accumulate datapath. Zoom sequences from full die to cells are in the release package (\cref{app:artifacts}).}
+\label{fig:layout}
+\end{figure*}
+
+\paragraph{Power.}
+Activity comes from a zero-delay gate-level simulation of one real-speech projection on the synthesized netlist. All 320 FP32 outputs of that run are bit-exact. Annotated against the final routed database and extracted parasitics, the engine draws \SI{0.188}{W} at TT and \SI{150}{ns}: \SI{142}{mW} combinational, \SI{24}{mW} sequential and \SI{21.5}{mW} in the clock tree. That is \SI{117}{\micro\joule} per projection, or \SI{287}{pJ} per MAC.
+
+For orientation only, we scaled Horowitz's \SI{45}{nm}, \SI{0.9}{V} operation energies~\cite{horowitz2014energy} by $CV^2$ to \SI{180}{nm} and \SI{3.3}{V}, a factor of about 54. That gives roughly \SI{11}{pJ} for an 8-bit multiply and \SI{250}{pJ} for an FP32 multiply--add. This is our own first-order estimate, not a measurement. Our per-MAC figure amortises one FP32 affine operation over 1,280 integer MACs, so it is dominated by the 320-lane integer select-and-accumulate datapath and its clock tree, not by floating point. A per-module breakdown is not available from the flattened routed netlist; we leave it to a hierarchical power run.
+
+The pre-route estimate for the same engine was \SI{162}{pJ}/MAC; that figure had no clock tree and only placement parasitics. Pin annotation was 67.5\%; the remaining pins are cells inserted after synthesis, which the analyser assigns default activity. The trend across iterations (241$\to$256$\to$287\,pJ/MAC) therefore mixes real design change with falling annotation coverage.
+
+\subsection{Whole-recognizer synthesizability}
+Synthesizing the complete recognizer flat failed for both silicon and FPGA. Synthesis tools stalled for hours in memory and flip-flop optimisation passes, and the FPGA run crashed. We therefore black-boxed the weight ROMs and synthesized the remaining 30,545 elaborated modules as 4,457 distinct units, each under a 6\,GB memory limit. All 4,457 units pass for a generic library, for GF180, and for the Lattice ECP5 FPGA family.
+
+The results are informative mainly as an upper bound. The GF180 netlist is \SI{1198}{mm^2} (48.4\,M cells, 8.07\,M flip-flops), because all \num{8169778} bits of mutable state (buffers, caches, normalisation state) become flip-flops when no SRAM macros are inferred. That is $19\times$ the \SI{63}{mm^2} logic budget of our floorplan. The ECP5 mapping needs 30.4\,M LUT4s, 1.34\,M flip-flops, 1,247 DSP blocks and 118 BRAMs, far beyond any device in the family. The weights alone (\num{139980800} bits in K64 form) also exceed on-FPGA memory by more than an order of magnitude.
+
+\subsection{Toward a full chip}
+Several physical parts of the full chip exist but are not integrated:
+\begin{itemize}
+\item \textbf{Weight arrays.} All 98 weight matrices (\num{31457280} selections) are laid out as 81 pitch-matched index banks totalling \SI{174.7}{mm^2}. Every bank is DRC-clean, and full LVS passes on six representative banks. A single bank measures \SI{5.54}{\micro m^2} per selection including readout.
+\item \textbf{Bank drivers.} The four bank-driver control strips are DRC- and LVS-clean and meet \SI{150}{ns} in all nine corners.
+\item \textbf{Logic macros.} Six small logic macros pass block-level signoff.
+\item \textbf{Two-die top level.} Two $25\times29$\,mm dies are routed with 48 real banks and 4 logic macros. Top-level wiring is DRC-clean, but the dies fail an assumed-load IR-drop check, and full-chip DRC, LVS and timing have not been run.
+\end{itemize}
+\Cref{sec:limitations} discusses what remains.

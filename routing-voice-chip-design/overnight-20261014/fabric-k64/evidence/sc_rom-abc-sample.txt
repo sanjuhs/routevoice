@@ -1,0 +1,345 @@
+Analysis of sampling yosys-abc (pid 23800) every 1 millisecond
+Process:         yosys-abc [23800]
+Path:            /Volumes/VOLUME/*/yosys-abc
+Load Address:    0x1023e8000
+Identifier:      yosys-abc
+Version:         0
+Code Type:       ARM64
+Platform:        macOS
+Parent Process:  bash [23799]
+Target Type:     live task
+
+Date/Time:       2026-10-14 01:41:12.593 +0530
+Launch Time:     2026-10-14 01:17:31.938 +0530
+OS Version:      macOS 26.2 (25C56)
+Report Version:  7
+Analysis Tool:   /usr/bin/sample
+
+Physical footprint:         936.9M
+Physical footprint (peak):  936.9M
+Idle exit:                  untracked
+----
+
+Call graph:
+    823 Thread_37769620   DispatchQueue_1: com.apple.main-thread  (serial)
+      823 start  (in dyld) + 7184  [0x18cbddd54]
+        823 ???  (in yosys-abc)  load address 0x1023e8000 + 0x453384  [0x10283b384]
+          823 ???  (in yosys-abc)  load address 0x1023e8000 + 0x407ec0  [0x1027efec0]
+            823 ???  (in yosys-abc)  load address 0x1023e8000 + 0x40d2b0  [0x1027f52b0]
+              823 ???  (in yosys-abc)  load address 0x1023e8000 + 0x4043f0  [0x1027ec3f0]
+                823 ???  (in yosys-abc)  load address 0x1023e8000 + 0x407ec0  [0x1027efec0]
+                  823 ???  (in yosys-abc)  load address 0x1023e8000 + 0x40d2b0  [0x1027f52b0]
+                    823 ???  (in yosys-abc)  load address 0x1023e8000 + 0x4043f0  [0x1027ec3f0]
+                      823 ???  (in yosys-abc)  load address 0x1023e8000 + 0x407ec0  [0x1027efec0]
+                        823 ???  (in yosys-abc)  load address 0x1023e8000 + 0x40d2b0  [0x1027f52b0]
+                          823 ???  (in yosys-abc)  load address 0x1023e8000 + 0x2e3048  [0x1026cb048]
+                            823 ???  (in yosys-abc)  load address 0x1023e8000 + 0x37135c  [0x10275935c]
+                              823 ???  (in yosys-abc)  load address 0x1023e8000 + 0x3b705c  [0x10279f05c]
+                                823 ???  (in yosys-abc)  load address 0x1023e8000 + 0x36fb90  [0x102757b90]
+                                  823 ???  (in yosys-abc)  load address 0x1023e8000 + 0x37014c  [0x10275814c]
+                                    818 ???  (in yosys-abc)  load address 0x1023e8000 + 0x96f52c  [0x102d5752c]
+                                    + 224 ???  (in yosys-abc)  load address 0x1023e8000 + 0x972e58  [0x102d5ae58]
+                                    + ! 140 ???  (in yosys-abc)  load address 0x1023e8000 + 0x7987b0  [0x102b807b0]
+                                    + ! 64 ???  (in yosys-abc)  load address 0x1023e8000 + 0x7987c4  [0x102b807c4]
+                                    + ! : 62 ???  (in yosys-abc)  load address 0x1023e8000 + 0x796e8c  [0x102b7ee8c]
+                                    + ! : 2 ???  (in yosys-abc)  load address 0x1023e8000 + 0x796e84  [0x102b7ee84]
+                                    + ! 20 ???  (in yosys-abc)  load address 0x1023e8000 + 0x7987a8  [0x102b807a8]
+                                    + 211 ???  (in yosys-abc)  load address 0x1023e8000 + 0x972f20  [0x102d5af20]
+                                    + ! 138 ???  (in yosys-abc)  load address 0x1023e8000 + 0x7987b0  [0x102b807b0]
+                                    + ! 58 ???  (in yosys-abc)  load address 0x1023e8000 + 0x7987c4  [0x102b807c4]
+                                    + ! : 55 ???  (in yosys-abc)  load address 0x1023e8000 + 0x796e8c  [0x102b7ee8c]
+                                    + ! : 2 ???  (in yosys-abc)  load address 0x1023e8000 + 0x796e84  [0x102b7ee84]
+                                    + ! : 1 ???  (in yosys-abc)  load address 0x1023e8000 + 0x796ed8  [0x102b7eed8]
+                                    + ! 15 ???  (in yosys-abc)  load address 0x1023e8000 + 0x7987a8  [0x102b807a8]
+                                    + 168 ???  (in yosys-abc)  load address 0x1023e8000 + 0x972ea0  [0x102d5aea0]
+                                    + ! 105 ???  (in yosys-abc)  load address 0x1023e8000 + 0x798bdc  [0x102b80bdc]
+                                    + ! : 83 ???  (in yosys-abc)  load address 0x1023e8000 + 0x799ad4  [0x102b81ad4]
+                                    + ! : | 26 ???  (in yosys-abc)  load address 0x1023e8000 + 0x799634  [0x102b81634]
+                                    + ! : | + 7 ???  (in yosys-abc)  load address 0x1023e8000 + 0x795b60  [0x102b7db60]
+                                    + ! : | + 6 ???  (in yosys-abc)  load address 0x1023e8000 + 0x795ba8  [0x102b7dba8]
+                                    + ! : | + 5 ???  (in yosys-abc)  load address 0x1023e8000 + 0x795b80  [0x102b7db80]
+                                    + ! : | + 4 ???  (in yosys-abc)  load address 0x1023e8000 + 0x795b6c  [0x102b7db6c]
+                                    + ! : | + 1 ???  (in yosys-abc)  load address 0x1023e8000 + 0x795b78  [0x102b7db78]
+                                    + ! : | + 1 ???  (in yosys-abc)  load address 0x1023e8000 + 0x795b94  [0x102b7db94]
+                                    + ! : | + 1 ???  (in yosys-abc)  load address 0x1023e8000 + 0x795b98  [0x102b7db98]
+                                    + ! : | + 1 ???  (in yosys-abc)  load address 0x1023e8000 + 0x795bd0  [0x102b7dbd0]
+                                    + ! : | 14 ???  (in yosys-abc)  load address 0x1023e8000 + 0x7995f0  [0x102b815f0]
+                                    + ! : | + 7 ???  (in yosys-abc)  load address 0x1023e8000 + 0x79924c  [0x102b8124c]
+                                    + ! : | + 6 ???  (in yosys-abc)  load address 0x1023e8000 + 0x799270  [0x102b81270]
+                                    + ! : | + ! 3 ???  (in yosys-abc)  load address 0x1023e8000 + 0x79a69c  [0x102b8269c]
+                                    + ! : | + ! 3 ???  (in yosys-abc)  load address 0x1023e8000 + 0x79a6b0  [0x102b826b0]
+                                    + ! : | + 1 ???  (in yosys-abc)  load address 0x1023e8000 + 0x799264  [0x102b81264]
+                                    + ! : | 9 ???  (in yosys-abc)  load address 0x1023e8000 + 0x795be4  [0x102b7dbe4]
+                                    + ! : | 9 ???  (in yosys-abc)  load address 0x1023e8000 + 0x799624  [0x102b81624]
+                                    + ! : | 8 ???  (in yosys-abc)  load address 0x1023e8000 + 0x799330  [0x102b81330]
+                                    + ! : | 8 ???  (in yosys-abc)  load address 0x1023e8000 + 0x799350  [0x102b81350]
+                                    + ! : | 2 ???  (in yosys-abc)  load address 0x1023e8000 + 0x7995f8  [0x102b815f8]
+                                    + ! : | 2 ???  (in yosys-abc)  load address 0x1023e8000 + 0x799610  [0x102b81610]
+                                    + ! : | 2 ???  (in yosys-abc)  load address 0x1023e8000 + 0x799630  [0x102b81630]
+                                    + ! : | 1 ???  (in yosys-abc)  load address 0x1023e8000 + 0x799338  [0x102b81338]
+                                    + ! : | 1 ???  (in yosys-abc)  load address 0x1023e8000 + 0x7995e4  [0x102b815e4]
+                                    + ! : | 1 ???  (in yosys-abc)  load address 0x1023e8000 + 0x7995f0  [0x102b815f0]
+                                    + ! : 11 ???  (in yosys-abc)  load address 0x1023e8000 + 0x799aac  [0x102b81aac]
+                                    + ! : 8 ???  (in yosys-abc)  load address 0x1023e8000 + 0x799eec  [0x102b81eec]
+                                    + ! : | 8 ???  (in yosys-abc)  load address 0x1023e8000 + 0x79949c  [0x102b8149c]
+                                    + ! : |   5 ???  (in yosys-abc)  load address 0x1023e8000 + 0x7971fc  [0x102b7f1fc]
+                                    + ! : |   + 5 clock  (in libsystem_c.dylib) + 52  [0x18ce574c8]
+                                    + ! : |   +   5 getrusage  (in libsystem_kernel.dylib) + 8  [0x18cf6a7b8]
+                                    + ! : |   3 ???  (in yosys-abc)  load address 0x1023e8000 + 0x7972ac  [0x102b7f2ac]
+                                    + ! : |     3 clock  (in libsystem_c.dylib) + 52  [0x18ce574c8]
+                                    + ! : |       3 getrusage  (in libsystem_kernel.dylib) + 8  [0x18cf6a7b8]
+                                    + ! : 2 ???  (in yosys-abc)  load address 0x1023e8000 + 0x799da4  [0x102b81da4]
+                                    + ! : | 1 ???  (in yosys-abc)  load address 0x1023e8000 + 0x79733c  [0x102b7f33c]
+                                    + ! : | + 1 clock  (in libsystem_c.dylib) + 52  [0x18ce574c8]
+                                    + ! : | +   1 getrusage  (in libsystem_kernel.dylib) + 8  [0x18cf6a7b8]
+                                    + ! : | 1 ???  (in yosys-abc)  load address 0x1023e8000 + 0x7973bc  [0x102b7f3bc]
+                                    + ! : |   1 clock  (in libsystem_c.dylib) + 52  [0x18ce574c8]
+                                    + ! : |     1 getrusage  (in libsystem_kernel.dylib) + 8  [0x18cf6a7b8]
+                                    + ! : 1 ???  (in yosys-abc)  load address 0x1023e8000 + 0x799aa0  [0x102b81aa0]
+                                    + ! 56 ???  (in yosys-abc)  load address 0x1023e8000 + 0x798b10  [0x102b80b10]
+                                    + ! : 25 ???  (in yosys-abc)  load address 0x1023e8000 + 0x799634  [0x102b81634]
+                                    + ! : | 6 ???  (in yosys-abc)  load address 0x1023e8000 + 0x795b60  [0x102b7db60]
+                                    + ! : | 5 ???  (in yosys-abc)  load address 0x1023e8000 + 0x795b94  [0x102b7db94]
+                                    + ! : | 4 ???  (in yosys-abc)  load address 0x1023e8000 + 0x795b6c  [0x102b7db6c]
+                                    + ! : | 3 ???  (in yosys-abc)  load address 0x1023e8000 + 0x795b78  [0x102b7db78]
+                                    + ! : | 3 ???  (in yosys-abc)  load address 0x1023e8000 + 0x795b80  [0x102b7db80]
+                                    + ! : | 3 ???  (in yosys-abc)  load address 0x1023e8000 + 0x795ba8  [0x102b7dba8]
+                                    + ! : | 1 ???  (in yosys-abc)  load address 0x1023e8000 + 0x795ba0  [0x102b7dba0]
+                                    + ! : 9 ???  (in yosys-abc)  load address 0x1023e8000 + 0x7995f0  [0x102b815f0]
+                                    + ! : | 4 ???  (in yosys-abc)  load address 0x1023e8000 + 0x79924c  [0x102b8124c]
+                                    + ! : | 3 ???  (in yosys-abc)  load address 0x1023e8000 + 0x799270  [0x102b81270]
+                                    + ! : | + 3 ???  (in yosys-abc)  load address 0x1023e8000 + 0x79a69c  [0x102b8269c]
+                                    + ! : | 1 ???  (in yosys-abc)  load address 0x1023e8000 + 0x799274  [0x102b81274]
+                                    + ! : | 1 ???  (in yosys-abc)  load address 0x1023e8000 + 0x79932c  [0x102b8132c]
+                                    + ! : 3 ???  (in yosys-abc)  load address 0x1023e8000 + 0x795be4  [0x102b7dbe4]
+                                    + ! : 3 ???  (in yosys-abc)  load address 0x1023e8000 + 0x799350  [0x102b81350]
+                                    + ! : 3 ???  (in yosys-abc)  load address 0x1023e8000 + 0x7995f8  [0x102b815f8]
+                                    + ! : 3 ???  (in yosys-abc)  load address 0x1023e8000 + 0x799624  [0x102b81624]
+                                    + ! : 2 ???  (in yosys-abc)  load address 0x1023e8000 + 0x79964c  [0x102b8164c]
+                                    + ! : | 1 ???  (in yosys-abc)  load address 0x1023e8000 + 0x796290  [0x102b7e290]
+                                    + ! : | 1 ???  (in yosys-abc)  load address 0x1023e8000 + 0x796300  [0x102b7e300]
+                                    + ! : 2 ???  (in yosys-abc)  load address 0x1023e8000 + 0x799610  [0x102b81610]
+                                    + ! : 1 ???  (in yosys-abc)  load address 0x1023e8000 + 0x795be8  [0x102b7dbe8]
+                                    + ! : 1 ???  (in yosys-abc)  load address 0x1023e8000 + 0x799334  [0x102b81334]
+                                    + ! : 1 ???  (in yosys-abc)  load address 0x1023e8000 + 0x7995e4  [0x102b815e4]
+                                    + ! : 1 ???  (in yosys-abc)  load address 0x1023e8000 + 0x7995f0  [0x102b815f0]
+                                    + ! : 1 ???  (in yosys-abc)  load address 0x1023e8000 + 0x799630  [0x102b81630]
+                                    + ! : 1 ???  (in yosys-abc)  load address 0x1023e8000 + 0x799634  [0x102b81634]
+                                    + ! 4 ???  (in yosys-abc)  load address 0x1023e8000 + 0x798c50  [0x102b80c50]
+                                    + ! : 4 ???  (in yosys-abc)  load address 0x1023e8000 + 0x79949c  [0x102b8149c]
+                                    + ! :   3 ???  (in yosys-abc)  load address 0x1023e8000 + 0x7972ac  [0x102b7f2ac]
+                                    + ! :   | 3 clock  (in libsystem_c.dylib) + 52  [0x18ce574c8]
+                                    + ! :   |   3 getrusage  (in libsystem_kernel.dylib) + 8  [0x18cf6a7b8]
+                                    + ! :   1 ???  (in yosys-abc)  load address 0x1023e8000 + 0x7971fc  [0x102b7f1fc]
+                                    + ! :     1 clock  (in libsystem_c.dylib) + 52  [0x18ce574c8]
+                                    + ! :       1 getrusage  (in libsystem_kernel.dylib) + 8  [0x18cf6a7b8]
+                                    + ! 2 ???  (in yosys-abc)  load address 0x1023e8000 + 0x798c28  [0x102b80c28]
+                                    + ! : 2 ???  (in yosys-abc)  load address 0x1023e8000 + 0x79949c  [0x102b8149c]
+                                    + ! :   1 ???  (in yosys-abc)  load address 0x1023e8000 + 0x7971fc  [0x102b7f1fc]
+                                    + ! :   | 1 clock  (in libsystem_c.dylib) + 52  [0x18ce574c8]
+                                    + ! :   |   1 getrusage  (in libsystem_kernel.dylib) + 8  [0x18cf6a7b8]
+                                    + ! :   1 ???  (in yosys-abc)  load address 0x1023e8000 + 0x7972ac  [0x102b7f2ac]
+                                    + ! :     1 clock  (in libsystem_c.dylib) + 52  [0x18ce574c8]
+                                    + ! :       1 getrusage  (in libsystem_kernel.dylib) + 8  [0x18cf6a7b8]
+                                    + ! 1 ???  (in yosys-abc)  load address 0x1023e8000 + 0x798ac0  [0x102b80ac0]
+                                    + !   1 clock  (in libsystem_c.dylib) + 52  [0x18ce574c8]
+                                    + !     1 getrusage  (in libsystem_kernel.dylib) + 8  [0x18cf6a7b8]
+                                    + 143 ???  (in yosys-abc)  load address 0x1023e8000 + 0x972f60  [0x102d5af60]
+                                    + ! 112 ???  (in yosys-abc)  load address 0x1023e8000 + 0x798bdc  [0x102b80bdc]
+                                    + ! : 84 ???  (in yosys-abc)  load address 0x1023e8000 + 0x799ad4  [0x102b81ad4]
+                                    + ! : | 31 ???  (in yosys-abc)  load address 0x1023e8000 + 0x799634  [0x102b81634]
+                                    + ! : | + 8 ???  (in yosys-abc)  load address 0x1023e8000 + 0x795b60  [0x102b7db60]
+                                    + ! : | + 7 ???  (in yosys-abc)  load address 0x1023e8000 + 0x795ba8  [0x102b7dba8]
+                                    + ! : | + 6 ???  (in yosys-abc)  load address 0x1023e8000 + 0x795b6c  [0x102b7db6c]
+                                    + ! : | + 5 ???  (in yosys-abc)  load address 0x1023e8000 + 0x795b94  [0x102b7db94]
+                                    + ! : | + 3 ???  (in yosys-abc)  load address 0x1023e8000 + 0x795b80  [0x102b7db80]
+                                    + ! : | + 2 ???  (in yosys-abc)  load address 0x1023e8000 + 0x795ba0  [0x102b7dba0]
+                                    + ! : | 21 ???  (in yosys-abc)  load address 0x1023e8000 + 0x7995f0  [0x102b815f0]
+                                    + ! : | + 10 ???  (in yosys-abc)  load address 0x1023e8000 + 0x799270  [0x102b81270]
+                                    + ! : | + ! 5 ???  (in yosys-abc)  load address 0x1023e8000 + 0x79a69c  [0x102b8269c]
+                                    + ! : | + ! 4 ???  (in yosys-abc)  load address 0x1023e8000 + 0x79a6b0  [0x102b826b0]
+                                    + ! : | + ! 1 ???  (in yosys-abc)  load address 0x1023e8000 + 0x79a6b4  [0x102b826b4]
+                                    + ! : | + 5 ???  (in yosys-abc)  load address 0x1023e8000 + 0x79924c  [0x102b8124c]
+                                    + ! : | + 3 ???  (in yosys-abc)  load address 0x1023e8000 + 0x799260  [0x102b81260]
+                                    + ! : | + 2 ???  (in yosys-abc)  load address 0x1023e8000 + 0x799264  [0x102b81264]
+                                    + ! : | + 1 ???  (in yosys-abc)  load address 0x1023e8000 + 0x799274  [0x102b81274]
+                                    + ! : | 7 ???  (in yosys-abc)  load address 0x1023e8000 + 0x799350  [0x102b81350]
+                                    + ! : | 6 ???  (in yosys-abc)  load address 0x1023e8000 + 0x799624  [0x102b81624]
+                                    + ! : | 5 ???  (in yosys-abc)  load address 0x1023e8000 + 0x795be4  [0x102b7dbe4]
+                                    + ! : | 4 ???  (in yosys-abc)  load address 0x1023e8000 + 0x799604  [0x102b81604]
+                                    + ! : | 3 ???  (in yosys-abc)  load address 0x1023e8000 + 0x7995f8  [0x102b815f8]
+                                    + ! : | 2 ???  (in yosys-abc)  load address 0x1023e8000 + 0x795be8  [0x102b7dbe8]
+                                    + ! : | 2 ???  (in yosys-abc)  load address 0x1023e8000 + 0x799338  [0x102b81338]
+                                    + ! : | 2 ???  (in yosys-abc)  load address 0x1023e8000 + 0x799634  [0x102b81634]
+                                    + ! : | 1 ???  (in yosys-abc)  load address 0x1023e8000 + 0x799330  [0x102b81330]
+                                    + ! : 17 ???  (in yosys-abc)  load address 0x1023e8000 + 0x799aac  [0x102b81aac]
+                                    + ! : 7 ???  (in yosys-abc)  load address 0x1023e8000 + 0x799eec  [0x102b81eec]
+                                    + ! : | 7 ???  (in yosys-abc)  load address 0x1023e8000 + 0x79949c  [0x102b8149c]
+                                    + ! : |   5 ???  (in yosys-abc)  load address 0x1023e8000 + 0x7971fc  [0x102b7f1fc]
+                                    + ! : |   + 5 clock  (in libsystem_c.dylib) + 52  [0x18ce574c8]
+                                    + ! : |   +   5 getrusage  (in libsystem_kernel.dylib) + 8  [0x18cf6a7b8]
+                                    + ! : |   2 ???  (in yosys-abc)  load address 0x1023e8000 + 0x7972ac  [0x102b7f2ac]
+                                    + ! : |     2 clock  (in libsystem_c.dylib) + 52  [0x18ce574c8]
+                                    + ! : |       2 getrusage  (in libsystem_kernel.dylib) + 8  [0x18cf6a7b8]
+                                    + ! : 2 ???  (in yosys-abc)  load address 0x1023e8000 + 0x799da4  [0x102b81da4]
+                                    + ! : | 2 ???  (in yosys-abc)  load address 0x1023e8000 + 0x79733c  [0x102b7f33c]
+                                    + ! : |   2 clock  (in libsystem_c.dylib) + 52  [0x18ce574c8]
+                                    + ! : |     2 getrusage  (in libsystem_kernel.dylib) + 4,8  [0x18cf6a7b4,0x18cf6a7b8]
+                                    + ! : 2 ???  (in yosys-abc)  load address 0x1023e8000 + 0x799f10  [0x102b81f10]
+                                    + ! :   2 ???  (in yosys-abc)  load address 0x1023e8000 + 0x795678  [0x102b7d678]
+                                    + ! :     2 ???  (in yosys-abc)  load address 0x1023e8000 + 0x79733c  [0x102b7f33c]
+                                    + ! :       2 clock  (in libsystem_c.dylib) + 52  [0x18ce574c8]
+                                    + ! :         2 getrusage  (in libsystem_kernel.dylib) + 4,8  [0x18cf6a7b4,0x18cf6a7b8]
+                                    + ! 28 ???  (in yosys-abc)  load address 0x1023e8000 + 0x798b10  [0x102b80b10]
+                                    + ! : 14 ???  (in yosys-abc)  load address 0x1023e8000 + 0x799634  [0x102b81634]
+                                    + ! : | 4 ???  (in yosys-abc)  load address 0x1023e8000 + 0x795b94  [0x102b7db94]
+                                    + ! : | 2 ???  (in yosys-abc)  load address 0x1023e8000 + 0x795b6c  [0x102b7db6c]
+                                    + ! : | 2 ???  (in yosys-abc)  load address 0x1023e8000 + 0x795b80  [0x102b7db80]
+                                    + ! : | 2 ???  (in yosys-abc)  load address 0x1023e8000 + 0x795ba8  [0x102b7dba8]
+                                    + ! : | 1 ???  (in yosys-abc)  load address 0x1023e8000 + 0x795b98  [0x102b7db98]
+                                    + ! : | 1 ???  (in yosys-abc)  load address 0x1023e8000 + 0x795ba0  [0x102b7dba0]
+                                    + ! : | 1 ???  (in yosys-abc)  load address 0x1023e8000 + 0x795c08  [0x102b7dc08]
+                                    + ! : | 1 ???  (in yosys-abc)  load address 0x1023e8000 + 0x795c18  [0x102b7dc18]
+                                    + ! : 7 ???  (in yosys-abc)  load address 0x1023e8000 + 0x7995f0  [0x102b815f0]
+                                    + ! : | 5 ???  (in yosys-abc)  load address 0x1023e8000 + 0x799270  [0x102b81270]
+                                    + ! : | + 2 ???  (in yosys-abc)  load address 0x1023e8000 + 0x79a69c  [0x102b8269c]
+                                    + ! : | + 1 ???  (in yosys-abc)  load address 0x1023e8000 + 0x79a6b0  [0x102b826b0]
+                                    + ! : | + 1 ???  (in yosys-abc)  load address 0x1023e8000 + 0x79a6b4  [0x102b826b4]
+                                    + ! : | + 1 ???  (in yosys-abc)  load address 0x1023e8000 + 0x79a6b8  [0x102b826b8]
+                                    + ! : | 1 ???  (in yosys-abc)  load address 0x1023e8000 + 0x79924c  [0x102b8124c]
+                                    + ! : | 1 ???  (in yosys-abc)  load address 0x1023e8000 + 0x79932c  [0x102b8132c]
+                                    + ! : 4 ???  (in yosys-abc)  load address 0x1023e8000 + 0x799624  [0x102b81624]
+                                    + ! : 1 ???  (in yosys-abc)  load address 0x1023e8000 + 0x795be4  [0x102b7dbe4]
+                                    + ! : 1 ???  (in yosys-abc)  load address 0x1023e8000 + 0x799350  [0x102b81350]
+                                    + ! : 1 ???  (in yosys-abc)  load address 0x1023e8000 + 0x799630  [0x102b81630]
+                                    + ! 2 ???  (in yosys-abc)  load address 0x1023e8000 + 0x798c28  [0x102b80c28]
+                                    + ! : 2 ???  (in yosys-abc)  load address 0x1023e8000 + 0x79949c  [0x102b8149c]
+                                    + ! :   2 ???  (in yosys-abc)  load address 0x1023e8000 + 0x7971fc  [0x102b7f1fc]
+                                    + ! :     2 clock  (in libsystem_c.dylib) + 52  [0x18ce574c8]
+                                    + ! :       2 getrusage  (in libsystem_kernel.dylib) + 8  [0x18cf6a7b8]
+                                    + ! 1 ???  (in yosys-abc)  load address 0x1023e8000 + 0x798c50  [0x102b80c50]
+                                    + !   1 ???  (in yosys-abc)  load address 0x1023e8000 + 0x79949c  [0x102b8149c]
+                                    + !     1 ???  (in yosys-abc)  load address 0x1023e8000 + 0x7971fc  [0x102b7f1fc]
+                                    + !       1 clock  (in libsystem_c.dylib) + 52  [0x18ce574c8]
+                                    + !         1 getrusage  (in libsystem_kernel.dylib) + 8  [0x18cf6a7b8]
+                                    + 71 ???  (in yosys-abc)  load address 0x1023e8000 + 0x972d94  [0x102d5ad94]
+                                    + ! 67 ???  (in yosys-abc)  load address 0x1023e8000 + 0x97361c  [0x102d5b61c]
+                                    + ! : 67 ???  (in yosys-abc)  load address 0x1023e8000 + 0x79a5c4  [0x102b825c4]
+                                    + ! 2 ???  (in yosys-abc)  load address 0x1023e8000 + 0x973a80  [0x102d5ba80]
+                                    + ! 1 ???  (in yosys-abc)  load address 0x1023e8000 + 0x973684  [0x102d5b684]
+                                    + ! 1 ???  (in yosys-abc)  load address 0x1023e8000 + 0x973a64  [0x102d5ba64]
+                                    + 1 ???  (in yosys-abc)  load address 0x1023e8000 + 0x972f68  [0x102d5af68]
+                                    +   1 clock  (in libsystem_c.dylib) + 52  [0x18ce574c8]
+                                    +     1 getrusage  (in libsystem_kernel.dylib) + 8  [0x18cf6a7b8]
+                                    3 ???  (in yosys-abc)  load address 0x1023e8000 + 0x96f548  [0x102d57548]
+                                    + 2 ???  (in yosys-abc)  load address 0x1023e8000 + 0x97595c  [0x102d5d95c]
+                                    + ! 2 ???  (in yosys-abc)  load address 0x1023e8000 + 0x975974  [0x102d5d974]
+                                    + !   2 ???  (in yosys-abc)  load address 0x1023e8000 + 0x975974  [0x102d5d974]
+                                    + !     2 ???  (in yosys-abc)  load address 0x1023e8000 + 0x975974  [0x102d5d974]
+                                    + !       1 ???  (in yosys-abc)  load address 0x1023e8000 + 0x97595c  [0x102d5d95c]
+                                    + !       : 1 ???  (in yosys-abc)  load address 0x1023e8000 + 0x97595c  [0x102d5d95c]
+                                    + !       :   1 ???  (in yosys-abc)  load address 0x1023e8000 + 0x975994  [0x102d5d994]
+                                    + !       1 ???  (in yosys-abc)  load address 0x1023e8000 + 0x975974  [0x102d5d974]
+                                    + !         1 ???  (in yosys-abc)  load address 0x1023e8000 + 0x97595c  [0x102d5d95c]
+                                    + !           1 ???  (in yosys-abc)  load address 0x1023e8000 + 0x975974  [0x102d5d974]
+                                    + !             1 ???  (in yosys-abc)  load address 0x1023e8000 + 0x975974  [0x102d5d974]
+                                    + !               1 ???  (in yosys-abc)  load address 0x1023e8000 + 0x97595c  [0x102d5d95c]
+                                    + !                 1 ???  (in yosys-abc)  load address 0x1023e8000 + 0x975974  [0x102d5d974]
+                                    + !                   1 ???  (in yosys-abc)  load address 0x1023e8000 + 0x975974  [0x102d5d974]
+                                    + !                     1 ???  (in yosys-abc)  load address 0x1023e8000 + 0x975974  [0x102d5d974]
+                                    + !                       1 ???  (in yosys-abc)  load address 0x1023e8000 + 0x975974  [0x102d5d974]
+                                    + !                         1 ???  (in yosys-abc)  load address 0x1023e8000 + 0x975980  [0x102d5d980]
+                                    + 1 ???  (in yosys-abc)  load address 0x1023e8000 + 0x975974  [0x102d5d974]
+                                    +   1 ???  (in yosys-abc)  load address 0x1023e8000 + 0x975974  [0x102d5d974]
+                                    +     1 ???  (in yosys-abc)  load address 0x1023e8000 + 0x975974  [0x102d5d974]
+                                    +       1 ???  (in yosys-abc)  load address 0x1023e8000 + 0x97595c  [0x102d5d95c]
+                                    +         1 ???  (in yosys-abc)  load address 0x1023e8000 + 0x975974  [0x102d5d974]
+                                    +           1 ???  (in yosys-abc)  load address 0x1023e8000 + 0x975974  [0x102d5d974]
+                                    +             1 ???  (in yosys-abc)  load address 0x1023e8000 + 0x975974  [0x102d5d974]
+                                    +               1 ???  (in yosys-abc)  load address 0x1023e8000 + 0x975974  [0x102d5d974]
+                                    +                 1 ???  (in yosys-abc)  load address 0x1023e8000 + 0x975980  [0x102d5d980]
+                                    1 ???  (in yosys-abc)  load address 0x1023e8000 + 0x96f464  [0x102d57464]
+                                    + 1 ???  (in yosys-abc)  load address 0x1023e8000 + 0x974758  [0x102d5c758]
+                                    +   1 ???  (in yosys-abc)  load address 0x1023e8000 + 0x9727b8  [0x102d5a7b8]
+                                    +     1 ???  (in yosys-abc)  load address 0x1023e8000 + 0x972948  [0x102d5a948]
+                                    1 ???  (in yosys-abc)  load address 0x1023e8000 + 0x96f5b8  [0x102d575b8]
+                                      1 ???  (in yosys-abc)  load address 0x1023e8000 + 0x9748c0  [0x102d5c8c0]
+
+Total number in stack (recursive counted multiple, when >=5):
+        17       ???  (in yosys-abc)  load address 0x1023e8000 + 0x975974  [0x102d5d974]
+        16       clock  (in libsystem_c.dylib) + 52  [0x18ce574c8]
+        16       getrusage  (in libsystem_kernel.dylib) + 0  [0x18cf6a7b0]
+        6       ???  (in yosys-abc)  load address 0x1023e8000 + 0x7971fc  [0x102b7f1fc]
+        6       ???  (in yosys-abc)  load address 0x1023e8000 + 0x79949c  [0x102b8149c]
+        6       ???  (in yosys-abc)  load address 0x1023e8000 + 0x7995f0  [0x102b815f0]
+        6       ???  (in yosys-abc)  load address 0x1023e8000 + 0x799634  [0x102b81634]
+        6       ???  (in yosys-abc)  load address 0x1023e8000 + 0x97595c  [0x102d5d95c]
+
+Sort by top of stack, same collapsed (when >= 5):
+        ???  (in yosys-abc)  load address 0x1023e8000 + 0x7987b0  [0x102b807b0]        278
+        ???  (in yosys-abc)  load address 0x1023e8000 + 0x796e8c  [0x102b7ee8c]        117
+        ???  (in yosys-abc)  load address 0x1023e8000 + 0x79a5c4  [0x102b825c4]        67
+        ???  (in yosys-abc)  load address 0x1023e8000 + 0x7987a8  [0x102b807a8]        35
+        getrusage  (in libsystem_kernel.dylib)        32
+        ???  (in yosys-abc)  load address 0x1023e8000 + 0x799aac  [0x102b81aac]        28
+        ???  (in yosys-abc)  load address 0x1023e8000 + 0x799624  [0x102b81624]        22
+        ???  (in yosys-abc)  load address 0x1023e8000 + 0x795b60  [0x102b7db60]        21
+        ???  (in yosys-abc)  load address 0x1023e8000 + 0x799350  [0x102b81350]        19
+        ???  (in yosys-abc)  load address 0x1023e8000 + 0x795ba8  [0x102b7dba8]        18
+        ???  (in yosys-abc)  load address 0x1023e8000 + 0x795be4  [0x102b7dbe4]        18
+        ???  (in yosys-abc)  load address 0x1023e8000 + 0x79924c  [0x102b8124c]        17
+        ???  (in yosys-abc)  load address 0x1023e8000 + 0x795b6c  [0x102b7db6c]        16
+        ???  (in yosys-abc)  load address 0x1023e8000 + 0x795b94  [0x102b7db94]        15
+        ???  (in yosys-abc)  load address 0x1023e8000 + 0x795b80  [0x102b7db80]        13
+        ???  (in yosys-abc)  load address 0x1023e8000 + 0x79a69c  [0x102b8269c]        13
+        ???  (in yosys-abc)  load address 0x1023e8000 + 0x799330  [0x102b81330]        9
+        ???  (in yosys-abc)  load address 0x1023e8000 + 0x7995f8  [0x102b815f8]        8
+        ???  (in yosys-abc)  load address 0x1023e8000 + 0x79a6b0  [0x102b826b0]        8
+
+Binary Images:
+       0x1023e8000 -        0x103293ff3 +yosys-abc (0) <7DC8DDBF-003B-3157-9FB5-FF9D886A0AA8> /Volumes/*/yosys-abc
+       0x18cb50000 -        0x18cba348b  libobjc.A.dylib (951.1) <1E0A4B36-0701-3482-AA51-000F0ECC7506> /usr/lib/libobjc.A.dylib
+       0x18cba4000 -        0x18cbd4bcb  libdyld.dylib (1335) <3A7FDAA5-69EC-3846-AA49-DE7BDEE00285> /usr/lib/system/libdyld.dylib
+       0x18cbd5000 -        0x18cc73fc3  dyld (1.0.0 - 1335) <0975AFBA-C46B-364C-BD84-A75DAA9E455A> /usr/lib/dyld
+       0x18cc74000 -        0x18cc771d0  libsystem_blocks.dylib (96) <B64F976B-5966-3643-9B57-0EB17D149482> /usr/lib/system/libsystem_blocks.dylib
+       0x18cc78000 -        0x18ccccf7f  libxpc.dylib (3089.60.7) <4DB07AE5-6544-3D18-B44B-DCACA4D02FB8> /usr/lib/system/libxpc.dylib
+       0x18cccd000 -        0x18cced8df  libsystem_trace.dylib (1815.61.1) <16F2ABF3-27FC-3B12-AE3C-F039C083AE7B> /usr/lib/system/libsystem_trace.dylib
+       0x18ccee000 -        0x18cd9a96f  libcorecrypto.dylib (1922.60.11) <A925150E-A21F-3273-A38D-EB304C5D2D18> /usr/lib/system/libcorecrypto.dylib
+       0x18cd9b000 -        0x18cde6bff  libsystem_malloc.dylib (792.60.6) <F68E01CC-EC92-3F25-BAC8-956A3DE42627> /usr/lib/system/libsystem_malloc.dylib
+       0x18cde7000 -        0x18ce2de5f  libdispatch.dylib (1542.0.4) <A4B349E8-DD6F-3B71-84D9-34F3B4ACD849> /usr/lib/system/libdispatch.dylib
+       0x18ce2e000 -        0x18ce30feb  libsystem_featureflags.dylib (101) <6AD11065-D06A-3212-97FC-4EEC4AC48F51> /usr/lib/system/libsystem_featureflags.dylib
+       0x18ce31000 -        0x18ceb3047  libsystem_c.dylib (1725.40.4) <FB5569A9-CB26-36C2-AA05-E99243692B60> /usr/lib/system/libsystem_c.dylib
+       0x18ceb4000 -        0x18cf46ea3  libc++.1.dylib (2000.67) <BEBE1F75-49D4-32E9-9978-FF8D0E799801> /usr/lib/libc++.1.dylib
+       0x18cf47000 -        0x18cf6192f  libc++abi.dylib (2000.67) <51C9FB66-83AA-3C40-A806-99BC96BAFD7F> /usr/lib/libc++abi.dylib
+       0x18cf62000 -        0x18cf9e49f  libsystem_kernel.dylib (12377.61.12) <548C45C8-9733-3F0D-8EF4-C06DF1DF2AD0> /usr/lib/system/libsystem_kernel.dylib
+       0x18cf9f000 -        0x18cfababb  libsystem_pthread.dylib (539) <527C4BA0-91A5-378B-B3E2-D38269CA5A66> /usr/lib/system/libsystem_pthread.dylib
+       0x18cfac000 -        0x18cfb43ef  libsystem_platform.dylib (359.60.3) <4DBAF982-1576-3FFC-86BE-03A9D2C96BE5> /usr/lib/system/libsystem_platform.dylib
+       0x18cfb5000 -        0x18cfe4e23  libsystem_info.dylib (600) <363CFE03-0003-3DA6-BE41-820B917B7955> /usr/lib/system/libsystem_info.dylib
+       0x190f58000 -        0x190f62397  libsystem_darwin.dylib (1725.40.4) <C25292BB-AA30-37D2-8001-E7276ADBAF1E> /usr/lib/system/libsystem_darwin.dylib
+       0x1913c9000 -        0x1913daff3  libsystem_notify.dylib (344.0.1) <DF1ED23D-F338-306D-BD06-A7F9B4534B23> /usr/lib/system/libsystem_notify.dylib
+       0x1936a8000 -        0x1936c2fdb  libsystem_networkextension.dylib (2205.60.9.0.1) <C2085EB4-0A94-3D87-94ED-D5555D3FA837> /usr/lib/system/libsystem_networkextension.dylib
+       0x193746000 -        0x19375dff3  libsystem_asl.dylib (406) <867E699E-8CC6-3792-AC6E-35C5769FADBA> /usr/lib/system/libsystem_asl.dylib
+       0x1952f3000 -        0x1952fb3b7  libsystem_symptoms.dylib (2158.60.3) <8D869291-11B3-3D2A-BFDF-F1C1688E19F1> /usr/lib/system/libsystem_symptoms.dylib
+       0x199275000 -        0x1992ad2b7  libsystem_containermanager.dylib (725.60.4) <FA1FC4AB-E5A0-391C-8951-41EFEE847E0D> /usr/lib/system/libsystem_containermanager.dylib
+       0x19a6c3000 -        0x19a6c766f  libsystem_configuration.dylib (1385.60.3) <11F5CF47-6E93-3FF7-8E5E-E98F69742465> /usr/lib/system/libsystem_configuration.dylib
+       0x19a6c8000 -        0x19a6ce6a7  libsystem_sandbox.dylib (2680.60.11) <FD4A58D2-D1AB-3936-86EE-CCB6852E0761> /usr/lib/system/libsystem_sandbox.dylib
+       0x19bc42000 -        0x19bc451fb  libquarantine.dylib (196.40.3) <18BE2FA3-66CE-3EBF-9E13-8478DF73E146> /usr/lib/system/libquarantine.dylib
+       0x19c3c5000 -        0x19c3cbf4f  libsystem_coreservices.dylib (191.2.4) <0646DDBF-346D-3273-9C9B-968121293B8A> /usr/lib/system/libsystem_coreservices.dylib
+       0x19c918000 -        0x19c9558b7  libsystem_m.dylib (3309) <42E15F5C-02B8-3B56-9889-5B59CADD45EB> /usr/lib/system/libsystem_m.dylib
+       0x19c957000 -        0x19c95a537  libmacho.dylib (1030.6.3) <D1DA6556-F3D8-3A33-96FF-0B8876A1F0B6> /usr/lib/system/libmacho.dylib
+       0x19c974000 -        0x19c98161f  libcommonCrypto.dylib (600035) <87FEBA92-8FE5-32C3-8317-F6F86489CCFB> /usr/lib/system/libcommonCrypto.dylib
+       0x19c982000 -        0x19c98bb0b  libunwind.dylib (1900.125) <33789B37-0F3B-389C-BF0A-80FB03A2FB31> /usr/lib/system/libunwind.dylib
+       0x19c994000 -        0x19c99e6ff  libcopyfile.dylib (230.0.1.0.1) <317DAF5E-A6BB-3DFF-BCA1-8053DE7A8A2C> /usr/lib/system/libcopyfile.dylib
+       0x19c99f000 -        0x19c9a295f  libcompiler_rt.dylib (103.3) <E54BAD88-9E9A-3A4D-8E4A-6146B120C1EC> /usr/lib/system/libcompiler_rt.dylib
+       0x19c9a3000 -        0x19c9a7a1b  libsystem_collections.dylib (1725.40.4) <90FA7AF0-2D12-3FC1-A87A-C4EDE396FDC5> /usr/lib/system/libsystem_collections.dylib
+       0x19c9a8000 -        0x19c9ab4bf  libsystem_secinit.dylib (168.40.2) <755B9674-5B57-39CE-B247-4183C3ED6613> /usr/lib/system/libsystem_secinit.dylib
+       0x19c9ac000 -        0x19c9aeb57  libremovefile.dylib (84) <2F92CF32-4C5F-3D57-AEBC-9655B810A23C> /usr/lib/system/libremovefile.dylib
+       0x19c9af000 -        0x19c9aff27  libkeymgr.dylib (31) <FBDDA038-D728-3E69-815A-333D6B00BBDF> /usr/lib/system/libkeymgr.dylib
+       0x19c9b0000 -        0x19c9b8f87  libsystem_dnssd.dylib (2881.60.4) <5DF6DD6A-358E-3170-97D7-EB2107F4DB89> /usr/lib/system/libsystem_dnssd.dylib
+       0x19c9b9000 -        0x19c9be0b3  libcache.dylib (95) <C8B9304A-229B-3775-B353-2333D154987B> /usr/lib/system/libcache.dylib
+       0x19c9bf000 -        0x19c9c0cf3  libSystem.B.dylib (1356) <EF46521E-50DB-3B5D-A1F5-5294C83D9B25> /usr/lib/libSystem.B.dylib
+       0x28746c000 -        0x287473319  libRosetta.dylib (365.3) <4B2D840F-AD4B-3A47-9749-3CB480DF3717> /usr/lib/libRosetta.dylib
+       0x288b79000 -        0x288b7cdeb  libsystem_darwindirectory.dylib (122) <B6309151-0733-31ED-8150-92CE2BB7FEA5> /usr/lib/system/libsystem_darwindirectory.dylib
+       0x288b7d000 -        0x288b86117  libsystem_eligibility.dylib (286.60.23) <65295E08-697D-334C-8A97-B6FE0D9797A0> /usr/lib/system/libsystem_eligibility.dylib
+       0x288b87000 -        0x288b8e873  libsystem_sanitizers.dylib (25) <D81DCFCF-61F5-3C56-ACA1-42C900E5364D> /usr/lib/system/libsystem_sanitizers.dylib
+       0x288b8f000 -        0x288b8fbb7  libsystem_trial.dylib (474.2.0.5) <820D601F-6489-32A9-9405-ECD7378C3570> /usr/lib/system/libsystem_trial.dylib

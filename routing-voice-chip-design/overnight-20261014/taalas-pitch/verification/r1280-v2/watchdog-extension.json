@@ -1,0 +1,23 @@
+{
+  "authorization": "Parent explicitly authorized safe SIGSTOP of owned Python watchdog only, external3600s absolute bound, then SIGCONT to reap native Magic status. User22GiB disk and<=4thread guards unchanged.",
+  "parent_pid": 66232,
+  "child_pid": 66234,
+  "parent_process": "66232 66007 SN   20:56 .venv/bin/python overnight-20261014/taalas-pitch/verification/verify.py extract --gds overnight-20261014/taalas-pitch/r1280-v2/bank.gds --top PITCH_BANK_R1280 --rows 1280 --run r1280-v2",
+  "child_process": "66234 66232 RN   20:56 /nix/store/hdjick71an9gpkcfbw0n2kpg7rnw7j3l-magic-vlsi-8.3.623/lib/magic/tcl/magicdnull -nowrapper -dnull -noconsole -rcfile /Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/pdks/gf180mcuD/libs.tech/magic/gf180mcuD.magicrc extract.tcl",
+  "child_cwd": "p66234\nfcwd\nn/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/taalas-pitch/verification/r1280-v2\n",
+  "original_timeout_seconds": 1800,
+  "new_absolute_timeout_seconds": 3600,
+  "elapsed_before_stop_seconds": 1256,
+  "subprocess_wait_source_sha256": "773f67be387e442975136954e06b0113780c904d6075cb6957d5cfa7d3ad5fbd",
+  "actions": [
+    {
+      "utc": "2026-10-13T21:45:10.954772+00:00",
+      "action": "Verified own watchdog and Magic child PIDs/cwd; extension prepared"
+    },
+    {
+      "utc": "2026-10-13T21:45:10.955240+00:00",
+      "action": "Sent SIGSTOP only to Python watchdog parent; Magic continues"
+    }
+  ],
+  "minimum_free_gib": null
+}

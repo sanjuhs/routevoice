@@ -1,0 +1,53 @@
+{
+  "case_id": "int8_per_tensor-input-000",
+  "model": "int8_per_tensor",
+  "id": "2428-83705-0038",
+  "role": "validation",
+  "condition": "clean",
+  "seed": null,
+  "reference": "AS IT IS UNLESS I AM MISTAKEN SOME OF THE RENDING WILL BE ON OUR SIDE AND THEY KNOW IT",
+  "input_float32_sha256": "2042582afe9d7c3cb4b2d1462bc0a4e14e4f20a87267cee6d85d8720ba6ab848",
+  "hypothesis": " ",
+  "normalized_tokens": [],
+  "edits": 20,
+  "reference_words": 20,
+  "hypothesis_words": 0,
+  "exact": false,
+  "lines": [
+    {
+      "text": "",
+      "start_time": 0.0,
+      "duration": 6.079999923706055,
+      "is_complete": true,
+      "samples": 97280,
+      "input_float32_sha256": "cf9c863a46faf3c519f736140a8e501cf092bf57de1809f78ca847bab5d2b289"
+    },
+    {
+      "text": "",
+      "start_time": 5.823999881744385,
+      "duration": 1.248000144958496,
+      "is_complete": true,
+      "samples": 19968,
+      "input_float32_sha256": "6fe9d71a2d08aa1c4c6f3fb9dfc984ef9e9b2d3fa13227a0340034bffc2eef00"
+    }
+  ],
+  "request_sha256": "60e6bdcc17bef2a7318e2c5cec6442ecee6a1f0db150eedc8b5aca5b09f036aa",
+  "worker_sha256": "4682e8a57db08e02a34f53b01f334f34faa3ca9a6546698f1e4650db359004b6",
+  "native_library_sha256": "1453a6c1c9072f3d05e9e5ae6ff423fae839e56631c5efb12bbd5c0280d04399",
+  "native_api_version": 30000,
+  "load_seconds": 0.045022042002528906,
+  "compute_seconds": 0.1597178338561207,
+  "audio_seconds": 7.305,
+  "process_cpu_seconds": 0.15921699999999997,
+  "voluntary_context_switches": 0,
+  "involuntary_context_switches": 35,
+  "system_load_average": [
+    9.28125,
+    8.619140625,
+    9.78076171875
+  ],
+  "options": null,
+  "flags": 0,
+  "process_id": 80414,
+  "isolation": "One audio clip/condition in a fresh native process; no previous utterance or VAD state."
+}

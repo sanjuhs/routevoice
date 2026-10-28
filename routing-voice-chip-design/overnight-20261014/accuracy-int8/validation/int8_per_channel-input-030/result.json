@@ -1,0 +1,57 @@
+{
+  "case_id": "int8_per_channel-input-030",
+  "model": "int8_per_channel",
+  "id": "2277-149897-0031",
+  "role": "validation",
+  "condition": "clean",
+  "seed": null,
+  "reference": "HE TROUBLED OVER MANY LITTLE DETAILS AND TALKED PERFUNCTORILY TO EVERYBODY",
+  "input_float32_sha256": "844b55342f4d8ff1775d25ef5f53b36072ee17b766132b156fde11d20d1d14bf",
+  "hypothesis": "He trembled over many little details, and talked profoundly to everybody.",
+  "normalized_tokens": [
+    "he",
+    "trembled",
+    "over",
+    "many",
+    "little",
+    "details",
+    "and",
+    "talked",
+    "profoundly",
+    "to",
+    "everybody"
+  ],
+  "edits": 2,
+  "reference_words": 11,
+  "hypothesis_words": 11,
+  "exact": false,
+  "lines": [
+    {
+      "text": "He trembled over many little details, and talked profoundly to everybody.",
+      "start_time": 0.09599995613098145,
+      "duration": 4.288000106811523,
+      "is_complete": true,
+      "samples": 68608,
+      "input_float32_sha256": "7d55165d036ebb128ab198346ea1fed1b0aa88f5ad5e5e55bb29ca2a04c5761c"
+    }
+  ],
+  "request_sha256": "65018edad2b0ed7874bff7e44859030e95dc773af50b2eea09f47ceca24f83b1",
+  "worker_sha256": "4682e8a57db08e02a34f53b01f334f34faa3ca9a6546698f1e4650db359004b6",
+  "native_library_sha256": "1453a6c1c9072f3d05e9e5ae6ff423fae839e56631c5efb12bbd5c0280d04399",
+  "native_api_version": 30000,
+  "load_seconds": 0.04384054196998477,
+  "compute_seconds": 0.16958949994295835,
+  "audio_seconds": 4.405,
+  "process_cpu_seconds": 0.16922199999999998,
+  "voluntary_context_switches": 0,
+  "involuntary_context_switches": 78,
+  "system_load_average": [
+    10.57568359375,
+    9.021484375,
+    9.8798828125
+  ],
+  "options": null,
+  "flags": 0,
+  "process_id": 81078,
+  "isolation": "One audio clip/condition in a fresh native process; no previous utterance or VAD state."
+}

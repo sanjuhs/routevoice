@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# Antenna close-out: rerun from detailed routing with up to 10 post-DRT antenna repair rounds (default 3), then full signoff.
+cd /Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/..; source /nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh; export NIX_BUILD_SHELL=/bin/bash
+mkdir -p /Users/sanju/rvssd/pipe2-local/tmp; s=$(date +%s)
+nix-shell tools/librelane/shell.nix --run "export TMPDIR=/Users/sanju/rvssd/pipe2-local/tmp OMP_NUM_THREADS=12 PYTHONDONTWRITEBYTECODE=1; nice -n 5 python3 /Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/finish-1023/w10-route/librelane_pi.py --condensed --log-level WARNING --from OpenROAD.DetailedRouting --with-initial-state /Users/sanju/rvssd/pipe2-local/runs/pipe2/46-openroad-detailedrouting/state_in.json --manual-pdk --pdk gf180mcuD --pdk-root /Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric-k64/pdks --design-dir /Users/sanju/rvssd/pipe2-local --run-tag pipe2-ant --jobs 12 /Users/sanju/rvssd/pipe2-local/inputs/full-pipe2-ant-local.json"
+echo "exit=$? wall_s=$(( $(date +%s)-s ))"

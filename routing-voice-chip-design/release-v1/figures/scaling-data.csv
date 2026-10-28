@@ -1,0 +1,6 @@
+kind,item,weights,area_mm2_gf180,energy_mJ_per_pass_gf180,note
+measured,one 1280x320 bank,409600,2.2678,0.1176,W13 bank GDS bbox; engine power
+measured,all RouteVoice weight arrays,31457280,174.70862,,W13 RESULTS.md realized area
+projection,125M LM,125000000,694.2,35.9,"linear at measured density; 28 nm assumed (20, 40) area / (10, 30) energy gain"
+projection,1B LLM,1000000000,5553.8,287.0,"linear at measured density; 28 nm assumed (20, 40) area / (10, 30) energy gain"
+projection,8B LLM,8000000000,44430.7,2296.0,"linear at measured density; 28 nm assumed (20, 40) area / (10, 30) energy gain"

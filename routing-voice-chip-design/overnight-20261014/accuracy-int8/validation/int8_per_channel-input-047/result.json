@@ -1,0 +1,62 @@
+{
+  "case_id": "int8_per_channel-input-047",
+  "model": "int8_per_channel",
+  "id": "6267-53049-0032",
+  "role": "validation",
+  "condition": "other",
+  "seed": null,
+  "reference": "WHEN MISSUS FAIRWEATHER HAD GONE DORIS AND PENELOPE LOOKED AT EACH OTHER",
+  "input_float32_sha256": "db392c08d9f56871146a95a30910280879b67b57c48dd4fa538c70f251c2593e",
+  "hypothesis": "When Mrs. Furnel had gone, Doris and Furnel had emailed at each other at each other.",
+  "normalized_tokens": [
+    "when",
+    "mrs",
+    "furnel",
+    "had",
+    "gone",
+    "doris",
+    "and",
+    "furnel",
+    "had",
+    "emailed",
+    "at",
+    "each",
+    "other",
+    "at",
+    "each",
+    "other"
+  ],
+  "edits": 8,
+  "reference_words": 12,
+  "hypothesis_words": 16,
+  "exact": false,
+  "lines": [
+    {
+      "text": "When Mrs. Furnel had gone, Doris and Furnel had emailed at each other at each other.",
+      "start_time": 0.03200000524520874,
+      "duration": 5.631999969482422,
+      "is_complete": true,
+      "samples": 90112,
+      "input_float32_sha256": "0ff5d23fed44cad33a4e1f8fbd1f0d560e36572c8a1dc0b3cdf11a8316b3d6b6"
+    }
+  ],
+  "request_sha256": "f20904eb9bca834f6cc368c57a2b0b11cd49dbf1e0daf310ab4efc34964853f6",
+  "worker_sha256": "4682e8a57db08e02a34f53b01f334f34faa3ca9a6546698f1e4650db359004b6",
+  "native_library_sha256": "1453a6c1c9072f3d05e9e5ae6ff423fae839e56631c5efb12bbd5c0280d04399",
+  "native_api_version": 30000,
+  "load_seconds": 0.04259216599166393,
+  "compute_seconds": 0.2395554999820888,
+  "audio_seconds": 5.685,
+  "process_cpu_seconds": 0.23875399999999997,
+  "voluntary_context_switches": 0,
+  "involuntary_context_switches": 143,
+  "system_load_average": [
+    10.640625,
+    9.16259765625,
+    9.90576171875
+  ],
+  "options": null,
+  "flags": 0,
+  "process_id": 81267,
+  "isolation": "One audio clip/condition in a fresh native process; no previous utterance or VAD state."
+}

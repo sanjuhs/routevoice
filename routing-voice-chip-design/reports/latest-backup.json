@@ -1,0 +1,25 @@
+{
+  "source_commit": "956e0a988507ee7f5276d4d2b6727b7be978828f",
+  "files": [
+    {
+      "file": "source.bundle",
+      "bytes": 728570650,
+      "sha256": "e22e803e61035d9bc4fefd36be30e2db3e4d75ed3591672c35ca9f6e0856e0c5"
+    },
+    {
+      "file": "artifacts.tar.gz",
+      "bytes": 2060964947,
+      "sha256": "253c9f026cd45593c8fbc75dc30e750eb50b4c166c85c991e804819f304c95d9"
+    },
+    {
+      "file": "artifact-inventory.json",
+      "bytes": 801305,
+      "sha256": "2da50f6d5427c4c94b87a0e2b77d0fc9fcafd05395ada2a9a3065aaa90d55678"
+    }
+  ],
+  "scope": "All Git source history and refreshed selected model/data/checkpoint/generated design artifacts; inventory enumerates archive contents. Secrets, installed dependencies, PDK/tool downloads and caches excluded; reconstruct tools from tracked pins. Existing older remote backups retained.",
+  "huggingface_commit": "427075ce92d1e9157d1111f8daf113ab22c288df",
+  "remote_hashes_verified": true,
+  "repository": "sanjuhs/route-voice-hardware-backup",
+  "prefix": "2026-09-07-complete-snapshot"
+}

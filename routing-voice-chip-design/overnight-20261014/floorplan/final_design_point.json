@@ -1,0 +1,4101 @@
+{
+  "updated_utc": "2026-10-13T22:09:39.757315+00:00",
+  "status": "Conditional final design-point floorplans complete; recognizer implementation/timing/power unproven",
+  "frontend_lever": "frontend_native_int8_lossless",
+  "frontend": {
+    "bytes": 2090240,
+    "int8_bytes": 2073600,
+    "scale_offset_bytes": 12800,
+    "bias_bytes": 3840,
+    "coefficients": 2074560,
+    "numerical_change": false,
+    "decode_contract": "Round INT8 cast to FP32 times FP32 scale to FP32; then add FP32 offset with a second FP32 rounding. Do not silently fuse, drop offsets or change Conv2 input-channel axis.",
+    "fp32_multiply_add_resources": 1,
+    "resource_area_source": "Reused within existing12mm2 ASSUMED frontend logic allowance; one FMA-class resource executes separate rounded multiply then add, not one fused operation",
+    "hardware_status": "not implemented/timed; two dependent rounded operations per decoded weight"
+  },
+  "payload_audit": "lossless_payload_audit.json",
+  "symmetric_requantized_int8_used": false,
+  "symmetric_requantized_int8_status": "W7 per-channel and per-tensor both FAILED point gates; not used",
+  "bitcell_measurement": {
+    "gds": "pdk/gf180mcu_fd_ip_sram__sram512x8m8wm1.gds",
+    "source": "pdks/gf180mcuD/libs.ref/gf180mcu_fd_ip_sram/gds/gf180mcu_fd_ip_sram__sram512x8m8wm1.gds",
+    "sha256": "40d76d3ccfc8779c9db9f1db7a0bbccbbaf12c4627a3fa5b59049f23eef7d915",
+    "dbu_um": 0.001,
+    "cells": [
+      {
+        "name": "018SRAM_cell1_512x8m81",
+        "bbox_dbu": [
+          -340,
+          -340,
+          3340,
+          4840
+        ],
+        "width_um": 3.68,
+        "height_um": 5.18,
+        "area_um2": 19.0624
+      },
+      {
+        "name": "018SRAM_strap1_512x8m81",
+        "bbox_dbu": [
+          -340,
+          -340,
+          3340,
+          4840
+        ],
+        "width_um": 3.68,
+        "height_um": 5.18,
+        "area_um2": 19.0624
+      },
+      {
+        "name": "018SRAM_strap1_bndry_512x8m81",
+        "bbox_dbu": [
+          -340,
+          -340,
+          3340,
+          4840
+        ],
+        "width_um": 3.68,
+        "height_um": 5.18,
+        "area_um2": 19.0624
+      },
+      {
+        "name": "018SRAM_strap1_2x_512x8m81",
+        "bbox_dbu": [
+          -340,
+          -4840,
+          3340,
+          4840
+        ],
+        "width_um": 3.68,
+        "height_um": 9.68,
+        "area_um2": 35.6224
+      },
+      {
+        "name": "018SRAM_strap1_2x_bndry_512x8m81",
+        "bbox_dbu": [
+          -340,
+          -4840,
+          3340,
+          4840
+        ],
+        "width_um": 3.68,
+        "height_um": 9.68,
+        "area_um2": 35.6224
+      },
+      {
+        "name": "018SRAM_cell1_2x_512x8m81",
+        "bbox_dbu": [
+          -340,
+          -340,
+          3340,
+          9340
+        ],
+        "width_um": 3.68,
+        "height_um": 9.68,
+        "area_um2": 35.6224
+      },
+      {
+        "name": "018SRAM_cell1_dummy_512x8m81",
+        "bbox_dbu": [
+          -340,
+          -340,
+          3340,
+          4840
+        ],
+        "width_um": 3.68,
+        "height_um": 5.18,
+        "area_um2": 19.0624
+      },
+      {
+        "name": "018SRAM_cell1_cutPC_512x8m81",
+        "bbox_dbu": [
+          -340,
+          -340,
+          3340,
+          4840
+        ],
+        "width_um": 3.68,
+        "height_um": 5.18,
+        "area_um2": 19.0624
+      },
+      {
+        "name": "018SRAM_cell1_dummy_R_512x8m81",
+        "bbox_dbu": [
+          -340,
+          -340,
+          3340,
+          4840
+        ],
+        "width_um": 3.68,
+        "height_um": 5.18,
+        "area_um2": 19.0624
+      }
+    ],
+    "scope": "MEASURED cell GDS bounding boxes;17.8um2/bit planning pitch from2-bit pair box; strap/edge/peripheral efficiency separate"
+  },
+  "memory_models": {
+    "sram_open_macro": {
+      "bank_bytes": 512,
+      "bank_area_mm2": 0.20940027679999998,
+      "status": "MEASURED-LEF; 51.123114453125 um2/bit before group packing",
+      "source": "pdk/gf180mcu_fd_ip_sram__sram512x8m8wm1.lef"
+    },
+    "sram_4k_research": {
+      "bank_bytes": 4096,
+      "bank_area_mm2": 0.9479839488,
+      "status": "PROJECT RESEARCH BANK footprint; transfer to current memory ports unproved",
+      "source": "docs/TAALAS-DIE-SIZE-AND-SYSTEM-COSTS-2026-10-02.md"
+    },
+    "sram_dense_custom": {
+      "bank_bytes": 512,
+      "bank_area_mm2": 0.049152,
+      "status": "ASSUMED12um2/bit effective; requires a smaller foundry bit cell than the open GF180 one; no compiled macro",
+      "source": "Lead guidance1 2026-10-14"
+    },
+    "sram_bitcell_large_macro": {
+      "bank_bytes": 1,
+      "bank_area_mm2": 0.00020342857142857144,
+      "um2_per_bit": 25.42857142857143,
+      "measured_bit_pitch_um2": 17.8,
+      "array_efficiency": 0.7,
+      "status": "bit cell MEASURED;70% array efficiency ASSUMED; no implemented large macro; additional10% bank-group placement retained",
+      "source": "sram_bitcell_measurement.json"
+    }
+  },
+  "area_table": [
+    {
+      "memory": "sram_open_macro",
+      "levers": "frontend_native_int8_lossless + books_in_array",
+      "selection_mm2": 174.170514432,
+      "rom_mm2": 131.53565001599998,
+      "sram_mm2": 593.83835898816,
+      "logic_mm2": 190.391996991974,
+      "total_mm2": 1089.9365204281341,
+      "status": "MEASURED-LEF; 51.123114453125 um2/bit before group packing"
+    },
+    {
+      "memory": "sram_4k_research",
+      "levers": "frontend_native_int8_lossless + books_in_array",
+      "selection_mm2": 174.170514432,
+      "rom_mm2": 131.53565001599998,
+      "sram_mm2": 553.7174244940801,
+      "logic_mm2": 190.391996991974,
+      "total_mm2": 1049.815585934054,
+      "status": "PROJECT RESEARCH BANK footprint; transfer to current memory ports unproved"
+    },
+    {
+      "memory": "sram_dense_custom",
+      "levers": "frontend_native_int8_lossless + books_in_array",
+      "selection_mm2": 174.170514432,
+      "rom_mm2": 131.53565001599998,
+      "sram_mm2": 112.2239976,
+      "logic_mm2": 190.391996991974,
+      "total_mm2": 608.3221590399739,
+      "status": "ASSUMED12um2/bit effective; requires a smaller foundry bit cell than the open GF180 one; no compiled macro"
+    },
+    {
+      "memory": "sram_bitcell_large_macro",
+      "levers": "frontend_native_int8_lossless + books_in_array",
+      "selection_mm2": 174.170514432,
+      "rom_mm2": 131.53565001599998,
+      "sram_mm2": 237.80799491428576,
+      "logic_mm2": 190.391996991974,
+      "total_mm2": 733.9061563542598,
+      "status": "bit cell MEASURED;70% array efficiency ASSUMED; no implemented large macro; additional10% bank-group placement retained"
+    }
+  ],
+  "block_area_tables": [
+    {
+      "memory": "sram_open_macro",
+      "blocks": [
+        {
+          "name": "frontend_native_int8_lossless",
+          "selection_mm2": 0.0,
+          "rom_mm2": 36.788224,
+          "sram_mm2": 0.0,
+          "logic_mm2": 12,
+          "total_mm2": 48.788224,
+          "source": "overnight-20261014/accuracy-int8/existing-affine-int8-exact/manifest.json",
+          "area_status": "MEASURED payload2090240B; ASSUMED binary ROM1.76um2/bit x1.25;12mm2 frontend logic retains one separately-rounded FP32 multiply-add resource",
+          "power_assumed_w": 0.15
+        },
+        {
+          "name": "encoder_fabric_L0",
+          "selection_mm2": 6.80353572,
+          "rom_mm2": 0.0,
+          "sram_mm2": 0.0,
+          "logic_mm2": 0,
+          "total_mm2": 6.80353572,
+          "source": "overnight-20261014/taalas-pitch/results.json; frozen selection counts",
+          "area_status": "MEASURED W6 1280-row rectangle incl.readout; ASSUMED uniform density across model shapes/padding; qualification in pitch_verification",
+          "power_assumed_w": 0.025
+        },
+        {
+          "name": "encoder_fabric_L1",
+          "selection_mm2": 6.80353572,
+          "rom_mm2": 0.0,
+          "sram_mm2": 0.0,
+          "logic_mm2": 0,
+          "total_mm2": 6.80353572,
+          "source": "overnight-20261014/taalas-pitch/results.json; frozen selection counts",
+          "area_status": "MEASURED W6 1280-row rectangle incl.readout; ASSUMED uniform density across model shapes/padding; qualification in pitch_verification",
+          "power_assumed_w": 0.025
+        },
+        {
+          "name": "encoder_fabric_L2",
+          "selection_mm2": 6.80353572,
+          "rom_mm2": 0.0,
+          "sram_mm2": 0.0,
+          "logic_mm2": 0,
+          "total_mm2": 6.80353572,
+          "source": "overnight-20261014/taalas-pitch/results.json; frozen selection counts",
+          "area_status": "MEASURED W6 1280-row rectangle incl.readout; ASSUMED uniform density across model shapes/padding; qualification in pitch_verification",
+          "power_assumed_w": 0.025
+        },
+        {
+          "name": "encoder_fabric_L3",
+          "selection_mm2": 6.80353572,
+          "rom_mm2": 0.0,
+          "sram_mm2": 0.0,
+          "logic_mm2": 0,
+          "total_mm2": 6.80353572,
+          "source": "overnight-20261014/taalas-pitch/results.json; frozen selection counts",
+          "area_status": "MEASURED W6 1280-row rectangle incl.readout; ASSUMED uniform density across model shapes/padding; qualification in pitch_verification",
+          "power_assumed_w": 0.025
+        },
+        {
+          "name": "encoder_fabric_L4",
+          "selection_mm2": 6.80353572,
+          "rom_mm2": 0.0,
+          "sram_mm2": 0.0,
+          "logic_mm2": 0,
+          "total_mm2": 6.80353572,
+          "source": "overnight-20261014/taalas-pitch/results.json; frozen selection counts",
+          "area_status": "MEASURED W6 1280-row rectangle incl.readout; ASSUMED uniform density across model shapes/padding; qualification in pitch_verification",
+          "power_assumed_w": 0.025
+        },
+        {
+          "name": "encoder_fabric_L5",
+          "selection_mm2": 6.80353572,
+          "rom_mm2": 0.0,
+          "sram_mm2": 0.0,
+          "logic_mm2": 0,
+          "total_mm2": 6.80353572,
+          "source": "overnight-20261014/taalas-pitch/results.json; frozen selection counts",
+          "area_status": "MEASURED W6 1280-row rectangle incl.readout; ASSUMED uniform density across model shapes/padding; qualification in pitch_verification",
+          "power_assumed_w": 0.025
+        },
+        {
+          "name": "decoder_fabric_L0",
+          "selection_mm2": 10.20530358,
+          "rom_mm2": 0.0,
+          "sram_mm2": 0.0,
+          "logic_mm2": 0,
+          "total_mm2": 10.20530358,
+          "source": "overnight-20261014/taalas-pitch/results.json; frozen selection counts",
+          "area_status": "MEASURED W6 1280-row rectangle incl.readout; ASSUMED uniform density across model shapes/padding; qualification in pitch_verification",
+          "power_assumed_w": 0.025
+        },
+        {
+          "name": "decoder_fabric_L1",
+          "selection_mm2": 10.20530358,
+          "rom_mm2": 0.0,
+          "sram_mm2": 0.0,
+          "logic_mm2": 0,
+          "total_mm2": 10.20530358,
+          "source": "overnight-20261014/taalas-pitch/results.json; frozen selection counts",
+          "area_status": "MEASURED W6 1280-row rectangle incl.readout; ASSUMED uniform density across model shapes/padding; qualification in pitch_verification",
+          "power_assumed_w": 0.025
+        },
+        {
+          "name": "decoder_fabric_L2",
+          "selection_mm2": 10.20530358,
+          "rom_mm2": 0.0,
+          "sram_mm2": 0.0,
+          "logic_mm2": 0,
+          "total_mm2": 10.20530358,
+          "source": "overnight-20261014/taalas-pitch/results.json; frozen selection counts",
+          "area_status": "MEASURED W6 1280-row rectangle incl.readout; ASSUMED uniform density across model shapes/padding; qualification in pitch_verification",
+          "power_assumed_w": 0.025
+        },
+        {
+          "name": "decoder_fabric_L3",
+          "selection_mm2": 10.20530358,
+          "rom_mm2": 0.0,
+          "sram_mm2": 0.0,
+          "logic_mm2": 0,
+          "total_mm2": 10.20530358,
+          "source": "overnight-20261014/taalas-pitch/results.json; frozen selection counts",
+          "area_status": "MEASURED W6 1280-row rectangle incl.readout; ASSUMED uniform density across model shapes/padding; qualification in pitch_verification",
+          "power_assumed_w": 0.025
+        },
+        {
+          "name": "decoder_fabric_L4",
+          "selection_mm2": 10.20530358,
+          "rom_mm2": 0.0,
+          "sram_mm2": 0.0,
+          "logic_mm2": 0,
+          "total_mm2": 10.20530358,
+          "source": "overnight-20261014/taalas-pitch/results.json; frozen selection counts",
+          "area_status": "MEASURED W6 1280-row rectangle incl.readout; ASSUMED uniform density across model shapes/padding; qualification in pitch_verification",
+          "power_assumed_w": 0.025
+        },
+        {
+          "name": "decoder_fabric_L5",
+          "selection_mm2": 10.20530358,
+          "rom_mm2": 0.0,
+          "sram_mm2": 0.0,
+          "logic_mm2": 0,
+          "total_mm2": 10.20530358,
+          "source": "overnight-20261014/taalas-pitch/results.json; frozen selection counts",
+          "area_status": "MEASURED W6 1280-row rectangle incl.readout; ASSUMED uniform density across model shapes/padding; qualification in pitch_verification",
+          "power_assumed_w": 0.025
+        },
+        {
+          "name": "embedding_head_tied_once",
+          "selection_mm2": 58.056838144,
+          "rom_mm2": 0.0,
+          "sram_mm2": 0.0,
+          "logic_mm2": 0,
+          "total_mm2": 58.056838144,
+          "source": "overnight-20261014/taalas-pitch/results.json; frozen selection counts",
+          "area_status": "MEASURED W6 1280-row rectangle incl.readout; ASSUMED uniform density across model shapes/padding; qualification in pitch_verification",
+          "power_assumed_w": 0.08
+        },
+        {
+          "name": "producer_KV_and_positions",
+          "selection_mm2": 14.060640487999999,
+          "rom_mm2": 0.0,
+          "sram_mm2": 0.0,
+          "logic_mm2": 0,
+          "total_mm2": 14.060640487999999,
+          "source": "overnight-20261014/taalas-pitch/results.json; frozen selection counts",
+          "area_status": "MEASURED W6 1280-row rectangle incl.readout; ASSUMED uniform density across model shapes/padding; qualification in pitch_verification",
+          "power_assumed_w": 0.04
+        },
+        {
+          "name": "codebooks_and_other_metadata",
+          "selection_mm2": 0.0,
+          "rom_mm2": 94.74742601599999,
+          "sram_mm2": 0.0,
+          "logic_mm2": 0,
+          "total_mm2": 94.74742601599999,
+          "source": "overnight-20261014/storage-inventory/inventory.json; K64 domain count",
+          "area_status": "MEASURED K64 slots and native metadata totals; ASSUMED binary ROM density; engine embedded books retained as conservative cache duplication",
+          "power_assumed_w": 0.035
+        },
+        {
+          "name": "shared_product_engine",
+          "selection_mm2": 0.0,
+          "rom_mm2": 0.0,
+          "sram_mm2": 0.0,
+          "logic_mm2": 12.274061273574,
+          "total_mm2": 12.274061273574,
+          "source": "overnight-20261014/fabric-k64/results.json",
+          "area_status": "MEASURED synthesis / ASSUMED 0.5 utilization",
+          "power_assumed_w": 0.15
+        },
+        {
+          "name": "encoder_dynamic_attention",
+          "selection_mm2": 0.0,
+          "rom_mm2": 0.0,
+          "sram_mm2": 0.0,
+          "logic_mm2": 18,
+          "total_mm2": 18.0,
+          "source": "W3 explicit allowance; no full-top mapped logic evidence",
+          "area_status": "ASSUMED dynamic-only logic allowance; fixed projection replaced by shared engine",
+          "power_assumed_w": 0.075
+        },
+        {
+          "name": "decoder_dynamic_attention",
+          "selection_mm2": 0.0,
+          "rom_mm2": 0.0,
+          "sram_mm2": 0.0,
+          "logic_mm2": 15,
+          "total_mm2": 15.0,
+          "source": "W3 explicit allowance; no full-top mapped logic evidence",
+          "area_status": "ASSUMED dynamic-only logic allowance; fixed projection replaced by shared engine",
+          "power_assumed_w": 0.06
+        },
+        {
+          "name": "producer_dynamic",
+          "selection_mm2": 0.0,
+          "rom_mm2": 0.0,
+          "sram_mm2": 0.0,
+          "logic_mm2": 6,
+          "total_mm2": 6.0,
+          "source": "W3 explicit allowance; no full-top mapped logic evidence",
+          "area_status": "ASSUMED dynamic-only logic allowance; fixed projection replaced by shared engine",
+          "power_assumed_w": 0.03
+        },
+        {
+          "name": "control_clock_IO_interface",
+          "selection_mm2": 0.0,
+          "rom_mm2": 0.0,
+          "sram_mm2": 0.0,
+          "logic_mm2": 12,
+          "total_mm2": 12.0,
+          "source": "W3 explicit allowance; no full-top mapped logic evidence",
+          "area_status": "ASSUMED dynamic-only logic allowance; fixed projection replaced by shared engine",
+          "power_assumed_w": 0.06
+        },
+        {
+          "name": "array_decoder_phase_mux_allowance",
+          "selection_mm2": 0.0,
+          "rom_mm2": 0.0,
+          "sram_mm2": 0.0,
+          "logic_mm2": 84.87599999999999,
+          "total_mm2": 84.87599999999999,
+          "source": "docs/TAALAS-TALL-BANK-BUDGET.md",
+          "area_status": "ASSUMED transfer of 56.584mm2 October nonreceiver component subtotal (1.79876um2/selection). Not separately measured W5 integrated periphery. Receiver strips already in W6 rectangle; not added again.",
+          "power_assumed_w": 0.02
+        },
+        {
+          "name": "mutable_arrays",
+          "selection_mm2": 0.0,
+          "rom_mm2": 0.0,
+          "sram_mm2": 593.83835898816,
+          "logic_mm2": 0,
+          "total_mm2": 593.83835898816,
+          "source": "overnight-20261014/storage-inventory/inventory.json; memory_allocation.json; SRAM LEFs",
+          "area_status": "MEASURED inventory/LEF x ASSUMED banking and10% internal placement allowance",
+          "power_assumed_w": 0.06
+        },
+        {
+          "name": "ordinary_registers",
+          "selection_mm2": 0.0,
+          "rom_mm2": 0.0,
+          "sram_mm2": 0.0,
+          "logic_mm2": 30.2419357184,
+          "total_mm2": 30.2419357184,
+          "source": "overnight-20261014/storage-inventory/inventory.json; gf180mcu7t dffq_1 Liberty area",
+          "area_status": "MEASURED bit count/63.6608um2 DFF; ASSUMED50% utilization. Conservative duplication versus engine/control internals not subtracted",
+          "power_assumed_w": 0.02
+        }
+      ]
+    },
+    {
+      "memory": "sram_4k_research",
+      "blocks": [
+        {
+          "name": "frontend_native_int8_lossless",
+          "selection_mm2": 0.0,
+          "rom_mm2": 36.788224,
+          "sram_mm2": 0.0,
+          "logic_mm2": 12,
+          "total_mm2": 48.788224,
+          "source": "overnight-20261014/accuracy-int8/existing-affine-int8-exact/manifest.json",
+          "area_status": "MEASURED payload2090240B; ASSUMED binary ROM1.76um2/bit x1.25;12mm2 frontend logic retains one separately-rounded FP32 multiply-add resource",
+          "power_assumed_w": 0.15
+        },
+        {
+          "name": "encoder_fabric_L0",
+          "selection_mm2": 6.80353572,
+          "rom_mm2": 0.0,
+          "sram_mm2": 0.0,
+          "logic_mm2": 0,
+          "total_mm2": 6.80353572,
+          "source": "overnight-20261014/taalas-pitch/results.json; frozen selection counts",
+          "area_status": "MEASURED W6 1280-row rectangle incl.readout; ASSUMED uniform density across model shapes/padding; qualification in pitch_verification",
+          "power_assumed_w": 0.025
+        },
+        {
+          "name": "encoder_fabric_L1",
+          "selection_mm2": 6.80353572,
+          "rom_mm2": 0.0,
+          "sram_mm2": 0.0,
+          "logic_mm2": 0,
+          "total_mm2": 6.80353572,
+          "source": "overnight-20261014/taalas-pitch/results.json; frozen selection counts",
+          "area_status": "MEASURED W6 1280-row rectangle incl.readout; ASSUMED uniform density across model shapes/padding; qualification in pitch_verification",
+          "power_assumed_w": 0.025
+        },
+        {
+          "name": "encoder_fabric_L2",
+          "selection_mm2": 6.80353572,
+          "rom_mm2": 0.0,
+          "sram_mm2": 0.0,
+          "logic_mm2": 0,
+          "total_mm2": 6.80353572,
+          "source": "overnight-20261014/taalas-pitch/results.json; frozen selection counts",
+          "area_status": "MEASURED W6 1280-row rectangle incl.readout; ASSUMED uniform density across model shapes/padding; qualification in pitch_verification",
+          "power_assumed_w": 0.025
+        },
+        {
+          "name": "encoder_fabric_L3",
+          "selection_mm2": 6.80353572,
+          "rom_mm2": 0.0,
+          "sram_mm2": 0.0,
+          "logic_mm2": 0,
+          "total_mm2": 6.80353572,
+          "source": "overnight-20261014/taalas-pitch/results.json; frozen selection counts",
+          "area_status": "MEASURED W6 1280-row rectangle incl.readout; ASSUMED uniform density across model shapes/padding; qualification in pitch_verification",
+          "power_assumed_w": 0.025
+        },
+        {
+          "name": "encoder_fabric_L4",
+          "selection_mm2": 6.80353572,
+          "rom_mm2": 0.0,
+          "sram_mm2": 0.0,
+          "logic_mm2": 0,
+          "total_mm2": 6.80353572,
+          "source": "overnight-20261014/taalas-pitch/results.json; frozen selection counts",
+          "area_status": "MEASURED W6 1280-row rectangle incl.readout; ASSUMED uniform density across model shapes/padding; qualification in pitch_verification",
+          "power_assumed_w": 0.025
+        },
+        {
+          "name": "encoder_fabric_L5",
+          "selection_mm2": 6.80353572,
+          "rom_mm2": 0.0,
+          "sram_mm2": 0.0,
+          "logic_mm2": 0,
+          "total_mm2": 6.80353572,
+          "source": "overnight-20261014/taalas-pitch/results.json; frozen selection counts",
+          "area_status": "MEASURED W6 1280-row rectangle incl.readout; ASSUMED uniform density across model shapes/padding; qualification in pitch_verification",
+          "power_assumed_w": 0.025
+        },
+        {
+          "name": "decoder_fabric_L0",
+          "selection_mm2": 10.20530358,
+          "rom_mm2": 0.0,
+          "sram_mm2": 0.0,
+          "logic_mm2": 0,
+          "total_mm2": 10.20530358,
+          "source": "overnight-20261014/taalas-pitch/results.json; frozen selection counts",
+          "area_status": "MEASURED W6 1280-row rectangle incl.readout; ASSUMED uniform density across model shapes/padding; qualification in pitch_verification",
+          "power_assumed_w": 0.025
+        },
+        {
+          "name": "decoder_fabric_L1",
+          "selection_mm2": 10.20530358,
+          "rom_mm2": 0.0,
+          "sram_mm2": 0.0,
+          "logic_mm2": 0,
+          "total_mm2": 10.20530358,
+          "source": "overnight-20261014/taalas-pitch/results.json; frozen selection counts",
+          "area_status": "MEASURED W6 1280-row rectangle incl.readout; ASSUMED uniform density across model shapes/padding; qualification in pitch_verification",
+          "power_assumed_w": 0.025
+        },
+        {
+          "name": "decoder_fabric_L2",
+          "selection_mm2": 10.20530358,
+          "rom_mm2": 0.0,
+          "sram_mm2": 0.0,
+          "logic_mm2": 0,
+          "total_mm2": 10.20530358,
+          "source": "overnight-20261014/taalas-pitch/results.json; frozen selection counts",
+          "area_status": "MEASURED W6 1280-row rectangle incl.readout; ASSUMED uniform density across model shapes/padding; qualification in pitch_verification",
+          "power_assumed_w": 0.025
+        },
+        {
+          "name": "decoder_fabric_L3",
+          "selection_mm2": 10.20530358,
+          "rom_mm2": 0.0,
+          "sram_mm2": 0.0,
+          "logic_mm2": 0,
+          "total_mm2": 10.20530358,
+          "source": "overnight-20261014/taalas-pitch/results.json; frozen selection counts",
+          "area_status": "MEASURED W6 1280-row rectangle incl.readout; ASSUMED uniform density across model shapes/padding; qualification in pitch_verification",
+          "power_assumed_w": 0.025
+        },
+        {
+          "name": "decoder_fabric_L4",
+          "selection_mm2": 10.20530358,
+          "rom_mm2": 0.0,
+          "sram_mm2": 0.0,
+          "logic_mm2": 0,
+          "total_mm2": 10.20530358,
+          "source": "overnight-20261014/taalas-pitch/results.json; frozen selection counts",
+          "area_status": "MEASURED W6 1280-row rectangle incl.readout; ASSUMED uniform density across model shapes/padding; qualification in pitch_verification",
+          "power_assumed_w": 0.025
+        },
+        {
+          "name": "decoder_fabric_L5",
+          "selection_mm2": 10.20530358,
+          "rom_mm2": 0.0,
+          "sram_mm2": 0.0,
+          "logic_mm2": 0,
+          "total_mm2": 10.20530358,
+          "source": "overnight-20261014/taalas-pitch/results.json; frozen selection counts",
+          "area_status": "MEASURED W6 1280-row rectangle incl.readout; ASSUMED uniform density across model shapes/padding; qualification in pitch_verification",
+          "power_assumed_w": 0.025
+        },
+        {
+          "name": "embedding_head_tied_once",
+          "selection_mm2": 58.056838144,
+          "rom_mm2": 0.0,
+          "sram_mm2": 0.0,
+          "logic_mm2": 0,
+          "total_mm2": 58.056838144,
+          "source": "overnight-20261014/taalas-pitch/results.json; frozen selection counts",
+          "area_status": "MEASURED W6 1280-row rectangle incl.readout; ASSUMED uniform density across model shapes/padding; qualification in pitch_verification",
+          "power_assumed_w": 0.08
+        },
+        {
+          "name": "producer_KV_and_positions",
+          "selection_mm2": 14.060640487999999,
+          "rom_mm2": 0.0,
+          "sram_mm2": 0.0,
+          "logic_mm2": 0,
+          "total_mm2": 14.060640487999999,
+          "source": "overnight-20261014/taalas-pitch/results.json; frozen selection counts",
+          "area_status": "MEASURED W6 1280-row rectangle incl.readout; ASSUMED uniform density across model shapes/padding; qualification in pitch_verification",
+          "power_assumed_w": 0.04
+        },
+        {
+          "name": "codebooks_and_other_metadata",
+          "selection_mm2": 0.0,
+          "rom_mm2": 94.74742601599999,
+          "sram_mm2": 0.0,
+          "logic_mm2": 0,
+          "total_mm2": 94.74742601599999,
+          "source": "overnight-20261014/storage-inventory/inventory.json; K64 domain count",
+          "area_status": "MEASURED K64 slots and native metadata totals; ASSUMED binary ROM density; engine embedded books retained as conservative cache duplication",
+          "power_assumed_w": 0.035
+        },
+        {
+          "name": "shared_product_engine",
+          "selection_mm2": 0.0,
+          "rom_mm2": 0.0,
+          "sram_mm2": 0.0,
+          "logic_mm2": 12.274061273574,
+          "total_mm2": 12.274061273574,
+          "source": "overnight-20261014/fabric-k64/results.json",
+          "area_status": "MEASURED synthesis / ASSUMED 0.5 utilization",
+          "power_assumed_w": 0.15
+        },
+        {
+          "name": "encoder_dynamic_attention",
+          "selection_mm2": 0.0,
+          "rom_mm2": 0.0,
+          "sram_mm2": 0.0,
+          "logic_mm2": 18,
+          "total_mm2": 18.0,
+          "source": "W3 explicit allowance; no full-top mapped logic evidence",
+          "area_status": "ASSUMED dynamic-only logic allowance; fixed projection replaced by shared engine",
+          "power_assumed_w": 0.075
+        },
+        {
+          "name": "decoder_dynamic_attention",
+          "selection_mm2": 0.0,
+          "rom_mm2": 0.0,
+          "sram_mm2": 0.0,
+          "logic_mm2": 15,
+          "total_mm2": 15.0,
+          "source": "W3 explicit allowance; no full-top mapped logic evidence",
+          "area_status": "ASSUMED dynamic-only logic allowance; fixed projection replaced by shared engine",
+          "power_assumed_w": 0.06
+        },
+        {
+          "name": "producer_dynamic",
+          "selection_mm2": 0.0,
+          "rom_mm2": 0.0,
+          "sram_mm2": 0.0,
+          "logic_mm2": 6,
+          "total_mm2": 6.0,
+          "source": "W3 explicit allowance; no full-top mapped logic evidence",
+          "area_status": "ASSUMED dynamic-only logic allowance; fixed projection replaced by shared engine",
+          "power_assumed_w": 0.03
+        },
+        {
+          "name": "control_clock_IO_interface",
+          "selection_mm2": 0.0,
+          "rom_mm2": 0.0,
+          "sram_mm2": 0.0,
+          "logic_mm2": 12,
+          "total_mm2": 12.0,
+          "source": "W3 explicit allowance; no full-top mapped logic evidence",
+          "area_status": "ASSUMED dynamic-only logic allowance; fixed projection replaced by shared engine",
+          "power_assumed_w": 0.06
+        },
+        {
+          "name": "array_decoder_phase_mux_allowance",
+          "selection_mm2": 0.0,
+          "rom_mm2": 0.0,
+          "sram_mm2": 0.0,
+          "logic_mm2": 84.87599999999999,
+          "total_mm2": 84.87599999999999,
+          "source": "docs/TAALAS-TALL-BANK-BUDGET.md",
+          "area_status": "ASSUMED transfer of 56.584mm2 October nonreceiver component subtotal (1.79876um2/selection). Not separately measured W5 integrated periphery. Receiver strips already in W6 rectangle; not added again.",
+          "power_assumed_w": 0.02
+        },
+        {
+          "name": "mutable_arrays",
+          "selection_mm2": 0.0,
+          "rom_mm2": 0.0,
+          "sram_mm2": 553.7174244940801,
+          "logic_mm2": 0,
+          "total_mm2": 553.7174244940801,
+          "source": "overnight-20261014/storage-inventory/inventory.json; memory_allocation.json; SRAM LEFs",
+          "area_status": "MEASURED inventory/LEF x ASSUMED banking and10% internal placement allowance",
+          "power_assumed_w": 0.06
+        },
+        {
+          "name": "ordinary_registers",
+          "selection_mm2": 0.0,
+          "rom_mm2": 0.0,
+          "sram_mm2": 0.0,
+          "logic_mm2": 30.2419357184,
+          "total_mm2": 30.2419357184,
+          "source": "overnight-20261014/storage-inventory/inventory.json; gf180mcu7t dffq_1 Liberty area",
+          "area_status": "MEASURED bit count/63.6608um2 DFF; ASSUMED50% utilization. Conservative duplication versus engine/control internals not subtracted",
+          "power_assumed_w": 0.02
+        }
+      ]
+    },
+    {
+      "memory": "sram_dense_custom",
+      "blocks": [
+        {
+          "name": "frontend_native_int8_lossless",
+          "selection_mm2": 0.0,
+          "rom_mm2": 36.788224,
+          "sram_mm2": 0.0,
+          "logic_mm2": 12,
+          "total_mm2": 48.788224,
+          "source": "overnight-20261014/accuracy-int8/existing-affine-int8-exact/manifest.json",
+          "area_status": "MEASURED payload2090240B; ASSUMED binary ROM1.76um2/bit x1.25;12mm2 frontend logic retains one separately-rounded FP32 multiply-add resource",
+          "power_assumed_w": 0.15
+        },
+        {
+          "name": "encoder_fabric_L0",
+          "selection_mm2": 6.80353572,
+          "rom_mm2": 0.0,
+          "sram_mm2": 0.0,
+          "logic_mm2": 0,
+          "total_mm2": 6.80353572,
+          "source": "overnight-20261014/taalas-pitch/results.json; frozen selection counts",
+          "area_status": "MEASURED W6 1280-row rectangle incl.readout; ASSUMED uniform density across model shapes/padding; qualification in pitch_verification",
+          "power_assumed_w": 0.025
+        },
+        {
+          "name": "encoder_fabric_L1",
+          "selection_mm2": 6.80353572,
+          "rom_mm2": 0.0,
+          "sram_mm2": 0.0,
+          "logic_mm2": 0,
+          "total_mm2": 6.80353572,
+          "source": "overnight-20261014/taalas-pitch/results.json; frozen selection counts",
+          "area_status": "MEASURED W6 1280-row rectangle incl.readout; ASSUMED uniform density across model shapes/padding; qualification in pitch_verification",
+          "power_assumed_w": 0.025
+        },
+        {
+          "name": "encoder_fabric_L2",
+          "selection_mm2": 6.80353572,
+          "rom_mm2": 0.0,
+          "sram_mm2": 0.0,
+          "logic_mm2": 0,
+          "total_mm2": 6.80353572,
+          "source": "overnight-20261014/taalas-pitch/results.json; frozen selection counts",
+          "area_status": "MEASURED W6 1280-row rectangle incl.readout; ASSUMED uniform density across model shapes/padding; qualification in pitch_verification",
+          "power_assumed_w": 0.025
+        },
+        {
+          "name": "encoder_fabric_L3",
+          "selection_mm2": 6.80353572,
+          "rom_mm2": 0.0,
+          "sram_mm2": 0.0,
+          "logic_mm2": 0,
+          "total_mm2": 6.80353572,
+          "source": "overnight-20261014/taalas-pitch/results.json; frozen selection counts",
+          "area_status": "MEASURED W6 1280-row rectangle incl.readout; ASSUMED uniform density across model shapes/padding; qualification in pitch_verification",
+          "power_assumed_w": 0.025
+        },
+        {
+          "name": "encoder_fabric_L4",
+          "selection_mm2": 6.80353572,
+          "rom_mm2": 0.0,
+          "sram_mm2": 0.0,
+          "logic_mm2": 0,
+          "total_mm2": 6.80353572,
+          "source": "overnight-20261014/taalas-pitch/results.json; frozen selection counts",
+          "area_status": "MEASURED W6 1280-row rectangle incl.readout; ASSUMED uniform density across model shapes/padding; qualification in pitch_verification",
+          "power_assumed_w": 0.025
+        },
+        {
+          "name": "encoder_fabric_L5",
+          "selection_mm2": 6.80353572,
+          "rom_mm2": 0.0,
+          "sram_mm2": 0.0,
+          "logic_mm2": 0,
+          "total_mm2": 6.80353572,
+          "source": "overnight-20261014/taalas-pitch/results.json; frozen selection counts",
+          "area_status": "MEASURED W6 1280-row rectangle incl.readout; ASSUMED uniform density across model shapes/padding; qualification in pitch_verification",
+          "power_assumed_w": 0.025
+        },
+        {
+          "name": "decoder_fabric_L0",
+          "selection_mm2": 10.20530358,
+          "rom_mm2": 0.0,
+          "sram_mm2": 0.0,
+          "logic_mm2": 0,
+          "total_mm2": 10.20530358,
+          "source": "overnight-20261014/taalas-pitch/results.json; frozen selection counts",
+          "area_status": "MEASURED W6 1280-row rectangle incl.readout; ASSUMED uniform density across model shapes/padding; qualification in pitch_verification",
+          "power_assumed_w": 0.025
+        },
+        {
+          "name": "decoder_fabric_L1",
+          "selection_mm2": 10.20530358,
+          "rom_mm2": 0.0,
+          "sram_mm2": 0.0,
+          "logic_mm2": 0,
+          "total_mm2": 10.20530358,
+          "source": "overnight-20261014/taalas-pitch/results.json; frozen selection counts",
+          "area_status": "MEASURED W6 1280-row rectangle incl.readout; ASSUMED uniform density across model shapes/padding; qualification in pitch_verification",
+          "power_assumed_w": 0.025
+        },
+        {
+          "name": "decoder_fabric_L2",
+          "selection_mm2": 10.20530358,
+          "rom_mm2": 0.0,
+          "sram_mm2": 0.0,
+          "logic_mm2": 0,
+          "total_mm2": 10.20530358,
+          "source": "overnight-20261014/taalas-pitch/results.json; frozen selection counts",
+          "area_status": "MEASURED W6 1280-row rectangle incl.readout; ASSUMED uniform density across model shapes/padding; qualification in pitch_verification",
+          "power_assumed_w": 0.025
+        },
+        {
+          "name": "decoder_fabric_L3",
+          "selection_mm2": 10.20530358,
+          "rom_mm2": 0.0,
+          "sram_mm2": 0.0,
+          "logic_mm2": 0,
+          "total_mm2": 10.20530358,
+          "source": "overnight-20261014/taalas-pitch/results.json; frozen selection counts",
+          "area_status": "MEASURED W6 1280-row rectangle incl.readout; ASSUMED uniform density across model shapes/padding; qualification in pitch_verification",
+          "power_assumed_w": 0.025
+        },
+        {
+          "name": "decoder_fabric_L4",
+          "selection_mm2": 10.20530358,
+          "rom_mm2": 0.0,
+          "sram_mm2": 0.0,
+          "logic_mm2": 0,
+          "total_mm2": 10.20530358,
+          "source": "overnight-20261014/taalas-pitch/results.json; frozen selection counts",
+          "area_status": "MEASURED W6 1280-row rectangle incl.readout; ASSUMED uniform density across model shapes/padding; qualification in pitch_verification",
+          "power_assumed_w": 0.025
+        },
+        {
+          "name": "decoder_fabric_L5",
+          "selection_mm2": 10.20530358,
+          "rom_mm2": 0.0,
+          "sram_mm2": 0.0,
+          "logic_mm2": 0,
+          "total_mm2": 10.20530358,
+          "source": "overnight-20261014/taalas-pitch/results.json; frozen selection counts",
+          "area_status": "MEASURED W6 1280-row rectangle incl.readout; ASSUMED uniform density across model shapes/padding; qualification in pitch_verification",
+          "power_assumed_w": 0.025
+        },
+        {
+          "name": "embedding_head_tied_once",
+          "selection_mm2": 58.056838144,
+          "rom_mm2": 0.0,
+          "sram_mm2": 0.0,
+          "logic_mm2": 0,
+          "total_mm2": 58.056838144,
+          "source": "overnight-20261014/taalas-pitch/results.json; frozen selection counts",
+          "area_status": "MEASURED W6 1280-row rectangle incl.readout; ASSUMED uniform density across model shapes/padding; qualification in pitch_verification",
+          "power_assumed_w": 0.08
+        },
+        {
+          "name": "producer_KV_and_positions",
+          "selection_mm2": 14.060640487999999,
+          "rom_mm2": 0.0,
+          "sram_mm2": 0.0,
+          "logic_mm2": 0,
+          "total_mm2": 14.060640487999999,
+          "source": "overnight-20261014/taalas-pitch/results.json; frozen selection counts",
+          "area_status": "MEASURED W6 1280-row rectangle incl.readout; ASSUMED uniform density across model shapes/padding; qualification in pitch_verification",
+          "power_assumed_w": 0.04
+        },
+        {
+          "name": "codebooks_and_other_metadata",
+          "selection_mm2": 0.0,
+          "rom_mm2": 94.74742601599999,
+          "sram_mm2": 0.0,
+          "logic_mm2": 0,
+          "total_mm2": 94.74742601599999,
+          "source": "overnight-20261014/storage-inventory/inventory.json; K64 domain count",
+          "area_status": "MEASURED K64 slots and native metadata totals; ASSUMED binary ROM density; engine embedded books retained as conservative cache duplication",
+          "power_assumed_w": 0.035
+        },
+        {
+          "name": "shared_product_engine",
+          "selection_mm2": 0.0,
+          "rom_mm2": 0.0,
+          "sram_mm2": 0.0,
+          "logic_mm2": 12.274061273574,
+          "total_mm2": 12.274061273574,
+          "source": "overnight-20261014/fabric-k64/results.json",
+          "area_status": "MEASURED synthesis / ASSUMED 0.5 utilization",
+          "power_assumed_w": 0.15
+        },
+        {
+          "name": "encoder_dynamic_attention",
+          "selection_mm2": 0.0,
+          "rom_mm2": 0.0,
+          "sram_mm2": 0.0,
+          "logic_mm2": 18,
+          "total_mm2": 18.0,
+          "source": "W3 explicit allowance; no full-top mapped logic evidence",
+          "area_status": "ASSUMED dynamic-only logic allowance; fixed projection replaced by shared engine",
+          "power_assumed_w": 0.075
+        },
+        {
+          "name": "decoder_dynamic_attention",
+          "selection_mm2": 0.0,
+          "rom_mm2": 0.0,
+          "sram_mm2": 0.0,
+          "logic_mm2": 15,
+          "total_mm2": 15.0,
+          "source": "W3 explicit allowance; no full-top mapped logic evidence",
+          "area_status": "ASSUMED dynamic-only logic allowance; fixed projection replaced by shared engine",
+          "power_assumed_w": 0.06
+        },
+        {
+          "name": "producer_dynamic",
+          "selection_mm2": 0.0,
+          "rom_mm2": 0.0,
+          "sram_mm2": 0.0,
+          "logic_mm2": 6,
+          "total_mm2": 6.0,
+          "source": "W3 explicit allowance; no full-top mapped logic evidence",
+          "area_status": "ASSUMED dynamic-only logic allowance; fixed projection replaced by shared engine",
+          "power_assumed_w": 0.03
+        },
+        {
+          "name": "control_clock_IO_interface",
+          "selection_mm2": 0.0,
+          "rom_mm2": 0.0,
+          "sram_mm2": 0.0,
+          "logic_mm2": 12,
+          "total_mm2": 12.0,
+          "source": "W3 explicit allowance; no full-top mapped logic evidence",
+          "area_status": "ASSUMED dynamic-only logic allowance; fixed projection replaced by shared engine",
+          "power_assumed_w": 0.06
+        },
+        {
+          "name": "array_decoder_phase_mux_allowance",
+          "selection_mm2": 0.0,
+          "rom_mm2": 0.0,
+          "sram_mm2": 0.0,
+          "logic_mm2": 84.87599999999999,
+          "total_mm2": 84.87599999999999,
+          "source": "docs/TAALAS-TALL-BANK-BUDGET.md",
+          "area_status": "ASSUMED transfer of 56.584mm2 October nonreceiver component subtotal (1.79876um2/selection). Not separately measured W5 integrated periphery. Receiver strips already in W6 rectangle; not added again.",
+          "power_assumed_w": 0.02
+        },
+        {
+          "name": "mutable_arrays",
+          "selection_mm2": 0.0,
+          "rom_mm2": 0.0,
+          "sram_mm2": 112.2239976,
+          "logic_mm2": 0,
+          "total_mm2": 112.2239976,
+          "source": "overnight-20261014/storage-inventory/inventory.json; memory_allocation.json; SRAM LEFs",
+          "area_status": "MEASURED inventory/LEF x ASSUMED banking and10% internal placement allowance",
+          "power_assumed_w": 0.06
+        },
+        {
+          "name": "ordinary_registers",
+          "selection_mm2": 0.0,
+          "rom_mm2": 0.0,
+          "sram_mm2": 0.0,
+          "logic_mm2": 30.2419357184,
+          "total_mm2": 30.2419357184,
+          "source": "overnight-20261014/storage-inventory/inventory.json; gf180mcu7t dffq_1 Liberty area",
+          "area_status": "MEASURED bit count/63.6608um2 DFF; ASSUMED50% utilization. Conservative duplication versus engine/control internals not subtracted",
+          "power_assumed_w": 0.02
+        }
+      ]
+    },
+    {
+      "memory": "sram_bitcell_large_macro",
+      "blocks": [
+        {
+          "name": "frontend_native_int8_lossless",
+          "selection_mm2": 0.0,
+          "rom_mm2": 36.788224,
+          "sram_mm2": 0.0,
+          "logic_mm2": 12,
+          "total_mm2": 48.788224,
+          "source": "overnight-20261014/accuracy-int8/existing-affine-int8-exact/manifest.json",
+          "area_status": "MEASURED payload2090240B; ASSUMED binary ROM1.76um2/bit x1.25;12mm2 frontend logic retains one separately-rounded FP32 multiply-add resource",
+          "power_assumed_w": 0.15
+        },
+        {
+          "name": "encoder_fabric_L0",
+          "selection_mm2": 6.80353572,
+          "rom_mm2": 0.0,
+          "sram_mm2": 0.0,
+          "logic_mm2": 0,
+          "total_mm2": 6.80353572,
+          "source": "overnight-20261014/taalas-pitch/results.json; frozen selection counts",
+          "area_status": "MEASURED W6 1280-row rectangle incl.readout; ASSUMED uniform density across model shapes/padding; qualification in pitch_verification",
+          "power_assumed_w": 0.025
+        },
+        {
+          "name": "encoder_fabric_L1",
+          "selection_mm2": 6.80353572,
+          "rom_mm2": 0.0,
+          "sram_mm2": 0.0,
+          "logic_mm2": 0,
+          "total_mm2": 6.80353572,
+          "source": "overnight-20261014/taalas-pitch/results.json; frozen selection counts",
+          "area_status": "MEASURED W6 1280-row rectangle incl.readout; ASSUMED uniform density across model shapes/padding; qualification in pitch_verification",
+          "power_assumed_w": 0.025
+        },
+        {
+          "name": "encoder_fabric_L2",
+          "selection_mm2": 6.80353572,
+          "rom_mm2": 0.0,
+          "sram_mm2": 0.0,
+          "logic_mm2": 0,
+          "total_mm2": 6.80353572,
+          "source": "overnight-20261014/taalas-pitch/results.json; frozen selection counts",
+          "area_status": "MEASURED W6 1280-row rectangle incl.readout; ASSUMED uniform density across model shapes/padding; qualification in pitch_verification",
+          "power_assumed_w": 0.025
+        },
+        {
+          "name": "encoder_fabric_L3",
+          "selection_mm2": 6.80353572,
+          "rom_mm2": 0.0,
+          "sram_mm2": 0.0,
+          "logic_mm2": 0,
+          "total_mm2": 6.80353572,
+          "source": "overnight-20261014/taalas-pitch/results.json; frozen selection counts",
+          "area_status": "MEASURED W6 1280-row rectangle incl.readout; ASSUMED uniform density across model shapes/padding; qualification in pitch_verification",
+          "power_assumed_w": 0.025
+        },
+        {
+          "name": "encoder_fabric_L4",
+          "selection_mm2": 6.80353572,
+          "rom_mm2": 0.0,
+          "sram_mm2": 0.0,
+          "logic_mm2": 0,
+          "total_mm2": 6.80353572,
+          "source": "overnight-20261014/taalas-pitch/results.json; frozen selection counts",
+          "area_status": "MEASURED W6 1280-row rectangle incl.readout; ASSUMED uniform density across model shapes/padding; qualification in pitch_verification",
+          "power_assumed_w": 0.025
+        },
+        {
+          "name": "encoder_fabric_L5",
+          "selection_mm2": 6.80353572,
+          "rom_mm2": 0.0,
+          "sram_mm2": 0.0,
+          "logic_mm2": 0,
+          "total_mm2": 6.80353572,
+          "source": "overnight-20261014/taalas-pitch/results.json; frozen selection counts",
+          "area_status": "MEASURED W6 1280-row rectangle incl.readout; ASSUMED uniform density across model shapes/padding; qualification in pitch_verification",
+          "power_assumed_w": 0.025
+        },
+        {
+          "name": "decoder_fabric_L0",
+          "selection_mm2": 10.20530358,
+          "rom_mm2": 0.0,
+          "sram_mm2": 0.0,
+          "logic_mm2": 0,
+          "total_mm2": 10.20530358,
+          "source": "overnight-20261014/taalas-pitch/results.json; frozen selection counts",
+          "area_status": "MEASURED W6 1280-row rectangle incl.readout; ASSUMED uniform density across model shapes/padding; qualification in pitch_verification",
+          "power_assumed_w": 0.025
+        },
+        {
+          "name": "decoder_fabric_L1",
+          "selection_mm2": 10.20530358,
+          "rom_mm2": 0.0,
+          "sram_mm2": 0.0,
+          "logic_mm2": 0,
+          "total_mm2": 10.20530358,
+          "source": "overnight-20261014/taalas-pitch/results.json; frozen selection counts",
+          "area_status": "MEASURED W6 1280-row rectangle incl.readout; ASSUMED uniform density across model shapes/padding; qualification in pitch_verification",
+          "power_assumed_w": 0.025
+        },
+        {
+          "name": "decoder_fabric_L2",
+          "selection_mm2": 10.20530358,
+          "rom_mm2": 0.0,
+          "sram_mm2": 0.0,
+          "logic_mm2": 0,
+          "total_mm2": 10.20530358,
+          "source": "overnight-20261014/taalas-pitch/results.json; frozen selection counts",
+          "area_status": "MEASURED W6 1280-row rectangle incl.readout; ASSUMED uniform density across model shapes/padding; qualification in pitch_verification",
+          "power_assumed_w": 0.025
+        },
+        {
+          "name": "decoder_fabric_L3",
+          "selection_mm2": 10.20530358,
+          "rom_mm2": 0.0,
+          "sram_mm2": 0.0,
+          "logic_mm2": 0,
+          "total_mm2": 10.20530358,
+          "source": "overnight-20261014/taalas-pitch/results.json; frozen selection counts",
+          "area_status": "MEASURED W6 1280-row rectangle incl.readout; ASSUMED uniform density across model shapes/padding; qualification in pitch_verification",
+          "power_assumed_w": 0.025
+        },
+        {
+          "name": "decoder_fabric_L4",
+          "selection_mm2": 10.20530358,
+          "rom_mm2": 0.0,
+          "sram_mm2": 0.0,
+          "logic_mm2": 0,
+          "total_mm2": 10.20530358,
+          "source": "overnight-20261014/taalas-pitch/results.json; frozen selection counts",
+          "area_status": "MEASURED W6 1280-row rectangle incl.readout; ASSUMED uniform density across model shapes/padding; qualification in pitch_verification",
+          "power_assumed_w": 0.025
+        },
+        {
+          "name": "decoder_fabric_L5",
+          "selection_mm2": 10.20530358,
+          "rom_mm2": 0.0,
+          "sram_mm2": 0.0,
+          "logic_mm2": 0,
+          "total_mm2": 10.20530358,
+          "source": "overnight-20261014/taalas-pitch/results.json; frozen selection counts",
+          "area_status": "MEASURED W6 1280-row rectangle incl.readout; ASSUMED uniform density across model shapes/padding; qualification in pitch_verification",
+          "power_assumed_w": 0.025
+        },
+        {
+          "name": "embedding_head_tied_once",
+          "selection_mm2": 58.056838144,
+          "rom_mm2": 0.0,
+          "sram_mm2": 0.0,
+          "logic_mm2": 0,
+          "total_mm2": 58.056838144,
+          "source": "overnight-20261014/taalas-pitch/results.json; frozen selection counts",
+          "area_status": "MEASURED W6 1280-row rectangle incl.readout; ASSUMED uniform density across model shapes/padding; qualification in pitch_verification",
+          "power_assumed_w": 0.08
+        },
+        {
+          "name": "producer_KV_and_positions",
+          "selection_mm2": 14.060640487999999,
+          "rom_mm2": 0.0,
+          "sram_mm2": 0.0,
+          "logic_mm2": 0,
+          "total_mm2": 14.060640487999999,
+          "source": "overnight-20261014/taalas-pitch/results.json; frozen selection counts",
+          "area_status": "MEASURED W6 1280-row rectangle incl.readout; ASSUMED uniform density across model shapes/padding; qualification in pitch_verification",
+          "power_assumed_w": 0.04
+        },
+        {
+          "name": "codebooks_and_other_metadata",
+          "selection_mm2": 0.0,
+          "rom_mm2": 94.74742601599999,
+          "sram_mm2": 0.0,
+          "logic_mm2": 0,
+          "total_mm2": 94.74742601599999,
+          "source": "overnight-20261014/storage-inventory/inventory.json; K64 domain count",
+          "area_status": "MEASURED K64 slots and native metadata totals; ASSUMED binary ROM density; engine embedded books retained as conservative cache duplication",
+          "power_assumed_w": 0.035
+        },
+        {
+          "name": "shared_product_engine",
+          "selection_mm2": 0.0,
+          "rom_mm2": 0.0,
+          "sram_mm2": 0.0,
+          "logic_mm2": 12.274061273574,
+          "total_mm2": 12.274061273574,
+          "source": "overnight-20261014/fabric-k64/results.json",
+          "area_status": "MEASURED synthesis / ASSUMED 0.5 utilization",
+          "power_assumed_w": 0.15
+        },
+        {
+          "name": "encoder_dynamic_attention",
+          "selection_mm2": 0.0,
+          "rom_mm2": 0.0,
+          "sram_mm2": 0.0,
+          "logic_mm2": 18,
+          "total_mm2": 18.0,
+          "source": "W3 explicit allowance; no full-top mapped logic evidence",
+          "area_status": "ASSUMED dynamic-only logic allowance; fixed projection replaced by shared engine",
+          "power_assumed_w": 0.075
+        },
+        {
+          "name": "decoder_dynamic_attention",
+          "selection_mm2": 0.0,
+          "rom_mm2": 0.0,
+          "sram_mm2": 0.0,
+          "logic_mm2": 15,
+          "total_mm2": 15.0,
+          "source": "W3 explicit allowance; no full-top mapped logic evidence",
+          "area_status": "ASSUMED dynamic-only logic allowance; fixed projection replaced by shared engine",
+          "power_assumed_w": 0.06
+        },
+        {
+          "name": "producer_dynamic",
+          "selection_mm2": 0.0,
+          "rom_mm2": 0.0,
+          "sram_mm2": 0.0,
+          "logic_mm2": 6,
+          "total_mm2": 6.0,
+          "source": "W3 explicit allowance; no full-top mapped logic evidence",
+          "area_status": "ASSUMED dynamic-only logic allowance; fixed projection replaced by shared engine",
+          "power_assumed_w": 0.03
+        },
+        {
+          "name": "control_clock_IO_interface",
+          "selection_mm2": 0.0,
+          "rom_mm2": 0.0,
+          "sram_mm2": 0.0,
+          "logic_mm2": 12,
+          "total_mm2": 12.0,
+          "source": "W3 explicit allowance; no full-top mapped logic evidence",
+          "area_status": "ASSUMED dynamic-only logic allowance; fixed projection replaced by shared engine",
+          "power_assumed_w": 0.06
+        },
+        {
+          "name": "array_decoder_phase_mux_allowance",
+          "selection_mm2": 0.0,
+          "rom_mm2": 0.0,
+          "sram_mm2": 0.0,
+          "logic_mm2": 84.87599999999999,
+          "total_mm2": 84.87599999999999,
+          "source": "docs/TAALAS-TALL-BANK-BUDGET.md",
+          "area_status": "ASSUMED transfer of 56.584mm2 October nonreceiver component subtotal (1.79876um2/selection). Not separately measured W5 integrated periphery. Receiver strips already in W6 rectangle; not added again.",
+          "power_assumed_w": 0.02
+        },
+        {
+          "name": "mutable_arrays",
+          "selection_mm2": 0.0,
+          "rom_mm2": 0.0,
+          "sram_mm2": 237.80799491428576,
+          "logic_mm2": 0,
+          "total_mm2": 237.80799491428576,
+          "source": "overnight-20261014/storage-inventory/inventory.json; memory_allocation.json; SRAM LEFs",
+          "area_status": "MEASURED inventory/LEF x ASSUMED banking and10% internal placement allowance",
+          "power_assumed_w": 0.06
+        },
+        {
+          "name": "ordinary_registers",
+          "selection_mm2": 0.0,
+          "rom_mm2": 0.0,
+          "sram_mm2": 0.0,
+          "logic_mm2": 30.2419357184,
+          "total_mm2": 30.2419357184,
+          "source": "overnight-20261014/storage-inventory/inventory.json; gf180mcu7t dffq_1 Liberty area",
+          "area_status": "MEASURED bit count/63.6608um2 DFF; ASSUMED50% utilization. Conservative duplication versus engine/control internals not subtracted",
+          "power_assumed_w": 0.02
+        }
+      ]
+    }
+  ],
+  "physical_cases": [
+    {
+      "memory": "sram_bitcell_large_macro",
+      "levers": "lossless",
+      "state": "baseline",
+      "scenario": "final_pitch",
+      "partition": "whole",
+      "die_mm": 29.0,
+      "die_width_mm": 29.0,
+      "die_height_mm": 31.0,
+      "block_area_mm2": 733.9061563542598,
+      "abstract_rect_area_mm2": 734.695325,
+      "core_area_mm2": 816.96,
+      "placement_pass": true,
+      "pdn_pass": true,
+      "worst_ir_drop_v": 0.0476,
+      "power_assumed_w": 1.08,
+      "supply_pad_pairs": 48,
+      "signal_pad_count": 16,
+      "pad_count": 112,
+      "areas": [
+        {
+          "name": "frontend_native_int8_lossless",
+          "area_mm2": 48.788224,
+          "tiles": 6,
+          "area_breakdown": {
+            "selection_mm2": 0.0,
+            "rom_mm2": 36.788224,
+            "sram_mm2": 0.0,
+            "logic_mm2": 12,
+            "total_mm2": 48.788224
+          },
+          "power_w": 0.15
+        },
+        {
+          "name": "encoder_fabric_L0",
+          "area_mm2": 6.80353572,
+          "tiles": 1,
+          "area_breakdown": {
+            "selection_mm2": 6.80353572,
+            "rom_mm2": 0.0,
+            "sram_mm2": 0.0,
+            "logic_mm2": 0,
+            "total_mm2": 6.80353572
+          },
+          "power_w": 0.025
+        },
+        {
+          "name": "encoder_fabric_L1",
+          "area_mm2": 6.80353572,
+          "tiles": 1,
+          "area_breakdown": {
+            "selection_mm2": 6.80353572,
+            "rom_mm2": 0.0,
+            "sram_mm2": 0.0,
+            "logic_mm2": 0,
+            "total_mm2": 6.80353572
+          },
+          "power_w": 0.025
+        },
+        {
+          "name": "encoder_fabric_L2",
+          "area_mm2": 6.80353572,
+          "tiles": 1,
+          "area_breakdown": {
+            "selection_mm2": 6.80353572,
+            "rom_mm2": 0.0,
+            "sram_mm2": 0.0,
+            "logic_mm2": 0,
+            "total_mm2": 6.80353572
+          },
+          "power_w": 0.025
+        },
+        {
+          "name": "encoder_fabric_L3",
+          "area_mm2": 6.80353572,
+          "tiles": 1,
+          "area_breakdown": {
+            "selection_mm2": 6.80353572,
+            "rom_mm2": 0.0,
+            "sram_mm2": 0.0,
+            "logic_mm2": 0,
+            "total_mm2": 6.80353572
+          },
+          "power_w": 0.025
+        },
+        {
+          "name": "encoder_fabric_L4",
+          "area_mm2": 6.80353572,
+          "tiles": 1,
+          "area_breakdown": {
+            "selection_mm2": 6.80353572,
+            "rom_mm2": 0.0,
+            "sram_mm2": 0.0,
+            "logic_mm2": 0,
+            "total_mm2": 6.80353572
+          },
+          "power_w": 0.025
+        },
+        {
+          "name": "encoder_fabric_L5",
+          "area_mm2": 6.80353572,
+          "tiles": 1,
+          "area_breakdown": {
+            "selection_mm2": 6.80353572,
+            "rom_mm2": 0.0,
+            "sram_mm2": 0.0,
+            "logic_mm2": 0,
+            "total_mm2": 6.80353572
+          },
+          "power_w": 0.025
+        },
+        {
+          "name": "decoder_fabric_L0",
+          "area_mm2": 10.20530358,
+          "tiles": 2,
+          "area_breakdown": {
+            "selection_mm2": 10.20530358,
+            "rom_mm2": 0.0,
+            "sram_mm2": 0.0,
+            "logic_mm2": 0,
+            "total_mm2": 10.20530358
+          },
+          "power_w": 0.025
+        },
+        {
+          "name": "decoder_fabric_L1",
+          "area_mm2": 10.20530358,
+          "tiles": 2,
+          "area_breakdown": {
+            "selection_mm2": 10.20530358,
+            "rom_mm2": 0.0,
+            "sram_mm2": 0.0,
+            "logic_mm2": 0,
+            "total_mm2": 10.20530358
+          },
+          "power_w": 0.025
+        },
+        {
+          "name": "decoder_fabric_L2",
+          "area_mm2": 10.20530358,
+          "tiles": 2,
+          "area_breakdown": {
+            "selection_mm2": 10.20530358,
+            "rom_mm2": 0.0,
+            "sram_mm2": 0.0,
+            "logic_mm2": 0,
+            "total_mm2": 10.20530358
+          },
+          "power_w": 0.025
+        },
+        {
+          "name": "decoder_fabric_L3",
+          "area_mm2": 10.20530358,
+          "tiles": 2,
+          "area_breakdown": {
+            "selection_mm2": 10.20530358,
+            "rom_mm2": 0.0,
+            "sram_mm2": 0.0,
+            "logic_mm2": 0,
+            "total_mm2": 10.20530358
+          },
+          "power_w": 0.025
+        },
+        {
+          "name": "decoder_fabric_L4",
+          "area_mm2": 10.20530358,
+          "tiles": 2,
+          "area_breakdown": {
+            "selection_mm2": 10.20530358,
+            "rom_mm2": 0.0,
+            "sram_mm2": 0.0,
+            "logic_mm2": 0,
+            "total_mm2": 10.20530358
+          },
+          "power_w": 0.025
+        },
+        {
+          "name": "decoder_fabric_L5",
+          "area_mm2": 10.20530358,
+          "tiles": 2,
+          "area_breakdown": {
+            "selection_mm2": 10.20530358,
+            "rom_mm2": 0.0,
+            "sram_mm2": 0.0,
+            "logic_mm2": 0,
+            "total_mm2": 10.20530358
+          },
+          "power_w": 0.025
+        },
+        {
+          "name": "embedding_head_tied_once",
+          "area_mm2": 58.056838144,
+          "tiles": 7,
+          "area_breakdown": {
+            "selection_mm2": 58.056838144,
+            "rom_mm2": 0.0,
+            "sram_mm2": 0.0,
+            "logic_mm2": 0,
+            "total_mm2": 58.056838144
+          },
+          "power_w": 0.08
+        },
+        {
+          "name": "producer_KV_and_positions",
+          "area_mm2": 14.060640487999999,
+          "tiles": 2,
+          "area_breakdown": {
+            "selection_mm2": 14.060640487999999,
+            "rom_mm2": 0.0,
+            "sram_mm2": 0.0,
+            "logic_mm2": 0,
+            "total_mm2": 14.060640487999999
+          },
+          "power_w": 0.04
+        },
+        {
+          "name": "codebooks_and_other_metadata",
+          "area_mm2": 94.74742601599999,
+          "tiles": 11,
+          "area_breakdown": {
+            "selection_mm2": 0.0,
+            "rom_mm2": 94.74742601599999,
+            "sram_mm2": 0.0,
+            "logic_mm2": 0,
+            "total_mm2": 94.74742601599999
+          },
+          "power_w": 0.035
+        },
+        {
+          "name": "shared_product_engine",
+          "area_mm2": 12.274061273574,
+          "tiles": 2,
+          "area_breakdown": {
+            "selection_mm2": 0.0,
+            "rom_mm2": 0.0,
+            "sram_mm2": 0.0,
+            "logic_mm2": 12.274061273574,
+            "total_mm2": 12.274061273574
+          },
+          "power_w": 0.15
+        },
+        {
+          "name": "encoder_dynamic_attention",
+          "area_mm2": 18.0,
+          "tiles": 2,
+          "area_breakdown": {
+            "selection_mm2": 0.0,
+            "rom_mm2": 0.0,
+            "sram_mm2": 0.0,
+            "logic_mm2": 18,
+            "total_mm2": 18.0
+          },
+          "power_w": 0.075
+        },
+        {
+          "name": "decoder_dynamic_attention",
+          "area_mm2": 15.0,
+          "tiles": 2,
+          "area_breakdown": {
+            "selection_mm2": 0.0,
+            "rom_mm2": 0.0,
+            "sram_mm2": 0.0,
+            "logic_mm2": 15,
+            "total_mm2": 15.0
+          },
+          "power_w": 0.06
+        },
+        {
+          "name": "producer_dynamic",
+          "area_mm2": 6.0,
+          "tiles": 1,
+          "area_breakdown": {
+            "selection_mm2": 0.0,
+            "rom_mm2": 0.0,
+            "sram_mm2": 0.0,
+            "logic_mm2": 6,
+            "total_mm2": 6.0
+          },
+          "power_w": 0.03
+        },
+        {
+          "name": "control_clock_IO_interface",
+          "area_mm2": 12.0,
+          "tiles": 2,
+          "area_breakdown": {
+            "selection_mm2": 0.0,
+            "rom_mm2": 0.0,
+            "sram_mm2": 0.0,
+            "logic_mm2": 12,
+            "total_mm2": 12.0
+          },
+          "power_w": 0.06
+        },
+        {
+          "name": "array_decoder_phase_mux_allowance",
+          "area_mm2": 84.87599999999999,
+          "tiles": 10,
+          "area_breakdown": {
+            "selection_mm2": 0.0,
+            "rom_mm2": 0.0,
+            "sram_mm2": 0.0,
+            "logic_mm2": 84.87599999999999,
+            "total_mm2": 84.87599999999999
+          },
+          "power_w": 0.02
+        },
+        {
+          "name": "mutable_arrays",
+          "area_mm2": 237.80799491428576,
+          "tiles": 27,
+          "area_breakdown": {
+            "selection_mm2": 0.0,
+            "rom_mm2": 0.0,
+            "sram_mm2": 237.80799491428576,
+            "logic_mm2": 0,
+            "total_mm2": 237.80799491428576
+          },
+          "power_w": 0.06
+        },
+        {
+          "name": "ordinary_registers",
+          "area_mm2": 30.2419357184,
+          "tiles": 4,
+          "area_breakdown": {
+            "selection_mm2": 0.0,
+            "rom_mm2": 0.0,
+            "sram_mm2": 0.0,
+            "logic_mm2": 30.2419357184,
+            "total_mm2": 30.2419357184
+          },
+          "power_w": 0.02
+        }
+      ],
+      "macro_scope": "ABSTRACTS, not routed internals",
+      "run_dir": "runs/final_pitch_sram_bitcell_large_macro_lossless_baseline_whole_29x31mm_pdn40_pads48",
+      "vdd": 3.3,
+      "minimum_current_derived_pad_pairs": 28,
+      "pdn_strap_width_um": 40,
+      "blocks_sha256": "8d7f0bf2a1b6e1e6f43b210abfc7de6df4f50cfae7d14f88bef1b1ea7ad01cb1",
+      "placement_utilization": 0.8993039132882883,
+      "name": "final_pitch_sram_bitcell_large_macro_lossless_baseline_whole_29x31mm_pdn40_pads48",
+      "placement_legal_check": true,
+      "macro_overlap_count": 0,
+      "ir_solver_pass": true,
+      "worst_ground_rise_v": 0.049,
+      "combined_worst_bound_v": 0.0966,
+      "ir_5pct_pass": true,
+      "short_check": {
+        "scope": "Positive-area VDD/VSS metal rectangle overlaps, special wires + macro pins; via enclosures included; IO internals excluded",
+        "rectangles": 54961,
+        "short_count": 0,
+        "examples": []
+      },
+      "execution": {
+        "command": [
+          "nice",
+          "-n",
+          "10",
+          "openroad",
+          "-exit",
+          "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/floorplan/runs/final_pitch_sram_bitcell_large_macro_lossless_baseline_whole_29x31mm_pdn40_pads48/floorplan.tcl"
+        ],
+        "exit_code": 0,
+        "elapsed_s": 40.078070878982544,
+        "minimum_free_gib": 24.48459243774414,
+        "stop_reason": null,
+        "threads": 4,
+        "nice": 10
+      },
+      "fits_assumed26x33_reticle": false,
+      "requires_custom_sram": true,
+      "requires_accuracy_revalidation": false,
+      "artifacts": {
+        "png": "runs/final_pitch_sram_bitcell_large_macro_lossless_baseline_whole_29x31mm_pdn40_pads48/floorplan.png",
+        "heatmap": "runs/final_pitch_sram_bitcell_large_macro_lossless_baseline_whole_29x31mm_pdn40_pads48/ir_heatmap.png",
+        "def": "runs/final_pitch_sram_bitcell_large_macro_lossless_baseline_whole_29x31mm_pdn40_pads48/floorplan.def",
+        "odb": "runs/final_pitch_sram_bitcell_large_macro_lossless_baseline_whole_29x31mm_pdn40_pads48/floorplan.odb",
+        "tcl": "runs/final_pitch_sram_bitcell_large_macro_lossless_baseline_whole_29x31mm_pdn40_pads48/floorplan.tcl",
+        "lef": "runs/final_pitch_sram_bitcell_large_macro_lossless_baseline_whole_29x31mm_pdn40_pads48/macros.lef",
+        "voltage_vdd": "runs/final_pitch_sram_bitcell_large_macro_lossless_baseline_whole_29x31mm_pdn40_pads48/VDD_voltage.rpt",
+        "voltage_vss": "runs/final_pitch_sram_bitcell_large_macro_lossless_baseline_whole_29x31mm_pdn40_pads48/VSS_voltage.rpt"
+      },
+      "physical_screen_pass": true,
+      "requires_smaller_foundry_bitcell": false,
+      "numerical_change": false
+    },
+    {
+      "memory": "sram_dense_custom",
+      "levers": "lossless",
+      "state": "baseline",
+      "scenario": "final_pitch",
+      "partition": "whole",
+      "die_mm": 25.0,
+      "die_width_mm": 25.0,
+      "die_height_mm": 31.0,
+      "block_area_mm2": 608.3221590399739,
+      "abstract_rect_area_mm2": 608.897825,
+      "core_area_mm2": 698.5600000000001,
+      "placement_pass": true,
+      "pdn_pass": true,
+      "worst_ir_drop_v": 0.0358,
+      "power_assumed_w": 1.08,
+      "supply_pad_pairs": 48,
+      "signal_pad_count": 16,
+      "pad_count": 112,
+      "areas": [
+        {
+          "name": "frontend_native_int8_lossless",
+          "area_mm2": 48.788224,
+          "tiles": 6,
+          "area_breakdown": {
+            "selection_mm2": 0.0,
+            "rom_mm2": 36.788224,
+            "sram_mm2": 0.0,
+            "logic_mm2": 12,
+            "total_mm2": 48.788224
+          },
+          "power_w": 0.15
+        },
+        {
+          "name": "encoder_fabric_L0",
+          "area_mm2": 6.80353572,
+          "tiles": 1,
+          "area_breakdown": {
+            "selection_mm2": 6.80353572,
+            "rom_mm2": 0.0,
+            "sram_mm2": 0.0,
+            "logic_mm2": 0,
+            "total_mm2": 6.80353572
+          },
+          "power_w": 0.025
+        },
+        {
+          "name": "encoder_fabric_L1",
+          "area_mm2": 6.80353572,
+          "tiles": 1,
+          "area_breakdown": {
+            "selection_mm2": 6.80353572,
+            "rom_mm2": 0.0,
+            "sram_mm2": 0.0,
+            "logic_mm2": 0,
+            "total_mm2": 6.80353572
+          },
+          "power_w": 0.025
+        },
+        {
+          "name": "encoder_fabric_L2",
+          "area_mm2": 6.80353572,
+          "tiles": 1,
+          "area_breakdown": {
+            "selection_mm2": 6.80353572,
+            "rom_mm2": 0.0,
+            "sram_mm2": 0.0,
+            "logic_mm2": 0,
+            "total_mm2": 6.80353572
+          },
+          "power_w": 0.025
+        },
+        {
+          "name": "encoder_fabric_L3",
+          "area_mm2": 6.80353572,
+          "tiles": 1,
+          "area_breakdown": {
+            "selection_mm2": 6.80353572,
+            "rom_mm2": 0.0,
+            "sram_mm2": 0.0,
+            "logic_mm2": 0,
+            "total_mm2": 6.80353572
+          },
+          "power_w": 0.025
+        },
+        {
+          "name": "encoder_fabric_L4",
+          "area_mm2": 6.80353572,
+          "tiles": 1,
+          "area_breakdown": {
+            "selection_mm2": 6.80353572,
+            "rom_mm2": 0.0,
+            "sram_mm2": 0.0,
+            "logic_mm2": 0,
+            "total_mm2": 6.80353572
+          },
+          "power_w": 0.025
+        },
+        {
+          "name": "encoder_fabric_L5",
+          "area_mm2": 6.80353572,
+          "tiles": 1,
+          "area_breakdown": {
+            "selection_mm2": 6.80353572,
+            "rom_mm2": 0.0,
+            "sram_mm2": 0.0,
+            "logic_mm2": 0,
+            "total_mm2": 6.80353572
+          },
+          "power_w": 0.025
+        },
+        {
+          "name": "decoder_fabric_L0",
+          "area_mm2": 10.20530358,
+          "tiles": 2,
+          "area_breakdown": {
+            "selection_mm2": 10.20530358,
+            "rom_mm2": 0.0,
+            "sram_mm2": 0.0,
+            "logic_mm2": 0,
+            "total_mm2": 10.20530358
+          },
+          "power_w": 0.025
+        },
+        {
+          "name": "decoder_fabric_L1",
+          "area_mm2": 10.20530358,
+          "tiles": 2,
+          "area_breakdown": {
+            "selection_mm2": 10.20530358,
+            "rom_mm2": 0.0,
+            "sram_mm2": 0.0,
+            "logic_mm2": 0,
+            "total_mm2": 10.20530358
+          },
+          "power_w": 0.025
+        },
+        {
+          "name": "decoder_fabric_L2",
+          "area_mm2": 10.20530358,
+          "tiles": 2,
+          "area_breakdown": {
+            "selection_mm2": 10.20530358,
+            "rom_mm2": 0.0,
+            "sram_mm2": 0.0,
+            "logic_mm2": 0,
+            "total_mm2": 10.20530358
+          },
+          "power_w": 0.025
+        },
+        {
+          "name": "decoder_fabric_L3",
+          "area_mm2": 10.20530358,
+          "tiles": 2,
+          "area_breakdown": {
+            "selection_mm2": 10.20530358,
+            "rom_mm2": 0.0,
+            "sram_mm2": 0.0,
+            "logic_mm2": 0,
+            "total_mm2": 10.20530358
+          },
+          "power_w": 0.025
+        },
+        {
+          "name": "decoder_fabric_L4",
+          "area_mm2": 10.20530358,
+          "tiles": 2,
+          "area_breakdown": {
+            "selection_mm2": 10.20530358,
+            "rom_mm2": 0.0,
+            "sram_mm2": 0.0,
+            "logic_mm2": 0,
+            "total_mm2": 10.20530358
+          },
+          "power_w": 0.025
+        },
+        {
+          "name": "decoder_fabric_L5",
+          "area_mm2": 10.20530358,
+          "tiles": 2,
+          "area_breakdown": {
+            "selection_mm2": 10.20530358,
+            "rom_mm2": 0.0,
+            "sram_mm2": 0.0,
+            "logic_mm2": 0,
+            "total_mm2": 10.20530358
+          },
+          "power_w": 0.025
+        },
+        {
+          "name": "embedding_head_tied_once",
+          "area_mm2": 58.056838144,
+          "tiles": 7,
+          "area_breakdown": {
+            "selection_mm2": 58.056838144,
+            "rom_mm2": 0.0,
+            "sram_mm2": 0.0,
+            "logic_mm2": 0,
+            "total_mm2": 58.056838144
+          },
+          "power_w": 0.08
+        },
+        {
+          "name": "producer_KV_and_positions",
+          "area_mm2": 14.060640487999999,
+          "tiles": 2,
+          "area_breakdown": {
+            "selection_mm2": 14.060640487999999,
+            "rom_mm2": 0.0,
+            "sram_mm2": 0.0,
+            "logic_mm2": 0,
+            "total_mm2": 14.060640487999999
+          },
+          "power_w": 0.04
+        },
+        {
+          "name": "codebooks_and_other_metadata",
+          "area_mm2": 94.74742601599999,
+          "tiles": 11,
+          "area_breakdown": {
+            "selection_mm2": 0.0,
+            "rom_mm2": 94.74742601599999,
+            "sram_mm2": 0.0,
+            "logic_mm2": 0,
+            "total_mm2": 94.74742601599999
+          },
+          "power_w": 0.035
+        },
+        {
+          "name": "shared_product_engine",
+          "area_mm2": 12.274061273574,
+          "tiles": 2,
+          "area_breakdown": {
+            "selection_mm2": 0.0,
+            "rom_mm2": 0.0,
+            "sram_mm2": 0.0,
+            "logic_mm2": 12.274061273574,
+            "total_mm2": 12.274061273574
+          },
+          "power_w": 0.15
+        },
+        {
+          "name": "encoder_dynamic_attention",
+          "area_mm2": 18.0,
+          "tiles": 2,
+          "area_breakdown": {
+            "selection_mm2": 0.0,
+            "rom_mm2": 0.0,
+            "sram_mm2": 0.0,
+            "logic_mm2": 18,
+            "total_mm2": 18.0
+          },
+          "power_w": 0.075
+        },
+        {
+          "name": "decoder_dynamic_attention",
+          "area_mm2": 15.0,
+          "tiles": 2,
+          "area_breakdown": {
+            "selection_mm2": 0.0,
+            "rom_mm2": 0.0,
+            "sram_mm2": 0.0,
+            "logic_mm2": 15,
+            "total_mm2": 15.0
+          },
+          "power_w": 0.06
+        },
+        {
+          "name": "producer_dynamic",
+          "area_mm2": 6.0,
+          "tiles": 1,
+          "area_breakdown": {
+            "selection_mm2": 0.0,
+            "rom_mm2": 0.0,
+            "sram_mm2": 0.0,
+            "logic_mm2": 6,
+            "total_mm2": 6.0
+          },
+          "power_w": 0.03
+        },
+        {
+          "name": "control_clock_IO_interface",
+          "area_mm2": 12.0,
+          "tiles": 2,
+          "area_breakdown": {
+            "selection_mm2": 0.0,
+            "rom_mm2": 0.0,
+            "sram_mm2": 0.0,
+            "logic_mm2": 12,
+            "total_mm2": 12.0
+          },
+          "power_w": 0.06
+        },
+        {
+          "name": "array_decoder_phase_mux_allowance",
+          "area_mm2": 84.87599999999999,
+          "tiles": 10,
+          "area_breakdown": {
+            "selection_mm2": 0.0,
+            "rom_mm2": 0.0,
+            "sram_mm2": 0.0,
+            "logic_mm2": 84.87599999999999,
+            "total_mm2": 84.87599999999999
+          },
+          "power_w": 0.02
+        },
+        {
+          "name": "mutable_arrays",
+          "area_mm2": 112.2239976,
+          "tiles": 13,
+          "area_breakdown": {
+            "selection_mm2": 0.0,
+            "rom_mm2": 0.0,
+            "sram_mm2": 112.2239976,
+            "logic_mm2": 0,
+            "total_mm2": 112.2239976
+          },
+          "power_w": 0.06
+        },
+        {
+          "name": "ordinary_registers",
+          "area_mm2": 30.2419357184,
+          "tiles": 4,
+          "area_breakdown": {
+            "selection_mm2": 0.0,
+            "rom_mm2": 0.0,
+            "sram_mm2": 0.0,
+            "logic_mm2": 30.2419357184,
+            "total_mm2": 30.2419357184
+          },
+          "power_w": 0.02
+        }
+      ],
+      "macro_scope": "ABSTRACTS, not routed internals",
+      "run_dir": "runs/final_pitch_sram_dense_custom_lossless_baseline_whole_25x31mm_pdn40_pads48",
+      "vdd": 3.3,
+      "minimum_current_derived_pad_pairs": 28,
+      "pdn_strap_width_um": 40,
+      "blocks_sha256": "45c10072ae6c21c5d037c097aa9eb4590ae9adeb93be44b3624885b97a152a3b",
+      "placement_utilization": 0.8716471383989921,
+      "name": "final_pitch_sram_dense_custom_lossless_baseline_whole_25x31mm_pdn40_pads48",
+      "placement_legal_check": true,
+      "macro_overlap_count": 0,
+      "ir_solver_pass": true,
+      "worst_ground_rise_v": 0.0361,
+      "combined_worst_bound_v": 0.07189999999999999,
+      "ir_5pct_pass": true,
+      "short_check": {
+        "scope": "Positive-area VDD/VSS metal rectangle overlaps, special wires + macro pins; via enclosures included; IO internals excluded",
+        "rectangles": 46599,
+        "short_count": 0,
+        "examples": []
+      },
+      "execution": {
+        "command": [
+          "nice",
+          "-n",
+          "10",
+          "openroad",
+          "-exit",
+          "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/floorplan/runs/final_pitch_sram_dense_custom_lossless_baseline_whole_25x31mm_pdn40_pads48/floorplan.tcl"
+        ],
+        "exit_code": 0,
+        "elapsed_s": 34.05085802078247,
+        "minimum_free_gib": 24.456607818603516,
+        "stop_reason": null,
+        "threads": 4,
+        "nice": 10
+      },
+      "fits_assumed26x33_reticle": true,
+      "requires_custom_sram": true,
+      "requires_accuracy_revalidation": false,
+      "artifacts": {
+        "png": "runs/final_pitch_sram_dense_custom_lossless_baseline_whole_25x31mm_pdn40_pads48/floorplan.png",
+        "heatmap": "runs/final_pitch_sram_dense_custom_lossless_baseline_whole_25x31mm_pdn40_pads48/ir_heatmap.png",
+        "def": "runs/final_pitch_sram_dense_custom_lossless_baseline_whole_25x31mm_pdn40_pads48/floorplan.def",
+        "odb": "runs/final_pitch_sram_dense_custom_lossless_baseline_whole_25x31mm_pdn40_pads48/floorplan.odb",
+        "tcl": "runs/final_pitch_sram_dense_custom_lossless_baseline_whole_25x31mm_pdn40_pads48/floorplan.tcl",
+        "lef": "runs/final_pitch_sram_dense_custom_lossless_baseline_whole_25x31mm_pdn40_pads48/macros.lef",
+        "voltage_vdd": "runs/final_pitch_sram_dense_custom_lossless_baseline_whole_25x31mm_pdn40_pads48/VDD_voltage.rpt",
+        "voltage_vss": "runs/final_pitch_sram_dense_custom_lossless_baseline_whole_25x31mm_pdn40_pads48/VSS_voltage.rpt"
+      },
+      "physical_screen_pass": true,
+      "requires_smaller_foundry_bitcell": true,
+      "numerical_change": false
+    },
+    {
+      "memory": "sram_open_macro",
+      "levers": "lossless",
+      "state": "baseline",
+      "scenario": "final_pitch",
+      "partition": "encoder",
+      "die_mm": 25.0,
+      "die_width_mm": 25.0,
+      "die_height_mm": 29.0,
+      "block_area_mm2": 552.9686572536851,
+      "abstract_rect_area_mm2": 553.26665,
+      "core_area_mm2": 651.3600000000001,
+      "placement_pass": true,
+      "pdn_pass": true,
+      "worst_ir_drop_v": 0.0399,
+      "power_assumed_w": 0.6628051948051948,
+      "supply_pad_pairs": 32,
+      "signal_pad_count": 16,
+      "pad_count": 80,
+      "areas": [
+        {
+          "name": "frontend_native_int8_lossless",
+          "area_mm2": 24.394112,
+          "tiles": 3,
+          "power_w": 0.075
+        },
+        {
+          "name": "encoder_fabric_L0",
+          "area_mm2": 6.80353572,
+          "tiles": 1,
+          "power_w": 0.025
+        },
+        {
+          "name": "encoder_fabric_L2",
+          "area_mm2": 6.80353572,
+          "tiles": 1,
+          "power_w": 0.025
+        },
+        {
+          "name": "encoder_fabric_L4",
+          "area_mm2": 6.80353572,
+          "tiles": 1,
+          "power_w": 0.025
+        },
+        {
+          "name": "decoder_fabric_L1",
+          "area_mm2": 5.10265179,
+          "tiles": 1,
+          "power_w": 0.0125
+        },
+        {
+          "name": "decoder_fabric_L2",
+          "area_mm2": 5.10265179,
+          "tiles": 1,
+          "power_w": 0.0125
+        },
+        {
+          "name": "decoder_fabric_L3",
+          "area_mm2": 5.10265179,
+          "tiles": 1,
+          "power_w": 0.0125
+        },
+        {
+          "name": "decoder_fabric_L4",
+          "area_mm2": 5.10265179,
+          "tiles": 1,
+          "power_w": 0.0125
+        },
+        {
+          "name": "decoder_fabric_L5",
+          "area_mm2": 5.10265179,
+          "tiles": 1,
+          "power_w": 0.0125
+        },
+        {
+          "name": "embedding_head_tied_once",
+          "area_mm2": 33.17533608228571,
+          "tiles": 4,
+          "power_w": 0.045714285714285714
+        },
+        {
+          "name": "producer_KV_and_positions",
+          "area_mm2": 7.030320243999999,
+          "tiles": 1,
+          "power_w": 0.02
+        },
+        {
+          "name": "codebooks_and_other_metadata",
+          "area_mm2": 51.68041419054545,
+          "tiles": 6,
+          "power_w": 0.019090909090909092
+        },
+        {
+          "name": "shared_product_engine",
+          "area_mm2": 12.274061273574,
+          "tiles": 2,
+          "power_w": 0.15
+        },
+        {
+          "name": "encoder_dynamic_attention",
+          "area_mm2": 9.0,
+          "tiles": 1,
+          "power_w": 0.0375
+        },
+        {
+          "name": "decoder_dynamic_attention",
+          "area_mm2": 7.5,
+          "tiles": 1,
+          "power_w": 0.03
+        },
+        {
+          "name": "producer_dynamic",
+          "area_mm2": 6.0,
+          "tiles": 1,
+          "power_w": 0.03
+        },
+        {
+          "name": "control_clock_IO_interface",
+          "area_mm2": 6.0,
+          "tiles": 1,
+          "power_w": 0.03
+        },
+        {
+          "name": "array_decoder_phase_mux_allowance",
+          "area_mm2": 33.950399999999995,
+          "tiles": 4,
+          "power_w": 0.008
+        },
+        {
+          "name": "mutable_arrays",
+          "area_mm2": 296.91917949408,
+          "tiles": 33,
+          "power_w": 0.03
+        },
+        {
+          "name": "ordinary_registers",
+          "area_mm2": 15.1209678592,
+          "tiles": 2,
+          "power_w": 0.01
+        },
+        {
+          "name": "die_link_interface",
+          "area_mm2": 4,
+          "tiles": 1,
+          "power_w": 0.04
+        }
+      ],
+      "macro_scope": "ABSTRACTS, not routed internals",
+      "run_dir": "runs/final_pitch_sram_open_macro_lossless_baseline_encoder_25x29mm_pdn40_pads32",
+      "vdd": 3.3,
+      "minimum_current_derived_pad_pairs": 20,
+      "pdn_strap_width_um": 40,
+      "blocks_sha256": "281895d3cc81cabcd1a2f866b6e6b168fbdfbc086860b7fba11693405b282a28",
+      "placement_utilization": 0.8494022506755096,
+      "name": "final_pitch_sram_open_macro_lossless_baseline_encoder_25x29mm_pdn40_pads32",
+      "placement_legal_check": true,
+      "macro_overlap_count": 0,
+      "ir_solver_pass": true,
+      "worst_ground_rise_v": 0.0385,
+      "combined_worst_bound_v": 0.0784,
+      "ir_5pct_pass": true,
+      "short_check": {
+        "scope": "Positive-area VDD/VSS metal rectangle overlaps, special wires + macro pins; via enclosures included; IO internals excluded",
+        "rectangles": 39130,
+        "short_count": 0,
+        "examples": []
+      },
+      "execution": {
+        "command": [
+          "nice",
+          "-n",
+          "10",
+          "openroad",
+          "-exit",
+          "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/floorplan/runs/final_pitch_sram_open_macro_lossless_baseline_encoder_25x29mm_pdn40_pads32/floorplan.tcl"
+        ],
+        "exit_code": 0,
+        "elapsed_s": 34.07642602920532,
+        "minimum_free_gib": 26.543006896972656,
+        "stop_reason": null,
+        "threads": 4,
+        "nice": 10
+      },
+      "fits_assumed26x33_reticle": true,
+      "requires_custom_sram": false,
+      "requires_accuracy_revalidation": false,
+      "artifacts": {
+        "png": "runs/final_pitch_sram_open_macro_lossless_baseline_encoder_25x29mm_pdn40_pads32/floorplan.png",
+        "heatmap": "runs/final_pitch_sram_open_macro_lossless_baseline_encoder_25x29mm_pdn40_pads32/ir_heatmap.png",
+        "def": "runs/final_pitch_sram_open_macro_lossless_baseline_encoder_25x29mm_pdn40_pads32/floorplan.def",
+        "odb": "runs/final_pitch_sram_open_macro_lossless_baseline_encoder_25x29mm_pdn40_pads32/floorplan.odb",
+        "tcl": "runs/final_pitch_sram_open_macro_lossless_baseline_encoder_25x29mm_pdn40_pads32/floorplan.tcl",
+        "lef": "runs/final_pitch_sram_open_macro_lossless_baseline_encoder_25x29mm_pdn40_pads32/macros.lef",
+        "voltage_vdd": "runs/final_pitch_sram_open_macro_lossless_baseline_encoder_25x29mm_pdn40_pads32/VDD_voltage.rpt",
+        "voltage_vss": "runs/final_pitch_sram_open_macro_lossless_baseline_encoder_25x29mm_pdn40_pads32/VSS_voltage.rpt"
+      },
+      "physical_screen_pass": true,
+      "requires_smaller_foundry_bitcell": false,
+      "numerical_change": false
+    },
+    {
+      "memory": "sram_open_macro",
+      "levers": "lossless",
+      "state": "baseline",
+      "scenario": "final_pitch",
+      "partition": "decoder",
+      "die_mm": 25.0,
+      "die_width_mm": 25.0,
+      "die_height_mm": 29.0,
+      "block_area_mm2": 557.2419244480228,
+      "abstract_rect_area_mm2": 557.565175,
+      "core_area_mm2": 651.3600000000001,
+      "placement_pass": true,
+      "pdn_pass": true,
+      "worst_ir_drop_v": 0.0433,
+      "power_assumed_w": 0.6471948051948052,
+      "supply_pad_pairs": 32,
+      "signal_pad_count": 16,
+      "pad_count": 80,
+      "areas": [
+        {
+          "name": "frontend_native_int8_lossless",
+          "area_mm2": 24.394112,
+          "tiles": 3,
+          "power_w": 0.075
+        },
+        {
+          "name": "encoder_fabric_L1",
+          "area_mm2": 6.80353572,
+          "tiles": 1,
+          "power_w": 0.025
+        },
+        {
+          "name": "encoder_fabric_L3",
+          "area_mm2": 6.80353572,
+          "tiles": 1,
+          "power_w": 0.025
+        },
+        {
+          "name": "encoder_fabric_L5",
+          "area_mm2": 6.80353572,
+          "tiles": 1,
+          "power_w": 0.025
+        },
+        {
+          "name": "decoder_fabric_L0",
+          "area_mm2": 10.20530358,
+          "tiles": 2,
+          "power_w": 0.025
+        },
+        {
+          "name": "decoder_fabric_L1",
+          "area_mm2": 5.10265179,
+          "tiles": 1,
+          "power_w": 0.0125
+        },
+        {
+          "name": "decoder_fabric_L2",
+          "area_mm2": 5.10265179,
+          "tiles": 1,
+          "power_w": 0.0125
+        },
+        {
+          "name": "decoder_fabric_L3",
+          "area_mm2": 5.10265179,
+          "tiles": 1,
+          "power_w": 0.0125
+        },
+        {
+          "name": "decoder_fabric_L4",
+          "area_mm2": 5.10265179,
+          "tiles": 1,
+          "power_w": 0.0125
+        },
+        {
+          "name": "decoder_fabric_L5",
+          "area_mm2": 5.10265179,
+          "tiles": 1,
+          "power_w": 0.0125
+        },
+        {
+          "name": "embedding_head_tied_once",
+          "area_mm2": 24.881502061714283,
+          "tiles": 3,
+          "power_w": 0.03428571428571429
+        },
+        {
+          "name": "producer_KV_and_positions",
+          "area_mm2": 7.030320243999999,
+          "tiles": 1,
+          "power_w": 0.02
+        },
+        {
+          "name": "codebooks_and_other_metadata",
+          "area_mm2": 43.067011825454536,
+          "tiles": 5,
+          "power_w": 0.01590909090909091
+        },
+        {
+          "name": "shared_product_engine",
+          "area_mm2": 12.274061273574,
+          "tiles": 2,
+          "power_w": 0.15
+        },
+        {
+          "name": "encoder_dynamic_attention",
+          "area_mm2": 9.0,
+          "tiles": 1,
+          "power_w": 0.0375
+        },
+        {
+          "name": "decoder_dynamic_attention",
+          "area_mm2": 7.5,
+          "tiles": 1,
+          "power_w": 0.03
+        },
+        {
+          "name": "control_clock_IO_interface",
+          "area_mm2": 6.0,
+          "tiles": 1,
+          "power_w": 0.03
+        },
+        {
+          "name": "array_decoder_phase_mux_allowance",
+          "area_mm2": 50.92559999999999,
+          "tiles": 6,
+          "power_w": 0.012
+        },
+        {
+          "name": "mutable_arrays",
+          "area_mm2": 296.91917949408,
+          "tiles": 33,
+          "power_w": 0.03
+        },
+        {
+          "name": "ordinary_registers",
+          "area_mm2": 15.1209678592,
+          "tiles": 2,
+          "power_w": 0.01
+        },
+        {
+          "name": "die_link_interface",
+          "area_mm2": 4,
+          "tiles": 1,
+          "power_w": 0.04
+        }
+      ],
+      "macro_scope": "ABSTRACTS, not routed internals",
+      "run_dir": "runs/final_pitch_sram_open_macro_lossless_baseline_decoder_25x29mm_pdn40_pads32",
+      "vdd": 3.3,
+      "minimum_current_derived_pad_pairs": 16,
+      "pdn_strap_width_um": 40,
+      "blocks_sha256": "281895d3cc81cabcd1a2f866b6e6b168fbdfbc086860b7fba11693405b282a28",
+      "placement_utilization": 0.8560015582780641,
+      "name": "final_pitch_sram_open_macro_lossless_baseline_decoder_25x29mm_pdn40_pads32",
+      "placement_legal_check": true,
+      "macro_overlap_count": 0,
+      "ir_solver_pass": true,
+      "worst_ground_rise_v": 0.0398,
+      "combined_worst_bound_v": 0.08310000000000001,
+      "ir_5pct_pass": true,
+      "short_check": {
+        "scope": "Positive-area VDD/VSS metal rectangle overlaps, special wires + macro pins; via enclosures included; IO internals excluded",
+        "rectangles": 38846,
+        "short_count": 0,
+        "examples": []
+      },
+      "execution": {
+        "command": [
+          "nice",
+          "-n",
+          "10",
+          "openroad",
+          "-exit",
+          "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/floorplan/runs/final_pitch_sram_open_macro_lossless_baseline_decoder_25x29mm_pdn40_pads32/floorplan.tcl"
+        ],
+        "exit_code": 0,
+        "elapsed_s": 32.06891894340515,
+        "minimum_free_gib": 27.211719512939453,
+        "stop_reason": null,
+        "threads": 4,
+        "nice": 10
+      },
+      "fits_assumed26x33_reticle": true,
+      "requires_custom_sram": false,
+      "requires_accuracy_revalidation": false,
+      "artifacts": {
+        "png": "runs/final_pitch_sram_open_macro_lossless_baseline_decoder_25x29mm_pdn40_pads32/floorplan.png",
+        "heatmap": "runs/final_pitch_sram_open_macro_lossless_baseline_decoder_25x29mm_pdn40_pads32/ir_heatmap.png",
+        "def": "runs/final_pitch_sram_open_macro_lossless_baseline_decoder_25x29mm_pdn40_pads32/floorplan.def",
+        "odb": "runs/final_pitch_sram_open_macro_lossless_baseline_decoder_25x29mm_pdn40_pads32/floorplan.odb",
+        "tcl": "runs/final_pitch_sram_open_macro_lossless_baseline_decoder_25x29mm_pdn40_pads32/floorplan.tcl",
+        "lef": "runs/final_pitch_sram_open_macro_lossless_baseline_decoder_25x29mm_pdn40_pads32/macros.lef",
+        "voltage_vdd": "runs/final_pitch_sram_open_macro_lossless_baseline_decoder_25x29mm_pdn40_pads32/VDD_voltage.rpt",
+        "voltage_vss": "runs/final_pitch_sram_open_macro_lossless_baseline_decoder_25x29mm_pdn40_pads32/VSS_voltage.rpt"
+      },
+      "physical_screen_pass": true,
+      "requires_smaller_foundry_bitcell": false,
+      "numerical_change": false
+    }
+  ],
+  "state_reduction": {
+    "scope": "Hypothetical capacity-only guidance; no RTL/state removed and no numerical/throughput equivalence proven",
+    "reticle_mm": [
+      26,
+      33
+    ],
+    "core_mm2": 777.3600000000001,
+    "baseline_blocks_mm2": 733.9061563542598,
+    "area_only_removal_lower_bound_bytes": 0,
+    "first_fitting_removed_bytes": 165220,
+    "first_fitting_removed_kB_decimal": 165.22,
+    "first_fitting_removed_KiB": 161.34765625,
+    "remaining_logical_bytes": 897507.25,
+    "area_saved_mm2": 36.971515428571436,
+    "mm2_saved_per_KiB": 0.2291419428571429,
+    "search": "Every integer-byte reduction checked through first fit; equivalent geometries cached by tile count and5um side quantization. No monotonic binary-search assumption.",
+    "distinct_geometries_checked": 54,
+    "sampled_trials_1KiB": [
+      {
+        "removed_bytes": 0,
+        "removed_KiB": 0.0,
+        "placement_pass": false
+      },
+      {
+        "removed_bytes": 1024,
+        "removed_KiB": 1.0,
+        "placement_pass": false
+      },
+      {
+        "removed_bytes": 2048,
+        "removed_KiB": 2.0,
+        "placement_pass": false
+      },
+      {
+        "removed_bytes": 3072,
+        "removed_KiB": 3.0,
+        "placement_pass": false
+      },
+      {
+        "removed_bytes": 4096,
+        "removed_KiB": 4.0,
+        "placement_pass": false
+      },
+      {
+        "removed_bytes": 5120,
+        "removed_KiB": 5.0,
+        "placement_pass": false
+      },
+      {
+        "removed_bytes": 6144,
+        "removed_KiB": 6.0,
+        "placement_pass": false
+      },
+      {
+        "removed_bytes": 7168,
+        "removed_KiB": 7.0,
+        "placement_pass": false
+      },
+      {
+        "removed_bytes": 8192,
+        "removed_KiB": 8.0,
+        "placement_pass": false
+      },
+      {
+        "removed_bytes": 9216,
+        "removed_KiB": 9.0,
+        "placement_pass": false
+      },
+      {
+        "removed_bytes": 10240,
+        "removed_KiB": 10.0,
+        "placement_pass": false
+      },
+      {
+        "removed_bytes": 11264,
+        "removed_KiB": 11.0,
+        "placement_pass": false
+      },
+      {
+        "removed_bytes": 12288,
+        "removed_KiB": 12.0,
+        "placement_pass": false
+      },
+      {
+        "removed_bytes": 13312,
+        "removed_KiB": 13.0,
+        "placement_pass": false
+      },
+      {
+        "removed_bytes": 14336,
+        "removed_KiB": 14.0,
+        "placement_pass": false
+      },
+      {
+        "removed_bytes": 15360,
+        "removed_KiB": 15.0,
+        "placement_pass": false
+      },
+      {
+        "removed_bytes": 16384,
+        "removed_KiB": 16.0,
+        "placement_pass": false
+      },
+      {
+        "removed_bytes": 17408,
+        "removed_KiB": 17.0,
+        "placement_pass": false
+      },
+      {
+        "removed_bytes": 18432,
+        "removed_KiB": 18.0,
+        "placement_pass": false
+      },
+      {
+        "removed_bytes": 19456,
+        "removed_KiB": 19.0,
+        "placement_pass": false
+      },
+      {
+        "removed_bytes": 20480,
+        "removed_KiB": 20.0,
+        "placement_pass": false
+      },
+      {
+        "removed_bytes": 21504,
+        "removed_KiB": 21.0,
+        "placement_pass": false
+      },
+      {
+        "removed_bytes": 22528,
+        "removed_KiB": 22.0,
+        "placement_pass": false
+      },
+      {
+        "removed_bytes": 23552,
+        "removed_KiB": 23.0,
+        "placement_pass": false
+      },
+      {
+        "removed_bytes": 24576,
+        "removed_KiB": 24.0,
+        "placement_pass": false
+      },
+      {
+        "removed_bytes": 25600,
+        "removed_KiB": 25.0,
+        "placement_pass": false
+      },
+      {
+        "removed_bytes": 26624,
+        "removed_KiB": 26.0,
+        "placement_pass": false
+      },
+      {
+        "removed_bytes": 27648,
+        "removed_KiB": 27.0,
+        "placement_pass": false
+      },
+      {
+        "removed_bytes": 28672,
+        "removed_KiB": 28.0,
+        "placement_pass": false
+      },
+      {
+        "removed_bytes": 29696,
+        "removed_KiB": 29.0,
+        "placement_pass": false
+      },
+      {
+        "removed_bytes": 30720,
+        "removed_KiB": 30.0,
+        "placement_pass": false
+      },
+      {
+        "removed_bytes": 31744,
+        "removed_KiB": 31.0,
+        "placement_pass": false
+      },
+      {
+        "removed_bytes": 32768,
+        "removed_KiB": 32.0,
+        "placement_pass": false
+      },
+      {
+        "removed_bytes": 33792,
+        "removed_KiB": 33.0,
+        "placement_pass": false
+      },
+      {
+        "removed_bytes": 34816,
+        "removed_KiB": 34.0,
+        "placement_pass": false
+      },
+      {
+        "removed_bytes": 35840,
+        "removed_KiB": 35.0,
+        "placement_pass": false
+      },
+      {
+        "removed_bytes": 36864,
+        "removed_KiB": 36.0,
+        "placement_pass": false
+      },
+      {
+        "removed_bytes": 37888,
+        "removed_KiB": 37.0,
+        "placement_pass": false
+      },
+      {
+        "removed_bytes": 38912,
+        "removed_KiB": 38.0,
+        "placement_pass": false
+      },
+      {
+        "removed_bytes": 39936,
+        "removed_KiB": 39.0,
+        "placement_pass": false
+      },
+      {
+        "removed_bytes": 40960,
+        "removed_KiB": 40.0,
+        "placement_pass": false
+      },
+      {
+        "removed_bytes": 41984,
+        "removed_KiB": 41.0,
+        "placement_pass": false
+      },
+      {
+        "removed_bytes": 43008,
+        "removed_KiB": 42.0,
+        "placement_pass": false
+      },
+      {
+        "removed_bytes": 44032,
+        "removed_KiB": 43.0,
+        "placement_pass": false
+      },
+      {
+        "removed_bytes": 45056,
+        "removed_KiB": 44.0,
+        "placement_pass": false
+      },
+      {
+        "removed_bytes": 46080,
+        "removed_KiB": 45.0,
+        "placement_pass": false
+      },
+      {
+        "removed_bytes": 47104,
+        "removed_KiB": 46.0,
+        "placement_pass": false
+      },
+      {
+        "removed_bytes": 48128,
+        "removed_KiB": 47.0,
+        "placement_pass": false
+      },
+      {
+        "removed_bytes": 49152,
+        "removed_KiB": 48.0,
+        "placement_pass": false
+      },
+      {
+        "removed_bytes": 50176,
+        "removed_KiB": 49.0,
+        "placement_pass": false
+      },
+      {
+        "removed_bytes": 51200,
+        "removed_KiB": 50.0,
+        "placement_pass": false
+      },
+      {
+        "removed_bytes": 52224,
+        "removed_KiB": 51.0,
+        "placement_pass": false
+      },
+      {
+        "removed_bytes": 53248,
+        "removed_KiB": 52.0,
+        "placement_pass": false
+      },
+      {
+        "removed_bytes": 54272,
+        "removed_KiB": 53.0,
+        "placement_pass": false
+      },
+      {
+        "removed_bytes": 55296,
+        "removed_KiB": 54.0,
+        "placement_pass": false
+      },
+      {
+        "removed_bytes": 56320,
+        "removed_KiB": 55.0,
+        "placement_pass": false
+      },
+      {
+        "removed_bytes": 57344,
+        "removed_KiB": 56.0,
+        "placement_pass": false
+      },
+      {
+        "removed_bytes": 58368,
+        "removed_KiB": 57.0,
+        "placement_pass": false
+      },
+      {
+        "removed_bytes": 59392,
+        "removed_KiB": 58.0,
+        "placement_pass": false
+      },
+      {
+        "removed_bytes": 60416,
+        "removed_KiB": 59.0,
+        "placement_pass": false
+      },
+      {
+        "removed_bytes": 61440,
+        "removed_KiB": 60.0,
+        "placement_pass": false
+      },
+      {
+        "removed_bytes": 62464,
+        "removed_KiB": 61.0,
+        "placement_pass": false
+      },
+      {
+        "removed_bytes": 63488,
+        "removed_KiB": 62.0,
+        "placement_pass": false
+      },
+      {
+        "removed_bytes": 64512,
+        "removed_KiB": 63.0,
+        "placement_pass": false
+      },
+      {
+        "removed_bytes": 65536,
+        "removed_KiB": 64.0,
+        "placement_pass": false
+      },
+      {
+        "removed_bytes": 66560,
+        "removed_KiB": 65.0,
+        "placement_pass": false
+      },
+      {
+        "removed_bytes": 67584,
+        "removed_KiB": 66.0,
+        "placement_pass": false
+      },
+      {
+        "removed_bytes": 68608,
+        "removed_KiB": 67.0,
+        "placement_pass": false
+      },
+      {
+        "removed_bytes": 69632,
+        "removed_KiB": 68.0,
+        "placement_pass": false
+      },
+      {
+        "removed_bytes": 70656,
+        "removed_KiB": 69.0,
+        "placement_pass": false
+      },
+      {
+        "removed_bytes": 71680,
+        "removed_KiB": 70.0,
+        "placement_pass": false
+      },
+      {
+        "removed_bytes": 72704,
+        "removed_KiB": 71.0,
+        "placement_pass": false
+      },
+      {
+        "removed_bytes": 73728,
+        "removed_KiB": 72.0,
+        "placement_pass": false
+      },
+      {
+        "removed_bytes": 74752,
+        "removed_KiB": 73.0,
+        "placement_pass": false
+      },
+      {
+        "removed_bytes": 75776,
+        "removed_KiB": 74.0,
+        "placement_pass": false
+      },
+      {
+        "removed_bytes": 76800,
+        "removed_KiB": 75.0,
+        "placement_pass": false
+      },
+      {
+        "removed_bytes": 77824,
+        "removed_KiB": 76.0,
+        "placement_pass": false
+      },
+      {
+        "removed_bytes": 78848,
+        "removed_KiB": 77.0,
+        "placement_pass": false
+      },
+      {
+        "removed_bytes": 79872,
+        "removed_KiB": 78.0,
+        "placement_pass": false
+      },
+      {
+        "removed_bytes": 80896,
+        "removed_KiB": 79.0,
+        "placement_pass": false
+      },
+      {
+        "removed_bytes": 81920,
+        "removed_KiB": 80.0,
+        "placement_pass": false
+      },
+      {
+        "removed_bytes": 82944,
+        "removed_KiB": 81.0,
+        "placement_pass": false
+      },
+      {
+        "removed_bytes": 83968,
+        "removed_KiB": 82.0,
+        "placement_pass": false
+      },
+      {
+        "removed_bytes": 84992,
+        "removed_KiB": 83.0,
+        "placement_pass": false
+      },
+      {
+        "removed_bytes": 86016,
+        "removed_KiB": 84.0,
+        "placement_pass": false
+      },
+      {
+        "removed_bytes": 87040,
+        "removed_KiB": 85.0,
+        "placement_pass": false
+      },
+      {
+        "removed_bytes": 88064,
+        "removed_KiB": 86.0,
+        "placement_pass": false
+      },
+      {
+        "removed_bytes": 89088,
+        "removed_KiB": 87.0,
+        "placement_pass": false
+      },
+      {
+        "removed_bytes": 90112,
+        "removed_KiB": 88.0,
+        "placement_pass": false
+      },
+      {
+        "removed_bytes": 91136,
+        "removed_KiB": 89.0,
+        "placement_pass": false
+      },
+      {
+        "removed_bytes": 92160,
+        "removed_KiB": 90.0,
+        "placement_pass": false
+      },
+      {
+        "removed_bytes": 93184,
+        "removed_KiB": 91.0,
+        "placement_pass": false
+      },
+      {
+        "removed_bytes": 94208,
+        "removed_KiB": 92.0,
+        "placement_pass": false
+      },
+      {
+        "removed_bytes": 95232,
+        "removed_KiB": 93.0,
+        "placement_pass": false
+      },
+      {
+        "removed_bytes": 96256,
+        "removed_KiB": 94.0,
+        "placement_pass": false
+      },
+      {
+        "removed_bytes": 97280,
+        "removed_KiB": 95.0,
+        "placement_pass": false
+      },
+      {
+        "removed_bytes": 98304,
+        "removed_KiB": 96.0,
+        "placement_pass": false
+      },
+      {
+        "removed_bytes": 99328,
+        "removed_KiB": 97.0,
+        "placement_pass": false
+      },
+      {
+        "removed_bytes": 100352,
+        "removed_KiB": 98.0,
+        "placement_pass": false
+      },
+      {
+        "removed_bytes": 101376,
+        "removed_KiB": 99.0,
+        "placement_pass": false
+      },
+      {
+        "removed_bytes": 102400,
+        "removed_KiB": 100.0,
+        "placement_pass": false
+      },
+      {
+        "removed_bytes": 103424,
+        "removed_KiB": 101.0,
+        "placement_pass": false
+      },
+      {
+        "removed_bytes": 104448,
+        "removed_KiB": 102.0,
+        "placement_pass": false
+      },
+      {
+        "removed_bytes": 105472,
+        "removed_KiB": 103.0,
+        "placement_pass": false
+      },
+      {
+        "removed_bytes": 106496,
+        "removed_KiB": 104.0,
+        "placement_pass": false
+      },
+      {
+        "removed_bytes": 107520,
+        "removed_KiB": 105.0,
+        "placement_pass": false
+      },
+      {
+        "removed_bytes": 108544,
+        "removed_KiB": 106.0,
+        "placement_pass": false
+      },
+      {
+        "removed_bytes": 109568,
+        "removed_KiB": 107.0,
+        "placement_pass": false
+      },
+      {
+        "removed_bytes": 110592,
+        "removed_KiB": 108.0,
+        "placement_pass": false
+      },
+      {
+        "removed_bytes": 111616,
+        "removed_KiB": 109.0,
+        "placement_pass": false
+      },
+      {
+        "removed_bytes": 112640,
+        "removed_KiB": 110.0,
+        "placement_pass": false
+      },
+      {
+        "removed_bytes": 113664,
+        "removed_KiB": 111.0,
+        "placement_pass": false
+      },
+      {
+        "removed_bytes": 114688,
+        "removed_KiB": 112.0,
+        "placement_pass": false
+      },
+      {
+        "removed_bytes": 115712,
+        "removed_KiB": 113.0,
+        "placement_pass": false
+      },
+      {
+        "removed_bytes": 116736,
+        "removed_KiB": 114.0,
+        "placement_pass": false
+      },
+      {
+        "removed_bytes": 117760,
+        "removed_KiB": 115.0,
+        "placement_pass": false
+      },
+      {
+        "removed_bytes": 118784,
+        "removed_KiB": 116.0,
+        "placement_pass": false
+      },
+      {
+        "removed_bytes": 119808,
+        "removed_KiB": 117.0,
+        "placement_pass": false
+      },
+      {
+        "removed_bytes": 120832,
+        "removed_KiB": 118.0,
+        "placement_pass": false
+      },
+      {
+        "removed_bytes": 121856,
+        "removed_KiB": 119.0,
+        "placement_pass": false
+      },
+      {
+        "removed_bytes": 122880,
+        "removed_KiB": 120.0,
+        "placement_pass": false
+      },
+      {
+        "removed_bytes": 123904,
+        "removed_KiB": 121.0,
+        "placement_pass": false
+      },
+      {
+        "removed_bytes": 124928,
+        "removed_KiB": 122.0,
+        "placement_pass": false
+      },
+      {
+        "removed_bytes": 125952,
+        "removed_KiB": 123.0,
+        "placement_pass": false
+      },
+      {
+        "removed_bytes": 126976,
+        "removed_KiB": 124.0,
+        "placement_pass": false
+      },
+      {
+        "removed_bytes": 128000,
+        "removed_KiB": 125.0,
+        "placement_pass": false
+      },
+      {
+        "removed_bytes": 129024,
+        "removed_KiB": 126.0,
+        "placement_pass": false
+      },
+      {
+        "removed_bytes": 130048,
+        "removed_KiB": 127.0,
+        "placement_pass": false
+      },
+      {
+        "removed_bytes": 131072,
+        "removed_KiB": 128.0,
+        "placement_pass": false
+      },
+      {
+        "removed_bytes": 132096,
+        "removed_KiB": 129.0,
+        "placement_pass": false
+      },
+      {
+        "removed_bytes": 133120,
+        "removed_KiB": 130.0,
+        "placement_pass": false
+      },
+      {
+        "removed_bytes": 134144,
+        "removed_KiB": 131.0,
+        "placement_pass": false
+      },
+      {
+        "removed_bytes": 135168,
+        "removed_KiB": 132.0,
+        "placement_pass": false
+      },
+      {
+        "removed_bytes": 136192,
+        "removed_KiB": 133.0,
+        "placement_pass": false
+      },
+      {
+        "removed_bytes": 137216,
+        "removed_KiB": 134.0,
+        "placement_pass": false
+      },
+      {
+        "removed_bytes": 138240,
+        "removed_KiB": 135.0,
+        "placement_pass": false
+      },
+      {
+        "removed_bytes": 139264,
+        "removed_KiB": 136.0,
+        "placement_pass": false
+      },
+      {
+        "removed_bytes": 140288,
+        "removed_KiB": 137.0,
+        "placement_pass": false
+      },
+      {
+        "removed_bytes": 141312,
+        "removed_KiB": 138.0,
+        "placement_pass": false
+      },
+      {
+        "removed_bytes": 142336,
+        "removed_KiB": 139.0,
+        "placement_pass": false
+      },
+      {
+        "removed_bytes": 143360,
+        "removed_KiB": 140.0,
+        "placement_pass": false
+      },
+      {
+        "removed_bytes": 144384,
+        "removed_KiB": 141.0,
+        "placement_pass": false
+      },
+      {
+        "removed_bytes": 145408,
+        "removed_KiB": 142.0,
+        "placement_pass": false
+      },
+      {
+        "removed_bytes": 146432,
+        "removed_KiB": 143.0,
+        "placement_pass": false
+      },
+      {
+        "removed_bytes": 147456,
+        "removed_KiB": 144.0,
+        "placement_pass": false
+      },
+      {
+        "removed_bytes": 148480,
+        "removed_KiB": 145.0,
+        "placement_pass": false
+      },
+      {
+        "removed_bytes": 149504,
+        "removed_KiB": 146.0,
+        "placement_pass": false
+      },
+      {
+        "removed_bytes": 150528,
+        "removed_KiB": 147.0,
+        "placement_pass": false
+      },
+      {
+        "removed_bytes": 151552,
+        "removed_KiB": 148.0,
+        "placement_pass": false
+      },
+      {
+        "removed_bytes": 152576,
+        "removed_KiB": 149.0,
+        "placement_pass": false
+      },
+      {
+        "removed_bytes": 153600,
+        "removed_KiB": 150.0,
+        "placement_pass": false
+      },
+      {
+        "removed_bytes": 154624,
+        "removed_KiB": 151.0,
+        "placement_pass": false
+      },
+      {
+        "removed_bytes": 155648,
+        "removed_KiB": 152.0,
+        "placement_pass": false
+      },
+      {
+        "removed_bytes": 156672,
+        "removed_KiB": 153.0,
+        "placement_pass": false
+      },
+      {
+        "removed_bytes": 157696,
+        "removed_KiB": 154.0,
+        "placement_pass": false
+      },
+      {
+        "removed_bytes": 158720,
+        "removed_KiB": 155.0,
+        "placement_pass": false
+      },
+      {
+        "removed_bytes": 159744,
+        "removed_KiB": 156.0,
+        "placement_pass": false
+      },
+      {
+        "removed_bytes": 160768,
+        "removed_KiB": 157.0,
+        "placement_pass": false
+      },
+      {
+        "removed_bytes": 161792,
+        "removed_KiB": 158.0,
+        "placement_pass": false
+      },
+      {
+        "removed_bytes": 162816,
+        "removed_KiB": 159.0,
+        "placement_pass": false
+      },
+      {
+        "removed_bytes": 163840,
+        "removed_KiB": 160.0,
+        "placement_pass": false
+      },
+      {
+        "removed_bytes": 164864,
+        "removed_KiB": 161.0,
+        "placement_pass": false
+      }
+    ],
+    "cases": [
+      {
+        "removed_bytes": 0,
+        "removed_kB_decimal": 0.0,
+        "removed_KiB": 0.0,
+        "placement_pass": false,
+        "block_area_mm2": 733.9061563542598
+      },
+      {
+        "removed_bytes": 165220,
+        "removed_kB_decimal": 165.22,
+        "removed_KiB": 161.34765625,
+        "placement_pass": true,
+        "block_area_mm2": 696.9346409256883
+      },
+      {
+        "removed_bytes": 81920,
+        "removed_kB_decimal": 81.92,
+        "removed_KiB": 80.0,
+        "placement_pass": false,
+        "block_area_mm2": 715.5748009256884
+      },
+      {
+        "removed_bytes": 163840,
+        "removed_kB_decimal": 163.84,
+        "removed_KiB": 160.0,
+        "placement_pass": false,
+        "block_area_mm2": 697.2434454971169
+      }
+    ],
+    "largest_equal_capacity_buffer_pairs": [
+      {
+        "module": "rv_encoder_bank_consumer_edge_v1",
+        "arrays": [
+          {
+            "path": "rv_allonchip_top_all_v1.original.sole_qualified_neural_parent.sole_neural_parent.existing_parent.qualified_child.backend.banks.bank0",
+            "instances": 1,
+            "module": "rv_encoder_bank_consumer_edge_v1",
+            "module_orig": "rv_encoder_bank_consumer_edge_v1",
+            "var": "bank0",
+            "dims": [
+              2560
+            ],
+            "elem_width": 256,
+            "bits_per_instance": 655360,
+            "total_bits": 655360,
+            "total_bytes": 81920.0,
+            "cls": "flop",
+            "classification": "mutable (clocked write)",
+            "writes": [
+              "clocked:nba"
+            ],
+            "reads": 1,
+            "src": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/experiments/chip-integration-20261011-encoder-memory-integration-v2/rv_encoder_bank_consumer_edge_v1.sv:31"
+          },
+          {
+            "path": "rv_allonchip_top_all_v1.original.sole_qualified_neural_parent.sole_neural_parent.existing_parent.qualified_child.backend.banks.bank1",
+            "instances": 1,
+            "module": "rv_encoder_bank_consumer_edge_v1",
+            "module_orig": "rv_encoder_bank_consumer_edge_v1",
+            "var": "bank1",
+            "dims": [
+              2560
+            ],
+            "elem_width": 256,
+            "bits_per_instance": 655360,
+            "total_bits": 655360,
+            "total_bytes": 81920.0,
+            "cls": "flop",
+            "classification": "mutable (clocked write)",
+            "writes": [
+              "clocked:nba"
+            ],
+            "reads": 1,
+            "src": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/experiments/chip-integration-20261011-encoder-memory-integration-v2/rv_encoder_bank_consumer_edge_v1.sv:31"
+          }
+        ],
+        "combined_bytes": 163840.0,
+        "one_buffer_bytes": 81920.0,
+        "scope": "Two equal-size physical buffers, not duplicate contents. Removal/sharing requires lifetime/ownership/throughput proof; not applied to baseline."
+      },
+      {
+        "module": "rv_producer_mutable_storage_v1",
+        "arrays": [
+          {
+            "path": "rv_allonchip_top_all_v1.original.sole_qualified_neural_parent.sole_neural_parent.existing_parent.producer_nexus.bank.bankA",
+            "instances": 1,
+            "module": "rv_producer_mutable_storage_v1",
+            "module_orig": "rv_producer_mutable_storage_v1",
+            "var": "bankA",
+            "dims": [
+              2560
+            ],
+            "elem_width": 256,
+            "bits_per_instance": 655360,
+            "total_bits": 655360,
+            "total_bytes": 81920.0,
+            "cls": "flop",
+            "classification": "mutable (clocked write)",
+            "writes": [
+              "clocked:nba"
+            ],
+            "reads": 1,
+            "src": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/experiments/chip-integration-20261012-producer-mutable-storage-source-v4/rv_producer_mutable_storage_v1.sv:31"
+          },
+          {
+            "path": "rv_allonchip_top_all_v1.original.sole_qualified_neural_parent.sole_neural_parent.existing_parent.producer_nexus.bank.bankB",
+            "instances": 1,
+            "module": "rv_producer_mutable_storage_v1",
+            "module_orig": "rv_producer_mutable_storage_v1",
+            "var": "bankB",
+            "dims": [
+              2560
+            ],
+            "elem_width": 256,
+            "bits_per_instance": 655360,
+            "total_bits": 655360,
+            "total_bytes": 81920.0,
+            "cls": "flop",
+            "classification": "mutable (clocked write)",
+            "writes": [
+              "clocked:nba"
+            ],
+            "reads": 1,
+            "src": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/experiments/chip-integration-20261012-producer-mutable-storage-source-v4/rv_producer_mutable_storage_v1.sv:31"
+          }
+        ],
+        "combined_bytes": 163840.0,
+        "one_buffer_bytes": 81920.0,
+        "scope": "Two equal-size physical buffers, not duplicate contents. Removal/sharing requires lifetime/ownership/throughput proof; not applied to baseline."
+      }
+    ],
+    "not_duplicate_examples": [
+      {
+        "var": "committed",
+        "bytes": 139392.0,
+        "module": "rv_compact_history_storage_v1"
+      },
+      {
+        "var": "keys",
+        "bytes": 84480.0,
+        "module": "taalas_compact_history_layer_self_o_q1"
+      },
+      {
+        "var": "values",
+        "bytes": 84480.0,
+        "module": "taalas_compact_history_layer_self_o_q1"
+      },
+      {
+        "var": "feature_bank",
+        "bytes": 81920.0,
+        "module": "rv_frontend_encoder_bridge"
+      }
+    ],
+    "qualification": "Baseline block area is below core area, so no strictly positive state-removal lower bound follows from area alone. Packing/layout improvement may replace reduction. Current deterministic abstract packing threshold is not a physical necessity or global optimum."
+  },
+  "source_hashes": {
+    "overnight-20261014/accuracy-int8/RESULTS.md": {
+      "sha256": "034f7bf1eeaa187a9cf83f366f9e08c936792a794a9f39674c119d55dd0af1b4",
+      "snapshot": "inputs/final-20261013T220747Z/overnight-20261014/accuracy-int8/RESULTS.md"
+    },
+    "overnight-20261014/accuracy-int8/existing-affine-int8-exact/manifest.json": {
+      "sha256": "b6a9a1be31b4bdb08f0732af7af77ab8420e806471b8f0608bdd8a6958dc5f4c",
+      "snapshot": "inputs/final-20261013T220747Z/overnight-20261014/accuracy-int8/existing-affine-int8-exact/manifest.json"
+    },
+    "overnight-20261014/taalas-pitch/results.json": {
+      "sha256": "7a0647d6311a402913a6c7d3f23ed352c8ec705f51755dabd6d6a69cedfbba76",
+      "snapshot": "inputs/final-20261013T220747Z/overnight-20261014/taalas-pitch/results.json"
+    },
+    "overnight-20261014/taalas-pitch/RESULTS.md": {
+      "sha256": "2b51797ad946a2e2c0d53e076c8686ba118a410576966146421d91f12d48aee1",
+      "snapshot": "inputs/final-20261013T220747Z/overnight-20261014/taalas-pitch/RESULTS.md"
+    },
+    "overnight-20261014/storage-inventory/inventory.json": {
+      "sha256": "36e1c0aa9bef649c8200b959e001f56878d45eb1f60bdecd2c92ae7a932764d4",
+      "snapshot": "inputs/final-20261013T220747Z/overnight-20261014/storage-inventory/inventory.json"
+    },
+    "overnight-20261014/fabric-k64/results.json": {
+      "sha256": "c6c5399d5cafb933945cad3aa2c5aca97b2cfcb595eb19af292c3532f7bb8866",
+      "snapshot": "inputs/final-20261013T220747Z/overnight-20261014/fabric-k64/results.json"
+    },
+    "overnight-20261014/floorplan/sram_bitcell_measurement.json": {
+      "sha256": "c681a5a4f7d28b85a9353b7618535d157f1a419c08d94c12ed32e9007473c957",
+      "snapshot": "inputs/final-20261013T220747Z/overnight-20261014/floorplan/sram_bitcell_measurement.json"
+    }
+  },
+  "final_source_check": [
+    {
+      "source": "overnight-20261014/accuracy-int8/RESULTS.md",
+      "snapshot_sha256": "034f7bf1eeaa187a9cf83f366f9e08c936792a794a9f39674c119d55dd0af1b4",
+      "current_sha256": "034f7bf1eeaa187a9cf83f366f9e08c936792a794a9f39674c119d55dd0af1b4",
+      "unchanged": true
+    },
+    {
+      "source": "overnight-20261014/accuracy-int8/existing-affine-int8-exact/manifest.json",
+      "snapshot_sha256": "b6a9a1be31b4bdb08f0732af7af77ab8420e806471b8f0608bdd8a6958dc5f4c",
+      "current_sha256": "b6a9a1be31b4bdb08f0732af7af77ab8420e806471b8f0608bdd8a6958dc5f4c",
+      "unchanged": true
+    },
+    {
+      "source": "overnight-20261014/taalas-pitch/results.json",
+      "snapshot_sha256": "7a0647d6311a402913a6c7d3f23ed352c8ec705f51755dabd6d6a69cedfbba76",
+      "current_sha256": "7a0647d6311a402913a6c7d3f23ed352c8ec705f51755dabd6d6a69cedfbba76",
+      "unchanged": true
+    },
+    {
+      "source": "overnight-20261014/taalas-pitch/RESULTS.md",
+      "snapshot_sha256": "2b51797ad946a2e2c0d53e076c8686ba118a410576966146421d91f12d48aee1",
+      "current_sha256": "2b51797ad946a2e2c0d53e076c8686ba118a410576966146421d91f12d48aee1",
+      "unchanged": true
+    },
+    {
+      "source": "overnight-20261014/storage-inventory/inventory.json",
+      "snapshot_sha256": "36e1c0aa9bef649c8200b959e001f56878d45eb1f60bdecd2c92ae7a932764d4",
+      "current_sha256": "36e1c0aa9bef649c8200b959e001f56878d45eb1f60bdecd2c92ae7a932764d4",
+      "unchanged": true
+    },
+    {
+      "source": "overnight-20261014/fabric-k64/results.json",
+      "snapshot_sha256": "c6c5399d5cafb933945cad3aa2c5aca97b2cfcb595eb19af292c3532f7bb8866",
+      "current_sha256": "c6c5399d5cafb933945cad3aa2c5aca97b2cfcb595eb19af292c3532f7bb8866",
+      "unchanged": true
+    },
+    {
+      "source": "overnight-20261014/floorplan/sram_bitcell_measurement.json",
+      "snapshot_sha256": "c681a5a4f7d28b85a9353b7618535d157f1a419c08d94c12ed32e9007473c957",
+      "current_sha256": "c681a5a4f7d28b85a9353b7618535d157f1a419c08d94c12ed32e9007473c957",
+      "unchanged": true
+    }
+  ],
+  "array_verification": {
+    "64": {
+      "selected_drc": {
+        "drc_markers": 0,
+        "categories": {},
+        "scope": "selected GF180 FEOL BEOL connectivity off-grid; density and antenna excluded",
+        "gds_sha256": "a94a98e936a59619f7009a2a55354cc4498b442f0d348aa474ea96589b1f7f73",
+        "top": "PITCH_BANK_R64"
+      },
+      "readback": {
+        "compared_indices": 20480,
+        "compared_bits": 81920,
+        "mismatches": 0,
+        "recovered_sha256": "1d7fbf9a572a3badf897966a5432c0338400f474e7156f96241772e3a79ec8fb",
+        "method": "reopened GDS programmed Via1 centers at exact device drain positions, not mask input replay"
+      },
+      "lvs": {
+        "returncode": 0,
+        "status": "finished",
+        "elapsed_seconds": 3.8187808338552713,
+        "unique_match": true,
+        "property_errors": false,
+        "input": {
+          "gds": "overnight-20261014/taalas-pitch/r64-v2/bank.gds",
+          "gds_sha256": "a94a98e936a59619f7009a2a55354cc4498b442f0d348aa474ea96589b1f7f73",
+          "top": "PITCH_BANK_R64",
+          "rows": 64,
+          "pc_width_um": 2.88,
+          "row_mapping": "logical_row=0+1*local_row"
+        },
+        "pass": true
+      },
+      "negative": {
+        "returncode": 0,
+        "status": "finished",
+        "elapsed_seconds": 3.4663046670611948,
+        "unique_match": true,
+        "property_errors": true,
+        "input": {
+          "gds": "overnight-20261014/taalas-pitch/r64-v2/bank.gds",
+          "gds_sha256": "a94a98e936a59619f7009a2a55354cc4498b442f0d348aa474ea96589b1f7f73",
+          "top": "PITCH_BANK_R64",
+          "rows": 64,
+          "pc_width_um": 2.88,
+          "row_mapping": "logical_row=0+1*local_row"
+        },
+        "pass": false,
+        "negative_control_rejected": true
+      }
+    },
+    "1280": {
+      "selected_drc": {
+        "drc_markers": 0,
+        "categories": {},
+        "scope": "selected GF180 FEOL BEOL connectivity off-grid; density and antenna excluded",
+        "gds_sha256": "fd75915d1d8b7bc053e91b0141bd1400d4f05d1319bdfebfd8cac4449b2235b0",
+        "top": "PITCH_BANK_R1280"
+      },
+      "readback": {
+        "compared_indices": 409600,
+        "compared_bits": 1638400,
+        "mismatches": 0,
+        "recovered_sha256": "ba628b676d59721c268868d6720be1f58a4f8d4edfd9a26009403c9a8c4fce8e",
+        "method": "reopened GDS programmed Via1 centers at exact device drain positions, not mask input replay"
+      },
+      "lvs": null,
+      "negative": null
+    }
+  },
+  "array_timing": {
+    "status": "scoped_TT_SS_protocol_complete",
+    "generated_utc": "2026-10-13T22:05:29.329408+00:00",
+    "source_reading_confirmed": true,
+    "option": "A, eight stacked readout rows",
+    "extractions": [
+      {
+        "returncode": 0,
+        "seconds": 391.2111902080942,
+        "source_gds_sha256": "23972dbb6cd2f1cba6331ce066f4f3c5120597111be01e69b24f0b33468bd167",
+        "fullbank_source_gds_sha256": "fd75915d1d8b7bc053e91b0141bd1400d4f05d1319bdfebfd8cac4449b2235b0",
+        "rows": 1280,
+        "bank": 0,
+        "subbank": 2,
+        "lane_start": 64,
+        "out_start": 256,
+        "row_stride": 1,
+        "source_top": "PITCH_JOINED_R1280_G02",
+        "array_top": "PITCH_ARRAY_R1280_G02",
+        "directory": "r1280-g02",
+        "topology": {
+          "array_devices": 163840,
+          "joined_devices": 164352,
+          "all_device_connections_and_dimensions_match_real_image_and_pre2_receiver": true,
+          "canonicalization": {
+            "array": {
+              "nodes": 83130,
+              "bijective": true
+            },
+            "joined": {
+              "nodes": 83260,
+              "bijective": true
+            }
+          },
+          "row_mapping": "logicalrow=localrow",
+          "global_lane_range": [
+            64,
+            96
+          ],
+          "image_sha256": "9ac1c410fedde74e1f9bfd6f4e9da3dc0d1562874ec2381c237891093fed217d"
+        },
+        "cap-ranking": {
+          "method": "Rank all128local columns by extracted total incident metalC*(actual W6 stacked joinR+half fullheight arrayR), with connected-drain count separately. Initial group selected from all1280 by drain-population+geometryR proxy. Two-stage heuristic candidate, not absolute transistor-timing worst-case proof.",
+          "selected": [
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31
+          ],
+          "scope": "Actual new stacked128-column subbank only; rest of1280 columns not cap-extracted.",
+          "top_ranked": {
+            "local_bit_column": 17,
+            "extracted_incident_metal_cap_ff": 679.149100000003,
+            "connected_drains": 681,
+            "join_geometry_length_um": 110.75999999999999,
+            "join_ohm_at25c": 90.31326315789474,
+            "array_ohm_at25c": 583.5905263157894,
+            "rank_score_ohm_ff": 259508.66174969584
+          }
+        },
+        "global-proxy-ranking": {
+          "method": "Connected-drain population times new geometry joinR+half arrayR; initial all1280-column heuristic, not actual extracted C or worst-case proof",
+          "top_ranked": {
+            "global_bit_column": 256,
+            "subbank": 2,
+            "local_bit_column": 0,
+            "connected_drains": 680,
+            "join_length_um": 124.5,
+            "join_ohm25": 94.07368421052631,
+            "selection_proxy": 262116.3789473684
+          }
+        }
+      }
+    ],
+    "cases": [
+      {
+        "protocol_pass": true,
+        "failures": {
+          "output": 0,
+          "raw": 0,
+          "precharge": 0,
+          "phase": 0
+        },
+        "maximum_sampled_settled_ns": 23.37632100000002,
+        "command_to_capture_20ns_probe": [
+          {
+            "cycle": 0,
+            "ns_after_wl_command": 20,
+            "data_failures": 3,
+            "excludes_decoder_setup_latch_and_mux": true
+          },
+          {
+            "cycle": 1,
+            "ns_after_wl_command": 20,
+            "data_failures": 1,
+            "excludes_decoder_setup_latch_and_mux": true
+          },
+          {
+            "cycle": 2,
+            "ns_after_wl_command": 20,
+            "data_failures": 1,
+            "excludes_decoder_setup_latch_and_mux": true
+          },
+          {
+            "cycle": 3,
+            "ns_after_wl_command": 20,
+            "data_failures": 1,
+            "excludes_decoder_setup_latch_and_mux": true
+          },
+          {
+            "cycle": 4,
+            "ns_after_wl_command": 20,
+            "data_failures": 0,
+            "excludes_decoder_setup_latch_and_mux": true
+          },
+          {
+            "cycle": 5,
+            "ns_after_wl_command": 20,
+            "data_failures": 3,
+            "excludes_decoder_setup_latch_and_mux": true
+          },
+          {
+            "cycle": 6,
+            "ns_after_wl_command": 20,
+            "data_failures": 1,
+            "excludes_decoder_setup_latch_and_mux": true
+          },
+          {
+            "cycle": 7,
+            "ns_after_wl_command": 20,
+            "data_failures": 1,
+            "excludes_decoder_setup_latch_and_mux": true
+          },
+          {
+            "cycle": 8,
+            "ns_after_wl_command": 20,
+            "data_failures": 1,
+            "excludes_decoder_setup_latch_and_mux": true
+          },
+          {
+            "cycle": 9,
+            "ns_after_wl_command": 20,
+            "data_failures": 0,
+            "excludes_decoder_setup_latch_and_mux": true
+          }
+        ],
+        "energy_pj_per_sampled_read": {
+          "pr": 89.41701420560715,
+          "pw": 1.1203491685550382,
+          "pp": 7.847541388725112,
+          "pa": 0.13193500809107922
+        },
+        "energy_window_ns": [
+          300.0,
+          600.0
+        ],
+        "energy_scope": "Finite-window net source energy over repeated sequence; only observed endpoint states compared, not all internal stored charge. Partial16active-column group plus128receivers/selectedWL/PC buffers; not complete bank energy.",
+        "maximum_observed_endpoint_voltage_difference_v": 0.0005503593499915109,
+        "samples_checked": 320,
+        "corner": "ss",
+        "voltage_v": 2.97,
+        "temperature_c": 125,
+        "period_ns": 60.0,
+        "protocol": {
+          "period_ns": 60.0,
+          "pc_off_ns": 14.0,
+          "wl_start_ns": 18.0,
+          "wl_fall_start_ns": 57.8,
+          "wl_fall_end_ns": 58.0,
+          "pc_on_start_ns": 59.8,
+          "sample_ns": [
+            54.0,
+            59.5
+          ],
+          "edge_ns": 0.2,
+          "phase_family": "pre2std4;14/60fraction precharge plus fixed4ns guard"
+        },
+        "scope": "New eight-row pitch-matched W6 layout.16fullheight active columns,112ideal legal-state BL aggressors also driving their real receivers, all128physicalpre2receivers; extracted stockbuf4WL/buf20PC. GeometryR signaljoin+arrayWL/BL/one2umgroundstrap. Groundendpoint/global supply and input phases ideal. No full320lane WL/PC rail load, simultaneous allarraycurrent, decoder/latch/mux.",
+        "conditional20ns_interleave_factor": 3,
+        "interleave_factor_qualified": false,
+        "interleave_qualification": "Only sampled32lane protocol if pass; not full320lane bank throughput",
+        "deck_sha256": "7218f2933d5ec9bc554b99df4a3a0ccbcd7810838d9821e99852cfc95a5c232c",
+        "trace_sha256": "e90b8fe7b3ee5f7b848860628f829e8dfbaf9137550cf135f5359cb1874e358e",
+        "wall_seconds": 318.08353054104373,
+        "source_gds_sha256": "23972dbb6cd2f1cba6331ce066f4f3c5120597111be01e69b24f0b33468bd167",
+        "full_row_energy_pj": null,
+        "full_bank_timing_proven": false,
+        "worst_column_receiver_supply_energy_pj_per_row_read": 5.328008728261638,
+        "selected_column_receiver_mos_supply_energy_pj_per_row_read": {
+          "16": 3.2257257472151784,
+          "17": 5.328008728261638,
+          "18": 1.3372966305000071,
+          "19": 7.153558431786424,
+          "20": 5.133644688669355,
+          "21": 3.3747297571973953,
+          "22": 5.5195101402829705,
+          "23": 5.018956522206275,
+          "24": 4.687792135572147,
+          "25": 4.324906296009803,
+          "26": 7.903973010791182,
+          "27": 5.907581549755747,
+          "28": 4.619789661081857,
+          "29": 6.695693460143142,
+          "30": 4.685409895650428,
+          "31": 5.386855860335284
+        },
+        "worst_column_energy_scope": "Each selected column has a separate zero-volt series source rdd\u2192column_vddN feeding only its four receiver devices, including wells. Observational MOS supply/well energy includes device-model junctions but excludes explicit extracted VDD coupling-capacitor source current, which remains on global rdd; excludes sharedWL/PCdrivers and idealaggressor work. Not entire column energy. Included within pr, do not add twice.",
+        "worst_column_local_bit": 17,
+        "worst_column_global_bit": 273,
+        "path": "r1280-g02/ss-60ns-s32/result.json",
+        "column_energy_role": "Receiver MOS supply energy of timing proxy candidate; not a worst-energy selection",
+        "maximum_selected_receiver_mos_energy": {
+          "local_bit_column": 26,
+          "global_bit_column": 282,
+          "energy_pj_per_sampled_row_read": 7.903973010791182
+        },
+        "selected_bit_columns": [
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31
+        ],
+        "addresses": [
+          0,
+          1,
+          1279,
+          1274,
+          546,
+          0,
+          1,
+          1279,
+          1274,
+          546
+        ],
+        "slowest_observed_sample": {
+          "cycle": 5,
+          "row": 0,
+          "bit": 17,
+          "settled_ns_after_wl_command": 23.37632100000002,
+          "global_bit_column": 273
+        },
+        "command_to_capture_20ns_failure_count": 12,
+        "maximum_settled_ns_worst_ranked_column": 23.37632100000002
+      },
+      {
+        "protocol_pass": true,
+        "failures": {
+          "output": 0,
+          "raw": 0,
+          "precharge": 0,
+          "phase": 0
+        },
+        "maximum_sampled_settled_ns": 15.21137600000003,
+        "command_to_capture_20ns_probe": [
+          {
+            "cycle": 0,
+            "ns_after_wl_command": 20,
+            "data_failures": 0,
+            "excludes_decoder_setup_latch_and_mux": true
+          },
+          {
+            "cycle": 1,
+            "ns_after_wl_command": 20,
+            "data_failures": 0,
+            "excludes_decoder_setup_latch_and_mux": true
+          },
+          {
+            "cycle": 2,
+            "ns_after_wl_command": 20,
+            "data_failures": 0,
+            "excludes_decoder_setup_latch_and_mux": true
+          },
+          {
+            "cycle": 3,
+            "ns_after_wl_command": 20,
+            "data_failures": 0,
+            "excludes_decoder_setup_latch_and_mux": true
+          },
+          {
+            "cycle": 4,
+            "ns_after_wl_command": 20,
+            "data_failures": 0,
+            "excludes_decoder_setup_latch_and_mux": true
+          },
+          {
+            "cycle": 5,
+            "ns_after_wl_command": 20,
+            "data_failures": 0,
+            "excludes_decoder_setup_latch_and_mux": true
+          },
+          {
+            "cycle": 6,
+            "ns_after_wl_command": 20,
+            "data_failures": 0,
+            "excludes_decoder_setup_latch_and_mux": true
+          },
+          {
+            "cycle": 7,
+            "ns_after_wl_command": 20,
+            "data_failures": 0,
+            "excludes_decoder_setup_latch_and_mux": true
+          },
+          {
+            "cycle": 8,
+            "ns_after_wl_command": 20,
+            "data_failures": 0,
+            "excludes_decoder_setup_latch_and_mux": true
+          },
+          {
+            "cycle": 9,
+            "ns_after_wl_command": 20,
+            "data_failures": 0,
+            "excludes_decoder_setup_latch_and_mux": true
+          }
+        ],
+        "energy_pj_per_sampled_read": {
+          "pr": 112.85451120069504,
+          "pw": 1.3646111941027468,
+          "pp": 9.64692951362713,
+          "pa": -0.2591284594720443
+        },
+        "energy_window_ns": [
+          300.0,
+          600.0
+        ],
+        "energy_scope": "Finite-window net source energy over repeated sequence; only observed endpoint states compared, not all internal stored charge. Partial16active-column group plus128receivers/selectedWL/PC buffers; not complete bank energy.",
+        "maximum_observed_endpoint_voltage_difference_v": 0.00019913204598840696,
+        "samples_checked": 320,
+        "corner": "typical",
+        "voltage_v": 3.3,
+        "temperature_c": 25,
+        "period_ns": 60.0,
+        "protocol": {
+          "period_ns": 60.0,
+          "pc_off_ns": 14.0,
+          "wl_start_ns": 18.0,
+          "wl_fall_start_ns": 57.8,
+          "wl_fall_end_ns": 58.0,
+          "pc_on_start_ns": 59.8,
+          "sample_ns": [
+            54.0,
+            59.5
+          ],
+          "edge_ns": 0.2,
+          "phase_family": "pre2std4;14/60fraction precharge plus fixed4ns guard"
+        },
+        "scope": "New eight-row pitch-matched W6 layout.16fullheight active columns,112ideal legal-state BL aggressors also driving their real receivers, all128physicalpre2receivers; extracted stockbuf4WL/buf20PC. GeometryR signaljoin+arrayWL/BL/one2umgroundstrap. Groundendpoint/global supply and input phases ideal. No full320lane WL/PC rail load, simultaneous allarraycurrent, decoder/latch/mux.",
+        "conditional20ns_interleave_factor": 3,
+        "interleave_factor_qualified": false,
+        "interleave_qualification": "Only sampled32lane protocol if pass; not full320lane bank throughput",
+        "deck_sha256": "dc0252cb8e14a9a423aa4e23a069309b2e843a6e54a2423ebf6986e293593fc7",
+        "trace_sha256": "aeab556aa7a62d83a8626b8066f66459306f7e9037fb993e05b938bf0e334de7",
+        "wall_seconds": 351.0136382500641,
+        "source_gds_sha256": "23972dbb6cd2f1cba6331ce066f4f3c5120597111be01e69b24f0b33468bd167",
+        "full_row_energy_pj": null,
+        "full_bank_timing_proven": false,
+        "worst_column_receiver_supply_energy_pj_per_row_read": 6.784320532703336,
+        "selected_column_receiver_mos_supply_energy_pj_per_row_read": {
+          "16": 3.9854071023502007,
+          "17": 6.784320532703336,
+          "18": 1.6294643390826802,
+          "19": 9.166275379461682,
+          "20": 6.480080761327483,
+          "21": 4.2638719983901865,
+          "22": 7.051944796207785,
+          "23": 6.343604598832049,
+          "24": 5.876241336322016,
+          "25": 5.341020587411488,
+          "26": 9.915976442595177,
+          "27": 7.353775889600051,
+          "28": 5.807116114309186,
+          "29": 8.498005616002107,
+          "30": 5.824655211934578,
+          "31": 6.781995826055869
+        },
+        "worst_column_energy_scope": "Each selected column has a separate zero-volt series source rdd\u2192column_vddN feeding only its four receiver devices, including wells. Observational MOS supply/well energy includes device-model junctions but excludes explicit extracted VDD coupling-capacitor source current, which remains on global rdd; excludes sharedWL/PCdrivers and idealaggressor work. Not entire column energy. Included within pr, do not add twice.",
+        "worst_column_local_bit": 17,
+        "worst_column_global_bit": 273,
+        "path": "r1280-g02/typical-60ns-s32/result.json",
+        "column_energy_role": "Receiver MOS supply energy of timing proxy candidate; not a worst-energy selection",
+        "maximum_selected_receiver_mos_energy": {
+          "local_bit_column": 26,
+          "global_bit_column": 282,
+          "energy_pj_per_sampled_row_read": 9.915976442595177
+        },
+        "selected_bit_columns": [
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31
+        ],
+        "addresses": [
+          0,
+          1,
+          1279,
+          1274,
+          546,
+          0,
+          1,
+          1279,
+          1274,
+          546
+        ],
+        "slowest_observed_sample": {
+          "cycle": 5,
+          "row": 0,
+          "bit": 17,
+          "settled_ns_after_wl_command": 15.21137600000003,
+          "global_bit_column": 273
+        },
+        "command_to_capture_20ns_failure_count": 0,
+        "maximum_settled_ns_worst_ranked_column": 15.21137600000003
+      }
+    ],
+    "preserved_failures": [],
+    "failed_20ns_aperture_checks": [
+      {
+        "path": "r1280-g02/ss-60ns-s32/result.json",
+        "failed_bit_checks": 12
+      }
+    ],
+    "whole_bank_energy_pj_per_row": null,
+    "complete_macro_timing_proven": false,
+    "global_worst_case_proven": false,
+    "limitations": [
+      "16actual active fullheight columns,112ideal legal-state bitline aggressors and128physical receivers; not1280simultaneous real columns",
+      "Actual new-layout extracted MOS/C with explicit geometry-derivedR allocation, not native distributed resistance extraction",
+      "Stockbuf4WL/buf20PC, 10fF outputloads; complete fullbank commonWL/PC load and physical phasecontroller/decoder/latch/mux excluded",
+      "Ground one2umstrap with idealendpoints and idealglobal supply; actual globalreturn/PDN and fullbank current excluded",
+      "Energy finitewindow net sources with only observed endpoint states checked; no scaling to measured fullrow",
+      "Column meters measure receiverMOS supply/well current, including devicejunctions but excluding explicitVDDcouplingC source current; subset ofpr, never add twice",
+      "No mismatch/yield, complete recognizer throughput, systempower or production signoff"
+    ],
+    "full_bank_proxy_ranking": null,
+    "full_bank_capacitance_receipts": {
+      "status": "pending",
+      "export_receipt_path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/taalas-pitch/timing/fullbank-caps/export-caps-result.json",
+      "ranking_receipt_path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/taalas-pitch/timing/fullbank-caps/rank.json",
+      "export_receipt_sha256": null,
+      "ranking_receipt_sha256": null
+    },
+    "fullbank_vs_crop_capacitance": []
+  },
+  "array_missing": [
+    "Measured energy for a complete simultaneous 1,280-bit row read",
+    "Placed decoder, WL/PC drivers and phase controller",
+    "Output latches and output escape routing",
+    "Global PDN integrity and full simultaneously active row power",
+    "Downstream codebooks, shared products, accumulation and full recognizer",
+    "Full 1280-row Netgen LVS pass",
+    "Full 1280-row negative-control rejection",
+    "Global full-bank capacitance ranking: pending receipt integration"
+  ],
+  "engine": {
+    "cell_area_mm2": 6.137030636787,
+    "footprint_mm2": 12.274061273574,
+    "footprint_status": "MEASURED synthesis / ASSUMED 0.5 utilization",
+    "clock_hz": 25000000.0,
+    "macs_per_projection": 409600,
+    "cycles": 4163,
+    "macs_per_second": 600000000.0,
+    "margin": 2,
+    "count": 1,
+    "architecture": "ASSUMED layer-group row bus shares one engine; two-die version duplicates engine. 25MHz is a target, not achieved timing. Fixed books in engine counted as local cache replica; global all-model books remain separate."
+  },
+  "reticle_assumption_mm": [
+    26,
+    33
+  ],
+  "minimum_scope": "Smallest integer-mm rectangle in declared deterministic shelf search; not global minimum",
+  "mutable_bits_unchanged": 8501818,
+  "ordinary_register_bits_unchanged": 237524,
+  "numerical_change": false,
+  "power_measured": false,
+  "complete_recognizer_proven": false,
+  "commands": "FINAL_COMMANDS.md",
+  "refresh_audit": "final_input_refresh_audit.json"
+}

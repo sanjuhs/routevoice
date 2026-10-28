@@ -1,0 +1,29 @@
+{
+  "stage": "unit-self-build",
+  "command": [
+    "/usr/bin/nice",
+    "-n",
+    "10",
+    "/opt/homebrew/Cellar/verilator/5.050/bin/verilator",
+    "--cc",
+    "--exe",
+    "--build",
+    "-j",
+    "2",
+    "-Wno-fatal",
+    "--top-module",
+    "rv_onchip_decoder_self_v1",
+    "--Mdir",
+    "/Users/sanju/.local/state/routevoice-internal-runs/20261014/onchip-all/unit-self",
+    "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/onchip-all/rv_onchip_decoder_self_v1.sv",
+    "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/onchip-all/decoder_test.cpp",
+    "-CFLAGS",
+    "-std=c++17 -O2 -DTEST_SELF"
+  ],
+  "cwd": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design",
+  "log": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/onchip-all/logs/20261014T021135-unit-self-build.log",
+  "started": "20261014T021135",
+  "exit_code": 0,
+  "pid": 48506,
+  "elapsed_seconds": 2.165365665918216
+}

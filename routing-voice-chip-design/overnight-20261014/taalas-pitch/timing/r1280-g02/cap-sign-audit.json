@@ -1,0 +1,15 @@
+{
+  "array-canonical.spice": {
+    "explicit_capacitors": 619289,
+    "negative_numeric_values": 0,
+    "zero_values": 81656,
+    "signed_negative_zero_tokens": 0
+  },
+  "joined-canonical.spice": {
+    "explicit_capacitors": 622324,
+    "negative_numeric_values": 0,
+    "zero_values": 82295,
+    "signed_negative_zero_tokens": 130
+  },
+  "qualification": "All original tokens retained in canonical/source SPICE. Nonpositive values skipped by W5 reused simulation emitter consist only of zero, including signed zero; no negative numerical capacitance was removed."
+}

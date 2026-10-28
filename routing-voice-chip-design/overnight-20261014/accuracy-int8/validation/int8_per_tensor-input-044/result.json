@@ -1,0 +1,69 @@
+{
+  "case_id": "int8_per_tensor-input-044",
+  "model": "int8_per_tensor",
+  "id": "8288-274162-0035",
+  "role": "validation",
+  "condition": "other",
+  "seed": null,
+  "reference": "I NEVER COMPLAIN AS YOU KNOW BUT AS HEAVEN AND MY FATHER WOULD NEVER FORGIVE ME FOR BLOWING OUT MY BRAINS I WILL GO AND GET THE FIRST PERSON I MEET TO GIVE ME THE INFORMATION WHICH YOU WITHHOLD I WILL TELL HIM HE LIES AND AND YOU WOULD KILL HIM",
+  "input_float32_sha256": "30b8036e4689f97c4611c5ad7316e61c57cab3faf3d7058825cc8f1bb204ac31",
+  "hypothesis": "   ",
+  "normalized_tokens": [],
+  "edits": 51,
+  "reference_words": 51,
+  "hypothesis_words": 0,
+  "exact": false,
+  "lines": [
+    {
+      "text": "",
+      "start_time": 0.25599998235702515,
+      "duration": 10.04800033569336,
+      "is_complete": true,
+      "samples": 160768,
+      "input_float32_sha256": "f1210c1e65ba206487d7fab325c41be6d8213f179e8385d352a4f06a0299a00e"
+    },
+    {
+      "text": "",
+      "start_time": 9.824000358581543,
+      "duration": 0.9600000381469727,
+      "is_complete": true,
+      "samples": 15360,
+      "input_float32_sha256": "297f65c9381ee8816364208a7378f571a45f30d4d5da514dba72a71812f3983b"
+    },
+    {
+      "text": "",
+      "start_time": 11.743999481201172,
+      "duration": 2.40000057220459,
+      "is_complete": true,
+      "samples": 38400,
+      "input_float32_sha256": "c654d75a60dfbdb1f915907da78ed6742284676e242b14d1ed8508eb4ced2f9a"
+    },
+    {
+      "text": "",
+      "start_time": 14.079999923706055,
+      "duration": 1.4720001220703125,
+      "is_complete": true,
+      "samples": 23552,
+      "input_float32_sha256": "7eb85957f1f168863f4cfcf0ebbe0a3e12b9b256cff91b5261da6592cce1903b"
+    }
+  ],
+  "request_sha256": "b869d82090a304f6def4024b71f4ccf4123dd2491ad56477d379ddbbd6cd8d95",
+  "worker_sha256": "4682e8a57db08e02a34f53b01f334f34faa3ca9a6546698f1e4650db359004b6",
+  "native_library_sha256": "1453a6c1c9072f3d05e9e5ae6ff423fae839e56631c5efb12bbd5c0280d04399",
+  "native_api_version": 30000,
+  "load_seconds": 0.04035245790146291,
+  "compute_seconds": 0.32287295907735825,
+  "audio_seconds": 15.73,
+  "process_cpu_seconds": 0.322892,
+  "voluntary_context_switches": 0,
+  "involuntary_context_switches": 31,
+  "system_load_average": [
+    10.60986328125,
+    9.1318359375,
+    9.8994140625
+  ],
+  "options": null,
+  "flags": 0,
+  "process_id": 81236,
+  "isolation": "One audio clip/condition in a fresh native process; no previous utterance or VAD state."
+}

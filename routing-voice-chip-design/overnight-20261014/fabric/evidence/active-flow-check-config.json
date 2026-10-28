@@ -1,0 +1,82 @@
+{
+  "rv_fixed_proj320_rom-util20-density35-200ns": {
+    "STA_CORNERS": [
+      "nom_tt_025C_5v00",
+      "nom_ss_125C_4v50",
+      "nom_ff_n40C_5v50",
+      "min_tt_025C_5v00",
+      "min_ss_125C_4v50",
+      "min_ff_n40C_5v50",
+      "max_tt_025C_5v00",
+      "max_ss_125C_4v50",
+      "max_ff_n40C_5v50"
+    ],
+    "RUN_TAP_ENDCAP_INSERTION": true,
+    "RUN_POST_GPL_DESIGN_REPAIR": true,
+    "RUN_POST_GRT_DESIGN_REPAIR": false,
+    "RUN_CTS": true,
+    "RUN_POST_CTS_RESIZER_TIMING": true,
+    "RUN_POST_GRT_RESIZER_TIMING": false,
+    "RUN_HEURISTIC_DIODE_INSERTION": false,
+    "RUN_ANTENNA_REPAIR": true,
+    "RUN_DRT": true,
+    "RUN_FILL_INSERTION": true,
+    "RUN_MCSTA": true,
+    "RUN_SPEF_EXTRACTION": true,
+    "RUN_IRDROP_REPORT": true,
+    "RUN_LVS": true,
+    "RUN_MAGIC_STREAMOUT": true,
+    "RUN_KLAYOUT_STREAMOUT": true,
+    "RUN_MAGIC_WRITE_LEF": true,
+    "RUN_KLAYOUT_XOR": true,
+    "RUN_MAGIC_DRC": true,
+    "RUN_KLAYOUT_DRC": true,
+    "RUN_EQY": false,
+    "RUN_LINTER": true,
+    "STA_THREADS": 2,
+    "RSZ_CORNERS": [
+      "nom_tt_025C_5v00"
+    ],
+    "DRT_THREADS": 4
+  },
+  "rv_fixed_proj320_dp-route200": {
+    "STA_CORNERS": [
+      "nom_tt_025C_5v00",
+      "nom_ss_125C_4v50",
+      "nom_ff_n40C_5v50",
+      "min_tt_025C_5v00",
+      "min_ss_125C_4v50",
+      "min_ff_n40C_5v50",
+      "max_tt_025C_5v00",
+      "max_ss_125C_4v50",
+      "max_ff_n40C_5v50"
+    ],
+    "RUN_TAP_ENDCAP_INSERTION": true,
+    "RUN_POST_GPL_DESIGN_REPAIR": true,
+    "RUN_POST_GRT_DESIGN_REPAIR": false,
+    "RUN_CTS": true,
+    "RUN_POST_CTS_RESIZER_TIMING": true,
+    "RUN_POST_GRT_RESIZER_TIMING": false,
+    "RUN_HEURISTIC_DIODE_INSERTION": false,
+    "RUN_ANTENNA_REPAIR": true,
+    "RUN_DRT": true,
+    "RUN_FILL_INSERTION": true,
+    "RUN_MCSTA": true,
+    "RUN_SPEF_EXTRACTION": true,
+    "RUN_IRDROP_REPORT": true,
+    "RUN_LVS": true,
+    "RUN_MAGIC_STREAMOUT": true,
+    "RUN_KLAYOUT_STREAMOUT": true,
+    "RUN_MAGIC_WRITE_LEF": true,
+    "RUN_KLAYOUT_XOR": true,
+    "RUN_MAGIC_DRC": true,
+    "RUN_KLAYOUT_DRC": true,
+    "RUN_EQY": false,
+    "RUN_LINTER": true,
+    "STA_THREADS": 2,
+    "RSZ_CORNERS": [
+      "nom_tt_025C_5v00"
+    ],
+    "DRT_THREADS": 4
+  }
+}

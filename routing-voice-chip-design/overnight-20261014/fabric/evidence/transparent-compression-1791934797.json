@@ -1,0 +1,128 @@
+{
+  "unix": 1791934797.864365,
+  "method": "ditto --hfsCompression, SHA256 verified before atomic replace; transparent POSIX reads retain identical bytes",
+  "free_before_bytes": 24812441600,
+  "free_after_bytes": 26118508544,
+  "changes": [
+    {
+      "path": "runs/rv_fixed_proj320_rom-physical20/06-openroad-staprepnr/nom_ff_n40C_5v50/checks.rpt",
+      "sha256": "fc0cc301896832c81a0d25ad0127639dcb05f518c9fd11de0d636aeb7ccd399c",
+      "bytes": 44947189,
+      "before_allocated_bytes": 45092864,
+      "after_allocated_bytes": 5246976,
+      "flags": 32
+    },
+    {
+      "path": "runs/rv_fixed_proj320_rom-physical20/06-openroad-staprepnr/nom_ff_n40C_5v50/rv_fixed_proj320_rom__nom_ff_n40C_5v50.sdf",
+      "sha256": "ae876b5f67e5deeff78ff31ddd0b6faa1bbcd3c13143f20aec042983dedab00c",
+      "bytes": 295912312,
+      "before_allocated_bytes": 303456256,
+      "after_allocated_bytes": 59772928,
+      "flags": 32
+    },
+    {
+      "path": "runs/rv_fixed_proj320_rom-physical20/06-openroad-staprepnr/nom_ff_n40C_5v50/sta.log",
+      "sha256": "6f704117a3b27a2ac51f2e4c35c9cdf602c20242859c563710b2faca021eba46",
+      "bytes": 52955872,
+      "before_allocated_bytes": 53481472,
+      "after_allocated_bytes": 6352896,
+      "flags": 32
+    },
+    {
+      "path": "runs/rv_fixed_proj320_rom-physical20/06-openroad-staprepnr/nom_ss_125C_4v50/checks.rpt",
+      "sha256": "e4f0f45c6a38ffbfa7a27cc7011693fd590116be271a58ebc6b70a9f349e14ea",
+      "bytes": 55993736,
+      "before_allocated_bytes": 56627200,
+      "after_allocated_bytes": 7401472,
+      "flags": 32
+    },
+    {
+      "path": "runs/rv_fixed_proj320_rom-physical20/06-openroad-staprepnr/nom_ss_125C_4v50/rv_fixed_proj320_rom__nom_ss_125C_4v50.sdf",
+      "sha256": "90bc987491793ad1d95437a98a0c44fffdfec4fbf47e7c2a2f86dad309963f5f",
+      "bytes": 297484310,
+      "before_allocated_bytes": 312811520,
+      "after_allocated_bytes": 64024576,
+      "flags": 32
+    },
+    {
+      "path": "runs/rv_fixed_proj320_rom-physical20/06-openroad-staprepnr/nom_ss_125C_4v50/sta.log",
+      "sha256": "900c6913bbe86488269a917f636df1080a6295a95557ae9c2ce610edc65f7b10",
+      "bytes": 64049446,
+      "before_allocated_bytes": 65015808,
+      "after_allocated_bytes": 7393280,
+      "flags": 32
+    },
+    {
+      "path": "runs/rv_fixed_proj320_rom-physical20/06-openroad-staprepnr/nom_tt_025C_5v00/checks.rpt",
+      "sha256": "c71920235a6bec283cc2fc1324db0e4b911274973e1fa2020a416d2f4a35e734",
+      "bytes": 47643415,
+      "before_allocated_bytes": 48238592,
+      "after_allocated_bytes": 6307840,
+      "flags": 32
+    },
+    {
+      "path": "runs/rv_fixed_proj320_rom-physical20/06-openroad-staprepnr/nom_tt_025C_5v00/rv_fixed_proj320_rom__nom_tt_025C_5v00.sdf",
+      "sha256": "375963e4a1f0c93e36e11fa0495670072cc7f4834495da6332b2e738d4dbe875",
+      "bytes": 296650649,
+      "before_allocated_bytes": 312008704,
+      "after_allocated_bytes": 60858368,
+      "flags": 32
+    },
+    {
+      "path": "runs/rv_fixed_proj320_rom-physical20/06-openroad-staprepnr/nom_tt_025C_5v00/sta.log",
+      "sha256": "a8b2c3fad753aa8339ac4308ce97b11646d1a934cadfb8b140483e1bde8b7b25",
+      "bytes": 55654863,
+      "before_allocated_bytes": 56627200,
+      "after_allocated_bytes": 6340608,
+      "flags": 32
+    },
+    {
+      "path": "runs/rv_fixed_proj320_rom-physical20/07-openroad-floorplan/rv_fixed_proj320_rom.def",
+      "sha256": "7265b98e70912e03d9d533530b99920cd2075cc2fb9d649b50902e6fc24590e2",
+      "bytes": 38664678,
+      "before_allocated_bytes": 38666240,
+      "after_allocated_bytes": 8261632,
+      "flags": 32
+    },
+    {
+      "path": "runs/rv_fixed_proj320_rom-physical20/07-openroad-floorplan/rv_fixed_proj320_rom.nl.v",
+      "sha256": "3d3e9c34e161e1153c9269aba9db02340ffde0d3968b28987f3fc44f3ad01405",
+      "bytes": 36018344,
+      "before_allocated_bytes": 36020224,
+      "after_allocated_bytes": 7110656,
+      "flags": 32
+    },
+    {
+      "path": "runs/rv_fixed_proj320_rom-physical20/07-openroad-floorplan/rv_fixed_proj320_rom.odb",
+      "sha256": "81ed518f572deb750b4edda5f5c3cf9881970705ff6ca46c518970d51dd1f6db",
+      "bytes": 153939700,
+      "before_allocated_bytes": 153939968,
+      "after_allocated_bytes": 37453824,
+      "flags": 32
+    },
+    {
+      "path": "runs/rv_fixed_proj320_rom-physical20/07-openroad-floorplan/rv_fixed_proj320_rom.pnl.v",
+      "sha256": "2f8168e014435f7024bd8b0449165c6235af7ea1cec3bcf9bb29a4f405eb93c0",
+      "bytes": 51941646,
+      "before_allocated_bytes": 51945472,
+      "after_allocated_bytes": 7401472,
+      "flags": 32
+    },
+    {
+      "path": "runs/rv_fixed_proj320_rom-physical20/10-odb-setpowerconnections/rv_fixed_proj320_rom.def",
+      "sha256": "7265b98e70912e03d9d533530b99920cd2075cc2fb9d649b50902e6fc24590e2",
+      "bytes": 38664678,
+      "before_allocated_bytes": 38666240,
+      "after_allocated_bytes": 8437760,
+      "flags": 32
+    },
+    {
+      "path": "runs/rv_fixed_proj320_rom-physical20/10-odb-setpowerconnections/rv_fixed_proj320_rom.odb",
+      "sha256": "81ed518f572deb750b4edda5f5c3cf9881970705ff6ca46c518970d51dd1f6db",
+      "bytes": 153939700,
+      "before_allocated_bytes": 153939968,
+      "after_allocated_bytes": 37789696,
+      "flags": 32
+    }
+  ]
+}

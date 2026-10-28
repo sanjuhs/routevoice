@@ -1,0 +1,60 @@
+{
+  "rows_per_bank": 1280,
+  "bank_count": 1,
+  "logical_shape": [
+    1280,
+    320
+  ],
+  "row_mapping": "logical_row = bank + bank_count * local_row",
+  "readouts_per_bank": 1280,
+  "readout_count": 1280,
+  "receiver_profile": "pre2 physical receiver: Wpc2.88 L.28; keeper.36/pinv.72/ninv.36; stockdrivers not placed",
+  "bank_dimensions_um": [
+    4669.7,
+    2249.0
+  ],
+  "bank_area_um2": 10502155.299999999,
+  "assembly_dimensions_um": [
+    4669.7,
+    2249.0
+  ],
+  "assembly_area_um2": 10502155.299999999,
+  "assembly_um2_per_selection": 25.64002758789062,
+  "sum_bank_area_um2": 10502155.299999999,
+  "bank_pitch_um": 2269,
+  "array_origin_um": [
+    10.0,
+    112.0
+  ],
+  "group_pitch_um": 468.0,
+  "fanout_start_y_um": 14,
+  "fanout_pitch_um": 0.66,
+  "join_metal_width_um": 0.38,
+  "array_ground_straps": {
+    "count_per32lane_subbank": 8,
+    "width_um": 2,
+    "layer": "Metal4",
+    "both_end_connections": "lower physical source return and upper M5 return to sameVSS"
+  },
+  "tops": {
+    "assembly": "TALL_ASSEMBLY_R1280",
+    "bank0": "TALL_BANK_R1280_B00",
+    "timing_subbank": "TALL_JOINED_R1280_B00_G07"
+  },
+  "timing_subbank_gds": "timing-subbank.gds",
+  "exclusions": [
+    "row decoder and physical WL drivers",
+    "physicalPCdriver/phasecontrol",
+    "global bank output mux and output latches",
+    "global interbank signal/PDN integration",
+    "fullbank simultaneouscurrent/distributedRC timing"
+  ],
+  "source_sha256": {
+    "experiments/taalas-access/mask-index-tall/generate_layout.py": "986ab78d8b9dc9f995306df91e32fc41524dbd4c901524158e7bfc157bd779ce",
+    "experiments/taalas-access/mask-index-tall/receiver-pre2/generate_layout.py": "8e93b5b419aae397a37e5db930d67d443f075c62b44f609ee5db733c36d08194"
+  },
+  "gds_sha256": {
+    "assembly.gds": "4ba39b3401ef5d2cd5b1ed43066ccfb9a92bf56cf73a979b856342fbbae7afb3",
+    "timing-subbank.gds": "866de11f1a02e782cf8ae43c3c0d4debc0240147ef74e1a7c75c5a7e2efbee67"
+  }
+}

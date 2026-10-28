@@ -1,0 +1,45 @@
+{
+  "case_id": "int8_per_tensor-input-022",
+  "model": "int8_per_tensor",
+  "id": "3170-137482-0029",
+  "role": "validation",
+  "condition": "clean",
+  "seed": null,
+  "reference": "HE ENTREATED ME TO TELL HIM THE TRUTH",
+  "input_float32_sha256": "5f5f23be4d4af416eb92a9e1f9046a57669ae2887bc6a9c2513e47d7fcf23613",
+  "hypothesis": "",
+  "normalized_tokens": [],
+  "edits": 8,
+  "reference_words": 8,
+  "hypothesis_words": 0,
+  "exact": false,
+  "lines": [
+    {
+      "text": "",
+      "start_time": 0.15999996662139893,
+      "duration": 2.5920000076293945,
+      "is_complete": true,
+      "samples": 41472,
+      "input_float32_sha256": "16b02c34d12ada003f1cba10b4440c49230f8390b23551a1932f9ee887fd6391"
+    }
+  ],
+  "request_sha256": "aa5decf99441dd5bd7024e5149f1b054b44d2a1180bae87793291d79218f1eef",
+  "worker_sha256": "4682e8a57db08e02a34f53b01f334f34faa3ca9a6546698f1e4650db359004b6",
+  "native_library_sha256": "1453a6c1c9072f3d05e9e5ae6ff423fae839e56631c5efb12bbd5c0280d04399",
+  "native_api_version": 30000,
+  "load_seconds": 0.04032616689801216,
+  "compute_seconds": 0.06218150001950562,
+  "audio_seconds": 2.905,
+  "process_cpu_seconds": 0.06243899999999998,
+  "voluntary_context_switches": 0,
+  "involuntary_context_switches": 5,
+  "system_load_average": [
+    10.4521484375,
+    8.9716796875,
+    9.86767578125
+  ],
+  "options": null,
+  "flags": 0,
+  "process_id": 80995,
+  "isolation": "One audio clip/condition in a fresh native process; no previous utterance or VAD state."
+}

@@ -1,0 +1,53 @@
+{
+  "case_id": "int8_per_tensor-input-009",
+  "model": "int8_per_tensor",
+  "id": "5536-43358-0011",
+  "role": "validation",
+  "condition": "white_noise_10db",
+  "seed": null,
+  "reference": "TO THE UNTUTORED SAGE THE CONCENTRATION OF POPULATION WAS THE PROLIFIC MOTHER OF ALL EVILS MORAL NO LESS THAN PHYSICAL",
+  "input_float32_sha256": "9562cf47734212a56f1ac49b45a39a66b268f75c2d66b9be8ce9c66b1a6745c8",
+  "hypothesis": " ",
+  "normalized_tokens": [],
+  "edits": 20,
+  "reference_words": 20,
+  "hypothesis_words": 0,
+  "exact": false,
+  "lines": [
+    {
+      "text": "",
+      "start_time": 0.09599995613098145,
+      "duration": 5.503999710083008,
+      "is_complete": true,
+      "samples": 88064,
+      "input_float32_sha256": "68fced1202c11ca9f3413021f6b9aad4465869bf78daa031c754f1960e692236"
+    },
+    {
+      "text": "",
+      "start_time": 5.440000057220459,
+      "duration": 2.1440000534057617,
+      "is_complete": true,
+      "samples": 34304,
+      "input_float32_sha256": "e32bebc085c8805ee622ac6fdd7fe7c99a1c8314c238c9fe940353244248065d"
+    }
+  ],
+  "request_sha256": "2320f271f5db684702a2008bf0300455bdfaaad542e3d573e6a05bd0ee8dfb50",
+  "worker_sha256": "4682e8a57db08e02a34f53b01f334f34faa3ca9a6546698f1e4650db359004b6",
+  "native_library_sha256": "1453a6c1c9072f3d05e9e5ae6ff423fae839e56631c5efb12bbd5c0280d04399",
+  "native_api_version": 30000,
+  "load_seconds": 0.04631633288227022,
+  "compute_seconds": 0.16041941684670746,
+  "audio_seconds": 7.59,
+  "process_cpu_seconds": 0.160228,
+  "voluntary_context_switches": 0,
+  "involuntary_context_switches": 53,
+  "system_load_average": [
+    10.0751953125,
+    8.81884765625,
+    9.83056640625
+  ],
+  "options": null,
+  "flags": 0,
+  "process_id": 80660,
+  "isolation": "One audio clip/condition in a fresh native process; no previous utterance or VAD state."
+}

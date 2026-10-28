@@ -1,0 +1,9 @@
+{
+  "epoch": 1791924103.837551,
+  "binary": "gate-array_port/sim",
+  "same_binary_as_primary_regression": true,
+  "observed_stdout": "vector=0 cycles=4163 reads=1280",
+  "stopped_by_worker_after_first_vector": true,
+  "full_suite_pass": false,
+  "purpose": "Diagnose buffered primary simulation log; actual first vector advances correctly"
+}

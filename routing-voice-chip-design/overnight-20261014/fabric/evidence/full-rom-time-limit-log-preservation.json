@@ -1,0 +1,13 @@
+{
+  "reason": "Existing full-ROM time budget; stop leaf OpenROAD 12 seconds before supervisor deadline to permit LibreLane log buffer closure. This is not a tool-reported routing violation.",
+  "deadline_unix": 1791941148.566433,
+  "action_unix": 1791941136.576469,
+  "run": "rv_fixed_proj320_rom-route-util20-density35-noinflate-200ns",
+  "signals": [
+    {
+      "pid": 88021,
+      "signal": "SIGTERM",
+      "command": "/nix/store/icn6jlv55q9rjxl95ks7anlf82kjw422-openroad-2026-02-17/bin/openroad -exit -no_splash -metrics /Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/runs/rv_fixed_proj320_rom-route-util20-density35-noinflate-200ns/03-openroad-globalrouting/or_metrics_out.json /nix/store/fp8lr6m38svkva6l93065sr0d3yyz6iq-python3-3.13.9-env/lib/python3.13/site-packages/librelane/scripts/openroad/grt.tcl"
+    }
+  ]
+}

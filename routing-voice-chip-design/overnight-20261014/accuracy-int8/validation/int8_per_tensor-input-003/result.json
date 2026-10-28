@@ -1,0 +1,61 @@
+{
+  "case_id": "int8_per_tensor-input-003",
+  "model": "int8_per_tensor",
+  "id": "2428-83705-0018",
+  "role": "validation",
+  "condition": "white_noise_10db",
+  "seed": null,
+  "reference": "IT TURNED OUT THAT SHE HAD A LITTLE MONEY OF HER OWN ABOUT A HUNDRED AND THIRTY POUNDS A YEAR",
+  "input_float32_sha256": "9374d460d209d833dc6f327a36c07471795703e9c592623b01eade85662448cd",
+  "hypothesis": "  ",
+  "normalized_tokens": [],
+  "edits": 20,
+  "reference_words": 20,
+  "hypothesis_words": 0,
+  "exact": false,
+  "lines": [
+    {
+      "text": "",
+      "start_time": 0.35199999809265137,
+      "duration": 1.343999981880188,
+      "is_complete": true,
+      "samples": 21504,
+      "input_float32_sha256": "edafd2099eb5d5664ebf17547600582f7b3fdfbd1e2eefb3b88a4b9613c116b2"
+    },
+    {
+      "text": "",
+      "start_time": 1.5679998397827148,
+      "duration": 2.3360002040863037,
+      "is_complete": true,
+      "samples": 37376,
+      "input_float32_sha256": "df359f101adf7b15fd897a6efc1ec30e6ba1cac4987ca4d2f5364e91744db591"
+    },
+    {
+      "text": "",
+      "start_time": 3.679999828338623,
+      "duration": 2.1760001182556152,
+      "is_complete": true,
+      "samples": 34816,
+      "input_float32_sha256": "45f3993a69afbf42770e9b14223588fe3c895c7e4d9296c33ead0b01bf477706"
+    }
+  ],
+  "request_sha256": "415186f9cf610e692546a6bf72f0f09b616dbbce79f6255bd41e6aafa051c013",
+  "worker_sha256": "4682e8a57db08e02a34f53b01f334f34faa3ca9a6546698f1e4650db359004b6",
+  "native_library_sha256": "1453a6c1c9072f3d05e9e5ae6ff423fae839e56631c5efb12bbd5c0280d04399",
+  "native_api_version": 30000,
+  "load_seconds": 0.05608191713690758,
+  "compute_seconds": 0.1362936249934137,
+  "audio_seconds": 5.885,
+  "process_cpu_seconds": 0.13489400000000001,
+  "voluntary_context_switches": 0,
+  "involuntary_context_switches": 67,
+  "system_load_average": [
+    9.49853515625,
+    8.6748046875,
+    9.79345703125
+  ],
+  "options": null,
+  "flags": 0,
+  "process_id": 80454,
+  "isolation": "One audio clip/condition in a fresh native process; no previous utterance or VAD state."
+}

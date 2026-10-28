@@ -1,0 +1,61 @@
+{
+  "case_id": "int8_per_channel-input-010",
+  "model": "int8_per_channel",
+  "id": "5536-43363-0015",
+  "role": "validation",
+  "condition": "clean",
+  "seed": null,
+  "reference": "FIVE YEARS LATER HE REPEATED THE SERVICE AND AGAIN SAVED HIS PEOPLE FROM AWFUL SLAUGHTER",
+  "input_float32_sha256": "ae738682ffc5616629d6dd966669524bff79a811dc4db1cd37045ebfccf294c8",
+  "hypothesis": "Five years later, he repeated the service, and again saved his people from awful slaughter.",
+  "normalized_tokens": [
+    "five",
+    "years",
+    "later",
+    "he",
+    "repeated",
+    "the",
+    "service",
+    "and",
+    "again",
+    "saved",
+    "his",
+    "people",
+    "from",
+    "awful",
+    "slaughter"
+  ],
+  "edits": 0,
+  "reference_words": 15,
+  "hypothesis_words": 15,
+  "exact": true,
+  "lines": [
+    {
+      "text": "Five years later, he repeated the service, and again saved his people from awful slaughter.",
+      "start_time": 0.09599995613098145,
+      "duration": 4.640000343322754,
+      "is_complete": true,
+      "samples": 74240,
+      "input_float32_sha256": "c37855d4b398407e595a09f394ef1b593e664efa37498a28f6f239557065eec9"
+    }
+  ],
+  "request_sha256": "d63194348d3cfc7b85c7e2a3fa78c5255e775093fd569610be8503b4dd4af67b",
+  "worker_sha256": "4682e8a57db08e02a34f53b01f334f34faa3ca9a6546698f1e4650db359004b6",
+  "native_library_sha256": "1453a6c1c9072f3d05e9e5ae6ff423fae839e56631c5efb12bbd5c0280d04399",
+  "native_api_version": 30000,
+  "load_seconds": 0.0411382089368999,
+  "compute_seconds": 0.2128312080167234,
+  "audio_seconds": 4.74,
+  "process_cpu_seconds": 0.20549599999999998,
+  "voluntary_context_switches": 0,
+  "involuntary_context_switches": 124,
+  "system_load_average": [
+    10.0751953125,
+    8.81884765625,
+    9.83056640625
+  ],
+  "options": null,
+  "flags": 0,
+  "process_id": 80725,
+  "isolation": "One audio clip/condition in a fresh native process; no previous utterance or VAD state."
+}

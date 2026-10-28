@@ -1,0 +1,34 @@
+{
+  "time_utc": "2026-10-13T23:30:59.601908+00:00",
+  "reason": "ABC default buffering excludes primary inputs; fanout audit failed: reset11359 row4068 partial2588. Correct PI buffering before placement.",
+  "processes": {
+    "19757": {
+      "ppid": 1,
+      "cmd": "python3 /workspace/rv/overnight-20261014/engine-buffered/finish.py "
+    },
+    "22575": {
+      "ppid": 17017,
+      "cmd": "sta -no_splash -exit /nix/store/1v4pl3wcjvysadks22gj14b8qj9qz20d-python3-3.13.9-env/lib/python3.13/site-packages/librelane/scripts/openroad/sta/corner.tcl "
+    },
+    "22576": {
+      "ppid": 17017,
+      "cmd": "sta -no_splash -exit /nix/store/1v4pl3wcjvysadks22gj14b8qj9qz20d-python3-3.13.9-env/lib/python3.13/site-packages/librelane/scripts/openroad/sta/corner.tcl "
+    },
+    "22577": {
+      "ppid": 17017,
+      "cmd": "sta -no_splash -exit /nix/store/1v4pl3wcjvysadks22gj14b8qj9qz20d-python3-3.13.9-env/lib/python3.13/site-packages/librelane/scripts/openroad/sta/corner.tcl "
+    },
+    "16983": {
+      "ppid": 1,
+      "cmd": "bash run-flow-v2.sh "
+    },
+    "17017": {
+      "ppid": 16987,
+      "cmd": "/nix/store/jj6jldlw37r8yy9kc1smrax9dhnjm2x4-python3-3.13.9/bin/python3.13 /nix/store/fcbng9rk8z8yv7dm60slpn7nrq52had2-python3.13-librelane-3.0.11/bin/.librelane-wrapped --condensed --log-level WARNING --from Yosys.Synthesis --with-initial-state /workspace/rv/overnight-20261014/engine-buffered/runs/buf-v1/05-yosys-jsonheader/state_out.json --manual-pdk --pdk gf180mcuD --pdk-root /workspace/rv/overnight-20261014/fabric-k64/pdks --design-dir /workspace/rv/overnight-20261014/engine-buffered --run-tag buf-v2 --jobs 12 /workspace/rv/overnight-20261014/engine-buffered/configs/array_port_buf.json "
+    },
+    "16987": {
+      "ppid": 16983,
+      "cmd": "bash /tmp/nix-shell-16987-3477438629/rc "
+    }
+  }
+}

@@ -1,0 +1,394 @@
+{
+  "schema_version": 1,
+  "scope": "F64/history66 conditional complete-block floorplan; internal macro layouts and full memory completeness unproved",
+  "vdd": 3.3,
+  "standard_cell_corner": "gf180mcu_fd_sc_mcu7t5v0__tt_025C_3v30",
+  "sram_macros": [
+    {
+      "name": "gf180mcu_fd_ip_sram__sram128x8m8wm1",
+      "bytes": 128,
+      "width_um": 431.86,
+      "height_um": 268.88,
+      "area_mm2": 0.1161185168,
+      "source": "pdk/gf180mcu_fd_ip_sram__sram128x8m8wm1.lef"
+    },
+    {
+      "name": "gf180mcu_fd_ip_sram__sram256x8m8wm1",
+      "bytes": 256,
+      "width_um": 431.86,
+      "height_um": 340.88,
+      "area_mm2": 0.14721243679999998,
+      "source": "pdk/gf180mcu_fd_ip_sram__sram256x8m8wm1.lef"
+    },
+    {
+      "name": "gf180mcu_fd_ip_sram__sram512x8m8wm1",
+      "bytes": 512,
+      "width_um": 431.86,
+      "height_um": 484.88,
+      "area_mm2": 0.20940027679999998,
+      "source": "pdk/gf180mcu_fd_ip_sram__sram512x8m8wm1.lef"
+    },
+    {
+      "name": "gf180mcu_fd_ip_sram__sram64x8m8wm1",
+      "bytes": 64,
+      "width_um": 431.86,
+      "height_um": 232.88,
+      "area_mm2": 0.1005715568,
+      "source": "pdk/gf180mcu_fd_ip_sram__sram64x8m8wm1.lef"
+    }
+  ],
+  "selected_sram": {
+    "name": "gf180mcu_fd_ip_sram__sram512x8m8wm1",
+    "bytes": 512,
+    "width_um": 431.86,
+    "height_um": 484.88,
+    "area_mm2": 0.20940027679999998,
+    "source": "pdk/gf180mcu_fd_ip_sram__sram512x8m8wm1.lef"
+  },
+  "sram_packing_overhead": 1.1,
+  "binary_rom_um2_per_bit": 1.76,
+  "binary_rom_status": "ASSUMED 7.04/4; not a characterized binary ROM",
+  "binary_rom_periphery_factor": 1.25,
+  "macro_halo_um": 30,
+  "maximum_tile_area_mm2": 9,
+  "pad_current_budget_a": 0.025,
+  "pad_current_status": "ASSUMED25mA per supply pad; no package/ESD/EM qualification",
+  "pad_current_margin": 2,
+  "scenarios": {
+    "stdcell": {
+      "selection_um2": 40,
+      "periphery_factor": 1.0,
+      "status": "PLACEHOLDER40um2/selection pending W2/W2b"
+    },
+    "custom7": {
+      "selection_um2": 7.04,
+      "periphery_factor": 1.25,
+      "status": "USER SCENARIO historical partial density plus assumed25% periphery"
+    },
+    "optimistic3_5": {
+      "selection_um2": 3.5,
+      "periphery_factor": 1.25,
+      "status": "OPTIMISTIC ASSUMPTION; no measured macro"
+    }
+  },
+  "blocks": [
+    {
+      "name": "frontend_FP32",
+      "selections": 0,
+      "rom_bytes": 8298240,
+      "logic_area_mm2": 12,
+      "power_w": 0.15,
+      "power_status": "assumed simultaneous static load; not activity-based recognizer power",
+      "source": "experiments/chip-integration-20261012-current-learned-fulltables-service-ledger-v2/ledger.json",
+      "note": "All native FP32 bytes from ledger; no INT4 substitution. 12 mm2 logic allowance assumed."
+    },
+    {
+      "name": "encoder_fabric_L0",
+      "selections": 1228800,
+      "rom_bytes": 0,
+      "logic_area_mm2": 0,
+      "power_w": 0.025,
+      "power_status": "assumed simultaneous static load; not activity-based recognizer power",
+      "source": "experiments/chip-integration-20261012-current-learned-fulltables-service-ledger-v2/ledger.json",
+      "note": "4*320*320 + 2*320*1280 selections per layer; datapath separate"
+    },
+    {
+      "name": "encoder_fabric_L1",
+      "selections": 1228800,
+      "rom_bytes": 0,
+      "logic_area_mm2": 0,
+      "power_w": 0.025,
+      "power_status": "assumed simultaneous static load; not activity-based recognizer power",
+      "source": "experiments/chip-integration-20261012-current-learned-fulltables-service-ledger-v2/ledger.json",
+      "note": "4*320*320 + 2*320*1280 selections per layer; datapath separate"
+    },
+    {
+      "name": "encoder_fabric_L2",
+      "selections": 1228800,
+      "rom_bytes": 0,
+      "logic_area_mm2": 0,
+      "power_w": 0.025,
+      "power_status": "assumed simultaneous static load; not activity-based recognizer power",
+      "source": "experiments/chip-integration-20261012-current-learned-fulltables-service-ledger-v2/ledger.json",
+      "note": "4*320*320 + 2*320*1280 selections per layer; datapath separate"
+    },
+    {
+      "name": "encoder_fabric_L3",
+      "selections": 1228800,
+      "rom_bytes": 0,
+      "logic_area_mm2": 0,
+      "power_w": 0.025,
+      "power_status": "assumed simultaneous static load; not activity-based recognizer power",
+      "source": "experiments/chip-integration-20261012-current-learned-fulltables-service-ledger-v2/ledger.json",
+      "note": "4*320*320 + 2*320*1280 selections per layer; datapath separate"
+    },
+    {
+      "name": "encoder_fabric_L4",
+      "selections": 1228800,
+      "rom_bytes": 0,
+      "logic_area_mm2": 0,
+      "power_w": 0.025,
+      "power_status": "assumed simultaneous static load; not activity-based recognizer power",
+      "source": "experiments/chip-integration-20261012-current-learned-fulltables-service-ledger-v2/ledger.json",
+      "note": "4*320*320 + 2*320*1280 selections per layer; datapath separate"
+    },
+    {
+      "name": "encoder_fabric_L5",
+      "selections": 1228800,
+      "rom_bytes": 0,
+      "logic_area_mm2": 0,
+      "power_w": 0.025,
+      "power_status": "assumed simultaneous static load; not activity-based recognizer power",
+      "source": "experiments/chip-integration-20261012-current-learned-fulltables-service-ledger-v2/ledger.json",
+      "note": "4*320*320 + 2*320*1280 selections per layer; datapath separate"
+    },
+    {
+      "name": "encoder_datapath_attention",
+      "selections": 0,
+      "rom_bytes": 0,
+      "logic_area_mm2": 30,
+      "power_w": 0.12,
+      "power_status": "assumed simultaneous static load; not activity-based recognizer power",
+      "source": "experiments/chip-integration-20261012-current-learned-fulltables-service-ledger-v2/ledger.json",
+      "note": "Assumed aggregate area for shared products, accumulators, FP32 and dynamic attention"
+    },
+    {
+      "name": "decoder_fabric_L0",
+      "selections": 1843200,
+      "rom_bytes": 0,
+      "logic_area_mm2": 0,
+      "power_w": 0.025,
+      "power_status": "assumed simultaneous static load; not activity-based recognizer power",
+      "source": "experiments/chip-integration-20261012-current-learned-fulltables-service-ledger-v2/ledger.json",
+      "note": "Self 4*320*320 + cross Q/O 2*320*320 + FF 3*320*1280"
+    },
+    {
+      "name": "decoder_fabric_L1",
+      "selections": 1843200,
+      "rom_bytes": 0,
+      "logic_area_mm2": 0,
+      "power_w": 0.025,
+      "power_status": "assumed simultaneous static load; not activity-based recognizer power",
+      "source": "experiments/chip-integration-20261012-current-learned-fulltables-service-ledger-v2/ledger.json",
+      "note": "Self 4*320*320 + cross Q/O 2*320*320 + FF 3*320*1280"
+    },
+    {
+      "name": "decoder_fabric_L2",
+      "selections": 1843200,
+      "rom_bytes": 0,
+      "logic_area_mm2": 0,
+      "power_w": 0.025,
+      "power_status": "assumed simultaneous static load; not activity-based recognizer power",
+      "source": "experiments/chip-integration-20261012-current-learned-fulltables-service-ledger-v2/ledger.json",
+      "note": "Self 4*320*320 + cross Q/O 2*320*320 + FF 3*320*1280"
+    },
+    {
+      "name": "decoder_fabric_L3",
+      "selections": 1843200,
+      "rom_bytes": 0,
+      "logic_area_mm2": 0,
+      "power_w": 0.025,
+      "power_status": "assumed simultaneous static load; not activity-based recognizer power",
+      "source": "experiments/chip-integration-20261012-current-learned-fulltables-service-ledger-v2/ledger.json",
+      "note": "Self 4*320*320 + cross Q/O 2*320*320 + FF 3*320*1280"
+    },
+    {
+      "name": "decoder_fabric_L4",
+      "selections": 1843200,
+      "rom_bytes": 0,
+      "logic_area_mm2": 0,
+      "power_w": 0.025,
+      "power_status": "assumed simultaneous static load; not activity-based recognizer power",
+      "source": "experiments/chip-integration-20261012-current-learned-fulltables-service-ledger-v2/ledger.json",
+      "note": "Self 4*320*320 + cross Q/O 2*320*320 + FF 3*320*1280"
+    },
+    {
+      "name": "decoder_fabric_L5",
+      "selections": 1843200,
+      "rom_bytes": 0,
+      "logic_area_mm2": 0,
+      "power_w": 0.025,
+      "power_status": "assumed simultaneous static load; not activity-based recognizer power",
+      "source": "experiments/chip-integration-20261012-current-learned-fulltables-service-ledger-v2/ledger.json",
+      "note": "Self 4*320*320 + cross Q/O 2*320*320 + FF 3*320*1280"
+    },
+    {
+      "name": "decoder_datapath",
+      "selections": 0,
+      "rom_bytes": 0,
+      "logic_area_mm2": 25,
+      "power_w": 0.1,
+      "power_status": "assumed simultaneous static load; not activity-based recognizer power",
+      "source": "experiments/chip-integration-20261012-current-learned-fulltables-service-ledger-v2/ledger.json",
+      "note": "Assumed aggregate arithmetic area, including head datapath"
+    },
+    {
+      "name": "embedding_head_tied_once",
+      "selections": 10485760,
+      "rom_bytes": 0,
+      "logic_area_mm2": 0,
+      "power_w": 0.07,
+      "power_status": "assumed simultaneous static load; not activity-based recognizer power",
+      "source": "experiments/chip-integration-20261012-current-learned-fulltables-service-ledger-v2/ledger.json",
+      "note": "Tied table counted once, ledger indices 5242880 bytes*2"
+    },
+    {
+      "name": "producer_KV_and_positions",
+      "selections": 2539520,
+      "rom_bytes": 30720,
+      "logic_area_mm2": 6,
+      "power_w": 0.045,
+      "power_status": "assumed simultaneous static load; not activity-based recognizer power",
+      "source": "experiments/chip-integration-20261012-current-learned-fulltables-service-ledger-v2/ledger.json",
+      "note": "Producer K/V 6*2*320*320; positional 1310720 selections; padded metadata30720 bytes; assumed logic"
+    },
+    {
+      "name": "codebooks_and_other_metadata",
+      "selections": 0,
+      "rom_bytes": 8264320,
+      "logic_area_mm2": 0,
+      "power_w": 0.035,
+      "power_status": "assumed simultaneous static load; not activity-based recognizer power",
+      "source": "experiments/chip-integration-20261012-current-learned-fulltables-service-ledger-v2/ledger.json",
+      "note": "7,864,320 B lane-major book payload from docs/TAALAS-BOOK-PAGE-CACHE.md; additional400000 B scalar metadata allowance. Physical compression not credited."
+    },
+    {
+      "name": "encoder_owner2_region0_1_2",
+      "selections": 0,
+      "rom_bytes": 0,
+      "logic_area_mm2": 0,
+      "power_w": 0.015,
+      "power_status": "assumed simultaneous static load; not activity-based recognizer power",
+      "source": "experiments/chip-integration-20261012-current-learned-fulltables-service-ledger-v2/ledger.json",
+      "sram_bytes": 184320,
+      "logical_bytes": 184320,
+      "note": "Each declared bank rounded independently to real 512x8 SRAM"
+    },
+    {
+      "name": "producer_mutable_regions0_1_2",
+      "selections": 0,
+      "rom_bytes": 0,
+      "logic_area_mm2": 0,
+      "power_w": 0.015,
+      "power_status": "assumed simultaneous static load; not activity-based recognizer power",
+      "source": "experiments/chip-integration-20261012-current-learned-fulltables-service-ledger-v2/ledger.json",
+      "sram_bytes": 184320,
+      "logical_bytes": 184320,
+      "note": "Each declared bank rounded independently to real 512x8 SRAM"
+    },
+    {
+      "name": "compact_committed_shadow_history",
+      "selections": 0,
+      "rom_bytes": 0,
+      "logic_area_mm2": 0,
+      "power_w": 0.015,
+      "power_status": "assumed simultaneous static load; not activity-based recognizer power",
+      "source": "experiments/chip-integration-20261012-current-learned-fulltables-service-ledger-v2/ledger.json",
+      "sram_bytes": 142336,
+      "logical_bytes": 141504,
+      "note": "Each declared bank rounded independently to real 512x8 SRAM"
+    },
+    {
+      "name": "frontend_mutable",
+      "selections": 0,
+      "rom_bytes": 0,
+      "logic_area_mm2": 0,
+      "power_w": 0.01,
+      "power_status": "assumed simultaneous static load; not activity-based recognizer power",
+      "source": "experiments/chip-integration-20261012-current-learned-fulltables-service-ledger-v2/ledger.json",
+      "sram_bytes": 81920,
+      "logical_bytes": 81920
+    },
+    {
+      "name": "book_cache",
+      "selections": 0,
+      "rom_bytes": 0,
+      "logic_area_mm2": 0,
+      "power_w": 0.005,
+      "power_status": "assumed simultaneous static load; not activity-based recognizer power",
+      "source": "experiments/chip-integration-20261012-current-learned-fulltables-service-ledger-v2/ledger.json",
+      "sram_bytes": 9216,
+      "logical_bytes": 9216
+    },
+    {
+      "name": "control_clock_IO_interface",
+      "selections": 0,
+      "rom_bytes": 0,
+      "logic_area_mm2": 12,
+      "power_w": 0.05,
+      "power_status": "assumed simultaneous static load; not activity-based recognizer power",
+      "source": "experiments/chip-integration-20261012-current-learned-fulltables-service-ledger-v2/ledger.json",
+      "note": "Assumed12mm2 digital control/clock/interface; physical IO cells outside this allowance"
+    }
+  ],
+  "ledger_sha256": "5a32856cb240e3a5d4fd81f972a2624c32a41eee860b3ac8336b88c1cb8f7e8f",
+  "conservative_only_blocks": [
+    {
+      "name": "KV_retention_reserve",
+      "selections": 0,
+      "rom_bytes": 0,
+      "logic_area_mm2": 0,
+      "power_w": 0.035,
+      "power_status": "assumed simultaneous static load; not activity-based recognizer power",
+      "source": "experiments/chip-integration-20261012-current-learned-fulltables-service-ledger-v2/ledger.json",
+      "sram_bytes": 983040,
+      "logical_bytes": 983040,
+      "note": "Explicit assumed all-layer FP32 K/V retention at F64. Current streaming regeneration may need less; not a ledger measurement."
+    },
+    {
+      "name": "private_state_reserve",
+      "selections": 0,
+      "rom_bytes": 0,
+      "logic_area_mm2": 0,
+      "power_w": 0.035,
+      "power_status": "assumed simultaneous static load; not activity-based recognizer power",
+      "source": "experiments/chip-integration-20261012-current-learned-fulltables-service-ledger-v2/ledger.json",
+      "sram_bytes": 524288,
+      "logical_bytes": 524288,
+      "note": "Assumed512KiB additional private state pending full-top Yosys memory inventory; completeness unknown"
+    }
+  ],
+  "memory_scenarios": {
+    "sram_open_macro": {
+      "bank_bytes": 512,
+      "bank_area_mm2": 0.20940027679999998,
+      "status": "MEASURED-LEF; 51.123114453125 um2/bit before group packing",
+      "source": "pdk/gf180mcu_fd_ip_sram__sram512x8m8wm1.lef"
+    },
+    "sram_4k_research": {
+      "bank_bytes": 4096,
+      "bank_area_mm2": 0.9479839488,
+      "status": "PROJECT RESEARCH BANK footprint; transfer to current memory ports unproved",
+      "source": "docs/TAALAS-DIE-SIZE-AND-SYSTEM-COSTS-2026-10-02.md"
+    },
+    "sram_dense_custom": {
+      "bank_bytes": 512,
+      "bank_area_mm2": 0.049152,
+      "status": "ASSUMED effective12um2/bit including about40% periphery; compiled macro required",
+      "source": "Lead guidance1 2026-10-14"
+    }
+  },
+  "design_levers": {
+    "frontend_int8": "2,074,560 coefficients; FP32 to INT8, requires model-accuracy re-validation",
+    "books_in_array": "book payload encoded using selection density/4 per bit plus same periphery; array port/timing design required; unchanged values",
+    "kv8": "Only explicitly identified FP32 KV retention is reduced4x. No KV reserve in baseline; no saving credited until inventory classifies real KV. Requires model-accuracy re-validation."
+  },
+  "baseline_memory_scope": "Only ledger banks, frontend mutable and book cache. Missing private/KV state pending full-top Yosys inventory; NOT complete recognizer capacity.",
+  "measurement_evidence": [
+    {
+      "worker": "fabric",
+      "sha256": "f9e04fdace122e54f7ac2fe694ba88d6518b49dec56c218cf0debc8b4c6ff539",
+      "snapshot": "inputs/fabric-f9e04fdace12.json",
+      "candidates": [],
+      "status": "No usable measured area/power; placeholders retained"
+    },
+    {
+      "worker": "fabric-k64",
+      "sha256": "f9b3ddf4bd95a9d85fa446aa9d19184b0422f96f19c01b89182241945af69ac6",
+      "snapshot": "inputs/fabric-k64-f9b3ddf4bd95.json",
+      "candidates": [],
+      "status": "No usable measured area/power; placeholders retained"
+    }
+  ],
+  "yosys_inventory_available": false
+}

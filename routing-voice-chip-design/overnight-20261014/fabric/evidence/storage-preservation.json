@@ -1,0 +1,24 @@
+{
+  "action": "Losslessly gzip VCDs; remove task-local duplicate PDK to reclaim headroom after system disk dropped below floor while W2 was stopped. Original PDK preserved.",
+  "vcd": [
+    {
+      "path": "vectors/rv_fixed_proj320_dp.vcd.gz",
+      "uncompressed_sha256": "f26195e2c6fce53df8059af651a87ae2af67dc68dbb71d5d001b535d0ee9d56c",
+      "uncompressed_bytes": 102675080,
+      "compressed_bytes": 30403300
+    },
+    {
+      "path": "vectors/rv_fixed_proj64x320_rom.vcd.gz",
+      "uncompressed_sha256": "cd10189061f3e9d1e96f31f47d8011d1a917046056d3d1fdd7631c0fcb5ce986",
+      "uncompressed_bytes": 33307011,
+      "compressed_bytes": 9117675
+    },
+    {
+      "path": "vectors/rv_fixed_proj320_rom.vcd.gz",
+      "uncompressed_sha256": "13ab5817a1ba973c7688b912380686108c9dc6c9c0f1ebce5b989c7cb505a572",
+      "uncompressed_bytes": 167193378,
+      "compressed_bytes": 45785626
+    }
+  ],
+  "free_bytes_after": 29461651456
+}

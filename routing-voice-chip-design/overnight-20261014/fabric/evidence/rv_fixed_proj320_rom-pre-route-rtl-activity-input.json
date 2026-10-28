@@ -1,0 +1,16 @@
+{
+  "parasitics": "placement-estimated, NOT extracted",
+  "hook": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/evidence/rv_fixed_proj320_rom-pre-route-rtl-activity-power-hook.tcl",
+  "hook_sha256": "9f065543aaba4e0998ccd5401c8646f1d67c16d34894730f76eb70e4b8eab5ea",
+  "source_state": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/runs/rv_fixed_proj320_rom-route-util20-density35-noinflate-200ns/02-openroad-stamidpnr-2/state_out.json",
+  "auxiliary_run_state": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/evidence/rv_fixed_proj320_rom-pre-route-rtl-activity-minimal-state.json",
+  "omitted_views_note": "Pre-route auxiliary uses required ODB plus SDC/metrics; original complete checkpoint unchanged",
+  "config": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/configs/rv_fixed_proj320_rom-pre-route-rtl-activity.json",
+  "vcd": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/tmp/rv_fixed_proj320_rom-pre-route-rtl-activity.vcd",
+  "compressed_source": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/vectors/rv_fixed_proj320_rom.power-200ns.vcd.gz",
+  "vcd_sha256": "35c51be7859701cfa02e32e0fe039a503e622512106e1ac1349cdb80197ae793",
+  "clock_period_ns": 200,
+  "corner": "nom_tt_025C_5v00",
+  "vcd_scope": "tb/dut",
+  "activity": "Five random RTL vectors plus clocked readout, no gate-level glitches"
+}

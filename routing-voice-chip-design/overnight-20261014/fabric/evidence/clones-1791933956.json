@@ -1,0 +1,67 @@
+{
+  "unix": 1791933956.601891,
+  "method": "APFS cp -c copy-on-write, exact content hash checked before atomic replacement",
+  "nominal_duplicate_bytes_shared": 1006375765,
+  "changes": [
+    {
+      "path": "runs/rv_fixed_proj320_dp-io-microns/04-openroad-globalplacement/rv_fixed_proj320_dp.pnl.v",
+      "clone_source": "runs/rv_fixed_proj320_dp-io-microns/01-openroad-ioplacement/rv_fixed_proj320_dp.pnl.v",
+      "sha256": "2541568aa210f4872e2f8d0dee2a90300eb588b233f38462c8d79809fda8d057",
+      "bytes": 54182707
+    },
+    {
+      "path": "runs/rv_fixed_proj64x320_rom-pre-route-gate-cell-activity/final/odb/rv_fixed_proj64x320_rom.odb",
+      "clone_source": "runs/rv_fixed_proj64x320_rom-clock200/01-openroad-resizertimingpostcts/rv_fixed_proj64x320_rom.odb",
+      "sha256": "eba9737e03ba311ff9adcece1059223111d48b1905aa2b30f0a07caa5a1ef2f9",
+      "bytes": 159254158
+    },
+    {
+      "path": "runs/rv_fixed_proj64x320_rom-preroute-render/final/sdf/nom_ff_n40C_5v50/rv_fixed_proj64x320_rom__nom_ff_n40C_5v50.sdf",
+      "clone_source": "runs/rv_fixed_proj64x320_rom-pre-route-gate-cell-activity/final/sdf/nom_ff_n40C_5v50/rv_fixed_proj64x320_rom__nom_ff_n40C_5v50.sdf",
+      "sha256": "a96308acf2ee335bea8e55deef1330a438c14681731327d89eda5923702180c2",
+      "bytes": 198127302
+    },
+    {
+      "path": "runs/rv_fixed_proj64x320_rom-pre-route-gate-cell-activity/final/pnl/rv_fixed_proj64x320_rom.pnl.v",
+      "clone_source": "runs/rv_fixed_proj64x320_rom-clock200/01-openroad-resizertimingpostcts/rv_fixed_proj64x320_rom.pnl.v",
+      "sha256": "18044b57afca49c438687f4438bd1f5dfbf85b2cbd3e6726c1ee45b605e93e6b",
+      "bytes": 53178351
+    },
+    {
+      "path": "runs/rv_fixed_proj64x320_rom-pre-route-gate-cell-activity/final/nl/rv_fixed_proj64x320_rom.nl.v",
+      "clone_source": "runs/rv_fixed_proj64x320_rom-clock200/01-openroad-resizertimingpostcts/rv_fixed_proj64x320_rom.nl.v",
+      "sha256": "99a7459f49cb765e4d4d879e3a38aa5a986a7d02e4071fa5ffd6e42c6d6a025b",
+      "bytes": 36397029
+    },
+    {
+      "path": "runs/rv_fixed_proj64x320_rom-pre-route-gate-cell-activity/final/def/rv_fixed_proj64x320_rom.def",
+      "clone_source": "runs/rv_fixed_proj64x320_rom-clock200/01-openroad-resizertimingpostcts/rv_fixed_proj64x320_rom.def",
+      "sha256": "01f46a9a2134cb01e34068ab0d6af7d1518767024a015544540314d52b379b8b",
+      "bytes": 58345380
+    },
+    {
+      "path": "runs/rv_fixed_proj64x320_rom-preroute-render/final/sdf/nom_tt_025C_5v00/rv_fixed_proj64x320_rom__nom_tt_025C_5v00.sdf",
+      "clone_source": "runs/rv_fixed_proj64x320_rom-pre-route-gate-cell-activity/final/sdf/nom_tt_025C_5v00/rv_fixed_proj64x320_rom__nom_tt_025C_5v00.sdf",
+      "sha256": "c146e93ffc044e7576def2137864ad7b2f90de8fa6bb5ef69c7195e8fef67511",
+      "bytes": 198814367
+    },
+    {
+      "path": "runs/rv_fixed_proj320_dp-io-microns/04-openroad-globalplacement/rv_fixed_proj320_dp.sdc",
+      "clone_source": "runs/rv_fixed_proj320_dp-io-microns/01-openroad-ioplacement/rv_fixed_proj320_dp.sdc",
+      "sha256": "485fb794f72d38bb1f5a95a5156abcc12e7f3d22053e50c4299d83a5d2460fc0",
+      "bytes": 10459824
+    },
+    {
+      "path": "runs/rv_fixed_proj320_dp-io-microns/04-openroad-globalplacement/rv_fixed_proj320_dp.nl.v",
+      "clone_source": "runs/rv_fixed_proj320_dp-io-microns/01-openroad-ioplacement/rv_fixed_proj320_dp.nl.v",
+      "sha256": "83d6795cdce42bc740a7f29b4c286364840e89eb772ee2b4b155729324e22bea",
+      "bytes": 38037793
+    },
+    {
+      "path": "runs/rv_fixed_proj64x320_rom-preroute-render/final/sdf/nom_ss_125C_4v50/rv_fixed_proj64x320_rom__nom_ss_125C_4v50.sdf",
+      "clone_source": "runs/rv_fixed_proj64x320_rom-pre-route-gate-cell-activity/final/sdf/nom_ss_125C_4v50/rv_fixed_proj64x320_rom__nom_ss_125C_4v50.sdf",
+      "sha256": "75d3208c533850de1cf45384960e2f4be4f8aa524e5ff224c7c986238abb081d",
+      "bytes": 199578854
+    }
+  ]
+}

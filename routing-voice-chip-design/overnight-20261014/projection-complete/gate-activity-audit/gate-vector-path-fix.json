@@ -1,0 +1,35 @@
+{
+  "source_cpp": "/workspace/rv/overnight-20261014/projection-complete/gate-trace/Vtb___024root__0.cpp",
+  "old_sha256": "17d174c86bb9d43103b5f534e399c564993329a5dfde24dba149e011325cca97",
+  "corrected_sha256": "5ed2a8cef044a228724fe871f009f9a0f533754fdf5d6a60059740c012a4523c",
+  "changed_lines": 4,
+  "old_prefix": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric-k64/vectors/",
+  "new_prefix": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/projection-complete/vectors/",
+  "scope": "Only four readmem filename literals; no gate equations or expected numeric values changed",
+  "input_vectors": [
+    {
+      "file": "vectors/integer-all.hex",
+      "bytes": 155520,
+      "sha256": "404d249a44593c0c1bf53b8e0c0ed19f6ed3b527736029472c761077ff8e0309",
+      "source": "overnight-20261014/fabric-k64/vectors/integer-all.hex"
+    },
+    {
+      "file": "vectors/inputs.hex",
+      "bytes": 276480,
+      "sha256": "a6914fe441e732dc9408b8feb9a5f9363842842b27364377e0a8168809884d55",
+      "source": "overnight-20261014/fabric-k64/vectors/inputs.hex"
+    },
+    {
+      "file": "vectors/expected.hex",
+      "bytes": 155520,
+      "sha256": "fda601d8ea804b285aaef12616f07d6fefbe66292bfb21f2f4752abf8f1fcecd",
+      "source": "overnight-20261014/fabric-k64/vectors/expected.hex"
+    },
+    {
+      "file": "vectors/activation-scales.hex",
+      "bytes": 486,
+      "sha256": "10ded5f83eb5d1d24ad6c3b4734ade8d359a692b06570c43483807fecce24eae",
+      "source": "overnight-20261014/fabric-k64/vectors/activation-scales.hex"
+    }
+  ]
+}

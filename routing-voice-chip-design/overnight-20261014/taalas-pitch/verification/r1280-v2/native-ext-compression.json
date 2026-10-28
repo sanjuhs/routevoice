@@ -1,0 +1,33 @@
+{
+  "utc": "2026-10-13T22:43:23.565370+00:00",
+  "authorization": "Parent requested only this .ext archive; timing confirmed no current or planned readers.",
+  "native_path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/taalas-pitch/verification/r1280-v2/W6_PITCH_BANK_FLAT.ext",
+  "archive_path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/taalas-pitch/verification/r1280-v2/W6_PITCH_BANK_FLAT.ext.gz",
+  "expected_native_sha256": "73b3502c7294f325537d86a8b62a5b94ae75d93224c933e23dffc143c00c3717",
+  "status": "complete",
+  "raw_removed": true,
+  "minimum_free_gib": 23.680988311767578,
+  "reader_checks": [
+    {
+      "utc": "2026-10-13T22:43:23.841090+00:00",
+      "returncode": 1,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "utc": "2026-10-13T22:43:34.177721+00:00",
+      "returncode": 1,
+      "stdout": "",
+      "stderr": ""
+    }
+  ],
+  "source_sha256": "73b3502c7294f325537d86a8b62a5b94ae75d93224c933e23dffc143c00c3717",
+  "native_bytes": 1271881706,
+  "archive_bytes": 90196781,
+  "decompressed_sha256": "73b3502c7294f325537d86a8b62a5b94ae75d93224c933e23dffc143c00c3717",
+  "decompressed_bytes": 1271881706,
+  "archive_sha256": "cbf115bcc3d509100bdfbcff31c1f853d56e7ca1e6c139abac1c430ac2a67b7f",
+  "recovered_bytes": 1181684925,
+  "elapsed_seconds": 11.163053791038692,
+  "reproduction": "Restore losslessly with gzip -dc W6_PITCH_BANK_FLAT.ext.gz > W6_PITCH_BANK_FLAT.ext, then verify SHA256 matches expected_native_sha256 before using ext2spice. Allocate at least native_bytes plus the22GiB reserve before restoration."
+}

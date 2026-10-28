@@ -1,0 +1,72 @@
+{
+  "unix": 1791937292.7162292,
+  "method": "ditto --hfsCompression, SHA256 verified before atomic replace; transparent POSIX reads retain identical bytes",
+  "free_before_bytes": 25462558720,
+  "free_after_bytes": 26216390656,
+  "changes": [
+    {
+      "path": "runs/rv_fixed_proj320_dp-util20-200ns/20-openroad-repairdesignpostgpl/rv_fixed_proj320_dp.def",
+      "sha256": "f1c28b2e78719d16f826d0bb464454ef052535b6e4168bc987a60baacdea19fb",
+      "bytes": 94499634,
+      "before_allocated_bytes": 100700160,
+      "after_allocated_bytes": 14729216,
+      "flags": 32
+    },
+    {
+      "path": "runs/rv_fixed_proj320_dp-util20-200ns/20-openroad-repairdesignpostgpl/rv_fixed_proj320_dp.nl.v",
+      "sha256": "948d13235efbabd7f4a562d22f5fd2c07bec32d6fa88113cb1076ec7fccb733b",
+      "bytes": 49710124,
+      "before_allocated_bytes": 49713152,
+      "after_allocated_bytes": 8417280,
+      "flags": 32
+    },
+    {
+      "path": "runs/rv_fixed_proj320_dp-util20-200ns/20-openroad-repairdesignpostgpl/rv_fixed_proj320_dp.odb",
+      "sha256": "1d43c7570a19cb481c44d6a7fddd94437912a808b11b24d09021111c3c4f163d",
+      "bytes": 227617596,
+      "before_allocated_bytes": 227618816,
+      "after_allocated_bytes": 57692160,
+      "flags": 32
+    },
+    {
+      "path": "runs/rv_fixed_proj320_dp-util20-200ns/20-openroad-repairdesignpostgpl/rv_fixed_proj320_dp.pnl.v",
+      "sha256": "43b5de03219c1df0eb48502dcd41dbffb6b199254fd102dd0834d03cc0fd206e",
+      "bytes": 72366274,
+      "before_allocated_bytes": 89141248,
+      "after_allocated_bytes": 8425472,
+      "flags": 32
+    },
+    {
+      "path": "runs/rv_fixed_proj320_dp-util20-200ns/22-openroad-detailedplacement/rv_fixed_proj320_dp.def",
+      "sha256": "f1c28b2e78719d16f826d0bb464454ef052535b6e4168bc987a60baacdea19fb",
+      "bytes": 94499634,
+      "before_allocated_bytes": 100700160,
+      "after_allocated_bytes": 14712832,
+      "flags": 32
+    },
+    {
+      "path": "runs/rv_fixed_proj320_dp-util20-200ns/22-openroad-detailedplacement/rv_fixed_proj320_dp.nl.v",
+      "sha256": "948d13235efbabd7f4a562d22f5fd2c07bec32d6fa88113cb1076ec7fccb733b",
+      "bytes": 49710124,
+      "before_allocated_bytes": 49713152,
+      "after_allocated_bytes": 8409088,
+      "flags": 32
+    },
+    {
+      "path": "runs/rv_fixed_proj320_dp-util20-200ns/22-openroad-detailedplacement/rv_fixed_proj320_dp.odb",
+      "sha256": "1d43c7570a19cb481c44d6a7fddd94437912a808b11b24d09021111c3c4f163d",
+      "bytes": 227617596,
+      "before_allocated_bytes": 227618816,
+      "after_allocated_bytes": 57708544,
+      "flags": 32
+    },
+    {
+      "path": "runs/rv_fixed_proj320_dp-util20-200ns/22-openroad-detailedplacement/rv_fixed_proj320_dp.pnl.v",
+      "sha256": "43b5de03219c1df0eb48502dcd41dbffb6b199254fd102dd0834d03cc0fd206e",
+      "bytes": 72366274,
+      "before_allocated_bytes": 89141248,
+      "after_allocated_bytes": 8454144,
+      "flags": 32
+    }
+  ]
+}

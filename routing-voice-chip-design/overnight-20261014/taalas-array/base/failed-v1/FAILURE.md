@@ -1,0 +1,1 @@
+Initial composition used integer CellInstArray with DTrans, causing a 1000x placement-unit error and overlapping tiles. Caught by bounding-box audit before DRC completed; owned DRC stopped. Bit readback and tile0 DRC remain scoped passes. Corrected to explicit integer DBU translations. No full-composition pass credited.

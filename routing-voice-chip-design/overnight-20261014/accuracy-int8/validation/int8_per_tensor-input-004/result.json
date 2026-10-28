@@ -1,0 +1,69 @@
+{
+  "case_id": "int8_per_tensor-input-004",
+  "model": "int8_per_tensor",
+  "id": "2086-149220-0012",
+  "role": "validation",
+  "condition": "clean",
+  "seed": null,
+  "reference": "THE CHICKEN CREPT THROUGH THE PALES OF THE COOP AND RAN WITH SOME SHOW OF LIVELINESS TO HER FEET WHILE CHANTICLEER AND THE LADIES OF HIS HOUSEHOLD REGARDED HER WITH QUEER SIDELONG GLANCES AND THEN CROAKED ONE TO ANOTHER AS IF COMMUNICATING THEIR SAGE OPINIONS OF HER CHARACTER",
+  "input_float32_sha256": "3a30451f40718beac97a743e0fb570b85e47b4d831494c172c60549821f554b6",
+  "hypothesis": "   ",
+  "normalized_tokens": [],
+  "edits": 48,
+  "reference_words": 48,
+  "hypothesis_words": 0,
+  "exact": false,
+  "lines": [
+    {
+      "text": "",
+      "start_time": 0.2239999771118164,
+      "duration": 4.927999973297119,
+      "is_complete": true,
+      "samples": 78848,
+      "input_float32_sha256": "30eadf5f5cf035f03304a90705a7896590904e3f8e544ea38d810d168d2d1ab0"
+    },
+    {
+      "text": "",
+      "start_time": 5.184000015258789,
+      "duration": 4.991999626159668,
+      "is_complete": true,
+      "samples": 79872,
+      "input_float32_sha256": "113595498322d7f5001eec5be32a0b29a1a1e3e233e280dde7d3079c040e216c"
+    },
+    {
+      "text": "",
+      "start_time": 9.95199966430664,
+      "duration": 1.9840002059936523,
+      "is_complete": true,
+      "samples": 31744,
+      "input_float32_sha256": "cb335139999f2f88ecad33efb76976348f7578c920b7e23c8d7d570d7edba421"
+    },
+    {
+      "text": "",
+      "start_time": 11.64799976348877,
+      "duration": 3.2960004806518555,
+      "is_complete": true,
+      "samples": 52736,
+      "input_float32_sha256": "f2a6fd4123aaefbdb50d9e50dd5cdf03d501d29052237ba12c7a1902ceb42198"
+    }
+  ],
+  "request_sha256": "9549194fec19c7d64736218a6309a3399ced6d6fbf404209bb32befad3ce3da4",
+  "worker_sha256": "4682e8a57db08e02a34f53b01f334f34faa3ca9a6546698f1e4650db359004b6",
+  "native_library_sha256": "1453a6c1c9072f3d05e9e5ae6ff423fae839e56631c5efb12bbd5c0280d04399",
+  "native_api_version": 30000,
+  "load_seconds": 0.04485745821148157,
+  "compute_seconds": 0.32935820799320936,
+  "audio_seconds": 14.995,
+  "process_cpu_seconds": 0.315824,
+  "voluntary_context_switches": 0,
+  "involuntary_context_switches": 251,
+  "system_load_average": [
+    9.49853515625,
+    8.6748046875,
+    9.79345703125
+  ],
+  "options": null,
+  "flags": 0,
+  "process_id": 80470,
+  "isolation": "One audio clip/condition in a fresh native process; no previous utterance or VAD state."
+}

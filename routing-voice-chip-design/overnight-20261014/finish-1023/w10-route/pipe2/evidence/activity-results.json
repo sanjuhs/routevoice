@@ -1,0 +1,27 @@
+{
+  "passed": true,
+  "netlist_sha256": "1c25bbf163b5d7ece77464b8640ee7b2513caaa53fca57c636ca481cc634a773",
+  "scope": "tb/dut",
+  "vectors": 1,
+  "outputs": 320,
+  "projection_cycles": 4165,
+  "initial_reset_and_start_included": true,
+  "activity_kind": "Zero-delay mapped cells; saved real-speech vector0, no SDF glitch timing",
+  "power_scope": "rv_k64_array_port engine; external taalas_index_fabric is a bench source outside tb/dut and excluded from engine area/power",
+  "annotation_coverage": "PENDING: must report using final ODB, SPEF and actual read_saif",
+  "scaling": {
+    "source_period_ns": "20",
+    "target_period_ns": "150",
+    "ratio": "15/2",
+    "time_fields": 22740161,
+    "tc_fields": 4548032,
+    "transition_count_sum": 2988106454,
+    "duration_before": 83360000,
+    "duration_after": 625200000,
+    "source": "/private/tmp/claude-501/-Users-sanju-Desktop-coding-llm-hardware-route-voice-llm-hardware-v1/cf06f0bb-a1f4-42d4-91c4-7b1e41623700/scratchpad/gs2/activity-run/activity-20ns.saif",
+    "destination": "/private/tmp/claude-501/-Users-sanju-Desktop-coding-llm-hardware-route-voice-llm-hardware-v1/cf06f0bb-a1f4-42d4-91c4-7b1e41623700/scratchpad/gs2/activity-run/activity-150ns.saif",
+    "source_sha256": "950781ddcaa8ed3f96c8e1c67ea0b4234a75f4e49babd8c8bc059a76cd6c6348",
+    "destination_sha256": "2973d1f9c42e1b657e8b09875c75982f3ed9d7163ae8ccf583d5c13719e83643",
+    "tc_unchanged": true
+  }
+}

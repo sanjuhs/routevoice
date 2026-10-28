@@ -1,0 +1,274 @@
+{
+  "memory": "sram_open_macro",
+  "levers": "off",
+  "state": "baseline",
+  "scenario": "custom7",
+  "partition": "whole",
+  "die_mm": 5.0,
+  "block_area_mm2": 4.0,
+  "abstract_rect_area_mm2": 4.0,
+  "core_area_mm2": 12.96,
+  "placement_pass": true,
+  "pdn_pass": false,
+  "worst_ir_drop_v": null,
+  "power_assumed_w": 0.1,
+  "supply_pad_pairs": 8,
+  "signal_pad_count": 16,
+  "pad_count": 32,
+  "areas": [
+    {
+      "name": "pdn_probe",
+      "area_mm2": 4.0,
+      "tiles": 1,
+      "area_breakdown": {
+        "selection_mm2": 0.0,
+        "rom_mm2": 0.0,
+        "sram_mm2": 0.0,
+        "logic_mm2": 4,
+        "total_mm2": 4.0
+      },
+      "power_w": 0.1
+    }
+  ],
+  "tiles": [
+    {
+      "name": "pdn_probe_0",
+      "block": "pdn_probe",
+      "w": 2000,
+      "h": 2000,
+      "power": 0.1,
+      "x": 730,
+      "y": 730
+    }
+  ],
+  "macro_scope": "ABSTRACTS, not routed internals",
+  "run_dir": "runs/custom7_sram_open_macro_off_baseline_whole_5mm",
+  "vdd": 3.3,
+  "placement_utilization": 0.30864197530864196,
+  "pads": [
+    {
+      "name": "vdd_0_0",
+      "master": "dvdd",
+      "x": 355,
+      "y": 0,
+      "orientation": "R0"
+    },
+    {
+      "name": "vss_0_0",
+      "master": "dvss",
+      "x": 891,
+      "y": 0,
+      "orientation": "R0"
+    },
+    {
+      "name": "vdd_0_1",
+      "master": "dvdd",
+      "x": 1427,
+      "y": 0,
+      "orientation": "R0"
+    },
+    {
+      "name": "vss_0_1",
+      "master": "dvss",
+      "x": 1963,
+      "y": 0,
+      "orientation": "R0"
+    },
+    {
+      "name": "pcm_data",
+      "master": "bi_t",
+      "x": 2499,
+      "y": 0,
+      "orientation": "R0"
+    },
+    {
+      "name": "pcm_bclk",
+      "master": "bi_t",
+      "x": 3035,
+      "y": 0,
+      "orientation": "R0"
+    },
+    {
+      "name": "pcm_lrclk",
+      "master": "bi_t",
+      "x": 3571,
+      "y": 0,
+      "orientation": "R0"
+    },
+    {
+      "name": "token_data",
+      "master": "bi_t",
+      "x": 4107,
+      "y": 0,
+      "orientation": "R0"
+    },
+    {
+      "name": "vdd_1_0",
+      "master": "dvdd",
+      "x": 4650,
+      "y": 355,
+      "orientation": "R90"
+    },
+    {
+      "name": "vss_1_0",
+      "master": "dvss",
+      "x": 4650,
+      "y": 891,
+      "orientation": "R90"
+    },
+    {
+      "name": "vdd_1_1",
+      "master": "dvdd",
+      "x": 4650,
+      "y": 1427,
+      "orientation": "R90"
+    },
+    {
+      "name": "vss_1_1",
+      "master": "dvss",
+      "x": 4650,
+      "y": 1963,
+      "orientation": "R90"
+    },
+    {
+      "name": "token_valid",
+      "master": "bi_t",
+      "x": 4650,
+      "y": 2499,
+      "orientation": "R90"
+    },
+    {
+      "name": "token_ready",
+      "master": "bi_t",
+      "x": 4650,
+      "y": 3035,
+      "orientation": "R90"
+    },
+    {
+      "name": "clock",
+      "master": "bi_t",
+      "x": 4650,
+      "y": 3571,
+      "orientation": "R90"
+    },
+    {
+      "name": "reset_n",
+      "master": "bi_t",
+      "x": 4650,
+      "y": 4107,
+      "orientation": "R90"
+    },
+    {
+      "name": "vdd_2_0",
+      "master": "dvdd",
+      "x": 4570,
+      "y": 4650,
+      "orientation": "R180"
+    },
+    {
+      "name": "vss_2_0",
+      "master": "dvss",
+      "x": 4034,
+      "y": 4650,
+      "orientation": "R180"
+    },
+    {
+      "name": "vdd_2_1",
+      "master": "dvdd",
+      "x": 3498,
+      "y": 4650,
+      "orientation": "R180"
+    },
+    {
+      "name": "vss_2_1",
+      "master": "dvss",
+      "x": 2962,
+      "y": 4650,
+      "orientation": "R180"
+    },
+    {
+      "name": "spi_sck",
+      "master": "bi_t",
+      "x": 2426,
+      "y": 4650,
+      "orientation": "R180"
+    },
+    {
+      "name": "spi_mosi",
+      "master": "bi_t",
+      "x": 1890,
+      "y": 4650,
+      "orientation": "R180"
+    },
+    {
+      "name": "spi_miso",
+      "master": "bi_t",
+      "x": 1354,
+      "y": 4650,
+      "orientation": "R180"
+    },
+    {
+      "name": "spi_cs_n",
+      "master": "bi_t",
+      "x": 818,
+      "y": 4650,
+      "orientation": "R180"
+    },
+    {
+      "name": "vdd_3_0",
+      "master": "dvdd",
+      "x": 0,
+      "y": 4570,
+      "orientation": "R270"
+    },
+    {
+      "name": "vss_3_0",
+      "master": "dvss",
+      "x": 0,
+      "y": 4034,
+      "orientation": "R270"
+    },
+    {
+      "name": "vdd_3_1",
+      "master": "dvdd",
+      "x": 0,
+      "y": 3498,
+      "orientation": "R270"
+    },
+    {
+      "name": "vss_3_1",
+      "master": "dvss",
+      "x": 0,
+      "y": 2962,
+      "orientation": "R270"
+    },
+    {
+      "name": "uart_rx",
+      "master": "bi_t",
+      "x": 0,
+      "y": 2426,
+      "orientation": "R270"
+    },
+    {
+      "name": "uart_tx",
+      "master": "bi_t",
+      "x": 0,
+      "y": 1890,
+      "orientation": "R270"
+    },
+    {
+      "name": "test_en",
+      "master": "bi_t",
+      "x": 0,
+      "y": 1354,
+      "orientation": "R270"
+    },
+    {
+      "name": "status",
+      "master": "bi_t",
+      "x": 0,
+      "y": 818,
+      "orientation": "R270"
+    }
+  ]
+}

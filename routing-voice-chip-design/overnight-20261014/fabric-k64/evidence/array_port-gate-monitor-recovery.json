@@ -1,0 +1,16 @@
+{
+  "prior_guard": {
+    "pid": 34759,
+    "elapsed_s": 2201.7102160453796,
+    "paused_for_thread_budget": false,
+    "physical_worker_thread_budget": [
+      3,
+      0
+    ],
+    "gate_threads": 1,
+    "status": "running"
+  },
+  "reason": "Monitor JSONDecodeError from non-atomic physical-status write; child simulation remained active. Adopted monitoring preserves that run.",
+  "recovered_epoch": 1791924855.028693,
+  "os_exit_status_available": false
+}

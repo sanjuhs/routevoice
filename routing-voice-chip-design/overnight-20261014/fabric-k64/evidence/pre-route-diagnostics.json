@@ -1,0 +1,62 @@
+{
+  "status": "diagnostic_only_not_operating_point",
+  "warning": "Unbuffered/high-fanout early netlists violate slew/capacitance limits. Delay and internal-power extrapolation are not an achieved MHz or supported energy estimate. No routed RC extraction or activity-annotated power is available.",
+  "variants": {
+    "array_port": {
+      "early_timing": [
+        {
+          "stage": "pre-PNR, no placed or routed parasitics",
+          "corner": "nom_ff_n40C_3v60",
+          "setup_wns_ns": -4784.200108379975,
+          "setup_report": "runs/array_port-v2/12-openroad-staprepnr/nom_ff_n40C_3v60/wns.max.rpt",
+          "hold_wns_ns": 0.0
+        },
+        {
+          "stage": "pre-PNR, no placed or routed parasitics",
+          "corner": "nom_ss_125C_3v00",
+          "setup_wns_ns": -20829.493812671397,
+          "setup_report": "runs/array_port-v2/12-openroad-staprepnr/nom_ss_125C_3v00/wns.max.rpt",
+          "hold_wns_ns": 0.0
+        },
+        {
+          "stage": "pre-PNR, no placed or routed parasitics",
+          "corner": "nom_tt_025C_3v30",
+          "setup_wns_ns": -9371.143543292426,
+          "setup_report": "runs/array_port-v2/12-openroad-staprepnr/nom_tt_025C_3v30/wns.max.rpt",
+          "hold_wns_ns": 0.0
+        }
+      ],
+      "placement_diagnostics": {
+        "stage": "31-openroad-stamidpnr",
+        "corner": "nom_tt_025C_3v30",
+        "setup_wns_ns": -20104.753844119576,
+        "hold_wns_ns": -189.96408894707446,
+        "max_slew_violations": 629116,
+        "max_cap_violations": 1751,
+        "max_fanout_violations": 5588,
+        "default_power": {
+          "source": "Flow defaults, before CTS/route; no VCD/SAIF annotation",
+          "valid_operating_point": false,
+          "reported_unit": "W, explicitly printed in report",
+          "internal_mw": 7235.509999999999,
+          "switching_mw": 91.9533,
+          "leakage_mw": 0.019453599999999998,
+          "total_mw": 7327.49,
+          "energy_per_projection": null,
+          "report": "runs/array_port-v2/31-openroad-stamidpnr/power.rpt"
+        }
+      }
+    },
+    "sc_rom": {
+      "early_timing": [
+        {
+          "stage": "pre-PNR, no placed or routed parasitics",
+          "corner": "nom_tt_025C_3v30",
+          "setup_wns_ns": -10538.787435250404,
+          "setup_report": "runs/sc_rom-v2/12-openroad-staprepnr/nom_tt_025C_3v30/wns.max.rpt",
+          "hold_wns_ns": 0.0
+        }
+      ]
+    }
+  }
+}

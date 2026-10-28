@@ -1,0 +1,46 @@
+{
+  "time_utc": "2026-10-14T00:05:44.805734+00:00",
+  "reason": "PI driver cell/pin string invalid in ABC; buffer and sizing report cannot find driving cell. Fanout JSON identical to v2.",
+  "processes": {
+    "23780": {
+      "ppid": 1,
+      "cmd": "bash run-flow-v3.sh "
+    },
+    "23781": {
+      "ppid": 1,
+      "cmd": "bash watch-gate-v3.sh "
+    },
+    "23782": {
+      "ppid": 1,
+      "cmd": "python3 /workspace/rv/overnight-20261014/engine-buffered/finish.py "
+    },
+    "30438": {
+      "ppid": 23781,
+      "cmd": "bash /tmp/nix-shell-30438-2029884339/rc "
+    },
+    "23785": {
+      "ppid": 23780,
+      "cmd": "bash /tmp/nix-shell-23785-635090479/rc "
+    },
+    "23817": {
+      "ppid": 23785,
+      "cmd": "/nix/store/k7giqrc3r5hpj3bxp7iy41swyafvqsyh-devshell-dir/bin/python3 /workspace/rv/overnight-20261014/engine-buffered/librelane_pi.py --condensed --log-level WARNING --from Yosys.Synthesis --with-initial-state /workspace/rv/overnight-20261014/engine-buffered/runs/buf-v1/05-yosys-jsonheader/state_out.json --manual-pdk --pdk gf180mcuD --pdk-root /workspace/rv/overnight-20261014/fabric-k64/pdks --design-dir /workspace/rv/overnight-20261014/engine-buffered --run-tag buf-v3 --jobs 12 /workspace/rv/overnight-20261014/engine-buffered/configs/array_port_buf.json "
+    },
+    "30416": {
+      "ppid": 23817,
+      "cmd": "sta -no_splash -exit /nix/store/1v4pl3wcjvysadks22gj14b8qj9qz20d-python3-3.13.9-env/lib/python3.13/site-packages/librelane/scripts/openroad/sta/corner.tcl "
+    },
+    "30457": {
+      "ppid": 30438,
+      "cmd": "bash /workspace/rv/overnight-20261014/engine-buffered/run-gate.sh full /workspace/rv/overnight-20261014/engine-buffered/runs/buf-v3/01-yosys-synthesis/rv_k64_array_port.nl.v "
+    },
+    "30460": {
+      "ppid": 30457,
+      "cmd": "/nix/store/h2jsb5i4yfblr2f3ac2c7zpmlmj7zjym-perl-5.40.0/bin/perl /nix/store/k7giqrc3r5hpj3bxp7iy41swyafvqsyh-devshell-dir/bin/verilator --binary --timing --autoflush --output-groups 0 --top-module tb -DFUNCTIONAL -DGF180MCU_FD_SC_MCU7T5V0__HOLD_V -DGF180MCU_FD_SC_MCU7T5V0__HOLD_FUNC_V -Wno-fatal -j 2 --Mdir gate-full -o sim /workspace/rv/pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/verilog/primitives.v /workspace/rv/pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/verilog/gf180mcu_fd_sc_mcu7t5v0.v /workspace/rv/overnight-20261014/engine-buffered/runs/buf-v3/01-yosys-synthesis/rv_k64_array_port.nl.v tb/gate_array_port.sv /workspace/rv/overnight-20261014/fabric-k64/rtl/index_fabric.sv "
+    },
+    "30463": {
+      "ppid": 30460,
+      "cmd": "/nix/store/wl8c1s56dn566asz404bqwcl0gdrw933-verilator-5.044/bin/verilator_bin --binary --timing --autoflush --output-groups 0 --top-module tb -DFUNCTIONAL -DGF180MCU_FD_SC_MCU7T5V0__HOLD_V -DGF180MCU_FD_SC_MCU7T5V0__HOLD_FUNC_V -Wno-fatal -j 2 --Mdir gate-full -o sim /workspace/rv/pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/verilog/primitives.v /workspace/rv/pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/verilog/gf180mcu_fd_sc_mcu7t5v0.v /workspace/rv/overnight-20261014/engine-buffered/runs/buf-v3/01-yosys-synthesis/rv_k64_array_port.nl.v tb/gate_array_port.sv /workspace/rv/overnight-20261014/fabric-k64/rtl/index_fabric.sv "
+    }
+  }
+}

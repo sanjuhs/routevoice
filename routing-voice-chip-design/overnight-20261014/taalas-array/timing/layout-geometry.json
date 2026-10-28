@@ -1,0 +1,30 @@
+{
+  "variant": "separate mask-programmed index-bit comparator; P2 stored-address branch",
+  "rows": 64,
+  "outputs": 32,
+  "indices": 2048,
+  "bit_cells": 8192,
+  "mask_encoding": "Via1 present means one, absent means zero; 4 bit cells per index",
+  "actual_image": "indices.json",
+  "bit_column_pitch_um": 0.66,
+  "row_pitch_um": 1.44,
+  "poly_strap_corridor_um_per_16_bits": 1.0,
+  "active_repeat_area_um2_per_index": 4.1616,
+  "bounds_um": [
+    0.31,
+    0.5,
+    93.68,
+    108.21000000000001
+  ],
+  "bounding_area_um2": 10056.882700000002,
+  "bounding_area_um2_per_index": 4.910587255859376,
+  "excluded": [
+    "wordline decoding/drivers",
+    "4 index receivers/latches per output",
+    "16-to-1 shared-product mux per output",
+    "product distribution/generators",
+    "accumulator/state",
+    "IO/clock/power infrastructure"
+  ],
+  "caution": "Not direct one-transistor product routing. No runtime SRAM weights; consumes index readout and mux energy/area. Raw bit-layout footprint cannot be used as whole macro area."
+}

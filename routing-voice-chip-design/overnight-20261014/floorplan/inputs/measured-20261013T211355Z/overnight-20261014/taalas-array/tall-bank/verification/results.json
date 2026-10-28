@@ -1,0 +1,251 @@
+{
+  "status": "320-row bank3 physical connectivity and all320/1280-variant mask bits verified; drivers/control/mux/latches outside bank",
+  "full320_bank": {
+    "input": {
+      "gds": "overnight-20261014/taalas-array/tall-bank/r320/bank3.gds",
+      "gds_sha256": "b60d10a5818a504068a1bcc04d8cee7ca213d42a4f375877c2ce97f78bb84610",
+      "top": "TALL_BANK_R320_B03",
+      "bank": 3,
+      "row_mapping": "logical_row=bank+4*local_row"
+    },
+    "connectivity": {
+      "extracted_devices": 414720,
+      "reference_devices": 414720,
+      "exact_device_tuples_and_dimensions_match": true,
+      "bijection_nodes": 207439,
+      "extra_device_examples": [],
+      "missing_device_examples": [],
+      "qualification": "Bijective hierarchical prefix removal only; no device/net merges. All320 physical WL,PC,VDD,VSS and1280 outputs required present."
+    },
+    "lvs": {
+      "pass_all10": true,
+      "full_extraction_devices": 414720,
+      "scope": "Full-bank414720-device independent monolithic Netgen plus exact graph/W/L equality and10 disjoint partition Netgen comparisons/shared-net audit.",
+      "partitions": [
+        {
+          "group": 0,
+          "returncode": 0,
+          "status": "finished",
+          "elapsed_seconds": 1.5932517920155078,
+          "unique_match": true,
+          "property_errors": false
+        },
+        {
+          "group": 1,
+          "returncode": 0,
+          "status": "finished",
+          "elapsed_seconds": 1.5747595839202404,
+          "unique_match": true,
+          "property_errors": false
+        },
+        {
+          "group": 2,
+          "returncode": 0,
+          "status": "finished",
+          "elapsed_seconds": 1.5466542500071228,
+          "unique_match": true,
+          "property_errors": false
+        },
+        {
+          "group": 3,
+          "returncode": 0,
+          "status": "finished",
+          "elapsed_seconds": 1.6429637500550598,
+          "unique_match": true,
+          "property_errors": false
+        },
+        {
+          "group": 4,
+          "returncode": 0,
+          "status": "finished",
+          "elapsed_seconds": 1.5920827090740204,
+          "unique_match": true,
+          "property_errors": false
+        },
+        {
+          "group": 5,
+          "returncode": 0,
+          "status": "finished",
+          "elapsed_seconds": 1.5489245830103755,
+          "unique_match": true,
+          "property_errors": false
+        },
+        {
+          "group": 6,
+          "returncode": 0,
+          "status": "finished",
+          "elapsed_seconds": 1.635257750051096,
+          "unique_match": true,
+          "property_errors": false
+        },
+        {
+          "group": 7,
+          "returncode": 0,
+          "status": "finished",
+          "elapsed_seconds": 1.6095869580749422,
+          "unique_match": true,
+          "property_errors": false
+        },
+        {
+          "group": 8,
+          "returncode": 0,
+          "status": "finished",
+          "elapsed_seconds": 1.583354250062257,
+          "unique_match": true,
+          "property_errors": false
+        },
+        {
+          "group": 9,
+          "returncode": 0,
+          "status": "finished",
+          "elapsed_seconds": 1.5913225410040468,
+          "unique_match": true,
+          "property_errors": false
+        }
+      ],
+      "input": {
+        "gds": "overnight-20261014/taalas-array/tall-bank/r320/bank3.gds",
+        "gds_sha256": "b60d10a5818a504068a1bcc04d8cee7ca213d42a4f375877c2ce97f78bb84610",
+        "top": "TALL_BANK_R320_B03",
+        "bank": 3,
+        "row_mapping": "logical_row=bank+4*local_row"
+      },
+      "partition_scope": "Ten disjoint Netgen comparisons of actual full-bank extraction plus exact full graph/W/L equality and shared-net audit. Not a monolithic Netgen comparison.",
+      "monolithic_netgen": {
+        "returncode": 0,
+        "status": "finished",
+        "elapsed_seconds": 42.267227167030796,
+        "unique_match": true,
+        "property_errors": false,
+        "pass": true
+      },
+      "negative_width_control": {
+        "returncode": 0,
+        "status": "finished",
+        "elapsed_seconds": 1.4216843750327826,
+        "unique_match": true,
+        "property_errors": true,
+        "pass": false
+      }
+    },
+    "physical_control_loading": {
+      "wordline_explicit_incident_cap_min_ff": 533.6565000000019,
+      "wordline_explicit_incident_cap_max_ff": 614.1420500000047,
+      "precharge_explicit_incident_cap_ff": 925.6118800000321,
+      "gate_devices_per_wordline": 1280,
+      "precharge_gate_devices": 1280,
+      "capacitance_report": "bank3-v1/control-capacitance.json",
+      "capacitance_spice": "bank3-v1/extracted-cap.spice",
+      "qualification": "Full-bank geometry Magic explicit lumpedC incident inventory; includes real shared320WL/PC rails and joins. Not distributedRPEX. Coupling counted once per endpoint, so sums across controls double-count shared capacitors. Does not include voltage-dependent intrinsicMOS load, which requires the414720device circuit model."
+    }
+  },
+  "r320_all_bits": {
+    "gds": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/taalas-array/tall-bank/r320/assembly.gds",
+    "gds_sha256": "47aac92ac91926b171468351b1f4127fa4a4ba6b3b1518f153d2c4302acbaa0e",
+    "identity": {
+      "packed_sha256": "864fcdc7ec80be2dbb99d76361db338345fb02a1a26d7aaa4a1b40696b921907",
+      "unpacked_sha256": "ba628b676d59721c268868d6720be1f58a4f8d4edfd9a26009403c9a8c4fce8e",
+      "w2b_rtl_sha256": "de720f1e7c93c405729025cd9395850bc75e35c3eb602a1b67c4ad58d1ed4dbf",
+      "all409600_indices_match": true
+    },
+    "row_mapping": "logical_row=bank+4*local_row",
+    "method": "Reopened GDS recursive Via1 polygon centers at reviewed transistor drain coordinates; not label or mask-cell-name values",
+    "banks": [
+      {
+        "bank": 0,
+        "compared_selections": 102400,
+        "compared_bits": 409600,
+        "selection_mismatches": 0,
+        "bit_mismatches": 0,
+        "programmed_ones": 205513,
+        "observed_sha256": "d63c302c28ab1d74ebd850a162222846369e26401149ed881fd06b483f26ec2b",
+        "expected_sha256": "d63c302c28ab1d74ebd850a162222846369e26401149ed881fd06b483f26ec2b"
+      },
+      {
+        "bank": 1,
+        "compared_selections": 102400,
+        "compared_bits": 409600,
+        "selection_mismatches": 0,
+        "bit_mismatches": 0,
+        "programmed_ones": 205135,
+        "observed_sha256": "ed1d5e3c8ee87085b7344e6930a6b7278942a9ba6da66fc4d426c24a09b76632",
+        "expected_sha256": "ed1d5e3c8ee87085b7344e6930a6b7278942a9ba6da66fc4d426c24a09b76632"
+      },
+      {
+        "bank": 2,
+        "compared_selections": 102400,
+        "compared_bits": 409600,
+        "selection_mismatches": 0,
+        "bit_mismatches": 0,
+        "programmed_ones": 205109,
+        "observed_sha256": "a71859da99f4bf113ebd2cbab696ec901b4fcb8c450f996f06ce830b4f874bc7",
+        "expected_sha256": "a71859da99f4bf113ebd2cbab696ec901b4fcb8c450f996f06ce830b4f874bc7"
+      },
+      {
+        "bank": 3,
+        "compared_selections": 102400,
+        "compared_bits": 409600,
+        "selection_mismatches": 0,
+        "bit_mismatches": 0,
+        "programmed_ones": 205044,
+        "observed_sha256": "079d35148b33c4650cb5c1860e5cf594442345e2a76c547cc14c354c5ee6b6d7",
+        "expected_sha256": "079d35148b33c4650cb5c1860e5cf594442345e2a76c547cc14c354c5ee6b6d7"
+      }
+    ],
+    "all_match": true
+  },
+  "r1280_all_bits": {
+    "gds": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/taalas-array/tall-bank/r1280/assembly.gds",
+    "gds_sha256": "4ba39b3401ef5d2cd5b1ed43066ccfb9a92bf56cf73a979b856342fbbae7afb3",
+    "identity": {
+      "packed_sha256": "864fcdc7ec80be2dbb99d76361db338345fb02a1a26d7aaa4a1b40696b921907",
+      "unpacked_sha256": "ba628b676d59721c268868d6720be1f58a4f8d4edfd9a26009403c9a8c4fce8e",
+      "w2b_rtl_sha256": "de720f1e7c93c405729025cd9395850bc75e35c3eb602a1b67c4ad58d1ed4dbf",
+      "all409600_indices_match": true
+    },
+    "rows_per_bank": 1280,
+    "row_mapping": "logical_row=bank+1*local_row",
+    "method": "Reopened GDS recursive Via1 polygon centers at reviewed transistor drain coordinates; not label or mask-cell-name values",
+    "banks": [
+      {
+        "bank": 0,
+        "compared_selections": 409600,
+        "compared_bits": 1638400,
+        "selection_mismatches": 0,
+        "bit_mismatches": 0,
+        "programmed_ones": 820801,
+        "observed_sha256": "ba628b676d59721c268868d6720be1f58a4f8d4edfd9a26009403c9a8c4fce8e",
+        "expected_sha256": "ba628b676d59721c268868d6720be1f58a4f8d4edfd9a26009403c9a8c4fce8e"
+      }
+    ],
+    "all_match": true
+  },
+  "extraction": {
+    "returncode": 0,
+    "status": "finished",
+    "elapsed_seconds": 554.8881362499669
+  },
+  "compression": {
+    "original_path": "W5_TALL_BANK_FLAT.ext",
+    "original_sha256": "27453a185fd623e9cc10188b7c8bbb2be0ae90576fc7deff2c216c2364ae2718",
+    "original_bytes": 349984289,
+    "compressed_path": "W5_TALL_BANK_FLAT.ext.gz",
+    "compressed_sha256": "8bcbc375ce6fa6548acee3315e7c74c52c9c2ce9be2b9b9059cab0d6af8e19b9",
+    "compressed_bytes": 23110492,
+    "decoded_bytes": 349984289,
+    "decoded_sha256": "27453a185fd623e9cc10188b7c8bbb2be0ae90576fc7deff2c216c2364ae2718",
+    "verified_lossless": true,
+    "reason": "Free internal working space after successful Magic extraction; all LVS and capacitance SPICE files remain live.",
+    "restore_command": "gzip -dc W5_TALL_BANK_FLAT.ext.gz > W5_TALL_BANK_FLAT.ext",
+    "restore_working_directory": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/taalas-array/tall-bank/verification/bank3-v1",
+    "original_removed_after_verification": true
+  },
+  "free_gib": 23.433738708496094,
+  "limitations": [
+    "Full physical LVS covers320row bank3 only; other320banks have bitreadback but no independentfullbankLVS here.",
+    "1280-row variant has independentallbitreadback only; nofullbankLVS claim.",
+    "No global decoder, physical stockWL/PCdrivers, phase control, bankmux or latchintegration in this bankLVS.",
+    "Capacitance is explicitlumpedMagic C with actual fullbank rails, not distributedRPEX; intrinsicMOS C remains voltage dependent.",
+    "DRC belongs to parent separate reports. Neither LVS nor bitreadback proves timing, fullbankenergy or projectionrealtime."
+  ]
+}

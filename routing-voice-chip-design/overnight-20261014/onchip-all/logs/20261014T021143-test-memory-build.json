@@ -1,0 +1,29 @@
+{
+  "stage": "test-memory-build",
+  "command": [
+    "/usr/bin/nice",
+    "-n",
+    "10",
+    "/opt/homebrew/Cellar/verilator/5.050/bin/verilator",
+    "--cc",
+    "--exe",
+    "--build",
+    "-j",
+    "6",
+    "-Wno-fatal",
+    "--top-module",
+    "rv_onchip_encoder_memory_v1",
+    "--Mdir",
+    "/Users/sanju/.local/state/routevoice-internal-runs/20261014/onchip-all/test-memory",
+    "-CFLAGS",
+    "-DKIND=2 -O2",
+    "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/onchip-all/rv_onchip_encoder_memory_v1.sv",
+    "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/onchip-all/encoder_test.cpp"
+  ],
+  "cwd": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design",
+  "log": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/onchip-all/logs/20261014T021143-test-memory-build.log",
+  "started": "20261014T021143",
+  "exit_code": 0,
+  "pid": 48956,
+  "elapsed_seconds": 1.972730082925409
+}

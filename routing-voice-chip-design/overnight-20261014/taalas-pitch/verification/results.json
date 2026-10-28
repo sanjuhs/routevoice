@@ -1,0 +1,738 @@
+{
+  "scope": "Actual complete 64-row and 1,280-row array + 1,280 pre2 receiver GDS extraction versus independent original K64 packed-tensor reference. No partition-only credit.",
+  "source_identity": {
+    "packed_sha256": "864fcdc7ec80be2dbb99d76361db338345fb02a1a26d7aaa4a1b40696b921907",
+    "unpacked_sha256": "ba628b676d59721c268868d6720be1f58a4f8d4edfd9a26009403c9a8c4fce8e",
+    "w2b_rtl_sha256": "de720f1e7c93c405729025cd9395850bc75e35c3eb602a1b67c4ad58d1ed4dbf",
+    "all409600_indices_match": true,
+    "scope": "All409600 indices independently unpacked from original K64 candidate block metadata; compared against W5 indices.npy and W2b frozen RTL; this is source identity, not GDS readback."
+  },
+  "variants": [
+    {
+      "rows": 64,
+      "lvs_run": "r64-v2",
+      "lvs_receipt": "r64-v2/full-bank-netgen-result.json",
+      "extraction_mode": "full_C_ext_LVS_spice",
+      "input": {
+        "gds": "overnight-20261014/taalas-pitch/r64-v2/bank.gds",
+        "gds_sha256": "a94a98e936a59619f7009a2a55354cc4498b442f0d348aa474ea96589b1f7f73",
+        "top": "PITCH_BANK_R64",
+        "rows": 64,
+        "pc_width_um": 2.88,
+        "row_mapping": "logical_row=0+1*local_row"
+      },
+      "readback": {
+        "gds": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/taalas-pitch/r64-v2/bank.gds",
+        "gds_sha256": "a94a98e936a59619f7009a2a55354cc4498b442f0d348aa474ea96589b1f7f73",
+        "identity": {
+          "packed_sha256": "864fcdc7ec80be2dbb99d76361db338345fb02a1a26d7aaa4a1b40696b921907",
+          "unpacked_sha256": "ba628b676d59721c268868d6720be1f58a4f8d4edfd9a26009403c9a8c4fce8e",
+          "w2b_rtl_sha256": "de720f1e7c93c405729025cd9395850bc75e35c3eb602a1b67c4ad58d1ed4dbf",
+          "all409600_indices_match": true
+        },
+        "rows": 64,
+        "compared_selections": 20480,
+        "compared_bits": 81920,
+        "selection_mismatches": 0,
+        "bit_mismatches": 0,
+        "programmed_ones": 40786,
+        "observed_sha256": "1d7fbf9a572a3badf897966a5432c0338400f474e7156f96241772e3a79ec8fb",
+        "expected_sha256": "1d7fbf9a572a3badf897966a5432c0338400f474e7156f96241772e3a79ec8fb",
+        "placements": [
+          {
+            "group": 0,
+            "joined_transform": "r0 0,0",
+            "array_transform": "r0 10000,126000"
+          },
+          {
+            "group": 1,
+            "joined_transform": "r0 100000,0",
+            "array_transform": "r0 10000,126000"
+          },
+          {
+            "group": 2,
+            "joined_transform": "r0 200000,0",
+            "array_transform": "r0 10000,126000"
+          },
+          {
+            "group": 3,
+            "joined_transform": "r0 300000,0",
+            "array_transform": "r0 10000,126000"
+          },
+          {
+            "group": 4,
+            "joined_transform": "r0 400000,0",
+            "array_transform": "r0 10000,126000"
+          },
+          {
+            "group": 5,
+            "joined_transform": "r0 500000,0",
+            "array_transform": "r0 10000,126000"
+          },
+          {
+            "group": 6,
+            "joined_transform": "r0 600000,0",
+            "array_transform": "r0 10000,126000"
+          },
+          {
+            "group": 7,
+            "joined_transform": "r0 700000,0",
+            "array_transform": "r0 10000,126000"
+          },
+          {
+            "group": 8,
+            "joined_transform": "r0 800000,0",
+            "array_transform": "r0 10000,126000"
+          },
+          {
+            "group": 9,
+            "joined_transform": "r0 900000,0",
+            "array_transform": "r0 10000,126000"
+          }
+        ],
+        "method": "Reopened GDS Via1 centers at reviewed drain sites, plus each array instantiated exactly once. Expected bits independently decoded from original packed K64 tensor; no use of generator index image as oracle."
+      },
+      "extraction": {
+        "returncode": 0,
+        "status": "finished",
+        "elapsed_seconds": 54.50737287499942
+      },
+      "connectivity": {
+        "extracted_devices": 87040,
+        "reference_devices": 87040,
+        "exact_device_tuples_and_dimensions_match": true,
+        "bijection_nodes": 43761,
+        "extra_device_examples": [],
+        "missing_device_examples": [],
+        "qualification": "Bijective hierarchical prefix removal only; no device/net merges. All declared physical WL,PC,VDD,VSS and1280 outputs required present."
+      },
+      "lvs": {
+        "returncode": 0,
+        "status": "finished",
+        "elapsed_seconds": 3.8187808338552713,
+        "unique_match": true,
+        "property_errors": false,
+        "input": {
+          "gds": "overnight-20261014/taalas-pitch/r64-v2/bank.gds",
+          "gds_sha256": "a94a98e936a59619f7009a2a55354cc4498b442f0d348aa474ea96589b1f7f73",
+          "top": "PITCH_BANK_R64",
+          "rows": 64,
+          "pc_width_um": 2.88,
+          "row_mapping": "logical_row=0+1*local_row"
+        },
+        "pass": true
+      },
+      "negative_control": {
+        "returncode": 0,
+        "status": "finished",
+        "elapsed_seconds": 3.4663046670611948,
+        "unique_match": true,
+        "property_errors": true,
+        "input": {
+          "gds": "overnight-20261014/taalas-pitch/r64-v2/bank.gds",
+          "gds_sha256": "a94a98e936a59619f7009a2a55354cc4498b442f0d348aa474ea96589b1f7f73",
+          "top": "PITCH_BANK_R64",
+          "rows": 64,
+          "pc_width_um": 2.88,
+          "row_mapping": "logical_row=0+1*local_row"
+        },
+        "pass": false,
+        "negative_control_rejected": true
+      },
+      "verified": true,
+      "extraction_warning_lines": [
+        "WARNING: RLIMIT_NOFILE is above 1024 and Tcl_Version<9 this may cause runtime issues [rlim_cur=1048575]",
+        "Warning: Calma reading is not undoable!  I hope that's OK."
+      ],
+      "watchdog_extension": null,
+      "native_ext_archive": null,
+      "spice_evidence_archives": null,
+      "slice_evidence_archives": {
+        "utc": "2026-10-13T22:57:54.282264+00:00",
+        "authorization": "Parent explicitly requested sequential archival of these five completed 64-row evidence files; process inventory confirmed no EDA jobs, and each file is checked for readers.",
+        "status": "complete",
+        "files": [
+          {
+            "native": "W6_PITCH_BANK_FLAT.ext",
+            "archive": "W6_PITCH_BANK_FLAT.ext.gz",
+            "status": "complete",
+            "raw_removed": true,
+            "reader_checks": [
+              {
+                "utc": "2026-10-13T22:57:54.509954+00:00",
+                "returncode": 1,
+                "stdout": "",
+                "stderr": ""
+              },
+              {
+                "utc": "2026-10-13T22:57:55.207034+00:00",
+                "returncode": 1,
+                "stdout": "",
+                "stderr": ""
+              }
+            ],
+            "native_sha256": "1a8639558d513836b4e15a38f721c528a2acfe80d5b315ee26623c93f41b9f6d",
+            "native_bytes": 65204420,
+            "archive_bytes": 4743705,
+            "decompressed_sha256": "1a8639558d513836b4e15a38f721c528a2acfe80d5b315ee26623c93f41b9f6d",
+            "decompressed_bytes": 65204420,
+            "archive_sha256": "44deacf709b9eadc006f0c4034e09f51f40ed05f7caad08814384b46cc61b050",
+            "recovered_bytes": 60460715,
+            "elapsed_seconds": 0.929233541013673
+          },
+          {
+            "native": "extracted.spice",
+            "archive": "extracted.spice.gz",
+            "status": "complete",
+            "raw_removed": true,
+            "reader_checks": [
+              {
+                "utc": "2026-10-13T22:57:55.444096+00:00",
+                "returncode": 1,
+                "stdout": "",
+                "stderr": ""
+              },
+              {
+                "utc": "2026-10-13T22:57:55.765896+00:00",
+                "returncode": 1,
+                "stdout": "",
+                "stderr": ""
+              }
+            ],
+            "native_sha256": "1475c697d25aae42b5c079c8bbe5a12ffd8048f998a9b4cf4addc9545e12dd64",
+            "native_bytes": 16100659,
+            "archive_bytes": 1011488,
+            "decompressed_sha256": "1475c697d25aae42b5c079c8bbe5a12ffd8048f998a9b4cf4addc9545e12dd64",
+            "decompressed_bytes": 16100659,
+            "archive_sha256": "7996d94d87c85a575850eea9c6d097abc605064bd4c409c91215c634f5bbcf95",
+            "recovered_bytes": 15089171,
+            "elapsed_seconds": 0.5560244170483202
+          },
+          {
+            "native": "canonical.spice",
+            "archive": "canonical.spice.gz",
+            "status": "complete",
+            "raw_removed": true,
+            "reader_checks": [
+              {
+                "utc": "2026-10-13T22:57:56.002936+00:00",
+                "returncode": 1,
+                "stdout": "",
+                "stderr": ""
+              },
+              {
+                "utc": "2026-10-13T22:57:56.313863+00:00",
+                "returncode": 1,
+                "stdout": "",
+                "stderr": ""
+              }
+            ],
+            "native_sha256": "7c59b3351af697abcb5306c97abf6debde3fd31b4f7fbd8721ac1a6a78c2d881",
+            "native_bytes": 8383845,
+            "archive_bytes": 753938,
+            "decompressed_sha256": "7c59b3351af697abcb5306c97abf6debde3fd31b4f7fbd8721ac1a6a78c2d881",
+            "decompressed_bytes": 8383845,
+            "archive_sha256": "edd15581ef925277444f2611f97d67a329cabf0eed4b3facbeb21c0d965a1d49",
+            "recovered_bytes": 7629907,
+            "elapsed_seconds": 0.5466789589263499
+          },
+          {
+            "native": "reference.spice",
+            "archive": "reference.spice.gz",
+            "status": "complete",
+            "raw_removed": true,
+            "reader_checks": [
+              {
+                "utc": "2026-10-13T22:57:56.541994+00:00",
+                "returncode": 1,
+                "stdout": "",
+                "stderr": ""
+              },
+              {
+                "utc": "2026-10-13T22:57:56.814231+00:00",
+                "returncode": 1,
+                "stdout": "",
+                "stderr": ""
+              }
+            ],
+            "native_sha256": "b0c25467d6a93988c2c2d2985a4c9bb07b5cfb2d3955cf91e2fe58495a9c984b",
+            "native_bytes": 5365886,
+            "archive_bytes": 497504,
+            "decompressed_sha256": "b0c25467d6a93988c2c2d2985a4c9bb07b5cfb2d3955cf91e2fe58495a9c984b",
+            "decompressed_bytes": 5365886,
+            "archive_sha256": "a5d5ca34eaf2db7463b0ae202bc39da8274d607e8b822f3a91849e9aa6277b66",
+            "recovered_bytes": 4868382,
+            "elapsed_seconds": 0.4995893749874085
+          },
+          {
+            "native": "reference-wrong-width.spice",
+            "archive": "reference-wrong-width.spice.gz",
+            "status": "complete",
+            "raw_removed": true,
+            "reader_checks": [
+              {
+                "utc": "2026-10-13T22:57:57.050340+00:00",
+                "returncode": 1,
+                "stdout": "",
+                "stderr": ""
+              },
+              {
+                "utc": "2026-10-13T22:57:57.339205+00:00",
+                "returncode": 1,
+                "stdout": "",
+                "stderr": ""
+              }
+            ],
+            "native_sha256": "f0b3a38349397f2d94e35c56688583dd182df5ac5382cc7f79f1ab9cd41190da",
+            "native_bytes": 5365886,
+            "archive_bytes": 497510,
+            "decompressed_sha256": "f0b3a38349397f2d94e35c56688583dd182df5ac5382cc7f79f1ab9cd41190da",
+            "decompressed_bytes": 5365886,
+            "archive_sha256": "66b98cc457d062d7b28be98b110a73c391c7e680d01f57e7d135a537f99c2983",
+            "recovered_bytes": 4868376,
+            "elapsed_seconds": 0.5248493750113994
+          }
+        ],
+        "minimum_free_gib": 22.27914810180664,
+        "recovered_bytes": 92916551,
+        "reproduction": "For each required file run gzip -dc NAME.gz > NAME in this directory, then verify SHA256 equals native_sha256 before rerunning compare/Netgen. Allocate native_bytes plus22GiB reserve; no regeneration of original extraction is required."
+      },
+      "netgen_reduction": {
+        "raw_devices_checked_independently": 87040,
+        "device_counts_printed": [
+          87040,
+          87040,
+          45970,
+          45970
+        ],
+        "explicit_log_explanation": "Circuit was modified by parallel/series device merging.",
+        "setup_sha256": "eb6217e33acb2c81680351745bc184a2ee37b31a25d37f4dce423f61ba466fe4",
+        "setup_mos_rules": "gf180mcuD_setup.tcl MOS section enables parallel, length critical, width add on both circuits. No claim about which individual raw devices were merged.",
+        "raw_graph_scope": "Independent exact full device/node/model/W/L multiset equality before Netgen reductions."
+      }
+    },
+    {
+      "rows": 1280,
+      "lvs_run": "r1280-v2",
+      "lvs_receipt": "r1280-v2/full-bank-netgen-result.json",
+      "extraction_mode": "full_C_ext_LVS_spice",
+      "input": {
+        "gds": "overnight-20261014/taalas-pitch/r1280-v2/bank.gds",
+        "gds_sha256": "fd75915d1d8b7bc053e91b0141bd1400d4f05d1319bdfebfd8cac4449b2235b0",
+        "top": "PITCH_BANK_R1280",
+        "rows": 1280,
+        "pc_width_um": 2.88,
+        "row_mapping": "logical_row=0+1*local_row"
+      },
+      "readback": {
+        "gds": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/taalas-pitch/r1280-v2/bank.gds",
+        "gds_sha256": "fd75915d1d8b7bc053e91b0141bd1400d4f05d1319bdfebfd8cac4449b2235b0",
+        "identity": {
+          "packed_sha256": "864fcdc7ec80be2dbb99d76361db338345fb02a1a26d7aaa4a1b40696b921907",
+          "unpacked_sha256": "ba628b676d59721c268868d6720be1f58a4f8d4edfd9a26009403c9a8c4fce8e",
+          "w2b_rtl_sha256": "de720f1e7c93c405729025cd9395850bc75e35c3eb602a1b67c4ad58d1ed4dbf",
+          "all409600_indices_match": true
+        },
+        "rows": 1280,
+        "compared_selections": 409600,
+        "compared_bits": 1638400,
+        "selection_mismatches": 0,
+        "bit_mismatches": 0,
+        "programmed_ones": 820801,
+        "observed_sha256": "ba628b676d59721c268868d6720be1f58a4f8d4edfd9a26009403c9a8c4fce8e",
+        "expected_sha256": "ba628b676d59721c268868d6720be1f58a4f8d4edfd9a26009403c9a8c4fce8e",
+        "placements": [
+          {
+            "group": 0,
+            "joined_transform": "r0 0,0",
+            "array_transform": "r0 10000,126000"
+          },
+          {
+            "group": 1,
+            "joined_transform": "r0 100000,0",
+            "array_transform": "r0 10000,126000"
+          },
+          {
+            "group": 2,
+            "joined_transform": "r0 200000,0",
+            "array_transform": "r0 10000,126000"
+          },
+          {
+            "group": 3,
+            "joined_transform": "r0 300000,0",
+            "array_transform": "r0 10000,126000"
+          },
+          {
+            "group": 4,
+            "joined_transform": "r0 400000,0",
+            "array_transform": "r0 10000,126000"
+          },
+          {
+            "group": 5,
+            "joined_transform": "r0 500000,0",
+            "array_transform": "r0 10000,126000"
+          },
+          {
+            "group": 6,
+            "joined_transform": "r0 600000,0",
+            "array_transform": "r0 10000,126000"
+          },
+          {
+            "group": 7,
+            "joined_transform": "r0 700000,0",
+            "array_transform": "r0 10000,126000"
+          },
+          {
+            "group": 8,
+            "joined_transform": "r0 800000,0",
+            "array_transform": "r0 10000,126000"
+          },
+          {
+            "group": 9,
+            "joined_transform": "r0 900000,0",
+            "array_transform": "r0 10000,126000"
+          }
+        ],
+        "method": "Reopened GDS Via1 centers at reviewed drain sites, plus each array instantiated exactly once. Expected bits independently decoded from original packed K64 tensor; no use of generator index image as oracle."
+      },
+      "extraction": {
+        "returncode": 0,
+        "status": "finished",
+        "elapsed_seconds": 3122.505432124948
+      },
+      "connectivity": {
+        "extracted_devices": 1643520,
+        "reference_devices": 1643520,
+        "exact_device_tuples_and_dimensions_match": true,
+        "bijection_nodes": 821442,
+        "extra_device_examples": [],
+        "missing_device_examples": [],
+        "qualification": "Bijective hierarchical prefix removal only; no device/net merges. All declared physical WL,PC,VDD,VSS and1280 outputs required present."
+      },
+      "lvs": {
+        "returncode": 0,
+        "status": "finished",
+        "elapsed_seconds": 438.70075845811516,
+        "unique_match": true,
+        "property_errors": false,
+        "input": {
+          "gds": "overnight-20261014/taalas-pitch/r1280-v2/bank.gds",
+          "gds_sha256": "fd75915d1d8b7bc053e91b0141bd1400d4f05d1319bdfebfd8cac4449b2235b0",
+          "top": "PITCH_BANK_R1280",
+          "rows": 1280,
+          "pc_width_um": 2.88,
+          "row_mapping": "logical_row=0+1*local_row"
+        },
+        "pass": true
+      },
+      "negative_control": {
+        "returncode": 0,
+        "status": "finished",
+        "elapsed_seconds": 454.96872787503526,
+        "unique_match": true,
+        "property_errors": true,
+        "input": {
+          "gds": "overnight-20261014/taalas-pitch/r1280-v2/bank.gds",
+          "gds_sha256": "fd75915d1d8b7bc053e91b0141bd1400d4f05d1319bdfebfd8cac4449b2235b0",
+          "top": "PITCH_BANK_R1280",
+          "rows": 1280,
+          "pc_width_um": 2.88,
+          "row_mapping": "logical_row=0+1*local_row"
+        },
+        "pass": false,
+        "negative_control_rejected": true
+      },
+      "verified": true,
+      "extraction_warning_lines": [
+        "WARNING: RLIMIT_NOFILE is above 1024 and Tcl_Version<9 this may cause runtime issues [rlim_cur=1048575]",
+        "Warning: Calma reading is not undoable!  I hope that's OK."
+      ],
+      "watchdog_extension": {
+        "authorization": "Parent explicitly authorized safe SIGSTOP of owned Python watchdog only, external3600s absolute bound, then SIGCONT to reap native Magic status. User22GiB disk and<=4thread guards unchanged.",
+        "parent_pid": 66232,
+        "child_pid": 66234,
+        "parent_process": "66232 66007 SN   20:56 .venv/bin/python overnight-20261014/taalas-pitch/verification/verify.py extract --gds overnight-20261014/taalas-pitch/r1280-v2/bank.gds --top PITCH_BANK_R1280 --rows 1280 --run r1280-v2",
+        "child_process": "66234 66232 RN   20:56 /nix/store/hdjick71an9gpkcfbw0n2kpg7rnw7j3l-magic-vlsi-8.3.623/lib/magic/tcl/magicdnull -nowrapper -dnull -noconsole -rcfile /Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/pdks/gf180mcuD/libs.tech/magic/gf180mcuD.magicrc extract.tcl",
+        "child_cwd": "p66234\nfcwd\nn/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/taalas-pitch/verification/r1280-v2\n",
+        "original_timeout_seconds": 1800,
+        "new_absolute_timeout_seconds": 3600,
+        "elapsed_before_stop_seconds": 1256,
+        "subprocess_wait_source_sha256": "773f67be387e442975136954e06b0113780c904d6075cb6957d5cfa7d3ad5fbd",
+        "actions": [
+          {
+            "utc": "2026-10-13T21:45:10.954772+00:00",
+            "action": "Verified own watchdog and Magic child PIDs/cwd; extension prepared"
+          },
+          {
+            "utc": "2026-10-13T21:45:10.955240+00:00",
+            "action": "Sent SIGSTOP only to Python watchdog parent; Magic continues"
+          }
+        ],
+        "minimum_free_gib": null
+      },
+      "native_ext_archive": {
+        "utc": "2026-10-13T22:43:23.565370+00:00",
+        "authorization": "Parent requested only this .ext archive; timing confirmed no current or planned readers.",
+        "native_path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/taalas-pitch/verification/r1280-v2/W6_PITCH_BANK_FLAT.ext",
+        "archive_path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/taalas-pitch/verification/r1280-v2/W6_PITCH_BANK_FLAT.ext.gz",
+        "expected_native_sha256": "73b3502c7294f325537d86a8b62a5b94ae75d93224c933e23dffc143c00c3717",
+        "status": "complete",
+        "raw_removed": true,
+        "minimum_free_gib": 23.680988311767578,
+        "reader_checks": [
+          {
+            "utc": "2026-10-13T22:43:23.841090+00:00",
+            "returncode": 1,
+            "stdout": "",
+            "stderr": ""
+          },
+          {
+            "utc": "2026-10-13T22:43:34.177721+00:00",
+            "returncode": 1,
+            "stdout": "",
+            "stderr": ""
+          }
+        ],
+        "source_sha256": "73b3502c7294f325537d86a8b62a5b94ae75d93224c933e23dffc143c00c3717",
+        "native_bytes": 1271881706,
+        "archive_bytes": 90196781,
+        "decompressed_sha256": "73b3502c7294f325537d86a8b62a5b94ae75d93224c933e23dffc143c00c3717",
+        "decompressed_bytes": 1271881706,
+        "archive_sha256": "cbf115bcc3d509100bdfbcff31c1f853d56e7ca1e6c139abac1c430ac2a67b7f",
+        "recovered_bytes": 1181684925,
+        "elapsed_seconds": 11.163053791038692,
+        "reproduction": "Restore losslessly with gzip -dc W6_PITCH_BANK_FLAT.ext.gz > W6_PITCH_BANK_FLAT.ext, then verify SHA256 matches expected_native_sha256 before using ext2spice. Allocate at least native_bytes plus the22GiB reserve before restoration."
+      },
+      "spice_evidence_archives": {
+        "utc": "2026-10-13T22:47:13.411084+00:00",
+        "authorization": "Parent explicitly requested sequential archival of these four completed full-bank SPICE files; timing confirmed no active/future readers.",
+        "status": "complete",
+        "files": [
+          {
+            "native": "extracted.spice",
+            "archive": "extracted.spice.gz",
+            "status": "complete",
+            "raw_removed": true,
+            "reader_checks": [
+              {
+                "utc": "2026-10-13T22:47:13.662119+00:00",
+                "returncode": 1,
+                "stdout": "",
+                "stderr": ""
+              },
+              {
+                "utc": "2026-10-13T22:47:15.626577+00:00",
+                "returncode": 1,
+                "stdout": "",
+                "stderr": ""
+              }
+            ],
+            "native_sha256": "94c228cfd070a0f4e4d033f95e054f7506a6c046cef81cbf24841bc6f3b9d56e",
+            "native_bytes": 322304516,
+            "archive_bytes": 21133354,
+            "decompressed_sha256": "94c228cfd070a0f4e4d033f95e054f7506a6c046cef81cbf24841bc6f3b9d56e",
+            "decompressed_bytes": 322304516,
+            "archive_sha256": "57a9192edc29d7935e7c38255785c7692edd9386c944713659902591d730689a",
+            "recovered_bytes": 301171162,
+            "elapsed_seconds": 2.2565533751621842
+          },
+          {
+            "native": "canonical.spice",
+            "archive": "canonical.spice.gz",
+            "status": "complete",
+            "raw_removed": true,
+            "reader_checks": [
+              {
+                "utc": "2026-10-13T22:47:15.928100+00:00",
+                "returncode": 1,
+                "stdout": "",
+                "stderr": ""
+              },
+              {
+                "utc": "2026-10-13T22:47:17.851910+00:00",
+                "returncode": 1,
+                "stdout": "",
+                "stderr": ""
+              }
+            ],
+            "native_sha256": "5f3d82ed637f9ca47c5e9eba4107dbd6129a0b30f42bf95acf7d288fb4835e1f",
+            "native_bytes": 163808539,
+            "archive_bytes": 16497715,
+            "decompressed_sha256": "5f3d82ed637f9ca47c5e9eba4107dbd6129a0b30f42bf95acf7d288fb4835e1f",
+            "decompressed_bytes": 163808539,
+            "archive_sha256": "3c43779f707283841d6edf171a5605558f65e0c9519c9ef802405d7e06eebf81",
+            "recovered_bytes": 147310824,
+            "elapsed_seconds": 2.205356625141576
+          },
+          {
+            "native": "reference.spice",
+            "archive": "reference.spice.gz",
+            "status": "complete",
+            "raw_removed": true,
+            "reader_checks": [
+              {
+                "utc": "2026-10-13T22:47:18.144783+00:00",
+                "returncode": 1,
+                "stdout": "",
+                "stderr": ""
+              },
+              {
+                "utc": "2026-10-13T22:47:19.174635+00:00",
+                "returncode": 1,
+                "stdout": "",
+                "stderr": ""
+              }
+            ],
+            "native_sha256": "1208bbef6b41993f97d2e19b24f484d25be63e2bdf9bfd9c964ec369453eed14",
+            "native_bytes": 107016980,
+            "archive_bytes": 9499039,
+            "decompressed_sha256": "1208bbef6b41993f97d2e19b24f484d25be63e2bdf9bfd9c964ec369453eed14",
+            "decompressed_bytes": 107016980,
+            "archive_sha256": "533d75965d59a86cfbf684c70857dc29c0ce27f474d7524a49ad6b9acf7c2c0d",
+            "recovered_bytes": 97517941,
+            "elapsed_seconds": 1.313619416905567
+          },
+          {
+            "native": "reference-wrong-width.spice",
+            "archive": "reference-wrong-width.spice.gz",
+            "status": "complete",
+            "raw_removed": true,
+            "reader_checks": [
+              {
+                "utc": "2026-10-13T22:47:19.445845+00:00",
+                "returncode": 1,
+                "stdout": "",
+                "stderr": ""
+              },
+              {
+                "utc": "2026-10-13T22:47:20.448885+00:00",
+                "returncode": 1,
+                "stdout": "",
+                "stderr": ""
+              }
+            ],
+            "native_sha256": "6d07bd629aaf5b0489a41e77e22ae3fafcdb337eb4d308f05b28464aa39db7ec",
+            "native_bytes": 107016980,
+            "archive_bytes": 9499045,
+            "decompressed_sha256": "6d07bd629aaf5b0489a41e77e22ae3fafcdb337eb4d308f05b28464aa39db7ec",
+            "decompressed_bytes": 107016980,
+            "archive_sha256": "75ceefbad7b64bfd80e44e6534e2d9e13717066a706f51408292d8715c8d53e2",
+            "recovered_bytes": 97517935,
+            "elapsed_seconds": 1.2798347908537835
+          }
+        ],
+        "minimum_free_gib": 25.795570373535156,
+        "recovered_bytes": 643517862,
+        "reproduction": "For each required file run gzip -dc NAME.spice.gz > NAME.spice in this directory, then verify SHA256 equals native_sha256 before rerunning compare/Netgen. Allocate native_bytes plus22GiB reserve; no regeneration of original extraction is required."
+      },
+      "slice_evidence_archives": null,
+      "netgen_reduction": {
+        "raw_devices_checked_independently": 1643520,
+        "device_counts_printed": [
+          1643520,
+          1643520,
+          827201,
+          827201
+        ],
+        "explicit_log_explanation": "Circuit was modified by parallel/series device merging.",
+        "setup_sha256": "eb6217e33acb2c81680351745bc184a2ee37b31a25d37f4dce423f61ba466fe4",
+        "setup_mos_rules": "gf180mcuD_setup.tcl MOS section enables parallel, length critical, width add on both circuits. No claim about which individual raw devices were merged.",
+        "raw_graph_scope": "Independent exact full device/node/model/W/L multiset equality before Netgen reductions."
+      },
+      "cancelled_connectivity_only_attempt": {
+        "run": "r1280-v2-connectivity",
+        "process": {
+          "returncode": -15,
+          "status": "finished",
+          "elapsed_seconds": 458.9863357078284
+        },
+        "cancellation": {
+          "reason": "Parent authorized cancellation of redundant connectivity-only GDS parse after original full-C extraction returned0; neither pass nor verification failure.",
+          "utc": "2026-10-13T22:17:06.483671+00:00",
+          "signal": "SIGTERM",
+          "pid": 94844,
+          "process": "94844 94840 RN   07:38 /nix/store/hdjick71an9gpkcfbw0n2kpg7rnw7j3l-magic-vlsi-8.3.623/lib/magic/tcl/magicdnull -nowrapper -dnull -noconsole -rcfile /Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/pdks/gf180mcuD/libs.tech/magic/gf180mcuD.magicrc extract.tcl",
+          "original_success": "../r1280-v2/extract-process.json"
+        }
+      },
+      "separate_full_C_extraction": {
+        "run": "r1280-v2",
+        "process": {
+          "returncode": 0,
+          "status": "finished",
+          "elapsed_seconds": 3122.505432124948
+        },
+        "watchdog_3600": {
+          "authorization": "Parent explicitly authorized safe SIGSTOP of owned Python watchdog only, external3600s absolute bound, then SIGCONT to reap native Magic status. User22GiB disk and<=4thread guards unchanged.",
+          "parent_pid": 66232,
+          "child_pid": 66234,
+          "parent_process": "66232 66007 SN   20:56 .venv/bin/python overnight-20261014/taalas-pitch/verification/verify.py extract --gds overnight-20261014/taalas-pitch/r1280-v2/bank.gds --top PITCH_BANK_R1280 --rows 1280 --run r1280-v2",
+          "child_process": "66234 66232 RN   20:56 /nix/store/hdjick71an9gpkcfbw0n2kpg7rnw7j3l-magic-vlsi-8.3.623/lib/magic/tcl/magicdnull -nowrapper -dnull -noconsole -rcfile /Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/pdks/gf180mcuD/libs.tech/magic/gf180mcuD.magicrc extract.tcl",
+          "child_cwd": "p66234\nfcwd\nn/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/taalas-pitch/verification/r1280-v2\n",
+          "original_timeout_seconds": 1800,
+          "new_absolute_timeout_seconds": 3600,
+          "elapsed_before_stop_seconds": 1256,
+          "subprocess_wait_source_sha256": "773f67be387e442975136954e06b0113780c904d6075cb6957d5cfa7d3ad5fbd",
+          "actions": [
+            {
+              "utc": "2026-10-13T21:45:10.954772+00:00",
+              "action": "Verified own watchdog and Magic child PIDs/cwd; extension prepared"
+            },
+            {
+              "utc": "2026-10-13T21:45:10.955240+00:00",
+              "action": "Sent SIGSTOP only to Python watchdog parent; Magic continues"
+            }
+          ],
+          "minimum_free_gib": null
+        },
+        "watchdog_5400": {
+          "authorization": "Parent authorized transparent5400s absolute extension near50min only if one active guard preserves original native-exit and22GiB disk protections.",
+          "prior_receipt": "watchdog-extension.json",
+          "prior_guard_pid": 75693,
+          "replacement_guard_pid": 1786,
+          "parent_pid": 66232,
+          "child_pid": 66234,
+          "parent_process": "66232 66007 TN   49:27 .venv/bin/python overnight-20261014/taalas-pitch/verification/verify.py extract --gds overnight-20261014/taalas-pitch/r1280-v2/bank.gds --top PITCH_BANK_R1280 --rows 1280 --run r1280-v2",
+          "child_process": "66234 66232 RN   49:27 /nix/store/hdjick71an9gpkcfbw0n2kpg7rnw7j3l-magic-vlsi-8.3.623/lib/magic/tcl/magicdnull -nowrapper -dnull -noconsole -rcfile /Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/pdks/gf180mcuD/libs.tech/magic/gf180mcuD.magicrc extract.tcl",
+          "prior_guard_process": "75693 61289 SNs  28:31 .venv/bin/python overnight-20261014/taalas-pitch/verification/extend_owned_wait.py --parent 66232 --child 66234",
+          "elapsed_before_handoff_seconds": 2967,
+          "absolute_bound_seconds": 5400,
+          "actions": [
+            {
+              "utc": "2026-10-13T22:13:41.877660+00:00",
+              "action": "Verified existing stopped subprocess owner, live Magic child and old guard; prepared single-owner handoff"
+            },
+            {
+              "utc": "2026-10-13T22:13:41.888502+00:00",
+              "action": "Stopped only old idle guard; original watchdog remains stopped and Magic remains running"
+            },
+            {
+              "utc": "2026-10-13T22:13:41.889115+00:00",
+              "action": "Killed only stopped old guard before entering replacement monitor; original source/receipt retained"
+            },
+            {
+              "utc": "2026-10-13T22:16:17.179019+00:00",
+              "action": "Native Magic exited; resume original watchdog to reap native status"
+            },
+            {
+              "utc": "2026-10-13T22:16:17.179605+00:00",
+              "action": "Resumed original subprocess owner; no fabricated native exit status"
+            }
+          ],
+          "minimum_free_gib": 24.739742279052734
+        }
+      }
+    }
+  ],
+  "scripts_sha256": {
+    "verify.py": "700b8a45bbf694c6e4612ec6c4be646eff45920e34d9e28b02de2f8441e7427a",
+    "verify-connectivity.py": "4d0265c657e45ad89388d2ea5693d26a42f935a631d33023c6fc80169fa2b151",
+    "readback.py": "5fa76a852331362bbae19ea6b4a1bce80e6b133c6d573fbe22c6105a5dfa8b8d",
+    "collect.py": "5c166e1c84cfdd4b79f87dcb203c10ede61faa7e543d557ecba042c5aa8808c3"
+  },
+  "proof_exclusions": [
+    "Timing and energy are separate worker results",
+    "No missing driver/decoder/latch or whole-chip proof",
+    "Selected DRC is a parent-worker result"
+  ]
+}

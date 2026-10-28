@@ -1,0 +1,33 @@
+\section{Introduction}
+\label{sec:intro}
+
+Most AI inference still runs in data centres. Voice interfaces for appliances, wearables, toys and sensors face a practical problem: the device must either send audio to the cloud, with cost, latency and privacy consequences, or run a model locally. Running locally usually means a general-purpose NPU or microcontroller with external memory, so weights are fetched from memory on every use.
+
+For a device whose model never changes, weight movement is pure overhead. A model that is fixed for the life of a product can instead be built into the silicon.
+
+Hardwired, or ``model-specific'', inference silicon has recently attracted commercial attention at the frontier, where fixed-weight chips promise very high token rates for large language models~\cite{taalas2026hc1}. This paper asks the complementary question at the other end of the scale:
+\begin{quote}
+\emph{Can a useful speech model be hardwired into an open, mature, low-cost process, and can a very small team build and verify it using AI coding agents and open-source tools?}
+\end{quote}
+
+We present RouteVoice, a Moonshine Tiny speech recognizer~\cite{jeffries2024moonshine} designed for GlobalFoundries' open 180\,nm process (GF180MCU). Every weight is a fixed 4-bit index into a small local codebook. Multiplications become selections from a table of partial products shared across all output lanes.
+
+The building blocks are not new:
+\begin{itemize}
+\item codebook-indexed weights~\cite{han2016eie,zadeh2022mokey};
+\item shared multiples of an input selected per fixed coefficient~\cite{park2002cshm}, which hardwired-LLM patents also describe~\cite{taalas2025patent802,taalas2026patent566};
+\item hardwired weights on an open PDK~\cite{pai2026ankhdjet}.
+\end{itemize}
+What we add is their combination in a complete, verified speech recognizer, carried through an open physical flow and documented end to end.
+
+\paragraph{Contributions.}
+\begin{enumerate}
+\item \textbf{A hardwired-codebook weight format, validated for ASR.} K64 stores each weight as a 4-bit index into a 16-entry UINT8 book shared by 64 weights. It keeps Moonshine Tiny within $+2$ WER points of the original on a reserved test, and cuts on-chip weight storage by 39\%.
+\item \textbf{A bit-exact recognizer.} The full recognizer RTL decodes speech to the exact tokens and intermediate hashes of the frozen software model, with every weight served from index$+$codebook storage.
+\item \textbf{A routed, signoff-checked projection engine.} The $1280\times320$ engine (409,600 MACs per projection) closes timing at \SI{150}{ns} in all nine PVT/RC corners. Routing, Magic DRC, KLayout DRC, antenna and LVS checks are clean. Activity-annotated routed power is \SI{287}{pJ}/MAC.
+\item \textbf{Full-design evidence.} Whole-recognizer synthesis for silicon and FPGA completes, and DRC-clean mask-programmed weight banks cover all 98 matrices (\SI{174.7}{mm^2}), with full LVS on six representative banks.
+\item \textbf{A documented agent-driven methodology.} We report the step-by-step procedure, the failures and their fixes, and the cost (\$34.82 of cloud compute plus a laptop), and derive concrete practices for faster flows.
+\item \textbf{An analysis of future scope.} We size what the same approach implies for local LLMs, and propose ways to make hardwired silicon serve multiple tasks.
+\end{enumerate}
+
+\Cref{sec:background} reviews related work. \Cref{sec:representation,sec:architecture} describe the weight format and architecture, and \cref{sec:method} the methodology. \Cref{sec:results,sec:closure} report results, including a timing-closure case study. \Cref{sec:efficiency,sec:future,sec:limitations} discuss efficiency, future scope and limitations.

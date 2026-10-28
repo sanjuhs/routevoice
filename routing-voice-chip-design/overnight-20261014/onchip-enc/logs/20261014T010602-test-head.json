@@ -1,0 +1,16 @@
+{
+  "stage": "test-head",
+  "command": [
+    "/usr/bin/nice",
+    "-n",
+    "10",
+    "/Users/sanju/.local/state/routevoice-internal-runs/20261014/onchip-enc/test-head/Vrv_onchip_encoder_head_v1",
+    "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/encoder/inputs.txt"
+  ],
+  "cwd": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design",
+  "log": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/onchip-enc/logs/20261014T010602-test-head.log",
+  "started": "20261014T010602",
+  "exit_code": 0,
+  "pid": 15978,
+  "elapsed_seconds": 0.989341292064637
+}

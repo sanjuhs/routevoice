@@ -1,0 +1,21 @@
+{
+  "DESIGN_NAME": "rv_fixed_proj320_dp",
+  "VERILOG_FILES": [
+    "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/rtl/rv_fixed_proj320_dp.sv"
+  ],
+  "CLOCK_PORT": "clk",
+  "CLOCK_PERIOD": 20.0,
+  "FP_CORE_UTIL": 45,
+  "PL_TARGET_DENSITY_PCT": 50,
+  "DRT_THREADS": 8,
+  "STA_THREADS": 2,
+  "RUN_MAGIC_DRC": true,
+  "RUN_KLAYOUT_DRC": true,
+  "RUN_LVS": true,
+  "RUN_CTS": true,
+  "RUN_DRT": true,
+  "RUN_FILL_INSERTION": true,
+  "RUN_MCSTA": true,
+  "RUN_SPEF_EXTRACTION": true,
+  "RUN_ANTENNA_REPAIR": true
+}

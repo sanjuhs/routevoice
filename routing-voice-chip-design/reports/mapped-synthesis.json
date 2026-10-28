@@ -1,0 +1,54 @@
+{
+  "scope": "Yosys mapping only; no placement/routing, extracted timing or power. Cell area excludes physical overhead and cannot be treated as die area.",
+  "library": "gf180mcu_fd_sc_mcu7t5v0__tt_025C_3v30.lib",
+  "tiles": [
+    {
+      "top": "die1_tile",
+      "coefficients": 64,
+      "cells": 7555,
+      "liberty_cell_area_um2": 165731.0144,
+      "liberty_cell_area_mm2": 0.1657310144,
+      "structural_check": "pass"
+    },
+    {
+      "top": "die2_tile",
+      "coefficients": 64,
+      "cells": 7442,
+      "liberty_cell_area_um2": 160139.84,
+      "liberty_cell_area_mm2": 0.16013984,
+      "structural_check": "pass"
+    },
+    {
+      "top": "die3_tile",
+      "coefficients": 64,
+      "cells": 7589,
+      "liberty_cell_area_um2": 165217.3376,
+      "liberty_cell_area_mm2": 0.16521733759999999,
+      "structural_check": "pass"
+    },
+    {
+      "top": "die1_tile_serial",
+      "coefficients": 64,
+      "cells": 3365,
+      "liberty_cell_area_um2": 79852.5952,
+      "liberty_cell_area_mm2": 0.0798525952,
+      "structural_check": "pass"
+    },
+    {
+      "top": "die2_tile_serial",
+      "coefficients": 64,
+      "cells": 3267,
+      "liberty_cell_area_um2": 79005.248,
+      "liberty_cell_area_mm2": 0.079005248,
+      "structural_check": "pass"
+    },
+    {
+      "top": "die3_tile_serial",
+      "coefficients": 64,
+      "cells": 3273,
+      "liberty_cell_area_um2": 77966.9184,
+      "liberty_cell_area_mm2": 0.0779669184,
+      "structural_check": "pass"
+    }
+  ]
+}

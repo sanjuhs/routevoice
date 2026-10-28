@@ -1,0 +1,13 @@
+.venv/bin/python -m unittest discover -s tests -v
+test_real_slices (test_serial.Serial.test_real_slices) ... ok
+test_signed_extremes (test_serial.Serial.test_signed_extremes) ... ok
+test_all_int8_coefficients_and_inputs (test_tiles.Tiles.test_all_int8_coefficients_and_inputs) ... ok
+test_centered_uint8_operands (test_tiles.Tiles.test_centered_uint8_operands) ... ok
+test_dot_products_and_backpressure (test_tiles.Tiles.test_dot_products_and_backpressure) ... ok
+test_exported_model_tiles (test_tiles.Tiles.test_exported_model_tiles) ... ok
+test_reject_invalid_weights (test_tiles.Tiles.test_reject_invalid_weights) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 1.428s
+
+OK

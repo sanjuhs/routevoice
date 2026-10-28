@@ -1,0 +1,66 @@
+{
+  "variant": "rv_fixed_proj320_dp",
+  "level": "Zero-delay mapped netlist, GF180 FUNCTIONAL models, Verilator (two-state); no SDF timing simulation",
+  "netlist": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/runs/rv_fixed_proj320_dp-synthesis/06-yosys-synthesis/rv_fixed_proj320_dp.nl.v",
+  "netlist_sha256": "d45ee3155fd540c57927087ed68fcccff8a4572c38196876b1ebb5fe4fe461a2",
+  "thread_caps": {
+    "build": 4,
+    "simulation": 1
+  },
+  "limit_seconds": 1200,
+  "phases": [
+    {
+      "phase": "compile",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "verilator",
+        "--binary",
+        "--timing",
+        "--top-module",
+        "tb",
+        "--build-jobs",
+        "4",
+        "--threads",
+        "1",
+        "--output-split",
+        "15000",
+        "--output-split-cfuncs",
+        "5000",
+        "-Wno-fatal",
+        "-DFUNCTIONAL",
+        "-DDUT=rv_fixed_proj320_dp",
+        "-DROWS=320",
+        "--Mdir",
+        "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/tb/gate_obj_rv_fixed_proj320_dp",
+        "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/verilog/primitives.v",
+        "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/verilog/gf180mcu_fd_sc_mcu7t5v0.v",
+        "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/runs/rv_fixed_proj320_dp-synthesis/06-yosys-synthesis/rv_fixed_proj320_dp.nl.v",
+        "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/tb/tb_gate.sv",
+        "-DEXTERNAL"
+      ],
+      "log": "logs/rv_fixed_proj320_dp.gate-compile.log",
+      "exit_code": 0
+    },
+    {
+      "phase": "simulate",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/tb/gate_obj_rv_fixed_proj320_dp/Vtb"
+      ],
+      "log": "logs/rv_fixed_proj320_dp.gate-simulate.log",
+      "exit_code": 0
+    }
+  ],
+  "elapsed_seconds": 360.5335021018982,
+  "stop_reason": null,
+  "verification": {
+    "vectors_passed": 32,
+    "random_vectors": 20,
+    "exact_comparisons": 10272,
+    "failures": 0
+  }
+}

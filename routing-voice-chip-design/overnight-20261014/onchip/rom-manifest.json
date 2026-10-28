@@ -1,0 +1,90 @@
+[
+  {
+    "name": "cross_coeff",
+    "input": "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/cross/coefficients.bin",
+    "input_bytes": 1228800,
+    "input_sha256": "f25cb6ca33ef3ee3f92a3b4914c5887333fcfe57dcd440b30f1d8f100a9b4ffc",
+    "output": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/onchip/rom/cross_coeff.hex",
+    "output_sha256": "6b638850aef42cc4260be797abf8c891173255256f5fd0fe25bc60c56626e001",
+    "width_bits": 256,
+    "words": 38400,
+    "roundtrip_pass": true
+  },
+  {
+    "name": "cross_meta",
+    "input": "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/cross/metadata.bin",
+    "input_bytes": 30720,
+    "input_sha256": "f3a64081de38cbc690725ab8777619994bd87bee54e633f5d3af016c623ff647",
+    "output": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/onchip/rom/cross_meta.hex",
+    "output_sha256": "d49d14a42b8dc1a65232d2589b2c763159d276cb78225fd8e549159f76851eda",
+    "width_bits": 256,
+    "words": 960,
+    "roundtrip_pass": true
+  },
+  {
+    "name": "ff_up_coeff",
+    "input": "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/ff/up-weights.bin",
+    "input_bytes": 4915200,
+    "input_sha256": "8d0e7c9cafed76969a965e7a544784922c4fdafd7302e29977ad3bb14545726c",
+    "output": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/onchip/rom/ff_up_coeff.hex",
+    "output_sha256": "5c386ae8d9c562eeadb5dbd9874f0601fa9b9817bd3550ecbc511f49fd4ddac3",
+    "width_bits": 256,
+    "words": 153600,
+    "roundtrip_pass": true
+  },
+  {
+    "name": "ff_down_coeff",
+    "input": "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/ff/down-weights.bin",
+    "input_bytes": 2457600,
+    "input_sha256": "25ca57095b7291bf9a86a13afb6736d3c23092eb147eb8f610a93671023cfded",
+    "output": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/onchip/rom/ff_down_coeff.hex",
+    "output_sha256": "7764dbe7cd9ac6a68653716cae16707ffd697e371aaafb18394df654b621fb00",
+    "width_bits": 256,
+    "words": 76800,
+    "roundtrip_pass": true
+  },
+  {
+    "name": "ff_up_meta",
+    "input": "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/ff/up-metadata.bin",
+    "input_bytes": 245760,
+    "input_sha256": "5c5291e55efed87c03ae96239b79b4896480b481aded1e409ad0f306c9f8a8d3",
+    "output": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/onchip/rom/ff_up_meta.hex",
+    "output_sha256": "51ce6b30d23508bbe951c49dbe1bf7e08674767d66f50adce7dd65cb4a1b18d8",
+    "width_bits": 256,
+    "words": 7680,
+    "roundtrip_pass": true
+  },
+  {
+    "name": "ff_down_meta",
+    "input": "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/ff/down-metadata.bin",
+    "input_bytes": 30720,
+    "input_sha256": "a2068fafd2d22cfb2fd80445f1a292ed3bc1da972f67a5bb0e1371d7853cca0b",
+    "output": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/onchip/rom/ff_down_meta.hex",
+    "output_sha256": "91249b38b11f2f54cede2e66dd8bed2b170cdc1db274ee668d203794c0db94af",
+    "width_bits": 256,
+    "words": 960,
+    "roundtrip_pass": true
+  },
+  {
+    "name": "self_coeff",
+    "input": "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/self/coefficients.bin",
+    "input_bytes": 2457600,
+    "input_sha256": "49a95bb8d8f49971e678a260b3ddb19fc94fc9a797c54b38ecba56a0fecd98d3",
+    "output": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/onchip/rom/self_coeff.hex",
+    "output_sha256": "43685e83a9739d1c03c5c4461f3fcd54a48da298daa18997b1cfa13693ed8ca6",
+    "width_bits": 256,
+    "words": 76800,
+    "roundtrip_pass": true
+  },
+  {
+    "name": "self_meta",
+    "input": "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/self/metadata.bin",
+    "input_bytes": 61440,
+    "input_sha256": "bf619c5d7578c78192dbf7564ec7ea5332d6df053e1c33d1a20c1ba05b214a21",
+    "output": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/onchip/rom/self_meta.hex",
+    "output_sha256": "5e2a4ea1fe34371a14d581fb2109313350ad4828dfa79f0a5ea6d549c43a0406",
+    "width_bits": 256,
+    "words": 1920,
+    "roundtrip_pass": true
+  }
+]

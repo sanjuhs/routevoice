@@ -1,0 +1,36 @@
+{
+  "authorization": "Parent authorized transparent5400s absolute extension near50min only if one active guard preserves original native-exit and22GiB disk protections.",
+  "prior_receipt": "watchdog-extension.json",
+  "prior_guard_pid": 75693,
+  "replacement_guard_pid": 1786,
+  "parent_pid": 66232,
+  "child_pid": 66234,
+  "parent_process": "66232 66007 TN   49:27 .venv/bin/python overnight-20261014/taalas-pitch/verification/verify.py extract --gds overnight-20261014/taalas-pitch/r1280-v2/bank.gds --top PITCH_BANK_R1280 --rows 1280 --run r1280-v2",
+  "child_process": "66234 66232 RN   49:27 /nix/store/hdjick71an9gpkcfbw0n2kpg7rnw7j3l-magic-vlsi-8.3.623/lib/magic/tcl/magicdnull -nowrapper -dnull -noconsole -rcfile /Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/pdks/gf180mcuD/libs.tech/magic/gf180mcuD.magicrc extract.tcl",
+  "prior_guard_process": "75693 61289 SNs  28:31 .venv/bin/python overnight-20261014/taalas-pitch/verification/extend_owned_wait.py --parent 66232 --child 66234",
+  "elapsed_before_handoff_seconds": 2967,
+  "absolute_bound_seconds": 5400,
+  "actions": [
+    {
+      "utc": "2026-10-13T22:13:41.877660+00:00",
+      "action": "Verified existing stopped subprocess owner, live Magic child and old guard; prepared single-owner handoff"
+    },
+    {
+      "utc": "2026-10-13T22:13:41.888502+00:00",
+      "action": "Stopped only old idle guard; original watchdog remains stopped and Magic remains running"
+    },
+    {
+      "utc": "2026-10-13T22:13:41.889115+00:00",
+      "action": "Killed only stopped old guard before entering replacement monitor; original source/receipt retained"
+    },
+    {
+      "utc": "2026-10-13T22:16:17.179019+00:00",
+      "action": "Native Magic exited; resume original watchdog to reap native status"
+    },
+    {
+      "utc": "2026-10-13T22:16:17.179605+00:00",
+      "action": "Resumed original subprocess owner; no fabricated native exit status"
+    }
+  ],
+  "minimum_free_gib": 24.739742279052734
+}

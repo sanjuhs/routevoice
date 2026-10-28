@@ -1,0 +1,7 @@
+vector=0 cycles=4163 reads=1280
+PASS gate_activity vectors=1 outputs=320 cycles=       4163 stalls=          0 aborts=0 unstalled_cycles=4163
+- tb/activity_array_port.sv:54: Verilog $finish
+- S i m u l a t i o n   R e p o r t: Verilator 5.044 2026-01-01
+- Verilator: $finish at 83us; walltime 380.971 s; speed 218.731 ns/s
+- Verilator: cpu 380.970 s on 1 threads; alloced 1416 MB
+exit=0

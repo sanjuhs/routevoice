@@ -1,0 +1,311 @@
+{
+  "updated_utc": "2026-10-13T19:35:49.577279+00:00",
+  "status": "physical_in_progress",
+  "scope": "Complete selected K64 1280x320 encoder FF output; not full recognizer",
+  "identity": {
+    "source": {
+      "file": "encoder.ort",
+      "file_sha256": "34c9568cface06242b3b215c4bce01f3b48144e53342addc1c3d5c3603e72ffc",
+      "node": "node_MatMul_86_quant",
+      "operator": "DynamicQuantizeMatMul",
+      "operator_domain": "com.microsoft",
+      "inputs": [
+        "gelu",
+        "val_89_quantized",
+        "val_89_scale",
+        "val_89_zero_point",
+        "blocks.0.ff.project_out.bias"
+      ],
+      "shape_K_N": [
+        1280,
+        320
+      ],
+      "tensors": {
+        "val_89_quantized": {
+          "sha256": "3bdff3a2320a13083aafdb04a166061bd014226698421d6533a59fd9ee67f8a0",
+          "shape": [
+            1280,
+            320
+          ],
+          "onnx_data_type": 2
+        },
+        "val_89_scale": {
+          "sha256": "f4ae4da7e2ce540da45d624ae8ea0d9296e93a0b6d4f5191be6a04cfbd7a719a",
+          "shape": [
+            320
+          ],
+          "onnx_data_type": 1
+        },
+        "val_89_zero_point": {
+          "sha256": "56970db5941c42177246ec12c65f5bef33e675b1129edd31cd120c28bd5229df",
+          "shape": [
+            320
+          ],
+          "onnx_data_type": 2
+        },
+        "blocks.0.ff.project_out.bias": {
+          "sha256": "b38af8798f2ba7a39066bb52c555be8b36898cc2660a5959d79cd0bbde629beb",
+          "shape": [
+            320
+          ],
+          "onnx_data_type": 1
+        }
+      }
+    },
+    "original_source": {
+      "file": "encoder.ort",
+      "file_sha256": "a8414e1a5dedf9f2093d7680601dd8a9b0433e7020260eafe0e370ead91134ca",
+      "node": "node_MatMul_86_quant",
+      "operator": "DynamicQuantizeMatMul",
+      "operator_domain": "com.microsoft",
+      "inputs": [
+        "gelu",
+        "val_89_quantized",
+        "val_89_scale",
+        "val_89_zero_point",
+        "blocks.0.ff.project_out.bias"
+      ],
+      "shape_K_N": [
+        1280,
+        320
+      ],
+      "tensors": {
+        "val_89_quantized": {
+          "sha256": "97fcd23a0d8ebd08ab6ac44b71be7e4c140dd8662619612fb297ada3767e8168",
+          "shape": [
+            1280,
+            320
+          ],
+          "onnx_data_type": 2
+        },
+        "val_89_scale": {
+          "sha256": "f4ae4da7e2ce540da45d624ae8ea0d9296e93a0b6d4f5191be6a04cfbd7a719a",
+          "shape": [
+            320
+          ],
+          "onnx_data_type": 1
+        },
+        "val_89_zero_point": {
+          "sha256": "56970db5941c42177246ec12c65f5bef33e675b1129edd31cd120c28bd5229df",
+          "shape": [
+            320
+          ],
+          "onnx_data_type": 2
+        },
+        "blocks.0.ff.project_out.bias": {
+          "sha256": "b38af8798f2ba7a39066bb52c555be8b36898cc2660a5959d79cd0bbde629beb",
+          "shape": [
+            320
+          ],
+          "onnx_data_type": 1
+        }
+      }
+    },
+    "candidate_manifest_sha256": "a9ac4a4c9f51b65ebadf5b26b7c7fe0d3100d047ec4ad863f1b9d147b78870cc",
+    "packed_sha256": "864fcdc7ec80be2dbb99d76361db338345fb02a1a26d7aaa4a1b40696b921907",
+    "book_bytes_sha256": "4c0fe5e44202ef5a2479440c1108b187568b75bdeaad77216d792ea49fec4a49",
+    "indices_unpacked_sha256": "ba628b676d59721c268868d6720be1f58a4f8d4edfd9a26009403c9a8c4fce8e",
+    "coefficient_count": 409600,
+    "books": 6400,
+    "representatives": 102400,
+    "reconstruction_equal": true,
+    "numpy_integer_comparisons": 16960,
+    "numpy_float_comparisons": 17280,
+    "original_uncoded_different_coefficients": 291832,
+    "original_uncoded_different_integer_outputs": 13239,
+    "candidate_vs_original_scope": "Exactness target is executable frozen K64 tensor. Pre-codebook original preserved and hashed; not numerically identical."
+  },
+  "correctness": {
+    "scheduled_shared_partial_numpy_outputs": 17280,
+    "saved_affine_artifacts_hashes_match": true,
+    "rtl_variants": {
+      "array_port": {
+        "vectors": 54,
+        "integer_outputs": 17280,
+        "fp32_outputs": 17280,
+        "aborts": 4,
+        "stall_events": 104112,
+        "total_cycles": 300952,
+        "unstalled_cycles": 4163,
+        "full_log": "evidence/array_port-full-simulation.log",
+        "speech_trace": "evidence/array_port-speech.vcd",
+        "speech_trace_sha256": "e5bc55e49691a182b70edc99b69a43397ee1291e2cb6940073086e998a42d45e",
+        "speech_trace_projection_vectors": 1,
+        "speech_trace_outputs": 320
+      },
+      "sc_rom": {
+        "vectors": 54,
+        "integer_outputs": 17280,
+        "fp32_outputs": 17280,
+        "aborts": 4,
+        "stall_events": 104112,
+        "total_cycles": 300952,
+        "unstalled_cycles": 4163,
+        "full_log": "evidence/sc_rom-full-simulation.log",
+        "speech_trace": "evidence/sc_rom-speech.vcd",
+        "speech_trace_sha256": "07442e2abb6664013f0310e843d9b13ad93f5c6783f10dc16c380c362636a57f",
+        "speech_trace_projection_vectors": 1,
+        "speech_trace_outputs": 320
+      }
+    },
+    "activity_provenance": "Vector 0 from hash-checked saved affine inputs.hex; its saved report binds captured real-speech quantized input. Fresh real-speech capture was not performed."
+  },
+  "constraints": {
+    "meta": {
+      "version": 1,
+      "flow": null,
+      "substituting_steps": null,
+      "step": null,
+      "librelane_version": "3.0.11"
+    },
+    "DEFAULT_CORNER": "nom_tt_025C_3v30",
+    "STA_CORNERS": [
+      "nom_tt_025C_3v30",
+      "nom_ss_125C_3v00",
+      "nom_ff_n40C_3v60",
+      "min_tt_025C_3v30",
+      "min_ss_125C_3v00",
+      "min_ff_n40C_3v60",
+      "max_tt_025C_3v30",
+      "max_ss_125C_3v00",
+      "max_ff_n40C_3v60"
+    ],
+    "LIB": {
+      "*_tt_025C_3v30": [
+        "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric-k64/pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__tt_025C_3v30.lib"
+      ],
+      "*_ss_125C_3v00": [
+        "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric-k64/pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__ss_125C_3v00.lib"
+      ],
+      "*_ff_n40C_3v60": [
+        "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric-k64/pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__ff_n40C_3v60.lib"
+      ]
+    },
+    "VDD_PIN_VOLTAGE": null,
+    "KLAYOUT_DRC_TECH_SCRIPT": null,
+    "MAGICRC": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric-k64/pdks/gf180mcuD/libs.tech/magic/gf180mcuD.magicrc",
+    "IO_DELAY_CONSTRAINT": 20,
+    "OUTPUT_CAP_LOAD": 72.91,
+    "SYNTH_DRIVING_CELL": "gf180mcu_fd_sc_mcu7t5v0__inv_1/ZN",
+    "CLOCK_UNCERTAINTY_CONSTRAINT": 0.25,
+    "CLOCK_TRANSITION_CONSTRAINT": 0.15,
+    "TIME_DERATING_CONSTRAINT": 5,
+    "RUN_KLAYOUT_DRC": true,
+    "RUN_MAGIC_DRC": true,
+    "RUN_LVS": true,
+    "FP_CORE_UTIL": 40,
+    "PL_TARGET_DENSITY_PCT": 45
+  },
+  "variants": {
+    "array_port": {
+      "implementation": "datapath and fixed books/metadata; custom index array excluded",
+      "guard": {
+        "pid": 11738,
+        "variant": "array_port",
+        "elapsed_s": 234.5746750831604,
+        "free_gib": 30.25171661376953,
+        "time_limit_s": 14400,
+        "status": "running"
+      },
+      "last_completed_step": "05-yosys-jsonheader",
+      "last_metrics": {
+        "design__lint_error__count": 0,
+        "design__lint_timing_construct__count": 0,
+        "design__lint_warning__count": 397,
+        "design__inferred_latch__count": 0
+      },
+      "routed_area_mm2": null,
+      "area_partition_mm2": {
+        "index_fabric": null,
+        "books": null,
+        "arithmetic": null,
+        "state": null,
+        "periphery": null,
+        "routing_overhead": null
+      },
+      "timing_by_corner": null,
+      "achieved_mhz": null,
+      "cycles_excluding_start": 4163,
+      "target_only_duration_us_at_20ns": 83.26,
+      "achieved_duration_us": null,
+      "power": {
+        "dynamic_mw": null,
+        "leakage_mw": null,
+        "energy_uj_per_projection": null,
+        "activity_source": "evidence/array_port-speech.vcd",
+        "activity_annotated": false,
+        "default_activity_power_mw": null
+      },
+      "physical_verification": {
+        "magic_drc": null,
+        "klayout_drc": null,
+        "netgen_lvs": null,
+        "antenna": null
+      },
+      "exclusions": [
+        "1,638,400-bit custom index array",
+        "macro sense/read/decode periphery",
+        "macro timing and electrical loading not characterized"
+      ]
+    },
+    "sc_rom": {
+      "implementation": "standard-cell comparator",
+      "guard": {
+        "pid": 11816,
+        "variant": "sc_rom",
+        "elapsed_s": 226.51932525634766,
+        "free_gib": 30.252704620361328,
+        "time_limit_s": 9000,
+        "status": "running"
+      },
+      "last_completed_step": "05-yosys-jsonheader",
+      "last_metrics": {
+        "design__lint_error__count": 0,
+        "design__lint_timing_construct__count": 0,
+        "design__lint_warning__count": 397,
+        "design__inferred_latch__count": 0
+      },
+      "routed_area_mm2": null,
+      "area_partition_mm2": {
+        "index_fabric": null,
+        "books": null,
+        "arithmetic": null,
+        "state": null,
+        "periphery": null,
+        "routing_overhead": null
+      },
+      "timing_by_corner": null,
+      "achieved_mhz": null,
+      "cycles_excluding_start": 4163,
+      "target_only_duration_us_at_20ns": 83.26,
+      "achieved_duration_us": null,
+      "power": {
+        "dynamic_mw": null,
+        "leakage_mw": null,
+        "energy_uj_per_projection": null,
+        "activity_source": "evidence/sc_rom-speech.vcd",
+        "activity_annotated": false,
+        "default_activity_power_mw": null
+      },
+      "physical_verification": {
+        "magic_drc": null,
+        "klayout_drc": null,
+        "netgen_lvs": null,
+        "antenna": null
+      },
+      "exclusions": []
+    }
+  },
+  "physical_feasibility_proven": false,
+  "tools": {
+    "librelane": "3.0.11",
+    "librelane_repo_commit": "33ab64861c5570d65de69295da9a46f5bad32ee3",
+    "open_pdks_commit": "54435919abffb937387ec956209f9cf5fd2dfbee",
+    "simulation_verilator": "5.050 2026-07-01",
+    "native_yosys": "0.68+post c12172fbae8af5e20f6fb52e3d4e92d56ed587b6",
+    "physical_yosys": "Nix 0.62; see run command headers",
+    "physical_tools_source": "Each LibreLane step COMMANDS and logs; native PATH yosys is not physical flow yosys"
+  },
+  "commands": "COMMANDS.md",
+  "layout_png": null
+}

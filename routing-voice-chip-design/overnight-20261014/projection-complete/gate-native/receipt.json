@@ -1,0 +1,40 @@
+{
+  "scope": "Native Verilator retry using unchanged mapped design/PDK models; trace depth3 retains mapped leaf ports",
+  "command": [
+    "verilator",
+    "--binary",
+    "--timing",
+    "--trace",
+    "--trace-underscore",
+    "--trace-depth",
+    "3",
+    "--autoflush",
+    "--top-module",
+    "tb",
+    "-DFUNCTIONAL",
+    "-DGF180MCU_FD_SC_MCU7T5V0__HOLD_V",
+    "-DGF180MCU_FD_SC_MCU7T5V0__HOLD_FUNC_V",
+    "-Wno-fatal",
+    "-j",
+    "2",
+    "--Mdir",
+    "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/projection-complete/gate-native/build",
+    "-o",
+    "sim",
+    "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric-k64/pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/verilog/primitives.v",
+    "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric-k64/pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/verilog/gf180mcu_fd_sc_mcu7t5v0.v",
+    "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/projection-complete/gate-native/complete-mapped.nl.v",
+    "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/projection-complete/tb/bank_model.sv",
+    "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/projection-complete/tb/gate_trace.sv"
+  ],
+  "netlist_sha256": "ff2d3d39a70e0c5928022359d667de8f02eb3fa3f1a67b721607d7eeae4647f8",
+  "version": "Verilator 5.050 2026-07-01 rev vUNKNOWN-built20260701",
+  "runs": [
+    {
+      "name": "compile",
+      "exit_code": -15,
+      "seconds": 312.34543158416636,
+      "stopped_reason": "22.5GiB free-space guard"
+    }
+  ]
+}

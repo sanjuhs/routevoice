@@ -1,0 +1,26 @@
+{
+  "utc": "2026-10-13T22:57:16.190110+00:00",
+  "original_wrapper_and_native_child_absent": true,
+  "process_checks": {
+    "30688": {
+      "ps_returncode": 1,
+      "process": ""
+    },
+    "30714": {
+      "ps_returncode": 1,
+      "process": ""
+    }
+  },
+  "runtime_guard_execution_session_completed": 69313,
+  "native_execution_session_completed": 98574,
+  "guard_source_sha256": "d2212c1691dbc981281cc185c7a0f59f8480ec9a22b36ee612c9c94de5adc362",
+  "scope": "All timing extraction/simulation/archive/guard execution sessions completed; no owned paused or active native jobs remain.",
+  "finalized_utc": "2026-10-13T22:58:16.532196+00:00",
+  "final_cropped_gds_archival_complete": true,
+  "available_gib_at_freeze": 22.36602020263672,
+  "frozen_report_sha256": {
+    "RESULTS.md": "96a710a9535b96e25ecd06ca3c9fcfb99abe24583e377969b85296ad9695eb33",
+    "results.json": "17113a9f6770e5d1250a49106ff119d1b8886b97b3e395cc3b0e95b68de86255",
+    "COMMANDS.md": "9698a222b1924ef6e24d8b3f249638b928ae0e77c351f02323043cd671f7f8c3"
+  }
+}

@@ -1,0 +1,378 @@
+{
+  "scope": "Exact saved OpenDB instance geometry; routing/signoff status must be established separately",
+  "state": "/workspace/rv/overnight-20261014/projection-complete/runs/complete-v3/32-openroad-stamidpnr-2/state_out.json",
+  "source_odb": "/workspace/rv/overnight-20261014/projection-complete/runs/complete-v3/30-openroad-cts/rv_k64_projection_complete.odb",
+  "source_odb_sha256": "6056b0473ef50d717a84df1d7d1398dcffbc000236019ba005278938ef19936e",
+  "die_um": [
+    0.0,
+    0.0,
+    4500.0,
+    4500.0
+  ],
+  "die_area_mm2": 20.25,
+  "groups": {
+    "logic_and_clock": {
+      "count": 327727,
+      "area_um2": 6535268.454399998
+    },
+    "macro": {
+      "count": 1,
+      "area_um2": 2267885.4
+    },
+    "endcap": {
+      "count": 3442,
+      "area_um2": 15111.7568
+    },
+    "tap": {
+      "count": 114907,
+      "area_um2": 504487.69279999996
+    }
+  },
+  "masters": {
+    "gf180mcu_fd_sc_mcu7t5v0__clkinv_1": {
+      "count": 10396,
+      "type": "CORE",
+      "width_um": 2.24,
+      "height_um": 3.92,
+      "area_um2": 8.7808
+    },
+    "gf180mcu_fd_sc_mcu7t5v0__and2_1": {
+      "count": 4660,
+      "type": "CORE",
+      "width_um": 4.48,
+      "height_um": 3.92,
+      "area_um2": 17.5616
+    },
+    "gf180mcu_fd_sc_mcu7t5v0__nor2_1": {
+      "count": 40853,
+      "type": "CORE",
+      "width_um": 3.36,
+      "height_um": 3.92,
+      "area_um2": 13.1712
+    },
+    "gf180mcu_fd_sc_mcu7t5v0__nand3_1": {
+      "count": 19571,
+      "type": "CORE",
+      "width_um": 3.92,
+      "height_um": 3.92,
+      "area_um2": 15.3664
+    },
+    "gf180mcu_fd_sc_mcu7t5v0__or4_1": {
+      "count": 134,
+      "type": "CORE",
+      "width_um": 6.72,
+      "height_um": 3.92,
+      "area_um2": 26.3424
+    },
+    "gf180mcu_fd_sc_mcu7t5v0__aoi21_1": {
+      "count": 22171,
+      "type": "CORE",
+      "width_um": 4.48,
+      "height_um": 3.92,
+      "area_um2": 17.5616
+    },
+    "gf180mcu_fd_sc_mcu7t5v0__or2_1": {
+      "count": 4741,
+      "type": "CORE",
+      "width_um": 4.48,
+      "height_um": 3.92,
+      "area_um2": 17.5616
+    },
+    "gf180mcu_fd_sc_mcu7t5v0__nand2_1": {
+      "count": 63410,
+      "type": "CORE",
+      "width_um": 2.8,
+      "height_um": 3.92,
+      "area_um2": 10.976
+    },
+    "gf180mcu_fd_sc_mcu7t5v0__oai31_1": {
+      "count": 1872,
+      "type": "CORE",
+      "width_um": 6.16,
+      "height_um": 3.92,
+      "area_um2": 24.1472
+    },
+    "gf180mcu_fd_sc_mcu7t5v0__or3_1": {
+      "count": 505,
+      "type": "CORE",
+      "width_um": 5.6,
+      "height_um": 3.92,
+      "area_um2": 21.952
+    },
+    "gf180mcu_fd_sc_mcu7t5v0__nand4_1": {
+      "count": 7146,
+      "type": "CORE",
+      "width_um": 5.04,
+      "height_um": 3.92,
+      "area_um2": 19.7568
+    },
+    "gf180mcu_fd_sc_mcu7t5v0__nor3_1": {
+      "count": 6654,
+      "type": "CORE",
+      "width_um": 4.48,
+      "height_um": 3.92,
+      "area_um2": 17.5616
+    },
+    "gf180mcu_fd_sc_mcu7t5v0__nor4_1": {
+      "count": 1260,
+      "type": "CORE",
+      "width_um": 5.6,
+      "height_um": 3.92,
+      "area_um2": 21.952
+    },
+    "gf180mcu_fd_sc_mcu7t5v0__oai21_1": {
+      "count": 20047,
+      "type": "CORE",
+      "width_um": 4.48,
+      "height_um": 3.92,
+      "area_um2": 17.5616
+    },
+    "gf180mcu_fd_sc_mcu7t5v0__dffq_1": {
+      "count": 12973,
+      "type": "CORE",
+      "width_um": 16.24,
+      "height_um": 3.92,
+      "area_um2": 63.6608
+    },
+    "PITCH_BANK_R1280": {
+      "count": 1,
+      "type": "BLOCK",
+      "width_um": 1004.0,
+      "height_um": 2258.85,
+      "area_um2": 2267885.4
+    },
+    "gf180mcu_fd_sc_mcu7t5v0__buf_20": {
+      "count": 1281,
+      "type": "CORE",
+      "width_um": 34.72,
+      "height_um": 3.92,
+      "area_um2": 136.1024
+    },
+    "gf180mcu_fd_sc_mcu7t5v0__xnor2_1": {
+      "count": 5267,
+      "type": "CORE",
+      "width_um": 7.28,
+      "height_um": 3.92,
+      "area_um2": 28.5376
+    },
+    "gf180mcu_fd_sc_mcu7t5v0__and3_1": {
+      "count": 1118,
+      "type": "CORE",
+      "width_um": 5.6,
+      "height_um": 3.92,
+      "area_um2": 21.952
+    },
+    "gf180mcu_fd_sc_mcu7t5v0__xor2_1": {
+      "count": 9970,
+      "type": "CORE",
+      "width_um": 6.72,
+      "height_um": 3.92,
+      "area_um2": 26.3424
+    },
+    "gf180mcu_fd_sc_mcu7t5v0__aoi22_1": {
+      "count": 46306,
+      "type": "CORE",
+      "width_um": 5.04,
+      "height_um": 3.92,
+      "area_um2": 19.7568
+    },
+    "gf180mcu_fd_sc_mcu7t5v0__and4_1": {
+      "count": 1147,
+      "type": "CORE",
+      "width_um": 6.16,
+      "height_um": 3.92,
+      "area_um2": 24.1472
+    },
+    "gf180mcu_fd_sc_mcu7t5v0__oai32_1": {
+      "count": 1560,
+      "type": "CORE",
+      "width_um": 6.72,
+      "height_um": 3.92,
+      "area_um2": 26.3424
+    },
+    "gf180mcu_fd_sc_mcu7t5v0__aoi221_1": {
+      "count": 13034,
+      "type": "CORE",
+      "width_um": 6.16,
+      "height_um": 3.92,
+      "area_um2": 24.1472
+    },
+    "gf180mcu_fd_sc_mcu7t5v0__oai22_1": {
+      "count": 3896,
+      "type": "CORE",
+      "width_um": 5.6,
+      "height_um": 3.92,
+      "area_um2": 21.952
+    },
+    "gf180mcu_fd_sc_mcu7t5v0__oai211_1": {
+      "count": 7373,
+      "type": "CORE",
+      "width_um": 5.6,
+      "height_um": 3.92,
+      "area_um2": 21.952
+    },
+    "gf180mcu_fd_sc_mcu7t5v0__aoi211_1": {
+      "count": 4029,
+      "type": "CORE",
+      "width_um": 5.6,
+      "height_um": 3.92,
+      "area_um2": 21.952
+    },
+    "gf180mcu_fd_sc_mcu7t5v0__oai221_1": {
+      "count": 2621,
+      "type": "CORE",
+      "width_um": 6.72,
+      "height_um": 3.92,
+      "area_um2": 26.3424
+    },
+    "gf180mcu_fd_sc_mcu7t5v0__aoi222_1": {
+      "count": 8159,
+      "type": "CORE",
+      "width_um": 7.84,
+      "height_um": 3.92,
+      "area_um2": 30.7328
+    },
+    "gf180mcu_fd_sc_mcu7t5v0__mux2_2": {
+      "count": 286,
+      "type": "CORE",
+      "width_um": 8.4,
+      "height_um": 3.92,
+      "area_um2": 32.928
+    },
+    "gf180mcu_fd_sc_mcu7t5v0__oai33_1": {
+      "count": 59,
+      "type": "CORE",
+      "width_um": 8.4,
+      "height_um": 3.92,
+      "area_um2": 32.928
+    },
+    "gf180mcu_fd_sc_mcu7t5v0__oai222_1": {
+      "count": 316,
+      "type": "CORE",
+      "width_um": 8.4,
+      "height_um": 3.92,
+      "area_um2": 32.928
+    },
+    "gf180mcu_fd_sc_mcu7t5v0__xor3_1": {
+      "count": 2035,
+      "type": "CORE",
+      "width_um": 12.88,
+      "height_um": 3.92,
+      "area_um2": 50.4896
+    },
+    "gf180mcu_fd_sc_mcu7t5v0__xnor3_1": {
+      "count": 709,
+      "type": "CORE",
+      "width_um": 13.44,
+      "height_um": 3.92,
+      "area_um2": 52.6848
+    },
+    "gf180mcu_fd_sc_mcu7t5v0__mux4_1": {
+      "count": 43,
+      "type": "CORE",
+      "width_um": 17.92,
+      "height_um": 3.92,
+      "area_um2": 70.2464
+    },
+    "gf180mcu_fd_sc_mcu7t5v0__tiel": {
+      "count": 1,
+      "type": "CORE_TIELOW",
+      "width_um": 2.24,
+      "height_um": 3.92,
+      "area_um2": 8.7808
+    },
+    "gf180mcu_fd_sc_mcu7t5v0__buf_1": {
+      "count": 1,
+      "type": "CORE",
+      "width_um": 3.36,
+      "height_um": 3.92,
+      "area_um2": 13.1712
+    },
+    "gf180mcu_fd_sc_mcu7t5v0__endcap": {
+      "count": 3442,
+      "type": "ENDCAP_PRE",
+      "width_um": 1.12,
+      "height_um": 3.92,
+      "area_um2": 4.3904
+    },
+    "gf180mcu_fd_sc_mcu7t5v0__filltie": {
+      "count": 114907,
+      "type": "CORE_WELLTAP",
+      "width_um": 1.12,
+      "height_um": 3.92,
+      "area_um2": 4.3904
+    },
+    "gf180mcu_fd_sc_mcu7t5v0__clkbuf_8": {
+      "count": 1218,
+      "type": "CORE",
+      "width_um": 14.56,
+      "height_um": 3.92,
+      "area_um2": 57.0752
+    },
+    "gf180mcu_fd_sc_mcu7t5v0__clkbuf_16": {
+      "count": 129,
+      "type": "CORE",
+      "width_um": 28.0,
+      "height_um": 3.92,
+      "area_um2": 109.76
+    },
+    "gf180mcu_fd_sc_mcu7t5v0__inv_4": {
+      "count": 114,
+      "type": "CORE",
+      "width_um": 5.6,
+      "height_um": 3.92,
+      "area_um2": 21.952
+    },
+    "gf180mcu_fd_sc_mcu7t5v0__clkinv_4": {
+      "count": 80,
+      "type": "CORE",
+      "width_um": 5.6,
+      "height_um": 3.92,
+      "area_um2": 21.952
+    },
+    "gf180mcu_fd_sc_mcu7t5v0__inv_2": {
+      "count": 132,
+      "type": "CORE",
+      "width_um": 3.36,
+      "height_um": 3.92,
+      "area_um2": 13.1712
+    },
+    "gf180mcu_fd_sc_mcu7t5v0__clkbuf_4": {
+      "count": 175,
+      "type": "CORE",
+      "width_um": 7.84,
+      "height_um": 3.92,
+      "area_um2": 30.7328
+    },
+    "gf180mcu_fd_sc_mcu7t5v0__clkinv_8": {
+      "count": 29,
+      "type": "CORE",
+      "width_um": 10.08,
+      "height_um": 3.92,
+      "area_um2": 39.5136
+    },
+    "gf180mcu_fd_sc_mcu7t5v0__clkbuf_2": {
+      "count": 172,
+      "type": "CORE",
+      "width_um": 4.48,
+      "height_um": 3.92,
+      "area_um2": 17.5616
+    },
+    "gf180mcu_fd_sc_mcu7t5v0__inv_3": {
+      "count": 73,
+      "type": "CORE",
+      "width_um": 4.48,
+      "height_um": 3.92,
+      "area_um2": 17.5616
+    },
+    "gf180mcu_fd_sc_mcu7t5v0__inv_8": {
+      "count": 1,
+      "type": "CORE",
+      "width_um": 10.08,
+      "height_um": 3.92,
+      "area_um2": 39.5136
+    }
+  },
+  "instance_count": 446077,
+  "total_instance_area_mm2": 9.322753303999997
+}

@@ -1,0 +1,27 @@
+{
+  "results": [
+    {
+      "source_path": "/workspace/rv/overnight-20261014/projection-complete/evidence/gate-speech-v2-invalid-startup-all-zero.vcd",
+      "gzip_path": "/workspace/rv/overnight-20261014/projection-complete/evidence/gate-speech-v2-invalid-startup-all-zero.vcd.gz",
+      "command": [
+        "gzip",
+        "-1",
+        "-n",
+        "-c",
+        "/workspace/rv/overnight-20261014/projection-complete/evidence/gate-speech-v2-invalid-startup-all-zero.vcd"
+      ],
+      "exit_code": 0,
+      "stop_reason": null,
+      "gzip_bytes": 24986046,
+      "source_unchanged_stat": true,
+      "raw_source_retained": true,
+      "gzip_sha256": "f55856adddb34bfe2debb7844927d87fcbf10e2bd25b6db66f4d08681536faa2",
+      "decompressed_sha256": "0b5efdf70aa2df48b4458ae78dce0fed8dff0a30c604f4b0ff50daa22fc38c94",
+      "integrity_verified": true
+    }
+  ],
+  "wall_seconds": 2.7231375947594643,
+  "local_copy_size_limit_bytes": 200000000,
+  "minimum_local_free_GiB_after_copy": 22.5,
+  "raw_sources_preserved": true
+}

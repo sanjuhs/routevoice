@@ -1,0 +1,11 @@
+{
+  "source": "evidence/array_port-speech.vcd",
+  "source_sha256": "e5bc55e49691a182b70edc99b69a43397ee1291e2cb6940073086e998a42d45e",
+  "output": "evidence/array_port-speech-flat.vcd",
+  "output_sha256": "f090ba733b4a93c5c62a982a64ec4e22867810b35cf059efb69dbbf06a71c36e",
+  "renamed_declarations": 2353,
+  "value_change_tail_sha256": "a78c2cb2da280a821fd7af2902469dff019f6e0c540bba4ab7dcd555c5a6ce60",
+  "value_changes_verified_identical": true,
+  "scope": "tb/dut",
+  "reason": "Map RTL child hierarchy to Yosys flattened dot-separated net names; retain actual activity, not synthetic transitions."
+}

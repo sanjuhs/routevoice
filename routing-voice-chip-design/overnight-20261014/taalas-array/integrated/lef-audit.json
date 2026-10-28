@@ -1,0 +1,16 @@
+{
+  "macro": "RV_K64_READOUT_TILE_00",
+  "size_um": [
+    4670,
+    220
+  ],
+  "outline_area_um2": 1027400,
+  "pins": 1347,
+  "all_pin_rectangles_inside_actual_gds_metal": true,
+  "power_layers": [
+    "Metal4",
+    "Metal5"
+  ],
+  "gds_sha256": "4c92ba7407fee7889c794ba0f9cfc3e2d9cc3c80f95e2fda69389a33378ba6c4",
+  "scope": "Partial readout tile only, no row decoder/phase controller/bank mux, no timing Liberty; not approved for W2b integration"
+}

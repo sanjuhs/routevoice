@@ -1,0 +1,52 @@
+{
+  "case_id": "fp32_baseline-input-013",
+  "model": "fp32_baseline",
+  "id": "7850-73752-0019",
+  "role": "validation",
+  "condition": "white_noise_10db",
+  "seed": null,
+  "reference": "IS PAPA ALONE ENQUIRED MISS TEMPLE",
+  "input_float32_sha256": "18964291029824492e3329350df5aadacf9d4d3c8e8b12b2a861d3f29e50cb1e",
+  "hypothesis": "It's Papa alone, required Miss Temple.",
+  "normalized_tokens": [
+    "it's",
+    "papa",
+    "alone",
+    "required",
+    "miss",
+    "temple"
+  ],
+  "edits": 2,
+  "reference_words": 6,
+  "hypothesis_words": 6,
+  "exact": false,
+  "lines": [
+    {
+      "text": "It's Papa alone, required Miss Temple.",
+      "start_time": 0.35199999809265137,
+      "duration": 2.7200000286102295,
+      "is_complete": true,
+      "samples": 43520,
+      "input_float32_sha256": "d95b23168ea75dc3c59ba9a1f1dd19ec02592e8e342b162d76f40a26a8b3621a"
+    }
+  ],
+  "request_sha256": "ac954ecf1edd32dc20c33046af68f70a99c4a48f5ce4ecd615409ecf5b9c25b6",
+  "worker_sha256": "4682e8a57db08e02a34f53b01f334f34faa3ca9a6546698f1e4650db359004b6",
+  "native_library_sha256": "1453a6c1c9072f3d05e9e5ae6ff423fae839e56631c5efb12bbd5c0280d04399",
+  "native_api_version": 30000,
+  "load_seconds": 0.04216779209673405,
+  "compute_seconds": 0.10727141704410315,
+  "audio_seconds": 3.075,
+  "process_cpu_seconds": 0.107447,
+  "voluntary_context_switches": 0,
+  "involuntary_context_switches": 13,
+  "system_load_average": [
+    10.0751953125,
+    8.81884765625,
+    9.83056640625
+  ],
+  "options": null,
+  "flags": 0,
+  "process_id": 80878,
+  "isolation": "One audio clip/condition in a fresh native process; no previous utterance or VAD state."
+}

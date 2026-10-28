@@ -1,0 +1,47 @@
+{
+  "tile0": {
+    "drc_markers": 0,
+    "scope": "GF180 FEOL BEOL connectivity offgrid; density and antenna excluded",
+    "hierarchical_input": false,
+    "initial_lvs_result": {
+      "unique_match": false,
+      "property_errors": false,
+      "log": "tile0-netgen.log"
+    },
+    "initial_exact_device_tuples": {
+      "expected": 81920,
+      "extracted": 81920,
+      "match": false
+    },
+    "exact_device_tuples": {
+      "expected": 81920,
+      "extracted": 81920,
+      "match": true,
+      "qualification": "bijective hierarchical label mapping; exact L/W verified by original extraction checker"
+    },
+    "netgen_lvs": {
+      "unique_match": true,
+      "property_errors": false,
+      "log": "tile0-netgen-canonical.log",
+      "qualified_boundary_view": "tile0-extracted-canonical-names.spice",
+      "normalization": "bijective hierarchical label-prefix removal only; no device/property/topology changes",
+      "nodes_in_bijection": 42479,
+      "prior_failures": [
+        "tile0-netgen.log",
+        "tile0-netgen-ports.log"
+      ]
+    },
+    "port_promotion_only_lvs_result": {
+      "unique_match": false,
+      "property_errors": false,
+      "log": "tile0-netgen-ports.log",
+      "qualified_boundary_view": "tile0-extracted-ports.spice",
+      "original_failure_retained": "tile0-netgen.log"
+    }
+  },
+  "array-core": {
+    "drc_markers": 0,
+    "scope": "GF180 FEOL BEOL connectivity offgrid; density and antenna excluded",
+    "hierarchical_input": true
+  }
+}

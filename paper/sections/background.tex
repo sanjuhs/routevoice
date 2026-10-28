@@ -1,0 +1,50 @@
+\section{Background and Related Work}
+\label{sec:background}
+
+\paragraph{Hardwired and model-specific inference silicon.}
+Fixing a network's coefficients in hardware is old: bespoke printed classifiers hardwire model coefficients and cut area and power by an order of magnitude~\cite{mubarik2020printed}. ROM-based compute-in-memory keeps weights in dense mask ROM and adds a small SRAM path for adaptation:
+\begin{itemize}
+\item YOLoC~\cite{chen2022yoloc} and Hidden-ROM~\cite{chen2022hiddenrom} do this for CNNs;
+\item ROMA~\cite{wang2025roma} puts a quantized LLM base model in ROM and keeps LoRA weights and the key/value cache in SRAM.
+\end{itemize}
+
+At the frontier, Taalas has announced HC1, which builds Llama~3.1~8B into a single die and reports about 17k tokens/s per user~\cite{taalas2026hc1,zota2026heise}; these are vendor figures. Its patent applications describe two mechanisms closely related to ours:
+\begin{itemize}
+\item one multiplier per possible weight value, with a mask-configured mesh routing products to accumulators~\cite{taalas2025patent802};
+\item weights stored as hardware pointers into small codebooks~\cite{taalas2026patent566}, alongside a shared-connection mask ROM~\cite{taalas2025wo724}.
+\end{itemize}
+HNLPU~\cite{liu2025hnlpu} studies the economics of hardwiring a 120\,B-parameter model at \SI{5}{nm}, embedding weights in metal topology to share most mask layers across chips. Etched's transformer-specific ASIC~\cite{mann2024etched} specialises to an architecture class rather than to one set of weights.
+
+Closest to our setting, Ankhdjet~\cite{pai2026ankhdjet} compiles BitNet~b1.58 ternary weights into the via mask of a compute-in-ROM macro on SKY130 and signs it off with open tools. Our work is therefore \emph{not} the first hardwired-weight design on an open PDK. It differs in scope: a complete encoder--decoder speech recognizer, rather than one matrix macro, verified from audio to tokens. It also differs in mechanism: 4-bit codebook indices selecting shared radix-16 partial products, rather than ternary ROM sensing.
+
+\paragraph{Codebook quantization and shared products.}
+Storing 4-bit indices into a 16-entry table goes back to Deep Compression~\cite{han2016deepcompression} and its accelerator EIE~\cite{han2016eie}. Mokey~\cite{zadeh2022mokey} applies 4-bit dictionaries to transformers. Modern LLM quantizers explore richer codebooks: AQLM~\cite{egiazarian2024aqlm}, QuIP\#~\cite{tseng2024quipsharp}, VPTQ~\cite{liu2024vptq} and GPTVQ~\cite{vanbaalen2024gptvq} use vector codebooks, and SqueezeLLM~\cite{kim2024squeezellm} uses non-uniform scalar look-up tables. Our K64 format is a scalar non-uniform quantizer of this last kind.
+
+Forming multiples of an input once and selecting them per fixed coefficient is also established:
+\begin{itemize}
+\item \textbf{DSP:} computation-sharing multipliers~\cite{park2002cshm}, multiplierless multiple-constant multiplication~\cite{voronenko2007mcm} and distributed arithmetic~\cite{white1989da};
+\item \textbf{software:} LUT-GEMM~\cite{park2024lutgemm} and T-MAC~\cite{wei2025tmac} apply the same idea to quantized LLMs on GPUs and CPUs;
+\item \textbf{run-time weight reuse:} UCNN~\cite{hegde2018ucnn} groups computation by repeated weight values while the network runs.
+\end{itemize}
+Our datapath combines these known pieces: per-group 16-entry books, radix-16 partial products shared by 320 lanes, and indices fixed at fabrication. We claim the combination and its verified implementation, not the pieces.
+
+\paragraph{Speech recognition hardware.}
+Moonshine~\cite{jeffries2024moonshine} is an encoder--decoder ASR transformer whose encoder cost scales with audio length. It reports lower compute than Whisper~\cite{radford2022whisper} tiny at equal error rate, and later variants add streaming encoders~\cite{kudlur2026moonshinev2}.
+
+Dedicated ASR chips have used WFST and DNN--HMM decoders~\cite{price2015wfst,price2018speech} or attention accelerators within an SoC~\cite{tambe2021sm6}, and identified memory bandwidth as the dominant power cost. Always-on keyword-spotting chips reach sub-microwatt power~\cite{shan2020kws,giraldo2018laika}, but only by restricting the task to a few words. RouteVoice targets open-vocabulary transcription and removes weight fetch altogether.
+
+\paragraph{Transformer accelerators and energy references.}
+Programmable transformer processors at 12--28\,nm report efficiencies in the tens of TOPS/W~\cite{tu2022trancim,wang2022transformer28nm,tambe2023transformer12nm}. Groq~\cite{abts2020tsp} and Cerebras~\cite{lie2023cerebras} keep weights in on-chip SRAM at scale. Microcontroller NPUs~\cite{arm2024ethosu55,st2024stm32n6} are the commercial baseline for edge voice.
+
+Energy per operation is strongly node- and voltage-dependent~\cite{horowitz2014energy,sze2017tutorial}. Our \SI{180}{nm}, \SI{3.3}{V} figures should be compared with these only after normalisation (\cref{sec:results}).
+
+\paragraph{Open silicon and AI-driven design.}
+Our flow builds on the following open tools:
+\begin{itemize}
+\item OpenROAD~\cite{ajayi2019openroad} and OpenLane~\cite{shalan2020openlane}, now continued as LibreLane~\cite{librelane};
+\item Yosys~\cite{wolf_yosys}, Magic~\cite{edwards_magic}, KLayout~\cite{koefferlein_klayout}, Netgen~\cite{edwards_netgen} and Verilator~\cite{snyder_verilator};
+\item the open GF180MCU PDK~\cite{google_gf180mcu}.
+\end{itemize}
+Low-cost shuttles such as Tiny Tapeout~\cite{venn2024tinytapeout} and wafer.space~\cite{waferspace} make fabrication on open nodes affordable.
+
+LLMs have been applied to RTL generation~\cite{liu2023verilogeval,liu2024rtlcoder,chang2023chipgpt}, domain assistance~\cite{liu2023chipnemo}, and flow orchestration~\cite{he2024chateda,jiang2024iicpilot,wang2025mcp4eda,lu2025autoeda}. One accumulator CPU designed through conversation reached tape-out~\cite{blocklove2023chipchat}. Recent studies evaluate coding agents on complete RTL-to-GDS flows~\cite{deng2026rtl2gds} and use them to improve OpenROAD itself~\cite{ghose2026audopeda}. These studies use benchmark-scale designs. We contribute an experience report: a multi-agent team carrying a $10^7$-parameter-class accelerator through physical design, with its failure modes and costs recorded.

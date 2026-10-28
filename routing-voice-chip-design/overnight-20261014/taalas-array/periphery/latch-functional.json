@@ -1,0 +1,19 @@
+{
+  "command": [
+    "/nix/store/yczxlrrywxp7q2aavm4b3zrj3lpmq18a-devshell-dir/bin/iverilog",
+    "-g2012",
+    "-DFUNCTIONAL",
+    "-s",
+    "tb",
+    "-o",
+    "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/taalas-array/periphery/latch.sim",
+    "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/taalas-array/periphery/latch_tb.v",
+    "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/taalas-array/periphery/runs/latch128b-v1/final/nl/w5_latch128.nl.v",
+    "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/verilog/gf180mcu_fd_sc_mcu7t5v0.v",
+    "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/verilog/primitives.v"
+  ],
+  "stdout": "PASS latch transparent/hold checks=1411 all128bits,128randomcaptures,no reset assumption\n/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/taalas-array/periphery/latch_tb.v:23: $finish called at 1667000 (1ps)\n",
+  "scope": "Routed gate-netlist zero-delay functional behavior; not analog pulse/setup/hold qualification",
+  "netlist_sha256": "09ae542e2ef4d287b70687b4b492c0f30990d10b4895319ed3c06c0f3319474c",
+  "testbench_sha256": "96e7d2956683b3160c81661471c7d279121c3ddc3338ba762a5270f2409ddb20"
+}

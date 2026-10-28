@@ -1,0 +1,30 @@
+{
+  "stage": "unit-position-exhaustive-build",
+  "command": [
+    "/usr/bin/nice",
+    "-n",
+    "10",
+    "/opt/homebrew/Cellar/verilator/5.050/bin/verilator",
+    "--cc",
+    "--exe",
+    "--build",
+    "-j",
+    "2",
+    "-Wno-fatal",
+    "--top-module",
+    "rv_source_position_immutable_rom_v1",
+    "--Mdir",
+    "/Users/sanju/.local/state/routevoice-internal-runs/20261014/onchip-all/unit-position-exhaustive",
+    "-GIMAGE_FILE=\"/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/onchip-all/rom/positions.hex\"",
+    "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/onchip-all/rv_source_position_immutable_rom_v1.sv",
+    "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/onchip-all/position_test.cpp",
+    "-CFLAGS",
+    "-std=c++17 -O2"
+  ],
+  "cwd": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design",
+  "log": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/onchip-all/logs/20261014T021149-unit-position-exhaustive-build.log",
+  "started": "20261014T021149",
+  "exit_code": 0,
+  "pid": 49303,
+  "elapsed_seconds": 2.024665917037055
+}

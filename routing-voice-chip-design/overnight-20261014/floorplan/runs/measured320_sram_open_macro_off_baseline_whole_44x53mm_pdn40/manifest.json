@@ -1,0 +1,3466 @@
+{
+  "memory": "sram_open_macro",
+  "levers": "off",
+  "state": "baseline",
+  "scenario": "measured320",
+  "partition": "whole",
+  "die_mm": 44.0,
+  "die_width_mm": 44.0,
+  "die_height_mm": 53.0,
+  "block_area_mm2": 2003.459786220134,
+  "abstract_rect_area_mm2": 2005.5827000000002,
+  "core_area_mm2": 2198.1600000000003,
+  "placement_pass": true,
+  "pdn_pass": false,
+  "worst_ir_drop_v": null,
+  "power_assumed_w": 1.08,
+  "supply_pad_pairs": 28,
+  "signal_pad_count": 16,
+  "pad_count": 72,
+  "areas": [
+    {
+      "name": "frontend_FP32",
+      "area_mm2": 158.049024,
+      "tiles": 18,
+      "area_breakdown": {
+        "selection_mm2": 0.0,
+        "rom_mm2": 146.049024,
+        "sram_mm2": 0.0,
+        "logic_mm2": 12,
+        "total_mm2": 158.049024
+      },
+      "power_w": 0.15
+    },
+    {
+      "name": "encoder_fabric_L0",
+      "area_mm2": 37.3202424,
+      "tiles": 5,
+      "area_breakdown": {
+        "selection_mm2": 37.3202424,
+        "rom_mm2": 0.0,
+        "sram_mm2": 0.0,
+        "logic_mm2": 0,
+        "total_mm2": 37.3202424
+      },
+      "power_w": 0.025
+    },
+    {
+      "name": "encoder_fabric_L1",
+      "area_mm2": 37.3202424,
+      "tiles": 5,
+      "area_breakdown": {
+        "selection_mm2": 37.3202424,
+        "rom_mm2": 0.0,
+        "sram_mm2": 0.0,
+        "logic_mm2": 0,
+        "total_mm2": 37.3202424
+      },
+      "power_w": 0.025
+    },
+    {
+      "name": "encoder_fabric_L2",
+      "area_mm2": 37.3202424,
+      "tiles": 5,
+      "area_breakdown": {
+        "selection_mm2": 37.3202424,
+        "rom_mm2": 0.0,
+        "sram_mm2": 0.0,
+        "logic_mm2": 0,
+        "total_mm2": 37.3202424
+      },
+      "power_w": 0.025
+    },
+    {
+      "name": "encoder_fabric_L3",
+      "area_mm2": 37.3202424,
+      "tiles": 5,
+      "area_breakdown": {
+        "selection_mm2": 37.3202424,
+        "rom_mm2": 0.0,
+        "sram_mm2": 0.0,
+        "logic_mm2": 0,
+        "total_mm2": 37.3202424
+      },
+      "power_w": 0.025
+    },
+    {
+      "name": "encoder_fabric_L4",
+      "area_mm2": 37.3202424,
+      "tiles": 5,
+      "area_breakdown": {
+        "selection_mm2": 37.3202424,
+        "rom_mm2": 0.0,
+        "sram_mm2": 0.0,
+        "logic_mm2": 0,
+        "total_mm2": 37.3202424
+      },
+      "power_w": 0.025
+    },
+    {
+      "name": "encoder_fabric_L5",
+      "area_mm2": 37.3202424,
+      "tiles": 5,
+      "area_breakdown": {
+        "selection_mm2": 37.3202424,
+        "rom_mm2": 0.0,
+        "sram_mm2": 0.0,
+        "logic_mm2": 0,
+        "total_mm2": 37.3202424
+      },
+      "power_w": 0.025
+    },
+    {
+      "name": "decoder_fabric_L0",
+      "area_mm2": 55.9803636,
+      "tiles": 7,
+      "area_breakdown": {
+        "selection_mm2": 55.9803636,
+        "rom_mm2": 0.0,
+        "sram_mm2": 0.0,
+        "logic_mm2": 0,
+        "total_mm2": 55.9803636
+      },
+      "power_w": 0.025
+    },
+    {
+      "name": "decoder_fabric_L1",
+      "area_mm2": 55.9803636,
+      "tiles": 7,
+      "area_breakdown": {
+        "selection_mm2": 55.9803636,
+        "rom_mm2": 0.0,
+        "sram_mm2": 0.0,
+        "logic_mm2": 0,
+        "total_mm2": 55.9803636
+      },
+      "power_w": 0.025
+    },
+    {
+      "name": "decoder_fabric_L2",
+      "area_mm2": 55.9803636,
+      "tiles": 7,
+      "area_breakdown": {
+        "selection_mm2": 55.9803636,
+        "rom_mm2": 0.0,
+        "sram_mm2": 0.0,
+        "logic_mm2": 0,
+        "total_mm2": 55.9803636
+      },
+      "power_w": 0.025
+    },
+    {
+      "name": "decoder_fabric_L3",
+      "area_mm2": 55.9803636,
+      "tiles": 7,
+      "area_breakdown": {
+        "selection_mm2": 55.9803636,
+        "rom_mm2": 0.0,
+        "sram_mm2": 0.0,
+        "logic_mm2": 0,
+        "total_mm2": 55.9803636
+      },
+      "power_w": 0.025
+    },
+    {
+      "name": "decoder_fabric_L4",
+      "area_mm2": 55.9803636,
+      "tiles": 7,
+      "area_breakdown": {
+        "selection_mm2": 55.9803636,
+        "rom_mm2": 0.0,
+        "sram_mm2": 0.0,
+        "logic_mm2": 0,
+        "total_mm2": 55.9803636
+      },
+      "power_w": 0.025
+    },
+    {
+      "name": "decoder_fabric_L5",
+      "area_mm2": 55.9803636,
+      "tiles": 7,
+      "area_breakdown": {
+        "selection_mm2": 55.9803636,
+        "rom_mm2": 0.0,
+        "sram_mm2": 0.0,
+        "logic_mm2": 0,
+        "total_mm2": 55.9803636
+      },
+      "power_w": 0.025
+    },
+    {
+      "name": "embedding_head_tied_once",
+      "area_mm2": 318.46606847999993,
+      "tiles": 36,
+      "area_breakdown": {
+        "selection_mm2": 318.46606847999993,
+        "rom_mm2": 0.0,
+        "sram_mm2": 0.0,
+        "logic_mm2": 0,
+        "total_mm2": 318.46606847999993
+      },
+      "power_w": 0.08
+    },
+    {
+      "name": "producer_KV_and_positions",
+      "area_mm2": 77.12850096,
+      "tiles": 9,
+      "area_breakdown": {
+        "selection_mm2": 77.12850096,
+        "rom_mm2": 0.0,
+        "sram_mm2": 0.0,
+        "logic_mm2": 0,
+        "total_mm2": 77.12850096
+      },
+      "power_w": 0.04
+    },
+    {
+      "name": "codebooks_and_other_metadata",
+      "area_mm2": 146.0742008,
+      "tiles": 17,
+      "area_breakdown": {
+        "selection_mm2": 0.0,
+        "rom_mm2": 146.0742008,
+        "sram_mm2": 0.0,
+        "logic_mm2": 0,
+        "total_mm2": 146.0742008
+      },
+      "power_w": 0.035
+    },
+    {
+      "name": "shared_product_engine",
+      "area_mm2": 12.274061273574,
+      "tiles": 2,
+      "area_breakdown": {
+        "selection_mm2": 0.0,
+        "rom_mm2": 0.0,
+        "sram_mm2": 0.0,
+        "logic_mm2": 12.274061273574,
+        "total_mm2": 12.274061273574
+      },
+      "power_w": 0.15
+    },
+    {
+      "name": "encoder_dynamic_attention",
+      "area_mm2": 18.0,
+      "tiles": 2,
+      "area_breakdown": {
+        "selection_mm2": 0.0,
+        "rom_mm2": 0.0,
+        "sram_mm2": 0.0,
+        "logic_mm2": 18,
+        "total_mm2": 18.0
+      },
+      "power_w": 0.075
+    },
+    {
+      "name": "decoder_dynamic_attention",
+      "area_mm2": 15.0,
+      "tiles": 2,
+      "area_breakdown": {
+        "selection_mm2": 0.0,
+        "rom_mm2": 0.0,
+        "sram_mm2": 0.0,
+        "logic_mm2": 15,
+        "total_mm2": 15.0
+      },
+      "power_w": 0.06
+    },
+    {
+      "name": "producer_dynamic",
+      "area_mm2": 6.0,
+      "tiles": 1,
+      "area_breakdown": {
+        "selection_mm2": 0.0,
+        "rom_mm2": 0.0,
+        "sram_mm2": 0.0,
+        "logic_mm2": 6,
+        "total_mm2": 6.0
+      },
+      "power_w": 0.03
+    },
+    {
+      "name": "control_clock_IO_interface",
+      "area_mm2": 12.0,
+      "tiles": 2,
+      "area_breakdown": {
+        "selection_mm2": 0.0,
+        "rom_mm2": 0.0,
+        "sram_mm2": 0.0,
+        "logic_mm2": 12,
+        "total_mm2": 12.0
+      },
+      "power_w": 0.06
+    },
+    {
+      "name": "array_decoder_phase_mux_allowance",
+      "area_mm2": 56.583999999999996,
+      "tiles": 7,
+      "area_breakdown": {
+        "selection_mm2": 0.0,
+        "rom_mm2": 0.0,
+        "sram_mm2": 0.0,
+        "logic_mm2": 56.583999999999996,
+        "total_mm2": 56.583999999999996
+      },
+      "power_w": 0.02
+    },
+    {
+      "name": "mutable_arrays",
+      "area_mm2": 593.83835898816,
+      "tiles": 66,
+      "area_breakdown": {
+        "selection_mm2": 0.0,
+        "rom_mm2": 0.0,
+        "sram_mm2": 593.83835898816,
+        "logic_mm2": 0,
+        "total_mm2": 593.83835898816
+      },
+      "power_w": 0.06
+    },
+    {
+      "name": "ordinary_registers",
+      "area_mm2": 30.2419357184,
+      "tiles": 4,
+      "area_breakdown": {
+        "selection_mm2": 0.0,
+        "rom_mm2": 0.0,
+        "sram_mm2": 0.0,
+        "logic_mm2": 30.2419357184,
+        "total_mm2": 30.2419357184
+      },
+      "power_w": 0.02
+    }
+  ],
+  "tiles": [
+    {
+      "name": "frontend_FP32_0",
+      "block": "frontend_FP32",
+      "w": 2965,
+      "h": 2965,
+      "power": 0.008333333333333333,
+      "modeled_area_mm2": 8.780501333333333,
+      "replicate": false,
+      "x": 34115,
+      "y": 22125
+    },
+    {
+      "name": "frontend_FP32_1",
+      "block": "frontend_FP32",
+      "w": 2965,
+      "h": 2965,
+      "power": 0.008333333333333333,
+      "modeled_area_mm2": 8.780501333333333,
+      "replicate": false,
+      "x": 37140,
+      "y": 22125
+    },
+    {
+      "name": "frontend_FP32_2",
+      "block": "frontend_FP32",
+      "w": 2965,
+      "h": 2965,
+      "power": 0.008333333333333333,
+      "modeled_area_mm2": 8.780501333333333,
+      "replicate": false,
+      "x": 40165,
+      "y": 22125
+    },
+    {
+      "name": "frontend_FP32_3",
+      "block": "frontend_FP32",
+      "w": 2965,
+      "h": 2965,
+      "power": 0.008333333333333333,
+      "modeled_area_mm2": 8.780501333333333,
+      "replicate": false,
+      "x": 730,
+      "y": 25160
+    },
+    {
+      "name": "frontend_FP32_4",
+      "block": "frontend_FP32",
+      "w": 2965,
+      "h": 2965,
+      "power": 0.008333333333333333,
+      "modeled_area_mm2": 8.780501333333333,
+      "replicate": false,
+      "x": 3755,
+      "y": 25160
+    },
+    {
+      "name": "frontend_FP32_5",
+      "block": "frontend_FP32",
+      "w": 2965,
+      "h": 2965,
+      "power": 0.008333333333333333,
+      "modeled_area_mm2": 8.780501333333333,
+      "replicate": false,
+      "x": 6780,
+      "y": 25160
+    },
+    {
+      "name": "frontend_FP32_6",
+      "block": "frontend_FP32",
+      "w": 2965,
+      "h": 2965,
+      "power": 0.008333333333333333,
+      "modeled_area_mm2": 8.780501333333333,
+      "replicate": false,
+      "x": 9805,
+      "y": 25160
+    },
+    {
+      "name": "frontend_FP32_7",
+      "block": "frontend_FP32",
+      "w": 2965,
+      "h": 2965,
+      "power": 0.008333333333333333,
+      "modeled_area_mm2": 8.780501333333333,
+      "replicate": false,
+      "x": 12830,
+      "y": 25160
+    },
+    {
+      "name": "frontend_FP32_8",
+      "block": "frontend_FP32",
+      "w": 2965,
+      "h": 2965,
+      "power": 0.008333333333333333,
+      "modeled_area_mm2": 8.780501333333333,
+      "replicate": false,
+      "x": 15855,
+      "y": 25160
+    },
+    {
+      "name": "frontend_FP32_9",
+      "block": "frontend_FP32",
+      "w": 2965,
+      "h": 2965,
+      "power": 0.008333333333333333,
+      "modeled_area_mm2": 8.780501333333333,
+      "replicate": false,
+      "x": 18880,
+      "y": 25160
+    },
+    {
+      "name": "frontend_FP32_10",
+      "block": "frontend_FP32",
+      "w": 2965,
+      "h": 2965,
+      "power": 0.008333333333333333,
+      "modeled_area_mm2": 8.780501333333333,
+      "replicate": false,
+      "x": 21905,
+      "y": 25160
+    },
+    {
+      "name": "frontend_FP32_11",
+      "block": "frontend_FP32",
+      "w": 2965,
+      "h": 2965,
+      "power": 0.008333333333333333,
+      "modeled_area_mm2": 8.780501333333333,
+      "replicate": false,
+      "x": 24930,
+      "y": 25160
+    },
+    {
+      "name": "frontend_FP32_12",
+      "block": "frontend_FP32",
+      "w": 2965,
+      "h": 2965,
+      "power": 0.008333333333333333,
+      "modeled_area_mm2": 8.780501333333333,
+      "replicate": false,
+      "x": 27955,
+      "y": 25160
+    },
+    {
+      "name": "frontend_FP32_13",
+      "block": "frontend_FP32",
+      "w": 2965,
+      "h": 2965,
+      "power": 0.008333333333333333,
+      "modeled_area_mm2": 8.780501333333333,
+      "replicate": false,
+      "x": 30980,
+      "y": 25160
+    },
+    {
+      "name": "frontend_FP32_14",
+      "block": "frontend_FP32",
+      "w": 2965,
+      "h": 2965,
+      "power": 0.008333333333333333,
+      "modeled_area_mm2": 8.780501333333333,
+      "replicate": false,
+      "x": 34005,
+      "y": 25160
+    },
+    {
+      "name": "frontend_FP32_15",
+      "block": "frontend_FP32",
+      "w": 2965,
+      "h": 2965,
+      "power": 0.008333333333333333,
+      "modeled_area_mm2": 8.780501333333333,
+      "replicate": false,
+      "x": 37030,
+      "y": 25160
+    },
+    {
+      "name": "frontend_FP32_16",
+      "block": "frontend_FP32",
+      "w": 2965,
+      "h": 2965,
+      "power": 0.008333333333333333,
+      "modeled_area_mm2": 8.780501333333333,
+      "replicate": false,
+      "x": 40055,
+      "y": 25160
+    },
+    {
+      "name": "frontend_FP32_17",
+      "block": "frontend_FP32",
+      "w": 2965,
+      "h": 2965,
+      "power": 0.008333333333333333,
+      "modeled_area_mm2": 8.780501333333333,
+      "replicate": false,
+      "x": 730,
+      "y": 28185
+    },
+    {
+      "name": "encoder_fabric_L0_0",
+      "block": "encoder_fabric_L0",
+      "w": 2735,
+      "h": 2735,
+      "power": 0.005,
+      "modeled_area_mm2": 7.46404848,
+      "replicate": false,
+      "x": 20870,
+      "y": 42890
+    },
+    {
+      "name": "encoder_fabric_L0_1",
+      "block": "encoder_fabric_L0",
+      "w": 2735,
+      "h": 2735,
+      "power": 0.005,
+      "modeled_area_mm2": 7.46404848,
+      "replicate": false,
+      "x": 23665,
+      "y": 42890
+    },
+    {
+      "name": "encoder_fabric_L0_2",
+      "block": "encoder_fabric_L0",
+      "w": 2735,
+      "h": 2735,
+      "power": 0.005,
+      "modeled_area_mm2": 7.46404848,
+      "replicate": false,
+      "x": 26460,
+      "y": 42890
+    },
+    {
+      "name": "encoder_fabric_L0_3",
+      "block": "encoder_fabric_L0",
+      "w": 2735,
+      "h": 2735,
+      "power": 0.005,
+      "modeled_area_mm2": 7.46404848,
+      "replicate": false,
+      "x": 29255,
+      "y": 42890
+    },
+    {
+      "name": "encoder_fabric_L0_4",
+      "block": "encoder_fabric_L0",
+      "w": 2735,
+      "h": 2735,
+      "power": 0.005,
+      "modeled_area_mm2": 7.46404848,
+      "replicate": false,
+      "x": 32050,
+      "y": 42890
+    },
+    {
+      "name": "encoder_fabric_L1_0",
+      "block": "encoder_fabric_L1",
+      "w": 2735,
+      "h": 2735,
+      "power": 0.005,
+      "modeled_area_mm2": 7.46404848,
+      "replicate": false,
+      "x": 34845,
+      "y": 42890
+    },
+    {
+      "name": "encoder_fabric_L1_1",
+      "block": "encoder_fabric_L1",
+      "w": 2735,
+      "h": 2735,
+      "power": 0.005,
+      "modeled_area_mm2": 7.46404848,
+      "replicate": false,
+      "x": 37640,
+      "y": 42890
+    },
+    {
+      "name": "encoder_fabric_L1_2",
+      "block": "encoder_fabric_L1",
+      "w": 2735,
+      "h": 2735,
+      "power": 0.005,
+      "modeled_area_mm2": 7.46404848,
+      "replicate": false,
+      "x": 40435,
+      "y": 42890
+    },
+    {
+      "name": "encoder_fabric_L1_3",
+      "block": "encoder_fabric_L1",
+      "w": 2735,
+      "h": 2735,
+      "power": 0.005,
+      "modeled_area_mm2": 7.46404848,
+      "replicate": false,
+      "x": 730,
+      "y": 45780
+    },
+    {
+      "name": "encoder_fabric_L1_4",
+      "block": "encoder_fabric_L1",
+      "w": 2735,
+      "h": 2735,
+      "power": 0.005,
+      "modeled_area_mm2": 7.46404848,
+      "replicate": false,
+      "x": 3525,
+      "y": 45780
+    },
+    {
+      "name": "encoder_fabric_L2_0",
+      "block": "encoder_fabric_L2",
+      "w": 2735,
+      "h": 2735,
+      "power": 0.005,
+      "modeled_area_mm2": 7.46404848,
+      "replicate": false,
+      "x": 6320,
+      "y": 45780
+    },
+    {
+      "name": "encoder_fabric_L2_1",
+      "block": "encoder_fabric_L2",
+      "w": 2735,
+      "h": 2735,
+      "power": 0.005,
+      "modeled_area_mm2": 7.46404848,
+      "replicate": false,
+      "x": 9115,
+      "y": 45780
+    },
+    {
+      "name": "encoder_fabric_L2_2",
+      "block": "encoder_fabric_L2",
+      "w": 2735,
+      "h": 2735,
+      "power": 0.005,
+      "modeled_area_mm2": 7.46404848,
+      "replicate": false,
+      "x": 11910,
+      "y": 45780
+    },
+    {
+      "name": "encoder_fabric_L2_3",
+      "block": "encoder_fabric_L2",
+      "w": 2735,
+      "h": 2735,
+      "power": 0.005,
+      "modeled_area_mm2": 7.46404848,
+      "replicate": false,
+      "x": 14705,
+      "y": 45780
+    },
+    {
+      "name": "encoder_fabric_L2_4",
+      "block": "encoder_fabric_L2",
+      "w": 2735,
+      "h": 2735,
+      "power": 0.005,
+      "modeled_area_mm2": 7.46404848,
+      "replicate": false,
+      "x": 17500,
+      "y": 45780
+    },
+    {
+      "name": "encoder_fabric_L3_0",
+      "block": "encoder_fabric_L3",
+      "w": 2735,
+      "h": 2735,
+      "power": 0.005,
+      "modeled_area_mm2": 7.46404848,
+      "replicate": false,
+      "x": 20295,
+      "y": 45780
+    },
+    {
+      "name": "encoder_fabric_L3_1",
+      "block": "encoder_fabric_L3",
+      "w": 2735,
+      "h": 2735,
+      "power": 0.005,
+      "modeled_area_mm2": 7.46404848,
+      "replicate": false,
+      "x": 23090,
+      "y": 45780
+    },
+    {
+      "name": "encoder_fabric_L3_2",
+      "block": "encoder_fabric_L3",
+      "w": 2735,
+      "h": 2735,
+      "power": 0.005,
+      "modeled_area_mm2": 7.46404848,
+      "replicate": false,
+      "x": 25885,
+      "y": 45780
+    },
+    {
+      "name": "encoder_fabric_L3_3",
+      "block": "encoder_fabric_L3",
+      "w": 2735,
+      "h": 2735,
+      "power": 0.005,
+      "modeled_area_mm2": 7.46404848,
+      "replicate": false,
+      "x": 28680,
+      "y": 45780
+    },
+    {
+      "name": "encoder_fabric_L3_4",
+      "block": "encoder_fabric_L3",
+      "w": 2735,
+      "h": 2735,
+      "power": 0.005,
+      "modeled_area_mm2": 7.46404848,
+      "replicate": false,
+      "x": 31475,
+      "y": 45780
+    },
+    {
+      "name": "encoder_fabric_L4_0",
+      "block": "encoder_fabric_L4",
+      "w": 2735,
+      "h": 2735,
+      "power": 0.005,
+      "modeled_area_mm2": 7.46404848,
+      "replicate": false,
+      "x": 34270,
+      "y": 45780
+    },
+    {
+      "name": "encoder_fabric_L4_1",
+      "block": "encoder_fabric_L4",
+      "w": 2735,
+      "h": 2735,
+      "power": 0.005,
+      "modeled_area_mm2": 7.46404848,
+      "replicate": false,
+      "x": 37065,
+      "y": 45780
+    },
+    {
+      "name": "encoder_fabric_L4_2",
+      "block": "encoder_fabric_L4",
+      "w": 2735,
+      "h": 2735,
+      "power": 0.005,
+      "modeled_area_mm2": 7.46404848,
+      "replicate": false,
+      "x": 39860,
+      "y": 45780
+    },
+    {
+      "name": "encoder_fabric_L4_3",
+      "block": "encoder_fabric_L4",
+      "w": 2735,
+      "h": 2735,
+      "power": 0.005,
+      "modeled_area_mm2": 7.46404848,
+      "replicate": false,
+      "x": 730,
+      "y": 48575
+    },
+    {
+      "name": "encoder_fabric_L4_4",
+      "block": "encoder_fabric_L4",
+      "w": 2735,
+      "h": 2735,
+      "power": 0.005,
+      "modeled_area_mm2": 7.46404848,
+      "replicate": false,
+      "x": 3525,
+      "y": 48575
+    },
+    {
+      "name": "encoder_fabric_L5_0",
+      "block": "encoder_fabric_L5",
+      "w": 2735,
+      "h": 2735,
+      "power": 0.005,
+      "modeled_area_mm2": 7.46404848,
+      "replicate": false,
+      "x": 6320,
+      "y": 48575
+    },
+    {
+      "name": "encoder_fabric_L5_1",
+      "block": "encoder_fabric_L5",
+      "w": 2735,
+      "h": 2735,
+      "power": 0.005,
+      "modeled_area_mm2": 7.46404848,
+      "replicate": false,
+      "x": 9115,
+      "y": 48575
+    },
+    {
+      "name": "encoder_fabric_L5_2",
+      "block": "encoder_fabric_L5",
+      "w": 2735,
+      "h": 2735,
+      "power": 0.005,
+      "modeled_area_mm2": 7.46404848,
+      "replicate": false,
+      "x": 11910,
+      "y": 48575
+    },
+    {
+      "name": "encoder_fabric_L5_3",
+      "block": "encoder_fabric_L5",
+      "w": 2735,
+      "h": 2735,
+      "power": 0.005,
+      "modeled_area_mm2": 7.46404848,
+      "replicate": false,
+      "x": 14705,
+      "y": 48575
+    },
+    {
+      "name": "encoder_fabric_L5_4",
+      "block": "encoder_fabric_L5",
+      "w": 2735,
+      "h": 2735,
+      "power": 0.005,
+      "modeled_area_mm2": 7.46404848,
+      "replicate": false,
+      "x": 17500,
+      "y": 48575
+    },
+    {
+      "name": "decoder_fabric_L0_0",
+      "block": "decoder_fabric_L0",
+      "w": 2830,
+      "h": 2830,
+      "power": 0.0035714285714285718,
+      "modeled_area_mm2": 7.9971948,
+      "replicate": false,
+      "x": 18160,
+      "y": 34205
+    },
+    {
+      "name": "decoder_fabric_L0_1",
+      "block": "decoder_fabric_L0",
+      "w": 2830,
+      "h": 2830,
+      "power": 0.0035714285714285718,
+      "modeled_area_mm2": 7.9971948,
+      "replicate": false,
+      "x": 21050,
+      "y": 34205
+    },
+    {
+      "name": "decoder_fabric_L0_2",
+      "block": "decoder_fabric_L0",
+      "w": 2830,
+      "h": 2830,
+      "power": 0.0035714285714285718,
+      "modeled_area_mm2": 7.9971948,
+      "replicate": false,
+      "x": 23940,
+      "y": 34205
+    },
+    {
+      "name": "decoder_fabric_L0_3",
+      "block": "decoder_fabric_L0",
+      "w": 2830,
+      "h": 2830,
+      "power": 0.0035714285714285718,
+      "modeled_area_mm2": 7.9971948,
+      "replicate": false,
+      "x": 26830,
+      "y": 34205
+    },
+    {
+      "name": "decoder_fabric_L0_4",
+      "block": "decoder_fabric_L0",
+      "w": 2830,
+      "h": 2830,
+      "power": 0.0035714285714285718,
+      "modeled_area_mm2": 7.9971948,
+      "replicate": false,
+      "x": 29720,
+      "y": 34205
+    },
+    {
+      "name": "decoder_fabric_L0_5",
+      "block": "decoder_fabric_L0",
+      "w": 2830,
+      "h": 2830,
+      "power": 0.0035714285714285718,
+      "modeled_area_mm2": 7.9971948,
+      "replicate": false,
+      "x": 32610,
+      "y": 34205
+    },
+    {
+      "name": "decoder_fabric_L0_6",
+      "block": "decoder_fabric_L0",
+      "w": 2830,
+      "h": 2830,
+      "power": 0.0035714285714285718,
+      "modeled_area_mm2": 7.9971948,
+      "replicate": false,
+      "x": 35500,
+      "y": 34205
+    },
+    {
+      "name": "decoder_fabric_L1_0",
+      "block": "decoder_fabric_L1",
+      "w": 2830,
+      "h": 2830,
+      "power": 0.0035714285714285718,
+      "modeled_area_mm2": 7.9971948,
+      "replicate": false,
+      "x": 38390,
+      "y": 34205
+    },
+    {
+      "name": "decoder_fabric_L1_1",
+      "block": "decoder_fabric_L1",
+      "w": 2830,
+      "h": 2830,
+      "power": 0.0035714285714285718,
+      "modeled_area_mm2": 7.9971948,
+      "replicate": false,
+      "x": 730,
+      "y": 37110
+    },
+    {
+      "name": "decoder_fabric_L1_2",
+      "block": "decoder_fabric_L1",
+      "w": 2830,
+      "h": 2830,
+      "power": 0.0035714285714285718,
+      "modeled_area_mm2": 7.9971948,
+      "replicate": false,
+      "x": 3620,
+      "y": 37110
+    },
+    {
+      "name": "decoder_fabric_L1_3",
+      "block": "decoder_fabric_L1",
+      "w": 2830,
+      "h": 2830,
+      "power": 0.0035714285714285718,
+      "modeled_area_mm2": 7.9971948,
+      "replicate": false,
+      "x": 6510,
+      "y": 37110
+    },
+    {
+      "name": "decoder_fabric_L1_4",
+      "block": "decoder_fabric_L1",
+      "w": 2830,
+      "h": 2830,
+      "power": 0.0035714285714285718,
+      "modeled_area_mm2": 7.9971948,
+      "replicate": false,
+      "x": 9400,
+      "y": 37110
+    },
+    {
+      "name": "decoder_fabric_L1_5",
+      "block": "decoder_fabric_L1",
+      "w": 2830,
+      "h": 2830,
+      "power": 0.0035714285714285718,
+      "modeled_area_mm2": 7.9971948,
+      "replicate": false,
+      "x": 12290,
+      "y": 37110
+    },
+    {
+      "name": "decoder_fabric_L1_6",
+      "block": "decoder_fabric_L1",
+      "w": 2830,
+      "h": 2830,
+      "power": 0.0035714285714285718,
+      "modeled_area_mm2": 7.9971948,
+      "replicate": false,
+      "x": 15180,
+      "y": 37110
+    },
+    {
+      "name": "decoder_fabric_L2_0",
+      "block": "decoder_fabric_L2",
+      "w": 2830,
+      "h": 2830,
+      "power": 0.0035714285714285718,
+      "modeled_area_mm2": 7.9971948,
+      "replicate": false,
+      "x": 18070,
+      "y": 37110
+    },
+    {
+      "name": "decoder_fabric_L2_1",
+      "block": "decoder_fabric_L2",
+      "w": 2830,
+      "h": 2830,
+      "power": 0.0035714285714285718,
+      "modeled_area_mm2": 7.9971948,
+      "replicate": false,
+      "x": 20960,
+      "y": 37110
+    },
+    {
+      "name": "decoder_fabric_L2_2",
+      "block": "decoder_fabric_L2",
+      "w": 2830,
+      "h": 2830,
+      "power": 0.0035714285714285718,
+      "modeled_area_mm2": 7.9971948,
+      "replicate": false,
+      "x": 23850,
+      "y": 37110
+    },
+    {
+      "name": "decoder_fabric_L2_3",
+      "block": "decoder_fabric_L2",
+      "w": 2830,
+      "h": 2830,
+      "power": 0.0035714285714285718,
+      "modeled_area_mm2": 7.9971948,
+      "replicate": false,
+      "x": 26740,
+      "y": 37110
+    },
+    {
+      "name": "decoder_fabric_L2_4",
+      "block": "decoder_fabric_L2",
+      "w": 2830,
+      "h": 2830,
+      "power": 0.0035714285714285718,
+      "modeled_area_mm2": 7.9971948,
+      "replicate": false,
+      "x": 29630,
+      "y": 37110
+    },
+    {
+      "name": "decoder_fabric_L2_5",
+      "block": "decoder_fabric_L2",
+      "w": 2830,
+      "h": 2830,
+      "power": 0.0035714285714285718,
+      "modeled_area_mm2": 7.9971948,
+      "replicate": false,
+      "x": 32520,
+      "y": 37110
+    },
+    {
+      "name": "decoder_fabric_L2_6",
+      "block": "decoder_fabric_L2",
+      "w": 2830,
+      "h": 2830,
+      "power": 0.0035714285714285718,
+      "modeled_area_mm2": 7.9971948,
+      "replicate": false,
+      "x": 35410,
+      "y": 37110
+    },
+    {
+      "name": "decoder_fabric_L3_0",
+      "block": "decoder_fabric_L3",
+      "w": 2830,
+      "h": 2830,
+      "power": 0.0035714285714285718,
+      "modeled_area_mm2": 7.9971948,
+      "replicate": false,
+      "x": 38300,
+      "y": 37110
+    },
+    {
+      "name": "decoder_fabric_L3_1",
+      "block": "decoder_fabric_L3",
+      "w": 2830,
+      "h": 2830,
+      "power": 0.0035714285714285718,
+      "modeled_area_mm2": 7.9971948,
+      "replicate": false,
+      "x": 730,
+      "y": 40000
+    },
+    {
+      "name": "decoder_fabric_L3_2",
+      "block": "decoder_fabric_L3",
+      "w": 2830,
+      "h": 2830,
+      "power": 0.0035714285714285718,
+      "modeled_area_mm2": 7.9971948,
+      "replicate": false,
+      "x": 3620,
+      "y": 40000
+    },
+    {
+      "name": "decoder_fabric_L3_3",
+      "block": "decoder_fabric_L3",
+      "w": 2830,
+      "h": 2830,
+      "power": 0.0035714285714285718,
+      "modeled_area_mm2": 7.9971948,
+      "replicate": false,
+      "x": 6510,
+      "y": 40000
+    },
+    {
+      "name": "decoder_fabric_L3_4",
+      "block": "decoder_fabric_L3",
+      "w": 2830,
+      "h": 2830,
+      "power": 0.0035714285714285718,
+      "modeled_area_mm2": 7.9971948,
+      "replicate": false,
+      "x": 9400,
+      "y": 40000
+    },
+    {
+      "name": "decoder_fabric_L3_5",
+      "block": "decoder_fabric_L3",
+      "w": 2830,
+      "h": 2830,
+      "power": 0.0035714285714285718,
+      "modeled_area_mm2": 7.9971948,
+      "replicate": false,
+      "x": 12290,
+      "y": 40000
+    },
+    {
+      "name": "decoder_fabric_L3_6",
+      "block": "decoder_fabric_L3",
+      "w": 2830,
+      "h": 2830,
+      "power": 0.0035714285714285718,
+      "modeled_area_mm2": 7.9971948,
+      "replicate": false,
+      "x": 15180,
+      "y": 40000
+    },
+    {
+      "name": "decoder_fabric_L4_0",
+      "block": "decoder_fabric_L4",
+      "w": 2830,
+      "h": 2830,
+      "power": 0.0035714285714285718,
+      "modeled_area_mm2": 7.9971948,
+      "replicate": false,
+      "x": 18070,
+      "y": 40000
+    },
+    {
+      "name": "decoder_fabric_L4_1",
+      "block": "decoder_fabric_L4",
+      "w": 2830,
+      "h": 2830,
+      "power": 0.0035714285714285718,
+      "modeled_area_mm2": 7.9971948,
+      "replicate": false,
+      "x": 20960,
+      "y": 40000
+    },
+    {
+      "name": "decoder_fabric_L4_2",
+      "block": "decoder_fabric_L4",
+      "w": 2830,
+      "h": 2830,
+      "power": 0.0035714285714285718,
+      "modeled_area_mm2": 7.9971948,
+      "replicate": false,
+      "x": 23850,
+      "y": 40000
+    },
+    {
+      "name": "decoder_fabric_L4_3",
+      "block": "decoder_fabric_L4",
+      "w": 2830,
+      "h": 2830,
+      "power": 0.0035714285714285718,
+      "modeled_area_mm2": 7.9971948,
+      "replicate": false,
+      "x": 26740,
+      "y": 40000
+    },
+    {
+      "name": "decoder_fabric_L4_4",
+      "block": "decoder_fabric_L4",
+      "w": 2830,
+      "h": 2830,
+      "power": 0.0035714285714285718,
+      "modeled_area_mm2": 7.9971948,
+      "replicate": false,
+      "x": 29630,
+      "y": 40000
+    },
+    {
+      "name": "decoder_fabric_L4_5",
+      "block": "decoder_fabric_L4",
+      "w": 2830,
+      "h": 2830,
+      "power": 0.0035714285714285718,
+      "modeled_area_mm2": 7.9971948,
+      "replicate": false,
+      "x": 32520,
+      "y": 40000
+    },
+    {
+      "name": "decoder_fabric_L4_6",
+      "block": "decoder_fabric_L4",
+      "w": 2830,
+      "h": 2830,
+      "power": 0.0035714285714285718,
+      "modeled_area_mm2": 7.9971948,
+      "replicate": false,
+      "x": 35410,
+      "y": 40000
+    },
+    {
+      "name": "decoder_fabric_L5_0",
+      "block": "decoder_fabric_L5",
+      "w": 2830,
+      "h": 2830,
+      "power": 0.0035714285714285718,
+      "modeled_area_mm2": 7.9971948,
+      "replicate": false,
+      "x": 38300,
+      "y": 40000
+    },
+    {
+      "name": "decoder_fabric_L5_1",
+      "block": "decoder_fabric_L5",
+      "w": 2830,
+      "h": 2830,
+      "power": 0.0035714285714285718,
+      "modeled_area_mm2": 7.9971948,
+      "replicate": false,
+      "x": 730,
+      "y": 42890
+    },
+    {
+      "name": "decoder_fabric_L5_2",
+      "block": "decoder_fabric_L5",
+      "w": 2830,
+      "h": 2830,
+      "power": 0.0035714285714285718,
+      "modeled_area_mm2": 7.9971948,
+      "replicate": false,
+      "x": 3620,
+      "y": 42890
+    },
+    {
+      "name": "decoder_fabric_L5_3",
+      "block": "decoder_fabric_L5",
+      "w": 2830,
+      "h": 2830,
+      "power": 0.0035714285714285718,
+      "modeled_area_mm2": 7.9971948,
+      "replicate": false,
+      "x": 6510,
+      "y": 42890
+    },
+    {
+      "name": "decoder_fabric_L5_4",
+      "block": "decoder_fabric_L5",
+      "w": 2830,
+      "h": 2830,
+      "power": 0.0035714285714285718,
+      "modeled_area_mm2": 7.9971948,
+      "replicate": false,
+      "x": 9400,
+      "y": 42890
+    },
+    {
+      "name": "decoder_fabric_L5_5",
+      "block": "decoder_fabric_L5",
+      "w": 2830,
+      "h": 2830,
+      "power": 0.0035714285714285718,
+      "modeled_area_mm2": 7.9971948,
+      "replicate": false,
+      "x": 12290,
+      "y": 42890
+    },
+    {
+      "name": "decoder_fabric_L5_6",
+      "block": "decoder_fabric_L5",
+      "w": 2830,
+      "h": 2830,
+      "power": 0.0035714285714285718,
+      "modeled_area_mm2": 7.9971948,
+      "replicate": false,
+      "x": 15180,
+      "y": 42890
+    },
+    {
+      "name": "embedding_head_tied_once_0",
+      "block": "embedding_head_tied_once",
+      "w": 2975,
+      "h": 2975,
+      "power": 0.0022222222222222222,
+      "modeled_area_mm2": 8.846279679999999,
+      "replicate": false,
+      "x": 9910,
+      "y": 16030
+    },
+    {
+      "name": "embedding_head_tied_once_1",
+      "block": "embedding_head_tied_once",
+      "w": 2975,
+      "h": 2975,
+      "power": 0.0022222222222222222,
+      "modeled_area_mm2": 8.846279679999999,
+      "replicate": false,
+      "x": 12945,
+      "y": 16030
+    },
+    {
+      "name": "embedding_head_tied_once_2",
+      "block": "embedding_head_tied_once",
+      "w": 2975,
+      "h": 2975,
+      "power": 0.0022222222222222222,
+      "modeled_area_mm2": 8.846279679999999,
+      "replicate": false,
+      "x": 15980,
+      "y": 16030
+    },
+    {
+      "name": "embedding_head_tied_once_3",
+      "block": "embedding_head_tied_once",
+      "w": 2975,
+      "h": 2975,
+      "power": 0.0022222222222222222,
+      "modeled_area_mm2": 8.846279679999999,
+      "replicate": false,
+      "x": 19015,
+      "y": 16030
+    },
+    {
+      "name": "embedding_head_tied_once_4",
+      "block": "embedding_head_tied_once",
+      "w": 2975,
+      "h": 2975,
+      "power": 0.0022222222222222222,
+      "modeled_area_mm2": 8.846279679999999,
+      "replicate": false,
+      "x": 22050,
+      "y": 16030
+    },
+    {
+      "name": "embedding_head_tied_once_5",
+      "block": "embedding_head_tied_once",
+      "w": 2975,
+      "h": 2975,
+      "power": 0.0022222222222222222,
+      "modeled_area_mm2": 8.846279679999999,
+      "replicate": false,
+      "x": 25085,
+      "y": 16030
+    },
+    {
+      "name": "embedding_head_tied_once_6",
+      "block": "embedding_head_tied_once",
+      "w": 2975,
+      "h": 2975,
+      "power": 0.0022222222222222222,
+      "modeled_area_mm2": 8.846279679999999,
+      "replicate": false,
+      "x": 28120,
+      "y": 16030
+    },
+    {
+      "name": "embedding_head_tied_once_7",
+      "block": "embedding_head_tied_once",
+      "w": 2975,
+      "h": 2975,
+      "power": 0.0022222222222222222,
+      "modeled_area_mm2": 8.846279679999999,
+      "replicate": false,
+      "x": 31155,
+      "y": 16030
+    },
+    {
+      "name": "embedding_head_tied_once_8",
+      "block": "embedding_head_tied_once",
+      "w": 2975,
+      "h": 2975,
+      "power": 0.0022222222222222222,
+      "modeled_area_mm2": 8.846279679999999,
+      "replicate": false,
+      "x": 34190,
+      "y": 16030
+    },
+    {
+      "name": "embedding_head_tied_once_9",
+      "block": "embedding_head_tied_once",
+      "w": 2975,
+      "h": 2975,
+      "power": 0.0022222222222222222,
+      "modeled_area_mm2": 8.846279679999999,
+      "replicate": false,
+      "x": 37225,
+      "y": 16030
+    },
+    {
+      "name": "embedding_head_tied_once_10",
+      "block": "embedding_head_tied_once",
+      "w": 2975,
+      "h": 2975,
+      "power": 0.0022222222222222222,
+      "modeled_area_mm2": 8.846279679999999,
+      "replicate": false,
+      "x": 40260,
+      "y": 16030
+    },
+    {
+      "name": "embedding_head_tied_once_11",
+      "block": "embedding_head_tied_once",
+      "w": 2975,
+      "h": 2975,
+      "power": 0.0022222222222222222,
+      "modeled_area_mm2": 8.846279679999999,
+      "replicate": false,
+      "x": 730,
+      "y": 19090
+    },
+    {
+      "name": "embedding_head_tied_once_12",
+      "block": "embedding_head_tied_once",
+      "w": 2975,
+      "h": 2975,
+      "power": 0.0022222222222222222,
+      "modeled_area_mm2": 8.846279679999999,
+      "replicate": false,
+      "x": 3765,
+      "y": 19090
+    },
+    {
+      "name": "embedding_head_tied_once_13",
+      "block": "embedding_head_tied_once",
+      "w": 2975,
+      "h": 2975,
+      "power": 0.0022222222222222222,
+      "modeled_area_mm2": 8.846279679999999,
+      "replicate": false,
+      "x": 6800,
+      "y": 19090
+    },
+    {
+      "name": "embedding_head_tied_once_14",
+      "block": "embedding_head_tied_once",
+      "w": 2975,
+      "h": 2975,
+      "power": 0.0022222222222222222,
+      "modeled_area_mm2": 8.846279679999999,
+      "replicate": false,
+      "x": 9835,
+      "y": 19090
+    },
+    {
+      "name": "embedding_head_tied_once_15",
+      "block": "embedding_head_tied_once",
+      "w": 2975,
+      "h": 2975,
+      "power": 0.0022222222222222222,
+      "modeled_area_mm2": 8.846279679999999,
+      "replicate": false,
+      "x": 12870,
+      "y": 19090
+    },
+    {
+      "name": "embedding_head_tied_once_16",
+      "block": "embedding_head_tied_once",
+      "w": 2975,
+      "h": 2975,
+      "power": 0.0022222222222222222,
+      "modeled_area_mm2": 8.846279679999999,
+      "replicate": false,
+      "x": 15905,
+      "y": 19090
+    },
+    {
+      "name": "embedding_head_tied_once_17",
+      "block": "embedding_head_tied_once",
+      "w": 2975,
+      "h": 2975,
+      "power": 0.0022222222222222222,
+      "modeled_area_mm2": 8.846279679999999,
+      "replicate": false,
+      "x": 18940,
+      "y": 19090
+    },
+    {
+      "name": "embedding_head_tied_once_18",
+      "block": "embedding_head_tied_once",
+      "w": 2975,
+      "h": 2975,
+      "power": 0.0022222222222222222,
+      "modeled_area_mm2": 8.846279679999999,
+      "replicate": false,
+      "x": 21975,
+      "y": 19090
+    },
+    {
+      "name": "embedding_head_tied_once_19",
+      "block": "embedding_head_tied_once",
+      "w": 2975,
+      "h": 2975,
+      "power": 0.0022222222222222222,
+      "modeled_area_mm2": 8.846279679999999,
+      "replicate": false,
+      "x": 25010,
+      "y": 19090
+    },
+    {
+      "name": "embedding_head_tied_once_20",
+      "block": "embedding_head_tied_once",
+      "w": 2975,
+      "h": 2975,
+      "power": 0.0022222222222222222,
+      "modeled_area_mm2": 8.846279679999999,
+      "replicate": false,
+      "x": 28045,
+      "y": 19090
+    },
+    {
+      "name": "embedding_head_tied_once_21",
+      "block": "embedding_head_tied_once",
+      "w": 2975,
+      "h": 2975,
+      "power": 0.0022222222222222222,
+      "modeled_area_mm2": 8.846279679999999,
+      "replicate": false,
+      "x": 31080,
+      "y": 19090
+    },
+    {
+      "name": "embedding_head_tied_once_22",
+      "block": "embedding_head_tied_once",
+      "w": 2975,
+      "h": 2975,
+      "power": 0.0022222222222222222,
+      "modeled_area_mm2": 8.846279679999999,
+      "replicate": false,
+      "x": 34115,
+      "y": 19090
+    },
+    {
+      "name": "embedding_head_tied_once_23",
+      "block": "embedding_head_tied_once",
+      "w": 2975,
+      "h": 2975,
+      "power": 0.0022222222222222222,
+      "modeled_area_mm2": 8.846279679999999,
+      "replicate": false,
+      "x": 37150,
+      "y": 19090
+    },
+    {
+      "name": "embedding_head_tied_once_24",
+      "block": "embedding_head_tied_once",
+      "w": 2975,
+      "h": 2975,
+      "power": 0.0022222222222222222,
+      "modeled_area_mm2": 8.846279679999999,
+      "replicate": false,
+      "x": 40185,
+      "y": 19090
+    },
+    {
+      "name": "embedding_head_tied_once_25",
+      "block": "embedding_head_tied_once",
+      "w": 2975,
+      "h": 2975,
+      "power": 0.0022222222222222222,
+      "modeled_area_mm2": 8.846279679999999,
+      "replicate": false,
+      "x": 730,
+      "y": 22125
+    },
+    {
+      "name": "embedding_head_tied_once_26",
+      "block": "embedding_head_tied_once",
+      "w": 2975,
+      "h": 2975,
+      "power": 0.0022222222222222222,
+      "modeled_area_mm2": 8.846279679999999,
+      "replicate": false,
+      "x": 3765,
+      "y": 22125
+    },
+    {
+      "name": "embedding_head_tied_once_27",
+      "block": "embedding_head_tied_once",
+      "w": 2975,
+      "h": 2975,
+      "power": 0.0022222222222222222,
+      "modeled_area_mm2": 8.846279679999999,
+      "replicate": false,
+      "x": 6800,
+      "y": 22125
+    },
+    {
+      "name": "embedding_head_tied_once_28",
+      "block": "embedding_head_tied_once",
+      "w": 2975,
+      "h": 2975,
+      "power": 0.0022222222222222222,
+      "modeled_area_mm2": 8.846279679999999,
+      "replicate": false,
+      "x": 9835,
+      "y": 22125
+    },
+    {
+      "name": "embedding_head_tied_once_29",
+      "block": "embedding_head_tied_once",
+      "w": 2975,
+      "h": 2975,
+      "power": 0.0022222222222222222,
+      "modeled_area_mm2": 8.846279679999999,
+      "replicate": false,
+      "x": 12870,
+      "y": 22125
+    },
+    {
+      "name": "embedding_head_tied_once_30",
+      "block": "embedding_head_tied_once",
+      "w": 2975,
+      "h": 2975,
+      "power": 0.0022222222222222222,
+      "modeled_area_mm2": 8.846279679999999,
+      "replicate": false,
+      "x": 15905,
+      "y": 22125
+    },
+    {
+      "name": "embedding_head_tied_once_31",
+      "block": "embedding_head_tied_once",
+      "w": 2975,
+      "h": 2975,
+      "power": 0.0022222222222222222,
+      "modeled_area_mm2": 8.846279679999999,
+      "replicate": false,
+      "x": 18940,
+      "y": 22125
+    },
+    {
+      "name": "embedding_head_tied_once_32",
+      "block": "embedding_head_tied_once",
+      "w": 2975,
+      "h": 2975,
+      "power": 0.0022222222222222222,
+      "modeled_area_mm2": 8.846279679999999,
+      "replicate": false,
+      "x": 21975,
+      "y": 22125
+    },
+    {
+      "name": "embedding_head_tied_once_33",
+      "block": "embedding_head_tied_once",
+      "w": 2975,
+      "h": 2975,
+      "power": 0.0022222222222222222,
+      "modeled_area_mm2": 8.846279679999999,
+      "replicate": false,
+      "x": 25010,
+      "y": 22125
+    },
+    {
+      "name": "embedding_head_tied_once_34",
+      "block": "embedding_head_tied_once",
+      "w": 2975,
+      "h": 2975,
+      "power": 0.0022222222222222222,
+      "modeled_area_mm2": 8.846279679999999,
+      "replicate": false,
+      "x": 28045,
+      "y": 22125
+    },
+    {
+      "name": "embedding_head_tied_once_35",
+      "block": "embedding_head_tied_once",
+      "w": 2975,
+      "h": 2975,
+      "power": 0.0022222222222222222,
+      "modeled_area_mm2": 8.846279679999999,
+      "replicate": false,
+      "x": 31080,
+      "y": 22125
+    },
+    {
+      "name": "producer_KV_and_positions_0",
+      "block": "producer_KV_and_positions",
+      "w": 2930,
+      "h": 2930,
+      "power": 0.0044444444444444444,
+      "modeled_area_mm2": 8.56983344,
+      "replicate": false,
+      "x": 12710,
+      "y": 31210
+    },
+    {
+      "name": "producer_KV_and_positions_1",
+      "block": "producer_KV_and_positions",
+      "w": 2930,
+      "h": 2930,
+      "power": 0.0044444444444444444,
+      "modeled_area_mm2": 8.56983344,
+      "replicate": false,
+      "x": 15700,
+      "y": 31210
+    },
+    {
+      "name": "producer_KV_and_positions_2",
+      "block": "producer_KV_and_positions",
+      "w": 2930,
+      "h": 2930,
+      "power": 0.0044444444444444444,
+      "modeled_area_mm2": 8.56983344,
+      "replicate": false,
+      "x": 18690,
+      "y": 31210
+    },
+    {
+      "name": "producer_KV_and_positions_3",
+      "block": "producer_KV_and_positions",
+      "w": 2930,
+      "h": 2930,
+      "power": 0.0044444444444444444,
+      "modeled_area_mm2": 8.56983344,
+      "replicate": false,
+      "x": 21680,
+      "y": 31210
+    },
+    {
+      "name": "producer_KV_and_positions_4",
+      "block": "producer_KV_and_positions",
+      "w": 2930,
+      "h": 2930,
+      "power": 0.0044444444444444444,
+      "modeled_area_mm2": 8.56983344,
+      "replicate": false,
+      "x": 24670,
+      "y": 31210
+    },
+    {
+      "name": "producer_KV_and_positions_5",
+      "block": "producer_KV_and_positions",
+      "w": 2930,
+      "h": 2930,
+      "power": 0.0044444444444444444,
+      "modeled_area_mm2": 8.56983344,
+      "replicate": false,
+      "x": 27660,
+      "y": 31210
+    },
+    {
+      "name": "producer_KV_and_positions_6",
+      "block": "producer_KV_and_positions",
+      "w": 2930,
+      "h": 2930,
+      "power": 0.0044444444444444444,
+      "modeled_area_mm2": 8.56983344,
+      "replicate": false,
+      "x": 30650,
+      "y": 31210
+    },
+    {
+      "name": "producer_KV_and_positions_7",
+      "block": "producer_KV_and_positions",
+      "w": 2930,
+      "h": 2930,
+      "power": 0.0044444444444444444,
+      "modeled_area_mm2": 8.56983344,
+      "replicate": false,
+      "x": 33640,
+      "y": 31210
+    },
+    {
+      "name": "producer_KV_and_positions_8",
+      "block": "producer_KV_and_positions",
+      "w": 2930,
+      "h": 2930,
+      "power": 0.0044444444444444444,
+      "modeled_area_mm2": 8.56983344,
+      "replicate": false,
+      "x": 36630,
+      "y": 31210
+    },
+    {
+      "name": "codebooks_and_other_metadata_0",
+      "block": "codebooks_and_other_metadata",
+      "w": 2935,
+      "h": 2935,
+      "power": 0.002058823529411765,
+      "modeled_area_mm2": 8.592600047058824,
+      "replicate": false,
+      "x": 3755,
+      "y": 28185
+    },
+    {
+      "name": "codebooks_and_other_metadata_1",
+      "block": "codebooks_and_other_metadata",
+      "w": 2935,
+      "h": 2935,
+      "power": 0.002058823529411765,
+      "modeled_area_mm2": 8.592600047058824,
+      "replicate": false,
+      "x": 6750,
+      "y": 28185
+    },
+    {
+      "name": "codebooks_and_other_metadata_2",
+      "block": "codebooks_and_other_metadata",
+      "w": 2935,
+      "h": 2935,
+      "power": 0.002058823529411765,
+      "modeled_area_mm2": 8.592600047058824,
+      "replicate": false,
+      "x": 9745,
+      "y": 28185
+    },
+    {
+      "name": "codebooks_and_other_metadata_3",
+      "block": "codebooks_and_other_metadata",
+      "w": 2935,
+      "h": 2935,
+      "power": 0.002058823529411765,
+      "modeled_area_mm2": 8.592600047058824,
+      "replicate": false,
+      "x": 12740,
+      "y": 28185
+    },
+    {
+      "name": "codebooks_and_other_metadata_4",
+      "block": "codebooks_and_other_metadata",
+      "w": 2935,
+      "h": 2935,
+      "power": 0.002058823529411765,
+      "modeled_area_mm2": 8.592600047058824,
+      "replicate": false,
+      "x": 15735,
+      "y": 28185
+    },
+    {
+      "name": "codebooks_and_other_metadata_5",
+      "block": "codebooks_and_other_metadata",
+      "w": 2935,
+      "h": 2935,
+      "power": 0.002058823529411765,
+      "modeled_area_mm2": 8.592600047058824,
+      "replicate": false,
+      "x": 18730,
+      "y": 28185
+    },
+    {
+      "name": "codebooks_and_other_metadata_6",
+      "block": "codebooks_and_other_metadata",
+      "w": 2935,
+      "h": 2935,
+      "power": 0.002058823529411765,
+      "modeled_area_mm2": 8.592600047058824,
+      "replicate": false,
+      "x": 21725,
+      "y": 28185
+    },
+    {
+      "name": "codebooks_and_other_metadata_7",
+      "block": "codebooks_and_other_metadata",
+      "w": 2935,
+      "h": 2935,
+      "power": 0.002058823529411765,
+      "modeled_area_mm2": 8.592600047058824,
+      "replicate": false,
+      "x": 24720,
+      "y": 28185
+    },
+    {
+      "name": "codebooks_and_other_metadata_8",
+      "block": "codebooks_and_other_metadata",
+      "w": 2935,
+      "h": 2935,
+      "power": 0.002058823529411765,
+      "modeled_area_mm2": 8.592600047058824,
+      "replicate": false,
+      "x": 27715,
+      "y": 28185
+    },
+    {
+      "name": "codebooks_and_other_metadata_9",
+      "block": "codebooks_and_other_metadata",
+      "w": 2935,
+      "h": 2935,
+      "power": 0.002058823529411765,
+      "modeled_area_mm2": 8.592600047058824,
+      "replicate": false,
+      "x": 30710,
+      "y": 28185
+    },
+    {
+      "name": "codebooks_and_other_metadata_10",
+      "block": "codebooks_and_other_metadata",
+      "w": 2935,
+      "h": 2935,
+      "power": 0.002058823529411765,
+      "modeled_area_mm2": 8.592600047058824,
+      "replicate": false,
+      "x": 33705,
+      "y": 28185
+    },
+    {
+      "name": "codebooks_and_other_metadata_11",
+      "block": "codebooks_and_other_metadata",
+      "w": 2935,
+      "h": 2935,
+      "power": 0.002058823529411765,
+      "modeled_area_mm2": 8.592600047058824,
+      "replicate": false,
+      "x": 36700,
+      "y": 28185
+    },
+    {
+      "name": "codebooks_and_other_metadata_12",
+      "block": "codebooks_and_other_metadata",
+      "w": 2935,
+      "h": 2935,
+      "power": 0.002058823529411765,
+      "modeled_area_mm2": 8.592600047058824,
+      "replicate": false,
+      "x": 39695,
+      "y": 28185
+    },
+    {
+      "name": "codebooks_and_other_metadata_13",
+      "block": "codebooks_and_other_metadata",
+      "w": 2935,
+      "h": 2935,
+      "power": 0.002058823529411765,
+      "modeled_area_mm2": 8.592600047058824,
+      "replicate": false,
+      "x": 730,
+      "y": 31210
+    },
+    {
+      "name": "codebooks_and_other_metadata_14",
+      "block": "codebooks_and_other_metadata",
+      "w": 2935,
+      "h": 2935,
+      "power": 0.002058823529411765,
+      "modeled_area_mm2": 8.592600047058824,
+      "replicate": false,
+      "x": 3725,
+      "y": 31210
+    },
+    {
+      "name": "codebooks_and_other_metadata_15",
+      "block": "codebooks_and_other_metadata",
+      "w": 2935,
+      "h": 2935,
+      "power": 0.002058823529411765,
+      "modeled_area_mm2": 8.592600047058824,
+      "replicate": false,
+      "x": 6720,
+      "y": 31210
+    },
+    {
+      "name": "codebooks_and_other_metadata_16",
+      "block": "codebooks_and_other_metadata",
+      "w": 2935,
+      "h": 2935,
+      "power": 0.002058823529411765,
+      "modeled_area_mm2": 8.592600047058824,
+      "replicate": false,
+      "x": 9715,
+      "y": 31210
+    },
+    {
+      "name": "shared_product_engine_0",
+      "block": "shared_product_engine",
+      "w": 2480,
+      "h": 2480,
+      "power": 0.075,
+      "modeled_area_mm2": 6.137030636787,
+      "replicate": true,
+      "x": 20295,
+      "y": 48575
+    },
+    {
+      "name": "shared_product_engine_1",
+      "block": "shared_product_engine",
+      "w": 2480,
+      "h": 2480,
+      "power": 0.075,
+      "modeled_area_mm2": 6.137030636787,
+      "replicate": true,
+      "x": 22835,
+      "y": 48575
+    },
+    {
+      "name": "encoder_dynamic_attention_0",
+      "block": "encoder_dynamic_attention",
+      "w": 3000,
+      "h": 3000,
+      "power": 0.0375,
+      "modeled_area_mm2": 9.0,
+      "replicate": false,
+      "x": 730,
+      "y": 730
+    },
+    {
+      "name": "encoder_dynamic_attention_1",
+      "block": "encoder_dynamic_attention",
+      "w": 3000,
+      "h": 3000,
+      "power": 0.0375,
+      "modeled_area_mm2": 9.0,
+      "replicate": false,
+      "x": 3790,
+      "y": 730
+    },
+    {
+      "name": "decoder_dynamic_attention_0",
+      "block": "decoder_dynamic_attention",
+      "w": 2740,
+      "h": 2740,
+      "power": 0.03,
+      "modeled_area_mm2": 7.5,
+      "replicate": false,
+      "x": 40510,
+      "y": 12970
+    },
+    {
+      "name": "decoder_dynamic_attention_1",
+      "block": "decoder_dynamic_attention",
+      "w": 2740,
+      "h": 2740,
+      "power": 0.03,
+      "modeled_area_mm2": 7.5,
+      "replicate": false,
+      "x": 18070,
+      "y": 42890
+    },
+    {
+      "name": "producer_dynamic_0",
+      "block": "producer_dynamic",
+      "w": 2450,
+      "h": 2450,
+      "power": 0.03,
+      "modeled_area_mm2": 6.0,
+      "replicate": false,
+      "x": 25375,
+      "y": 48575
+    },
+    {
+      "name": "control_clock_IO_interface_0",
+      "block": "control_clock_IO_interface",
+      "w": 2450,
+      "h": 2450,
+      "power": 0.03,
+      "modeled_area_mm2": 6.0,
+      "replicate": false,
+      "x": 27885,
+      "y": 48575
+    },
+    {
+      "name": "control_clock_IO_interface_1",
+      "block": "control_clock_IO_interface",
+      "w": 2450,
+      "h": 2450,
+      "power": 0.03,
+      "modeled_area_mm2": 6.0,
+      "replicate": false,
+      "x": 30395,
+      "y": 48575
+    },
+    {
+      "name": "array_decoder_phase_mux_allowance_0",
+      "block": "array_decoder_phase_mux_allowance",
+      "w": 2845,
+      "h": 2845,
+      "power": 0.002857142857142857,
+      "modeled_area_mm2": 8.083428571428572,
+      "replicate": false,
+      "x": 39620,
+      "y": 31210
+    },
+    {
+      "name": "array_decoder_phase_mux_allowance_1",
+      "block": "array_decoder_phase_mux_allowance",
+      "w": 2845,
+      "h": 2845,
+      "power": 0.002857142857142857,
+      "modeled_area_mm2": 8.083428571428572,
+      "replicate": false,
+      "x": 730,
+      "y": 34205
+    },
+    {
+      "name": "array_decoder_phase_mux_allowance_2",
+      "block": "array_decoder_phase_mux_allowance",
+      "w": 2845,
+      "h": 2845,
+      "power": 0.002857142857142857,
+      "modeled_area_mm2": 8.083428571428572,
+      "replicate": false,
+      "x": 3635,
+      "y": 34205
+    },
+    {
+      "name": "array_decoder_phase_mux_allowance_3",
+      "block": "array_decoder_phase_mux_allowance",
+      "w": 2845,
+      "h": 2845,
+      "power": 0.002857142857142857,
+      "modeled_area_mm2": 8.083428571428572,
+      "replicate": false,
+      "x": 6540,
+      "y": 34205
+    },
+    {
+      "name": "array_decoder_phase_mux_allowance_4",
+      "block": "array_decoder_phase_mux_allowance",
+      "w": 2845,
+      "h": 2845,
+      "power": 0.002857142857142857,
+      "modeled_area_mm2": 8.083428571428572,
+      "replicate": false,
+      "x": 9445,
+      "y": 34205
+    },
+    {
+      "name": "array_decoder_phase_mux_allowance_5",
+      "block": "array_decoder_phase_mux_allowance",
+      "w": 2845,
+      "h": 2845,
+      "power": 0.002857142857142857,
+      "modeled_area_mm2": 8.083428571428572,
+      "replicate": false,
+      "x": 12350,
+      "y": 34205
+    },
+    {
+      "name": "array_decoder_phase_mux_allowance_6",
+      "block": "array_decoder_phase_mux_allowance",
+      "w": 2845,
+      "h": 2845,
+      "power": 0.002857142857142857,
+      "modeled_area_mm2": 8.083428571428572,
+      "replicate": false,
+      "x": 15255,
+      "y": 34205
+    },
+    {
+      "name": "mutable_arrays_0",
+      "block": "mutable_arrays",
+      "w": 3000,
+      "h": 3000,
+      "power": 0.0009090909090909091,
+      "modeled_area_mm2": 8.997550893760002,
+      "replicate": false,
+      "x": 6850,
+      "y": 730
+    },
+    {
+      "name": "mutable_arrays_1",
+      "block": "mutable_arrays",
+      "w": 3000,
+      "h": 3000,
+      "power": 0.0009090909090909091,
+      "modeled_area_mm2": 8.997550893760002,
+      "replicate": false,
+      "x": 9910,
+      "y": 730
+    },
+    {
+      "name": "mutable_arrays_2",
+      "block": "mutable_arrays",
+      "w": 3000,
+      "h": 3000,
+      "power": 0.0009090909090909091,
+      "modeled_area_mm2": 8.997550893760002,
+      "replicate": false,
+      "x": 12970,
+      "y": 730
+    },
+    {
+      "name": "mutable_arrays_3",
+      "block": "mutable_arrays",
+      "w": 3000,
+      "h": 3000,
+      "power": 0.0009090909090909091,
+      "modeled_area_mm2": 8.997550893760002,
+      "replicate": false,
+      "x": 16030,
+      "y": 730
+    },
+    {
+      "name": "mutable_arrays_4",
+      "block": "mutable_arrays",
+      "w": 3000,
+      "h": 3000,
+      "power": 0.0009090909090909091,
+      "modeled_area_mm2": 8.997550893760002,
+      "replicate": false,
+      "x": 19090,
+      "y": 730
+    },
+    {
+      "name": "mutable_arrays_5",
+      "block": "mutable_arrays",
+      "w": 3000,
+      "h": 3000,
+      "power": 0.0009090909090909091,
+      "modeled_area_mm2": 8.997550893760002,
+      "replicate": false,
+      "x": 22150,
+      "y": 730
+    },
+    {
+      "name": "mutable_arrays_6",
+      "block": "mutable_arrays",
+      "w": 3000,
+      "h": 3000,
+      "power": 0.0009090909090909091,
+      "modeled_area_mm2": 8.997550893760002,
+      "replicate": false,
+      "x": 25210,
+      "y": 730
+    },
+    {
+      "name": "mutable_arrays_7",
+      "block": "mutable_arrays",
+      "w": 3000,
+      "h": 3000,
+      "power": 0.0009090909090909091,
+      "modeled_area_mm2": 8.997550893760002,
+      "replicate": false,
+      "x": 28270,
+      "y": 730
+    },
+    {
+      "name": "mutable_arrays_8",
+      "block": "mutable_arrays",
+      "w": 3000,
+      "h": 3000,
+      "power": 0.0009090909090909091,
+      "modeled_area_mm2": 8.997550893760002,
+      "replicate": false,
+      "x": 31330,
+      "y": 730
+    },
+    {
+      "name": "mutable_arrays_9",
+      "block": "mutable_arrays",
+      "w": 3000,
+      "h": 3000,
+      "power": 0.0009090909090909091,
+      "modeled_area_mm2": 8.997550893760002,
+      "replicate": false,
+      "x": 34390,
+      "y": 730
+    },
+    {
+      "name": "mutable_arrays_10",
+      "block": "mutable_arrays",
+      "w": 3000,
+      "h": 3000,
+      "power": 0.0009090909090909091,
+      "modeled_area_mm2": 8.997550893760002,
+      "replicate": false,
+      "x": 37450,
+      "y": 730
+    },
+    {
+      "name": "mutable_arrays_11",
+      "block": "mutable_arrays",
+      "w": 3000,
+      "h": 3000,
+      "power": 0.0009090909090909091,
+      "modeled_area_mm2": 8.997550893760002,
+      "replicate": false,
+      "x": 730,
+      "y": 3790
+    },
+    {
+      "name": "mutable_arrays_12",
+      "block": "mutable_arrays",
+      "w": 3000,
+      "h": 3000,
+      "power": 0.0009090909090909091,
+      "modeled_area_mm2": 8.997550893760002,
+      "replicate": false,
+      "x": 3790,
+      "y": 3790
+    },
+    {
+      "name": "mutable_arrays_13",
+      "block": "mutable_arrays",
+      "w": 3000,
+      "h": 3000,
+      "power": 0.0009090909090909091,
+      "modeled_area_mm2": 8.997550893760002,
+      "replicate": false,
+      "x": 6850,
+      "y": 3790
+    },
+    {
+      "name": "mutable_arrays_14",
+      "block": "mutable_arrays",
+      "w": 3000,
+      "h": 3000,
+      "power": 0.0009090909090909091,
+      "modeled_area_mm2": 8.997550893760002,
+      "replicate": false,
+      "x": 9910,
+      "y": 3790
+    },
+    {
+      "name": "mutable_arrays_15",
+      "block": "mutable_arrays",
+      "w": 3000,
+      "h": 3000,
+      "power": 0.0009090909090909091,
+      "modeled_area_mm2": 8.997550893760002,
+      "replicate": false,
+      "x": 12970,
+      "y": 3790
+    },
+    {
+      "name": "mutable_arrays_16",
+      "block": "mutable_arrays",
+      "w": 3000,
+      "h": 3000,
+      "power": 0.0009090909090909091,
+      "modeled_area_mm2": 8.997550893760002,
+      "replicate": false,
+      "x": 16030,
+      "y": 3790
+    },
+    {
+      "name": "mutable_arrays_17",
+      "block": "mutable_arrays",
+      "w": 3000,
+      "h": 3000,
+      "power": 0.0009090909090909091,
+      "modeled_area_mm2": 8.997550893760002,
+      "replicate": false,
+      "x": 19090,
+      "y": 3790
+    },
+    {
+      "name": "mutable_arrays_18",
+      "block": "mutable_arrays",
+      "w": 3000,
+      "h": 3000,
+      "power": 0.0009090909090909091,
+      "modeled_area_mm2": 8.997550893760002,
+      "replicate": false,
+      "x": 22150,
+      "y": 3790
+    },
+    {
+      "name": "mutable_arrays_19",
+      "block": "mutable_arrays",
+      "w": 3000,
+      "h": 3000,
+      "power": 0.0009090909090909091,
+      "modeled_area_mm2": 8.997550893760002,
+      "replicate": false,
+      "x": 25210,
+      "y": 3790
+    },
+    {
+      "name": "mutable_arrays_20",
+      "block": "mutable_arrays",
+      "w": 3000,
+      "h": 3000,
+      "power": 0.0009090909090909091,
+      "modeled_area_mm2": 8.997550893760002,
+      "replicate": false,
+      "x": 28270,
+      "y": 3790
+    },
+    {
+      "name": "mutable_arrays_21",
+      "block": "mutable_arrays",
+      "w": 3000,
+      "h": 3000,
+      "power": 0.0009090909090909091,
+      "modeled_area_mm2": 8.997550893760002,
+      "replicate": false,
+      "x": 31330,
+      "y": 3790
+    },
+    {
+      "name": "mutable_arrays_22",
+      "block": "mutable_arrays",
+      "w": 3000,
+      "h": 3000,
+      "power": 0.0009090909090909091,
+      "modeled_area_mm2": 8.997550893760002,
+      "replicate": false,
+      "x": 34390,
+      "y": 3790
+    },
+    {
+      "name": "mutable_arrays_23",
+      "block": "mutable_arrays",
+      "w": 3000,
+      "h": 3000,
+      "power": 0.0009090909090909091,
+      "modeled_area_mm2": 8.997550893760002,
+      "replicate": false,
+      "x": 37450,
+      "y": 3790
+    },
+    {
+      "name": "mutable_arrays_24",
+      "block": "mutable_arrays",
+      "w": 3000,
+      "h": 3000,
+      "power": 0.0009090909090909091,
+      "modeled_area_mm2": 8.997550893760002,
+      "replicate": false,
+      "x": 730,
+      "y": 6850
+    },
+    {
+      "name": "mutable_arrays_25",
+      "block": "mutable_arrays",
+      "w": 3000,
+      "h": 3000,
+      "power": 0.0009090909090909091,
+      "modeled_area_mm2": 8.997550893760002,
+      "replicate": false,
+      "x": 3790,
+      "y": 6850
+    },
+    {
+      "name": "mutable_arrays_26",
+      "block": "mutable_arrays",
+      "w": 3000,
+      "h": 3000,
+      "power": 0.0009090909090909091,
+      "modeled_area_mm2": 8.997550893760002,
+      "replicate": false,
+      "x": 6850,
+      "y": 6850
+    },
+    {
+      "name": "mutable_arrays_27",
+      "block": "mutable_arrays",
+      "w": 3000,
+      "h": 3000,
+      "power": 0.0009090909090909091,
+      "modeled_area_mm2": 8.997550893760002,
+      "replicate": false,
+      "x": 9910,
+      "y": 6850
+    },
+    {
+      "name": "mutable_arrays_28",
+      "block": "mutable_arrays",
+      "w": 3000,
+      "h": 3000,
+      "power": 0.0009090909090909091,
+      "modeled_area_mm2": 8.997550893760002,
+      "replicate": false,
+      "x": 12970,
+      "y": 6850
+    },
+    {
+      "name": "mutable_arrays_29",
+      "block": "mutable_arrays",
+      "w": 3000,
+      "h": 3000,
+      "power": 0.0009090909090909091,
+      "modeled_area_mm2": 8.997550893760002,
+      "replicate": false,
+      "x": 16030,
+      "y": 6850
+    },
+    {
+      "name": "mutable_arrays_30",
+      "block": "mutable_arrays",
+      "w": 3000,
+      "h": 3000,
+      "power": 0.0009090909090909091,
+      "modeled_area_mm2": 8.997550893760002,
+      "replicate": false,
+      "x": 19090,
+      "y": 6850
+    },
+    {
+      "name": "mutable_arrays_31",
+      "block": "mutable_arrays",
+      "w": 3000,
+      "h": 3000,
+      "power": 0.0009090909090909091,
+      "modeled_area_mm2": 8.997550893760002,
+      "replicate": false,
+      "x": 22150,
+      "y": 6850
+    },
+    {
+      "name": "mutable_arrays_32",
+      "block": "mutable_arrays",
+      "w": 3000,
+      "h": 3000,
+      "power": 0.0009090909090909091,
+      "modeled_area_mm2": 8.997550893760002,
+      "replicate": false,
+      "x": 25210,
+      "y": 6850
+    },
+    {
+      "name": "mutable_arrays_33",
+      "block": "mutable_arrays",
+      "w": 3000,
+      "h": 3000,
+      "power": 0.0009090909090909091,
+      "modeled_area_mm2": 8.997550893760002,
+      "replicate": false,
+      "x": 28270,
+      "y": 6850
+    },
+    {
+      "name": "mutable_arrays_34",
+      "block": "mutable_arrays",
+      "w": 3000,
+      "h": 3000,
+      "power": 0.0009090909090909091,
+      "modeled_area_mm2": 8.997550893760002,
+      "replicate": false,
+      "x": 31330,
+      "y": 6850
+    },
+    {
+      "name": "mutable_arrays_35",
+      "block": "mutable_arrays",
+      "w": 3000,
+      "h": 3000,
+      "power": 0.0009090909090909091,
+      "modeled_area_mm2": 8.997550893760002,
+      "replicate": false,
+      "x": 34390,
+      "y": 6850
+    },
+    {
+      "name": "mutable_arrays_36",
+      "block": "mutable_arrays",
+      "w": 3000,
+      "h": 3000,
+      "power": 0.0009090909090909091,
+      "modeled_area_mm2": 8.997550893760002,
+      "replicate": false,
+      "x": 37450,
+      "y": 6850
+    },
+    {
+      "name": "mutable_arrays_37",
+      "block": "mutable_arrays",
+      "w": 3000,
+      "h": 3000,
+      "power": 0.0009090909090909091,
+      "modeled_area_mm2": 8.997550893760002,
+      "replicate": false,
+      "x": 730,
+      "y": 9910
+    },
+    {
+      "name": "mutable_arrays_38",
+      "block": "mutable_arrays",
+      "w": 3000,
+      "h": 3000,
+      "power": 0.0009090909090909091,
+      "modeled_area_mm2": 8.997550893760002,
+      "replicate": false,
+      "x": 3790,
+      "y": 9910
+    },
+    {
+      "name": "mutable_arrays_39",
+      "block": "mutable_arrays",
+      "w": 3000,
+      "h": 3000,
+      "power": 0.0009090909090909091,
+      "modeled_area_mm2": 8.997550893760002,
+      "replicate": false,
+      "x": 6850,
+      "y": 9910
+    },
+    {
+      "name": "mutable_arrays_40",
+      "block": "mutable_arrays",
+      "w": 3000,
+      "h": 3000,
+      "power": 0.0009090909090909091,
+      "modeled_area_mm2": 8.997550893760002,
+      "replicate": false,
+      "x": 9910,
+      "y": 9910
+    },
+    {
+      "name": "mutable_arrays_41",
+      "block": "mutable_arrays",
+      "w": 3000,
+      "h": 3000,
+      "power": 0.0009090909090909091,
+      "modeled_area_mm2": 8.997550893760002,
+      "replicate": false,
+      "x": 12970,
+      "y": 9910
+    },
+    {
+      "name": "mutable_arrays_42",
+      "block": "mutable_arrays",
+      "w": 3000,
+      "h": 3000,
+      "power": 0.0009090909090909091,
+      "modeled_area_mm2": 8.997550893760002,
+      "replicate": false,
+      "x": 16030,
+      "y": 9910
+    },
+    {
+      "name": "mutable_arrays_43",
+      "block": "mutable_arrays",
+      "w": 3000,
+      "h": 3000,
+      "power": 0.0009090909090909091,
+      "modeled_area_mm2": 8.997550893760002,
+      "replicate": false,
+      "x": 19090,
+      "y": 9910
+    },
+    {
+      "name": "mutable_arrays_44",
+      "block": "mutable_arrays",
+      "w": 3000,
+      "h": 3000,
+      "power": 0.0009090909090909091,
+      "modeled_area_mm2": 8.997550893760002,
+      "replicate": false,
+      "x": 22150,
+      "y": 9910
+    },
+    {
+      "name": "mutable_arrays_45",
+      "block": "mutable_arrays",
+      "w": 3000,
+      "h": 3000,
+      "power": 0.0009090909090909091,
+      "modeled_area_mm2": 8.997550893760002,
+      "replicate": false,
+      "x": 25210,
+      "y": 9910
+    },
+    {
+      "name": "mutable_arrays_46",
+      "block": "mutable_arrays",
+      "w": 3000,
+      "h": 3000,
+      "power": 0.0009090909090909091,
+      "modeled_area_mm2": 8.997550893760002,
+      "replicate": false,
+      "x": 28270,
+      "y": 9910
+    },
+    {
+      "name": "mutable_arrays_47",
+      "block": "mutable_arrays",
+      "w": 3000,
+      "h": 3000,
+      "power": 0.0009090909090909091,
+      "modeled_area_mm2": 8.997550893760002,
+      "replicate": false,
+      "x": 31330,
+      "y": 9910
+    },
+    {
+      "name": "mutable_arrays_48",
+      "block": "mutable_arrays",
+      "w": 3000,
+      "h": 3000,
+      "power": 0.0009090909090909091,
+      "modeled_area_mm2": 8.997550893760002,
+      "replicate": false,
+      "x": 34390,
+      "y": 9910
+    },
+    {
+      "name": "mutable_arrays_49",
+      "block": "mutable_arrays",
+      "w": 3000,
+      "h": 3000,
+      "power": 0.0009090909090909091,
+      "modeled_area_mm2": 8.997550893760002,
+      "replicate": false,
+      "x": 37450,
+      "y": 9910
+    },
+    {
+      "name": "mutable_arrays_50",
+      "block": "mutable_arrays",
+      "w": 3000,
+      "h": 3000,
+      "power": 0.0009090909090909091,
+      "modeled_area_mm2": 8.997550893760002,
+      "replicate": false,
+      "x": 730,
+      "y": 12970
+    },
+    {
+      "name": "mutable_arrays_51",
+      "block": "mutable_arrays",
+      "w": 3000,
+      "h": 3000,
+      "power": 0.0009090909090909091,
+      "modeled_area_mm2": 8.997550893760002,
+      "replicate": false,
+      "x": 3790,
+      "y": 12970
+    },
+    {
+      "name": "mutable_arrays_52",
+      "block": "mutable_arrays",
+      "w": 3000,
+      "h": 3000,
+      "power": 0.0009090909090909091,
+      "modeled_area_mm2": 8.997550893760002,
+      "replicate": false,
+      "x": 6850,
+      "y": 12970
+    },
+    {
+      "name": "mutable_arrays_53",
+      "block": "mutable_arrays",
+      "w": 3000,
+      "h": 3000,
+      "power": 0.0009090909090909091,
+      "modeled_area_mm2": 8.997550893760002,
+      "replicate": false,
+      "x": 9910,
+      "y": 12970
+    },
+    {
+      "name": "mutable_arrays_54",
+      "block": "mutable_arrays",
+      "w": 3000,
+      "h": 3000,
+      "power": 0.0009090909090909091,
+      "modeled_area_mm2": 8.997550893760002,
+      "replicate": false,
+      "x": 12970,
+      "y": 12970
+    },
+    {
+      "name": "mutable_arrays_55",
+      "block": "mutable_arrays",
+      "w": 3000,
+      "h": 3000,
+      "power": 0.0009090909090909091,
+      "modeled_area_mm2": 8.997550893760002,
+      "replicate": false,
+      "x": 16030,
+      "y": 12970
+    },
+    {
+      "name": "mutable_arrays_56",
+      "block": "mutable_arrays",
+      "w": 3000,
+      "h": 3000,
+      "power": 0.0009090909090909091,
+      "modeled_area_mm2": 8.997550893760002,
+      "replicate": false,
+      "x": 19090,
+      "y": 12970
+    },
+    {
+      "name": "mutable_arrays_57",
+      "block": "mutable_arrays",
+      "w": 3000,
+      "h": 3000,
+      "power": 0.0009090909090909091,
+      "modeled_area_mm2": 8.997550893760002,
+      "replicate": false,
+      "x": 22150,
+      "y": 12970
+    },
+    {
+      "name": "mutable_arrays_58",
+      "block": "mutable_arrays",
+      "w": 3000,
+      "h": 3000,
+      "power": 0.0009090909090909091,
+      "modeled_area_mm2": 8.997550893760002,
+      "replicate": false,
+      "x": 25210,
+      "y": 12970
+    },
+    {
+      "name": "mutable_arrays_59",
+      "block": "mutable_arrays",
+      "w": 3000,
+      "h": 3000,
+      "power": 0.0009090909090909091,
+      "modeled_area_mm2": 8.997550893760002,
+      "replicate": false,
+      "x": 28270,
+      "y": 12970
+    },
+    {
+      "name": "mutable_arrays_60",
+      "block": "mutable_arrays",
+      "w": 3000,
+      "h": 3000,
+      "power": 0.0009090909090909091,
+      "modeled_area_mm2": 8.997550893760002,
+      "replicate": false,
+      "x": 31330,
+      "y": 12970
+    },
+    {
+      "name": "mutable_arrays_61",
+      "block": "mutable_arrays",
+      "w": 3000,
+      "h": 3000,
+      "power": 0.0009090909090909091,
+      "modeled_area_mm2": 8.997550893760002,
+      "replicate": false,
+      "x": 34390,
+      "y": 12970
+    },
+    {
+      "name": "mutable_arrays_62",
+      "block": "mutable_arrays",
+      "w": 3000,
+      "h": 3000,
+      "power": 0.0009090909090909091,
+      "modeled_area_mm2": 8.997550893760002,
+      "replicate": false,
+      "x": 37450,
+      "y": 12970
+    },
+    {
+      "name": "mutable_arrays_63",
+      "block": "mutable_arrays",
+      "w": 3000,
+      "h": 3000,
+      "power": 0.0009090909090909091,
+      "modeled_area_mm2": 8.997550893760002,
+      "replicate": false,
+      "x": 730,
+      "y": 16030
+    },
+    {
+      "name": "mutable_arrays_64",
+      "block": "mutable_arrays",
+      "w": 3000,
+      "h": 3000,
+      "power": 0.0009090909090909091,
+      "modeled_area_mm2": 8.997550893760002,
+      "replicate": false,
+      "x": 3790,
+      "y": 16030
+    },
+    {
+      "name": "mutable_arrays_65",
+      "block": "mutable_arrays",
+      "w": 3000,
+      "h": 3000,
+      "power": 0.0009090909090909091,
+      "modeled_area_mm2": 8.997550893760002,
+      "replicate": false,
+      "x": 6850,
+      "y": 16030
+    },
+    {
+      "name": "ordinary_registers_0",
+      "block": "ordinary_registers",
+      "w": 2750,
+      "h": 2750,
+      "power": 0.005,
+      "modeled_area_mm2": 7.5604839296,
+      "replicate": false,
+      "x": 40510,
+      "y": 730
+    },
+    {
+      "name": "ordinary_registers_1",
+      "block": "ordinary_registers",
+      "w": 2750,
+      "h": 2750,
+      "power": 0.005,
+      "modeled_area_mm2": 7.5604839296,
+      "replicate": false,
+      "x": 40510,
+      "y": 3790
+    },
+    {
+      "name": "ordinary_registers_2",
+      "block": "ordinary_registers",
+      "w": 2750,
+      "h": 2750,
+      "power": 0.005,
+      "modeled_area_mm2": 7.5604839296,
+      "replicate": false,
+      "x": 40510,
+      "y": 6850
+    },
+    {
+      "name": "ordinary_registers_3",
+      "block": "ordinary_registers",
+      "w": 2750,
+      "h": 2750,
+      "power": 0.005,
+      "modeled_area_mm2": 7.5604839296,
+      "replicate": false,
+      "x": 40510,
+      "y": 9910
+    }
+  ],
+  "macro_scope": "ABSTRACTS, not routed internals",
+  "run_dir": "runs/measured320_sram_open_macro_off_baseline_whole_44x53mm_pdn40",
+  "vdd": 3.3,
+  "pdn_strap_width_um": 40,
+  "blocks_sha256": "9dea825df9e6660c536ba90be010bbf60ee39ef4d1c0acc2ce8e7d3b722c9953",
+  "placement_utilization": 0.9123915911489608,
+  "pads": [
+    {
+      "name": "vdd_0_0",
+      "master": "dvdd",
+      "x": 355,
+      "y": 0,
+      "orientation": "R0"
+    },
+    {
+      "name": "vss_0_0",
+      "master": "dvss",
+      "x": 2760,
+      "y": 0,
+      "orientation": "R0"
+    },
+    {
+      "name": "vdd_0_1",
+      "master": "dvdd",
+      "x": 5165,
+      "y": 0,
+      "orientation": "R0"
+    },
+    {
+      "name": "vss_0_1",
+      "master": "dvss",
+      "x": 7570,
+      "y": 0,
+      "orientation": "R0"
+    },
+    {
+      "name": "vdd_0_2",
+      "master": "dvdd",
+      "x": 9975,
+      "y": 0,
+      "orientation": "R0"
+    },
+    {
+      "name": "vss_0_2",
+      "master": "dvss",
+      "x": 12380,
+      "y": 0,
+      "orientation": "R0"
+    },
+    {
+      "name": "vdd_0_3",
+      "master": "dvdd",
+      "x": 14785,
+      "y": 0,
+      "orientation": "R0"
+    },
+    {
+      "name": "vss_0_3",
+      "master": "dvss",
+      "x": 17190,
+      "y": 0,
+      "orientation": "R0"
+    },
+    {
+      "name": "vdd_0_4",
+      "master": "dvdd",
+      "x": 19595,
+      "y": 0,
+      "orientation": "R0"
+    },
+    {
+      "name": "vss_0_4",
+      "master": "dvss",
+      "x": 22000,
+      "y": 0,
+      "orientation": "R0"
+    },
+    {
+      "name": "vdd_0_5",
+      "master": "dvdd",
+      "x": 24405,
+      "y": 0,
+      "orientation": "R0"
+    },
+    {
+      "name": "vss_0_5",
+      "master": "dvss",
+      "x": 26810,
+      "y": 0,
+      "orientation": "R0"
+    },
+    {
+      "name": "vdd_0_6",
+      "master": "dvdd",
+      "x": 29215,
+      "y": 0,
+      "orientation": "R0"
+    },
+    {
+      "name": "vss_0_6",
+      "master": "dvss",
+      "x": 31620,
+      "y": 0,
+      "orientation": "R0"
+    },
+    {
+      "name": "pcm_data",
+      "master": "bi_t",
+      "x": 34025,
+      "y": 0,
+      "orientation": "R0"
+    },
+    {
+      "name": "pcm_bclk",
+      "master": "bi_t",
+      "x": 36430,
+      "y": 0,
+      "orientation": "R0"
+    },
+    {
+      "name": "pcm_lrclk",
+      "master": "bi_t",
+      "x": 38835,
+      "y": 0,
+      "orientation": "R0"
+    },
+    {
+      "name": "token_data",
+      "master": "bi_t",
+      "x": 41240,
+      "y": 0,
+      "orientation": "R0"
+    },
+    {
+      "name": "vdd_1_0",
+      "master": "dvdd",
+      "x": 43650,
+      "y": 355,
+      "orientation": "R90"
+    },
+    {
+      "name": "vss_1_0",
+      "master": "dvss",
+      "x": 43650,
+      "y": 3260,
+      "orientation": "R90"
+    },
+    {
+      "name": "vdd_1_1",
+      "master": "dvdd",
+      "x": 43650,
+      "y": 6165,
+      "orientation": "R90"
+    },
+    {
+      "name": "vss_1_1",
+      "master": "dvss",
+      "x": 43650,
+      "y": 9070,
+      "orientation": "R90"
+    },
+    {
+      "name": "vdd_1_2",
+      "master": "dvdd",
+      "x": 43650,
+      "y": 11975,
+      "orientation": "R90"
+    },
+    {
+      "name": "vss_1_2",
+      "master": "dvss",
+      "x": 43650,
+      "y": 14880,
+      "orientation": "R90"
+    },
+    {
+      "name": "vdd_1_3",
+      "master": "dvdd",
+      "x": 43650,
+      "y": 17785,
+      "orientation": "R90"
+    },
+    {
+      "name": "vss_1_3",
+      "master": "dvss",
+      "x": 43650,
+      "y": 20690,
+      "orientation": "R90"
+    },
+    {
+      "name": "vdd_1_4",
+      "master": "dvdd",
+      "x": 43650,
+      "y": 23595,
+      "orientation": "R90"
+    },
+    {
+      "name": "vss_1_4",
+      "master": "dvss",
+      "x": 43650,
+      "y": 26500,
+      "orientation": "R90"
+    },
+    {
+      "name": "vdd_1_5",
+      "master": "dvdd",
+      "x": 43650,
+      "y": 29405,
+      "orientation": "R90"
+    },
+    {
+      "name": "vss_1_5",
+      "master": "dvss",
+      "x": 43650,
+      "y": 32310,
+      "orientation": "R90"
+    },
+    {
+      "name": "vdd_1_6",
+      "master": "dvdd",
+      "x": 43650,
+      "y": 35215,
+      "orientation": "R90"
+    },
+    {
+      "name": "vss_1_6",
+      "master": "dvss",
+      "x": 43650,
+      "y": 38120,
+      "orientation": "R90"
+    },
+    {
+      "name": "token_valid",
+      "master": "bi_t",
+      "x": 43650,
+      "y": 41025,
+      "orientation": "R90"
+    },
+    {
+      "name": "token_ready",
+      "master": "bi_t",
+      "x": 43650,
+      "y": 43930,
+      "orientation": "R90"
+    },
+    {
+      "name": "clock",
+      "master": "bi_t",
+      "x": 43650,
+      "y": 46835,
+      "orientation": "R90"
+    },
+    {
+      "name": "reset_n",
+      "master": "bi_t",
+      "x": 43650,
+      "y": 49740,
+      "orientation": "R90"
+    },
+    {
+      "name": "vdd_2_0",
+      "master": "dvdd",
+      "x": 43570,
+      "y": 52650,
+      "orientation": "R180"
+    },
+    {
+      "name": "vss_2_0",
+      "master": "dvss",
+      "x": 41165,
+      "y": 52650,
+      "orientation": "R180"
+    },
+    {
+      "name": "vdd_2_1",
+      "master": "dvdd",
+      "x": 38760,
+      "y": 52650,
+      "orientation": "R180"
+    },
+    {
+      "name": "vss_2_1",
+      "master": "dvss",
+      "x": 36355,
+      "y": 52650,
+      "orientation": "R180"
+    },
+    {
+      "name": "vdd_2_2",
+      "master": "dvdd",
+      "x": 33950,
+      "y": 52650,
+      "orientation": "R180"
+    },
+    {
+      "name": "vss_2_2",
+      "master": "dvss",
+      "x": 31545,
+      "y": 52650,
+      "orientation": "R180"
+    },
+    {
+      "name": "vdd_2_3",
+      "master": "dvdd",
+      "x": 29140,
+      "y": 52650,
+      "orientation": "R180"
+    },
+    {
+      "name": "vss_2_3",
+      "master": "dvss",
+      "x": 26735,
+      "y": 52650,
+      "orientation": "R180"
+    },
+    {
+      "name": "vdd_2_4",
+      "master": "dvdd",
+      "x": 24330,
+      "y": 52650,
+      "orientation": "R180"
+    },
+    {
+      "name": "vss_2_4",
+      "master": "dvss",
+      "x": 21925,
+      "y": 52650,
+      "orientation": "R180"
+    },
+    {
+      "name": "vdd_2_5",
+      "master": "dvdd",
+      "x": 19520,
+      "y": 52650,
+      "orientation": "R180"
+    },
+    {
+      "name": "vss_2_5",
+      "master": "dvss",
+      "x": 17115,
+      "y": 52650,
+      "orientation": "R180"
+    },
+    {
+      "name": "vdd_2_6",
+      "master": "dvdd",
+      "x": 14710,
+      "y": 52650,
+      "orientation": "R180"
+    },
+    {
+      "name": "vss_2_6",
+      "master": "dvss",
+      "x": 12305,
+      "y": 52650,
+      "orientation": "R180"
+    },
+    {
+      "name": "spi_sck",
+      "master": "bi_t",
+      "x": 9900,
+      "y": 52650,
+      "orientation": "R180"
+    },
+    {
+      "name": "spi_mosi",
+      "master": "bi_t",
+      "x": 7495,
+      "y": 52650,
+      "orientation": "R180"
+    },
+    {
+      "name": "spi_miso",
+      "master": "bi_t",
+      "x": 5090,
+      "y": 52650,
+      "orientation": "R180"
+    },
+    {
+      "name": "spi_cs_n",
+      "master": "bi_t",
+      "x": 2685,
+      "y": 52650,
+      "orientation": "R180"
+    },
+    {
+      "name": "vdd_3_0",
+      "master": "dvdd",
+      "x": 0,
+      "y": 52570,
+      "orientation": "R270"
+    },
+    {
+      "name": "vss_3_0",
+      "master": "dvss",
+      "x": 0,
+      "y": 49665,
+      "orientation": "R270"
+    },
+    {
+      "name": "vdd_3_1",
+      "master": "dvdd",
+      "x": 0,
+      "y": 46760,
+      "orientation": "R270"
+    },
+    {
+      "name": "vss_3_1",
+      "master": "dvss",
+      "x": 0,
+      "y": 43855,
+      "orientation": "R270"
+    },
+    {
+      "name": "vdd_3_2",
+      "master": "dvdd",
+      "x": 0,
+      "y": 40950,
+      "orientation": "R270"
+    },
+    {
+      "name": "vss_3_2",
+      "master": "dvss",
+      "x": 0,
+      "y": 38045,
+      "orientation": "R270"
+    },
+    {
+      "name": "vdd_3_3",
+      "master": "dvdd",
+      "x": 0,
+      "y": 35140,
+      "orientation": "R270"
+    },
+    {
+      "name": "vss_3_3",
+      "master": "dvss",
+      "x": 0,
+      "y": 32235,
+      "orientation": "R270"
+    },
+    {
+      "name": "vdd_3_4",
+      "master": "dvdd",
+      "x": 0,
+      "y": 29330,
+      "orientation": "R270"
+    },
+    {
+      "name": "vss_3_4",
+      "master": "dvss",
+      "x": 0,
+      "y": 26425,
+      "orientation": "R270"
+    },
+    {
+      "name": "vdd_3_5",
+      "master": "dvdd",
+      "x": 0,
+      "y": 23520,
+      "orientation": "R270"
+    },
+    {
+      "name": "vss_3_5",
+      "master": "dvss",
+      "x": 0,
+      "y": 20615,
+      "orientation": "R270"
+    },
+    {
+      "name": "vdd_3_6",
+      "master": "dvdd",
+      "x": 0,
+      "y": 17710,
+      "orientation": "R270"
+    },
+    {
+      "name": "vss_3_6",
+      "master": "dvss",
+      "x": 0,
+      "y": 14805,
+      "orientation": "R270"
+    },
+    {
+      "name": "uart_rx",
+      "master": "bi_t",
+      "x": 0,
+      "y": 11900,
+      "orientation": "R270"
+    },
+    {
+      "name": "uart_tx",
+      "master": "bi_t",
+      "x": 0,
+      "y": 8995,
+      "orientation": "R270"
+    },
+    {
+      "name": "test_en",
+      "master": "bi_t",
+      "x": 0,
+      "y": 6090,
+      "orientation": "R270"
+    },
+    {
+      "name": "status",
+      "master": "bi_t",
+      "x": 0,
+      "y": 3185,
+      "orientation": "R270"
+    }
+  ]
+}

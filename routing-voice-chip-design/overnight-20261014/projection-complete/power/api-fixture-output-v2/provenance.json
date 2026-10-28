@@ -1,0 +1,16 @@
+{
+  "inputs_sha256": {
+    "/Volumes/Extreme Pro Dev/coding/llm-hardware/route-voice-llm-hardware-v1-storage/routing-voice-chip-design/pdks/ciel/gf180mcu/versions/54435919abffb937387ec956209f9cf5fd2dfbee/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__tt_025C_3v30.lib": "f9dee07cf158324934b0c59144d970a2e8313f43533ede6283ec3c136f82fe53",
+    "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/projection-complete/power/api-fixture/macro-parser-fixed.lib": "9ad2e46f6137e597dbca2d7ff100a7a2a0fe1fdd1fcf7448120f52dab1ace68a",
+    "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/projection-complete/power/api-fixture/probe.v": "264d2708eac373d092d51a30245b255bbcbe7ab059509fc5be1a23da79e8ad14",
+    "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/projection-complete/power/api-fixture/probe.sdc": "78242fac8f5fa1d3c4591b879e6428411959090358270f4b9a9555c502934273",
+    "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/projection-complete/power/api-fixture/probe.spef": "13aee725d4cda239dc8e65c66c27054e9e33d8d473d954d351e423f3ec55a80e",
+    "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/projection-complete/power/api-fixture/probe.vcd": "830bc549f79fb981319c396d689b8ba9cdb77e53becd335483cd136ff0b876f3"
+  },
+  "scope": "tb/dut",
+  "correctness_scope": "Synthetic one-cell API fixture; no projection correctness or power evidence",
+  "activity_netlist_sha256": "264d2708eac373d092d51a30245b255bbcbe7ab059509fc5be1a23da79e8ad14",
+  "activity_netlist_matches_STA_netlist": true,
+  "activity_is_zero_delay": true,
+  "script_sha256": "b2b510043c586cdd31f660977c9da517b136cbe4b1e5cb82d08a1ed27c000c61"
+}

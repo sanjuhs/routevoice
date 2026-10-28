@@ -1,0 +1,9 @@
+# W2 source and scope receipt
+
+Read repository and installed `taalas-fixed-weight-routing/SKILL.md`, complete supplied `references/source-notes.md` (824 lines), patent atlas, architecture/numerics, implementation workflow, and project context. The current root `plan.md` does not exist; the current proposed physical goal and the supplied W2 brief were read. The W2 user message explicitly authorizes the named 320x320 experiment and takes precedence over the earlier pause for this bounded task only.
+
+Relevant primary sources: US20250123802A1 description of shared generators, row/read sequencing, access transistor and parallel/serial transport, figures 3–4 and 14–19, claims 1–20; US20260023566A1 descriptions of address selection and connectivity alternatives, representative precision, serial/demand transmission, and claims 1–20. Read through Google Patents and retained primary-text copies in `experiments/common-v9-start-handoff-source-20261004-v1/reading-basis-v2/`. These disclosures are architectural sources, not GF180 measurements.
+
+This experiment selects a standard-cell constant index/book implementation (V1), and a runtime index/book interface to an excluded array (V2). Neither implements or characterizes the one-access-transistor custom array. The nibble decomposition is an exact engineering derivation, not a claim about shipped Taalas silicon. The integer primitive excludes scale, bias, weight-zero-point correction, dynamic attention and writable model state. `asum` supports downstream correction `y[n] - z_w[n]*asum` when the original zero point is constant along k. No original metadata or model artifacts were modified. This is not a complete recognizer.
+
+No agents, cloud allocation, commits, or pushes were used. All task files are under `overnight-20261014/fabric/`; the PDK was copied there for internal active inputs. Read-only Nix toolchain and original coefficients remain outside this directory.

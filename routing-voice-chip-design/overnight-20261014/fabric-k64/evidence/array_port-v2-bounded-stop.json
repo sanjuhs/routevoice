@@ -1,0 +1,24 @@
+{
+  "observed_utc": "2026-10-13T23:32:19.624172+00:00",
+  "guard": {
+    "pid": 22546,
+    "variant": "array_port",
+    "elapsed_s": 14401.92794418335,
+    "free_gib": 24.43154525756836,
+    "time_limit_s": 14400,
+    "status": "stopped",
+    "returncode": -15,
+    "reason": "bounded runtime limit"
+  },
+  "flow_process_group": 22546,
+  "remaining_group_processes": [],
+  "no_live_flow_processes": true,
+  "last_completed_step": "31-openroad-stamidpnr",
+  "last_printed_repair_counter": "   150000 |     +6.6% |    7992 |    8876 |          3181 |    171396",
+  "repair_step_has_state_out": false,
+  "repair_log": "runs/array_port-v2/32-openroad-repairdesignpostgpl/openroad-repairdesignpostgpl.log",
+  "repair_log_sha256": "632dcbdb24c24cf95d9a24ddd3c637c870a761585383e5d71a835f27d02c42a6",
+  "root_free_gib": 24.431446075439453,
+  "physical_completion_credit": false,
+  "note": "Interrupted/uncompleted repair counters are not a saved repaired database, extracted timing, routing, or signoff pass."
+}

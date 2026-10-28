@@ -1,0 +1,14 @@
+{
+  "guard_snapshot": {
+    "pid": 22614,
+    "variant": "sc_rom",
+    "elapsed_s": 2948.9154551029205,
+    "free_gib": 26.41522216796875,
+    "time_limit_s": 9000,
+    "status": "running"
+  },
+  "reason": "User ~2.5 h SC-ROM limit: ARRAY-PORT repair processed 32000/321396 nets in ~14 min; larger SC-ROM plus remaining CTS/routing/extraction/signoff projected over local budget. Forecast, not a completed runtime measurement.",
+  "utc_epoch": 1791922897.7578251,
+  "last_completed_step": "11-openroad-checkmacroinstances",
+  "complete_synthesis_seconds": 2056.337
+}

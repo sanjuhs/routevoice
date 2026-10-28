@@ -1,0 +1,40 @@
+{
+  "unix": 1791935195.905232,
+  "method": "ditto --hfsCompression, SHA256 verified before atomic replace; transparent POSIX reads retain identical bytes",
+  "free_before_bytes": 25428684800,
+  "free_after_bytes": 25725579264,
+  "changes": [
+    {
+      "path": "runs/rv_fixed_proj320_rom-physical20/22-openroad-globalplacement/rv_fixed_proj320_rom.def",
+      "sha256": "af4143ac6206536b6ce43994108e4a54500122a54d4f8a1168fe55be659a83ef",
+      "bytes": 69205002,
+      "before_allocated_bytes": 84250624,
+      "after_allocated_bytes": 13893632,
+      "flags": 32
+    },
+    {
+      "path": "runs/rv_fixed_proj320_rom-physical20/22-openroad-globalplacement/rv_fixed_proj320_rom.nl.v",
+      "sha256": "34bf52e24eada221e3faac69e1a10fc20a2e45894d031b18e0f630566aaa4b4b",
+      "bytes": 44035137,
+      "before_allocated_bytes": 44036096,
+      "after_allocated_bytes": 7405568,
+      "flags": 32
+    },
+    {
+      "path": "runs/rv_fixed_proj320_rom-physical20/22-openroad-globalplacement/rv_fixed_proj320_rom.odb",
+      "sha256": "105294b2102f8bf65a91ed990590a9f3665c8a28c0c8f75fa52b1093f9ba8f5f",
+      "bytes": 186668891,
+      "before_allocated_bytes": 186671104,
+      "after_allocated_bytes": 51388416,
+      "flags": 32
+    },
+    {
+      "path": "runs/rv_fixed_proj320_rom-physical20/22-openroad-globalplacement/rv_fixed_proj320_rom.pnl.v",
+      "sha256": "80fecf33b32878070839b84663594ae26914339b91d9207261638ffc4a77faef",
+      "bytes": 62958387,
+      "before_allocated_bytes": 62959616,
+      "after_allocated_bytes": 8445952,
+      "flags": 32
+    }
+  ]
+}

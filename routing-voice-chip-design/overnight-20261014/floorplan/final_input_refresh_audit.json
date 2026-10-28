@@ -1,0 +1,46 @@
+{
+  "utc": "2026-10-13T22:08:51.657344+00:00",
+  "checks": [
+    {
+      "run": "final_pitch_sram_bitcell_large_macro_lossless_baseline_whole_29x31mm_pdn40_pads48",
+      "run_snapshot_utc": "20261013T220307Z",
+      "refreshed_snapshot_utc": "20261013T220747Z",
+      "changed_source_files": [
+        "overnight-20261014/taalas-pitch/results.json"
+      ],
+      "changed_physical_inputs": [],
+      "rerun_required": false
+    },
+    {
+      "run": "final_pitch_sram_dense_custom_lossless_baseline_whole_25x31mm_pdn40_pads48",
+      "run_snapshot_utc": "20261013T220307Z",
+      "refreshed_snapshot_utc": "20261013T220747Z",
+      "changed_source_files": [
+        "overnight-20261014/taalas-pitch/results.json"
+      ],
+      "changed_physical_inputs": [],
+      "rerun_required": false
+    },
+    {
+      "run": "final_pitch_sram_open_macro_lossless_baseline_encoder_25x29mm_pdn40_pads32",
+      "run_snapshot_utc": "20261013T220307Z",
+      "refreshed_snapshot_utc": "20261013T220747Z",
+      "changed_source_files": [
+        "overnight-20261014/taalas-pitch/results.json"
+      ],
+      "changed_physical_inputs": [],
+      "rerun_required": false
+    },
+    {
+      "run": "final_pitch_sram_open_macro_lossless_baseline_decoder_25x29mm_pdn40_pads32",
+      "run_snapshot_utc": "20261013T220307Z",
+      "refreshed_snapshot_utc": "20261013T220747Z",
+      "changed_source_files": [
+        "overnight-20261014/taalas-pitch/results.json"
+      ],
+      "changed_physical_inputs": [],
+      "rerun_required": false
+    }
+  ],
+  "qualification": "W6 timing/verification metadata refreshed; physical area, power, memory and engine inputs match all four completed runs. No EDA rerun required."
+}

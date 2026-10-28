@@ -1,0 +1,71 @@
+{
+  "case_id": "fp32_baseline-input-016",
+  "model": "fp32_baseline",
+  "id": "6319-275224-0017",
+  "role": "validation",
+  "condition": "clean",
+  "seed": null,
+  "reference": "WEEDS MEANWHILE SPRANG UP AND A DREARY CONFUSION REIGNED IN THE ONCE ORDERLY AND BRILLIANT LITTLE GARDEN",
+  "input_float32_sha256": "15158b6e638f9bb4b98dd7c9350b8f9d25bd217c4e8ef6e898af3d0332f6ba33",
+  "hypothesis": "Weeds meanwhile sprang up. And a dreary confusion reigned in the once orderly and brilliant little garden.",
+  "normalized_tokens": [
+    "weeds",
+    "meanwhile",
+    "sprang",
+    "up",
+    "and",
+    "a",
+    "dreary",
+    "confusion",
+    "reigned",
+    "in",
+    "the",
+    "once",
+    "orderly",
+    "and",
+    "brilliant",
+    "little",
+    "garden"
+  ],
+  "edits": 0,
+  "reference_words": 17,
+  "hypothesis_words": 17,
+  "exact": true,
+  "lines": [
+    {
+      "text": "Weeds meanwhile sprang up.",
+      "start_time": 0.35199999809265137,
+      "duration": 2.5920000076293945,
+      "is_complete": true,
+      "samples": 41472,
+      "input_float32_sha256": "cc20ffe8c4dc9345f5d6c6d4fa36979be7cd1930e059b3542ea6838c652fb8fe"
+    },
+    {
+      "text": "And a dreary confusion reigned in the once orderly and brilliant little garden.",
+      "start_time": 3.007999897003174,
+      "duration": 5.28000020980835,
+      "is_complete": true,
+      "samples": 84480,
+      "input_float32_sha256": "ffb7a300590cad7780ba279f1de75a8ef37617355f0c4269de4dbf80b6fb88b2"
+    }
+  ],
+  "request_sha256": "258fbdd21fe2ea497e3d86e838e28403fdd4e970f45c9decef30745332e960dd",
+  "worker_sha256": "4682e8a57db08e02a34f53b01f334f34faa3ca9a6546698f1e4650db359004b6",
+  "native_library_sha256": "1453a6c1c9072f3d05e9e5ae6ff423fae839e56631c5efb12bbd5c0280d04399",
+  "native_api_version": 30000,
+  "load_seconds": 0.0418054168112576,
+  "compute_seconds": 0.26518795802257955,
+  "audio_seconds": 8.41,
+  "process_cpu_seconds": 0.265212,
+  "voluntary_context_switches": 0,
+  "involuntary_context_switches": 39,
+  "system_load_average": [
+    10.62939453125,
+    8.95458984375,
+    9.87255859375
+  ],
+  "options": null,
+  "flags": 0,
+  "process_id": 80906,
+  "isolation": "One audio clip/condition in a fresh native process; no previous utterance or VAD state."
+}

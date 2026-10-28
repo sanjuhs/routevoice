@@ -1,0 +1,25 @@
+\begin{figure}[t]
+\centering
+\begin{tikzpicture}[font=\scriptsize,>=stealth,
+  box/.style={draw,rounded corners=1pt,minimum height=5mm,align=center},
+  cell/.style={draw,minimum width=3.2mm,minimum height=3.2mm,inner sep=0}]
+% index column (64 rows shown as 8 cells)
+\foreach \i/\v in {0/3,1/F,2/0,3/7,4/C,5/3,6/9,7/1}{
+  \node[cell] (i\i) at (0,-\i*0.34) {\v};}
+\node[above=1mm of i0,align=center] {4-bit indices\\(64 weights,\\fixed in mask)};
+% book
+\foreach \j/\v in {0/0,1/7,2/12,3/18,4/23,5/29,6/38,7/51}{
+  \node[cell,minimum width=6mm] (b\j) at (2.4,-\j*0.34) {\v};}
+\node[right=0.5mm of b3,anchor=west] {\dots};
+\node[above=1mm of b0,align=center] {16-entry UINT8\\book (per 64$\times$1)};
+\draw[->] (i0.east) -- (b3.west) node[midway,above,sloped]{\tiny select};
+% partials
+\node[box,minimum width=17mm] (pp) at (4.9,-0.6) {$a\!\cdot\!0,\dots,a\!\cdot\!15$\\shared partials};
+\node[box] (add) at (4.9,-2.0) {$16(a h)+a\ell$};
+\draw[->] (b3.east) -- ++(0.5,0) |- node[pos=0.25,right]{$w{=}16h{+}\ell$} (add.west);
+\draw[->] (pp) -- node[right]{two selections} (add);
+\node[below=1mm of add] {$a\cdot w$ \;(17-bit, no multiplier)};
+\end{tikzpicture}
+\caption{K64 weight representation. Each weight is a fixed 4-bit index into a 16-entry UINT8 book shared by 64 weights of one output column. The selected value's two nibbles select two entries from a 16-entry table of partial products of the current activation $a$. That table is computed once and shared by all 320 lanes.}
+\label{fig:k64}
+\end{figure}

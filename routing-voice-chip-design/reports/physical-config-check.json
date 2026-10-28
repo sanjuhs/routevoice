@@ -1,0 +1,60 @@
+{
+  "status": "pass",
+  "scope": "Config load only; no physical run",
+  "configs": [
+    {
+      "config": "die1-serial.json",
+      "top": "die1_tile_serial",
+      "library": "gf180mcu_fd_sc_mcu7t5v0",
+      "clock_ns": "100.0",
+      "sources": [
+        "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die1_tile_serial.sv"
+      ]
+    },
+    {
+      "config": "die1.json",
+      "top": "die1_tile",
+      "library": "gf180mcu_fd_sc_mcu7t5v0",
+      "clock_ns": "100.0",
+      "sources": [
+        "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die1_tile.sv"
+      ]
+    },
+    {
+      "config": "die2-serial.json",
+      "top": "die2_tile_serial",
+      "library": "gf180mcu_fd_sc_mcu7t5v0",
+      "clock_ns": "100.0",
+      "sources": [
+        "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile_serial.sv"
+      ]
+    },
+    {
+      "config": "die2.json",
+      "top": "die2_tile",
+      "library": "gf180mcu_fd_sc_mcu7t5v0",
+      "clock_ns": "100.0",
+      "sources": [
+        "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv"
+      ]
+    },
+    {
+      "config": "die3-serial.json",
+      "top": "die3_tile_serial",
+      "library": "gf180mcu_fd_sc_mcu7t5v0",
+      "clock_ns": "100.0",
+      "sources": [
+        "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die3_tile_serial.sv"
+      ]
+    },
+    {
+      "config": "die3.json",
+      "top": "die3_tile",
+      "library": "gf180mcu_fd_sc_mcu7t5v0",
+      "clock_ns": "100.0",
+      "sources": [
+        "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die3_tile.sv"
+      ]
+    }
+  ]
+}

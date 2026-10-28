@@ -1,0 +1,14 @@
+{
+  "array_port": {
+    "full_suite_trace_gzip_sha256": "631e0e09f1211d4c3b50cab69a91c14a12f88f79b81deeaf6fd7d156a391faaa",
+    "size": 397072968,
+    "disposition": "removed regenerable oversized trace; replace with dedicated speech-only trace; full functional log preserved",
+    "reason": "Verilator tracing did not honor intended dumpoff window; disk guard"
+  },
+  "sc_rom": {
+    "full_suite_trace_gzip_sha256": "cef094ac22581dc9affcc9f70f7ee961cb315d744b7d9dea5e543de4844848c3",
+    "size": 397067588,
+    "disposition": "removed regenerable oversized trace; replace with dedicated speech-only trace; full functional log preserved",
+    "reason": "Verilator tracing did not honor intended dumpoff window; disk guard"
+  }
+}

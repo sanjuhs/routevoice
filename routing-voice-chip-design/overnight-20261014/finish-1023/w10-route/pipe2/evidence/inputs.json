@@ -1,0 +1,39 @@
+{
+  "inputs": {
+    "/private/tmp/claude-501/-Users-sanju-Desktop-coding-llm-hardware-route-voice-llm-hardware-v1/cf06f0bb-a1f4-42d4-91c4-7b1e41623700/scratchpad/gs2/pipe2-synth.nl.v": "1c25bbf163b5d7ece77464b8640ee7b2513caaa53fca57c636ca481cc634a773",
+    "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric-k64/pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/verilog/primitives.v": "ccc0f447f71ce35c635e08d49eb0ed77aa2ec91cf31d8e3e45a246114d3cae92",
+    "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric-k64/pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/verilog/gf180mcu_fd_sc_mcu7t5v0.v": "9a21c5f98200acfe77d8ba52067164e0802284dc1c1e117f0e64fb6ac42eb64b",
+    "/private/tmp/claude-501/-Users-sanju-Desktop-coding-llm-hardware-route-voice-llm-hardware-v1/cf06f0bb-a1f4-42d4-91c4-7b1e41623700/scratchpad/gs2/activity-run/index_fabric.sv": "de720f1e7c93c405729025cd9395850bc75e35c3eb602a1b67c4ad58d1ed4dbf",
+    "/private/tmp/claude-501/-Users-sanju-Desktop-coding-llm-hardware-route-voice-llm-hardware-v1/cf06f0bb-a1f4-42d4-91c4-7b1e41623700/scratchpad/gs2/activity-run/gate_sharded.sv": "cee45e3a27ac57103ff160034d798cb4a3993dbf7f847b21ab277068561e4a9a",
+    "/private/tmp/claude-501/-Users-sanju-Desktop-coding-llm-hardware-route-voice-llm-hardware-v1/cf06f0bb-a1f4-42d4-91c4-7b1e41623700/scratchpad/gs2/activity-run/activity_array_port.sv": "6339f792195ae4595ce794a899a0b3acbd1cf0972e5219984edf5bb4367e9694",
+    "/private/tmp/claude-501/-Users-sanju-Desktop-coding-llm-hardware-route-voice-llm-hardware-v1/cf06f0bb-a1f4-42d4-91c4-7b1e41623700/scratchpad/gs2/activity-run/shard-plan.json": "7d642c6bdc063a13c3703caef9d4eb61d716beeafabab36c69ebbe10b8799a6d",
+    "/private/tmp/claude-501/-Users-sanju-Desktop-coding-llm-hardware-route-voice-llm-hardware-v1/cf06f0bb-a1f4-42d4-91c4-7b1e41623700/scratchpad/gs2/gate-support/run_gate.py": "260f357af5bd26ea01556dcb6decea690b5772835da29f72d703eff0eeea92cb",
+    "/private/tmp/claude-501/-Users-sanju-Desktop-coding-llm-hardware-route-voice-llm-hardware-v1/cf06f0bb-a1f4-42d4-91c4-7b1e41623700/scratchpad/gs2/gate-support/scale_saif.py": "754509091fd6f0e459062dd4c98ebdd5f6627392efcc66b8f0c5c4a2f41a0c25"
+  },
+  "fixtures": [
+    {
+      "path": "/private/tmp/claude-501/-Users-sanju-Desktop-coding-llm-hardware-route-voice-llm-hardware-v1/cf06f0bb-a1f4-42d4-91c4-7b1e41623700/scratchpad/gs2/gate-support/fixtures/inputs.hex",
+      "sha256": "a6914fe441e732dc9408b8feb9a5f9363842842b27364377e0a8168809884d55",
+      "words": 69120
+    },
+    {
+      "path": "/private/tmp/claude-501/-Users-sanju-Desktop-coding-llm-hardware-route-voice-llm-hardware-v1/cf06f0bb-a1f4-42d4-91c4-7b1e41623700/scratchpad/gs2/gate-support/fixtures/expected.hex",
+      "sha256": "fda601d8ea804b285aaef12616f07d6fefbe66292bfb21f2f4752abf8f1fcecd",
+      "words": 17280
+    },
+    {
+      "path": "/private/tmp/claude-501/-Users-sanju-Desktop-coding-llm-hardware-route-voice-llm-hardware-v1/cf06f0bb-a1f4-42d4-91c4-7b1e41623700/scratchpad/gs2/gate-support/fixtures/activation-scales.hex",
+      "sha256": "10ded5f83eb5d1d24ad6c3b4734ade8d359a692b06570c43483807fecce24eae",
+      "words": 54
+    },
+    {
+      "path": "/private/tmp/claude-501/-Users-sanju-Desktop-coding-llm-hardware-route-voice-llm-hardware-v1/cf06f0bb-a1f4-42d4-91c4-7b1e41623700/scratchpad/gs2/gate-support/fixtures/integer-all.hex",
+      "sha256": "404d249a44593c0c1bf53b8e0c0ed19f6ed3b527736029472c761077ff8e0309",
+      "words": 17280
+    }
+  ],
+  "netlist": "/private/tmp/claude-501/-Users-sanju-Desktop-coding-llm-hardware-route-voice-llm-hardware-v1/cf06f0bb-a1f4-42d4-91c4-7b1e41623700/scratchpad/gs2/pipe2-synth.nl.v",
+  "bench_fabric_outside_power_scope": true,
+  "source_clock_period_ns": 20,
+  "saif_target_clock_period_ns": 150
+}

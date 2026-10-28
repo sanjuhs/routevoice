@@ -1,0 +1,53 @@
+{
+  "case_id": "int8_per_tensor-input-018",
+  "model": "int8_per_tensor",
+  "id": "6319-64726-0016",
+  "role": "validation",
+  "condition": "clean",
+  "seed": null,
+  "reference": "MEANWHILE ALL THE REST OF THE PEOPLE IN THE CASTLE HAD BEEN WAKENED AT THE SAME MOMENT AS THE PRINCESS AND THEY WERE NOW EXTREMELY HUNGRY",
+  "input_float32_sha256": "1f215d2fd80f768f926cec5a632242a65d291fad9b5c2cf8d18f66762ae596a2",
+  "hypothesis": " ",
+  "normalized_tokens": [],
+  "edits": 26,
+  "reference_words": 26,
+  "hypothesis_words": 0,
+  "exact": false,
+  "lines": [
+    {
+      "text": "",
+      "start_time": 0.3840000033378601,
+      "duration": 5.728000164031982,
+      "is_complete": true,
+      "samples": 91648,
+      "input_float32_sha256": "e9af79780154d1f1b6e700b3fc045d03540d4de90566e4ab2cfdaf82f3a34e21"
+    },
+    {
+      "text": "",
+      "start_time": 6.2079997062683105,
+      "duration": 2.5280003547668457,
+      "is_complete": true,
+      "samples": 40448,
+      "input_float32_sha256": "222a0821d98dc5a62a24a1029fd58ba7a994fe982bfa3c3f11293484942fd5ca"
+    }
+  ],
+  "request_sha256": "e613fafcd0efd2396a0a76c117c819e46fa2e5887004fbccd75b7b2c305e2357",
+  "worker_sha256": "4682e8a57db08e02a34f53b01f334f34faa3ca9a6546698f1e4650db359004b6",
+  "native_library_sha256": "1453a6c1c9072f3d05e9e5ae6ff423fae839e56631c5efb12bbd5c0280d04399",
+  "native_api_version": 30000,
+  "load_seconds": 0.04379970906302333,
+  "compute_seconds": 0.17578441696241498,
+  "audio_seconds": 8.835,
+  "process_cpu_seconds": 0.17590699999999998,
+  "voluntary_context_switches": 0,
+  "involuntary_context_switches": 28,
+  "system_load_average": [
+    10.62939453125,
+    8.95458984375,
+    9.87255859375
+  ],
+  "options": null,
+  "flags": 0,
+  "process_id": 80936,
+  "isolation": "One audio clip/condition in a fresh native process; no previous utterance or VAD state."
+}

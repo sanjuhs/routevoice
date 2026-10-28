@@ -1,0 +1,42 @@
+[
+  {
+    "memory": "sram_open_macro",
+    "levers": "frontend_native_int8_lossless + books_in_array",
+    "selection_mm2": 174.170514432,
+    "rom_mm2": 131.53565001599998,
+    "sram_mm2": 593.83835898816,
+    "logic_mm2": 190.391996991974,
+    "total_mm2": 1089.9365204281341,
+    "status": "MEASURED-LEF; 51.123114453125 um2/bit before group packing"
+  },
+  {
+    "memory": "sram_4k_research",
+    "levers": "frontend_native_int8_lossless + books_in_array",
+    "selection_mm2": 174.170514432,
+    "rom_mm2": 131.53565001599998,
+    "sram_mm2": 553.7174244940801,
+    "logic_mm2": 190.391996991974,
+    "total_mm2": 1049.815585934054,
+    "status": "PROJECT RESEARCH BANK footprint; transfer to current memory ports unproved"
+  },
+  {
+    "memory": "sram_dense_custom",
+    "levers": "frontend_native_int8_lossless + books_in_array",
+    "selection_mm2": 174.170514432,
+    "rom_mm2": 131.53565001599998,
+    "sram_mm2": 112.2239976,
+    "logic_mm2": 190.391996991974,
+    "total_mm2": 608.3221590399739,
+    "status": "ASSUMED12um2/bit effective; requires a smaller foundry bit cell than the open GF180 one; no compiled macro"
+  },
+  {
+    "memory": "sram_bitcell_large_macro",
+    "levers": "frontend_native_int8_lossless + books_in_array",
+    "selection_mm2": 174.170514432,
+    "rom_mm2": 131.53565001599998,
+    "sram_mm2": 237.80799491428576,
+    "logic_mm2": 190.391996991974,
+    "total_mm2": 733.9061563542598,
+    "status": "bit cell MEASURED;70% array efficiency ASSUMED; no implemented large macro; additional10% bank-group placement retained"
+  }
+]

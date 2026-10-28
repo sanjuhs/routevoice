@@ -1,0 +1,69 @@
+{
+  "case_id": "int8_per_tensor-input-042",
+  "model": "int8_per_tensor",
+  "id": "4572-112381-0015",
+  "role": "validation",
+  "condition": "other",
+  "seed": null,
+  "reference": "OUR FORFEIT LIVES WILL SURELY PAY FOR IDLE SEARCH AND LONG DELAY AND OUR FIERCE KING WILL BID US DIE THE FAVOUR OF HIS FRIEND TO BUY",
+  "input_float32_sha256": "4713a84ef48e2dd5026d04f0348386ce741b5fa7d013894740101d632c80c238",
+  "hypothesis": "   ",
+  "normalized_tokens": [],
+  "edits": 27,
+  "reference_words": 27,
+  "hypothesis_words": 0,
+  "exact": false,
+  "lines": [
+    {
+      "text": "",
+      "start_time": 0.19199997186660767,
+      "duration": 2.9120001792907715,
+      "is_complete": true,
+      "samples": 46592,
+      "input_float32_sha256": "76dade7692f1d0f58918ffdfa4bc654b609795801290003661d5d3c160166196"
+    },
+    {
+      "text": "",
+      "start_time": 2.944000005722046,
+      "duration": 2.944000005722046,
+      "is_complete": true,
+      "samples": 47104,
+      "input_float32_sha256": "23d5ac615d83b8f222d46a88d98e632185eba926951256a92c570ad9325c2ce4"
+    },
+    {
+      "text": "",
+      "start_time": 6.144000053405762,
+      "duration": 3.008000373840332,
+      "is_complete": true,
+      "samples": 48128,
+      "input_float32_sha256": "6a5a7f74b0decf07f3cc953f9d064742ba6b1a9d08a93762dd080eb7620611d9"
+    },
+    {
+      "text": "",
+      "start_time": 9.119999885559082,
+      "duration": 2.944000244140625,
+      "is_complete": true,
+      "samples": 47104,
+      "input_float32_sha256": "661280ac9c2e2f8825a06364741847383f6ebfc344e117fffe0992e45851e628"
+    }
+  ],
+  "request_sha256": "92f0a18866766a946505b0c15711523ad0d5e8b17a61483e19efa608efb59071",
+  "worker_sha256": "4682e8a57db08e02a34f53b01f334f34faa3ca9a6546698f1e4650db359004b6",
+  "native_library_sha256": "1453a6c1c9072f3d05e9e5ae6ff423fae839e56631c5efb12bbd5c0280d04399",
+  "native_api_version": 30000,
+  "load_seconds": 0.04180354089476168,
+  "compute_seconds": 0.23936108290217817,
+  "audio_seconds": 12.145,
+  "process_cpu_seconds": 0.239391,
+  "voluntary_context_switches": 0,
+  "involuntary_context_switches": 31,
+  "system_load_average": [
+    10.6630859375,
+    9.11767578125,
+    9.89892578125
+  ],
+  "options": null,
+  "flags": 0,
+  "process_id": 81213,
+  "isolation": "One audio clip/condition in a fresh native process; no previous utterance or VAD state."
+}

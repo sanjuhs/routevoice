@@ -1,0 +1,71 @@
+{
+  "gds": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/taalas-pitch/r64-v1/bank.gds",
+  "gds_sha256": "98870258b681f783febb6fd684458cdae010458fcea11bae9b81f76b0002760e",
+  "identity": {
+    "packed_sha256": "864fcdc7ec80be2dbb99d76361db338345fb02a1a26d7aaa4a1b40696b921907",
+    "unpacked_sha256": "ba628b676d59721c268868d6720be1f58a4f8d4edfd9a26009403c9a8c4fce8e",
+    "w2b_rtl_sha256": "de720f1e7c93c405729025cd9395850bc75e35c3eb602a1b67c4ad58d1ed4dbf",
+    "all409600_indices_match": true
+  },
+  "rows": 64,
+  "compared_selections": 20480,
+  "compared_bits": 81920,
+  "selection_mismatches": 0,
+  "bit_mismatches": 0,
+  "programmed_ones": 40786,
+  "observed_sha256": "1d7fbf9a572a3badf897966a5432c0338400f474e7156f96241772e3a79ec8fb",
+  "expected_sha256": "1d7fbf9a572a3badf897966a5432c0338400f474e7156f96241772e3a79ec8fb",
+  "placements": [
+    {
+      "group": 0,
+      "joined_transform": "r0 0,0",
+      "array_transform": "r0 10000,126000"
+    },
+    {
+      "group": 1,
+      "joined_transform": "r0 100000,0",
+      "array_transform": "r0 10000,126000"
+    },
+    {
+      "group": 2,
+      "joined_transform": "r0 200000,0",
+      "array_transform": "r0 10000,126000"
+    },
+    {
+      "group": 3,
+      "joined_transform": "r0 300000,0",
+      "array_transform": "r0 10000,126000"
+    },
+    {
+      "group": 4,
+      "joined_transform": "r0 400000,0",
+      "array_transform": "r0 10000,126000"
+    },
+    {
+      "group": 5,
+      "joined_transform": "r0 500000,0",
+      "array_transform": "r0 10000,126000"
+    },
+    {
+      "group": 6,
+      "joined_transform": "r0 600000,0",
+      "array_transform": "r0 10000,126000"
+    },
+    {
+      "group": 7,
+      "joined_transform": "r0 700000,0",
+      "array_transform": "r0 10000,126000"
+    },
+    {
+      "group": 8,
+      "joined_transform": "r0 800000,0",
+      "array_transform": "r0 10000,126000"
+    },
+    {
+      "group": 9,
+      "joined_transform": "r0 900000,0",
+      "array_transform": "r0 10000,126000"
+    }
+  ],
+  "method": "Reopened GDS Via1 centers at reviewed drain sites, plus each array instantiated exactly once. Expected bits independently decoded from original packed K64 tensor; no use of generator index image as oracle."
+}

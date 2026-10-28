@@ -1,0 +1,198 @@
+OpenROAD dcf36133a369abc8f3c5e5738cd4d82e4903c0e0 
+Features included (+) or not (-): +GPU +GUI +Python
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[INFO ORD-0030] Using 4 thread(s).
+[INFO ODB-0388] unsupported LEF58_EOLENCLOSURE property for layer Via1 :"
+  	EOLENCLOSURE 0.34 0.06 ;"
+[INFO ODB-0388] unsupported LEF58_EOLENCLOSURE property for layer Via2 :" EOLENCLOSURE 0.34 0.06 ; "
+[INFO ODB-0388] unsupported LEF58_EOLENCLOSURE property for layer Via3 :" EOLENCLOSURE 0.34 0.06 ; "
+[INFO ODB-0388] unsupported LEF58_EOLENCLOSURE property for layer Via4 :" EOLENCLOSURE 0.34 0.06 ; "
+[INFO ODB-0227] LEF file: /Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/floorplan/pdk/gf180mcu_fd_sc_mcu7t5v0__nom.tlef, created 15 layers, 56 vias
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/floorplan/pdk/gf180mcu_fd_sc_mcu7t5v0.lef at line 2.
+
+[INFO ODB-0227] LEF file: /Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/floorplan/pdk/gf180mcu_fd_sc_mcu7t5v0.lef, created 229 library cells
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/floorplan/pdk/gf180mcu_fd_io__asig_5p0.lef at line 2.
+
+[WARNING ODB-0186] macro gf180mcu_fd_io__asig_5p0 references unknown site GF_IO_Site
+[INFO ODB-0227] LEF file: /Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/floorplan/pdk/gf180mcu_fd_io__asig_5p0.lef, created 1 library cells
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/floorplan/pdk/gf180mcu_fd_io__bi_24t.lef at line 2.
+
+[WARNING ODB-0186] macro gf180mcu_fd_io__bi_24t references unknown site GF_IO_Site
+[INFO ODB-0227] LEF file: /Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/floorplan/pdk/gf180mcu_fd_io__bi_24t.lef, created 1 library cells
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/floorplan/pdk/gf180mcu_fd_io__bi_t.lef at line 2.
+
+[WARNING ODB-0186] macro gf180mcu_fd_io__bi_t references unknown site GF_IO_Site
+[INFO ODB-0227] LEF file: /Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/floorplan/pdk/gf180mcu_fd_io__bi_t.lef, created 1 library cells
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/floorplan/pdk/gf180mcu_fd_io__brk2.lef at line 2.
+
+[WARNING ODB-0186] macro gf180mcu_fd_io__brk2 references unknown site GF_IO_Site
+[INFO ODB-0227] LEF file: /Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/floorplan/pdk/gf180mcu_fd_io__brk2.lef, created 1 library cells
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/floorplan/pdk/gf180mcu_fd_io__brk5.lef at line 2.
+
+[WARNING ODB-0186] macro gf180mcu_fd_io__brk5 references unknown site GF_IO_Site
+[INFO ODB-0227] LEF file: /Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/floorplan/pdk/gf180mcu_fd_io__brk5.lef, created 1 library cells
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/floorplan/pdk/gf180mcu_fd_io__cor.lef at line 2.
+
+[WARNING ODB-0186] macro gf180mcu_fd_io__cor references unknown site GF_COR_Site
+[INFO ODB-0227] LEF file: /Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/floorplan/pdk/gf180mcu_fd_io__cor.lef, created 1 library cells
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/floorplan/pdk/gf180mcu_fd_io__dvdd.lef at line 2.
+
+[WARNING ODB-0186] macro gf180mcu_fd_io__dvdd references unknown site GF_IO_Site
+[INFO ODB-0227] LEF file: /Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/floorplan/pdk/gf180mcu_fd_io__dvdd.lef, created 1 library cells
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/floorplan/pdk/gf180mcu_fd_io__dvss.lef at line 2.
+
+[WARNING ODB-0186] macro gf180mcu_fd_io__dvss references unknown site GF_IO_Site
+[INFO ODB-0227] LEF file: /Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/floorplan/pdk/gf180mcu_fd_io__dvss.lef, created 1 library cells
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/floorplan/pdk/gf180mcu_fd_io__fill1.lef at line 2.
+
+[WARNING ODB-0186] macro gf180mcu_fd_io__fill1 references unknown site GF_IO_Site
+[INFO ODB-0227] LEF file: /Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/floorplan/pdk/gf180mcu_fd_io__fill1.lef, created 1 library cells
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/floorplan/pdk/gf180mcu_fd_io__fill10.lef at line 2.
+
+[WARNING ODB-0186] macro gf180mcu_fd_io__fill10 references unknown site GF_IO_Site
+[INFO ODB-0227] LEF file: /Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/floorplan/pdk/gf180mcu_fd_io__fill10.lef, created 1 library cells
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/floorplan/pdk/gf180mcu_fd_io__fill5.lef at line 2.
+
+[WARNING ODB-0186] macro gf180mcu_fd_io__fill5 references unknown site GF_IO_Site
+[INFO ODB-0227] LEF file: /Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/floorplan/pdk/gf180mcu_fd_io__fill5.lef, created 1 library cells
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/floorplan/pdk/gf180mcu_fd_io__fillnc.lef at line 2.
+
+[WARNING ODB-0186] macro gf180mcu_fd_io__fillnc references unknown site GF_IO_Site
+[INFO ODB-0227] LEF file: /Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/floorplan/pdk/gf180mcu_fd_io__fillnc.lef, created 1 library cells
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/floorplan/pdk/gf180mcu_fd_io__in_c.lef at line 2.
+
+[WARNING ODB-0186] macro gf180mcu_fd_io__in_c references unknown site GF_IO_Site
+[INFO ODB-0227] LEF file: /Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/floorplan/pdk/gf180mcu_fd_io__in_c.lef, created 1 library cells
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/floorplan/pdk/gf180mcu_fd_io__in_s.lef at line 2.
+
+[WARNING ODB-0186] macro gf180mcu_fd_io__in_s references unknown site GF_IO_Site
+[INFO ODB-0227] LEF file: /Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/floorplan/pdk/gf180mcu_fd_io__in_s.lef, created 1 library cells
+[INFO ODB-0227] LEF file: /Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/floorplan/runs/measured_engine_sram_open_macro_lossless_baseline_encoder_25x29mm_pdn80_pads40/macros.lef, created 68 library cells
+[WARNING IFP-0028] Core area lower left (700.000, 700.000) snapped to (700.000, 701.680).
+[INFO IFP-0001] Added 7040 rows of 42142 site GF018hv5v_mcu_sc7.
+[INFO IFP-0100] Die BBox:  (  0.000  0.000 ) ( 25000.000 29000.000 ) um
+[INFO IFP-0101] Core BBox: ( 700.000 701.680 ) ( 24299.520 28298.480 ) um
+[INFO IFP-0102] Core area:                    651271233.536 um^2
+[INFO IFP-0103] Total instances area:                 0.000 um^2
+[INFO IFP-0104] Effective utilization:                0.000
+[INFO IFP-0105] Number of instances:                      0
+[INFO PDN-0001] Inserting grid: core
+[INFO PDN-0001] Inserting grid: macros - array_decoder_phase_mux_allowance_2
+[INFO PDN-0001] Inserting grid: macros - array_decoder_phase_mux_allowance_4
+[INFO PDN-0001] Inserting grid: macros - array_decoder_phase_mux_allowance_6
+[INFO PDN-0001] Inserting grid: macros - array_decoder_phase_mux_allowance_8
+[INFO PDN-0001] Inserting grid: macros - codebooks_and_other_metadata_0
+[INFO PDN-0001] Inserting grid: macros - codebooks_and_other_metadata_10
+[INFO PDN-0001] Inserting grid: macros - codebooks_and_other_metadata_2
+[INFO PDN-0001] Inserting grid: macros - codebooks_and_other_metadata_4
+[INFO PDN-0001] Inserting grid: macros - codebooks_and_other_metadata_6
+[INFO PDN-0001] Inserting grid: macros - codebooks_and_other_metadata_8
+[INFO PDN-0001] Inserting grid: macros - control_clock_IO_interface_1
+[INFO PDN-0001] Inserting grid: macros - decoder_dynamic_attention_0
+[INFO PDN-0001] Inserting grid: macros - decoder_fabric_L1_0
+[INFO PDN-0001] Inserting grid: macros - decoder_fabric_L2_0
+[INFO PDN-0001] Inserting grid: macros - decoder_fabric_L3_0
+[INFO PDN-0001] Inserting grid: macros - decoder_fabric_L4_0
+[INFO PDN-0001] Inserting grid: macros - decoder_fabric_L5_0
+[INFO PDN-0001] Inserting grid: macros - die_link_interface
+[INFO PDN-0001] Inserting grid: macros - embedding_head_tied_once_0
+[INFO PDN-0001] Inserting grid: macros - embedding_head_tied_once_1
+[INFO PDN-0001] Inserting grid: macros - embedding_head_tied_once_3
+[INFO PDN-0001] Inserting grid: macros - embedding_head_tied_once_5
+[INFO PDN-0001] Inserting grid: macros - encoder_dynamic_attention_0
+[INFO PDN-0001] Inserting grid: macros - encoder_fabric_L0_0
+[INFO PDN-0001] Inserting grid: macros - encoder_fabric_L2_0
+[INFO PDN-0001] Inserting grid: macros - encoder_fabric_L4_0
+[INFO PDN-0001] Inserting grid: macros - frontend_native_int8_lossless_0
+[INFO PDN-0001] Inserting grid: macros - frontend_native_int8_lossless_2
+[INFO PDN-0001] Inserting grid: macros - frontend_native_int8_lossless_4
+[INFO PDN-0001] Inserting grid: macros - mutable_arrays_0
+[INFO PDN-0001] Inserting grid: macros - mutable_arrays_10
+[INFO PDN-0001] Inserting grid: macros - mutable_arrays_12
+[INFO PDN-0001] Inserting grid: macros - mutable_arrays_14
+[INFO PDN-0001] Inserting grid: macros - mutable_arrays_16
+[INFO PDN-0001] Inserting grid: macros - mutable_arrays_18
+[INFO PDN-0001] Inserting grid: macros - mutable_arrays_2
+[INFO PDN-0001] Inserting grid: macros - mutable_arrays_20
+[INFO PDN-0001] Inserting grid: macros - mutable_arrays_22
+[INFO PDN-0001] Inserting grid: macros - mutable_arrays_24
+[INFO PDN-0001] Inserting grid: macros - mutable_arrays_26
+[INFO PDN-0001] Inserting grid: macros - mutable_arrays_28
+[INFO PDN-0001] Inserting grid: macros - mutable_arrays_30
+[INFO PDN-0001] Inserting grid: macros - mutable_arrays_32
+[INFO PDN-0001] Inserting grid: macros - mutable_arrays_34
+[INFO PDN-0001] Inserting grid: macros - mutable_arrays_36
+[INFO PDN-0001] Inserting grid: macros - mutable_arrays_38
+[INFO PDN-0001] Inserting grid: macros - mutable_arrays_4
+[INFO PDN-0001] Inserting grid: macros - mutable_arrays_40
+[INFO PDN-0001] Inserting grid: macros - mutable_arrays_42
+[INFO PDN-0001] Inserting grid: macros - mutable_arrays_44
+[INFO PDN-0001] Inserting grid: macros - mutable_arrays_46
+[INFO PDN-0001] Inserting grid: macros - mutable_arrays_48
+[INFO PDN-0001] Inserting grid: macros - mutable_arrays_50
+[INFO PDN-0001] Inserting grid: macros - mutable_arrays_52
+[INFO PDN-0001] Inserting grid: macros - mutable_arrays_54
+[INFO PDN-0001] Inserting grid: macros - mutable_arrays_56
+[INFO PDN-0001] Inserting grid: macros - mutable_arrays_58
+[INFO PDN-0001] Inserting grid: macros - mutable_arrays_6
+[INFO PDN-0001] Inserting grid: macros - mutable_arrays_60
+[INFO PDN-0001] Inserting grid: macros - mutable_arrays_62
+[INFO PDN-0001] Inserting grid: macros - mutable_arrays_64
+[INFO PDN-0001] Inserting grid: macros - mutable_arrays_8
+[INFO PDN-0001] Inserting grid: macros - ordinary_registers_0
+[INFO PDN-0001] Inserting grid: macros - ordinary_registers_2
+[INFO PDN-0001] Inserting grid: macros - producer_KV_and_positions_0
+[INFO PDN-0001] Inserting grid: macros - producer_dynamic_0
+[INFO PDN-0001] Inserting grid: macros - shared_product_engine_0
+[INFO PDN-0001] Inserting grid: macros - shared_product_engine_1
+[WARNING PDN-0195] Removing 4 via(s) between Metal2 and Metal4 at (12560.1200 um, 541.6800 um) for VDD
+[WARNING GUI-0076] Populating font family aliases took 47 ms. Replace uses of missing font family "Monospace" with one that exists to avoid this cost. 
+IMAGE: 
+[INFO PSM-0040] All shapes on net VDD are connected.
+W3_CONNECTIVITY_VDD_PASS
+[INFO PSM-0040] All shapes on net VDD are connected.
+[INFO PSM-0015] Reading location of sources from: /Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/floorplan/runs/measured_engine_sram_open_macro_lossless_baseline_encoder_25x29mm_pdn80_pads40/VDD_sources.csv.
+########## IR report #################
+Net              : VDD
+Corner           : default
+Total power      : 1.59e+00 W
+Supply voltage   : 3.30e+00 V
+Worstcase voltage: 3.12e+00 V
+Average voltage  : 3.29e+00 V
+Average IR drop  : 1.05e-02 V
+Worstcase IR drop: 1.84e-01 V
+Percentage drop  : 5.58 %
+######################################
+W3_IR_VDD_PASS
+[INFO PSM-0040] All shapes on net VSS are connected.
+W3_CONNECTIVITY_VSS_PASS
+[INFO PSM-0040] All shapes on net VSS are connected.
+[INFO PSM-0015] Reading location of sources from: /Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/floorplan/runs/measured_engine_sram_open_macro_lossless_baseline_encoder_25x29mm_pdn80_pads40/VSS_sources.csv.
+########## IR report #################
+Net              : VSS
+Corner           : default
+Total power      : 1.59e+00 W
+Supply voltage   : 0.00e+00 V
+Worstcase voltage: 1.62e-01 V
+Average voltage  : 1.11e-02 V
+Average IR drop  : 1.11e-02 V
+Worstcase IR drop: 1.62e-01 V
+Percentage drop  : 4.92 %
+######################################
+W3_IR_VSS_PASS

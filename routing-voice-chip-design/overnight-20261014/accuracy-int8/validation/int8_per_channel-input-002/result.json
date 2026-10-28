@@ -1,0 +1,82 @@
+{
+  "case_id": "int8_per_channel-input-002",
+  "model": "int8_per_channel",
+  "id": "2428-83705-0018",
+  "role": "validation",
+  "condition": "clean",
+  "seed": null,
+  "reference": "IT TURNED OUT THAT SHE HAD A LITTLE MONEY OF HER OWN ABOUT A HUNDRED AND THIRTY POUNDS A YEAR",
+  "input_float32_sha256": "032b3db9a969306bf9c494af968c91dc705c4f210dbf3f675569e14d44e4045d",
+  "hypothesis": "It turned out, That she had a little money in her own. About a hundred and thirty pounds a year.",
+  "normalized_tokens": [
+    "it",
+    "turned",
+    "out",
+    "that",
+    "she",
+    "had",
+    "a",
+    "little",
+    "money",
+    "in",
+    "her",
+    "own",
+    "about",
+    "a",
+    "hundred",
+    "and",
+    "thirty",
+    "pounds",
+    "a",
+    "year"
+  ],
+  "edits": 1,
+  "reference_words": 20,
+  "hypothesis_words": 20,
+  "exact": false,
+  "lines": [
+    {
+      "text": "It turned out,",
+      "start_time": 0.35199999809265137,
+      "duration": 1.343999981880188,
+      "is_complete": true,
+      "samples": 21504,
+      "input_float32_sha256": "56be0e19c75f43e9a314563eda06a8a7f63a2c736d25ce4036a8cd61bfd7cdea"
+    },
+    {
+      "text": "That she had a little money in her own.",
+      "start_time": 1.5679998397827148,
+      "duration": 2.30400013923645,
+      "is_complete": true,
+      "samples": 36864,
+      "input_float32_sha256": "1687fb3cea4268c8d5d8dc14ab4ce09fd609bc84f1c0a8f704ced364a39d7e09"
+    },
+    {
+      "text": "About a hundred and thirty pounds a year.",
+      "start_time": 3.7119998931884766,
+      "duration": 2.1440000534057617,
+      "is_complete": true,
+      "samples": 34304,
+      "input_float32_sha256": "25719e98fd06cd9cabca2348124a01368be902ff4d3d777c1e282de3978bd06e"
+    }
+  ],
+  "request_sha256": "42d0b03e81dfc51059e4985d3f808ca31b1190359b80e8a3c7834df931292f7d",
+  "worker_sha256": "4682e8a57db08e02a34f53b01f334f34faa3ca9a6546698f1e4650db359004b6",
+  "native_library_sha256": "1453a6c1c9072f3d05e9e5ae6ff423fae839e56631c5efb12bbd5c0280d04399",
+  "native_api_version": 30000,
+  "load_seconds": 0.046669333009049296,
+  "compute_seconds": 0.2234379998408258,
+  "audio_seconds": 5.885,
+  "process_cpu_seconds": 0.223387,
+  "voluntary_context_switches": 0,
+  "involuntary_context_switches": 56,
+  "system_load_average": [
+    9.49853515625,
+    8.6748046875,
+    9.79345703125
+  ],
+  "options": null,
+  "flags": 0,
+  "process_id": 80437,
+  "isolation": "One audio clip/condition in a fresh native process; no previous utterance or VAD state."
+}

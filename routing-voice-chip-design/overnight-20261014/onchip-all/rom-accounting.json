@@ -1,0 +1,32 @@
+{
+  "source_ledger": "experiments/chip-integration-20261012-current-learned-fulltables-service-ledger-v2/ledger.json",
+  "source_ledger_sha256": "5a32856cb240e3a5d4fd81f972a2624c32a41eee860b3ac8336b88c1cb8f7e8f",
+  "new_native_ROM_bytes": 28641280,
+  "already_onboard_native_bytes": 9143040,
+  "total_native_bytes": 37784320,
+  "already_onboard": [
+    {
+      "service": "producer source fixed coefficient rows",
+      "native_bytes": 1228800
+    },
+    {
+      "service": "producer immutable metadata region5",
+      "native_bytes": 19200
+    },
+    {
+      "service": "decoder learned normalizers",
+      "native_bytes": 30720
+    },
+    {
+      "service": "embedding/head shared index image",
+      "native_bytes": 5242880
+    },
+    {
+      "service": "embedding/head shared book pages",
+      "native_bytes": 2621440
+    }
+  ],
+  "already_onboard_logical_image_bytes": 8847360,
+  "total_logical_image_bytes": 37488640,
+  "logical_note": "Source coefficient rows represented by 614400 bytes pointers plus 307200 bytes books; producer metadata padded from 19200 native bytes to 30720 ROM bytes. Other service totals unchanged. Logical image bytes exclude peripheral circuits and do not measure physical area."
+}

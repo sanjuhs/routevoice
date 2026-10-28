@@ -1,0 +1,987 @@
+% RouteVoice related-work bibliography
+% Compiled 2026-10-24. Every entry below was checked against a primary or
+% bibliographic source (arXiv API metadata, Crossref DOI metadata, official
+% product page, patent page, or the PDF itself). Where a field could not be
+% verified it is flagged in the `note` field with "UNVERIFIED".
+% Venues for arXiv preprints are stated only where arXiv's own journal_ref/DOI
+% field confirmed them; otherwise the arXiv version is cited.
+
+% =====================================================================
+% Topic 1: Hardwired-weight / model-specific inference silicon
+% =====================================================================
+
+@misc{taalas2026hc1,
+  author       = {Bajic, Ljubisa},
+  title        = {The Path to Ubiquitous {AI}},
+  howpublished = {Taalas Inc.\ blog (Mission Log)},
+  year         = {2026},
+  month        = feb,
+  url          = {https://taalas.com/the-path-to-ubiquitous-ai/},
+  verification         = {Announces HC1 (Llama 3.1 8B hardwired). Vendor-measured claims: about 17k tokens/s per user, 10x less power, 20x lower build cost. Date taken from the Taalas Mission Log listing (19 Feb 2026). Accessed 2026-10-24.}
+}
+
+@misc{zota2026heise,
+  author       = {Zota, Volker},
+  title        = {{AI} inference cast in silicon: {Taalas} announces {HC1} chip},
+  howpublished = {heise online},
+  year         = {2026},
+  month        = feb,
+  url          = {https://heise.de/-11185112},
+  verification         = {Secondary press report (21 Feb 2026). Reports TSMC N6, 815 mm\textsuperscript{2}, about 53 billion transistors; these figures are not on Taalas's own page. Accessed 2026-10-24.}
+}
+
+@misc{taalas2025patent802,
+  author       = {Bajic, Ljubisa and Ignjatovic, Dragoljub and Bajic, Lejla},
+  title        = {Large Parameter Set Computation Accelerator Using Configurable Connectivity Mesh},
+  howpublished = {US Patent Application Publication US20250123802A1},
+  year         = {2025},
+  month        = apr,
+  url          = {https://patents.google.com/patent/US20250123802A1/en},
+  note         = {Assignee Taalas Inc. Filed 2024-09-13, priority 2023-10-11, published 2025-04-17. Pending.}
+}
+
+@misc{taalas2026patent566,
+  author       = {Bajic, Ljubisa},
+  title        = {Hardware Implemented Codebook Pointers},
+  howpublished = {US Patent Application Publication US20260023566A1},
+  year         = {2026},
+  month        = jan,
+  url          = {https://patents.google.com/patent/US20260023566A1/en},
+  note         = {Assignee Taalas Inc. Filed 2025-07-18, priority 2024-07-19, published 2026-01-22.}
+}
+
+@misc{taalas2025wo724,
+  author       = {Bajic, Ljubisa and Bajic, Lejla and Ignjatovic, Dragoljub},
+  title        = {Mask Programmable {ROM} Using Shared Connections},
+  howpublished = {PCT International Publication WO2025217724A1},
+  year         = {2025},
+  month        = oct,
+  url          = {https://patents.google.com/patent/WO2025217724A1/en},
+  note         = {Applicant Taalas Inc. Filed 2025-04-14, priority 2024-04-15, published 2025-10-23.}
+}
+
+@misc{liu2025hnlpu,
+  author        = {Liu, Yang and Chen, Yi and Zhao, Yongwei and Hao, Yifan and Zheng, Zifu and Kong, Weihao and Li, Zhangmai and Jiang, Dongchen and others},
+  title         = {Hardwired-Neurons Language Processing Units as General-Purpose Cognitive Substrates},
+  year          = {2025},
+  eprint        = {2508.16151},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.AR},
+  url           = {https://arxiv.org/abs/2508.16151},
+  verification          = {27 authors. Figures cited are from v2 of the abstract.}
+}
+
+@misc{pai2026ankhdjet,
+  author        = {Pai, Mohnish},
+  title         = {Ankhdjet: An Open-Source Compiler for Mask-Programmed Ternary Compute-in-{ROM} on an Open {PDK}},
+  year          = {2026},
+  eprint        = {2608.26206},
+  archivePrefix = {arXiv},
+  url           = {https://arxiv.org/abs/2608.26206},
+  verification          = {Closest open-PDK prior art: SKY130, BitNet b1.58 weights to via mask, open signoff, TinyTapeout ttsky26c submission.}
+}
+
+@misc{mann2024etched,
+  author       = {Mann, Tobias},
+  title        = {{Etched} scores \$120{M} for an {ASIC} built for transformer models},
+  howpublished = {The Register},
+  year         = {2024},
+  month        = jun,
+  url          = {https://www.theregister.com/2024/06/26/etched_asic_ai/},
+  verification         = {Secondary report of Etched's Sohu launch claims (26 Jun 2024). Etched's original announcement page (etched.com/announcing-etched) returned 404 on 2026-10-24 and could not be re-read.}
+}
+
+@inproceedings{chen2022yoloc,
+  author    = {Chen, Yiming and Yin, Guodong and Tan, Zhanhong and Lee, Mingyen and Yang, Zekun and Liu, Yongpan and Yang, Huazhong and Ma, Kaisheng and others},
+  title     = {{YOLoC}: DeploY Large-Scale Neural Network by {ROM}-based Computing-in-Memory using ResiduaL Branch on a Chip},
+  booktitle = {Proceedings of the 59th ACM/IEEE Design Automation Conference (DAC)},
+  year      = {2022},
+  doi       = {10.1145/3489517.3530576},
+  url       = {https://arxiv.org/abs/2206.00379}
+}
+
+@inproceedings{chen2022hiddenrom,
+  author    = {Chen, Yiming and Yin, Guodong and Lee, Mingyen and Tang, Wenjun and Yang, Zekun and Liu, Yongpan and others},
+  title     = {Hidden-{ROM}: A Compute-in-{ROM} Architecture to Deploy Large-Scale Neural Networks on Chip with Flexible and Scalable Post-Fabrication Task Transfer Capability},
+  booktitle = {Proceedings of the 41st IEEE/ACM International Conference on Computer-Aided Design (ICCAD)},
+  year      = {2022},
+  doi       = {10.1145/3508352.3549335},
+  url       = {https://doi.org/10.1145/3508352.3549335},
+  verification      = {Existence, authors and venue verified via Crossref; full title wording after the colon and paper contents UNVERIFIED (not opened).}
+}
+
+@misc{wang2025roma,
+  author        = {Wang, Wenqiang and Zhang, Yijia and Zhang, Zikai and Huo, Guanting and Liang, Hao and Cao, Shijie and Xu, Ningyi},
+  title         = {{ROMA}: a Read-Only-Memory-based Accelerator for {QLoRA}-based On-Device {LLM}},
+  year          = {2025},
+  eprint        = {2503.12988},
+  archivePrefix = {arXiv},
+  url           = {https://arxiv.org/abs/2503.12988}
+}
+
+@inproceedings{mubarik2020printed,
+  author    = {Mubarik, Muhammad Husnain and Weller, Dennis D. and Bleier, Nathaniel and Tomei, Matthew and Aghassi-Hagmann, Jasmin and Tahoori, Mehdi B. and Kumar, Rakesh},
+  title     = {Printed Machine Learning Classifiers},
+  booktitle = {Proceedings of the 53rd IEEE/ACM International Symposium on Microarchitecture (MICRO)},
+  pages     = {73--87},
+  year      = {2020},
+  doi       = {10.1109/MICRO50266.2020.00019},
+  verification      = {Seventh author's name from author knowledge (Crossref lists 7 authors; 6 checked). Figures from the abstract as mirrored by search results; full text not opened.}
+}
+
+@misc{iordanou2023tiny,
+  author        = {Iordanou, Konstantinos and Atkinson, Timothy and Ozer, Emre and Kufel, Jedrzej and Biggs, John and Brown, Gavin and Lujan, Mikel},
+  title         = {Tiny Classifier Circuits: Evolving Accelerators for Tabular Data},
+  year          = {2023},
+  eprint        = {2303.00031},
+  archivePrefix = {arXiv},
+  url           = {https://arxiv.org/abs/2303.00031}
+}
+
+% =====================================================================
+% Topic 2: Codebook / index quantization, LUT GEMM, shared partial products
+% =====================================================================
+
+@misc{han2016deepcompression,
+  author        = {Han, Song and Mao, Huizi and Dally, William J.},
+  title         = {Deep Compression: Compressing Deep Neural Networks with Pruning, Trained Quantization and {H}uffman Coding},
+  year          = {2015},
+  eprint        = {1510.00149},
+  archivePrefix = {arXiv},
+  url           = {https://arxiv.org/abs/1510.00149},
+  verification          = {Published at ICLR 2016 (venue from author knowledge; arXiv metadata verified).}
+}
+
+@misc{han2016eie,
+  author        = {Han, Song and Liu, Xingyu and Mao, Huizi and Pu, Jing and Pedram, Ardavan and Horowitz, Mark A. and Dally, William J.},
+  title         = {{EIE}: Efficient Inference Engine on Compressed Deep Neural Network},
+  year          = {2016},
+  eprint        = {1602.01528},
+  archivePrefix = {arXiv},
+  url           = {https://arxiv.org/abs/1602.01528},
+  verification          = {Published at ISCA 2016 (venue from author knowledge). 4-bit index, 45 nm figures verified from the arXiv PDF.}
+}
+
+@misc{hegde2018ucnn,
+  author        = {Hegde, Kartik and Yu, Jiyong and Agrawal, Rohit and Yan, Mengjia and Pellauer, Michael and Fletcher, Christopher W.},
+  title         = {{UCNN}: Exploiting Computational Reuse in Deep Neural Networks via Weight Repetition},
+  year          = {2018},
+  eprint        = {1804.06508},
+  archivePrefix = {arXiv},
+  url           = {https://arxiv.org/abs/1804.06508},
+  verification          = {Published at ISCA 2018 (venue from author knowledge).}
+}
+
+@inproceedings{zadeh2022mokey,
+  author    = {Zadeh, Ali Hadi and Mahmoud, Mostafa and Abdelhadi, Ameer and Moshovos, Andreas},
+  title     = {Mokey: Enabling Narrow Fixed-Point Inference for Out-of-the-Box Floating-Point Transformer Models},
+  booktitle = {Proceedings of the 49th Annual International Symposium on Computer Architecture (ISCA)},
+  year      = {2022},
+  doi       = {10.1145/3470496.3527438},
+  url       = {https://arxiv.org/abs/2203.12758}
+}
+
+@misc{egiazarian2024aqlm,
+  author        = {Egiazarian, Vage and Panferov, Andrei and Kuznedelev, Denis and Frantar, Elias and Babenko, Artem and Alistarh, Dan},
+  title         = {Extreme Compression of Large Language Models via Additive Quantization},
+  year          = {2024},
+  eprint        = {2401.06118},
+  archivePrefix = {arXiv},
+  url           = {https://arxiv.org/abs/2401.06118}
+}
+
+@misc{tseng2024quipsharp,
+  author        = {Tseng, Albert and Chee, Jerry and Sun, Qingyao and Kuleshov, Volodymyr and De Sa, Christopher},
+  title         = {{QuIP\#}: Even Better {LLM} Quantization with {H}adamard Incoherence and Lattice Codebooks},
+  year          = {2024},
+  eprint        = {2402.04396},
+  archivePrefix = {arXiv},
+  url           = {https://arxiv.org/abs/2402.04396}
+}
+
+@misc{liu2024vptq,
+  author        = {Liu, Yifei and Wen, Jicheng and Wang, Yang and Ye, Shengyu and Zhang, Li Lyna and Cao, Ting and Li, Cheng and Yang, Mao},
+  title         = {{VPTQ}: Extreme Low-bit Vector Post-Training Quantization for Large Language Models},
+  year          = {2024},
+  eprint        = {2409.17066},
+  archivePrefix = {arXiv},
+  url           = {https://arxiv.org/abs/2409.17066}
+}
+
+@misc{vanbaalen2024gptvq,
+  author        = {van Baalen, Mart and Kuzmin, Andrey and Koryakovskiy, Ivan and Nagel, Markus and Couperus, Peter and Bastoul, Cedric and Mahurin, Eric and Blankevoort, Tijmen and others},
+  title         = {{GPTVQ}: The Blessing of Dimensionality for {LLM} Quantization},
+  year          = {2024},
+  eprint        = {2402.15319},
+  archivePrefix = {arXiv},
+  url           = {https://arxiv.org/abs/2402.15319}
+}
+
+@misc{kim2024squeezellm,
+  author        = {Kim, Sehoon and Hooper, Coleman and Gholami, Amir and Dong, Zhen and Li, Xiuyu and Shen, Sheng and Mahoney, Michael W. and Keutzer, Kurt},
+  title         = {{SqueezeLLM}: Dense-and-Sparse Quantization},
+  year          = {2023},
+  eprint        = {2306.07629},
+  archivePrefix = {arXiv},
+  url           = {https://arxiv.org/abs/2306.07629}
+}
+
+@misc{park2024lutgemm,
+  author        = {Park, Gunho and Park, Baeseong and Kim, Minsub and Lee, Sungjae and Kim, Jeonghoon and Kwon, Beomseok and Kwon, Se Jung and Kim, Byeongwook and others},
+  title         = {{LUT-GEMM}: Quantized Matrix Multiplication based on {LUTs} for Efficient Inference in Large-Scale Generative Language Models},
+  year          = {2022},
+  eprint        = {2206.09557},
+  archivePrefix = {arXiv},
+  url           = {https://arxiv.org/abs/2206.09557}
+}
+
+@inproceedings{wei2025tmac,
+  author    = {Wei, Jianyu and Cao, Shijie and Cao, Ting and Ma, Lingxiao and Wang, Lei and Zhang, Yanyong and Yang, Mao},
+  title     = {{T-MAC}: {CPU} Renaissance via Table Lookup for Low-Bit {LLM} Deployment on Edge},
+  booktitle = {Proceedings of the Twentieth European Conference on Computer Systems (EuroSys)},
+  year      = {2025},
+  doi       = {10.1145/3689031.3696099},
+  url       = {https://arxiv.org/abs/2407.00088},
+  verification      = {DOI from arXiv metadata; EuroSys 2025 venue name inferred from the DOI prefix (UNVERIFIED wording).}
+}
+
+@misc{ma2024bitnet158,
+  author        = {Ma, Shuming and Wang, Hongyu and Ma, Lingxiao and Wang, Lei and Wang, Wenhui and Huang, Shaohan and Dong, Li and Wang, Ruiping and others},
+  title         = {The Era of 1-bit {LLMs}: All Large Language Models are in 1.58 Bits},
+  year          = {2024},
+  eprint        = {2402.17764},
+  archivePrefix = {arXiv},
+  url           = {https://arxiv.org/abs/2402.17764}
+}
+
+@inproceedings{park2002cshm,
+  author    = {Park, Jongsun and Jeong, Woopyo and Choo, Hunsoo and Mahmoodi-Meimand, Hamid and Wang, Yongtao and Roy, Kaushik},
+  title     = {High Performance and Low Power {FIR} Filter Design Based on Sharing Multiplication},
+  booktitle = {Proceedings of the International Symposium on Low Power Electronics and Design (ISLPED)},
+  pages     = {295--300},
+  year      = {2002},
+  doi       = {10.1109/LPE.2002.1029624},
+  url       = {https://www.cecs.uci.edu/~papers/compendium94-03/papers/2002/islped02/pdffiles/11_3.pdf}
+}
+
+@article{voronenko2007mcm,
+  author  = {Voronenko, Yevgen and P{\"u}schel, Markus},
+  title   = {Multiplierless Multiple Constant Multiplication},
+  journal = {ACM Transactions on Algorithms},
+  volume  = {3},
+  number  = {2},
+  pages   = {11},
+  year    = {2007},
+  doi     = {10.1145/1240233.1240234},
+  verification    = {Bibliographic data verified via Crossref; paper body not opened.}
+}
+
+@article{white1989da,
+  author  = {White, Stanley A.},
+  title   = {Applications of Distributed Arithmetic to Digital Signal Processing: A Tutorial Review},
+  journal = {IEEE ASSP Magazine},
+  volume  = {6},
+  number  = {3},
+  pages   = {4--19},
+  year    = {1989},
+  doi     = {10.1109/53.29648},
+  verification    = {Bibliographic data verified via Crossref; paper body not opened.}
+}
+
+% =====================================================================
+% Topic 3: Small / edge ASR models and voice chips
+% =====================================================================
+
+@misc{jeffries2024moonshine,
+  author        = {Jeffries, Nat and King, Evan and Kudlur, Manjunath and Nicholson, Guy and Wang, James and Warden, Pete},
+  title         = {Moonshine: Speech Recognition for Live Transcription and Voice Commands},
+  year          = {2024},
+  eprint        = {2410.15608},
+  archivePrefix = {arXiv},
+  url           = {https://arxiv.org/abs/2410.15608}
+}
+
+@misc{usefulsensors2024moonshinehf,
+  author       = {{Useful Sensors}},
+  title        = {{UsefulSensors/moonshine} model card},
+  howpublished = {Hugging Face},
+  year         = {2024},
+  url          = {https://huggingface.co/UsefulSensors/moonshine},
+  verification         = {Lists tiny = 27M and base = 61M parameters; MIT license. Accessed 2026-10-24.}
+}
+
+@misc{king2025flavors,
+  author        = {King, Evan and Sabra, Adam and Kudlur, Manjunath and Wang, James and Warden, Pete},
+  title         = {Flavors of Moonshine: Tiny Specialized {ASR} Models for Edge Devices},
+  year          = {2025},
+  eprint        = {2509.02523},
+  archivePrefix = {arXiv},
+  url           = {https://arxiv.org/abs/2509.02523}
+}
+
+@misc{kudlur2026moonshinev2,
+  author        = {Kudlur, Manjunath and King, Evan and Wang, James and Warden, Pete},
+  title         = {Moonshine v2: Ergodic Streaming Encoder {ASR} for Latency-Critical Speech Applications},
+  year          = {2026},
+  eprint        = {2602.12241},
+  archivePrefix = {arXiv},
+  url           = {https://arxiv.org/abs/2602.12241}
+}
+
+@misc{radford2022whisper,
+  author        = {Radford, Alec and Kim, Jong Wook and Xu, Tao and Brockman, Greg and McLeavey, Christine and Sutskever, Ilya},
+  title         = {Robust Speech Recognition via Large-Scale Weak Supervision},
+  year          = {2022},
+  eprint        = {2212.04356},
+  archivePrefix = {arXiv},
+  url           = {https://arxiv.org/abs/2212.04356}
+}
+
+@misc{gandhi2023distilwhisper,
+  author        = {Gandhi, Sanchit and von Platen, Patrick and Rush, Alexander M.},
+  title         = {Distil-{W}hisper: Robust Knowledge Distillation via Large-Scale Pseudo Labelling},
+  year          = {2023},
+  eprint        = {2311.00430},
+  archivePrefix = {arXiv},
+  url           = {https://arxiv.org/abs/2311.00430}
+}
+
+@misc{zhang2017helloedge,
+  author        = {Zhang, Yundong and Suda, Naveen and Lai, Liangzhen and Chandra, Vikas},
+  title         = {Hello Edge: Keyword Spotting on Microcontrollers},
+  year          = {2017},
+  eprint        = {1711.07128},
+  archivePrefix = {arXiv},
+  url           = {https://arxiv.org/abs/1711.07128}
+}
+
+@inproceedings{shan2020kws,
+  author    = {Shan, Weiwei and Yang, Minhao and Xu, Jiaming and Lu, Yicheng and Zhang, Shuai and Wang, Tao and Yang, Jun and Shi, Longxing and Seok, Mingoo},
+  title     = {A 510{nW} 0.41{V} Low-Memory Low-Computation Keyword-Spotting Chip Using Serial {FFT}-Based {MFCC} and Binarized Depthwise Separable Convolutional Neural Network in 28nm {CMOS}},
+  booktitle = {IEEE International Solid-State Circuits Conference (ISSCC)},
+  pages     = {230--232},
+  year      = {2020},
+  doi       = {10.1109/ISSCC19947.2020.9063000},
+  verification      = {Crossref lists 9 authors; full list from author knowledge plus search results.}
+}
+
+@inproceedings{giraldo2018laika,
+  author    = {Giraldo, J. S. P. and Verhelst, Marian},
+  title     = {Laika: A 5{uW} Programmable {LSTM} Accelerator for Always-on Keyword Spotting in 65nm {CMOS}},
+  booktitle = {IEEE 44th European Solid State Circuits Conference (ESSCIRC)},
+  pages     = {166--169},
+  year      = {2018},
+  doi       = {10.1109/ESSCIRC.2018.8494342}
+}
+
+@article{price2018speech,
+  author  = {Price, Michael and Glass, James and Chandrakasan, Anantha P.},
+  title   = {A Low-Power Speech Recognizer and Voice Activity Detector Using Deep Neural Networks},
+  journal = {IEEE Journal of Solid-State Circuits},
+  volume  = {53},
+  number  = {1},
+  pages   = {66--75},
+  year    = {2018},
+  doi     = {10.1109/JSSC.2017.2752838},
+  url     = {https://people.csail.mit.edu/jrg/2018/Price-JSSC-18.pdf}
+}
+
+@article{price2015wfst,
+  author  = {Price, Michael and Glass, James and Chandrakasan, Anantha P.},
+  title   = {A 6 {mW}, 5,000-Word Real-Time Speech Recognizer Using {WFST} Models},
+  journal = {IEEE Journal of Solid-State Circuits},
+  volume  = {50},
+  number  = {1},
+  pages   = {102--112},
+  year    = {2015},
+  doi     = {10.1109/JSSC.2014.2367818}
+}
+
+@inproceedings{tambe2021sm6,
+  author    = {Tambe, Thierry and Yang, En-Yu and Ko, Glenn G. and Chai, Yuji and Hooper, Coleman and Donato, Marco and others},
+  title     = {A 25mm\textsuperscript{2} {SoC} for {IoT} Devices with 18ms Noise-Robust Speech-to-Text Latency via {B}ayesian Speech Denoising and Attention-Based Sequence-to-Sequence {DNN} Speech Recognition in 16nm {FinFET}},
+  booktitle = {IEEE International Solid-State Circuits Conference (ISSCC)},
+  pages     = {158--160},
+  year      = {2021},
+  doi       = {10.1109/ISSCC42613.2021.9366062}
+}
+
+% =====================================================================
+% Topic 4: Edge / datacenter transformer accelerators and energy figures
+% =====================================================================
+
+@inproceedings{horowitz2014energy,
+  author    = {Horowitz, Mark},
+  title     = {Computing's Energy Problem (and What We Can Do About It)},
+  booktitle = {IEEE International Solid-State Circuits Conference Digest of Technical Papers (ISSCC)},
+  pages     = {10--14},
+  year      = {2014},
+  doi       = {10.1109/ISSCC.2014.6757323},
+  verification      = {Energy table (Fig. 1.1.9, 45 nm, 0.9 V) read from the PDF.}
+}
+
+@misc{sze2017tutorial,
+  author        = {Sze, Vivienne and Chen, Yu-Hsin and Yang, Tien-Ju and Emer, Joel},
+  title         = {Efficient Processing of Deep Neural Networks: A Tutorial and Survey},
+  year          = {2017},
+  eprint        = {1703.09039},
+  archivePrefix = {arXiv},
+  url           = {https://arxiv.org/abs/1703.09039},
+  verification          = {Published in Proceedings of the IEEE, 2017 (venue from author knowledge).}
+}
+
+@article{chen2017eyeriss,
+  author  = {Chen, Yu-Hsin and Krishna, Tushar and Emer, Joel S. and Sze, Vivienne},
+  title   = {Eyeriss: An Energy-Efficient Reconfigurable Accelerator for Deep Convolutional Neural Networks},
+  journal = {IEEE Journal of Solid-State Circuits},
+  volume  = {52},
+  number  = {1},
+  pages   = {127--138},
+  year    = {2017},
+  doi     = {10.1109/JSSC.2016.2616357}
+}
+
+@inproceedings{abts2020tsp,
+  author    = {Abts, Dennis and Ross, Jonathan and Sparling, Jonathan and Wong-VanHaren, Mark and Baker, Max and Hawkins, Tom and others},
+  title     = {Think Fast: A Tensor Streaming Processor ({TSP}) for Accelerating Deep Learning Workloads},
+  booktitle = {ACM/IEEE 47th Annual International Symposium on Computer Architecture (ISCA)},
+  pages     = {145--158},
+  year      = {2020},
+  doi       = {10.1109/ISCA45697.2020.00023}
+}
+
+@inproceedings{abts2022groq,
+  author    = {Abts, Dennis and Kimmell, Garrin and Ling, Andrew and Kim, John and Boyd, Matt and Bitar, Andrew and others},
+  title     = {A Software-Defined Tensor Streaming Multiprocessor for Large-Scale Machine Learning},
+  booktitle = {Proceedings of the 49th Annual International Symposium on Computer Architecture (ISCA)},
+  pages     = {567--580},
+  year      = {2022},
+  doi       = {10.1145/3470496.3527405}
+}
+
+@misc{cerebras2024wse3,
+  author       = {{Cerebras Systems}},
+  title        = {Cerebras Systems Unveils World's Fastest {AI} Chip with Whopping 4 Trillion Transistors},
+  howpublished = {Press release},
+  year         = {2024},
+  month        = mar,
+  url          = {https://www.cerebras.ai/press-release/cerebras-announces-third-generation-wafer-scale-engine},
+  verification         = {WSE-3: 5 nm, 4T transistors, 900k cores, 44 GB on-chip SRAM, 125 PF peak, TSMC 5 nm (vendor claims, read from the release). Accessed 2026-10-24.}
+}
+
+@article{lie2023cerebras,
+  author  = {Lie, Sean},
+  title   = {Cerebras Architecture Deep Dive: First Look Inside the Hardware/Software Co-Design for Deep Learning},
+  journal = {IEEE Micro},
+  volume  = {43},
+  number  = {3},
+  pages   = {18--30},
+  year    = {2023},
+  doi     = {10.1109/MM.2023.3256384}
+}
+
+@inproceedings{tu2022trancim,
+  author    = {Tu, Fengbin and Wu, Zihan and Wang, Yiqi and Liang, Ling and Liu, Liu and Ding, Yufei and others},
+  title     = {A 28nm 15.59{$\mu$J}/Token Full-Digital Bitline-Transpose {CIM}-Based Sparse Transformer Accelerator with Pipeline/Parallel Reconfigurable Modes},
+  booktitle = {IEEE International Solid-State Circuits Conference (ISSCC)},
+  pages     = {466--468},
+  year      = {2022},
+  doi       = {10.1109/ISSCC42614.2022.9731645}
+}
+
+@inproceedings{wang2022transformer28nm,
+  author    = {Wang, Yang and Qin, Yubin and Deng, Dazheng and Wei, Jingchuan and Zhou, Yang and Fan, Yuanqi and others},
+  title     = {A 28nm 27.5{TOPS/W} Approximate-Computing-Based Transformer Processor with Asymptotic Sparsity Speculating and Out-of-Order Computing},
+  booktitle = {IEEE International Solid-State Circuits Conference (ISSCC)},
+  year      = {2022},
+  doi       = {10.1109/ISSCC42614.2022.9731686}
+}
+
+@inproceedings{tambe2023transformer12nm,
+  author    = {Tambe, Thierry and Zhang, Jeff and Hooper, Coleman and Jia, Tianyu and Whatmough, Paul N. and Zuckerman, Joseph and others},
+  title     = {A 12nm 18.1{TFLOPs/W} Sparse Transformer Processor with Entropy-Based Early Exit, Mixed-Precision Predication and Fine-Grained Power Management},
+  booktitle = {IEEE International Solid-State Circuits Conference (ISSCC)},
+  pages     = {342--344},
+  year      = {2023},
+  doi       = {10.1109/ISSCC42615.2023.10067817}
+}
+
+@misc{tambe2021edgebert,
+  author        = {Tambe, Thierry and Hooper, Coleman and Pentecost, Lillian and Jia, Tianyu and Yang, En-Yu and Donato, Marco and Sanh, Victor and Whatmough, Paul N. and others},
+  title         = {{EdgeBERT}: Sentence-Level Energy Optimizations for Latency-Aware Multi-Task {NLP} Inference},
+  year          = {2020},
+  eprint        = {2011.14203},
+  archivePrefix = {arXiv},
+  url           = {https://arxiv.org/abs/2011.14203}
+}
+
+@inproceedings{wang2021spatten,
+  author    = {Wang, Hanrui and Zhang, Zhekai and Han, Song},
+  title     = {{SpAtten}: Efficient Sparse Attention Architecture with Cascade Token and Head Pruning},
+  booktitle = {IEEE International Symposium on High-Performance Computer Architecture (HPCA)},
+  year      = {2021},
+  doi       = {10.1109/HPCA51647.2021.00018},
+  url       = {https://arxiv.org/abs/2012.09852}
+}
+
+@misc{arm2024ethosu55,
+  author       = {{Arm Ltd.}},
+  title        = {{Arm Ethos-U55} {NPU}},
+  howpublished = {Product page},
+  url          = {https://www.arm.com/products/silicon-ip-cpu/ethos/ethos-u55},
+  verification         = {Vendor claims: up to 480x ML uplift over Cortex-M systems, about 0.1 mm\textsuperscript{2}. Accessed 2026-10-24.}
+}
+
+@misc{st2024stm32n6,
+  author       = {{STMicroelectronics}},
+  title        = {{STM32N6}: Our very own {NPU} in the most powerful {STM32}},
+  howpublished = {ST blog},
+  year         = {2024},
+  url          = {https://blog.st.com/stm32n6/},
+  verification         = {600 GOPS Neural-ART NPU (read on this blog page); 288 MAC/cycle, Cortex-M55 at 800 MHz and 4.2 MB RAM seen only in search excerpts of ST pages (UNVERIFIED by direct read).}
+}
+
+% =====================================================================
+% Topic 5: Open-source silicon: PDKs, EDA tools, shuttles
+% =====================================================================
+
+@inproceedings{ajayi2019openroad,
+  author    = {Ajayi, Tutu and Chhabria, Vidya A. and Foga{\c{c}}a, Mateus and Hashemi, Soheil and Hosny, Abdelrahman and Kahng, Andrew B. and others},
+  title     = {Toward an Open-Source Digital Flow: First Learnings from the {OpenROAD} Project},
+  booktitle = {Proceedings of the 56th Annual Design Automation Conference (DAC)},
+  pages     = {1--4},
+  year      = {2019},
+  doi       = {10.1145/3316781.3326334}
+}
+
+@inproceedings{shalan2020openlane,
+  author    = {Shalan, Mohamed and Edwards, Tim},
+  title     = {Building {OpenLANE}: A 130nm {OpenROAD}-based Tapeout-Proven Flow},
+  booktitle = {Proceedings of the 39th International Conference on Computer-Aided Design (ICCAD)},
+  pages     = {1--6},
+  year      = {2020},
+  doi       = {10.1145/3400302.3415735}
+}
+
+@misc{librelane,
+  author       = {{LibreLane contributors}},
+  title        = {{LibreLane}: successor to {OpenLane}},
+  howpublished = {GitHub repository},
+  url          = {https://github.com/librelane/librelane},
+  verification         = {Based on OpenLane 2; trademark of the FOSSi Foundation. Accessed 2026-10-24.}
+}
+
+@misc{wolf_yosys,
+  author       = {Wolf, Claire and others},
+  title        = {Yosys Open {SYnthesis} Suite},
+  howpublished = {YosysHQ},
+  url          = {https://yosyshq.net/yosys/},
+  note         = {Accessed 2026-10-24.}
+}
+
+@misc{snyder_verilator,
+  author       = {Snyder, Wilson and others},
+  title        = {Verilator},
+  howpublished = {Veripool},
+  url          = {https://www.veripool.org/verilator/},
+  note         = {Accessed 2026-10-24.}
+}
+
+@inproceedings{ousterhout1984magic,
+  author    = {Ousterhout, John K. and Hamachi, Gordon T. and Mayo, Robert N. and Scott, Walter S. and Taylor, George S.},
+  title     = {Magic: A {VLSI} Layout System},
+  booktitle = {21st Design Automation Conference (DAC)},
+  pages     = {152--159},
+  year      = {1984},
+  doi       = {10.1109/DAC.1984.1585789}
+}
+
+@misc{edwards_magic,
+  author       = {Edwards, R. Timothy},
+  title        = {Magic {VLSI} Layout Tool},
+  howpublished = {Open Circuit Design},
+  url          = {http://opencircuitdesign.com/magic/},
+  note         = {Accessed 2026-10-24.}
+}
+
+@misc{edwards_netgen,
+  author       = {Edwards, R. Timothy},
+  title        = {Netgen: netlist comparison ({LVS})},
+  howpublished = {Open Circuit Design},
+  url          = {http://opencircuitdesign.com/netgen/},
+  note         = {Accessed 2026-10-24.}
+}
+
+@misc{koefferlein_klayout,
+  author       = {K{\"o}fferlein, Matthias},
+  title        = {{KLayout} Layout Viewer and Editor},
+  url          = {https://www.klayout.de/},
+  verification         = {Author attribution from author knowledge (UNVERIFIED on the page fetched). Accessed 2026-10-24.}
+}
+
+@misc{hauser_hardfloat,
+  author       = {Hauser, John R.},
+  title        = {Berkeley {HardFloat}},
+  url          = {http://www.jhauser.us/arithmetic/HardFloat.html},
+  note         = {Release 1, July 2019. Accessed 2026-10-24.}
+}
+
+@misc{google_gf180mcu,
+  author       = {{Google and GlobalFoundries}},
+  title        = {{GF180MCU} Open Source {PDK}},
+  howpublished = {GitHub repository},
+  year         = {2022},
+  url          = {https://github.com/google/gf180mcu-pdk},
+  verification         = {Apache-2.0; described as experimental preview, not for production. Repository archived. Accessed 2026-10-24.}
+}
+
+@misc{google2022gfshuttle,
+  author       = {Mahintorabi, Ethan and Euphrosine, Johan and Cunningham, Aaron},
+  title        = {Google funds open source silicon manufacturing shuttles for {GlobalFoundries} {PDK}},
+  howpublished = {Google Open Source Blog},
+  year         = {2022},
+  month        = oct,
+  url          = {https://opensource.googleblog.com/2022/10/announcing-globalfoundries-open-mpw-shuttle-program.html}
+}
+
+@misc{google_skywater,
+  author       = {{Google and SkyWater Technology}},
+  title        = {{SkyWater} {SKY130} Open Source {PDK}},
+  howpublished = {GitHub repository},
+  year         = {2020},
+  url          = {https://github.com/google/skywater-pdk},
+  verification         = {Year from author knowledge. Accessed 2026-10-24.}
+}
+
+@article{venn2024tinytapeout,
+  author  = {Venn, Matt},
+  title   = {Tiny Tapeout: A Shared Silicon Tape Out Platform Accessible to Everyone},
+  journal = {IEEE Solid-State Circuits Magazine},
+  volume  = {16},
+  number  = {2},
+  pages   = {20--29},
+  year    = {2024},
+  doi     = {10.1109/MSSC.2024.3381097}
+}
+
+@misc{tinytapeout2025efabless,
+  author       = {{Tiny Tapeout}},
+  title        = {Efabless shuts down -- {Tiny Tapeout} will continue},
+  year         = {2025},
+  url          = {https://tinytapeout.com/news/efabless-shutsdown/},
+  note         = {Accessed 2026-10-24.}
+}
+
+@misc{waferspace,
+  author       = {{wafer.space}},
+  title        = {wafer.space: Budget silicon manufacturing},
+  url          = {https://wafer.space},
+  verification         = {GF180MCU shuttle; 1,000 dies per slot; USD 7,000--8,000 for a 3.93x5.12 mm slot (Run 3 pricing). Accessed 2026-10-24.}
+}
+
+% =====================================================================
+% Topic 6: LLMs and agents for chip design
+% =====================================================================
+
+@misc{liu2023chipnemo,
+  author        = {Liu, Mingjie and Ene, Teodor-Dumitru and Kirby, Robert and Cheng, Chris and Pinckney, Nathaniel and Liang, Rongjian and Alben, Jonah and Anand, Himyanshu and others},
+  title         = {{ChipNeMo}: Domain-Adapted {LLMs} for Chip Design},
+  year          = {2023},
+  eprint        = {2311.00176},
+  archivePrefix = {arXiv},
+  url           = {https://arxiv.org/abs/2311.00176}
+}
+
+@misc{liu2023verilogeval,
+  author        = {Liu, Mingjie and Pinckney, Nathaniel and Khailany, Brucek and Ren, Haoxing},
+  title         = {{VerilogEval}: Evaluating Large Language Models for {Verilog} Code Generation},
+  year          = {2023},
+  eprint        = {2309.07544},
+  archivePrefix = {arXiv},
+  url           = {https://arxiv.org/abs/2309.07544}
+}
+
+@inproceedings{liu2024rtlcoder,
+  author    = {Liu, Shang and Fang, Wenji and Lu, Yao and Zhang, Qijun and Zhang, Hongce and Xie, Zhiyao},
+  title     = {{RTLCoder}: Outperforming {GPT-3.5} in Design {RTL} Generation with Our Open-Source Dataset and Lightweight Solution},
+  booktitle = {IEEE LLM Aided Design Workshop (LAD)},
+  year      = {2024},
+  doi       = {10.1109/LAD62341.2024.10691788},
+  url       = {https://arxiv.org/abs/2312.08617}
+}
+
+@misc{chang2023chipgpt,
+  author        = {Chang, Kaiyan and Wang, Ying and Ren, Haimeng and Wang, Mengdi and Liang, Shengwen and Han, Yinhe and Li, Huawei and Li, Xiaowei},
+  title         = {{ChipGPT}: How far are we from natural language hardware design},
+  year          = {2023},
+  eprint        = {2305.14019},
+  archivePrefix = {arXiv},
+  url           = {https://arxiv.org/abs/2305.14019}
+}
+
+@inproceedings{blocklove2023chipchat,
+  author    = {Blocklove, Jason and Garg, Siddharth and Karri, Ramesh and Pearce, Hammond},
+  title     = {Chip-Chat: Challenges and Opportunities in Conversational Hardware Design},
+  booktitle = {ACM/IEEE 5th Workshop on Machine Learning for CAD (MLCAD)},
+  year      = {2023},
+  doi       = {10.1109/MLCAD58807.2023.10299874},
+  url       = {https://arxiv.org/abs/2305.13243}
+}
+
+@article{he2024chateda,
+  author  = {He, Zhuolun and Wu, Haoyuan and Zhang, Xinyun and Yao, Xufeng and Zheng, Su and Zheng, Haisheng and Yu, Bei},
+  title   = {{ChatEDA}: A Large Language Model Powered Autonomous Agent for {EDA}},
+  journal = {IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems},
+  year    = {2024},
+  doi     = {10.1109/TCAD.2024.3383347},
+  url     = {https://arxiv.org/abs/2308.10204}
+}
+
+@misc{ho2024verilogcoder,
+  author        = {Ho, Chia-Tung and Ren, Haoxing and Khailany, Brucek},
+  title         = {{VerilogCoder}: Autonomous {Verilog} Coding Agents with Graph-based Planning and Abstract Syntax Tree ({AST})-based Waveform Tracing Tool},
+  year          = {2024},
+  eprint        = {2408.08927},
+  archivePrefix = {arXiv},
+  url           = {https://arxiv.org/abs/2408.08927}
+}
+
+@misc{zhao2024mage,
+  author        = {Zhao, Yujie and Zhang, Hejia and Huang, Hanxian and Yu, Zhongming and Zhao, Jishen},
+  title         = {{MAGE}: A Multi-Agent Engine for Automated {RTL} Code Generation},
+  year          = {2024},
+  eprint        = {2412.07822},
+  archivePrefix = {arXiv},
+  url           = {https://arxiv.org/abs/2412.07822}
+}
+
+@misc{zhong2023llm4eda,
+  author        = {Zhong, Ruizhe and Du, Xingbo and Kai, Shixiong and Tang, Zhentao and Xu, Siyuan and Zhen, Hui-Ling and Hao, Jianye and Xu, Qiang and others},
+  title         = {{LLM4EDA}: Emerging Progress in Large Language Models for Electronic Design Automation},
+  year          = {2023},
+  eprint        = {2401.12224},
+  archivePrefix = {arXiv},
+  url           = {https://arxiv.org/abs/2401.12224}
+}
+
+@misc{pan2025llmedasurvey,
+  author        = {Pan, Jingyu and Zhou, Guanglei and Chang, Chen-Chia and Jacobson, Isaac and Hu, Jiang and Chen, Yiran},
+  title         = {A Survey of Research in Large Language Models for Electronic Design Automation},
+  year          = {2025},
+  eprint        = {2501.09655},
+  archivePrefix = {arXiv},
+  url           = {https://arxiv.org/abs/2501.09655}
+}
+
+@article{mirhoseini2021alphachip,
+  author  = {Mirhoseini, Azalia and Goldie, Anna and Yazgan, Mustafa and Jiang, Joe Wenjie and Songhori, Ebrahim and Wang, Shen and others},
+  title   = {A Graph Placement Methodology for Fast Chip Design},
+  journal = {Nature},
+  volume  = {594},
+  number  = {7862},
+  pages   = {207--212},
+  year    = {2021},
+  doi     = {10.1038/s41586-021-03544-w},
+  note    = {Preprint arXiv:2004.10746. An Addendum appeared in Nature 634 (2024), doi:10.1038/s41586-024-08032-5.}
+}
+
+@misc{jiang2024iicpilot,
+  author        = {Jiang, Zesong and Zhang, Qing and Liu, Cheng and Cheng, Long and Li, Huawei and Li, Xiaowei},
+  title         = {{IICPilot}: An Intelligent Integrated Circuit Backend Design Framework Using Open {EDA}},
+  year          = {2024},
+  eprint        = {2407.12576},
+  archivePrefix = {arXiv},
+  url           = {https://arxiv.org/abs/2407.12576}
+}
+
+@misc{wang2025mcp4eda,
+  author        = {Wang, Yiting and Ye, Wanghao and He, Yexiao and Chen, Yiran and Qu, Gang and Li, Ang},
+  title         = {{MCP4EDA}: {LLM}-Powered Model Context Protocol {RTL}-to-{GDSII} Automation with Backend Aware Synthesis Optimization},
+  year          = {2025},
+  eprint        = {2507.19570},
+  archivePrefix = {arXiv},
+  url           = {https://arxiv.org/abs/2507.19570}
+}
+
+@misc{lu2025autoeda,
+  author        = {Lu, Yiyi and Au, Hoi Ian and Zhang, Junyao and Pan, Jingyu and Zhou, Guanglei and Wang, Yiting and Sun, Jingwei and Li, Ang and others},
+  title         = {{AutoEDA}: Enabling {EDA} Flow Automation through Microservice-Based {LLM} Agents},
+  year          = {2025},
+  eprint        = {2508.01012},
+  archivePrefix = {arXiv},
+  url           = {https://arxiv.org/abs/2508.01012}
+}
+
+@misc{ghose2026audopeda,
+  author        = {Ghose, Amur and Jang, Junyeong and Kahng, Andrew B. and Lee, Jakang},
+  title         = {Automated {QoR} Improvement in {OpenROAD} with Coding Agents},
+  year          = {2026},
+  eprint        = {2601.06268},
+  archivePrefix = {arXiv},
+  url           = {https://arxiv.org/abs/2601.06268}
+}
+
+@misc{deng2026rtl2gds,
+  author        = {Deng, Jinyuan and Chen, Zhengrui and Wei, Xufeng and Xing, Tianyu and Wen, Chenyi and Sun, Qi and Zhuo, Cheng},
+  title         = {Can {AI} Agents Really Complete {RTL}-to-{GDS}? Lessons from Benchmarking Tool-Interactive {EDA} Workflows},
+  year          = {2026},
+  eprint        = {2607.17528},
+  archivePrefix = {arXiv},
+  url           = {https://arxiv.org/abs/2607.17528}
+}
+
+@misc{tieu2026edatracer,
+  author        = {Tieu, Phat and Jana, Sayanti and DeLorenzo, Matthew and Wu, Jiawen and Srinivasan, Narendran and Shakkottai, Srinivas and Hu, Jiang and Rajendran, Jeyavijayan},
+  title         = {{EDATracer}: An Agentic Framework for Large-Scale {EDA} Artifact Analysis},
+  year          = {2026},
+  eprint        = {2608.04032},
+  archivePrefix = {arXiv},
+  url           = {https://arxiv.org/abs/2608.04032}
+}
+
+% =====================================================================
+% Topic 7: Local / on-device LLMs and token demand
+% =====================================================================
+
+@misc{abdin2024phi3,
+  author        = {Abdin, Marah and Aneja, Jyoti and Awadalla, Hany and Awadallah, Ahmed and Awan, Ammar Ahmad and Bach, Nguyen and Bahree, Amit and Bakhtiari, Arash and others},
+  title         = {Phi-3 Technical Report: A Highly Capable Language Model Locally on Your Phone},
+  year          = {2024},
+  eprint        = {2404.14219},
+  archivePrefix = {arXiv},
+  url           = {https://arxiv.org/abs/2404.14219}
+}
+
+@misc{gemmateam2025gemma3,
+  author        = {{Gemma Team}},
+  title         = {Gemma 3 Technical Report},
+  year          = {2025},
+  eprint        = {2503.19786},
+  archivePrefix = {arXiv},
+  url           = {https://arxiv.org/abs/2503.19786}
+}
+
+@misc{grattafiori2024llama3,
+  author        = {Grattafiori, Aaron and Dubey, Abhimanyu and Jauhri, Abhinav and Pandey, Abhinav and Kadian, Abhishek and Al-Dahle, Ahmad and Letman, Aiesha and Mathur, Akhil and others},
+  title         = {The {Llama} 3 Herd of Models},
+  year          = {2024},
+  eprint        = {2407.21783},
+  archivePrefix = {arXiv},
+  url           = {https://arxiv.org/abs/2407.21783}
+}
+
+@misc{meta2024llama32,
+  author       = {{Meta AI}},
+  title        = {Llama 3.2: Revolutionizing edge {AI} and vision with open, customizable models},
+  howpublished = {Meta AI blog},
+  year         = {2024},
+  month        = sep,
+  url          = {https://ai.meta.com/blog/llama-3-2-connect-2024-vision-edge-mobile-devices/},
+  verification         = {1B/3B models, 128K context, pruned and distilled from Llama 3.1 8B/70B. Accessed 2026-10-24.}
+}
+
+@misc{qwen2024qwen25,
+  author        = {{Qwen Team}},
+  title         = {Qwen2.5 Technical Report},
+  year          = {2024},
+  eprint        = {2412.15115},
+  archivePrefix = {arXiv},
+  url           = {https://arxiv.org/abs/2412.15115}
+}
+
+@misc{yang2025qwen3,
+  author        = {Yang, An and Li, Anfeng and Yang, Baosong and Zhang, Beichen and Hui, Binyuan and Zheng, Bo and Yu, Bowen and Gao, Chang and others},
+  title         = {Qwen3 Technical Report},
+  year          = {2025},
+  eprint        = {2505.09388},
+  archivePrefix = {arXiv},
+  url           = {https://arxiv.org/abs/2505.09388}
+}
+
+@misc{liu2024mobilellm,
+  author        = {Liu, Zechun and Zhao, Changsheng and Iandola, Forrest and Lai, Chen and Tian, Yuandong and Fedorov, Igor and Xiong, Yunyang and Chang, Ernie and others},
+  title         = {{MobileLLM}: Optimizing Sub-billion Parameter Language Models for On-Device Use Cases},
+  year          = {2024},
+  eprint        = {2402.14905},
+  archivePrefix = {arXiv},
+  url           = {https://arxiv.org/abs/2402.14905}
+}
+
+@misc{gunter2024apple,
+  author        = {Gunter, Tom and Wang, Zirui and Wang, Chong and Pang, Ruoming and Narayanan, Andy and Zhang, Aonan and Zhang, Bowen and Chen, Chen and others},
+  title         = {Apple Intelligence Foundation Language Models},
+  year          = {2024},
+  eprint        = {2407.21075},
+  archivePrefix = {arXiv},
+  url           = {https://arxiv.org/abs/2407.21075}
+}
+
+@misc{lu2024slmsurvey,
+  author        = {Lu, Zhenyan and Li, Xiang and Cai, Dongqi and Yi, Rongjie and Liu, Fangming and Zhang, Xiwen and Lane, Nicholas D. and Xu, Mengwei},
+  title         = {Small Language Models: Survey, Measurements, and Insights},
+  year          = {2024},
+  eprint        = {2409.15790},
+  archivePrefix = {arXiv},
+  url           = {https://arxiv.org/abs/2409.15790}
+}
+
+@misc{alizadeh2023flash,
+  author        = {Alizadeh, Keivan and Mirzadeh, Iman and Belenko, Dmitry and Khatamifard, Karen and Cho, Minsik and Del Mundo, Carlo C. and Rastegari, Mohammad and Farajtabar, Mehrdad},
+  title         = {{LLM} in a flash: Efficient Large Language Model Inference with Limited Memory},
+  year          = {2023},
+  eprint        = {2312.11514},
+  archivePrefix = {arXiv},
+  url           = {https://arxiv.org/abs/2312.11514}
+}
+
+@misc{xue2024powerinfer2,
+  author        = {Xue, Zhenliang and Song, Yixin and Mi, Zeyu and Zheng, Xinrui and Xia, Yubin and Chen, Haibo},
+  title         = {{PowerInfer-2}: Fast Large Language Model Inference on a Smartphone},
+  year          = {2024},
+  eprint        = {2406.06282},
+  archivePrefix = {arXiv},
+  url           = {https://arxiv.org/abs/2406.06282}
+}
+
+@misc{ggml_llamacpp,
+  author       = {Gerganov, Georgi and {ggml-org contributors}},
+  title        = {llama.cpp: {LLM} inference in {C/C++}},
+  howpublished = {GitHub repository},
+  url          = {https://github.com/ggml-org/llama.cpp},
+  note         = {Accessed 2026-10-24.}
+}
+
+@misc{mlc_llm,
+  author       = {{MLC team}},
+  title        = {{MLC LLM}},
+  url          = {https://llm.mlc.ai/},
+  note         = {Accessed 2026-10-24.}
+}
+
+@misc{chen2018tvm,
+  author        = {Chen, Tianqi and Moreau, Thierry and Jiang, Ziheng and Zheng, Lianmin and Yan, Eddie and Cowan, Meghan and Shen, Haichen and Wang, Leyuan and others},
+  title         = {{TVM}: An Automated End-to-End Optimizing Compiler for Deep Learning},
+  year          = {2018},
+  eprint        = {1802.04799},
+  archivePrefix = {arXiv},
+  url           = {https://arxiv.org/abs/1802.04799}
+}
+
+@misc{pichai2025q3tokens,
+  author       = {Pichai, Sundar},
+  title        = {{Q3} earnings call: Remarks from our {CEO}},
+  howpublished = {Google blog (The Keyword)},
+  year         = {2025},
+  month        = oct,
+  url          = {https://blog.google/inside-google/message-ceo/alphabet-earnings-q3-2025/},
+  verification         = {Reports over 1.3 quadrillion monthly tokens (up from 980T announced July 2025). Dated 29 Oct 2025.}
+}
+
+@inproceedings{panayotov2015librispeech,
+  title     = {Librispeech: An {ASR} corpus based on public domain audio books},
+  author    = {Panayotov, Vassil and Chen, Guoguo and Povey, Daniel and Khudanpur, Sanjeev},
+  booktitle = {IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},
+  pages     = {5206--5210},
+  year      = {2015},
+  doi       = {10.1109/ICASSP.2015.7178964}
+}

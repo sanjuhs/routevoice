@@ -1,0 +1,50 @@
+{
+  "gen_fabric.py": {
+    "sha256": "9cbcb73bb805a15d5da15d8daebc3aeeeba378298ae91d81c6234a333bb5938a",
+    "bytes": 6326
+  },
+  "tb/tb.sv": {
+    "sha256": "e455f25e000d99d92bd1c012be02d4038203aad1fb65a10a1f3f4cabd0bad9bb",
+    "bytes": 3524
+  },
+  "tb/dump_memories.vh": {
+    "sha256": "5a0bc24e57a12ba3d201cd30098c14cfccad82a7f87de0e8567dc8e12afa9028",
+    "bytes": 15516
+  },
+  "verify.sh": {
+    "sha256": "e62119faa3bda177b4d7923a120042f9160ccaee98033ffc072cceb5d329a83b",
+    "bytes": 625
+  },
+  "rtl/rv_fixed_proj320_dp.sv": {
+    "sha256": "a4cc582217f6d99ecaf8b5231959fbf49cadeec4ee1861e661b9ee390129edd4",
+    "bytes": 2801
+  },
+  "rtl/rv_fixed_proj320_rom.sv": {
+    "sha256": "5f53b415cca0e86cbedc564cd782566ba52724566decb3e2c3afaf5478f13166",
+    "bytes": 164882
+  },
+  "rtl/rv_fixed_proj64x320_rom.sv": {
+    "sha256": "51a8f5f74593b93b99be1a50e9333bfb654bf41326382a0f0370ffb390d6429b",
+    "bytes": 35280
+  },
+  "configs/rv_fixed_proj320_dp.json": {
+    "sha256": "44bb9809086bb265489c1351919f8113f2dce2bb21a05da95aedc0d9123e0515",
+    "bytes": 584
+  },
+  "configs/rv_fixed_proj320_rom.json": {
+    "sha256": "b5684e14a470f41f719bb4ea62002b2ae2611f7916bf1aadcaa6161232335a22",
+    "bytes": 586
+  },
+  "configs/rv_fixed_proj64x320_rom.json": {
+    "sha256": "70cb41d23cfff3765f0cbd75c8948900b16d9c7c7fd3fca4ccef0c7900d8c183",
+    "bytes": 657
+  },
+  "vectors/weights-image0.bin": {
+    "sha256": "7d846127db6f9366e919ca1530fad6470ddf680fc44e3e6f248924893179d4e2",
+    "bytes": 102400
+  },
+  "vectors/topology.npz": {
+    "sha256": "8e39a758b2ff9b11504bdd2f9b6357f4715c3437c60cf6323c5d9713cbc8aa82",
+    "bytes": 128510
+  }
+}

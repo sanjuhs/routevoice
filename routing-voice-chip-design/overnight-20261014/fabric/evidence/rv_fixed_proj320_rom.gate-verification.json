@@ -1,0 +1,52 @@
+{
+  "variant": "rv_fixed_proj320_rom",
+  "level": "Zero-delay mapped netlist, GF180 FUNCTIONAL models, Verilator (two-state); no SDF timing simulation",
+  "netlist": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/runs/rv_fixed_proj320_rom-synthesis-retry/06-yosys-synthesis/rv_fixed_proj320_rom.nl.v",
+  "netlist_sha256": "2f957c3f5e1dfeb063207d5438d68d49280ec65778d087300902de245543ec86",
+  "clock_period_ns": 20,
+  "previous_attempt": "evidence/rv_fixed_proj320_rom.gate-verification.json.before-resume",
+  "thread_caps": {
+    "build": 2,
+    "simulation": 1
+  },
+  "phases": [
+    {
+      "phase": "compile",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "make",
+        "-C",
+        "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/tb/gate_obj_rv_fixed_proj320_rom",
+        "-f",
+        "Vtb.mk",
+        "-j",
+        "2"
+      ],
+      "log": "logs/rv_fixed_proj320_rom.gate-resume-compile.log",
+      "exit_code": 0
+    },
+    {
+      "phase": "simulate",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/tb/gate_obj_rv_fixed_proj320_rom/Vtb"
+      ],
+      "log": "logs/rv_fixed_proj320_rom.gate-resume-simulate.log",
+      "exit_code": 0
+    }
+  ],
+  "minimum_free_gib": 22.7,
+  "verification": {
+    "vectors_passed": 32,
+    "random_vectors": 20,
+    "exact_comparisons": 10272,
+    "failures": 0
+  },
+  "elapsed_seconds": 153.43858790397644,
+  "stop_reason": null,
+  "executable_sha256": "b8d2f024e44a3a30c9dac903ed1a9044accfe061f057cbe0aa2e40258775fba4"
+}

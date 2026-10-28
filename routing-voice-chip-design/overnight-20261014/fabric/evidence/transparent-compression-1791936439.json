@@ -1,0 +1,56 @@
+{
+  "unix": 1791936439.855314,
+  "method": "ditto --hfsCompression, SHA256 verified before atomic replace; transparent POSIX reads retain identical bytes",
+  "free_before_bytes": 24682094592,
+  "free_after_bytes": 25042759680,
+  "changes": [
+    {
+      "path": "runs/rv_fixed_proj320_dp-util20-200ns/16-openroad-globalplacement/rv_fixed_proj320_dp.def",
+      "sha256": "bae49eac8e8f14db05c609d857bc60841d6c3cd672d484ea2d68d43dee2c2736",
+      "bytes": 80469269,
+      "before_allocated_bytes": 84369408,
+      "after_allocated_bytes": 13697024,
+      "flags": 32
+    },
+    {
+      "path": "runs/rv_fixed_proj320_dp-util20-200ns/16-openroad-globalplacement/rv_fixed_proj320_dp.nl.v",
+      "sha256": "78bf1cfc364508371b9dccfb7fad3303de5f6664d4933f9bb0128f671b0deb48",
+      "bytes": 41815975,
+      "before_allocated_bytes": 41816064,
+      "after_allocated_bytes": 6332416,
+      "flags": 32
+    },
+    {
+      "path": "runs/rv_fixed_proj320_dp-util20-200ns/16-openroad-globalplacement/rv_fixed_proj320_dp.odb",
+      "sha256": "34974c6e3afbe5bb1b72b302628d256aaca0dcf06c62ba393e1ab1e9261fcb99",
+      "bytes": 185865626,
+      "before_allocated_bytes": 185868288,
+      "after_allocated_bytes": 49328128,
+      "flags": 32
+    },
+    {
+      "path": "runs/rv_fixed_proj320_dp-util20-200ns/16-openroad-globalplacement/rv_fixed_proj320_dp.pnl.v",
+      "sha256": "0e5e4ee14cda24c107ebbed3cff01c8d91a00ff84a0e1da2d4143454a02f77c2",
+      "bytes": 59344225,
+      "before_allocated_bytes": 59346944,
+      "after_allocated_bytes": 7380992,
+      "flags": 32
+    },
+    {
+      "path": "runs/rv_fixed_proj320_dp-util20-200ns/19-openroad-stamidpnr/checks.rpt",
+      "sha256": "344619ce088d5835cefc20bf378e2cb2062041ce9a957955ec96f1b74f810db0",
+      "bytes": 34838879,
+      "before_allocated_bytes": 35655680,
+      "after_allocated_bytes": 6336512,
+      "flags": 32
+    },
+    {
+      "path": "runs/rv_fixed_proj320_dp-util20-200ns/19-openroad-stamidpnr/openroad-stamidpnr.log",
+      "sha256": "83a8190620fc93231b8c74dbefb39b319844737d33f033904990ae1aa83c3483",
+      "bytes": 43677561,
+      "before_allocated_bytes": 44044288,
+      "after_allocated_bytes": 7397376,
+      "flags": 32
+    }
+  ]
+}

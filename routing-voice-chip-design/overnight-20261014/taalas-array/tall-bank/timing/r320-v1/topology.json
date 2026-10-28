@@ -1,0 +1,21 @@
+{
+  "array_devices": 40960,
+  "joined_devices": 41472,
+  "all_device_connections_and_dimensions_match_real_image_and_pre2_receiver": true,
+  "canonicalization": {
+    "array": {
+      "nodes": 20921,
+      "bijective": true
+    },
+    "joined": {
+      "nodes": 21051,
+      "bijective": true
+    }
+  },
+  "row_mapping": "logicalrow=3+4*localrow",
+  "global_lane_range": [
+    96,
+    128
+  ],
+  "image_sha256": "f093304e4b8c765000c48fc023b5798e68fb54f3f69f4c5a80f44ccd3c4ae5e0"
+}

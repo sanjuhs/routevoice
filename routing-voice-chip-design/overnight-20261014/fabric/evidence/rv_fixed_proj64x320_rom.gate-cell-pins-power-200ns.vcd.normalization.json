@@ -1,0 +1,14 @@
+{
+  "source": "vectors/rv_fixed_proj64x320_rom.gate-cell-pins-power-200ns.vcd.gz",
+  "output": "vectors/rv_fixed_proj64x320_rom.gate-cell-pins-power-200ns.normalized.vcd.gz",
+  "source_sha256": "f82901b475960c4c9df980a7229105ef97454b88637c47a2ec311a92b7d5bad8",
+  "output_sha256": "19ce37aa678ae962c52d8ab923b00231fe24948e8d3615f1bbf00e20b862bad1",
+  "non_timestamp_sha256": "55b721ca53c479fba00c70341f95c1a66f72830dd65a4dd086e5dc5438ad9bb1",
+  "removed_offset_ps": 2600000,
+  "duration_ps": 387101000,
+  "duration_ns": 387101.0,
+  "timestamp_count": 5487,
+  "scope_count": 380922,
+  "variable_declarations": 2459520,
+  "note": "Five verified random gate-level vectors at 200 ns, including clocked readout; only initial absolute time offset removed. Zero-delay, no routed glitches."
+}

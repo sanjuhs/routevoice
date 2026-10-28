@@ -1,0 +1,104 @@
+{
+  "unix": 1791937670.815957,
+  "method": "ditto --hfsCompression, SHA256 verified before atomic replace; transparent POSIX reads retain identical bytes",
+  "free_before_bytes": 26285129728,
+  "free_after_bytes": 26649960448,
+  "changes": [
+    {
+      "path": "runs/rv_fixed_proj320_dp-util20-200ns/23-openroad-cts/rv_fixed_proj320_dp.def",
+      "sha256": "e9a43ca42fd5684d722339c10e34b1193b889a1ada982e1fe5ecf0ffd08848d6",
+      "bytes": 94867310,
+      "before_allocated_bytes": 100831232,
+      "after_allocated_bytes": 14667776,
+      "flags": 32
+    },
+    {
+      "path": "runs/rv_fixed_proj320_dp-util20-200ns/23-openroad-cts/rv_fixed_proj320_dp.nl.v",
+      "sha256": "eb81e32d43a3bf95b60eea250ed48d503f371ebc05df9d81b05cd1b949c62039",
+      "bytes": 50182562,
+      "before_allocated_bytes": 50184192,
+      "after_allocated_bytes": 7790592,
+      "flags": 32
+    },
+    {
+      "path": "runs/rv_fixed_proj320_dp-util20-200ns/23-openroad-cts/rv_fixed_proj320_dp.odb",
+      "sha256": "feff494d945bfff7142ac5ba9960ef4ceefdb43aa2ab54d47d940e785894885b",
+      "bytes": 228637259,
+      "before_allocated_bytes": 228638720,
+      "after_allocated_bytes": 57671680,
+      "flags": 32
+    },
+    {
+      "path": "runs/rv_fixed_proj320_dp-util20-200ns/23-openroad-cts/rv_fixed_proj320_dp.pnl.v",
+      "sha256": "85ed424ad0dc4011ec7d5bc739523329a9014543186c05c58616a8cfc4470089",
+      "bytes": 72971672,
+      "before_allocated_bytes": 83197952,
+      "after_allocated_bytes": 8032256,
+      "flags": 32
+    },
+    {
+      "path": "runs/rv_fixed_proj320_dp-util20-200ns/24-openroad-stamidpnr-1/max.rpt",
+      "sha256": "16f40f42b66af7d0adbcdd880a4ba5864823817846e0ce9c19d8277c9b235dd9",
+      "bytes": 24083331,
+      "before_allocated_bytes": 24084480,
+      "after_allocated_bytes": 3239936,
+      "flags": 32
+    },
+    {
+      "path": "runs/rv_fixed_proj320_dp-util20-200ns/24-openroad-stamidpnr-1/min.rpt",
+      "sha256": "fdbae9846b08b4af2679c1af8a51ee5fd900293d4c9e4506796b2055dcd00cc4",
+      "bytes": 8259163,
+      "before_allocated_bytes": 8392704,
+      "after_allocated_bytes": 1028096,
+      "flags": 32
+    },
+    {
+      "path": "runs/rv_fixed_proj320_dp-util20-200ns/24-openroad-stamidpnr-1/openroad-stamidpnr-1.log",
+      "sha256": "238150d7385334b35b27fdd9a4da0b12bbd9960e70a08195eb1f3e28ad4ceb64",
+      "bytes": 32455890,
+      "before_allocated_bytes": 32509952,
+      "after_allocated_bytes": 4280320,
+      "flags": 32
+    },
+    {
+      "path": "runs/rv_fixed_proj320_dp-util20-200ns/final/def/rv_fixed_proj320_dp.def",
+      "sha256": "e9a43ca42fd5684d722339c10e34b1193b889a1ada982e1fe5ecf0ffd08848d6",
+      "bytes": 94867310,
+      "before_allocated_bytes": 94867456,
+      "after_allocated_bytes": 14667776,
+      "flags": 32
+    },
+    {
+      "path": "runs/rv_fixed_proj320_dp-util20-200ns/final/json_h/rv_fixed_proj320_dp.h.json",
+      "sha256": "2d4597fc57908c501c804475a5c2c38d5c4e68967c52dbb315e6f74fb3c74be9",
+      "bytes": 23476381,
+      "before_allocated_bytes": 23478272,
+      "after_allocated_bytes": 1691648,
+      "flags": 32
+    },
+    {
+      "path": "runs/rv_fixed_proj320_dp-util20-200ns/final/nl/rv_fixed_proj320_dp.nl.v",
+      "sha256": "eb81e32d43a3bf95b60eea250ed48d503f371ebc05df9d81b05cd1b949c62039",
+      "bytes": 50182562,
+      "before_allocated_bytes": 50184192,
+      "after_allocated_bytes": 7790592,
+      "flags": 32
+    },
+    {
+      "path": "runs/rv_fixed_proj320_dp-util20-200ns/final/odb/rv_fixed_proj320_dp.odb",
+      "sha256": "feff494d945bfff7142ac5ba9960ef4ceefdb43aa2ab54d47d940e785894885b",
+      "bytes": 228637259,
+      "before_allocated_bytes": 228638720,
+      "after_allocated_bytes": 57683968,
+      "flags": 32
+    },
+    {
+      "path": "runs/rv_fixed_proj320_dp-util20-200ns/final/pnl/rv_fixed_proj320_dp.pnl.v",
+      "sha256": "85ed424ad0dc4011ec7d5bc739523329a9014543186c05c58616a8cfc4470089",
+      "bytes": 72971672,
+      "before_allocated_bytes": 72974336,
+      "after_allocated_bytes": 8032256,
+      "flags": 32
+    }
+  ]
+}

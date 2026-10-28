@@ -1,0 +1,68 @@
+\section{Methodology}
+\label{sec:method}
+
+\subsection{Proof levels and evidence rules}
+Every claim in the project names an artifact and a proof level. The levels run from P0 (idea) through software, numerical reference, RTL block, connected RTL, open-flow physical design, FPGA, foundry signoff and silicon, up to P9 (product). A claim at one level never stands in for another. A routed engine is not evidence of recognizer accuracy, and a correct index pattern is not evidence of a correct weight.
+
+Three rules governed the work:
+\begin{enumerate}
+\item A result is recorded as PASS only after the lead re-ran it or read the actual tool output. Reports from worker agents are recorded as ``claimed'' until then.
+\item Failures are kept, not overwritten. Each workstream keeps a \texttt{FAILURES.md} next to its \texttt{RESULTS.md}.
+\item Inputs and outputs are pinned by SHA-256: model tensors, packed indices, books, tool binaries and run databases. Off-machine backups are re-hashed after upload.
+\end{enumerate}
+
+\subsection{Step-by-step procedure}
+\begin{enumerate}
+\item \textbf{Freeze the model and the oracle.} Pin the Moonshine release by hash. Build an independent NumPy reference over the executable tensor bytes, and capture boundary tensors, logits and tokens for each test clip.
+\item \textbf{Choose the representation in software.} Search quantization candidates against pre-registered WER gates, ending with one reserved test (\cref{sec:representation}).
+\item \textbf{Write a numerical contract for one projection.} Fix bit widths, cycle counts and an exact integer and FP32 oracle. Bound accumulators on the actual matrix.
+\item \textbf{Build and verify the RTL engine.} The bench uses 54 vectors: one captured from speech and 53 integer fixtures, giving \num{17280} integer and \num{17280} FP32 outputs. It also exercises stalls and four mid-vector resets.
+\item \textbf{Connect the whole recognizer.} Move every weight on chip, first as byte ROMs, then as index$+$book services. Require identical tokens, hashes and clock counts on every change.
+\item \textbf{Lay out the weight banks.} Generate pitch-matched mask-programmed banks. Then run DRC, read the bit pattern back from GDS against the packed model, and run LVS against a source-derived netlist. Include planted-error negative controls.
+\item \textbf{Implement the engine physically.} Synthesize, audit fanout, run short global-route diagnostics, then do the full route, signoff (DRC, LVS, antenna, XOR) and all-corner extracted timing.
+\item \textbf{Measure power from real activity.} Run a gate-level simulation of one real projection, rescale its switching trace to the clock period, and annotate it on the routed database with extracted parasitics.
+\item \textbf{Check whole-design synthesizability} for both silicon and FPGA.
+\item \textbf{Floorplan the chip} with abstract macros, power grids and IR-drop screens, then integrate the real banks and logic macros.
+\end{enumerate}
+
+\subsection{Open toolchain}
+All tools are open source:
+\begin{itemize}
+\item \textbf{Synthesis:} Yosys~0.62~\cite{wolf_yosys}, including \texttt{slang} for SystemVerilog.
+\item \textbf{Place and route:} OpenROAD~\cite{ajayi2019openroad} under LibreLane~3.0.11~\cite{librelane}.
+\item \textbf{Timing:} OpenSTA~2.7.
+\item \textbf{Layout and DRC:} Magic~8.3~\cite{edwards_magic} and KLayout~0.30~\cite{koefferlein_klayout}, using the full GF180 main deck.
+\item \textbf{LVS:} Netgen~1.5~\cite{edwards_netgen}.
+\item \textbf{Circuit simulation:} ngspice~47.
+\item \textbf{Functional and gate-level simulation:} Verilator~5.05~\cite{snyder_verilator}.
+\end{itemize}
+The PDK is GF180MCU-D~\cite{google_gf180mcu} with its 7-track standard cells, characterised at TT (\SI{25}{\celsius}, \SI{3.3}{V}), SS (\SI{125}{\celsius}, \SI{3.0}{V}) and FF (\SI{-40}{\celsius}, \SI{3.6}{V}), each with minimum, nominal and maximum RC. The toolchain is pinned in a Nix environment.
+
+Compute was an Apple M4~Pro laptop (14 cores, 48\,GB) and two rented CPU servers. The servers were used for about 47 hours in total and cost \$34.82. All closure and power work after 22~October ran on the laptop.
+
+\subsection{Agent orchestration}
+The design work was carried out by AI coding agents under human direction:
+\begin{itemize}
+\item a lead agent (Claude Code) planned the work, wrote briefs, verified results and integrated them;
+\item up to six parallel worker agents (OpenAI Codex CLI) each owned one workstream, with a written brief, a private directory, and explicit limits on compute, memory and cloud spend;
+\item short-lived sub-agents handled read-only research and inventories.
+\end{itemize}
+
+Workstreams in the final push were:
+\begin{itemize}
+\item W10: engine routing and signoff;
+\item W11: index$+$book recognizer;
+\item W12: full synthesis;
+\item W13: weight banks;
+\item W14: logic macros;
+\item W15: two-die integration.
+\end{itemize}
+
+The human set goals and budgets and approved spending. The lead enforced the evidence rules. Several practices proved necessary:
+\begin{itemize}
+\item \textbf{Verify process state, not worker reports.} Workers sometimes reported jobs as ``continuing'' after their processes had exited. One such case left a rented server idle for about 21 billed hours.
+\item \textbf{Publish a shared resource schedule.} A container's real memory limit (\SI{64}{GB}) was far below what the operating system reported (\SI{755}{GB}). After one out-of-memory kill, the lead published a priority order and a memory ceiling for all workers.
+\item \textbf{Keep a verified external backup before tearing down cloud machines.} A 53\,GB checksum-verified backup let the rented server be deleted while results were still being produced; routed power and every later closure run started from the restored data.
+\item \textbf{Have the lead do the critical-path engineering.} Timing closure (\cref{sec:closure}) ran as short, verified iterations by the lead after the workers had exited. This was faster than delegating.
+\end{itemize}
+\Cref{sec:efficiency} quantifies where time and money went.

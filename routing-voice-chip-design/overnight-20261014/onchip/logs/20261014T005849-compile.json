@@ -1,0 +1,26 @@
+{
+  "stage": "compile",
+  "command": [
+    "/usr/bin/nice",
+    "-n",
+    "10",
+    "/usr/bin/make",
+    "-C",
+    "/Users/sanju/.local/state/routevoice-internal-runs/20261014/onchip/obj-a",
+    "-f",
+    "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/onchip/no-pch.mk",
+    "-j8",
+    "OPT_FAST=-O3",
+    "OPT_SLOW=-O3",
+    "CXX=/usr/bin/c++",
+    "LINK=/usr/bin/c++",
+    "VM_PARALLEL_BUILDS=1"
+  ],
+  "cwd": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design",
+  "log": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/onchip/logs/20261014T005849-compile.log",
+  "started": "20261014T005849",
+  "exit_code": 2,
+  "pid": 7291,
+  "stop_reason": "Disk reserve fell below 22 GiB; stopping own process group to protect required 20 GiB floor",
+  "elapsed_seconds": 25.029086832888424
+}

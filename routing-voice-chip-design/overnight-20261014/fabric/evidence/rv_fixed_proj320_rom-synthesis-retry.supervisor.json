@@ -1,0 +1,24 @@
+{
+  "command": [
+    "bash",
+    "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/run_flow.sh",
+    "rv_fixed_proj320_rom",
+    "synthesis-retry"
+  ],
+  "log": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/logs/rv_fixed_proj320_rom-synthesis-retry.flow.log",
+  "exit_code": 0,
+  "stop_reason": null,
+  "elapsed_seconds": 635.9863002300262,
+  "minimum_free_bytes": 25408712704,
+  "limit_seconds": 3600,
+  "thread_limit": 8,
+  "nice": 10,
+  "minimum_required_free_gib": 23.5,
+  "start_unix": 1791933813.7806048,
+  "flow_controls": {
+    "W2_TO_STEP": "Yosys.Synthesis",
+    "W2_NUM_THREADS": "1",
+    "W2_MIN_FREE_GIB": "23.5",
+    "W2_LIMIT_SECONDS": "3600"
+  }
+}

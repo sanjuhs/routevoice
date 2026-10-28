@@ -1,0 +1,117 @@
+{
+  "w2b_identity": {
+    "source": {
+      "file": "encoder.ort",
+      "file_sha256": "34c9568cface06242b3b215c4bce01f3b48144e53342addc1c3d5c3603e72ffc",
+      "node": "node_MatMul_86_quant",
+      "operator": "DynamicQuantizeMatMul",
+      "operator_domain": "com.microsoft",
+      "inputs": [
+        "gelu",
+        "val_89_quantized",
+        "val_89_scale",
+        "val_89_zero_point",
+        "blocks.0.ff.project_out.bias"
+      ],
+      "shape_K_N": [
+        1280,
+        320
+      ],
+      "tensors": {
+        "val_89_quantized": {
+          "sha256": "3bdff3a2320a13083aafdb04a166061bd014226698421d6533a59fd9ee67f8a0",
+          "shape": [
+            1280,
+            320
+          ],
+          "onnx_data_type": 2
+        },
+        "val_89_scale": {
+          "sha256": "f4ae4da7e2ce540da45d624ae8ea0d9296e93a0b6d4f5191be6a04cfbd7a719a",
+          "shape": [
+            320
+          ],
+          "onnx_data_type": 1
+        },
+        "val_89_zero_point": {
+          "sha256": "56970db5941c42177246ec12c65f5bef33e675b1129edd31cd120c28bd5229df",
+          "shape": [
+            320
+          ],
+          "onnx_data_type": 2
+        },
+        "blocks.0.ff.project_out.bias": {
+          "sha256": "b38af8798f2ba7a39066bb52c555be8b36898cc2660a5959d79cd0bbde629beb",
+          "shape": [
+            320
+          ],
+          "onnx_data_type": 1
+        }
+      }
+    },
+    "original_source": {
+      "file": "encoder.ort",
+      "file_sha256": "a8414e1a5dedf9f2093d7680601dd8a9b0433e7020260eafe0e370ead91134ca",
+      "node": "node_MatMul_86_quant",
+      "operator": "DynamicQuantizeMatMul",
+      "operator_domain": "com.microsoft",
+      "inputs": [
+        "gelu",
+        "val_89_quantized",
+        "val_89_scale",
+        "val_89_zero_point",
+        "blocks.0.ff.project_out.bias"
+      ],
+      "shape_K_N": [
+        1280,
+        320
+      ],
+      "tensors": {
+        "val_89_quantized": {
+          "sha256": "97fcd23a0d8ebd08ab6ac44b71be7e4c140dd8662619612fb297ada3767e8168",
+          "shape": [
+            1280,
+            320
+          ],
+          "onnx_data_type": 2
+        },
+        "val_89_scale": {
+          "sha256": "f4ae4da7e2ce540da45d624ae8ea0d9296e93a0b6d4f5191be6a04cfbd7a719a",
+          "shape": [
+            320
+          ],
+          "onnx_data_type": 1
+        },
+        "val_89_zero_point": {
+          "sha256": "56970db5941c42177246ec12c65f5bef33e675b1129edd31cd120c28bd5229df",
+          "shape": [
+            320
+          ],
+          "onnx_data_type": 2
+        },
+        "blocks.0.ff.project_out.bias": {
+          "sha256": "b38af8798f2ba7a39066bb52c555be8b36898cc2660a5959d79cd0bbde629beb",
+          "shape": [
+            320
+          ],
+          "onnx_data_type": 1
+        }
+      }
+    },
+    "candidate_manifest_sha256": "a9ac4a4c9f51b65ebadf5b26b7c7fe0d3100d047ec4ad863f1b9d147b78870cc",
+    "packed_sha256": "864fcdc7ec80be2dbb99d76361db338345fb02a1a26d7aaa4a1b40696b921907",
+    "book_bytes_sha256": "4c0fe5e44202ef5a2479440c1108b187568b75bdeaad77216d792ea49fec4a49",
+    "indices_unpacked_sha256": "ba628b676d59721c268868d6720be1f58a4f8d4edfd9a26009403c9a8c4fce8e",
+    "coefficient_count": 409600,
+    "books": 6400,
+    "representatives": 102400,
+    "reconstruction_equal": true,
+    "numpy_integer_comparisons": 16960,
+    "numpy_float_comparisons": 17280,
+    "original_uncoded_different_coefficients": 291832,
+    "original_uncoded_different_integer_outputs": 13239,
+    "candidate_vs_original_scope": "Exactness target is executable frozen K64 tensor. Pre-codebook original preserved and hashed; not numerically identical."
+  },
+  "w6_indices_file_sha256": "13e9b6b069007c2bc1b4cc92792a0f70be019b20c0e131ca4fb564f6f2cca85f",
+  "real_image_equal": true
+}

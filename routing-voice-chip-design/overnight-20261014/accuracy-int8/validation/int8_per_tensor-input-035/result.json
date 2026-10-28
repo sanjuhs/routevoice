@@ -1,0 +1,69 @@
+{
+  "case_id": "int8_per_tensor-input-035",
+  "model": "int8_per_tensor",
+  "id": "2506-13150-0000",
+  "role": "validation",
+  "condition": "other",
+  "seed": null,
+  "reference": "PRAY CAPTAIN QUOTH I AS I WAS GOING DOWN INTO THE CABIN IS A MAN NEVER OVERTAKEN BY DEATH IN THIS PASSAGE",
+  "input_float32_sha256": "caf53dc4564d320ac6f5613952d64ba47abf302702e10c68af24c6eed972cd8b",
+  "hypothesis": "   ",
+  "normalized_tokens": [],
+  "edits": 22,
+  "reference_words": 22,
+  "hypothesis_words": 0,
+  "exact": false,
+  "lines": [
+    {
+      "text": "",
+      "start_time": 0.3840000033378601,
+      "duration": 1.5360000133514404,
+      "is_complete": true,
+      "samples": 24576,
+      "input_float32_sha256": "e46ca5a2768b643629d4b2fe6acb96d9cd81bda9265f3bbb4aab5358d9d78582"
+    },
+    {
+      "text": "",
+      "start_time": 1.7919998168945312,
+      "duration": 1.1520001888275146,
+      "is_complete": true,
+      "samples": 18432,
+      "input_float32_sha256": "caa6db965c9c8b70295ffa37d381379a6625026110cc2629bdbb9b098bd3d7f9"
+    },
+    {
+      "text": "",
+      "start_time": 2.687999963760376,
+      "duration": 2.623999834060669,
+      "is_complete": true,
+      "samples": 41984,
+      "input_float32_sha256": "b66acafca83e9b86edfcc984d4296bcd1d44bb6137d9857ed81d83481e2d1bd5"
+    },
+    {
+      "text": "",
+      "start_time": 5.4079999923706055,
+      "duration": 3.6800003051757812,
+      "is_complete": true,
+      "samples": 58880,
+      "input_float32_sha256": "2e3da68621b92a7a38ff6a5149f5bcdf6b956844033fed8372d82d953275ead3"
+    }
+  ],
+  "request_sha256": "49d10d924386e3578c3e96a3b337d08b5fb6709217dab0522b3b84777238367a",
+  "worker_sha256": "4682e8a57db08e02a34f53b01f334f34faa3ca9a6546698f1e4650db359004b6",
+  "native_library_sha256": "1453a6c1c9072f3d05e9e5ae6ff423fae839e56631c5efb12bbd5c0280d04399",
+  "native_api_version": 30000,
+  "load_seconds": 0.04011779208667576,
+  "compute_seconds": 0.19348991685546935,
+  "audio_seconds": 9.21,
+  "process_cpu_seconds": 0.19349099999999997,
+  "voluntary_context_switches": 0,
+  "involuntary_context_switches": 36,
+  "system_load_average": [
+    10.6337890625,
+    9.0859375,
+    9.892578125
+  ],
+  "options": null,
+  "flags": 0,
+  "process_id": 81140,
+  "isolation": "One audio clip/condition in a fresh native process; no previous utterance or VAD state."
+}

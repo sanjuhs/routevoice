@@ -1,0 +1,22 @@
+{
+  "stage": "unit-position-build",
+  "command": [
+    "/usr/bin/nice",
+    "-n",
+    "10",
+    "/opt/homebrew/bin/iverilog",
+    "-g2012",
+    "-s",
+    "tb_source_position_immutable_rom_v1",
+    "-o",
+    "/Users/sanju/.local/state/routevoice-internal-runs/20261014/onchip-all/position.vvp",
+    "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/onchip-all/rv_source_position_immutable_rom_v1.sv",
+    "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/onchip-all/tb_source_position_immutable_rom_v1.sv"
+  ],
+  "cwd": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design",
+  "log": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/onchip-all/logs/20261014T021149-unit-position-build.log",
+  "started": "20261014T021149",
+  "exit_code": 0,
+  "pid": 49294,
+  "elapsed_seconds": 0.07547683292068541
+}

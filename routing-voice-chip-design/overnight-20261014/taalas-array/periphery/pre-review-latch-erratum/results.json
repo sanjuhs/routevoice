@@ -1,0 +1,471 @@
+{
+  "status": "physical isolated periphery macros verified; full connected macro and 20ns timing unqualified",
+  "blocks": {
+    "w5_row_decoder": {
+      "run": "decoderb-v1",
+      "physical_metrics": "runs/decoderb-v1/final/metrics.json",
+      "timing_metrics": "runs/decoderb-v1/final/metrics.json",
+      "outline_area_um2": 14400,
+      "dimensions_um": [
+        120,
+        120
+      ],
+      "cell_area_excluding_fill_um2": 4017.22,
+      "magic_drc_markers": 0,
+      "netgen_lvs_errors": 0,
+      "netgen_lvs_counts": {
+        "design__lvs_device_difference__count": 0,
+        "design__lvs_net_difference__count": 0,
+        "design__lvs_property_fail__count": 0,
+        "design__lvs_error__count": 0,
+        "design__lvs_unmatched_device__count": 0,
+        "design__lvs_unmatched_net__count": 0,
+        "design__lvs_unmatched_pin__count": 0
+      },
+      "klayout": {
+        "markers": 0,
+        "categories": {},
+        "command": [
+          "nice",
+          "-n",
+          "10",
+          "/nix/store/yczxlrrywxp7q2aavm4b3zrj3lpmq18a-devshell-dir/bin/klayout",
+          "-b",
+          "-r",
+          "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/taalas-array/periphery/main.drc",
+          "-rd",
+          "input=/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/taalas-array/periphery/handoff-v2/w5_row_decoder.gds",
+          "-rd",
+          "report=/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/taalas-array/periphery/w5_row_decoder.lyrdb",
+          "-rd",
+          "topcell=w5_row_decoder",
+          "-rd",
+          "feol=true",
+          "-rd",
+          "beol=true",
+          "-rd",
+          "conn_drc=true",
+          "-rd",
+          "offgrid=true",
+          "-rd",
+          "metal_top=11K",
+          "-rd",
+          "metal_level=5LM",
+          "-rd",
+          "mim_option=B",
+          "-rd",
+          "run_mode=deep",
+          "-rd",
+          "thr=1"
+        ],
+        "scope": "GF180 FEOL BEOL connectivity offgrid; density and antenna excluded",
+        "gds_sha256": "2ae74e8bd4d604bef8a5a656c41a748dc6408e53588df1fbfd89a529b4e5420a"
+      },
+      "gate_functional": {
+        "stdout": "PASS 64 rows,64 disabled checks\n/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/taalas-array/periphery/decoder_tb.v:6: $finish called at 128 (1s)\n",
+        "netlist": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/taalas-array/periphery/runs/decoderb-v1/final/nl/w5_row_decoder.nl.v",
+        "command": [
+          "/nix/store/yczxlrrywxp7q2aavm4b3zrj3lpmq18a-devshell-dir/bin/iverilog",
+          "-g2012",
+          "-DFUNCTIONAL",
+          "-s",
+          "tb",
+          "-o",
+          "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/taalas-array/periphery/decoder.sim",
+          "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/taalas-array/periphery/decoder_tb.v",
+          "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/taalas-array/periphery/runs/decoderb-v1/final/nl/w5_row_decoder.nl.v",
+          "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/verilog/gf180mcu_fd_sc_mcu7t5v0.v",
+          "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/verilog/primitives.v"
+        ]
+      },
+      "extracted_sta": {
+        "nom_tt_025C_3v30": {
+          "max_slew_violations": 0,
+          "max_cap_violations": 0,
+          "hold_slack_ns": 9.539816318036273,
+          "setup_slack_ns": 5.582143794091815
+        },
+        "nom_ss_125C_3v00": {
+          "max_slew_violations": 0,
+          "max_cap_violations": 0,
+          "hold_slack_ns": 11.137963755436068,
+          "setup_slack_ns": -0.5977405406497625
+        },
+        "nom_ff_n40C_3v60": {
+          "max_slew_violations": 0,
+          "max_cap_violations": 0,
+          "hold_slack_ns": 8.834971226904168,
+          "setup_slack_ns": 8.216927815184276
+        },
+        "min_tt_025C_3v30": {
+          "max_slew_violations": 0,
+          "max_cap_violations": 0,
+          "hold_slack_ns": 9.501351085948029,
+          "setup_slack_ns": 5.673132346692906
+        },
+        "min_ss_125C_3v00": {
+          "max_slew_violations": 0,
+          "max_cap_violations": 0,
+          "hold_slack_ns": 11.06519618363045,
+          "setup_slack_ns": -0.42469318153179475
+        },
+        "min_ff_n40C_3v60": {
+          "max_slew_violations": 0,
+          "max_cap_violations": 0,
+          "hold_slack_ns": 8.811589929344294,
+          "setup_slack_ns": 8.272388341814143
+        },
+        "max_tt_025C_3v30": {
+          "max_slew_violations": 0,
+          "max_cap_violations": 0,
+          "hold_slack_ns": 9.586014031665115,
+          "setup_slack_ns": 5.472966235119264
+        },
+        "max_ss_125C_3v00": {
+          "max_slew_violations": 11,
+          "max_cap_violations": 0,
+          "hold_slack_ns": 11.225104719014201,
+          "setup_slack_ns": -0.8061018747337546
+        },
+        "max_ff_n40C_3v60": {
+          "max_slew_violations": 0,
+          "max_cap_violations": 0,
+          "hold_slack_ns": 8.86294263066687,
+          "setup_slack_ns": 8.15037660431395
+        }
+      },
+      "sta_load_ff": 100,
+      "planned_replication_count": 200,
+      "artifact_sha256": {
+        "handoff-v2/w5_row_decoder.def": "f53df7c35ab6c82c02c7ca23d794966214f5954eca912da959c74bbb75ed9f73",
+        "handoff-v2/w5_row_decoder.spice": "ccd101c904a764aa461c64b366215b738a844234dbcf3d8708c302682aea2b4f",
+        "handoff-v2/w5_row_decoder.gds": "2ae74e8bd4d604bef8a5a656c41a748dc6408e53588df1fbfd89a529b4e5420a",
+        "handoff-v2/w5_row_decoder.lef": "5fbbfde1b3ff0fceb7c3a513ea6549532bcf9d5dfb941b34597bf005dce90436",
+        "handoff-v2/w5_row_decoder.nl.v": "8bc54148e588cf7b7bee193232a32b1cee6d2e545e9142994b1f3fa3afe3d0c4"
+      }
+    },
+    "w5_bank_mux128": {
+      "run": "mux128b-v1",
+      "physical_metrics": "runs/mux128b-v1/final/metrics.json",
+      "timing_metrics": "runs/mux128b-poststa/final/metrics.json",
+      "outline_area_um2": 202500,
+      "dimensions_um": [
+        450,
+        450
+      ],
+      "cell_area_excluding_fill_um2": 81703.1,
+      "magic_drc_markers": 0,
+      "netgen_lvs_errors": 0,
+      "netgen_lvs_counts": {
+        "design__lvs_device_difference__count": 0,
+        "design__lvs_net_difference__count": 0,
+        "design__lvs_property_fail__count": 0,
+        "design__lvs_error__count": 0,
+        "design__lvs_unmatched_device__count": 0,
+        "design__lvs_unmatched_net__count": 0,
+        "design__lvs_unmatched_pin__count": 0
+      },
+      "klayout": {
+        "markers": 0,
+        "categories": {},
+        "command": [
+          "nice",
+          "-n",
+          "10",
+          "/nix/store/yczxlrrywxp7q2aavm4b3zrj3lpmq18a-devshell-dir/bin/klayout",
+          "-b",
+          "-r",
+          "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/taalas-array/periphery/main.drc",
+          "-rd",
+          "input=/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/taalas-array/periphery/handoff-v2/w5_bank_mux128.gds",
+          "-rd",
+          "report=/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/taalas-array/periphery/w5_bank_mux128.lyrdb",
+          "-rd",
+          "topcell=w5_bank_mux128",
+          "-rd",
+          "feol=true",
+          "-rd",
+          "beol=true",
+          "-rd",
+          "conn_drc=true",
+          "-rd",
+          "offgrid=true",
+          "-rd",
+          "metal_top=11K",
+          "-rd",
+          "metal_level=5LM",
+          "-rd",
+          "mim_option=B",
+          "-rd",
+          "run_mode=deep",
+          "-rd",
+          "thr=1"
+        ],
+        "scope": "GF180 FEOL BEOL connectivity offgrid; density and antenna excluded",
+        "gds_sha256": "bb33aa3fc1a1b9d6a240900042a036d98093aa56b8f1b4b16dd365c217da98ca"
+      },
+      "gate_functional": {
+        "stdout": "PASS 8x32 bank values+disable and2560 onehot bank-bit paths\n/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/taalas-array/periphery/mux128_tb.v:11: $finish called at 3072 (1s)\n",
+        "netlist": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/taalas-array/periphery/runs/mux128b-v1/final/nl/w5_bank_mux128.nl.v",
+        "command": [
+          "/nix/store/yczxlrrywxp7q2aavm4b3zrj3lpmq18a-devshell-dir/bin/iverilog",
+          "-g2012",
+          "-DFUNCTIONAL",
+          "-s",
+          "tb",
+          "-o",
+          "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/taalas-array/periphery/mux128.sim",
+          "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/taalas-array/periphery/mux128_tb.v",
+          "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/taalas-array/periphery/runs/mux128b-v1/final/nl/w5_bank_mux128.nl.v",
+          "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/verilog/gf180mcu_fd_sc_mcu7t5v0.v",
+          "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/verilog/primitives.v"
+        ]
+      },
+      "extracted_sta": {
+        "nom_tt_025C_3v30": {
+          "max_slew_violations": 12,
+          "max_cap_violations": 1,
+          "hold_slack_ns": 8.98735156178963,
+          "setup_slack_ns": 0.7519762803064527
+        },
+        "nom_ss_125C_3v00": {
+          "max_slew_violations": 202,
+          "max_cap_violations": 1,
+          "hold_slack_ns": 10.194457122574955,
+          "setup_slack_ns": -9.668055074613095
+        },
+        "nom_ff_n40C_3v60": {
+          "max_slew_violations": 0,
+          "max_cap_violations": 1,
+          "hold_slack_ns": 8.466145357729967,
+          "setup_slack_ns": 5.246203620015501
+        },
+        "min_tt_025C_3v30": {
+          "max_slew_violations": 12,
+          "max_cap_violations": 1,
+          "hold_slack_ns": 8.94653176864417,
+          "setup_slack_ns": 1.1308936329706938
+        },
+        "min_ss_125C_3v00": {
+          "max_slew_violations": 139,
+          "max_cap_violations": 1,
+          "hold_slack_ns": 10.117931667769303,
+          "setup_slack_ns": -8.946045935034853
+        },
+        "min_ff_n40C_3v60": {
+          "max_slew_violations": 0,
+          "max_cap_violations": 1,
+          "hold_slack_ns": 8.441207083356325,
+          "setup_slack_ns": 5.463948559369012
+        },
+        "max_tt_025C_3v30": {
+          "max_slew_violations": 23,
+          "max_cap_violations": 1,
+          "hold_slack_ns": 9.036657899975342,
+          "setup_slack_ns": 0.2814353274530739
+        },
+        "max_ss_125C_3v00": {
+          "max_slew_violations": 303,
+          "max_cap_violations": 2,
+          "hold_slack_ns": 10.286863207973978,
+          "setup_slack_ns": -10.581582132247773
+        },
+        "max_ff_n40C_3v60": {
+          "max_slew_violations": 0,
+          "max_cap_violations": 1,
+          "hold_slack_ns": 8.496283028719583,
+          "setup_slack_ns": 4.965313634127546
+        }
+      },
+      "sta_load_ff": 10,
+      "planned_replication_count": 10,
+      "artifact_sha256": {
+        "handoff-v2/w5_bank_mux128.def": "647d87e060c88c10051265770f2a8e7bccd7b44da903e4cc004bf26550d636ff",
+        "handoff-v2/w5_bank_mux128.spice": "c0c23d7b3f7dc5431631dbb4dd232e8f15a05aef1a0ae6793765220c7700227a",
+        "handoff-v2/w5_bank_mux128.nl.v": "02a75b2423766ad3a420a333cbbc361f2a7f721ac8498a8df0acb37f9f6d92c1",
+        "handoff-v2/w5_bank_mux128.lef": "cf6a33f26c8fdad9d223dc336246ca16fa2f91df5149059f052882ecea1eb1b2",
+        "handoff-v2/w5_bank_mux128.gds": "bb33aa3fc1a1b9d6a240900042a036d98093aa56b8f1b4b16dd365c217da98ca"
+      }
+    },
+    "w5_bank_decoder": {
+      "run": "bankdec-v1",
+      "physical_metrics": "runs/bankdec-v1/final/metrics.json",
+      "timing_metrics": "runs/bankdec-v1/final/metrics.json",
+      "outline_area_um2": 14400,
+      "dimensions_um": [
+        120,
+        120
+      ],
+      "cell_area_excluding_fill_um2": 1595.91,
+      "magic_drc_markers": 0,
+      "netgen_lvs_errors": 0,
+      "netgen_lvs_counts": {
+        "design__lvs_device_difference__count": 0,
+        "design__lvs_net_difference__count": 0,
+        "design__lvs_property_fail__count": 0,
+        "design__lvs_error__count": 0,
+        "design__lvs_unmatched_device__count": 0,
+        "design__lvs_unmatched_net__count": 0,
+        "design__lvs_unmatched_pin__count": 0
+      },
+      "klayout": {
+        "markers": 0,
+        "categories": {},
+        "command": [
+          "nice",
+          "-n",
+          "10",
+          "/nix/store/yczxlrrywxp7q2aavm4b3zrj3lpmq18a-devshell-dir/bin/klayout",
+          "-b",
+          "-r",
+          "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/taalas-array/periphery/main.drc",
+          "-rd",
+          "input=/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/taalas-array/periphery/handoff-v2/w5_bank_decoder.gds",
+          "-rd",
+          "report=/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/taalas-array/periphery/w5_bank_decoder.lyrdb",
+          "-rd",
+          "topcell=w5_bank_decoder",
+          "-rd",
+          "feol=true",
+          "-rd",
+          "beol=true",
+          "-rd",
+          "conn_drc=true",
+          "-rd",
+          "offgrid=true",
+          "-rd",
+          "metal_top=11K",
+          "-rd",
+          "metal_level=5LM",
+          "-rd",
+          "mim_option=B",
+          "-rd",
+          "run_mode=deep",
+          "-rd",
+          "thr=1"
+        ],
+        "scope": "GF180 FEOL BEOL connectivity offgrid; density and antenna excluded",
+        "gds_sha256": "e5bc2ab5d330094806eae1be4ceb30fb65187cad72637d86cf4f60906b7c9b85"
+      },
+      "gate_functional": {
+        "stdout": "PASS 32 bank addresses+32 disabled checks\n/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/taalas-array/periphery/bankdec_tb.v:6: $finish called at 64 (1s)\n",
+        "netlist": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/taalas-array/periphery/runs/bankdec-v1/final/nl/w5_bank_decoder.nl.v",
+        "command": [
+          "/nix/store/yczxlrrywxp7q2aavm4b3zrj3lpmq18a-devshell-dir/bin/iverilog",
+          "-g2012",
+          "-DFUNCTIONAL",
+          "-s",
+          "tb",
+          "-o",
+          "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/taalas-array/periphery/bankdec.sim",
+          "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/taalas-array/periphery/bankdec_tb.v",
+          "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/taalas-array/periphery/runs/bankdec-v1/final/nl/w5_bank_decoder.nl.v",
+          "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/verilog/gf180mcu_fd_sc_mcu7t5v0.v",
+          "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/verilog/primitives.v"
+        ]
+      },
+      "extracted_sta": {
+        "nom_tt_025C_3v30": {
+          "max_slew_violations": 0,
+          "max_cap_violations": 0,
+          "hold_slack_ns": 9.001053490657862,
+          "setup_slack_ns": 8.627101055500162
+        },
+        "nom_ss_125C_3v00": {
+          "max_slew_violations": 0,
+          "max_cap_violations": 0,
+          "hold_slack_ns": 10.116777923969483,
+          "setup_slack_ns": 5.636145931715287
+        },
+        "nom_ff_n40C_3v60": {
+          "max_slew_violations": 0,
+          "max_cap_violations": 0,
+          "hold_slack_ns": 8.50958616546609,
+          "setup_slack_ns": 9.915021972979613
+        },
+        "min_tt_025C_3v30": {
+          "max_slew_violations": 0,
+          "max_cap_violations": 0,
+          "hold_slack_ns": 8.983495090982224,
+          "setup_slack_ns": 8.703457756401296
+        },
+        "min_ss_125C_3v00": {
+          "max_slew_violations": 0,
+          "max_cap_violations": 0,
+          "hold_slack_ns": 10.083477449537865,
+          "setup_slack_ns": 5.786050913275037
+        },
+        "min_ff_n40C_3v60": {
+          "max_slew_violations": 0,
+          "max_cap_violations": 0,
+          "hold_slack_ns": 8.498500810296298,
+          "setup_slack_ns": 9.960716089430244
+        },
+        "max_tt_025C_3v30": {
+          "max_slew_violations": 0,
+          "max_cap_violations": 0,
+          "hold_slack_ns": 9.02202871281072,
+          "setup_slack_ns": 8.549539984627852
+        },
+        "max_ss_125C_3v00": {
+          "max_slew_violations": 0,
+          "max_cap_violations": 0,
+          "hold_slack_ns": 10.156578088260291,
+          "setup_slack_ns": 5.459395756660866
+        },
+        "max_ff_n40C_3v60": {
+          "max_slew_violations": 0,
+          "max_cap_violations": 0,
+          "hold_slack_ns": 8.522395474997277,
+          "setup_slack_ns": 9.862242857074659
+        }
+      },
+      "sta_load_ff": 100,
+      "planned_replication_count": 1,
+      "artifact_sha256": {
+        "handoff-v2/w5_bank_decoder.spice": "94b61747b32bc4d34240c1cf072e9aff618f078e34cd51f879a2c994d675af90",
+        "handoff-v2/w5_bank_decoder.lef": "5ec0276f421d8ce7afcc96ac43a6196548006c4a186263515f5d3c3802965f5b",
+        "handoff-v2/w5_bank_decoder.gds": "e5bc2ab5d330094806eae1be4ceb30fb65187cad72637d86cf4f60906b7c9b85",
+        "handoff-v2/w5_bank_decoder.def": "cd2e07fb0b204d92066f0974540e744b845b1b12d7e670df641739ed584a334e",
+        "handoff-v2/w5_bank_decoder.nl.v": "441a5b26bf17f809e72221716fc69ed650c1af5daa735bdcae4ac494de5aaedd"
+      }
+    }
+  },
+  "scope": "Decoder and bank selection only. No array cells, analog readout or output capture within these macros.",
+  "planned200subbank_ledger": {
+    "wordline_decoders": 200,
+    "bank_mux128": 10,
+    "bank_enable_decoder": 1,
+    "outline_area_um2": 4919400,
+    "outline_area_mm2": 4.9194,
+    "outline_um2_per_projection_selection": 12.01025390625,
+    "cell_area_excluding_fill_um2": 1622070.91,
+    "qualification": "Arithmetic sum of physically routed isolated outlines; not a connected complete projection area or a lower bound."
+  },
+  "capture_owner": "W2b ARRAY-PORT engine.index_latch has1280 captured index bits. Count once in engine.",
+  "timing_contract": {
+    "period_ns": 20,
+    "input_delay_ns": 4,
+    "output_delay_ns": 4,
+    "uncertainty_ns": 0.25,
+    "nominal_voltage": 3.3,
+    "slow_voltage": 3.0,
+    "fast_voltage": 3.6,
+    "qualification": "Nine RC/PVT combinations from Liberty+OpenRCX, not ngspice2.97V125C simulation. Setup/slack and electrical violations retained. No full bank-to-array-to-engine extracted timing."
+  },
+  "preserved_failures": [
+    "runs/mux128-v1: post-placement detailed legalization failed after adding2566 input buffers and1078 repair buffers.",
+    "runs/mux128b-v1: physical implementation completed with deferred timing failure; actual extracted timing separately in mux128b-poststa.",
+    "runs/decoder-v1: first arbitrary pin placement and no final multicorner STA; preserved, not final handoff.",
+    "runs/decoderb-v1: physical implementation completed, slow extracted setup and max-RC slew fail."
+  ],
+  "limitations": [
+    "KLayout scope excludes density and antenna. Magic and Netgen are open-flow checks, not foundry signoff.",
+    "No characterized autonomous precharge/evaluate nonoverlap controller.",
+    "Output drivers characterized by declared STA pin loads, not parent-array extracted load.",
+    "Long tile/mux/address/power routes absent; power continuity, IR/EM and integrated signal timing unverified.",
+    "No new output latch: W2b capture is counted once; adding macro-local registers would require protocol change.",
+    "Only1280 row reads occur per4160-cycle projection.",
+    "No complete recognizer or die-count/power claim."
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "geometry": [
+    {
+      "rows": 64,
+      "gds_sha256": "a94a98e936a59619f7009a2a55354cc4498b442f0d348aa474ea96589b1f7f73",
+      "bounds_um": [
+        0.0,
+        0.04,
+        1004.0,
+        234.21
+      ],
+      "dimensions_um": [
+        1004.0,
+        234.17000000000002
+      ],
+      "area_um2": 235106.68000000002,
+      "um2_per_selection": 11.479818359375,
+      "route_and_pin_geometry_checks": 13070,
+      "pass_all": true,
+      "scope": "Direct GDS M2/M3/M4 joins, via2/via3,1280 OUT labels on metal,receiver supply/PC eight-row spines. Does not prove all-layer connectivity or electrical integrity."
+    },
+    {
+      "rows": 1280,
+      "gds_sha256": "fd75915d1d8b7bc053e91b0141bd1400d4f05d1319bdfebfd8cac4449b2235b0",
+      "bounds_um": [
+        0.0,
+        0.04,
+        1004.0,
+        2258.85
+      ],
+      "dimensions_um": [
+        1004.0,
+        2258.81
+      ],
+      "area_um2": 2267845.2399999998,
+      "um2_per_selection": 5.53673154296875,
+      "route_and_pin_geometry_checks": 13070,
+      "pass_all": true,
+      "scope": "Direct GDS M2/M3/M4 joins, via2/via3,1280 OUT labels on metal,receiver supply/PC eight-row spines. Does not prove all-layer connectivity or electrical integrity."
+    }
+  ],
+  "area_audit": {
+    "uniform_model_mm2": 174.17051443199998,
+    "october_array_receiver_mm2": 164.837,
+    "october_other_components_mm2": 56.583999999999996,
+    "mixed_mm2": 230.75451443199998,
+    "mixed_increase_over_october_mm2": 9.333514431999987,
+    "native_local_bit_pitch_um": 0.66,
+    "average_pitch_including_every16_corridor_um": 0.7225,
+    "bank_width_per_bitline_um": 0.784375
+  }
+}

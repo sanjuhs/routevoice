@@ -1,0 +1,157 @@
+{
+  "unix": 1791935655.225237,
+  "method": "APFS cp -c copy-on-write, exact content hash checked before atomic replacement",
+  "nominal_duplicate_bytes_shared": 2511717851,
+  "changes": [
+    {
+      "path": "runs/rv_fixed_proj320_dp-typical-repair20/final/pnl/rv_fixed_proj320_dp.pnl.v",
+      "clone_source": "runs/rv_fixed_proj320_dp-typical-repair20/04-openroad-cts/rv_fixed_proj320_dp.pnl.v",
+      "sha256": "56f55eba75fdf7c91399e549dc00d680c724b07e89729e7cbe00a07daf07431f",
+      "bytes": 67471900
+    },
+    {
+      "path": "runs/rv_fixed_proj320_dp-typical-repair20/03-openroad-detailedplacement/rv_fixed_proj320_dp.sdc",
+      "clone_source": "runs/rv_fixed_proj320_dp-io-microns/01-openroad-ioplacement/rv_fixed_proj320_dp.sdc",
+      "sha256": "485fb794f72d38bb1f5a95a5156abcc12e7f3d22053e50c4299d83a5d2460fc0",
+      "bytes": 10459824
+    },
+    {
+      "path": "runs/rv_fixed_proj320_dp-typical-repair20/04-openroad-cts/rv_fixed_proj320_dp.sdc",
+      "clone_source": "runs/rv_fixed_proj320_dp-io-microns/01-openroad-ioplacement/rv_fixed_proj320_dp.sdc",
+      "sha256": "485fb794f72d38bb1f5a95a5156abcc12e7f3d22053e50c4299d83a5d2460fc0",
+      "bytes": 10459824
+    },
+    {
+      "path": "runs/rv_fixed_proj320_dp-typical-repair20/final/sdc/rv_fixed_proj320_dp.sdc",
+      "clone_source": "runs/rv_fixed_proj320_dp-io-microns/01-openroad-ioplacement/rv_fixed_proj320_dp.sdc",
+      "sha256": "485fb794f72d38bb1f5a95a5156abcc12e7f3d22053e50c4299d83a5d2460fc0",
+      "bytes": 10459824
+    },
+    {
+      "path": "runs/rv_fixed_proj320_dp-typical-repair20/03-openroad-detailedplacement/rv_fixed_proj320_dp.pnl.v",
+      "clone_source": "runs/rv_fixed_proj320_dp-typical-repair20/01-openroad-repairdesignpostgpl/rv_fixed_proj320_dp.pnl.v",
+      "sha256": "2a734e0b8cff610ec108559d7504bafeb3a1039af6465ffff3e966f107febf6d",
+      "bytes": 66883120
+    },
+    {
+      "path": "runs/rv_fixed_proj320_rom-physical20/19-openroad-ioplacement/rv_fixed_proj320_rom.pnl.v",
+      "clone_source": "runs/rv_fixed_proj320_rom-physical20/18-openroad-globalplacementskipio/rv_fixed_proj320_rom.pnl.v",
+      "sha256": "80fecf33b32878070839b84663594ae26914339b91d9207261638ffc4a77faef",
+      "bytes": 62958387
+    },
+    {
+      "path": "runs/rv_fixed_proj320_rom-physical20/22-openroad-globalplacement/rv_fixed_proj320_rom.pnl.v",
+      "clone_source": "runs/rv_fixed_proj320_rom-physical20/18-openroad-globalplacementskipio/rv_fixed_proj320_rom.pnl.v",
+      "sha256": "80fecf33b32878070839b84663594ae26914339b91d9207261638ffc4a77faef",
+      "bytes": 62958387
+    },
+    {
+      "path": "runs/rv_fixed_proj320_rom-physical20/10-odb-setpowerconnections/rv_fixed_proj320_rom.odb",
+      "clone_source": "runs/rv_fixed_proj320_rom-physical20/07-openroad-floorplan/rv_fixed_proj320_rom.odb",
+      "sha256": "81ed518f572deb750b4edda5f5c3cf9881970705ff6ca46c518970d51dd1f6db",
+      "bytes": 153939700
+    },
+    {
+      "path": "runs/rv_fixed_proj320_rom-physical20/12-openroad-cutrows/rv_fixed_proj320_rom.odb",
+      "clone_source": "runs/rv_fixed_proj320_rom-physical20/07-openroad-floorplan/rv_fixed_proj320_rom.odb",
+      "sha256": "81ed518f572deb750b4edda5f5c3cf9881970705ff6ca46c518970d51dd1f6db",
+      "bytes": 153939700
+    },
+    {
+      "path": "runs/rv_fixed_proj320_dp-typical-repair20/final/sdf/nom_ff_n40C_5v50/rv_fixed_proj320_dp__nom_ff_n40C_5v50.sdf",
+      "clone_source": "runs/rv_fixed_proj320_dp-precheck/06-openroad-staprepnr/nom_ff_n40C_5v50/rv_fixed_proj320_dp__nom_ff_n40C_5v50.sdf",
+      "sha256": "31e931ca6f89c8fd4636d018838107da46221ea51a3dc645d0d124f68bcb9875",
+      "bytes": 322500367
+    },
+    {
+      "path": "runs/rv_fixed_proj320_dp-typical-repair20/final/nl/rv_fixed_proj320_dp.nl.v",
+      "clone_source": "runs/rv_fixed_proj320_dp-typical-repair20/04-openroad-cts/rv_fixed_proj320_dp.nl.v",
+      "sha256": "0c5422b13a40e0436068ee81fa1445a63e4b58bde9e090fd4dd641d95bccd0be",
+      "bytes": 46195246
+    },
+    {
+      "path": "runs/rv_fixed_proj320_rom-synthesis-retry/final/nl/rv_fixed_proj320_rom.nl.v",
+      "clone_source": "runs/rv_fixed_proj320_rom-synthesis-retry/06-yosys-synthesis/rv_fixed_proj320_rom.nl.v",
+      "sha256": "2f957c3f5e1dfeb063207d5438d68d49280ec65778d087300902de245543ec86",
+      "bytes": 38672443
+    },
+    {
+      "path": "runs/rv_fixed_proj320_dp-typical-repair20/03-openroad-detailedplacement/rv_fixed_proj320_dp.odb",
+      "clone_source": "runs/rv_fixed_proj320_dp-typical-repair20/01-openroad-repairdesignpostgpl/rv_fixed_proj320_dp.odb",
+      "sha256": "03df7f55e5f177c8d6a7ac2bde2ebb34655ffc3eae5b40d1714700aa42d4441d",
+      "bytes": 211573245
+    },
+    {
+      "path": "runs/rv_fixed_proj320_dp-typical-repair20/final/odb/rv_fixed_proj320_dp.odb",
+      "clone_source": "runs/rv_fixed_proj320_dp-typical-repair20/04-openroad-cts/rv_fixed_proj320_dp.odb",
+      "sha256": "9156e8e952a766a2268c634fe32cd48a67f202afa1862f008c8f338740434d52",
+      "bytes": 212566737
+    },
+    {
+      "path": "runs/rv_fixed_proj320_dp-typical-repair20/03-openroad-detailedplacement/rv_fixed_proj320_dp.nl.v",
+      "clone_source": "runs/rv_fixed_proj320_dp-typical-repair20/01-openroad-repairdesignpostgpl/rv_fixed_proj320_dp.nl.v",
+      "sha256": "a685f61bdf504f08defb1bbecb9c884dce7505dc121c5c82682e14ee4cc8f303",
+      "bytes": 45736186
+    },
+    {
+      "path": "runs/rv_fixed_proj320_dp-typical-repair20/final/def/rv_fixed_proj320_dp.def",
+      "clone_source": "runs/rv_fixed_proj320_dp-typical-repair20/04-openroad-cts/rv_fixed_proj320_dp.def",
+      "sha256": "6a8b1e7e262db219a3e5ffb48bc353bc38bef5ca6c3209903342c26171f534fb",
+      "bytes": 84121628
+    },
+    {
+      "path": "runs/rv_fixed_proj320_rom-physical20/10-odb-setpowerconnections/rv_fixed_proj320_rom.def",
+      "clone_source": "runs/rv_fixed_proj320_rom-physical20/07-openroad-floorplan/rv_fixed_proj320_rom.def",
+      "sha256": "7265b98e70912e03d9d533530b99920cd2075cc2fb9d649b50902e6fc24590e2",
+      "bytes": 38664678
+    },
+    {
+      "path": "runs/rv_fixed_proj320_rom-physical20/12-openroad-cutrows/rv_fixed_proj320_rom.def",
+      "clone_source": "runs/rv_fixed_proj320_rom-physical20/07-openroad-floorplan/rv_fixed_proj320_rom.def",
+      "sha256": "7265b98e70912e03d9d533530b99920cd2075cc2fb9d649b50902e6fc24590e2",
+      "bytes": 38664678
+    },
+    {
+      "path": "runs/rv_fixed_proj320_dp-typical-repair20/final/sdf/nom_tt_025C_5v00/rv_fixed_proj320_dp__nom_tt_025C_5v00.sdf",
+      "clone_source": "runs/rv_fixed_proj320_dp-precheck/06-openroad-staprepnr/nom_tt_025C_5v00/rv_fixed_proj320_dp__nom_tt_025C_5v00.sdf",
+      "sha256": "b74f186c5410ba3a72a64572a3f9d54e8599babf03519354c4e552c17cdfba03",
+      "bytes": 323197160
+    },
+    {
+      "path": "runs/rv_fixed_proj320_dp-typical-repair20/final/sdf/nom_ss_125C_4v50/rv_fixed_proj320_dp__nom_ss_125C_4v50.sdf",
+      "clone_source": "runs/rv_fixed_proj320_dp-precheck/06-openroad-staprepnr/nom_ss_125C_4v50/rv_fixed_proj320_dp__nom_ss_125C_4v50.sdf",
+      "sha256": "049688a70cb5c483222c02d4bd1bf8063157a0dc2122f2527308262aca2307f2",
+      "bytes": 323964042
+    },
+    {
+      "path": "runs/rv_fixed_proj320_dp-typical-repair20/01-openroad-repairdesignpostgpl/rv_fixed_proj320_dp.sdc",
+      "clone_source": "runs/rv_fixed_proj320_dp-physical20/01-openroad-floorplan/rv_fixed_proj320_dp.sdc",
+      "sha256": "c53ae005e3c66881254a955e0674f98a3146026d74ac7a7ae6a4c1746e7a7ce5",
+      "bytes": 10459784
+    },
+    {
+      "path": "runs/rv_fixed_proj320_rom-physical20/18-openroad-globalplacementskipio/rv_fixed_proj320_rom.nl.v",
+      "clone_source": "runs/rv_fixed_proj320_rom-physical20/13-openroad-tapendcapinsertion/rv_fixed_proj320_rom.nl.v",
+      "sha256": "34bf52e24eada221e3faac69e1a10fc20a2e45894d031b18e0f630566aaa4b4b",
+      "bytes": 44035137
+    },
+    {
+      "path": "runs/rv_fixed_proj320_rom-physical20/19-openroad-ioplacement/rv_fixed_proj320_rom.nl.v",
+      "clone_source": "runs/rv_fixed_proj320_rom-physical20/13-openroad-tapendcapinsertion/rv_fixed_proj320_rom.nl.v",
+      "sha256": "34bf52e24eada221e3faac69e1a10fc20a2e45894d031b18e0f630566aaa4b4b",
+      "bytes": 44035137
+    },
+    {
+      "path": "runs/rv_fixed_proj320_rom-physical20/22-openroad-globalplacement/rv_fixed_proj320_rom.nl.v",
+      "clone_source": "runs/rv_fixed_proj320_rom-physical20/13-openroad-tapendcapinsertion/rv_fixed_proj320_rom.nl.v",
+      "sha256": "34bf52e24eada221e3faac69e1a10fc20a2e45894d031b18e0f630566aaa4b4b",
+      "bytes": 44035137
+    },
+    {
+      "path": "runs/rv_fixed_proj320_dp-typical-repair20/03-openroad-detailedplacement/rv_fixed_proj320_dp.def",
+      "clone_source": "runs/rv_fixed_proj320_dp-typical-repair20/01-openroad-repairdesignpostgpl/rv_fixed_proj320_dp.def",
+      "sha256": "465b8c7777c71e508fca9ed4351ff4ef3a2f0b2bfa5296f9117688c4367395fd",
+      "bytes": 83765580
+    }
+  ]
+}

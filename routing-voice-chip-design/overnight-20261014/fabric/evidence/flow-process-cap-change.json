@@ -1,0 +1,4 @@
+{
+  "unix": 1791934932.524504,
+  "change": "Future LibreLane --jobs follows W2_NUM_THREADS (default eight); this also caps tool defaults using the flow process limit, not only OpenMP. Full-ROM and DP routing continuations will each use four. Already-running prefixes stop after CTS and use at most two STA workers plus single-thread PnR."
+}

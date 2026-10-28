@@ -1,0 +1,160 @@
+{
+  "int8_per_channel": {
+    "tensors": [
+      {
+        "name": "onnx::MatMul_128_add_tensor_add_tensor",
+        "shape": [
+          80,
+          320
+        ],
+        "axis": 1,
+        "scale_shape": [
+          1,
+          320
+        ],
+        "int8_file": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/accuracy-int8/int8_per_channel/packed/linear_weights.int8.bin",
+        "int8_sha256": "a9f444449d5ff4a30289a468b2a35fca9dcb3d577039a7ce9a41c4356422d1a9",
+        "int8_bytes": 25600,
+        "scale_file": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/accuracy-int8/int8_per_channel/packed/linear_weights.scale.fp32.bin",
+        "scale_sha256": "e78c5c3177a4a010adcda1382e9b19f31b0b3ee389b4fd9d4ad45be527ede3d6",
+        "scale_bytes": 1280,
+        "dequantized_sha256": "9d798380fd6f849902a48265317c5f913d878cc87c5daeb84005e6c4e6235b01",
+        "source_sha256": "1b14d3d00a9d640726adb7983f7f85111d5a70468c5c583b14621d15fb2d919f",
+        "rmse": 0.0012325888928502865,
+        "max_abs_error": 0.009035386145114899
+      },
+      {
+        "name": "/weight/weight.0/Mul_output_0_add_tensor",
+        "shape": [
+          640,
+          320,
+          5
+        ],
+        "axis": 0,
+        "scale_shape": [
+          640,
+          1,
+          1
+        ],
+        "int8_file": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/accuracy-int8/int8_per_channel/packed/conv1_weights.int8.bin",
+        "int8_sha256": "6aa5e4e681a4cdc8b32228a56296917adc8491aa2c49a090251ad544e256cdc1",
+        "int8_bytes": 1024000,
+        "scale_file": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/accuracy-int8/int8_per_channel/packed/conv1_weights.scale.fp32.bin",
+        "scale_sha256": "532e36fdc302f64ea96937cc4ceee717f3f5ca43ab120b86038e2f9889275e97",
+        "scale_bytes": 2560,
+        "dequantized_sha256": "e3f74b9dde7b39a451407912cfa8eaa956a895700392a20c34cacea741894165",
+        "source_sha256": "f78e8257037f675b95bac352e500ad6678b2b932c15763c034d861a633b8f521",
+        "rmse": 0.0017979134783210028,
+        "max_abs_error": 0.020159363746643066
+      },
+      {
+        "name": "/weight/weight.0_1/Mul_output_0_add_tensor",
+        "shape": [
+          320,
+          640,
+          5
+        ],
+        "axis": 0,
+        "scale_shape": [
+          320,
+          1,
+          1
+        ],
+        "int8_file": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/accuracy-int8/int8_per_channel/packed/conv2_weights.int8.bin",
+        "int8_sha256": "7db42e89fa8898b9aa843d70dde419f4068bbedbb6c430f3631194d13556208c",
+        "int8_bytes": 1024000,
+        "scale_file": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/accuracy-int8/int8_per_channel/packed/conv2_weights.scale.fp32.bin",
+        "scale_sha256": "b35ae7e784e373999c3c3dc8749f592bfad06638de60f95f12689b94205423c2",
+        "scale_bytes": 1280,
+        "dequantized_sha256": "4484a95bf7a4a45801a128c89c7abd5979a96dc59c53fa2f7a9c50dd493019cb",
+        "source_sha256": "13ef6595619a6c8b2fe5a6dc7b4078a44d48a0f113c8156c8bf54d7e0fa87997",
+        "rmse": 0.00011489091455328404,
+        "max_abs_error": 0.0006344807334244251
+      }
+    ],
+    "int8_weight_bytes": 2073600,
+    "fp32_scale_bytes": 5120,
+    "unchanged_fp32_bias_bytes": 3840,
+    "total_frontend_coefficient_storage_bytes": 2082560,
+    "all_other_runtime_files_bit_identical": true
+  },
+  "int8_per_tensor": {
+    "tensors": [
+      {
+        "name": "onnx::MatMul_128_add_tensor_add_tensor",
+        "shape": [
+          80,
+          320
+        ],
+        "axis": null,
+        "scale_shape": [
+          1,
+          1
+        ],
+        "int8_file": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/accuracy-int8/int8_per_tensor/packed/linear_weights.int8.bin",
+        "int8_sha256": "f821f11a3ef3a3b9cf223a67cb31d2a0e8e07fd8429aa752aedfc6b49f676ede",
+        "int8_bytes": 25600,
+        "scale_file": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/accuracy-int8/int8_per_tensor/packed/linear_weights.scale.fp32.bin",
+        "scale_sha256": "bb39f409f10f3b1a1c1d4974a1b9664f5016a64d88e34d44585619368dfc5cfa",
+        "scale_bytes": 4,
+        "dequantized_sha256": "8db393836462e915bba318edfdaab01d9f6921b9f2ccc62074c2e1e14a88d4ce",
+        "source_sha256": "1b14d3d00a9d640726adb7983f7f85111d5a70468c5c583b14621d15fb2d919f",
+        "rmse": 0.005435286866113197,
+        "max_abs_error": 0.009430527687072754
+      },
+      {
+        "name": "/weight/weight.0/Mul_output_0_add_tensor",
+        "shape": [
+          640,
+          320,
+          5
+        ],
+        "axis": null,
+        "scale_shape": [
+          1,
+          1,
+          1
+        ],
+        "int8_file": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/accuracy-int8/int8_per_tensor/packed/conv1_weights.int8.bin",
+        "int8_sha256": "cd83cbbf45c12a991080e2a1a550c3e6fcf89da9feb51550e30a2eb061f16fba",
+        "int8_bytes": 1024000,
+        "scale_file": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/accuracy-int8/int8_per_tensor/packed/conv1_weights.scale.fp32.bin",
+        "scale_sha256": "f913ad6af95015e2212309316ff162327351adea4e9badf33b73fdeeae83858d",
+        "scale_bytes": 4,
+        "dequantized_sha256": "acfe6191753124b9a0e8ddf6dc3689cac7f96e86df5e135331cf5a5c5d3e7f3e",
+        "source_sha256": "f78e8257037f675b95bac352e500ad6678b2b932c15763c034d861a633b8f521",
+        "rmse": 0.009656508761068508,
+        "max_abs_error": 0.020883917808532715
+      },
+      {
+        "name": "/weight/weight.0_1/Mul_output_0_add_tensor",
+        "shape": [
+          320,
+          640,
+          5
+        ],
+        "axis": null,
+        "scale_shape": [
+          1,
+          1,
+          1
+        ],
+        "int8_file": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/accuracy-int8/int8_per_tensor/packed/conv2_weights.int8.bin",
+        "int8_sha256": "0cd38b7cc51c192ddb927ea247cb122b9e604a31cb23dce62c161dabe478f69a",
+        "int8_bytes": 1024000,
+        "scale_file": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/accuracy-int8/int8_per_tensor/packed/conv2_weights.scale.fp32.bin",
+        "scale_sha256": "b644b2bd83f2c39309d897dca00f5fa197325030e328536fd79ff408a4865e29",
+        "scale_bytes": 4,
+        "dequantized_sha256": "80eb7161aabaac5f2d58c63877105e34888a35761d4b49040af5114371301522",
+        "source_sha256": "13ef6595619a6c8b2fe5a6dc7b4078a44d48a0f113c8156c8bf54d7e0fa87997",
+        "rmse": 0.0003666635559225672,
+        "max_abs_error": 0.0006345920264720917
+      }
+    ],
+    "int8_weight_bytes": 2073600,
+    "fp32_scale_bytes": 12,
+    "unchanged_fp32_bias_bytes": 3840,
+    "total_frontend_coefficient_storage_bytes": 2077452,
+    "all_other_runtime_files_bit_identical": true
+  }
+}

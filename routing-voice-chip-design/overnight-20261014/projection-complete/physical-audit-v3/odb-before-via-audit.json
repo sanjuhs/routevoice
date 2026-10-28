@@ -1,0 +1,177 @@
+{
+  "stage": "17-openroad-generatepdn, before placement/CTS/signal routing",
+  "source_odb": "/workspace/rv/overnight-20261014/projection-complete/runs/complete-v3/17-openroad-generatepdn/rv_k64_projection_complete.odb",
+  "source_odb_bytes": 227311615,
+  "database_units_per_um": 2000,
+  "die_bbox_um": [
+    0.0,
+    0.0,
+    4500.0,
+    4500.0
+  ],
+  "macro": {
+    "instance": "bank",
+    "master": "PITCH_BANK_R1280",
+    "placement_status": "FIRM",
+    "orientation": "R0",
+    "location_um": [
+      500.0,
+      1200.0
+    ],
+    "bbox_um": [
+      500.0,
+      1200.0,
+      1504.0,
+      3458.85
+    ],
+    "iterm_count": 2563,
+    "selected_pins": {
+      "WL0": {
+        "net": "wordline\\[0\\]",
+        "sig_type": "SIGNAL",
+        "geometry": [
+          {
+            "layer": "Metal3",
+            "rect_um": [
+              500.0,
+              1328.71,
+              506.5,
+              1329.09
+            ]
+          }
+        ]
+      },
+      "WL1279": {
+        "net": "wordline\\[1279\\]",
+        "sig_type": "SIGNAL",
+        "geometry": [
+          {
+            "layer": "Metal3",
+            "rect_um": [
+              500.0,
+              3456.67,
+              506.5,
+              3457.05
+            ]
+          }
+        ]
+      },
+      "OUT0": {
+        "net": "array_out\\[0\\]",
+        "sig_type": "SIGNAL",
+        "geometry": [
+          {
+            "layer": "Metal2",
+            "rect_um": [
+              512.8,
+              1201.39,
+              513.18,
+              1206.11
+            ]
+          }
+        ]
+      },
+      "OUT1279": {
+        "net": "array_out\\[1279\\]",
+        "sig_type": "SIGNAL",
+        "geometry": [
+          {
+            "layer": "Metal2",
+            "rect_um": [
+              1499.0,
+              1302.19,
+              1499.38,
+              1306.91
+            ]
+          }
+        ]
+      },
+      "PC": {
+        "net": "pc",
+        "sig_type": "SIGNAL",
+        "geometry": [
+          {
+            "layer": "Metal4",
+            "rect_um": [
+              504.81,
+              3457.66,
+              505.19,
+              3458.04
+            ]
+          }
+        ]
+      },
+      "VDD": {
+        "net": "VDD",
+        "sig_type": "POWER",
+        "geometry": [
+          {
+            "layer": "Metal4",
+            "rect_um": [
+              502.78,
+              1211.15,
+              503.22,
+              3458.85
+            ]
+          },
+          {
+            "layer": "Metal5",
+            "rect_um": [
+              502.6,
+              3457.45,
+              503.4,
+              3458.25
+            ]
+          }
+        ]
+      },
+      "VSS": {
+        "net": "VSS",
+        "sig_type": "GROUND",
+        "geometry": [
+          {
+            "layer": "Metal4",
+            "rect_um": [
+              500.78,
+              1200.19,
+              501.22,
+              3458.85
+            ]
+          },
+          {
+            "layer": "Metal5",
+            "rect_um": [
+              500.6,
+              3457.45,
+              501.4,
+              3458.25
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "power_nets": {
+    "VDD": {
+      "special_wire_count": 1,
+      "rectangles_by_layer": {
+        "Metal1": 860,
+        "Metal5": 30,
+        "Metal4": 36
+      },
+      "via_count": 46906,
+      "macro_pin_intersections": []
+    },
+    "VSS": {
+      "special_wire_count": 1,
+      "rectangles_by_layer": {
+        "Metal1": 861,
+        "Metal5": 30,
+        "Metal4": 36
+      },
+      "via_count": 46888,
+      "macro_pin_intersections": []
+    }
+  },
+  "scope": "Logical PG and selected pin geometry; pending explicit via intersection audit. No routing completion or IR/EM inference."
+}

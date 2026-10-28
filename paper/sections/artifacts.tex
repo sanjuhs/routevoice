@@ -1,0 +1,25 @@
+\section{Artifacts}
+\sloppy
+\label{app:artifacts}
+
+All paths are relative to the RouteVoice repository root, \url{https://github.com/sanjuhs/routevoice}. \path{FIN} denotes \path{routing-voice-chip-design/overnight-20261014/finish-1023}.
+
+\begin{itemize}
+\item \textbf{Release package (demo clips, simulation logs, layout renders, signoff table, scaling data):} \path{routing-voice-chip-design/release-v1/}.
+\item \textbf{Bit-exact recognizer with index$+$codebook weights:} \path{FIN/w11-taalas-e2e/RESULTS.md}, \path{results.json}.
+\item \textbf{K64 accuracy:} \path{routing-voice-chip-design/docs/TAALAS-K64-QUALITY-RESULT.md}.
+\item \textbf{Engine contract and bench:} \path{routing-voice-chip-design/overnight-20261014/fabric-k64/CONTRACT.md}, \path{RESULTS.md}.
+\item \textbf{Engine routing history:}
+  \begin{itemize}
+  \item first route: \path{FIN/w10-route/RESULTS.md};
+  \item closure passes: \path{FIN/w10-route/closure-lead/};
+  \item first-route power: \path{FIN/w10-route/routed-power-lead/}.
+  \end{itemize}
+\item \textbf{Final engine (fix~2):} \path{FIN/w10-route/pipe2/} (README, generator \path{make_engine.py}, bench, flow configuration, \path{evidence/}; antenna close-out in \path{evidence-ant/}).
+\item \textbf{Final engine run backup (fix~2 and antenna close-out, checksum manifests):} Hugging Face dataset \path{sanjuhs/routevoice-engine-fix2-20261024}.
+\item \textbf{Full-recognizer synthesis:} \path{FIN/w12-synth/RESULTS.md}.
+\item \textbf{Weight banks:} \path{FIN/w13-arrays/RESULTS.md}, \path{DRIVERS-RESULTS.md}.
+\item \textbf{Logic macros and two-die integration:} \path{FIN/w14-blocks/}, \path{FIN/w15-chip/}.
+\item \textbf{Chronological lab log:} \path{OVERNIGHT-PROGRESS.md}.
+\item \textbf{Cloud run backup (53\,GB, checksum manifest):} Hugging Face dataset \path{sanjuhs/routevoice-pod-final-20261022}.
+\end{itemize}

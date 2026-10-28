@@ -1,0 +1,50 @@
+[
+  {
+    "source_vcd": "vectors/rv_fixed_proj64x320_rom.vcd.gz",
+    "power_trace": "vectors/rv_fixed_proj64x320_rom.power.vcd.gz",
+    "source_begin_ps": 31551000,
+    "source_end_ps": 70251000,
+    "duration_ns": 38700.0,
+    "vectors": 5,
+    "source_vectors": [
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "source": "RTL Icarus VCD, NumPy seed 20261014, 50 MHz; includes start/drain/readout checks"
+  },
+  {
+    "source_vcd": "vectors/rv_fixed_proj320_rom.vcd.gz",
+    "power_trace": "vectors/rv_fixed_proj320_rom.power.vcd.gz",
+    "source_begin_ps": 53231000,
+    "source_end_ps": 117531000,
+    "duration_ns": 64300.0,
+    "vectors": 5,
+    "source_vectors": [
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "source": "RTL Icarus VCD, NumPy seed 20261014, 50 MHz; includes start/drain/readout checks"
+  },
+  {
+    "source_vcd": "vectors/rv_fixed_proj320_dp.vcd.gz",
+    "power_trace": "vectors/rv_fixed_proj320_dp.power.vcd.gz",
+    "source_begin_ps": 53231000,
+    "source_end_ps": 117531000,
+    "duration_ns": 64300.0,
+    "vectors": 5,
+    "source_vectors": [
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "source": "RTL Icarus VCD, NumPy seed 20261014, 50 MHz; includes start/drain/readout checks"
+  }
+]

@@ -1,0 +1,22 @@
+{
+  "command": [
+    "bash",
+    "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/run_flow.sh",
+    "rv_fixed_proj64x320_rom",
+    "clock200"
+  ],
+  "log": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/logs/rv_fixed_proj64x320_rom-clock200.flow.log",
+  "exit_code": -15,
+  "stop_reason": "disk safety margin: free below 22 GiB",
+  "elapsed_seconds": 5890.263544082642,
+  "minimum_free_bytes": 23609778176,
+  "limit_seconds": 7200,
+  "thread_limit": 8,
+  "nice": 10,
+  "start_unix": 1791925656.8089678,
+  "flow_controls": {
+    "W2_FROM_STEP": "OpenROAD.ResizerTimingPostCTS",
+    "W2_INITIAL_STATE": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/evidence/slice-200ns-initial-state.json",
+    "W2_CONFIG_PATH": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/configs/rv_fixed_proj64x320_rom-200ns.json"
+  }
+}

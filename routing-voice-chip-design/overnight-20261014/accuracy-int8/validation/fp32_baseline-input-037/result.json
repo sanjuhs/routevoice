@@ -1,0 +1,55 @@
+{
+  "case_id": "fp32_baseline-input-037",
+  "model": "fp32_baseline",
+  "id": "6599-38591-0005",
+  "role": "validation",
+  "condition": "other",
+  "seed": null,
+  "reference": "MONTMORENCY SIGNED A SIMILAR ONE FOR PIEDMONT",
+  "input_float32_sha256": "59e846ffbc6112c6e1c94f6ca532c691ecacdd2fdee0e7b5631506b90f58a6da",
+  "hypothesis": "Momor and C signed a similar one for Pete.",
+  "normalized_tokens": [
+    "momor",
+    "and",
+    "c",
+    "signed",
+    "a",
+    "similar",
+    "one",
+    "for",
+    "pete"
+  ],
+  "edits": 4,
+  "reference_words": 7,
+  "hypothesis_words": 9,
+  "exact": false,
+  "lines": [
+    {
+      "text": "Momor and C signed a similar one for Pete.",
+      "start_time": 0.15999996662139893,
+      "duration": 2.7839999198913574,
+      "is_complete": true,
+      "samples": 44544,
+      "input_float32_sha256": "fb1ee68dc38bfc8875ce0af58fc314099e847997cf2dd14e8f64a77fcf4bb7a4"
+    }
+  ],
+  "request_sha256": "a8aef3865630992124b013c969dffdd305995c2cda6eb87333f3b592a9c78ecc",
+  "worker_sha256": "4682e8a57db08e02a34f53b01f334f34faa3ca9a6546698f1e4650db359004b6",
+  "native_library_sha256": "1453a6c1c9072f3d05e9e5ae6ff423fae839e56631c5efb12bbd5c0280d04399",
+  "native_api_version": 30000,
+  "load_seconds": 0.044972042087465525,
+  "compute_seconds": 0.12658887496218085,
+  "audio_seconds": 2.965,
+  "process_cpu_seconds": 0.126796,
+  "voluntary_context_switches": 0,
+  "involuntary_context_switches": 22,
+  "system_load_average": [
+    10.6337890625,
+    9.0859375,
+    9.892578125
+  ],
+  "options": null,
+  "flags": 0,
+  "process_id": 81154,
+  "isolation": "One audio clip/condition in a fresh native process; no previous utterance or VAD state."
+}

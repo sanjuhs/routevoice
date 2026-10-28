@@ -1,0 +1,45 @@
+{
+  "case_id": "int8_per_tensor-input-038",
+  "model": "int8_per_tensor",
+  "id": "1585-131718-0001",
+  "role": "validation",
+  "condition": "other",
+  "seed": null,
+  "reference": "THE WAY OF THE INVENTOR IS HARD",
+  "input_float32_sha256": "7ff5da2fa164fd6cd0e723716873b731d719798f5477af14b76326fe623ad7f6",
+  "hypothesis": "",
+  "normalized_tokens": [],
+  "edits": 7,
+  "reference_words": 7,
+  "hypothesis_words": 0,
+  "exact": false,
+  "lines": [
+    {
+      "text": "",
+      "start_time": 0.15999996662139893,
+      "duration": 1.9840000867843628,
+      "is_complete": true,
+      "samples": 31744,
+      "input_float32_sha256": "b171cc0ded98786b01875e75bd999d8d3def6d3b01010806b88ca973db60c526"
+    }
+  ],
+  "request_sha256": "cb72a22e66b698e11cc9b5d7e314c3abc7d924b818be2de082249c39e6012c80",
+  "worker_sha256": "4682e8a57db08e02a34f53b01f334f34faa3ca9a6546698f1e4650db359004b6",
+  "native_library_sha256": "1453a6c1c9072f3d05e9e5ae6ff423fae839e56631c5efb12bbd5c0280d04399",
+  "native_api_version": 30000,
+  "load_seconds": 0.03944358299486339,
+  "compute_seconds": 0.05116304103285074,
+  "audio_seconds": 2.16,
+  "process_cpu_seconds": 0.051388,
+  "voluntary_context_switches": 0,
+  "involuntary_context_switches": 6,
+  "system_load_average": [
+    10.6337890625,
+    9.0859375,
+    9.892578125
+  ],
+  "options": null,
+  "flags": 0,
+  "process_id": 81166,
+  "isolation": "One audio clip/condition in a fresh native process; no previous utterance or VAD state."
+}

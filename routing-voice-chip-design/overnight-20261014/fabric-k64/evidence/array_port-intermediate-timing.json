@@ -1,0 +1,15 @@
+{
+  "stage": "unbuffered pre-PNR, not extracted routed timing",
+  "warning": "Large high-fanout capacitance/slew extrapolation; do not convert these slacks to a supported frequency.",
+  "corners": {
+    "nom_tt_025C_3v30": {
+      "setup_wns_ns": -9371.143543292426
+    },
+    "nom_ss_125C_3v00": {
+      "setup_wns_ns": -20829.493812671397
+    },
+    "nom_ff_n40C_3v60": {
+      "setup_wns_ns": -4784.200108379975
+    }
+  }
+}

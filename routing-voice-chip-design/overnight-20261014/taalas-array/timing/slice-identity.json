@@ -1,0 +1,16 @@
+{
+  "source_packed": "models/candidates/codebook-4bit-optimal-rectangular-k64/packed/encoder.ort-095.indices.bin",
+  "packed_sha256": "864fcdc7ec80be2dbb99d76361db338345fb02a1a26d7aaa4a1b40696b921907",
+  "rtl_sha256": "de720f1e7c93c405729025cd9395850bc75e35c3eb602a1b67c4ad58d1ed4dbf",
+  "w2b_unpacked_hash_matches": true,
+  "rtl_indices_compared": 409600,
+  "tile": 17,
+  "bank": 1,
+  "global_row_start": 1088,
+  "global_column_start": 32,
+  "maximum_connected_drains": 50,
+  "total_connected_drains": 4191,
+  "maximum_population_local_column": 26,
+  "maximum_population_bit": 3,
+  "selection_basis": "Maximum connected-drain population over 20*10 real 64x32 banks; tie break total connected drains. Proxy for load, not electrically proven worst-case. All 64 rows physically present; bounded transient rows reported separately."
+}

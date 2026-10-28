@@ -1,0 +1,45 @@
+{
+  "case_id": "int8_per_tensor-input-011",
+  "model": "int8_per_tensor",
+  "id": "5536-43363-0015",
+  "role": "validation",
+  "condition": "white_noise_10db",
+  "seed": null,
+  "reference": "FIVE YEARS LATER HE REPEATED THE SERVICE AND AGAIN SAVED HIS PEOPLE FROM AWFUL SLAUGHTER",
+  "input_float32_sha256": "bb761609475ebf8f350e81599481254a93c64971b2555c5eeeb0fd881c5e2072",
+  "hypothesis": "",
+  "normalized_tokens": [],
+  "edits": 15,
+  "reference_words": 15,
+  "hypothesis_words": 0,
+  "exact": false,
+  "lines": [
+    {
+      "text": "",
+      "start_time": 0.09599995613098145,
+      "duration": 4.640000343322754,
+      "is_complete": true,
+      "samples": 74240,
+      "input_float32_sha256": "7f1aeaa5b14c58d600cc292fb43b3d865a2c157a3a6c225e6b01b288bee0aca4"
+    }
+  ],
+  "request_sha256": "fe2372e3cdc8b02d8813ba0ad6275dc5c6db86849850e3342401805cc7c2fe14",
+  "worker_sha256": "4682e8a57db08e02a34f53b01f334f34faa3ca9a6546698f1e4650db359004b6",
+  "native_library_sha256": "1453a6c1c9072f3d05e9e5ae6ff423fae839e56631c5efb12bbd5c0280d04399",
+  "native_api_version": 30000,
+  "load_seconds": 0.04025737498886883,
+  "compute_seconds": 0.09721537493169308,
+  "audio_seconds": 4.74,
+  "process_cpu_seconds": 0.097399,
+  "voluntary_context_switches": 0,
+  "involuntary_context_switches": 10,
+  "system_load_average": [
+    10.0751953125,
+    8.81884765625,
+    9.83056640625
+  ],
+  "options": null,
+  "flags": 0,
+  "process_id": 80868,
+  "isolation": "One audio clip/condition in a fresh native process; no previous utterance or VAD state."
+}

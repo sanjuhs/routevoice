@@ -1,0 +1,56 @@
+{
+  "unix": 1791934539.514289,
+  "method": "ditto --hfsCompression, SHA256 verified before atomic replace; transparent POSIX reads retain identical bytes",
+  "free_before_bytes": 25951350784,
+  "free_after_bytes": 26269622272,
+  "changes": [
+    {
+      "path": "runs/rv_fixed_proj320_rom-synthesis-retry/06-yosys-synthesis/rv_fixed_proj320_rom.nl.v",
+      "sha256": "2f957c3f5e1dfeb063207d5438d68d49280ec65778d087300902de245543ec86",
+      "bytes": 38672443,
+      "before_allocated_bytes": 39497728,
+      "after_allocated_bytes": 7380992,
+      "flags": 32
+    },
+    {
+      "path": "runs/rv_fixed_proj320_rom-synthesis-retry/06-yosys-synthesis/rv_fixed_proj320_rom.nl.v.json",
+      "sha256": "7776273ae52a94b40f531d59fc9f4cef5458800018abe38e96f343add9c783df",
+      "bytes": 187641696,
+      "before_allocated_bytes": 202584064,
+      "after_allocated_bytes": 11571200,
+      "flags": 32
+    },
+    {
+      "path": "runs/rv_fixed_proj320_rom-synthesis-retry/06-yosys-synthesis/yosys-synthesis.log",
+      "sha256": "d9240bc73dacd22d051c420c5e4e84baead90323a0f1222ebc09e657dff897e6",
+      "bytes": 29354537,
+      "before_allocated_bytes": 29380608,
+      "after_allocated_bytes": 2134016,
+      "flags": 32
+    },
+    {
+      "path": "runs/rv_fixed_proj320_rom-synthesis-retry/final/json_h/rv_fixed_proj320_rom.h.json",
+      "sha256": "7e4caf2ee71614aa8b6a874d7f03067c7bc8560b9290ba83cd62c8266e9c7b5d",
+      "bytes": 27851026,
+      "before_allocated_bytes": 27852800,
+      "after_allocated_bytes": 3178496,
+      "flags": 32
+    },
+    {
+      "path": "runs/rv_fixed_proj320_rom-synthesis-retry/final/nl/rv_fixed_proj320_rom.nl.v",
+      "sha256": "2f957c3f5e1dfeb063207d5438d68d49280ec65778d087300902de245543ec86",
+      "bytes": 38672443,
+      "before_allocated_bytes": 38674432,
+      "after_allocated_bytes": 7372800,
+      "flags": 32
+    },
+    {
+      "path": "runs/rv_fixed_proj320_rom-synthesis-retry/tmp/c7abba1ecbfa483f9b4aaf517a66709a.lib",
+      "sha256": "a801188c610d4f1ab34bf4e7c81cd13d34a331480b305686995e6b6d39a314ff",
+      "bytes": 16175066,
+      "before_allocated_bytes": 16175104,
+      "after_allocated_bytes": 4218880,
+      "flags": 32
+    }
+  ]
+}

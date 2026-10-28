@@ -1,0 +1,25 @@
+{
+  "command": [
+    "bash",
+    "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/run_flow.sh",
+    "rv_fixed_proj320_rom",
+    "route-util20-density35-noinflate-200ns"
+  ],
+  "log": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/logs/rv_fixed_proj320_rom-route-util20-density35-noinflate-200ns.flow.log",
+  "exit_code": 1,
+  "stop_reason": null,
+  "elapsed_seconds": 465.6412253379822,
+  "minimum_free_bytes": 24137785344,
+  "limit_seconds": 473,
+  "thread_limit": 4,
+  "nice": 10,
+  "minimum_required_free_gib": 22.0,
+  "start_unix": 1791940675.327654,
+  "flow_controls": {
+    "W2_FROM_STEP": "OpenROAD.ResizerTimingPostCTS",
+    "W2_INITIAL_STATE": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/runs/rv_fixed_proj320_rom-util20-density35-noinflate-200ns/09-openroad-stamidpnr-1/state_out.json",
+    "W2_NUM_THREADS": "4",
+    "W2_CONFIG_PATH": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/configs/rv_fixed_proj320_rom-util20-density35-noinflate-200ns.json",
+    "W2_LIMIT_SECONDS": "473"
+  }
+}

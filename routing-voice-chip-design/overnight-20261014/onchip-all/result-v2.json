@@ -1,0 +1,140 @@
+{
+  "passed": true,
+  "top": "rv_allonchip_top_all_v2",
+  "completed_local": "2026-10-14 04:09:10 IST",
+  "deadline_local": "2026-10-14 05:30:00 IST",
+  "common_clocks": 312578649,
+  "elapsed_seconds": 3159.3976175829303,
+  "native_output_comparisons": 18,
+  "tokens": [
+    28176,
+    373,
+    278,
+    26068,
+    2
+  ],
+  "text": "Switch on the lights",
+  "services": [
+    {
+      "service": "decoder_body",
+      "native_ROM_bytes": 8908800,
+      "rtl_replies": 1392000,
+      "host_replies": 0,
+      "mismatches": 0
+    },
+    {
+      "service": "decoder_self",
+      "native_ROM_bytes": 2519040,
+      "rtl_replies": 787200,
+      "host_replies": 0,
+      "mismatches": 0
+    },
+    {
+      "service": "encoder_QKV_O",
+      "native_ROM_bytes": 2457600,
+      "rtl_replies": 384000,
+      "host_replies": 0,
+      "mismatches": 0
+    },
+    {
+      "service": "encoder_immutable",
+      "native_ROM_bytes": 5146880,
+      "rtl_replies": 1947520,
+      "host_replies": 0,
+      "mismatches": 0
+    },
+    {
+      "service": "frontend_immutable",
+      "native_ROM_bytes": 8298240,
+      "rtl_replies": 55720960,
+      "host_replies": 0,
+      "mismatches": 0
+    },
+    {
+      "service": "producer_positions",
+      "native_ROM_bytes": 1310720,
+      "rtl_replies": 2560,
+      "host_replies": 0,
+      "mismatches": 0
+    }
+  ],
+  "newly_internal_model_constants": {
+    "source_start_position_scale": {
+      "width_bits": 32,
+      "value_hex": "3c5729c6",
+      "value_decimal": "1012345286"
+    },
+    "source_start_position_zero": {
+      "width_bits": 8,
+      "value_hex": "7b",
+      "value_decimal": "123"
+    },
+    "source_start_position_offset": {
+      "width_bits": 12,
+      "value_hex": "0",
+      "value_decimal": "0"
+    },
+    "compact_setup_image_id": {
+      "width_bits": 256,
+      "value_hex": "85352d965e0eba2fa31e2162b31adaead328f60524e03fa6978b18584b35355f",
+      "value_decimal": "60251566388490703543381079633750276078800285183891412553816371211912430826847"
+    }
+  },
+  "remaining_inputs": 31,
+  "remaining_model_constant_inputs": 0,
+  "input_classification_counts": {
+    "reset": 7,
+    "control-handshake": 13,
+    "job metadata": 10,
+    "audio data": 1
+  },
+  "v1_build_pins_unchanged": 165,
+  "v2_build_pins": 166,
+  "v1_non_progress_log_lines_identical": 63,
+  "new_native_ROM_bytes": 28641280,
+  "total_native_image_bytes": 37784320,
+  "stages": {
+    "lint-full": {
+      "exit_code": 0,
+      "elapsed_seconds": 35.755920165916905,
+      "log": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/onchip-all/logs-v2/20261014T030932-lint-full.log",
+      "log_sha256": "a49ae88b1207b38309f1211d5c99fbd52a7a58600da1a99121c04d21aeaed6fe"
+    },
+    "generate-full": {
+      "exit_code": 0,
+      "elapsed_seconds": 76.34179237508215,
+      "log": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/onchip-all/logs-v2/20261014T031046-generate-full.log",
+      "log_sha256": "bacfffea5b73b234f8aab3a54f5e48d5df47f5b9b1a8bbe225d710a51bf484c7"
+    },
+    "compile": {
+      "exit_code": 0,
+      "elapsed_seconds": 74.98708008299582,
+      "log": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/onchip-all/logs-v2/20261014T031209-compile.log",
+      "log_sha256": "1ed83df9299bd4cc4bdc96520de0cecea41a8e27d4ed02afecbb504b88363ef5"
+    },
+    "fixture": {
+      "exit_code": 0,
+      "elapsed_seconds": 1.3305249158293009,
+      "log": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/onchip-all/logs-v2/20261014T031330-fixture.log",
+      "log_sha256": "1bfbb874cbc297d7b27432dbbb57a80d4a990f59327dd24892f5459f1872c5d5"
+    },
+    "positive": {
+      "exit_code": 0,
+      "elapsed_seconds": 3159.3976175829303,
+      "log": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/onchip-all/logs-v2/20261014T031357-positive.log",
+      "log_sha256": "d96b68cc65e0167041ce7d90274293b6ba9554aa440341832da9a16db58ca653"
+    },
+    "compare": {
+      "exit_code": 0,
+      "elapsed_seconds": 0.03949775011278689,
+      "log": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/onchip-all/logs-v2/20261014T040651-compare.log",
+      "log_sha256": "985bc0ed169df966ab85bbd42ce3b3557cc800520b43ed9c2bea8006cff2c19a"
+    },
+    "render": {
+      "exit_code": 0,
+      "elapsed_seconds": 0.1820207079872489,
+      "log": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/onchip-all/logs-v2/20261014T040706-render.log",
+      "log_sha256": "8f259aa17edb750803a870c34ea4ae3227ebf8534b5375cfe0865b576aa09a4d"
+    }
+  }
+}

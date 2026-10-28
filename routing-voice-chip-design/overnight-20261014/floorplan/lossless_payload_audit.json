@@ -1,0 +1,74 @@
+{
+  "manifest_sha256": "b6a9a1be31b4bdb08f0732af7af77ab8420e806471b8f0608bdd8a6958dc5f4c",
+  "files": [
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/accuracy-int8/existing-affine-int8-exact/linear_weights.int8.bin",
+      "sha256": "c90667fdad5cc2bb2fd6eefca84eaa2093e5691e16700b958609a0689d85b65a",
+      "bytes": 25600,
+      "verified": true
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/accuracy-int8/existing-affine-int8-exact/linear_weights.scale.fp32.bin",
+      "sha256": "83c71a0b324d53819eebb89b736f34ecaf7b3510aaaea3774aea67d708f5a89a",
+      "bytes": 1280,
+      "verified": true
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/accuracy-int8/existing-affine-int8-exact/linear_weights.offset.fp32.bin",
+      "sha256": "b38d58a3b9c3efd1bce463fb4430e4706b1ba40907cebb61e375e302f66afbbe",
+      "bytes": 1280,
+      "verified": true
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/accuracy-int8/existing-affine-int8-exact/conv1_weights.int8.bin",
+      "sha256": "10e0955076d451102d17969417eb94cfa587f8dfb620d208fb15dc3945868652",
+      "bytes": 1024000,
+      "verified": true
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/accuracy-int8/existing-affine-int8-exact/conv1_weights.scale.fp32.bin",
+      "sha256": "60fba5045aa5dac283003ec904ab29eb1e5fbbbf00665164403c44f232c8d651",
+      "bytes": 2560,
+      "verified": true
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/accuracy-int8/existing-affine-int8-exact/conv1_weights.offset.fp32.bin",
+      "sha256": "e846e5947e681749dca2b6038e6a272bfa4252fad1530dc9df5c105cab75c68a",
+      "bytes": 2560,
+      "verified": true
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/accuracy-int8/existing-affine-int8-exact/conv2_weights.int8.bin",
+      "sha256": "8a477dc831c6268856578f9f8b576a86e91be88a1cfae026b3533c44164c6c5e",
+      "bytes": 1024000,
+      "verified": true
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/accuracy-int8/existing-affine-int8-exact/conv2_weights.scale.fp32.bin",
+      "sha256": "c24c93bafe7702b05f8dda974c3d00c8d8e0f729d51f37af0984dc26a1ce48f2",
+      "bytes": 2560,
+      "verified": true
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/accuracy-int8/existing-affine-int8-exact/conv2_weights.offset.fp32.bin",
+      "sha256": "cc3c78bc58e3ad6bde98104d4a8675de39e6a641e64081c20529a166a351ecea",
+      "bytes": 2560,
+      "verified": true
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/accuracy-int8/existing-affine-int8-exact/conv1_bias.bin",
+      "sha256": "7ad3904e16f8466edca6996a3dabde88f2eefc1a0ad023d48c2d39a5b4973ee2",
+      "bytes": 2560,
+      "verified": true
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/accuracy-int8/existing-affine-int8-exact/conv2_bias.bin",
+      "sha256": "355244333061a76f48ac524104bb0e6bcf433546bac68adbd8231addfca062a5",
+      "bytes": 1280,
+      "verified": true
+    }
+  ],
+  "total_bytes": 2090240,
+  "bit_exact_claim_source": "lead-verified source manifest; W3 independently checked all payload sizes/hashes",
+  "decode_contract": "Round INT8 cast to FP32 times FP32 scale to FP32; then add FP32 offset with a second FP32 rounding. Do not silently fuse, drop offsets or change Conv2 input-channel axis."
+}

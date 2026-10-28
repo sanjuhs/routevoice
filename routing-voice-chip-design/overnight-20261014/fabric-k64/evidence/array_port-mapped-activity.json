@@ -1,0 +1,85 @@
+{
+  "variant": "array_port",
+  "status": "one_vector_functional_pass_and_trace_complete",
+  "vectors": 1,
+  "fp32_outputs": 320,
+  "cycles_excluding_start": 4163,
+  "stalls": 0,
+  "reset_mid_vector_tests": 0,
+  "initial_reset_included": true,
+  "clock_period_ns": 20,
+  "trace_duration_ps": 83320000,
+  "trace_duration_us": 83.32,
+  "trace_duration_over_projection_ns": 60.0,
+  "activity": "Mapped standard-cell zero-delay simulation, saved real activation vector0; no SDF delays or glitch timing, not a long stream/idle/peak characterization.",
+  "activation_statistics": {
+    "samples": 1280,
+    "min": -1,
+    "max": 11,
+    "zero_count": 565,
+    "mean_absolute": 0.746875
+  },
+  "guard": {
+    "pid": 80398,
+    "variant": "array_port",
+    "elapsed_s": 1810.3081300258636,
+    "free_gib": 26.547351837158203,
+    "status": "completed",
+    "compile_threads": 2,
+    "simulation_threads": 1,
+    "time_limit_s": 3600,
+    "disk_guard_gib": 22,
+    "returncode": 0,
+    "reason": null
+  },
+  "artifacts": {
+    "evidence/array_port-mapped-speech.saif": {
+      "bytes": 359981024,
+      "sha256": "ef48e94b3b0e4a65e2bfd7a5bc8c58e5cb6d76557086632d7fec62621c9b60e5"
+    },
+    "logs/array_port-activity-simulation.log": {
+      "bytes": 382,
+      "sha256": "32bf8a736a0b222cefdc13138251be4bf4cbb93f52ebaae480fb81f5aa3f3bd2"
+    },
+    "tb/activity_array_port.sv": {
+      "bytes": 3381,
+      "sha256": "39d89fad07546aed36a1ff0b844f24e7e87588337e197975fc8c1aebf2f2e63f"
+    },
+    "runs/array_port-v2/06-yosys-synthesis/rv_k64_array_port.nl.v": {
+      "bytes": 50481861,
+      "sha256": "6013dfbe3ab69fce253c1799b8d8e5c1138cd3318a6d25922c59b216b67f6d73"
+    },
+    "vectors/inputs.hex": {
+      "bytes": 276480,
+      "sha256": "a6914fe441e732dc9408b8feb9a5f9363842842b27364377e0a8168809884d55"
+    },
+    "vectors/activation-scales.hex": {
+      "bytes": 486,
+      "sha256": "10ded5f83eb5d1d24ad6c3b4734ade8d359a692b06570c43483807fecce24eae"
+    },
+    "evidence/array_port-placed-saif-annotation.rpt": {
+      "bytes": 38,
+      "sha256": "10ce980299c0bb19f83cb7b478b47c85f409266e5e6d1bcd4788ea74fa25e011"
+    },
+    "logs/saif-projection-probe-success.log": {
+      "bytes": 478,
+      "sha256": "ec77bbaeef025b4dc679e954ef2d8574c4997043621ef866a07a8d92cdbbad4b"
+    }
+  },
+  "annotation_coverage_pending": false,
+  "power_computed": false,
+  "annotation": {
+    "stage": "28-openroad-globalplacement; not final routed netlist",
+    "annotated_pins": 1253320,
+    "unannotated_pins": 0,
+    "coverage_fraction": 1.0,
+    "netlist": "runs/array_port-v2/28-openroad-globalplacement/rv_k64_array_port.nl.v",
+    "report": "evidence/array_port-placed-saif-annotation.rpt",
+    "log": "logs/saif-projection-probe-success.log",
+    "units": {
+      "time": "ns",
+      "capacitance": "pF",
+      "power": "uW"
+    }
+  }
+}

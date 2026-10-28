@@ -1,0 +1,1181 @@
+{
+  "method": "Selected column has the maximum connected-drain population among all1280 real-index bit columns; independently extracted local128-column C/R ranking retained for context. This candidate is distinct from the metal-C/R proxy maximum and is not proven worst transient.",
+  "selected": [
+    112,
+    113,
+    114,
+    115,
+    116,
+    117,
+    118,
+    119,
+    120,
+    121,
+    122,
+    123,
+    124,
+    125,
+    126,
+    127
+  ],
+  "selected_peak_local_bit": 119,
+  "forced_global_peak": 1015,
+  "global_rank_source": "overnight-20261014/taalas-pitch/timing/r1280-g07/global-proxy-ranking.json",
+  "global_rank_source_sha256": "68fa729d6542b8780baca09098d4db4777f21f73b1ac22169aa4e2001cd16f4d",
+  "ranking": [
+    {
+      "local_bit_column": 40,
+      "extracted_incident_metal_cap_ff": 668.0593399999949,
+      "connected_drains": 671,
+      "join_geometry_length_um": 124.5,
+      "join_ohm_at25c": 94.07368421052631,
+      "array_ohm_at25c": 583.5905263157894,
+      "rank_score_ohm_ff": 257783.3543054401
+    },
+    {
+      "local_bit_column": 65,
+      "extracted_incident_metal_cap_ff": 672.6409200000089,
+      "connected_drains": 651,
+      "join_geometry_length_um": 110.75999999999999,
+      "join_ohm_at25c": 90.31326315789474,
+      "array_ohm_at25c": 583.5905263157894,
+      "rank_score_ohm_ff": 257021.8306809002
+    },
+    {
+      "local_bit_column": 81,
+      "extracted_incident_metal_cap_ff": 672.6217100000088,
+      "connected_drains": 653,
+      "join_geometry_length_um": 110.75999999999999,
+      "join_ohm_at25c": 90.31326315789474,
+      "array_ohm_at25c": 583.5905263157894,
+      "rank_score_ohm_ff": 257014.4903761096
+    },
+    {
+      "local_bit_column": 33,
+      "extracted_incident_metal_cap_ff": 672.1346700000037,
+      "connected_drains": 651,
+      "join_geometry_length_um": 110.75999999999999,
+      "join_ohm_at25c": 90.31326315789474,
+      "array_ohm_at25c": 583.5905263157894,
+      "rank_score_ohm_ff": 256828.3882394508
+    },
+    {
+      "local_bit_column": 113,
+      "extracted_incident_metal_cap_ff": 671.198940000009,
+      "connected_drains": 643,
+      "join_geometry_length_um": 110.75999999999999,
+      "join_ohm_at25c": 90.31326315789474,
+      "array_ohm_at25c": 583.5905263157894,
+      "rank_score_ohm_ff": 256470.83782812336
+    },
+    {
+      "local_bit_column": 1,
+      "extracted_incident_metal_cap_ff": 670.8920300000025,
+      "connected_drains": 645,
+      "join_geometry_length_um": 110.75999999999999,
+      "join_ohm_at25c": 90.31326315789474,
+      "array_ohm_at25c": 583.5905263157894,
+      "rank_score_ohm_ff": 256353.5649003093
+    },
+    {
+      "local_bit_column": 17,
+      "extracted_incident_metal_cap_ff": 670.8084700000129,
+      "connected_drains": 645,
+      "join_geometry_length_um": 110.75999999999999,
+      "join_ohm_at25c": 90.31326315789474,
+      "array_ohm_at25c": 583.5905263157894,
+      "rank_score_ohm_ff": 256321.63591185436
+    },
+    {
+      "local_bit_column": 49,
+      "extracted_incident_metal_cap_ff": 670.7274500000062,
+      "connected_drains": 643,
+      "join_geometry_length_um": 110.75999999999999,
+      "join_ohm_at25c": 90.31326315789474,
+      "array_ohm_at25c": 583.5905263157894,
+      "rank_score_ohm_ff": 256290.6774790497
+    },
+    {
+      "local_bit_column": 73,
+      "extracted_incident_metal_cap_ff": 670.5060899999986,
+      "connected_drains": 667,
+      "join_geometry_length_um": 110.75999999999999,
+      "join_ohm_at25c": 90.31326315789474,
+      "array_ohm_at25c": 583.5905263157894,
+      "rank_score_ohm_ff": 256206.0939356615
+    },
+    {
+      "local_bit_column": 97,
+      "extracted_incident_metal_cap_ff": 670.4325700000118,
+      "connected_drains": 643,
+      "join_geometry_length_um": 110.75999999999999,
+      "join_ohm_at25c": 90.31326315789474,
+      "array_ohm_at25c": 583.5905263157894,
+      "rank_score_ohm_ff": 256178.0013168118
+    },
+    {
+      "local_bit_column": 104,
+      "extracted_incident_metal_cap_ff": 662.5957099999999,
+      "connected_drains": 648,
+      "join_geometry_length_um": 124.5,
+      "join_ohm_at25c": 94.07368421052631,
+      "array_ohm_at25c": 583.5905263157894,
+      "rank_score_ohm_ff": 255675.1091485315
+    },
+    {
+      "local_bit_column": 56,
+      "extracted_incident_metal_cap_ff": 662.4029599999982,
+      "connected_drains": 644,
+      "join_geometry_length_um": 124.5,
+      "join_ohm_at25c": 94.07368421052631,
+      "array_ohm_at25c": 583.5905263157894,
+      "rank_score_ohm_ff": 255600.7329089256
+    },
+    {
+      "local_bit_column": 120,
+      "extracted_incident_metal_cap_ff": 660.9159200000037,
+      "connected_drains": 646,
+      "join_geometry_length_um": 124.5,
+      "join_ohm_at25c": 94.07368421052631,
+      "array_ohm_at25c": 583.5905263157894,
+      "rank_score_ohm_ff": 255026.93034943295
+    },
+    {
+      "local_bit_column": 41,
+      "extracted_incident_metal_cap_ff": 667.3795799999998,
+      "connected_drains": 655,
+      "join_geometry_length_um": 110.75999999999999,
+      "join_ohm_at25c": 90.31326315789474,
+      "array_ohm_at25c": 583.5905263157894,
+      "rank_score_ohm_ff": 255011.4278070504
+    },
+    {
+      "local_bit_column": 57,
+      "extracted_incident_metal_cap_ff": 666.3495100000023,
+      "connected_drains": 647,
+      "join_geometry_length_um": 110.75999999999999,
+      "join_ohm_at25c": 90.31326315789474,
+      "array_ohm_at25c": 583.5905263157894,
+      "rank_score_ohm_ff": 254617.82927734923
+    },
+    {
+      "local_bit_column": 24,
+      "extracted_incident_metal_cap_ff": 659.4629499999961,
+      "connected_drains": 633,
+      "join_geometry_length_um": 124.5,
+      "join_ohm_at25c": 94.07368421052631,
+      "array_ohm_at25c": 583.5905263157894,
+      "rank_score_ohm_ff": 254466.27434497216
+    },
+    {
+      "local_bit_column": 8,
+      "extracted_incident_metal_cap_ff": 658.9851399999993,
+      "connected_drains": 630,
+      "join_geometry_length_um": 124.5,
+      "join_ohm_at25c": 94.07368421052631,
+      "array_ohm_at25c": 583.5905263157894,
+      "rank_score_ohm_ff": 254281.9023032313
+    },
+    {
+      "local_bit_column": 105,
+      "extracted_incident_metal_cap_ff": 663.7794800000045,
+      "connected_drains": 639,
+      "join_geometry_length_um": 110.75999999999999,
+      "join_ohm_at25c": 90.31326315789474,
+      "array_ohm_at25c": 583.5905263157894,
+      "rank_score_ohm_ff": 253635.7989014627
+    },
+    {
+      "local_bit_column": 72,
+      "extracted_incident_metal_cap_ff": 656.5833999999996,
+      "connected_drains": 621,
+      "join_geometry_length_um": 124.5,
+      "join_ohm_at25c": 94.07368421052631,
+      "array_ohm_at25c": 583.5905263157894,
+      "rank_score_ohm_ff": 253355.14541757878
+    },
+    {
+      "local_bit_column": 89,
+      "extracted_incident_metal_cap_ff": 661.2942399999986,
+      "connected_drains": 629,
+      "join_geometry_length_um": 110.76,
+      "join_ohm_at25c": 90.31326315789474,
+      "array_ohm_at25c": 583.5905263157894,
+      "rank_score_ohm_ff": 252686.1675075194
+    },
+    {
+      "local_bit_column": 88,
+      "extracted_incident_metal_cap_ff": 654.846799999998,
+      "connected_drains": 613,
+      "join_geometry_length_um": 124.5,
+      "join_ohm_at25c": 94.07368421052631,
+      "array_ohm_at25c": 583.5905263157894,
+      "rank_score_ohm_ff": 252685.04540357814
+    },
+    {
+      "local_bit_column": 50,
+      "extracted_incident_metal_cap_ff": 666.8044200000038,
+      "connected_drains": 647,
+      "join_geometry_length_um": 97.02,
+      "join_ohm_at25c": 86.55284210526315,
+      "array_ohm_at25c": 583.5905263157894,
+      "rank_score_ohm_ff": 252284.18888810035
+    },
+    {
+      "local_bit_column": 25,
+      "extracted_incident_metal_cap_ff": 659.6700299999977,
+      "connected_drains": 623,
+      "join_geometry_length_um": 110.75999999999999,
+      "join_ohm_at25c": 90.31326315789474,
+      "array_ohm_at25c": 583.5905263157894,
+      "rank_score_ohm_ff": 252065.5430179917
+    },
+    {
+      "local_bit_column": 121,
+      "extracted_incident_metal_cap_ff": 659.5604000000017,
+      "connected_drains": 629,
+      "join_geometry_length_um": 110.75999999999999,
+      "join_ohm_at25c": 90.31326315789474,
+      "array_ohm_at25c": 583.5905263157894,
+      "rank_score_ohm_ff": 252023.65246025322
+    },
+    {
+      "local_bit_column": 35,
+      "extracted_incident_metal_cap_ff": 672.7793699999947,
+      "connected_drains": 690,
+      "join_geometry_length_um": 83.28,
+      "join_ohm_at25c": 82.79242105263158,
+      "array_ohm_at25c": 583.5905263157894,
+      "rank_score_ohm_ff": 252014.86619291484
+    },
+    {
+      "local_bit_column": 2,
+      "extracted_incident_metal_cap_ff": 665.9458500000043,
+      "connected_drains": 644,
+      "join_geometry_length_um": 97.02,
+      "join_ohm_at25c": 86.55284210526315,
+      "array_ohm_at25c": 583.5905263157894,
+      "rank_score_ohm_ff": 251959.35055536474
+    },
+    {
+      "local_bit_column": 82,
+      "extracted_incident_metal_cap_ff": 665.2863800000054,
+      "connected_drains": 642,
+      "join_geometry_length_um": 97.02000000000001,
+      "join_ohm_at25c": 86.55284210526315,
+      "array_ohm_at25c": 583.5905263157894,
+      "rank_score_ohm_ff": 251709.84133038725
+    },
+    {
+      "local_bit_column": 98,
+      "extracted_incident_metal_cap_ff": 665.286210000003,
+      "connected_drains": 642,
+      "join_geometry_length_um": 97.02,
+      "join_ohm_at25c": 86.55284210526315,
+      "array_ohm_at25c": 583.5905263157894,
+      "rank_score_ohm_ff": 251709.77701120847
+    },
+    {
+      "local_bit_column": 27,
+      "extracted_incident_metal_cap_ff": 671.8121400000049,
+      "connected_drains": 688,
+      "join_geometry_length_um": 83.28,
+      "join_ohm_at25c": 82.79242105263158,
+      "array_ohm_at25c": 583.5905263157894,
+      "rank_score_ohm_ff": 251652.5537471197
+    },
+    {
+      "local_bit_column": 114,
+      "extracted_incident_metal_cap_ff": 664.572280000005,
+      "connected_drains": 637,
+      "join_geometry_length_um": 97.02,
+      "join_ohm_at25c": 86.55284210526315,
+      "array_ohm_at25c": 583.5905263157894,
+      "rank_score_ohm_ff": 251439.6629484187
+    },
+    {
+      "local_bit_column": 34,
+      "extracted_incident_metal_cap_ff": 664.1556300000018,
+      "connected_drains": 638,
+      "join_geometry_length_um": 97.02,
+      "join_ohm_at25c": 86.55284210526315,
+      "array_ohm_at25c": 583.5905263157894,
+      "rank_score_ohm_ff": 251282.02421035958
+    },
+    {
+      "local_bit_column": 66,
+      "extracted_incident_metal_cap_ff": 663.836370000001,
+      "connected_drains": 638,
+      "join_geometry_length_um": 97.02,
+      "join_ohm_at25c": 86.55284210526315,
+      "array_ohm_at25c": 583.5905263157894,
+      "rank_score_ohm_ff": 251161.23279427298
+    },
+    {
+      "local_bit_column": 74,
+      "extracted_incident_metal_cap_ff": 663.4994599999966,
+      "connected_drains": 646,
+      "join_geometry_length_um": 97.02,
+      "join_ohm_at25c": 86.55284210526315,
+      "array_ohm_at25c": 583.5905263157894,
+      "rank_score_ohm_ff": 251033.7635341271
+    },
+    {
+      "local_bit_column": 106,
+      "extracted_incident_metal_cap_ff": 663.4717799999933,
+      "connected_drains": 648,
+      "join_geometry_length_um": 97.02,
+      "join_ohm_at25c": 86.55284210526315,
+      "array_ohm_at25c": 583.5905263157894,
+      "rank_score_ohm_ff": 251023.29085857215
+    },
+    {
+      "local_bit_column": 9,
+      "extracted_incident_metal_cap_ff": 656.1441600000022,
+      "connected_drains": 606,
+      "join_geometry_length_um": 110.75999999999999,
+      "join_ohm_at25c": 90.31326315789474,
+      "array_ohm_at25c": 583.5905263157894,
+      "rank_score_ohm_ff": 250718.27802831237
+    },
+    {
+      "local_bit_column": 18,
+      "extracted_incident_metal_cap_ff": 662.6304000000039,
+      "connected_drains": 632,
+      "join_geometry_length_um": 97.02,
+      "join_ohm_at25c": 86.55284210526315,
+      "array_ohm_at25c": 583.5905263157894,
+      "rank_score_ohm_ff": 250704.95632976983
+    },
+    {
+      "local_bit_column": 10,
+      "extracted_incident_metal_cap_ff": 662.0949300000012,
+      "connected_drains": 643,
+      "join_geometry_length_um": 97.02,
+      "join_ohm_at25c": 86.55284210526315,
+      "array_ohm_at25c": 583.5905263157894,
+      "rank_score_ohm_ff": 250502.36226984358
+    },
+    {
+      "local_bit_column": 91,
+      "extracted_incident_metal_cap_ff": 668.7408900000032,
+      "connected_drains": 675,
+      "join_geometry_length_um": 83.28,
+      "join_ohm_at25c": 82.79242105263158,
+      "array_ohm_at25c": 583.5905263157894,
+      "rank_score_ohm_ff": 250502.1013219875
+    },
+    {
+      "local_bit_column": 122,
+      "extracted_incident_metal_cap_ff": 661.082129999995,
+      "connected_drains": 647,
+      "join_geometry_length_um": 97.02,
+      "join_ohm_at25c": 86.55284210526315,
+      "array_ohm_at25c": 583.5905263157894,
+      "rank_score_ohm_ff": 250119.1713088307
+    },
+    {
+      "local_bit_column": 26,
+      "extracted_incident_metal_cap_ff": 661.0752699999972,
+      "connected_drains": 638,
+      "join_geometry_length_um": 97.02,
+      "join_ohm_at25c": 86.55284210526315,
+      "array_ohm_at25c": 583.5905263157894,
+      "rank_score_ohm_ff": 250116.57584082944
+    },
+    {
+      "local_bit_column": 58,
+      "extracted_incident_metal_cap_ff": 660.6446199999938,
+      "connected_drains": 636,
+      "join_geometry_length_um": 97.02,
+      "join_ohm_at25c": 86.55284210526315,
+      "array_ohm_at25c": 583.5905263157894,
+      "rank_score_ohm_ff": 249953.64022929655
+    },
+    {
+      "local_bit_column": 90,
+      "extracted_incident_metal_cap_ff": 660.6172799999937,
+      "connected_drains": 634,
+      "join_geometry_length_um": 97.02000000000001,
+      "join_ohm_at25c": 86.55284210526315,
+      "array_ohm_at25c": 583.5905263157894,
+      "rank_score_ohm_ff": 249943.2961920986
+    },
+    {
+      "local_bit_column": 67,
+      "extracted_incident_metal_cap_ff": 665.7536599999949,
+      "connected_drains": 658,
+      "join_geometry_length_um": 83.28,
+      "join_ohm_at25c": 82.79242105263158,
+      "array_ohm_at25c": 583.5905263157894,
+      "rank_score_ohm_ff": 249383.12175408014
+    },
+    {
+      "local_bit_column": 42,
+      "extracted_incident_metal_cap_ff": 657.4823499999987,
+      "connected_drains": 619,
+      "join_geometry_length_um": 97.02,
+      "join_ohm_at25c": 86.55284210526315,
+      "array_ohm_at25c": 583.5905263157894,
+      "rank_score_ohm_ff": 248757.2013664679
+    },
+    {
+      "local_bit_column": 123,
+      "extracted_incident_metal_cap_ff": 663.8971999999998,
+      "connected_drains": 674,
+      "join_geometry_length_um": 83.28,
+      "join_ohm_at25c": 82.79242105263158,
+      "array_ohm_at25c": 583.5905263157894,
+      "rank_score_ohm_ff": 248687.71470185253
+    },
+    {
+      "local_bit_column": 51,
+      "extracted_incident_metal_cap_ff": 663.7459799999981,
+      "connected_drains": 654,
+      "join_geometry_length_um": 83.28,
+      "join_ohm_at25c": 82.79242105263158,
+      "array_ohm_at25c": 583.5905263157894,
+      "rank_score_ohm_ff": 248631.06955224558
+    },
+    {
+      "local_bit_column": 107,
+      "extracted_incident_metal_cap_ff": 662.2260800000028,
+      "connected_drains": 650,
+      "join_geometry_length_um": 83.28,
+      "join_ohm_at25c": 82.79242105263158,
+      "array_ohm_at25c": 583.5905263157894,
+      "rank_score_ohm_ff": 248061.73373101573
+    },
+    {
+      "local_bit_column": 99,
+      "extracted_incident_metal_cap_ff": 662.2071999999985,
+      "connected_drains": 646,
+      "join_geometry_length_um": 83.28,
+      "join_ohm_at25c": 82.79242105263158,
+      "array_ohm_at25c": 583.5905263157894,
+      "rank_score_ohm_ff": 248054.66151553625
+    },
+    {
+      "local_bit_column": 115,
+      "extracted_incident_metal_cap_ff": 659.6965599999999,
+      "connected_drains": 639,
+      "join_geometry_length_um": 83.28,
+      "join_ohm_at25c": 82.79242105263158,
+      "array_ohm_at25c": 583.5905263157894,
+      "rank_score_ohm_ff": 247114.20669205044
+    },
+    {
+      "local_bit_column": 19,
+      "extracted_incident_metal_cap_ff": 658.6255900000009,
+      "connected_drains": 629,
+      "join_geometry_length_um": 83.28,
+      "join_ohm_at25c": 82.79242105263158,
+      "array_ohm_at25c": 583.5905263157894,
+      "rank_score_ohm_ff": 246713.0345198919
+    },
+    {
+      "local_bit_column": 43,
+      "extracted_incident_metal_cap_ff": 658.1854700000076,
+      "connected_drains": 633,
+      "join_geometry_length_um": 83.28,
+      "join_ohm_at25c": 82.79242105263158,
+      "array_ohm_at25c": 583.5905263157894,
+      "rank_score_ohm_ff": 246548.17098831967
+    },
+    {
+      "local_bit_column": 28,
+      "extracted_incident_metal_cap_ff": 662.8942600000016,
+      "connected_drains": 659,
+      "join_geometry_length_um": 69.53999999999999,
+      "join_ohm_at25c": 79.032,
+      "array_ohm_at25c": 583.5905263157894,
+      "rank_score_ohm_ff": 245819.26419887846
+    },
+    {
+      "local_bit_column": 83,
+      "extracted_incident_metal_cap_ff": 655.8975400000045,
+      "connected_drains": 618,
+      "join_geometry_length_um": 83.28,
+      "join_ohm_at25c": 82.79242105263158,
+      "array_ohm_at25c": 583.5905263157894,
+      "rank_score_ohm_ff": 245691.1405879827
+    },
+    {
+      "local_bit_column": 108,
+      "extracted_incident_metal_cap_ff": 662.2199499999972,
+      "connected_drains": 655,
+      "join_geometry_length_um": 69.53999999999999,
+      "join_ohm_at25c": 79.032,
+      "array_ohm_at25c": 583.5905263157894,
+      "rank_score_ohm_ff": 245569.2116670568
+    },
+    {
+      "local_bit_column": 11,
+      "extracted_incident_metal_cap_ff": 654.5810500000069,
+      "connected_drains": 618,
+      "join_geometry_length_um": 83.28,
+      "join_ohm_at25c": 82.79242105263158,
+      "array_ohm_at25c": 583.5905263157894,
+      "rank_score_ohm_ff": 245197.99964759732
+    },
+    {
+      "local_bit_column": 59,
+      "extracted_incident_metal_cap_ff": 653.9865300000018,
+      "connected_drains": 616,
+      "join_geometry_length_um": 83.28,
+      "join_ohm_at25c": 82.79242105263158,
+      "array_ohm_at25c": 583.5905263157894,
+      "rank_score_ohm_ff": 244975.29977757856
+    },
+    {
+      "local_bit_column": 36,
+      "extracted_incident_metal_cap_ff": 660.4718100000046,
+      "connected_drains": 653,
+      "join_geometry_length_um": 69.53999999999999,
+      "join_ohm_at25c": 79.032,
+      "array_ohm_at25c": 583.5905263157894,
+      "rank_score_ohm_ff": 244920.9536952427
+    },
+    {
+      "local_bit_column": 3,
+      "extracted_incident_metal_cap_ff": 653.5379400000011,
+      "connected_drains": 607,
+      "join_geometry_length_um": 83.28,
+      "join_ohm_at25c": 82.79242105263158,
+      "array_ohm_at25c": 583.5905263157894,
+      "rank_score_ohm_ff": 244807.26348831828
+    },
+    {
+      "local_bit_column": 84,
+      "extracted_incident_metal_cap_ff": 659.6458300000004,
+      "connected_drains": 650,
+      "join_geometry_length_um": 69.54000000000002,
+      "join_ohm_at25c": 79.03200000000001,
+      "array_ohm_at25c": 583.5905263157894,
+      "rank_score_ohm_ff": 244614.657792418
+    },
+    {
+      "local_bit_column": 4,
+      "extracted_incident_metal_cap_ff": 659.2611400000068,
+      "connected_drains": 649,
+      "join_geometry_length_um": 69.53999999999999,
+      "join_ohm_at25c": 79.032,
+      "array_ohm_at25c": 583.5905263157894,
+      "rank_score_ohm_ff": 244472.00425255616
+    },
+    {
+      "local_bit_column": 100,
+      "extracted_incident_metal_cap_ff": 658.7104900000057,
+      "connected_drains": 647,
+      "join_geometry_length_um": 69.53999999999999,
+      "join_ohm_at25c": 79.032,
+      "array_ohm_at25c": 583.5905263157894,
+      "rank_score_ohm_ff": 244267.80822009785
+    },
+    {
+      "local_bit_column": 52,
+      "extracted_incident_metal_cap_ff": 658.6977300000061,
+      "connected_drains": 648,
+      "join_geometry_length_um": 69.53999999999999,
+      "join_ohm_at25c": 79.032,
+      "array_ohm_at25c": 583.5905263157894,
+      "rank_score_ohm_ff": 244263.07646422012
+    },
+    {
+      "local_bit_column": 12,
+      "extracted_incident_metal_cap_ff": 658.6922200000018,
+      "connected_drains": 642,
+      "join_geometry_length_um": 69.53999999999999,
+      "join_ohm_at25c": 79.032,
+      "array_ohm_at25c": 583.5905263157894,
+      "rank_score_ohm_ff": 244261.03320599854
+    },
+    {
+      "local_bit_column": 68,
+      "extracted_incident_metal_cap_ff": 658.5452400000044,
+      "connected_drains": 644,
+      "join_geometry_length_um": 69.53999999999999,
+      "join_ohm_at25c": 79.032,
+      "array_ohm_at25c": 583.5905263157894,
+      "rank_score_ohm_ff": 244206.5290148605
+    },
+    {
+      "local_bit_column": 116,
+      "extracted_incident_metal_cap_ff": 657.8310300000043,
+      "connected_drains": 646,
+      "join_geometry_length_um": 69.53999999999999,
+      "join_ohm_at25c": 79.032,
+      "array_ohm_at25c": 583.5905263157894,
+      "rank_score_ohm_ff": 243941.6804752405
+    },
+    {
+      "local_bit_column": 76,
+      "extracted_incident_metal_cap_ff": 657.1359999999951,
+      "connected_drains": 635,
+      "join_geometry_length_um": 69.54,
+      "join_ohm_at25c": 79.032,
+      "array_ohm_at25c": 583.5905263157894,
+      "rank_score_ohm_ff": 243683.94440252444
+    },
+    {
+      "local_bit_column": 20,
+      "extracted_incident_metal_cap_ff": 657.061500000006,
+      "connected_drains": 639,
+      "join_geometry_length_um": 69.53999999999999,
+      "join_ohm_at25c": 79.032,
+      "array_ohm_at25c": 583.5905263157894,
+      "rank_score_ohm_ff": 243656.31777142326
+    },
+    {
+      "local_bit_column": 45,
+      "extracted_incident_metal_cap_ff": 663.4650200000046,
+      "connected_drains": 670,
+      "join_geometry_length_um": 55.8,
+      "join_ohm_at25c": 75.27157894736843,
+      "array_ohm_at25c": 583.5905263157894,
+      "rank_score_ohm_ff": 243536.00973870693
+    },
+    {
+      "local_bit_column": 75,
+      "extracted_incident_metal_cap_ff": 650.0073900000068,
+      "connected_drains": 599,
+      "join_geometry_length_um": 83.28,
+      "join_ohm_at25c": 82.79242105263158,
+      "array_ohm_at25c": 583.5905263157894,
+      "rank_score_ohm_ff": 243484.76293983095
+    },
+    {
+      "local_bit_column": 60,
+      "extracted_incident_metal_cap_ff": 656.5322300000054,
+      "connected_drains": 634,
+      "join_geometry_length_um": 69.53999999999999,
+      "join_ohm_at25c": 79.032,
+      "array_ohm_at25c": 583.5905263157894,
+      "rank_score_ohm_ff": 243460.0500258514
+    },
+    {
+      "local_bit_column": 44,
+      "extracted_incident_metal_cap_ff": 656.1081100000007,
+      "connected_drains": 631,
+      "join_geometry_length_um": 69.53999999999999,
+      "join_ohm_at25c": 79.032,
+      "array_ohm_at25c": 583.5905263157894,
+      "rank_score_ohm_ff": 243302.77476699915
+    },
+    {
+      "local_bit_column": 13,
+      "extracted_incident_metal_cap_ff": 662.2852500000042,
+      "connected_drains": 662,
+      "join_geometry_length_um": 55.8,
+      "join_ohm_at25c": 75.27157894736843,
+      "array_ohm_at25c": 583.5905263157894,
+      "rank_score_ohm_ff": 243102.95529039626
+    },
+    {
+      "local_bit_column": 124,
+      "extracted_incident_metal_cap_ff": 654.5362200000012,
+      "connected_drains": 646,
+      "join_geometry_length_um": 69.53999999999999,
+      "join_ohm_at25c": 79.032,
+      "array_ohm_at25c": 583.5905263157894,
+      "rank_score_ohm_ff": 242719.8751003141
+    },
+    {
+      "local_bit_column": 92,
+      "extracted_incident_metal_cap_ff": 654.463970000003,
+      "connected_drains": 623,
+      "join_geometry_length_um": 69.53999999999999,
+      "join_ohm_at25c": 79.032,
+      "array_ohm_at25c": 583.5905263157894,
+      "rank_score_ohm_ff": 242693.08283055158
+    },
+    {
+      "local_bit_column": 77,
+      "extracted_incident_metal_cap_ff": 659.5643200000032,
+      "connected_drains": 650,
+      "join_geometry_length_um": 55.800000000000004,
+      "join_ohm_at25c": 75.27157894736843,
+      "array_ohm_at25c": 583.5905263157894,
+      "rank_score_ohm_ff": 242104.19210770642
+    },
+    {
+      "local_bit_column": 117,
+      "extracted_incident_metal_cap_ff": 657.833919999996,
+      "connected_drains": 660,
+      "join_geometry_length_um": 55.8,
+      "join_ohm_at25c": 75.27157894736843,
+      "array_ohm_at25c": 583.5905263157894,
+      "rank_score_ohm_ff": 241469.01964412484
+    },
+    {
+      "local_bit_column": 61,
+      "extracted_incident_metal_cap_ff": 657.3641400000042,
+      "connected_drains": 645,
+      "join_geometry_length_um": 55.8,
+      "join_ohm_at25c": 75.27157894736843,
+      "array_ohm_at25c": 583.5905263157894,
+      "rank_score_ohm_ff": 241296.5789830436
+    },
+    {
+      "local_bit_column": 53,
+      "extracted_incident_metal_cap_ff": 657.1769699999987,
+      "connected_drains": 650,
+      "join_geometry_length_um": 55.8,
+      "join_ohm_at25c": 75.27157894736843,
+      "array_ohm_at25c": 583.5905263157894,
+      "rank_score_ohm_ff": 241227.87508220476
+    },
+    {
+      "local_bit_column": 37,
+      "extracted_incident_metal_cap_ff": 656.8894200000053,
+      "connected_drains": 652,
+      "join_geometry_length_um": 55.8,
+      "join_ohm_at25c": 75.27157894736843,
+      "array_ohm_at25c": 583.5905263157894,
+      "rank_score_ohm_ff": 241122.32501175982
+    },
+    {
+      "local_bit_column": 109,
+      "extracted_incident_metal_cap_ff": 656.7528100000054,
+      "connected_drains": 641,
+      "join_geometry_length_um": 55.8,
+      "join_ohm_at25c": 75.27157894736843,
+      "array_ohm_at25c": 583.5905263157894,
+      "rank_score_ohm_ff": 241072.18001045985
+    },
+    {
+      "local_bit_column": 101,
+      "extracted_incident_metal_cap_ff": 655.082729999996,
+      "connected_drains": 645,
+      "join_geometry_length_um": 55.8,
+      "join_ohm_at25c": 75.27157894736843,
+      "array_ohm_at25c": 583.5905263157894,
+      "rank_score_ohm_ff": 240459.14901879322
+    },
+    {
+      "local_bit_column": 29,
+      "extracted_incident_metal_cap_ff": 654.998770000002,
+      "connected_drains": 633,
+      "join_geometry_length_um": 55.8,
+      "join_ohm_at25c": 75.27157894736843,
+      "array_ohm_at25c": 583.5905263157894,
+      "rank_score_ohm_ff": 240428.33008673225
+    },
+    {
+      "local_bit_column": 5,
+      "extracted_incident_metal_cap_ff": 654.2339699999975,
+      "connected_drains": 640,
+      "join_geometry_length_um": 55.8,
+      "join_ohm_at25c": 75.27157894736843,
+      "array_ohm_at25c": 583.5905263157894,
+      "rank_score_ohm_ff": 240147.59736588853
+    },
+    {
+      "local_bit_column": 69,
+      "extracted_incident_metal_cap_ff": 654.1740399999989,
+      "connected_drains": 640,
+      "join_geometry_length_um": 55.8,
+      "join_ohm_at25c": 75.27157894736843,
+      "array_ohm_at25c": 583.5905263157894,
+      "rank_score_ohm_ff": 240125.59905004164
+    },
+    {
+      "local_bit_column": 21,
+      "extracted_incident_metal_cap_ff": 653.7355899999975,
+      "connected_drains": 638,
+      "join_geometry_length_um": 55.8,
+      "join_ohm_at25c": 75.27157894736843,
+      "array_ohm_at25c": 583.5905263157894,
+      "rank_score_ohm_ff": 239964.6585931201
+    },
+    {
+      "local_bit_column": 93,
+      "extracted_incident_metal_cap_ff": 653.423040000004,
+      "connected_drains": 624,
+      "join_geometry_length_um": 55.80000000000001,
+      "join_ohm_at25c": 75.27157894736843,
+      "array_ohm_at25c": 583.5905263157894,
+      "rank_score_ohm_ff": 239849.93185162247
+    },
+    {
+      "local_bit_column": 78,
+      "extracted_incident_metal_cap_ff": 660.0527000000104,
+      "connected_drains": 654,
+      "join_geometry_length_um": 42.059999999999995,
+      "join_ohm_at25c": 71.51115789473684,
+      "array_ohm_at25c": 583.5905263157894,
+      "rank_score_ohm_ff": 239801.38414313007
+    },
+    {
+      "local_bit_column": 46,
+      "extracted_incident_metal_cap_ff": 659.4866400000112,
+      "connected_drains": 650,
+      "join_geometry_length_um": 42.05999999999999,
+      "join_ohm_at25c": 71.51115789473684,
+      "array_ohm_at25c": 583.5905263157894,
+      "rank_score_ohm_ff": 239595.73091042932
+    },
+    {
+      "local_bit_column": 85,
+      "extracted_incident_metal_cap_ff": 652.4468899999962,
+      "connected_drains": 634,
+      "join_geometry_length_um": 55.80000000000001,
+      "join_ohm_at25c": 75.27157894736843,
+      "array_ohm_at25c": 583.5905263157894,
+      "rank_score_ohm_ff": 239491.61955369858
+    },
+    {
+      "local_bit_column": 30,
+      "extracted_incident_metal_cap_ff": 658.8819500000118,
+      "connected_drains": 649,
+      "join_geometry_length_um": 42.05999999999999,
+      "join_ohm_at25c": 71.51115789473684,
+      "array_ohm_at25c": 583.5905263157894,
+      "rank_score_ohm_ff": 239376.0431506832
+    },
+    {
+      "local_bit_column": 119,
+      "extracted_incident_metal_cap_ff": 665.2754000000131,
+      "connected_drains": 714,
+      "join_geometry_length_um": 28.320000000000007,
+      "join_ohm_at25c": 67.75073684210527,
+      "array_ohm_at25c": 583.5905263157894,
+      "rank_score_ohm_ff": 239197.10896840465
+    },
+    {
+      "local_bit_column": 110,
+      "extracted_incident_metal_cap_ff": 656.6566400000083,
+      "connected_drains": 641,
+      "join_geometry_length_um": 42.05999999999999,
+      "join_ohm_at25c": 71.51115789473684,
+      "array_ohm_at25c": 583.5905263157894,
+      "rank_score_ohm_ff": 238567.5737388493
+    },
+    {
+      "local_bit_column": 125,
+      "extracted_incident_metal_cap_ff": 648.2257300000007,
+      "connected_drains": 633,
+      "join_geometry_length_um": 55.8,
+      "join_ohm_at25c": 75.27157894736843,
+      "array_ohm_at25c": 583.5905263157894,
+      "rank_score_ohm_ff": 237942.17168247915
+    },
+    {
+      "local_bit_column": 102,
+      "extracted_incident_metal_cap_ff": 654.83249,
+      "connected_drains": 656,
+      "join_geometry_length_um": 42.05999999999999,
+      "join_ohm_at25c": 71.51115789473684,
+      "array_ohm_at25c": 583.5905263157894,
+      "rank_score_ohm_ff": 237904.84833088313
+    },
+    {
+      "local_bit_column": 54,
+      "extracted_incident_metal_cap_ff": 654.6717000000017,
+      "connected_drains": 653,
+      "join_geometry_length_um": 42.059999999999995,
+      "join_ohm_at25c": 71.51115789473684,
+      "array_ohm_at25c": 583.5905263157894,
+      "rank_score_ohm_ff": 237846.4322914427
+    },
+    {
+      "local_bit_column": 86,
+      "extracted_incident_metal_cap_ff": 653.3133300000029,
+      "connected_drains": 650,
+      "join_geometry_length_um": 42.06,
+      "join_ohm_at25c": 71.51115789473684,
+      "array_ohm_at25c": 583.5905263157894,
+      "rank_score_ohm_ff": 237352.92774827787
+    },
+    {
+      "local_bit_column": 94,
+      "extracted_incident_metal_cap_ff": 652.330210000011,
+      "connected_drains": 622,
+      "join_geometry_length_um": 42.06,
+      "join_ohm_at25c": 71.51115789473684,
+      "array_ohm_at25c": 583.5905263157894,
+      "rank_score_ohm_ff": 236995.75393961556
+    },
+    {
+      "local_bit_column": 62,
+      "extracted_incident_metal_cap_ff": 652.1051500000034,
+      "connected_drains": 620,
+      "join_geometry_length_um": 42.059999999999995,
+      "join_ohm_at25c": 71.51115789473684,
+      "array_ohm_at25c": 583.5905263157894,
+      "rank_score_ohm_ff": 236913.98819649068
+    },
+    {
+      "local_bit_column": 38,
+      "extracted_incident_metal_cap_ff": 651.8290500000063,
+      "connected_drains": 646,
+      "join_geometry_length_um": 42.05999999999999,
+      "join_ohm_at25c": 71.51115789473684,
+      "array_ohm_at25c": 583.5905263157894,
+      "rank_score_ohm_ff": 236813.6792936391
+    },
+    {
+      "local_bit_column": 70,
+      "extracted_incident_metal_cap_ff": 651.8044100000045,
+      "connected_drains": 640,
+      "join_geometry_length_um": 42.059999999999995,
+      "join_ohm_at25c": 71.51115789473684,
+      "array_ohm_at25c": 583.5905263157894,
+      "rank_score_ohm_ff": 236804.72742342373
+    },
+    {
+      "local_bit_column": 6,
+      "extracted_incident_metal_cap_ff": 650.7559900000032,
+      "connected_drains": 638,
+      "join_geometry_length_um": 42.059999999999995,
+      "join_ohm_at25c": 71.51115789473684,
+      "array_ohm_at25c": 583.5905263157894,
+      "rank_score_ohm_ff": 236423.82970546323
+    },
+    {
+      "local_bit_column": 126,
+      "extracted_incident_metal_cap_ff": 648.9730499999993,
+      "connected_drains": 647,
+      "join_geometry_length_um": 42.05999999999999,
+      "join_ohm_at25c": 71.51115789473684,
+      "array_ohm_at25c": 583.5905263157894,
+      "rank_score_ohm_ff": 235776.07615511023
+    },
+    {
+      "local_bit_column": 55,
+      "extracted_incident_metal_cap_ff": 655.4889700000007,
+      "connected_drains": 670,
+      "join_geometry_length_um": 28.32,
+      "join_ohm_at25c": 67.75073684210527,
+      "array_ohm_at25c": 583.5905263157894,
+      "rank_score_ohm_ff": 235678.4372076202
+    },
+    {
+      "local_bit_column": 22,
+      "extracted_incident_metal_cap_ff": 648.4522200000071,
+      "connected_drains": 629,
+      "join_geometry_length_um": 42.05999999999999,
+      "join_ohm_at25c": 71.51115789473684,
+      "array_ohm_at25c": 583.5905263157894,
+      "rank_score_ohm_ff": 235586.85527183622
+    },
+    {
+      "local_bit_column": 14,
+      "extracted_incident_metal_cap_ff": 647.5556600000111,
+      "connected_drains": 601,
+      "join_geometry_length_um": 42.059999999999995,
+      "join_ohm_at25c": 71.51115789473684,
+      "array_ohm_at25c": 583.5905263157894,
+      "rank_score_ohm_ff": 235261.12926697877
+    },
+    {
+      "local_bit_column": 118,
+      "extracted_incident_metal_cap_ff": 645.7437300000045,
+      "connected_drains": 623,
+      "join_geometry_length_um": 42.05999999999999,
+      "join_ohm_at25c": 71.51115789473684,
+      "array_ohm_at25c": 583.5905263157894,
+      "rank_score_ohm_ff": 234602.84346347844
+    },
+    {
+      "local_bit_column": 71,
+      "extracted_incident_metal_cap_ff": 649.6260200000041,
+      "connected_drains": 643,
+      "join_geometry_length_um": 28.32,
+      "join_ohm_at25c": 67.75073684210527,
+      "array_ohm_at25c": 583.5905263157894,
+      "rank_score_ohm_ff": 233570.43698692144
+    },
+    {
+      "local_bit_column": 103,
+      "extracted_incident_metal_cap_ff": 646.5298500000024,
+      "connected_drains": 631,
+      "join_geometry_length_um": 28.320000000000007,
+      "join_ohm_at25c": 67.75073684210527,
+      "array_ohm_at25c": 583.5905263157894,
+      "rank_score_ohm_ff": 232457.2214481008
+    },
+    {
+      "local_bit_column": 87,
+      "extracted_incident_metal_cap_ff": 646.0054700000032,
+      "connected_drains": 625,
+      "join_geometry_length_um": 28.320000000000007,
+      "join_ohm_at25c": 67.75073684210527,
+      "array_ohm_at25c": 583.5905263157894,
+      "rank_score_ohm_ff": 232268.68271662112
+    },
+    {
+      "local_bit_column": 23,
+      "extracted_incident_metal_cap_ff": 645.751670000003,
+      "connected_drains": 628,
+      "join_geometry_length_um": 28.32,
+      "join_ohm_at25c": 67.75073684210527,
+      "array_ohm_at25c": 583.5905263157894,
+      "rank_score_ohm_ff": 232177.42994182103
+    },
+    {
+      "local_bit_column": 39,
+      "extracted_incident_metal_cap_ff": 643.7350500000011,
+      "connected_drains": 617,
+      "join_geometry_length_um": 28.32,
+      "join_ohm_at25c": 67.75073684210527,
+      "array_ohm_at25c": 583.5905263157894,
+      "rank_score_ohm_ff": 231452.36228730038
+    },
+    {
+      "local_bit_column": 7,
+      "extracted_incident_metal_cap_ff": 643.4948600000025,
+      "connected_drains": 619,
+      "join_geometry_length_um": 28.32,
+      "join_ohm_at25c": 67.75073684210527,
+      "array_ohm_at25c": 583.5905263157894,
+      "rank_score_ohm_ff": 231366.00293356087
+    },
+    {
+      "local_bit_column": 32,
+      "extracted_incident_metal_cap_ff": 594.8916999999992,
+      "connected_drains": 657,
+      "join_geometry_length_um": 124.5,
+      "join_ohm_at25c": 94.07368421052631,
+      "array_ohm_at25c": 583.5905263157894,
+      "rank_score_ohm_ff": 229550.2340772102
+    },
+    {
+      "local_bit_column": 96,
+      "extracted_incident_metal_cap_ff": 593.787619999997,
+      "connected_drains": 647,
+      "join_geometry_length_um": 124.5,
+      "join_ohm_at25c": 94.07368421052631,
+      "array_ohm_at25c": 583.5905263157894,
+      "rank_score_ohm_ff": 229124.2038897988
+    },
+    {
+      "local_bit_column": 64,
+      "extracted_incident_metal_cap_ff": 593.0295599999968,
+      "connected_drains": 648,
+      "join_geometry_length_um": 124.5,
+      "join_ohm_at25c": 94.07368421052631,
+      "array_ohm_at25c": 583.5905263157894,
+      "rank_score_ohm_ff": 228831.6920755566
+    },
+    {
+      "local_bit_column": 80,
+      "extracted_incident_metal_cap_ff": 590.6059999999969,
+      "connected_drains": 634,
+      "join_geometry_length_um": 124.5,
+      "join_ohm_at25c": 94.07368421052631,
+      "array_ohm_at25c": 583.5905263157894,
+      "rank_score_ohm_ff": 227896.51552947247
+    },
+    {
+      "local_bit_column": 48,
+      "extracted_incident_metal_cap_ff": 590.1954800000015,
+      "connected_drains": 634,
+      "join_geometry_length_um": 124.5,
+      "join_ohm_at25c": 94.07368421052631,
+      "array_ohm_at25c": 583.5905263157894,
+      "rank_score_ohm_ff": 227738.10860920054
+    },
+    {
+      "local_bit_column": 0,
+      "extracted_incident_metal_cap_ff": 587.5229799999986,
+      "connected_drains": 631,
+      "join_geometry_length_um": 124.5,
+      "join_ohm_at25c": 94.07368421052631,
+      "array_ohm_at25c": 583.5905263157894,
+      "rank_score_ohm_ff": 226706.87384735732
+    },
+    {
+      "local_bit_column": 112,
+      "extracted_incident_metal_cap_ff": 587.1567599999964,
+      "connected_drains": 620,
+      "join_geometry_length_um": 124.5,
+      "join_ohm_at25c": 94.07368421052631,
+      "array_ohm_at25c": 583.5905263157894,
+      "rank_score_ohm_ff": 226565.56092145122
+    },
+    {
+      "local_bit_column": 16,
+      "extracted_incident_metal_cap_ff": 586.1361799999966,
+      "connected_drains": 614,
+      "join_geometry_length_um": 124.5,
+      "join_ohm_at25c": 94.07368421052631,
+      "array_ohm_at25c": 583.5905263157894,
+      "rank_score_ohm_ff": 226171.750791146
+    },
+    {
+      "local_bit_column": 47,
+      "extracted_incident_metal_cap_ff": 583.2292800000041,
+      "connected_drains": 658,
+      "join_geometry_length_um": 28.32,
+      "join_ohm_at25c": 67.75073684210527,
+      "array_ohm_at25c": 583.5905263157894,
+      "rank_score_ohm_ff": 209697.75470688145
+    },
+    {
+      "local_bit_column": 63,
+      "extracted_incident_metal_cap_ff": 583.0558399999991,
+      "connected_drains": 656,
+      "join_geometry_length_um": 28.32,
+      "join_ohm_at25c": 67.75073684210527,
+      "array_ohm_at25c": 583.5905263157894,
+      "rank_score_ohm_ff": 209635.39504863962
+    },
+    {
+      "local_bit_column": 79,
+      "extracted_incident_metal_cap_ff": 582.8680599999996,
+      "connected_drains": 658,
+      "join_geometry_length_um": 28.32,
+      "join_ohm_at25c": 67.75073684210527,
+      "array_ohm_at25c": 583.5905263157894,
+      "rank_score_ohm_ff": 209567.8795007598
+    },
+    {
+      "local_bit_column": 95,
+      "extracted_incident_metal_cap_ff": 580.5488300000015,
+      "connected_drains": 644,
+      "join_geometry_length_um": 28.320000000000007,
+      "join_ohm_at25c": 67.75073684210527,
+      "array_ohm_at25c": 583.5905263157894,
+      "rank_score_ohm_ff": 208734.00963118052
+    },
+    {
+      "local_bit_column": 111,
+      "extracted_incident_metal_cap_ff": 579.3684700000024,
+      "connected_drains": 638,
+      "join_geometry_length_um": 28.320000000000007,
+      "join_ohm_at25c": 67.75073684210527,
+      "array_ohm_at25c": 583.5905263157894,
+      "rank_score_ohm_ff": 208309.6159146208
+    },
+    {
+      "local_bit_column": 15,
+      "extracted_incident_metal_cap_ff": 579.2194499999996,
+      "connected_drains": 638,
+      "join_geometry_length_um": 28.320000000000004,
+      "join_ohm_at25c": 67.75073684210527,
+      "array_ohm_at25c": 583.5905263157894,
+      "rank_score_ohm_ff": 208256.0363696998
+    },
+    {
+      "local_bit_column": 31,
+      "extracted_incident_metal_cap_ff": 579.0256400000001,
+      "connected_drains": 640,
+      "join_geometry_length_um": 28.32,
+      "join_ohm_at25c": 67.75073684210527,
+      "array_ohm_at25c": 583.5905263157894,
+      "rank_score_ohm_ff": 208186.35275944
+    },
+    {
+      "local_bit_column": 127,
+      "extracted_incident_metal_cap_ff": 484.372340000002,
+      "connected_drains": 633,
+      "join_geometry_length_um": 28.320000000000007,
+      "join_ohm_at25c": 67.75073684210527,
+      "array_ohm_at25c": 583.5905263157894,
+      "rank_score_ohm_ff": 174154.1373576407
+    }
+  ],
+  "scope": "Additional maximum-drain candidate characterized with actual cropped layout MOS/C and geometryR; fullbank current/control implementation excluded.",
+  "candidate_kind": "connected_drains"
+}

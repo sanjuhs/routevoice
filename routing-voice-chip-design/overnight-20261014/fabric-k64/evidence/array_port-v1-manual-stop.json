@@ -1,0 +1,11 @@
+{
+  "reason": "Nix reset TMPDIR; ABC temporary artifacts discovered under /tmp despite pre-Nix environment. Correct environment inside --run before continuation. Same RTL/constraints.",
+  "guard_snapshot": {
+    "pid": 11738,
+    "variant": "array_port",
+    "elapsed_s": 617.4408259391785,
+    "free_gib": 27.064624786376953,
+    "time_limit_s": 14400,
+    "status": "running"
+  }
+}

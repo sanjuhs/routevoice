@@ -1,0 +1,45 @@
+{
+  "case_id": "int8_per_tensor-input-013",
+  "model": "int8_per_tensor",
+  "id": "7850-73752-0019",
+  "role": "validation",
+  "condition": "white_noise_10db",
+  "seed": null,
+  "reference": "IS PAPA ALONE ENQUIRED MISS TEMPLE",
+  "input_float32_sha256": "18964291029824492e3329350df5aadacf9d4d3c8e8b12b2a861d3f29e50cb1e",
+  "hypothesis": "",
+  "normalized_tokens": [],
+  "edits": 6,
+  "reference_words": 6,
+  "hypothesis_words": 0,
+  "exact": false,
+  "lines": [
+    {
+      "text": "",
+      "start_time": 0.35199999809265137,
+      "duration": 2.7200000286102295,
+      "is_complete": true,
+      "samples": 43520,
+      "input_float32_sha256": "d95b23168ea75dc3c59ba9a1f1dd19ec02592e8e342b162d76f40a26a8b3621a"
+    }
+  ],
+  "request_sha256": "76dd3d680114163a5edd84f702ebb2744be96df8b99128ab78ad823357bdeb61",
+  "worker_sha256": "4682e8a57db08e02a34f53b01f334f34faa3ca9a6546698f1e4650db359004b6",
+  "native_library_sha256": "1453a6c1c9072f3d05e9e5ae6ff423fae839e56631c5efb12bbd5c0280d04399",
+  "native_api_version": 30000,
+  "load_seconds": 0.03847391693852842,
+  "compute_seconds": 0.06353100016713142,
+  "audio_seconds": 3.075,
+  "process_cpu_seconds": 0.063783,
+  "voluntary_context_switches": 0,
+  "involuntary_context_switches": 0,
+  "system_load_average": [
+    10.0751953125,
+    8.81884765625,
+    9.83056640625
+  ],
+  "options": null,
+  "flags": 0,
+  "process_id": 80885,
+  "isolation": "One audio clip/condition in a fresh native process; no previous utterance or VAD state."
+}

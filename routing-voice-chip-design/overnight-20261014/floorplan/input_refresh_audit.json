@@ -1,0 +1,23 @@
+{
+  "scope": "Re-read final W5/W2/W2b/storage snapshots; timing/progress changes do not change chosen320row geometry, loads, engine count/footprint. Completed EDA remains applicable without redundant rerun.",
+  "runs": [
+    {
+      "run": "measured320_sram_open_macro_off_baseline_whole_44x53mm_pdn40",
+      "snapshot_sha256": "9dea825df9e6660c536ba90be010bbf60ee39ef4d1c0acc2ce8e7d3b722c9953",
+      "final_blocks_sha256": "9cc5cb8cfb6d7a561e58c85cbf35f9c252f0ba61ba4c916b3400a142dff33af6",
+      "all_block_areas_powers_and_engine_unchanged": true
+    },
+    {
+      "run": "measured320_sram_open_macro_off_baseline_encoder_32x38mm_pdn40",
+      "snapshot_sha256": "9dea825df9e6660c536ba90be010bbf60ee39ef4d1c0acc2ce8e7d3b722c9953",
+      "final_blocks_sha256": "9cc5cb8cfb6d7a561e58c85cbf35f9c252f0ba61ba4c916b3400a142dff33af6",
+      "all_block_areas_powers_and_engine_unchanged": true
+    },
+    {
+      "run": "measured320_sram_open_macro_off_baseline_decoder_32x38mm_pdn40_pads32",
+      "snapshot_sha256": "959ace2f9be615a7a5f501d49c93ef78c480d09a1bc362d8e213f418322354e5",
+      "final_blocks_sha256": "9cc5cb8cfb6d7a561e58c85cbf35f9c252f0ba61ba4c916b3400a142dff33af6",
+      "all_block_areas_powers_and_engine_unchanged": true
+    }
+  ]
+}

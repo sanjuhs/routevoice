@@ -1,0 +1,3058 @@
+{
+  "status": "sampled_timing_evidence",
+  "scope": "New actual-mask physically joined tall subbank sampled transistor/RC timing, not complete bank/macro qualification",
+  "variants": {
+    "320": {
+      "status": "sampled_evidence_only",
+      "directory": "r320-g2",
+      "cases": [
+        {
+          "path": "r320-g2/ss-20ns-s32/result.json",
+          "corner": "ss",
+          "voltage_v": 2.97,
+          "temperature_c": 125,
+          "period_ns": 20.0,
+          "protocol_pass": false,
+          "failures": {
+            "output": 116,
+            "raw": 100,
+            "precharge": 0,
+            "phase": 0
+          },
+          "maximum_sampled_settled_ns_after_wl_command": 1.7763568394002505e-14,
+          "twenty_ns_after_wl_probe": {
+            "tested": false,
+            "data_failures": null,
+            "scope": "Buffer-input WL command to data only; decoder/phase-launch/setup/latch/mux excluded"
+          },
+          "partial_source_energy_pj_per_sampled_read": {
+            "pr": 30.467386760007116,
+            "pw": 1.1158345182127078,
+            "pp": 7.239136657205122,
+            "pa": 0.10094866215730355
+          },
+          "energy_scope": "Finite-window net source energy over repeated sequence; only observed endpoint states compared, not all internal stored charge. Partial16active-column group plus128receivers/selectedWL/PC buffers; not complete bank energy.",
+          "energy_window_ns": [
+            140.0,
+            280.0
+          ],
+          "maximum_observed_endpoint_voltage_difference_v": 0.0002153400000000083,
+          "samples_checked": 448,
+          "sampled_local_row_sequence": [
+            0,
+            3,
+            319,
+            318,
+            19,
+            6,
+            7
+          ],
+          "sequence_repeats": 2,
+          "pattern_override": null,
+          "integration_and_stimulus_source": "r320-g2/ss-20ns-s32/test.cir",
+          "selected_bit_columns": [
+            112,
+            113,
+            114,
+            115,
+            116,
+            117,
+            118,
+            119,
+            120,
+            121,
+            122,
+            123,
+            124,
+            125,
+            126,
+            127
+          ],
+          "active_array_devices": 5120,
+          "receiver_devices": 512,
+          "protocol": {
+            "period_ns": 20.0,
+            "pc_off_ns": 4.666666666666667,
+            "wl_start_ns": 8.666666666666668,
+            "wl_fall_start_ns": 17.8,
+            "wl_fall_end_ns": 18.0,
+            "pc_on_start_ns": 19.8,
+            "sample_ns": [
+              14.0,
+              19.5
+            ],
+            "edge_ns": 0.2,
+            "phase_family": "pre2std4;14/60fraction precharge plus fixed4ns guard"
+          },
+          "source_gds_sha256": "b1e93444fd267b46a622917846e324fe13258e11a1b7bc008d7a247b47938b45",
+          "deck_sha256": "e63d3e75a5d70e558a5c0d04da4c5d30d32fce08e126fcd41e67a25ed3af49dd",
+          "trace_sha256": "ba0d8c516e0407551a7ca4d283960844c058594c9b1a4387d316ab6fa0fd0483",
+          "wall_seconds": 85.49711162503809
+        },
+        {
+          "path": "r320-g2/ss-40ns-s32/result.json",
+          "corner": "ss",
+          "voltage_v": 2.97,
+          "temperature_c": 125,
+          "period_ns": 40.0,
+          "protocol_pass": true,
+          "failures": {
+            "output": 0,
+            "raw": 0,
+            "precharge": 0,
+            "phase": 0
+          },
+          "maximum_sampled_settled_ns_after_wl_command": 8.919739666666638,
+          "twenty_ns_after_wl_probe": {
+            "tested": true,
+            "data_failures": 0,
+            "scope": "Buffer-input WL command to data only; decoder/phase-launch/setup/latch/mux excluded"
+          },
+          "partial_source_energy_pj_per_sampled_read": {
+            "pr": 32.984760571884614,
+            "pw": 1.1178661078695251,
+            "pp": 7.238599356961678,
+            "pa": 0.09738496068068232
+          },
+          "energy_scope": "Finite-window net source energy over repeated sequence; only observed endpoint states compared, not all internal stored charge. Partial16active-column group plus128receivers/selectedWL/PC buffers; not complete bank energy.",
+          "energy_window_ns": [
+            280.0,
+            560.0
+          ],
+          "maximum_observed_endpoint_voltage_difference_v": 4.510000000035319e-05,
+          "samples_checked": 448,
+          "sampled_local_row_sequence": [
+            0,
+            3,
+            319,
+            318,
+            19,
+            6,
+            7
+          ],
+          "sequence_repeats": 2,
+          "pattern_override": null,
+          "integration_and_stimulus_source": "r320-g2/ss-40ns-s32/test.cir",
+          "selected_bit_columns": [
+            112,
+            113,
+            114,
+            115,
+            116,
+            117,
+            118,
+            119,
+            120,
+            121,
+            122,
+            123,
+            124,
+            125,
+            126,
+            127
+          ],
+          "active_array_devices": 5120,
+          "receiver_devices": 512,
+          "protocol": {
+            "period_ns": 40.0,
+            "pc_off_ns": 9.333333333333334,
+            "wl_start_ns": 13.333333333333334,
+            "wl_fall_start_ns": 37.8,
+            "wl_fall_end_ns": 38.0,
+            "pc_on_start_ns": 39.8,
+            "sample_ns": [
+              34.0,
+              39.5
+            ],
+            "edge_ns": 0.2,
+            "phase_family": "pre2std4;14/60fraction precharge plus fixed4ns guard"
+          },
+          "source_gds_sha256": "b1e93444fd267b46a622917846e324fe13258e11a1b7bc008d7a247b47938b45",
+          "deck_sha256": "77f8604fc953ce1d213957d06152dc5d5eb776705a9acdce223a3a3603d0f54d",
+          "trace_sha256": "a5246608b772a71ddb00cda5f566a1685c573616f872b3b09ae36e9ffeae7dda",
+          "wall_seconds": 106.98119975021109
+        },
+        {
+          "path": "r320-g2/ss-60ns-s32/result.json",
+          "corner": "ss",
+          "voltage_v": 2.97,
+          "temperature_c": 125,
+          "period_ns": 60.0,
+          "protocol_pass": true,
+          "failures": {
+            "output": 0,
+            "raw": 0,
+            "precharge": 0,
+            "phase": 0
+          },
+          "maximum_sampled_settled_ns_after_wl_command": 8.89390800000001,
+          "twenty_ns_after_wl_probe": {
+            "tested": true,
+            "data_failures": 0,
+            "scope": "Buffer-input WL command to data only; decoder/phase-launch/setup/latch/mux excluded"
+          },
+          "partial_source_energy_pj_per_sampled_read": {
+            "pr": 33.27492845877077,
+            "pw": 1.1226013579074576,
+            "pp": 7.2292161308491005,
+            "pa": 0.11361748924342185
+          },
+          "energy_scope": "Finite-window net source energy over repeated sequence; only observed endpoint states compared, not all internal stored charge. Partial16active-column group plus128receivers/selectedWL/PC buffers; not complete bank energy.",
+          "energy_window_ns": [
+            420.0,
+            840.0
+          ],
+          "maximum_observed_endpoint_voltage_difference_v": 2.2239999999840165e-05,
+          "samples_checked": 448,
+          "sampled_local_row_sequence": [
+            0,
+            3,
+            319,
+            318,
+            19,
+            6,
+            7
+          ],
+          "sequence_repeats": 2,
+          "pattern_override": null,
+          "integration_and_stimulus_source": "r320-g2/ss-60ns-s32/test.cir",
+          "selected_bit_columns": [
+            112,
+            113,
+            114,
+            115,
+            116,
+            117,
+            118,
+            119,
+            120,
+            121,
+            122,
+            123,
+            124,
+            125,
+            126,
+            127
+          ],
+          "active_array_devices": 5120,
+          "receiver_devices": 512,
+          "protocol": {
+            "period_ns": 60.0,
+            "pc_off_ns": 14.0,
+            "wl_start_ns": 18.0,
+            "wl_fall_start_ns": 57.8,
+            "wl_fall_end_ns": 58.0,
+            "pc_on_start_ns": 59.8,
+            "sample_ns": [
+              54.0,
+              59.5
+            ],
+            "edge_ns": 0.2,
+            "phase_family": "pre2std4;14/60fraction precharge plus fixed4ns guard"
+          },
+          "source_gds_sha256": "b1e93444fd267b46a622917846e324fe13258e11a1b7bc008d7a247b47938b45",
+          "deck_sha256": "0170ed57fbca20253c141ef9cb1aa28d666c367810cd46c0ea3526f93d481451",
+          "trace_sha256": "375236331aeb638fea83323952d1c9cceae93cca202d551b181d5ea720e03c41",
+          "wall_seconds": 111.60114391683601
+        },
+        {
+          "path": "r320-g2/typical-20ns-s32/result.json",
+          "corner": "typical",
+          "voltage_v": 3.3,
+          "temperature_c": 25,
+          "period_ns": 20.0,
+          "protocol_pass": false,
+          "failures": {
+            "output": 14,
+            "raw": 8,
+            "precharge": 0,
+            "phase": 0
+          },
+          "maximum_sampled_settled_ns_after_wl_command": 5.2584571333333265,
+          "twenty_ns_after_wl_probe": {
+            "tested": false,
+            "data_failures": null,
+            "scope": "Buffer-input WL command to data only; decoder/phase-launch/setup/latch/mux excluded"
+          },
+          "partial_source_energy_pj_per_sampled_read": {
+            "pr": 40.23570013073714,
+            "pw": 1.3605483805705008,
+            "pp": 8.89627386207385,
+            "pa": -0.29482138059227125
+          },
+          "energy_scope": "Finite-window net source energy over repeated sequence; only observed endpoint states compared, not all internal stored charge. Partial16active-column group plus128receivers/selectedWL/PC buffers; not complete bank energy.",
+          "energy_window_ns": [
+            140.0,
+            280.0
+          ],
+          "maximum_observed_endpoint_voltage_difference_v": 6.141950000000673e-05,
+          "samples_checked": 448,
+          "sampled_local_row_sequence": [
+            0,
+            3,
+            319,
+            318,
+            19,
+            6,
+            7
+          ],
+          "sequence_repeats": 2,
+          "pattern_override": null,
+          "integration_and_stimulus_source": "r320-g2/typical-20ns-s32/test.cir",
+          "selected_bit_columns": [
+            112,
+            113,
+            114,
+            115,
+            116,
+            117,
+            118,
+            119,
+            120,
+            121,
+            122,
+            123,
+            124,
+            125,
+            126,
+            127
+          ],
+          "active_array_devices": 5120,
+          "receiver_devices": 512,
+          "protocol": {
+            "period_ns": 20.0,
+            "pc_off_ns": 4.666666666666667,
+            "wl_start_ns": 8.666666666666668,
+            "wl_fall_start_ns": 17.8,
+            "wl_fall_end_ns": 18.0,
+            "pc_on_start_ns": 19.8,
+            "sample_ns": [
+              14.0,
+              19.5
+            ],
+            "edge_ns": 0.2,
+            "phase_family": "pre2std4;14/60fraction precharge plus fixed4ns guard"
+          },
+          "source_gds_sha256": "b1e93444fd267b46a622917846e324fe13258e11a1b7bc008d7a247b47938b45",
+          "deck_sha256": "e5010f416b79343ea7b54214e78d30bcfe7099f18df4bd15643df3cbe646fab3",
+          "trace_sha256": "309a9218d7fca275c5ac25b00161981575ad910e16d1a65a9f92728cc6ab2dac",
+          "wall_seconds": 90.82665033312514
+        },
+        {
+          "path": "r320-g2/typical-40ns-s32/result.json",
+          "corner": "typical",
+          "voltage_v": 3.3,
+          "temperature_c": 25,
+          "period_ns": 40.0,
+          "protocol_pass": true,
+          "failures": {
+            "output": 0,
+            "raw": 0,
+            "precharge": 0,
+            "phase": 0
+          },
+          "maximum_sampled_settled_ns_after_wl_command": 5.816472666666678,
+          "twenty_ns_after_wl_probe": {
+            "tested": true,
+            "data_failures": 0,
+            "scope": "Buffer-input WL command to data only; decoder/phase-launch/setup/latch/mux excluded"
+          },
+          "partial_source_energy_pj_per_sampled_read": {
+            "pr": 41.387669273474636,
+            "pw": 1.360674735635168,
+            "pp": 8.894072940967437,
+            "pa": -0.2982347675483304
+          },
+          "energy_scope": "Finite-window net source energy over repeated sequence; only observed endpoint states compared, not all internal stored charge. Partial16active-column group plus128receivers/selectedWL/PC buffers; not complete bank energy.",
+          "energy_window_ns": [
+            280.0,
+            560.0
+          ],
+          "maximum_observed_endpoint_voltage_difference_v": 2.0547650000000105e-05,
+          "samples_checked": 448,
+          "sampled_local_row_sequence": [
+            0,
+            3,
+            319,
+            318,
+            19,
+            6,
+            7
+          ],
+          "sequence_repeats": 2,
+          "pattern_override": null,
+          "integration_and_stimulus_source": "r320-g2/typical-40ns-s32/test.cir",
+          "selected_bit_columns": [
+            112,
+            113,
+            114,
+            115,
+            116,
+            117,
+            118,
+            119,
+            120,
+            121,
+            122,
+            123,
+            124,
+            125,
+            126,
+            127
+          ],
+          "active_array_devices": 5120,
+          "receiver_devices": 512,
+          "protocol": {
+            "period_ns": 40.0,
+            "pc_off_ns": 9.333333333333334,
+            "wl_start_ns": 13.333333333333334,
+            "wl_fall_start_ns": 37.8,
+            "wl_fall_end_ns": 38.0,
+            "pc_on_start_ns": 39.8,
+            "sample_ns": [
+              34.0,
+              39.5
+            ],
+            "edge_ns": 0.2,
+            "phase_family": "pre2std4;14/60fraction precharge plus fixed4ns guard"
+          },
+          "source_gds_sha256": "b1e93444fd267b46a622917846e324fe13258e11a1b7bc008d7a247b47938b45",
+          "deck_sha256": "24127ea4f9b9bef22bde59e23c3fe2b2c9caccdeef4fcfd9c4171cd42bea1e1c",
+          "trace_sha256": "b849fb2d1aeeaf00d5423e5d65f28937bd3cf91ac0f087ea516e05a6119bb3b0",
+          "wall_seconds": 121.06100666685961
+        },
+        {
+          "path": "r320-g2/typical-60ns-s32/result.json",
+          "corner": "typical",
+          "voltage_v": 3.3,
+          "temperature_c": 25,
+          "period_ns": 60.0,
+          "protocol_pass": true,
+          "failures": {
+            "output": 0,
+            "raw": 0,
+            "precharge": 0,
+            "phase": 0
+          },
+          "maximum_sampled_settled_ns_after_wl_command": 5.821609000000024,
+          "twenty_ns_after_wl_probe": {
+            "tested": true,
+            "data_failures": 0,
+            "scope": "Buffer-input WL command to data only; decoder/phase-launch/setup/latch/mux excluded"
+          },
+          "partial_source_energy_pj_per_sampled_read": {
+            "pr": 41.41250426205625,
+            "pw": 1.3607163926086272,
+            "pp": 8.895137487382751,
+            "pa": -0.296985442169273
+          },
+          "energy_scope": "Finite-window net source energy over repeated sequence; only observed endpoint states compared, not all internal stored charge. Partial16active-column group plus128receivers/selectedWL/PC buffers; not complete bank energy.",
+          "energy_window_ns": [
+            420.0,
+            840.0
+          ],
+          "maximum_observed_endpoint_voltage_difference_v": 1.2400929999999838e-05,
+          "samples_checked": 448,
+          "sampled_local_row_sequence": [
+            0,
+            3,
+            319,
+            318,
+            19,
+            6,
+            7
+          ],
+          "sequence_repeats": 2,
+          "pattern_override": null,
+          "integration_and_stimulus_source": "r320-g2/typical-60ns-s32/test.cir",
+          "selected_bit_columns": [
+            112,
+            113,
+            114,
+            115,
+            116,
+            117,
+            118,
+            119,
+            120,
+            121,
+            122,
+            123,
+            124,
+            125,
+            126,
+            127
+          ],
+          "active_array_devices": 5120,
+          "receiver_devices": 512,
+          "protocol": {
+            "period_ns": 60.0,
+            "pc_off_ns": 14.0,
+            "wl_start_ns": 18.0,
+            "wl_fall_start_ns": 57.8,
+            "wl_fall_end_ns": 58.0,
+            "pc_on_start_ns": 59.8,
+            "sample_ns": [
+              54.0,
+              59.5
+            ],
+            "edge_ns": 0.2,
+            "phase_family": "pre2std4;14/60fraction precharge plus fixed4ns guard"
+          },
+          "source_gds_sha256": "b1e93444fd267b46a622917846e324fe13258e11a1b7bc008d7a247b47938b45",
+          "deck_sha256": "44213f5679a5df87cc9af38b43d1517c1d275dbb44bc17de0d3ac24e1321c876",
+          "trace_sha256": "19b2f39d27ebfd71f719563c4e04d6de2218d753c95196b3b0ef8121a371b9df",
+          "wall_seconds": 139.3880230828654
+        }
+      ],
+      "corners": {
+        "typical": {
+          "minimum_tested_passing_complete_protocol_interval_ns": 40.0,
+          "tested_periods_ns": [
+            20.0,
+            40.0,
+            60.0
+          ],
+          "failing_periods_ns": [
+            20.0
+          ],
+          "conditional_slice_interleave_factor_for20ns": 2,
+          "four_striped_banks_cover_measured_reuse_interval": true,
+          "qualification": "Sampled32lane slice protocol only; minimum among tested profiles, not globally optimized minimum. Threshold delay is not reused as an initiation interval."
+        },
+        "ss": {
+          "minimum_tested_passing_complete_protocol_interval_ns": 40.0,
+          "tested_periods_ns": [
+            20.0,
+            40.0,
+            60.0
+          ],
+          "failing_periods_ns": [
+            20.0
+          ],
+          "conditional_slice_interleave_factor_for20ns": 2,
+          "four_striped_banks_cover_measured_reuse_interval": true,
+          "qualification": "Sampled32lane slice protocol only; minimum among tested profiles, not globally optimized minimum. Threshold delay is not reused as an initiation interval."
+        }
+      },
+      "minimum_common_tested_TT_SS_passing_interval_ns": 40.0,
+      "conditional_slice_interleave_factor_for20ns": 2,
+      "full320lane_bank_read_time_ns": null,
+      "full320lane_bank_energy_pj": null,
+      "complete_ARRAY_PORT_compatible_timing_proven": false,
+      "topology": {
+        "array_devices": 40960,
+        "joined_devices": 41472,
+        "all_device_connections_and_dimensions_match_real_image_and_pre2_receiver": true,
+        "canonicalization": {
+          "array": {
+            "nodes": 20938,
+            "bijective": true
+          },
+          "joined": {
+            "nodes": 21068,
+            "bijective": true
+          }
+        },
+        "row_mapping": "logicalrow=3+4*localrow",
+        "global_lane_range": [
+          64,
+          96
+        ],
+        "image_sha256": "02ab22a5f05e8c7e81c227d44747f669c85f4bc5b9754136e25681bd411de344"
+      },
+      "extraction": {
+        "returncode": 0,
+        "seconds": 23.807450874941424,
+        "source_gds_sha256": "b1e93444fd267b46a622917846e324fe13258e11a1b7bc008d7a247b47938b45",
+        "rows": 320,
+        "bank": 3,
+        "subbank": 2,
+        "lane_start": 64,
+        "out_start": 256,
+        "row_stride": 4,
+        "source_top": "TALL_JOINED_R320_B03_G02",
+        "array_top": "TALL_ARRAY_B03_G02"
+      },
+      "ranked_column_selection": {
+        "method": "Rank all128local columns by extracted total incident metalC*(actual joinR+half fullheight arrayR), with connected-drain count reported separately. Heuristic candidate, not absolute transistor-timing worst-case proof.",
+        "selected": [
+          112,
+          113,
+          114,
+          115,
+          116,
+          117,
+          118,
+          119,
+          120,
+          121,
+          122,
+          123,
+          124,
+          125,
+          126,
+          127
+        ],
+        "ranking": [
+          {
+            "local_bit_column": 126,
+            "extracted_incident_metal_cap_ff": 239.54782000000108,
+            "connected_drains": 172,
+            "join_geometry_length_um": 461.25,
+            "join_ohm_at25c": 186.23684210526315,
+            "array_ohm_at25c": 146.1336842105263,
+            "rank_score_ohm_ff": 62115.632270600276
+          },
+          {
+            "local_bit_column": 124,
+            "extracted_incident_metal_cap_ff": 237.5615400000009,
+            "connected_drains": 168,
+            "join_geometry_length_um": 455.57000000000005,
+            "join_ohm_at25c": 184.6823157894737,
+            "array_ohm_at25c": 146.1336842105263,
+            "rank_score_ohm_ff": 61231.286883177076
+          },
+          {
+            "local_bit_column": 125,
+            "extracted_incident_metal_cap_ff": 235.67905000000098,
+            "connected_drains": 159,
+            "join_geometry_length_um": 458.41,
+            "join_ohm_at25c": 185.4595789473684,
+            "array_ohm_at25c": 146.1336842105263,
+            "rank_score_ohm_ff": 60929.261313584466
+          },
+          {
+            "local_bit_column": 119,
+            "extracted_incident_metal_cap_ff": 239.01352000000233,
+            "connected_drains": 182,
+            "join_geometry_length_um": 441.37,
+            "join_ohm_at25c": 180.796,
+            "array_ohm_at25c": 146.1336842105263,
+            "rank_score_ohm_ff": 60676.65148878375
+          },
+          {
+            "local_bit_column": 123,
+            "extracted_incident_metal_cap_ff": 235.55954000000088,
+            "connected_drains": 161,
+            "join_geometry_length_um": 452.73,
+            "join_ohm_at25c": 183.90505263157894,
+            "array_ohm_at25c": 146.1336842105263,
+            "rank_score_ohm_ff": 60532.18131713917
+          },
+          {
+            "local_bit_column": 121,
+            "extracted_incident_metal_cap_ff": 233.97001000000014,
+            "connected_drains": 158,
+            "join_geometry_length_um": 447.05,
+            "join_ohm_at25c": 182.35052631578947,
+            "array_ohm_at25c": 146.1336842105263,
+            "rank_score_ohm_ff": 59760.0042436474
+          },
+          {
+            "local_bit_column": 122,
+            "extracted_incident_metal_cap_ff": 232.4218200000014,
+            "connected_drains": 150,
+            "join_geometry_length_um": 449.89,
+            "join_ohm_at25c": 183.1277894736842,
+            "array_ohm_at25c": 146.1336842105263,
+            "rank_score_ohm_ff": 59545.22254580877
+          },
+          {
+            "local_bit_column": 118,
+            "extracted_incident_metal_cap_ff": 234.34205000000054,
+            "connected_drains": 164,
+            "join_geometry_length_um": 438.53000000000003,
+            "join_ohm_at25c": 180.01873684210528,
+            "array_ohm_at25c": 146.1336842105263,
+            "rank_score_ohm_ff": 59308.593395963304
+          },
+          {
+            "local_bit_column": 120,
+            "extracted_incident_metal_cap_ff": 232.8774400000005,
+            "connected_drains": 153,
+            "join_geometry_length_um": 444.21000000000004,
+            "join_ohm_at25c": 181.57326315789473,
+            "array_ohm_at25c": 146.1336842105263,
+            "rank_score_ohm_ff": 59299.935835014854
+          },
+          {
+            "local_bit_column": 116,
+            "extracted_incident_metal_cap_ff": 230.65195000000034,
+            "connected_drains": 151,
+            "join_geometry_length_um": 432.85,
+            "join_ohm_at25c": 178.46421052631578,
+            "array_ohm_at25c": 146.1336842105263,
+            "rank_score_ohm_ff": 58016.12777502639
+          },
+          {
+            "local_bit_column": 115,
+            "extracted_incident_metal_cap_ff": 231.08726000000095,
+            "connected_drains": 154,
+            "join_geometry_length_um": 430.01,
+            "join_ohm_at25c": 177.68694736842104,
+            "array_ohm_at25c": 146.1336842105263,
+            "rank_score_ohm_ff": 57946.00614409077
+          },
+          {
+            "local_bit_column": 114,
+            "extracted_incident_metal_cap_ff": 231.74637000000078,
+            "connected_drains": 156,
+            "join_geometry_length_um": 427.17,
+            "join_ohm_at25c": 176.9096842105263,
+            "array_ohm_at25c": 146.1336842105263,
+            "rank_score_ohm_ff": 57931.152558893875
+          },
+          {
+            "local_bit_column": 113,
+            "extracted_incident_metal_cap_ff": 232.4346900000003,
+            "connected_drains": 159,
+            "join_geometry_length_um": 424.33000000000004,
+            "join_ohm_at25c": 176.13242105263157,
+            "array_ohm_at25c": 146.1336842105263,
+            "rank_score_ohm_ff": 57922.55348033376
+          },
+          {
+            "local_bit_column": 117,
+            "extracted_incident_metal_cap_ff": 229.2266000000001,
+            "connected_drains": 144,
+            "join_geometry_length_um": 435.69000000000005,
+            "join_ohm_at25c": 179.24147368421055,
+            "array_ohm_at25c": 146.1336842105263,
+            "rank_score_ohm_ff": 57835.777380147396
+          },
+          {
+            "local_bit_column": 107,
+            "extracted_incident_metal_cap_ff": 232.82151000000084,
+            "connected_drains": 176,
+            "join_geometry_length_um": 408.29,
+            "join_ohm_at25c": 171.74252631578946,
+            "array_ohm_at25c": 146.1336842105263,
+            "rank_score_ohm_ff": 56996.88681793599
+          },
+          {
+            "local_bit_column": 109,
+            "extracted_incident_metal_cap_ff": 230.57456000000064,
+            "connected_drains": 159,
+            "join_geometry_length_um": 413.97,
+            "join_ohm_at25c": 173.29705263157894,
+            "array_ohm_at25c": 146.1336842105263,
+            "rank_score_ohm_ff": 56805.24662883384
+          },
+          {
+            "local_bit_column": 110,
+            "extracted_incident_metal_cap_ff": 227.73708000000164,
+            "connected_drains": 142,
+            "join_geometry_length_um": 416.81,
+            "join_ohm_at25c": 174.07431578947367,
+            "array_ohm_at25c": 146.1336842105263,
+            "rank_score_ohm_ff": 56283.20564676671
+          },
+          {
+            "local_bit_column": 108,
+            "extracted_incident_metal_cap_ff": 228.33200000000025,
+            "connected_drains": 153,
+            "join_geometry_length_um": 411.13,
+            "join_ohm_at25c": 172.51978947368423,
+            "array_ohm_at25c": 146.1336842105263,
+            "rank_score_ohm_ff": 56075.28676168428
+          },
+          {
+            "local_bit_column": 105,
+            "extracted_incident_metal_cap_ff": 229.31381000000079,
+            "connected_drains": 165,
+            "join_geometry_length_um": 402.61,
+            "join_ohm_at25c": 170.188,
+            "array_ohm_at25c": 146.1336842105263,
+            "rank_score_ohm_ff": 55781.69464410651
+          },
+          {
+            "local_bit_column": 104,
+            "extracted_incident_metal_cap_ff": 229.59469999999988,
+            "connected_drains": 168,
+            "join_geometry_length_um": 399.77,
+            "join_ohm_at25c": 169.41073684210525,
+            "array_ohm_at25c": 146.1336842105263,
+            "rank_score_ohm_ff": 55671.56699514733
+          },
+          {
+            "local_bit_column": 106,
+            "extracted_incident_metal_cap_ff": 226.52412000000177,
+            "connected_drains": 150,
+            "join_geometry_length_um": 405.45000000000005,
+            "join_ohm_at25c": 170.96526315789475,
+            "array_ohm_at25c": 146.1336842105263,
+            "rank_score_ohm_ff": 55279.15789648465
+          },
+          {
+            "local_bit_column": 103,
+            "extracted_incident_metal_cap_ff": 226.7454399999999,
+            "connected_drains": 159,
+            "join_geometry_length_um": 396.93,
+            "join_ohm_at25c": 168.63347368421051,
+            "array_ohm_at25c": 146.1336842105263,
+            "rank_score_ohm_ff": 54804.44445182313
+          },
+          {
+            "local_bit_column": 100,
+            "extracted_incident_metal_cap_ff": 227.79286000000022,
+            "connected_drains": 167,
+            "join_geometry_length_um": 388.41,
+            "join_ohm_at25c": 166.30168421052633,
+            "array_ohm_at25c": 146.1336842105263,
+            "rank_score_ohm_ff": 54526.441203459006
+          },
+          {
+            "local_bit_column": 101,
+            "extracted_incident_metal_cap_ff": 226.93457000000046,
+            "connected_drains": 163,
+            "join_geometry_length_um": 391.25,
+            "join_ohm_at25c": 167.07894736842104,
+            "array_ohm_at25c": 146.1336842105263,
+            "rank_score_ohm_ff": 54497.38147152116
+          },
+          {
+            "local_bit_column": 98,
+            "extracted_incident_metal_cap_ff": 227.96087000000114,
+            "connected_drains": 170,
+            "join_geometry_length_um": 382.73,
+            "join_ohm_at25c": 164.74715789473683,
+            "array_ohm_at25c": 146.1336842105263,
+            "rank_score_ohm_ff": 54212.28633818026
+          },
+          {
+            "local_bit_column": 102,
+            "extracted_incident_metal_cap_ff": 223.87335000000104,
+            "connected_drains": 148,
+            "join_geometry_length_um": 394.09000000000003,
+            "join_ohm_at25c": 167.8562105263158,
+            "array_ohm_at25c": 146.1336842105263,
+            "rank_score_ohm_ff": 53936.25088485815
+          },
+          {
+            "local_bit_column": 99,
+            "extracted_incident_metal_cap_ff": 224.54887000000073,
+            "connected_drains": 153,
+            "join_geometry_length_um": 385.57000000000005,
+            "join_ohm_at25c": 165.52442105263157,
+            "array_ohm_at25c": 146.1336842105263,
+            "rank_score_ohm_ff": 53575.39853397807
+          },
+          {
+            "local_bit_column": 97,
+            "extracted_incident_metal_cap_ff": 224.26734000000118,
+            "connected_drains": 154,
+            "join_geometry_length_um": 379.89,
+            "join_ohm_at25c": 163.9698947368421,
+            "array_ohm_at25c": 146.1336842105263,
+            "rank_score_ohm_ff": 53159.598453859224
+          },
+          {
+            "local_bit_column": 112,
+            "extracted_incident_metal_cap_ff": 212.63275000000013,
+            "connected_drains": 161,
+            "join_geometry_length_um": 421.49,
+            "join_ohm_at25c": 175.35515789473686,
+            "array_ohm_at25c": 146.1336842105263,
+            "rank_score_ohm_ff": 52822.65302050004
+          },
+          {
+            "local_bit_column": 111,
+            "extracted_incident_metal_cap_ff": 212.24957000000165,
+            "connected_drains": 160,
+            "join_geometry_length_um": 419.65,
+            "join_ohm_at25c": 174.8515789473684,
+            "array_ohm_at25c": 146.1336842105263,
+            "rank_score_ohm_ff": 52620.57826350041
+          },
+          {
+            "local_bit_column": 92,
+            "extracted_incident_metal_cap_ff": 225.0834500000006,
+            "connected_drains": 169,
+            "join_geometry_length_um": 366.69000000000005,
+            "join_ohm_at25c": 160.35726315789475,
+            "array_ohm_at25c": 146.1336842105263,
+            "rank_score_ohm_ff": 52539.90292579488
+          },
+          {
+            "local_bit_column": 93,
+            "extracted_incident_metal_cap_ff": 222.79381000000078,
+            "connected_drains": 156,
+            "join_geometry_length_um": 369.53,
+            "join_ohm_at25c": 161.13452631578946,
+            "array_ohm_at25c": 146.1336842105263,
+            "rank_score_ohm_ff": 52178.615177740176
+          },
+          {
+            "local_bit_column": 94,
+            "extracted_incident_metal_cap_ff": 221.5116700000017,
+            "connected_drains": 146,
+            "join_geometry_length_um": 372.37,
+            "join_ohm_at25c": 161.91178947368422,
+            "array_ohm_at25c": 146.1336842105263,
+            "rank_score_ohm_ff": 52050.50909536777
+          },
+          {
+            "local_bit_column": 90,
+            "extracted_incident_metal_cap_ff": 224.3254400000008,
+            "connected_drains": 172,
+            "join_geometry_length_um": 361.01,
+            "join_ohm_at25c": 158.80273684210528,
+            "array_ohm_at25c": 146.1336842105263,
+            "rank_score_ohm_ff": 52014.24531998335
+          },
+          {
+            "local_bit_column": 91,
+            "extracted_incident_metal_cap_ff": 223.0657500000007,
+            "connected_drains": 163,
+            "join_geometry_length_um": 363.84999999999997,
+            "join_ohm_at25c": 159.57999999999998,
+            "array_ohm_at25c": 146.1336842105263,
+            "rank_score_ohm_ff": 51895.54231934226
+          },
+          {
+            "local_bit_column": 88,
+            "extracted_incident_metal_cap_ff": 221.5195800000014,
+            "connected_drains": 164,
+            "join_geometry_length_um": 355.33000000000004,
+            "join_ohm_at25c": 157.2482105263158,
+            "array_ohm_at25c": 146.1336842105263,
+            "rank_score_ohm_ff": 51019.29372662559
+          },
+          {
+            "local_bit_column": 87,
+            "extracted_incident_metal_cap_ff": 220.2361700000013,
+            "connected_drains": 161,
+            "join_geometry_length_um": 352.49,
+            "join_ohm_at25c": 156.47094736842104,
+            "array_ohm_at25c": 146.1336842105263,
+            "rank_score_ohm_ff": 50552.52362395082
+          },
+          {
+            "local_bit_column": 89,
+            "extracted_incident_metal_cap_ff": 218.35078000000084,
+            "connected_drains": 150,
+            "join_geometry_length_um": 358.17,
+            "join_ohm_at25c": 158.0254736842105,
+            "array_ohm_at25c": 146.1336842105263,
+            "rank_score_ohm_ff": 50459.18740463808
+          },
+          {
+            "local_bit_column": 85,
+            "extracted_incident_metal_cap_ff": 220.28431000000168,
+            "connected_drains": 164,
+            "join_geometry_length_um": 346.81000000000006,
+            "join_ohm_at25c": 154.9164210526316,
+            "array_ohm_at25c": 146.1336842105263,
+            "rank_score_ohm_ff": 50221.13581628564
+          },
+          {
+            "local_bit_column": 83,
+            "extracted_incident_metal_cap_ff": 220.34917000000104,
+            "connected_drains": 167,
+            "join_geometry_length_um": 341.13,
+            "join_ohm_at25c": 153.3618947368421,
+            "array_ohm_at25c": 146.1336842105263,
+            "rank_score_ohm_ff": 49893.384227306546
+          },
+          {
+            "local_bit_column": 86,
+            "extracted_incident_metal_cap_ff": 218.03057000000064,
+            "connected_drains": 154,
+            "join_geometry_length_um": 349.65,
+            "join_ohm_at25c": 155.69368421052633,
+            "array_ohm_at25c": 146.1336842105263,
+            "rank_score_ohm_ff": 49876.78794613173
+          },
+          {
+            "local_bit_column": 81,
+            "extracted_incident_metal_cap_ff": 218.993730000001,
+            "connected_drains": 160,
+            "join_geometry_length_um": 335.45000000000005,
+            "join_ohm_at25c": 151.80736842105262,
+            "array_ohm_at25c": 146.1336842105263,
+            "rank_score_ohm_ff": 49246.04214396338
+          },
+          {
+            "local_bit_column": 84,
+            "extracted_incident_metal_cap_ff": 216.6118800000008,
+            "connected_drains": 149,
+            "join_geometry_length_um": 343.96999999999997,
+            "join_ohm_at25c": 154.13915789473683,
+            "array_ohm_at25c": 146.1336842105263,
+            "rank_score_ohm_ff": 49215.518807280176
+          },
+          {
+            "local_bit_column": 78,
+            "extracted_incident_metal_cap_ff": 219.86530000000147,
+            "connected_drains": 170,
+            "join_geometry_length_um": 327.93,
+            "join_ohm_at25c": 149.74926315789475,
+            "array_ohm_at25c": 146.1336842105263,
+            "rank_score_ohm_ff": 48989.52982851612
+          },
+          {
+            "local_bit_column": 96,
+            "extracted_incident_metal_cap_ff": 206.53091000000063,
+            "connected_drains": 168,
+            "join_geometry_length_um": 377.05,
+            "join_ohm_at25c": 163.19263157894738,
+            "array_ohm_at25c": 146.1336842105263,
+            "rank_score_ohm_ff": 48794.884096121204
+          },
+          {
+            "local_bit_column": 82,
+            "extracted_incident_metal_cap_ff": 216.08196000000092,
+            "connected_drains": 150,
+            "join_geometry_length_um": 338.29,
+            "join_ohm_at25c": 152.58463157894738,
+            "array_ohm_at25c": 146.1336842105263,
+            "rank_score_ohm_ff": 48759.21271057284
+          },
+          {
+            "local_bit_column": 95,
+            "extracted_incident_metal_cap_ff": 206.41956000000135,
+            "connected_drains": 169,
+            "join_geometry_length_um": 375.21,
+            "join_ohm_at25c": 162.68905263157893,
+            "array_ohm_at25c": 146.1336842105263,
+            "rank_score_ohm_ff": 48664.62805898558
+          },
+          {
+            "local_bit_column": 76,
+            "extracted_incident_metal_cap_ff": 219.7805000000004,
+            "connected_drains": 177,
+            "join_geometry_length_um": 322.25,
+            "join_ohm_at25c": 148.19473684210527,
+            "array_ohm_at25c": 146.1336842105263,
+            "rank_score_ohm_ff": 48628.980451842195
+          },
+          {
+            "local_bit_column": 74,
+            "extracted_incident_metal_cap_ff": 217.29042000000052,
+            "connected_drains": 171,
+            "join_geometry_length_um": 316.57,
+            "join_ohm_at25c": 146.6402105263158,
+            "array_ohm_at25c": 146.1336842105263,
+            "rank_score_ohm_ff": 47740.23774327801
+          },
+          {
+            "local_bit_column": 77,
+            "extracted_incident_metal_cap_ff": 214.91012000000052,
+            "connected_drains": 153,
+            "join_geometry_length_um": 325.09,
+            "join_ohm_at25c": 148.97199999999998,
+            "array_ohm_at25c": 146.1336842105263,
+            "rank_score_ohm_ff": 47718.394201503266
+          },
+          {
+            "local_bit_column": 75,
+            "extracted_incident_metal_cap_ff": 213.96348000000017,
+            "connected_drains": 155,
+            "join_geometry_length_um": 319.41,
+            "join_ohm_at25c": 147.4174736842105,
+            "array_ohm_at25c": 146.1336842105263,
+            "rank_score_ohm_ff": 47175.59149173477
+          },
+          {
+            "local_bit_column": 73,
+            "extracted_incident_metal_cap_ff": 214.92144000000155,
+            "connected_drains": 164,
+            "join_geometry_length_um": 313.73,
+            "join_ohm_at25c": 145.86294736842106,
+            "array_ohm_at25c": 146.1336842105263,
+            "rank_score_ohm_ff": 47052.70561258139
+          },
+          {
+            "local_bit_column": 72,
+            "extracted_incident_metal_cap_ff": 214.76628000000093,
+            "connected_drains": 165,
+            "join_geometry_length_um": 310.89,
+            "join_ohm_at25c": 145.0856842105263,
+            "array_ohm_at25c": 146.1336842105263,
+            "rank_score_ohm_ff": 46851.8065494444
+          },
+          {
+            "local_bit_column": 71,
+            "extracted_incident_metal_cap_ff": 214.27927000000074,
+            "connected_drains": 164,
+            "join_geometry_length_um": 308.05,
+            "join_ohm_at25c": 144.30842105263156,
+            "array_ohm_at25c": 146.1336842105263,
+            "rank_score_ohm_ff": 46579.012705531735
+          },
+          {
+            "local_bit_column": 68,
+            "extracted_incident_metal_cap_ff": 214.92874000000066,
+            "connected_drains": 171,
+            "join_geometry_length_um": 299.53000000000003,
+            "join_ohm_at25c": 141.97663157894738,
+            "array_ohm_at25c": 146.1336842105263,
+            "rank_score_ohm_ff": 46219.02284417067
+          },
+          {
+            "local_bit_column": 69,
+            "extracted_incident_metal_cap_ff": 211.87576000000152,
+            "connected_drains": 158,
+            "join_geometry_length_um": 302.37,
+            "join_ohm_at25c": 142.75389473684208,
+            "array_ohm_at25c": 146.1336842105263,
+            "rank_score_ohm_ff": 45727.182642181375
+          },
+          {
+            "local_bit_column": 70,
+            "extracted_incident_metal_cap_ff": 210.99545000000143,
+            "connected_drains": 153,
+            "join_geometry_length_um": 305.21,
+            "join_ohm_at25c": 143.53115789473685,
+            "array_ohm_at25c": 146.1336842105263,
+            "rank_score_ohm_ff": 45701.19247910031
+          },
+          {
+            "local_bit_column": 67,
+            "extracted_incident_metal_cap_ff": 212.6852700000013,
+            "connected_drains": 163,
+            "join_geometry_length_um": 296.69,
+            "join_ohm_at25c": 141.1993684210526,
+            "array_ohm_at25c": 146.1336842105263,
+            "rank_score_ohm_ff": 45571.26683766659
+          },
+          {
+            "local_bit_column": 66,
+            "extracted_incident_metal_cap_ff": 213.0037300000004,
+            "connected_drains": 165,
+            "join_geometry_length_um": 293.85,
+            "join_ohm_at25c": 140.4221052631579,
+            "array_ohm_at25c": 146.1336842105263,
+            "rank_score_ohm_ff": 45473.94210324746
+          },
+          {
+            "local_bit_column": 65,
+            "extracted_incident_metal_cap_ff": 213.50170000000045,
+            "connected_drains": 167,
+            "join_geometry_length_um": 291.01,
+            "join_ohm_at25c": 139.64484210526314,
+            "array_ohm_at25c": 146.1336842105263,
+            "rank_score_ohm_ff": 45414.30618881062
+          },
+          {
+            "local_bit_column": 62,
+            "extracted_incident_metal_cap_ff": 215.36359000000212,
+            "connected_drains": 180,
+            "join_geometry_length_um": 283.49,
+            "join_ohm_at25c": 137.58673684210527,
+            "array_ohm_at25c": 146.1336842105263,
+            "rank_score_ohm_ff": 45367.111008454136
+          },
+          {
+            "local_bit_column": 127,
+            "extracted_incident_metal_cap_ff": 172.95682000000028,
+            "connected_drains": 152,
+            "join_geometry_length_um": 464.09000000000003,
+            "join_ohm_at25c": 187.0141052631579,
+            "array_ohm_at25c": 146.1336842105263,
+            "rank_score_ohm_ff": 44982.77359942954
+          },
+          {
+            "local_bit_column": 80,
+            "extracted_incident_metal_cap_ff": 196.85725000000082,
+            "connected_drains": 158,
+            "join_geometry_length_um": 332.61,
+            "join_ohm_at25c": 151.0301052631579,
+            "array_ohm_at25c": 146.1336842105263,
+            "rank_score_ohm_ff": 44115.10879234229
+          },
+          {
+            "local_bit_column": 61,
+            "extracted_incident_metal_cap_ff": 209.08207000000115,
+            "connected_drains": 158,
+            "join_geometry_length_um": 280.65,
+            "join_ohm_at25c": 136.8094736842105,
+            "array_ohm_at25c": 146.1336842105263,
+            "rank_score_ohm_ff": 43881.37454923708
+          },
+          {
+            "local_bit_column": 79,
+            "extracted_incident_metal_cap_ff": 195.82764000000097,
+            "connected_drains": 153,
+            "join_geometry_length_um": 330.77,
+            "join_ohm_at25c": 150.52652631578945,
+            "array_ohm_at25c": 146.1336842105263,
+            "rank_score_ohm_ff": 43785.761657545474
+          },
+          {
+            "local_bit_column": 59,
+            "extracted_incident_metal_cap_ff": 207.7495200000007,
+            "connected_drains": 158,
+            "join_geometry_length_um": 274.97,
+            "join_ohm_at25c": 135.25494736842106,
+            "array_ohm_at25c": 146.1336842105263,
+            "rank_score_ohm_ff": 43278.75176869909
+          },
+          {
+            "local_bit_column": 58,
+            "extracted_incident_metal_cap_ff": 208.15037000000163,
+            "connected_drains": 162,
+            "join_geometry_length_um": 272.13,
+            "join_ohm_at25c": 134.47768421052632,
+            "array_ohm_at25c": 146.1336842105263,
+            "rank_score_ohm_ff": 43200.469944106655
+          },
+          {
+            "local_bit_column": 60,
+            "extracted_incident_metal_cap_ff": 205.6467000000009,
+            "connected_drains": 145,
+            "join_geometry_length_um": 277.81,
+            "join_ohm_at25c": 136.0322105263158,
+            "array_ohm_at25c": 146.1336842105263,
+            "rank_score_ohm_ff": 43000.53014681071
+          },
+          {
+            "local_bit_column": 57,
+            "extracted_incident_metal_cap_ff": 207.1036700000005,
+            "connected_drains": 160,
+            "join_geometry_length_um": 269.29,
+            "join_ohm_at25c": 133.70042105263158,
+            "array_ohm_at25c": 146.1336842105263,
+            "rank_score_ohm_ff": 42822.25903585589
+          },
+          {
+            "local_bit_column": 56,
+            "extracted_incident_metal_cap_ff": 207.82080000000056,
+            "connected_drains": 165,
+            "join_geometry_length_um": 266.45,
+            "join_ohm_at25c": 132.92315789473685,
+            "array_ohm_at25c": 146.1336842105263,
+            "rank_score_ohm_ff": 42809.006592000114
+          },
+          {
+            "local_bit_column": 53,
+            "extracted_incident_metal_cap_ff": 206.98376000000064,
+            "connected_drains": 166,
+            "join_geometry_length_um": 257.93,
+            "join_ohm_at25c": 130.59136842105264,
+            "array_ohm_at25c": 146.1336842105263,
+            "rank_score_ohm_ff": 42153.94216960855
+          },
+          {
+            "local_bit_column": 54,
+            "extracted_incident_metal_cap_ff": 204.24226000000021,
+            "connected_drains": 154,
+            "join_geometry_length_um": 260.77,
+            "join_ohm_at25c": 131.36863157894737,
+            "array_ohm_at25c": 146.1336842105263,
+            "rank_score_ohm_ff": 41754.36316943373
+          },
+          {
+            "local_bit_column": 55,
+            "extracted_incident_metal_cap_ff": 203.03467000000026,
+            "connected_drains": 147,
+            "join_geometry_length_um": 263.61,
+            "join_ohm_at25c": 132.1458947368421,
+            "array_ohm_at25c": 146.1336842105263,
+            "rank_score_ohm_ff": 41665.30030453373
+          },
+          {
+            "local_bit_column": 51,
+            "extracted_incident_metal_cap_ff": 205.93209000000041,
+            "connected_drains": 164,
+            "join_geometry_length_um": 252.25,
+            "join_ohm_at25c": 129.03684210526313,
+            "array_ohm_at25c": 146.1336842105263,
+            "rank_score_ohm_ff": 41619.63408617376
+          },
+          {
+            "local_bit_column": 52,
+            "extracted_incident_metal_cap_ff": 203.87535000000022,
+            "connected_drains": 155,
+            "join_geometry_length_um": 255.09,
+            "join_ohm_at25c": 129.8141052631579,
+            "array_ohm_at25c": 146.1336842105263,
+            "rank_score_ohm_ff": 41362.42415306847
+          },
+          {
+            "local_bit_column": 49,
+            "extracted_incident_metal_cap_ff": 205.99016000000054,
+            "connected_drains": 163,
+            "join_geometry_length_um": 246.57000000000002,
+            "join_ohm_at25c": 127.48231578947369,
+            "array_ohm_at25c": 146.1336842105263,
+            "rank_score_ohm_ff": 41311.15312260221
+          },
+          {
+            "local_bit_column": 50,
+            "extracted_incident_metal_cap_ff": 200.97034000000073,
+            "connected_drains": 145,
+            "join_geometry_length_um": 249.41000000000003,
+            "join_ohm_at25c": 128.25957894736842,
+            "array_ohm_at25c": 146.1336842105263,
+            "rank_score_ohm_ff": 40460.639289930674
+          },
+          {
+            "local_bit_column": 64,
+            "extracted_incident_metal_cap_ff": 190.06466000000063,
+            "connected_drains": 162,
+            "join_geometry_length_um": 288.17,
+            "join_ohm_at25c": 138.86757894736843,
+            "array_ohm_at25c": 146.1336842105263,
+            "rank_score_ohm_ff": 40281.2436796654
+          },
+          {
+            "local_bit_column": 63,
+            "extracted_incident_metal_cap_ff": 188.93200000000095,
+            "connected_drains": 157,
+            "join_geometry_length_um": 286.33,
+            "join_ohm_at25c": 138.36399999999998,
+            "array_ohm_at25c": 146.1336842105263,
+            "rank_score_ohm_ff": 39946.05186063178
+          },
+          {
+            "local_bit_column": 46,
+            "extracted_incident_metal_cap_ff": 201.1893300000005,
+            "connected_drains": 150,
+            "join_geometry_length_um": 239.05,
+            "join_ohm_at25c": 125.42421052631579,
+            "array_ohm_at25c": 146.1336842105263,
+            "rank_score_ohm_ff": 39934.281889942205
+          },
+          {
+            "local_bit_column": 43,
+            "extracted_incident_metal_cap_ff": 203.28051000000113,
+            "connected_drains": 169,
+            "join_geometry_length_um": 230.53,
+            "join_ohm_at25c": 123.09242105263158,
+            "array_ohm_at25c": 146.1336842105263,
+            "rank_score_ohm_ff": 39875.35505596127
+          },
+          {
+            "local_bit_column": 44,
+            "extracted_incident_metal_cap_ff": 201.6015300000007,
+            "connected_drains": 159,
+            "join_geometry_length_um": 233.37,
+            "join_ohm_at25c": 123.86968421052632,
+            "array_ohm_at25c": 146.1336842105263,
+            "rank_score_ohm_ff": 39702.70501814856
+          },
+          {
+            "local_bit_column": 45,
+            "extracted_incident_metal_cap_ff": 199.79839000000027,
+            "connected_drains": 148,
+            "join_geometry_length_um": 236.20999999999998,
+            "join_ohm_at25c": 124.64694736842105,
+            "array_ohm_at25c": 146.1336842105263,
+            "rank_score_ohm_ff": 39502.8968176411
+          },
+          {
+            "local_bit_column": 39,
+            "extracted_incident_metal_cap_ff": 203.80150000000205,
+            "connected_drains": 178,
+            "join_geometry_length_um": 219.17000000000002,
+            "join_ohm_at25c": 119.98336842105263,
+            "array_ohm_at25c": 146.1336842105263,
+            "rank_score_ohm_ff": 39343.92248057934
+          },
+          {
+            "local_bit_column": 41,
+            "extracted_incident_metal_cap_ff": 197.86081000000036,
+            "connected_drains": 151,
+            "join_geometry_length_um": 224.85000000000002,
+            "join_ohm_at25c": 121.5378947368421,
+            "array_ohm_at25c": 146.1336842105263,
+            "rank_score_ohm_ff": 38504.65086141585
+          },
+          {
+            "local_bit_column": 42,
+            "extracted_incident_metal_cap_ff": 196.815530000001,
+            "connected_drains": 144,
+            "join_geometry_length_um": 227.69,
+            "join_ohm_at25c": 122.31515789473684,
+            "array_ohm_at25c": 146.1336842105263,
+            "rank_score_ohm_ff": 38454.21188246019
+          },
+          {
+            "local_bit_column": 40,
+            "extracted_incident_metal_cap_ff": 198.33415000000105,
+            "connected_drains": 155,
+            "join_geometry_length_um": 222.01000000000002,
+            "join_ohm_at25c": 120.76063157894737,
+            "array_ohm_at25c": 146.1336842105263,
+            "rank_score_ohm_ff": 38442.60723980547
+          },
+          {
+            "local_bit_column": 38,
+            "extracted_incident_metal_cap_ff": 198.75972000000112,
+            "connected_drains": 160,
+            "join_geometry_length_um": 216.32999999999998,
+            "join_ohm_at25c": 119.20610526315788,
+            "array_ohm_at25c": 146.1336842105263,
+            "rank_score_ohm_ff": 38216.117182522314
+          },
+          {
+            "local_bit_column": 36,
+            "extracted_incident_metal_cap_ff": 199.99721999999988,
+            "connected_drains": 168,
+            "join_geometry_length_um": 210.64999999999998,
+            "join_ohm_at25c": 117.6515789473684,
+            "array_ohm_at25c": 146.1336842105263,
+            "rank_score_ohm_ff": 38143.15401331576
+          },
+          {
+            "local_bit_column": 35,
+            "extracted_incident_metal_cap_ff": 199.60215000000022,
+            "connected_drains": 168,
+            "join_geometry_length_um": 207.81,
+            "join_ohm_at25c": 116.87431578947368,
+            "array_ohm_at25c": 146.1336842105263,
+            "rank_score_ohm_ff": 37912.66348927899
+          },
+          {
+            "local_bit_column": 37,
+            "extracted_incident_metal_cap_ff": 197.04718000000005,
+            "connected_drains": 155,
+            "join_geometry_length_um": 213.49,
+            "join_ohm_at25c": 118.42884210526316,
+            "array_ohm_at25c": 146.1336842105263,
+            "rank_score_ohm_ff": 37733.68455585474
+          },
+          {
+            "local_bit_column": 33,
+            "extracted_incident_metal_cap_ff": 195.8933200000004,
+            "connected_drains": 152,
+            "join_geometry_length_um": 202.13,
+            "join_ohm_at25c": 115.31978947368421,
+            "array_ohm_at25c": 146.1336842105263,
+            "rank_score_ohm_ff": 36903.68270361691
+          },
+          {
+            "local_bit_column": 34,
+            "extracted_incident_metal_cap_ff": 194.0247600000006,
+            "connected_drains": 145,
+            "join_geometry_length_um": 204.97,
+            "join_ohm_at25c": 116.09705263157895,
+            "array_ohm_at25c": 146.1336842105263,
+            "rank_score_ohm_ff": 36702.47927698117
+          },
+          {
+            "local_bit_column": 47,
+            "extracted_incident_metal_cap_ff": 183.62396000000047,
+            "connected_drains": 167,
+            "join_geometry_length_um": 241.89000000000001,
+            "join_ohm_at25c": 126.20147368421053,
+            "array_ohm_at25c": 146.1336842105263,
+            "rank_score_ohm_ff": 36590.43724779377
+          },
+          {
+            "local_bit_column": 48,
+            "extracted_incident_metal_cap_ff": 181.12608999999986,
+            "connected_drains": 154,
+            "join_geometry_length_um": 243.73000000000002,
+            "join_ohm_at25c": 126.70505263157895,
+            "array_ohm_at25c": 146.1336842105263,
+            "rank_score_ohm_ff": 36183.90218557576
+          },
+          {
+            "local_bit_column": 29,
+            "extracted_incident_metal_cap_ff": 194.99830000000065,
+            "connected_drains": 157,
+            "join_geometry_length_um": 191.76999999999998,
+            "join_ohm_at25c": 112.48442105263157,
+            "array_ohm_at25c": 146.1336842105263,
+            "rank_score_ohm_ff": 36182.18087864222
+          },
+          {
+            "local_bit_column": 28,
+            "extracted_incident_metal_cap_ff": 194.07860000000122,
+            "connected_drains": 156,
+            "join_geometry_length_um": 188.93,
+            "join_ohm_at25c": 111.70715789473684,
+            "array_ohm_at25c": 146.1336842105263,
+            "rank_score_ohm_ff": 35860.679236400225
+          },
+          {
+            "local_bit_column": 30,
+            "extracted_incident_metal_cap_ff": 191.50407000000058,
+            "connected_drains": 139,
+            "join_geometry_length_um": 194.61,
+            "join_ohm_at25c": 113.26168421052631,
+            "array_ohm_at25c": 146.1336842105263,
+            "rank_score_ohm_ff": 35682.6711465759
+          },
+          {
+            "local_bit_column": 25,
+            "extracted_incident_metal_cap_ff": 193.4046500000009,
+            "connected_drains": 161,
+            "join_geometry_length_um": 180.41,
+            "join_ohm_at25c": 109.37536842105263,
+            "array_ohm_at25c": 146.1336842105263,
+            "rank_score_ohm_ff": 35285.17187206858
+          },
+          {
+            "local_bit_column": 27,
+            "extracted_incident_metal_cap_ff": 191.71490000000114,
+            "connected_drains": 149,
+            "join_geometry_length_um": 186.08999999999997,
+            "join_ohm_at25c": 110.9298947368421,
+            "array_ohm_at25c": 146.1336842105263,
+            "rank_score_ohm_ff": 35274.91600401073
+          },
+          {
+            "local_bit_column": 26,
+            "extracted_incident_metal_cap_ff": 191.21648000000187,
+            "connected_drains": 151,
+            "join_geometry_length_um": 183.25,
+            "join_ohm_at25c": 110.15263157894736,
+            "array_ohm_at25c": 146.1336842105263,
+            "rank_score_ohm_ff": 35034.58282534771
+          },
+          {
+            "local_bit_column": 24,
+            "extracted_incident_metal_cap_ff": 192.17159000000044,
+            "connected_drains": 158,
+            "join_geometry_length_um": 177.57,
+            "join_ohm_at25c": 108.59810526315789,
+            "array_ohm_at25c": 146.1336842105263,
+            "rank_score_ohm_ff": 34910.84178305587
+          },
+          {
+            "local_bit_column": 22,
+            "extracted_incident_metal_cap_ff": 193.35280000000097,
+            "connected_drains": 168,
+            "join_geometry_length_um": 171.89,
+            "join_ohm_at25c": 107.04357894736842,
+            "array_ohm_at25c": 146.1336842105263,
+            "rank_score_ohm_ff": 34824.85421970544
+          },
+          {
+            "local_bit_column": 23,
+            "extracted_incident_metal_cap_ff": 191.4272000000012,
+            "connected_drains": 157,
+            "join_geometry_length_um": 174.73,
+            "join_ohm_at25c": 107.82084210526315,
+            "array_ohm_at25c": 146.1336842105263,
+            "rank_score_ohm_ff": 34626.82290290547
+          },
+          {
+            "local_bit_column": 21,
+            "extracted_incident_metal_cap_ff": 191.32078000000064,
+            "connected_drains": 160,
+            "join_geometry_length_um": 169.05,
+            "join_ohm_at25c": 106.26631578947368,
+            "array_ohm_at25c": 146.1336842105263,
+            "rank_score_ohm_ff": 34310.15964828432
+          },
+          {
+            "local_bit_column": 17,
+            "extracted_incident_metal_cap_ff": 194.31124000000128,
+            "connected_drains": 175,
+            "join_geometry_length_um": 157.69,
+            "join_ohm_at25c": 103.15726315789473,
+            "array_ohm_at25c": 146.1336842105263,
+            "rank_score_ohm_ff": 34242.324411574955
+          },
+          {
+            "local_bit_column": 18,
+            "extracted_incident_metal_cap_ff": 191.4730100000009,
+            "connected_drains": 163,
+            "join_geometry_length_um": 160.53,
+            "join_ohm_at25c": 103.93452631578947,
+            "array_ohm_at25c": 146.1336842105263,
+            "rank_score_ohm_ff": 33890.984785698056
+          },
+          {
+            "local_bit_column": 20,
+            "extracted_incident_metal_cap_ff": 189.2524000000008,
+            "connected_drains": 152,
+            "join_geometry_length_um": 166.20999999999998,
+            "join_ohm_at25c": 105.48905263157894,
+            "array_ohm_at25c": 146.1336842105263,
+            "rank_score_ohm_ff": 33792.131613094876
+          },
+          {
+            "local_bit_column": 19,
+            "extracted_incident_metal_cap_ff": 189.98659000000134,
+            "connected_drains": 156,
+            "join_geometry_length_um": 163.36999999999998,
+            "join_ohm_at25c": 104.7117894736842,
+            "array_ohm_at25c": 146.1336842105263,
+            "rank_score_ohm_ff": 33775.55598855076
+          },
+          {
+            "local_bit_column": 31,
+            "extracted_incident_metal_cap_ff": 179.02137,
+            "connected_drains": 182,
+            "join_geometry_length_um": 197.45,
+            "join_ohm_at25c": 114.03894736842105,
+            "array_ohm_at25c": 146.1336842105263,
+            "rank_score_ohm_ff": 33495.934766510516
+          },
+          {
+            "local_bit_column": 32,
+            "extracted_incident_metal_cap_ff": 177.74363,
+            "connected_drains": 174,
+            "join_geometry_length_um": 199.29,
+            "join_ohm_at25c": 114.54252631578947,
+            "array_ohm_at25c": 146.1336842105263,
+            "rank_score_ohm_ff": 33346.37016516527
+          },
+          {
+            "local_bit_column": 14,
+            "extracted_incident_metal_cap_ff": 190.16645000000153,
+            "connected_drains": 163,
+            "join_geometry_length_um": 150.17000000000002,
+            "join_ohm_at25c": 101.09915789473685,
+            "array_ohm_at25c": 146.1336842105263,
+            "rank_score_ohm_ff": 33120.529930700264
+          },
+          {
+            "local_bit_column": 13,
+            "extracted_incident_metal_cap_ff": 189.06740000000076,
+            "connected_drains": 162,
+            "join_geometry_length_um": 147.32999999999998,
+            "join_ohm_at25c": 100.3218947368421,
+            "array_ohm_at25c": 146.1336842105263,
+            "rank_score_ohm_ff": 32782.15766402118
+          },
+          {
+            "local_bit_column": 12,
+            "extracted_incident_metal_cap_ff": 189.90590000000054,
+            "connected_drains": 168,
+            "join_geometry_length_um": 144.49,
+            "join_ohm_at25c": 99.54463157894736,
+            "array_ohm_at25c": 146.1336842105263,
+            "rank_score_ohm_ff": 32779.937260326406
+          },
+          {
+            "local_bit_column": 9,
+            "extracted_incident_metal_cap_ff": 190.29580000000078,
+            "connected_drains": 178,
+            "join_geometry_length_um": 135.97,
+            "join_ohm_at25c": 97.21284210526315,
+            "array_ohm_at25c": 146.1336842105263,
+            "rank_score_ohm_ff": 32403.5087305896
+          },
+          {
+            "local_bit_column": 10,
+            "extracted_incident_metal_cap_ff": 186.95336000000077,
+            "connected_drains": 162,
+            "join_geometry_length_um": 138.81,
+            "join_ohm_at25c": 97.99010526315789,
+            "array_ohm_at25c": 146.1336842105263,
+            "rank_score_ohm_ff": 31979.671061869605
+          },
+          {
+            "local_bit_column": 7,
+            "extracted_incident_metal_cap_ff": 188.41427000000073,
+            "connected_drains": 174,
+            "join_geometry_length_um": 130.29,
+            "join_ohm_at25c": 95.65831578947368,
+            "array_ohm_at25c": 146.1336842105263,
+            "rank_score_ohm_ff": 31790.227455371696
+          },
+          {
+            "local_bit_column": 11,
+            "extracted_incident_metal_cap_ff": 183.69096000000033,
+            "connected_drains": 145,
+            "join_geometry_length_um": 141.65,
+            "join_ohm_at25c": 98.76736842105262,
+            "array_ohm_at25c": 146.1336842105263,
+            "rank_score_ohm_ff": 31564.391092421105
+          },
+          {
+            "local_bit_column": 8,
+            "extracted_incident_metal_cap_ff": 185.89875000000097,
+            "connected_drains": 161,
+            "join_geometry_length_um": 133.13,
+            "join_ohm_at25c": 96.43557894736841,
+            "array_ohm_at25c": 146.1336842105263,
+            "rank_score_ohm_ff": 31510.28819565806
+          },
+          {
+            "local_bit_column": 6,
+            "extracted_incident_metal_cap_ff": 185.54239000000007,
+            "connected_drains": 163,
+            "join_geometry_length_um": 127.44999999999999,
+            "join_ohm_at25c": 94.88105263157894,
+            "array_ohm_at25c": 146.1336842105263,
+            "rank_score_ohm_ff": 31161.453784942118
+          },
+          {
+            "local_bit_column": 5,
+            "extracted_incident_metal_cap_ff": 185.24638000000047,
+            "connected_drains": 164,
+            "join_geometry_length_um": 124.61,
+            "join_ohm_at25c": 94.1037894736842,
+            "array_ohm_at25c": 146.1336842105263,
+            "rank_score_ohm_ff": 30967.754342313758
+          },
+          {
+            "local_bit_column": 4,
+            "extracted_incident_metal_cap_ff": 185.39966000000015,
+            "connected_drains": 165,
+            "join_geometry_length_um": 121.77,
+            "join_ohm_at25c": 93.32652631578947,
+            "array_ohm_at25c": 146.1336842105263,
+            "rank_score_ohm_ff": 30849.27393151792
+          },
+          {
+            "local_bit_column": 3,
+            "extracted_incident_metal_cap_ff": 183.35495000000108,
+            "connected_drains": 158,
+            "join_geometry_length_um": 118.93,
+            "join_ohm_at25c": 92.54926315789473,
+            "array_ohm_at25c": 146.1336842105263,
+            "rank_score_ohm_ff": 30366.532699721225
+          },
+          {
+            "local_bit_column": 2,
+            "extracted_incident_metal_cap_ff": 183.6943300000013,
+            "connected_drains": 159,
+            "join_geometry_length_um": 116.09,
+            "join_ohm_at25c": 91.77199999999999,
+            "array_ohm_at25c": 146.1336842105263,
+            "rank_score_ohm_ff": 30279.960658502318
+          },
+          {
+            "local_bit_column": 1,
+            "extracted_incident_metal_cap_ff": 184.2780300000008,
+            "connected_drains": 161,
+            "join_geometry_length_um": 113.25,
+            "join_ohm_at25c": 90.99473684210525,
+            "array_ohm_at25c": 146.1336842105263,
+            "rank_score_ohm_ff": 30232.94456711065
+          },
+          {
+            "local_bit_column": 16,
+            "extracted_incident_metal_cap_ff": 164.66711000000035,
+            "connected_drains": 149,
+            "join_geometry_length_um": 154.85,
+            "join_ohm_at25c": 102.38,
+            "array_ohm_at25c": 146.1336842105263,
+            "rank_score_ohm_ff": 28890.324448100062
+          },
+          {
+            "local_bit_column": 15,
+            "extracted_incident_metal_cap_ff": 164.8573200000004,
+            "connected_drains": 149,
+            "join_geometry_length_um": 153.01,
+            "join_ohm_at25c": 101.87642105263157,
+            "array_ohm_at25c": 146.1336842105263,
+            "rank_score_ohm_ff": 28840.677516265332
+          },
+          {
+            "local_bit_column": 0,
+            "extracted_incident_metal_cap_ff": 160.7566000000001,
+            "connected_drains": 168,
+            "join_geometry_length_um": 110.59,
+            "join_ohm_at25c": 90.26673684210526,
+            "array_ohm_at25c": 146.1336842105263,
+            "rank_score_ohm_ff": 26256.950817410543
+          }
+        ],
+        "scope": "Ranks all128 columns of this actual selected joined subbank only; fullbank3 C ranking separately provided for320. Other banks are not cap-extracted."
+      },
+      "timeouts": [],
+      "numerical_failures": [
+        {
+          "path": "r320-g2/typical-40ns-s32-failed-pulse/FAILURE.json",
+          "status": "incomplete numerical failure",
+          "time_ns": 39.8,
+          "physical_protocol_claim": null
+        },
+        {
+          "path": "r320-g2/ss-20ns-s32-failed-trapezoidal/FAILURE.json",
+          "status": "incomplete numerical failure",
+          "time_ns": 19.8,
+          "trouble_node": "vagg111#branch",
+          "physical_protocol_claim": null
+        },
+        {
+          "path": "r320-g2/ss-20ns-s32-failed-gear/FAILURE.json",
+          "status": "incomplete numerical failure with Gear2",
+          "time_ns": 19.8,
+          "physical_protocol_claim": null
+        },
+        {
+          "path": "r320-g2/ss-40ns-s32-failed-pulse/FAILURE.json",
+          "status": "incomplete numerical failure",
+          "time_ns": 39.8,
+          "physical_protocol_claim": null
+        },
+        {
+          "path": "r320-g2/ss-20ns-s32-failed-power-probe/FAILURE.json",
+          "classification": "numerical_transient_failure",
+          "time_ns": 19.8,
+          "reason": "ngspice timestep too small, trouble node pr (isolated behavioral power monitor)",
+          "physical_protocol_pass": null,
+          "qualification": "Incomplete waveform, no read or energy credit. Retry removes isolated behavioral power monitors and evaluates the identical source-power equations as vectors after transient; no device or driver/cap/R/stimulus change."
+        }
+      ]
+    },
+    "1280": {
+      "status": "sampled_evidence_only",
+      "directory": "r1280-v1",
+      "cases": [],
+      "corners": {
+        "typical": {
+          "minimum_tested_passing_complete_protocol_interval_ns": null,
+          "tested_periods_ns": [],
+          "failing_periods_ns": [],
+          "conditional_slice_interleave_factor_for20ns": null,
+          "four_striped_banks_cover_measured_reuse_interval": null,
+          "qualification": "Sampled32lane slice protocol only; minimum among tested profiles, not globally optimized minimum. Threshold delay is not reused as an initiation interval."
+        },
+        "ss": {
+          "minimum_tested_passing_complete_protocol_interval_ns": null,
+          "tested_periods_ns": [],
+          "failing_periods_ns": [],
+          "conditional_slice_interleave_factor_for20ns": null,
+          "four_striped_banks_cover_measured_reuse_interval": null,
+          "qualification": "Sampled32lane slice protocol only; minimum among tested profiles, not globally optimized minimum. Threshold delay is not reused as an initiation interval."
+        }
+      },
+      "minimum_common_tested_TT_SS_passing_interval_ns": null,
+      "conditional_slice_interleave_factor_for20ns": null,
+      "full320lane_bank_read_time_ns": null,
+      "full320lane_bank_energy_pj": null,
+      "complete_ARRAY_PORT_compatible_timing_proven": false,
+      "topology": {
+        "array_devices": 163840,
+        "joined_devices": 164352,
+        "all_device_connections_and_dimensions_match_real_image_and_pre2_receiver": true,
+        "canonicalization": {
+          "array": {
+            "nodes": 83115,
+            "bijective": true
+          },
+          "joined": {
+            "nodes": 83245,
+            "bijective": true
+          }
+        },
+        "row_mapping": "logicalrow=0+1*localrow",
+        "global_lane_range": [
+          224,
+          256
+        ],
+        "image_sha256": "c7746093345738120119dc06e4811ccdb4b3ed44254a12732aa0be287e4c4f1a"
+      },
+      "extraction": {
+        "returncode": 0,
+        "seconds": 394.8607259169221,
+        "source_gds_sha256": "866de11f1a02e782cf8ae43c3c0d4debc0240147ef74e1a7c75c5a7e2efbee67",
+        "rows": 1280,
+        "bank": 0,
+        "subbank": 7,
+        "lane_start": 224,
+        "out_start": 896,
+        "row_stride": 1,
+        "source_top": "TALL_JOINED_R1280_B00_G07",
+        "array_top": "TALL_ARRAY_B00_G07"
+      },
+      "ranked_column_selection": {
+        "method": "Rank all128local columns by extracted total incident metalC*(actual joinR+half fullheight arrayR), with connected-drain count reported separately. Heuristic candidate, not absolute transistor-timing worst-case proof.",
+        "selected": [
+          112,
+          113,
+          114,
+          115,
+          116,
+          117,
+          118,
+          119,
+          120,
+          121,
+          122,
+          123,
+          124,
+          125,
+          126,
+          127
+        ],
+        "ranking": [
+          {
+            "local_bit_column": 119,
+            "extracted_incident_metal_cap_ff": 732.5661899999953,
+            "connected_drains": 714,
+            "join_geometry_length_um": 441.37,
+            "join_ohm_at25c": 180.796,
+            "array_ohm_at25c": 583.5905263157894,
+            "rank_score_ohm_ff": 346204.38107886404
+          },
+          {
+            "local_bit_column": 123,
+            "extracted_incident_metal_cap_ff": 723.2585899999939,
+            "connected_drains": 674,
+            "join_geometry_length_um": 452.73,
+            "join_ohm_at25c": 183.90505263157894,
+            "array_ohm_at25c": 583.5905263157894,
+            "rank_score_ohm_ff": 344054.3396604465
+          },
+          {
+            "local_bit_column": 126,
+            "extracted_incident_metal_cap_ff": 717.733099999999,
+            "connected_drains": 647,
+            "join_geometry_length_um": 461.25,
+            "join_ohm_at25c": 186.23684210526315,
+            "array_ohm_at25c": 583.5905263157894,
+            "rank_score_ohm_ff": 343099.46481005213
+          },
+          {
+            "local_bit_column": 124,
+            "extracted_incident_metal_cap_ff": 717.0480300000069,
+            "connected_drains": 646,
+            "join_geometry_length_um": 455.57000000000005,
+            "join_ohm_at25c": 184.6823157894737,
+            "array_ohm_at25c": 583.5905263157894,
+            "rank_score_ohm_ff": 341657.30932338326
+          },
+          {
+            "local_bit_column": 125,
+            "extracted_incident_metal_cap_ff": 713.9939699999991,
+            "connected_drains": 633,
+            "join_geometry_length_um": 458.41,
+            "join_ohm_at25c": 185.4595789473684,
+            "array_ohm_at25c": 583.5905263157894,
+            "rank_score_ohm_ff": 340757.07941645954
+          },
+          {
+            "local_bit_column": 122,
+            "extracted_incident_metal_cap_ff": 717.3242900000005,
+            "connected_drains": 647,
+            "join_geometry_length_um": 449.89,
+            "join_ohm_at25c": 183.1277894736842,
+            "array_ohm_at25c": 583.5905263157894,
+            "rank_score_ohm_ff": 340673.8415335802
+          },
+          {
+            "local_bit_column": 120,
+            "extracted_incident_metal_cap_ff": 716.099580000018,
+            "connected_drains": 646,
+            "join_geometry_length_um": 444.21000000000004,
+            "join_ohm_at25c": 181.57326315789473,
+            "array_ohm_at25c": 583.5905263157894,
+            "rank_score_ohm_ff": 338979.00287996425
+          },
+          {
+            "local_bit_column": 117,
+            "extracted_incident_metal_cap_ff": 719.533679999997,
+            "connected_drains": 660,
+            "join_geometry_length_um": 435.69000000000005,
+            "join_ohm_at25c": 179.24147368421055,
+            "array_ohm_at25c": 583.5905263157894,
+            "rank_score_ohm_ff": 338926.79667519015
+          },
+          {
+            "local_bit_column": 121,
+            "extracted_incident_metal_cap_ff": 712.5270299999985,
+            "connected_drains": 629,
+            "join_geometry_length_um": 447.05,
+            "join_ohm_at25c": 182.35052631578947,
+            "array_ohm_at25c": 583.5905263157894,
+            "rank_score_ohm_ff": 337841.6911606887
+          },
+          {
+            "local_bit_column": 113,
+            "extracted_incident_metal_cap_ff": 720.5765300000039,
+            "connected_drains": 643,
+            "join_geometry_length_um": 424.33000000000004,
+            "join_ohm_at25c": 176.13242105263157,
+            "array_ohm_at25c": 583.5905263157894,
+            "rank_score_ohm_ff": 337177.7069793586
+          },
+          {
+            "local_bit_column": 116,
+            "extracted_incident_metal_cap_ff": 716.5508300000066,
+            "connected_drains": 646,
+            "join_geometry_length_um": 432.85,
+            "join_ohm_at25c": 178.46421052631578,
+            "array_ohm_at25c": 583.5905263157894,
+            "rank_score_ohm_ff": 336964.81618378725
+          },
+          {
+            "local_bit_column": 114,
+            "extracted_incident_metal_cap_ff": 717.1734200000012,
+            "connected_drains": 637,
+            "join_geometry_length_um": 427.17,
+            "join_ohm_at25c": 176.9096842105263,
+            "array_ohm_at25c": 583.5905263157894,
+            "rank_score_ohm_ff": 336142.73007513105
+          },
+          {
+            "local_bit_column": 115,
+            "extracted_incident_metal_cap_ff": 715.3741399999941,
+            "connected_drains": 639,
+            "join_geometry_length_um": 430.01,
+            "join_ohm_at25c": 177.68694736842104,
+            "array_ohm_at25c": 583.5905263157894,
+            "rank_score_ohm_ff": 335855.4326005593
+          },
+          {
+            "local_bit_column": 118,
+            "extracted_incident_metal_cap_ff": 710.3834400000007,
+            "connected_drains": 623,
+            "join_geometry_length_um": 438.53000000000003,
+            "join_ohm_at25c": 180.01873684210528,
+            "array_ohm_at25c": 583.5905263157894,
+            "rank_score_ohm_ff": 335168.8523601603
+          },
+          {
+            "local_bit_column": 110,
+            "extracted_incident_metal_cap_ff": 718.1519800000032,
+            "connected_drains": 641,
+            "join_geometry_length_um": 416.81,
+            "join_ohm_at25c": 174.07431578947367,
+            "array_ohm_at25c": 583.5905263157894,
+            "rank_score_ohm_ff": 334565.1605428204
+          },
+          {
+            "local_bit_column": 108,
+            "extracted_incident_metal_cap_ff": 717.6304899999883,
+            "connected_drains": 655,
+            "join_geometry_length_um": 411.13,
+            "join_ohm_at25c": 172.51978947368423,
+            "array_ohm_at25c": 583.5905263157894,
+            "rank_score_ohm_ff": 333206.63873437035
+          },
+          {
+            "local_bit_column": 109,
+            "extracted_incident_metal_cap_ff": 715.2097100000019,
+            "connected_drains": 641,
+            "join_geometry_length_um": 413.97,
+            "join_ohm_at25c": 173.29705263157894,
+            "array_ohm_at25c": 583.5905263157894,
+            "rank_score_ohm_ff": 332638.5402990187
+          },
+          {
+            "local_bit_column": 107,
+            "extracted_incident_metal_cap_ff": 714.5600900000015,
+            "connected_drains": 650,
+            "join_geometry_length_um": 408.29,
+            "join_ohm_at25c": 171.74252631578946,
+            "array_ohm_at25c": 583.5905263157894,
+            "rank_score_ohm_ff": 331225.6045647175
+          },
+          {
+            "local_bit_column": 106,
+            "extracted_incident_metal_cap_ff": 712.7034999999972,
+            "connected_drains": 648,
+            "join_geometry_length_um": 405.45000000000005,
+            "join_ohm_at25c": 170.96526315789475,
+            "array_ohm_at25c": 583.5905263157894,
+            "rank_score_ohm_ff": 329811.04676710395
+          },
+          {
+            "local_bit_column": 105,
+            "extracted_incident_metal_cap_ff": 709.7852300000036,
+            "connected_drains": 639,
+            "join_geometry_length_um": 402.61,
+            "join_ohm_at25c": 170.188,
+            "array_ohm_at25c": 583.5905263157894,
+            "rank_score_ohm_ff": 327908.8966966785
+          },
+          {
+            "local_bit_column": 104,
+            "extracted_incident_metal_cap_ff": 710.8688599999851,
+            "connected_drains": 648,
+            "join_geometry_length_um": 399.77,
+            "join_ohm_at25c": 169.41073684210525,
+            "array_ohm_at25c": 583.5905263157894,
+            "rank_score_ohm_ff": 327856.9834451531
+          },
+          {
+            "local_bit_column": 102,
+            "extracted_incident_metal_cap_ff": 712.4821700000009,
+            "connected_drains": 656,
+            "join_geometry_length_um": 394.09000000000003,
+            "join_ohm_at25c": 167.8562105263158,
+            "array_ohm_at25c": 583.5905263157894,
+            "rank_score_ohm_ff": 327493.4794142246
+          },
+          {
+            "local_bit_column": 101,
+            "extracted_incident_metal_cap_ff": 709.7824499999997,
+            "connected_drains": 645,
+            "join_geometry_length_um": 391.25,
+            "join_ohm_at25c": 167.07894736842104,
+            "array_ohm_at25c": 583.5905263157894,
+            "rank_score_ohm_ff": 325700.861389184
+          },
+          {
+            "local_bit_column": 100,
+            "extracted_incident_metal_cap_ff": 710.4302800000011,
+            "connected_drains": 647,
+            "join_geometry_length_um": 388.41,
+            "join_ohm_at25c": 166.30168421052633,
+            "array_ohm_at25c": 583.5905263157894,
+            "rank_score_ohm_ff": 325445.9425860931
+          },
+          {
+            "local_bit_column": 103,
+            "extracted_incident_metal_cap_ff": 706.8306299999917,
+            "connected_drains": 631,
+            "join_geometry_length_um": 396.93,
+            "join_ohm_at25c": 168.63347368421051,
+            "array_ohm_at25c": 583.5905263157894,
+            "rank_score_ohm_ff": 325445.1341322056
+          },
+          {
+            "local_bit_column": 99,
+            "extracted_incident_metal_cap_ff": 710.8847799999961,
+            "connected_drains": 646,
+            "join_geometry_length_um": 385.57000000000005,
+            "join_ohm_at25c": 165.52442105263157,
+            "array_ohm_at25c": 583.5905263157894,
+            "rank_score_ohm_ff": 325101.60309966764
+          },
+          {
+            "local_bit_column": 97,
+            "extracted_incident_metal_cap_ff": 712.8101600000168,
+            "connected_drains": 643,
+            "join_geometry_length_um": 379.89,
+            "join_ohm_at25c": 163.9698947368421,
+            "array_ohm_at25c": 583.5905263157894,
+            "rank_score_ohm_ff": 324874.03512138024
+          },
+          {
+            "local_bit_column": 98,
+            "extracted_incident_metal_cap_ff": 710.8773500000059,
+            "connected_drains": 642,
+            "join_geometry_length_um": 382.73,
+            "join_ohm_at25c": 164.74715789473683,
+            "array_ohm_at25c": 583.5905263157894,
+            "rank_score_ohm_ff": 324545.6664404816
+          },
+          {
+            "local_bit_column": 91,
+            "extracted_incident_metal_cap_ff": 714.0748800000017,
+            "connected_drains": 675,
+            "join_geometry_length_um": 363.84999999999997,
+            "join_ohm_at25c": 159.57999999999998,
+            "array_ohm_at25c": 583.5905263157894,
+            "rank_score_ohm_ff": 322315.73687444284
+          },
+          {
+            "local_bit_column": 94,
+            "extracted_incident_metal_cap_ff": 706.8255500000075,
+            "connected_drains": 622,
+            "join_geometry_length_um": 372.37,
+            "join_ohm_at25c": 161.91178947368422,
+            "array_ohm_at25c": 583.5905263157894,
+            "rank_score_ohm_ff": 320691.7370151981
+          },
+          {
+            "local_bit_column": 93,
+            "extracted_incident_metal_cap_ff": 704.8899300000027,
+            "connected_drains": 624,
+            "join_geometry_length_um": 369.53,
+            "join_ohm_at25c": 161.13452631578946,
+            "array_ohm_at25c": 583.5905263157894,
+            "rank_score_ohm_ff": 319265.64759702113
+          },
+          {
+            "local_bit_column": 92,
+            "extracted_incident_metal_cap_ff": 702.8744999999942,
+            "connected_drains": 623,
+            "join_geometry_length_um": 366.69000000000005,
+            "join_ohm_at25c": 160.35726315789475,
+            "array_ohm_at25c": 583.5905263157894,
+            "rank_score_ohm_ff": 317806.4808579447
+          },
+          {
+            "local_bit_column": 90,
+            "extracted_incident_metal_cap_ff": 702.869000000004,
+            "connected_drains": 634,
+            "join_geometry_length_um": 361.01,
+            "join_ohm_at25c": 158.80273684210528,
+            "array_ohm_at25c": 583.5905263157894,
+            "rank_score_ohm_ff": 316711.3656620018
+          },
+          {
+            "local_bit_column": 86,
+            "extracted_incident_metal_cap_ff": 703.9730099999988,
+            "connected_drains": 650,
+            "join_geometry_length_um": 349.65,
+            "join_ohm_at25c": 155.69368421052633,
+            "array_ohm_at25c": 583.5905263157894,
+            "rank_score_ohm_ff": 315020.1412206784
+          },
+          {
+            "local_bit_column": 89,
+            "extracted_incident_metal_cap_ff": 700.2999899999959,
+            "connected_drains": 629,
+            "join_geometry_length_um": 358.17,
+            "join_ohm_at25c": 158.0254736842105,
+            "array_ohm_at25c": 583.5905263157894,
+            "rank_score_ohm_ff": 315009.45751231705
+          },
+          {
+            "local_bit_column": 84,
+            "extracted_incident_metal_cap_ff": 704.3756100000058,
+            "connected_drains": 650,
+            "join_geometry_length_um": 343.96999999999997,
+            "join_ohm_at25c": 154.13915789473683,
+            "array_ohm_at25c": 583.5905263157894,
+            "rank_score_ohm_ff": 314105.32984894677
+          },
+          {
+            "local_bit_column": 81,
+            "extracted_incident_metal_cap_ff": 707.9993000000045,
+            "connected_drains": 653,
+            "join_geometry_length_um": 335.45000000000005,
+            "join_ohm_at25c": 151.80736842105262,
+            "array_ohm_at25c": 583.5905263157894,
+            "rank_score_ohm_ff": 314070.35263605457
+          },
+          {
+            "local_bit_column": 87,
+            "extracted_incident_metal_cap_ff": 699.2962499999988,
+            "connected_drains": 625,
+            "join_geometry_length_um": 352.49,
+            "join_ohm_at25c": 156.47094736842104,
+            "array_ohm_at25c": 583.5905263157894,
+            "rank_score_ohm_ff": 313470.8800227626
+          },
+          {
+            "local_bit_column": 82,
+            "extracted_incident_metal_cap_ff": 703.8775300000002,
+            "connected_drains": 642,
+            "join_geometry_length_um": 338.29,
+            "join_ohm_at25c": 152.58463157894738,
+            "array_ohm_at25c": 583.5905263157894,
+            "rank_score_ohm_ff": 312789.02268902847
+          },
+          {
+            "local_bit_column": 85,
+            "extracted_incident_metal_cap_ff": 700.1666099999975,
+            "connected_drains": 634,
+            "join_geometry_length_um": 346.81000000000006,
+            "join_ohm_at25c": 154.9164210526316,
+            "array_ohm_at25c": 583.5905263157894,
+            "rank_score_ohm_ff": 312772.6055810736
+          },
+          {
+            "local_bit_column": 88,
+            "extracted_incident_metal_cap_ff": 696.099940000003,
+            "connected_drains": 613,
+            "join_geometry_length_um": 355.33000000000004,
+            "join_ohm_at25c": 157.2482105263158,
+            "array_ohm_at25c": 583.5905263157894,
+            "rank_score_ohm_ff": 312579.1350889719
+          },
+          {
+            "local_bit_column": 78,
+            "extracted_incident_metal_cap_ff": 707.5380400000108,
+            "connected_drains": 654,
+            "join_geometry_length_um": 327.93,
+            "join_ohm_at25c": 149.74926315789475,
+            "array_ohm_at25c": 583.5905263157894,
+            "rank_score_ohm_ff": 312409.54872220685
+          },
+          {
+            "local_bit_column": 83,
+            "extracted_incident_metal_cap_ff": 697.5750999999981,
+            "connected_drains": 618,
+            "join_geometry_length_um": 341.13,
+            "join_ohm_at25c": 153.3618947368421,
+            "array_ohm_at25c": 583.5905263157894,
+            "rank_score_ohm_ff": 310530.54893413594
+          },
+          {
+            "local_bit_column": 77,
+            "extracted_incident_metal_cap_ff": 704.0312200000034,
+            "connected_drains": 650,
+            "join_geometry_length_um": 325.09,
+            "join_ohm_at25c": 148.97199999999998,
+            "array_ohm_at25c": 583.5905263157894,
+            "rank_score_ohm_ff": 310313.91401711514
+          },
+          {
+            "local_bit_column": 73,
+            "extracted_incident_metal_cap_ff": 702.511839999999,
+            "connected_drains": 667,
+            "join_geometry_length_um": 313.73,
+            "join_ohm_at25c": 145.86294736842106,
+            "array_ohm_at25c": 583.5905263157894,
+            "rank_score_ohm_ff": 307460.074767949
+          },
+          {
+            "local_bit_column": 76,
+            "extracted_incident_metal_cap_ff": 698.5565399999862,
+            "connected_drains": 635,
+            "join_geometry_length_um": 322.25,
+            "join_ohm_at25c": 148.19473684210527,
+            "array_ohm_at25c": 583.5905263157894,
+            "rank_score_ohm_ff": 307357.89203459385
+          },
+          {
+            "local_bit_column": 74,
+            "extracted_incident_metal_cap_ff": 698.7411999999945,
+            "connected_drains": 646,
+            "join_geometry_length_um": 316.57,
+            "join_ohm_at25c": 146.6402105263158,
+            "array_ohm_at25c": 583.5905263157894,
+            "rank_score_ohm_ff": 306352.9290046712
+          },
+          {
+            "local_bit_column": 71,
+            "extracted_incident_metal_cap_ff": 695.9068099999841,
+            "connected_drains": 643,
+            "join_geometry_length_um": 308.05,
+            "join_ohm_at25c": 144.30842105263156,
+            "array_ohm_at25c": 583.5905263157894,
+            "rank_score_ohm_ff": 303487.52370818774
+          },
+          {
+            "local_bit_column": 67,
+            "extracted_incident_metal_cap_ff": 700.4212199999879,
+            "connected_drains": 658,
+            "join_geometry_length_um": 296.69,
+            "join_ohm_at25c": 141.1993684210526,
+            "array_ohm_at25c": 583.5905263157894,
+            "rank_score_ohm_ff": 303278.62810397154
+          },
+          {
+            "local_bit_column": 70,
+            "extracted_incident_metal_cap_ff": 695.4541000000055,
+            "connected_drains": 640,
+            "join_geometry_length_um": 305.21,
+            "join_ohm_at25c": 143.53115789473685,
+            "array_ohm_at25c": 583.5905263157894,
+            "rank_score_ohm_ff": 302749.5443593813
+          },
+          {
+            "local_bit_column": 65,
+            "extracted_incident_metal_cap_ff": 701.0185100000056,
+            "connected_drains": 651,
+            "join_geometry_length_um": 291.01,
+            "join_ohm_at25c": 139.64484210526314,
+            "array_ohm_at25c": 583.5905263157894,
+            "rank_score_ohm_ff": 302447.49974582443
+          },
+          {
+            "local_bit_column": 75,
+            "extracted_incident_metal_cap_ff": 688.3413900000024,
+            "connected_drains": 599,
+            "join_geometry_length_um": 319.41,
+            "join_ohm_at25c": 147.4174736842105,
+            "array_ohm_at25c": 583.5905263157894,
+            "rank_score_ohm_ff": 302328.30578359996
+          },
+          {
+            "local_bit_column": 68,
+            "extracted_incident_metal_cap_ff": 696.2750400000045,
+            "connected_drains": 644,
+            "join_geometry_length_um": 299.53000000000003,
+            "join_ohm_at25c": 141.97663157894738,
+            "array_ohm_at25c": 583.5905263157894,
+            "rank_score_ohm_ff": 302024.54335877247
+          },
+          {
+            "local_bit_column": 69,
+            "extracted_incident_metal_cap_ff": 694.8937700000023,
+            "connected_drains": 640,
+            "join_geometry_length_um": 302.37,
+            "join_ohm_at25c": 142.75389473684208,
+            "array_ohm_at25c": 583.5905263157894,
+            "rank_score_ohm_ff": 301965.5025797999
+          },
+          {
+            "local_bit_column": 72,
+            "extracted_incident_metal_cap_ff": 690.846549999986,
+            "connected_drains": 621,
+            "join_geometry_length_um": 310.89,
+            "join_ohm_at25c": 145.0856842105263,
+            "array_ohm_at25c": 583.5905263157894,
+            "rank_score_ohm_ff": 301817.69525019906
+          },
+          {
+            "local_bit_column": 66,
+            "extracted_incident_metal_cap_ff": 695.4375100000017,
+            "connected_drains": 638,
+            "join_geometry_length_um": 293.85,
+            "join_ohm_at25c": 140.4221052631579,
+            "array_ohm_at25c": 583.5905263157894,
+            "rank_score_ohm_ff": 300580.17047349014
+          },
+          {
+            "local_bit_column": 111,
+            "extracted_incident_metal_cap_ff": 642.5254800000055,
+            "connected_drains": 638,
+            "join_geometry_length_um": 419.65,
+            "join_ohm_at25c": 174.8515789473684,
+            "array_ohm_at25c": 583.5905263157894,
+            "rank_score_ohm_ff": 299832.48621417093
+          },
+          {
+            "local_bit_column": 112,
+            "extracted_incident_metal_cap_ff": 638.6479800000022,
+            "connected_drains": 620,
+            "join_geometry_length_um": 421.49,
+            "join_ohm_at25c": 175.35515789473686,
+            "array_ohm_at25c": 583.5905263157894,
+            "rank_score_ohm_ff": 298344.6727614137
+          },
+          {
+            "local_bit_column": 61,
+            "extracted_incident_metal_cap_ff": 694.8310300000027,
+            "connected_drains": 645,
+            "join_geometry_length_um": 280.65,
+            "join_ohm_at25c": 136.8094736842105,
+            "array_ohm_at25c": 583.5905263157894,
+            "rank_score_ohm_ff": 297807.87076288
+          },
+          {
+            "local_bit_column": 62,
+            "extracted_incident_metal_cap_ff": 692.6004900000082,
+            "connected_drains": 620,
+            "join_geometry_length_um": 283.49,
+            "join_ohm_at25c": 137.58673684210527,
+            "array_ohm_at25c": 583.5905263157894,
+            "rank_score_ohm_ff": 297390.1835971835
+          },
+          {
+            "local_bit_column": 60,
+            "extracted_incident_metal_cap_ff": 690.9427699999942,
+            "connected_drains": 634,
+            "join_geometry_length_um": 277.81,
+            "join_ohm_at25c": 136.0322105263158,
+            "array_ohm_at25c": 583.5905263157894,
+            "rank_score_ohm_ff": 295604.299749468
+          },
+          {
+            "local_bit_column": 55,
+            "extracted_incident_metal_cap_ff": 694.7797500000055,
+            "connected_drains": 670,
+            "join_geometry_length_um": 263.61,
+            "join_ohm_at25c": 132.1458947368421,
+            "array_ohm_at25c": 583.5905263157894,
+            "rank_score_ohm_ff": 294545.7316968181
+          },
+          {
+            "local_bit_column": 57,
+            "extracted_incident_metal_cap_ff": 691.3652499999962,
+            "connected_drains": 647,
+            "join_geometry_length_um": 269.29,
+            "join_ohm_at25c": 133.70042105263158,
+            "array_ohm_at25c": 583.5905263157894,
+            "rank_score_ohm_ff": 294172.93008812994
+          },
+          {
+            "local_bit_column": 58,
+            "extracted_incident_metal_cap_ff": 688.8963399999841,
+            "connected_drains": 636,
+            "join_geometry_length_um": 272.13,
+            "join_ohm_at25c": 134.47768421052632,
+            "array_ohm_at25c": 583.5905263157894,
+            "rank_score_ohm_ff": 293657.8732831111
+          },
+          {
+            "local_bit_column": 56,
+            "extracted_incident_metal_cap_ff": 689.6561000000003,
+            "connected_drains": 644,
+            "join_geometry_length_um": 266.45,
+            "join_ohm_at25c": 132.92315789473685,
+            "array_ohm_at25c": 583.5905263157894,
+            "rank_score_ohm_ff": 292909.64986131585
+          },
+          {
+            "local_bit_column": 59,
+            "extracted_incident_metal_cap_ff": 685.3305300000043,
+            "connected_drains": 616,
+            "join_geometry_length_um": 274.97,
+            "join_ohm_at25c": 135.25494736842106,
+            "array_ohm_at25c": 583.5905263157894,
+            "rank_score_ohm_ff": 292670.54711661336
+          },
+          {
+            "local_bit_column": 54,
+            "extracted_incident_metal_cap_ff": 691.3213899999969,
+            "connected_drains": 653,
+            "join_geometry_length_um": 260.77,
+            "join_ohm_at25c": 131.36863157894737,
+            "array_ohm_at25c": 583.5905263157894,
+            "rank_score_ohm_ff": 292542.251907286
+          },
+          {
+            "local_bit_column": 53,
+            "extracted_incident_metal_cap_ff": 690.8966999999855,
+            "connected_drains": 650,
+            "join_geometry_length_um": 257.93,
+            "join_ohm_at25c": 130.59136842105264,
+            "array_ohm_at25c": 583.5905263157894,
+            "rank_score_ohm_ff": 291825.52988200437
+          },
+          {
+            "local_bit_column": 51,
+            "extracted_incident_metal_cap_ff": 691.433559999997,
+            "connected_drains": 654,
+            "join_geometry_length_um": 252.25,
+            "join_ohm_at25c": 129.03684210526313,
+            "array_ohm_at25c": 583.5905263157894,
+            "rank_score_ohm_ff": 290977.4407043987
+          },
+          {
+            "local_bit_column": 52,
+            "extracted_incident_metal_cap_ff": 689.4275100000007,
+            "connected_drains": 648,
+            "join_geometry_length_um": 255.09,
+            "join_ohm_at25c": 129.8141052631579,
+            "array_ohm_at25c": 583.5905263157894,
+            "rank_score_ohm_ff": 290669.0970631992
+          },
+          {
+            "local_bit_column": 50,
+            "extracted_incident_metal_cap_ff": 691.4155700000053,
+            "connected_drains": 647,
+            "join_geometry_length_um": 249.41000000000003,
+            "join_ohm_at25c": 128.25957894736842,
+            "array_ohm_at25c": 583.5905263157894,
+            "rank_score_ohm_ff": 290432.45808547275
+          },
+          {
+            "local_bit_column": 49,
+            "extracted_incident_metal_cap_ff": 692.1250400000146,
+            "connected_drains": 643,
+            "join_geometry_length_um": 246.57000000000002,
+            "join_ohm_at25c": 127.48231578947369,
+            "array_ohm_at25c": 583.5905263157894,
+            "rank_score_ohm_ff": 290192.51110005664
+          },
+          {
+            "local_bit_column": 96,
+            "extracted_incident_metal_cap_ff": 637.7449399999958,
+            "connected_drains": 647,
+            "join_geometry_length_um": 377.05,
+            "join_ohm_at25c": 163.19263157894738,
+            "array_ohm_at25c": 583.5905263157894,
+            "rank_score_ohm_ff": 290166.22762967175
+          },
+          {
+            "local_bit_column": 46,
+            "extracted_incident_metal_cap_ff": 692.9919800000084,
+            "connected_drains": 650,
+            "join_geometry_length_um": 239.05,
+            "join_ohm_at25c": 125.42421052631579,
+            "array_ohm_at25c": 583.5905263157894,
+            "rank_score_ohm_ff": 289129.74916298245
+          },
+          {
+            "local_bit_column": 95,
+            "extracted_incident_metal_cap_ff": 636.1519400000016,
+            "connected_drains": 644,
+            "join_geometry_length_um": 375.21,
+            "join_ohm_at25c": 162.68905263157893,
+            "array_ohm_at25c": 583.5905263157894,
+            "rank_score_ohm_ff": 289121.079189047
+          },
+          {
+            "local_bit_column": 45,
+            "extracted_incident_metal_cap_ff": 693.9419100000034,
+            "connected_drains": 670,
+            "join_geometry_length_um": 236.20999999999998,
+            "join_ohm_at25c": 124.64694736842105,
+            "array_ohm_at25c": 583.5905263157894,
+            "rank_score_ohm_ff": 288986.7029772551
+          },
+          {
+            "local_bit_column": 44,
+            "extracted_incident_metal_cap_ff": 683.5286499999913,
+            "connected_drains": 631,
+            "join_geometry_length_um": 233.37,
+            "join_ohm_at25c": 123.86968421052632,
+            "array_ohm_at25c": 583.5905263157894,
+            "rank_score_ohm_ff": 284118.90032705426
+          },
+          {
+            "local_bit_column": 40,
+            "extracted_incident_metal_cap_ff": 688.3224799999945,
+            "connected_drains": 671,
+            "join_geometry_length_um": 222.01000000000002,
+            "join_ohm_at25c": 120.76063157894737,
+            "array_ohm_at25c": 583.5905263157894,
+            "rank_score_ohm_ff": 283971.4966038798
+          },
+          {
+            "local_bit_column": 35,
+            "extracted_incident_metal_cap_ff": 693.4769399999985,
+            "connected_drains": 690,
+            "join_geometry_length_um": 207.81,
+            "join_ohm_at25c": 116.87431578947368,
+            "array_ohm_at25c": 583.5905263157894,
+            "rank_score_ohm_ff": 283402.9290795088
+          },
+          {
+            "local_bit_column": 41,
+            "extracted_incident_metal_cap_ff": 685.3953299999986,
+            "connected_drains": 655,
+            "join_geometry_length_um": 224.85000000000002,
+            "join_ohm_at25c": 121.5378947368421,
+            "array_ohm_at25c": 583.5905263157894,
+            "rank_score_ohm_ff": 283296.61615520465
+          },
+          {
+            "local_bit_column": 43,
+            "extracted_incident_metal_cap_ff": 682.5394600000019,
+            "connected_drains": 633,
+            "join_geometry_length_um": 230.53,
+            "join_ohm_at25c": 123.09242105263158,
+            "array_ohm_at25c": 583.5905263157894,
+            "rank_score_ohm_ff": 283177.2159417039
+          },
+          {
+            "local_bit_column": 42,
+            "extracted_incident_metal_cap_ff": 678.7340699999924,
+            "connected_drains": 619,
+            "join_geometry_length_um": 227.69,
+            "join_ohm_at25c": 122.31515789473684,
+            "array_ohm_at25c": 583.5905263157894,
+            "rank_score_ohm_ff": 281070.8515104631
+          },
+          {
+            "local_bit_column": 37,
+            "extracted_incident_metal_cap_ff": 683.6191399999886,
+            "connected_drains": 652,
+            "join_geometry_length_um": 213.49,
+            "join_ohm_at25c": 118.42884210526316,
+            "array_ohm_at25c": 583.5905263157894,
+            "rank_score_ohm_ff": 280437.0500472648
+          },
+          {
+            "local_bit_column": 36,
+            "extracted_incident_metal_cap_ff": 684.221590000004,
+            "connected_drains": 653,
+            "join_geometry_length_um": 210.64999999999998,
+            "join_ohm_at25c": 117.6515789473684,
+            "array_ohm_at25c": 583.5905263157894,
+            "rank_score_ohm_ff": 280152.3693257437
+          },
+          {
+            "local_bit_column": 38,
+            "extracted_incident_metal_cap_ff": 681.4887400000013,
+            "connected_drains": 646,
+            "join_geometry_length_um": 216.32999999999998,
+            "join_ohm_at25c": 119.20610526315788,
+            "array_ohm_at25c": 583.5905263157894,
+            "rank_score_ohm_ff": 280092.8047035394
+          },
+          {
+            "local_bit_column": 33,
+            "extracted_incident_metal_cap_ff": 686.5222600000071,
+            "connected_drains": 651,
+            "join_geometry_length_um": 202.13,
+            "join_ohm_at25c": 115.31978947368421,
+            "array_ohm_at25c": 583.5905263157894,
+            "rank_score_ohm_ff": 279493.5460126534
+          },
+          {
+            "local_bit_column": 79,
+            "extracted_incident_metal_cap_ff": 630.9275700000028,
+            "connected_drains": 658,
+            "join_geometry_length_um": 330.77,
+            "join_ohm_at25c": 150.52652631578945,
+            "array_ohm_at25c": 583.5905263157894,
+            "rank_score_ohm_ff": 279073.01179068437
+          },
+          {
+            "local_bit_column": 39,
+            "extracted_incident_metal_cap_ff": 676.0358400000018,
+            "connected_drains": 617,
+            "join_geometry_length_um": 219.17000000000002,
+            "join_ohm_at25c": 119.98336842105263,
+            "array_ohm_at25c": 583.5905263157894,
+            "rank_score_ohm_ff": 278377.1130935249
+          },
+          {
+            "local_bit_column": 34,
+            "extracted_incident_metal_cap_ff": 681.7567800000025,
+            "connected_drains": 638,
+            "join_geometry_length_um": 204.97,
+            "join_ohm_at25c": 116.09705263157895,
+            "array_ohm_at25c": 583.5905263157894,
+            "rank_score_ohm_ff": 278083.3517993757
+          },
+          {
+            "local_bit_column": 80,
+            "extracted_incident_metal_cap_ff": 627.0197200000011,
+            "connected_drains": 634,
+            "join_geometry_length_um": 332.61,
+            "join_ohm_at25c": 151.0301052631579,
+            "array_ohm_at25c": 583.5905263157894,
+            "rank_score_ohm_ff": 277660.23851626576
+          },
+          {
+            "local_bit_column": 30,
+            "extracted_incident_metal_cap_ff": 685.3772900000016,
+            "connected_drains": 649,
+            "join_geometry_length_um": 194.61,
+            "join_ohm_at25c": 113.26168421052631,
+            "array_ohm_at25c": 583.5905263157894,
+            "rank_score_ohm_ff": 277616.83288304164
+          },
+          {
+            "local_bit_column": 27,
+            "extracted_incident_metal_cap_ff": 689.156140000001,
+            "connected_drains": 688,
+            "join_geometry_length_um": 186.08999999999997,
+            "join_ohm_at25c": 110.9298947368421,
+            "array_ohm_at25c": 583.5905263157894,
+            "rank_score_ohm_ff": 277540.5152956277
+          },
+          {
+            "local_bit_column": 28,
+            "extracted_incident_metal_cap_ff": 683.3147999999925,
+            "connected_drains": 659,
+            "join_geometry_length_um": 188.93,
+            "join_ohm_at25c": 111.70715789473684,
+            "array_ohm_at25c": 583.5905263157894,
+            "rank_score_ohm_ff": 275719.1761410917
+          },
+          {
+            "local_bit_column": 29,
+            "extracted_incident_metal_cap_ff": 678.4756700000033,
+            "connected_drains": 633,
+            "join_geometry_length_um": 191.76999999999998,
+            "join_ohm_at25c": 112.48442105263157,
+            "array_ohm_at25c": 583.5905263157894,
+            "rank_score_ohm_ff": 274293.9296121266
+          },
+          {
+            "local_bit_column": 26,
+            "extracted_incident_metal_cap_ff": 675.3370099999913,
+            "connected_drains": 638,
+            "join_geometry_length_um": 183.25,
+            "join_ohm_at25c": 110.15263157894736,
+            "array_ohm_at25c": 583.5905263157894,
+            "rank_score_ohm_ff": 271450.28940737015
+          },
+          {
+            "local_bit_column": 24,
+            "extracted_incident_metal_cap_ff": 672.7360899999942,
+            "connected_drains": 633,
+            "join_geometry_length_um": 177.57,
+            "join_ohm_at25c": 108.59810526315789,
+            "array_ohm_at25c": 583.5905263157894,
+            "rank_score_ohm_ff": 269359.06913350604
+          },
+          {
+            "local_bit_column": 25,
+            "extracted_incident_metal_cap_ff": 670.685769999997,
+            "connected_drains": 623,
+            "join_geometry_length_um": 180.41,
+            "join_ohm_at25c": 109.37536842105263,
+            "array_ohm_at25c": 583.5905263157894,
+            "rank_score_ohm_ff": 269059.4339419114
+          },
+          {
+            "local_bit_column": 63,
+            "extracted_incident_metal_cap_ff": 623.5815499999982,
+            "connected_drains": 656,
+            "join_geometry_length_um": 286.33,
+            "join_ohm_at25c": 138.36399999999998,
+            "array_ohm_at25c": 583.5905263157894,
+            "rank_score_ohm_ff": 268239.38006685703
+          },
+          {
+            "local_bit_column": 23,
+            "extracted_incident_metal_cap_ff": 671.062449999999,
+            "connected_drains": 628,
+            "join_geometry_length_um": 174.73,
+            "join_ohm_at25c": 107.82084210526315,
+            "array_ohm_at25c": 583.5905263157894,
+            "rank_score_ohm_ff": 268167.3626573522
+          },
+          {
+            "local_bit_column": 21,
+            "extracted_incident_metal_cap_ff": 673.455329999994,
+            "connected_drains": 638,
+            "join_geometry_length_um": 169.05,
+            "join_ohm_at25c": 106.26631578947368,
+            "array_ohm_at25c": 583.5905263157894,
+            "rank_score_ohm_ff": 268076.6920103186
+          },
+          {
+            "local_bit_column": 17,
+            "extracted_incident_metal_cap_ff": 678.2060600000093,
+            "connected_drains": 645,
+            "join_geometry_length_um": 157.69,
+            "join_ohm_at25c": 103.15726315789473,
+            "array_ohm_at25c": 583.5905263157894,
+            "rank_score_ohm_ff": 267859.19675968157
+          },
+          {
+            "local_bit_column": 64,
+            "extracted_incident_metal_cap_ff": 621.8894799999997,
+            "connected_drains": 648,
+            "join_geometry_length_um": 288.17,
+            "join_ohm_at25c": 138.86757894736843,
+            "array_ohm_at25c": 583.5905263157894,
+            "rank_score_ohm_ff": 267824.690932164
+          },
+          {
+            "local_bit_column": 20,
+            "extracted_incident_metal_cap_ff": 673.8012800000015,
+            "connected_drains": 639,
+            "join_geometry_length_um": 166.20999999999998,
+            "join_ohm_at25c": 105.48905263157894,
+            "array_ohm_at25c": 583.5905263157894,
+            "rank_score_ohm_ff": 267690.68050287216
+          },
+          {
+            "local_bit_column": 22,
+            "extracted_incident_metal_cap_ff": 671.1219099999969,
+            "connected_drains": 629,
+            "join_geometry_length_um": 171.89,
+            "join_ohm_at25c": 107.04357894736842,
+            "array_ohm_at25c": 583.5905263157894,
+            "rank_score_ohm_ff": 267669.48549587134
+          },
+          {
+            "local_bit_column": 19,
+            "extracted_incident_metal_cap_ff": 672.3131700000055,
+            "connected_drains": 629,
+            "join_geometry_length_um": 163.36999999999998,
+            "join_ohm_at25c": 104.7117894736842,
+            "array_ohm_at25c": 583.5905263157894,
+            "rank_score_ohm_ff": 266576.9134820958
+          },
+          {
+            "local_bit_column": 18,
+            "extracted_incident_metal_cap_ff": 673.2515500000031,
+            "connected_drains": 632,
+            "join_geometry_length_um": 160.53,
+            "join_ohm_at25c": 103.93452631578947,
+            "array_ohm_at25c": 583.5905263157894,
+            "rank_score_ohm_ff": 266425.6941443328
+          },
+          {
+            "local_bit_column": 13,
+            "extracted_incident_metal_cap_ff": 678.762140000004,
+            "connected_drains": 662,
+            "join_geometry_length_um": 147.32999999999998,
+            "join_ohm_at25c": 100.3218947368421,
+            "array_ohm_at25c": 583.5905263157894,
+            "rank_score_ohm_ff": 266154.281223351
+          },
+          {
+            "local_bit_column": 12,
+            "extracted_incident_metal_cap_ff": 672.1127399999947,
+            "connected_drains": 642,
+            "join_geometry_length_um": 144.49,
+            "join_ohm_at25c": 99.54463157894736,
+            "array_ohm_at25c": 583.5905263157894,
+            "rank_score_ohm_ff": 263024.5289228884
+          },
+          {
+            "local_bit_column": 14,
+            "extracted_incident_metal_cap_ff": 667.071000000013,
+            "connected_drains": 601,
+            "join_geometry_length_um": 150.17000000000002,
+            "join_ohm_at25c": 101.09915789473685,
+            "array_ohm_at25c": 583.5905263157894,
+            "rank_score_ohm_ff": 262088.47434600507
+          },
+          {
+            "local_bit_column": 10,
+            "extracted_incident_metal_cap_ff": 669.3466499999886,
+            "connected_drains": 643,
+            "join_geometry_length_um": 138.81,
+            "join_ohm_at25c": 97.99010526315789,
+            "array_ohm_at25c": 583.5905263157894,
+            "rank_score_ohm_ff": 260901.53057164288
+          },
+          {
+            "local_bit_column": 11,
+            "extracted_incident_metal_cap_ff": 664.9250500000024,
+            "connected_drains": 618,
+            "join_geometry_length_um": 141.65,
+            "join_ohm_at25c": 98.76736842105262,
+            "array_ohm_at25c": 583.5905263157894,
+            "rank_score_ohm_ff": 259694.87733076405
+          },
+          {
+            "local_bit_column": 8,
+            "extracted_incident_metal_cap_ff": 665.2477999999935,
+            "connected_drains": 630,
+            "join_geometry_length_um": 133.13,
+            "join_ohm_at25c": 96.43557894736841,
+            "array_ohm_at25c": 583.5905263157894,
+            "rank_score_ohm_ff": 258269.7136026711
+          },
+          {
+            "local_bit_column": 6,
+            "extracted_incident_metal_cap_ff": 666.4131000000015,
+            "connected_drains": 638,
+            "join_geometry_length_um": 127.44999999999999,
+            "join_ohm_at25c": 94.88105263157894,
+            "array_ohm_at25c": 583.5905263157894,
+            "rank_score_ohm_ff": 257686.16230184262
+          },
+          {
+            "local_bit_column": 4,
+            "extracted_incident_metal_cap_ff": 669.006790000005,
+            "connected_drains": 649,
+            "join_geometry_length_um": 121.77,
+            "join_ohm_at25c": 93.32652631578947,
+            "array_ohm_at25c": 583.5905263157894,
+            "rank_score_ohm_ff": 257649.09213484716
+          },
+          {
+            "local_bit_column": 47,
+            "extracted_incident_metal_cap_ff": 616.2111899999982,
+            "connected_drains": 658,
+            "join_geometry_length_um": 241.89000000000001,
+            "join_ohm_at25c": 126.20147368421053,
+            "array_ohm_at25c": 583.5905263157894,
+            "rank_score_ohm_ff": 257574.26662558972
+          },
+          {
+            "local_bit_column": 5,
+            "extracted_incident_metal_cap_ff": 666.9432399999971,
+            "connected_drains": 640,
+            "join_geometry_length_um": 124.61,
+            "join_ohm_at25c": 94.1037894736842,
+            "array_ohm_at25c": 583.5905263157894,
+            "rank_score_ohm_ff": 257372.76447503464
+          },
+          {
+            "local_bit_column": 1,
+            "extracted_incident_metal_cap_ff": 671.3382300000136,
+            "connected_drains": 645,
+            "join_geometry_length_um": 113.25,
+            "join_ohm_at25c": 90.99473684210525,
+            "array_ohm_at25c": 583.5905263157894,
+            "rank_score_ohm_ff": 256981.56106170517
+          },
+          {
+            "local_bit_column": 2,
+            "extracted_incident_metal_cap_ff": 669.5845700000052,
+            "connected_drains": 644,
+            "join_geometry_length_um": 116.09,
+            "join_ohm_at25c": 91.77199999999999,
+            "array_ohm_at25c": 583.5905263157894,
+            "rank_score_ohm_ff": 256830.72096765775
+          },
+          {
+            "local_bit_column": 9,
+            "extracted_incident_metal_cap_ff": 660.1698999999967,
+            "connected_drains": 606,
+            "join_geometry_length_um": 135.97,
+            "join_ohm_at25c": 97.21284210526315,
+            "array_ohm_at25c": 583.5905263157894,
+            "rank_score_ohm_ff": 256811.4419507671
+          },
+          {
+            "local_bit_column": 7,
+            "extracted_incident_metal_cap_ff": 661.8127600000005,
+            "connected_drains": 619,
+            "join_geometry_length_um": 130.29,
+            "join_ohm_at25c": 95.65831578947368,
+            "array_ohm_at25c": 583.5905263157894,
+            "rank_score_ohm_ff": 256421.72245503592
+          },
+          {
+            "local_bit_column": 48,
+            "extracted_incident_metal_cap_ff": 611.5215999999964,
+            "connected_drains": 634,
+            "join_geometry_length_um": 243.73000000000002,
+            "join_ohm_at25c": 126.70505263157895,
+            "array_ohm_at25c": 583.5905263157894,
+            "rank_score_ohm_ff": 255921.98271208268
+          },
+          {
+            "local_bit_column": 127,
+            "extracted_incident_metal_cap_ff": 533.3764900000025,
+            "connected_drains": 633,
+            "join_geometry_length_um": 464.09000000000003,
+            "join_ohm_at25c": 187.0141052631579,
+            "array_ohm_at25c": 583.5905263157894,
+            "rank_score_ohm_ff": 255385.66030753904
+          },
+          {
+            "local_bit_column": 3,
+            "extracted_incident_metal_cap_ff": 660.240000000008,
+            "connected_drains": 607,
+            "join_geometry_length_um": 118.93,
+            "join_ohm_at25c": 92.54926315789473,
+            "array_ohm_at25c": 583.5905263157894,
+            "rank_score_ohm_ff": 253759.63005473986
+          },
+          {
+            "local_bit_column": 32,
+            "extracted_incident_metal_cap_ff": 608.6740199999998,
+            "connected_drains": 657,
+            "join_geometry_length_um": 199.29,
+            "join_ohm_at25c": 114.54252631578947,
+            "array_ohm_at25c": 583.5905263157894,
+            "rank_score_ohm_ff": 247327.25579686093
+          },
+          {
+            "local_bit_column": 31,
+            "extracted_incident_metal_cap_ff": 604.4637500000046,
+            "connected_drains": 640,
+            "join_geometry_length_um": 197.45,
+            "join_ohm_at25c": 114.03894736842105,
+            "array_ohm_at25c": 583.5905263157894,
+            "rank_score_ohm_ff": 245312.06877302812
+          },
+          {
+            "local_bit_column": 15,
+            "extracted_incident_metal_cap_ff": 597.1138599999991,
+            "connected_drains": 638,
+            "join_geometry_length_um": 153.01,
+            "join_ohm_at25c": 101.87642105263157,
+            "array_ohm_at25c": 583.5905263157894,
+            "rank_score_ohm_ff": 235066.818931648
+          },
+          {
+            "local_bit_column": 16,
+            "extracted_incident_metal_cap_ff": 592.3747999999978,
+            "connected_drains": 614,
+            "join_geometry_length_um": 154.85,
+            "join_ohm_at25c": 102.38,
+            "array_ohm_at25c": 583.5905263157894,
+            "rank_score_ohm_ff": 233499.49267810435
+          },
+          {
+            "local_bit_column": 0,
+            "extracted_incident_metal_cap_ff": 586.1211299999933,
+            "connected_drains": 631,
+            "join_geometry_length_um": 110.59,
+            "join_ohm_at25c": 90.26673684210526,
+            "array_ohm_at25c": 583.5905263157894,
+            "rank_score_ohm_ff": 223934.6111700574
+          }
+        ],
+        "scope": "Ranks all128 columns of this actual selected joined subbank only; fullbank3 C ranking separately provided for320. Other banks are not cap-extracted."
+      },
+      "timeouts": [],
+      "numerical_failures": []
+    }
+  },
+  "prior_candidate_cases": [
+    "r320-v2/typical-60ns-s32/result.json",
+    "r320-v2/ss-60ns-s32/result.json"
+  ],
+  "pilots_separate": [
+    "r320-v1/typical-60ns-s32/result.json: earlier row selection, not required RC-peak near/far sequence"
+  ],
+  "preserved_failures": [
+    "r320-v1/excluded-first-prototype/: stopped initial prototype extra15ohm drain term; excluded",
+    "r320-g2/typical-40ns-s32-failed-pulse/FAILURE.json",
+    "r320-g2/ss-20ns-s32-failed-trapezoidal/FAILURE.json",
+    "r320-g2/ss-20ns-s32-failed-gear/FAILURE.json",
+    "r320-g2/ss-40ns-s32-failed-pulse/FAILURE.json",
+    "r320-g2/ss-20ns-s32-failed-power-probe/FAILURE.json"
+  ],
+  "interleaving_contract": "320rowbanks are stripedlogicalrow=bank+4*localrow. Desired20ns initiation revisits a bank80ns later; ceil(passing protocol interval/20) is conditional slice count. W2b actuallyrequests every3enginecycles but INDEXenable-to-capture is1cycle. No wholebank throughput claim.",
+  "limitations": [
+    "16actual active fullheight columns with geometry-R array and actual extracted joinC/R; other112bitlines ideal legal-state aggressors also drive their physical receiver channels",
+    "All128physical receiver channels and stockbuf4WL/buf20PC; grounded-source/drain dummy MOS approximate omitted selected-row gate/Miller loads",
+    "One2umgroundstrap with ideal endpoints; actual global/VSSreturn supplyR and full simultaneouscurrent unqualified",
+    "Full320lane commonWL/PC globalwireload excluded from primary cases; supplemental sensitivity separate if available",
+    "10fF assumed outputloads; decoder/phasecontroller/latch/mux and global banks unimplemented",
+    "Geometry resistance plus redistributed extracted capacitance is not automatic distributedRPEX; no mismatch/yield qualification",
+    "Energy finite-window net source components, not all internal endpoint charge matched and not fullbank energy"
+  ],
+  "supplemental_fullbank_control_load_sensitivity": [],
+  "fullbank3_column_ranking_source": "fullbank3-ranking.json"
+}

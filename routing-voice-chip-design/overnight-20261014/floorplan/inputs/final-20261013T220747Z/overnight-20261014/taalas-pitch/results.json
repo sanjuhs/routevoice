@@ -1,0 +1,6396 @@
+{
+  "status": "in_progress",
+  "generated_utc": "2026-10-13T22:05:29.737794+00:00",
+  "architecture": "P2 stored-address mask-programmed index branch: four access NMOS per four-bit selection, one pre2/keeper/restoring inverter per bit; downstream shared products excluded",
+  "chosen_option": "A: eight staggered rows; no column multiplexing or additional subphases",
+  "image_shape": [
+    1280,
+    320
+  ],
+  "selections": 409600,
+  "bitcells": 1638400,
+  "layouts": {
+    "64": {
+      "geometry": {
+        "rows": 64,
+        "columns": 320,
+        "selections": 20480,
+        "bits": 81920,
+        "option": "A, eight staggered receiver rows",
+        "top": "PITCH_BANK_R64",
+        "array_origin_um": [
+          10.0,
+          126.0
+        ],
+        "group_pitch_um": 100.0,
+        "receiver_row_pitch_um": 14.4,
+        "receiver_rows": 8,
+        "receiver_cols_per_row_per_group": 16,
+        "receiver_profile": "pre2 2.88/.28 PMOS; keeper .36/.28; inverter .72/.28 P,.36/.28 N",
+        "bounds_um": [
+          0.0,
+          0.04,
+          1004.0,
+          234.21
+        ],
+        "dimensions_um": [
+          1004.0,
+          234.17000000000002
+        ],
+        "area_um2": 235106.68000000002,
+        "um2_per_selection": 11.479818359375,
+        "native_bit_pitch_um": 0.66,
+        "native_group_of16_pitch_um": 11.56,
+        "join_routes_subbank0": [
+          {
+            "bc": 0,
+            "receiver_row": 0,
+            "receiver_origin_um": [
+              10.09,
+              0.0
+            ],
+            "array_x_um": 12.33,
+            "receiver_pin_um": [
+              12.33,
+              2.0
+            ],
+            "join_y_um": 12.5,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 0.0,
+            "metal4_length_um": 112.5,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 1,
+            "receiver_row": 1,
+            "receiver_origin_um": [
+              10.09,
+              14.4
+            ],
+            "array_x_um": 12.99,
+            "receiver_pin_um": [
+              12.33,
+              16.4
+            ],
+            "join_y_um": 26.9,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 0.6600000000000001,
+            "metal4_length_um": 98.1,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 2,
+            "receiver_row": 2,
+            "receiver_origin_um": [
+              10.09,
+              28.8
+            ],
+            "array_x_um": 13.65,
+            "receiver_pin_um": [
+              12.33,
+              30.8
+            ],
+            "join_y_um": 41.3,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 11.999999999999996,
+            "metal3_length_um": 1.3200000000000003,
+            "metal4_length_um": 83.7,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 3,
+            "receiver_row": 3,
+            "receiver_origin_um": [
+              10.09,
+              43.2
+            ],
+            "array_x_um": 14.309999999999999,
+            "receiver_pin_um": [
+              12.33,
+              45.2
+            ],
+            "join_y_um": 55.7,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 1.9799999999999986,
+            "metal4_length_um": 69.3,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 4,
+            "receiver_row": 4,
+            "receiver_origin_um": [
+              10.09,
+              57.6
+            ],
+            "array_x_um": 14.97,
+            "receiver_pin_um": [
+              12.33,
+              59.6
+            ],
+            "join_y_um": 70.1,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 11.999999999999993,
+            "metal3_length_um": 2.6400000000000006,
+            "metal4_length_um": 54.900000000000006,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 5,
+            "receiver_row": 5,
+            "receiver_origin_um": [
+              10.09,
+              72.0
+            ],
+            "array_x_um": 15.63,
+            "receiver_pin_um": [
+              12.33,
+              74.0
+            ],
+            "join_y_um": 84.5,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 3.3000000000000007,
+            "metal4_length_um": 40.5,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 6,
+            "receiver_row": 6,
+            "receiver_origin_um": [
+              10.09,
+              86.4
+            ],
+            "array_x_um": 16.29,
+            "receiver_pin_um": [
+              12.33,
+              88.4
+            ],
+            "join_y_um": 98.9,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 3.959999999999999,
+            "metal4_length_um": 26.099999999999994,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 7,
+            "receiver_row": 7,
+            "receiver_origin_um": [
+              10.09,
+              100.8
+            ],
+            "array_x_um": 16.95,
+            "receiver_pin_um": [
+              12.33,
+              102.8
+            ],
+            "join_y_um": 113.3,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 4.619999999999999,
+            "metal4_length_um": 11.700000000000003,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 8,
+            "receiver_row": 0,
+            "receiver_origin_um": [
+              15.37,
+              0.0
+            ],
+            "array_x_um": 17.61,
+            "receiver_pin_um": [
+              17.61,
+              2.0
+            ],
+            "join_y_um": 12.5,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 0.0,
+            "metal4_length_um": 112.5,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 9,
+            "receiver_row": 1,
+            "receiver_origin_um": [
+              15.37,
+              14.4
+            ],
+            "array_x_um": 18.27,
+            "receiver_pin_um": [
+              17.61,
+              16.4
+            ],
+            "join_y_um": 26.9,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 0.6600000000000001,
+            "metal4_length_um": 98.1,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 10,
+            "receiver_row": 2,
+            "receiver_origin_um": [
+              15.37,
+              28.8
+            ],
+            "array_x_um": 18.93,
+            "receiver_pin_um": [
+              17.61,
+              30.8
+            ],
+            "join_y_um": 41.3,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 11.999999999999996,
+            "metal3_length_um": 1.3200000000000003,
+            "metal4_length_um": 83.7,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 11,
+            "receiver_row": 3,
+            "receiver_origin_um": [
+              15.37,
+              43.2
+            ],
+            "array_x_um": 19.590000000000003,
+            "receiver_pin_um": [
+              17.61,
+              45.2
+            ],
+            "join_y_um": 55.7,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 1.980000000000004,
+            "metal4_length_um": 69.3,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 12,
+            "receiver_row": 4,
+            "receiver_origin_um": [
+              15.37,
+              57.6
+            ],
+            "array_x_um": 20.25,
+            "receiver_pin_um": [
+              17.61,
+              59.6
+            ],
+            "join_y_um": 70.1,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 11.999999999999993,
+            "metal3_length_um": 2.6400000000000006,
+            "metal4_length_um": 54.900000000000006,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 13,
+            "receiver_row": 5,
+            "receiver_origin_um": [
+              15.37,
+              72.0
+            ],
+            "array_x_um": 20.91,
+            "receiver_pin_um": [
+              17.61,
+              74.0
+            ],
+            "join_y_um": 84.5,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 3.3000000000000007,
+            "metal4_length_um": 40.5,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 14,
+            "receiver_row": 6,
+            "receiver_origin_um": [
+              15.37,
+              86.4
+            ],
+            "array_x_um": 21.57,
+            "receiver_pin_um": [
+              17.61,
+              88.4
+            ],
+            "join_y_um": 98.9,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 3.960000000000001,
+            "metal4_length_um": 26.099999999999994,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 15,
+            "receiver_row": 7,
+            "receiver_origin_um": [
+              15.37,
+              100.8
+            ],
+            "array_x_um": 22.23,
+            "receiver_pin_um": [
+              17.61,
+              102.8
+            ],
+            "join_y_um": 113.3,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 4.620000000000001,
+            "metal4_length_um": 11.700000000000003,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 16,
+            "receiver_row": 0,
+            "receiver_origin_um": [
+              21.65,
+              0.0
+            ],
+            "array_x_um": 23.89,
+            "receiver_pin_um": [
+              23.89,
+              2.0
+            ],
+            "join_y_um": 12.5,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 0.0,
+            "metal4_length_um": 112.5,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 17,
+            "receiver_row": 1,
+            "receiver_origin_um": [
+              21.65,
+              14.4
+            ],
+            "array_x_um": 24.55,
+            "receiver_pin_um": [
+              23.89,
+              16.4
+            ],
+            "join_y_um": 26.9,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 0.6600000000000001,
+            "metal4_length_um": 98.1,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 18,
+            "receiver_row": 2,
+            "receiver_origin_um": [
+              21.65,
+              28.8
+            ],
+            "array_x_um": 25.21,
+            "receiver_pin_um": [
+              23.89,
+              30.8
+            ],
+            "join_y_um": 41.3,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 11.999999999999996,
+            "metal3_length_um": 1.3200000000000003,
+            "metal4_length_um": 83.7,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 19,
+            "receiver_row": 3,
+            "receiver_origin_um": [
+              21.65,
+              43.2
+            ],
+            "array_x_um": 25.87,
+            "receiver_pin_um": [
+              23.89,
+              45.2
+            ],
+            "join_y_um": 55.7,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 1.9800000000000004,
+            "metal4_length_um": 69.3,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 20,
+            "receiver_row": 4,
+            "receiver_origin_um": [
+              21.65,
+              57.6
+            ],
+            "array_x_um": 26.529999999999998,
+            "receiver_pin_um": [
+              23.89,
+              59.6
+            ],
+            "join_y_um": 70.1,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 11.999999999999993,
+            "metal3_length_um": 2.639999999999997,
+            "metal4_length_um": 54.900000000000006,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 21,
+            "receiver_row": 5,
+            "receiver_origin_um": [
+              21.65,
+              72.0
+            ],
+            "array_x_um": 27.189999999999998,
+            "receiver_pin_um": [
+              23.89,
+              74.0
+            ],
+            "join_y_um": 84.5,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 3.299999999999997,
+            "metal4_length_um": 40.5,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 22,
+            "receiver_row": 6,
+            "receiver_origin_um": [
+              21.65,
+              86.4
+            ],
+            "array_x_um": 27.849999999999998,
+            "receiver_pin_um": [
+              23.89,
+              88.4
+            ],
+            "join_y_um": 98.9,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 3.9599999999999973,
+            "metal4_length_um": 26.099999999999994,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 23,
+            "receiver_row": 7,
+            "receiver_origin_um": [
+              21.65,
+              100.8
+            ],
+            "array_x_um": 28.509999999999998,
+            "receiver_pin_um": [
+              23.89,
+              102.8
+            ],
+            "join_y_um": 113.3,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 4.619999999999997,
+            "metal4_length_um": 11.700000000000003,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 24,
+            "receiver_row": 0,
+            "receiver_origin_um": [
+              26.93,
+              0.0
+            ],
+            "array_x_um": 29.169999999999998,
+            "receiver_pin_um": [
+              29.17,
+              2.0
+            ],
+            "join_y_um": 12.5,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 3.552713678800501e-15,
+            "metal4_length_um": 112.5,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 25,
+            "receiver_row": 1,
+            "receiver_origin_um": [
+              26.93,
+              14.4
+            ],
+            "array_x_um": 29.83,
+            "receiver_pin_um": [
+              29.17,
+              16.4
+            ],
+            "join_y_um": 26.9,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 0.6599999999999966,
+            "metal4_length_um": 98.1,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 26,
+            "receiver_row": 2,
+            "receiver_origin_um": [
+              26.93,
+              28.8
+            ],
+            "array_x_um": 30.49,
+            "receiver_pin_um": [
+              29.17,
+              30.8
+            ],
+            "join_y_um": 41.3,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 11.999999999999996,
+            "metal3_length_um": 1.3199999999999967,
+            "metal4_length_um": 83.7,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 27,
+            "receiver_row": 3,
+            "receiver_origin_um": [
+              26.93,
+              43.2
+            ],
+            "array_x_um": 31.15,
+            "receiver_pin_um": [
+              29.17,
+              45.2
+            ],
+            "join_y_um": 55.7,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 1.9799999999999969,
+            "metal4_length_um": 69.3,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 28,
+            "receiver_row": 4,
+            "receiver_origin_um": [
+              26.93,
+              57.6
+            ],
+            "array_x_um": 31.81,
+            "receiver_pin_um": [
+              29.17,
+              59.6
+            ],
+            "join_y_um": 70.1,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 11.999999999999993,
+            "metal3_length_um": 2.639999999999997,
+            "metal4_length_um": 54.900000000000006,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 29,
+            "receiver_row": 5,
+            "receiver_origin_um": [
+              26.93,
+              72.0
+            ],
+            "array_x_um": 32.47,
+            "receiver_pin_um": [
+              29.17,
+              74.0
+            ],
+            "join_y_um": 84.5,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 3.299999999999997,
+            "metal4_length_um": 40.5,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 30,
+            "receiver_row": 6,
+            "receiver_origin_um": [
+              26.93,
+              86.4
+            ],
+            "array_x_um": 33.129999999999995,
+            "receiver_pin_um": [
+              29.17,
+              88.4
+            ],
+            "join_y_um": 98.9,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 3.9599999999999937,
+            "metal4_length_um": 26.099999999999994,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 31,
+            "receiver_row": 7,
+            "receiver_origin_um": [
+              26.93,
+              100.8
+            ],
+            "array_x_um": 33.79,
+            "receiver_pin_um": [
+              29.17,
+              102.8
+            ],
+            "join_y_um": 113.3,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 4.619999999999997,
+            "metal4_length_um": 11.700000000000003,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 32,
+            "receiver_row": 0,
+            "receiver_origin_um": [
+              33.21,
+              0.0
+            ],
+            "array_x_um": 35.45,
+            "receiver_pin_um": [
+              35.45,
+              2.0
+            ],
+            "join_y_um": 12.5,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 0.0,
+            "metal4_length_um": 112.5,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 33,
+            "receiver_row": 1,
+            "receiver_origin_um": [
+              33.21,
+              14.4
+            ],
+            "array_x_um": 36.11,
+            "receiver_pin_um": [
+              35.45,
+              16.4
+            ],
+            "join_y_um": 26.9,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 0.6599999999999966,
+            "metal4_length_um": 98.1,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 34,
+            "receiver_row": 2,
+            "receiver_origin_um": [
+              33.21,
+              28.8
+            ],
+            "array_x_um": 36.769999999999996,
+            "receiver_pin_um": [
+              35.45,
+              30.8
+            ],
+            "join_y_um": 41.3,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 11.999999999999996,
+            "metal3_length_um": 1.3199999999999932,
+            "metal4_length_um": 83.7,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 35,
+            "receiver_row": 3,
+            "receiver_origin_um": [
+              33.21,
+              43.2
+            ],
+            "array_x_um": 37.43,
+            "receiver_pin_um": [
+              35.45,
+              45.2
+            ],
+            "join_y_um": 55.7,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 1.9799999999999969,
+            "metal4_length_um": 69.3,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 36,
+            "receiver_row": 4,
+            "receiver_origin_um": [
+              33.21,
+              57.6
+            ],
+            "array_x_um": 38.09,
+            "receiver_pin_um": [
+              35.45,
+              59.6
+            ],
+            "join_y_um": 70.1,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 11.999999999999993,
+            "metal3_length_um": 2.6400000000000006,
+            "metal4_length_um": 54.900000000000006,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 37,
+            "receiver_row": 5,
+            "receiver_origin_um": [
+              33.21,
+              72.0
+            ],
+            "array_x_um": 38.75,
+            "receiver_pin_um": [
+              35.45,
+              74.0
+            ],
+            "join_y_um": 84.5,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 3.299999999999997,
+            "metal4_length_um": 40.5,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 38,
+            "receiver_row": 6,
+            "receiver_origin_um": [
+              33.21,
+              86.4
+            ],
+            "array_x_um": 39.41,
+            "receiver_pin_um": [
+              35.45,
+              88.4
+            ],
+            "join_y_um": 98.9,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 3.9599999999999937,
+            "metal4_length_um": 26.099999999999994,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 39,
+            "receiver_row": 7,
+            "receiver_origin_um": [
+              33.21,
+              100.8
+            ],
+            "array_x_um": 40.07,
+            "receiver_pin_um": [
+              35.45,
+              102.8
+            ],
+            "join_y_um": 113.3,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 4.619999999999997,
+            "metal4_length_um": 11.700000000000003,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 40,
+            "receiver_row": 0,
+            "receiver_origin_um": [
+              38.49,
+              0.0
+            ],
+            "array_x_um": 40.730000000000004,
+            "receiver_pin_um": [
+              40.730000000000004,
+              2.0
+            ],
+            "join_y_um": 12.5,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 0.0,
+            "metal4_length_um": 112.5,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 41,
+            "receiver_row": 1,
+            "receiver_origin_um": [
+              38.49,
+              14.4
+            ],
+            "array_x_um": 41.39,
+            "receiver_pin_um": [
+              40.730000000000004,
+              16.4
+            ],
+            "join_y_um": 26.9,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 0.6599999999999966,
+            "metal4_length_um": 98.1,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 42,
+            "receiver_row": 2,
+            "receiver_origin_um": [
+              38.49,
+              28.8
+            ],
+            "array_x_um": 42.050000000000004,
+            "receiver_pin_um": [
+              40.730000000000004,
+              30.8
+            ],
+            "join_y_um": 41.3,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 11.999999999999996,
+            "metal3_length_um": 1.3200000000000003,
+            "metal4_length_um": 83.7,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 43,
+            "receiver_row": 3,
+            "receiver_origin_um": [
+              38.49,
+              43.2
+            ],
+            "array_x_um": 42.71,
+            "receiver_pin_um": [
+              40.730000000000004,
+              45.2
+            ],
+            "join_y_um": 55.7,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 1.9799999999999969,
+            "metal4_length_um": 69.3,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 44,
+            "receiver_row": 4,
+            "receiver_origin_um": [
+              38.49,
+              57.6
+            ],
+            "array_x_um": 43.37,
+            "receiver_pin_um": [
+              40.730000000000004,
+              59.6
+            ],
+            "join_y_um": 70.1,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 11.999999999999993,
+            "metal3_length_um": 2.6399999999999935,
+            "metal4_length_um": 54.900000000000006,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 45,
+            "receiver_row": 5,
+            "receiver_origin_um": [
+              38.49,
+              72.0
+            ],
+            "array_x_um": 44.03,
+            "receiver_pin_um": [
+              40.730000000000004,
+              74.0
+            ],
+            "join_y_um": 84.5,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 3.299999999999997,
+            "metal4_length_um": 40.5,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 46,
+            "receiver_row": 6,
+            "receiver_origin_um": [
+              38.49,
+              86.4
+            ],
+            "array_x_um": 44.69,
+            "receiver_pin_um": [
+              40.730000000000004,
+              88.4
+            ],
+            "join_y_um": 98.9,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 3.9599999999999937,
+            "metal4_length_um": 26.099999999999994,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 47,
+            "receiver_row": 7,
+            "receiver_origin_um": [
+              38.49,
+              100.8
+            ],
+            "array_x_um": 45.35,
+            "receiver_pin_um": [
+              40.730000000000004,
+              102.8
+            ],
+            "join_y_um": 113.3,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 4.619999999999997,
+            "metal4_length_um": 11.700000000000003,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 48,
+            "receiver_row": 0,
+            "receiver_origin_um": [
+              44.769999999999996,
+              0.0
+            ],
+            "array_x_um": 47.01,
+            "receiver_pin_um": [
+              47.01,
+              2.0
+            ],
+            "join_y_um": 12.5,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 0.0,
+            "metal4_length_um": 112.5,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 49,
+            "receiver_row": 1,
+            "receiver_origin_um": [
+              44.769999999999996,
+              14.4
+            ],
+            "array_x_um": 47.669999999999995,
+            "receiver_pin_um": [
+              47.01,
+              16.4
+            ],
+            "join_y_um": 26.9,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 0.6599999999999966,
+            "metal4_length_um": 98.1,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 50,
+            "receiver_row": 2,
+            "receiver_origin_um": [
+              44.769999999999996,
+              28.8
+            ],
+            "array_x_um": 48.33,
+            "receiver_pin_um": [
+              47.01,
+              30.8
+            ],
+            "join_y_um": 41.3,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 11.999999999999996,
+            "metal3_length_um": 1.3200000000000003,
+            "metal4_length_um": 83.7,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 51,
+            "receiver_row": 3,
+            "receiver_origin_um": [
+              44.769999999999996,
+              43.2
+            ],
+            "array_x_um": 48.989999999999995,
+            "receiver_pin_um": [
+              47.01,
+              45.2
+            ],
+            "join_y_um": 55.7,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 1.9799999999999969,
+            "metal4_length_um": 69.3,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 52,
+            "receiver_row": 4,
+            "receiver_origin_um": [
+              44.769999999999996,
+              57.6
+            ],
+            "array_x_um": 49.65,
+            "receiver_pin_um": [
+              47.01,
+              59.6
+            ],
+            "join_y_um": 70.1,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 11.999999999999993,
+            "metal3_length_um": 2.6400000000000006,
+            "metal4_length_um": 54.900000000000006,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 53,
+            "receiver_row": 5,
+            "receiver_origin_um": [
+              44.769999999999996,
+              72.0
+            ],
+            "array_x_um": 50.309999999999995,
+            "receiver_pin_um": [
+              47.01,
+              74.0
+            ],
+            "join_y_um": 84.5,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 3.299999999999997,
+            "metal4_length_um": 40.5,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 54,
+            "receiver_row": 6,
+            "receiver_origin_um": [
+              44.769999999999996,
+              86.4
+            ],
+            "array_x_um": 50.97,
+            "receiver_pin_um": [
+              47.01,
+              88.4
+            ],
+            "join_y_um": 98.9,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 3.960000000000001,
+            "metal4_length_um": 26.099999999999994,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 55,
+            "receiver_row": 7,
+            "receiver_origin_um": [
+              44.769999999999996,
+              100.8
+            ],
+            "array_x_um": 51.629999999999995,
+            "receiver_pin_um": [
+              47.01,
+              102.8
+            ],
+            "join_y_um": 113.3,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 4.619999999999997,
+            "metal4_length_um": 11.700000000000003,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 56,
+            "receiver_row": 0,
+            "receiver_origin_um": [
+              50.05,
+              0.0
+            ],
+            "array_x_um": 52.29,
+            "receiver_pin_um": [
+              52.29,
+              2.0
+            ],
+            "join_y_um": 12.5,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 0.0,
+            "metal4_length_um": 112.5,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 57,
+            "receiver_row": 1,
+            "receiver_origin_um": [
+              50.05,
+              14.4
+            ],
+            "array_x_um": 52.949999999999996,
+            "receiver_pin_um": [
+              52.29,
+              16.4
+            ],
+            "join_y_um": 26.9,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 0.6599999999999966,
+            "metal4_length_um": 98.1,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 58,
+            "receiver_row": 2,
+            "receiver_origin_um": [
+              50.05,
+              28.8
+            ],
+            "array_x_um": 53.61,
+            "receiver_pin_um": [
+              52.29,
+              30.8
+            ],
+            "join_y_um": 41.3,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 11.999999999999996,
+            "metal3_length_um": 1.3200000000000003,
+            "metal4_length_um": 83.7,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 59,
+            "receiver_row": 3,
+            "receiver_origin_um": [
+              50.05,
+              43.2
+            ],
+            "array_x_um": 54.269999999999996,
+            "receiver_pin_um": [
+              52.29,
+              45.2
+            ],
+            "join_y_um": 55.7,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 1.9799999999999969,
+            "metal4_length_um": 69.3,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 60,
+            "receiver_row": 4,
+            "receiver_origin_um": [
+              50.05,
+              57.6
+            ],
+            "array_x_um": 54.93,
+            "receiver_pin_um": [
+              52.29,
+              59.6
+            ],
+            "join_y_um": 70.1,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 11.999999999999993,
+            "metal3_length_um": 2.6400000000000006,
+            "metal4_length_um": 54.900000000000006,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 61,
+            "receiver_row": 5,
+            "receiver_origin_um": [
+              50.05,
+              72.0
+            ],
+            "array_x_um": 55.589999999999996,
+            "receiver_pin_um": [
+              52.29,
+              74.0
+            ],
+            "join_y_um": 84.5,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 3.299999999999997,
+            "metal4_length_um": 40.5,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 62,
+            "receiver_row": 6,
+            "receiver_origin_um": [
+              50.05,
+              86.4
+            ],
+            "array_x_um": 56.25,
+            "receiver_pin_um": [
+              52.29,
+              88.4
+            ],
+            "join_y_um": 98.9,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 3.960000000000001,
+            "metal4_length_um": 26.099999999999994,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 63,
+            "receiver_row": 7,
+            "receiver_origin_um": [
+              50.05,
+              100.8
+            ],
+            "array_x_um": 56.91,
+            "receiver_pin_um": [
+              52.29,
+              102.8
+            ],
+            "join_y_um": 113.3,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 4.619999999999997,
+            "metal4_length_um": 11.700000000000003,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 64,
+            "receiver_row": 0,
+            "receiver_origin_um": [
+              56.33,
+              0.0
+            ],
+            "array_x_um": 58.57,
+            "receiver_pin_um": [
+              58.57,
+              2.0
+            ],
+            "join_y_um": 12.5,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 0.0,
+            "metal4_length_um": 112.5,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 65,
+            "receiver_row": 1,
+            "receiver_origin_um": [
+              56.33,
+              14.4
+            ],
+            "array_x_um": 59.23,
+            "receiver_pin_um": [
+              58.57,
+              16.4
+            ],
+            "join_y_um": 26.9,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 0.6599999999999966,
+            "metal4_length_um": 98.1,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 66,
+            "receiver_row": 2,
+            "receiver_origin_um": [
+              56.33,
+              28.8
+            ],
+            "array_x_um": 59.89,
+            "receiver_pin_um": [
+              58.57,
+              30.8
+            ],
+            "join_y_um": 41.3,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 11.999999999999996,
+            "metal3_length_um": 1.3200000000000003,
+            "metal4_length_um": 83.7,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 67,
+            "receiver_row": 3,
+            "receiver_origin_um": [
+              56.33,
+              43.2
+            ],
+            "array_x_um": 60.55,
+            "receiver_pin_um": [
+              58.57,
+              45.2
+            ],
+            "join_y_um": 55.7,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 1.9799999999999969,
+            "metal4_length_um": 69.3,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 68,
+            "receiver_row": 4,
+            "receiver_origin_um": [
+              56.33,
+              57.6
+            ],
+            "array_x_um": 61.21,
+            "receiver_pin_um": [
+              58.57,
+              59.6
+            ],
+            "join_y_um": 70.1,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 11.999999999999993,
+            "metal3_length_um": 2.6400000000000006,
+            "metal4_length_um": 54.900000000000006,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 69,
+            "receiver_row": 5,
+            "receiver_origin_um": [
+              56.33,
+              72.0
+            ],
+            "array_x_um": 61.87,
+            "receiver_pin_um": [
+              58.57,
+              74.0
+            ],
+            "join_y_um": 84.5,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 3.299999999999997,
+            "metal4_length_um": 40.5,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 70,
+            "receiver_row": 6,
+            "receiver_origin_um": [
+              56.33,
+              86.4
+            ],
+            "array_x_um": 62.53,
+            "receiver_pin_um": [
+              58.57,
+              88.4
+            ],
+            "join_y_um": 98.9,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 3.960000000000001,
+            "metal4_length_um": 26.099999999999994,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 71,
+            "receiver_row": 7,
+            "receiver_origin_um": [
+              56.33,
+              100.8
+            ],
+            "array_x_um": 63.19,
+            "receiver_pin_um": [
+              58.57,
+              102.8
+            ],
+            "join_y_um": 113.3,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 4.619999999999997,
+            "metal4_length_um": 11.700000000000003,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 72,
+            "receiver_row": 0,
+            "receiver_origin_um": [
+              61.61,
+              0.0
+            ],
+            "array_x_um": 63.85,
+            "receiver_pin_um": [
+              63.85,
+              2.0
+            ],
+            "join_y_um": 12.5,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 0.0,
+            "metal4_length_um": 112.5,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 73,
+            "receiver_row": 1,
+            "receiver_origin_um": [
+              61.61,
+              14.4
+            ],
+            "array_x_um": 64.50999999999999,
+            "receiver_pin_um": [
+              63.85,
+              16.4
+            ],
+            "join_y_um": 26.9,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 0.6599999999999895,
+            "metal4_length_um": 98.1,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 74,
+            "receiver_row": 2,
+            "receiver_origin_um": [
+              61.61,
+              28.8
+            ],
+            "array_x_um": 65.17,
+            "receiver_pin_um": [
+              63.85,
+              30.8
+            ],
+            "join_y_um": 41.3,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 11.999999999999996,
+            "metal3_length_um": 1.3200000000000003,
+            "metal4_length_um": 83.7,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 75,
+            "receiver_row": 3,
+            "receiver_origin_um": [
+              61.61,
+              43.2
+            ],
+            "array_x_um": 65.83,
+            "receiver_pin_um": [
+              63.85,
+              45.2
+            ],
+            "join_y_um": 55.7,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 1.9799999999999969,
+            "metal4_length_um": 69.3,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 76,
+            "receiver_row": 4,
+            "receiver_origin_um": [
+              61.61,
+              57.6
+            ],
+            "array_x_um": 66.49000000000001,
+            "receiver_pin_um": [
+              63.85,
+              59.6
+            ],
+            "join_y_um": 70.1,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 11.999999999999993,
+            "metal3_length_um": 2.6400000000000077,
+            "metal4_length_um": 54.900000000000006,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 77,
+            "receiver_row": 5,
+            "receiver_origin_um": [
+              61.61,
+              72.0
+            ],
+            "array_x_um": 67.15,
+            "receiver_pin_um": [
+              63.85,
+              74.0
+            ],
+            "join_y_um": 84.5,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 3.3000000000000043,
+            "metal4_length_um": 40.5,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 78,
+            "receiver_row": 6,
+            "receiver_origin_um": [
+              61.61,
+              86.4
+            ],
+            "array_x_um": 67.81,
+            "receiver_pin_um": [
+              63.85,
+              88.4
+            ],
+            "join_y_um": 98.9,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 3.960000000000001,
+            "metal4_length_um": 26.099999999999994,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 79,
+            "receiver_row": 7,
+            "receiver_origin_um": [
+              61.61,
+              100.8
+            ],
+            "array_x_um": 68.47,
+            "receiver_pin_um": [
+              63.85,
+              102.8
+            ],
+            "join_y_um": 113.3,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 4.619999999999997,
+            "metal4_length_um": 11.700000000000003,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 80,
+            "receiver_row": 0,
+            "receiver_origin_um": [
+              67.89,
+              0.0
+            ],
+            "array_x_um": 70.13,
+            "receiver_pin_um": [
+              70.13,
+              2.0
+            ],
+            "join_y_um": 12.5,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 0.0,
+            "metal4_length_um": 112.5,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 81,
+            "receiver_row": 1,
+            "receiver_origin_um": [
+              67.89,
+              14.4
+            ],
+            "array_x_um": 70.78999999999999,
+            "receiver_pin_um": [
+              70.13,
+              16.4
+            ],
+            "join_y_um": 26.9,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 0.6599999999999966,
+            "metal4_length_um": 98.1,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 82,
+            "receiver_row": 2,
+            "receiver_origin_um": [
+              67.89,
+              28.8
+            ],
+            "array_x_um": 71.45,
+            "receiver_pin_um": [
+              70.13,
+              30.8
+            ],
+            "join_y_um": 41.3,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 11.999999999999996,
+            "metal3_length_um": 1.3200000000000074,
+            "metal4_length_um": 83.7,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 83,
+            "receiver_row": 3,
+            "receiver_origin_um": [
+              67.89,
+              43.2
+            ],
+            "array_x_um": 72.11,
+            "receiver_pin_um": [
+              70.13,
+              45.2
+            ],
+            "join_y_um": 55.7,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 1.980000000000004,
+            "metal4_length_um": 69.3,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 84,
+            "receiver_row": 4,
+            "receiver_origin_um": [
+              67.89,
+              57.6
+            ],
+            "array_x_um": 72.77000000000001,
+            "receiver_pin_um": [
+              70.13,
+              59.6
+            ],
+            "join_y_um": 70.1,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 11.999999999999993,
+            "metal3_length_um": 2.640000000000015,
+            "metal4_length_um": 54.900000000000006,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 85,
+            "receiver_row": 5,
+            "receiver_origin_um": [
+              67.89,
+              72.0
+            ],
+            "array_x_um": 73.43,
+            "receiver_pin_um": [
+              70.13,
+              74.0
+            ],
+            "join_y_um": 84.5,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 3.3000000000000114,
+            "metal4_length_um": 40.5,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 86,
+            "receiver_row": 6,
+            "receiver_origin_um": [
+              67.89,
+              86.4
+            ],
+            "array_x_um": 74.09,
+            "receiver_pin_um": [
+              70.13,
+              88.4
+            ],
+            "join_y_um": 98.9,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 3.960000000000008,
+            "metal4_length_um": 26.099999999999994,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 87,
+            "receiver_row": 7,
+            "receiver_origin_um": [
+              67.89,
+              100.8
+            ],
+            "array_x_um": 74.75,
+            "receiver_pin_um": [
+              70.13,
+              102.8
+            ],
+            "join_y_um": 113.3,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 4.6200000000000045,
+            "metal4_length_um": 11.700000000000003,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 88,
+            "receiver_row": 0,
+            "receiver_origin_um": [
+              73.17,
+              0.0
+            ],
+            "array_x_um": 75.41,
+            "receiver_pin_um": [
+              75.41,
+              2.0
+            ],
+            "join_y_um": 12.5,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 0.0,
+            "metal4_length_um": 112.5,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 89,
+            "receiver_row": 1,
+            "receiver_origin_um": [
+              73.17,
+              14.4
+            ],
+            "array_x_um": 76.07000000000001,
+            "receiver_pin_um": [
+              75.41,
+              16.4
+            ],
+            "join_y_um": 26.9,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 0.6600000000000108,
+            "metal4_length_um": 98.1,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 90,
+            "receiver_row": 2,
+            "receiver_origin_um": [
+              73.17,
+              28.8
+            ],
+            "array_x_um": 76.73,
+            "receiver_pin_um": [
+              75.41,
+              30.8
+            ],
+            "join_y_um": 41.3,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 11.999999999999996,
+            "metal3_length_um": 1.3200000000000074,
+            "metal4_length_um": 83.7,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 91,
+            "receiver_row": 3,
+            "receiver_origin_um": [
+              73.17,
+              43.2
+            ],
+            "array_x_um": 77.39,
+            "receiver_pin_um": [
+              75.41,
+              45.2
+            ],
+            "join_y_um": 55.7,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 1.980000000000004,
+            "metal4_length_um": 69.3,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 92,
+            "receiver_row": 4,
+            "receiver_origin_um": [
+              73.17,
+              57.6
+            ],
+            "array_x_um": 78.05,
+            "receiver_pin_um": [
+              75.41,
+              59.6
+            ],
+            "join_y_um": 70.1,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 11.999999999999993,
+            "metal3_length_um": 2.6400000000000006,
+            "metal4_length_um": 54.900000000000006,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 93,
+            "receiver_row": 5,
+            "receiver_origin_um": [
+              73.17,
+              72.0
+            ],
+            "array_x_um": 78.71000000000001,
+            "receiver_pin_um": [
+              75.41,
+              74.0
+            ],
+            "join_y_um": 84.5,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 3.3000000000000114,
+            "metal4_length_um": 40.5,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 94,
+            "receiver_row": 6,
+            "receiver_origin_um": [
+              73.17,
+              86.4
+            ],
+            "array_x_um": 79.37,
+            "receiver_pin_um": [
+              75.41,
+              88.4
+            ],
+            "join_y_um": 98.9,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 3.960000000000008,
+            "metal4_length_um": 26.099999999999994,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 95,
+            "receiver_row": 7,
+            "receiver_origin_um": [
+              73.17,
+              100.8
+            ],
+            "array_x_um": 80.03,
+            "receiver_pin_um": [
+              75.41,
+              102.8
+            ],
+            "join_y_um": 113.3,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 4.6200000000000045,
+            "metal4_length_um": 11.700000000000003,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 96,
+            "receiver_row": 0,
+            "receiver_origin_um": [
+              79.45,
+              0.0
+            ],
+            "array_x_um": 81.69,
+            "receiver_pin_um": [
+              81.69,
+              2.0
+            ],
+            "join_y_um": 12.5,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 0.0,
+            "metal4_length_um": 112.5,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 97,
+            "receiver_row": 1,
+            "receiver_origin_um": [
+              79.45,
+              14.4
+            ],
+            "array_x_um": 82.35,
+            "receiver_pin_um": [
+              81.69,
+              16.4
+            ],
+            "join_y_um": 26.9,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 0.6599999999999966,
+            "metal4_length_um": 98.1,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 98,
+            "receiver_row": 2,
+            "receiver_origin_um": [
+              79.45,
+              28.8
+            ],
+            "array_x_um": 83.00999999999999,
+            "receiver_pin_um": [
+              81.69,
+              30.8
+            ],
+            "join_y_um": 41.3,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 11.999999999999996,
+            "metal3_length_um": 1.3199999999999932,
+            "metal4_length_um": 83.7,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 99,
+            "receiver_row": 3,
+            "receiver_origin_um": [
+              79.45,
+              43.2
+            ],
+            "array_x_um": 83.67,
+            "receiver_pin_um": [
+              81.69,
+              45.2
+            ],
+            "join_y_um": 55.7,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 1.980000000000004,
+            "metal4_length_um": 69.3,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 100,
+            "receiver_row": 4,
+            "receiver_origin_um": [
+              79.45,
+              57.6
+            ],
+            "array_x_um": 84.33,
+            "receiver_pin_um": [
+              81.69,
+              59.6
+            ],
+            "join_y_um": 70.1,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 11.999999999999993,
+            "metal3_length_um": 2.6400000000000006,
+            "metal4_length_um": 54.900000000000006,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 101,
+            "receiver_row": 5,
+            "receiver_origin_um": [
+              79.45,
+              72.0
+            ],
+            "array_x_um": 84.99,
+            "receiver_pin_um": [
+              81.69,
+              74.0
+            ],
+            "join_y_um": 84.5,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 3.299999999999997,
+            "metal4_length_um": 40.5,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 102,
+            "receiver_row": 6,
+            "receiver_origin_um": [
+              79.45,
+              86.4
+            ],
+            "array_x_um": 85.64999999999999,
+            "receiver_pin_um": [
+              81.69,
+              88.4
+            ],
+            "join_y_um": 98.9,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 3.9599999999999937,
+            "metal4_length_um": 26.099999999999994,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 103,
+            "receiver_row": 7,
+            "receiver_origin_um": [
+              79.45,
+              100.8
+            ],
+            "array_x_um": 86.31,
+            "receiver_pin_um": [
+              81.69,
+              102.8
+            ],
+            "join_y_um": 113.3,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 4.6200000000000045,
+            "metal4_length_um": 11.700000000000003,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 104,
+            "receiver_row": 0,
+            "receiver_origin_um": [
+              84.73,
+              0.0
+            ],
+            "array_x_um": 86.97,
+            "receiver_pin_um": [
+              86.97,
+              2.0
+            ],
+            "join_y_um": 12.5,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 0.0,
+            "metal4_length_um": 112.5,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 105,
+            "receiver_row": 1,
+            "receiver_origin_um": [
+              84.73,
+              14.4
+            ],
+            "array_x_um": 87.63,
+            "receiver_pin_um": [
+              86.97,
+              16.4
+            ],
+            "join_y_um": 26.9,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 0.6599999999999966,
+            "metal4_length_um": 98.1,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 106,
+            "receiver_row": 2,
+            "receiver_origin_um": [
+              84.73,
+              28.8
+            ],
+            "array_x_um": 88.28999999999999,
+            "receiver_pin_um": [
+              86.97,
+              30.8
+            ],
+            "join_y_um": 41.3,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 11.999999999999996,
+            "metal3_length_um": 1.3199999999999932,
+            "metal4_length_um": 83.7,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 107,
+            "receiver_row": 3,
+            "receiver_origin_um": [
+              84.73,
+              43.2
+            ],
+            "array_x_um": 88.95,
+            "receiver_pin_um": [
+              86.97,
+              45.2
+            ],
+            "join_y_um": 55.7,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 1.980000000000004,
+            "metal4_length_um": 69.3,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 108,
+            "receiver_row": 4,
+            "receiver_origin_um": [
+              84.73,
+              57.6
+            ],
+            "array_x_um": 89.61,
+            "receiver_pin_um": [
+              86.97,
+              59.6
+            ],
+            "join_y_um": 70.1,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 11.999999999999993,
+            "metal3_length_um": 2.6400000000000006,
+            "metal4_length_um": 54.900000000000006,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 109,
+            "receiver_row": 5,
+            "receiver_origin_um": [
+              84.73,
+              72.0
+            ],
+            "array_x_um": 90.27,
+            "receiver_pin_um": [
+              86.97,
+              74.0
+            ],
+            "join_y_um": 84.5,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 3.299999999999997,
+            "metal4_length_um": 40.5,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 110,
+            "receiver_row": 6,
+            "receiver_origin_um": [
+              84.73,
+              86.4
+            ],
+            "array_x_um": 90.92999999999999,
+            "receiver_pin_um": [
+              86.97,
+              88.4
+            ],
+            "join_y_um": 98.9,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 3.9599999999999937,
+            "metal4_length_um": 26.099999999999994,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 111,
+            "receiver_row": 7,
+            "receiver_origin_um": [
+              84.73,
+              100.8
+            ],
+            "array_x_um": 91.59,
+            "receiver_pin_um": [
+              86.97,
+              102.8
+            ],
+            "join_y_um": 113.3,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 4.6200000000000045,
+            "metal4_length_um": 11.700000000000003,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 112,
+            "receiver_row": 0,
+            "receiver_origin_um": [
+              91.01,
+              0.0
+            ],
+            "array_x_um": 93.25,
+            "receiver_pin_um": [
+              93.25,
+              2.0
+            ],
+            "join_y_um": 12.5,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 0.0,
+            "metal4_length_um": 112.5,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 113,
+            "receiver_row": 1,
+            "receiver_origin_um": [
+              91.01,
+              14.4
+            ],
+            "array_x_um": 93.91,
+            "receiver_pin_um": [
+              93.25,
+              16.4
+            ],
+            "join_y_um": 26.9,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 0.6599999999999966,
+            "metal4_length_um": 98.1,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 114,
+            "receiver_row": 2,
+            "receiver_origin_um": [
+              91.01,
+              28.8
+            ],
+            "array_x_um": 94.57,
+            "receiver_pin_um": [
+              93.25,
+              30.8
+            ],
+            "join_y_um": 41.3,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 11.999999999999996,
+            "metal3_length_um": 1.3199999999999932,
+            "metal4_length_um": 83.7,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 115,
+            "receiver_row": 3,
+            "receiver_origin_um": [
+              91.01,
+              43.2
+            ],
+            "array_x_um": 95.23,
+            "receiver_pin_um": [
+              93.25,
+              45.2
+            ],
+            "join_y_um": 55.7,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 1.980000000000004,
+            "metal4_length_um": 69.3,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 116,
+            "receiver_row": 4,
+            "receiver_origin_um": [
+              91.01,
+              57.6
+            ],
+            "array_x_um": 95.89,
+            "receiver_pin_um": [
+              93.25,
+              59.6
+            ],
+            "join_y_um": 70.1,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 11.999999999999993,
+            "metal3_length_um": 2.6400000000000006,
+            "metal4_length_um": 54.900000000000006,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 117,
+            "receiver_row": 5,
+            "receiver_origin_um": [
+              91.01,
+              72.0
+            ],
+            "array_x_um": 96.55,
+            "receiver_pin_um": [
+              93.25,
+              74.0
+            ],
+            "join_y_um": 84.5,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 3.299999999999997,
+            "metal4_length_um": 40.5,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 118,
+            "receiver_row": 6,
+            "receiver_origin_um": [
+              91.01,
+              86.4
+            ],
+            "array_x_um": 97.21,
+            "receiver_pin_um": [
+              93.25,
+              88.4
+            ],
+            "join_y_um": 98.9,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 3.9599999999999937,
+            "metal4_length_um": 26.099999999999994,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 119,
+            "receiver_row": 7,
+            "receiver_origin_um": [
+              91.01,
+              100.8
+            ],
+            "array_x_um": 97.87,
+            "receiver_pin_um": [
+              93.25,
+              102.8
+            ],
+            "join_y_um": 113.3,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 4.6200000000000045,
+            "metal4_length_um": 11.700000000000003,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 120,
+            "receiver_row": 0,
+            "receiver_origin_um": [
+              96.29,
+              0.0
+            ],
+            "array_x_um": 98.53,
+            "receiver_pin_um": [
+              98.53,
+              2.0
+            ],
+            "join_y_um": 12.5,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 0.0,
+            "metal4_length_um": 112.5,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 121,
+            "receiver_row": 1,
+            "receiver_origin_um": [
+              96.29,
+              14.4
+            ],
+            "array_x_um": 99.19,
+            "receiver_pin_um": [
+              98.53,
+              16.4
+            ],
+            "join_y_um": 26.9,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 0.6599999999999966,
+            "metal4_length_um": 98.1,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 122,
+            "receiver_row": 2,
+            "receiver_origin_um": [
+              96.29,
+              28.8
+            ],
+            "array_x_um": 99.85,
+            "receiver_pin_um": [
+              98.53,
+              30.8
+            ],
+            "join_y_um": 41.3,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 11.999999999999996,
+            "metal3_length_um": 1.3199999999999932,
+            "metal4_length_um": 83.7,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 123,
+            "receiver_row": 3,
+            "receiver_origin_um": [
+              96.29,
+              43.2
+            ],
+            "array_x_um": 100.51,
+            "receiver_pin_um": [
+              98.53,
+              45.2
+            ],
+            "join_y_um": 55.7,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 1.980000000000004,
+            "metal4_length_um": 69.3,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 124,
+            "receiver_row": 4,
+            "receiver_origin_um": [
+              96.29,
+              57.6
+            ],
+            "array_x_um": 101.17,
+            "receiver_pin_um": [
+              98.53,
+              59.6
+            ],
+            "join_y_um": 70.1,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 11.999999999999993,
+            "metal3_length_um": 2.6400000000000006,
+            "metal4_length_um": 54.900000000000006,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 125,
+            "receiver_row": 5,
+            "receiver_origin_um": [
+              96.29,
+              72.0
+            ],
+            "array_x_um": 101.83,
+            "receiver_pin_um": [
+              98.53,
+              74.0
+            ],
+            "join_y_um": 84.5,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 3.299999999999997,
+            "metal4_length_um": 40.5,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 126,
+            "receiver_row": 6,
+            "receiver_origin_um": [
+              96.29,
+              86.4
+            ],
+            "array_x_um": 102.49,
+            "receiver_pin_um": [
+              98.53,
+              88.4
+            ],
+            "join_y_um": 98.9,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 3.9599999999999937,
+            "metal4_length_um": 26.099999999999994,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 127,
+            "receiver_row": 7,
+            "receiver_origin_um": [
+              96.29,
+              100.8
+            ],
+            "array_x_um": 103.15,
+            "receiver_pin_um": [
+              98.53,
+              102.8
+            ],
+            "join_y_um": 113.3,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 4.6200000000000045,
+            "metal4_length_um": 11.700000000000003,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          }
+        ],
+        "array_end_y_um": 108.21,
+        "exclusions": [
+          "physical WL/PC drivers and decoder",
+          "phase controller",
+          "output latch and escape routing",
+          "global PDN IR/EM",
+          "shared products, lookup, accumulators"
+        ],
+        "source_sha256": {
+          "experiments/taalas-access/mask-index-tall/generate_layout.py": "986ab78d8b9dc9f995306df91e32fc41524dbd4c901524158e7bfc157bd779ce",
+          "experiments/taalas-access/mask-index-tall/receiver-pre2/generate_layout.py": "8e93b5b419aae397a37e5db930d67d443f075c62b44f609ee5db733c36d08194",
+          "overnight-20261014/taalas-array/indices.npy": "13e9b6b069007c2bc1b4cc92792a0f70be019b20c0e131ca4fb564f6f2cca85f"
+        },
+        "gds_sha256": "a94a98e936a59619f7009a2a55354cc4498b442f0d348aa474ea96589b1f7f73"
+      },
+      "selected_drc": {
+        "drc_markers": 0,
+        "categories": {},
+        "scope": "selected GF180 FEOL BEOL connectivity off-grid; density and antenna excluded",
+        "gds_sha256": "a94a98e936a59619f7009a2a55354cc4498b442f0d348aa474ea96589b1f7f73",
+        "top": "PITCH_BANK_R64"
+      },
+      "readback": {
+        "compared_indices": 20480,
+        "compared_bits": 81920,
+        "mismatches": 0,
+        "recovered_sha256": "1d7fbf9a572a3badf897966a5432c0338400f474e7156f96241772e3a79ec8fb",
+        "method": "reopened GDS programmed Via1 centers at exact device drain positions, not mask input replay"
+      },
+      "lvs": {
+        "returncode": 0,
+        "status": "finished",
+        "elapsed_seconds": 3.8187808338552713,
+        "unique_match": true,
+        "property_errors": false,
+        "input": {
+          "gds": "overnight-20261014/taalas-pitch/r64-v2/bank.gds",
+          "gds_sha256": "a94a98e936a59619f7009a2a55354cc4498b442f0d348aa474ea96589b1f7f73",
+          "top": "PITCH_BANK_R64",
+          "rows": 64,
+          "pc_width_um": 2.88,
+          "row_mapping": "logical_row=0+1*local_row"
+        },
+        "pass": true
+      },
+      "negative": {
+        "returncode": 0,
+        "status": "finished",
+        "elapsed_seconds": 3.4663046670611948,
+        "unique_match": true,
+        "property_errors": true,
+        "input": {
+          "gds": "overnight-20261014/taalas-pitch/r64-v2/bank.gds",
+          "gds_sha256": "a94a98e936a59619f7009a2a55354cc4498b442f0d348aa474ea96589b1f7f73",
+          "top": "PITCH_BANK_R64",
+          "rows": 64,
+          "pc_width_um": 2.88,
+          "row_mapping": "logical_row=0+1*local_row"
+        },
+        "pass": false,
+        "negative_control_rejected": true
+      }
+    },
+    "1280": {
+      "geometry": {
+        "rows": 1280,
+        "columns": 320,
+        "selections": 409600,
+        "bits": 1638400,
+        "option": "A, eight staggered receiver rows",
+        "top": "PITCH_BANK_R1280",
+        "array_origin_um": [
+          10.0,
+          126.0
+        ],
+        "group_pitch_um": 100.0,
+        "receiver_row_pitch_um": 14.4,
+        "receiver_rows": 8,
+        "receiver_cols_per_row_per_group": 16,
+        "receiver_profile": "pre2 2.88/.28 PMOS; keeper .36/.28; inverter .72/.28 P,.36/.28 N",
+        "bounds_um": [
+          0.0,
+          0.04,
+          1004.0,
+          2258.85
+        ],
+        "dimensions_um": [
+          1004.0,
+          2258.81
+        ],
+        "area_um2": 2267845.2399999998,
+        "um2_per_selection": 5.53673154296875,
+        "native_bit_pitch_um": 0.66,
+        "native_group_of16_pitch_um": 11.56,
+        "join_routes_subbank0": [
+          {
+            "bc": 0,
+            "receiver_row": 0,
+            "receiver_origin_um": [
+              10.09,
+              0.0
+            ],
+            "array_x_um": 12.33,
+            "receiver_pin_um": [
+              12.33,
+              2.0
+            ],
+            "join_y_um": 12.5,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 0.0,
+            "metal4_length_um": 112.5,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 1,
+            "receiver_row": 1,
+            "receiver_origin_um": [
+              10.09,
+              14.4
+            ],
+            "array_x_um": 12.99,
+            "receiver_pin_um": [
+              12.33,
+              16.4
+            ],
+            "join_y_um": 26.9,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 0.6600000000000001,
+            "metal4_length_um": 98.1,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 2,
+            "receiver_row": 2,
+            "receiver_origin_um": [
+              10.09,
+              28.8
+            ],
+            "array_x_um": 13.65,
+            "receiver_pin_um": [
+              12.33,
+              30.8
+            ],
+            "join_y_um": 41.3,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 11.999999999999996,
+            "metal3_length_um": 1.3200000000000003,
+            "metal4_length_um": 83.7,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 3,
+            "receiver_row": 3,
+            "receiver_origin_um": [
+              10.09,
+              43.2
+            ],
+            "array_x_um": 14.309999999999999,
+            "receiver_pin_um": [
+              12.33,
+              45.2
+            ],
+            "join_y_um": 55.7,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 1.9799999999999986,
+            "metal4_length_um": 69.3,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 4,
+            "receiver_row": 4,
+            "receiver_origin_um": [
+              10.09,
+              57.6
+            ],
+            "array_x_um": 14.97,
+            "receiver_pin_um": [
+              12.33,
+              59.6
+            ],
+            "join_y_um": 70.1,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 11.999999999999993,
+            "metal3_length_um": 2.6400000000000006,
+            "metal4_length_um": 54.900000000000006,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 5,
+            "receiver_row": 5,
+            "receiver_origin_um": [
+              10.09,
+              72.0
+            ],
+            "array_x_um": 15.63,
+            "receiver_pin_um": [
+              12.33,
+              74.0
+            ],
+            "join_y_um": 84.5,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 3.3000000000000007,
+            "metal4_length_um": 40.5,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 6,
+            "receiver_row": 6,
+            "receiver_origin_um": [
+              10.09,
+              86.4
+            ],
+            "array_x_um": 16.29,
+            "receiver_pin_um": [
+              12.33,
+              88.4
+            ],
+            "join_y_um": 98.9,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 3.959999999999999,
+            "metal4_length_um": 26.099999999999994,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 7,
+            "receiver_row": 7,
+            "receiver_origin_um": [
+              10.09,
+              100.8
+            ],
+            "array_x_um": 16.95,
+            "receiver_pin_um": [
+              12.33,
+              102.8
+            ],
+            "join_y_um": 113.3,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 4.619999999999999,
+            "metal4_length_um": 11.700000000000003,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 8,
+            "receiver_row": 0,
+            "receiver_origin_um": [
+              15.37,
+              0.0
+            ],
+            "array_x_um": 17.61,
+            "receiver_pin_um": [
+              17.61,
+              2.0
+            ],
+            "join_y_um": 12.5,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 0.0,
+            "metal4_length_um": 112.5,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 9,
+            "receiver_row": 1,
+            "receiver_origin_um": [
+              15.37,
+              14.4
+            ],
+            "array_x_um": 18.27,
+            "receiver_pin_um": [
+              17.61,
+              16.4
+            ],
+            "join_y_um": 26.9,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 0.6600000000000001,
+            "metal4_length_um": 98.1,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 10,
+            "receiver_row": 2,
+            "receiver_origin_um": [
+              15.37,
+              28.8
+            ],
+            "array_x_um": 18.93,
+            "receiver_pin_um": [
+              17.61,
+              30.8
+            ],
+            "join_y_um": 41.3,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 11.999999999999996,
+            "metal3_length_um": 1.3200000000000003,
+            "metal4_length_um": 83.7,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 11,
+            "receiver_row": 3,
+            "receiver_origin_um": [
+              15.37,
+              43.2
+            ],
+            "array_x_um": 19.590000000000003,
+            "receiver_pin_um": [
+              17.61,
+              45.2
+            ],
+            "join_y_um": 55.7,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 1.980000000000004,
+            "metal4_length_um": 69.3,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 12,
+            "receiver_row": 4,
+            "receiver_origin_um": [
+              15.37,
+              57.6
+            ],
+            "array_x_um": 20.25,
+            "receiver_pin_um": [
+              17.61,
+              59.6
+            ],
+            "join_y_um": 70.1,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 11.999999999999993,
+            "metal3_length_um": 2.6400000000000006,
+            "metal4_length_um": 54.900000000000006,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 13,
+            "receiver_row": 5,
+            "receiver_origin_um": [
+              15.37,
+              72.0
+            ],
+            "array_x_um": 20.91,
+            "receiver_pin_um": [
+              17.61,
+              74.0
+            ],
+            "join_y_um": 84.5,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 3.3000000000000007,
+            "metal4_length_um": 40.5,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 14,
+            "receiver_row": 6,
+            "receiver_origin_um": [
+              15.37,
+              86.4
+            ],
+            "array_x_um": 21.57,
+            "receiver_pin_um": [
+              17.61,
+              88.4
+            ],
+            "join_y_um": 98.9,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 3.960000000000001,
+            "metal4_length_um": 26.099999999999994,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 15,
+            "receiver_row": 7,
+            "receiver_origin_um": [
+              15.37,
+              100.8
+            ],
+            "array_x_um": 22.23,
+            "receiver_pin_um": [
+              17.61,
+              102.8
+            ],
+            "join_y_um": 113.3,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 4.620000000000001,
+            "metal4_length_um": 11.700000000000003,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 16,
+            "receiver_row": 0,
+            "receiver_origin_um": [
+              21.65,
+              0.0
+            ],
+            "array_x_um": 23.89,
+            "receiver_pin_um": [
+              23.89,
+              2.0
+            ],
+            "join_y_um": 12.5,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 0.0,
+            "metal4_length_um": 112.5,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 17,
+            "receiver_row": 1,
+            "receiver_origin_um": [
+              21.65,
+              14.4
+            ],
+            "array_x_um": 24.55,
+            "receiver_pin_um": [
+              23.89,
+              16.4
+            ],
+            "join_y_um": 26.9,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 0.6600000000000001,
+            "metal4_length_um": 98.1,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 18,
+            "receiver_row": 2,
+            "receiver_origin_um": [
+              21.65,
+              28.8
+            ],
+            "array_x_um": 25.21,
+            "receiver_pin_um": [
+              23.89,
+              30.8
+            ],
+            "join_y_um": 41.3,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 11.999999999999996,
+            "metal3_length_um": 1.3200000000000003,
+            "metal4_length_um": 83.7,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 19,
+            "receiver_row": 3,
+            "receiver_origin_um": [
+              21.65,
+              43.2
+            ],
+            "array_x_um": 25.87,
+            "receiver_pin_um": [
+              23.89,
+              45.2
+            ],
+            "join_y_um": 55.7,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 1.9800000000000004,
+            "metal4_length_um": 69.3,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 20,
+            "receiver_row": 4,
+            "receiver_origin_um": [
+              21.65,
+              57.6
+            ],
+            "array_x_um": 26.529999999999998,
+            "receiver_pin_um": [
+              23.89,
+              59.6
+            ],
+            "join_y_um": 70.1,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 11.999999999999993,
+            "metal3_length_um": 2.639999999999997,
+            "metal4_length_um": 54.900000000000006,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 21,
+            "receiver_row": 5,
+            "receiver_origin_um": [
+              21.65,
+              72.0
+            ],
+            "array_x_um": 27.189999999999998,
+            "receiver_pin_um": [
+              23.89,
+              74.0
+            ],
+            "join_y_um": 84.5,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 3.299999999999997,
+            "metal4_length_um": 40.5,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 22,
+            "receiver_row": 6,
+            "receiver_origin_um": [
+              21.65,
+              86.4
+            ],
+            "array_x_um": 27.849999999999998,
+            "receiver_pin_um": [
+              23.89,
+              88.4
+            ],
+            "join_y_um": 98.9,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 3.9599999999999973,
+            "metal4_length_um": 26.099999999999994,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 23,
+            "receiver_row": 7,
+            "receiver_origin_um": [
+              21.65,
+              100.8
+            ],
+            "array_x_um": 28.509999999999998,
+            "receiver_pin_um": [
+              23.89,
+              102.8
+            ],
+            "join_y_um": 113.3,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 4.619999999999997,
+            "metal4_length_um": 11.700000000000003,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 24,
+            "receiver_row": 0,
+            "receiver_origin_um": [
+              26.93,
+              0.0
+            ],
+            "array_x_um": 29.169999999999998,
+            "receiver_pin_um": [
+              29.17,
+              2.0
+            ],
+            "join_y_um": 12.5,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 3.552713678800501e-15,
+            "metal4_length_um": 112.5,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 25,
+            "receiver_row": 1,
+            "receiver_origin_um": [
+              26.93,
+              14.4
+            ],
+            "array_x_um": 29.83,
+            "receiver_pin_um": [
+              29.17,
+              16.4
+            ],
+            "join_y_um": 26.9,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 0.6599999999999966,
+            "metal4_length_um": 98.1,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 26,
+            "receiver_row": 2,
+            "receiver_origin_um": [
+              26.93,
+              28.8
+            ],
+            "array_x_um": 30.49,
+            "receiver_pin_um": [
+              29.17,
+              30.8
+            ],
+            "join_y_um": 41.3,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 11.999999999999996,
+            "metal3_length_um": 1.3199999999999967,
+            "metal4_length_um": 83.7,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 27,
+            "receiver_row": 3,
+            "receiver_origin_um": [
+              26.93,
+              43.2
+            ],
+            "array_x_um": 31.15,
+            "receiver_pin_um": [
+              29.17,
+              45.2
+            ],
+            "join_y_um": 55.7,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 1.9799999999999969,
+            "metal4_length_um": 69.3,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 28,
+            "receiver_row": 4,
+            "receiver_origin_um": [
+              26.93,
+              57.6
+            ],
+            "array_x_um": 31.81,
+            "receiver_pin_um": [
+              29.17,
+              59.6
+            ],
+            "join_y_um": 70.1,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 11.999999999999993,
+            "metal3_length_um": 2.639999999999997,
+            "metal4_length_um": 54.900000000000006,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 29,
+            "receiver_row": 5,
+            "receiver_origin_um": [
+              26.93,
+              72.0
+            ],
+            "array_x_um": 32.47,
+            "receiver_pin_um": [
+              29.17,
+              74.0
+            ],
+            "join_y_um": 84.5,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 3.299999999999997,
+            "metal4_length_um": 40.5,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 30,
+            "receiver_row": 6,
+            "receiver_origin_um": [
+              26.93,
+              86.4
+            ],
+            "array_x_um": 33.129999999999995,
+            "receiver_pin_um": [
+              29.17,
+              88.4
+            ],
+            "join_y_um": 98.9,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 3.9599999999999937,
+            "metal4_length_um": 26.099999999999994,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 31,
+            "receiver_row": 7,
+            "receiver_origin_um": [
+              26.93,
+              100.8
+            ],
+            "array_x_um": 33.79,
+            "receiver_pin_um": [
+              29.17,
+              102.8
+            ],
+            "join_y_um": 113.3,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 4.619999999999997,
+            "metal4_length_um": 11.700000000000003,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 32,
+            "receiver_row": 0,
+            "receiver_origin_um": [
+              33.21,
+              0.0
+            ],
+            "array_x_um": 35.45,
+            "receiver_pin_um": [
+              35.45,
+              2.0
+            ],
+            "join_y_um": 12.5,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 0.0,
+            "metal4_length_um": 112.5,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 33,
+            "receiver_row": 1,
+            "receiver_origin_um": [
+              33.21,
+              14.4
+            ],
+            "array_x_um": 36.11,
+            "receiver_pin_um": [
+              35.45,
+              16.4
+            ],
+            "join_y_um": 26.9,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 0.6599999999999966,
+            "metal4_length_um": 98.1,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 34,
+            "receiver_row": 2,
+            "receiver_origin_um": [
+              33.21,
+              28.8
+            ],
+            "array_x_um": 36.769999999999996,
+            "receiver_pin_um": [
+              35.45,
+              30.8
+            ],
+            "join_y_um": 41.3,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 11.999999999999996,
+            "metal3_length_um": 1.3199999999999932,
+            "metal4_length_um": 83.7,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 35,
+            "receiver_row": 3,
+            "receiver_origin_um": [
+              33.21,
+              43.2
+            ],
+            "array_x_um": 37.43,
+            "receiver_pin_um": [
+              35.45,
+              45.2
+            ],
+            "join_y_um": 55.7,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 1.9799999999999969,
+            "metal4_length_um": 69.3,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 36,
+            "receiver_row": 4,
+            "receiver_origin_um": [
+              33.21,
+              57.6
+            ],
+            "array_x_um": 38.09,
+            "receiver_pin_um": [
+              35.45,
+              59.6
+            ],
+            "join_y_um": 70.1,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 11.999999999999993,
+            "metal3_length_um": 2.6400000000000006,
+            "metal4_length_um": 54.900000000000006,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 37,
+            "receiver_row": 5,
+            "receiver_origin_um": [
+              33.21,
+              72.0
+            ],
+            "array_x_um": 38.75,
+            "receiver_pin_um": [
+              35.45,
+              74.0
+            ],
+            "join_y_um": 84.5,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 3.299999999999997,
+            "metal4_length_um": 40.5,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 38,
+            "receiver_row": 6,
+            "receiver_origin_um": [
+              33.21,
+              86.4
+            ],
+            "array_x_um": 39.41,
+            "receiver_pin_um": [
+              35.45,
+              88.4
+            ],
+            "join_y_um": 98.9,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 3.9599999999999937,
+            "metal4_length_um": 26.099999999999994,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 39,
+            "receiver_row": 7,
+            "receiver_origin_um": [
+              33.21,
+              100.8
+            ],
+            "array_x_um": 40.07,
+            "receiver_pin_um": [
+              35.45,
+              102.8
+            ],
+            "join_y_um": 113.3,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 4.619999999999997,
+            "metal4_length_um": 11.700000000000003,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 40,
+            "receiver_row": 0,
+            "receiver_origin_um": [
+              38.49,
+              0.0
+            ],
+            "array_x_um": 40.730000000000004,
+            "receiver_pin_um": [
+              40.730000000000004,
+              2.0
+            ],
+            "join_y_um": 12.5,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 0.0,
+            "metal4_length_um": 112.5,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 41,
+            "receiver_row": 1,
+            "receiver_origin_um": [
+              38.49,
+              14.4
+            ],
+            "array_x_um": 41.39,
+            "receiver_pin_um": [
+              40.730000000000004,
+              16.4
+            ],
+            "join_y_um": 26.9,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 0.6599999999999966,
+            "metal4_length_um": 98.1,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 42,
+            "receiver_row": 2,
+            "receiver_origin_um": [
+              38.49,
+              28.8
+            ],
+            "array_x_um": 42.050000000000004,
+            "receiver_pin_um": [
+              40.730000000000004,
+              30.8
+            ],
+            "join_y_um": 41.3,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 11.999999999999996,
+            "metal3_length_um": 1.3200000000000003,
+            "metal4_length_um": 83.7,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 43,
+            "receiver_row": 3,
+            "receiver_origin_um": [
+              38.49,
+              43.2
+            ],
+            "array_x_um": 42.71,
+            "receiver_pin_um": [
+              40.730000000000004,
+              45.2
+            ],
+            "join_y_um": 55.7,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 1.9799999999999969,
+            "metal4_length_um": 69.3,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 44,
+            "receiver_row": 4,
+            "receiver_origin_um": [
+              38.49,
+              57.6
+            ],
+            "array_x_um": 43.37,
+            "receiver_pin_um": [
+              40.730000000000004,
+              59.6
+            ],
+            "join_y_um": 70.1,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 11.999999999999993,
+            "metal3_length_um": 2.6399999999999935,
+            "metal4_length_um": 54.900000000000006,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 45,
+            "receiver_row": 5,
+            "receiver_origin_um": [
+              38.49,
+              72.0
+            ],
+            "array_x_um": 44.03,
+            "receiver_pin_um": [
+              40.730000000000004,
+              74.0
+            ],
+            "join_y_um": 84.5,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 3.299999999999997,
+            "metal4_length_um": 40.5,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 46,
+            "receiver_row": 6,
+            "receiver_origin_um": [
+              38.49,
+              86.4
+            ],
+            "array_x_um": 44.69,
+            "receiver_pin_um": [
+              40.730000000000004,
+              88.4
+            ],
+            "join_y_um": 98.9,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 3.9599999999999937,
+            "metal4_length_um": 26.099999999999994,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 47,
+            "receiver_row": 7,
+            "receiver_origin_um": [
+              38.49,
+              100.8
+            ],
+            "array_x_um": 45.35,
+            "receiver_pin_um": [
+              40.730000000000004,
+              102.8
+            ],
+            "join_y_um": 113.3,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 4.619999999999997,
+            "metal4_length_um": 11.700000000000003,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 48,
+            "receiver_row": 0,
+            "receiver_origin_um": [
+              44.769999999999996,
+              0.0
+            ],
+            "array_x_um": 47.01,
+            "receiver_pin_um": [
+              47.01,
+              2.0
+            ],
+            "join_y_um": 12.5,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 0.0,
+            "metal4_length_um": 112.5,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 49,
+            "receiver_row": 1,
+            "receiver_origin_um": [
+              44.769999999999996,
+              14.4
+            ],
+            "array_x_um": 47.669999999999995,
+            "receiver_pin_um": [
+              47.01,
+              16.4
+            ],
+            "join_y_um": 26.9,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 0.6599999999999966,
+            "metal4_length_um": 98.1,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 50,
+            "receiver_row": 2,
+            "receiver_origin_um": [
+              44.769999999999996,
+              28.8
+            ],
+            "array_x_um": 48.33,
+            "receiver_pin_um": [
+              47.01,
+              30.8
+            ],
+            "join_y_um": 41.3,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 11.999999999999996,
+            "metal3_length_um": 1.3200000000000003,
+            "metal4_length_um": 83.7,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 51,
+            "receiver_row": 3,
+            "receiver_origin_um": [
+              44.769999999999996,
+              43.2
+            ],
+            "array_x_um": 48.989999999999995,
+            "receiver_pin_um": [
+              47.01,
+              45.2
+            ],
+            "join_y_um": 55.7,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 1.9799999999999969,
+            "metal4_length_um": 69.3,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 52,
+            "receiver_row": 4,
+            "receiver_origin_um": [
+              44.769999999999996,
+              57.6
+            ],
+            "array_x_um": 49.65,
+            "receiver_pin_um": [
+              47.01,
+              59.6
+            ],
+            "join_y_um": 70.1,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 11.999999999999993,
+            "metal3_length_um": 2.6400000000000006,
+            "metal4_length_um": 54.900000000000006,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 53,
+            "receiver_row": 5,
+            "receiver_origin_um": [
+              44.769999999999996,
+              72.0
+            ],
+            "array_x_um": 50.309999999999995,
+            "receiver_pin_um": [
+              47.01,
+              74.0
+            ],
+            "join_y_um": 84.5,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 3.299999999999997,
+            "metal4_length_um": 40.5,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 54,
+            "receiver_row": 6,
+            "receiver_origin_um": [
+              44.769999999999996,
+              86.4
+            ],
+            "array_x_um": 50.97,
+            "receiver_pin_um": [
+              47.01,
+              88.4
+            ],
+            "join_y_um": 98.9,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 3.960000000000001,
+            "metal4_length_um": 26.099999999999994,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 55,
+            "receiver_row": 7,
+            "receiver_origin_um": [
+              44.769999999999996,
+              100.8
+            ],
+            "array_x_um": 51.629999999999995,
+            "receiver_pin_um": [
+              47.01,
+              102.8
+            ],
+            "join_y_um": 113.3,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 4.619999999999997,
+            "metal4_length_um": 11.700000000000003,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 56,
+            "receiver_row": 0,
+            "receiver_origin_um": [
+              50.05,
+              0.0
+            ],
+            "array_x_um": 52.29,
+            "receiver_pin_um": [
+              52.29,
+              2.0
+            ],
+            "join_y_um": 12.5,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 0.0,
+            "metal4_length_um": 112.5,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 57,
+            "receiver_row": 1,
+            "receiver_origin_um": [
+              50.05,
+              14.4
+            ],
+            "array_x_um": 52.949999999999996,
+            "receiver_pin_um": [
+              52.29,
+              16.4
+            ],
+            "join_y_um": 26.9,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 0.6599999999999966,
+            "metal4_length_um": 98.1,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 58,
+            "receiver_row": 2,
+            "receiver_origin_um": [
+              50.05,
+              28.8
+            ],
+            "array_x_um": 53.61,
+            "receiver_pin_um": [
+              52.29,
+              30.8
+            ],
+            "join_y_um": 41.3,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 11.999999999999996,
+            "metal3_length_um": 1.3200000000000003,
+            "metal4_length_um": 83.7,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 59,
+            "receiver_row": 3,
+            "receiver_origin_um": [
+              50.05,
+              43.2
+            ],
+            "array_x_um": 54.269999999999996,
+            "receiver_pin_um": [
+              52.29,
+              45.2
+            ],
+            "join_y_um": 55.7,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 1.9799999999999969,
+            "metal4_length_um": 69.3,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 60,
+            "receiver_row": 4,
+            "receiver_origin_um": [
+              50.05,
+              57.6
+            ],
+            "array_x_um": 54.93,
+            "receiver_pin_um": [
+              52.29,
+              59.6
+            ],
+            "join_y_um": 70.1,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 11.999999999999993,
+            "metal3_length_um": 2.6400000000000006,
+            "metal4_length_um": 54.900000000000006,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 61,
+            "receiver_row": 5,
+            "receiver_origin_um": [
+              50.05,
+              72.0
+            ],
+            "array_x_um": 55.589999999999996,
+            "receiver_pin_um": [
+              52.29,
+              74.0
+            ],
+            "join_y_um": 84.5,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 3.299999999999997,
+            "metal4_length_um": 40.5,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 62,
+            "receiver_row": 6,
+            "receiver_origin_um": [
+              50.05,
+              86.4
+            ],
+            "array_x_um": 56.25,
+            "receiver_pin_um": [
+              52.29,
+              88.4
+            ],
+            "join_y_um": 98.9,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 3.960000000000001,
+            "metal4_length_um": 26.099999999999994,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 63,
+            "receiver_row": 7,
+            "receiver_origin_um": [
+              50.05,
+              100.8
+            ],
+            "array_x_um": 56.91,
+            "receiver_pin_um": [
+              52.29,
+              102.8
+            ],
+            "join_y_um": 113.3,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 4.619999999999997,
+            "metal4_length_um": 11.700000000000003,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 64,
+            "receiver_row": 0,
+            "receiver_origin_um": [
+              56.33,
+              0.0
+            ],
+            "array_x_um": 58.57,
+            "receiver_pin_um": [
+              58.57,
+              2.0
+            ],
+            "join_y_um": 12.5,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 0.0,
+            "metal4_length_um": 112.5,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 65,
+            "receiver_row": 1,
+            "receiver_origin_um": [
+              56.33,
+              14.4
+            ],
+            "array_x_um": 59.23,
+            "receiver_pin_um": [
+              58.57,
+              16.4
+            ],
+            "join_y_um": 26.9,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 0.6599999999999966,
+            "metal4_length_um": 98.1,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 66,
+            "receiver_row": 2,
+            "receiver_origin_um": [
+              56.33,
+              28.8
+            ],
+            "array_x_um": 59.89,
+            "receiver_pin_um": [
+              58.57,
+              30.8
+            ],
+            "join_y_um": 41.3,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 11.999999999999996,
+            "metal3_length_um": 1.3200000000000003,
+            "metal4_length_um": 83.7,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 67,
+            "receiver_row": 3,
+            "receiver_origin_um": [
+              56.33,
+              43.2
+            ],
+            "array_x_um": 60.55,
+            "receiver_pin_um": [
+              58.57,
+              45.2
+            ],
+            "join_y_um": 55.7,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 1.9799999999999969,
+            "metal4_length_um": 69.3,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 68,
+            "receiver_row": 4,
+            "receiver_origin_um": [
+              56.33,
+              57.6
+            ],
+            "array_x_um": 61.21,
+            "receiver_pin_um": [
+              58.57,
+              59.6
+            ],
+            "join_y_um": 70.1,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 11.999999999999993,
+            "metal3_length_um": 2.6400000000000006,
+            "metal4_length_um": 54.900000000000006,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 69,
+            "receiver_row": 5,
+            "receiver_origin_um": [
+              56.33,
+              72.0
+            ],
+            "array_x_um": 61.87,
+            "receiver_pin_um": [
+              58.57,
+              74.0
+            ],
+            "join_y_um": 84.5,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 3.299999999999997,
+            "metal4_length_um": 40.5,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 70,
+            "receiver_row": 6,
+            "receiver_origin_um": [
+              56.33,
+              86.4
+            ],
+            "array_x_um": 62.53,
+            "receiver_pin_um": [
+              58.57,
+              88.4
+            ],
+            "join_y_um": 98.9,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 3.960000000000001,
+            "metal4_length_um": 26.099999999999994,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 71,
+            "receiver_row": 7,
+            "receiver_origin_um": [
+              56.33,
+              100.8
+            ],
+            "array_x_um": 63.19,
+            "receiver_pin_um": [
+              58.57,
+              102.8
+            ],
+            "join_y_um": 113.3,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 4.619999999999997,
+            "metal4_length_um": 11.700000000000003,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 72,
+            "receiver_row": 0,
+            "receiver_origin_um": [
+              61.61,
+              0.0
+            ],
+            "array_x_um": 63.85,
+            "receiver_pin_um": [
+              63.85,
+              2.0
+            ],
+            "join_y_um": 12.5,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 0.0,
+            "metal4_length_um": 112.5,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 73,
+            "receiver_row": 1,
+            "receiver_origin_um": [
+              61.61,
+              14.4
+            ],
+            "array_x_um": 64.50999999999999,
+            "receiver_pin_um": [
+              63.85,
+              16.4
+            ],
+            "join_y_um": 26.9,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 0.6599999999999895,
+            "metal4_length_um": 98.1,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 74,
+            "receiver_row": 2,
+            "receiver_origin_um": [
+              61.61,
+              28.8
+            ],
+            "array_x_um": 65.17,
+            "receiver_pin_um": [
+              63.85,
+              30.8
+            ],
+            "join_y_um": 41.3,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 11.999999999999996,
+            "metal3_length_um": 1.3200000000000003,
+            "metal4_length_um": 83.7,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 75,
+            "receiver_row": 3,
+            "receiver_origin_um": [
+              61.61,
+              43.2
+            ],
+            "array_x_um": 65.83,
+            "receiver_pin_um": [
+              63.85,
+              45.2
+            ],
+            "join_y_um": 55.7,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 1.9799999999999969,
+            "metal4_length_um": 69.3,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 76,
+            "receiver_row": 4,
+            "receiver_origin_um": [
+              61.61,
+              57.6
+            ],
+            "array_x_um": 66.49000000000001,
+            "receiver_pin_um": [
+              63.85,
+              59.6
+            ],
+            "join_y_um": 70.1,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 11.999999999999993,
+            "metal3_length_um": 2.6400000000000077,
+            "metal4_length_um": 54.900000000000006,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 77,
+            "receiver_row": 5,
+            "receiver_origin_um": [
+              61.61,
+              72.0
+            ],
+            "array_x_um": 67.15,
+            "receiver_pin_um": [
+              63.85,
+              74.0
+            ],
+            "join_y_um": 84.5,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 3.3000000000000043,
+            "metal4_length_um": 40.5,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 78,
+            "receiver_row": 6,
+            "receiver_origin_um": [
+              61.61,
+              86.4
+            ],
+            "array_x_um": 67.81,
+            "receiver_pin_um": [
+              63.85,
+              88.4
+            ],
+            "join_y_um": 98.9,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 3.960000000000001,
+            "metal4_length_um": 26.099999999999994,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 79,
+            "receiver_row": 7,
+            "receiver_origin_um": [
+              61.61,
+              100.8
+            ],
+            "array_x_um": 68.47,
+            "receiver_pin_um": [
+              63.85,
+              102.8
+            ],
+            "join_y_um": 113.3,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 4.619999999999997,
+            "metal4_length_um": 11.700000000000003,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 80,
+            "receiver_row": 0,
+            "receiver_origin_um": [
+              67.89,
+              0.0
+            ],
+            "array_x_um": 70.13,
+            "receiver_pin_um": [
+              70.13,
+              2.0
+            ],
+            "join_y_um": 12.5,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 0.0,
+            "metal4_length_um": 112.5,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 81,
+            "receiver_row": 1,
+            "receiver_origin_um": [
+              67.89,
+              14.4
+            ],
+            "array_x_um": 70.78999999999999,
+            "receiver_pin_um": [
+              70.13,
+              16.4
+            ],
+            "join_y_um": 26.9,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 0.6599999999999966,
+            "metal4_length_um": 98.1,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 82,
+            "receiver_row": 2,
+            "receiver_origin_um": [
+              67.89,
+              28.8
+            ],
+            "array_x_um": 71.45,
+            "receiver_pin_um": [
+              70.13,
+              30.8
+            ],
+            "join_y_um": 41.3,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 11.999999999999996,
+            "metal3_length_um": 1.3200000000000074,
+            "metal4_length_um": 83.7,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 83,
+            "receiver_row": 3,
+            "receiver_origin_um": [
+              67.89,
+              43.2
+            ],
+            "array_x_um": 72.11,
+            "receiver_pin_um": [
+              70.13,
+              45.2
+            ],
+            "join_y_um": 55.7,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 1.980000000000004,
+            "metal4_length_um": 69.3,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 84,
+            "receiver_row": 4,
+            "receiver_origin_um": [
+              67.89,
+              57.6
+            ],
+            "array_x_um": 72.77000000000001,
+            "receiver_pin_um": [
+              70.13,
+              59.6
+            ],
+            "join_y_um": 70.1,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 11.999999999999993,
+            "metal3_length_um": 2.640000000000015,
+            "metal4_length_um": 54.900000000000006,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 85,
+            "receiver_row": 5,
+            "receiver_origin_um": [
+              67.89,
+              72.0
+            ],
+            "array_x_um": 73.43,
+            "receiver_pin_um": [
+              70.13,
+              74.0
+            ],
+            "join_y_um": 84.5,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 3.3000000000000114,
+            "metal4_length_um": 40.5,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 86,
+            "receiver_row": 6,
+            "receiver_origin_um": [
+              67.89,
+              86.4
+            ],
+            "array_x_um": 74.09,
+            "receiver_pin_um": [
+              70.13,
+              88.4
+            ],
+            "join_y_um": 98.9,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 3.960000000000008,
+            "metal4_length_um": 26.099999999999994,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 87,
+            "receiver_row": 7,
+            "receiver_origin_um": [
+              67.89,
+              100.8
+            ],
+            "array_x_um": 74.75,
+            "receiver_pin_um": [
+              70.13,
+              102.8
+            ],
+            "join_y_um": 113.3,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 4.6200000000000045,
+            "metal4_length_um": 11.700000000000003,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 88,
+            "receiver_row": 0,
+            "receiver_origin_um": [
+              73.17,
+              0.0
+            ],
+            "array_x_um": 75.41,
+            "receiver_pin_um": [
+              75.41,
+              2.0
+            ],
+            "join_y_um": 12.5,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 0.0,
+            "metal4_length_um": 112.5,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 89,
+            "receiver_row": 1,
+            "receiver_origin_um": [
+              73.17,
+              14.4
+            ],
+            "array_x_um": 76.07000000000001,
+            "receiver_pin_um": [
+              75.41,
+              16.4
+            ],
+            "join_y_um": 26.9,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 0.6600000000000108,
+            "metal4_length_um": 98.1,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 90,
+            "receiver_row": 2,
+            "receiver_origin_um": [
+              73.17,
+              28.8
+            ],
+            "array_x_um": 76.73,
+            "receiver_pin_um": [
+              75.41,
+              30.8
+            ],
+            "join_y_um": 41.3,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 11.999999999999996,
+            "metal3_length_um": 1.3200000000000074,
+            "metal4_length_um": 83.7,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 91,
+            "receiver_row": 3,
+            "receiver_origin_um": [
+              73.17,
+              43.2
+            ],
+            "array_x_um": 77.39,
+            "receiver_pin_um": [
+              75.41,
+              45.2
+            ],
+            "join_y_um": 55.7,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 1.980000000000004,
+            "metal4_length_um": 69.3,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 92,
+            "receiver_row": 4,
+            "receiver_origin_um": [
+              73.17,
+              57.6
+            ],
+            "array_x_um": 78.05,
+            "receiver_pin_um": [
+              75.41,
+              59.6
+            ],
+            "join_y_um": 70.1,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 11.999999999999993,
+            "metal3_length_um": 2.6400000000000006,
+            "metal4_length_um": 54.900000000000006,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 93,
+            "receiver_row": 5,
+            "receiver_origin_um": [
+              73.17,
+              72.0
+            ],
+            "array_x_um": 78.71000000000001,
+            "receiver_pin_um": [
+              75.41,
+              74.0
+            ],
+            "join_y_um": 84.5,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 3.3000000000000114,
+            "metal4_length_um": 40.5,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 94,
+            "receiver_row": 6,
+            "receiver_origin_um": [
+              73.17,
+              86.4
+            ],
+            "array_x_um": 79.37,
+            "receiver_pin_um": [
+              75.41,
+              88.4
+            ],
+            "join_y_um": 98.9,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 3.960000000000008,
+            "metal4_length_um": 26.099999999999994,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 95,
+            "receiver_row": 7,
+            "receiver_origin_um": [
+              73.17,
+              100.8
+            ],
+            "array_x_um": 80.03,
+            "receiver_pin_um": [
+              75.41,
+              102.8
+            ],
+            "join_y_um": 113.3,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 4.6200000000000045,
+            "metal4_length_um": 11.700000000000003,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 96,
+            "receiver_row": 0,
+            "receiver_origin_um": [
+              79.45,
+              0.0
+            ],
+            "array_x_um": 81.69,
+            "receiver_pin_um": [
+              81.69,
+              2.0
+            ],
+            "join_y_um": 12.5,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 0.0,
+            "metal4_length_um": 112.5,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 97,
+            "receiver_row": 1,
+            "receiver_origin_um": [
+              79.45,
+              14.4
+            ],
+            "array_x_um": 82.35,
+            "receiver_pin_um": [
+              81.69,
+              16.4
+            ],
+            "join_y_um": 26.9,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 0.6599999999999966,
+            "metal4_length_um": 98.1,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 98,
+            "receiver_row": 2,
+            "receiver_origin_um": [
+              79.45,
+              28.8
+            ],
+            "array_x_um": 83.00999999999999,
+            "receiver_pin_um": [
+              81.69,
+              30.8
+            ],
+            "join_y_um": 41.3,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 11.999999999999996,
+            "metal3_length_um": 1.3199999999999932,
+            "metal4_length_um": 83.7,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 99,
+            "receiver_row": 3,
+            "receiver_origin_um": [
+              79.45,
+              43.2
+            ],
+            "array_x_um": 83.67,
+            "receiver_pin_um": [
+              81.69,
+              45.2
+            ],
+            "join_y_um": 55.7,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 1.980000000000004,
+            "metal4_length_um": 69.3,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 100,
+            "receiver_row": 4,
+            "receiver_origin_um": [
+              79.45,
+              57.6
+            ],
+            "array_x_um": 84.33,
+            "receiver_pin_um": [
+              81.69,
+              59.6
+            ],
+            "join_y_um": 70.1,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 11.999999999999993,
+            "metal3_length_um": 2.6400000000000006,
+            "metal4_length_um": 54.900000000000006,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 101,
+            "receiver_row": 5,
+            "receiver_origin_um": [
+              79.45,
+              72.0
+            ],
+            "array_x_um": 84.99,
+            "receiver_pin_um": [
+              81.69,
+              74.0
+            ],
+            "join_y_um": 84.5,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 3.299999999999997,
+            "metal4_length_um": 40.5,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 102,
+            "receiver_row": 6,
+            "receiver_origin_um": [
+              79.45,
+              86.4
+            ],
+            "array_x_um": 85.64999999999999,
+            "receiver_pin_um": [
+              81.69,
+              88.4
+            ],
+            "join_y_um": 98.9,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 3.9599999999999937,
+            "metal4_length_um": 26.099999999999994,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 103,
+            "receiver_row": 7,
+            "receiver_origin_um": [
+              79.45,
+              100.8
+            ],
+            "array_x_um": 86.31,
+            "receiver_pin_um": [
+              81.69,
+              102.8
+            ],
+            "join_y_um": 113.3,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 4.6200000000000045,
+            "metal4_length_um": 11.700000000000003,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 104,
+            "receiver_row": 0,
+            "receiver_origin_um": [
+              84.73,
+              0.0
+            ],
+            "array_x_um": 86.97,
+            "receiver_pin_um": [
+              86.97,
+              2.0
+            ],
+            "join_y_um": 12.5,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 0.0,
+            "metal4_length_um": 112.5,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 105,
+            "receiver_row": 1,
+            "receiver_origin_um": [
+              84.73,
+              14.4
+            ],
+            "array_x_um": 87.63,
+            "receiver_pin_um": [
+              86.97,
+              16.4
+            ],
+            "join_y_um": 26.9,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 0.6599999999999966,
+            "metal4_length_um": 98.1,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 106,
+            "receiver_row": 2,
+            "receiver_origin_um": [
+              84.73,
+              28.8
+            ],
+            "array_x_um": 88.28999999999999,
+            "receiver_pin_um": [
+              86.97,
+              30.8
+            ],
+            "join_y_um": 41.3,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 11.999999999999996,
+            "metal3_length_um": 1.3199999999999932,
+            "metal4_length_um": 83.7,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 107,
+            "receiver_row": 3,
+            "receiver_origin_um": [
+              84.73,
+              43.2
+            ],
+            "array_x_um": 88.95,
+            "receiver_pin_um": [
+              86.97,
+              45.2
+            ],
+            "join_y_um": 55.7,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 1.980000000000004,
+            "metal4_length_um": 69.3,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 108,
+            "receiver_row": 4,
+            "receiver_origin_um": [
+              84.73,
+              57.6
+            ],
+            "array_x_um": 89.61,
+            "receiver_pin_um": [
+              86.97,
+              59.6
+            ],
+            "join_y_um": 70.1,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 11.999999999999993,
+            "metal3_length_um": 2.6400000000000006,
+            "metal4_length_um": 54.900000000000006,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 109,
+            "receiver_row": 5,
+            "receiver_origin_um": [
+              84.73,
+              72.0
+            ],
+            "array_x_um": 90.27,
+            "receiver_pin_um": [
+              86.97,
+              74.0
+            ],
+            "join_y_um": 84.5,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 3.299999999999997,
+            "metal4_length_um": 40.5,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 110,
+            "receiver_row": 6,
+            "receiver_origin_um": [
+              84.73,
+              86.4
+            ],
+            "array_x_um": 90.92999999999999,
+            "receiver_pin_um": [
+              86.97,
+              88.4
+            ],
+            "join_y_um": 98.9,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 3.9599999999999937,
+            "metal4_length_um": 26.099999999999994,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 111,
+            "receiver_row": 7,
+            "receiver_origin_um": [
+              84.73,
+              100.8
+            ],
+            "array_x_um": 91.59,
+            "receiver_pin_um": [
+              86.97,
+              102.8
+            ],
+            "join_y_um": 113.3,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 4.6200000000000045,
+            "metal4_length_um": 11.700000000000003,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 112,
+            "receiver_row": 0,
+            "receiver_origin_um": [
+              91.01,
+              0.0
+            ],
+            "array_x_um": 93.25,
+            "receiver_pin_um": [
+              93.25,
+              2.0
+            ],
+            "join_y_um": 12.5,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 0.0,
+            "metal4_length_um": 112.5,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 113,
+            "receiver_row": 1,
+            "receiver_origin_um": [
+              91.01,
+              14.4
+            ],
+            "array_x_um": 93.91,
+            "receiver_pin_um": [
+              93.25,
+              16.4
+            ],
+            "join_y_um": 26.9,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 0.6599999999999966,
+            "metal4_length_um": 98.1,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 114,
+            "receiver_row": 2,
+            "receiver_origin_um": [
+              91.01,
+              28.8
+            ],
+            "array_x_um": 94.57,
+            "receiver_pin_um": [
+              93.25,
+              30.8
+            ],
+            "join_y_um": 41.3,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 11.999999999999996,
+            "metal3_length_um": 1.3199999999999932,
+            "metal4_length_um": 83.7,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 115,
+            "receiver_row": 3,
+            "receiver_origin_um": [
+              91.01,
+              43.2
+            ],
+            "array_x_um": 95.23,
+            "receiver_pin_um": [
+              93.25,
+              45.2
+            ],
+            "join_y_um": 55.7,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 1.980000000000004,
+            "metal4_length_um": 69.3,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 116,
+            "receiver_row": 4,
+            "receiver_origin_um": [
+              91.01,
+              57.6
+            ],
+            "array_x_um": 95.89,
+            "receiver_pin_um": [
+              93.25,
+              59.6
+            ],
+            "join_y_um": 70.1,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 11.999999999999993,
+            "metal3_length_um": 2.6400000000000006,
+            "metal4_length_um": 54.900000000000006,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 117,
+            "receiver_row": 5,
+            "receiver_origin_um": [
+              91.01,
+              72.0
+            ],
+            "array_x_um": 96.55,
+            "receiver_pin_um": [
+              93.25,
+              74.0
+            ],
+            "join_y_um": 84.5,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 3.299999999999997,
+            "metal4_length_um": 40.5,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 118,
+            "receiver_row": 6,
+            "receiver_origin_um": [
+              91.01,
+              86.4
+            ],
+            "array_x_um": 97.21,
+            "receiver_pin_um": [
+              93.25,
+              88.4
+            ],
+            "join_y_um": 98.9,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 3.9599999999999937,
+            "metal4_length_um": 26.099999999999994,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 119,
+            "receiver_row": 7,
+            "receiver_origin_um": [
+              91.01,
+              100.8
+            ],
+            "array_x_um": 97.87,
+            "receiver_pin_um": [
+              93.25,
+              102.8
+            ],
+            "join_y_um": 113.3,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 4.6200000000000045,
+            "metal4_length_um": 11.700000000000003,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 120,
+            "receiver_row": 0,
+            "receiver_origin_um": [
+              96.29,
+              0.0
+            ],
+            "array_x_um": 98.53,
+            "receiver_pin_um": [
+              98.53,
+              2.0
+            ],
+            "join_y_um": 12.5,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 0.0,
+            "metal4_length_um": 112.5,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 121,
+            "receiver_row": 1,
+            "receiver_origin_um": [
+              96.29,
+              14.4
+            ],
+            "array_x_um": 99.19,
+            "receiver_pin_um": [
+              98.53,
+              16.4
+            ],
+            "join_y_um": 26.9,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 0.6599999999999966,
+            "metal4_length_um": 98.1,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 122,
+            "receiver_row": 2,
+            "receiver_origin_um": [
+              96.29,
+              28.8
+            ],
+            "array_x_um": 99.85,
+            "receiver_pin_um": [
+              98.53,
+              30.8
+            ],
+            "join_y_um": 41.3,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 11.999999999999996,
+            "metal3_length_um": 1.3199999999999932,
+            "metal4_length_um": 83.7,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 123,
+            "receiver_row": 3,
+            "receiver_origin_um": [
+              96.29,
+              43.2
+            ],
+            "array_x_um": 100.51,
+            "receiver_pin_um": [
+              98.53,
+              45.2
+            ],
+            "join_y_um": 55.7,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 1.980000000000004,
+            "metal4_length_um": 69.3,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 124,
+            "receiver_row": 4,
+            "receiver_origin_um": [
+              96.29,
+              57.6
+            ],
+            "array_x_um": 101.17,
+            "receiver_pin_um": [
+              98.53,
+              59.6
+            ],
+            "join_y_um": 70.1,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 11.999999999999993,
+            "metal3_length_um": 2.6400000000000006,
+            "metal4_length_um": 54.900000000000006,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 125,
+            "receiver_row": 5,
+            "receiver_origin_um": [
+              96.29,
+              72.0
+            ],
+            "array_x_um": 101.83,
+            "receiver_pin_um": [
+              98.53,
+              74.0
+            ],
+            "join_y_um": 84.5,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 3.299999999999997,
+            "metal4_length_um": 40.5,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 126,
+            "receiver_row": 6,
+            "receiver_origin_um": [
+              96.29,
+              86.4
+            ],
+            "array_x_um": 102.49,
+            "receiver_pin_um": [
+              98.53,
+              88.4
+            ],
+            "join_y_um": 98.9,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 3.9599999999999937,
+            "metal4_length_um": 26.099999999999994,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          },
+          {
+            "bc": 127,
+            "receiver_row": 7,
+            "receiver_origin_um": [
+              96.29,
+              100.8
+            ],
+            "array_x_um": 103.15,
+            "receiver_pin_um": [
+              98.53,
+              102.8
+            ],
+            "join_y_um": 113.3,
+            "array_join_y_um": 125.0,
+            "metal2_length_um": 12.0,
+            "metal3_length_um": 4.6200000000000045,
+            "metal4_length_um": 11.700000000000003,
+            "via2_count": 2,
+            "via3_count": 2,
+            "width_um": 0.38
+          }
+        ],
+        "array_end_y_um": 2132.85,
+        "exclusions": [
+          "physical WL/PC drivers and decoder",
+          "phase controller",
+          "output latch and escape routing",
+          "global PDN IR/EM",
+          "shared products, lookup, accumulators"
+        ],
+        "source_sha256": {
+          "experiments/taalas-access/mask-index-tall/generate_layout.py": "986ab78d8b9dc9f995306df91e32fc41524dbd4c901524158e7bfc157bd779ce",
+          "experiments/taalas-access/mask-index-tall/receiver-pre2/generate_layout.py": "8e93b5b419aae397a37e5db930d67d443f075c62b44f609ee5db733c36d08194",
+          "overnight-20261014/taalas-array/indices.npy": "13e9b6b069007c2bc1b4cc92792a0f70be019b20c0e131ca4fb564f6f2cca85f"
+        },
+        "gds_sha256": "fd75915d1d8b7bc053e91b0141bd1400d4f05d1319bdfebfd8cac4449b2235b0"
+      },
+      "selected_drc": {
+        "drc_markers": 0,
+        "categories": {},
+        "scope": "selected GF180 FEOL BEOL connectivity off-grid; density and antenna excluded",
+        "gds_sha256": "fd75915d1d8b7bc053e91b0141bd1400d4f05d1319bdfebfd8cac4449b2235b0",
+        "top": "PITCH_BANK_R1280"
+      },
+      "readback": {
+        "compared_indices": 409600,
+        "compared_bits": 1638400,
+        "mismatches": 0,
+        "recovered_sha256": "ba628b676d59721c268868d6720be1f58a4f8d4edfd9a26009403c9a8c4fce8e",
+        "method": "reopened GDS programmed Via1 centers at exact device drain positions, not mask input replay"
+      },
+      "lvs": null,
+      "negative": null
+    }
+  },
+  "area": {
+    "bank_area_um2": 2267845.2399999998,
+    "bank_area_mm2": 2.2678452399999998,
+    "um2_per_selection_including_analog_readout": 5.53673154296875,
+    "W5_um2_per_selection": {
+      "64row20tile_assembly": 54.4950341796875,
+      "320row4bank_assembly": 30.371291,
+      "1280row_bank": 25.640028
+    },
+    "reduction_vs_W5_1280_fraction": 0.7840590679944364,
+    "whole_model_uniform_density_extrapolation": {
+      "selections": 31457280,
+      "formula": "31457280 * measured_bank_area_um2 / 409600 / 1000000",
+      "area_mm2": 174.17051443199998,
+      "qualification": "Uniform 1,280-row rectangular density projection, not layout of 98 model tensors. No padding, shape, port or replication allocation performed."
+    },
+    "october_component_budget_mm2": {
+      "base_arrays": 153.833,
+      "receiver_strips": 11.004,
+      "decoder_cells": 25.002,
+      "wordline_driver_cells": 30.369,
+      "precharge_driver_cells": 0.269,
+      "bank_selector_cells": 0.944,
+      "total": 221.421
+    },
+    "mixed_estimate_only_mm2": {
+      "formula": "W6 uniform array/readout extrapolation + October decoder/WL-driver/PC-driver/selector component terms",
+      "additional_old_nonreceiver_components": 56.584,
+      "sum": 230.75451443199998,
+      "qualification": "Engineering estimate only: neither placed nor complete macro, different allocation/utilization scopes. Does not add the 11.004 mm2 receiver term again."
+    }
+  },
+  "timing": {
+    "status": "scoped_TT_SS_protocol_complete",
+    "generated_utc": "2026-10-13T22:05:29.329408+00:00",
+    "source_reading_confirmed": true,
+    "option": "A, eight stacked readout rows",
+    "extractions": [
+      {
+        "returncode": 0,
+        "seconds": 391.2111902080942,
+        "source_gds_sha256": "23972dbb6cd2f1cba6331ce066f4f3c5120597111be01e69b24f0b33468bd167",
+        "fullbank_source_gds_sha256": "fd75915d1d8b7bc053e91b0141bd1400d4f05d1319bdfebfd8cac4449b2235b0",
+        "rows": 1280,
+        "bank": 0,
+        "subbank": 2,
+        "lane_start": 64,
+        "out_start": 256,
+        "row_stride": 1,
+        "source_top": "PITCH_JOINED_R1280_G02",
+        "array_top": "PITCH_ARRAY_R1280_G02",
+        "directory": "r1280-g02",
+        "topology": {
+          "array_devices": 163840,
+          "joined_devices": 164352,
+          "all_device_connections_and_dimensions_match_real_image_and_pre2_receiver": true,
+          "canonicalization": {
+            "array": {
+              "nodes": 83130,
+              "bijective": true
+            },
+            "joined": {
+              "nodes": 83260,
+              "bijective": true
+            }
+          },
+          "row_mapping": "logicalrow=localrow",
+          "global_lane_range": [
+            64,
+            96
+          ],
+          "image_sha256": "9ac1c410fedde74e1f9bfd6f4e9da3dc0d1562874ec2381c237891093fed217d"
+        },
+        "cap-ranking": {
+          "method": "Rank all128local columns by extracted total incident metalC*(actual W6 stacked joinR+half fullheight arrayR), with connected-drain count separately. Initial group selected from all1280 by drain-population+geometryR proxy. Two-stage heuristic candidate, not absolute transistor-timing worst-case proof.",
+          "selected": [
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31
+          ],
+          "scope": "Actual new stacked128-column subbank only; rest of1280 columns not cap-extracted.",
+          "top_ranked": {
+            "local_bit_column": 17,
+            "extracted_incident_metal_cap_ff": 679.149100000003,
+            "connected_drains": 681,
+            "join_geometry_length_um": 110.75999999999999,
+            "join_ohm_at25c": 90.31326315789474,
+            "array_ohm_at25c": 583.5905263157894,
+            "rank_score_ohm_ff": 259508.66174969584
+          }
+        },
+        "global-proxy-ranking": {
+          "method": "Connected-drain population times new geometry joinR+half arrayR; initial all1280-column heuristic, not actual extracted C or worst-case proof",
+          "top_ranked": {
+            "global_bit_column": 256,
+            "subbank": 2,
+            "local_bit_column": 0,
+            "connected_drains": 680,
+            "join_length_um": 124.5,
+            "join_ohm25": 94.07368421052631,
+            "selection_proxy": 262116.3789473684
+          }
+        }
+      }
+    ],
+    "cases": [
+      {
+        "protocol_pass": true,
+        "failures": {
+          "output": 0,
+          "raw": 0,
+          "precharge": 0,
+          "phase": 0
+        },
+        "maximum_sampled_settled_ns": 23.37632100000002,
+        "command_to_capture_20ns_probe": [
+          {
+            "cycle": 0,
+            "ns_after_wl_command": 20,
+            "data_failures": 3,
+            "excludes_decoder_setup_latch_and_mux": true
+          },
+          {
+            "cycle": 1,
+            "ns_after_wl_command": 20,
+            "data_failures": 1,
+            "excludes_decoder_setup_latch_and_mux": true
+          },
+          {
+            "cycle": 2,
+            "ns_after_wl_command": 20,
+            "data_failures": 1,
+            "excludes_decoder_setup_latch_and_mux": true
+          },
+          {
+            "cycle": 3,
+            "ns_after_wl_command": 20,
+            "data_failures": 1,
+            "excludes_decoder_setup_latch_and_mux": true
+          },
+          {
+            "cycle": 4,
+            "ns_after_wl_command": 20,
+            "data_failures": 0,
+            "excludes_decoder_setup_latch_and_mux": true
+          },
+          {
+            "cycle": 5,
+            "ns_after_wl_command": 20,
+            "data_failures": 3,
+            "excludes_decoder_setup_latch_and_mux": true
+          },
+          {
+            "cycle": 6,
+            "ns_after_wl_command": 20,
+            "data_failures": 1,
+            "excludes_decoder_setup_latch_and_mux": true
+          },
+          {
+            "cycle": 7,
+            "ns_after_wl_command": 20,
+            "data_failures": 1,
+            "excludes_decoder_setup_latch_and_mux": true
+          },
+          {
+            "cycle": 8,
+            "ns_after_wl_command": 20,
+            "data_failures": 1,
+            "excludes_decoder_setup_latch_and_mux": true
+          },
+          {
+            "cycle": 9,
+            "ns_after_wl_command": 20,
+            "data_failures": 0,
+            "excludes_decoder_setup_latch_and_mux": true
+          }
+        ],
+        "energy_pj_per_sampled_read": {
+          "pr": 89.41701420560715,
+          "pw": 1.1203491685550382,
+          "pp": 7.847541388725112,
+          "pa": 0.13193500809107922
+        },
+        "energy_window_ns": [
+          300.0,
+          600.0
+        ],
+        "energy_scope": "Finite-window net source energy over repeated sequence; only observed endpoint states compared, not all internal stored charge. Partial16active-column group plus128receivers/selectedWL/PC buffers; not complete bank energy.",
+        "maximum_observed_endpoint_voltage_difference_v": 0.0005503593499915109,
+        "samples_checked": 320,
+        "corner": "ss",
+        "voltage_v": 2.97,
+        "temperature_c": 125,
+        "period_ns": 60.0,
+        "protocol": {
+          "period_ns": 60.0,
+          "pc_off_ns": 14.0,
+          "wl_start_ns": 18.0,
+          "wl_fall_start_ns": 57.8,
+          "wl_fall_end_ns": 58.0,
+          "pc_on_start_ns": 59.8,
+          "sample_ns": [
+            54.0,
+            59.5
+          ],
+          "edge_ns": 0.2,
+          "phase_family": "pre2std4;14/60fraction precharge plus fixed4ns guard"
+        },
+        "scope": "New eight-row pitch-matched W6 layout.16fullheight active columns,112ideal legal-state BL aggressors also driving their real receivers, all128physicalpre2receivers; extracted stockbuf4WL/buf20PC. GeometryR signaljoin+arrayWL/BL/one2umgroundstrap. Groundendpoint/global supply and input phases ideal. No full320lane WL/PC rail load, simultaneous allarraycurrent, decoder/latch/mux.",
+        "conditional20ns_interleave_factor": 3,
+        "interleave_factor_qualified": false,
+        "interleave_qualification": "Only sampled32lane protocol if pass; not full320lane bank throughput",
+        "deck_sha256": "7218f2933d5ec9bc554b99df4a3a0ccbcd7810838d9821e99852cfc95a5c232c",
+        "trace_sha256": "e90b8fe7b3ee5f7b848860628f829e8dfbaf9137550cf135f5359cb1874e358e",
+        "wall_seconds": 318.08353054104373,
+        "source_gds_sha256": "23972dbb6cd2f1cba6331ce066f4f3c5120597111be01e69b24f0b33468bd167",
+        "full_row_energy_pj": null,
+        "full_bank_timing_proven": false,
+        "worst_column_receiver_supply_energy_pj_per_row_read": 5.328008728261638,
+        "selected_column_receiver_mos_supply_energy_pj_per_row_read": {
+          "16": 3.2257257472151784,
+          "17": 5.328008728261638,
+          "18": 1.3372966305000071,
+          "19": 7.153558431786424,
+          "20": 5.133644688669355,
+          "21": 3.3747297571973953,
+          "22": 5.5195101402829705,
+          "23": 5.018956522206275,
+          "24": 4.687792135572147,
+          "25": 4.324906296009803,
+          "26": 7.903973010791182,
+          "27": 5.907581549755747,
+          "28": 4.619789661081857,
+          "29": 6.695693460143142,
+          "30": 4.685409895650428,
+          "31": 5.386855860335284
+        },
+        "worst_column_energy_scope": "Each selected column has a separate zero-volt series source rdd\u2192column_vddN feeding only its four receiver devices, including wells. Observational MOS supply/well energy includes device-model junctions but excludes explicit extracted VDD coupling-capacitor source current, which remains on global rdd; excludes sharedWL/PCdrivers and idealaggressor work. Not entire column energy. Included within pr, do not add twice.",
+        "worst_column_local_bit": 17,
+        "worst_column_global_bit": 273,
+        "path": "r1280-g02/ss-60ns-s32/result.json",
+        "column_energy_role": "Receiver MOS supply energy of timing proxy candidate; not a worst-energy selection",
+        "maximum_selected_receiver_mos_energy": {
+          "local_bit_column": 26,
+          "global_bit_column": 282,
+          "energy_pj_per_sampled_row_read": 7.903973010791182
+        },
+        "selected_bit_columns": [
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31
+        ],
+        "addresses": [
+          0,
+          1,
+          1279,
+          1274,
+          546,
+          0,
+          1,
+          1279,
+          1274,
+          546
+        ],
+        "slowest_observed_sample": {
+          "cycle": 5,
+          "row": 0,
+          "bit": 17,
+          "settled_ns_after_wl_command": 23.37632100000002,
+          "global_bit_column": 273
+        },
+        "command_to_capture_20ns_failure_count": 12,
+        "maximum_settled_ns_worst_ranked_column": 23.37632100000002
+      },
+      {
+        "protocol_pass": true,
+        "failures": {
+          "output": 0,
+          "raw": 0,
+          "precharge": 0,
+          "phase": 0
+        },
+        "maximum_sampled_settled_ns": 15.21137600000003,
+        "command_to_capture_20ns_probe": [
+          {
+            "cycle": 0,
+            "ns_after_wl_command": 20,
+            "data_failures": 0,
+            "excludes_decoder_setup_latch_and_mux": true
+          },
+          {
+            "cycle": 1,
+            "ns_after_wl_command": 20,
+            "data_failures": 0,
+            "excludes_decoder_setup_latch_and_mux": true
+          },
+          {
+            "cycle": 2,
+            "ns_after_wl_command": 20,
+            "data_failures": 0,
+            "excludes_decoder_setup_latch_and_mux": true
+          },
+          {
+            "cycle": 3,
+            "ns_after_wl_command": 20,
+            "data_failures": 0,
+            "excludes_decoder_setup_latch_and_mux": true
+          },
+          {
+            "cycle": 4,
+            "ns_after_wl_command": 20,
+            "data_failures": 0,
+            "excludes_decoder_setup_latch_and_mux": true
+          },
+          {
+            "cycle": 5,
+            "ns_after_wl_command": 20,
+            "data_failures": 0,
+            "excludes_decoder_setup_latch_and_mux": true
+          },
+          {
+            "cycle": 6,
+            "ns_after_wl_command": 20,
+            "data_failures": 0,
+            "excludes_decoder_setup_latch_and_mux": true
+          },
+          {
+            "cycle": 7,
+            "ns_after_wl_command": 20,
+            "data_failures": 0,
+            "excludes_decoder_setup_latch_and_mux": true
+          },
+          {
+            "cycle": 8,
+            "ns_after_wl_command": 20,
+            "data_failures": 0,
+            "excludes_decoder_setup_latch_and_mux": true
+          },
+          {
+            "cycle": 9,
+            "ns_after_wl_command": 20,
+            "data_failures": 0,
+            "excludes_decoder_setup_latch_and_mux": true
+          }
+        ],
+        "energy_pj_per_sampled_read": {
+          "pr": 112.85451120069504,
+          "pw": 1.3646111941027468,
+          "pp": 9.64692951362713,
+          "pa": -0.2591284594720443
+        },
+        "energy_window_ns": [
+          300.0,
+          600.0
+        ],
+        "energy_scope": "Finite-window net source energy over repeated sequence; only observed endpoint states compared, not all internal stored charge. Partial16active-column group plus128receivers/selectedWL/PC buffers; not complete bank energy.",
+        "maximum_observed_endpoint_voltage_difference_v": 0.00019913204598840696,
+        "samples_checked": 320,
+        "corner": "typical",
+        "voltage_v": 3.3,
+        "temperature_c": 25,
+        "period_ns": 60.0,
+        "protocol": {
+          "period_ns": 60.0,
+          "pc_off_ns": 14.0,
+          "wl_start_ns": 18.0,
+          "wl_fall_start_ns": 57.8,
+          "wl_fall_end_ns": 58.0,
+          "pc_on_start_ns": 59.8,
+          "sample_ns": [
+            54.0,
+            59.5
+          ],
+          "edge_ns": 0.2,
+          "phase_family": "pre2std4;14/60fraction precharge plus fixed4ns guard"
+        },
+        "scope": "New eight-row pitch-matched W6 layout.16fullheight active columns,112ideal legal-state BL aggressors also driving their real receivers, all128physicalpre2receivers; extracted stockbuf4WL/buf20PC. GeometryR signaljoin+arrayWL/BL/one2umgroundstrap. Groundendpoint/global supply and input phases ideal. No full320lane WL/PC rail load, simultaneous allarraycurrent, decoder/latch/mux.",
+        "conditional20ns_interleave_factor": 3,
+        "interleave_factor_qualified": false,
+        "interleave_qualification": "Only sampled32lane protocol if pass; not full320lane bank throughput",
+        "deck_sha256": "dc0252cb8e14a9a423aa4e23a069309b2e843a6e54a2423ebf6986e293593fc7",
+        "trace_sha256": "aeab556aa7a62d83a8626b8066f66459306f7e9037fb993e05b938bf0e334de7",
+        "wall_seconds": 351.0136382500641,
+        "source_gds_sha256": "23972dbb6cd2f1cba6331ce066f4f3c5120597111be01e69b24f0b33468bd167",
+        "full_row_energy_pj": null,
+        "full_bank_timing_proven": false,
+        "worst_column_receiver_supply_energy_pj_per_row_read": 6.784320532703336,
+        "selected_column_receiver_mos_supply_energy_pj_per_row_read": {
+          "16": 3.9854071023502007,
+          "17": 6.784320532703336,
+          "18": 1.6294643390826802,
+          "19": 9.166275379461682,
+          "20": 6.480080761327483,
+          "21": 4.2638719983901865,
+          "22": 7.051944796207785,
+          "23": 6.343604598832049,
+          "24": 5.876241336322016,
+          "25": 5.341020587411488,
+          "26": 9.915976442595177,
+          "27": 7.353775889600051,
+          "28": 5.807116114309186,
+          "29": 8.498005616002107,
+          "30": 5.824655211934578,
+          "31": 6.781995826055869
+        },
+        "worst_column_energy_scope": "Each selected column has a separate zero-volt series source rdd\u2192column_vddN feeding only its four receiver devices, including wells. Observational MOS supply/well energy includes device-model junctions but excludes explicit extracted VDD coupling-capacitor source current, which remains on global rdd; excludes sharedWL/PCdrivers and idealaggressor work. Not entire column energy. Included within pr, do not add twice.",
+        "worst_column_local_bit": 17,
+        "worst_column_global_bit": 273,
+        "path": "r1280-g02/typical-60ns-s32/result.json",
+        "column_energy_role": "Receiver MOS supply energy of timing proxy candidate; not a worst-energy selection",
+        "maximum_selected_receiver_mos_energy": {
+          "local_bit_column": 26,
+          "global_bit_column": 282,
+          "energy_pj_per_sampled_row_read": 9.915976442595177
+        },
+        "selected_bit_columns": [
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31
+        ],
+        "addresses": [
+          0,
+          1,
+          1279,
+          1274,
+          546,
+          0,
+          1,
+          1279,
+          1274,
+          546
+        ],
+        "slowest_observed_sample": {
+          "cycle": 5,
+          "row": 0,
+          "bit": 17,
+          "settled_ns_after_wl_command": 15.21137600000003,
+          "global_bit_column": 273
+        },
+        "command_to_capture_20ns_failure_count": 0,
+        "maximum_settled_ns_worst_ranked_column": 15.21137600000003
+      }
+    ],
+    "preserved_failures": [],
+    "failed_20ns_aperture_checks": [
+      {
+        "path": "r1280-g02/ss-60ns-s32/result.json",
+        "failed_bit_checks": 12
+      }
+    ],
+    "whole_bank_energy_pj_per_row": null,
+    "complete_macro_timing_proven": false,
+    "global_worst_case_proven": false,
+    "limitations": [
+      "16actual active fullheight columns,112ideal legal-state bitline aggressors and128physical receivers; not1280simultaneous real columns",
+      "Actual new-layout extracted MOS/C with explicit geometry-derivedR allocation, not native distributed resistance extraction",
+      "Stockbuf4WL/buf20PC, 10fF outputloads; complete fullbank commonWL/PC load and physical phasecontroller/decoder/latch/mux excluded",
+      "Ground one2umstrap with idealendpoints and idealglobal supply; actual globalreturn/PDN and fullbank current excluded",
+      "Energy finitewindow net sources with only observed endpoint states checked; no scaling to measured fullrow",
+      "Column meters measure receiverMOS supply/well current, including devicejunctions but excluding explicitVDDcouplingC source current; subset ofpr, never add twice",
+      "No mismatch/yield, complete recognizer throughput, systempower or production signoff"
+    ],
+    "full_bank_proxy_ranking": null,
+    "full_bank_capacitance_receipts": {
+      "status": "pending",
+      "export_receipt_path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/taalas-pitch/timing/fullbank-caps/export-caps-result.json",
+      "ranking_receipt_path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/taalas-pitch/timing/fullbank-caps/rank.json",
+      "export_receipt_sha256": null,
+      "ranking_receipt_sha256": null
+    },
+    "fullbank_vs_crop_capacitance": []
+  },
+  "independent_verification": {
+    "scope": "Actual full64/full1280 array+1280pre2receiver GDS extraction versus independent original K64 packed-tensor reference. No partition-only credit.",
+    "source_identity": {
+      "packed_sha256": "864fcdc7ec80be2dbb99d76361db338345fb02a1a26d7aaa4a1b40696b921907",
+      "unpacked_sha256": "ba628b676d59721c268868d6720be1f58a4f8d4edfd9a26009403c9a8c4fce8e",
+      "w2b_rtl_sha256": "de720f1e7c93c405729025cd9395850bc75e35c3eb602a1b67c4ad58d1ed4dbf",
+      "all409600_indices_match": true,
+      "scope": "All409600 indices independently unpacked from original K64 candidate block metadata; compared against W5 indices.npy and W2b frozen RTL; this is source identity, not GDS readback."
+    },
+    "variants": [
+      {
+        "rows": 64,
+        "input": {
+          "gds": "overnight-20261014/taalas-pitch/r64-v2/bank.gds",
+          "gds_sha256": "a94a98e936a59619f7009a2a55354cc4498b442f0d348aa474ea96589b1f7f73",
+          "top": "PITCH_BANK_R64",
+          "rows": 64,
+          "pc_width_um": 2.88,
+          "row_mapping": "logical_row=0+1*local_row"
+        },
+        "readback": {
+          "gds": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/taalas-pitch/r64-v2/bank.gds",
+          "gds_sha256": "a94a98e936a59619f7009a2a55354cc4498b442f0d348aa474ea96589b1f7f73",
+          "identity": {
+            "packed_sha256": "864fcdc7ec80be2dbb99d76361db338345fb02a1a26d7aaa4a1b40696b921907",
+            "unpacked_sha256": "ba628b676d59721c268868d6720be1f58a4f8d4edfd9a26009403c9a8c4fce8e",
+            "w2b_rtl_sha256": "de720f1e7c93c405729025cd9395850bc75e35c3eb602a1b67c4ad58d1ed4dbf",
+            "all409600_indices_match": true
+          },
+          "rows": 64,
+          "compared_selections": 20480,
+          "compared_bits": 81920,
+          "selection_mismatches": 0,
+          "bit_mismatches": 0,
+          "programmed_ones": 40786,
+          "observed_sha256": "1d7fbf9a572a3badf897966a5432c0338400f474e7156f96241772e3a79ec8fb",
+          "expected_sha256": "1d7fbf9a572a3badf897966a5432c0338400f474e7156f96241772e3a79ec8fb",
+          "placements": [
+            {
+              "group": 0,
+              "joined_transform": "r0 0,0",
+              "array_transform": "r0 10000,126000"
+            },
+            {
+              "group": 1,
+              "joined_transform": "r0 100000,0",
+              "array_transform": "r0 10000,126000"
+            },
+            {
+              "group": 2,
+              "joined_transform": "r0 200000,0",
+              "array_transform": "r0 10000,126000"
+            },
+            {
+              "group": 3,
+              "joined_transform": "r0 300000,0",
+              "array_transform": "r0 10000,126000"
+            },
+            {
+              "group": 4,
+              "joined_transform": "r0 400000,0",
+              "array_transform": "r0 10000,126000"
+            },
+            {
+              "group": 5,
+              "joined_transform": "r0 500000,0",
+              "array_transform": "r0 10000,126000"
+            },
+            {
+              "group": 6,
+              "joined_transform": "r0 600000,0",
+              "array_transform": "r0 10000,126000"
+            },
+            {
+              "group": 7,
+              "joined_transform": "r0 700000,0",
+              "array_transform": "r0 10000,126000"
+            },
+            {
+              "group": 8,
+              "joined_transform": "r0 800000,0",
+              "array_transform": "r0 10000,126000"
+            },
+            {
+              "group": 9,
+              "joined_transform": "r0 900000,0",
+              "array_transform": "r0 10000,126000"
+            }
+          ],
+          "method": "Reopened GDS Via1 centers at reviewed drain sites, plus each array instantiated exactly once. Expected bits independently decoded from original packed K64 tensor; no use of generator index image as oracle."
+        },
+        "extraction": {
+          "returncode": 0,
+          "status": "finished",
+          "elapsed_seconds": 54.50737287499942
+        },
+        "connectivity": {
+          "extracted_devices": 87040,
+          "reference_devices": 87040,
+          "exact_device_tuples_and_dimensions_match": true,
+          "bijection_nodes": 43761,
+          "extra_device_examples": [],
+          "missing_device_examples": [],
+          "qualification": "Bijective hierarchical prefix removal only; no device/net merges. All declared physical WL,PC,VDD,VSS and1280 outputs required present."
+        },
+        "lvs": {
+          "returncode": 0,
+          "status": "finished",
+          "elapsed_seconds": 3.8187808338552713,
+          "unique_match": true,
+          "property_errors": false,
+          "input": {
+            "gds": "overnight-20261014/taalas-pitch/r64-v2/bank.gds",
+            "gds_sha256": "a94a98e936a59619f7009a2a55354cc4498b442f0d348aa474ea96589b1f7f73",
+            "top": "PITCH_BANK_R64",
+            "rows": 64,
+            "pc_width_um": 2.88,
+            "row_mapping": "logical_row=0+1*local_row"
+          },
+          "pass": true
+        },
+        "negative_control": {
+          "returncode": 0,
+          "status": "finished",
+          "elapsed_seconds": 3.4663046670611948,
+          "unique_match": true,
+          "property_errors": true,
+          "input": {
+            "gds": "overnight-20261014/taalas-pitch/r64-v2/bank.gds",
+            "gds_sha256": "a94a98e936a59619f7009a2a55354cc4498b442f0d348aa474ea96589b1f7f73",
+            "top": "PITCH_BANK_R64",
+            "rows": 64,
+            "pc_width_um": 2.88,
+            "row_mapping": "logical_row=0+1*local_row"
+          },
+          "pass": false,
+          "negative_control_rejected": true
+        },
+        "verified": true,
+        "extraction_warning_lines": [
+          "WARNING: RLIMIT_NOFILE is above 1024 and Tcl_Version<9 this may cause runtime issues [rlim_cur=1048575]",
+          "Warning: Calma reading is not undoable!  I hope that's OK."
+        ]
+      },
+      {
+        "rows": 1280,
+        "input": {
+          "gds": "overnight-20261014/taalas-pitch/r1280-v2/bank.gds",
+          "gds_sha256": "fd75915d1d8b7bc053e91b0141bd1400d4f05d1319bdfebfd8cac4449b2235b0",
+          "top": "PITCH_BANK_R1280",
+          "rows": 1280,
+          "pc_width_um": 2.88,
+          "row_mapping": "logical_row=0+1*local_row"
+        },
+        "readback": {
+          "gds": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/taalas-pitch/r1280-v2/bank.gds",
+          "gds_sha256": "fd75915d1d8b7bc053e91b0141bd1400d4f05d1319bdfebfd8cac4449b2235b0",
+          "identity": {
+            "packed_sha256": "864fcdc7ec80be2dbb99d76361db338345fb02a1a26d7aaa4a1b40696b921907",
+            "unpacked_sha256": "ba628b676d59721c268868d6720be1f58a4f8d4edfd9a26009403c9a8c4fce8e",
+            "w2b_rtl_sha256": "de720f1e7c93c405729025cd9395850bc75e35c3eb602a1b67c4ad58d1ed4dbf",
+            "all409600_indices_match": true
+          },
+          "rows": 1280,
+          "compared_selections": 409600,
+          "compared_bits": 1638400,
+          "selection_mismatches": 0,
+          "bit_mismatches": 0,
+          "programmed_ones": 820801,
+          "observed_sha256": "ba628b676d59721c268868d6720be1f58a4f8d4edfd9a26009403c9a8c4fce8e",
+          "expected_sha256": "ba628b676d59721c268868d6720be1f58a4f8d4edfd9a26009403c9a8c4fce8e",
+          "placements": [
+            {
+              "group": 0,
+              "joined_transform": "r0 0,0",
+              "array_transform": "r0 10000,126000"
+            },
+            {
+              "group": 1,
+              "joined_transform": "r0 100000,0",
+              "array_transform": "r0 10000,126000"
+            },
+            {
+              "group": 2,
+              "joined_transform": "r0 200000,0",
+              "array_transform": "r0 10000,126000"
+            },
+            {
+              "group": 3,
+              "joined_transform": "r0 300000,0",
+              "array_transform": "r0 10000,126000"
+            },
+            {
+              "group": 4,
+              "joined_transform": "r0 400000,0",
+              "array_transform": "r0 10000,126000"
+            },
+            {
+              "group": 5,
+              "joined_transform": "r0 500000,0",
+              "array_transform": "r0 10000,126000"
+            },
+            {
+              "group": 6,
+              "joined_transform": "r0 600000,0",
+              "array_transform": "r0 10000,126000"
+            },
+            {
+              "group": 7,
+              "joined_transform": "r0 700000,0",
+              "array_transform": "r0 10000,126000"
+            },
+            {
+              "group": 8,
+              "joined_transform": "r0 800000,0",
+              "array_transform": "r0 10000,126000"
+            },
+            {
+              "group": 9,
+              "joined_transform": "r0 900000,0",
+              "array_transform": "r0 10000,126000"
+            }
+          ],
+          "method": "Reopened GDS Via1 centers at reviewed drain sites, plus each array instantiated exactly once. Expected bits independently decoded from original packed K64 tensor; no use of generator index image as oracle."
+        },
+        "extraction": null,
+        "connectivity": null,
+        "lvs": null,
+        "negative_control": null,
+        "verified": false,
+        "extraction_warning_lines": [
+          "WARNING: RLIMIT_NOFILE is above 1024 and Tcl_Version<9 this may cause runtime issues [rlim_cur=1048575]",
+          "Warning: Calma reading is not undoable!  I hope that's OK."
+        ]
+      }
+    ],
+    "scripts_sha256": {
+      "verify.py": "700b8a45bbf694c6e4612ec6c4be646eff45920e34d9e28b02de2f8441e7427a",
+      "readback.py": "5fa76a852331362bbae19ea6b4a1bce80e6b133c6d573fbe22c6105a5dfa8b8d",
+      "collect.py": "33821ddce7e9dfa1b0dc485951615ed5aaa5d783bc49a602664fbb1fb021d7a4"
+    },
+    "proof_exclusions": [
+      "Timing and energy are separate worker results",
+      "No missing driver/decoder/latch or whole-chip proof",
+      "Selected DRC is a parent-worker result"
+    ]
+  },
+  "independent_geometry_audit": {
+    "geometry": [
+      {
+        "rows": 64,
+        "gds_sha256": "a94a98e936a59619f7009a2a55354cc4498b442f0d348aa474ea96589b1f7f73",
+        "bounds_um": [
+          0.0,
+          0.04,
+          1004.0,
+          234.21
+        ],
+        "dimensions_um": [
+          1004.0,
+          234.17000000000002
+        ],
+        "area_um2": 235106.68000000002,
+        "um2_per_selection": 11.479818359375,
+        "route_and_pin_geometry_checks": 13070,
+        "pass_all": true,
+        "scope": "Direct GDS M2/M3/M4 joins, via2/via3,1280 OUT labels on metal,receiver supply/PC eight-row spines. Does not prove all-layer connectivity or electrical integrity."
+      },
+      {
+        "rows": 1280,
+        "gds_sha256": "fd75915d1d8b7bc053e91b0141bd1400d4f05d1319bdfebfd8cac4449b2235b0",
+        "bounds_um": [
+          0.0,
+          0.04,
+          1004.0,
+          2258.85
+        ],
+        "dimensions_um": [
+          1004.0,
+          2258.81
+        ],
+        "area_um2": 2267845.2399999998,
+        "um2_per_selection": 5.53673154296875,
+        "route_and_pin_geometry_checks": 13070,
+        "pass_all": true,
+        "scope": "Direct GDS M2/M3/M4 joins, via2/via3,1280 OUT labels on metal,receiver supply/PC eight-row spines. Does not prove all-layer connectivity or electrical integrity."
+      }
+    ],
+    "area_audit": {
+      "uniform_model_mm2": 174.17051443199998,
+      "october_array_receiver_mm2": 164.837,
+      "october_other_components_mm2": 56.583999999999996,
+      "mixed_mm2": 230.75451443199998,
+      "mixed_increase_over_october_mm2": 9.333514431999987,
+      "native_local_bit_pitch_um": 0.66,
+      "average_pitch_including_every16_corridor_um": 0.7225,
+      "bank_width_per_bitline_um": 0.784375
+    }
+  },
+  "complete_row_energy_pj": null,
+  "twenty_ns_capture_supported": false,
+  "twenty_ns_capture_status": "The SS pilot fails 12 bit checks at 20 ns after WL command; see timing cases for any later global candidate. Decoder, lookup and setup are excluded.",
+  "complete_macro": false,
+  "complete_projection": false,
+  "whole_model_die_fit_proven": false,
+  "subwatt_proven": false,
+  "missing": [
+    "Measured energy for a complete simultaneous 1,280-bit row read",
+    "Placed decoder, WL/PC drivers and phase controller",
+    "Output latches and output escape routing",
+    "Global PDN integrity and full simultaneously active row power",
+    "Downstream codebooks, shared products, accumulation and full recognizer",
+    "Full 1280-row Netgen LVS pass",
+    "Full 1280-row negative-control rejection",
+    "Global full-bank capacitance ranking: pending receipt integration"
+  ],
+  "failures": [
+    {
+      "artifact": "r64-v1",
+      "DRC_markers": 160,
+      "categories": {
+        "M3.2a": 80,
+        "V4.3b": 80
+      },
+      "fix": "Receiver horizontal origin shifted 0.09 um; lower ground via row moved 0.4 um higher. Original GDS, log and build-v1.py retained."
+    }
+  ],
+  "resource_contract": {
+    "workspace_only": "overnight-20261014/taalas-pitch",
+    "min_free_disk_GiB": 22,
+    "max_threads": 4,
+    "no_git": true,
+    "no_cloud": true
+  }
+}

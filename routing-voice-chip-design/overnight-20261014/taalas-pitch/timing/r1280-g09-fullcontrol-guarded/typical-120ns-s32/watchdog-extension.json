@@ -1,0 +1,33 @@
+{
+  "authorization": "Parent explicitly authorized safe owned-watchdog extension to absolute2400s, preserving native TT circuit/tolerances/process. Stop only identified Python wait; resume on native exit or absolute bound. User22GiB disk floor unchanged.",
+  "parent_pid": 30688,
+  "child_pid": 30714,
+  "parent_process": "30688 30672 SN   11:09 .venv/bin/python overnight-20261014/taalas-pitch/timing/guarded_full_control_tt.py --directory r1280-g09-fullcontrol-guarded",
+  "child_process": "30714 30688 RN   11:05 ngspice -b test.cir",
+  "child_cwd": "p30714\nfcwd\nn/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/taalas-pitch/timing/r1280-g09-fullcontrol-guarded/typical-120ns-s32\n",
+  "original_timeout_seconds": 1200,
+  "new_absolute_timeout_seconds": 2400,
+  "elapsed_parent_before_stop_seconds": 669,
+  "deadline_utc": "2026-10-13T23:19:58.304023+00:00",
+  "subprocess_wait_source_sha256": "773f67be387e442975136954e06b0113780c904d6075cb6957d5cfa7d3ad5fbd",
+  "actions": [
+    {
+      "utc": "2026-10-13T22:51:10.304363+00:00",
+      "action": "Validated owned parent/native child/cwd and wait-before-timeout implementation"
+    },
+    {
+      "utc": "2026-10-13T22:51:10.304584+00:00",
+      "action": "SIGSTOP sent only to Python watchdog; original native TT process continues"
+    },
+    {
+      "utc": "2026-10-13T22:54:15.024634+00:00",
+      "action": "22.2GiB reserve reached; SIGTERM sent only to owned native TT process"
+    },
+    {
+      "utc": "2026-10-13T22:54:15.025002+00:00",
+      "action": "SIGCONT sent to original watchdog; original runner owns exit/status/trace analysis"
+    }
+  ],
+  "minimum_free_gib": 22.132843017578125,
+  "status": "disk_guard"
+}

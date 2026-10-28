@@ -1,0 +1,20 @@
+{
+  "array": {
+    "path": "overnight-20261014/taalas-pitch/timing/r1280-g07/array-cap.spice",
+    "source_sha256": "073a413426ed2774a159e46298c4183ba8c6ae66e6921d7ef637235b10a0e7bc",
+    "capacitor_records": 619254,
+    "zero_records": 81640,
+    "negative_numeric_records": 0,
+    "signed_negative_zero_records": 0,
+    "qualification": "Counts every raw capacitor token; no raw source record removed. Simulation skips nonpositive aggregate C; no negative numerical record exists in this source."
+  },
+  "joined": {
+    "path": "overnight-20261014/taalas-pitch/timing/r1280-g07/joined-cap.spice",
+    "source_sha256": "fea89a5df965f4a568d2560c59bc509ae79b97a8dccde9758b02768fca348cda",
+    "capacitor_records": 622289,
+    "zero_records": 82279,
+    "negative_numeric_records": 0,
+    "signed_negative_zero_records": 130,
+    "qualification": "Counts every raw capacitor token; no raw source record removed. Simulation skips nonpositive aggregate C; no negative numerical record exists in this source."
+  }
+}

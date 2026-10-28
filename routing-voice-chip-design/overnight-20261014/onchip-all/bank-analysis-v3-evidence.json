@@ -1,0 +1,287 @@
+{
+  "scope": "RTL lifetime analysis correlated with existing, unchanged v2 F64; no new simulation",
+  "decision": "STOP: no safe deletion or equal-address alias of either bank under the existing schedule",
+  "v2_compiler_inputs_verified": 166,
+  "saved_output_hashes_verified": 18,
+  "prior_f64_elapsed_seconds": 3159.3976175829303,
+  "clocks": 312578649,
+  "tokens": [
+    28176,
+    373,
+    278,
+    26068,
+    2
+  ],
+  "rendered_text": "Switch on the lights",
+  "encoder_layer_accept_clocks": {
+    "0": 248832320,
+    "1": 258012141,
+    "2": 266942167,
+    "3": 275879422,
+    "4": 285054621,
+    "5": 294183520
+  },
+  "producer_generations": 30,
+  "producer_K_scalar_checks": 614400,
+  "producer_V_scalar_checks": 614400,
+  "analytical_peak_per_pair": {
+    "frames": 64,
+    "words_256bit": 5120,
+    "fp32_scalars": 40960,
+    "bytes": 163840,
+    "source": "RTL barrier proof; not a measured cycle counter"
+  },
+  "general_peak_per_pair": "80*FRAMES words of 256 bits = 2560*FRAMES bytes",
+  "geometry_examples": {
+    "4": {
+      "one_bank_bytes": 5120,
+      "pair_bytes": 10240
+    },
+    "64": {
+      "one_bank_bytes": 81920,
+      "pair_bytes": 163840
+    },
+    "500": {
+      "one_bank_bytes": 640000,
+      "pair_bytes": 1280000
+    },
+    "508": {
+      "one_bank_bytes": 650240,
+      "pair_bytes": 1300480
+    }
+  },
+  "overlap_cycle_count": null,
+  "overlap_cycle_count_reason": "Not instrumented; exact enabling/barrier analysis used as authorized",
+  "encoder_reference_counterexamples": [
+    {
+      "layer": 0,
+      "prefix_X_vs_normX": {
+        "fp32_values": 20480,
+        "unequal_values": 20480,
+        "packets_256bit": 2560,
+        "unequal_packets": 2560,
+        "first_unequal_scalar": 0,
+        "a_bits": "0xbe5357d8",
+        "b_bits": "0xbf3ff13d",
+        "a_sha256": "4a5a44a877b36db4ef695fe237076798720c52be88387e7c1d5cf34491e40294",
+        "b_sha256": "928e74d193e4ed9e5696342f4aebbcdb4581ab8cebe00546b19b81a5aea29d51"
+      },
+      "ff_S_vs_normS": {
+        "fp32_values": 20480,
+        "unequal_values": 20480,
+        "packets_256bit": 2560,
+        "unequal_packets": 2560,
+        "first_unequal_scalar": 0,
+        "a_bits": "0x3f7744ce",
+        "b_bits": "0x3f79ad67",
+        "a_sha256": "578ce9e3dfb88d04385d19ffb3d7a204eeb7f150ddd8f18b02d398c4ebc5ab19",
+        "b_sha256": "983588741602551f68c7a06e84bae3672a584b0d222e7d472329acab2a16931b"
+      }
+    },
+    {
+      "layer": 1,
+      "prefix_X_vs_normX": {
+        "fp32_values": 20480,
+        "unequal_values": 20480,
+        "packets_256bit": 2560,
+        "unequal_packets": 2560,
+        "first_unequal_scalar": 0,
+        "a_bits": "0x413ed726",
+        "b_bits": "0x3f2c890d",
+        "a_sha256": "e4cab208286352f42136679bae1d95b2a0446b9faf78e51edd7c05d76803f60c",
+        "b_sha256": "f7b0b186cb3ce5ffdb7278f7bfd980a01e1ca2d75291d0a4b80aef1d24796f56"
+      },
+      "ff_S_vs_normS": {
+        "fp32_values": 20480,
+        "unequal_values": 20480,
+        "packets_256bit": 2560,
+        "unequal_packets": 2560,
+        "first_unequal_scalar": 0,
+        "a_bits": "0x41468430",
+        "b_bits": "0x3f3f2045",
+        "a_sha256": "705319ee42b3ddadacd2fac74d71a6d54c146ec8630527b207fba985580984df",
+        "b_sha256": "b2cfd52cde89b0c05bd6ca580428a25962949aa8554161b1304ed7faa06c9058"
+      }
+    },
+    {
+      "layer": 2,
+      "prefix_X_vs_normX": {
+        "fp32_values": 20480,
+        "unequal_values": 20480,
+        "packets_256bit": 2560,
+        "unequal_packets": 2560,
+        "first_unequal_scalar": 0,
+        "a_bits": "0x415630d9",
+        "b_bits": "0x3f61c45b",
+        "a_sha256": "f14d354abf4f7284cfcc14b24c82a4b477788d9e32bbcc04af47768bb1325858",
+        "b_sha256": "35bbfb42199cb5168acf3d37c917836d655f039023a69c2f43f9015a0d2c49c3"
+      },
+      "ff_S_vs_normS": {
+        "fp32_values": 20480,
+        "unequal_values": 20480,
+        "packets_256bit": 2560,
+        "unequal_packets": 2560,
+        "first_unequal_scalar": 0,
+        "a_bits": "0x41620a56",
+        "b_bits": "0x3f35fd3f",
+        "a_sha256": "0534b333eca28147dafad360c5a605b22aa0bf7176f8defb948e890d31fee662",
+        "b_sha256": "c259a7b80d5b9c0e25efca266041ed10a7eb662b76306bfd12685c2e74fd0c88"
+      }
+    },
+    {
+      "layer": 3,
+      "prefix_X_vs_normX": {
+        "fp32_values": 20480,
+        "unequal_values": 20480,
+        "packets_256bit": 2560,
+        "unequal_packets": 2560,
+        "first_unequal_scalar": 0,
+        "a_bits": "0x416a0402",
+        "b_bits": "0x3f57bfbf",
+        "a_sha256": "c83cc6f1e39de4382b543789f38cd28400afbd9cc175d9c208b798fa710bd773",
+        "b_sha256": "7fd0fc7c589d157d43ba8307a6aeadb59236ffbaaae9e1a96b72bf0122acc998"
+      },
+      "ff_S_vs_normS": {
+        "fp32_values": 20480,
+        "unequal_values": 20480,
+        "packets_256bit": 2560,
+        "unequal_packets": 2560,
+        "first_unequal_scalar": 0,
+        "a_bits": "0x415e5c6f",
+        "b_bits": "0x3f341c54",
+        "a_sha256": "2bd94002b2a589182534de896dbbe2238935d473b482160efcacbba15d04c17d",
+        "b_sha256": "6288e7a7c7001fb5eedfe6a32c953f1124ef2307939cfa2baef99b09ac485491"
+      }
+    },
+    {
+      "layer": 4,
+      "prefix_X_vs_normX": {
+        "fp32_values": 20480,
+        "unequal_values": 20480,
+        "packets_256bit": 2560,
+        "unequal_packets": 2560,
+        "first_unequal_scalar": 0,
+        "a_bits": "0x417db538",
+        "b_bits": "0x3f7fa9f0",
+        "a_sha256": "b05aeeda415212307ae4ed30f3dbd056a6ada8d54a02d4797e2ec18f8fc846c6",
+        "b_sha256": "6d5751d8769e7c4eaa4cb66ca890e7f91efa01dd72b9047f0e1eedc3af18458e"
+      },
+      "ff_S_vs_normS": {
+        "fp32_values": 20480,
+        "unequal_values": 20480,
+        "packets_256bit": 2560,
+        "unequal_packets": 2560,
+        "first_unequal_scalar": 0,
+        "a_bits": "0x4191af22",
+        "b_bits": "0x3f73822a",
+        "a_sha256": "ad8e12689d20bc77ca7f2bb10b2c6c136ec5ea9b7fd178a355dc2dd3a4072a9a",
+        "b_sha256": "e505cf6889afb930193f3b7f0eea5970c6cbd82c21c47290e9eba743a6a6d84d"
+      }
+    },
+    {
+      "layer": 5,
+      "prefix_X_vs_normX": {
+        "fp32_values": 20480,
+        "unequal_values": 20480,
+        "packets_256bit": 2560,
+        "unequal_packets": 2560,
+        "first_unequal_scalar": 0,
+        "a_bits": "0x421a5440",
+        "b_bits": "0x3fde4ba0",
+        "a_sha256": "f59b827aef7f44b09eb9a9e7d4508a408008c83eb7005b660804cc1eda3591d6",
+        "b_sha256": "648f52210418bac3717f8d89e21934e4e0c40f7a727a46a21b546fe4d9d1490d"
+      },
+      "ff_S_vs_normS": {
+        "fp32_values": 20480,
+        "unequal_values": 20480,
+        "packets_256bit": 2560,
+        "unequal_packets": 2560,
+        "first_unequal_scalar": 0,
+        "a_bits": "0x41fc7cbc",
+        "b_bits": "0x3fe09a67",
+        "a_sha256": "ddc820e994619498beb14fbc93f48cc121d685bd64be6b671d932b4d64da5076",
+        "b_sha256": "299b65b17752479a86a212c169dd353de74139251fc0828243c0326cc1be2924"
+      }
+    }
+  ],
+  "producer_actual_counterexamples": [
+    {
+      "layer": 0,
+      "fp32_values": 20480,
+      "unequal_values": 20480,
+      "packets_256bit": 2560,
+      "unequal_packets": 2560,
+      "first_unequal_scalar": 0,
+      "a_bits": "0x3fc184c0",
+      "b_bits": "0xbe6fabb5",
+      "a_sha256": "fb4054b5c737fda94c8dfc761066131b8a4ad28b78d157850e083d5656808061",
+      "b_sha256": "58f5e8ef83ba40427645df55f9c82b60ff8c6ee31db9660809409a18add0bdeb"
+    },
+    {
+      "layer": 1,
+      "fp32_values": 20480,
+      "unequal_values": 20480,
+      "packets_256bit": 2560,
+      "unequal_packets": 2560,
+      "first_unequal_scalar": 0,
+      "a_bits": "0xc0082b29",
+      "b_bits": "0xbe3f3db0",
+      "a_sha256": "5af246e0b09fe6106ea398c6c0f8b877f9ed1fb01732bceeb47aae7794fe1299",
+      "b_sha256": "0e96e50870113345d58c04043cf81507bde53038c6b9386008874541e7207dc3"
+    },
+    {
+      "layer": 2,
+      "fp32_values": 20480,
+      "unequal_values": 20480,
+      "packets_256bit": 2560,
+      "unequal_packets": 2560,
+      "first_unequal_scalar": 0,
+      "a_bits": "0x3edacfc2",
+      "b_bits": "0xbd21ca14",
+      "a_sha256": "3da2c10228d47131eaee62d99f15f9b9be48601678c71d3c6acf190e451c1cdb",
+      "b_sha256": "2f72706f81b3de9f9d96a852671d7b54a0ba54305e674358c3f4e9855682b36a"
+    },
+    {
+      "layer": 3,
+      "fp32_values": 20480,
+      "unequal_values": 20480,
+      "packets_256bit": 2560,
+      "unequal_packets": 2560,
+      "first_unequal_scalar": 0,
+      "a_bits": "0xbf02b881",
+      "b_bits": "0x3f572740",
+      "a_sha256": "52a8e4d5875c38f6ca4b38489373bcb5c036b6b2d39b117231a089411f6f2bab",
+      "b_sha256": "6f50bdc8f890baf2c0e8a463e9143cb634ef5ddcaaa26378d388698648c14d85"
+    },
+    {
+      "layer": 4,
+      "fp32_values": 20480,
+      "unequal_values": 20480,
+      "packets_256bit": 2560,
+      "unequal_packets": 2560,
+      "first_unequal_scalar": 0,
+      "a_bits": "0x3fb21d6b",
+      "b_bits": "0xbe51a401",
+      "a_sha256": "3860fad43fe44c8f91d7c1cd955ae6c13fa1085d92d36d139e700baaf2987a20",
+      "b_sha256": "e0c538bccb9636ca51d5e6ccb5dba26c0c3d23a25b6b3f03f482f9dbf81a3c82"
+    },
+    {
+      "layer": 5,
+      "fp32_values": 20480,
+      "unequal_values": 20480,
+      "packets_256bit": 2560,
+      "unequal_packets": 2560,
+      "first_unequal_scalar": 0,
+      "a_bits": "0x3e1ea3df",
+      "b_bits": "0x3f42805d",
+      "a_sha256": "c070f98d348d40f68ae2caddba12d59ae5a99db6e66883d467b179c670dfd16d",
+      "b_sha256": "6f7ac92a5572c311384cd30f63271e1713cf6c0baf98e84280d8527f3b8ae90e"
+    }
+  ],
+  "storage_saved_bytes": 0,
+  "v3_RTL_created": false,
+  "new_F64_run": false,
+  "disk_free_bytes": 25720713216,
+  "completed_local": "2026-10-14T04:15:16.190901+05:30",
+  "analysis_script_seconds": 0.13624925003387034
+}

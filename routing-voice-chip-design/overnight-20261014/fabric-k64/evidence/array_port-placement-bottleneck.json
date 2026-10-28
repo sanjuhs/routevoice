@@ -1,0 +1,15 @@
+{
+  "source": "runs/array_port-v2/31-openroad-stamidpnr/max.rpt",
+  "source_sha256": "d00aebdc007be86ae7b018f524af49d2c3e9b3a1cba794049809fddcf99911b9",
+  "stage": "unrepaired global placement, no CTS or routed RC",
+  "observed_path": {
+    "startpoint": "_614276_/Q",
+    "start_net": "array_row[6]",
+    "start_net_fanout": 4074,
+    "following_decode_net": "_258873_",
+    "following_decode_net_fanout": 4428,
+    "clock_pin_fanout": 11674
+  },
+  "inference": "High-fanout row/decode distribution is a concrete early electrical bottleneck. This does not prove the final bottleneck after buffering or imply the book/array itself cannot work.",
+  "bounded_next_step_if_trial_stops": "Resume the exact full-projection checkpoint in a separately bounded physical phase; if repair remains dominant, test explicit local decode/driver distribution while retaining all coefficients, widths and full 1280x320 boundary. Re-run equivalence and physical accounting for any structural change."
+}

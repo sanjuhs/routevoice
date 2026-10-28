@@ -1,0 +1,13 @@
+{
+  "status": "diagnostic_deviation_from_requested_STA_behavior",
+  "change": "Only pre-CTS clock propagation changes from propagated to ideal; CTS script line 91 explicitly sets propagated clocks after constructing the tree. 20ns, all numeric constraints and all repair/signoff settings unchanged.",
+  "original_state": "/workspace/rv/overnight-20261014/engine-buffered/runs/buf-v4/25-checker-powergridviolations/state_out.json",
+  "original_sdc": "/workspace/rv/overnight-20261014/engine-buffered/runs/buf-v4/23-openroad-globalplacement/rv_k64_array_port.sdc",
+  "original_sdc_sha256": "0f1f40063426941bb258d2a4e4592c0683ac260422dbfd2ee420148f9f669dcf",
+  "diagnostic_sdc": "/workspace/rv/overnight-20261014/engine-buffered/evidence/ideal-prects.sdc",
+  "diagnostic_sdc_sha256": "b9508482812dc426e0d3a13c99f6eceb6cde07d26663ec2423dd255a8cd17815",
+  "original_run_continues": "buf-v4-physical",
+  "observed_preCTS_clock_loads": 11784,
+  "observed_preCTS_clock_slew_ns": 300.452423,
+  "cts_source": "/nix/store/1v4pl3wcjvysadks22gj14b8qj9qz20d-python3-3.13.9-env/lib/python3.13/site-packages/librelane/scripts/openroad/cts.tcl:91"
+}

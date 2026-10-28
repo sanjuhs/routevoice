@@ -1,0 +1,61 @@
+{
+  "unix": 1791921062.307601,
+  "method": "APFS cp -c copy-on-write, exact content hash checked before atomic replacement",
+  "nominal_duplicate_bytes_shared": 446374834,
+  "changes": [
+    {
+      "path": "runs/rv_fixed_proj64x320_rom-restored/16-odb-setpowerconnections/rv_fixed_proj64x320_rom.def",
+      "clone_source": "runs/rv_fixed_proj64x320_rom-restored/13-openroad-floorplan/rv_fixed_proj64x320_rom.def",
+      "sha256": "9ddd88dc2ce1051329c903d2637ad03f3f2f54730688fd49345d41fd5204fbed",
+      "bytes": 27288471
+    },
+    {
+      "path": "runs/rv_fixed_proj64x320_rom-restored/18-openroad-cutrows/rv_fixed_proj64x320_rom.def",
+      "clone_source": "runs/rv_fixed_proj64x320_rom-restored/13-openroad-floorplan/rv_fixed_proj64x320_rom.def",
+      "sha256": "9ddd88dc2ce1051329c903d2637ad03f3f2f54730688fd49345d41fd5204fbed",
+      "bytes": 27288471
+    },
+    {
+      "path": "runs/rv_fixed_proj64x320_rom-restored/16-odb-setpowerconnections/rv_fixed_proj64x320_rom.odb",
+      "clone_source": "runs/rv_fixed_proj64x320_rom-restored/13-openroad-floorplan/rv_fixed_proj64x320_rom.odb",
+      "sha256": "828c6d66568b27bd2c57c899a2d186ce5fe95a5d7626969423fd159e7129e104",
+      "bytes": 109613098
+    },
+    {
+      "path": "runs/rv_fixed_proj64x320_rom-restored/18-openroad-cutrows/rv_fixed_proj64x320_rom.odb",
+      "clone_source": "runs/rv_fixed_proj64x320_rom-restored/13-openroad-floorplan/rv_fixed_proj64x320_rom.odb",
+      "sha256": "828c6d66568b27bd2c57c899a2d186ce5fe95a5d7626969423fd159e7129e104",
+      "bytes": 109613098
+    },
+    {
+      "path": "runs/rv_fixed_proj64x320_rom-restored/24-openroad-globalplacementskipio/rv_fixed_proj64x320_rom.nl.v",
+      "clone_source": "runs/rv_fixed_proj64x320_rom-restored/19-openroad-tapendcapinsertion/rv_fixed_proj64x320_rom.nl.v",
+      "sha256": "e1478c02bd9d22d8754d4fc97e1f8343c032f07deed00610aa2369dbcd596e34",
+      "bytes": 29341132
+    },
+    {
+      "path": "runs/rv_fixed_proj64x320_rom-restored/25-openroad-ioplacement/rv_fixed_proj64x320_rom.nl.v",
+      "clone_source": "runs/rv_fixed_proj64x320_rom-restored/19-openroad-tapendcapinsertion/rv_fixed_proj64x320_rom.nl.v",
+      "sha256": "e1478c02bd9d22d8754d4fc97e1f8343c032f07deed00610aa2369dbcd596e34",
+      "bytes": 29341132
+    },
+    {
+      "path": "runs/rv_fixed_proj64x320_rom-restored/28-openroad-globalplacement/rv_fixed_proj64x320_rom.nl.v",
+      "clone_source": "runs/rv_fixed_proj64x320_rom-restored/19-openroad-tapendcapinsertion/rv_fixed_proj64x320_rom.nl.v",
+      "sha256": "e1478c02bd9d22d8754d4fc97e1f8343c032f07deed00610aa2369dbcd596e34",
+      "bytes": 29341132
+    },
+    {
+      "path": "runs/rv_fixed_proj64x320_rom-restored/25-openroad-ioplacement/rv_fixed_proj64x320_rom.pnl.v",
+      "clone_source": "runs/rv_fixed_proj64x320_rom-restored/24-openroad-globalplacementskipio/rv_fixed_proj64x320_rom.pnl.v",
+      "sha256": "19e9d2e3e2205a6cfd68d870d38db9bbc9403a670c6f4e61502223b69e3602e9",
+      "bytes": 42274150
+    },
+    {
+      "path": "runs/rv_fixed_proj64x320_rom-restored/28-openroad-globalplacement/rv_fixed_proj64x320_rom.pnl.v",
+      "clone_source": "runs/rv_fixed_proj64x320_rom-restored/24-openroad-globalplacementskipio/rv_fixed_proj64x320_rom.pnl.v",
+      "sha256": "19e9d2e3e2205a6cfd68d870d38db9bbc9403a670c6f4e61502223b69e3602e9",
+      "bytes": 42274150
+    }
+  ]
+}

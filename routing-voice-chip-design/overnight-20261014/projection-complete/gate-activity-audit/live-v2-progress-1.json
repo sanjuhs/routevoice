@@ -1,0 +1,899 @@
+{
+  "status": "live streaming diagnostic snapshot, not a finalized VCD audit",
+  "source": "/workspace/rv/overnight-20261014/projection-complete/evidence/gate-speech.vcd",
+  "read_limit_bytes": 216421446,
+  "latest_timestamp_ps_in_snapshot": 296540000,
+  "source_size_after": 216421446,
+  "UTC": "2026-10-14T00:06:38Z",
+  "signals": [
+    {
+      "value_identifier": "W\"E",
+      "aliases": [
+        {
+          "scope": "tb",
+          "name": "clk",
+          "width": 1
+        },
+        {
+          "scope": "tb/dut",
+          "name": "clk",
+          "width": 1
+        }
+      ],
+      "last_value": {
+        "bits": "0",
+        "integer": 0
+      },
+      "distinct_value_events": 29655,
+      "first_value": {
+        "time_ps": 0,
+        "bits": "0",
+        "integer": 0
+      },
+      "recent_changes": [
+        {
+          "time_ps": 296470000,
+          "bits": "1",
+          "integer": 1
+        },
+        {
+          "time_ps": 296480000,
+          "bits": "0",
+          "integer": 0
+        },
+        {
+          "time_ps": 296490000,
+          "bits": "1",
+          "integer": 1
+        },
+        {
+          "time_ps": 296500000,
+          "bits": "0",
+          "integer": 0
+        },
+        {
+          "time_ps": 296510000,
+          "bits": "1",
+          "integer": 1
+        },
+        {
+          "time_ps": 296520000,
+          "bits": "0",
+          "integer": 0
+        },
+        {
+          "time_ps": 296530000,
+          "bits": "1",
+          "integer": 1
+        },
+        {
+          "time_ps": 296540000,
+          "bits": "0",
+          "integer": 0
+        }
+      ]
+    },
+    {
+      "value_identifier": "#",
+      "aliases": [
+        {
+          "scope": "tb",
+          "name": "reset",
+          "width": 1
+        },
+        {
+          "scope": "tb/dut",
+          "name": "reset",
+          "width": 1
+        }
+      ],
+      "last_value": {
+        "bits": "0",
+        "integer": 0
+      },
+      "distinct_value_events": 2,
+      "first_value": {
+        "time_ps": 0,
+        "bits": "1",
+        "integer": 1
+      },
+      "recent_changes": [
+        {
+          "time_ps": 0,
+          "bits": "1",
+          "integer": 1
+        },
+        {
+          "time_ps": 20000,
+          "bits": "0",
+          "integer": 0
+        }
+      ]
+    },
+    {
+      "value_identifier": "$",
+      "aliases": [
+        {
+          "scope": "tb",
+          "name": "start",
+          "width": 1
+        },
+        {
+          "scope": "tb/dut",
+          "name": "start",
+          "width": 1
+        }
+      ],
+      "last_value": {
+        "bits": "0",
+        "integer": 0
+      },
+      "distinct_value_events": 3,
+      "first_value": {
+        "time_ps": 0,
+        "bits": "0",
+        "integer": 0
+      },
+      "recent_changes": [
+        {
+          "time_ps": 0,
+          "bits": "0",
+          "integer": 0
+        },
+        {
+          "time_ps": 40000,
+          "bits": "1",
+          "integer": 1
+        },
+        {
+          "time_ps": 60000,
+          "bits": "0",
+          "integer": 0
+        }
+      ]
+    },
+    {
+      "value_identifier": "%",
+      "aliases": [
+        {
+          "scope": "tb",
+          "name": "step_enable",
+          "width": 1
+        },
+        {
+          "scope": "tb/dut",
+          "name": "step_enable",
+          "width": 1
+        }
+      ],
+      "last_value": {
+        "bits": "1",
+        "integer": 1
+      },
+      "distinct_value_events": 1,
+      "first_value": {
+        "time_ps": 0,
+        "bits": "1",
+        "integer": 1
+      },
+      "recent_changes": [
+        {
+          "time_ps": 0,
+          "bits": "1",
+          "integer": 1
+        }
+      ]
+    },
+    {
+      "value_identifier": "&",
+      "aliases": [
+        {
+          "scope": "tb",
+          "name": "in_valid",
+          "width": 1
+        },
+        {
+          "scope": "tb/dut",
+          "name": "in_valid",
+          "width": 1
+        }
+      ],
+      "last_value": {
+        "bits": "1",
+        "integer": 1
+      },
+      "distinct_value_events": 2,
+      "first_value": {
+        "time_ps": 0,
+        "bits": "0",
+        "integer": 0
+      },
+      "recent_changes": [
+        {
+          "time_ps": 0,
+          "bits": "0",
+          "integer": 0
+        },
+        {
+          "time_ps": 60000,
+          "bits": "1",
+          "integer": 1
+        }
+      ]
+    },
+    {
+      "value_identifier": "'",
+      "aliases": [
+        {
+          "scope": "tb",
+          "name": "out_ready",
+          "width": 1
+        },
+        {
+          "scope": "tb/dut",
+          "name": "out_ready",
+          "width": 1
+        }
+      ],
+      "last_value": {
+        "bits": "1",
+        "integer": 1
+      },
+      "distinct_value_events": 2,
+      "first_value": {
+        "time_ps": 0,
+        "bits": "0",
+        "integer": 0
+      },
+      "recent_changes": [
+        {
+          "time_ps": 0,
+          "bits": "0",
+          "integer": 0
+        },
+        {
+          "time_ps": 60000,
+          "bits": "1",
+          "integer": 1
+        }
+      ]
+    },
+    {
+      "value_identifier": "X\"E",
+      "aliases": [
+        {
+          "scope": "tb",
+          "name": "in_ready",
+          "width": 1
+        },
+        {
+          "scope": "tb/dut",
+          "name": "in_ready",
+          "width": 1
+        }
+      ],
+      "last_value": {
+        "bits": "0",
+        "integer": 0
+      },
+      "distinct_value_events": 2,
+      "first_value": {
+        "time_ps": 0,
+        "bits": "1",
+        "integer": 1
+      },
+      "recent_changes": [
+        {
+          "time_ps": 0,
+          "bits": "1",
+          "integer": 1
+        },
+        {
+          "time_ps": 10000,
+          "bits": "0",
+          "integer": 0
+        }
+      ]
+    },
+    {
+      "value_identifier": "Y\"E",
+      "aliases": [
+        {
+          "scope": "tb",
+          "name": "busy",
+          "width": 1
+        },
+        {
+          "scope": "tb/dut",
+          "name": "busy",
+          "width": 1
+        }
+      ],
+      "last_value": {
+        "bits": "1",
+        "integer": 1
+      },
+      "distinct_value_events": 3,
+      "first_value": {
+        "time_ps": 0,
+        "bits": "1",
+        "integer": 1
+      },
+      "recent_changes": [
+        {
+          "time_ps": 0,
+          "bits": "1",
+          "integer": 1
+        },
+        {
+          "time_ps": 10000,
+          "bits": "0",
+          "integer": 0
+        },
+        {
+          "time_ps": 50000,
+          "bits": "1",
+          "integer": 1
+        }
+      ]
+    },
+    {
+      "value_identifier": "Z\"E",
+      "aliases": [
+        {
+          "scope": "tb",
+          "name": "out_valid",
+          "width": 1
+        },
+        {
+          "scope": "tb/dut",
+          "name": "out_valid",
+          "width": 1
+        }
+      ],
+      "last_value": {
+        "bits": "0",
+        "integer": 0
+      },
+      "distinct_value_events": 1,
+      "first_value": {
+        "time_ps": 0,
+        "bits": "0",
+        "integer": 0
+      },
+      "recent_changes": [
+        {
+          "time_ps": 0,
+          "bits": "0",
+          "integer": 0
+        }
+      ]
+    },
+    {
+      "value_identifier": "yy4!",
+      "aliases": [
+        {
+          "scope": "tb",
+          "name": "array_read_enable",
+          "width": 1
+        }
+      ],
+      "last_value": {
+        "bits": "0",
+        "integer": 0
+      },
+      "distinct_value_events": 1,
+      "first_value": {
+        "time_ps": 0,
+        "bits": "0",
+        "integer": 0
+      },
+      "recent_changes": [
+        {
+          "time_ps": 0,
+          "bits": "0",
+          "integer": 0
+        }
+      ]
+    },
+    {
+      "value_identifier": "[\"E",
+      "aliases": [
+        {
+          "scope": "tb",
+          "name": "out_data",
+          "width": 32
+        },
+        {
+          "scope": "tb/dut",
+          "name": "out_data",
+          "width": 32
+        }
+      ],
+      "last_value": {
+        "bits": "00000000000000000000000000000000",
+        "integer": 0
+      },
+      "distinct_value_events": 2,
+      "first_value": {
+        "time_ps": 0,
+        "bits": "11111111111111111111111111111111",
+        "integer": 4294967295
+      },
+      "recent_changes": [
+        {
+          "time_ps": 0,
+          "bits": "11111111111111111111111111111111",
+          "integer": 4294967295
+        },
+        {
+          "time_ps": 10000,
+          "bits": "00000000000000000000000000000000",
+          "integer": 0
+        }
+      ]
+    },
+    {
+      "value_identifier": "\\\"E",
+      "aliases": [
+        {
+          "scope": "tb",
+          "name": "out_column",
+          "width": 9
+        },
+        {
+          "scope": "tb/dut",
+          "name": "out_column",
+          "width": 9
+        }
+      ],
+      "last_value": {
+        "bits": "000000000",
+        "integer": 0
+      },
+      "distinct_value_events": 2,
+      "first_value": {
+        "time_ps": 0,
+        "bits": "111111111",
+        "integer": 511
+      },
+      "recent_changes": [
+        {
+          "time_ps": 0,
+          "bits": "111111111",
+          "integer": 511
+        },
+        {
+          "time_ps": 10000,
+          "bits": "000000000",
+          "integer": 0
+        }
+      ]
+    },
+    {
+      "value_identifier": "{y4!",
+      "aliases": [
+        {
+          "scope": "tb",
+          "name": "array_row",
+          "width": 11
+        }
+      ],
+      "last_value": {
+        "bits": "00000000000",
+        "integer": 0
+      },
+      "distinct_value_events": 1,
+      "first_value": {
+        "time_ps": 0,
+        "bits": "00000000000",
+        "integer": 0
+      },
+      "recent_changes": [
+        {
+          "time_ps": 0,
+          "bits": "00000000000",
+          "integer": 0
+        }
+      ]
+    },
+    {
+      "value_identifier": "|y4!",
+      "aliases": [
+        {
+          "scope": "tb",
+          "name": "frozen_index_bits",
+          "width": 1280
+        }
+      ],
+      "last_value": {
+        "bits_count": 1280,
+        "one_bits": 0,
+        "unknown_bits": 0,
+        "first32": "00000000000000000000000000000000",
+        "last32": "00000000000000000000000000000000"
+      },
+      "distinct_value_events": 1,
+      "first_value": {
+        "time_ps": 0,
+        "bits_count": 1280,
+        "one_bits": 0,
+        "unknown_bits": 0,
+        "first32": "00000000000000000000000000000000",
+        "last32": "00000000000000000000000000000000"
+      },
+      "recent_changes": [
+        {
+          "time_ps": 0,
+          "bits_count": 1280,
+          "one_bits": 0,
+          "unknown_bits": 0,
+          "first32": "00000000000000000000000000000000",
+          "last32": "00000000000000000000000000000000"
+        }
+      ]
+    },
+    {
+      "value_identifier": "*",
+      "aliases": [
+        {
+          "scope": "tb",
+          "name": "v",
+          "width": 32
+        }
+      ],
+      "last_value": {
+        "bits": "00000000000000000000000000000000",
+        "integer": 0
+      },
+      "distinct_value_events": 1,
+      "first_value": {
+        "time_ps": 0,
+        "bits": "00000000000000000000000000000000",
+        "integer": 0
+      },
+      "recent_changes": [
+        {
+          "time_ps": 0,
+          "bits": "00000000000000000000000000000000",
+          "integer": 0
+        }
+      ]
+    },
+    {
+      "value_identifier": "+",
+      "aliases": [
+        {
+          "scope": "tb",
+          "name": "r",
+          "width": 32
+        }
+      ],
+      "last_value": {
+        "bits": "00000000000000000000000000000000",
+        "integer": 0
+      },
+      "distinct_value_events": 1,
+      "first_value": {
+        "time_ps": 0,
+        "bits": "00000000000000000000000000000000",
+        "integer": 0
+      },
+      "recent_changes": [
+        {
+          "time_ps": 0,
+          "bits": "00000000000000000000000000000000",
+          "integer": 0
+        }
+      ]
+    },
+    {
+      "value_identifier": ",",
+      "aliases": [
+        {
+          "scope": "tb",
+          "name": "c",
+          "width": 32
+        }
+      ],
+      "last_value": {
+        "bits": "00000000000000000000000000000000",
+        "integer": 0
+      },
+      "distinct_value_events": 1,
+      "first_value": {
+        "time_ps": 0,
+        "bits": "00000000000000000000000000000000",
+        "integer": 0
+      },
+      "recent_changes": [
+        {
+          "time_ps": 0,
+          "bits": "00000000000000000000000000000000",
+          "integer": 0
+        }
+      ]
+    },
+    {
+      "value_identifier": "-",
+      "aliases": [
+        {
+          "scope": "tb",
+          "name": "elapsed",
+          "width": 32
+        }
+      ],
+      "last_value": {
+        "bits": "00000000000000000011100111101000",
+        "integer": 14824
+      },
+      "distinct_value_events": 14825,
+      "first_value": {
+        "time_ps": 0,
+        "bits": "00000000000000000000000000000000",
+        "integer": 0
+      },
+      "recent_changes": [
+        {
+          "time_ps": 296391000,
+          "bits": "00000000000000000011100111100001",
+          "integer": 14817
+        },
+        {
+          "time_ps": 296411000,
+          "bits": "00000000000000000011100111100010",
+          "integer": 14818
+        },
+        {
+          "time_ps": 296431000,
+          "bits": "00000000000000000011100111100011",
+          "integer": 14819
+        },
+        {
+          "time_ps": 296451000,
+          "bits": "00000000000000000011100111100100",
+          "integer": 14820
+        },
+        {
+          "time_ps": 296471000,
+          "bits": "00000000000000000011100111100101",
+          "integer": 14821
+        },
+        {
+          "time_ps": 296491000,
+          "bits": "00000000000000000011100111100110",
+          "integer": 14822
+        },
+        {
+          "time_ps": 296511000,
+          "bits": "00000000000000000011100111100111",
+          "integer": 14823
+        },
+        {
+          "time_ps": 296531000,
+          "bits": "00000000000000000011100111101000",
+          "integer": 14824
+        }
+      ]
+    },
+    {
+      "value_identifier": "/",
+      "aliases": [
+        {
+          "scope": "tb",
+          "name": "stalls",
+          "width": 32
+        }
+      ],
+      "last_value": {
+        "bits": "00000000000000000000000000000000",
+        "integer": 0
+      },
+      "distinct_value_events": 1,
+      "first_value": {
+        "time_ps": 0,
+        "bits": "00000000000000000000000000000000",
+        "integer": 0
+      },
+      "recent_changes": [
+        {
+          "time_ps": 0,
+          "bits": "00000000000000000000000000000000",
+          "integer": 0
+        }
+      ]
+    },
+    {
+      "value_identifier": "0",
+      "aliases": [
+        {
+          "scope": "tb",
+          "name": "reads",
+          "width": 32
+        }
+      ],
+      "last_value": {
+        "bits": "00000000000000000000000000000000",
+        "integer": 0
+      },
+      "distinct_value_events": 1,
+      "first_value": {
+        "time_ps": 0,
+        "bits": "00000000000000000000000000000000",
+        "integer": 0
+      },
+      "recent_changes": [
+        {
+          "time_ps": 0,
+          "bits": "00000000000000000000000000000000",
+          "integer": 0
+        }
+      ]
+    },
+    {
+      "value_identifier": "O>E",
+      "aliases": [
+        {
+          "scope": "tb/dut",
+          "name": "array_read_enable",
+          "width": 1
+        }
+      ],
+      "last_value": {
+        "bits": "0",
+        "integer": 0
+      },
+      "distinct_value_events": 2,
+      "first_value": {
+        "time_ps": 0,
+        "bits": "1",
+        "integer": 1
+      },
+      "recent_changes": [
+        {
+          "time_ps": 0,
+          "bits": "1",
+          "integer": 1
+        },
+        {
+          "time_ps": 10000,
+          "bits": "0",
+          "integer": 0
+        }
+      ]
+    },
+    {
+      "value_identifier": "<uY",
+      "aliases": [
+        {
+          "scope": "tb/dut",
+          "name": "engine.in_ready",
+          "width": 1
+        }
+      ],
+      "last_value": {
+        "bits": "1",
+        "integer": 1
+      },
+      "distinct_value_events": 3,
+      "first_value": {
+        "time_ps": 0,
+        "bits": "1",
+        "integer": 1
+      },
+      "recent_changes": [
+        {
+          "time_ps": 0,
+          "bits": "1",
+          "integer": 1
+        },
+        {
+          "time_ps": 10000,
+          "bits": "0",
+          "integer": 0
+        },
+        {
+          "time_ps": 50000,
+          "bits": "1",
+          "integer": 1
+        }
+      ]
+    },
+    {
+      "value_identifier": "=uY",
+      "aliases": [
+        {
+          "scope": "tb/dut",
+          "name": "engine.in_valid",
+          "width": 1
+        }
+      ],
+      "last_value": {
+        "bits": "0",
+        "integer": 0
+      },
+      "distinct_value_events": 1,
+      "first_value": {
+        "time_ps": 0,
+        "bits": "0",
+        "integer": 0
+      },
+      "recent_changes": [
+        {
+          "time_ps": 0,
+          "bits": "0",
+          "integer": 0
+        }
+      ]
+    },
+    {
+      "value_identifier": "v4[",
+      "aliases": [
+        {
+          "scope": "tb/dut",
+          "name": "engine.step_enable",
+          "width": 1
+        }
+      ],
+      "last_value": {
+        "bits": "0",
+        "integer": 0
+      },
+      "distinct_value_events": 2,
+      "first_value": {
+        "time_ps": 0,
+        "bits": "1",
+        "integer": 1
+      },
+      "recent_changes": [
+        {
+          "time_ps": 0,
+          "bits": "1",
+          "integer": 1
+        },
+        {
+          "time_ps": 10000,
+          "bits": "0",
+          "integer": 0
+        }
+      ]
+    },
+    {
+      "value_identifier": "w4[",
+      "aliases": [
+        {
+          "scope": "tb/dut",
+          "name": "pc",
+          "width": 1
+        },
+        {
+          "scope": "tb/dut",
+          "name": "pc_logic",
+          "width": 1
+        }
+      ],
+      "last_value": {
+        "bits": "0",
+        "integer": 0
+      },
+      "distinct_value_events": 2,
+      "first_value": {
+        "time_ps": 0,
+        "bits": "1",
+        "integer": 1
+      },
+      "recent_changes": [
+        {
+          "time_ps": 0,
+          "bits": "1",
+          "integer": 1
+        },
+        {
+          "time_ps": 30000,
+          "bits": "0",
+          "integer": 0
+        }
+      ]
+    }
+  ]
+}

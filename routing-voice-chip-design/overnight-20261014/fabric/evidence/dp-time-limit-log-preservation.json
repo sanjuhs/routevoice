@@ -1,0 +1,8 @@
+{
+  "reason": "Original V2 continuation time budget; stop leaf OpenROAD 12 seconds before deadline so LibreLane closes its buffered log. Not a tool-reported routing violation.",
+  "deadline_unix": 1791944934.0,
+  "start_time_source": "ps -p 79711 -o lstart= returned Wed Oct 14 05:58:54 2026, Asia/Kolkata.",
+  "signals": [],
+  "action_unix": 1791944559.832499,
+  "already_finished": true
+}

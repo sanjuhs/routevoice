@@ -1,0 +1,5973 @@
+{
+  "protocol_pass": false,
+  "failures": {
+    "output": 0,
+    "raw": 0,
+    "precharge": 63,
+    "phase": 10
+  },
+  "samples": [
+    {
+      "cycle": 0,
+      "row": 3,
+      "sample_ns": 54.0,
+      "bit": 0,
+      "expected": 0,
+      "out_v": -6.695997633784124e-06,
+      "sense_v": 2.6878103637514,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 0,
+      "row": 3,
+      "sample_ns": 54.0,
+      "bit": 1,
+      "expected": 1,
+      "out_v": 2.9585001974439002,
+      "sense_v": 0.6011558677473301,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 0,
+      "row": 3,
+      "sample_ns": 54.0,
+      "bit": 2,
+      "expected": 0,
+      "out_v": -3.7114369106072025e-05,
+      "sense_v": 2.6983473967553997,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 0,
+      "row": 3,
+      "sample_ns": 54.0,
+      "bit": 3,
+      "expected": 0,
+      "out_v": -1.1349058312671008e-05,
+      "sense_v": 2.9448648336839,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 0,
+      "row": 3,
+      "sample_ns": 54.0,
+      "bit": 4,
+      "expected": 0,
+      "out_v": -1.6166532817844005e-05,
+      "sense_v": 2.9675882366062,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 0,
+      "row": 3,
+      "sample_ns": 54.0,
+      "bit": 5,
+      "expected": 0,
+      "out_v": -8.598528356428407e-06,
+      "sense_v": 2.9463436691366,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 0,
+      "row": 3,
+      "sample_ns": 54.0,
+      "bit": 6,
+      "expected": 0,
+      "out_v": -7.650230200506924e-06,
+      "sense_v": 2.7088939595327997,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 0,
+      "row": 3,
+      "sample_ns": 54.0,
+      "bit": 7,
+      "expected": 1,
+      "out_v": 2.9670863917469,
+      "sense_v": 0.4844245638859701,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 0,
+      "row": 3,
+      "sample_ns": 54.0,
+      "bit": 8,
+      "expected": 0,
+      "out_v": 4.785286172114098e-05,
+      "sense_v": 2.6726763753345,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 0,
+      "row": 3,
+      "sample_ns": 54.0,
+      "bit": 9,
+      "expected": 0,
+      "out_v": 0.00010586984445790998,
+      "sense_v": 2.6558482776434,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 0,
+      "row": 3,
+      "sample_ns": 54.0,
+      "bit": 10,
+      "expected": 1,
+      "out_v": 2.9694487809158,
+      "sense_v": 0.24000317967826007,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 0,
+      "row": 3,
+      "sample_ns": 54.0,
+      "bit": 11,
+      "expected": 1,
+      "out_v": 2.9697150106673003,
+      "sense_v": 0.06819940535464702,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 0,
+      "row": 3,
+      "sample_ns": 54.0,
+      "bit": 12,
+      "expected": 1,
+      "out_v": 2.969751973808,
+      "sense_v": 0.04641940842426802,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 0,
+      "row": 3,
+      "sample_ns": 54.0,
+      "bit": 13,
+      "expected": 1,
+      "out_v": 2.9694749487187,
+      "sense_v": 0.23223224573888004,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 0,
+      "row": 3,
+      "sample_ns": 54.0,
+      "bit": 14,
+      "expected": 0,
+      "out_v": 0.00044668401283297,
+      "sense_v": 2.3954605501158004,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 0,
+      "row": 3,
+      "sample_ns": 54.0,
+      "bit": 15,
+      "expected": 1,
+      "out_v": 2.9684181647356,
+      "sense_v": 0.42535447317884006,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 0,
+      "row": 3,
+      "sample_ns": 59.5,
+      "bit": 0,
+      "expected": 0,
+      "out_v": 7.763727125617125e-05,
+      "sense_v": 2.70487347378988,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 0,
+      "row": 3,
+      "sample_ns": 59.5,
+      "bit": 1,
+      "expected": 1,
+      "out_v": 2.96941170212768,
+      "sense_v": 0.32725808696741193,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 0,
+      "row": 3,
+      "sample_ns": 59.5,
+      "bit": 2,
+      "expected": 0,
+      "out_v": 6.0674293034244455e-05,
+      "sense_v": 2.7149523692792,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 0,
+      "row": 3,
+      "sample_ns": 59.5,
+      "bit": 3,
+      "expected": 0,
+      "out_v": 1.5373988167457617e-05,
+      "sense_v": 2.95569430318668,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 0,
+      "row": 3,
+      "sample_ns": 59.5,
+      "bit": 4,
+      "expected": 0,
+      "out_v": 8.341269202117073e-08,
+      "sense_v": 2.97266755814928,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 0,
+      "row": 3,
+      "sample_ns": 59.5,
+      "bit": 5,
+      "expected": 0,
+      "out_v": 1.4710348862664415e-05,
+      "sense_v": 2.9584290429318,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 0,
+      "row": 3,
+      "sample_ns": 59.5,
+      "bit": 6,
+      "expected": 0,
+      "out_v": 7.156560719763885e-05,
+      "sense_v": 2.73413592232664,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 0,
+      "row": 3,
+      "sample_ns": 59.5,
+      "bit": 7,
+      "expected": 1,
+      "out_v": 2.9695633069409997,
+      "sense_v": 0.25125980681970395,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 0,
+      "row": 3,
+      "sample_ns": 59.5,
+      "bit": 8,
+      "expected": 0,
+      "out_v": 0.00011122872945023604,
+      "sense_v": 2.7143708175762002,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 0,
+      "row": 3,
+      "sample_ns": 59.5,
+      "bit": 9,
+      "expected": 0,
+      "out_v": 0.00013623441890599203,
+      "sense_v": 2.71848283116228,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 0,
+      "row": 3,
+      "sample_ns": 59.5,
+      "bit": 10,
+      "expected": 1,
+      "out_v": 2.96982178732972,
+      "sense_v": 0.11907322446161597,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 0,
+      "row": 3,
+      "sample_ns": 59.5,
+      "bit": 11,
+      "expected": 1,
+      "out_v": 2.96994038319964,
+      "sense_v": 0.01240566008318719,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 0,
+      "row": 3,
+      "sample_ns": 59.5,
+      "bit": 12,
+      "expected": 1,
+      "out_v": 2.96995881831472,
+      "sense_v": 0.0006984784069067411,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 0,
+      "row": 3,
+      "sample_ns": 59.5,
+      "bit": 13,
+      "expected": 1,
+      "out_v": 2.96983903923024,
+      "sense_v": 0.11952463559847598,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 0,
+      "row": 3,
+      "sample_ns": 59.5,
+      "bit": 14,
+      "expected": 0,
+      "out_v": 0.000304788729203292,
+      "sense_v": 2.4670088266986,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 0,
+      "row": 3,
+      "sample_ns": 59.5,
+      "bit": 15,
+      "expected": 1,
+      "out_v": 2.96964828448128,
+      "sense_v": 0.21549545767653194,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 1,
+      "row": 0,
+      "sample_ns": 54.0,
+      "bit": 0,
+      "expected": 0,
+      "out_v": 1.7369440588978003e-05,
+      "sense_v": 2.9470612492698,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 1,
+      "row": 0,
+      "sample_ns": 54.0,
+      "bit": 1,
+      "expected": 0,
+      "out_v": 1.7978217677836025e-05,
+      "sense_v": 2.6891731490146,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 1,
+      "row": 0,
+      "sample_ns": 54.0,
+      "bit": 2,
+      "expected": 1,
+      "out_v": 2.9671216883768,
+      "sense_v": 0.4848283063845799,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 1,
+      "row": 0,
+      "sample_ns": 54.0,
+      "bit": 3,
+      "expected": 0,
+      "out_v": 2.310706446712803e-05,
+      "sense_v": 2.6720779765924,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 1,
+      "row": 0,
+      "sample_ns": 54.0,
+      "bit": 4,
+      "expected": 0,
+      "out_v": 2.4447388895440033e-05,
+      "sense_v": 2.6699697784294,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 1,
+      "row": 0,
+      "sample_ns": 54.0,
+      "bit": 5,
+      "expected": 1,
+      "out_v": 2.9656568351482,
+      "sense_v": 0.5204017761073398,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 1,
+      "row": 0,
+      "sample_ns": 54.0,
+      "bit": 6,
+      "expected": 0,
+      "out_v": -1.922238657646372e-06,
+      "sense_v": 2.7039169301646,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 1,
+      "row": 0,
+      "sample_ns": 54.0,
+      "bit": 7,
+      "expected": 0,
+      "out_v": 1.6752348168060007e-05,
+      "sense_v": 2.9427964599906,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 1,
+      "row": 0,
+      "sample_ns": 54.0,
+      "bit": 8,
+      "expected": 0,
+      "out_v": 3.3107774844284004e-05,
+      "sense_v": 2.9474232306643997,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 1,
+      "row": 0,
+      "sample_ns": 54.0,
+      "bit": 9,
+      "expected": 0,
+      "out_v": 7.8341489444826e-05,
+      "sense_v": 2.6806589094384,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 1,
+      "row": 0,
+      "sample_ns": 54.0,
+      "bit": 10,
+      "expected": 1,
+      "out_v": 2.9693827890882,
+      "sense_v": 0.23667538647103994,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 1,
+      "row": 0,
+      "sample_ns": 54.0,
+      "bit": 11,
+      "expected": 1,
+      "out_v": 2.9693372145206,
+      "sense_v": 0.25956251426783994,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 1,
+      "row": 0,
+      "sample_ns": 54.0,
+      "bit": 12,
+      "expected": 0,
+      "out_v": 0.00010069240029074003,
+      "sense_v": 2.6557764961988,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 1,
+      "row": 0,
+      "sample_ns": 54.0,
+      "bit": 13,
+      "expected": 0,
+      "out_v": 0.00010699508083714002,
+      "sense_v": 2.6551160677706,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 1,
+      "row": 0,
+      "sample_ns": 54.0,
+      "bit": 14,
+      "expected": 1,
+      "out_v": 2.9693797556740003,
+      "sense_v": 0.24366305846147993,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 1,
+      "row": 0,
+      "sample_ns": 54.0,
+      "bit": 15,
+      "expected": 1,
+      "out_v": 2.9694475891478,
+      "sense_v": 0.18512888152059995,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 1,
+      "row": 0,
+      "sample_ns": 59.5,
+      "bit": 0,
+      "expected": 0,
+      "out_v": 2.5658588800007012e-05,
+      "sense_v": 2.95920109525305,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 1,
+      "row": 0,
+      "sample_ns": 59.5,
+      "bit": 1,
+      "expected": 0,
+      "out_v": 8.452208602580608e-05,
+      "sense_v": 2.71510724751005,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 1,
+      "row": 0,
+      "sample_ns": 59.5,
+      "bit": 2,
+      "expected": 1,
+      "out_v": 2.96958692517095,
+      "sense_v": 0.2518887345984749,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 1,
+      "row": 0,
+      "sample_ns": 59.5,
+      "bit": 3,
+      "expected": 0,
+      "out_v": 0.0001088300527405151,
+      "sense_v": 2.70965089309715,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 1,
+      "row": 0,
+      "sample_ns": 59.5,
+      "bit": 4,
+      "expected": 0,
+      "out_v": 0.00011000474402614011,
+      "sense_v": 2.70424593271665,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 1,
+      "row": 0,
+      "sample_ns": 59.5,
+      "bit": 5,
+      "expected": 1,
+      "out_v": 2.9695483573206998,
+      "sense_v": 0.2766091983659499,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 1,
+      "row": 0,
+      "sample_ns": 59.5,
+      "bit": 6,
+      "expected": 0,
+      "out_v": 7.72202152805646e-05,
+      "sense_v": 2.7266569432584,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 1,
+      "row": 0,
+      "sample_ns": 59.5,
+      "bit": 7,
+      "expected": 0,
+      "out_v": 3.080873199146302e-05,
+      "sense_v": 2.9581523188559,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 1,
+      "row": 0,
+      "sample_ns": 59.5,
+      "bit": 8,
+      "expected": 0,
+      "out_v": 3.14934788668665e-05,
+      "sense_v": 2.96601722105445,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 1,
+      "row": 0,
+      "sample_ns": 59.5,
+      "bit": 9,
+      "expected": 0,
+      "out_v": 0.00010850283875136003,
+      "sense_v": 2.7305160109827,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 1,
+      "row": 0,
+      "sample_ns": 59.5,
+      "bit": 10,
+      "expected": 1,
+      "out_v": 2.9698099876207,
+      "sense_v": 0.10376103124878494,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 1,
+      "row": 0,
+      "sample_ns": 59.5,
+      "bit": 11,
+      "expected": 1,
+      "out_v": 2.9697919172821,
+      "sense_v": 0.12007138582534994,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 1,
+      "row": 0,
+      "sample_ns": 59.5,
+      "bit": 12,
+      "expected": 0,
+      "out_v": 0.00013720180744244002,
+      "sense_v": 2.7196013680935,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 1,
+      "row": 0,
+      "sample_ns": 59.5,
+      "bit": 13,
+      "expected": 0,
+      "out_v": 0.00013871842485127005,
+      "sense_v": 2.7196374686809497,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 1,
+      "row": 0,
+      "sample_ns": 59.5,
+      "bit": 14,
+      "expected": 1,
+      "out_v": 2.9698081127383,
+      "sense_v": 0.11242652918059494,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 1,
+      "row": 0,
+      "sample_ns": 59.5,
+      "bit": 15,
+      "expected": 1,
+      "out_v": 2.96983328382,
+      "sense_v": 0.06775033255339495,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 2,
+      "row": 1279,
+      "sample_ns": 54.0,
+      "bit": 0,
+      "expected": 0,
+      "out_v": 1.010543019219354e-05,
+      "sense_v": 2.684305628244,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 2,
+      "row": 1279,
+      "sample_ns": 54.0,
+      "bit": 1,
+      "expected": 1,
+      "out_v": 2.9623094180569,
+      "sense_v": 0.5677631917064183,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 2,
+      "row": 1279,
+      "sample_ns": 54.0,
+      "bit": 2,
+      "expected": 0,
+      "out_v": 0.0002915697838372209,
+      "sense_v": 2.40072340201,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 2,
+      "row": 1279,
+      "sample_ns": 54.0,
+      "bit": 3,
+      "expected": 1,
+      "out_v": 2.9671755701244,
+      "sense_v": 0.4825122235346284,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 2,
+      "row": 1279,
+      "sample_ns": 54.0,
+      "bit": 4,
+      "expected": 0,
+      "out_v": -1.184126402454879e-05,
+      "sense_v": 2.6982874597006,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 2,
+      "row": 1279,
+      "sample_ns": 54.0,
+      "bit": 5,
+      "expected": 0,
+      "out_v": -3.5112155762377606e-06,
+      "sense_v": 2.9413464440118,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 2,
+      "row": 1279,
+      "sample_ns": 54.0,
+      "bit": 6,
+      "expected": 0,
+      "out_v": -2.0134983771936917e-05,
+      "sense_v": 2.9734774966752,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 2,
+      "row": 1279,
+      "sample_ns": 54.0,
+      "bit": 7,
+      "expected": 0,
+      "out_v": -1.723559350012893e-05,
+      "sense_v": 2.970525451404,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 2,
+      "row": 1279,
+      "sample_ns": 54.0,
+      "bit": 8,
+      "expected": 0,
+      "out_v": 3.0691358600022996e-05,
+      "sense_v": 2.9486817660195004,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 2,
+      "row": 1279,
+      "sample_ns": 54.0,
+      "bit": 9,
+      "expected": 0,
+      "out_v": 8.64398784144182e-05,
+      "sense_v": 2.6890439475506,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 2,
+      "row": 1279,
+      "sample_ns": 54.0,
+      "bit": 10,
+      "expected": 1,
+      "out_v": 2.9694429288878,
+      "sense_v": 0.2361959896116391,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 2,
+      "row": 1279,
+      "sample_ns": 54.0,
+      "bit": 11,
+      "expected": 1,
+      "out_v": 2.9696746354891,
+      "sense_v": 0.060424241447232435,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 2,
+      "row": 1279,
+      "sample_ns": 54.0,
+      "bit": 12,
+      "expected": 1,
+      "out_v": 2.9694472190146,
+      "sense_v": 0.2293313521607491,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 2,
+      "row": 1279,
+      "sample_ns": 54.0,
+      "bit": 13,
+      "expected": 0,
+      "out_v": 8.105611915341323e-05,
+      "sense_v": 2.6893233132720002,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 2,
+      "row": 1279,
+      "sample_ns": 54.0,
+      "bit": 14,
+      "expected": 0,
+      "out_v": 2.8127306204955028e-05,
+      "sense_v": 2.9499160000481,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 2,
+      "row": 1279,
+      "sample_ns": 54.0,
+      "bit": 15,
+      "expected": 0,
+      "out_v": 4.218147004373021e-06,
+      "sense_v": 2.9716133911635,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 2,
+      "row": 1279,
+      "sample_ns": 59.5,
+      "bit": 0,
+      "expected": 0,
+      "out_v": 8.624137478042237e-05,
+      "sense_v": 2.7086135767185002,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 2,
+      "row": 1279,
+      "sample_ns": 59.5,
+      "bit": 1,
+      "expected": 1,
+      "out_v": 2.9694523237541,
+      "sense_v": 0.3115170396563695,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 2,
+      "row": 1279,
+      "sample_ns": 59.5,
+      "bit": 2,
+      "expected": 0,
+      "out_v": 0.00031525304110633013,
+      "sense_v": 2.4425888903681003,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 2,
+      "row": 1279,
+      "sample_ns": 59.5,
+      "bit": 3,
+      "expected": 1,
+      "out_v": 2.9695574207617,
+      "sense_v": 0.2535784287578596,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 2,
+      "row": 1279,
+      "sample_ns": 59.5,
+      "bit": 4,
+      "expected": 0,
+      "out_v": 7.267347170974139e-05,
+      "sense_v": 2.7265949784655,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 2,
+      "row": 1279,
+      "sample_ns": 59.5,
+      "bit": 5,
+      "expected": 0,
+      "out_v": 1.874826680274112e-05,
+      "sense_v": 2.9548762029919,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 2,
+      "row": 1279,
+      "sample_ns": 59.5,
+      "bit": 6,
+      "expected": 0,
+      "out_v": -5.403538449336517e-06,
+      "sense_v": 2.975747877041,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 2,
+      "row": 1279,
+      "sample_ns": 59.5,
+      "bit": 7,
+      "expected": 0,
+      "out_v": -5.020684469650125e-06,
+      "sense_v": 2.9739376789208,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 2,
+      "row": 1279,
+      "sample_ns": 59.5,
+      "bit": 8,
+      "expected": 0,
+      "out_v": 2.5892825961963994e-05,
+      "sense_v": 2.9648603361336,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 2,
+      "row": 1279,
+      "sample_ns": 59.5,
+      "bit": 9,
+      "expected": 0,
+      "out_v": 0.00010513887112137007,
+      "sense_v": 2.7398544368872004,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 2,
+      "row": 1279,
+      "sample_ns": 59.5,
+      "bit": 10,
+      "expected": 1,
+      "out_v": 2.9698059986483,
+      "sense_v": 0.11373130697564977,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 2,
+      "row": 1279,
+      "sample_ns": 59.5,
+      "bit": 11,
+      "expected": 1,
+      "out_v": 2.9699356588412997,
+      "sense_v": -0.0019512559326050785,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 2,
+      "row": 1279,
+      "sample_ns": 59.5,
+      "bit": 12,
+      "expected": 1,
+      "out_v": 2.9698091993632,
+      "sense_v": 0.10973719924002978,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 2,
+      "row": 1279,
+      "sample_ns": 59.5,
+      "bit": 13,
+      "expected": 0,
+      "out_v": 0.00010507789864019008,
+      "sense_v": 2.7398628509485,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 2,
+      "row": 1279,
+      "sample_ns": 59.5,
+      "bit": 14,
+      "expected": 0,
+      "out_v": 2.7436231563658005e-05,
+      "sense_v": 2.9654097475369,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 2,
+      "row": 1279,
+      "sample_ns": 59.5,
+      "bit": 15,
+      "expected": 0,
+      "out_v": 5.427354513424009e-06,
+      "sense_v": 2.9741555875567,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 3,
+      "row": 1278,
+      "sample_ns": 54.0,
+      "bit": 0,
+      "expected": 0,
+      "out_v": 1.2517572538478013e-05,
+      "sense_v": 2.9469304977151,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 3,
+      "row": 1278,
+      "sample_ns": 54.0,
+      "bit": 1,
+      "expected": 0,
+      "out_v": 1.2677724230696069e-05,
+      "sense_v": 2.6893192697083,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 3,
+      "row": 1278,
+      "sample_ns": 54.0,
+      "bit": 2,
+      "expected": 1,
+      "out_v": 2.9655950545165997,
+      "sense_v": 0.5204443996727597,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 3,
+      "row": 1278,
+      "sample_ns": 54.0,
+      "bit": 3,
+      "expected": 0,
+      "out_v": 1.0293865505005674e-05,
+      "sense_v": 2.6976988204797,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 3,
+      "row": 1278,
+      "sample_ns": 54.0,
+      "bit": 4,
+      "expected": 0,
+      "out_v": 1.4789407837689017e-05,
+      "sense_v": 2.9492676165852,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 3,
+      "row": 1278,
+      "sample_ns": 54.0,
+      "bit": 5,
+      "expected": 0,
+      "out_v": 2.8257205399266007e-05,
+      "sense_v": 2.9477435303307,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 3,
+      "row": 1278,
+      "sample_ns": 54.0,
+      "bit": 6,
+      "expected": 0,
+      "out_v": 7.769913421800005e-05,
+      "sense_v": 2.6969962905119003,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 3,
+      "row": 1278,
+      "sample_ns": 54.0,
+      "bit": 7,
+      "expected": 1,
+      "out_v": 2.9694144071113997,
+      "sense_v": 0.21576779219439984,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 3,
+      "row": 1278,
+      "sample_ns": 54.0,
+      "bit": 8,
+      "expected": 1,
+      "out_v": 2.9694313540176998,
+      "sense_v": 0.22356985955220987,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 3,
+      "row": 1278,
+      "sample_ns": 54.0,
+      "bit": 9,
+      "expected": 0,
+      "out_v": 0.0005791651985677798,
+      "sense_v": 2.376215809784,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 3,
+      "row": 1278,
+      "sample_ns": 54.0,
+      "bit": 10,
+      "expected": 1,
+      "out_v": 2.9680084695174997,
+      "sense_v": 0.45588709996701976,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 3,
+      "row": 1278,
+      "sample_ns": 54.0,
+      "bit": 11,
+      "expected": 0,
+      "out_v": 0.0004351774122954499,
+      "sense_v": 2.3990557095937,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 3,
+      "row": 1278,
+      "sample_ns": 54.0,
+      "bit": 12,
+      "expected": 1,
+      "out_v": 2.9695152848489,
+      "sense_v": 0.20795119467247988,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 3,
+      "row": 1278,
+      "sample_ns": 54.0,
+      "bit": 13,
+      "expected": 1,
+      "out_v": 2.9697112878354996,
+      "sense_v": 0.06850347514289291,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 3,
+      "row": 1278,
+      "sample_ns": 54.0,
+      "bit": 14,
+      "expected": 1,
+      "out_v": 2.9697336396037,
+      "sense_v": 0.05277452955448493,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 3,
+      "row": 1278,
+      "sample_ns": 54.0,
+      "bit": 15,
+      "expected": 1,
+      "out_v": 2.9694821519204,
+      "sense_v": 0.19692004918065986,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 3,
+      "row": 1278,
+      "sample_ns": 59.5,
+      "bit": 0,
+      "expected": 0,
+      "out_v": 2.4029951661812972e-05,
+      "sense_v": 2.9587689747114,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 3,
+      "row": 1278,
+      "sample_ns": 59.5,
+      "bit": 1,
+      "expected": 0,
+      "out_v": 8.318474735950583e-05,
+      "sense_v": 2.7136563340047997,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 3,
+      "row": 1278,
+      "sample_ns": 59.5,
+      "bit": 2,
+      "expected": 1,
+      "out_v": 2.9695053924857002,
+      "sense_v": 0.26825629499373027,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 3,
+      "row": 1278,
+      "sample_ns": 59.5,
+      "bit": 3,
+      "expected": 0,
+      "out_v": 8.439110362974682e-05,
+      "sense_v": 2.7237771358076,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 3,
+      "row": 1278,
+      "sample_ns": 59.5,
+      "bit": 4,
+      "expected": 0,
+      "out_v": 2.8057908101953964e-05,
+      "sense_v": 2.9632524427877,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 3,
+      "row": 1278,
+      "sample_ns": 59.5,
+      "bit": 5,
+      "expected": 0,
+      "out_v": 3.121317119982499e-05,
+      "sense_v": 2.9660499115862,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 3,
+      "row": 1278,
+      "sample_ns": 59.5,
+      "bit": 6,
+      "expected": 0,
+      "out_v": 0.00010616066348657995,
+      "sense_v": 2.7479796597883,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 3,
+      "row": 1278,
+      "sample_ns": 59.5,
+      "bit": 7,
+      "expected": 1,
+      "out_v": 2.9698143349663,
+      "sense_v": 0.09265251714115512,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 3,
+      "row": 1278,
+      "sample_ns": 59.5,
+      "bit": 8,
+      "expected": 1,
+      "out_v": 2.969824127745,
+      "sense_v": 0.10377113747503011,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 3,
+      "row": 1278,
+      "sample_ns": 59.5,
+      "bit": 9,
+      "expected": 0,
+      "out_v": 0.0003438090827028102,
+      "sense_v": 2.4513365420163997,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 3,
+      "row": 1278,
+      "sample_ns": 59.5,
+      "bit": 10,
+      "expected": 1,
+      "out_v": 2.9696289552854,
+      "sense_v": 0.2530885525377702,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 3,
+      "row": 1278,
+      "sample_ns": 59.5,
+      "bit": 11,
+      "expected": 0,
+      "out_v": 0.0002939141581020401,
+      "sense_v": 2.4736353002322,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 3,
+      "row": 1278,
+      "sample_ns": 59.5,
+      "bit": 12,
+      "expected": 1,
+      "out_v": 2.9698504621229,
+      "sense_v": 0.10392198425878009,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 3,
+      "row": 1278,
+      "sample_ns": 59.5,
+      "bit": 13,
+      "expected": 1,
+      "out_v": 2.9699406756387,
+      "sense_v": 0.013596765355157041,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 3,
+      "row": 1278,
+      "sample_ns": 59.5,
+      "bit": 14,
+      "expected": 1,
+      "out_v": 2.9699520644216,
+      "sense_v": 0.004073927438293635,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 3,
+      "row": 1278,
+      "sample_ns": 59.5,
+      "bit": 15,
+      "expected": 1,
+      "out_v": 2.9698238905342,
+      "sense_v": 0.08403442212078811,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 4,
+      "row": 1186,
+      "sample_ns": 54.0,
+      "bit": 0,
+      "expected": 0,
+      "out_v": 8.097946361393098e-05,
+      "sense_v": 2.6710449822849003,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 4,
+      "row": 1186,
+      "sample_ns": 54.0,
+      "bit": 1,
+      "expected": 1,
+      "out_v": 2.9693135367589,
+      "sense_v": 0.2979646546842201,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 4,
+      "row": 1186,
+      "sample_ns": 54.0,
+      "bit": 2,
+      "expected": 1,
+      "out_v": 2.9697404122457,
+      "sense_v": 0.032340850531569036,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 4,
+      "row": 1186,
+      "sample_ns": 54.0,
+      "bit": 3,
+      "expected": 1,
+      "out_v": 2.9697216719899,
+      "sense_v": 0.05462859873594254,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 4,
+      "row": 1186,
+      "sample_ns": 54.0,
+      "bit": 4,
+      "expected": 1,
+      "out_v": 2.9694715170603,
+      "sense_v": 0.22899726609052007,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 4,
+      "row": 1186,
+      "sample_ns": 54.0,
+      "bit": 5,
+      "expected": 0,
+      "out_v": 0.0006372024585916102,
+      "sense_v": 2.3766132578098,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 4,
+      "row": 1186,
+      "sample_ns": 54.0,
+      "bit": 6,
+      "expected": 1,
+      "out_v": 2.9694542342638504,
+      "sense_v": 0.23695091307628008,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 4,
+      "row": 1186,
+      "sample_ns": 54.0,
+      "bit": 7,
+      "expected": 1,
+      "out_v": 2.9697361403619,
+      "sense_v": 0.045992630828799036,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 4,
+      "row": 1186,
+      "sample_ns": 54.0,
+      "bit": 8,
+      "expected": 1,
+      "out_v": 2.9697884723151002,
+      "sense_v": 0.05879334011983153,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 4,
+      "row": 1186,
+      "sample_ns": 54.0,
+      "bit": 9,
+      "expected": 1,
+      "out_v": 2.9697683315477,
+      "sense_v": 0.06882910191867854,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 4,
+      "row": 1186,
+      "sample_ns": 54.0,
+      "bit": 10,
+      "expected": 1,
+      "out_v": 2.96977309635585,
+      "sense_v": 0.05827991823204254,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 4,
+      "row": 1186,
+      "sample_ns": 54.0,
+      "bit": 11,
+      "expected": 1,
+      "out_v": 2.9697271708908497,
+      "sense_v": 0.08603353065503154,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 4,
+      "row": 1186,
+      "sample_ns": 54.0,
+      "bit": 12,
+      "expected": 1,
+      "out_v": 2.96977244558845,
+      "sense_v": 0.053809513800651035,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 4,
+      "row": 1186,
+      "sample_ns": 54.0,
+      "bit": 13,
+      "expected": 1,
+      "out_v": 2.9697319965769498,
+      "sense_v": 0.07628814755478654,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 4,
+      "row": 1186,
+      "sample_ns": 54.0,
+      "bit": 14,
+      "expected": 1,
+      "out_v": 2.9697084313504,
+      "sense_v": 0.06308539669674404,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 4,
+      "row": 1186,
+      "sample_ns": 54.0,
+      "bit": 15,
+      "expected": 1,
+      "out_v": 2.9694524024906,
+      "sense_v": 0.20333356469492506,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 4,
+      "row": 1186,
+      "sample_ns": 59.5,
+      "bit": 0,
+      "expected": 0,
+      "out_v": 0.00010938225350879999,
+      "sense_v": 2.7218976601905003,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 4,
+      "row": 1186,
+      "sample_ns": 59.5,
+      "bit": 1,
+      "expected": 1,
+      "out_v": 2.9697476793762503,
+      "sense_v": 0.15252217635687504,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 4,
+      "row": 1186,
+      "sample_ns": 59.5,
+      "bit": 2,
+      "expected": 1,
+      "out_v": 2.96995272771125,
+      "sense_v": -0.009758548472890245,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 4,
+      "row": 1186,
+      "sample_ns": 59.5,
+      "bit": 3,
+      "expected": 1,
+      "out_v": 2.969938514198,
+      "sense_v": 0.006717449816457757,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 4,
+      "row": 1186,
+      "sample_ns": 59.5,
+      "bit": 4,
+      "expected": 1,
+      "out_v": 2.96981494689125,
+      "sense_v": 0.11948353639605001,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 4,
+      "row": 1186,
+      "sample_ns": 59.5,
+      "bit": 5,
+      "expected": 0,
+      "out_v": 0.00031237928532182503,
+      "sense_v": 2.4718556692217497,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 4,
+      "row": 1186,
+      "sample_ns": 59.5,
+      "bit": 6,
+      "expected": 1,
+      "out_v": 2.969807843571,
+      "sense_v": 0.12357589252847503,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 4,
+      "row": 1186,
+      "sample_ns": 59.5,
+      "bit": 7,
+      "expected": 1,
+      "out_v": 2.96994103040125,
+      "sense_v": 0.0023240779510767568,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 4,
+      "row": 1186,
+      "sample_ns": 59.5,
+      "bit": 8,
+      "expected": 1,
+      "out_v": 2.9699464285344996,
+      "sense_v": 0.016954544527825008,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 4,
+      "row": 1186,
+      "sample_ns": 59.5,
+      "bit": 9,
+      "expected": 1,
+      "out_v": 2.9699355077625,
+      "sense_v": 0.02235008395313501,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 4,
+      "row": 1186,
+      "sample_ns": 59.5,
+      "bit": 10,
+      "expected": 1,
+      "out_v": 2.9699405314175,
+      "sense_v": 0.015134565683007507,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 4,
+      "row": 1186,
+      "sample_ns": 59.5,
+      "bit": 11,
+      "expected": 1,
+      "out_v": 2.969917574584,
+      "sense_v": 0.03114399195365251,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 4,
+      "row": 1186,
+      "sample_ns": 59.5,
+      "bit": 12,
+      "expected": 1,
+      "out_v": 2.969943573245,
+      "sense_v": 0.012078792345800006,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 4,
+      "row": 1186,
+      "sample_ns": 59.5,
+      "bit": 13,
+      "expected": 1,
+      "out_v": 2.96992569588375,
+      "sense_v": 0.02499550200200251,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 4,
+      "row": 1186,
+      "sample_ns": 59.5,
+      "bit": 14,
+      "expected": 1,
+      "out_v": 2.969931017853,
+      "sense_v": 0.00904285855282376,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 4,
+      "row": 1186,
+      "sample_ns": 59.5,
+      "bit": 15,
+      "expected": 1,
+      "out_v": 2.9698043907,
+      "sense_v": 0.08631250116183252,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 5,
+      "row": 3,
+      "sample_ns": 54.0,
+      "bit": 0,
+      "expected": 0,
+      "out_v": -2.949282504648649e-06,
+      "sense_v": 2.6888011535035496,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 5,
+      "row": 3,
+      "sample_ns": 54.0,
+      "bit": 1,
+      "expected": 1,
+      "out_v": 2.9606758772078003,
+      "sense_v": 0.5834210367842925,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 5,
+      "row": 3,
+      "sample_ns": 54.0,
+      "bit": 2,
+      "expected": 0,
+      "out_v": -3.251017678622025e-05,
+      "sense_v": 2.69877140857455,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 5,
+      "row": 3,
+      "sample_ns": 54.0,
+      "bit": 3,
+      "expected": 0,
+      "out_v": -1.0217657857192184e-05,
+      "sense_v": 2.94600464044685,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 5,
+      "row": 3,
+      "sample_ns": 54.0,
+      "bit": 4,
+      "expected": 0,
+      "out_v": -1.4131022691345868e-05,
+      "sense_v": 2.9647880695855,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 5,
+      "row": 3,
+      "sample_ns": 54.0,
+      "bit": 5,
+      "expected": 0,
+      "out_v": -9.06945493799115e-06,
+      "sense_v": 2.9503681974364504,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 5,
+      "row": 3,
+      "sample_ns": 54.0,
+      "bit": 6,
+      "expected": 0,
+      "out_v": -3.4577273359734112e-06,
+      "sense_v": 2.70498911846425,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 5,
+      "row": 3,
+      "sample_ns": 54.0,
+      "bit": 7,
+      "expected": 1,
+      "out_v": 2.9673037762478502,
+      "sense_v": 0.47763306308524767,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 5,
+      "row": 3,
+      "sample_ns": 54.0,
+      "bit": 8,
+      "expected": 0,
+      "out_v": 5.044493586838409e-05,
+      "sense_v": 2.6721487763462504,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 5,
+      "row": 3,
+      "sample_ns": 54.0,
+      "bit": 9,
+      "expected": 0,
+      "out_v": 0.00010817222424963537,
+      "sense_v": 2.6561213525926504,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 5,
+      "row": 3,
+      "sample_ns": 54.0,
+      "bit": 10,
+      "expected": 1,
+      "out_v": 2.96946769931965,
+      "sense_v": 0.23309849795839374,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 5,
+      "row": 3,
+      "sample_ns": 54.0,
+      "bit": 11,
+      "expected": 1,
+      "out_v": 2.9697289644277,
+      "sense_v": 0.06343240673360281,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 5,
+      "row": 3,
+      "sample_ns": 54.0,
+      "bit": 12,
+      "expected": 1,
+      "out_v": 2.9697649093887497,
+      "sense_v": 0.042299281842663405,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 5,
+      "row": 3,
+      "sample_ns": 54.0,
+      "bit": 13,
+      "expected": 1,
+      "out_v": 2.9694943077246,
+      "sense_v": 0.2248577289625788,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 5,
+      "row": 3,
+      "sample_ns": 54.0,
+      "bit": 14,
+      "expected": 0,
+      "out_v": 0.000452841074323234,
+      "sense_v": 2.3954291318255003,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 5,
+      "row": 3,
+      "sample_ns": 54.0,
+      "bit": 15,
+      "expected": 1,
+      "out_v": 2.9685631900974503,
+      "sense_v": 0.4142511939490429,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 5,
+      "row": 3,
+      "sample_ns": 59.5,
+      "bit": 0,
+      "expected": 0,
+      "out_v": 7.869581537740056e-05,
+      "sense_v": 2.7072665139639,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 5,
+      "row": 3,
+      "sample_ns": 59.5,
+      "bit": 1,
+      "expected": 1,
+      "out_v": 2.9694455741897,
+      "sense_v": 0.3171313515486693,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 5,
+      "row": 3,
+      "sample_ns": 59.5,
+      "bit": 2,
+      "expected": 0,
+      "out_v": 6.226149260690964e-05,
+      "sense_v": 2.7168175073452003,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 5,
+      "row": 3,
+      "sample_ns": 59.5,
+      "bit": 3,
+      "expected": 0,
+      "out_v": 1.5465106790140182e-05,
+      "sense_v": 2.956896324978,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 5,
+      "row": 3,
+      "sample_ns": 59.5,
+      "bit": 4,
+      "expected": 0,
+      "out_v": 1.2233233543906326e-06,
+      "sense_v": 2.9704989789005,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 5,
+      "row": 3,
+      "sample_ns": 59.5,
+      "bit": 5,
+      "expected": 0,
+      "out_v": 1.3788070024073158e-05,
+      "sense_v": 2.9617574940068,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 5,
+      "row": 3,
+      "sample_ns": 59.5,
+      "bit": 6,
+      "expected": 0,
+      "out_v": 7.383890251424249e-05,
+      "sense_v": 2.7316351239905,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 5,
+      "row": 3,
+      "sample_ns": 59.5,
+      "bit": 7,
+      "expected": 1,
+      "out_v": 2.9695719936027998,
+      "sense_v": 0.2478455705367994,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 5,
+      "row": 3,
+      "sample_ns": 59.5,
+      "bit": 8,
+      "expected": 0,
+      "out_v": 0.0001119445432037004,
+      "sense_v": 2.7147157239092,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 5,
+      "row": 3,
+      "sample_ns": 59.5,
+      "bit": 9,
+      "expected": 0,
+      "out_v": 0.00013649354788628016,
+      "sense_v": 2.7194404242063004,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 5,
+      "row": 3,
+      "sample_ns": 59.5,
+      "bit": 10,
+      "expected": 1,
+      "out_v": 2.9698275487459,
+      "sense_v": 0.11569984317809971,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 5,
+      "row": 3,
+      "sample_ns": 59.5,
+      "bit": 11,
+      "expected": 1,
+      "out_v": 2.9699442765184,
+      "sense_v": 0.0105361268445849,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 5,
+      "row": 3,
+      "sample_ns": 59.5,
+      "bit": 12,
+      "expected": 1,
+      "out_v": 2.9699621701938,
+      "sense_v": -0.0007837038871968606,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 5,
+      "row": 3,
+      "sample_ns": 59.5,
+      "bit": 13,
+      "expected": 1,
+      "out_v": 2.9698449869093,
+      "sense_v": 0.11578051541317975,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 5,
+      "row": 3,
+      "sample_ns": 59.5,
+      "bit": 14,
+      "expected": 0,
+      "out_v": 0.00030341399302010976,
+      "sense_v": 2.4685271552950003,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 5,
+      "row": 3,
+      "sample_ns": 59.5,
+      "bit": 15,
+      "expected": 1,
+      "out_v": 2.9696595648415,
+      "sense_v": 0.20961955634608948,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 6,
+      "row": 0,
+      "sample_ns": 54.0,
+      "bit": 0,
+      "expected": 0,
+      "out_v": 1.735875815595409e-05,
+      "sense_v": 2.94707469663075,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 6,
+      "row": 0,
+      "sample_ns": 54.0,
+      "bit": 1,
+      "expected": 0,
+      "out_v": 1.8029150867570545e-05,
+      "sense_v": 2.6890446992789503,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 6,
+      "row": 0,
+      "sample_ns": 54.0,
+      "bit": 2,
+      "expected": 1,
+      "out_v": 2.96712535862205,
+      "sense_v": 0.4847093960948978,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 6,
+      "row": 0,
+      "sample_ns": 54.0,
+      "bit": 3,
+      "expected": 0,
+      "out_v": 2.312164937797621e-05,
+      "sense_v": 2.67194291541435,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 6,
+      "row": 0,
+      "sample_ns": 54.0,
+      "bit": 4,
+      "expected": 0,
+      "out_v": 2.444569276229269e-05,
+      "sense_v": 2.6698166382314503,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 6,
+      "row": 0,
+      "sample_ns": 54.0,
+      "bit": 5,
+      "expected": 1,
+      "out_v": 2.9656608821649,
+      "sense_v": 0.5203234100748129,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 6,
+      "row": 0,
+      "sample_ns": 54.0,
+      "bit": 6,
+      "expected": 0,
+      "out_v": -1.899320964241905e-06,
+      "sense_v": 2.70387901223895,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 6,
+      "row": 0,
+      "sample_ns": 54.0,
+      "bit": 7,
+      "expected": 0,
+      "out_v": 1.677272961638964e-05,
+      "sense_v": 2.94275167969125,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 6,
+      "row": 0,
+      "sample_ns": 54.0,
+      "bit": 8,
+      "expected": 0,
+      "out_v": 3.3126140738820033e-05,
+      "sense_v": 2.9473294130271004,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 6,
+      "row": 0,
+      "sample_ns": 54.0,
+      "bit": 9,
+      "expected": 0,
+      "out_v": 7.835908865871737e-05,
+      "sense_v": 2.6804872504838504,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 6,
+      "row": 0,
+      "sample_ns": 54.0,
+      "bit": 10,
+      "expected": 1,
+      "out_v": 2.9693831377051,
+      "sense_v": 0.23646761925506365,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 6,
+      "row": 0,
+      "sample_ns": 54.0,
+      "bit": 11,
+      "expected": 1,
+      "out_v": 2.96933755144285,
+      "sense_v": 0.2593613558526886,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 6,
+      "row": 0,
+      "sample_ns": 54.0,
+      "bit": 12,
+      "expected": 0,
+      "out_v": 0.00010076699528677547,
+      "sense_v": 2.6556379936270504,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 6,
+      "row": 0,
+      "sample_ns": 54.0,
+      "bit": 13,
+      "expected": 0,
+      "out_v": 0.00010706837876976542,
+      "sense_v": 2.6549565874136505,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 6,
+      "row": 0,
+      "sample_ns": 54.0,
+      "bit": 14,
+      "expected": 1,
+      "out_v": 2.96937991429495,
+      "sense_v": 0.24347264985119368,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 6,
+      "row": 0,
+      "sample_ns": 54.0,
+      "bit": 15,
+      "expected": 1,
+      "out_v": 2.9694477677308,
+      "sense_v": 0.1849860972631838,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 6,
+      "row": 0,
+      "sample_ns": 59.5,
+      "bit": 0,
+      "expected": 0,
+      "out_v": 2.5649692964066084e-05,
+      "sense_v": 2.9592090026695,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 6,
+      "row": 0,
+      "sample_ns": 59.5,
+      "bit": 1,
+      "expected": 0,
+      "out_v": 8.457417631749558e-05,
+      "sense_v": 2.7150045517224,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 6,
+      "row": 0,
+      "sample_ns": 59.5,
+      "bit": 2,
+      "expected": 1,
+      "out_v": 2.9695869953125,
+      "sense_v": 0.2517803794909292,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 6,
+      "row": 0,
+      "sample_ns": 59.5,
+      "bit": 3,
+      "expected": 0,
+      "out_v": 0.00010885836667312075,
+      "sense_v": 2.7095224679255003,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 6,
+      "row": 0,
+      "sample_ns": 59.5,
+      "bit": 4,
+      "expected": 0,
+      "out_v": 0.00011002207119335077,
+      "sense_v": 2.7040908478301002,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 6,
+      "row": 0,
+      "sample_ns": 59.5,
+      "bit": 5,
+      "expected": 1,
+      "out_v": 2.9695484328661,
+      "sense_v": 0.2765441723725891,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 6,
+      "row": 0,
+      "sample_ns": 59.5,
+      "bit": 6,
+      "expected": 0,
+      "out_v": 7.724492281379472e-05,
+      "sense_v": 2.7266306247386,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 6,
+      "row": 0,
+      "sample_ns": 59.5,
+      "bit": 7,
+      "expected": 0,
+      "out_v": 3.082514082280314e-05,
+      "sense_v": 2.9581163838324,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 6,
+      "row": 0,
+      "sample_ns": 59.5,
+      "bit": 8,
+      "expected": 0,
+      "out_v": 3.1513219856534e-05,
+      "sense_v": 2.9659337601677,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 6,
+      "row": 0,
+      "sample_ns": 59.5,
+      "bit": 9,
+      "expected": 0,
+      "out_v": 0.0001085062274301202,
+      "sense_v": 2.7303445845571,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 6,
+      "row": 0,
+      "sample_ns": 59.5,
+      "bit": 10,
+      "expected": 1,
+      "out_v": 2.969810067346,
+      "sense_v": 0.10361243163302958,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 6,
+      "row": 0,
+      "sample_ns": 59.5,
+      "bit": 11,
+      "expected": 1,
+      "out_v": 2.9697919770384,
+      "sense_v": 0.11991516310719955,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 6,
+      "row": 0,
+      "sample_ns": 59.5,
+      "bit": 12,
+      "expected": 0,
+      "out_v": 0.00013725135052087024,
+      "sense_v": 2.7194907435589006,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 6,
+      "row": 0,
+      "sample_ns": 59.5,
+      "bit": 13,
+      "expected": 0,
+      "out_v": 0.0001387725215495902,
+      "sense_v": 2.7195060658212005,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 6,
+      "row": 0,
+      "sample_ns": 59.5,
+      "bit": 14,
+      "expected": 1,
+      "out_v": 2.9698080977877,
+      "sense_v": 0.11224784940186958,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 6,
+      "row": 0,
+      "sample_ns": 59.5,
+      "bit": 15,
+      "expected": 1,
+      "out_v": 2.9698333134798,
+      "sense_v": 0.06763923063361961,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 7,
+      "row": 1279,
+      "sample_ns": 54.0,
+      "bit": 0,
+      "expected": 0,
+      "out_v": 1.0074159930958439e-05,
+      "sense_v": 2.6842012755658,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 7,
+      "row": 1279,
+      "sample_ns": 54.0,
+      "bit": 1,
+      "expected": 1,
+      "out_v": 2.9623640721625,
+      "sense_v": 0.5671472218784983,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 7,
+      "row": 1279,
+      "sample_ns": 54.0,
+      "bit": 2,
+      "expected": 0,
+      "out_v": 0.0002932718467037409,
+      "sense_v": 2.4003482097602,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 7,
+      "row": 1279,
+      "sample_ns": 54.0,
+      "bit": 3,
+      "expected": 1,
+      "out_v": 2.9671937065432,
+      "sense_v": 0.48186970768519843,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 7,
+      "row": 1279,
+      "sample_ns": 54.0,
+      "bit": 4,
+      "expected": 0,
+      "out_v": -1.186680041650279e-05,
+      "sense_v": 2.6981460398908,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 7,
+      "row": 1279,
+      "sample_ns": 54.0,
+      "bit": 5,
+      "expected": 0,
+      "out_v": -3.52426323769006e-06,
+      "sense_v": 2.9413133006362,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 7,
+      "row": 1279,
+      "sample_ns": 54.0,
+      "bit": 6,
+      "expected": 0,
+      "out_v": -2.0140804577714915e-05,
+      "sense_v": 2.9734701681411,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 7,
+      "row": 1279,
+      "sample_ns": 54.0,
+      "bit": 7,
+      "expected": 0,
+      "out_v": -1.723680848375293e-05,
+      "sense_v": 2.9705155927430997,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 7,
+      "row": 1279,
+      "sample_ns": 54.0,
+      "bit": 8,
+      "expected": 0,
+      "out_v": 3.0708136613011e-05,
+      "sense_v": 2.9485970723269004,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 7,
+      "row": 1279,
+      "sample_ns": 54.0,
+      "bit": 9,
+      "expected": 0,
+      "out_v": 8.64498322261202e-05,
+      "sense_v": 2.688860554175,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 7,
+      "row": 1279,
+      "sample_ns": 54.0,
+      "bit": 10,
+      "expected": 1,
+      "out_v": 2.9694431655756,
+      "sense_v": 0.2359443207326891,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 7,
+      "row": 1279,
+      "sample_ns": 54.0,
+      "bit": 11,
+      "expected": 1,
+      "out_v": 2.9696747654891,
+      "sense_v": 0.06023516834868744,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 7,
+      "row": 1279,
+      "sample_ns": 54.0,
+      "bit": 12,
+      "expected": 1,
+      "out_v": 2.9694473973585,
+      "sense_v": 0.2291407384014891,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 7,
+      "row": 1279,
+      "sample_ns": 54.0,
+      "bit": 13,
+      "expected": 0,
+      "out_v": 8.109775400161024e-05,
+      "sense_v": 2.6892608775429006,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 7,
+      "row": 1279,
+      "sample_ns": 54.0,
+      "bit": 14,
+      "expected": 0,
+      "out_v": 2.814918354197603e-05,
+      "sense_v": 2.9498600479482002,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 7,
+      "row": 1279,
+      "sample_ns": 54.0,
+      "bit": 15,
+      "expected": 0,
+      "out_v": 4.2294566942624215e-06,
+      "sense_v": 2.9716075842855,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 7,
+      "row": 1279,
+      "sample_ns": 59.5,
+      "bit": 0,
+      "expected": 0,
+      "out_v": 8.627226266423478e-05,
+      "sense_v": 2.7085145353723004,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 7,
+      "row": 1279,
+      "sample_ns": 59.5,
+      "bit": 1,
+      "expected": 1,
+      "out_v": 2.9694532619899,
+      "sense_v": 0.31081416844330895,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 7,
+      "row": 1279,
+      "sample_ns": 59.5,
+      "bit": 2,
+      "expected": 0,
+      "out_v": 0.00031644408722858024,
+      "sense_v": 2.4421536214635005,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 7,
+      "row": 1279,
+      "sample_ns": 59.5,
+      "bit": 3,
+      "expected": 1,
+      "out_v": 2.9695577557199,
+      "sense_v": 0.25286912080770907,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 7,
+      "row": 1279,
+      "sample_ns": 59.5,
+      "bit": 4,
+      "expected": 0,
+      "out_v": 7.272618208132682e-05,
+      "sense_v": 2.7264716449746,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 7,
+      "row": 1279,
+      "sample_ns": 59.5,
+      "bit": 5,
+      "expected": 0,
+      "out_v": 1.875741229285325e-05,
+      "sense_v": 2.9548484773188,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 7,
+      "row": 1279,
+      "sample_ns": 59.5,
+      "bit": 6,
+      "expected": 0,
+      "out_v": -5.397214275925625e-06,
+      "sense_v": 2.9757461380067,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 7,
+      "row": 1279,
+      "sample_ns": 59.5,
+      "bit": 7,
+      "expected": 0,
+      "out_v": -5.012563767606744e-06,
+      "sense_v": 2.9739352332477,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 7,
+      "row": 1279,
+      "sample_ns": 59.5,
+      "bit": 8,
+      "expected": 0,
+      "out_v": 2.590888815801098e-05,
+      "sense_v": 2.9647849930232,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 7,
+      "row": 1279,
+      "sample_ns": 59.5,
+      "bit": 9,
+      "expected": 0,
+      "out_v": 0.00010514846496222015,
+      "sense_v": 2.7396731327275003,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 7,
+      "row": 1279,
+      "sample_ns": 59.5,
+      "bit": 10,
+      "expected": 1,
+      "out_v": 2.9698060169677,
+      "sense_v": 0.11350405642966953,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 7,
+      "row": 1279,
+      "sample_ns": 59.5,
+      "bit": 11,
+      "expected": 1,
+      "out_v": 2.9699356671607,
+      "sense_v": -0.002113639645591365,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 7,
+      "row": 1279,
+      "sample_ns": 59.5,
+      "bit": 12,
+      "expected": 1,
+      "out_v": 2.9698092035229,
+      "sense_v": 0.10956365419447954,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 7,
+      "row": 1279,
+      "sample_ns": 59.5,
+      "bit": 13,
+      "expected": 0,
+      "out_v": 0.00010509871447065018,
+      "sense_v": 2.739815975359001,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 7,
+      "row": 1279,
+      "sample_ns": 59.5,
+      "bit": 14,
+      "expected": 0,
+      "out_v": 2.745244419397401e-05,
+      "sense_v": 2.9653641344265003,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 7,
+      "row": 1279,
+      "sample_ns": 59.5,
+      "bit": 15,
+      "expected": 0,
+      "out_v": 5.434136715536619e-06,
+      "sense_v": 2.9741545576403,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 8,
+      "row": 1278,
+      "sample_ns": 54.0,
+      "bit": 0,
+      "expected": 0,
+      "out_v": 1.2518802886515846e-05,
+      "sense_v": 2.9469187645659,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 8,
+      "row": 1278,
+      "sample_ns": 54.0,
+      "bit": 1,
+      "expected": 0,
+      "out_v": 1.2703690739909247e-05,
+      "sense_v": 2.6892772153432998,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 8,
+      "row": 1278,
+      "sample_ns": 54.0,
+      "bit": 2,
+      "expected": 1,
+      "out_v": 2.9656028501528997,
+      "sense_v": 0.5202949343734531,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 8,
+      "row": 1278,
+      "sample_ns": 54.0,
+      "bit": 3,
+      "expected": 0,
+      "out_v": 1.032798088314661e-05,
+      "sense_v": 2.6976314163909,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 8,
+      "row": 1278,
+      "sample_ns": 54.0,
+      "bit": 4,
+      "expected": 0,
+      "out_v": 1.4797923251056822e-05,
+      "sense_v": 2.9491789954249,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 8,
+      "row": 1278,
+      "sample_ns": 54.0,
+      "bit": 5,
+      "expected": 0,
+      "out_v": 2.8259625651405905e-05,
+      "sense_v": 2.9476826703306998,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 8,
+      "row": 1278,
+      "sample_ns": 54.0,
+      "bit": 6,
+      "expected": 0,
+      "out_v": 7.765827238278352e-05,
+      "sense_v": 2.6967541272529996,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 8,
+      "row": 1278,
+      "sample_ns": 54.0,
+      "bit": 7,
+      "expected": 1,
+      "out_v": 2.9694146771114,
+      "sense_v": 0.21544323696104165,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 8,
+      "row": 1278,
+      "sample_ns": 54.0,
+      "bit": 8,
+      "expected": 1,
+      "out_v": 2.969431552305,
+      "sense_v": 0.22289118836507163,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 8,
+      "row": 1278,
+      "sample_ns": 54.0,
+      "bit": 9,
+      "expected": 0,
+      "out_v": 0.0005831266829650519,
+      "sense_v": 2.3756906048136996,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 8,
+      "row": 1278,
+      "sample_ns": 54.0,
+      "bit": 10,
+      "expected": 1,
+      "out_v": 2.9680207358171997,
+      "sense_v": 0.45523921637629244,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 8,
+      "row": 1278,
+      "sample_ns": 54.0,
+      "bit": 11,
+      "expected": 0,
+      "out_v": 0.00043674839081028126,
+      "sense_v": 2.3987982835146995,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 8,
+      "row": 1278,
+      "sample_ns": 54.0,
+      "bit": 12,
+      "expected": 1,
+      "out_v": 2.9695157865616,
+      "sense_v": 0.2073258074320114,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 8,
+      "row": 1278,
+      "sample_ns": 54.0,
+      "bit": 13,
+      "expected": 1,
+      "out_v": 2.9697114795482,
+      "sense_v": 0.06800171741100386,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 8,
+      "row": 1278,
+      "sample_ns": 54.0,
+      "bit": 14,
+      "expected": 1,
+      "out_v": 2.9697338630291,
+      "sense_v": 0.05211590471790879,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 8,
+      "row": 1278,
+      "sample_ns": 54.0,
+      "bit": 15,
+      "expected": 1,
+      "out_v": 2.9694822736331,
+      "sense_v": 0.1965312273351515,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 8,
+      "row": 1278,
+      "sample_ns": 59.5,
+      "bit": 0,
+      "expected": 0,
+      "out_v": 2.4029254167264285e-05,
+      "sense_v": 2.95875739622755,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 8,
+      "row": 1278,
+      "sample_ns": 59.5,
+      "bit": 1,
+      "expected": 0,
+      "out_v": 8.320534492522564e-05,
+      "sense_v": 2.713627306524201,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 8,
+      "row": 1278,
+      "sample_ns": 59.5,
+      "bit": 2,
+      "expected": 1,
+      "out_v": 2.9695055470228,
+      "sense_v": 0.2681422713926024,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 8,
+      "row": 1278,
+      "sample_ns": 59.5,
+      "bit": 3,
+      "expected": 0,
+      "out_v": 8.442261438896374e-05,
+      "sense_v": 2.723725582706401,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 8,
+      "row": 1278,
+      "sample_ns": 59.5,
+      "bit": 4,
+      "expected": 0,
+      "out_v": 2.8074481481213856e-05,
+      "sense_v": 2.9631688427192002,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 8,
+      "row": 1278,
+      "sample_ns": 59.5,
+      "bit": 5,
+      "expected": 0,
+      "out_v": 3.122227906716161e-05,
+      "sense_v": 2.96599130722575,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 8,
+      "row": 1278,
+      "sample_ns": 59.5,
+      "bit": 6,
+      "expected": 0,
+      "out_v": 0.00010614504476077048,
+      "sense_v": 2.747717262303151,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 8,
+      "row": 1278,
+      "sample_ns": 59.5,
+      "bit": 7,
+      "expected": 1,
+      "out_v": 2.96981445431905,
+      "sense_v": 0.09238607734451589,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 8,
+      "row": 1278,
+      "sample_ns": 59.5,
+      "bit": 8,
+      "expected": 1,
+      "out_v": 2.96982430180835,
+      "sense_v": 0.10312996352108897,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 8,
+      "row": 1278,
+      "sample_ns": 59.5,
+      "bit": 9,
+      "expected": 0,
+      "out_v": 0.0003452034444512331,
+      "sense_v": 2.450785929232252,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 8,
+      "row": 1278,
+      "sample_ns": 59.5,
+      "bit": 10,
+      "expected": 1,
+      "out_v": 2.9696294634104,
+      "sense_v": 0.252496991175313,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 8,
+      "row": 1278,
+      "sample_ns": 59.5,
+      "bit": 11,
+      "expected": 0,
+      "out_v": 0.00029437428652880445,
+      "sense_v": 2.473460588992452,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 8,
+      "row": 1278,
+      "sample_ns": 59.5,
+      "bit": 12,
+      "expected": 1,
+      "out_v": 2.9698508361933,
+      "sense_v": 0.10344673958161907,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 8,
+      "row": 1278,
+      "sample_ns": 59.5,
+      "bit": 13,
+      "expected": 1,
+      "out_v": 2.96994086503125,
+      "sense_v": 0.013186364276254605,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 8,
+      "row": 1278,
+      "sample_ns": 59.5,
+      "bit": 14,
+      "expected": 1,
+      "out_v": 2.9699523385306503,
+      "sense_v": 0.003533860102863222,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 8,
+      "row": 1278,
+      "sample_ns": 59.5,
+      "bit": 15,
+      "expected": 1,
+      "out_v": 2.9698240298989997,
+      "sense_v": 0.08369073666721291,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 9,
+      "row": 1186,
+      "sample_ns": 54.0,
+      "bit": 0,
+      "expected": 0,
+      "out_v": 8.101537717974738e-05,
+      "sense_v": 2.6709417446803005,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 9,
+      "row": 1186,
+      "sample_ns": 54.0,
+      "bit": 1,
+      "expected": 1,
+      "out_v": 2.96931423853215,
+      "sense_v": 0.29754646781816846,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 9,
+      "row": 1186,
+      "sample_ns": 54.0,
+      "bit": 2,
+      "expected": 1,
+      "out_v": 2.9697411255364,
+      "sense_v": 0.031463733067165885,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 9,
+      "row": 1186,
+      "sample_ns": 54.0,
+      "bit": 3,
+      "expected": 1,
+      "out_v": 2.96972227363525,
+      "sense_v": 0.05398025970641284,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 9,
+      "row": 1186,
+      "sample_ns": 54.0,
+      "bit": 4,
+      "expected": 1,
+      "out_v": 2.96947303541495,
+      "sense_v": 0.22761544278431378,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 9,
+      "row": 1186,
+      "sample_ns": 54.0,
+      "bit": 5,
+      "expected": 0,
+      "out_v": 0.000643160175952046,
+      "sense_v": 2.3759039953103005,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 9,
+      "row": 1186,
+      "sample_ns": 54.0,
+      "bit": 6,
+      "expected": 1,
+      "out_v": 2.96945580097315,
+      "sense_v": 0.23561517022704376,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 9,
+      "row": 1186,
+      "sample_ns": 54.0,
+      "bit": 7,
+      "expected": 1,
+      "out_v": 2.9697371903619,
+      "sense_v": 0.04519942690226939,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 9,
+      "row": 1186,
+      "sample_ns": 54.0,
+      "bit": 8,
+      "expected": 1,
+      "out_v": 2.96978944396045,
+      "sense_v": 0.05775787369803544,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 9,
+      "row": 1186,
+      "sample_ns": 54.0,
+      "bit": 9,
+      "expected": 1,
+      "out_v": 2.96976939319305,
+      "sense_v": 0.06771308038556041,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 9,
+      "row": 1186,
+      "sample_ns": 54.0,
+      "bit": 10,
+      "expected": 1,
+      "out_v": 2.96977365635585,
+      "sense_v": 0.05778872682307044,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 9,
+      "row": 1186,
+      "sample_ns": 54.0,
+      "bit": 11,
+      "expected": 1,
+      "out_v": 2.9697276725362,
+      "sense_v": 0.08536370332133582,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 9,
+      "row": 1186,
+      "sample_ns": 54.0,
+      "bit": 12,
+      "expected": 1,
+      "out_v": 2.9697726155884503,
+      "sense_v": 0.05361675347720343,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 9,
+      "row": 1186,
+      "sample_ns": 54.0,
+      "bit": 13,
+      "expected": 1,
+      "out_v": 2.96973202657695,
+      "sense_v": 0.07610826257031184,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 9,
+      "row": 1186,
+      "sample_ns": 54.0,
+      "bit": 14,
+      "expected": 1,
+      "out_v": 2.9697084713504003,
+      "sense_v": 0.06293908473327378,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 9,
+      "row": 1186,
+      "sample_ns": 54.0,
+      "bit": 15,
+      "expected": 1,
+      "out_v": 2.96945247084525,
+      "sense_v": 0.20323837629431868,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 9,
+      "row": 1186,
+      "sample_ns": 59.5,
+      "bit": 0,
+      "expected": 0,
+      "out_v": 0.00010941582907832499,
+      "sense_v": 2.7218139461494997,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 9,
+      "row": 1186,
+      "sample_ns": 59.5,
+      "bit": 1,
+      "expected": 1,
+      "out_v": 2.9697479119245003,
+      "sense_v": 0.15218730620072504,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 9,
+      "row": 1186,
+      "sample_ns": 59.5,
+      "bit": 2,
+      "expected": 1,
+      "out_v": 2.969953258625,
+      "sense_v": -0.010373983103364995,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 9,
+      "row": 1186,
+      "sample_ns": 59.5,
+      "bit": 3,
+      "expected": 1,
+      "out_v": 2.96993890511175,
+      "sense_v": 0.006275514266164007,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 9,
+      "row": 1186,
+      "sample_ns": 59.5,
+      "bit": 4,
+      "expected": 1,
+      "out_v": 2.969815964536,
+      "sense_v": 0.11849964270580003,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 9,
+      "row": 1186,
+      "sample_ns": 59.5,
+      "bit": 5,
+      "expected": 0,
+      "out_v": 0.00031369111228250003,
+      "sense_v": 2.471312950395,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 9,
+      "row": 1186,
+      "sample_ns": 59.5,
+      "bit": 6,
+      "expected": 1,
+      "out_v": 2.96980881121575,
+      "sense_v": 0.12262363552517502,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 9,
+      "row": 1186,
+      "sample_ns": 59.5,
+      "bit": 7,
+      "expected": 1,
+      "out_v": 2.9699416213150003,
+      "sense_v": 0.0018555568360667564,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 9,
+      "row": 1186,
+      "sample_ns": 59.5,
+      "bit": 8,
+      "expected": 1,
+      "out_v": 2.969947083631,
+      "sense_v": 0.01625676451537251,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 9,
+      "row": 1186,
+      "sample_ns": 59.5,
+      "bit": 9,
+      "expected": 1,
+      "out_v": 2.969936232859,
+      "sense_v": 0.021591981810487507,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 9,
+      "row": 1186,
+      "sample_ns": 59.5,
+      "bit": 10,
+      "expected": 1,
+      "out_v": 2.9699408181485,
+      "sense_v": 0.014805526534607507,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 9,
+      "row": 1186,
+      "sample_ns": 59.5,
+      "bit": 11,
+      "expected": 1,
+      "out_v": 2.9699179371322497,
+      "sense_v": 0.03063576121770251,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 9,
+      "row": 1186,
+      "sample_ns": 59.5,
+      "bit": 12,
+      "expected": 1,
+      "out_v": 2.9699436316105,
+      "sense_v": 0.011918650971435006,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 9,
+      "row": 1186,
+      "sample_ns": 59.5,
+      "bit": 13,
+      "expected": 1,
+      "out_v": 2.96992568424925,
+      "sense_v": 0.02480828443464001,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 9,
+      "row": 1186,
+      "sample_ns": 59.5,
+      "bit": 14,
+      "expected": 1,
+      "out_v": 2.969931027853,
+      "sense_v": 0.00889252427102601,
+      "output_pass": true,
+      "raw_pass": true
+    },
+    {
+      "cycle": 9,
+      "row": 1186,
+      "sample_ns": 59.5,
+      "bit": 15,
+      "expected": 1,
+      "out_v": 2.96980440488275,
+      "sense_v": 0.08621250038712003,
+      "output_pass": true,
+      "raw_pass": true
+    }
+  ],
+  "precharges": [
+    {
+      "cycle": 0,
+      "row": 3,
+      "bit": 0,
+      "near_v": 2.96998384,
+      "far_v": 2.9699799722,
+      "pass": true
+    },
+    {
+      "cycle": 0,
+      "row": 3,
+      "bit": 1,
+      "near_v": 2.96998223,
+      "far_v": 2.96997794,
+      "pass": true
+    },
+    {
+      "cycle": 0,
+      "row": 3,
+      "bit": 2,
+      "near_v": 2.96998437,
+      "far_v": 2.96998065,
+      "pass": true
+    },
+    {
+      "cycle": 0,
+      "row": 3,
+      "bit": 3,
+      "near_v": 2.96998374,
+      "far_v": 2.96997981,
+      "pass": true
+    },
+    {
+      "cycle": 0,
+      "row": 3,
+      "bit": 4,
+      "near_v": 2.96998309,
+      "far_v": 2.96997913,
+      "pass": true
+    },
+    {
+      "cycle": 0,
+      "row": 3,
+      "bit": 5,
+      "near_v": 2.96998301,
+      "far_v": 2.96997909,
+      "pass": true
+    },
+    {
+      "cycle": 0,
+      "row": 3,
+      "bit": 6,
+      "near_v": 2.96998317,
+      "far_v": 2.96997931,
+      "pass": true
+    },
+    {
+      "cycle": 0,
+      "row": 3,
+      "bit": 7,
+      "near_v": 2.9699840577999996,
+      "far_v": 2.96998046,
+      "pass": true
+    },
+    {
+      "cycle": 0,
+      "row": 3,
+      "bit": 8,
+      "near_v": 2.96998327,
+      "far_v": 2.96997919,
+      "pass": true
+    },
+    {
+      "cycle": 0,
+      "row": 3,
+      "bit": 9,
+      "near_v": 2.96998332,
+      "far_v": 2.96997924,
+      "pass": true
+    },
+    {
+      "cycle": 0,
+      "row": 3,
+      "bit": 10,
+      "near_v": 2.96998343,
+      "far_v": 2.96997945,
+      "pass": true
+    },
+    {
+      "cycle": 0,
+      "row": 3,
+      "bit": 11,
+      "near_v": 2.96998278,
+      "far_v": 2.9699787,
+      "pass": true
+    },
+    {
+      "cycle": 0,
+      "row": 3,
+      "bit": 12,
+      "near_v": 2.96998346,
+      "far_v": 2.9699796,
+      "pass": true
+    },
+    {
+      "cycle": 0,
+      "row": 3,
+      "bit": 13,
+      "near_v": 2.96998257,
+      "far_v": 2.96997851,
+      "pass": true
+    },
+    {
+      "cycle": 0,
+      "row": 3,
+      "bit": 14,
+      "near_v": 2.96998335,
+      "far_v": 2.96997956,
+      "pass": true
+    },
+    {
+      "cycle": 0,
+      "row": 3,
+      "bit": 15,
+      "near_v": 2.96998291,
+      "far_v": 2.96997902,
+      "pass": true
+    },
+    {
+      "cycle": 1,
+      "row": 0,
+      "bit": 0,
+      "near_v": 3.0865946562485997,
+      "far_v": 3.11428811231724,
+      "pass": true
+    },
+    {
+      "cycle": 1,
+      "row": 0,
+      "bit": 1,
+      "near_v": 2.4119834905991198,
+      "far_v": 2.30655948155084,
+      "pass": false
+    },
+    {
+      "cycle": 1,
+      "row": 0,
+      "bit": 2,
+      "near_v": 3.08183888199664,
+      "far_v": 3.1080005472552,
+      "pass": true
+    },
+    {
+      "cycle": 1,
+      "row": 0,
+      "bit": 3,
+      "near_v": 2.97645229912952,
+      "far_v": 2.9780058091446797,
+      "pass": true
+    },
+    {
+      "cycle": 1,
+      "row": 0,
+      "bit": 4,
+      "near_v": 2.96675113683244,
+      "far_v": 2.96605810804824,
+      "pass": true
+    },
+    {
+      "cycle": 1,
+      "row": 0,
+      "bit": 5,
+      "near_v": 2.97596429180444,
+      "far_v": 2.9773416536536,
+      "pass": true
+    },
+    {
+      "cycle": 1,
+      "row": 0,
+      "bit": 6,
+      "near_v": 3.07911903388688,
+      "far_v": 3.1042314159305198,
+      "pass": true
+    },
+    {
+      "cycle": 1,
+      "row": 0,
+      "bit": 7,
+      "near_v": 2.45679948744944,
+      "far_v": 2.36296421930936,
+      "pass": false
+    },
+    {
+      "cycle": 1,
+      "row": 0,
+      "bit": 8,
+      "near_v": 3.08782197036484,
+      "far_v": 3.11658404626892,
+      "pass": true
+    },
+    {
+      "cycle": 1,
+      "row": 0,
+      "bit": 9,
+      "near_v": 3.09970911854828,
+      "far_v": 3.13061392086804,
+      "pass": true
+    },
+    {
+      "cycle": 1,
+      "row": 0,
+      "bit": 10,
+      "near_v": 2.6427998545467997,
+      "far_v": 2.57599849982704,
+      "pass": false
+    },
+    {
+      "cycle": 1,
+      "row": 0,
+      "bit": 11,
+      "near_v": 2.80336833679744,
+      "far_v": 2.7677015742894397,
+      "pass": false
+    },
+    {
+      "cycle": 1,
+      "row": 0,
+      "bit": 12,
+      "near_v": 2.8289188267481196,
+      "far_v": 2.79897747805552,
+      "pass": false
+    },
+    {
+      "cycle": 1,
+      "row": 0,
+      "bit": 13,
+      "near_v": 2.6645813409928802,
+      "far_v": 2.60304814494708,
+      "pass": false
+    },
+    {
+      "cycle": 1,
+      "row": 0,
+      "bit": 14,
+      "near_v": 3.1983701814666,
+      "far_v": 3.25192064655696,
+      "pass": true
+    },
+    {
+      "cycle": 1,
+      "row": 0,
+      "bit": 15,
+      "near_v": 2.4890259066800797,
+      "far_v": 2.3999145707896803,
+      "pass": false
+    },
+    {
+      "cycle": 2,
+      "row": 1279,
+      "bit": 0,
+      "near_v": 2.97701719282365,
+      "far_v": 2.97870160859355,
+      "pass": true
+    },
+    {
+      "cycle": 2,
+      "row": 1279,
+      "bit": 1,
+      "near_v": 3.08383763421225,
+      "far_v": 3.1107753515002496,
+      "pass": true
+    },
+    {
+      "cycle": 2,
+      "row": 1279,
+      "bit": 2,
+      "near_v": 2.4552516674494513,
+      "far_v": 2.3574930970694012,
+      "pass": false
+    },
+    {
+      "cycle": 2,
+      "row": 1279,
+      "bit": 3,
+      "near_v": 3.087984120247,
+      "far_v": 3.1155225254188,
+      "pass": true
+    },
+    {
+      "cycle": 2,
+      "row": 1279,
+      "bit": 4,
+      "near_v": 3.08995647459885,
+      "far_v": 3.1179083028181998,
+      "pass": true
+    },
+    {
+      "cycle": 2,
+      "row": 1279,
+      "bit": 5,
+      "near_v": 2.429229639795101,
+      "far_v": 2.3297737581624514,
+      "pass": false
+    },
+    {
+      "cycle": 2,
+      "row": 1279,
+      "bit": 6,
+      "near_v": 3.0820455634410497,
+      "far_v": 3.1077149093332497,
+      "pass": true
+    },
+    {
+      "cycle": 2,
+      "row": 1279,
+      "bit": 7,
+      "near_v": 2.9740880078729504,
+      "far_v": 2.97500555215185,
+      "pass": true
+    },
+    {
+      "cycle": 2,
+      "row": 1279,
+      "bit": 8,
+      "near_v": 2.9750917927849,
+      "far_v": 2.9762451365827,
+      "pass": true
+    },
+    {
+      "cycle": 2,
+      "row": 1279,
+      "bit": 9,
+      "near_v": 3.09754662417725,
+      "far_v": 3.12788879830945,
+      "pass": true
+    },
+    {
+      "cycle": 2,
+      "row": 1279,
+      "bit": 10,
+      "near_v": 2.602800152715851,
+      "far_v": 2.5289090675021013,
+      "pass": false
+    },
+    {
+      "cycle": 2,
+      "row": 1279,
+      "bit": 11,
+      "near_v": 2.5907272780064012,
+      "far_v": 2.515296159461751,
+      "pass": false
+    },
+    {
+      "cycle": 2,
+      "row": 1279,
+      "bit": 12,
+      "near_v": 3.102124428206,
+      "far_v": 3.13283852756825,
+      "pass": true
+    },
+    {
+      "cycle": 2,
+      "row": 1279,
+      "bit": 13,
+      "near_v": 3.1013593294805997,
+      "far_v": 3.13188443029995,
+      "pass": true
+    },
+    {
+      "cycle": 2,
+      "row": 1279,
+      "bit": 14,
+      "near_v": 2.616214864568601,
+      "far_v": 2.5473783278033513,
+      "pass": false
+    },
+    {
+      "cycle": 2,
+      "row": 1279,
+      "bit": 15,
+      "near_v": 2.635164096765801,
+      "far_v": 2.5700250459075513,
+      "pass": false
+    },
+    {
+      "cycle": 3,
+      "row": 1278,
+      "bit": 0,
+      "near_v": 3.08487990098915,
+      "far_v": 3.11217444241465,
+      "pass": true
+    },
+    {
+      "cycle": 3,
+      "row": 1278,
+      "bit": 1,
+      "near_v": 2.445265650714402,
+      "far_v": 2.344845377666253,
+      "pass": false
+    },
+    {
+      "cycle": 3,
+      "row": 1278,
+      "bit": 2,
+      "near_v": 3.1869854677829,
+      "far_v": 3.2388449030408997,
+      "pass": true
+    },
+    {
+      "cycle": 3,
+      "row": 1278,
+      "bit": 3,
+      "near_v": 2.476434006677502,
+      "far_v": 2.3818090148620525,
+      "pass": false
+    },
+    {
+      "cycle": 3,
+      "row": 1278,
+      "bit": 4,
+      "near_v": 3.0823617214536,
+      "far_v": 3.10841191353805,
+      "pass": true
+    },
+    {
+      "cycle": 3,
+      "row": 1278,
+      "bit": 5,
+      "near_v": 2.97571551761855,
+      "far_v": 2.9770437351323498,
+      "pass": true
+    },
+    {
+      "cycle": 3,
+      "row": 1278,
+      "bit": 6,
+      "near_v": 2.96762986902375,
+      "far_v": 2.96714789874185,
+      "pass": true
+    },
+    {
+      "cycle": 3,
+      "row": 1278,
+      "bit": 7,
+      "near_v": 2.96684906231165,
+      "far_v": 2.9661892067707503,
+      "pass": true
+    },
+    {
+      "cycle": 3,
+      "row": 1278,
+      "bit": 8,
+      "near_v": 2.9749168432599498,
+      "far_v": 2.9760851171659,
+      "pass": true
+    },
+    {
+      "cycle": 3,
+      "row": 1278,
+      "bit": 9,
+      "near_v": 3.0957079294285,
+      "far_v": 3.1256277113943995,
+      "pass": true
+    },
+    {
+      "cycle": 3,
+      "row": 1278,
+      "bit": 10,
+      "near_v": 2.636744025270902,
+      "far_v": 2.5688856621023524,
+      "pass": false
+    },
+    {
+      "cycle": 3,
+      "row": 1278,
+      "bit": 11,
+      "near_v": 2.7744558581822516,
+      "far_v": 2.733010593470302,
+      "pass": false
+    },
+    {
+      "cycle": 3,
+      "row": 1278,
+      "bit": 12,
+      "near_v": 2.646615535298602,
+      "far_v": 2.5817710657912523,
+      "pass": false
+    },
+    {
+      "cycle": 3,
+      "row": 1278,
+      "bit": 13,
+      "near_v": 3.0956773158841497,
+      "far_v": 3.1247797101477497,
+      "pass": true
+    },
+    {
+      "cycle": 3,
+      "row": 1278,
+      "bit": 14,
+      "near_v": 2.97426432588845,
+      "far_v": 2.97522551682115,
+      "pass": true
+    },
+    {
+      "cycle": 3,
+      "row": 1278,
+      "bit": 15,
+      "near_v": 2.9673282266163,
+      "far_v": 2.96677317712855,
+      "pass": true
+    },
+    {
+      "cycle": 4,
+      "row": 1186,
+      "bit": 0,
+      "near_v": 2.977271792971,
+      "far_v": 2.9789982028649997,
+      "pass": true
+    },
+    {
+      "cycle": 4,
+      "row": 1186,
+      "bit": 1,
+      "near_v": 3.0843556569639996,
+      "far_v": 3.1113968253439994,
+      "pass": true
+    },
+    {
+      "cycle": 4,
+      "row": 1186,
+      "bit": 2,
+      "near_v": 2.455399780033007,
+      "far_v": 2.3576763062830084,
+      "pass": false
+    },
+    {
+      "cycle": 4,
+      "row": 1186,
+      "bit": 3,
+      "near_v": 3.0808038443679995,
+      "far_v": 3.1065916894839996,
+      "pass": true
+    },
+    {
+      "cycle": 4,
+      "row": 1186,
+      "bit": 4,
+      "near_v": 2.9749560649639997,
+      "far_v": 2.976088848535,
+      "pass": true
+    },
+    {
+      "cycle": 4,
+      "row": 1186,
+      "bit": 5,
+      "near_v": 2.9730389411349996,
+      "far_v": 2.9736872852889995,
+      "pass": true
+    },
+    {
+      "cycle": 4,
+      "row": 1186,
+      "bit": 6,
+      "near_v": 3.090674124886999,
+      "far_v": 3.118430399804999,
+      "pass": true
+    },
+    {
+      "cycle": 4,
+      "row": 1186,
+      "bit": 7,
+      "near_v": 2.640281375257006,
+      "far_v": 2.576002864622007,
+      "pass": false
+    },
+    {
+      "cycle": 4,
+      "row": 1186,
+      "bit": 8,
+      "near_v": 2.6480522811520055,
+      "far_v": 2.5813932861500066,
+      "pass": false
+    },
+    {
+      "cycle": 4,
+      "row": 1186,
+      "bit": 9,
+      "near_v": 3.200870046441999,
+      "far_v": 3.256694213465998,
+      "pass": true
+    },
+    {
+      "cycle": 4,
+      "row": 1186,
+      "bit": 10,
+      "near_v": 2.5072457856800057,
+      "far_v": 2.4172556141620065,
+      "pass": false
+    },
+    {
+      "cycle": 4,
+      "row": 1186,
+      "bit": 11,
+      "near_v": 3.193114932704999,
+      "far_v": 3.2463126362439985,
+      "pass": true
+    },
+    {
+      "cycle": 4,
+      "row": 1186,
+      "bit": 12,
+      "near_v": 2.6806424219930047,
+      "far_v": 2.621935630402006,
+      "pass": false
+    },
+    {
+      "cycle": 4,
+      "row": 1186,
+      "bit": 13,
+      "near_v": 2.807121865445004,
+      "far_v": 2.7728096963490056,
+      "pass": false
+    },
+    {
+      "cycle": 4,
+      "row": 1186,
+      "bit": 14,
+      "near_v": 2.8221077005880044,
+      "far_v": 2.7914853787450054,
+      "pass": false
+    },
+    {
+      "cycle": 4,
+      "row": 1186,
+      "bit": 15,
+      "near_v": 2.6718134394870057,
+      "far_v": 2.612991067939007,
+      "pass": false
+    },
+    {
+      "cycle": 5,
+      "row": 3,
+      "bit": 0,
+      "near_v": 3.097005238832,
+      "far_v": 3.1272631610320003,
+      "pass": true
+    },
+    {
+      "cycle": 5,
+      "row": 3,
+      "bit": 1,
+      "near_v": 2.6167788990639975,
+      "far_v": 2.544765000479997,
+      "pass": false
+    },
+    {
+      "cycle": 5,
+      "row": 3,
+      "bit": 2,
+      "near_v": 2.840540223671998,
+      "far_v": 2.8123441181599973,
+      "pass": false
+    },
+    {
+      "cycle": 5,
+      "row": 3,
+      "bit": 3,
+      "near_v": 2.833800808743998,
+      "far_v": 2.8040078511759976,
+      "pass": false
+    },
+    {
+      "cycle": 5,
+      "row": 3,
+      "bit": 4,
+      "near_v": 2.6775423940639977,
+      "far_v": 2.6179943044239975,
+      "pass": false
+    },
+    {
+      "cycle": 5,
+      "row": 3,
+      "bit": 5,
+      "near_v": 3.2016936255680006,
+      "far_v": 3.2563455291600008,
+      "pass": true
+    },
+    {
+      "cycle": 5,
+      "row": 3,
+      "bit": 6,
+      "near_v": 2.6746101827679976,
+      "far_v": 2.6155978201599974,
+      "pass": false
+    },
+    {
+      "cycle": 5,
+      "row": 3,
+      "bit": 7,
+      "near_v": 2.8436658526719985,
+      "far_v": 2.8174863397359977,
+      "pass": false
+    },
+    {
+      "cycle": 5,
+      "row": 3,
+      "bit": 8,
+      "near_v": 2.8491963435999983,
+      "far_v": 2.8223145853759983,
+      "pass": true
+    },
+    {
+      "cycle": 5,
+      "row": 3,
+      "bit": 9,
+      "near_v": 2.8499698229839985,
+      "far_v": 2.823209433519998,
+      "pass": true
+    },
+    {
+      "cycle": 5,
+      "row": 3,
+      "bit": 10,
+      "near_v": 2.8419582847359983,
+      "far_v": 2.813922464663998,
+      "pass": false
+    },
+    {
+      "cycle": 5,
+      "row": 3,
+      "bit": 11,
+      "near_v": 2.8292300779199984,
+      "far_v": 2.798864822255998,
+      "pass": false
+    },
+    {
+      "cycle": 5,
+      "row": 3,
+      "bit": 12,
+      "near_v": 2.8503813116559984,
+      "far_v": 2.824820854711998,
+      "pass": true
+    },
+    {
+      "cycle": 5,
+      "row": 3,
+      "bit": 13,
+      "near_v": 2.830801897599998,
+      "far_v": 2.801282064975998,
+      "pass": false
+    },
+    {
+      "cycle": 5,
+      "row": 3,
+      "bit": 14,
+      "near_v": 2.822931478295998,
+      "far_v": 2.7924585098079975,
+      "pass": false
+    },
+    {
+      "cycle": 5,
+      "row": 3,
+      "bit": 15,
+      "near_v": 2.6727709282719974,
+      "far_v": 2.614142055599997,
+      "pass": false
+    },
+    {
+      "cycle": 6,
+      "row": 0,
+      "bit": 0,
+      "near_v": 3.0870879086663,
+      "far_v": 3.114897284314,
+      "pass": true
+    },
+    {
+      "cycle": 6,
+      "row": 0,
+      "bit": 1,
+      "near_v": 2.4060369464930997,
+      "far_v": 2.29976495099955,
+      "pass": false
+    },
+    {
+      "cycle": 6,
+      "row": 0,
+      "bit": 2,
+      "near_v": 3.08230699292405,
+      "far_v": 3.108576670359,
+      "pass": true
+    },
+    {
+      "cycle": 6,
+      "row": 0,
+      "bit": 3,
+      "near_v": 2.97659830883395,
+      "far_v": 2.97818555033255,
+      "pass": true
+    },
+    {
+      "cycle": 6,
+      "row": 0,
+      "bit": 4,
+      "near_v": 2.966621114843,
+      "far_v": 2.9658985188384497,
+      "pass": true
+    },
+    {
+      "cycle": 6,
+      "row": 0,
+      "bit": 5,
+      "near_v": 2.97617901744675,
+      "far_v": 2.9776047580469,
+      "pass": true
+    },
+    {
+      "cycle": 6,
+      "row": 0,
+      "bit": 6,
+      "near_v": 3.07910517417485,
+      "far_v": 3.1042133256682,
+      "pass": true
+    },
+    {
+      "cycle": 6,
+      "row": 0,
+      "bit": 7,
+      "near_v": 2.45523669446305,
+      "far_v": 2.36119998221755,
+      "pass": false
+    },
+    {
+      "cycle": 6,
+      "row": 0,
+      "bit": 8,
+      "near_v": 3.0879970304185997,
+      "far_v": 3.11680114469435,
+      "pass": true
+    },
+    {
+      "cycle": 6,
+      "row": 0,
+      "bit": 9,
+      "near_v": 3.0999921155255,
+      "far_v": 3.13096396516515,
+      "pass": true
+    },
+    {
+      "cycle": 6,
+      "row": 0,
+      "bit": 10,
+      "near_v": 2.6413216998850997,
+      "far_v": 2.57427440572905,
+      "pass": false
+    },
+    {
+      "cycle": 6,
+      "row": 0,
+      "bit": 11,
+      "near_v": 2.8028111899737,
+      "far_v": 2.76704571754775,
+      "pass": false
+    },
+    {
+      "cycle": 6,
+      "row": 0,
+      "bit": 12,
+      "near_v": 2.8285657746980997,
+      "far_v": 2.79856553112025,
+      "pass": false
+    },
+    {
+      "cycle": 6,
+      "row": 0,
+      "bit": 13,
+      "near_v": 2.66287976892185,
+      "far_v": 2.6010592158768002,
+      "pass": false
+    },
+    {
+      "cycle": 6,
+      "row": 0,
+      "bit": 14,
+      "near_v": 3.1989152996952,
+      "far_v": 3.2525970577119,
+      "pass": true
+    },
+    {
+      "cycle": 6,
+      "row": 0,
+      "bit": 15,
+      "near_v": 2.48592117214575,
+      "far_v": 2.3963677305485,
+      "pass": false
+    },
+    {
+      "cycle": 7,
+      "row": 1279,
+      "bit": 0,
+      "near_v": 2.9770204801479,
+      "far_v": 2.9787056828567002,
+      "pass": true
+    },
+    {
+      "cycle": 7,
+      "row": 1279,
+      "bit": 1,
+      "near_v": 3.0838513357001,
+      "far_v": 3.11079244302395,
+      "pass": true
+    },
+    {
+      "cycle": 7,
+      "row": 1279,
+      "bit": 2,
+      "near_v": 2.4553058686729483,
+      "far_v": 2.3575556866314984,
+      "pass": false
+    },
+    {
+      "cycle": 7,
+      "row": 1279,
+      "bit": 3,
+      "near_v": 3.08801067534635,
+      "far_v": 3.11555549248845,
+      "pass": true
+    },
+    {
+      "cycle": 7,
+      "row": 1279,
+      "bit": 4,
+      "near_v": 3.0899903009296,
+      "far_v": 3.1179501261560003,
+      "pass": true
+    },
+    {
+      "cycle": 7,
+      "row": 1279,
+      "bit": 5,
+      "near_v": 2.4292375712318486,
+      "far_v": 2.3297828444875983,
+      "pass": false
+    },
+    {
+      "cycle": 7,
+      "row": 1279,
+      "bit": 6,
+      "near_v": 3.0820539974005503,
+      "far_v": 3.10772529951565,
+      "pass": true
+    },
+    {
+      "cycle": 7,
+      "row": 1279,
+      "bit": 7,
+      "near_v": 2.9740915034804503,
+      "far_v": 2.97500977728575,
+      "pass": true
+    },
+    {
+      "cycle": 7,
+      "row": 1279,
+      "bit": 8,
+      "near_v": 2.9751183497797005,
+      "far_v": 2.9762779722744,
+      "pass": true
+    },
+    {
+      "cycle": 7,
+      "row": 1279,
+      "bit": 9,
+      "near_v": 3.097588411074,
+      "far_v": 3.12794095860395,
+      "pass": true
+    },
+    {
+      "cycle": 7,
+      "row": 1279,
+      "bit": 10,
+      "near_v": 2.6028795318717988,
+      "far_v": 2.529002410676098,
+      "pass": false
+    },
+    {
+      "cycle": 7,
+      "row": 1279,
+      "bit": 11,
+      "near_v": 2.5907806663991986,
+      "far_v": 2.5153588253950483,
+      "pass": false
+    },
+    {
+      "cycle": 7,
+      "row": 1279,
+      "bit": 12,
+      "near_v": 3.1021711751157,
+      "far_v": 3.13289638740445,
+      "pass": true
+    },
+    {
+      "cycle": 7,
+      "row": 1279,
+      "bit": 13,
+      "near_v": 3.1014046487421005,
+      "far_v": 3.13194041035225,
+      "pass": true
+    },
+    {
+      "cycle": 7,
+      "row": 1279,
+      "bit": 14,
+      "near_v": 2.6162178424846485,
+      "far_v": 2.5473817586815484,
+      "pass": false
+    },
+    {
+      "cycle": 7,
+      "row": 1279,
+      "bit": 15,
+      "near_v": 2.6351825305206984,
+      "far_v": 2.5700466427527484,
+      "pass": false
+    },
+    {
+      "cycle": 8,
+      "row": 1278,
+      "bit": 0,
+      "near_v": 3.0849232690292,
+      "far_v": 3.1122281186113003,
+      "pass": true
+    },
+    {
+      "cycle": 8,
+      "row": 1278,
+      "bit": 1,
+      "near_v": 2.4448891981565977,
+      "far_v": 2.3444128950001972,
+      "pass": false
+    },
+    {
+      "cycle": 8,
+      "row": 1278,
+      "bit": 2,
+      "near_v": 3.1870721764221,
+      "far_v": 3.2389528713118008,
+      "pass": true
+    },
+    {
+      "cycle": 8,
+      "row": 1278,
+      "bit": 3,
+      "near_v": 2.476097746940698,
+      "far_v": 2.381421792195097,
+      "pass": false
+    },
+    {
+      "cycle": 8,
+      "row": 1278,
+      "bit": 4,
+      "near_v": 3.0824147461922005,
+      "far_v": 3.1084772999069,
+      "pass": true
+    },
+    {
+      "cycle": 8,
+      "row": 1278,
+      "bit": 5,
+      "near_v": 2.9757246553792998,
+      "far_v": 2.9770549108377002,
+      "pass": true
+    },
+    {
+      "cycle": 8,
+      "row": 1278,
+      "bit": 6,
+      "near_v": 2.9676288354662,
+      "far_v": 2.9671466217502,
+      "pass": true
+    },
+    {
+      "cycle": 8,
+      "row": 1278,
+      "bit": 7,
+      "near_v": 2.9668482749817002,
+      "far_v": 2.9661882339767,
+      "pass": true
+    },
+    {
+      "cycle": 8,
+      "row": 1278,
+      "bit": 8,
+      "near_v": 2.9749412613319004,
+      "far_v": 2.9761152604723002,
+      "pass": true
+    },
+    {
+      "cycle": 8,
+      "row": 1278,
+      "bit": 9,
+      "near_v": 3.0957539572790003,
+      "far_v": 3.1256850104349003,
+      "pass": true
+    },
+    {
+      "cycle": 8,
+      "row": 1278,
+      "bit": 10,
+      "near_v": 2.636752857625098,
+      "far_v": 2.5688970940907976,
+      "pass": false
+    },
+    {
+      "cycle": 8,
+      "row": 1278,
+      "bit": 11,
+      "near_v": 2.774498317986398,
+      "far_v": 2.7330623545709978,
+      "pass": false
+    },
+    {
+      "cycle": 8,
+      "row": 1278,
+      "bit": 12,
+      "near_v": 2.646619736909998,
+      "far_v": 2.581776938645398,
+      "pass": false
+    },
+    {
+      "cycle": 8,
+      "row": 1278,
+      "bit": 13,
+      "near_v": 3.0957035533048005,
+      "far_v": 3.1248121075521005,
+      "pass": true
+    },
+    {
+      "cycle": 8,
+      "row": 1278,
+      "bit": 14,
+      "near_v": 2.9742842250906,
+      "far_v": 2.9752497885323,
+      "pass": true
+    },
+    {
+      "cycle": 8,
+      "row": 1278,
+      "bit": 15,
+      "near_v": 2.9673286088921,
+      "far_v": 2.9667736348207003,
+      "pass": true
+    },
+    {
+      "cycle": 9,
+      "row": 1186,
+      "bit": 0,
+      "near_v": 2.9772743162704995,
+      "far_v": 2.979001324852249,
+      "pass": true
+    },
+    {
+      "cycle": 9,
+      "row": 1186,
+      "bit": 1,
+      "near_v": 3.084367859298849,
+      "far_v": 3.1114119854461486,
+      "pass": true
+    },
+    {
+      "cycle": 9,
+      "row": 1186,
+      "bit": 2,
+      "near_v": 2.455421914487921,
+      "far_v": 2.357702362802124,
+      "pass": false
+    },
+    {
+      "cycle": 9,
+      "row": 1186,
+      "bit": 3,
+      "near_v": 3.0808223678713986,
+      "far_v": 3.1066146243534485,
+      "pass": true
+    },
+    {
+      "cycle": 9,
+      "row": 1186,
+      "bit": 4,
+      "near_v": 2.9749814309276497,
+      "far_v": 2.9761199223953994,
+      "pass": true
+    },
+    {
+      "cycle": 9,
+      "row": 1186,
+      "bit": 5,
+      "near_v": 2.973050308826199,
+      "far_v": 2.9737011650305494,
+      "pass": true
+    },
+    {
+      "cycle": 9,
+      "row": 1186,
+      "bit": 6,
+      "near_v": 3.0907194818861976,
+      "far_v": 3.118486254043547,
+      "pass": true
+    },
+    {
+      "cycle": 9,
+      "row": 1186,
+      "bit": 7,
+      "near_v": 2.6403100976215677,
+      "far_v": 2.5760369219854713,
+      "pass": false
+    },
+    {
+      "cycle": 9,
+      "row": 1186,
+      "bit": 8,
+      "near_v": 2.647907864784367,
+      "far_v": 2.5812227854958696,
+      "pass": false
+    },
+    {
+      "cycle": 9,
+      "row": 1186,
+      "bit": 9,
+      "near_v": 3.200957878489496,
+      "far_v": 3.2568040272013454,
+      "pass": true
+    },
+    {
+      "cycle": 9,
+      "row": 1186,
+      "bit": 10,
+      "near_v": 2.5070810931496177,
+      "far_v": 2.4170649004333202,
+      "pass": false
+    },
+    {
+      "cycle": 9,
+      "row": 1186,
+      "bit": 11,
+      "near_v": 3.1931937350427955,
+      "far_v": 3.246410918503695,
+      "pass": true
+    },
+    {
+      "cycle": 9,
+      "row": 1186,
+      "bit": 12,
+      "near_v": 2.680541086758565,
+      "far_v": 2.621816242198867,
+      "pass": false
+    },
+    {
+      "cycle": 9,
+      "row": 1186,
+      "bit": 13,
+      "near_v": 2.807065131109263,
+      "far_v": 2.7727419555697157,
+      "pass": false
+    },
+    {
+      "cycle": 9,
+      "row": 1186,
+      "bit": 14,
+      "near_v": 2.821977946315613,
+      "far_v": 2.7913301393924654,
+      "pass": false
+    },
+    {
+      "cycle": 9,
+      "row": 1186,
+      "bit": 15,
+      "near_v": 2.671710165739367,
+      "far_v": 2.6128700519374197,
+      "pass": false
+    }
+  ],
+  "phase_checks": [
+    {
+      "cycle": 0,
+      "pc_v_at_wl_command": 0.5011803410000005,
+      "max_wl_v_at_pc_command": 2.32348587,
+      "pc_off_pass": false,
+      "wl_off_pass": false
+    },
+    {
+      "cycle": 1,
+      "pc_v_at_wl_command": 0.6232546230000021,
+      "max_wl_v_at_pc_command": 2.31719813,
+      "pc_off_pass": false,
+      "wl_off_pass": false
+    },
+    {
+      "cycle": 2,
+      "pc_v_at_wl_command": 0.6232300230000042,
+      "max_wl_v_at_pc_command": 2.3129613199999954,
+      "pc_off_pass": false,
+      "wl_off_pass": false
+    },
+    {
+      "cycle": 3,
+      "pc_v_at_wl_command": 0.622971322,
+      "max_wl_v_at_pc_command": 2.32399198,
+      "pc_off_pass": false,
+      "wl_off_pass": false
+    },
+    {
+      "cycle": 4,
+      "pc_v_at_wl_command": 0.623604622,
+      "max_wl_v_at_pc_command": 2.32285187,
+      "pc_off_pass": false,
+      "wl_off_pass": false
+    },
+    {
+      "cycle": 5,
+      "pc_v_at_wl_command": 0.624263622,
+      "max_wl_v_at_pc_command": 2.3233276099999896,
+      "pc_off_pass": false,
+      "wl_off_pass": false
+    },
+    {
+      "cycle": 6,
+      "pc_v_at_wl_command": 0.623214097,
+      "max_wl_v_at_pc_command": 2.317198189999994,
+      "pc_off_pass": false,
+      "wl_off_pass": false
+    },
+    {
+      "cycle": 7,
+      "pc_v_at_wl_command": 0.6232299580000084,
+      "max_wl_v_at_pc_command": 2.31296127,
+      "pc_off_pass": false,
+      "wl_off_pass": false
+    },
+    {
+      "cycle": 8,
+      "pc_v_at_wl_command": 0.622974691,
+      "max_wl_v_at_pc_command": 2.32399206,
+      "pc_off_pass": false,
+      "wl_off_pass": false
+    },
+    {
+      "cycle": 9,
+      "pc_v_at_wl_command": 0.623604258,
+      "max_wl_v_at_pc_command": 2.32285243,
+      "pc_off_pass": false,
+      "wl_off_pass": false
+    }
+  ],
+  "latencies": [
+    {
+      "cycle": 0,
+      "row": 3,
+      "bit": 0,
+      "settled_ns_after_wl_command": 0.0
+    },
+    {
+      "cycle": 0,
+      "row": 3,
+      "bit": 1,
+      "settled_ns_after_wl_command": 32.353378
+    },
+    {
+      "cycle": 0,
+      "row": 3,
+      "bit": 2,
+      "settled_ns_after_wl_command": 0.0
+    },
+    {
+      "cycle": 0,
+      "row": 3,
+      "bit": 3,
+      "settled_ns_after_wl_command": 0.0
+    },
+    {
+      "cycle": 0,
+      "row": 3,
+      "bit": 4,
+      "settled_ns_after_wl_command": 0.0
+    },
+    {
+      "cycle": 0,
+      "row": 3,
+      "bit": 5,
+      "settled_ns_after_wl_command": 0.0
+    },
+    {
+      "cycle": 0,
+      "row": 3,
+      "bit": 6,
+      "settled_ns_after_wl_command": 0.0
+    },
+    {
+      "cycle": 0,
+      "row": 3,
+      "bit": 7,
+      "settled_ns_after_wl_command": 30.753377999999998
+    },
+    {
+      "cycle": 0,
+      "row": 3,
+      "bit": 8,
+      "settled_ns_after_wl_command": 0.0
+    },
+    {
+      "cycle": 0,
+      "row": 3,
+      "bit": 9,
+      "settled_ns_after_wl_command": 0.0
+    },
+    {
+      "cycle": 0,
+      "row": 3,
+      "bit": 10,
+      "settled_ns_after_wl_command": 26.753377999999998
+    },
+    {
+      "cycle": 0,
+      "row": 3,
+      "bit": 11,
+      "settled_ns_after_wl_command": 24.353378
+    },
+    {
+      "cycle": 0,
+      "row": 3,
+      "bit": 12,
+      "settled_ns_after_wl_command": 23.953378
+    },
+    {
+      "cycle": 0,
+      "row": 3,
+      "bit": 13,
+      "settled_ns_after_wl_command": 26.353378
+    },
+    {
+      "cycle": 0,
+      "row": 3,
+      "bit": 14,
+      "settled_ns_after_wl_command": 0.0
+    },
+    {
+      "cycle": 0,
+      "row": 3,
+      "bit": 15,
+      "settled_ns_after_wl_command": 29.953378
+    },
+    {
+      "cycle": 1,
+      "row": 0,
+      "bit": 0,
+      "settled_ns_after_wl_command": 0.0
+    },
+    {
+      "cycle": 1,
+      "row": 0,
+      "bit": 1,
+      "settled_ns_after_wl_command": 0.0
+    },
+    {
+      "cycle": 1,
+      "row": 0,
+      "bit": 2,
+      "settled_ns_after_wl_command": 30.76549200000001
+    },
+    {
+      "cycle": 1,
+      "row": 0,
+      "bit": 3,
+      "settled_ns_after_wl_command": 0.0
+    },
+    {
+      "cycle": 1,
+      "row": 0,
+      "bit": 4,
+      "settled_ns_after_wl_command": 0.0
+    },
+    {
+      "cycle": 1,
+      "row": 0,
+      "bit": 5,
+      "settled_ns_after_wl_command": 31.365492000000003
+    },
+    {
+      "cycle": 1,
+      "row": 0,
+      "bit": 6,
+      "settled_ns_after_wl_command": 0.0
+    },
+    {
+      "cycle": 1,
+      "row": 0,
+      "bit": 7,
+      "settled_ns_after_wl_command": 0.0
+    },
+    {
+      "cycle": 1,
+      "row": 0,
+      "bit": 8,
+      "settled_ns_after_wl_command": 0.0
+    },
+    {
+      "cycle": 1,
+      "row": 0,
+      "bit": 9,
+      "settled_ns_after_wl_command": 0.0
+    },
+    {
+      "cycle": 1,
+      "row": 0,
+      "bit": 10,
+      "settled_ns_after_wl_command": 27.165492
+    },
+    {
+      "cycle": 1,
+      "row": 0,
+      "bit": 11,
+      "settled_ns_after_wl_command": 27.365492000000003
+    },
+    {
+      "cycle": 1,
+      "row": 0,
+      "bit": 12,
+      "settled_ns_after_wl_command": 0.0
+    },
+    {
+      "cycle": 1,
+      "row": 0,
+      "bit": 13,
+      "settled_ns_after_wl_command": 0.0
+    },
+    {
+      "cycle": 1,
+      "row": 0,
+      "bit": 14,
+      "settled_ns_after_wl_command": 27.165492
+    },
+    {
+      "cycle": 1,
+      "row": 0,
+      "bit": 15,
+      "settled_ns_after_wl_command": 26.565491999999992
+    },
+    {
+      "cycle": 2,
+      "row": 1279,
+      "bit": 0,
+      "settled_ns_after_wl_command": 0.0
+    },
+    {
+      "cycle": 2,
+      "row": 1279,
+      "bit": 1,
+      "settled_ns_after_wl_command": 31.96687800000001
+    },
+    {
+      "cycle": 2,
+      "row": 1279,
+      "bit": 2,
+      "settled_ns_after_wl_command": 0.0
+    },
+    {
+      "cycle": 2,
+      "row": 1279,
+      "bit": 3,
+      "settled_ns_after_wl_command": 30.76687799999999
+    },
+    {
+      "cycle": 2,
+      "row": 1279,
+      "bit": 4,
+      "settled_ns_after_wl_command": 0.0
+    },
+    {
+      "cycle": 2,
+      "row": 1279,
+      "bit": 5,
+      "settled_ns_after_wl_command": 0.0
+    },
+    {
+      "cycle": 2,
+      "row": 1279,
+      "bit": 6,
+      "settled_ns_after_wl_command": 0.0
+    },
+    {
+      "cycle": 2,
+      "row": 1279,
+      "bit": 7,
+      "settled_ns_after_wl_command": 0.0
+    },
+    {
+      "cycle": 2,
+      "row": 1279,
+      "bit": 8,
+      "settled_ns_after_wl_command": 0.0
+    },
+    {
+      "cycle": 2,
+      "row": 1279,
+      "bit": 9,
+      "settled_ns_after_wl_command": 0.0
+    },
+    {
+      "cycle": 2,
+      "row": 1279,
+      "bit": 10,
+      "settled_ns_after_wl_command": 26.76687799999999
+    },
+    {
+      "cycle": 2,
+      "row": 1279,
+      "bit": 11,
+      "settled_ns_after_wl_command": 24.76687799999999
+    },
+    {
+      "cycle": 2,
+      "row": 1279,
+      "bit": 12,
+      "settled_ns_after_wl_command": 26.566878000000003
+    },
+    {
+      "cycle": 2,
+      "row": 1279,
+      "bit": 13,
+      "settled_ns_after_wl_command": 0.0
+    },
+    {
+      "cycle": 2,
+      "row": 1279,
+      "bit": 14,
+      "settled_ns_after_wl_command": 0.0
+    },
+    {
+      "cycle": 2,
+      "row": 1279,
+      "bit": 15,
+      "settled_ns_after_wl_command": 0.0
+    },
+    {
+      "cycle": 3,
+      "row": 1278,
+      "bit": 0,
+      "settled_ns_after_wl_command": 0.0
+    },
+    {
+      "cycle": 3,
+      "row": 1278,
+      "bit": 1,
+      "settled_ns_after_wl_command": 0.0
+    },
+    {
+      "cycle": 3,
+      "row": 1278,
+      "bit": 2,
+      "settled_ns_after_wl_command": 31.365746
+    },
+    {
+      "cycle": 3,
+      "row": 1278,
+      "bit": 3,
+      "settled_ns_after_wl_command": 0.0
+    },
+    {
+      "cycle": 3,
+      "row": 1278,
+      "bit": 4,
+      "settled_ns_after_wl_command": 0.0
+    },
+    {
+      "cycle": 3,
+      "row": 1278,
+      "bit": 5,
+      "settled_ns_after_wl_command": 0.0
+    },
+    {
+      "cycle": 3,
+      "row": 1278,
+      "bit": 6,
+      "settled_ns_after_wl_command": 0.0
+    },
+    {
+      "cycle": 3,
+      "row": 1278,
+      "bit": 7,
+      "settled_ns_after_wl_command": 26.965745999999996
+    },
+    {
+      "cycle": 3,
+      "row": 1278,
+      "bit": 8,
+      "settled_ns_after_wl_command": 26.965745999999996
+    },
+    {
+      "cycle": 3,
+      "row": 1278,
+      "bit": 9,
+      "settled_ns_after_wl_command": 0.0
+    },
+    {
+      "cycle": 3,
+      "row": 1278,
+      "bit": 10,
+      "settled_ns_after_wl_command": 30.165746000000013
+    },
+    {
+      "cycle": 3,
+      "row": 1278,
+      "bit": 11,
+      "settled_ns_after_wl_command": 0.0
+    },
+    {
+      "cycle": 3,
+      "row": 1278,
+      "bit": 12,
+      "settled_ns_after_wl_command": 26.165746000000013
+    },
+    {
+      "cycle": 3,
+      "row": 1278,
+      "bit": 13,
+      "settled_ns_after_wl_command": 24.365746
+    },
+    {
+      "cycle": 3,
+      "row": 1278,
+      "bit": 14,
+      "settled_ns_after_wl_command": 24.165746000000013
+    },
+    {
+      "cycle": 3,
+      "row": 1278,
+      "bit": 15,
+      "settled_ns_after_wl_command": 26.165746000000013
+    },
+    {
+      "cycle": 4,
+      "row": 1186,
+      "bit": 0,
+      "settled_ns_after_wl_command": 0.0
+    },
+    {
+      "cycle": 4,
+      "row": 1186,
+      "bit": 1,
+      "settled_ns_after_wl_command": 27.567093
+    },
+    {
+      "cycle": 4,
+      "row": 1186,
+      "bit": 2,
+      "settled_ns_after_wl_command": 23.76709299999999
+    },
+    {
+      "cycle": 4,
+      "row": 1186,
+      "bit": 3,
+      "settled_ns_after_wl_command": 24.167092999999966
+    },
+    {
+      "cycle": 4,
+      "row": 1186,
+      "bit": 4,
+      "settled_ns_after_wl_command": 26.167093000000023
+    },
+    {
+      "cycle": 4,
+      "row": 1186,
+      "bit": 5,
+      "settled_ns_after_wl_command": 0.0
+    },
+    {
+      "cycle": 4,
+      "row": 1186,
+      "bit": 6,
+      "settled_ns_after_wl_command": 26.36709300000001
+    },
+    {
+      "cycle": 4,
+      "row": 1186,
+      "bit": 7,
+      "settled_ns_after_wl_command": 23.76709299999999
+    },
+    {
+      "cycle": 4,
+      "row": 1186,
+      "bit": 8,
+      "settled_ns_after_wl_command": 23.367092999999954
+    },
+    {
+      "cycle": 4,
+      "row": 1186,
+      "bit": 9,
+      "settled_ns_after_wl_command": 23.567093
+    },
+    {
+      "cycle": 4,
+      "row": 1186,
+      "bit": 10,
+      "settled_ns_after_wl_command": 23.367092999999954
+    },
+    {
+      "cycle": 4,
+      "row": 1186,
+      "bit": 11,
+      "settled_ns_after_wl_command": 23.76709299999999
+    },
+    {
+      "cycle": 4,
+      "row": 1186,
+      "bit": 12,
+      "settled_ns_after_wl_command": 23.567093
+    },
+    {
+      "cycle": 4,
+      "row": 1186,
+      "bit": 13,
+      "settled_ns_after_wl_command": 23.967093000000034
+    },
+    {
+      "cycle": 4,
+      "row": 1186,
+      "bit": 14,
+      "settled_ns_after_wl_command": 24.167092999999966
+    },
+    {
+      "cycle": 4,
+      "row": 1186,
+      "bit": 15,
+      "settled_ns_after_wl_command": 26.36709300000001
+    },
+    {
+      "cycle": 5,
+      "row": 3,
+      "bit": 0,
+      "settled_ns_after_wl_command": 0.0
+    },
+    {
+      "cycle": 5,
+      "row": 3,
+      "bit": 1,
+      "settled_ns_after_wl_command": 32.165561000000025
+    },
+    {
+      "cycle": 5,
+      "row": 3,
+      "bit": 2,
+      "settled_ns_after_wl_command": 0.0
+    },
+    {
+      "cycle": 5,
+      "row": 3,
+      "bit": 3,
+      "settled_ns_after_wl_command": 0.0
+    },
+    {
+      "cycle": 5,
+      "row": 3,
+      "bit": 4,
+      "settled_ns_after_wl_command": 0.0
+    },
+    {
+      "cycle": 5,
+      "row": 3,
+      "bit": 5,
+      "settled_ns_after_wl_command": 0.0
+    },
+    {
+      "cycle": 5,
+      "row": 3,
+      "bit": 6,
+      "settled_ns_after_wl_command": 0.0
+    },
+    {
+      "cycle": 5,
+      "row": 3,
+      "bit": 7,
+      "settled_ns_after_wl_command": 30.76556099999999
+    },
+    {
+      "cycle": 5,
+      "row": 3,
+      "bit": 8,
+      "settled_ns_after_wl_command": 0.0
+    },
+    {
+      "cycle": 5,
+      "row": 3,
+      "bit": 9,
+      "settled_ns_after_wl_command": 0.0
+    },
+    {
+      "cycle": 5,
+      "row": 3,
+      "bit": 10,
+      "settled_ns_after_wl_command": 26.365561000000014
+    },
+    {
+      "cycle": 5,
+      "row": 3,
+      "bit": 11,
+      "settled_ns_after_wl_command": 24.16556099999997
+    },
+    {
+      "cycle": 5,
+      "row": 3,
+      "bit": 12,
+      "settled_ns_after_wl_command": 23.76556099999999
+    },
+    {
+      "cycle": 5,
+      "row": 3,
+      "bit": 13,
+      "settled_ns_after_wl_command": 26.16556099999997
+    },
+    {
+      "cycle": 5,
+      "row": 3,
+      "bit": 14,
+      "settled_ns_after_wl_command": 0.0
+    },
+    {
+      "cycle": 5,
+      "row": 3,
+      "bit": 15,
+      "settled_ns_after_wl_command": 29.76556099999999
+    },
+    {
+      "cycle": 6,
+      "row": 0,
+      "bit": 0,
+      "settled_ns_after_wl_command": 0.0
+    },
+    {
+      "cycle": 6,
+      "row": 0,
+      "bit": 1,
+      "settled_ns_after_wl_command": 0.0
+    },
+    {
+      "cycle": 6,
+      "row": 0,
+      "bit": 2,
+      "settled_ns_after_wl_command": 30.765489000000002
+    },
+    {
+      "cycle": 6,
+      "row": 0,
+      "bit": 3,
+      "settled_ns_after_wl_command": 0.0
+    },
+    {
+      "cycle": 6,
+      "row": 0,
+      "bit": 4,
+      "settled_ns_after_wl_command": 0.0
+    },
+    {
+      "cycle": 6,
+      "row": 0,
+      "bit": 5,
+      "settled_ns_after_wl_command": 31.365489000000025
+    },
+    {
+      "cycle": 6,
+      "row": 0,
+      "bit": 6,
+      "settled_ns_after_wl_command": 0.0
+    },
+    {
+      "cycle": 6,
+      "row": 0,
+      "bit": 7,
+      "settled_ns_after_wl_command": 0.0
+    },
+    {
+      "cycle": 6,
+      "row": 0,
+      "bit": 8,
+      "settled_ns_after_wl_command": 0.0
+    },
+    {
+      "cycle": 6,
+      "row": 0,
+      "bit": 9,
+      "settled_ns_after_wl_command": 0.0
+    },
+    {
+      "cycle": 6,
+      "row": 0,
+      "bit": 10,
+      "settled_ns_after_wl_command": 27.165489000000036
+    },
+    {
+      "cycle": 6,
+      "row": 0,
+      "bit": 11,
+      "settled_ns_after_wl_command": 27.365488999999968
+    },
+    {
+      "cycle": 6,
+      "row": 0,
+      "bit": 12,
+      "settled_ns_after_wl_command": 0.0
+    },
+    {
+      "cycle": 6,
+      "row": 0,
+      "bit": 13,
+      "settled_ns_after_wl_command": 0.0
+    },
+    {
+      "cycle": 6,
+      "row": 0,
+      "bit": 14,
+      "settled_ns_after_wl_command": 27.165489000000036
+    },
+    {
+      "cycle": 6,
+      "row": 0,
+      "bit": 15,
+      "settled_ns_after_wl_command": 26.565489000000014
+    },
+    {
+      "cycle": 7,
+      "row": 1279,
+      "bit": 0,
+      "settled_ns_after_wl_command": 0.0
+    },
+    {
+      "cycle": 7,
+      "row": 1279,
+      "bit": 1,
+      "settled_ns_after_wl_command": 31.96687800000001
+    },
+    {
+      "cycle": 7,
+      "row": 1279,
+      "bit": 2,
+      "settled_ns_after_wl_command": 0.0
+    },
+    {
+      "cycle": 7,
+      "row": 1279,
+      "bit": 3,
+      "settled_ns_after_wl_command": 30.766877999999963
+    },
+    {
+      "cycle": 7,
+      "row": 1279,
+      "bit": 4,
+      "settled_ns_after_wl_command": 0.0
+    },
+    {
+      "cycle": 7,
+      "row": 1279,
+      "bit": 5,
+      "settled_ns_after_wl_command": 0.0
+    },
+    {
+      "cycle": 7,
+      "row": 1279,
+      "bit": 6,
+      "settled_ns_after_wl_command": 0.0
+    },
+    {
+      "cycle": 7,
+      "row": 1279,
+      "bit": 7,
+      "settled_ns_after_wl_command": 0.0
+    },
+    {
+      "cycle": 7,
+      "row": 1279,
+      "bit": 8,
+      "settled_ns_after_wl_command": 0.0
+    },
+    {
+      "cycle": 7,
+      "row": 1279,
+      "bit": 9,
+      "settled_ns_after_wl_command": 0.0
+    },
+    {
+      "cycle": 7,
+      "row": 1279,
+      "bit": 10,
+      "settled_ns_after_wl_command": 26.76687800000002
+    },
+    {
+      "cycle": 7,
+      "row": 1279,
+      "bit": 11,
+      "settled_ns_after_wl_command": 24.76687800000002
+    },
+    {
+      "cycle": 7,
+      "row": 1279,
+      "bit": 12,
+      "settled_ns_after_wl_command": 26.566877999999974
+    },
+    {
+      "cycle": 7,
+      "row": 1279,
+      "bit": 13,
+      "settled_ns_after_wl_command": 0.0
+    },
+    {
+      "cycle": 7,
+      "row": 1279,
+      "bit": 14,
+      "settled_ns_after_wl_command": 0.0
+    },
+    {
+      "cycle": 7,
+      "row": 1279,
+      "bit": 15,
+      "settled_ns_after_wl_command": 0.0
+    },
+    {
+      "cycle": 8,
+      "row": 1278,
+      "bit": 0,
+      "settled_ns_after_wl_command": 0.0
+    },
+    {
+      "cycle": 8,
+      "row": 1278,
+      "bit": 1,
+      "settled_ns_after_wl_command": 0.0
+    },
+    {
+      "cycle": 8,
+      "row": 1278,
+      "bit": 2,
+      "settled_ns_after_wl_command": 31.36574600000006
+    },
+    {
+      "cycle": 8,
+      "row": 1278,
+      "bit": 3,
+      "settled_ns_after_wl_command": 0.0
+    },
+    {
+      "cycle": 8,
+      "row": 1278,
+      "bit": 4,
+      "settled_ns_after_wl_command": 0.0
+    },
+    {
+      "cycle": 8,
+      "row": 1278,
+      "bit": 5,
+      "settled_ns_after_wl_command": 0.0
+    },
+    {
+      "cycle": 8,
+      "row": 1278,
+      "bit": 6,
+      "settled_ns_after_wl_command": 0.0
+    },
+    {
+      "cycle": 8,
+      "row": 1278,
+      "bit": 7,
+      "settled_ns_after_wl_command": 26.965745999999967
+    },
+    {
+      "cycle": 8,
+      "row": 1278,
+      "bit": 8,
+      "settled_ns_after_wl_command": 26.965745999999967
+    },
+    {
+      "cycle": 8,
+      "row": 1278,
+      "bit": 9,
+      "settled_ns_after_wl_command": 0.0
+    },
+    {
+      "cycle": 8,
+      "row": 1278,
+      "bit": 10,
+      "settled_ns_after_wl_command": 30.165746000000013
+    },
+    {
+      "cycle": 8,
+      "row": 1278,
+      "bit": 11,
+      "settled_ns_after_wl_command": 0.0
+    },
+    {
+      "cycle": 8,
+      "row": 1278,
+      "bit": 12,
+      "settled_ns_after_wl_command": 26.165746000000013
+    },
+    {
+      "cycle": 8,
+      "row": 1278,
+      "bit": 13,
+      "settled_ns_after_wl_command": 24.36574600000006
+    },
+    {
+      "cycle": 8,
+      "row": 1278,
+      "bit": 14,
+      "settled_ns_after_wl_command": 24.165746000000013
+    },
+    {
+      "cycle": 8,
+      "row": 1278,
+      "bit": 15,
+      "settled_ns_after_wl_command": 26.165746000000013
+    },
+    {
+      "cycle": 9,
+      "row": 1186,
+      "bit": 0,
+      "settled_ns_after_wl_command": 0.0
+    },
+    {
+      "cycle": 9,
+      "row": 1186,
+      "bit": 1,
+      "settled_ns_after_wl_command": 27.567093
+    },
+    {
+      "cycle": 9,
+      "row": 1186,
+      "bit": 2,
+      "settled_ns_after_wl_command": 23.767093000000045
+    },
+    {
+      "cycle": 9,
+      "row": 1186,
+      "bit": 3,
+      "settled_ns_after_wl_command": 24.167093000000023
+    },
+    {
+      "cycle": 9,
+      "row": 1186,
+      "bit": 4,
+      "settled_ns_after_wl_command": 26.167093000000023
+    },
+    {
+      "cycle": 9,
+      "row": 1186,
+      "bit": 5,
+      "settled_ns_after_wl_command": 0.0
+    },
+    {
+      "cycle": 9,
+      "row": 1186,
+      "bit": 6,
+      "settled_ns_after_wl_command": 26.367093000000068
+    },
+    {
+      "cycle": 9,
+      "row": 1186,
+      "bit": 7,
+      "settled_ns_after_wl_command": 23.767093000000045
+    },
+    {
+      "cycle": 9,
+      "row": 1186,
+      "bit": 8,
+      "settled_ns_after_wl_command": 23.367093000000068
+    },
+    {
+      "cycle": 9,
+      "row": 1186,
+      "bit": 9,
+      "settled_ns_after_wl_command": 23.567093
+    },
+    {
+      "cycle": 9,
+      "row": 1186,
+      "bit": 10,
+      "settled_ns_after_wl_command": 23.367093000000068
+    },
+    {
+      "cycle": 9,
+      "row": 1186,
+      "bit": 11,
+      "settled_ns_after_wl_command": 23.767093000000045
+    },
+    {
+      "cycle": 9,
+      "row": 1186,
+      "bit": 12,
+      "settled_ns_after_wl_command": 23.367093000000068
+    },
+    {
+      "cycle": 9,
+      "row": 1186,
+      "bit": 13,
+      "settled_ns_after_wl_command": 23.967092999999977
+    },
+    {
+      "cycle": 9,
+      "row": 1186,
+      "bit": 14,
+      "settled_ns_after_wl_command": 24.167093000000023
+    },
+    {
+      "cycle": 9,
+      "row": 1186,
+      "bit": 15,
+      "settled_ns_after_wl_command": 26.367093000000068
+    }
+  ],
+  "maximum_sampled_settled_ns": 32.353378,
+  "command_to_capture_20ns_probe": [
+    {
+      "cycle": 0,
+      "ns_after_wl_command": 20,
+      "data_failures": 7,
+      "excludes_decoder_setup_latch_and_mux": true
+    },
+    {
+      "cycle": 1,
+      "ns_after_wl_command": 20,
+      "data_failures": 6,
+      "excludes_decoder_setup_latch_and_mux": true
+    },
+    {
+      "cycle": 2,
+      "ns_after_wl_command": 20,
+      "data_failures": 5,
+      "excludes_decoder_setup_latch_and_mux": true
+    },
+    {
+      "cycle": 3,
+      "ns_after_wl_command": 20,
+      "data_failures": 8,
+      "excludes_decoder_setup_latch_and_mux": true
+    },
+    {
+      "cycle": 4,
+      "ns_after_wl_command": 20,
+      "data_failures": 14,
+      "excludes_decoder_setup_latch_and_mux": true
+    },
+    {
+      "cycle": 5,
+      "ns_after_wl_command": 20,
+      "data_failures": 7,
+      "excludes_decoder_setup_latch_and_mux": true
+    },
+    {
+      "cycle": 6,
+      "ns_after_wl_command": 20,
+      "data_failures": 6,
+      "excludes_decoder_setup_latch_and_mux": true
+    },
+    {
+      "cycle": 7,
+      "ns_after_wl_command": 20,
+      "data_failures": 5,
+      "excludes_decoder_setup_latch_and_mux": true
+    },
+    {
+      "cycle": 8,
+      "ns_after_wl_command": 20,
+      "data_failures": 8,
+      "excludes_decoder_setup_latch_and_mux": true
+    },
+    {
+      "cycle": 9,
+      "ns_after_wl_command": 20,
+      "data_failures": 14,
+      "excludes_decoder_setup_latch_and_mux": true
+    }
+  ],
+  "energy_pj_per_sampled_read": {
+    "pr": 255.81738066269878,
+    "pw": 8.201268733144028,
+    "pp": 60.35058058343169,
+    "pa": -2.083071136962778
+  },
+  "energy_window_ns": [
+    300.0,
+    600.0
+  ],
+  "energy_scope": "Finite-window net source energy over repeated sequence; only observed endpoint states compared, not all internal stored charge. Partial16active-column group plus128receivers/selectedWL/PC buffers; not complete bank energy.",
+  "maximum_observed_endpoint_voltage_difference_v": 0.0009584919999976599,
+  "samples_checked": 320,
+  "corner": "ss",
+  "voltage_v": 2.97,
+  "temperature_c": 125,
+  "period_ns": 60.0,
+  "protocol": {
+    "period_ns": 60.0,
+    "pc_off_ns": 14.0,
+    "wl_start_ns": 18.0,
+    "wl_fall_start_ns": 57.8,
+    "wl_fall_end_ns": 58.0,
+    "pc_on_start_ns": 59.8,
+    "sample_ns": [
+      54.0,
+      59.5
+    ],
+    "edge_ns": 0.2,
+    "phase_family": "pre2std4;14/60fraction precharge plus fixed4ns guard"
+  },
+  "scope": "Full1280-column WL/PC loading sensitivity with actual fullbank controlmetalC, geometry-derived ten-node commonrailR, one unplacedstockbuf4 peractiveWL/onebuf20PC, and1152dummyothergate loads. Data/current remain16actual columns,112idealaggressors and128physicalreceivers. Not a physically placed fullbank timing/energy qualification.",
+  "conditional20ns_interleave_factor": 3,
+  "interleave_factor_qualified": false,
+  "interleave_qualification": "Only sampled32lane protocol if pass; not full320lane bank throughput",
+  "deck_sha256": "5e610bda1d79460ee5bfa099cb4bd1f985374e194625504a752fa1d68c672c8e",
+  "trace_sha256": "b871e872105dad9b797af9740c1d9b8378964efc6fae4fbd54c96266ec465d60",
+  "wall_seconds": 386.18351545813493,
+  "source_gds_sha256": "d167253fbbc8159dd2eb82e3a9e8b4869a94651335accac5cabe9cae24b76467",
+  "full_row_energy_pj": null,
+  "full_bank_timing_proven": false,
+  "worst_column_receiver_supply_energy_pj_per_row_read": 6.167479488607226,
+  "selected_column_receiver_mos_supply_energy_pj_per_row_read": {
+    "0": 0.001285196676231368,
+    "1": 6.167479488607226,
+    "2": 5.603391162127246,
+    "3": 3.5208900149545075,
+    "4": 1.729192427569518,
+    "5": 2.1319160695371275,
+    "6": 1.739344080413406,
+    "7": 5.243889386786769,
+    "8": 3.1663801624514365,
+    "9": 1.423570036221067,
+    "10": 8.795229710863605,
+    "11": 6.285241499569645,
+    "12": 6.316225787394516,
+    "13": 4.689604054520907,
+    "14": 4.71714501662136,
+    "15": 7.159400820756986
+  },
+  "worst_column_energy_scope": "Each selected column has a separate zero-volt series source rdd\u2192column_vddN feeding only its four receiver devices, including wells. Observational MOS supply/well energy includes device-model junctions but excludes explicit extracted VDD coupling-capacitor source current, which remains on global rdd; excludes sharedWL/PCdrivers and idealaggressor work. Not entire column energy. Included within pr, do not add twice.",
+  "worst_column_local_bit": 1,
+  "worst_column_global_bit": 1153
+}

@@ -1,0 +1,45 @@
+\documentclass[10pt,twocolumn]{article}
+\usepackage[margin=0.75in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{siunitx}
+\usepackage{hyperref}
+\usepackage{cleveref}
+\hypersetup{colorlinks=true,linkcolor=blue!50!black,citecolor=green!40!black,urlcolor=blue!50!black}
+\usepackage{enumitem}
+\usepackage{tikz}
+\usetikzlibrary{positioning,calc}
+\setlist{nosep,leftmargin=*}
+\sisetup{group-separator={,},group-minimum-digits=4}
+
+% TODO markers are kept visible in the draft.
+\newcommand{\todo}[1]{\textcolor{red}{[TODO: #1]}}
+
+\title{\textbf{RouteVoice}: A Hardwired-Codebook Speech Recognizer\\in Open 180\,nm Silicon, Built with AI Coding Agents}
+\author{Sanjay Prasad H S}
+\date{}
+
+\begin{document}
+\maketitle
+
+\input{sections/abstract}
+\input{sections/introduction}
+\input{sections/background}
+\input{sections/representation}
+\input{sections/architecture}
+\input{sections/methodology}
+\input{sections/results}
+\input{sections/closure}
+\input{sections/efficiency}
+\input{sections/future}
+\input{sections/limitations}
+\input{sections/conclusion}
+
+\bibliographystyle{plainurl}
+\bibliography{refs}
+
+\appendix
+\input{sections/artifacts}
+\end{document}

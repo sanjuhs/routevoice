@@ -1,0 +1,207 @@
+{
+  "passed": true,
+  "top": "rv_allonchip_top_all_v1",
+  "services": [
+    {
+      "service": "decoder_body",
+      "native_ROM_bytes": 8908800,
+      "rtl_replies": 1392000,
+      "host_replies": 0,
+      "mismatches": 0
+    },
+    {
+      "service": "decoder_self",
+      "native_ROM_bytes": 2519040,
+      "rtl_replies": 787200,
+      "host_replies": 0,
+      "mismatches": 0
+    },
+    {
+      "service": "encoder_QKV_O",
+      "native_ROM_bytes": 2457600,
+      "rtl_replies": 384000,
+      "host_replies": 0,
+      "mismatches": 0
+    },
+    {
+      "service": "encoder_immutable",
+      "native_ROM_bytes": 5146880,
+      "rtl_replies": 1947520,
+      "host_replies": 0,
+      "mismatches": 0
+    },
+    {
+      "service": "frontend_immutable",
+      "native_ROM_bytes": 8298240,
+      "rtl_replies": 55720960,
+      "host_replies": 0,
+      "mismatches": 0
+    },
+    {
+      "service": "producer_positions",
+      "native_ROM_bytes": 1310720,
+      "rtl_replies": 2560,
+      "host_replies": 0,
+      "mismatches": 0
+    }
+  ],
+  "new_native_ROM_bytes": 28641280,
+  "already_onboard_native_bytes": 9143040,
+  "total_native_bytes": 37784320,
+  "total_logical_image_bytes": 37488640,
+  "common_clocks": 312578649,
+  "baseline_clocks": 312578649,
+  "elapsed_seconds": 3143.925150124822,
+  "tokens": [
+    28176,
+    373,
+    278,
+    26068,
+    2
+  ],
+  "text": "Switch on the lights",
+  "native_output_comparisons": 18,
+  "host_fixed_service_input_ports": 0,
+  "host_fixed_service_drives": 0,
+  "all_27_milestone_clocks_match": true,
+  "stages": {
+    "lint-full": {
+      "exit_code": 0,
+      "elapsed_seconds": 36.46478504198603,
+      "log": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/onchip-all/logs/20261014T020603-lint-full.log",
+      "log_sha256": "db9f56e95ff9e8c40577ef1442099837a33e865738b02411527c074d96f98807"
+    },
+    "generate-full": {
+      "exit_code": 0,
+      "elapsed_seconds": 79.5555083330255,
+      "log": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/onchip-all/logs/20261014T020706-generate-full.log",
+      "log_sha256": "65a75f1bf490f6552476429f04a73a73d728419a10bb8c242e2af124e048121e"
+    },
+    "compile": {
+      "exit_code": 0,
+      "elapsed_seconds": 96.06158762518317,
+      "log": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/onchip-all/logs/20261014T020905-compile.log",
+      "log_sha256": "9366d1b06d1c517923de2c9686d7465005d90a0349848eee787c41d0564aed2a"
+    },
+    "fixture": {
+      "exit_code": 0,
+      "elapsed_seconds": 2.0797928338870406,
+      "log": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/onchip-all/logs/20261014T021118-fixture.log",
+      "log_sha256": "1bfbb874cbc297d7b27432dbbb57a80d4a990f59327dd24892f5459f1872c5d5"
+    },
+    "unit-body-build": {
+      "exit_code": 0,
+      "elapsed_seconds": 2.238161582965404,
+      "log": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/onchip-all/logs/20261014T021132-unit-body-build.log",
+      "log_sha256": "9dacc4fae84e489f21d66dd59714e91c693f98d06fd06cf5a20cf36373fe4721"
+    },
+    "unit-body-run": {
+      "exit_code": 0,
+      "elapsed_seconds": 0.9966535000130534,
+      "log": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/onchip-all/logs/20261014T021134-unit-body-run.log",
+      "log_sha256": "654ba1746a12a52d29790c76568abd9130373b29b99e0c99f5fdcb62b3b3e531"
+    },
+    "unit-self-build": {
+      "exit_code": 0,
+      "elapsed_seconds": 2.165365665918216,
+      "log": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/onchip-all/logs/20261014T021135-unit-self-build.log",
+      "log_sha256": "bf3d52464d9e8ebdf6a3126bcb19a67cb6991c938f94339d57b06bc9566b5013"
+    },
+    "unit-self-run": {
+      "exit_code": 0,
+      "elapsed_seconds": 0.5687878329772502,
+      "log": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/onchip-all/logs/20261014T021137-unit-self-run.log",
+      "log_sha256": "ac7b64c7809bbf4c877d7efff5062c6d0c168793ab206300fb853ef92db4da96"
+    },
+    "test-head-build": {
+      "exit_code": 0,
+      "elapsed_seconds": 1.9752086671069264,
+      "log": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/onchip-all/logs/20261014T021138-test-head-build.log",
+      "log_sha256": "6e55c0e14665c2afe3e31b429c8124ce3ebdc24bf5146ec8bf962d6c52cae403"
+    },
+    "test-O-build": {
+      "exit_code": 0,
+      "elapsed_seconds": 1.9081547919195145,
+      "log": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/onchip-all/logs/20261014T021140-test-O-build.log",
+      "log_sha256": "f45ee7d9b7fd1b31f0732e73df7d87263fd7e284c9baa26ff06a19a2a231cce7"
+    },
+    "test-head": {
+      "exit_code": 0,
+      "elapsed_seconds": 0.5663197080139071,
+      "log": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/onchip-all/logs/20261014T021140-test-head.log",
+      "log_sha256": "d7e18a75c9108e91f362c8a0537f395a5615f4e93e133c9b65ca19082465f7a1"
+    },
+    "test-O": {
+      "exit_code": 0,
+      "elapsed_seconds": 0.5117136661428958,
+      "log": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/onchip-all/logs/20261014T021142-test-O.log",
+      "log_sha256": "c29a8588f17418a4ad397a5ed0e1476cb6c2bea25ca9b946a28944c5a8a37957"
+    },
+    "test-memory-build": {
+      "exit_code": 0,
+      "elapsed_seconds": 1.972730082925409,
+      "log": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/onchip-all/logs/20261014T021143-test-memory-build.log",
+      "log_sha256": "3494517a3375c8322d4d405c4e7f4cdbc2ff07c4d3830137cf7edadf0a3b39a0"
+    },
+    "test-memory": {
+      "exit_code": 0,
+      "elapsed_seconds": 0.8937033331021667,
+      "log": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/onchip-all/logs/20261014T021145-test-memory.log",
+      "log_sha256": "73924359e79106e5fd6360c6b61ece1638099c1ef0bd8073751b6fe1ca0329d9"
+    },
+    "unit-front-build": {
+      "exit_code": 0,
+      "elapsed_seconds": 1.5960560829844326,
+      "log": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/onchip-all/logs/20261014T021146-unit-front-build.log",
+      "log_sha256": "569586e99e99657d388e7220320d3b19fce8d1e6dfd12281c4db2e3917596d47"
+    },
+    "unit-front": {
+      "exit_code": 0,
+      "elapsed_seconds": 1.3220780831761658,
+      "log": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/onchip-all/logs/20261014T021147-unit-front.log",
+      "log_sha256": "507c71d961eba1475c32cdf03d847f22191fa33dcde8c969f510ed094507c669"
+    },
+    "unit-position-build": {
+      "exit_code": 0,
+      "elapsed_seconds": 0.07547683292068541,
+      "log": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/onchip-all/logs/20261014T021149-unit-position-build.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "unit-position-exhaustive-build": {
+      "exit_code": 0,
+      "elapsed_seconds": 2.024665917037055,
+      "log": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/onchip-all/logs/20261014T021149-unit-position-exhaustive-build.log",
+      "log_sha256": "1bb7f0bcc465dd85887b5ceddfd163e42c2fb58aaba27406ead1d8aef1eaded5"
+    },
+    "unit-position": {
+      "exit_code": 0,
+      "elapsed_seconds": 0.07777416682802141,
+      "log": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/onchip-all/logs/20261014T021149-unit-position.log",
+      "log_sha256": "b844881b18133bc70ff48073c3f7efa631674f6ce71e32b3afda487bb971e185"
+    },
+    "unit-position-exhaustive": {
+      "exit_code": 0,
+      "elapsed_seconds": 0.5575627498328686,
+      "log": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/onchip-all/logs/20261014T021151-unit-position-exhaustive.log",
+      "log_sha256": "0b693b480cbbeeaa4bd22acabd72c9bedb87512d6d9e8294e45a6b46ac0b388a"
+    },
+    "positive": {
+      "exit_code": 0,
+      "elapsed_seconds": 3143.925150124822,
+      "log": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/onchip-all/logs/20261014T021221-positive.log",
+      "log_sha256": "960ecd2f8e4b1a8cd0ffeb8e78b570b6fd3bee429c0386a11b6f13579d612d6d"
+    },
+    "compare": {
+      "exit_code": 0,
+      "elapsed_seconds": 0.039657417219132185,
+      "log": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/onchip-all/logs/20261014T030513-compare.log",
+      "log_sha256": "985bc0ed169df966ab85bbd42ce3b3557cc800520b43ed9c2bea8006cff2c19a"
+    },
+    "render": {
+      "exit_code": 0,
+      "elapsed_seconds": 0.07703587505966425,
+      "log": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/onchip-all/logs/20261014T030520-render.log",
+      "log_sha256": "8f259aa17edb750803a870c34ea4ae3227ebf8534b5375cfe0865b576aa09a4d"
+    }
+  }
+}

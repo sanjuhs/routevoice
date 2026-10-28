@@ -1,0 +1,18 @@
+{
+  "source_state": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/runs/rv_fixed_proj320_rom-physical20/07-openroad-floorplan/state_out.json",
+  "source_sdc": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/runs/rv_fixed_proj320_rom-physical20/07-openroad-floorplan/rv_fixed_proj320_rom.sdc",
+  "source_sha256": "7816ebc79b26b4be7f95cb76ae99f9d3b97370e1fc7bbb76d88f75d23ad8020f",
+  "new_sha256": "cc5be3d9b196b9afafd750e00ea6ac04817dd1ecd346cf9e5f10ae60c16c1f50",
+  "old_period_ns": 20.0,
+  "new_period_ns": 200.0,
+  "io_delay_pairs_ns": [
+    [
+      4.0,
+      40.0
+    ]
+  ],
+  "io_delays_changed": 78,
+  "config": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/configs/rv_fixed_proj320_rom-200ns.json",
+  "initial_state": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/evidence/rv_fixed_proj320_rom-200ns-initial-state.json",
+  "scope": "Explicit slower target from preserved checkpoint; no timing qualification claimed until extracted STA"
+}

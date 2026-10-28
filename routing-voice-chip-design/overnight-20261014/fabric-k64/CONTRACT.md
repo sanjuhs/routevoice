@@ -1,0 +1,15 @@
+# W2b frozen trial contract — 14 October 2026
+
+Scope: exact selected 1280×320 first encoder FF output, K64 candidate. Both tops include UINT8 books, signed nine-bit inputs, sixteen shared signed 13-bit radix partials, two selectors and a signed 17-bit recombination per output, 320 signed 27-bit accumulators, activation sum and output zero-point correction, constant FP32 weight scales and biases, a three-stage FP32 affine pipeline, output ready/valid read port and reset/control. Inputs are centered activation codes and one runtime activation scale. Upstream activation quantizer excluded as approved.
+
+SC-ROM is the **standard-cell comparator**: 409,600 index sites (1,638,400 constant index bits), 102,400 representatives and metadata synthesized into constant logic. ARRAY-PORT uses the same arithmetic/metadata behind an asynchronous row-read index port, 1280 bits, stable for the INDEX capture edge. Its area excludes the custom array, sense/read circuits and macro-specific timing; no complete physical projection claim arises from ARRAY-PORT alone. Its testbench fabric is a functional model only.
+
+Cycles excluding start: integer 4160, FP32 output 4163 (1280 LOAD/INDEX/ACCUM plus 320 output beats and 3 pipeline drain clocks). No unstalled initiation overlap. 20 ns initial target; 83.26 us is a target-derived duration, not achieved timing. Tested activation range [-255,255]. Source FP32 independent operation rounding retained; no requantization.
+
+Initial physical constraints: GF180MCU-D mcu7t5v0, 3.3 V typical library and flow-supplied full PVT/RC corners. Clock 20 ns, core utilization 40%, placement density 45%; default library load and IO delay assumptions recorded in resolved config/SDC. No die area or power success budget has been approved, so report measured closure/failure without a favorable full-recognizer feasibility verdict. All default timing constraints must be reported with output.
+
+Resource guards: local only; nice 10, each job 3 threads and at most two simultaneous jobs (6 total); no cloud. Physical trial cap 4 hours per variant; SC-ROM stopped sooner if progress projects beyond approximately 2.5 hours. Preserve logs/partial states, write CLOUD-REQUEST.md for lead. Root disk minimum 20 GiB. Tool temporary files and PDK working copy inside workspace. No changes to original model/RTL/report sources.
+
+Read: repository skill, complete source-notes, patent atlas, architecture/numerics and implementation workflow, ../plan.md (its pause superseded by current brief), full approved proposal. Primary patent shared-product/readable-cell description and codebook-pointer claims read from US20250123802A1 and US20260023566A1. One access device selects a separately generated product; no one-device whole-system area assumption. Radix decomposition is an engineering derivation.
+
+Exactness is against original bytes of the *selected executable K64* val_89_quantized. Pre-codebook original weights are separately hashed and compared; they differ by design and cannot receive bit-exact K64 credit.

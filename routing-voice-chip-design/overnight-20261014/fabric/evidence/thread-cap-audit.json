@@ -1,0 +1,10 @@
+{
+  "finding": "LibreLane --jobs caps Python worker pool, not unset KLayout thread settings; _get_process_limit reads _OPENLANE_MAX_CORES then os.cpu_count. Active work so far has not reached KLayout signoff.",
+  "future_flow_environment": "_OPENLANE_MAX_CORES=W2_NUM_THREADS",
+  "future_config_caps": {
+    "KLAYOUT_XOR_THREADS": 4,
+    "KLAYOUT_DRC_THREADS": 4
+  },
+  "already_running_dp_action_required": "Before KLayout signoff, continue from a saved completed checkpoint with explicit thread caps if this run reaches that far. Current detailed routing cap4/STA2 remain set.",
+  "source": "tools/librelane/librelane/common/misc.py:425; flows/cli.py:136; steps/klayout.py"
+}

@@ -1,0 +1,25 @@
+{
+  "scope": "W5 periphery worker read full skill/source-notes/atlas/numerics/workflow/plan/access-characterization; relevant primary patent readable-cell, shared product, stored-address/readout sections and claims. JSON and large engine inspected for exact relevant fields/ownership; not a claim every generated case was read.",
+  "sources": {
+    "skills/taalas-fixed-weight-routing/SKILL.md": "ccfa401164c555a7b36b7ecd2afb9449a850c7b73e9a1c0c6807c9bb46cdc9e1",
+    "skills/taalas-fixed-weight-routing/references/source-notes.md": "81cfb93a5dd3b3171be298db2c9115c8b4cea3b845256d0de7cec1df5f826f9f",
+    "skills/taalas-fixed-weight-routing/references/patent-atlas.md": "58ecdd4f7c611d089ed1e85794bb6bccb2dcfda9439c69d8650e7052ccd2082d",
+    "skills/taalas-fixed-weight-routing/references/architecture-and-numerics.md": "0e0b89e4443a61775d8c10fe7e223ade91bd41f6103bff3c085e0d5ae19cc2f3",
+    "skills/taalas-fixed-weight-routing/references/implementation-workflow.md": "1290e5eb7604c31af69b53bb1dbc42937bda60824201fc757758587b3cba0b39",
+    "../plan.md": "ada9e4b79a877f49a135cc7000a3fefd75991f3ac4cc930764e21a629bc8d32e",
+    "docs/TAALAS-ACCESS-CHARACTERIZATION.md": "ab26d2b31315ae40a0d6d51efd310e7bc1a3c2b5ddf444688217ef45094150cf",
+    "reports/taalas-access-characterization.json": "bc7cdff205e29a10254ca9253c8d5adcb1cd2b4d195a6fb52ba6e6b7583fabe8",
+    "experiments/common-v9-start-handoff-source-20261004-v1/reading-basis-v2/US20250123802A1.txt": "25d88946dd99436c15c72ff8e716749ee62ea97dfc7e16d64f2b8de614274087",
+    "experiments/common-v9-start-handoff-source-20261004-v1/reading-basis-v2/US20260023566A1.txt": "61db72b3bbb856b6303bd3322db8e27ecd33133cc0dac0c7a703c1914bff9dd6",
+    "experiments/taalas-access/mask-index-comparator/receiver-strip/map_bank_logic.py": "7626f586e8fa16a7b3f3429f5aeee00af2f93648a140729bd8f2f3f52f8dd808",
+    "overnight-20261014/fabric-k64/CONTRACT.md": "52c5ecf9247b7903ce9c4056a1b8c2c851382a7782227d8970e3e161e1c2513b",
+    "overnight-20261014/fabric-k64/rtl/rv_k64_array_port.sv": "f696a6aa724b668065b31355f0e3aaa55701103d0a8ebde4d3d547404b6fc213",
+    "overnight-20261014/fabric-k64/rtl/engine.sv": "6f58f2419b8d434e8bf2457641a054f0f10fbb970480d7356ca7bc7091b32eb7"
+  },
+  "interpretation": [
+    "US20260023566A1 stored-address branch supports mask-programmed index with separate read circuit and downstream selection.",
+    "US20250123802A1 one-access-device is a selection device, not full per-weight arithmetic or periphery.",
+    "Output capture belongs to W2b;4-bit index !=4-bit representative/activation.",
+    "Prior plan pause explicitly superseded by14October user authorization."
+  ]
+}

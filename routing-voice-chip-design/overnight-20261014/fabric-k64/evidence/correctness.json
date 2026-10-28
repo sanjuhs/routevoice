@@ -1,0 +1,39 @@
+{
+  "scheduled_shared_partial_numpy_outputs": 17280,
+  "saved_affine_artifacts_hashes_match": true,
+  "rtl_variants": {
+    "array_port": {
+      "vectors": 54,
+      "integer_outputs": 17280,
+      "fp32_outputs": 17280,
+      "aborts": 4,
+      "stall_events": 104112,
+      "total_cycles": 300952,
+      "unstalled_cycles": 4163,
+      "full_log": "logs/array_port-full-simulation.log",
+      "full_log_sha256": "440debbec9d00dc0b1acb3d6b16724d399280be3b04116d5c994b40adfc2aec9",
+      "testbench_sha256": "b6cbf0827e90a5ce968451fa823126c2d9b8d5b0cd4946d48d04764eec31bf97",
+      "speech_trace": "evidence/array_port-speech.vcd",
+      "speech_trace_sha256": "e5bc55e49691a182b70edc99b69a43397ee1291e2cb6940073086e998a42d45e",
+      "speech_trace_projection_vectors": 1,
+      "speech_trace_outputs": 320
+    },
+    "sc_rom": {
+      "vectors": 54,
+      "integer_outputs": 17280,
+      "fp32_outputs": 17280,
+      "aborts": 4,
+      "stall_events": 104112,
+      "total_cycles": 300952,
+      "unstalled_cycles": 4163,
+      "full_log": "logs/sc_rom-full-simulation.log",
+      "full_log_sha256": "0fffe55e8593d295a1fceee96cf1ac9a2d3f6dc1c9725c1943fe44a48a3491c2",
+      "testbench_sha256": "76196461242ad5f1afff438aa155e3bcbc37e75e651228404fcbe5ba97cd23d6",
+      "speech_trace": "evidence/sc_rom-speech.vcd",
+      "speech_trace_sha256": "07442e2abb6664013f0310e843d9b13ad93f5c6783f10dc16c380c362636a57f",
+      "speech_trace_projection_vectors": 1,
+      "speech_trace_outputs": 320
+    }
+  },
+  "activity_provenance": "Vector 0 from hash-checked saved affine inputs.hex; its saved report binds captured real-speech quantized input. Fresh real-speech capture was not performed."
+}

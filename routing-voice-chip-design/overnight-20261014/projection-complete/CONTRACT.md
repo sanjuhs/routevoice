@@ -1,0 +1,15 @@
+# W8 complete projection trial
+
+The implementation combines the original W2b ARRAY-PORT arithmetic and metadata, W6's exact 409,600-selection macro, a decoder, 1,280 explicit GF180 `buf20` wordline drivers, one `buf20` precharge driver, a phase controller and 1,280 output capture flops. Driver capacity against the provisional 2 pF wordline and 10 pF precharge loads must be measured; those values are engineering sensitivity assumptions. There is no synthesized substitute index ROM in the physical design.
+
+At the 20 ns target clock, an accepted activation at t=0 is followed by PC rising at 20 ns, WL rising at 40 ns, output capture at 80 ns, WL falling at 100 ns and PC falling at 120 ns. The engine executes INDEX at 140 ns and ACCUM at 160 ns, then accepts the next activation at 180 ns. Stalls extend held digital completion. Reset disables wordlines and drains through a full release phase before enabling precharge; input admission waits for that drain.
+
+This schedule differs from the requested 60 ns reuse protocol. W6's measured 14/18/58/60 ns edges cannot be reproduced by this edge-only 20 ns controller. The new 120 ns protocol passes the retained extracted SS slice; the nine-clock unstalled row cadence would be 180 ns at the target clock. Full-bank loading, supply integrity and analog reset behavior remain unqualified. All 54 functional vectors pass in RTL, including 11 reset-abort checks. An unstalled projection takes 11,843 cycles excluding accepted start: 236.86 µs at the target clock, a derived duration rather than achieved performance.
+
+The numerical contract remains nine-bit centered activations, UINT8 representatives, signed 27-bit accumulators and FP32 affine outputs. Exactness is against the frozen executable K64 candidate. The original pre-codebook model remains a different preserved artifact.
+
+The physical trial uses a 4,500 × 4,500 µm die, with the bank origin at (500, 1200) µm and orientation N. No area success threshold was approved. Post-placement/global-route design repair and post-CTS/global-route timing repair are disabled to bound runtime. Routing uses ten threads and STA uses two. The slice-derived macro timing proxy is applied at every corner and cannot establish independent full-bank PVT closure. Initial timing checks retain single-cycle constraints; no macro path is waived. Complete macro internal power is unknown.
+
+W2b's mapped engine netlist is reused as real standard cells. Integration logic is synthesized, then the entire composition is placed and routed together. Its placement, timing and power are new work. Repeated lint of the mapped engine is skipped after a preserved interrupted attempt; RTL Verilator compilation and downstream Yosys hierarchy/check remain required.
+
+Local writes stay within this workspace, with a 22 GiB free-disk floor. Cloud work uses only the existing authorized pod and this task's directory. The physical flow has a four-hour timeout; the lead's 08:05 IST spend guard takes precedence. Results must be written by 07:40 IST even if partial. No complete-recognizer, die-fit or sub-watt claim follows from this block.

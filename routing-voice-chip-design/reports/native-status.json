@@ -1,0 +1,13 @@
+{
+  "native_local_only": true,
+  "librelane_python": "installed 3.0.11; package check passed",
+  "prepared_pdk": "installed and verified GF180MCU-D 54435919abffb937387ec956209f9cf5fd2dfbee",
+  "nix": "installed and verified 2.35.1",
+  "openroad": "installed and startup verified; revision dcf36133a369abc8f3c5e5738cd4d82e4903c0e0",
+  "pdk_source_rebuild": "not run; native tool environment is now available",
+  "rtl_to_gds": "first serial tile flow completed; Magic DRC/LVS/XOR clear, 39 max-slew and 1 max-cap violations remain; KLayout DRC not run",
+  "fpga_bitstream": "not built; exact FPGA device unspecified",
+  "full_model_rtl": "not implemented",
+  "subwatt_power": "not measured or demonstrated",
+  "updated_at": "2026-09-07T02:07:05.749175+05:30"
+}

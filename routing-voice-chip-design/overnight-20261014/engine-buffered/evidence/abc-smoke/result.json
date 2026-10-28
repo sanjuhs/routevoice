@@ -1,0 +1,7 @@
+{
+  "returncode": 0,
+  "initial_shared_pi_fanout": 3000,
+  "final_shared_pi_fanout": 1,
+  "max_net_fanout": 16,
+  "abc_command": "read_lib -w /workspace/rv/overnight-20261014/engine-buffered/runs/buf-v3/tmp/b1c5560353cd4880a41ca123dc489ae3.lib; read_blif /workspace/rv/overnight-20261014/engine-buffered/evidence/abc-smoke/fixture.blif; read_constr /workspace/rv/overnight-20261014/engine-buffered/evidence/abc-smoke/constraints.sdc; buffer -p -N 16 -S 3000; print_stats; write_blif /workspace/rv/overnight-20261014/engine-buffered/evidence/abc-smoke/buffered.blif"
+}

@@ -1,0 +1,33 @@
+{
+  "date": "2026-09-07",
+  "scope": "First native RTL-to-GDS smoke on one 8x8 model-derived compute slice; not a complete STT die or signoff result",
+  "flow_status": "Flow complete; electrical warnings remain",
+  "top": "die1_tile_serial",
+  "run_directory": "routing-voice-chip-design/physical/runs/RUN_2026-09-07_02-02-50",
+  "clock_period_ns": 100,
+  "voltage_corners": "PDK default TT 5.00 V, SS 4.50 V, FF 5.50 V; not the earlier 3.30 V standalone synthesis comparison",
+  "metrics": {
+    "design__die__area": 283364,
+    "design__core__area": 259692,
+    "route__drc_errors": 0,
+    "magic__drc_error__count": 0,
+    "design__lvs_error__count": 0,
+    "design__xor_difference__count": 0,
+    "route__antenna_violation__count": 0,
+    "timing__setup_vio__count": 0,
+    "timing__hold_vio__count": 0,
+    "timing__setup__ws": 14.456511064094398,
+    "timing__hold__ws": 0.23685176712538492,
+    "design__max_slew_violation__count": 39,
+    "design__max_cap_violation__count": 1
+  },
+  "klayout_drc": "not run: KLAYOUT_DRC_RUNSET unset",
+  "launcher_note": "The initial launcher returned a shell EOF after LibreLane completed because the launcher file was edited while active. Native bootstrap was rerun separately after fixing the script; bash syntax checks pass. The flow completion and results below come from its own final state and reports.",
+  "outputs": [
+    {
+      "file": "routing-voice-chip-design/physical/runs/RUN_2026-09-07_02-02-50/final/gds/die1_tile_serial.gds",
+      "bytes": 5791594,
+      "sha256": "c44be7c3758abb5a30a7f29f0bb9805b17349820fe7fe2b384f0136393ab979b"
+    }
+  ]
+}

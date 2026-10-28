@@ -1,0 +1,23 @@
+# Codex brief W5 — the real Taalas readable-cell array macro for the 1280×320 projection
+
+AUTHORIZATION: the user lifted the 13 Oct pause on 14 Oct 2026 (recorded in `AGENTS.md`), approved `docs/ROUTEVOICE-PROPOSED-PHYSICAL-GOAL-2026-10-13.md`, and asked tonight that the design "be like Taalas". You are the worker that makes the weight storage physically Taalas-style. The lead (Claude) re-checks your results. Never fabricate; preserve failures.
+
+Reading (≈15 min): `skills/taalas-fixed-weight-routing/SKILL.md` + `references/source-notes.md` (skim) + **`docs/TAALAS-ACCESS-CHARACTERIZATION.md` in full** + `reports/taalas-access-characterization.json`. The existing GF180 access-array specimens, generators and SPICE decks are in `experiments/taalas-access/` (64-choice and 2,048-choice arrays, stored-index variant with keeper; KLayout DRC/LVS clean; Magic-extracted capacitance; 40 MHz read). Reuse those generators and rules; don't start over.
+
+## Goal
+Replace the assumed "7.04 µm² per selection" with a **measured, DRC/LVS-clean GF180 layout** of the mask-programmed readable-cell array that stores the actual 409,600 four-bit selections of the approved projection: encoder block 0 FF out, K64, 1,280 inputs × 320 outputs. Sibling worker W2b (`overnight-20261014/fabric-k64/`) built the matching digital engine. Its ARRAY-PORT variant expects one 1,280-bit index row (320 lanes × 4 bits) per row read. Read `fabric-k64/rtl/rv_k64_array_port.sv`, `rtl/index_fabric.sv` and `CONTRACT.md` for the exact port, then match it.
+
+## Steps
+1. **Tile:** generate a layout tile holding 64 rows × 320 lanes × 4 bits (one book group = 81,920 bit cells), using the stored-index readable-cell style from `experiments/taalas-access/`. Program it with the REAL indices of rows 0..63 of the projection, from `overnight-20261014/fabric-k64/` vectors/model data or `models/candidates/codebook-4bit-optimal-rectangular-k64/packed/encoder.ort-095.indices.bin` (verify against W2b's identity check).
+   - Include the row decoder/wordline drivers, bitline precharge/keeper/sense and output latches, i.e. everything needed to deliver the 1,280-bit row to the ARRAY-PORT engine.
+   - Run KLayout DRC (GF180 deck in `pdks/gf180mcuD/libs.tech/klayout`) and LVS (KLayout or Netgen) to zero errors.
+   - Read the programmed bits back from the extracted netlist (or a layout-to-bits extraction) and compare them with the real indices: every bit must match.
+2. **Timing/energy:** reuse the existing SPICE flow (ngspice, `sm141064.ngspice` models, SS 2.97 V 125 °C and TT) on an extracted worst-case column/row slice of the tile to get the row-read time and energy per row read. Report whether 4,160 row reads per projection fit the real-time schedule at that read time.
+3. **Full array:** compose the 20 tiles (1,280 rows) hierarchically into one macro. Run DRC on the full hierarchical macro; LVS on at least one full tile plus the composition top level. Produce a LEF abstract (size, pins, power pins on Metal4/Metal5 for PDN hookup) and a GDS. Report **µm² per selection** for the cell array alone, and including periphery.
+4. **Integration handoff:** write `INTEGRATION.md` explaining how W2b's ARRAY-PORT block plus your macro form the complete projection: total area = W2b ARRAY-PORT routed area + your macro area + routing allowance. Put the measured numbers in `results.json` so W3 (floorplan) and the lead can use them. If time allows, run a LibreLane macro-placement flow with the macro as a hard macro next to the ARRAY-PORT logic. That is a stretch goal; say so if you skip it.
+
+## Paths and rules
+- Repo: `/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design`. Workspace (write ONLY here): `overnight-20261014/taalas-array/`.
+- Tools: KLayout, Magic, Netgen, ngspice are in the LibreLane Nix shell (`source /nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh; NIX_BUILD_SHELL=/bin/bash nix-shell tools/librelane/shell.nix --run '<cmd>'`). Python: `.venv/bin/python` (KLayout's Python module `klayout.db` may be in the Nix shell).
+- The Mac is busy: use `nice`, at most 4 threads, keep ≥ 22 GiB free on `/` (check `df -h /`). If full-array DRC/LVS is too heavy locally, write `CLOUD-REQUEST.md` with exact commands/files, and the lead will run it on the 32-core cloud machine.
+- No git, no cloud use yourself. Print `W5-STATUS: <step result>` after each major step. Finish with `RESULTS.md` + `results.json`: µm²/selection (cell only, and with periphery), tile/macro dimensions, DRC/LVS counts, bit-readback match, read time/energy per corner, and exact commands.

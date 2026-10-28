@@ -1,0 +1,35 @@
+=== DESIGN AREA ===
+Design area 6434584 um^2 40% utilization.
+=== TIMING (ideal clock, placement RC, TT) ===
+worst slack max -125.249
+worst slack min 0.886
+tns max -831457.562
+=== DEFAULT ACTIVITY ===
+Group                  Internal  Switching    Leakage      Total
+                          Power      Power      Power      Power (Watts)
+----------------------------------------------------------------
+Sequential             1.25e-01   7.32e-04   2.12e-06   1.26e-01  25.8%
+Combinational          1.26e-01   2.35e-01   1.61e-05   3.61e-01  74.2%
+Clock                  0.00e+00   0.00e+00   2.32e-06   2.32e-06   0.0%
+Macro                  0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+Pad                    0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+----------------------------------------------------------------
+Total                  2.50e-01   2.36e-01   2.06e-05   4.87e-01 100.0%
+                          51.5%      48.5%       0.0%
+Annotated 1299526 pin activities.
+=== ANNOTATION ===
+saif        1299526
+unannotated     0
+=== SAIF ACTIVITY ===
+Group                  Internal  Switching    Leakage      Total
+                          Power      Power      Power      Power (Watts)
+----------------------------------------------------------------
+Sequential             1.30e-01   9.79e-03   2.26e-06   1.40e-01  17.5%
+Combinational          2.01e-01   4.58e-01   1.67e-05   6.59e-01  82.5%
+Clock                  0.00e+00   0.00e+00   2.32e-06   2.32e-06   0.0%
+Macro                  0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+Pad                    0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+----------------------------------------------------------------
+Total                  3.31e-01   4.67e-01   2.13e-05   7.98e-01 100.0%
+                          41.4%      58.6%       0.0%
+exit=0

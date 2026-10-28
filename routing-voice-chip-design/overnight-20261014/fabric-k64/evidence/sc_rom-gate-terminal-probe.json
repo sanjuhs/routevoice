@@ -1,0 +1,12 @@
+{
+  "epoch": 1791927763.5966022,
+  "binary": "gate-sc_rom/sim",
+  "same_binary_as_primary_regression": true,
+  "observed_stdout": "vector=0 cycles=4163 reads=0",
+  "outputs_checked": 320,
+  "external_read_counter_explanation": "SC bench ties debug array-read wires to zero because the array is internal; no zero-read architecture inference.",
+  "stopped_by_worker_after_first_vector": true,
+  "full_suite_pass": false,
+  "purpose": "Confirm first mapped SC-ROM vector advances; primary full regression continues.",
+  "launch_utc": "2026-10-13 21:40:29 UTC"
+}

@@ -1,0 +1,11 @@
+{
+  "status": "stopped_redundant_diagnostic",
+  "stopped_owned_pids": [
+    43610,
+    43612,
+    43651,
+    43655
+  ],
+  "reason": "Pinned repair_design.tcl explicitly executes unset_propagated_clock before all repairs. The ideal-input-SDC diagnostic cannot change this repair clock state and is redundant. DESIGN_REPAIR_REMOVE_BUFFERS=false preserves synthesis buffers. Main requested-settings repair remains running.",
+  "source": "/nix/store/1v4pl3wcjvysadks22gj14b8qj9qz20d-python3-3.13.9-env/lib/python3.13/site-packages/librelane/scripts/openroad/repair_design.tcl"
+}

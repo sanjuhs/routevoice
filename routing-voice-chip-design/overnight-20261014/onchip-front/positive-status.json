@@ -1,0 +1,11 @@
+{
+  "record": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/onchip-front/logs/20261014T010943-positive.json",
+  "exit_code": 0,
+  "free_GiB": 24.76,
+  "tail": [
+    "ONBOARD_HISTORY_CONSERVED requests=1650 replies=1650 initialized_reads=990 initialized_commit_packets=330 published_prefix=5 idle=1 fault=0",
+    "CONSERVED frontend_requests=85064960 frontend_replies=85064960 copier_requests=20480 copier_replies=20480 encoder_requests=2295680 encoder_replies=2295680 head_requests=368640 head_replies=368640 O_requests=15360 O_replies=15360 flags=1",
+    "CONTROL_COVERAGE host_token_starts=0 host_winner_feedback=0 host_source_release=0 host_encoder_release=0 history_cap=66 old_wrong_release_test_rerun=0 connected_negative_suite_required=1 host_encoder_mutable_reply_feeds=0 host_encoded_alias_reply_feeds=0",
+    "FOUR_STAGE_GREEDY_FRONTEND_LEARNED_HISTORY_PRODUCER_METADATA_KV_TABLES_ONBOARD_EOS_PASS tokens=5 logits=163840 actual_encoded_packets=2560 actual_encoded_ACKs=2560 host_encoded_feeds=0 frames=64 chunks=16 features=20480 encoded_values=20480 encoder_layers=6 source_packets=2560 source_host_feeds=0 common_clocks=312578649 encoder_clocks=55302920 frontend_checks=368640 encoder_write_checks=849920 encoder_read_checks=1935360"
+  ]
+}

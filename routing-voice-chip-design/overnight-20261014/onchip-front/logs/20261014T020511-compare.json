@@ -1,0 +1,17 @@
+{
+  "stage": "compare",
+  "command": [
+    "/usr/bin/nice",
+    "-n",
+    "10",
+    "/Users/sanju/.local/share/uv/python/cpython-3.12.13-macos-aarch64-none/bin/python3.12",
+    "-B",
+    "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/onchip-front/compare_outputs.py"
+  ],
+  "cwd": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design",
+  "log": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/onchip-front/logs/20261014T020511-compare.log",
+  "started": "20261014T020511",
+  "exit_code": 0,
+  "pid": 43713,
+  "elapsed_seconds": 0.0415394171141088
+}

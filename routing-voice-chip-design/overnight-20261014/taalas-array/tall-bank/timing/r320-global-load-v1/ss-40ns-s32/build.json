@@ -1,0 +1,322 @@
+{
+  "pattern_override": null,
+  "stimulus_representation": "Explicit PWL PC phases avoid near-coincident PULSE arithmetic versus aggressor PWL breakpoints at fractional protocols; intended phase times unchanged",
+  "protocol": {
+    "period_ns": 40.0,
+    "pc_off_ns": 9.333333333333334,
+    "wl_start_ns": 13.333333333333334,
+    "wl_fall_start_ns": 37.8,
+    "wl_fall_end_ns": 38.0,
+    "pc_on_start_ns": 39.8,
+    "sample_ns": [
+      34.0,
+      39.5
+    ],
+    "edge_ns": 0.2,
+    "phase_family": "pre2std4;14/60fraction precharge plus fixed4ns guard"
+  },
+  "rows": 320,
+  "selected": [
+    112,
+    113,
+    114,
+    115,
+    116,
+    117,
+    118,
+    119,
+    120,
+    121,
+    122,
+    123,
+    124,
+    125,
+    126,
+    127
+  ],
+  "addresses": [
+    0,
+    3,
+    319,
+    318,
+    19,
+    6,
+    7,
+    0,
+    3,
+    319,
+    318,
+    19,
+    6,
+    7
+  ],
+  "peak_ranked_bit_column": 126,
+  "base_sequence": [
+    0,
+    3,
+    319,
+    318,
+    19,
+    6,
+    7
+  ],
+  "base_sequence_length": 7,
+  "active_rows": [
+    0,
+    3,
+    6,
+    7,
+    19,
+    318,
+    319
+  ],
+  "segments": 32,
+  "array_devices": 5120,
+  "receiver_devices": 512,
+  "driver_hashes": {
+    "4": "0d12ca9bfc5db3e194a792b2654c4fc0b46e2d4b08d286345683b2920ec31c1b",
+    "20": "d0075017b8f30dd09ef50f53e6b2acbf68c7d52c0506a0b19b9acff1609965d4"
+  },
+  "source_gds_sha256": "b1e93444fd267b46a622917846e324fe13258e11a1b7bc008d7a247b47938b45",
+  "array_cap_sha256": "d8ad4b1485095fb5a9407ce633434d1804dd6efe2ea1dedf7dc89186a2448fbf",
+  "joined_cap_sha256": "5fecdb061fa3fc30a89b99d61a6963792226ac9ebe1d4493bad1e4ec6390b593",
+  "metal_sheet_ohm_square": 0.13863199999999998,
+  "array_height_um": 533.9499999999999,
+  "bitline_array_ohm": 194.79620105263155,
+  "signal_join_resistance": {
+    "112": {
+      "length_um": 421.49,
+      "ohm": 213.76842547368418,
+      "via_count": 4
+    },
+    "113": {
+      "length_um": 424.33000000000004,
+      "ohm": 214.8045172631579,
+      "via_count": 4
+    },
+    "114": {
+      "length_um": 427.17,
+      "ohm": 215.84060905263155,
+      "via_count": 4
+    },
+    "115": {
+      "length_um": 430.01,
+      "ohm": 216.87670084210524,
+      "via_count": 4
+    },
+    "116": {
+      "length_um": 432.85,
+      "ohm": 217.91279263157892,
+      "via_count": 4
+    },
+    "117": {
+      "length_um": 435.69000000000005,
+      "ohm": 218.94888442105264,
+      "via_count": 4
+    },
+    "118": {
+      "length_um": 438.53000000000003,
+      "ohm": 219.9849762105263,
+      "via_count": 4
+    },
+    "119": {
+      "length_um": 441.37,
+      "ohm": 221.02106799999996,
+      "via_count": 4
+    },
+    "120": {
+      "length_um": 444.21000000000004,
+      "ohm": 222.05715978947367,
+      "via_count": 4
+    },
+    "121": {
+      "length_um": 447.05,
+      "ohm": 223.09325157894733,
+      "via_count": 4
+    },
+    "122": {
+      "length_um": 449.89,
+      "ohm": 224.12934336842102,
+      "via_count": 4
+    },
+    "123": {
+      "length_um": 452.73,
+      "ohm": 225.1654351578947,
+      "via_count": 4
+    },
+    "124": {
+      "length_um": 455.57000000000005,
+      "ohm": 226.20152694736842,
+      "via_count": 4
+    },
+    "125": {
+      "length_um": 458.41,
+      "ohm": 227.23761873684208,
+      "via_count": 4
+    },
+    "126": {
+      "length_um": 461.25,
+      "ohm": 228.27371052631577,
+      "via_count": 4
+    },
+    "127": {
+      "length_um": 464.09000000000003,
+      "ohm": 229.30980231578945,
+      "via_count": 4
+    }
+  },
+  "retained_array_cap_ff": 2286.3818799997434,
+  "retained_join_receiver_cap_ff": 3915.942670000001,
+  "array_to_joined_negative_pair_delta_ff": 0.5541999999999998,
+  "selected_incident_cap_ff": {
+    "112": 212.63275000000016,
+    "113": 232.4346900000003,
+    "114": 231.7463700000008,
+    "115": 231.08726000000095,
+    "116": 230.65195000000037,
+    "117": 229.22660000000013,
+    "118": 234.34205000000057,
+    "119": 239.01352000000236,
+    "120": 232.8774400000005,
+    "121": 233.97001000000017,
+    "122": 232.4218200000014,
+    "123": 235.55954000000094,
+    "124": 237.5615400000009,
+    "125": 235.67905000000098,
+    "126": 239.54782000000102,
+    "127": 172.95682000000028
+  },
+  "expanded_capacitors": 21049,
+  "power_observation": "Posttransient vector equations; removed isolated behavioral power monitor nodes after20ns numerical failure, no feedback into physical circuit",
+  "cap_allocation": "For each exact extracted joined capacitor pair, array-distributed portion=min(newarrayC,newjoinedC); remainder at receiver/join end unless WL/OPEN fixes row. Negative pair delta is recorded, not clipped into extra capacitance. Only joined actual C is simulated.",
+  "scope": "Full320lane WL/PC loading sensitivity with measured controlmetalC, geometryglobalrailR,10unplacedstockdrivers percontrol anddummyothergate loads. Data/current remain16actual columns and128physicalreceivers; not physically placed fullbank qualification.",
+  "phase_precharge_nodes": [
+    "pcglobal0",
+    "pcglobal1",
+    "pc",
+    "pcglobal3",
+    "pcglobal4",
+    "pcglobal5",
+    "pcglobal6",
+    "pcglobal7",
+    "pcglobal8",
+    "pcglobal9"
+  ],
+  "phase_wordline_nodes": [
+    "wl0g0",
+    "wl0g1",
+    "wl0",
+    "wl0g3",
+    "wl0g4",
+    "wl0g5",
+    "wl0g6",
+    "wl0g7",
+    "wl0g8",
+    "wl0g9",
+    "wl3g0",
+    "wl3g1",
+    "wl3",
+    "wl3g3",
+    "wl3g4",
+    "wl3g5",
+    "wl3g6",
+    "wl3g7",
+    "wl3g8",
+    "wl3g9",
+    "wl6g0",
+    "wl6g1",
+    "wl6",
+    "wl6g3",
+    "wl6g4",
+    "wl6g5",
+    "wl6g6",
+    "wl6g7",
+    "wl6g8",
+    "wl6g9",
+    "wl7g0",
+    "wl7g1",
+    "wl7",
+    "wl7g3",
+    "wl7g4",
+    "wl7g5",
+    "wl7g6",
+    "wl7g7",
+    "wl7g8",
+    "wl7g9",
+    "wl19g0",
+    "wl19g1",
+    "wl19",
+    "wl19g3",
+    "wl19g4",
+    "wl19g5",
+    "wl19g6",
+    "wl19g7",
+    "wl19g8",
+    "wl19g9",
+    "wl318g0",
+    "wl318g1",
+    "wl318",
+    "wl318g3",
+    "wl318g4",
+    "wl318g5",
+    "wl318g6",
+    "wl318g7",
+    "wl318g8",
+    "wl318g9",
+    "wl319g0",
+    "wl319g1",
+    "wl319",
+    "wl319g3",
+    "wl319g4",
+    "wl319g5",
+    "wl319g6",
+    "wl319g7",
+    "wl319g8",
+    "wl319g9"
+  ],
+  "global_loading_sensitivity": {
+    "control_caps_source": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/taalas-array/tall-bank/verification/bank3-v1/control-capacitance.json",
+    "control_caps_json_sha256": "3f429fde7906e90e6e9f186877ae249cd537a893df5f1c9639205f9ffc071fb7",
+    "full_extracted_cap_sha256": "b8738626fff43829c5c76122ceca9d9252f451c32ce421f920947514f04e2a92",
+    "physical_gate_counts": {
+      "selected_WL": 1280,
+      "PC": 1280
+    },
+    "added_gate_loads": {
+      "access_nmos_peractiveWL": 1152,
+      "precharge_pmos": 1152
+    },
+    "driver_counts": {
+      "buf4_peractiveWL": 10,
+      "buf20_PC": 10
+    },
+    "global_rail_model": "10nodes at468umspacing; .38um M3; geometryR0.104Ohm/square tempco.00333/K; added measured fullbank-minuslocal explicit incidentC evenly allocated10nodes toground",
+    "full_control_cap_ff": {
+      "PC": 925.6118800000321,
+      "WL0": 533.6689200000005,
+      "WL3": 612.401090000004,
+      "WL6": 612.4017700000044,
+      "WL7": 534.1121600000004,
+      "WL19": 612.4015700000025,
+      "WL318": 614.1420500000047,
+      "WL319": 533.6565000000019
+    },
+    "retained_local_control_cap_ff": {
+      "PC": 91.00322,
+      "WL0": 24.97541,
+      "WL3": 26.3351,
+      "WL6": 26.334889999999998,
+      "WL7": 24.69595,
+      "WL19": 26.33513,
+      "WL318": 26.50163,
+      "WL319": 24.97551
+    },
+    "qualifications": [
+      "Drivers are unplaced ideal-distributed instances with common ideal command inputs; no verified broadcast-input delivery or actual driver location",
+      "Other9subbank gate loads use groundedS/D accessMOS and VDD-tiedS/D prechargePMOS; not exact active-array Miller/current loading",
+      "Global incidentC collapsed toground for sensitivity, not exact distributed coupling extraction",
+      "All10PC and all10localWL terminal phase margins checked; only selected16real-array columns have data/precharge checks",
+      "rdd energy now includes1152dummy prechargegate displacement currents; still not fullbank energy"
+    ]
+  }
+}

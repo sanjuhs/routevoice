@@ -1,0 +1,15 @@
+{
+  "original_path": "W5_TALL_BANK_FLAT.ext",
+  "original_sha256": "27453a185fd623e9cc10188b7c8bbb2be0ae90576fc7deff2c216c2364ae2718",
+  "original_bytes": 349984289,
+  "compressed_path": "W5_TALL_BANK_FLAT.ext.gz",
+  "compressed_sha256": "8bcbc375ce6fa6548acee3315e7c74c52c9c2ce9be2b9b9059cab0d6af8e19b9",
+  "compressed_bytes": 23110492,
+  "decoded_bytes": 349984289,
+  "decoded_sha256": "27453a185fd623e9cc10188b7c8bbb2be0ae90576fc7deff2c216c2364ae2718",
+  "verified_lossless": true,
+  "reason": "Free internal working space after successful Magic extraction; all LVS and capacitance SPICE files remain live.",
+  "restore_command": "gzip -dc W5_TALL_BANK_FLAT.ext.gz > W5_TALL_BANK_FLAT.ext",
+  "restore_working_directory": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/taalas-array/tall-bank/verification/bank3-v1",
+  "original_removed_after_verification": true
+}

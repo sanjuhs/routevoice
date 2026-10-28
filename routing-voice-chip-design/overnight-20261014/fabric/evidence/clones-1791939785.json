@@ -1,0 +1,121 @@
+{
+  "unix": 1791939785.472163,
+  "method": "APFS cp -c copy-on-write, exact content hash checked before atomic replacement",
+  "nominal_duplicate_bytes_shared": 1545731142,
+  "changes": [
+    {
+      "path": "runs/rv_fixed_proj320_rom-util20-200ns/12-openroad-globalplacementskipio/rv_fixed_proj320_rom.nl.v",
+      "clone_source": "runs/rv_fixed_proj320_rom-util20-200ns/07-openroad-tapendcapinsertion/rv_fixed_proj320_rom.nl.v",
+      "sha256": "533d9ae2764c5abf9f14116906b8bc7982c31033fd3800d80890f5507b4ac087",
+      "bytes": 48101046
+    },
+    {
+      "path": "runs/rv_fixed_proj320_rom-util20-200ns/13-openroad-ioplacement/rv_fixed_proj320_rom.nl.v",
+      "clone_source": "runs/rv_fixed_proj320_rom-util20-200ns/07-openroad-tapendcapinsertion/rv_fixed_proj320_rom.nl.v",
+      "sha256": "533d9ae2764c5abf9f14116906b8bc7982c31033fd3800d80890f5507b4ac087",
+      "bytes": 48101046
+    },
+    {
+      "path": "runs/rv_fixed_proj320_rom-util20-density35-noinflate-200ns/01-openroad-globalplacement/rv_fixed_proj320_rom.nl.v",
+      "clone_source": "runs/rv_fixed_proj320_rom-util20-200ns/07-openroad-tapendcapinsertion/rv_fixed_proj320_rom.nl.v",
+      "sha256": "533d9ae2764c5abf9f14116906b8bc7982c31033fd3800d80890f5507b4ac087",
+      "bytes": 48101046
+    },
+    {
+      "path": "runs/rv_fixed_proj320_rom-util20-200ns/13-openroad-ioplacement/rv_fixed_proj320_rom.pnl.v",
+      "clone_source": "runs/rv_fixed_proj320_rom-util20-200ns/12-openroad-globalplacementskipio/rv_fixed_proj320_rom.pnl.v",
+      "sha256": "1b6b6eaffb1fac54713b2b712664ef1aa6d52cff5354fe9970c220d6733aff7d",
+      "bytes": 68512656
+    },
+    {
+      "path": "runs/rv_fixed_proj320_rom-util20-density35-noinflate-200ns/01-openroad-globalplacement/rv_fixed_proj320_rom.pnl.v",
+      "clone_source": "runs/rv_fixed_proj320_rom-util20-200ns/12-openroad-globalplacementskipio/rv_fixed_proj320_rom.pnl.v",
+      "sha256": "1b6b6eaffb1fac54713b2b712664ef1aa6d52cff5354fe9970c220d6733aff7d",
+      "bytes": 68512656
+    },
+    {
+      "path": "runs/rv_fixed_proj320_dp-util20-200ns/23-openroad-cts/rv_fixed_proj320_dp.pnl.v",
+      "clone_source": "runs/rv_fixed_proj320_dp-route200/01-openroad-resizertimingpostcts/rv_fixed_proj320_dp.pnl.v",
+      "sha256": "85ed424ad0dc4011ec7d5bc739523329a9014543186c05c58616a8cfc4470089",
+      "bytes": 72971672
+    },
+    {
+      "path": "runs/rv_fixed_proj320_dp-route200/01-openroad-resizertimingpostcts/rv_fixed_proj320_dp.def",
+      "clone_source": "runs/rv_fixed_proj320_dp-pre-route-render/final/def/rv_fixed_proj320_dp.def",
+      "sha256": "e9a43ca42fd5684d722339c10e34b1193b889a1ada982e1fe5ecf0ffd08848d6",
+      "bytes": 94867310
+    },
+    {
+      "path": "runs/rv_fixed_proj320_dp-util20-200ns/23-openroad-cts/rv_fixed_proj320_dp.def",
+      "clone_source": "runs/rv_fixed_proj320_dp-pre-route-render/final/def/rv_fixed_proj320_dp.def",
+      "sha256": "e9a43ca42fd5684d722339c10e34b1193b889a1ada982e1fe5ecf0ffd08848d6",
+      "bytes": 94867310
+    },
+    {
+      "path": "runs/rv_fixed_proj320_rom-util20-200ns/01-openroad-floorplan/rv_fixed_proj320_rom.pnl.v",
+      "clone_source": "runs/rv_fixed_proj320_rom-physical20/07-openroad-floorplan/rv_fixed_proj320_rom.pnl.v",
+      "sha256": "2f8168e014435f7024bd8b0449165c6235af7ea1cec3bcf9bb29a4f405eb93c0",
+      "bytes": 51941646
+    },
+    {
+      "path": "runs/rv_fixed_proj320_dp-route200/01-openroad-resizertimingpostcts/rv_fixed_proj320_dp.odb",
+      "clone_source": "runs/rv_fixed_proj320_dp-pre-route-rtl-activity/final/odb/rv_fixed_proj320_dp.odb",
+      "sha256": "feff494d945bfff7142ac5ba9960ef4ceefdb43aa2ab54d47d940e785894885b",
+      "bytes": 228637259
+    },
+    {
+      "path": "runs/rv_fixed_proj320_dp-util20-200ns/23-openroad-cts/rv_fixed_proj320_dp.odb",
+      "clone_source": "runs/rv_fixed_proj320_dp-pre-route-rtl-activity/final/odb/rv_fixed_proj320_dp.odb",
+      "sha256": "feff494d945bfff7142ac5ba9960ef4ceefdb43aa2ab54d47d940e785894885b",
+      "bytes": 228637259
+    },
+    {
+      "path": "runs/rv_fixed_proj320_dp-route200/01-openroad-resizertimingpostcts/rv_fixed_proj320_dp.sdc",
+      "clone_source": "runs/rv_fixed_proj320_dp-pre-route-rtl-activity/final/sdc/rv_fixed_proj320_dp.sdc",
+      "sha256": "4dbfabc7be94a083defcea3d27405d1887a483ed2a8c5470eb82d7daa4e21172",
+      "bytes": 10502143
+    },
+    {
+      "path": "runs/rv_fixed_proj320_dp-util20-200ns/07-openroad-tapendcapinsertion/rv_fixed_proj320_dp.sdc",
+      "clone_source": "runs/rv_fixed_proj320_dp-pre-route-rtl-activity/final/sdc/rv_fixed_proj320_dp.sdc",
+      "sha256": "4dbfabc7be94a083defcea3d27405d1887a483ed2a8c5470eb82d7daa4e21172",
+      "bytes": 10502143
+    },
+    {
+      "path": "runs/rv_fixed_proj320_rom-util20-200ns/04-odb-setpowerconnections/rv_fixed_proj320_rom.odb",
+      "clone_source": "runs/rv_fixed_proj320_rom-util20-200ns/01-openroad-floorplan/rv_fixed_proj320_rom.odb",
+      "sha256": "81fa4e1ba4268b8c14e9940388e5c660dc4ec3d4e6366f5acb498c37e4b5d1a3",
+      "bytes": 153954205
+    },
+    {
+      "path": "runs/rv_fixed_proj320_rom-util20-200ns/06-openroad-cutrows/rv_fixed_proj320_rom.odb",
+      "clone_source": "runs/rv_fixed_proj320_rom-util20-200ns/01-openroad-floorplan/rv_fixed_proj320_rom.odb",
+      "sha256": "81fa4e1ba4268b8c14e9940388e5c660dc4ec3d4e6366f5acb498c37e4b5d1a3",
+      "bytes": 153954205
+    },
+    {
+      "path": "runs/rv_fixed_proj320_rom-util20-200ns/01-openroad-floorplan/rv_fixed_proj320_rom.nl.v",
+      "clone_source": "runs/rv_fixed_proj320_rom-physical20/07-openroad-floorplan/rv_fixed_proj320_rom.nl.v",
+      "sha256": "3d3e9c34e161e1153c9269aba9db02340ffde0d3968b28987f3fc44f3ad01405",
+      "bytes": 36018344
+    },
+    {
+      "path": "runs/rv_fixed_proj320_rom-util20-200ns/04-odb-setpowerconnections/rv_fixed_proj320_rom.def",
+      "clone_source": "runs/rv_fixed_proj320_rom-util20-200ns/01-openroad-floorplan/rv_fixed_proj320_rom.def",
+      "sha256": "39f56daaeb7837c002687c3b7f6722e94ef9e98a5702d2ee3777505816aed9ca",
+      "bytes": 38683317
+    },
+    {
+      "path": "runs/rv_fixed_proj320_rom-util20-200ns/06-openroad-cutrows/rv_fixed_proj320_rom.def",
+      "clone_source": "runs/rv_fixed_proj320_rom-util20-200ns/01-openroad-floorplan/rv_fixed_proj320_rom.def",
+      "sha256": "39f56daaeb7837c002687c3b7f6722e94ef9e98a5702d2ee3777505816aed9ca",
+      "bytes": 38683317
+    },
+    {
+      "path": "runs/rv_fixed_proj320_dp-util20-200ns/23-openroad-cts/rv_fixed_proj320_dp.nl.v",
+      "clone_source": "runs/rv_fixed_proj320_dp-route200/01-openroad-resizertimingpostcts/rv_fixed_proj320_dp.nl.v",
+      "sha256": "eb81e32d43a3bf95b60eea250ed48d503f371ebc05df9d81b05cd1b949c62039",
+      "bytes": 50182562
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+INVALID FAILURE ARTIFACT. The initial gate run could not read its four real vector/reference files. This VCD must never be used for correctness, activity annotation, or power. It is retained only to preserve the failed attempt. The raw source remains on the pod. See INVALID-RECEIPT.json for hashes and provenance.

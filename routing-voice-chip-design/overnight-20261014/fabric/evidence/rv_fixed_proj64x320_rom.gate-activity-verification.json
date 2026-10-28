@@ -1,0 +1,56 @@
+{
+  "variant": "rv_fixed_proj64x320_rom",
+  "level": "Zero-delay mapped netlist, GF180 FUNCTIONAL models, Verilator (two-state); no SDF timing simulation",
+  "netlist": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/runs/rv_fixed_proj64x320_rom-restored/06-yosys-synthesis/rv_fixed_proj64x320_rom.nl.v",
+  "netlist_sha256": "d080daf116b6202cb5fbf31ae53918a07ed31f5d4825aef14263a62a2daee5a7",
+  "clock_period_ns": 200,
+  "activity_vcd": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/vectors/rv_fixed_proj64x320_rom.gate-power-200ns.vcd",
+  "thread_caps": {
+    "build": 3,
+    "simulation": 1
+  },
+  "limit_seconds": 1200,
+  "phases": [
+    {
+      "phase": "compile",
+      "command": [
+        "nice",
+        "-n",
+        "10",
+        "verilator",
+        "--binary",
+        "--timing",
+        "--top-module",
+        "tb",
+        "--build-jobs",
+        "3",
+        "--threads",
+        "1",
+        "--output-split",
+        "15000",
+        "--output-split-cfuncs",
+        "5000",
+        "-Wno-fatal",
+        "-DFUNCTIONAL",
+        "-DDUT=rv_fixed_proj64x320_rom",
+        "-DROWS=64",
+        "--Mdir",
+        "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/tb/gate_activity_obj_rv_fixed_proj64x320_rom",
+        "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/verilog/primitives.v",
+        "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/verilog/gf180mcu_fd_sc_mcu7t5v0.v",
+        "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/runs/rv_fixed_proj64x320_rom-restored/06-yosys-synthesis/rv_fixed_proj64x320_rom.nl.v",
+        "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/tb/tb_gate-activity_rv_fixed_proj64x320_rom.sv",
+        "--trace",
+        "--trace-depth",
+        "3",
+        "--trace-max-width",
+        "65536",
+        "--trace-underscore"
+      ],
+      "log": "logs/rv_fixed_proj64x320_rom.gate-activity-compile.log",
+      "exit_code": 0
+    }
+  ],
+  "elapsed_seconds": 502.1899230480194,
+  "stop_reason": null
+}

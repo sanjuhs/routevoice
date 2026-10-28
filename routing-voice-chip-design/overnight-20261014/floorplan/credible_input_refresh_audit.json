@@ -1,0 +1,35 @@
+{
+  "reason": "W6 qualification updated after final-run batch snapshot: full1280 selected DRC0 and64-row LVS pass; full1280 LVS/timing pending. Geometry density and all generated floorplan area/load inputs unchanged; no redundant EDA rerun required.",
+  "checks": [
+    {
+      "run": "pitch1280v2_sram_dense_custom_on_baseline_whole_25x31mm_pdn40_pads48",
+      "actual_input_sha256": "c8ae3a914ebe183603d38a7aa8b73c9310d949f06d117c6abc678050be7b1958",
+      "final_config_sha256": "1415e8002b4aa341e99d2c283dbdbc3d3890efcd2ebf0393a74ccb1599caffe9",
+      "area_power_engine_and_memory_unchanged": true
+    },
+    {
+      "run": "pitch1280v2_sram_open_macro_on_baseline_encoder_25x29mm_pdn40_pads32",
+      "actual_input_sha256": "34ecf862a2afd2fa400d8ec16bd180bbec55173680b4cdea788600ca6d0a04bd",
+      "final_config_sha256": "1415e8002b4aa341e99d2c283dbdbc3d3890efcd2ebf0393a74ccb1599caffe9",
+      "area_power_engine_and_memory_unchanged": true
+    },
+    {
+      "run": "pitch1280v2_sram_open_macro_on_baseline_decoder_25x29mm_pdn40_pads32",
+      "actual_input_sha256": "34ecf862a2afd2fa400d8ec16bd180bbec55173680b4cdea788600ca6d0a04bd",
+      "final_config_sha256": "1415e8002b4aa341e99d2c283dbdbc3d3890efcd2ebf0393a74ccb1599caffe9",
+      "area_power_engine_and_memory_unchanged": true
+    },
+    {
+      "run": "pitch1280v2_sram_open_macro_books_baseline_encoder_26x29mm_pdn40_pads32",
+      "actual_input_sha256": "f42249d2d0d60ddee65e4f2cfc1aa8af3e3cb824127f0bcc6fd331497e1269fc",
+      "final_config_sha256": "1415e8002b4aa341e99d2c283dbdbc3d3890efcd2ebf0393a74ccb1599caffe9",
+      "area_power_engine_and_memory_unchanged": true
+    },
+    {
+      "run": "pitch1280v2_sram_open_macro_books_baseline_decoder_26x29mm_pdn40_pads32",
+      "actual_input_sha256": "f42249d2d0d60ddee65e4f2cfc1aa8af3e3cb824127f0bcc6fd331497e1269fc",
+      "final_config_sha256": "1415e8002b4aa341e99d2c283dbdbc3d3890efcd2ebf0393a74ccb1599caffe9",
+      "area_power_engine_and_memory_unchanged": true
+    }
+  ]
+}

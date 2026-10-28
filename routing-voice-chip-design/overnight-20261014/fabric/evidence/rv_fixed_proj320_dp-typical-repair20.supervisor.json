@@ -1,0 +1,24 @@
+{
+  "command": [
+    "bash",
+    "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/run_flow.sh",
+    "rv_fixed_proj320_dp",
+    "typical-repair20"
+  ],
+  "log": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/logs/rv_fixed_proj320_dp-typical-repair20.flow.log",
+  "exit_code": 0,
+  "stop_reason": null,
+  "elapsed_seconds": 1106.6027917861938,
+  "minimum_free_bytes": 24727973888,
+  "limit_seconds": 7200,
+  "thread_limit": 8,
+  "nice": 10,
+  "minimum_required_free_gib": 22.0,
+  "start_unix": 1791934411.246942,
+  "flow_controls": {
+    "W2_FROM_STEP": "OpenROAD.RepairDesignPostGPL",
+    "W2_TO_STEP": "OpenROAD.STAMidPNR-1",
+    "W2_INITIAL_STATE": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/runs/rv_fixed_proj320_dp-io-microns/07-openroad-stamidpnr/state_out.json",
+    "W2_CONFIG_PATH": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/configs/rv_fixed_proj320_dp-typical-repair.json"
+  }
+}

@@ -1,0 +1,379 @@
+{
+  "utc": "2026-10-13T22:58:17.482346+00:00",
+  "status": "frozen",
+  "active_EDA_processes": [],
+  "free_gib": 22.365962982177734,
+  "scope": "Verification subtree inventory excluding this receipt; no further worker output mutations planned. Historical native receipts preserved; archived files restore byte-identically.",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 3986,
+      "sha256": "24479ce60a39005003e61d7a125f95dc236741f56283ba4bb03656791a6cb13a"
+    },
+    {
+      "path": "RESULTS.md",
+      "bytes": 2964,
+      "sha256": "1c93226751b18c3b170b6a639ace6930037c4790941703e642d43eca18d4ff70"
+    },
+    {
+      "path": "collect.py",
+      "bytes": 7255,
+      "sha256": "5c166e1c84cfdd4b79f87dcb203c10ede61faa7e543d557ecba042c5aa8808c3"
+    },
+    {
+      "path": "compress_native_ext.py",
+      "bytes": 2987,
+      "sha256": "abeaa37bcd865216e20ac25deabf7088b4952808d97f997947a10884f491e545"
+    },
+    {
+      "path": "compress_slice_evidence.py",
+      "bytes": 3417,
+      "sha256": "120fd53518237072fcad6fd88a1b2d66ac5f3c67094cdd19135037fadfbfa4c6"
+    },
+    {
+      "path": "compress_spice_evidence.py",
+      "bytes": 3364,
+      "sha256": "bceec6590fabe24675311b9296347900695ee92e1679735ac933a949360dfdeb"
+    },
+    {
+      "path": "export_caps.py",
+      "bytes": 3512,
+      "sha256": "ca50aa5363aca641a71ffc9d39f741ddf2cb63cb855819297d5c2366c8c3e628"
+    },
+    {
+      "path": "extend_owned_wait.py",
+      "bytes": 3349,
+      "sha256": "210350bfe0faabcd637c8524d56a9093d31338112cebc97c40ff87b5abba13c0"
+    },
+    {
+      "path": "handoff_owned_wait.py",
+      "bytes": 3724,
+      "sha256": "a6d1754825244266835edd3d5553e9ac3b01b6c2f8309447d5024125fd8649ce"
+    },
+    {
+      "path": "independent-image-check.json",
+      "bytes": 496,
+      "sha256": "94e49fc230420f6e1c8f3589c0f9798c2c392814006d89fe13a3ccc91bc44fbe"
+    },
+    {
+      "path": "r1280-v2/W6_PITCH_BANK_FLAT.ext.gz",
+      "bytes": 90196781,
+      "sha256": "cbf115bcc3d509100bdfbcff31c1f853d56e7ca1e6c139abac1c430ac2a67b7f"
+    },
+    {
+      "path": "r1280-v2/canonical.spice.gz",
+      "bytes": 16497715,
+      "sha256": "3c43779f707283841d6edf171a5605558f65e0c9519c9ef802405d7e06eebf81"
+    },
+    {
+      "path": "r1280-v2/connectivity.json",
+      "bytes": 370,
+      "sha256": "13619e35d5bd5913d5a2d0cfd6ff3de4517d90ec63a11d8ac197e6c8907b3d86"
+    },
+    {
+      "path": "r1280-v2/extract-command.json",
+      "bytes": 308,
+      "sha256": "5cd9838efb43a9f858ef1a143ca0efafc22439bede929a385d251f4ac78a9f17"
+    },
+    {
+      "path": "r1280-v2/extract-console.log",
+      "bytes": 2400,
+      "sha256": "c5f2dff1a56f919de19991ca9a0e77abc17488d02d016fe8b70db28aa39c88b3"
+    },
+    {
+      "path": "r1280-v2/extract-process.json",
+      "bytes": 86,
+      "sha256": "7c46706040fe49e3ae2a879bdcf3901987f5b46c6f439b6fbc3080598937628b"
+    },
+    {
+      "path": "r1280-v2/extract.tcl",
+      "bytes": 317,
+      "sha256": "22ca5978928da9d216e431f1b777315712d66989821cd45116e50014e863a34b"
+    },
+    {
+      "path": "r1280-v2/extracted.spice.gz",
+      "bytes": 21133354,
+      "sha256": "57a9192edc29d7935e7c38255785c7692edd9386c944713659902591d730689a"
+    },
+    {
+      "path": "r1280-v2/full-bank-netgen-command.json",
+      "bytes": 381,
+      "sha256": "699fda4646b36a822328d009db750f5cb5cd09c4dfa499daf5e9ddf06ca329fb"
+    },
+    {
+      "path": "r1280-v2/full-bank-netgen-console.log",
+      "bytes": 4965,
+      "sha256": "fd8021269bc407504d71b22ab2a38765b8bd8794837e5c20d4ee45eb8ce42fe1"
+    },
+    {
+      "path": "r1280-v2/full-bank-netgen-process.json",
+      "bytes": 87,
+      "sha256": "0f56e3e1123722edb4d958ed7ff4fceffb3cd6318d3e20dfdc454e9c10822801"
+    },
+    {
+      "path": "r1280-v2/full-bank-netgen-result.json",
+      "bytes": 444,
+      "sha256": "55e80ba20e5d796207a5946000c0a76ff45b13e389bbeaa8b280157ccd05a9be"
+    },
+    {
+      "path": "r1280-v2/full-bank-netgen.log",
+      "bytes": 228664,
+      "sha256": "2f9bffb1bd1f09b75aba9868ed2225421db018996c61d5c86718c2fbb1546bfe"
+    },
+    {
+      "path": "r1280-v2/identity.json",
+      "bytes": 302,
+      "sha256": "6614804cc319da790756d5f0a9117d3df142f079585535a71bc1d2879e51eb00"
+    },
+    {
+      "path": "r1280-v2/input.json",
+      "bytes": 263,
+      "sha256": "4d8542960fee5c7cfaa4d41b9b57423005512f9f8c8c074e38a402ce48bef759"
+    },
+    {
+      "path": "r1280-v2/native-ext-compression.json",
+      "bytes": 1695,
+      "sha256": "f2075cb37b6be8d43c7662706f5b55d623b1c7abe95d7bc185caff173c3956e0"
+    },
+    {
+      "path": "r1280-v2/negative-width-netgen-command.json",
+      "bytes": 398,
+      "sha256": "b6fe71b266f261bb4eb57c991d312b89fc176f90ad22ccd27fc9266b382beb80"
+    },
+    {
+      "path": "r1280-v2/negative-width-netgen-console.log",
+      "bytes": 5093,
+      "sha256": "488f5e8a9b95718136cf7eeeed738c62a00374cc37f0f4c2cac8eecdab40177e"
+    },
+    {
+      "path": "r1280-v2/negative-width-netgen-process.json",
+      "bytes": 87,
+      "sha256": "06b3b54431d71f9d3556ec3f16d771a1b6d0c133a718bdfcedd94da56acf5485"
+    },
+    {
+      "path": "r1280-v2/negative-width-netgen-result.json",
+      "bytes": 481,
+      "sha256": "bea247b2126e1b5bf3617be55e8193c600980cc929451609c0bc1186903824b1"
+    },
+    {
+      "path": "r1280-v2/negative-width-netgen.log",
+      "bytes": 228879,
+      "sha256": "faa373634c2d3d8e4281afbd9f2a6d82c3af78ddded04211b8c72dc1a5eb96ff"
+    },
+    {
+      "path": "r1280-v2/reference-wrong-width.spice.gz",
+      "bytes": 9499045,
+      "sha256": "75ceefbad7b64bfd80e44e6534e2d9e13717066a706f51408292d8715c8d53e2"
+    },
+    {
+      "path": "r1280-v2/reference.spice.gz",
+      "bytes": 9499039,
+      "sha256": "533d75965d59a86cfbf684c70857dc29c0ce27f474d7524a49ad6b9acf7c2c0d"
+    },
+    {
+      "path": "r1280-v2/spice-evidence-compression.json",
+      "bytes": 4354,
+      "sha256": "e3b6b84edb34560fcbcb21a4c0fd6b69e8a1ca57498d8fb7b4cbaea6253a2480"
+    },
+    {
+      "path": "r1280-v2/watchdog-extension-5400.json",
+      "bytes": 2013,
+      "sha256": "51cd9e3c8ace84f81f8ea9e264d477e4954282c9fdcfec9f51fc9b2094cf4835"
+    },
+    {
+      "path": "r1280-v2/watchdog-extension.json",
+      "bytes": 1556,
+      "sha256": "8cca434e891cac7d2f6fff7d2f3da4481079d6d8983c349caae8822c68af713f"
+    },
+    {
+      "path": "r1280-v2-connectivity/cancelled-after-full-C-success.json",
+      "bytes": 635,
+      "sha256": "c698a7d6fe0042fcfe77506e6f8b41380819872bff7faa857334231eb95c83fb"
+    },
+    {
+      "path": "r1280-v2-connectivity/extract-command.json",
+      "bytes": 308,
+      "sha256": "5cd9838efb43a9f858ef1a143ca0efafc22439bede929a385d251f4ac78a9f17"
+    },
+    {
+      "path": "r1280-v2-connectivity/extract-console.log",
+      "bytes": 1498,
+      "sha256": "8ce2b17c637a5be229d591c215237701ed179139905dd878bb4aaea6d9d2f037"
+    },
+    {
+      "path": "r1280-v2-connectivity/extract-process.json",
+      "bytes": 88,
+      "sha256": "30d953ea69ef436f2e1ef82ff15aedbd08968381a16d7ae2b9daa8c3039eb8a7"
+    },
+    {
+      "path": "r1280-v2-connectivity/extract.tcl",
+      "bytes": 436,
+      "sha256": "0d364da8c8442a3b5307f4d6f93a1ccb5ab20c9e64cdea0849ecf78a24a36cc7"
+    },
+    {
+      "path": "r1280-v2-connectivity/input.json",
+      "bytes": 263,
+      "sha256": "4d8542960fee5c7cfaa4d41b9b57423005512f9f8c8c074e38a402ce48bef759"
+    },
+    {
+      "path": "r1280-v2-independent-readback.json",
+      "bytes": 2295,
+      "sha256": "1162231f67d67d76284ac5f8d280cd73818046418e3b2d64781c6416e8b92829"
+    },
+    {
+      "path": "r64-v1-independent-readback.json",
+      "bytes": 2287,
+      "sha256": "2005ed957bb9bc4156abaf50bfbe9729bce4fd306a1796d1e59b6b981c20c506"
+    },
+    {
+      "path": "r64-v2/W6_PITCH_BANK_FLAT.ext.gz",
+      "bytes": 4743705,
+      "sha256": "44deacf709b9eadc006f0c4034e09f51f40ed05f7caad08814384b46cc61b050"
+    },
+    {
+      "path": "r64-v2/canonical.spice.gz",
+      "bytes": 753938,
+      "sha256": "edd15581ef925277444f2611f97d67a329cabf0eed4b3facbeb21c0d965a1d49"
+    },
+    {
+      "path": "r64-v2/connectivity.json",
+      "bytes": 365,
+      "sha256": "e8be2d76b29bf7e738d27b55d778fa84d9b4ee16d9ace2ca1aabfd69c955c936"
+    },
+    {
+      "path": "r64-v2/extract-command.json",
+      "bytes": 308,
+      "sha256": "5cd9838efb43a9f858ef1a143ca0efafc22439bede929a385d251f4ac78a9f17"
+    },
+    {
+      "path": "r64-v2/extract-console.log",
+      "bytes": 2154,
+      "sha256": "272861395d70ee2f9a719779b38424ed0a4f21a28ae09ac37c2c27a2483d01d2"
+    },
+    {
+      "path": "r64-v2/extract-process.json",
+      "bytes": 86,
+      "sha256": "9d441b9d23c8d339e8b435c3206d832c8efade3ba0d986faffdf8c33fc389ea9"
+    },
+    {
+      "path": "r64-v2/extract.tcl",
+      "bytes": 313,
+      "sha256": "bb26da8984b926d55fc1540f52f0d3da148e7bb4468ef61d4493f61e87878af3"
+    },
+    {
+      "path": "r64-v2/extracted.spice.gz",
+      "bytes": 1011488,
+      "sha256": "7996d94d87c85a575850eea9c6d097abc605064bd4c409c91215c634f5bbcf95"
+    },
+    {
+      "path": "r64-v2/full-bank-netgen-command.json",
+      "bytes": 381,
+      "sha256": "699fda4646b36a822328d009db750f5cb5cd09c4dfa499daf5e9ddf06ca329fb"
+    },
+    {
+      "path": "r64-v2/full-bank-netgen-console.log",
+      "bytes": 4947,
+      "sha256": "f6668474fef9e5dc114dd6216ac8fc621b30be053a250d6da7acccfe9938315f"
+    },
+    {
+      "path": "r64-v2/full-bank-netgen-process.json",
+      "bytes": 87,
+      "sha256": "0720d78556667b84c2719c5718ce38c3585d43b2628428209503f242c4b855b6"
+    },
+    {
+      "path": "r64-v2/full-bank-netgen-result.json",
+      "bytes": 438,
+      "sha256": "d8188f559e0d488a3a806956cd393f9ad1309d4162b681941eef18101057fb6e"
+    },
+    {
+      "path": "r64-v2/full-bank-netgen.log",
+      "bytes": 121654,
+      "sha256": "2e4292e4e830e65246701bd35f5c224a85aff0399605eef7116d9aba2da8bced"
+    },
+    {
+      "path": "r64-v2/identity.json",
+      "bytes": 302,
+      "sha256": "6614804cc319da790756d5f0a9117d3df142f079585535a71bc1d2879e51eb00"
+    },
+    {
+      "path": "r64-v2/input.json",
+      "bytes": 257,
+      "sha256": "d6aedd41836d925a812bd80448fa08987c372b182adadd1140fe620169b84808"
+    },
+    {
+      "path": "r64-v2/negative-width-netgen-command.json",
+      "bytes": 398,
+      "sha256": "b6fe71b266f261bb4eb57c991d312b89fc176f90ad22ccd27fc9266b382beb80"
+    },
+    {
+      "path": "r64-v2/negative-width-netgen-console.log",
+      "bytes": 5075,
+      "sha256": "2f8a9bfb1756f33804bc85a98a214af55d2590bc96702fabc16b7eac778eda83"
+    },
+    {
+      "path": "r64-v2/negative-width-netgen-process.json",
+      "bytes": 87,
+      "sha256": "c041debda05696856a9366a7849fb5bec621bfd8ecc5dd77e473f3de631d3ea3"
+    },
+    {
+      "path": "r64-v2/negative-width-netgen-result.json",
+      "bytes": 475,
+      "sha256": "22aea3a4094520e68d2f7e53cd88b3f57319c6c0e2ba3e29ed37fd083f121b32"
+    },
+    {
+      "path": "r64-v2/negative-width-netgen.log",
+      "bytes": 121867,
+      "sha256": "00b6f6d35432864a9483cf4009e5a0bd81663d328fff7292cdf705e88850d19b"
+    },
+    {
+      "path": "r64-v2/reference-wrong-width.spice.gz",
+      "bytes": 497510,
+      "sha256": "66b98cc457d062d7b28be98b110a73c391c7e680d01f57e7d135a537f99c2983"
+    },
+    {
+      "path": "r64-v2/reference.spice.gz",
+      "bytes": 497504,
+      "sha256": "a5d5ca34eaf2db7463b0ae202bc39da8274d607e8b822f3a91849e9aa6277b66"
+    },
+    {
+      "path": "r64-v2/slice-evidence-compression.json",
+      "bytes": 5299,
+      "sha256": "7366cf6d6273ddea8353703d344210150497aa1e23d37bbce799504135e44ba7"
+    },
+    {
+      "path": "r64-v2-independent-readback.json",
+      "bytes": 2287,
+      "sha256": "2a605833e65587b17ee5b5ca6bca96eea1110dc59a1722e22570eff8b52cd652"
+    },
+    {
+      "path": "rank_caps.py",
+      "bytes": 6137,
+      "sha256": "40abd67ca317bfedd7a3cb5e02e07e1feb6341f3b5e9fa101b494a61c39d4d13"
+    },
+    {
+      "path": "readback.py",
+      "bytes": 2840,
+      "sha256": "5fa76a852331362bbae19ea6b4a1bce80e6b133c6d573fbe22c6105a5dfa8b8d"
+    },
+    {
+      "path": "results.json",
+      "bytes": 33414,
+      "sha256": "c386b6731f8d83d1539fe1437fe59d55e4ad97989d829dddbda85aad1b9d340c"
+    },
+    {
+      "path": "source-reading.json",
+      "bytes": 2316,
+      "sha256": "26d9f1e3bd68f2ecba7d375d285b30a14bd77105e188eddb2f51d6cd3ecac8ed"
+    },
+    {
+      "path": "verify-connectivity.py",
+      "bytes": 11515,
+      "sha256": "4d0265c657e45ad89388d2ea5693d26a42f935a631d33023c6fc80169fa2b151"
+    },
+    {
+      "path": "verify.py",
+      "bytes": 11106,
+      "sha256": "700b8a45bbf694c6e4612ec6c4be646eff45920e34d9e28b02de2f8441e7427a"
+    }
+  ]
+}

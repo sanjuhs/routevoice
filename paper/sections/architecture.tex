@@ -1,0 +1,50 @@
+\section{Architecture}
+\label{sec:architecture}
+
+\subsection{The projection engine}
+The unit of physical work is one $1280\times320$ projection: the decoder feed-forward output matrix, the largest shape in the model. \input{figures/engine}
+The engine (\cref{fig:engine}) is a five-state machine:
+\begin{description}
+\item[LOAD] accepts one signed 9-bit activation, adds it to a running activation sum, and registers its 16 partial products.
+\item[INDEX] reads one 1,280-bit row of the index array (320 four-bit selections) and maps each index through its book to a UINT8 representative.
+\item[ACCUM] adds, in each of 320 lanes, the two selected partial products (one shifted) into a signed 27-bit accumulator.
+\item[PREP] (added in \cref{sec:closure}) fills per-group output registers before output begins.
+\item[OUTPUT] emits one column per cycle. Each value is the accumulator minus $\text{activation sum}\times\text{zero point}$, passed through a three-stage FP32 multiply--add (Berkeley HardFloat~\cite{hauser_hardfloat}) that applies the activation scale, the weight scale and the bias with independent round-to-nearest-even steps.
+\end{description}
+One projection takes $3\times1280$ cycles of LOAD/INDEX/ACCUM and 320 output cycles, plus pipeline fill: 4,165 cycles in the final design (4,163 originally). That is 409,600 multiply-accumulates, an average of 98 MAC per cycle.
+
+Two structural changes made the engine physically implementable:
+\begin{enumerate}
+\item \textbf{Fanout.} Row-index and partial-product nets originally drove up to \num{11359} loads. We duplicated the row registers ten times and capped synthesis fanout at 16.
+\item \textbf{Local partials.} Each 32-lane group gets its own copy of the partial-product registers, so the 208-bit partial-product bus no longer crosses the die (\cref{sec:closure}).
+\end{enumerate}
+Both changes are cycle-identical on the full test bench.
+
+\subsection{From one engine to a recognizer}
+The full recognizer RTL connects:
+\begin{itemize}
+\item the PCM input and frontend;
+\item the six-layer encoder;
+\item an adapter that produces cross-attention keys and values;
+\item a greedy six-layer decoder that ends at the end-of-sequence token.
+\end{itemize}
+Everything runs on one common clock. Each weight service answers lookups through index and book ROMs. The top level has no weight inputs: its 31 runtime inputs are audio, clocks, resets, handshakes and configuration.
+
+\paragraph{Throughput.}
+A dense one-pass estimate of the workload is about 0.6\,GMAC/s:
+\begin{itemize}
+\item the encoder: about 7.4\,M MAC per frame at 50 frames/s;
+\item the decoder: about 21.5\,M MAC per token at about 4 tokens/s;
+\item the keys and values produced for cross-attention.
+\end{itemize}
+One engine at \SI{150}{ns} sustains 0.66\,GMAC/s. However, the native streaming controller re-processes encoder frames and regenerates cross-attention keys and values. Measured on real traces, that controller needs 10--90 engine-equivalents at a \SI{120}{ns} clock. Real-time operation therefore depends as much on scheduling as on raw MAC rate, and we treat it as open (\cref{sec:limitations}).
+
+\subsection{Chip plan}
+All 98 matrices map to 81 pitch-matched index banks (\SI{174.7}{mm^2}) plus four bank-driver control strips (\SI{56.6}{mm^2}). Abstract floorplans with power grids give two candidate chips:
+\begin{itemize}
+\item \textbf{One die} of $25\times31$\,mm, which needs a denser SRAM than the open GF180 macro (we assumed \SI{12}{\micro m^2}/bit);
+\item \textbf{Two dies} of $25\times29$\,mm, built only from existing open parts, with no change to the numerics.
+\end{itemize}
+The two-die variant routes and passes IR drop at the measured engine power, but fails an earlier, more pessimistic assumed-load IR screen.
+
+About 1.09\,MB of mutable state (activation banks, key/value caches, history and scratch) dominates the remaining area. Synthesized as flip-flops, it alone puts the logic at \SI{1198}{mm^2} (\cref{sec:results}). Mapping it onto SRAM macros is the largest open area item.

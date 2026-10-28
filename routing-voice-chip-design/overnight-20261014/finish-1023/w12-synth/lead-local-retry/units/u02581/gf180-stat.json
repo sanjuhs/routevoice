@@ -1,0 +1,57 @@
+{
+   "creator": "Yosys 0.62 (git sha1 7326bb7d6641500ecb285c291a54a662cb1e76cf, clang++ 21.1.2 -fPIC -O3)",
+   "invocation": "stat -json -liberty /Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric-k64/pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__tt_025C_3v30.lib ",
+   "modules": {
+      "\\u02581": {
+         "num_wires":         468,
+         "num_wire_bits":     1339,
+         "num_pub_wires":     42,
+         "num_pub_wire_bits": 913,
+         "num_ports":         37,
+         "num_port_bits":     875,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         639,
+         "num_submodules":       0,
+         "area":              18213.574400,
+         "sequential_area":    13496.089600,
+         "num_cells_by_type": {
+            "gf180mcu_fd_sc_mcu7t5v0__aoi211_1": 1,
+            "gf180mcu_fd_sc_mcu7t5v0__aoi21_1": 1,
+            "gf180mcu_fd_sc_mcu7t5v0__clkinv_1": 211,
+            "gf180mcu_fd_sc_mcu7t5v0__dffq_1": 212,
+            "gf180mcu_fd_sc_mcu7t5v0__nand2_1": 1,
+            "gf180mcu_fd_sc_mcu7t5v0__nor2_1": 211,
+            "gf180mcu_fd_sc_mcu7t5v0__nor3_1": 1,
+            "gf180mcu_fd_sc_mcu7t5v0__oai21_1": 1
+         }
+      }
+   },
+      "design": {
+         "num_wires":         468,
+         "num_wire_bits":     1339,
+         "num_pub_wires":     42,
+         "num_pub_wire_bits": 913,
+         "num_ports":         37,
+         "num_port_bits":     875,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         639,
+         "num_submodules":       0,
+         "area":              18213.574400,
+         "sequential_area":    13496.089600,
+         "num_cells_by_type": {
+            "gf180mcu_fd_sc_mcu7t5v0__aoi211_1": 1,
+            "gf180mcu_fd_sc_mcu7t5v0__aoi21_1": 1,
+            "gf180mcu_fd_sc_mcu7t5v0__clkinv_1": 211,
+            "gf180mcu_fd_sc_mcu7t5v0__dffq_1": 212,
+            "gf180mcu_fd_sc_mcu7t5v0__nand2_1": 1,
+            "gf180mcu_fd_sc_mcu7t5v0__nor2_1": 211,
+            "gf180mcu_fd_sc_mcu7t5v0__nor3_1": 1,
+            "gf180mcu_fd_sc_mcu7t5v0__oai21_1": 1
+         }
+      }
+}
+

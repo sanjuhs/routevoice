@@ -1,0 +1,19 @@
+{
+  "unix": 1791941328.667186,
+  "method": "APFS cp -c copy-on-write, exact content hash checked before atomic replacement",
+  "nominal_duplicate_bytes_shared": 334495849,
+  "changes": [
+    {
+      "path": "runs/rv_fixed_proj320_rom-route-util20-density35-noinflate-200ns/01-openroad-resizertimingpostcts/rv_fixed_proj320_rom.odb",
+      "clone_source": "runs/rv_fixed_proj320_rom-pre-route-rtl-activity/final/odb/rv_fixed_proj320_rom.odb",
+      "sha256": "322d04614745bd8befbe8b608864a697e3284cfa92ae1b86b759f4e8cbe30201",
+      "bytes": 241141831
+    },
+    {
+      "path": "runs/rv_fixed_proj320_rom-route-util20-density35-noinflate-200ns/01-openroad-resizertimingpostcts/rv_fixed_proj320_rom.def",
+      "clone_source": "runs/rv_fixed_proj320_rom-pre-route-render/final/def/rv_fixed_proj320_rom.def",
+      "sha256": "56b8357d36273cc0ffa90e0b8122512ba82a5bb95ad5bcfbe5ff44e71c3f0b5b",
+      "bytes": 93354018
+    }
+  ]
+}

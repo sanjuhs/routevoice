@@ -1,0 +1,69 @@
+{
+  "case_id": "int8_per_tensor-input-043",
+  "model": "int8_per_tensor",
+  "id": "4572-64670-0021",
+  "role": "validation",
+  "condition": "other",
+  "seed": null,
+  "reference": "RAMA AND LAKSHMAN FORCED TO FLEE I LIVE BY NAUGHT BUT SEEING THEE FOR AS THE KING HAS PAST AWAY THOU ART MY ONLY HELP TO DAY",
+  "input_float32_sha256": "c083bbd8c313d37e304a9bcf5aa79c6f2ee020e200cbf2d529654ae3560404b6",
+  "hypothesis": "   ",
+  "normalized_tokens": [],
+  "edits": 27,
+  "reference_words": 27,
+  "hypothesis_words": 0,
+  "exact": false,
+  "lines": [
+    {
+      "text": "",
+      "start_time": 0.25599998235702515,
+      "duration": 2.5920000076293945,
+      "is_complete": true,
+      "samples": 41472,
+      "input_float32_sha256": "8301ae33d4da94093387bff6a5d2e410c9a3df5e6ebe1898156967885fafc6df"
+    },
+    {
+      "text": "",
+      "start_time": 2.687999963760376,
+      "duration": 2.5280001163482666,
+      "is_complete": true,
+      "samples": 40448,
+      "input_float32_sha256": "8e9d5900eaa810187e1b4d8e32256d9977aa277433c8759d84ce06813a88b383"
+    },
+    {
+      "text": "",
+      "start_time": 5.4079999923706055,
+      "duration": 2.4000000953674316,
+      "is_complete": true,
+      "samples": 38400,
+      "input_float32_sha256": "e0e228a4ac64d3efc972ad996c1e1352c0bf6a17539ad3682102cd98c6bc88dc"
+    },
+    {
+      "text": "",
+      "start_time": 7.552000045776367,
+      "duration": 2.368000030517578,
+      "is_complete": true,
+      "samples": 37888,
+      "input_float32_sha256": "8963be0a3620dcbca1052ddbfbf708964193893e49e5ff6265eeaed2645525e9"
+    }
+  ],
+  "request_sha256": "b2ae2e7177129abb2829ec18883a33a941463edbb310fe61bd965159d50f64eb",
+  "worker_sha256": "4682e8a57db08e02a34f53b01f334f34faa3ca9a6546698f1e4650db359004b6",
+  "native_library_sha256": "1453a6c1c9072f3d05e9e5ae6ff423fae839e56631c5efb12bbd5c0280d04399",
+  "native_api_version": 30000,
+  "load_seconds": 0.03992995899170637,
+  "compute_seconds": 0.2025172500871122,
+  "audio_seconds": 9.925,
+  "process_cpu_seconds": 0.20262200000000002,
+  "voluntary_context_switches": 0,
+  "involuntary_context_switches": 22,
+  "system_load_average": [
+    10.60986328125,
+    9.1318359375,
+    9.8994140625
+  ],
+  "options": null,
+  "flags": 0,
+  "process_id": 81221,
+  "isolation": "One audio clip/condition in a fresh native process; no previous utterance or VAD state."
+}

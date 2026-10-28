@@ -1,0 +1,480 @@
+{
+  "status": "decoded_tile_compositional_lvs_and_scoped_drc_passed",
+  "scope": "One actual64row x320lane x4bit tile with ten physically connected local row decoders and1280analog precharge/keeper/receiver channels. NOT complete projection macro.",
+  "gds_file": "v1/decoded-tile.gds",
+  "gds_top_cell": "RV_K64_DECODED_TILE_00",
+  "selection_count": 20480,
+  "bitcell_count": 81920,
+  "dimensions_um": [
+    4669.7,
+    240.8
+  ],
+  "area_um2": 1124463.76,
+  "area_um2_per_selection_including_present_periphery": 54.90545703125,
+  "decoder_instances": 10,
+  "top_ports": {
+    "power": [
+      "VDD",
+      "VSS"
+    ],
+    "controls": [
+      "ROW0..ROW5",
+      "EVAL",
+      "PC"
+    ],
+    "outputs": [
+      "OUT0..OUT1279"
+    ]
+  },
+  "drc_full_tile": {
+    "returncode": 0,
+    "wall_seconds": 40.450532499933615,
+    "scope": "GF180 FEOL BEOL connectivity offgrid, deep2threads; excludes density/antenna",
+    "drc_markers": 0,
+    "categories": {}
+  },
+  "drc_bank0": {
+    "returncode": 0,
+    "wall_seconds": 8.940272625070065,
+    "scope": "GF180 FEOL BEOL connectivity offgrid, deep2threads; excludes density/antenna",
+    "drc_markers": 0,
+    "categories": {}
+  },
+  "compositional_lvs": {
+    "passed": true,
+    "total_devices": 111460,
+    "partitions": 10,
+    "all_unique_matches": true,
+    "property_errors": 0,
+    "disjoint_cover_and_shared_net_audit": {
+      "independent_reference_exact_disjoint_device_cover": true,
+      "exact_disjoint_device_cover": true,
+      "total_devices": 111460,
+      "devices_per_bank": [
+        11146,
+        11146,
+        11146,
+        11146,
+        11146,
+        11146,
+        11146,
+        11146,
+        11146,
+        11146
+      ],
+      "cross_bank_nets": {
+        "VSS": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "VDD": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "PC": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "ROW5": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "ROW3": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "ROW0": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "ROW1": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "ROW2": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "ROW4": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "EVAL": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ]
+      },
+      "only_intended_cross_bank_nets": true,
+      "all1280_output_ports_owned_by_expected_bank": true,
+      "all640_wordlines_owned_by_expected_bank": true,
+      "partition_files_checked_for_exact_device_identity": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "global_terminal_fanout_population_matches_reference": true,
+      "node_normalization_bijective": true,
+      "bijection_evidence": "connectivity.json and assertions in lvs.py; no merged nodes",
+      "scope": "Actual fulltile Magic flat netlist, all111460devices, only10explicit shared global nets; each component retains original connected global terminals."
+    },
+    "partition_results": [
+      {
+        "returncode": 0,
+        "seconds": 18.34264750010334,
+        "devices": 11146,
+        "decoder_devices_per_bank": [
+          2442,
+          2442,
+          2442,
+          2442,
+          2442,
+          2442,
+          2442,
+          2442,
+          2442,
+          2442
+        ],
+        "unique_match": true,
+        "property_errors": false,
+        "scope": "Bank0 component selected from fulltile actual flat extraction by physical local node labels/coordinates; global VDD/VSS/ROW/EVAL/PC already unified by actual top wires. No new GDS, no circuit changes."
+      },
+      {
+        "bank": 1,
+        "returncode": 0,
+        "seconds": 27.753281000070274,
+        "devices": 11146,
+        "decoder_devices_per_bank": [
+          2442,
+          2442,
+          2442,
+          2442,
+          2442,
+          2442,
+          2442,
+          2442,
+          2442,
+          2442
+        ],
+        "unique_match": true,
+        "property_errors": false,
+        "scope": "Single bank component selected from fulltile actual flat extraction by physical local node labels/coordinates; global VDD/VSS/ROW/EVAL/PC already unified by actual top wires. No new GDS, no circuit changes."
+      },
+      {
+        "bank": 2,
+        "returncode": 0,
+        "seconds": 28.405576958088204,
+        "devices": 11146,
+        "decoder_devices_per_bank": [
+          2442,
+          2442,
+          2442,
+          2442,
+          2442,
+          2442,
+          2442,
+          2442,
+          2442,
+          2442
+        ],
+        "unique_match": true,
+        "property_errors": false,
+        "scope": "Single bank component selected from fulltile actual flat extraction by physical local node labels/coordinates; global VDD/VSS/ROW/EVAL/PC already unified by actual top wires. No new GDS, no circuit changes."
+      },
+      {
+        "bank": 3,
+        "returncode": 0,
+        "seconds": 28.353129541967064,
+        "devices": 11146,
+        "decoder_devices_per_bank": [
+          2442,
+          2442,
+          2442,
+          2442,
+          2442,
+          2442,
+          2442,
+          2442,
+          2442,
+          2442
+        ],
+        "unique_match": true,
+        "property_errors": false,
+        "scope": "Single bank component selected from fulltile actual flat extraction by physical local node labels/coordinates; global VDD/VSS/ROW/EVAL/PC already unified by actual top wires. No new GDS, no circuit changes."
+      },
+      {
+        "bank": 4,
+        "returncode": 0,
+        "seconds": 17.933981999987736,
+        "devices": 11146,
+        "decoder_devices_per_bank": [
+          2442,
+          2442,
+          2442,
+          2442,
+          2442,
+          2442,
+          2442,
+          2442,
+          2442,
+          2442
+        ],
+        "unique_match": true,
+        "property_errors": false,
+        "scope": "Single bank component selected from fulltile actual flat extraction by physical local node labels/coordinates; global VDD/VSS/ROW/EVAL/PC already unified by actual top wires. No new GDS, no circuit changes."
+      },
+      {
+        "bank": 5,
+        "returncode": 0,
+        "seconds": 17.16326616704464,
+        "devices": 11146,
+        "decoder_devices_per_bank": [
+          2442,
+          2442,
+          2442,
+          2442,
+          2442,
+          2442,
+          2442,
+          2442,
+          2442,
+          2442
+        ],
+        "unique_match": true,
+        "property_errors": false,
+        "scope": "Single bank component selected from fulltile actual flat extraction by physical local node labels/coordinates; global VDD/VSS/ROW/EVAL/PC already unified by actual top wires. No new GDS, no circuit changes."
+      },
+      {
+        "bank": 6,
+        "returncode": 0,
+        "seconds": 18.40347804198973,
+        "devices": 11146,
+        "decoder_devices_per_bank": [
+          2442,
+          2442,
+          2442,
+          2442,
+          2442,
+          2442,
+          2442,
+          2442,
+          2442,
+          2442
+        ],
+        "unique_match": true,
+        "property_errors": false,
+        "scope": "Single bank component selected from fulltile actual flat extraction by physical local node labels/coordinates; global VDD/VSS/ROW/EVAL/PC already unified by actual top wires. No new GDS, no circuit changes."
+      },
+      {
+        "bank": 7,
+        "returncode": 0,
+        "seconds": 18.004820875125006,
+        "devices": 11146,
+        "decoder_devices_per_bank": [
+          2442,
+          2442,
+          2442,
+          2442,
+          2442,
+          2442,
+          2442,
+          2442,
+          2442,
+          2442
+        ],
+        "unique_match": true,
+        "property_errors": false,
+        "scope": "Single bank component selected from fulltile actual flat extraction by physical local node labels/coordinates; global VDD/VSS/ROW/EVAL/PC already unified by actual top wires. No new GDS, no circuit changes."
+      },
+      {
+        "bank": 8,
+        "returncode": 0,
+        "seconds": 16.914746415801346,
+        "devices": 11146,
+        "decoder_devices_per_bank": [
+          2442,
+          2442,
+          2442,
+          2442,
+          2442,
+          2442,
+          2442,
+          2442,
+          2442,
+          2442
+        ],
+        "unique_match": true,
+        "property_errors": false,
+        "scope": "Single bank component selected from fulltile actual flat extraction by physical local node labels/coordinates; global VDD/VSS/ROW/EVAL/PC already unified by actual top wires. No new GDS, no circuit changes."
+      },
+      {
+        "bank": 9,
+        "returncode": 0,
+        "seconds": 15.81390425004065,
+        "devices": 11146,
+        "decoder_devices_per_bank": [
+          2442,
+          2442,
+          2442,
+          2442,
+          2442,
+          2442,
+          2442,
+          2442,
+          2442,
+          2442
+        ],
+        "unique_match": true,
+        "property_errors": false,
+        "scope": "Single bank component selected from fulltile actual flat extraction by physical local node labels/coordinates; global VDD/VSS/ROW/EVAL/PC already unified by actual top wires. No new GDS, no circuit changes."
+      }
+    ],
+    "scope": "Independent real indices/analog circuit plus frozen powered decoder connectivity expanded through official PDK standard-cell transistor library. Every physical transistor covered exactly once; only actual intended shared nets cross boundaries."
+  },
+  "monolithic_netgen": {
+    "extracted_total_devices": 111460,
+    "reference_total_devices": 111460,
+    "analog_exact_device_graph_and_dimensions_match": true,
+    "analog_devices": 87040,
+    "bijection_nodes": 59364,
+    "independent_wordline_nets": 640,
+    "qualification": "Bijective normalization of unique external/analog nodes and bank-specific WL nodes; remaining decoder internal node names untouched. No net merging or circuit changes.",
+    "netgen_returncode": -15,
+    "netgen_seconds": 600.4449053748976,
+    "unique_match": false,
+    "property_errors": null,
+    "completion_status": "bounded_incomplete",
+    "property_check_completed": false,
+    "property_errors_observed_before_termination": false
+  },
+  "analog_exact_device_graph_and_dimensions_match": true,
+  "dimensions_and_global_fanout_check": {
+    "full_transistor_type_width_length_population_match": true,
+    "global_control_power_terminal_population_match": true,
+    "scope": "Necessary checks on entire111460device flatnetlists, complementary to fullNetgen graph matching; not substitute LVS"
+  },
+  "bit_readback": {
+    "compared_indices": 20480,
+    "compared_bits": 81920,
+    "index_mismatches": 0,
+    "programmed_via1_ones": 40786,
+    "recovered_unpacked_sha256": "1d7fbf9a572a3badf897966a5432c0338400f474e7156f96241772e3a79ec8fb",
+    "method": "Reopened saved decoded-tile.gds, recovered programmed Via1 mask centers of each of10actual arraycells; absence=0. Compared indices.npy first64rows, previously independently matched to W2b and packed model."
+  },
+  "gds_sha256": "33aa0eb05ba3297d4879e4c6acc42ed17ac7f3e16b94cf932b44f4bf26047df6",
+  "source_tile_sha256": "4c92ba7407fee7889c794ba0f9cfc3e2d9cc3c80f95e2fda69389a33378ba6c4",
+  "decoder_source_sha256": "2ae74e8bd4d604bef8a5a656c41a748dc6408e53588df1fbfd89a529b4e5420a",
+  "timing_energy": null,
+  "exclusions": [
+    "No precharge/evaluate phase generator or qualified phase drivers",
+    "No20tile output mux or global output network",
+    "No output capture latches",
+    "No decoded-tile extracted transient/distributedRC qualification",
+    "No20tile decoded composition",
+    "No decoded-tile LEF abstract",
+    "Scoped DRC excludes antenna and density"
+  ],
+  "preserved_incomplete_or_failed_checks": [
+    {
+      "artifact": "v1/netgen.log",
+      "status": "bounded_incomplete",
+      "note": "Monolithic Netgen bounded after600seconds if unfinished. Compositional result reported separately."
+    },
+    {
+      "artifact": "v1/dimensions-check-failed-v1.json",
+      "status": "checker corrected",
+      "note": "Initial auxiliary fanout counter incorrectly distinguished interchangeable source/drain ordering. Corrected counter passes; no circuit changed."
+    },
+    {
+      "artifact": "bank_lvs-failed-v1.py",
+      "status": "checker corrected",
+      "note": "Initial partition selector omitted precharge PMOS whose local node is IDX instead of OUT/WL. Added IDX ownership; no circuit changed."
+    }
+  ]
+}

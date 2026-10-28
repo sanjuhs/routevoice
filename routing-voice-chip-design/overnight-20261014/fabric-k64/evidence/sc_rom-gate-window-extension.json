@@ -1,0 +1,13 @@
+{
+  "parent_pid": 39716,
+  "child_group": 39718,
+  "elapsed_s": 4988.528938055038,
+  "original_monitor_paused": true,
+  "simulation_paused": false,
+  "extended_gate_limit_s": 5400,
+  "free_gib": 25.88467025756836,
+  "status": "monitoring_finished",
+  "reason": "The original one-hour gate-only guard was a worker default; observed 32-minute ARRAY replay plus 17-minute SC compile warrants room for the larger SC netlist. User SC physical limit remains respected.",
+  "stop_reason": null,
+  "original_monitor_resumed": true
+}

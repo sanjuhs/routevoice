@@ -1,0 +1,70 @@
+{
+  "DESIGN_NAME": "w5_latch128",
+  "VERILOG_FILES": [
+    "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/taalas-array/periphery/latch128.v"
+  ],
+  "VERILOG_INCLUDE_DIRS": [],
+  "CLOCK_PORT": "capture_gate",
+  "CLOCK_PERIOD": 20.0,
+  "FP_CORE_UTIL": 40,
+  "PL_TARGET_DENSITY_PCT": 45,
+  "DRT_THREADS": 1,
+  "STA_THREADS": 1,
+  "RUN_MAGIC_DRC": true,
+  "RUN_KLAYOUT_DRC": true,
+  "RUN_LVS": true,
+  "RUN_CTS": false,
+  "RUN_DRT": true,
+  "RUN_FILL_INSERTION": true,
+  "RUN_MCSTA": true,
+  "RUN_SPEF_EXTRACTION": true,
+  "RUN_ANTENNA_REPAIR": true,
+  "VDD_PIN_VOLTAGE": 3.3,
+  "DEFAULT_CORNER": "nom_tt_025C_3v30",
+  "STA_CORNERS": [
+    "nom_tt_025C_3v30",
+    "nom_ss_125C_3v00",
+    "nom_ff_n40C_3v60",
+    "min_tt_025C_3v30",
+    "min_ss_125C_3v00",
+    "min_ff_n40C_3v60",
+    "max_tt_025C_3v30",
+    "max_ss_125C_3v00",
+    "max_ff_n40C_3v60"
+  ],
+  "TIMING_VIOLATION_CORNERS": [
+    "*"
+  ],
+  "LIB": {
+    "*_tt_025C_3v30": [
+      "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric-k64/pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__tt_025C_3v30.lib"
+    ],
+    "*_ss_125C_3v00": [
+      "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric-k64/pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__ss_125C_3v00.lib"
+    ],
+    "*_ff_n40C_3v60": [
+      "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric-k64/pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__ff_n40C_3v60.lib"
+    ]
+  },
+  "CLOCK_NET": "capture_gate",
+  "FP_SIZING": "absolute",
+  "DIE_AREA": [
+    0,
+    0,
+    450,
+    80
+  ],
+  "CORE_AREA": [
+    10,
+    10,
+    440,
+    70
+  ],
+  "SYNTH_CAP_LOAD": 10,
+  "RUN_IRDROP_REPORT": false,
+  "IO_PIN_ORDER_CFG": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/taalas-array/periphery/latch-pin-order.cfg",
+  "DESIGN_REPAIR_BUFFER_INPUT_PORTS": false,
+  "DESIGN_REPAIR_BUFFER_OUTPUT_PORTS": false,
+  "RUN_POST_CTS_RESIZER_TIMING": false,
+  "ERROR_ON_LATCHES": false
+}

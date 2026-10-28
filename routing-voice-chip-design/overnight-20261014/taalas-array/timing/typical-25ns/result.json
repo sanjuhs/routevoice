@@ -1,0 +1,87 @@
+{
+  "corner": "typical",
+  "voltage_v": 3.3,
+  "temperature_c": 25,
+  "period_ns": 25,
+  "evaluate_start_ns": 2.5,
+  "capture_ns": 17.500000000000004,
+  "checked_bits": 1024,
+  "addressed_local_rows": [
+    0,
+    1,
+    6,
+    7,
+    15,
+    31,
+    47,
+    63
+  ],
+  "raw_70_30_failures": 0,
+  "restored_90_10_failures": 0,
+  "maximum_sampled_settled_time_ns_after_evaluate": 1.5776083999999928,
+  "mean_net_source_energy_pj_per_32_lane_row_read": 54.58468391384162,
+  "maximum_net_source_energy_pj_per_32_lane_row_read": 58.84380006553295,
+  "mean_energy_pj_per_four_bit_index": 1.7057713723075507,
+  "excludes_startup_row": 0,
+  "deck_sha256": "c8a3dd50b8a90644eababe3fafa49badc2d5929dc4d1472a205b3ca4fa93dfc2",
+  "trace_sha256": "b70324a00334249d4b291ab747c4d5ce7c8cd70bb2ad3fa1deb33f5429b819b0",
+  "wall_seconds": 39.674445083132014,
+  "rows": [
+    {
+      "local_row": 0,
+      "raw_failures": 0,
+      "restored_failures": 0,
+      "min_undischarged_bitline_fraction": 0.9999995454545455,
+      "max_discharged_bitline_fraction": 4.799440618768338e-06
+    },
+    {
+      "local_row": 1,
+      "raw_failures": 0,
+      "restored_failures": 0,
+      "min_undischarged_bitline_fraction": 0.9999995757575758,
+      "max_discharged_bitline_fraction": 6.17287337885624e-06
+    },
+    {
+      "local_row": 6,
+      "raw_failures": 0,
+      "restored_failures": 0,
+      "min_undischarged_bitline_fraction": 0.9999994799763443,
+      "max_discharged_bitline_fraction": 4.53867603848659e-06
+    },
+    {
+      "local_row": 7,
+      "raw_failures": 0,
+      "restored_failures": 0,
+      "min_undischarged_bitline_fraction": 0.9999994636363637,
+      "max_discharged_bitline_fraction": 4.275632239375755e-06
+    },
+    {
+      "local_row": 15,
+      "raw_failures": 0,
+      "restored_failures": 0,
+      "min_undischarged_bitline_fraction": 0.9999995181818183,
+      "max_discharged_bitline_fraction": 4.184562040655997e-06
+    },
+    {
+      "local_row": 31,
+      "raw_failures": 0,
+      "restored_failures": 0,
+      "min_undischarged_bitline_fraction": 0.9999995,
+      "max_discharged_bitline_fraction": 5.054831827877448e-06
+    },
+    {
+      "local_row": 47,
+      "raw_failures": 0,
+      "restored_failures": 0,
+      "min_undischarged_bitline_fraction": 0.9999994787878789,
+      "max_discharged_bitline_fraction": 3.1287681879144194e-06
+    },
+    {
+      "local_row": 63,
+      "raw_failures": 0,
+      "restored_failures": 0,
+      "min_undischarged_bitline_fraction": 0.9999994585957213,
+      "max_discharged_bitline_fraction": 2.4192887202742905e-06
+    }
+  ]
+}

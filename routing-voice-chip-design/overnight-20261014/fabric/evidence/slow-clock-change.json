@@ -1,0 +1,12 @@
+{
+  "source_state": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/runs/rv_fixed_proj64x320_rom-util30/23-openroad-cts/state_out.json",
+  "source_sdc": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/runs/rv_fixed_proj64x320_rom-util30/23-openroad-cts/rv_fixed_proj64x320_rom.sdc",
+  "source_sdc_sha256": "9fda2e48d179a2c528f203949d6626f69bbfaa785af3ad248abfd9ca8e61a344",
+  "new_sdc_sha256": "2c6138a12c543b8d09b4aa5cb0aa301da61564374d3f5c34fdb53d8edcd0406c",
+  "clock_period_ns_before": 20,
+  "clock_period_ns_after": 200,
+  "io_delay_ns_before": 4,
+  "io_delay_ns_after": 40,
+  "io_constraints_changed": 78,
+  "reason": "20 ns post-CTS typical setup slack -47.2934 ns; setup repair manually stopped after roughly 31 minutes to pursue routing at a conservative clock. No RTL changes or signoff-check suppression. PnR equivalent-corner dedup enabled; final extracted corners retained."
+}

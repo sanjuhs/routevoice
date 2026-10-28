@@ -1,0 +1,42 @@
+{
+  "corner": "API_fixture_TT_not_projection",
+  "provenance": {
+    "inputs_sha256": {
+      "/Volumes/Extreme Pro Dev/coding/llm-hardware/route-voice-llm-hardware-v1-storage/routing-voice-chip-design/pdks/ciel/gf180mcu/versions/54435919abffb937387ec956209f9cf5fd2dfbee/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__tt_025C_3v30.lib": "f9dee07cf158324934b0c59144d970a2e8313f43533ede6283ec3c136f82fe53",
+      "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/projection-complete/macro/PITCH_BANK_R1280.lib": "6008dd5e970e9a1078bf6f98c4d5d21edb926973949e2c1c2be04d5782e25815",
+      "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/projection-complete/power/api-fixture/probe.v": "264d2708eac373d092d51a30245b255bbcbe7ab059509fc5be1a23da79e8ad14",
+      "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/projection-complete/power/api-fixture/probe.sdc": "78242fac8f5fa1d3c4591b879e6428411959090358270f4b9a9555c502934273",
+      "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/projection-complete/power/api-fixture/probe.spef": "13aee725d4cda239dc8e65c66c27054e9e33d8d473d954d351e423f3ec55a80e"
+    },
+    "script_sha256": "2d5d00e548caa292343d8c964db3f833d28abef16109f54f89dcbb353a79f532",
+    "corner": "API_fixture_TT_not_projection",
+    "macro_output_pattern": "_cell_/ZN"
+  },
+  "scenarios": {
+    "original": {
+      "raw_summary": "Setup (max) and hold (min) under this scenario:\nworst slack max 19.721891\nworst slack min 0.173211\ntns max 0.000000\ntns min 0.000000\n",
+      "setup_worst_slack_report_units": null,
+      "hold_worst_slack_report_units": null,
+      "units_report": "units.rpt",
+      "setup_report": "original-setup.rpt",
+      "hold_report": "original-hold.rpt"
+    },
+    "macro-multicycle-3-2": {
+      "raw_summary": "Setup (max) and hold (min) under this scenario:\nworst slack max 59.721893\nworst slack min 0.173211\ntns max 0.000000\ntns min 0.000000\n",
+      "setup_worst_slack_report_units": null,
+      "hold_worst_slack_report_units": null,
+      "units_report": "units.rpt",
+      "setup_report": "macro-multicycle-3-2-setup.rpt",
+      "hold_report": "macro-multicycle-3-2-hold.rpt"
+    }
+  },
+  "full_bank_timing_qualified": false,
+  "limitations": [
+    "PC-to-output44ns engineering proxy, not full-bank corner characterization.",
+    "Independent WL-to-output timing arcs absent.",
+    "3setup/2hold scenario relies on actual protocol timing; does not prove it.",
+    "Original scenario preserves input SDC; a single-cycle label requires verifying that SDC."
+  ],
+  "multicycle_scope": "Pattern: _cell_/ZN\nMatched pins: 1\nSetup multiplier: 3; hold multiplier: 2\nOriginal reports preserve supplied SDC constraints. Verify the input SDC contains the intended single-cycle baseline.\nMacro library uses a PC-to-output44ns proxy and omits independent WL-to-output arcs. Neither scenario qualifies full-bank timing.\n",
+  "parasitic_annotation": "Found 0 unannotated drivers.\nFound 0 partially unannotated drivers.\n"
+}

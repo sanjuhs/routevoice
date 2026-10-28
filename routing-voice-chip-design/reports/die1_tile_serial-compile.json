@@ -1,0 +1,14 @@
+{
+  "inputs": 8,
+  "outputs": 8,
+  "input_bits": 9,
+  "weight_bits": 9,
+  "accumulator_bits": 21,
+  "weight_storage_bits": 0,
+  "coefficients": 64,
+  "nonzero_coefficients": 64,
+  "latency_cycles": 9,
+  "initiation_interval_cycles": 10,
+  "interface": "single clock ready/valid; output holds under backpressure; synchronous active-low reset",
+  "architecture": "bit-serial activations, fixed coefficients"
+}

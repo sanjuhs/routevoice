@@ -1,0 +1,25 @@
+{
+  "returncode": 0,
+  "status": "finished",
+  "elapsed_seconds": 32.972159625031054,
+  "method": "Official ext2spice lvs followed by cthresh0 on previously saved native .ext; no new geometry extraction.",
+  "native_ext_sha256": "73b3502c7294f325537d86a8b62a5b94ae75d93224c933e23dffc143c00c3717",
+  "native_extraction_process_result": {
+    "returncode": 0,
+    "status": "finished",
+    "elapsed_seconds": 3122.505432124948
+  },
+  "native_ext_path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/taalas-pitch/verification/r1280-v2/W6_PITCH_BANK_FLAT.ext",
+  "artifact": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/taalas-pitch/timing/fullbank-caps/extracted-cap.spice.gz",
+  "artifact_sha256": "2a61727cea8a0f7181733d55823629024d41729a937866db5deb3719719218a9",
+  "bytes": 160751287,
+  "spice_uncompressed_sha256": "23e661e2aada06ed095adbba7308d64681101b0ec28cec8c180d7e60fc4af734",
+  "uncompressed_bytes": 1124050986,
+  "device_lines": 1643520,
+  "device_lines_byte_identical_to_lvs_export": true,
+  "native_ext_unchanged": true,
+  "producer_stream_sha256": "23e661e2aada06ed095adbba7308d64681101b0ec28cec8c180d7e60fc4af734",
+  "producer_uncompressed_bytes": 1124050986,
+  "gzip_roundtrip_stream_identity": true,
+  "compression": "FIFO to one Python gzip thread; raw producer-stream SHA256 equals independently decompressed artifact SHA256; parent authorized2CPU bound"
+}

@@ -1,0 +1,46 @@
+{
+  "status": "scripts_ready_and_api_fixture_tested",
+  "complete_projection_analysis_executed": false,
+  "files": [
+    "run_power.py",
+    "postroute_power.tcl",
+    "README.md",
+    "idle_accounting.py",
+    "mix_active_idle.py",
+    "postroute_timing.tcl",
+    "run_timing.py",
+    "test_idle_timing_api.py"
+  ],
+  "tested": {
+    "local_OpenSTA_version": "2.7.0",
+    "api_fixture": "api-fixture-output-v5/results.json",
+    "fixture_scope": "synthetic one-inverter API test only",
+    "direct_fixture_pins": 4,
+    "total_fixture_pins": 4,
+    "retained_W2b_annotation_parser": true,
+    "retained_W2b_power_parser": true,
+    "corrected_macro_Liberty_parser": true,
+    "escaped_dotted_instance_actual_Verilator_VCD": {
+      "receipt": "escaped-api-output/results.json",
+      "annotation": "4/4 pins",
+      "unmodified_VCD": true,
+      "verilator": "5.050",
+      "scope": "tb/dut",
+      "instance": "engine._cell_",
+      "projection_evidence": false
+    },
+    "idle_and_timing_extension": {
+      "receipt_prefix": "idle-timing-api-v2",
+      "idle_zero_projections": true,
+      "active_idle_always_clocked_mixture": true,
+      "timing_original_and_macro_only_3setup_2hold": true,
+      "projection_evidence": false
+    }
+  },
+  "fullbank_power_measured": false,
+  "real_time_rate_assumed": null,
+  "outputs_complete_projection_energy_and_power": "null until qualified full array contribution exists",
+  "cloud_jobs_launched": false,
+  "complete_projection_timing_analysis_executed": false,
+  "conditional_source_supported_rate_Hz": 50
+}

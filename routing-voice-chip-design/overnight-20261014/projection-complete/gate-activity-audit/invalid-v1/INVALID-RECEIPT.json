@@ -1,0 +1,13 @@
+{
+  "status": "INVALID FAILURE ARTIFACT - DO NOT ANNOTATE OR USE FOR POWER",
+  "reason": "Four $readmem files were missing: inputs, expected outputs, activation scales, and integer-all data. Simulation stopped by parent; any apparent match would be invalid.",
+  "compressed_local_path": "overnight-20261014/projection-complete/gate-activity-audit/invalid-v1/gate-speech-v1-invalid-missing-vectors.vcd.gz",
+  "compressed_bytes": 24634184,
+  "compressed_sha256": "03c9657c2de5df8585c14ecbb09cd43bf95050605530a57d33c97969dc8e8c03",
+  "matches_remote_compressed_SHA": true,
+  "raw_remote_retained": true,
+  "raw_decompressed_sha256": "7b3296f702e33cee8c6754241c94c425b6fa6b196b8a503977839ae178ba0130",
+  "gzip_integrity_verified_remotely": true,
+  "power_or_annotation_run": false,
+  "Mac_free_GiB_after_copy": 24.190330505371094
+}

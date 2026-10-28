@@ -1,0 +1,16 @@
+{
+  "stage": "unit-front",
+  "command": [
+    "/usr/bin/nice",
+    "-n",
+    "10",
+    "/Users/sanju/.local/state/routevoice-internal-runs/20261014/onchip-front/unit-front/Vrv_onchip_frontend_v1",
+    "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3"
+  ],
+  "cwd": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design",
+  "log": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/onchip-front/logs/20261014T010457-unit-front.log",
+  "started": "20261014T010457",
+  "exit_code": 0,
+  "pid": 15609,
+  "elapsed_seconds": 2.1805759160779417
+}

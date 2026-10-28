@@ -1,0 +1,11 @@
+{
+  "epoch": 1791923414.567541,
+  "process_columns": "pid ppid nice elapsed cpu_percent rss_kib command",
+  "worker_processes": [
+    "22557 22546 10       47:45   0.2  24928 /nix/store/bb2dww8j5afza69c8drndbxcz6b1cf2v-python3-3.13.9/bin/python3.13 /nix/store/rscp9r2p0ahwriqlw443nsicbidixv1m-python3.13-librelane-3.0.11/bin/.librelane-wrapped --condensed --log-level WARNING --manual-pdk --pdk gf180mcuD --pdk-root /Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric-k64/pdks --design-dir /Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric-k64 --run-tag array_port-v2 --jobs 3 /Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric-k64/configs/array_port.json",
+    "32980 22557 10       21:53 100.0 2907104 /nix/store/icn6jlv55q9rjxl95ks7anlf82kjw422-openroad-2026-02-17/bin/openroad -exit -no_splash -metrics /Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric-k64/runs/array_port-v2/32-openroad-repairdesignpostgpl/or_metrics_out.json /nix/store/fp8lr6m38svkva6l93065sr0d3yyz6iq-python3-3.13.9-env/lib/python3.13/site-packages/librelane/scripts/openroad/repair_design.tcl",
+    "39725 39722 20       05:20  99.1 5319984 /opt/homebrew/Cellar/verilator/5.050/bin/verilator_bin --binary --timing --top-module tb -DFUNCTIONAL -Wno-fatal -j 1 --Mdir gate-sc_rom -o sim /Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric-k64/pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/verilog/primitives.v /Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric-k64/pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/verilog/gf180mcu_fd_sc_mcu7t5v0.v /Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric-k64/runs/sc_rom-v2/06-yosys-synthesis/rv_k64_sc_rom.nl.v tb/gate_sc_rom.sv",
+    "39568 34759 10       05:52  99.6  59264 gate-array_port/sim"
+  ],
+  "configured_compute_thread_upper_bound": 5
+}

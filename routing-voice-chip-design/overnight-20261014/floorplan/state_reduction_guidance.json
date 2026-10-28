@@ -1,0 +1,985 @@
+{
+  "scope": "Hypothetical capacity-only guidance; no RTL/state removed and no numerical/throughput equivalence proven",
+  "reticle_mm": [
+    26,
+    33
+  ],
+  "core_mm2": 777.3600000000001,
+  "baseline_blocks_mm2": 733.9061563542598,
+  "area_only_removal_lower_bound_bytes": 0,
+  "first_fitting_removed_bytes": 165220,
+  "first_fitting_removed_kB_decimal": 165.22,
+  "first_fitting_removed_KiB": 161.34765625,
+  "remaining_logical_bytes": 897507.25,
+  "area_saved_mm2": 36.971515428571436,
+  "mm2_saved_per_KiB": 0.2291419428571429,
+  "search": "Every integer-byte reduction checked through first fit; equivalent geometries cached by tile count and5um side quantization. No monotonic binary-search assumption.",
+  "distinct_geometries_checked": 54,
+  "sampled_trials_1KiB": [
+    {
+      "removed_bytes": 0,
+      "removed_KiB": 0.0,
+      "placement_pass": false
+    },
+    {
+      "removed_bytes": 1024,
+      "removed_KiB": 1.0,
+      "placement_pass": false
+    },
+    {
+      "removed_bytes": 2048,
+      "removed_KiB": 2.0,
+      "placement_pass": false
+    },
+    {
+      "removed_bytes": 3072,
+      "removed_KiB": 3.0,
+      "placement_pass": false
+    },
+    {
+      "removed_bytes": 4096,
+      "removed_KiB": 4.0,
+      "placement_pass": false
+    },
+    {
+      "removed_bytes": 5120,
+      "removed_KiB": 5.0,
+      "placement_pass": false
+    },
+    {
+      "removed_bytes": 6144,
+      "removed_KiB": 6.0,
+      "placement_pass": false
+    },
+    {
+      "removed_bytes": 7168,
+      "removed_KiB": 7.0,
+      "placement_pass": false
+    },
+    {
+      "removed_bytes": 8192,
+      "removed_KiB": 8.0,
+      "placement_pass": false
+    },
+    {
+      "removed_bytes": 9216,
+      "removed_KiB": 9.0,
+      "placement_pass": false
+    },
+    {
+      "removed_bytes": 10240,
+      "removed_KiB": 10.0,
+      "placement_pass": false
+    },
+    {
+      "removed_bytes": 11264,
+      "removed_KiB": 11.0,
+      "placement_pass": false
+    },
+    {
+      "removed_bytes": 12288,
+      "removed_KiB": 12.0,
+      "placement_pass": false
+    },
+    {
+      "removed_bytes": 13312,
+      "removed_KiB": 13.0,
+      "placement_pass": false
+    },
+    {
+      "removed_bytes": 14336,
+      "removed_KiB": 14.0,
+      "placement_pass": false
+    },
+    {
+      "removed_bytes": 15360,
+      "removed_KiB": 15.0,
+      "placement_pass": false
+    },
+    {
+      "removed_bytes": 16384,
+      "removed_KiB": 16.0,
+      "placement_pass": false
+    },
+    {
+      "removed_bytes": 17408,
+      "removed_KiB": 17.0,
+      "placement_pass": false
+    },
+    {
+      "removed_bytes": 18432,
+      "removed_KiB": 18.0,
+      "placement_pass": false
+    },
+    {
+      "removed_bytes": 19456,
+      "removed_KiB": 19.0,
+      "placement_pass": false
+    },
+    {
+      "removed_bytes": 20480,
+      "removed_KiB": 20.0,
+      "placement_pass": false
+    },
+    {
+      "removed_bytes": 21504,
+      "removed_KiB": 21.0,
+      "placement_pass": false
+    },
+    {
+      "removed_bytes": 22528,
+      "removed_KiB": 22.0,
+      "placement_pass": false
+    },
+    {
+      "removed_bytes": 23552,
+      "removed_KiB": 23.0,
+      "placement_pass": false
+    },
+    {
+      "removed_bytes": 24576,
+      "removed_KiB": 24.0,
+      "placement_pass": false
+    },
+    {
+      "removed_bytes": 25600,
+      "removed_KiB": 25.0,
+      "placement_pass": false
+    },
+    {
+      "removed_bytes": 26624,
+      "removed_KiB": 26.0,
+      "placement_pass": false
+    },
+    {
+      "removed_bytes": 27648,
+      "removed_KiB": 27.0,
+      "placement_pass": false
+    },
+    {
+      "removed_bytes": 28672,
+      "removed_KiB": 28.0,
+      "placement_pass": false
+    },
+    {
+      "removed_bytes": 29696,
+      "removed_KiB": 29.0,
+      "placement_pass": false
+    },
+    {
+      "removed_bytes": 30720,
+      "removed_KiB": 30.0,
+      "placement_pass": false
+    },
+    {
+      "removed_bytes": 31744,
+      "removed_KiB": 31.0,
+      "placement_pass": false
+    },
+    {
+      "removed_bytes": 32768,
+      "removed_KiB": 32.0,
+      "placement_pass": false
+    },
+    {
+      "removed_bytes": 33792,
+      "removed_KiB": 33.0,
+      "placement_pass": false
+    },
+    {
+      "removed_bytes": 34816,
+      "removed_KiB": 34.0,
+      "placement_pass": false
+    },
+    {
+      "removed_bytes": 35840,
+      "removed_KiB": 35.0,
+      "placement_pass": false
+    },
+    {
+      "removed_bytes": 36864,
+      "removed_KiB": 36.0,
+      "placement_pass": false
+    },
+    {
+      "removed_bytes": 37888,
+      "removed_KiB": 37.0,
+      "placement_pass": false
+    },
+    {
+      "removed_bytes": 38912,
+      "removed_KiB": 38.0,
+      "placement_pass": false
+    },
+    {
+      "removed_bytes": 39936,
+      "removed_KiB": 39.0,
+      "placement_pass": false
+    },
+    {
+      "removed_bytes": 40960,
+      "removed_KiB": 40.0,
+      "placement_pass": false
+    },
+    {
+      "removed_bytes": 41984,
+      "removed_KiB": 41.0,
+      "placement_pass": false
+    },
+    {
+      "removed_bytes": 43008,
+      "removed_KiB": 42.0,
+      "placement_pass": false
+    },
+    {
+      "removed_bytes": 44032,
+      "removed_KiB": 43.0,
+      "placement_pass": false
+    },
+    {
+      "removed_bytes": 45056,
+      "removed_KiB": 44.0,
+      "placement_pass": false
+    },
+    {
+      "removed_bytes": 46080,
+      "removed_KiB": 45.0,
+      "placement_pass": false
+    },
+    {
+      "removed_bytes": 47104,
+      "removed_KiB": 46.0,
+      "placement_pass": false
+    },
+    {
+      "removed_bytes": 48128,
+      "removed_KiB": 47.0,
+      "placement_pass": false
+    },
+    {
+      "removed_bytes": 49152,
+      "removed_KiB": 48.0,
+      "placement_pass": false
+    },
+    {
+      "removed_bytes": 50176,
+      "removed_KiB": 49.0,
+      "placement_pass": false
+    },
+    {
+      "removed_bytes": 51200,
+      "removed_KiB": 50.0,
+      "placement_pass": false
+    },
+    {
+      "removed_bytes": 52224,
+      "removed_KiB": 51.0,
+      "placement_pass": false
+    },
+    {
+      "removed_bytes": 53248,
+      "removed_KiB": 52.0,
+      "placement_pass": false
+    },
+    {
+      "removed_bytes": 54272,
+      "removed_KiB": 53.0,
+      "placement_pass": false
+    },
+    {
+      "removed_bytes": 55296,
+      "removed_KiB": 54.0,
+      "placement_pass": false
+    },
+    {
+      "removed_bytes": 56320,
+      "removed_KiB": 55.0,
+      "placement_pass": false
+    },
+    {
+      "removed_bytes": 57344,
+      "removed_KiB": 56.0,
+      "placement_pass": false
+    },
+    {
+      "removed_bytes": 58368,
+      "removed_KiB": 57.0,
+      "placement_pass": false
+    },
+    {
+      "removed_bytes": 59392,
+      "removed_KiB": 58.0,
+      "placement_pass": false
+    },
+    {
+      "removed_bytes": 60416,
+      "removed_KiB": 59.0,
+      "placement_pass": false
+    },
+    {
+      "removed_bytes": 61440,
+      "removed_KiB": 60.0,
+      "placement_pass": false
+    },
+    {
+      "removed_bytes": 62464,
+      "removed_KiB": 61.0,
+      "placement_pass": false
+    },
+    {
+      "removed_bytes": 63488,
+      "removed_KiB": 62.0,
+      "placement_pass": false
+    },
+    {
+      "removed_bytes": 64512,
+      "removed_KiB": 63.0,
+      "placement_pass": false
+    },
+    {
+      "removed_bytes": 65536,
+      "removed_KiB": 64.0,
+      "placement_pass": false
+    },
+    {
+      "removed_bytes": 66560,
+      "removed_KiB": 65.0,
+      "placement_pass": false
+    },
+    {
+      "removed_bytes": 67584,
+      "removed_KiB": 66.0,
+      "placement_pass": false
+    },
+    {
+      "removed_bytes": 68608,
+      "removed_KiB": 67.0,
+      "placement_pass": false
+    },
+    {
+      "removed_bytes": 69632,
+      "removed_KiB": 68.0,
+      "placement_pass": false
+    },
+    {
+      "removed_bytes": 70656,
+      "removed_KiB": 69.0,
+      "placement_pass": false
+    },
+    {
+      "removed_bytes": 71680,
+      "removed_KiB": 70.0,
+      "placement_pass": false
+    },
+    {
+      "removed_bytes": 72704,
+      "removed_KiB": 71.0,
+      "placement_pass": false
+    },
+    {
+      "removed_bytes": 73728,
+      "removed_KiB": 72.0,
+      "placement_pass": false
+    },
+    {
+      "removed_bytes": 74752,
+      "removed_KiB": 73.0,
+      "placement_pass": false
+    },
+    {
+      "removed_bytes": 75776,
+      "removed_KiB": 74.0,
+      "placement_pass": false
+    },
+    {
+      "removed_bytes": 76800,
+      "removed_KiB": 75.0,
+      "placement_pass": false
+    },
+    {
+      "removed_bytes": 77824,
+      "removed_KiB": 76.0,
+      "placement_pass": false
+    },
+    {
+      "removed_bytes": 78848,
+      "removed_KiB": 77.0,
+      "placement_pass": false
+    },
+    {
+      "removed_bytes": 79872,
+      "removed_KiB": 78.0,
+      "placement_pass": false
+    },
+    {
+      "removed_bytes": 80896,
+      "removed_KiB": 79.0,
+      "placement_pass": false
+    },
+    {
+      "removed_bytes": 81920,
+      "removed_KiB": 80.0,
+      "placement_pass": false
+    },
+    {
+      "removed_bytes": 82944,
+      "removed_KiB": 81.0,
+      "placement_pass": false
+    },
+    {
+      "removed_bytes": 83968,
+      "removed_KiB": 82.0,
+      "placement_pass": false
+    },
+    {
+      "removed_bytes": 84992,
+      "removed_KiB": 83.0,
+      "placement_pass": false
+    },
+    {
+      "removed_bytes": 86016,
+      "removed_KiB": 84.0,
+      "placement_pass": false
+    },
+    {
+      "removed_bytes": 87040,
+      "removed_KiB": 85.0,
+      "placement_pass": false
+    },
+    {
+      "removed_bytes": 88064,
+      "removed_KiB": 86.0,
+      "placement_pass": false
+    },
+    {
+      "removed_bytes": 89088,
+      "removed_KiB": 87.0,
+      "placement_pass": false
+    },
+    {
+      "removed_bytes": 90112,
+      "removed_KiB": 88.0,
+      "placement_pass": false
+    },
+    {
+      "removed_bytes": 91136,
+      "removed_KiB": 89.0,
+      "placement_pass": false
+    },
+    {
+      "removed_bytes": 92160,
+      "removed_KiB": 90.0,
+      "placement_pass": false
+    },
+    {
+      "removed_bytes": 93184,
+      "removed_KiB": 91.0,
+      "placement_pass": false
+    },
+    {
+      "removed_bytes": 94208,
+      "removed_KiB": 92.0,
+      "placement_pass": false
+    },
+    {
+      "removed_bytes": 95232,
+      "removed_KiB": 93.0,
+      "placement_pass": false
+    },
+    {
+      "removed_bytes": 96256,
+      "removed_KiB": 94.0,
+      "placement_pass": false
+    },
+    {
+      "removed_bytes": 97280,
+      "removed_KiB": 95.0,
+      "placement_pass": false
+    },
+    {
+      "removed_bytes": 98304,
+      "removed_KiB": 96.0,
+      "placement_pass": false
+    },
+    {
+      "removed_bytes": 99328,
+      "removed_KiB": 97.0,
+      "placement_pass": false
+    },
+    {
+      "removed_bytes": 100352,
+      "removed_KiB": 98.0,
+      "placement_pass": false
+    },
+    {
+      "removed_bytes": 101376,
+      "removed_KiB": 99.0,
+      "placement_pass": false
+    },
+    {
+      "removed_bytes": 102400,
+      "removed_KiB": 100.0,
+      "placement_pass": false
+    },
+    {
+      "removed_bytes": 103424,
+      "removed_KiB": 101.0,
+      "placement_pass": false
+    },
+    {
+      "removed_bytes": 104448,
+      "removed_KiB": 102.0,
+      "placement_pass": false
+    },
+    {
+      "removed_bytes": 105472,
+      "removed_KiB": 103.0,
+      "placement_pass": false
+    },
+    {
+      "removed_bytes": 106496,
+      "removed_KiB": 104.0,
+      "placement_pass": false
+    },
+    {
+      "removed_bytes": 107520,
+      "removed_KiB": 105.0,
+      "placement_pass": false
+    },
+    {
+      "removed_bytes": 108544,
+      "removed_KiB": 106.0,
+      "placement_pass": false
+    },
+    {
+      "removed_bytes": 109568,
+      "removed_KiB": 107.0,
+      "placement_pass": false
+    },
+    {
+      "removed_bytes": 110592,
+      "removed_KiB": 108.0,
+      "placement_pass": false
+    },
+    {
+      "removed_bytes": 111616,
+      "removed_KiB": 109.0,
+      "placement_pass": false
+    },
+    {
+      "removed_bytes": 112640,
+      "removed_KiB": 110.0,
+      "placement_pass": false
+    },
+    {
+      "removed_bytes": 113664,
+      "removed_KiB": 111.0,
+      "placement_pass": false
+    },
+    {
+      "removed_bytes": 114688,
+      "removed_KiB": 112.0,
+      "placement_pass": false
+    },
+    {
+      "removed_bytes": 115712,
+      "removed_KiB": 113.0,
+      "placement_pass": false
+    },
+    {
+      "removed_bytes": 116736,
+      "removed_KiB": 114.0,
+      "placement_pass": false
+    },
+    {
+      "removed_bytes": 117760,
+      "removed_KiB": 115.0,
+      "placement_pass": false
+    },
+    {
+      "removed_bytes": 118784,
+      "removed_KiB": 116.0,
+      "placement_pass": false
+    },
+    {
+      "removed_bytes": 119808,
+      "removed_KiB": 117.0,
+      "placement_pass": false
+    },
+    {
+      "removed_bytes": 120832,
+      "removed_KiB": 118.0,
+      "placement_pass": false
+    },
+    {
+      "removed_bytes": 121856,
+      "removed_KiB": 119.0,
+      "placement_pass": false
+    },
+    {
+      "removed_bytes": 122880,
+      "removed_KiB": 120.0,
+      "placement_pass": false
+    },
+    {
+      "removed_bytes": 123904,
+      "removed_KiB": 121.0,
+      "placement_pass": false
+    },
+    {
+      "removed_bytes": 124928,
+      "removed_KiB": 122.0,
+      "placement_pass": false
+    },
+    {
+      "removed_bytes": 125952,
+      "removed_KiB": 123.0,
+      "placement_pass": false
+    },
+    {
+      "removed_bytes": 126976,
+      "removed_KiB": 124.0,
+      "placement_pass": false
+    },
+    {
+      "removed_bytes": 128000,
+      "removed_KiB": 125.0,
+      "placement_pass": false
+    },
+    {
+      "removed_bytes": 129024,
+      "removed_KiB": 126.0,
+      "placement_pass": false
+    },
+    {
+      "removed_bytes": 130048,
+      "removed_KiB": 127.0,
+      "placement_pass": false
+    },
+    {
+      "removed_bytes": 131072,
+      "removed_KiB": 128.0,
+      "placement_pass": false
+    },
+    {
+      "removed_bytes": 132096,
+      "removed_KiB": 129.0,
+      "placement_pass": false
+    },
+    {
+      "removed_bytes": 133120,
+      "removed_KiB": 130.0,
+      "placement_pass": false
+    },
+    {
+      "removed_bytes": 134144,
+      "removed_KiB": 131.0,
+      "placement_pass": false
+    },
+    {
+      "removed_bytes": 135168,
+      "removed_KiB": 132.0,
+      "placement_pass": false
+    },
+    {
+      "removed_bytes": 136192,
+      "removed_KiB": 133.0,
+      "placement_pass": false
+    },
+    {
+      "removed_bytes": 137216,
+      "removed_KiB": 134.0,
+      "placement_pass": false
+    },
+    {
+      "removed_bytes": 138240,
+      "removed_KiB": 135.0,
+      "placement_pass": false
+    },
+    {
+      "removed_bytes": 139264,
+      "removed_KiB": 136.0,
+      "placement_pass": false
+    },
+    {
+      "removed_bytes": 140288,
+      "removed_KiB": 137.0,
+      "placement_pass": false
+    },
+    {
+      "removed_bytes": 141312,
+      "removed_KiB": 138.0,
+      "placement_pass": false
+    },
+    {
+      "removed_bytes": 142336,
+      "removed_KiB": 139.0,
+      "placement_pass": false
+    },
+    {
+      "removed_bytes": 143360,
+      "removed_KiB": 140.0,
+      "placement_pass": false
+    },
+    {
+      "removed_bytes": 144384,
+      "removed_KiB": 141.0,
+      "placement_pass": false
+    },
+    {
+      "removed_bytes": 145408,
+      "removed_KiB": 142.0,
+      "placement_pass": false
+    },
+    {
+      "removed_bytes": 146432,
+      "removed_KiB": 143.0,
+      "placement_pass": false
+    },
+    {
+      "removed_bytes": 147456,
+      "removed_KiB": 144.0,
+      "placement_pass": false
+    },
+    {
+      "removed_bytes": 148480,
+      "removed_KiB": 145.0,
+      "placement_pass": false
+    },
+    {
+      "removed_bytes": 149504,
+      "removed_KiB": 146.0,
+      "placement_pass": false
+    },
+    {
+      "removed_bytes": 150528,
+      "removed_KiB": 147.0,
+      "placement_pass": false
+    },
+    {
+      "removed_bytes": 151552,
+      "removed_KiB": 148.0,
+      "placement_pass": false
+    },
+    {
+      "removed_bytes": 152576,
+      "removed_KiB": 149.0,
+      "placement_pass": false
+    },
+    {
+      "removed_bytes": 153600,
+      "removed_KiB": 150.0,
+      "placement_pass": false
+    },
+    {
+      "removed_bytes": 154624,
+      "removed_KiB": 151.0,
+      "placement_pass": false
+    },
+    {
+      "removed_bytes": 155648,
+      "removed_KiB": 152.0,
+      "placement_pass": false
+    },
+    {
+      "removed_bytes": 156672,
+      "removed_KiB": 153.0,
+      "placement_pass": false
+    },
+    {
+      "removed_bytes": 157696,
+      "removed_KiB": 154.0,
+      "placement_pass": false
+    },
+    {
+      "removed_bytes": 158720,
+      "removed_KiB": 155.0,
+      "placement_pass": false
+    },
+    {
+      "removed_bytes": 159744,
+      "removed_KiB": 156.0,
+      "placement_pass": false
+    },
+    {
+      "removed_bytes": 160768,
+      "removed_KiB": 157.0,
+      "placement_pass": false
+    },
+    {
+      "removed_bytes": 161792,
+      "removed_KiB": 158.0,
+      "placement_pass": false
+    },
+    {
+      "removed_bytes": 162816,
+      "removed_KiB": 159.0,
+      "placement_pass": false
+    },
+    {
+      "removed_bytes": 163840,
+      "removed_KiB": 160.0,
+      "placement_pass": false
+    },
+    {
+      "removed_bytes": 164864,
+      "removed_KiB": 161.0,
+      "placement_pass": false
+    }
+  ],
+  "cases": [
+    {
+      "removed_bytes": 0,
+      "removed_kB_decimal": 0.0,
+      "removed_KiB": 0.0,
+      "placement_pass": false,
+      "block_area_mm2": 733.9061563542598
+    },
+    {
+      "removed_bytes": 165220,
+      "removed_kB_decimal": 165.22,
+      "removed_KiB": 161.34765625,
+      "placement_pass": true,
+      "block_area_mm2": 696.9346409256883
+    },
+    {
+      "removed_bytes": 81920,
+      "removed_kB_decimal": 81.92,
+      "removed_KiB": 80.0,
+      "placement_pass": false,
+      "block_area_mm2": 715.5748009256884
+    },
+    {
+      "removed_bytes": 163840,
+      "removed_kB_decimal": 163.84,
+      "removed_KiB": 160.0,
+      "placement_pass": false,
+      "block_area_mm2": 697.2434454971169
+    }
+  ],
+  "largest_equal_capacity_buffer_pairs": [
+    {
+      "module": "rv_encoder_bank_consumer_edge_v1",
+      "arrays": [
+        {
+          "path": "rv_allonchip_top_all_v1.original.sole_qualified_neural_parent.sole_neural_parent.existing_parent.qualified_child.backend.banks.bank0",
+          "instances": 1,
+          "module": "rv_encoder_bank_consumer_edge_v1",
+          "module_orig": "rv_encoder_bank_consumer_edge_v1",
+          "var": "bank0",
+          "dims": [
+            2560
+          ],
+          "elem_width": 256,
+          "bits_per_instance": 655360,
+          "total_bits": 655360,
+          "total_bytes": 81920.0,
+          "cls": "flop",
+          "classification": "mutable (clocked write)",
+          "writes": [
+            "clocked:nba"
+          ],
+          "reads": 1,
+          "src": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/experiments/chip-integration-20261011-encoder-memory-integration-v2/rv_encoder_bank_consumer_edge_v1.sv:31"
+        },
+        {
+          "path": "rv_allonchip_top_all_v1.original.sole_qualified_neural_parent.sole_neural_parent.existing_parent.qualified_child.backend.banks.bank1",
+          "instances": 1,
+          "module": "rv_encoder_bank_consumer_edge_v1",
+          "module_orig": "rv_encoder_bank_consumer_edge_v1",
+          "var": "bank1",
+          "dims": [
+            2560
+          ],
+          "elem_width": 256,
+          "bits_per_instance": 655360,
+          "total_bits": 655360,
+          "total_bytes": 81920.0,
+          "cls": "flop",
+          "classification": "mutable (clocked write)",
+          "writes": [
+            "clocked:nba"
+          ],
+          "reads": 1,
+          "src": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/experiments/chip-integration-20261011-encoder-memory-integration-v2/rv_encoder_bank_consumer_edge_v1.sv:31"
+        }
+      ],
+      "combined_bytes": 163840.0,
+      "one_buffer_bytes": 81920.0,
+      "scope": "Two equal-size physical buffers, not duplicate contents. Removal/sharing requires lifetime/ownership/throughput proof; not applied to baseline."
+    },
+    {
+      "module": "rv_producer_mutable_storage_v1",
+      "arrays": [
+        {
+          "path": "rv_allonchip_top_all_v1.original.sole_qualified_neural_parent.sole_neural_parent.existing_parent.producer_nexus.bank.bankA",
+          "instances": 1,
+          "module": "rv_producer_mutable_storage_v1",
+          "module_orig": "rv_producer_mutable_storage_v1",
+          "var": "bankA",
+          "dims": [
+            2560
+          ],
+          "elem_width": 256,
+          "bits_per_instance": 655360,
+          "total_bits": 655360,
+          "total_bytes": 81920.0,
+          "cls": "flop",
+          "classification": "mutable (clocked write)",
+          "writes": [
+            "clocked:nba"
+          ],
+          "reads": 1,
+          "src": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/experiments/chip-integration-20261012-producer-mutable-storage-source-v4/rv_producer_mutable_storage_v1.sv:31"
+        },
+        {
+          "path": "rv_allonchip_top_all_v1.original.sole_qualified_neural_parent.sole_neural_parent.existing_parent.producer_nexus.bank.bankB",
+          "instances": 1,
+          "module": "rv_producer_mutable_storage_v1",
+          "module_orig": "rv_producer_mutable_storage_v1",
+          "var": "bankB",
+          "dims": [
+            2560
+          ],
+          "elem_width": 256,
+          "bits_per_instance": 655360,
+          "total_bits": 655360,
+          "total_bytes": 81920.0,
+          "cls": "flop",
+          "classification": "mutable (clocked write)",
+          "writes": [
+            "clocked:nba"
+          ],
+          "reads": 1,
+          "src": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/experiments/chip-integration-20261012-producer-mutable-storage-source-v4/rv_producer_mutable_storage_v1.sv:31"
+        }
+      ],
+      "combined_bytes": 163840.0,
+      "one_buffer_bytes": 81920.0,
+      "scope": "Two equal-size physical buffers, not duplicate contents. Removal/sharing requires lifetime/ownership/throughput proof; not applied to baseline."
+    }
+  ],
+  "not_duplicate_examples": [
+    {
+      "var": "committed",
+      "bytes": 139392.0,
+      "module": "rv_compact_history_storage_v1"
+    },
+    {
+      "var": "keys",
+      "bytes": 84480.0,
+      "module": "taalas_compact_history_layer_self_o_q1"
+    },
+    {
+      "var": "values",
+      "bytes": 84480.0,
+      "module": "taalas_compact_history_layer_self_o_q1"
+    },
+    {
+      "var": "feature_bank",
+      "bytes": 81920.0,
+      "module": "rv_frontend_encoder_bridge"
+    }
+  ],
+  "qualification": "Baseline block area is below core area, so no strictly positive state-removal lower bound follows from area alone. Packing/layout improvement may replace reduction. Current deterministic abstract packing threshold is not a physical necessity or global optimum."
+}

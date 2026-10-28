@@ -1,0 +1,48 @@
+{
+  "classification": "engineering derivation/proxy, not full-bank characterization",
+  "measured_partial_SS_WL_settle_ns": 23.376321,
+  "measured_partial_reuse_period_ns": 60,
+  "measured_partial_output_load_pF": 0.01,
+  "proposed_integration_PC_to_WL_guard_ns": 20,
+  "derived_PC_to_OUT_proxy_ns": 44,
+  "proxy_output_transition_ns": 1,
+  "proxy_transition_measured": false,
+  "WL_input_cap_pF": 2,
+  "PC_input_cap_pF": 10,
+  "input_cap_derivation": {
+    "partial32lane_WL_explicit_C_max_pF": 0.02650314,
+    "partial32lane_PC_explicit_C_pF": 0.15156014,
+    "fullbank_wire_C_scaling": 10,
+    "nominal_tox_N_m": 8e-09,
+    "nominal_tox_P_m": 7.9e-09,
+    "access_gate_dimensions_um": [
+      0.36,
+      0.28
+    ],
+    "precharge_gate_dimensions_um": [
+      2.88,
+      0.28
+    ],
+    "devices": 1280,
+    "formula": "wire C*10 + epsilon0*3.9/tox*W*L*1280; round up to2pF/10pF as sensitivity assumption; not extracted fullbank characterization",
+    "exclusions": "full common rails, voltage-dependent gate charge/overlap, actual switching coupling, distributed effective load and complete PDN"
+  },
+  "power_model": null,
+  "SS_model_source": "overnight-20261014/taalas-pitch/timing/r1280-g02/ss-60ns-s32/result.json",
+  "cap_source": "overnight-20261014/taalas-pitch/timing/r1280-g02/joined-cap.spice",
+  "tox_source": "pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice:621,647",
+  "limitations": [
+    "Same proxy will apply at all integration corners; not independent TT/SS/FF data.",
+    "No WL->OUT arcs; PC phase proxy cannot establish decoder or WL timing closure.",
+    "No power numbers; missing macro power must remain separately unmeasured.",
+    "No minperiod/minpulse constraints because macro has no clock; physical phase protocol must be checked externally.",
+    "Output slew1ns is an explicit assumption; load/slew dependence uncharacterized."
+  ],
+  "threshold_conventions_percent": {
+    "input_rise_fall": 50,
+    "output_rise_fall": 50,
+    "slew_lower_rise_fall": 20,
+    "slew_upper_rise_fall": 80
+  },
+  "threshold_conventions_measured": false
+}

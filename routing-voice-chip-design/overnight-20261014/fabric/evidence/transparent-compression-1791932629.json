@@ -1,0 +1,88 @@
+{
+  "unix": 1791932629.3428621,
+  "method": "ditto --hfsCompression, SHA256 verified before atomic replace; transparent POSIX reads retain identical bytes",
+  "free_before_bytes": 26200592384,
+  "free_after_bytes": 26780467200,
+  "changes": [
+    {
+      "path": "runs/rv_fixed_proj320_dp-io-microns/01-openroad-ioplacement/rv_fixed_proj320_dp.def",
+      "sha256": "a3c989ab2d130e311683121390989718e0888e3a4053f266e47d7c9105346403",
+      "bytes": 70087316,
+      "before_allocated_bytes": 84320256,
+      "after_allocated_bytes": 12886016,
+      "flags": 32
+    },
+    {
+      "path": "runs/rv_fixed_proj320_dp-io-microns/01-openroad-ioplacement/rv_fixed_proj320_dp.nl.v",
+      "sha256": "83d6795cdce42bc740a7f29b4c286364840e89eb772ee2b4b155729324e22bea",
+      "bytes": 38037793,
+      "before_allocated_bytes": 38039552,
+      "after_allocated_bytes": 6574080,
+      "flags": 32
+    },
+    {
+      "path": "runs/rv_fixed_proj320_dp-io-microns/01-openroad-ioplacement/rv_fixed_proj320_dp.odb",
+      "sha256": "97167b3d8f9017da9298a4a49b8171a2f5a5e9da779686963d2f56ac850c8987",
+      "bytes": 170851183,
+      "before_allocated_bytes": 170852352,
+      "after_allocated_bytes": 45359104,
+      "flags": 32
+    },
+    {
+      "path": "runs/rv_fixed_proj320_dp-io-microns/01-openroad-ioplacement/rv_fixed_proj320_dp.pnl.v",
+      "sha256": "2541568aa210f4872e2f8d0dee2a90300eb588b233f38462c8d79809fda8d057",
+      "bytes": 54182707,
+      "before_allocated_bytes": 54185984,
+      "after_allocated_bytes": 6504448,
+      "flags": 32
+    },
+    {
+      "path": "runs/rv_fixed_proj320_dp-physical20/12-openroad-globalplacementskipio/rv_fixed_proj320_dp.def",
+      "sha256": "8cb0ab0c4270e833a55cf27d7be19a276424eb4ec5b4c0cbd3d6cc5203e99b27",
+      "bytes": 65887810,
+      "before_allocated_bytes": 66330624,
+      "after_allocated_bytes": 11730944,
+      "flags": 32
+    },
+    {
+      "path": "runs/rv_fixed_proj320_dp-physical20/12-openroad-globalplacementskipio/rv_fixed_proj320_dp.nl.v",
+      "sha256": "83d6795cdce42bc740a7f29b4c286364840e89eb772ee2b4b155729324e22bea",
+      "bytes": 38037793,
+      "before_allocated_bytes": 38039552,
+      "after_allocated_bytes": 6483968,
+      "flags": 32
+    },
+    {
+      "path": "runs/rv_fixed_proj320_dp-physical20/12-openroad-globalplacementskipio/rv_fixed_proj320_dp.odb",
+      "sha256": "879ecd8f88c177a13a9e0db8c3be04a3ebd25589de3b97a37920c3029a7905e3",
+      "bytes": 168231131,
+      "before_allocated_bytes": 168235008,
+      "after_allocated_bytes": 45281280,
+      "flags": 32
+    },
+    {
+      "path": "runs/rv_fixed_proj320_dp-physical20/12-openroad-globalplacementskipio/rv_fixed_proj320_dp.pnl.v",
+      "sha256": "2541568aa210f4872e2f8d0dee2a90300eb588b233f38462c8d79809fda8d057",
+      "bytes": 54182707,
+      "before_allocated_bytes": 54185984,
+      "after_allocated_bytes": 6483968,
+      "flags": 32
+    },
+    {
+      "path": "runs/rv_fixed_proj64x320_rom-pre-route-activity/01-openroad-stamidpnr/openroad-stamidpnr.log",
+      "sha256": "bb55ea16f4bef514b9f0917b354268057aed68cb8fe0e8810ec13f3a8bfb28f7",
+      "bytes": 28865184,
+      "before_allocated_bytes": 28868608,
+      "after_allocated_bytes": 5304320,
+      "flags": 32
+    },
+    {
+      "path": "runs/rv_fixed_proj64x320_rom-pre-route-slash-activity/01-openroad-stamidpnr/openroad-stamidpnr.log",
+      "sha256": "cf0452998fb0db43461ce606aebe8a156ba9747c7c86109f5413375eaf0fdc32",
+      "bytes": 28865202,
+      "before_allocated_bytes": 28868608,
+      "after_allocated_bytes": 5304320,
+      "flags": 32
+    }
+  ]
+}

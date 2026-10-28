@@ -1,0 +1,12 @@
+{
+  "changed_files": [
+    "tb/sc_rom.sv",
+    "tb/array_port.sv"
+  ],
+  "prior_manifest": "evidence/source-hashes-initial.json",
+  "reason": "Full-suite VCD instrumentation removed; dedicated trace benches retained. Both delivered full benches rerun and passed all 54 vectors. RTL/model/metadata unchanged.",
+  "verified_current_logs": [
+    "logs/array_port-full-simulation.log",
+    "logs/sc_rom-full-simulation.log"
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "case_id": "fp32_baseline-input-027",
+  "model": "fp32_baseline",
+  "id": "652-130737-0002",
+  "role": "validation",
+  "condition": "white_noise_10db",
+  "seed": null,
+  "reference": "WITH ENTREES SERVE CLARETS OR OTHER RED WINES SUCH AS SWISS BORDEAUX HUNGARIAN OR ITALIAN WINES",
+  "input_float32_sha256": "665c86229b23758317bff5f02d8309a7e03d6631b0627d50e84e8a42e64c819c",
+  "hypothesis": "With entrees, serve clerates or other red wines, such as Swiss, Forgo, Hungarian or Italian wines.",
+  "normalized_tokens": [
+    "with",
+    "entrees",
+    "serve",
+    "clerates",
+    "or",
+    "other",
+    "red",
+    "wines",
+    "such",
+    "as",
+    "swiss",
+    "forgo",
+    "hungarian",
+    "or",
+    "italian",
+    "wines"
+  ],
+  "edits": 2,
+  "reference_words": 16,
+  "hypothesis_words": 16,
+  "exact": false,
+  "lines": [
+    {
+      "text": "With entrees, serve clerates or other red wines, such as Swiss, Forgo, Hungarian or Italian wines.",
+      "start_time": 0.3840000033378601,
+      "duration": 7.008000373840332,
+      "is_complete": true,
+      "samples": 112128,
+      "input_float32_sha256": "39c180b1c1c23d8b32f95af73c6bfe725f80244192aea06328b253c50316c291"
+    }
+  ],
+  "request_sha256": "3c506b9d6f318b96bb162c9387847103d5d4b86420442bcbca0aea197465077a",
+  "worker_sha256": "4682e8a57db08e02a34f53b01f334f34faa3ca9a6546698f1e4650db359004b6",
+  "native_library_sha256": "1453a6c1c9072f3d05e9e5ae6ff423fae839e56631c5efb12bbd5c0280d04399",
+  "native_api_version": 30000,
+  "load_seconds": 0.04482929199002683,
+  "compute_seconds": 0.27916783303953707,
+  "audio_seconds": 7.57,
+  "process_cpu_seconds": 0.27919499999999997,
+  "voluntary_context_switches": 0,
+  "involuntary_context_switches": 34,
+  "system_load_average": [
+    10.57568359375,
+    9.021484375,
+    9.8798828125
+  ],
+  "options": null,
+  "flags": 0,
+  "process_id": 81045,
+  "isolation": "One audio clip/condition in a fresh native process; no previous utterance or VAD state."
+}

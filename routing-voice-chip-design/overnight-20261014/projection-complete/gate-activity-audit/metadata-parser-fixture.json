@@ -1,0 +1,51 @@
+{
+  "scope": "actual tiny Verilator API fixture, not projection",
+  "parser_pass": true,
+  "receipt": {
+    "path": "overnight-20261014/projection-complete/power/escaped-api/actual-verilator.vcd",
+    "bytes": 556,
+    "sha256": "d7a1e67758b1443dc366d929e9681ae1f4069e63c9f1511ee4ff18bf7cff2442",
+    "mtime_ns": 1791929344066646267,
+    "header_scope_count": 4,
+    "header_variable_declarations": 8,
+    "declared_bits_including_aliases": 8,
+    "sample_actual_leaf_scopes": [
+      "tb/dut/engine._cell_",
+      "tb/dut/engine._cell_/gf180mcu_fd_sc_mcu7t5v0__inv_inst"
+    ],
+    "sample_actual_leaf_pins": [
+      {
+        "scope": "tb/dut/engine._cell_",
+        "reference": "I",
+        "width": 1
+      },
+      {
+        "scope": "tb/dut/engine._cell_",
+        "reference": "ZN",
+        "width": 1
+      },
+      {
+        "scope": "tb/dut/engine._cell_/gf180mcu_fd_sc_mcu7t5v0__inv_inst",
+        "reference": "I",
+        "width": 1
+      },
+      {
+        "scope": "tb/dut/engine._cell_/gf180mcu_fd_sc_mcu7t5v0__inv_inst",
+        "reference": "ZN",
+        "width": 1
+      }
+    ],
+    "timescale_declaration": [
+      "$timescale 1ps $end"
+    ],
+    "timescale_seconds": 1e-12,
+    "first_timestamp": 0,
+    "last_timestamp": 41000,
+    "duration_seconds": 4.0999999999999997e-08,
+    "scope_for_STA_to_test": "tb/dut",
+    "STA_annotation_coverage_measured": false,
+    "zero_delay_gate_activity": true,
+    "header_and_values_not_rewritten": true,
+    "file_stable_during_read": true
+  }
+}

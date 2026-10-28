@@ -1,0 +1,69 @@
+[
+  {
+    "region": 0,
+    "input": "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/frontend/shared/conv1_weights.bin",
+    "input_bytes": 4096000,
+    "input_sha256": "f78e8257037f675b95bac352e500ad6678b2b932c15763c034d861a633b8f521",
+    "output": "/Users/sanju/.local/state/routevoice-internal-runs/20261014/onchip-front/rom/conv1_weights.hex",
+    "output_sha256": "b42a97304272c7f0cb07c5e624cb9406faa3e2c12e611a7619a31a5af9720513",
+    "width_bits": 32,
+    "words": 1024000,
+    "roundtrip_pass": true
+  },
+  {
+    "region": 1,
+    "input": "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/frontend/shared/conv1_bias.bin",
+    "input_bytes": 2560,
+    "input_sha256": "7ad3904e16f8466edca6996a3dabde88f2eefc1a0ad023d48c2d39a5b4973ee2",
+    "output": "/Users/sanju/.local/state/routevoice-internal-runs/20261014/onchip-front/rom/conv1_bias.hex",
+    "output_sha256": "daec41e604356ed05915294cdc67e1a524683b9eaefac1e0605ca6743b37e243",
+    "width_bits": 32,
+    "words": 640,
+    "roundtrip_pass": true
+  },
+  {
+    "region": 4,
+    "input": "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/frontend/shared/conv2_weights.bin",
+    "input_bytes": 4096000,
+    "input_sha256": "13ef6595619a6c8b2fe5a6dc7b4078a44d48a0f113c8156c8bf54d7e0fa87997",
+    "output": "/Users/sanju/.local/state/routevoice-internal-runs/20261014/onchip-front/rom/conv2_weights.hex",
+    "output_sha256": "cf281c3e7f134778d80fe9b82454a3007916a8124041d73e8ef77af49c2512db",
+    "width_bits": 32,
+    "words": 1024000,
+    "roundtrip_pass": true
+  },
+  {
+    "region": 5,
+    "input": "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/frontend/shared/conv2_bias.bin",
+    "input_bytes": 1280,
+    "input_sha256": "355244333061a76f48ac524104bb0e6bcf433546bac68adbd8231addfca062a5",
+    "output": "/Users/sanju/.local/state/routevoice-internal-runs/20261014/onchip-front/rom/conv2_bias.hex",
+    "output_sha256": "e4f1a5ca6db5f8a60b3545914d2c277a8a60435c9b2afb89efa7a841e801e746",
+    "width_bits": 32,
+    "words": 320,
+    "roundtrip_pass": true
+  },
+  {
+    "region": 8,
+    "input": "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/frontend/shared/linear_weights.bin",
+    "input_bytes": 102400,
+    "input_sha256": "1b14d3d00a9d640726adb7983f7f85111d5a70468c5c583b14621d15fb2d919f",
+    "output": "/Users/sanju/.local/state/routevoice-internal-runs/20261014/onchip-front/rom/linear_weights.hex",
+    "output_sha256": "aacac90bec419435d078f678d923df56959ef84cb97b2a90eef1c37c40fe6f53",
+    "width_bits": 32,
+    "words": 25600,
+    "roundtrip_pass": true
+  },
+  {
+    "service": "positions",
+    "input": "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/blobs/954bd3f6743402976b17fe2322396dc7be680423e8865f6538b6c807940d5f15.bin",
+    "input_bytes": 1310720,
+    "input_sha256": "954bd3f6743402976b17fe2322396dc7be680423e8865f6538b6c807940d5f15",
+    "output": "/Users/sanju/.local/state/routevoice-internal-runs/20261014/onchip-front/rom/positions.hex",
+    "output_sha256": "bb38ccfc2f3ed00dbec10829444c68e154b33473011664c13fbcd5925726581e",
+    "width_bits": 64,
+    "words": 163840,
+    "roundtrip_pass": true,
+    "retained_image_identical": true
+  }
+]

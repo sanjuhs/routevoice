@@ -1,0 +1,23 @@
+{
+  "command": [
+    "nice",
+    "-n",
+    "10",
+    "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/tb/gate_activity_obj_rv_fixed_proj64x320_rom/Vtb",
+    "+vcd=/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/tmp/gate-activity.fifo"
+  ],
+  "exit_code": 0,
+  "stop_reason": null,
+  "elapsed_seconds": 48.09785294532776,
+  "compression_errors": [],
+  "trace": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/vectors/rv_fixed_proj64x320_rom.gate-cell-pins-power-200ns.vcd.gz",
+  "simulation_log": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/logs/rv_fixed_proj64x320_rom.gate-cell-pins-activity-stream.log",
+  "sha256": "f82901b475960c4c9df980a7229105ef97454b88637c47a2ec311a92b7d5bad8",
+  "level": "Mapped synthesis netlist zero-delay GF180 FUNCTIONAL models; five random vectors at 200 ns with clocked output reads",
+  "verification": {
+    "vectors_passed": 5,
+    "random_vectors": 5,
+    "exact_comparisons": 1605,
+    "failures": 0
+  }
+}

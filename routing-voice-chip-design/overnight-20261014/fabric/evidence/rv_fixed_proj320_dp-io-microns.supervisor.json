@@ -1,0 +1,22 @@
+{
+  "command": [
+    "bash",
+    "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/run_flow.sh",
+    "rv_fixed_proj320_dp",
+    "io-microns"
+  ],
+  "log": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/logs/rv_fixed_proj320_dp-io-microns.flow.log",
+  "exit_code": -15,
+  "stop_reason": "supervisor interrupted: ",
+  "elapsed_seconds": 1853.6120567321777,
+  "minimum_free_bytes": 24782868480,
+  "limit_seconds": 7200,
+  "thread_limit": 8,
+  "nice": 10,
+  "start_unix": 1791932553.3212302,
+  "flow_controls": {
+    "W2_FROM_STEP": "OpenROAD.IOPlacement",
+    "W2_TO_STEP": "OpenROAD.STAMidPNR-1",
+    "W2_INITIAL_STATE": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/runs/rv_fixed_proj320_dp-physical20/12-openroad-globalplacementskipio/state_out.json"
+  }
+}

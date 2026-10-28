@@ -1,0 +1,45 @@
+{
+  "case_id": "int8_per_tensor-input-047",
+  "model": "int8_per_tensor",
+  "id": "6267-53049-0032",
+  "role": "validation",
+  "condition": "other",
+  "seed": null,
+  "reference": "WHEN MISSUS FAIRWEATHER HAD GONE DORIS AND PENELOPE LOOKED AT EACH OTHER",
+  "input_float32_sha256": "db392c08d9f56871146a95a30910280879b67b57c48dd4fa538c70f251c2593e",
+  "hypothesis": "",
+  "normalized_tokens": [],
+  "edits": 12,
+  "reference_words": 12,
+  "hypothesis_words": 0,
+  "exact": false,
+  "lines": [
+    {
+      "text": "",
+      "start_time": 0.03200000524520874,
+      "duration": 5.631999969482422,
+      "is_complete": true,
+      "samples": 90112,
+      "input_float32_sha256": "0ff5d23fed44cad33a4e1f8fbd1f0d560e36572c8a1dc0b3cdf11a8316b3d6b6"
+    }
+  ],
+  "request_sha256": "76e4c022ccc2799abbea627b08b0538a5b2a1d126b11f4e1867916dddf3d80b5",
+  "worker_sha256": "4682e8a57db08e02a34f53b01f334f34faa3ca9a6546698f1e4650db359004b6",
+  "native_library_sha256": "1453a6c1c9072f3d05e9e5ae6ff423fae839e56631c5efb12bbd5c0280d04399",
+  "native_api_version": 30000,
+  "load_seconds": 0.04042779095470905,
+  "compute_seconds": 0.11978266690857708,
+  "audio_seconds": 5.685,
+  "process_cpu_seconds": 0.11982000000000001,
+  "voluntary_context_switches": 0,
+  "involuntary_context_switches": 35,
+  "system_load_average": [
+    10.640625,
+    9.16259765625,
+    9.90576171875
+  ],
+  "options": null,
+  "flags": 0,
+  "process_id": 81274,
+  "isolation": "One audio clip/condition in a fresh native process; no previous utterance or VAD state."
+}

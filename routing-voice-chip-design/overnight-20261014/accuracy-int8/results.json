@@ -1,0 +1,628 @@
+{
+  "status": "complete",
+  "integrity_passed": true,
+  "full_frozen_validation": true,
+  "reserved_test_used": false,
+  "utterances_per_condition": 16,
+  "distinct_utterances": 32,
+  "conditions_per_model": 48,
+  "inference_calls": 144,
+  "summary": {
+    "fp32_baseline": {
+      "clean": {
+        "clips": 16,
+        "reference_words": 330,
+        "edits": 22,
+        "wer": 0.06666666666666667,
+        "normalized_exact": 5,
+        "audio_seconds": 116.65,
+        "compute_seconds": 4.396178372902796,
+        "aggregate_rtf": 0.037686912755274714,
+        "p95_call_seconds": 0.5763611147995107
+      },
+      "other": {
+        "clips": 16,
+        "reference_words": 325,
+        "edits": 59,
+        "wer": 0.18153846153846154,
+        "normalized_exact": 3,
+        "audio_seconds": 123.475,
+        "compute_seconds": 4.739233207190409,
+        "aggregate_rtf": 0.03838212761441919,
+        "p95_call_seconds": 0.5671082392800599
+      },
+      "white_noise_10db": {
+        "clips": 16,
+        "reference_words": 330,
+        "edits": 64,
+        "wer": 0.19393939393939394,
+        "normalized_exact": 2,
+        "audio_seconds": 116.65,
+        "compute_seconds": 4.37124287430197,
+        "aggregate_rtf": 0.03747314937249867,
+        "p95_call_seconds": 0.5777483129641041
+      }
+    },
+    "int8_per_channel": {
+      "clean": {
+        "clips": 16,
+        "reference_words": 330,
+        "edits": 30,
+        "wer": 0.09090909090909091,
+        "normalized_exact": 3,
+        "audio_seconds": 116.65,
+        "compute_seconds": 4.444357164436951,
+        "aggregate_rtf": 0.038099932828435074,
+        "p95_call_seconds": 0.5715946666314267
+      },
+      "other": {
+        "clips": 16,
+        "reference_words": 325,
+        "edits": 74,
+        "wer": 0.2276923076923077,
+        "normalized_exact": 3,
+        "audio_seconds": 123.475,
+        "compute_seconds": 4.7646016667131335,
+        "aggregate_rtf": 0.038587581832056156,
+        "p95_call_seconds": 0.5638718852424063
+      },
+      "white_noise_10db": {
+        "clips": 16,
+        "reference_words": 330,
+        "edits": 66,
+        "wer": 0.2,
+        "normalized_exact": 2,
+        "audio_seconds": 116.65,
+        "compute_seconds": 4.43625099840574,
+        "aggregate_rtf": 0.03803044147797462,
+        "p95_call_seconds": 0.5895314898807555
+      }
+    },
+    "int8_per_tensor": {
+      "clean": {
+        "clips": 16,
+        "reference_words": 330,
+        "edits": 330,
+        "wer": 1.0,
+        "normalized_exact": 0,
+        "audio_seconds": 116.65,
+        "compute_seconds": 2.5038232079241425,
+        "aggregate_rtf": 0.021464408126224965,
+        "p95_call_seconds": 0.3307085517444648
+      },
+      "other": {
+        "clips": 16,
+        "reference_words": 325,
+        "edits": 325,
+        "wer": 1.0,
+        "normalized_exact": 0,
+        "audio_seconds": 123.475,
+        "compute_seconds": 2.6015372078400105,
+        "aggregate_rtf": 0.021069343655314928,
+        "p95_call_seconds": 0.2797543646884151
+      },
+      "white_noise_10db": {
+        "clips": 16,
+        "reference_words": 330,
+        "edits": 330,
+        "wer": 1.0,
+        "normalized_exact": 0,
+        "audio_seconds": 116.65,
+        "compute_seconds": 2.432169502368197,
+        "aggregate_rtf": 0.020850145755406745,
+        "p95_call_seconds": 0.3047121045528911
+      }
+    }
+  },
+  "gates_vs_same_session_k64": {
+    "int8_per_channel": {
+      "clean": {
+        "candidate_edits": 30,
+        "reference_edits": 22,
+        "reference_words": 330,
+        "candidate_wer": 0.09090909090909091,
+        "delta_percentage_points": 2.4242424242424243,
+        "absolute_ceiling": 0.15,
+        "retention_limit": 0.02,
+        "pass": false
+      },
+      "other": {
+        "candidate_edits": 74,
+        "reference_edits": 59,
+        "reference_words": 325,
+        "candidate_wer": 0.2276923076923077,
+        "delta_percentage_points": 4.615384615384616,
+        "absolute_ceiling": 0.35,
+        "retention_limit": 0.02,
+        "pass": false
+      },
+      "white_noise_10db": {
+        "candidate_edits": 66,
+        "reference_edits": 64,
+        "reference_words": 330,
+        "candidate_wer": 0.2,
+        "delta_percentage_points": 0.6060606060606061,
+        "absolute_ceiling": 0.4,
+        "retention_limit": 0.02,
+        "pass": true
+      }
+    },
+    "int8_per_tensor": {
+      "clean": {
+        "candidate_edits": 330,
+        "reference_edits": 22,
+        "reference_words": 330,
+        "candidate_wer": 1.0,
+        "delta_percentage_points": 93.33333333333333,
+        "absolute_ceiling": 0.15,
+        "retention_limit": 0.02,
+        "pass": false
+      },
+      "other": {
+        "candidate_edits": 325,
+        "reference_edits": 59,
+        "reference_words": 325,
+        "candidate_wer": 1.0,
+        "delta_percentage_points": 81.84615384615384,
+        "absolute_ceiling": 0.35,
+        "retention_limit": 0.02,
+        "pass": false
+      },
+      "white_noise_10db": {
+        "candidate_edits": 330,
+        "reference_edits": 64,
+        "reference_words": 330,
+        "candidate_wer": 1.0,
+        "delta_percentage_points": 80.60606060606061,
+        "absolute_ceiling": 0.4,
+        "retention_limit": 0.02,
+        "pass": false
+      }
+    }
+  },
+  "passes_W7_point_gates": {
+    "int8_per_channel": false,
+    "int8_per_tensor": false
+  },
+  "historical_original_relative_gates_not_same_session": {
+    "fp32_baseline": {
+      "clean": {
+        "candidate_edits": 22,
+        "reference_edits": 16,
+        "reference_words": 330,
+        "candidate_wer": 0.06666666666666667,
+        "delta_percentage_points": 1.8181818181818181,
+        "absolute_ceiling": 0.15,
+        "retention_limit": 0.02,
+        "pass": true
+      },
+      "other": {
+        "candidate_edits": 59,
+        "reference_edits": 62,
+        "reference_words": 325,
+        "candidate_wer": 0.18153846153846154,
+        "delta_percentage_points": -0.9230769230769231,
+        "absolute_ceiling": 0.35,
+        "retention_limit": 0.02,
+        "pass": true
+      },
+      "white_noise_10db": {
+        "candidate_edits": 64,
+        "reference_edits": 58,
+        "reference_words": 330,
+        "candidate_wer": 0.19393939393939394,
+        "delta_percentage_points": 1.8181818181818181,
+        "absolute_ceiling": 0.4,
+        "retention_limit": 0.02,
+        "pass": true
+      }
+    },
+    "int8_per_channel": {
+      "clean": {
+        "candidate_edits": 30,
+        "reference_edits": 16,
+        "reference_words": 330,
+        "candidate_wer": 0.09090909090909091,
+        "delta_percentage_points": 4.242424242424243,
+        "absolute_ceiling": 0.15,
+        "retention_limit": 0.02,
+        "pass": false
+      },
+      "other": {
+        "candidate_edits": 74,
+        "reference_edits": 62,
+        "reference_words": 325,
+        "candidate_wer": 0.2276923076923077,
+        "delta_percentage_points": 3.6923076923076925,
+        "absolute_ceiling": 0.35,
+        "retention_limit": 0.02,
+        "pass": false
+      },
+      "white_noise_10db": {
+        "candidate_edits": 66,
+        "reference_edits": 58,
+        "reference_words": 330,
+        "candidate_wer": 0.2,
+        "delta_percentage_points": 2.4242424242424243,
+        "absolute_ceiling": 0.4,
+        "retention_limit": 0.02,
+        "pass": false
+      }
+    },
+    "int8_per_tensor": {
+      "clean": {
+        "candidate_edits": 330,
+        "reference_edits": 16,
+        "reference_words": 330,
+        "candidate_wer": 1.0,
+        "delta_percentage_points": 95.15151515151516,
+        "absolute_ceiling": 0.15,
+        "retention_limit": 0.02,
+        "pass": false
+      },
+      "other": {
+        "candidate_edits": 325,
+        "reference_edits": 62,
+        "reference_words": 325,
+        "candidate_wer": 1.0,
+        "delta_percentage_points": 80.92307692307692,
+        "absolute_ceiling": 0.35,
+        "retention_limit": 0.02,
+        "pass": false
+      },
+      "white_noise_10db": {
+        "candidate_edits": 330,
+        "reference_edits": 58,
+        "reference_words": 330,
+        "candidate_wer": 1.0,
+        "delta_percentage_points": 82.42424242424242,
+        "absolute_ceiling": 0.4,
+        "retention_limit": 0.02,
+        "pass": false
+      }
+    }
+  },
+  "same_session_k64_vs_historical_k64_transcript_differences": [],
+  "gate_limits": {
+    "clean_max_wer": 0.15,
+    "other_max_wer": 0.35,
+    "white_noise_10db_max_wer": 0.4,
+    "candidate_max_absolute_wer_increase": 0.02,
+    "selection": "validation only; final test once for a preselected candidate; failed candidates remain reported"
+  },
+  "storage": {
+    "int8_per_channel": {
+      "tensors": [
+        {
+          "name": "onnx::MatMul_128_add_tensor_add_tensor",
+          "shape": [
+            80,
+            320
+          ],
+          "axis": 1,
+          "scale_shape": [
+            1,
+            320
+          ],
+          "int8_file": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/accuracy-int8/int8_per_channel/packed/linear_weights.int8.bin",
+          "int8_sha256": "a9f444449d5ff4a30289a468b2a35fca9dcb3d577039a7ce9a41c4356422d1a9",
+          "int8_bytes": 25600,
+          "scale_file": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/accuracy-int8/int8_per_channel/packed/linear_weights.scale.fp32.bin",
+          "scale_sha256": "e78c5c3177a4a010adcda1382e9b19f31b0b3ee389b4fd9d4ad45be527ede3d6",
+          "scale_bytes": 1280,
+          "dequantized_sha256": "9d798380fd6f849902a48265317c5f913d878cc87c5daeb84005e6c4e6235b01",
+          "source_sha256": "1b14d3d00a9d640726adb7983f7f85111d5a70468c5c583b14621d15fb2d919f",
+          "rmse": 0.0012325888928502865,
+          "max_abs_error": 0.009035386145114899
+        },
+        {
+          "name": "/weight/weight.0/Mul_output_0_add_tensor",
+          "shape": [
+            640,
+            320,
+            5
+          ],
+          "axis": 0,
+          "scale_shape": [
+            640,
+            1,
+            1
+          ],
+          "int8_file": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/accuracy-int8/int8_per_channel/packed/conv1_weights.int8.bin",
+          "int8_sha256": "6aa5e4e681a4cdc8b32228a56296917adc8491aa2c49a090251ad544e256cdc1",
+          "int8_bytes": 1024000,
+          "scale_file": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/accuracy-int8/int8_per_channel/packed/conv1_weights.scale.fp32.bin",
+          "scale_sha256": "532e36fdc302f64ea96937cc4ceee717f3f5ca43ab120b86038e2f9889275e97",
+          "scale_bytes": 2560,
+          "dequantized_sha256": "e3f74b9dde7b39a451407912cfa8eaa956a895700392a20c34cacea741894165",
+          "source_sha256": "f78e8257037f675b95bac352e500ad6678b2b932c15763c034d861a633b8f521",
+          "rmse": 0.0017979134783210028,
+          "max_abs_error": 0.020159363746643066
+        },
+        {
+          "name": "/weight/weight.0_1/Mul_output_0_add_tensor",
+          "shape": [
+            320,
+            640,
+            5
+          ],
+          "axis": 0,
+          "scale_shape": [
+            320,
+            1,
+            1
+          ],
+          "int8_file": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/accuracy-int8/int8_per_channel/packed/conv2_weights.int8.bin",
+          "int8_sha256": "7db42e89fa8898b9aa843d70dde419f4068bbedbb6c430f3631194d13556208c",
+          "int8_bytes": 1024000,
+          "scale_file": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/accuracy-int8/int8_per_channel/packed/conv2_weights.scale.fp32.bin",
+          "scale_sha256": "b35ae7e784e373999c3c3dc8749f592bfad06638de60f95f12689b94205423c2",
+          "scale_bytes": 1280,
+          "dequantized_sha256": "4484a95bf7a4a45801a128c89c7abd5979a96dc59c53fa2f7a9c50dd493019cb",
+          "source_sha256": "13ef6595619a6c8b2fe5a6dc7b4078a44d48a0f113c8156c8bf54d7e0fa87997",
+          "rmse": 0.00011489091455328404,
+          "max_abs_error": 0.0006344807334244251
+        }
+      ],
+      "int8_weight_bytes": 2073600,
+      "fp32_scale_bytes": 5120,
+      "unchanged_fp32_bias_bytes": 3840,
+      "total_frontend_coefficient_storage_bytes": 2082560,
+      "all_other_runtime_files_bit_identical": true
+    },
+    "int8_per_tensor": {
+      "tensors": [
+        {
+          "name": "onnx::MatMul_128_add_tensor_add_tensor",
+          "shape": [
+            80,
+            320
+          ],
+          "axis": null,
+          "scale_shape": [
+            1,
+            1
+          ],
+          "int8_file": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/accuracy-int8/int8_per_tensor/packed/linear_weights.int8.bin",
+          "int8_sha256": "f821f11a3ef3a3b9cf223a67cb31d2a0e8e07fd8429aa752aedfc6b49f676ede",
+          "int8_bytes": 25600,
+          "scale_file": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/accuracy-int8/int8_per_tensor/packed/linear_weights.scale.fp32.bin",
+          "scale_sha256": "bb39f409f10f3b1a1c1d4974a1b9664f5016a64d88e34d44585619368dfc5cfa",
+          "scale_bytes": 4,
+          "dequantized_sha256": "8db393836462e915bba318edfdaab01d9f6921b9f2ccc62074c2e1e14a88d4ce",
+          "source_sha256": "1b14d3d00a9d640726adb7983f7f85111d5a70468c5c583b14621d15fb2d919f",
+          "rmse": 0.005435286866113197,
+          "max_abs_error": 0.009430527687072754
+        },
+        {
+          "name": "/weight/weight.0/Mul_output_0_add_tensor",
+          "shape": [
+            640,
+            320,
+            5
+          ],
+          "axis": null,
+          "scale_shape": [
+            1,
+            1,
+            1
+          ],
+          "int8_file": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/accuracy-int8/int8_per_tensor/packed/conv1_weights.int8.bin",
+          "int8_sha256": "cd83cbbf45c12a991080e2a1a550c3e6fcf89da9feb51550e30a2eb061f16fba",
+          "int8_bytes": 1024000,
+          "scale_file": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/accuracy-int8/int8_per_tensor/packed/conv1_weights.scale.fp32.bin",
+          "scale_sha256": "f913ad6af95015e2212309316ff162327351adea4e9badf33b73fdeeae83858d",
+          "scale_bytes": 4,
+          "dequantized_sha256": "acfe6191753124b9a0e8ddf6dc3689cac7f96e86df5e135331cf5a5c5d3e7f3e",
+          "source_sha256": "f78e8257037f675b95bac352e500ad6678b2b932c15763c034d861a633b8f521",
+          "rmse": 0.009656508761068508,
+          "max_abs_error": 0.020883917808532715
+        },
+        {
+          "name": "/weight/weight.0_1/Mul_output_0_add_tensor",
+          "shape": [
+            320,
+            640,
+            5
+          ],
+          "axis": null,
+          "scale_shape": [
+            1,
+            1,
+            1
+          ],
+          "int8_file": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/accuracy-int8/int8_per_tensor/packed/conv2_weights.int8.bin",
+          "int8_sha256": "0cd38b7cc51c192ddb927ea247cb122b9e604a31cb23dce62c161dabe478f69a",
+          "int8_bytes": 1024000,
+          "scale_file": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/accuracy-int8/int8_per_tensor/packed/conv2_weights.scale.fp32.bin",
+          "scale_sha256": "b644b2bd83f2c39309d897dca00f5fa197325030e328536fd79ff408a4865e29",
+          "scale_bytes": 4,
+          "dequantized_sha256": "80eb7161aabaac5f2d58c63877105e34888a35761d4b49040af5114371301522",
+          "source_sha256": "13ef6595619a6c8b2fe5a6dc7b4078a44d48a0f113c8156c8bf54d7e0fa87997",
+          "rmse": 0.0003666635559225672,
+          "max_abs_error": 0.0006345920264720917
+        }
+      ],
+      "int8_weight_bytes": 2073600,
+      "fp32_scale_bytes": 12,
+      "unchanged_fp32_bias_bytes": 3840,
+      "total_frontend_coefficient_storage_bytes": 2077452,
+      "all_other_runtime_files_bit_identical": true
+    }
+  },
+  "biases_quantized": false,
+  "limitations": [
+    "Small previously exposed development validation; no population accuracy guarantee.",
+    "Only weight storage quantization tested; inference dequantizes to FP32 and retains all activation/operator semantics.",
+    "960 biases stay FP32 and scale storage is charged. Source loader already has exact INT8+scale+offset representation.",
+    "No RTL dequantizer, physical fit, timing or power claim; no new reserved-test inference.",
+    "Native single-thread enforced in every arm; earlier K64 validation used native defaults. Historical comparisons are separately labeled."
+  ],
+  "provenance": {
+    "protocol_sha256": "c7cfc010264e629762c3b5d0b260e7b857e93c33179468f9efc227932bb1789b",
+    "scores_sha256": "bc73af865a30a6e6574334dccf9ba187a43cd359dfdcb967b477498c194e61d6",
+    "inventory_sha256": "2223fd6be7a7be323ee665c10871c441f055d1a3914574c3ca6f3e34decb9f7f",
+    "minimum_observed_free_disk_GiB": 26.639083862304688,
+    "elapsed_seconds": 60.15006945794448
+  },
+  "final_audit": {
+    "all_144_cases_unique_complete_and_recomputed": true,
+    "model_and_protocol_pins_unchanged": true,
+    "all_point_gates_independently_confirmed": true,
+    "per_tensor_zero_normalized_word_utterances": 48,
+    "existing_exact_encoding_manifest_sha256": "b6a9a1be31b4bdb08f0732af7af77ab8420e806471b8f0608bdd8a6958dc5f4c",
+    "audit_script_sha256": "aaa0e25c634183ffe400c9734479148a029014852a0561babbc7e8564795b855",
+    "scores_sha256": "bc73af865a30a6e6574334dccf9ba187a43cd359dfdcb967b477498c194e61d6"
+  },
+  "existing_source_affine_int8_exact_storage": {
+    "status": "Existing source encoding exported and bit-exact against all 2,074,560 fixture coefficients",
+    "not_a_new_candidate_or_inference_run": true,
+    "records": [
+      {
+        "role": "linear_weights",
+        "source_initializer_prefix": "onnx::MatMul_128_add_tensor",
+        "broadcast_channel_axis": 1,
+        "reconstructed_fp32_sha256": "1b14d3d00a9d640726adb7983f7f85111d5a70468c5c583b14621d15fb2d919f",
+        "matches_all_ROM_bits": true,
+        "files": [
+          {
+            "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/accuracy-int8/existing-affine-int8-exact/linear_weights.int8.bin",
+            "shape": [
+              80,
+              320
+            ],
+            "dtype": "int8",
+            "bytes": 25600,
+            "sha256": "c90667fdad5cc2bb2fd6eefca84eaa2093e5691e16700b958609a0689d85b65a"
+          },
+          {
+            "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/accuracy-int8/existing-affine-int8-exact/linear_weights.scale.fp32.bin",
+            "shape": [
+              1,
+              320
+            ],
+            "dtype": "float32",
+            "bytes": 1280,
+            "sha256": "83c71a0b324d53819eebb89b736f34ecaf7b3510aaaea3774aea67d708f5a89a"
+          },
+          {
+            "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/accuracy-int8/existing-affine-int8-exact/linear_weights.offset.fp32.bin",
+            "shape": [
+              1,
+              320
+            ],
+            "dtype": "float32",
+            "bytes": 1280,
+            "sha256": "b38d58a3b9c3efd1bce463fb4430e4706b1ba40907cebb61e375e302f66afbbe"
+          }
+        ],
+        "coefficients": 25600
+      },
+      {
+        "role": "conv1_weights",
+        "source_initializer_prefix": "/weight/weight.0/Mul_output_0",
+        "broadcast_channel_axis": 0,
+        "reconstructed_fp32_sha256": "f78e8257037f675b95bac352e500ad6678b2b932c15763c034d861a633b8f521",
+        "matches_all_ROM_bits": true,
+        "files": [
+          {
+            "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/accuracy-int8/existing-affine-int8-exact/conv1_weights.int8.bin",
+            "shape": [
+              640,
+              320,
+              5
+            ],
+            "dtype": "int8",
+            "bytes": 1024000,
+            "sha256": "10e0955076d451102d17969417eb94cfa587f8dfb620d208fb15dc3945868652"
+          },
+          {
+            "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/accuracy-int8/existing-affine-int8-exact/conv1_weights.scale.fp32.bin",
+            "shape": [
+              640,
+              1,
+              1
+            ],
+            "dtype": "float32",
+            "bytes": 2560,
+            "sha256": "60fba5045aa5dac283003ec904ab29eb1e5fbbbf00665164403c44f232c8d651"
+          },
+          {
+            "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/accuracy-int8/existing-affine-int8-exact/conv1_weights.offset.fp32.bin",
+            "shape": [
+              640,
+              1,
+              1
+            ],
+            "dtype": "float32",
+            "bytes": 2560,
+            "sha256": "e846e5947e681749dca2b6038e6a272bfa4252fad1530dc9df5c105cab75c68a"
+          }
+        ],
+        "coefficients": 1024000
+      },
+      {
+        "role": "conv2_weights",
+        "source_initializer_prefix": "/weight/weight.0_1/Mul_output_0",
+        "broadcast_channel_axis": 1,
+        "reconstructed_fp32_sha256": "13ef6595619a6c8b2fe5a6dc7b4078a44d48a0f113c8156c8bf54d7e0fa87997",
+        "matches_all_ROM_bits": true,
+        "files": [
+          {
+            "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/accuracy-int8/existing-affine-int8-exact/conv2_weights.int8.bin",
+            "shape": [
+              320,
+              640,
+              5
+            ],
+            "dtype": "int8",
+            "bytes": 1024000,
+            "sha256": "8a477dc831c6268856578f9f8b576a86e91be88a1cfae026b3533c44164c6c5e"
+          },
+          {
+            "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/accuracy-int8/existing-affine-int8-exact/conv2_weights.scale.fp32.bin",
+            "shape": [
+              1,
+              640,
+              1
+            ],
+            "dtype": "float32",
+            "bytes": 2560,
+            "sha256": "c24c93bafe7702b05f8dda974c3d00c8d8e0f729d51f37af0984dc26a1ce48f2"
+          },
+          {
+            "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/accuracy-int8/existing-affine-int8-exact/conv2_weights.offset.fp32.bin",
+            "shape": [
+              1,
+              640,
+              1
+            ],
+            "dtype": "float32",
+            "bytes": 2560,
+            "sha256": "cc3c78bc58e3ad6bde98104d4a8675de39e6a641e64081c20529a166a351ecea"
+          }
+        ],
+        "coefficients": 1024000
+      }
+    ],
+    "unchanged_bias_files": [
+      {
+        "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/accuracy-int8/existing-affine-int8-exact/conv1_bias.bin",
+        "bytes": 2560,
+        "sha256": "7ad3904e16f8466edca6996a3dabde88f2eefc1a0ad023d48c2d39a5b4973ee2"
+      },
+      {
+        "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/accuracy-int8/existing-affine-int8-exact/conv2_bias.bin",
+        "bytes": 1280,
+        "sha256": "355244333061a76f48ac524104bb0e6bcf433546bac68adbd8231addfca062a5"
+      }
+    ],
+    "int8_bytes": 2073600,
+    "fp32_scale_and_offset_bytes": 12800,
+    "fp32_bias_bytes": 3840,
+    "total_payload_bytes": 2090240,
+    "original_expanded_ROM_bytes": 8298240,
+    "decode_contract": "Round INT8 cast to FP32 times FP32 scale to FP32; then add FP32 offset with a second FP32 rounding. Do not silently fuse, drop offsets or change Conv2 input-channel axis.",
+    "hardware_status": "Decoder/storage implementation, access area, timing and power unverified. This is an exact numerical storage alternative, not a symmetric per-output-channel pass."
+  }
+}

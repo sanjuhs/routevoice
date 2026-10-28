@@ -1,0 +1,7 @@
+ARGV ["/private/tmp/claude-501/-Users-sanju-Desktop-coding-llm-hardware-route-voice-llm-hardware-v1/cf06f0bb-a1f4-42d4-91c4-7b1e41623700/scratchpad/gs2/activity-run/obj-activity/sim"]
+vector=0 cycles=4165 reads=1280
+PASS gate_activity vectors=1 outputs=320 cycles=       4165 stalls=          0 aborts=0 unstalled_cycles=4165
+- /private/tmp/claude-501/-Users-sanju-Desktop-coding-llm-hardware-route-voice-llm-hardware-v1/cf06f0bb-a1f4-42d4-91c4-7b1e41623700/scratchpad/gs2/activity-run/activity_array_port.sv:54: Verilog $finish
+- S i m u l a t i o n   R e p o r t: Verilator 5.050 2026-07-01
+- Verilator: $finish at 83us; walltime 212.931 s; speed 391.489 ns/s
+- Verilator: cpu 212.909 s on 1 threads; allocated 1259 MB

@@ -1,0 +1,1102 @@
+{
+  "memory": "sram_open_macro",
+  "levers": "off",
+  "state": "baseline",
+  "scenario": "custom7",
+  "partition": "encoder",
+  "die_mm": 25.0,
+  "block_area_mm2": 488.5175799424,
+  "abstract_rect_area_mm2": 489.107775,
+  "core_area_mm2": 556.96,
+  "placement_pass": true,
+  "pdn_pass": false,
+  "worst_ir_drop_v": null,
+  "power_assumed_w": 0.545,
+  "supply_pad_pairs": 16,
+  "signal_pad_count": 16,
+  "pad_count": 48,
+  "areas": [
+    {
+      "name": "frontend_FP32",
+      "area_mm2": 158.049024,
+      "tiles": 18,
+      "area_breakdown": {
+        "selection_mm2": 0.0,
+        "rom_mm2": 146.049024,
+        "sram_mm2": 0.0,
+        "logic_mm2": 12,
+        "total_mm2": 158.049024
+      },
+      "power_w": 0.15
+    },
+    {
+      "name": "encoder_fabric_L0",
+      "area_mm2": 10.81344,
+      "tiles": 2,
+      "area_breakdown": {
+        "selection_mm2": 10.81344,
+        "rom_mm2": 0.0,
+        "sram_mm2": 0.0,
+        "logic_mm2": 0,
+        "total_mm2": 10.81344
+      },
+      "power_w": 0.025
+    },
+    {
+      "name": "encoder_fabric_L1",
+      "area_mm2": 10.81344,
+      "tiles": 2,
+      "area_breakdown": {
+        "selection_mm2": 10.81344,
+        "rom_mm2": 0.0,
+        "sram_mm2": 0.0,
+        "logic_mm2": 0,
+        "total_mm2": 10.81344
+      },
+      "power_w": 0.025
+    },
+    {
+      "name": "encoder_fabric_L2",
+      "area_mm2": 10.81344,
+      "tiles": 2,
+      "area_breakdown": {
+        "selection_mm2": 10.81344,
+        "rom_mm2": 0.0,
+        "sram_mm2": 0.0,
+        "logic_mm2": 0,
+        "total_mm2": 10.81344
+      },
+      "power_w": 0.025
+    },
+    {
+      "name": "encoder_fabric_L3",
+      "area_mm2": 10.81344,
+      "tiles": 2,
+      "area_breakdown": {
+        "selection_mm2": 10.81344,
+        "rom_mm2": 0.0,
+        "sram_mm2": 0.0,
+        "logic_mm2": 0,
+        "total_mm2": 10.81344
+      },
+      "power_w": 0.025
+    },
+    {
+      "name": "encoder_fabric_L4",
+      "area_mm2": 10.81344,
+      "tiles": 2,
+      "area_breakdown": {
+        "selection_mm2": 10.81344,
+        "rom_mm2": 0.0,
+        "sram_mm2": 0.0,
+        "logic_mm2": 0,
+        "total_mm2": 10.81344
+      },
+      "power_w": 0.025
+    },
+    {
+      "name": "encoder_fabric_L5",
+      "area_mm2": 10.81344,
+      "tiles": 2,
+      "area_breakdown": {
+        "selection_mm2": 10.81344,
+        "rom_mm2": 0.0,
+        "sram_mm2": 0.0,
+        "logic_mm2": 0,
+        "total_mm2": 10.81344
+      },
+      "power_w": 0.025
+    },
+    {
+      "name": "encoder_datapath_attention",
+      "area_mm2": 30.0,
+      "tiles": 4,
+      "area_breakdown": {
+        "selection_mm2": 0.0,
+        "rom_mm2": 0.0,
+        "sram_mm2": 0.0,
+        "logic_mm2": 30,
+        "total_mm2": 30.0
+      },
+      "power_w": 0.12
+    },
+    {
+      "name": "producer_KV_and_positions",
+      "area_mm2": 28.888448,
+      "tiles": 4,
+      "area_breakdown": {
+        "selection_mm2": 22.347776,
+        "rom_mm2": 0.540672,
+        "sram_mm2": 0.0,
+        "logic_mm2": 6,
+        "total_mm2": 28.888448
+      },
+      "power_w": 0.045
+    },
+    {
+      "name": "encoder_owner2_region0_1_2",
+      "area_mm2": 82.9225096128,
+      "tiles": 10,
+      "area_breakdown": {
+        "selection_mm2": 0.0,
+        "rom_mm2": 0.0,
+        "sram_mm2": 82.9225096128,
+        "logic_mm2": 0,
+        "total_mm2": 82.9225096128
+      },
+      "power_w": 0.015
+    },
+    {
+      "name": "producer_mutable_regions0_1_2",
+      "area_mm2": 82.9225096128,
+      "tiles": 10,
+      "area_breakdown": {
+        "selection_mm2": 0.0,
+        "rom_mm2": 0.0,
+        "sram_mm2": 82.9225096128,
+        "logic_mm2": 0,
+        "total_mm2": 82.9225096128
+      },
+      "power_w": 0.015
+    },
+    {
+      "name": "frontend_mutable",
+      "area_mm2": 36.8544487168,
+      "tiles": 5,
+      "area_breakdown": {
+        "selection_mm2": 0.0,
+        "rom_mm2": 0.0,
+        "sram_mm2": 36.8544487168,
+        "logic_mm2": 0,
+        "total_mm2": 36.8544487168
+      },
+      "power_w": 0.01
+    },
+    {
+      "name": "die_link_interface",
+      "area_mm2": 4,
+      "tiles": 1,
+      "power_w": 0.04
+    }
+  ],
+  "tiles": [
+    {
+      "name": "frontend_FP32_0",
+      "block": "frontend_FP32",
+      "w": 2965,
+      "h": 2965,
+      "power": 0.008333333333333333,
+      "x": 730,
+      "y": 730
+    },
+    {
+      "name": "frontend_FP32_1",
+      "block": "frontend_FP32",
+      "w": 2965,
+      "h": 2965,
+      "power": 0.008333333333333333,
+      "x": 3755,
+      "y": 730
+    },
+    {
+      "name": "frontend_FP32_2",
+      "block": "frontend_FP32",
+      "w": 2965,
+      "h": 2965,
+      "power": 0.008333333333333333,
+      "x": 6780,
+      "y": 730
+    },
+    {
+      "name": "frontend_FP32_3",
+      "block": "frontend_FP32",
+      "w": 2965,
+      "h": 2965,
+      "power": 0.008333333333333333,
+      "x": 9805,
+      "y": 730
+    },
+    {
+      "name": "frontend_FP32_4",
+      "block": "frontend_FP32",
+      "w": 2965,
+      "h": 2965,
+      "power": 0.008333333333333333,
+      "x": 12830,
+      "y": 730
+    },
+    {
+      "name": "frontend_FP32_5",
+      "block": "frontend_FP32",
+      "w": 2965,
+      "h": 2965,
+      "power": 0.008333333333333333,
+      "x": 15855,
+      "y": 730
+    },
+    {
+      "name": "frontend_FP32_6",
+      "block": "frontend_FP32",
+      "w": 2965,
+      "h": 2965,
+      "power": 0.008333333333333333,
+      "x": 18880,
+      "y": 730
+    },
+    {
+      "name": "frontend_FP32_7",
+      "block": "frontend_FP32",
+      "w": 2965,
+      "h": 2965,
+      "power": 0.008333333333333333,
+      "x": 730,
+      "y": 3755
+    },
+    {
+      "name": "frontend_FP32_8",
+      "block": "frontend_FP32",
+      "w": 2965,
+      "h": 2965,
+      "power": 0.008333333333333333,
+      "x": 3755,
+      "y": 3755
+    },
+    {
+      "name": "frontend_FP32_9",
+      "block": "frontend_FP32",
+      "w": 2965,
+      "h": 2965,
+      "power": 0.008333333333333333,
+      "x": 6780,
+      "y": 3755
+    },
+    {
+      "name": "frontend_FP32_10",
+      "block": "frontend_FP32",
+      "w": 2965,
+      "h": 2965,
+      "power": 0.008333333333333333,
+      "x": 9805,
+      "y": 3755
+    },
+    {
+      "name": "frontend_FP32_11",
+      "block": "frontend_FP32",
+      "w": 2965,
+      "h": 2965,
+      "power": 0.008333333333333333,
+      "x": 12830,
+      "y": 3755
+    },
+    {
+      "name": "frontend_FP32_12",
+      "block": "frontend_FP32",
+      "w": 2965,
+      "h": 2965,
+      "power": 0.008333333333333333,
+      "x": 15855,
+      "y": 3755
+    },
+    {
+      "name": "frontend_FP32_13",
+      "block": "frontend_FP32",
+      "w": 2965,
+      "h": 2965,
+      "power": 0.008333333333333333,
+      "x": 18880,
+      "y": 3755
+    },
+    {
+      "name": "frontend_FP32_14",
+      "block": "frontend_FP32",
+      "w": 2965,
+      "h": 2965,
+      "power": 0.008333333333333333,
+      "x": 730,
+      "y": 6780
+    },
+    {
+      "name": "frontend_FP32_15",
+      "block": "frontend_FP32",
+      "w": 2965,
+      "h": 2965,
+      "power": 0.008333333333333333,
+      "x": 3755,
+      "y": 6780
+    },
+    {
+      "name": "frontend_FP32_16",
+      "block": "frontend_FP32",
+      "w": 2965,
+      "h": 2965,
+      "power": 0.008333333333333333,
+      "x": 6780,
+      "y": 6780
+    },
+    {
+      "name": "frontend_FP32_17",
+      "block": "frontend_FP32",
+      "w": 2965,
+      "h": 2965,
+      "power": 0.008333333333333333,
+      "x": 9805,
+      "y": 6780
+    },
+    {
+      "name": "encoder_fabric_L0_0",
+      "block": "encoder_fabric_L0",
+      "w": 2330,
+      "h": 2330,
+      "power": 0.0125,
+      "x": 21905,
+      "y": 730
+    },
+    {
+      "name": "encoder_fabric_L0_1",
+      "block": "encoder_fabric_L0",
+      "w": 2330,
+      "h": 2330,
+      "power": 0.0125,
+      "x": 21905,
+      "y": 3755
+    },
+    {
+      "name": "encoder_fabric_L1_0",
+      "block": "encoder_fabric_L1",
+      "w": 2330,
+      "h": 2330,
+      "power": 0.0125,
+      "x": 21650,
+      "y": 6780
+    },
+    {
+      "name": "encoder_fabric_L1_1",
+      "block": "encoder_fabric_L1",
+      "w": 2330,
+      "h": 2330,
+      "power": 0.0125,
+      "x": 17280,
+      "y": 18625
+    },
+    {
+      "name": "encoder_fabric_L2_0",
+      "block": "encoder_fabric_L2",
+      "w": 2330,
+      "h": 2330,
+      "power": 0.0125,
+      "x": 19670,
+      "y": 18625
+    },
+    {
+      "name": "encoder_fabric_L2_1",
+      "block": "encoder_fabric_L2",
+      "w": 2330,
+      "h": 2330,
+      "power": 0.0125,
+      "x": 730,
+      "y": 21400
+    },
+    {
+      "name": "encoder_fabric_L3_0",
+      "block": "encoder_fabric_L3",
+      "w": 2330,
+      "h": 2330,
+      "power": 0.0125,
+      "x": 3120,
+      "y": 21400
+    },
+    {
+      "name": "encoder_fabric_L3_1",
+      "block": "encoder_fabric_L3",
+      "w": 2330,
+      "h": 2330,
+      "power": 0.0125,
+      "x": 5510,
+      "y": 21400
+    },
+    {
+      "name": "encoder_fabric_L4_0",
+      "block": "encoder_fabric_L4",
+      "w": 2330,
+      "h": 2330,
+      "power": 0.0125,
+      "x": 7900,
+      "y": 21400
+    },
+    {
+      "name": "encoder_fabric_L4_1",
+      "block": "encoder_fabric_L4",
+      "w": 2330,
+      "h": 2330,
+      "power": 0.0125,
+      "x": 10290,
+      "y": 21400
+    },
+    {
+      "name": "encoder_fabric_L5_0",
+      "block": "encoder_fabric_L5",
+      "w": 2330,
+      "h": 2330,
+      "power": 0.0125,
+      "x": 12680,
+      "y": 21400
+    },
+    {
+      "name": "encoder_fabric_L5_1",
+      "block": "encoder_fabric_L5",
+      "w": 2330,
+      "h": 2330,
+      "power": 0.0125,
+      "x": 15070,
+      "y": 21400
+    },
+    {
+      "name": "encoder_datapath_attention_0",
+      "block": "encoder_datapath_attention",
+      "w": 2740,
+      "h": 2740,
+      "power": 0.03,
+      "x": 3670,
+      "y": 15685
+    },
+    {
+      "name": "encoder_datapath_attention_1",
+      "block": "encoder_datapath_attention",
+      "w": 2740,
+      "h": 2740,
+      "power": 0.03,
+      "x": 6470,
+      "y": 15685
+    },
+    {
+      "name": "encoder_datapath_attention_2",
+      "block": "encoder_datapath_attention",
+      "w": 2740,
+      "h": 2740,
+      "power": 0.03,
+      "x": 9270,
+      "y": 15685
+    },
+    {
+      "name": "encoder_datapath_attention_3",
+      "block": "encoder_datapath_attention",
+      "w": 2740,
+      "h": 2740,
+      "power": 0.03,
+      "x": 12070,
+      "y": 15685
+    },
+    {
+      "name": "producer_KV_and_positions_0",
+      "block": "producer_KV_and_positions",
+      "w": 2690,
+      "h": 2690,
+      "power": 0.01125,
+      "x": 6280,
+      "y": 18625
+    },
+    {
+      "name": "producer_KV_and_positions_1",
+      "block": "producer_KV_and_positions",
+      "w": 2690,
+      "h": 2690,
+      "power": 0.01125,
+      "x": 9030,
+      "y": 18625
+    },
+    {
+      "name": "producer_KV_and_positions_2",
+      "block": "producer_KV_and_positions",
+      "w": 2690,
+      "h": 2690,
+      "power": 0.01125,
+      "x": 11780,
+      "y": 18625
+    },
+    {
+      "name": "producer_KV_and_positions_3",
+      "block": "producer_KV_and_positions",
+      "w": 2690,
+      "h": 2690,
+      "power": 0.01125,
+      "x": 14530,
+      "y": 18625
+    },
+    {
+      "name": "encoder_owner2_region0_1_2_0",
+      "block": "encoder_owner2_region0_1_2",
+      "w": 2880,
+      "h": 2880,
+      "power": 0.0015,
+      "x": 12830,
+      "y": 6780
+    },
+    {
+      "name": "encoder_owner2_region0_1_2_1",
+      "block": "encoder_owner2_region0_1_2",
+      "w": 2880,
+      "h": 2880,
+      "power": 0.0015,
+      "x": 15770,
+      "y": 6780
+    },
+    {
+      "name": "encoder_owner2_region0_1_2_2",
+      "block": "encoder_owner2_region0_1_2",
+      "w": 2880,
+      "h": 2880,
+      "power": 0.0015,
+      "x": 18710,
+      "y": 6780
+    },
+    {
+      "name": "encoder_owner2_region0_1_2_3",
+      "block": "encoder_owner2_region0_1_2",
+      "w": 2880,
+      "h": 2880,
+      "power": 0.0015,
+      "x": 730,
+      "y": 9805
+    },
+    {
+      "name": "encoder_owner2_region0_1_2_4",
+      "block": "encoder_owner2_region0_1_2",
+      "w": 2880,
+      "h": 2880,
+      "power": 0.0015,
+      "x": 3670,
+      "y": 9805
+    },
+    {
+      "name": "encoder_owner2_region0_1_2_5",
+      "block": "encoder_owner2_region0_1_2",
+      "w": 2880,
+      "h": 2880,
+      "power": 0.0015,
+      "x": 6610,
+      "y": 9805
+    },
+    {
+      "name": "encoder_owner2_region0_1_2_6",
+      "block": "encoder_owner2_region0_1_2",
+      "w": 2880,
+      "h": 2880,
+      "power": 0.0015,
+      "x": 9550,
+      "y": 9805
+    },
+    {
+      "name": "encoder_owner2_region0_1_2_7",
+      "block": "encoder_owner2_region0_1_2",
+      "w": 2880,
+      "h": 2880,
+      "power": 0.0015,
+      "x": 12490,
+      "y": 9805
+    },
+    {
+      "name": "encoder_owner2_region0_1_2_8",
+      "block": "encoder_owner2_region0_1_2",
+      "w": 2880,
+      "h": 2880,
+      "power": 0.0015,
+      "x": 15430,
+      "y": 9805
+    },
+    {
+      "name": "encoder_owner2_region0_1_2_9",
+      "block": "encoder_owner2_region0_1_2",
+      "w": 2880,
+      "h": 2880,
+      "power": 0.0015,
+      "x": 18370,
+      "y": 9805
+    },
+    {
+      "name": "producer_mutable_regions0_1_2_0",
+      "block": "producer_mutable_regions0_1_2",
+      "w": 2880,
+      "h": 2880,
+      "power": 0.0015,
+      "x": 21310,
+      "y": 9805
+    },
+    {
+      "name": "producer_mutable_regions0_1_2_1",
+      "block": "producer_mutable_regions0_1_2",
+      "w": 2880,
+      "h": 2880,
+      "power": 0.0015,
+      "x": 730,
+      "y": 12745
+    },
+    {
+      "name": "producer_mutable_regions0_1_2_2",
+      "block": "producer_mutable_regions0_1_2",
+      "w": 2880,
+      "h": 2880,
+      "power": 0.0015,
+      "x": 3670,
+      "y": 12745
+    },
+    {
+      "name": "producer_mutable_regions0_1_2_3",
+      "block": "producer_mutable_regions0_1_2",
+      "w": 2880,
+      "h": 2880,
+      "power": 0.0015,
+      "x": 6610,
+      "y": 12745
+    },
+    {
+      "name": "producer_mutable_regions0_1_2_4",
+      "block": "producer_mutable_regions0_1_2",
+      "w": 2880,
+      "h": 2880,
+      "power": 0.0015,
+      "x": 9550,
+      "y": 12745
+    },
+    {
+      "name": "producer_mutable_regions0_1_2_5",
+      "block": "producer_mutable_regions0_1_2",
+      "w": 2880,
+      "h": 2880,
+      "power": 0.0015,
+      "x": 12490,
+      "y": 12745
+    },
+    {
+      "name": "producer_mutable_regions0_1_2_6",
+      "block": "producer_mutable_regions0_1_2",
+      "w": 2880,
+      "h": 2880,
+      "power": 0.0015,
+      "x": 15430,
+      "y": 12745
+    },
+    {
+      "name": "producer_mutable_regions0_1_2_7",
+      "block": "producer_mutable_regions0_1_2",
+      "w": 2880,
+      "h": 2880,
+      "power": 0.0015,
+      "x": 18370,
+      "y": 12745
+    },
+    {
+      "name": "producer_mutable_regions0_1_2_8",
+      "block": "producer_mutable_regions0_1_2",
+      "w": 2880,
+      "h": 2880,
+      "power": 0.0015,
+      "x": 21310,
+      "y": 12745
+    },
+    {
+      "name": "producer_mutable_regions0_1_2_9",
+      "block": "producer_mutable_regions0_1_2",
+      "w": 2880,
+      "h": 2880,
+      "power": 0.0015,
+      "x": 730,
+      "y": 15685
+    },
+    {
+      "name": "frontend_mutable_0",
+      "block": "frontend_mutable",
+      "w": 2715,
+      "h": 2715,
+      "power": 0.002,
+      "x": 14870,
+      "y": 15685
+    },
+    {
+      "name": "frontend_mutable_1",
+      "block": "frontend_mutable",
+      "w": 2715,
+      "h": 2715,
+      "power": 0.002,
+      "x": 17645,
+      "y": 15685
+    },
+    {
+      "name": "frontend_mutable_2",
+      "block": "frontend_mutable",
+      "w": 2715,
+      "h": 2715,
+      "power": 0.002,
+      "x": 20420,
+      "y": 15685
+    },
+    {
+      "name": "frontend_mutable_3",
+      "block": "frontend_mutable",
+      "w": 2715,
+      "h": 2715,
+      "power": 0.002,
+      "x": 730,
+      "y": 18625
+    },
+    {
+      "name": "frontend_mutable_4",
+      "block": "frontend_mutable",
+      "w": 2715,
+      "h": 2715,
+      "power": 0.002,
+      "x": 3505,
+      "y": 18625
+    },
+    {
+      "name": "die_link_interface",
+      "block": "die_link_interface",
+      "w": 2000,
+      "h": 2000,
+      "power": 0.04,
+      "x": 22060,
+      "y": 18625
+    }
+  ],
+  "macro_scope": "ABSTRACTS, not routed internals",
+  "run_dir": "runs/custom7_sram_open_macro_off_baseline_encoder_25mm",
+  "vdd": 3.3,
+  "placement_utilization": 0.8781739712008043,
+  "pads": [
+    {
+      "name": "vdd_0_0",
+      "master": "dvdd",
+      "x": 355,
+      "y": 0,
+      "orientation": "R0"
+    },
+    {
+      "name": "vss_0_0",
+      "master": "dvss",
+      "x": 2379,
+      "y": 0,
+      "orientation": "R0"
+    },
+    {
+      "name": "vdd_0_1",
+      "master": "dvdd",
+      "x": 4403,
+      "y": 0,
+      "orientation": "R0"
+    },
+    {
+      "name": "vss_0_1",
+      "master": "dvss",
+      "x": 6427,
+      "y": 0,
+      "orientation": "R0"
+    },
+    {
+      "name": "vdd_0_2",
+      "master": "dvdd",
+      "x": 8451,
+      "y": 0,
+      "orientation": "R0"
+    },
+    {
+      "name": "vss_0_2",
+      "master": "dvss",
+      "x": 10475,
+      "y": 0,
+      "orientation": "R0"
+    },
+    {
+      "name": "vdd_0_3",
+      "master": "dvdd",
+      "x": 12499,
+      "y": 0,
+      "orientation": "R0"
+    },
+    {
+      "name": "vss_0_3",
+      "master": "dvss",
+      "x": 14523,
+      "y": 0,
+      "orientation": "R0"
+    },
+    {
+      "name": "pcm_data",
+      "master": "bi_t",
+      "x": 16547,
+      "y": 0,
+      "orientation": "R0"
+    },
+    {
+      "name": "pcm_bclk",
+      "master": "bi_t",
+      "x": 18571,
+      "y": 0,
+      "orientation": "R0"
+    },
+    {
+      "name": "pcm_lrclk",
+      "master": "bi_t",
+      "x": 20595,
+      "y": 0,
+      "orientation": "R0"
+    },
+    {
+      "name": "token_data",
+      "master": "bi_t",
+      "x": 22619,
+      "y": 0,
+      "orientation": "R0"
+    },
+    {
+      "name": "vdd_1_0",
+      "master": "dvdd",
+      "x": 24650,
+      "y": 355,
+      "orientation": "R90"
+    },
+    {
+      "name": "vss_1_0",
+      "master": "dvss",
+      "x": 24650,
+      "y": 2379,
+      "orientation": "R90"
+    },
+    {
+      "name": "vdd_1_1",
+      "master": "dvdd",
+      "x": 24650,
+      "y": 4403,
+      "orientation": "R90"
+    },
+    {
+      "name": "vss_1_1",
+      "master": "dvss",
+      "x": 24650,
+      "y": 6427,
+      "orientation": "R90"
+    },
+    {
+      "name": "vdd_1_2",
+      "master": "dvdd",
+      "x": 24650,
+      "y": 8451,
+      "orientation": "R90"
+    },
+    {
+      "name": "vss_1_2",
+      "master": "dvss",
+      "x": 24650,
+      "y": 10475,
+      "orientation": "R90"
+    },
+    {
+      "name": "vdd_1_3",
+      "master": "dvdd",
+      "x": 24650,
+      "y": 12499,
+      "orientation": "R90"
+    },
+    {
+      "name": "vss_1_3",
+      "master": "dvss",
+      "x": 24650,
+      "y": 14523,
+      "orientation": "R90"
+    },
+    {
+      "name": "token_valid",
+      "master": "bi_t",
+      "x": 24650,
+      "y": 16547,
+      "orientation": "R90"
+    },
+    {
+      "name": "token_ready",
+      "master": "bi_t",
+      "x": 24650,
+      "y": 18571,
+      "orientation": "R90"
+    },
+    {
+      "name": "clock",
+      "master": "bi_t",
+      "x": 24650,
+      "y": 20595,
+      "orientation": "R90"
+    },
+    {
+      "name": "reset_n",
+      "master": "bi_t",
+      "x": 24650,
+      "y": 22619,
+      "orientation": "R90"
+    },
+    {
+      "name": "vdd_2_0",
+      "master": "dvdd",
+      "x": 24570,
+      "y": 24650,
+      "orientation": "R180"
+    },
+    {
+      "name": "vss_2_0",
+      "master": "dvss",
+      "x": 22546,
+      "y": 24650,
+      "orientation": "R180"
+    },
+    {
+      "name": "vdd_2_1",
+      "master": "dvdd",
+      "x": 20522,
+      "y": 24650,
+      "orientation": "R180"
+    },
+    {
+      "name": "vss_2_1",
+      "master": "dvss",
+      "x": 18498,
+      "y": 24650,
+      "orientation": "R180"
+    },
+    {
+      "name": "vdd_2_2",
+      "master": "dvdd",
+      "x": 16474,
+      "y": 24650,
+      "orientation": "R180"
+    },
+    {
+      "name": "vss_2_2",
+      "master": "dvss",
+      "x": 14450,
+      "y": 24650,
+      "orientation": "R180"
+    },
+    {
+      "name": "vdd_2_3",
+      "master": "dvdd",
+      "x": 12426,
+      "y": 24650,
+      "orientation": "R180"
+    },
+    {
+      "name": "vss_2_3",
+      "master": "dvss",
+      "x": 10402,
+      "y": 24650,
+      "orientation": "R180"
+    },
+    {
+      "name": "spi_sck",
+      "master": "bi_t",
+      "x": 8378,
+      "y": 24650,
+      "orientation": "R180"
+    },
+    {
+      "name": "spi_mosi",
+      "master": "bi_t",
+      "x": 6354,
+      "y": 24650,
+      "orientation": "R180"
+    },
+    {
+      "name": "spi_miso",
+      "master": "bi_t",
+      "x": 4330,
+      "y": 24650,
+      "orientation": "R180"
+    },
+    {
+      "name": "spi_cs_n",
+      "master": "bi_t",
+      "x": 2306,
+      "y": 24650,
+      "orientation": "R180"
+    },
+    {
+      "name": "vdd_3_0",
+      "master": "dvdd",
+      "x": 0,
+      "y": 24570,
+      "orientation": "R270"
+    },
+    {
+      "name": "vss_3_0",
+      "master": "dvss",
+      "x": 0,
+      "y": 22546,
+      "orientation": "R270"
+    },
+    {
+      "name": "vdd_3_1",
+      "master": "dvdd",
+      "x": 0,
+      "y": 20522,
+      "orientation": "R270"
+    },
+    {
+      "name": "vss_3_1",
+      "master": "dvss",
+      "x": 0,
+      "y": 18498,
+      "orientation": "R270"
+    },
+    {
+      "name": "vdd_3_2",
+      "master": "dvdd",
+      "x": 0,
+      "y": 16474,
+      "orientation": "R270"
+    },
+    {
+      "name": "vss_3_2",
+      "master": "dvss",
+      "x": 0,
+      "y": 14450,
+      "orientation": "R270"
+    },
+    {
+      "name": "vdd_3_3",
+      "master": "dvdd",
+      "x": 0,
+      "y": 12426,
+      "orientation": "R270"
+    },
+    {
+      "name": "vss_3_3",
+      "master": "dvss",
+      "x": 0,
+      "y": 10402,
+      "orientation": "R270"
+    },
+    {
+      "name": "uart_rx",
+      "master": "bi_t",
+      "x": 0,
+      "y": 8378,
+      "orientation": "R270"
+    },
+    {
+      "name": "uart_tx",
+      "master": "bi_t",
+      "x": 0,
+      "y": 6354,
+      "orientation": "R270"
+    },
+    {
+      "name": "test_en",
+      "master": "bi_t",
+      "x": 0,
+      "y": 4330,
+      "orientation": "R270"
+    },
+    {
+      "name": "status",
+      "master": "bi_t",
+      "x": 0,
+      "y": 2306,
+      "orientation": "R270"
+    }
+  ]
+}

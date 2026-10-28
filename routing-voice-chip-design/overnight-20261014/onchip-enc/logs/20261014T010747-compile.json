@@ -1,0 +1,25 @@
+{
+  "stage": "compile",
+  "command": [
+    "/usr/bin/nice",
+    "-n",
+    "10",
+    "/usr/bin/make",
+    "-C",
+    "/Users/sanju/.local/state/routevoice-internal-runs/20261014/onchip-enc/obj",
+    "-f",
+    "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/onchip-enc/no-pch.mk",
+    "-j6",
+    "OPT_FAST=-O3",
+    "OPT_SLOW=-O3",
+    "CXX=/usr/bin/c++",
+    "LINK=/usr/bin/c++",
+    "VM_PARALLEL_BUILDS=1"
+  ],
+  "cwd": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design",
+  "log": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/onchip-enc/logs/20261014T010747-compile.log",
+  "started": "20261014T010747",
+  "exit_code": 0,
+  "pid": 17739,
+  "elapsed_seconds": 112.71270783385262
+}

@@ -1,0 +1,122 @@
+{
+  "utc": "2026-10-13T22:47:13.411084+00:00",
+  "authorization": "Parent explicitly requested sequential archival of these four completed full-bank SPICE files; timing confirmed no active/future readers.",
+  "status": "complete",
+  "files": [
+    {
+      "native": "extracted.spice",
+      "archive": "extracted.spice.gz",
+      "status": "complete",
+      "raw_removed": true,
+      "reader_checks": [
+        {
+          "utc": "2026-10-13T22:47:13.662119+00:00",
+          "returncode": 1,
+          "stdout": "",
+          "stderr": ""
+        },
+        {
+          "utc": "2026-10-13T22:47:15.626577+00:00",
+          "returncode": 1,
+          "stdout": "",
+          "stderr": ""
+        }
+      ],
+      "native_sha256": "94c228cfd070a0f4e4d033f95e054f7506a6c046cef81cbf24841bc6f3b9d56e",
+      "native_bytes": 322304516,
+      "archive_bytes": 21133354,
+      "decompressed_sha256": "94c228cfd070a0f4e4d033f95e054f7506a6c046cef81cbf24841bc6f3b9d56e",
+      "decompressed_bytes": 322304516,
+      "archive_sha256": "57a9192edc29d7935e7c38255785c7692edd9386c944713659902591d730689a",
+      "recovered_bytes": 301171162,
+      "elapsed_seconds": 2.2565533751621842
+    },
+    {
+      "native": "canonical.spice",
+      "archive": "canonical.spice.gz",
+      "status": "complete",
+      "raw_removed": true,
+      "reader_checks": [
+        {
+          "utc": "2026-10-13T22:47:15.928100+00:00",
+          "returncode": 1,
+          "stdout": "",
+          "stderr": ""
+        },
+        {
+          "utc": "2026-10-13T22:47:17.851910+00:00",
+          "returncode": 1,
+          "stdout": "",
+          "stderr": ""
+        }
+      ],
+      "native_sha256": "5f3d82ed637f9ca47c5e9eba4107dbd6129a0b30f42bf95acf7d288fb4835e1f",
+      "native_bytes": 163808539,
+      "archive_bytes": 16497715,
+      "decompressed_sha256": "5f3d82ed637f9ca47c5e9eba4107dbd6129a0b30f42bf95acf7d288fb4835e1f",
+      "decompressed_bytes": 163808539,
+      "archive_sha256": "3c43779f707283841d6edf171a5605558f65e0c9519c9ef802405d7e06eebf81",
+      "recovered_bytes": 147310824,
+      "elapsed_seconds": 2.205356625141576
+    },
+    {
+      "native": "reference.spice",
+      "archive": "reference.spice.gz",
+      "status": "complete",
+      "raw_removed": true,
+      "reader_checks": [
+        {
+          "utc": "2026-10-13T22:47:18.144783+00:00",
+          "returncode": 1,
+          "stdout": "",
+          "stderr": ""
+        },
+        {
+          "utc": "2026-10-13T22:47:19.174635+00:00",
+          "returncode": 1,
+          "stdout": "",
+          "stderr": ""
+        }
+      ],
+      "native_sha256": "1208bbef6b41993f97d2e19b24f484d25be63e2bdf9bfd9c964ec369453eed14",
+      "native_bytes": 107016980,
+      "archive_bytes": 9499039,
+      "decompressed_sha256": "1208bbef6b41993f97d2e19b24f484d25be63e2bdf9bfd9c964ec369453eed14",
+      "decompressed_bytes": 107016980,
+      "archive_sha256": "533d75965d59a86cfbf684c70857dc29c0ce27f474d7524a49ad6b9acf7c2c0d",
+      "recovered_bytes": 97517941,
+      "elapsed_seconds": 1.313619416905567
+    },
+    {
+      "native": "reference-wrong-width.spice",
+      "archive": "reference-wrong-width.spice.gz",
+      "status": "complete",
+      "raw_removed": true,
+      "reader_checks": [
+        {
+          "utc": "2026-10-13T22:47:19.445845+00:00",
+          "returncode": 1,
+          "stdout": "",
+          "stderr": ""
+        },
+        {
+          "utc": "2026-10-13T22:47:20.448885+00:00",
+          "returncode": 1,
+          "stdout": "",
+          "stderr": ""
+        }
+      ],
+      "native_sha256": "6d07bd629aaf5b0489a41e77e22ae3fafcdb337eb4d308f05b28464aa39db7ec",
+      "native_bytes": 107016980,
+      "archive_bytes": 9499045,
+      "decompressed_sha256": "6d07bd629aaf5b0489a41e77e22ae3fafcdb337eb4d308f05b28464aa39db7ec",
+      "decompressed_bytes": 107016980,
+      "archive_sha256": "75ceefbad7b64bfd80e44e6534e2d9e13717066a706f51408292d8715c8d53e2",
+      "recovered_bytes": 97517935,
+      "elapsed_seconds": 1.2798347908537835
+    }
+  ],
+  "minimum_free_gib": 25.795570373535156,
+  "recovered_bytes": 643517862,
+  "reproduction": "For each required file run gzip -dc NAME.spice.gz > NAME.spice in this directory, then verify SHA256 equals native_sha256 before rerunning compare/Netgen. Allocate native_bytes plus22GiB reserve; no regeneration of original extraction is required."
+}

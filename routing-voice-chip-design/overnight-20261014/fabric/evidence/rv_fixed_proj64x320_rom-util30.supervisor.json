@@ -1,0 +1,21 @@
+{
+  "command": [
+    "bash",
+    "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/run_flow.sh",
+    "rv_fixed_proj64x320_rom",
+    "util30"
+  ],
+  "log": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/logs/rv_fixed_proj64x320_rom-util30.flow.log",
+  "exit_code": -15,
+  "stop_reason": "supervisor interrupted: ",
+  "elapsed_seconds": 3942.620747089386,
+  "minimum_free_bytes": 23698194432,
+  "limit_seconds": 7200,
+  "thread_limit": 8,
+  "nice": 10,
+  "start_unix": 1791921691.115809,
+  "flow_controls": {
+    "W2_FROM_STEP": "OpenROAD.Floorplan",
+    "W2_INITIAL_STATE": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/fabric/runs/rv_fixed_proj64x320_rom-restored/12-openroad-staprepnr/state_out.json"
+  }
+}

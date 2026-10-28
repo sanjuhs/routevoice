@@ -1,0 +1,2 @@
+foreach cmd {define_pdn_grid add_pdn_ring add_pdn_stripe add_pdn_connect analyze_power_grid set_pdnsim_inst_power set_pdnsim_net_voltage write_pg_spice check_power_grid make_io_sites make_io_corners place_pads place_io_fill connect_by_abutment save_image} {help $cmd}
+exit

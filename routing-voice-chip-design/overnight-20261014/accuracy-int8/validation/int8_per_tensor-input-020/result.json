@@ -1,0 +1,85 @@
+{
+  "case_id": "int8_per_tensor-input-020",
+  "model": "int8_per_tensor",
+  "id": "3170-137482-0047",
+  "role": "validation",
+  "condition": "clean",
+  "seed": null,
+  "reference": "YOU NEED NOT THINK OF THE FUTURE THINK ONLY OF ENJOYING YOURSELF AND TAKE ME AS YOUR ADVISER IN EVERYTHING THAT MAY HAPPEN TO YOU IN EVERYTHING YOU MAY WISH TO UNDERTAKE AND YOU MAY BE CERTAIN OF ALWAYS FINDING ME YOUR FRIEND",
+  "input_float32_sha256": "8ca17809d682ab4e2e92d94b720cfbdb97ff7d652511ebc7860224ea1d8e53ee",
+  "hypothesis": "     ",
+  "normalized_tokens": [],
+  "edits": 43,
+  "reference_words": 43,
+  "hypothesis_words": 0,
+  "exact": false,
+  "lines": [
+    {
+      "text": "",
+      "start_time": 0.09599995613098145,
+      "duration": 2.9760000705718994,
+      "is_complete": true,
+      "samples": 47616,
+      "input_float32_sha256": "282e5c7ed5049da3d0714df92c484ee141cd101bac1a481bad9e49da4fddea07"
+    },
+    {
+      "text": "",
+      "start_time": 3.007999897003174,
+      "duration": 1.7280001640319824,
+      "is_complete": true,
+      "samples": 27648,
+      "input_float32_sha256": "8dc04daaea92460ff86adb69f61937e7e61e6b4944e500d117387102fe0a870b"
+    },
+    {
+      "text": "",
+      "start_time": 4.415999889373779,
+      "duration": 1.3440003395080566,
+      "is_complete": true,
+      "samples": 21504,
+      "input_float32_sha256": "4fb8864fca3c196fd59b2145faeeb0b65f92bb00855fada65eaa9890d7506dea"
+    },
+    {
+      "text": "",
+      "start_time": 5.664000034332275,
+      "duration": 3.74399995803833,
+      "is_complete": true,
+      "samples": 59904,
+      "input_float32_sha256": "eb562e7621ac2eef7a2ef36fc0222ccebbedd81127867a09d3fdfebfe9e9b967"
+    },
+    {
+      "text": "",
+      "start_time": 9.567999839782715,
+      "duration": 2.6240005493164062,
+      "is_complete": true,
+      "samples": 41984,
+      "input_float32_sha256": "77b29c81d2f84fe175f8d02dd3bbe01393d90aceb2020fbd599c01403df7c385"
+    },
+    {
+      "text": "",
+      "start_time": 12.15999984741211,
+      "duration": 4.319999694824219,
+      "is_complete": true,
+      "samples": 69120,
+      "input_float32_sha256": "b06cc4edf6742c427f86b536b85ff868d6d3c90ce5cac0725d16f0da98881bcd"
+    }
+  ],
+  "request_sha256": "c0bcc8e34d093be4ed7290a5075fea3d8b192d35d08c53df0a820ab330454458",
+  "worker_sha256": "4682e8a57db08e02a34f53b01f334f34faa3ca9a6546698f1e4650db359004b6",
+  "native_library_sha256": "1453a6c1c9072f3d05e9e5ae6ff423fae839e56631c5efb12bbd5c0280d04399",
+  "native_api_version": 30000,
+  "load_seconds": 0.04118308308534324,
+  "compute_seconds": 0.33475958299823105,
+  "audio_seconds": 16.755,
+  "process_cpu_seconds": 0.334528,
+  "voluntary_context_switches": 0,
+  "involuntary_context_switches": 67,
+  "system_load_average": [
+    10.57861328125,
+    8.9716796875,
+    9.873046875
+  ],
+  "options": null,
+  "flags": 0,
+  "process_id": 80964,
+  "isolation": "One audio clip/condition in a fresh native process; no previous utterance or VAD state."
+}

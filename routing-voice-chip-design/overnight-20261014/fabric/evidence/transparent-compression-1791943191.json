@@ -1,0 +1,24 @@
+{
+  "unix": 1791943191.0409012,
+  "method": "ditto --hfsCompression, SHA256 verified before atomic replace; transparent POSIX reads retain identical bytes",
+  "free_before_bytes": 24299536384,
+  "free_after_bytes": 24482459648,
+  "changes": [
+    {
+      "path": "tb/gate_activity_obj_rv_fixed_proj64x320_rom/Vtb",
+      "sha256": "0ebe71bb335eeb16a9dc6e6b102c44545ba31dc750a6620019eda9db6f8851b0",
+      "bytes": 231535248,
+      "before_allocated_bytes": 231538688,
+      "after_allocated_bytes": 83898368,
+      "flags": 32
+    },
+    {
+      "path": "tb/gate_obj_rv_fixed_proj320_rom/Vtb",
+      "sha256": "b8d2f024e44a3a30c9dac903ed1a9044accfe061f057cbe0aa2e40258775fba4",
+      "bytes": 58296048,
+      "before_allocated_bytes": 58298368,
+      "after_allocated_bytes": 23072768,
+      "flags": 32
+    }
+  ]
+}

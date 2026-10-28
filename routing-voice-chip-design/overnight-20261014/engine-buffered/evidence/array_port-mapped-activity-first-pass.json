@@ -1,0 +1,58 @@
+{
+  "updated_utc": "2026-10-14T01:46:39.144318+00:00",
+  "variant": "array_port_buf_v4",
+  "status": "all_54_gate_vectors_passed_and_one_vector_trace_complete",
+  "vectors": 1,
+  "fp32_outputs": 320,
+  "cycles_excluding_start": 4163,
+  "clock_period_ns": 20,
+  "trace_duration_ps": 83320000,
+  "trace_duration_us": 83.32,
+  "initial_reset_included": true,
+  "activity_scope": "tb/dut",
+  "gate_verification": "eight shards, all 54 vectors, exact original per-vector stall cycles; see gate-sharded-results.json",
+  "activity": "Zero-delay mapped standard cells, saved real activation vector0; no SDF glitch timing, not long-stream/idle/peak characterization.",
+  "activation_statistics": {
+    "samples": 1280,
+    "min": -1,
+    "max": 11,
+    "zero_count": 565,
+    "mean_absolute": 0.746875
+  },
+  "artifacts": {
+    "evidence/array_port-mapped-speech.saif": {
+      "bytes": 370949150,
+      "sha256": "673cc9d43e541b450e3bc37ed2d3849c11b7aac149b976af860508eca3bb05fa"
+    },
+    "logs/gate-activity-simulation.log": {
+      "bytes": 380,
+      "sha256": "75a6d2b0a11921b2ecd1e2e2393c632087c99b54e0e0812fa1914053163e1b74"
+    },
+    "tb/activity_array_port.sv": {
+      "bytes": 3001,
+      "sha256": "e176aeee7ba2843d84fb5a0e567e4fef8ca766b87e03332cf2b150f933cccb21"
+    },
+    "runs/buf-v4/01-yosys-synthesis/rv_k64_array_port.nl.v": {
+      "bytes": 49027107,
+      "sha256": "b789d37648f9c435ff91abeeee334bfad2c7e41693c066b01b0eb03f13a36b44"
+    },
+    "vectors/inputs.hex": {
+      "bytes": 276480,
+      "sha256": "a6914fe441e732dc9408b8feb9a5f9363842842b27364377e0a8168809884d55"
+    },
+    "vectors/activation-scales.hex": {
+      "bytes": 486,
+      "sha256": "10ded5f83eb5d1d24ad6c3b4734ade8d359a692b06570c43483807fecce24eae"
+    },
+    "vectors/expected.hex": {
+      "bytes": 155520,
+      "sha256": "fda601d8ea804b285aaef12616f07d6fefbe66292bfb21f2f4752abf8f1fcecd"
+    },
+    "evidence/gate-activity-inputs.sha256": {
+      "bytes": 702,
+      "sha256": "9925484e33125a6ed97b30c8626a251665181ec81f7bfd62dbe5173e48faeb98"
+    }
+  },
+  "annotation_coverage_pending": true,
+  "power_computed": false
+}

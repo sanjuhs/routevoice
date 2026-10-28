@@ -1,0 +1,9 @@
+\begin{abstract}
+We present RouteVoice, an on-device speech recognizer whose transformer weights are hardwired into silicon. Each weight is a fixed 4-bit index into a 16-entry codebook shared by 64 weights. Every multiplication becomes two selections from a table of partial products computed once per input activation and shared by all 320 output lanes.
+
+Applied to the 34\,M-parameter Moonshine Tiny ASR model, this format stays within $+2$ word-error-rate points of the original on a reserved test. It also reduces on-chip weight storage from \SI{28.6}{MB} to \SI{17.5}{MB}. The full recognizer RTL reproduces the frozen model's tokens and intermediate hashes bit-exactly from index$+$codebook storage.
+
+We implemented the largest projection ($1280\times320$, \num{409600} MACs) in the open GF180MCU 180\,nm process with an all-open-source flow. It is routed with zero routing, Magic and KLayout DRC violations and zero antenna violations, matches its netlist under LVS, and meets timing at \SI{150}{ns} in all nine PVT/RC corners after two RTL pipelining changes. Measured from a real-speech activity trace, routed power is \SI{0.188}{W}, or \SI{287}{pJ} per MAC. Mask-programmed weight banks for all 98 matrices occupy \SI{174.7}{mm^2}; all are DRC-clean and read back against the model, with full LVS on representative banks.
+
+The work was carried out by AI coding agents under human direction, at a cloud cost of \$34.82. We report the procedure, its failures, and practices that would shorten it. We also analyse what hardwired codebook silicon implies for local language models and for multi-purpose transformer chips.
+\end{abstract}

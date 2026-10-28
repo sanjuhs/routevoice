@@ -1,0 +1,103 @@
+{
+  "scope": "Bounded read-only source/report review; no new model, simulation, EDA or cloud calls",
+  "complete_W6_row_energy_pJ": null,
+  "complete_W6_projection_array_energy_pJ": null,
+  "general_streaming_selected_projection_vectors_per_new_audio_second": null,
+  "source_backed_frontend": {
+    "sample_rate_Hz": 16000,
+    "full_chunk_samples": 1280,
+    "feature_rows_per_full_chunk": 4,
+    "derived_full_chunk_ms": 80,
+    "conditional_nonoverlapping_feature_rows_per_supplied_second": 50
+  },
+  "actual_native_frontend_fixture": {
+    "chunks": 125,
+    "feature_frames": 500,
+    "original_PCM_samples": 125440,
+    "synthetic_silence_samples": 34560,
+    "lab_samples": 160000,
+    "VAD_bypassed": true,
+    "source": "reports/voice-e2e-20261011-frontend-stream-v1.json",
+    "protocol": "experiments/voice-e2e-20261011-real-f500-v2/protocol.json"
+  },
+  "conditional_single_pass_no_replay_example": {
+    "selected_projection_vectors_per_supplied_second": 50,
+    "array_rowreads_per_supplied_second": 64000,
+    "measured_general_streaming_rate": false
+  },
+  "unbatched_array_rowreads_per_successful_vector": 1280,
+  "formulas": {
+    "selected_rate": "sum(actual selected-matrix feature-vector evaluations across encoder invocations) / seconds of new external audio",
+    "array_dynamic_energy_per_projection": "sum(full-row dynamic read energies for1280actual reads)",
+    "dynamic_power": "selected_projection_rate * dynamic_energy_per_projection; add leakage/idle without double counting"
+  },
+  "energy_receipts": [
+    {
+      "path": "overnight-20261014/taalas-pitch/timing/results.json",
+      "line": 458,
+      "field": "whole_bank_energy_pj_per_row",
+      "value": null
+    },
+    {
+      "path": "overnight-20261014/taalas-pitch/RESULTS.md",
+      "lines": [
+        42,
+        46
+      ],
+      "finding": "16real active columns plus112ideal aggressors and128receivers; no complete row energy"
+    },
+    {
+      "path": "overnight-20261014/taalas-array/RESULTS.md",
+      "line": 13,
+      "finding": "Complete1280-bit rowenergy unknown for every reported W5 variant"
+    }
+  ],
+  "rate_sources": [
+    {
+      "path": "reports/stt-requirements.json",
+      "line": 6
+    },
+    {
+      "path": "scripts/voice_e2e_20261011_frontend_stream.py",
+      "lines": [
+        42,
+        43,
+        56,
+        59
+      ]
+    },
+    {
+      "path": "reports/voice-e2e-20261011-frontend-stream-v1.json",
+      "lines": [
+        2,
+        35945,
+        35980
+      ]
+    },
+    {
+      "path": "experiments/voice-e2e-20261011-real-f500-v2/protocol.json",
+      "lines": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    {
+      "path": "docs/TAALAS-REAL-TIME-WORKLOAD-BOUNDARIES-2026-10-03.md",
+      "lines": [
+        11,
+        29,
+        31,
+        33
+      ]
+    }
+  ],
+  "limits": [
+    "General streaming encoder invocation/overlap/replay calendar unestablished",
+    "Other encoder layers have different frozen matrices and must be counted separately",
+    "Native frontend chronology is distinct from whole recognizer or hardware timing proof",
+    "Partial slice energies must not be scaled and labelled measured fullrow"
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "case_id": "fp32_baseline-input-038",
+  "model": "fp32_baseline",
+  "id": "1585-131718-0001",
+  "role": "validation",
+  "condition": "other",
+  "seed": null,
+  "reference": "THE WAY OF THE INVENTOR IS HARD",
+  "input_float32_sha256": "7ff5da2fa164fd6cd0e723716873b731d719798f5477af14b76326fe623ad7f6",
+  "hypothesis": "The way of the inventory is hard.",
+  "normalized_tokens": [
+    "the",
+    "way",
+    "of",
+    "the",
+    "inventory",
+    "is",
+    "hard"
+  ],
+  "edits": 1,
+  "reference_words": 7,
+  "hypothesis_words": 7,
+  "exact": false,
+  "lines": [
+    {
+      "text": "The way of the inventory is hard.",
+      "start_time": 0.15999996662139893,
+      "duration": 1.9840000867843628,
+      "is_complete": true,
+      "samples": 31744,
+      "input_float32_sha256": "b171cc0ded98786b01875e75bd999d8d3def6d3b01010806b88ca973db60c526"
+    }
+  ],
+  "request_sha256": "2b2267e38cf30628234d9c1efb6848c4b5f82d48955e8c17d2880e96d52bb8de",
+  "worker_sha256": "4682e8a57db08e02a34f53b01f334f34faa3ca9a6546698f1e4650db359004b6",
+  "native_library_sha256": "1453a6c1c9072f3d05e9e5ae6ff423fae839e56631c5efb12bbd5c0280d04399",
+  "native_api_version": 30000,
+  "load_seconds": 0.042571290861815214,
+  "compute_seconds": 0.09244295884855092,
+  "audio_seconds": 2.16,
+  "process_cpu_seconds": 0.09261299999999999,
+  "voluntary_context_switches": 0,
+  "involuntary_context_switches": 12,
+  "system_load_average": [
+    10.6337890625,
+    9.0859375,
+    9.892578125
+  ],
+  "options": null,
+  "flags": 0,
+  "process_id": 81162,
+  "isolation": "One audio clip/condition in a fresh native process; no previous utterance or VAD state."
+}

@@ -1,0 +1,248 @@
+{
+  "status": "pass",
+  "pdk": "gf180mcuD",
+  "revision": "54435919abffb937387ec956209f9cf5fd2dfbee",
+  "missing": [],
+  "groups": {
+    "standard_cell_liberty": [
+      {
+        "file": "libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__ff_125C_1v98.lib",
+        "bytes": 20369816,
+        "sha256": "8f6f05fc95a763da8c866e00f273cefacc1618bbd3054d5e45f57d6169ed86e6"
+      },
+      {
+        "file": "libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__ff_125C_3v60.lib",
+        "bytes": 20037494,
+        "sha256": "f7d93ac4452c3388e27e8f88149c4f6a4ed1aaed344e93cec095914d374ed945"
+      },
+      {
+        "file": "libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__ff_125C_5v50.lib",
+        "bytes": 20201359,
+        "sha256": "ed16198843afb3b0c4abbcdc109b55861273a773ba7eeaf01d9efe4059c43efe"
+      },
+      {
+        "file": "libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__ff_n40C_1v98.lib",
+        "bytes": 20486665,
+        "sha256": "6c427537164dd384d705239b242a351063affe4b36b78b1482585246fdaf124a"
+      },
+      {
+        "file": "libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__ff_n40C_3v60.lib",
+        "bytes": 20275104,
+        "sha256": "a222740b574d0699c8a416400bd9746ecb8556bc87a515ab7fb80f911e2cd74b"
+      },
+      {
+        "file": "libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__ff_n40C_5v50.lib",
+        "bytes": 20416204,
+        "sha256": "6e04fbedf4279c89a73d6caebe55de27bd760f1aa7c24a4c015489724e4c2439"
+      },
+      {
+        "file": "libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__ss_125C_1v62.lib",
+        "bytes": 20338320,
+        "sha256": "a87b443fa095c74d0eae599091a3d38415c69d1a14b9753a445b42eb269baf74"
+      },
+      {
+        "file": "libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__ss_125C_3v00.lib",
+        "bytes": 19934792,
+        "sha256": "5d2f37ba6f43e33aeba26dc1da55c96394a862eeec4148043f1d48bdf65ccea6"
+      },
+      {
+        "file": "libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__ss_125C_4v50.lib",
+        "bytes": 20001645,
+        "sha256": "4c2657ae12581bc18ed408f3fda0accd10b855118b9993070dbb360dfa3aa874"
+      },
+      {
+        "file": "libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__ss_n40C_1v62.lib",
+        "bytes": 20291133,
+        "sha256": "0d5f11c4bda8614a0879a5696654a9e5e72189a7addd41ffe954727550dc83c8"
+      },
+      {
+        "file": "libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__ss_n40C_3v00.lib",
+        "bytes": 20110771,
+        "sha256": "08847da4bb78d75ba004e79bb1540dd43fa8d4ed694b84ed5c182d0809520a93"
+      },
+      {
+        "file": "libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__ss_n40C_4v50.lib",
+        "bytes": 20121740,
+        "sha256": "d1c2695498b2b0aec8520e9090799b5597fef0f6be992b0f23aa899c7163df76"
+      },
+      {
+        "file": "libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__tt_025C_1v80.lib",
+        "bytes": 20344550,
+        "sha256": "9000042dd82b66d81d671cfc82120f27fe4721abbdfcbd0330e8f95f4ca45726"
+      },
+      {
+        "file": "libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__tt_025C_3v30.lib",
+        "bytes": 20107439,
+        "sha256": "f9dee07cf158324934b0c59144d970a2e8313f43533ede6283ec3c136f82fe53"
+      },
+      {
+        "file": "libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__tt_025C_5v00.lib",
+        "bytes": 20122761,
+        "sha256": "330aa9439255e3870ad7adfb987cd4d7bcfa7b6f9fb0cd0a712400e9bd80e38a"
+      },
+      {
+        "file": "libs.ref/gf180mcu_fd_sc_mcu9t5v0/lib/gf180mcu_fd_sc_mcu9t5v0__ff_125C_1v98.lib",
+        "bytes": 20237589,
+        "sha256": "d81eb037b2094e99114a3bb5346218d6aed0bef47aea05a40cc01f9cf58b373c"
+      },
+      {
+        "file": "libs.ref/gf180mcu_fd_sc_mcu9t5v0/lib/gf180mcu_fd_sc_mcu9t5v0__ff_125C_3v60.lib",
+        "bytes": 20166956,
+        "sha256": "b64f32b397097f2046e66ce7f9a4aaffc9a80c4c0bfd3c77385727268e81a016"
+      },
+      {
+        "file": "libs.ref/gf180mcu_fd_sc_mcu9t5v0/lib/gf180mcu_fd_sc_mcu9t5v0__ff_125C_5v50.lib",
+        "bytes": 20081337,
+        "sha256": "5614ceb6369e22530a7650cdd4d0362300239c6914a2f09abe65e6813a070407"
+      },
+      {
+        "file": "libs.ref/gf180mcu_fd_sc_mcu9t5v0/lib/gf180mcu_fd_sc_mcu9t5v0__ff_n40C_1v98.lib",
+        "bytes": 20418006,
+        "sha256": "4d52009bd66a01004f09fba3c75c446c6aa445f16fce632132040ccb26c54ec0"
+      },
+      {
+        "file": "libs.ref/gf180mcu_fd_sc_mcu9t5v0/lib/gf180mcu_fd_sc_mcu9t5v0__ff_n40C_3v60.lib",
+        "bytes": 20245116,
+        "sha256": "0b48b93d6800da325a2613ff6c0b998b230a1bbd28031f6da592e9ff30066602"
+      },
+      {
+        "file": "libs.ref/gf180mcu_fd_sc_mcu9t5v0/lib/gf180mcu_fd_sc_mcu9t5v0__ff_n40C_5v50.lib",
+        "bytes": 20298089,
+        "sha256": "8bc3577641d2edd6ead2a79979df2e6da4f64b4428ef1a33f3231a61c147063d"
+      },
+      {
+        "file": "libs.ref/gf180mcu_fd_sc_mcu9t5v0/lib/gf180mcu_fd_sc_mcu9t5v0__ss_125C_1v62.lib",
+        "bytes": 20082488,
+        "sha256": "66b3d29af2d43dcdc3cacfd95f5ca49fe2261976ad45afda1e0e54670a929ed7"
+      },
+      {
+        "file": "libs.ref/gf180mcu_fd_sc_mcu9t5v0/lib/gf180mcu_fd_sc_mcu9t5v0__ss_125C_3v00.lib",
+        "bytes": 19900291,
+        "sha256": "d83917f827021eadb159f6011905bf20de632533b2953abba89266a88c2b24af"
+      },
+      {
+        "file": "libs.ref/gf180mcu_fd_sc_mcu9t5v0/lib/gf180mcu_fd_sc_mcu9t5v0__ss_125C_4v50.lib",
+        "bytes": 19956945,
+        "sha256": "7a6499b8e1d6417a6e0a82193b9027e68af9eb72ddb6161d6d03a8ff6fa8fa0e"
+      },
+      {
+        "file": "libs.ref/gf180mcu_fd_sc_mcu9t5v0/lib/gf180mcu_fd_sc_mcu9t5v0__ss_n40C_1v62.lib",
+        "bytes": 20161953,
+        "sha256": "fdb43b2d63eb3d8e4374248b0e2cb06d49c5158263f8486fbd42e6a508f141ac"
+      },
+      {
+        "file": "libs.ref/gf180mcu_fd_sc_mcu9t5v0/lib/gf180mcu_fd_sc_mcu9t5v0__ss_n40C_3v00.lib",
+        "bytes": 20048992,
+        "sha256": "03238cd7c39382b10bd1ff526c37c9ac3c73cc92c01cd2c249cb86978bda9de3"
+      },
+      {
+        "file": "libs.ref/gf180mcu_fd_sc_mcu9t5v0/lib/gf180mcu_fd_sc_mcu9t5v0__ss_n40C_4v50.lib",
+        "bytes": 20118752,
+        "sha256": "5ea73fc4351c370c386b5f68bf5d0c6901ecd4c75f83a6e2d0620180854ba83b"
+      },
+      {
+        "file": "libs.ref/gf180mcu_fd_sc_mcu9t5v0/lib/gf180mcu_fd_sc_mcu9t5v0__tt_025C_1v80.lib",
+        "bytes": 20252724,
+        "sha256": "c0b6946a2d48a4604c687a29d3c8b1e05b3da5a42866b21592eaacfeae6e9ca7"
+      },
+      {
+        "file": "libs.ref/gf180mcu_fd_sc_mcu9t5v0/lib/gf180mcu_fd_sc_mcu9t5v0__tt_025C_3v30.lib",
+        "bytes": 20138795,
+        "sha256": "1157d0aa147dba75a214708197d7a046f970175d723cdec108025f6f06727c12"
+      },
+      {
+        "file": "libs.ref/gf180mcu_fd_sc_mcu9t5v0/lib/gf180mcu_fd_sc_mcu9t5v0__tt_025C_5v00.lib",
+        "bytes": 20028606,
+        "sha256": "84a68abb02893c4a03624466e4f55cba284ad9db0326255bb667fece652d8c60"
+      }
+    ],
+    "standard_cell_lef": [
+      {
+        "file": "libs.ref/gf180mcu_fd_sc_mcu7t5v0/lef/gf180mcu_fd_sc_mcu7t5v0.lef",
+        "bytes": 671072,
+        "sha256": "47dadf84c21b20f558d043c36271632f07b1c2c2a595b118e2e1050ebb74349b"
+      },
+      {
+        "file": "libs.ref/gf180mcu_fd_sc_mcu9t5v0/lef/gf180mcu_fd_sc_mcu9t5v0.lef",
+        "bytes": 656542,
+        "sha256": "38afbef95529165e1d8999d5b5613c4aec9869df8c1ce6b5555e74586ba4c826"
+      }
+    ],
+    "standard_cell_gds": [
+      {
+        "file": "libs.ref/gf180mcu_fd_sc_mcu7t5v0/gds/gf180mcu_fd_sc_mcu7t5v0.gds",
+        "bytes": 1450948,
+        "sha256": "efa44f076c96508a0dae9afa00448c217d78e1a345b8e04c4f2a9765e79b26c4"
+      },
+      {
+        "file": "libs.ref/gf180mcu_fd_sc_mcu9t5v0/gds/gf180mcu_fd_sc_mcu9t5v0.gds",
+        "bytes": 1538398,
+        "sha256": "d0c406fae90ec09146d430218d335338908059cf0aebbc150200cb6e76e17f73"
+      }
+    ],
+    "technology_lef": [
+      {
+        "file": "libs.ref/gf180mcu_fd_sc_mcu7t5v0/techlef/gf180mcu_fd_sc_mcu7t5v0__max.tlef",
+        "bytes": 33056,
+        "sha256": "7f97c3092cdc6c289444e08c40cf0c4cb20b8b272e573a245233bd49a8f4475c"
+      },
+      {
+        "file": "libs.ref/gf180mcu_fd_sc_mcu7t5v0/techlef/gf180mcu_fd_sc_mcu7t5v0__min.tlef",
+        "bytes": 33052,
+        "sha256": "5b6cf77e88477cbcd8f8a94a188c1e2a6ccbfc3a201df9c68b8792cc183a5e84"
+      },
+      {
+        "file": "libs.ref/gf180mcu_fd_sc_mcu7t5v0/techlef/gf180mcu_fd_sc_mcu7t5v0__nom.tlef",
+        "bytes": 33043,
+        "sha256": "1e15a88b384e015e5609a163fb8ce961309e122d450a69e189e57e528d464d65"
+      },
+      {
+        "file": "libs.ref/gf180mcu_fd_sc_mcu9t5v0/techlef/gf180mcu_fd_sc_mcu9t5v0__max.tlef",
+        "bytes": 33180,
+        "sha256": "ff62cc9dc0e0e26259a7bd7775dc4e4452d54c4a51a40d83610e94d16c73eb49"
+      },
+      {
+        "file": "libs.ref/gf180mcu_fd_sc_mcu9t5v0/techlef/gf180mcu_fd_sc_mcu9t5v0__min.tlef",
+        "bytes": 33176,
+        "sha256": "4b95249be20d50b4b292b945a385208ea39eedabf394b728bb9276352fbfc7ed"
+      },
+      {
+        "file": "libs.ref/gf180mcu_fd_sc_mcu9t5v0/techlef/gf180mcu_fd_sc_mcu9t5v0__nom.tlef",
+        "bytes": 33167,
+        "sha256": "332ae93d61ac55f793da97a6391703f78bc415653cb60e76dd8eb0092124485a"
+      }
+    ],
+    "magic_technology": [
+      {
+        "file": "libs.tech/magic/gf180mcuD-GDS.tech",
+        "bytes": 6806,
+        "sha256": "1bc4fe472e7eb58cc1aabeb81293d319ed80655ed777b0aeb0af2fc7fda36d45"
+      },
+      {
+        "file": "libs.tech/magic/gf180mcuD.tech",
+        "bytes": 113852,
+        "sha256": "0db2e5c354a2f7c7749f86df4c995127c1564daf51f936030b4e1a5982ad3210"
+      }
+    ],
+    "netgen_setup": [
+      {
+        "file": "libs.tech/netgen/gf180mcuD_setup.tcl",
+        "bytes": 16935,
+        "sha256": "eb6217e33acb2c81680351745bc184a2ee37b31a25d37f4dce423f61ba466fe4"
+      },
+      {
+        "file": "libs.tech/netgen/setup.tcl",
+        "bytes": 16935,
+        "sha256": "eb6217e33acb2c81680351745bc184a2ee37b31a25d37f4dce423f61ba466fe4"
+      }
+    ],
+    "klayout_technology": [
+      {
+        "file": "libs.tech/klayout/tech/gf180mcu.lyt",
+        "bytes": 8330,
+        "sha256": "798a50d312ee34346dd81d7d485fa10fd3a3b06e369f008363d0add21760f5a2"
+      }
+    ]
+  },
+  "proof_boundary": "Pinned prepared PDK installed; no source rebuild, DRC/LVS result or silicon qualification implied."
+}

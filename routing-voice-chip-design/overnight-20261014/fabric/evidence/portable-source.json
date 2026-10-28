@@ -1,0 +1,7 @@
+{
+  "original": "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/cross/coefficients.bin",
+  "copy": "vectors/coefficients-source.bin",
+  "sha256": "f25cb6ca33ef3ee3f92a3b4914c5887333fcfe57dcd440b30f1d8f100a9b4ffc",
+  "bytes": 1228800,
+  "regenerate": "python gen_fabric.py --weights vectors/coefficients-source.bin (from fabric directory)"
+}

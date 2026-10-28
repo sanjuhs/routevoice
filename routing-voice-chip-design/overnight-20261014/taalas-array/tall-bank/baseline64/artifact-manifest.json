@@ -1,0 +1,66 @@
+{
+  "RESULTS.md": {
+    "bytes": 10708,
+    "sha256": "31e6a7c6ff6627479e5049a5588d52c9877889084c6a1645d26c7f5f1be97ca8"
+  },
+  "results.json": {
+    "bytes": 41624,
+    "sha256": "cfc4641b5dfc6b51d27e6092c08a75dfbd445c2fa5bdde0607cc946bd6d63300"
+  },
+  "INTEGRATION.md": {
+    "bytes": 8674,
+    "sha256": "8e95200335e503895cb87cf9a3e8fef7e776fc5826c09dd5127696dc5702be45"
+  },
+  "COMMANDS.md": {
+    "bytes": 3428,
+    "sha256": "3ea0ae8fd331d779400768413608d3aa28b1b69ad89aad80d0d167b851eac86b"
+  },
+  "CLOUD-REQUEST.md": {
+    "bytes": 2516,
+    "sha256": "b79c902bb9b4406a47459771bee31d536afea38e8e6883a6efc45b5dc1ae2207"
+  },
+  "identity.json": {
+    "bytes": 664,
+    "sha256": "71aff7bd017319ee73d16243a6d68d90f45f95e402a97fdae4ed3df03bef3ad0"
+  },
+  "scripts/collect_handoff.py": {
+    "bytes": 8798,
+    "sha256": "fc30fc589f10fefadbef69423ccf687be78435740113488ef90f0a589b1001d1"
+  },
+  "base/tile0.gds": {
+    "bytes": 28356630,
+    "sha256": "bf6410c7352df37f71b0d02fc01d11e731e649b19aeac1b8b8c72f337e51b93f"
+  },
+  "base/array-core.gds": {
+    "bytes": 118541492,
+    "sha256": "c83969e19a1742f2e8cf9d136a035f2c7c017cbcfa3588af5112f54aa3fc40b7"
+  },
+  "integrated/readout-tile0.gds": {
+    "bytes": 38794304,
+    "sha256": "4c92ba7407fee7889c794ba0f9cfc3e2d9cc3c80f95e2fda69389a33378ba6c4"
+  },
+  "integrated/readout-tile0.lef": {
+    "bytes": 197880,
+    "sha256": "734eb8cb951f3e93b29221bc9b458b154e03edca982d59229c5eb02ea7148e37"
+  },
+  "timing/full-readout/partial-full-readout.gds": {
+    "bytes": 147884878,
+    "sha256": "687c9fe476c42e6e4120e8dcdff2a572d81d7fae35cd8e45ce887d6533cab1f4"
+  },
+  "timing/decoded-tile/v1/decoded-tile.gds": {
+    "bytes": 39775100,
+    "sha256": "33aa0eb05ba3297d4879e4c6acc42ed17ac7f3e16b94cf932b44f4bf26047df6"
+  },
+  "timing/decoded-tile/results.json": {
+    "bytes": 13520,
+    "sha256": "1c48e564f0857f811469fe595ff0935b4268b8240608e2838f23158d990869c6"
+  },
+  "periphery/results.json": {
+    "bytes": 21748,
+    "sha256": "22a291b5f100ae6a893e02a35a77e61829d3bf7b7fb3883785d733ff98571876"
+  },
+  "periphery/latch-results.json": {
+    "bytes": 10420,
+    "sha256": "c0cdb850f2584ceb9564c38f1a577bafd0a40caf2c608b00a2c72f6837aa794e"
+  }
+}

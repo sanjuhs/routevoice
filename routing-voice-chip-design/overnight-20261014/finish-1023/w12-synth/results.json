@@ -1,0 +1,1877 @@
+{
+  "top": "rv_allonchip_top_all_v2",
+  "updated_utc": "2026-10-22T16:40:39.613272+00:00",
+  "status": "complete",
+  "method": "Hierarchical composition with each distinct logic module synthesized independently against exact child-port stubs; no flattening and no DFF enable/reset merging. Area and resource sums include every reachable instance with multiplicity, exclude ROM-service interiors, and do not include cross-boundary optimization.",
+  "partition": {
+    "root": "u03592",
+    "original_module_count": 30545,
+    "reachable_module_count": 30545,
+    "unique_units": 4474,
+    "synth_units": 4457,
+    "source_checkpoint_sha256": "71a406b86805e7cf5201d8c118e75f760ce1c0a0151c4e423d4393eb8cbf663d",
+    "deduplication": "Exact normalized RTLIL comparison by SHA256, removing only src/hdlname/top attributes, replacing module identity and recursively identical child type names. Black-box identities are never merged. All other identifiers, constants, parameters and attributes retained."
+  },
+  "top_wrapper_connectivity": {
+    "exit_code": 0,
+    "wall_seconds": 0.07921343483030796,
+    "peak_rss_kib": 87212,
+    "user_seconds": 0.048429,
+    "system_seconds": 0.028249999999999997,
+    "cpu": 22,
+    "guard_reason": null,
+    "script_sha256": "d1747595e804bdfcd65d556c3da7844048d4257ec59b58d67178262fc0be915e"
+  },
+  "completion_record": {
+    "deadline_reached": false,
+    "remaining_queued": 0,
+    "finished_utc": "2026-10-21T14:02:37.836143+00:00"
+  },
+  "first_level_children": [
+    {
+      "instance": "\\positions",
+      "original_module": "\\rv_source_position_immutable_rom_v1",
+      "unit": "u02420",
+      "blackbox": true
+    },
+    {
+      "instance": "\\original",
+      "original_module": "\\rv_pcm_encoder_greedy_frontend_history_producer_metadata_KV_tables_onboard_v1$rv_allonchip_top_all_v2.original",
+      "unit": "u04236",
+      "blackbox": false,
+      "generic": {
+        "status": "pass",
+        "counts_complete": true,
+        "unit_status_counts": {
+          "pass": 4456
+        },
+        "failed_units": [],
+        "totals_of_passing_units_only": {
+          "cells": 48377470,
+          "FFs": 8073841,
+          "LUTs": 0,
+          "DSPs": 0,
+          "BRAMs": 0,
+          "BRAM_bits": 0,
+          "memory_bits_after_mapping": 0,
+          "inferred_memory_count": 311,
+          "inferred_memory_bits": 8169778,
+          "area_mm2": 0.0
+        },
+        "cell_counts_by_type_of_passing_units": {
+          "$_ANDNOT_": 2979571,
+          "$_NOR_": 513788,
+          "$_ORNOT_": 463462,
+          "$_OR_": 1846069,
+          "$_AND_": 256783,
+          "$_DFF_P_": 8072791,
+          "$_MUX_": 29085783,
+          "$_NAND_": 304337,
+          "$_NOT_": 3496656,
+          "$_XOR_": 1067410,
+          "$_XNOR_": 289770,
+          "$_DFF_N_": 4,
+          "$_DFF_PN0_": 1046
+        },
+        "sum_unique_unit_wall_seconds": 7766.782613297924,
+        "maximum_unit_peak_rss_kib": 19741856
+      },
+      "gf180": {
+        "status": "pass",
+        "counts_complete": true,
+        "unit_status_counts": {
+          "pass": 4456
+        },
+        "failed_units": [],
+        "totals_of_passing_units_only": {
+          "cells": 31987828,
+          "FFs": 0,
+          "LUTs": 0,
+          "DSPs": 0,
+          "BRAMs": 0,
+          "BRAM_bits": 0,
+          "memory_bits_after_mapping": 0,
+          "inferred_memory_count": 311,
+          "inferred_memory_bits": 8169778,
+          "area_mm2": 1198.2881208723072
+        },
+        "cell_counts_by_type_of_passing_units": {
+          "gf180mcu_fd_sc_mcu7t5v0__aoi211_1": 293648,
+          "gf180mcu_fd_sc_mcu7t5v0__nor3_1": 207205,
+          "gf180mcu_fd_sc_mcu7t5v0__or4_1": 27500,
+          "gf180mcu_fd_sc_mcu7t5v0__or2_1": 199503,
+          "gf180mcu_fd_sc_mcu7t5v0__or3_1": 38109,
+          "gf180mcu_fd_sc_mcu7t5v0__and2_1": 382886,
+          "gf180mcu_fd_sc_mcu7t5v0__and3_1": 73844,
+          "gf180mcu_fd_sc_mcu7t5v0__and4_1": 33568,
+          "gf180mcu_fd_sc_mcu7t5v0__aoi21_1": 1120104,
+          "gf180mcu_fd_sc_mcu7t5v0__aoi221_1": 255937,
+          "gf180mcu_fd_sc_mcu7t5v0__aoi22_1": 915059,
+          "gf180mcu_fd_sc_mcu7t5v0__clkinv_1": 835521,
+          "gf180mcu_fd_sc_mcu7t5v0__dffq_1": 8072679,
+          "gf180mcu_fd_sc_mcu7t5v0__nand2_1": 2540041,
+          "gf180mcu_fd_sc_mcu7t5v0__nand3_1": 470336,
+          "gf180mcu_fd_sc_mcu7t5v0__nand4_1": 84106,
+          "gf180mcu_fd_sc_mcu7t5v0__nor2_1": 1105755,
+          "gf180mcu_fd_sc_mcu7t5v0__nor4_1": 88471,
+          "gf180mcu_fd_sc_mcu7t5v0__oai211_1": 451969,
+          "gf180mcu_fd_sc_mcu7t5v0__oai21_1": 1652076,
+          "gf180mcu_fd_sc_mcu7t5v0__oai221_1": 223199,
+          "gf180mcu_fd_sc_mcu7t5v0__oai22_1": 217893,
+          "gf180mcu_fd_sc_mcu7t5v0__oai31_1": 169802,
+          "gf180mcu_fd_sc_mcu7t5v0__xnor2_1": 187309,
+          "gf180mcu_fd_sc_mcu7t5v0__xor2_1": 565142,
+          "gf180mcu_fd_sc_mcu7t5v0__aoi222_1": 166701,
+          "gf180mcu_fd_sc_mcu7t5v0__dffnq_1": 4,
+          "gf180mcu_fd_sc_mcu7t5v0__buf_1": 118,
+          "gf180mcu_fd_sc_mcu7t5v0__mux2_1": 7799574,
+          "gf180mcu_fd_sc_mcu7t5v0__mux4_1": 3413027,
+          "gf180mcu_fd_sc_mcu7t5v0__oai222_1": 240783,
+          "gf180mcu_fd_sc_mcu7t5v0__oai32_1": 71689,
+          "gf180mcu_fd_sc_mcu7t5v0__oai33_1": 1879,
+          "gf180mcu_fd_sc_mcu7t5v0__xnor3_1": 34372,
+          "gf180mcu_fd_sc_mcu7t5v0__xor3_1": 46973,
+          "gf180mcu_fd_sc_mcu7t5v0__dffrnq_1": 1046
+        },
+        "sum_unique_unit_wall_seconds": 18312.006981121376,
+        "maximum_unit_peak_rss_kib": 10987216
+      },
+      "fpga": {
+        "status": "pass",
+        "counts_complete": true,
+        "unit_status_counts": {
+          "pass": 4456
+        },
+        "failed_units": [],
+        "totals_of_passing_units_only": {
+          "cells": 45094327,
+          "FFs": 1339678,
+          "LUTs": 30390698,
+          "DSPs": 1247,
+          "BRAMs": 118,
+          "BRAM_bits": 2174976,
+          "memory_bits_after_mapping": 0,
+          "inferred_memory_count": 311,
+          "inferred_memory_bits": 8169778,
+          "area_mm2": 0.0
+        },
+        "cell_counts_by_type_of_passing_units": {
+          "LUT4": 30390698,
+          "L6MUX21": 4351334,
+          "PFUMX": 8435834,
+          "TRELLIS_FF": 1339678,
+          "CCU2C": 487452,
+          "MULT18X18D": 1247,
+          "TRELLIS_DPR16X4": 87966,
+          "DP16KD": 118
+        },
+        "sum_unique_unit_wall_seconds": 24571.080390373245,
+        "maximum_unit_peak_rss_kib": 30633888
+      }
+    },
+    {
+      "instance": "\\frontend_rom",
+      "original_module": "\\rv_onchip_frontend_v1",
+      "unit": "u01634",
+      "blackbox": true
+    },
+    {
+      "instance": "\\encoder_memory",
+      "original_module": "\\rv_onchip_encoder_memory_v1",
+      "unit": "u03304",
+      "blackbox": true
+    },
+    {
+      "instance": "\\encoder_head",
+      "original_module": "\\rv_onchip_encoder_head_v1",
+      "unit": "u04251",
+      "blackbox": true
+    },
+    {
+      "instance": "\\encoder_O",
+      "original_module": "\\rv_onchip_encoder_O_v1",
+      "unit": "u01466",
+      "blackbox": true
+    },
+    {
+      "instance": "\\decoder_self",
+      "original_module": "\\rv_onchip_decoder_self_v1",
+      "unit": "u04116",
+      "blackbox": true
+    },
+    {
+      "instance": "\\decoder_body",
+      "original_module": "\\rv_onchip_decoder_body_v1",
+      "unit": "u04426",
+      "blackbox": true
+    }
+  ],
+  "summary": {
+    "generic": {
+      "status": "pass",
+      "counts_complete": true,
+      "unit_status_counts": {
+        "pass": 4457
+      },
+      "failed_units": [],
+      "totals_of_passing_units_only": {
+        "cells": 48377943,
+        "FFs": 8073841,
+        "LUTs": 0,
+        "DSPs": 0,
+        "BRAMs": 0,
+        "BRAM_bits": 0,
+        "memory_bits_after_mapping": 0,
+        "inferred_memory_count": 311,
+        "inferred_memory_bits": 8169778,
+        "area_mm2": 0.0
+      },
+      "cell_counts_by_type_of_passing_units": {
+        "$_ANDNOT_": 2979586,
+        "$_AND_": 256788,
+        "$_MUX_": 29086216,
+        "$_NAND_": 304340,
+        "$_NOR_": 513792,
+        "$_NOT_": 3496657,
+        "$_ORNOT_": 463467,
+        "$_OR_": 1846076,
+        "$_DFF_P_": 8072791,
+        "$_XOR_": 1067410,
+        "$_XNOR_": 289770,
+        "$_DFF_N_": 4,
+        "$_DFF_PN0_": 1046
+      },
+      "sum_unique_unit_wall_seconds": 7767.2558503896,
+      "maximum_unit_peak_rss_kib": 19741856
+    },
+    "gf180": {
+      "status": "pass",
+      "counts_complete": true,
+      "unit_status_counts": {
+        "pass": 4457
+      },
+      "failed_units": [],
+      "totals_of_passing_units_only": {
+        "cells": 31988283,
+        "FFs": 0,
+        "LUTs": 0,
+        "DSPs": 0,
+        "BRAMs": 0,
+        "BRAM_bits": 0,
+        "memory_bits_after_mapping": 0,
+        "inferred_memory_count": 311,
+        "inferred_memory_bits": 8169778,
+        "area_mm2": 1198.3008135187072
+      },
+      "cell_counts_by_type_of_passing_units": {
+        "gf180mcu_fd_sc_mcu7t5v0__and2_1": 382888,
+        "gf180mcu_fd_sc_mcu7t5v0__and3_1": 73845,
+        "gf180mcu_fd_sc_mcu7t5v0__and4_1": 33569,
+        "gf180mcu_fd_sc_mcu7t5v0__clkinv_1": 835526,
+        "gf180mcu_fd_sc_mcu7t5v0__mux2_1": 7800006,
+        "gf180mcu_fd_sc_mcu7t5v0__nand2_1": 2540044,
+        "gf180mcu_fd_sc_mcu7t5v0__nand4_1": 84107,
+        "gf180mcu_fd_sc_mcu7t5v0__nor2_1": 1105757,
+        "gf180mcu_fd_sc_mcu7t5v0__nor3_1": 207207,
+        "gf180mcu_fd_sc_mcu7t5v0__oai211_1": 451970,
+        "gf180mcu_fd_sc_mcu7t5v0__oai21_1": 1652077,
+        "gf180mcu_fd_sc_mcu7t5v0__oai31_1": 169803,
+        "gf180mcu_fd_sc_mcu7t5v0__oai32_1": 71690,
+        "gf180mcu_fd_sc_mcu7t5v0__or2_1": 199505,
+        "gf180mcu_fd_sc_mcu7t5v0__aoi211_1": 293648,
+        "gf180mcu_fd_sc_mcu7t5v0__or4_1": 27500,
+        "gf180mcu_fd_sc_mcu7t5v0__or3_1": 38109,
+        "gf180mcu_fd_sc_mcu7t5v0__aoi21_1": 1120104,
+        "gf180mcu_fd_sc_mcu7t5v0__aoi221_1": 255937,
+        "gf180mcu_fd_sc_mcu7t5v0__aoi22_1": 915059,
+        "gf180mcu_fd_sc_mcu7t5v0__dffq_1": 8072679,
+        "gf180mcu_fd_sc_mcu7t5v0__nand3_1": 470336,
+        "gf180mcu_fd_sc_mcu7t5v0__nor4_1": 88471,
+        "gf180mcu_fd_sc_mcu7t5v0__oai221_1": 223199,
+        "gf180mcu_fd_sc_mcu7t5v0__oai22_1": 217893,
+        "gf180mcu_fd_sc_mcu7t5v0__xnor2_1": 187309,
+        "gf180mcu_fd_sc_mcu7t5v0__xor2_1": 565142,
+        "gf180mcu_fd_sc_mcu7t5v0__aoi222_1": 166701,
+        "gf180mcu_fd_sc_mcu7t5v0__dffnq_1": 4,
+        "gf180mcu_fd_sc_mcu7t5v0__buf_1": 118,
+        "gf180mcu_fd_sc_mcu7t5v0__mux4_1": 3413027,
+        "gf180mcu_fd_sc_mcu7t5v0__oai222_1": 240783,
+        "gf180mcu_fd_sc_mcu7t5v0__oai33_1": 1879,
+        "gf180mcu_fd_sc_mcu7t5v0__xnor3_1": 34372,
+        "gf180mcu_fd_sc_mcu7t5v0__xor3_1": 46973,
+        "gf180mcu_fd_sc_mcu7t5v0__dffrnq_1": 1046
+      },
+      "sum_unique_unit_wall_seconds": 18312.632066566497,
+      "maximum_unit_peak_rss_kib": 10987216
+    },
+    "fpga": {
+      "status": "pass",
+      "counts_complete": true,
+      "unit_status_counts": {
+        "pass": 4457
+      },
+      "failed_units": [],
+      "totals_of_passing_units_only": {
+        "cells": 45094800,
+        "FFs": 1339678,
+        "LUTs": 30391157,
+        "DSPs": 1247,
+        "BRAMs": 118,
+        "BRAM_bits": 2174976,
+        "memory_bits_after_mapping": 0,
+        "inferred_memory_count": 311,
+        "inferred_memory_bits": 8169778,
+        "area_mm2": 0.0
+      },
+      "cell_counts_by_type_of_passing_units": {
+        "L6MUX21": 4351339,
+        "LUT4": 30391157,
+        "PFUMX": 8435843,
+        "TRELLIS_FF": 1339678,
+        "CCU2C": 487452,
+        "MULT18X18D": 1247,
+        "TRELLIS_DPR16X4": 87966,
+        "DP16KD": 118
+      },
+      "sum_unique_unit_wall_seconds": 24571.97696530819,
+      "maximum_unit_peak_rss_kib": 30633888
+    }
+  },
+  "per_unit_results": "per-module/results.json",
+  "per_unit_inputs_and_logs": "per-module/<unit>/",
+  "monolithic_attempt_metrics": {
+    "ready.metrics": {
+      "stage": "ready",
+      "exit_code": 0,
+      "wall_seconds": 1856.4357368201017,
+      "peak_rss_kib": 9173944,
+      "user_seconds": 1713.038641,
+      "system_seconds": 36.364076,
+      "cpus": [
+        22,
+        27,
+        31,
+        33
+      ]
+    },
+    "elaborate.metrics": {
+      "stage": "elaborate",
+      "exit_code": -15,
+      "wall_seconds": 2087.1396845169365,
+      "peak_rss_kib": 10175980,
+      "user_seconds": 1924.720881,
+      "system_seconds": 25.754532,
+      "cpus": [
+        22,
+        27,
+        31,
+        33
+      ]
+    },
+    "hierarchy.metrics": {
+      "stage": "hierarchy",
+      "exit_code": -15,
+      "wall_seconds": 1764.2058722842485,
+      "peak_rss_kib": 9147112,
+      "user_seconds": 1692.58671,
+      "system_seconds": 13.968941,
+      "cpus": [
+        22,
+        27,
+        31,
+        33
+      ]
+    },
+    "fpga.metrics": {
+      "stage": "fpga",
+      "exit_code": -11,
+      "wall_seconds": 11666.333518389612,
+      "peak_rss_kib": 15860460,
+      "user_seconds": 9444.852127,
+      "system_seconds": 1223.025308,
+      "cpus": [
+        22,
+        27,
+        31,
+        33
+      ]
+    },
+    "generic.metrics": {
+      "stage": "generic",
+      "exit_code": -15,
+      "wall_seconds": 17742.473145514727,
+      "peak_rss_kib": 11823324,
+      "user_seconds": 17511.40672,
+      "system_seconds": 33.630386,
+      "cpus": [
+        22,
+        27,
+        31,
+        33
+      ]
+    },
+    "generic-nopriority.metrics": {
+      "stage": "generic-nopriority",
+      "exit_code": -15,
+      "wall_seconds": 17968.630318868905,
+      "peak_rss_kib": 12027236,
+      "user_seconds": 17875.050416,
+      "system_seconds": 55.190496,
+      "cpus": [
+        22,
+        27,
+        31,
+        33
+      ]
+    }
+  },
+  "capacity": {
+    "scope": "Logical memory capacity; not a mapped BRAM result, bandwidth/port layout, quality result, or ASIC area.",
+    "source_inventory_sha256": "36e1c0aa9bef649c8200b959e001f56878d45eb1f60bdecd2c92ae7a932764d4",
+    "readmem_arrays": [
+      {
+        "path": "rv_allonchip_top_all_v1.encoder_memory.rom",
+        "instances": 1,
+        "module": "rv_onchip_encoder_memory_v1",
+        "module_orig": "rv_onchip_encoder_memory_v1",
+        "var": "rom",
+        "dims": [
+          160840
+        ],
+        "elem_width": 256,
+        "bits_per_instance": 41175040,
+        "total_bits": 41175040,
+        "total_bytes": 5146880.0,
+        "cls": "rom_readmem",
+        "classification": "ROM ($readmemh, never written)",
+        "writes": [
+          "initial:readmem"
+        ],
+        "reads": 1,
+        "src": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/onchip-all/rv_onchip_encoder_memory_v1.sv:37",
+        "bram36_min": 1117,
+        "bram36_32k_payload_min": 1257,
+        "single_read_port_bram36_rectangular_banking": {
+          "blocks": 1160,
+          "primitive_width": 9,
+          "primitive_depth": 4096,
+          "allocated_bits": 42762240
+        }
+      },
+      {
+        "path": "rv_allonchip_top_all_v1.decoder_body.ff_up_coeff",
+        "instances": 1,
+        "module": "rv_onchip_decoder_body_v1",
+        "module_orig": "rv_onchip_decoder_body_v1",
+        "var": "ff_up_coeff",
+        "dims": [
+          153600
+        ],
+        "elem_width": 256,
+        "bits_per_instance": 39321600,
+        "total_bits": 39321600,
+        "total_bytes": 4915200.0,
+        "cls": "rom_readmem",
+        "classification": "ROM ($readmemh, never written)",
+        "writes": [
+          "initial:readmem"
+        ],
+        "reads": 1,
+        "src": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/onchip-all/rv_onchip_decoder_body_v1.sv:38",
+        "bram36_min": 1067,
+        "bram36_32k_payload_min": 1200,
+        "single_read_port_bram36_rectangular_banking": {
+          "blocks": 1102,
+          "primitive_width": 9,
+          "primitive_depth": 4096,
+          "allocated_bits": 40624128
+        }
+      },
+      {
+        "path": "rv_allonchip_top_all_v1.frontend_rom.conv1_weights",
+        "instances": 1,
+        "module": "rv_onchip_frontend_v1",
+        "module_orig": "rv_onchip_frontend_v1",
+        "var": "conv1_weights",
+        "dims": [
+          1024000
+        ],
+        "elem_width": 32,
+        "bits_per_instance": 32768000,
+        "total_bits": 32768000,
+        "total_bytes": 4096000.0,
+        "cls": "rom_readmem",
+        "classification": "ROM ($readmemh, never written)",
+        "writes": [
+          "initial:readmem"
+        ],
+        "reads": 1,
+        "src": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/onchip-all/rv_onchip_frontend_v1.sv:25",
+        "bram36_min": 889,
+        "bram36_32k_payload_min": 1000,
+        "single_read_port_bram36_rectangular_banking": {
+          "blocks": 1000,
+          "primitive_width": 4,
+          "primitive_depth": 8192,
+          "allocated_bits": 36864000
+        }
+      },
+      {
+        "path": "rv_allonchip_top_all_v1.frontend_rom.conv2_weights",
+        "instances": 1,
+        "module": "rv_onchip_frontend_v1",
+        "module_orig": "rv_onchip_frontend_v1",
+        "var": "conv2_weights",
+        "dims": [
+          1024000
+        ],
+        "elem_width": 32,
+        "bits_per_instance": 32768000,
+        "total_bits": 32768000,
+        "total_bytes": 4096000.0,
+        "cls": "rom_readmem",
+        "classification": "ROM ($readmemh, never written)",
+        "writes": [
+          "initial:readmem"
+        ],
+        "reads": 1,
+        "src": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/onchip-all/rv_onchip_frontend_v1.sv:29",
+        "bram36_min": 889,
+        "bram36_32k_payload_min": 1000,
+        "single_read_port_bram36_rectangular_banking": {
+          "blocks": 1000,
+          "primitive_width": 4,
+          "primitive_depth": 8192,
+          "allocated_bits": 36864000
+        }
+      },
+      {
+        "path": "rv_allonchip_top_all_v1.decoder_body.ff_down_coeff",
+        "instances": 1,
+        "module": "rv_onchip_decoder_body_v1",
+        "module_orig": "rv_onchip_decoder_body_v1",
+        "var": "ff_down_coeff",
+        "dims": [
+          76800
+        ],
+        "elem_width": 256,
+        "bits_per_instance": 19660800,
+        "total_bits": 19660800,
+        "total_bytes": 2457600.0,
+        "cls": "rom_readmem",
+        "classification": "ROM ($readmemh, never written)",
+        "writes": [
+          "initial:readmem"
+        ],
+        "reads": 1,
+        "src": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/onchip-all/rv_onchip_decoder_body_v1.sv:40",
+        "bram36_min": 534,
+        "bram36_32k_payload_min": 600,
+        "single_read_port_bram36_rectangular_banking": {
+          "blocks": 551,
+          "primitive_width": 9,
+          "primitive_depth": 4096,
+          "allocated_bits": 20312064
+        }
+      },
+      {
+        "path": "rv_allonchip_top_all_v1.decoder_self.self_coeff",
+        "instances": 1,
+        "module": "rv_onchip_decoder_self_v1",
+        "module_orig": "rv_onchip_decoder_self_v1",
+        "var": "self_coeff",
+        "dims": [
+          76800
+        ],
+        "elem_width": 256,
+        "bits_per_instance": 19660800,
+        "total_bits": 19660800,
+        "total_bytes": 2457600.0,
+        "cls": "rom_readmem",
+        "classification": "ROM ($readmemh, never written)",
+        "writes": [
+          "initial:readmem"
+        ],
+        "reads": 1,
+        "src": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/onchip-all/rv_onchip_decoder_self_v1.sv:28",
+        "bram36_min": 534,
+        "bram36_32k_payload_min": 600,
+        "single_read_port_bram36_rectangular_banking": {
+          "blocks": 551,
+          "primitive_width": 9,
+          "primitive_depth": 4096,
+          "allocated_bits": 20312064
+        }
+      },
+      {
+        "path": "rv_allonchip_top_all_v1.encoder_head.rom",
+        "instances": 1,
+        "module": "rv_onchip_encoder_head_v1",
+        "module_orig": "rv_onchip_encoder_head_v1",
+        "var": "rom",
+        "dims": [
+          46080
+        ],
+        "elem_width": 320,
+        "bits_per_instance": 14745600,
+        "total_bits": 14745600,
+        "total_bytes": 1843200.0,
+        "cls": "rom_readmem",
+        "classification": "ROM ($readmemh, never written)",
+        "writes": [
+          "initial:readmem"
+        ],
+        "reads": 1,
+        "src": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/onchip-all/rv_onchip_encoder_head_v1.sv:23",
+        "bram36_min": 400,
+        "bram36_32k_payload_min": 450,
+        "single_read_port_bram36_rectangular_banking": {
+          "blocks": 405,
+          "primitive_width": 36,
+          "primitive_depth": 1024,
+          "allocated_bits": 14929920
+        }
+      },
+      {
+        "path": "rv_allonchip_top_all_v1.positions.image",
+        "instances": 1,
+        "module": "rv_source_position_immutable_rom_v1__pi1",
+        "module_orig": "rv_source_position_immutable_rom_v1",
+        "var": "image",
+        "dims": [
+          163840
+        ],
+        "elem_width": 64,
+        "bits_per_instance": 10485760,
+        "total_bits": 10485760,
+        "total_bytes": 1310720.0,
+        "cls": "rom_readmem",
+        "classification": "ROM ($readmemh, never written)",
+        "writes": [
+          "initial:readmem"
+        ],
+        "reads": 1,
+        "src": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/onchip-all/rv_source_position_immutable_rom_v1.sv:25",
+        "bram36_min": 285,
+        "bram36_32k_payload_min": 320,
+        "single_read_port_bram36_rectangular_banking": {
+          "blocks": 320,
+          "primitive_width": 1,
+          "primitive_depth": 32768,
+          "allocated_bits": 11796480
+        }
+      },
+      {
+        "path": "rv_allonchip_top_all_v1.decoder_body.cross_coeff",
+        "instances": 1,
+        "module": "rv_onchip_decoder_body_v1",
+        "module_orig": "rv_onchip_decoder_body_v1",
+        "var": "cross_coeff",
+        "dims": [
+          38400
+        ],
+        "elem_width": 256,
+        "bits_per_instance": 9830400,
+        "total_bits": 9830400,
+        "total_bytes": 1228800.0,
+        "cls": "rom_readmem",
+        "classification": "ROM ($readmemh, never written)",
+        "writes": [
+          "initial:readmem"
+        ],
+        "reads": 1,
+        "src": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/onchip-all/rv_onchip_decoder_body_v1.sv:34",
+        "bram36_min": 267,
+        "bram36_32k_payload_min": 300,
+        "single_read_port_bram36_rectangular_banking": {
+          "blocks": 285,
+          "primitive_width": 18,
+          "primitive_depth": 2048,
+          "allocated_bits": 10506240
+        }
+      },
+      {
+        "path": "rv_allonchip_top_all_v1.encoder_O.rom",
+        "instances": 1,
+        "module": "rv_onchip_encoder_O_v1",
+        "module_orig": "rv_onchip_encoder_O_v1",
+        "var": "rom",
+        "dims": [
+          1920
+        ],
+        "elem_width": 2560,
+        "bits_per_instance": 4915200,
+        "total_bits": 4915200,
+        "total_bytes": 614400.0,
+        "cls": "rom_readmem",
+        "classification": "ROM ($readmemh, never written)",
+        "writes": [
+          "initial:readmem"
+        ],
+        "reads": 1,
+        "src": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/onchip-all/rv_onchip_encoder_O_v1.sv:19",
+        "bram36_min": 134,
+        "bram36_32k_payload_min": 150,
+        "single_read_port_bram36_rectangular_banking": {
+          "blocks": 143,
+          "primitive_width": 18,
+          "primitive_depth": 2048,
+          "allocated_bits": 5271552
+        }
+      },
+      {
+        "path": "rv_allonchip_top_all_v1.decoder_body.ff_up_meta",
+        "instances": 1,
+        "module": "rv_onchip_decoder_body_v1",
+        "module_orig": "rv_onchip_decoder_body_v1",
+        "var": "ff_up_meta",
+        "dims": [
+          7680
+        ],
+        "elem_width": 256,
+        "bits_per_instance": 1966080,
+        "total_bits": 1966080,
+        "total_bytes": 245760.0,
+        "cls": "rom_readmem",
+        "classification": "ROM ($readmemh, never written)",
+        "writes": [
+          "initial:readmem"
+        ],
+        "reads": 1,
+        "src": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/onchip-all/rv_onchip_decoder_body_v1.sv:42",
+        "bram36_min": 54,
+        "bram36_32k_payload_min": 60,
+        "single_read_port_bram36_rectangular_banking": {
+          "blocks": 58,
+          "primitive_width": 9,
+          "primitive_depth": 4096,
+          "allocated_bits": 2138112
+        }
+      },
+      {
+        "path": "rv_allonchip_top_all_v1.frontend_rom.linear_weights",
+        "instances": 1,
+        "module": "rv_onchip_frontend_v1",
+        "module_orig": "rv_onchip_frontend_v1",
+        "var": "linear_weights",
+        "dims": [
+          25600
+        ],
+        "elem_width": 32,
+        "bits_per_instance": 819200,
+        "total_bits": 819200,
+        "total_bytes": 102400.0,
+        "cls": "rom_readmem",
+        "classification": "ROM ($readmemh, never written)",
+        "writes": [
+          "initial:readmem"
+        ],
+        "reads": 1,
+        "src": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/onchip-all/rv_onchip_frontend_v1.sv:33",
+        "bram36_min": 23,
+        "bram36_32k_payload_min": 25,
+        "single_read_port_bram36_rectangular_banking": {
+          "blocks": 25,
+          "primitive_width": 36,
+          "primitive_depth": 1024,
+          "allocated_bits": 921600
+        }
+      },
+      {
+        "path": "rv_allonchip_top_all_v1.decoder_self.self_meta",
+        "instances": 1,
+        "module": "rv_onchip_decoder_self_v1",
+        "module_orig": "rv_onchip_decoder_self_v1",
+        "var": "self_meta",
+        "dims": [
+          1920
+        ],
+        "elem_width": 256,
+        "bits_per_instance": 491520,
+        "total_bits": 491520,
+        "total_bytes": 61440.0,
+        "cls": "rom_readmem",
+        "classification": "ROM ($readmemh, never written)",
+        "writes": [
+          "initial:readmem"
+        ],
+        "reads": 1,
+        "src": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/onchip-all/rv_onchip_decoder_self_v1.sv:30",
+        "bram36_min": 14,
+        "bram36_32k_payload_min": 15,
+        "single_read_port_bram36_rectangular_banking": {
+          "blocks": 15,
+          "primitive_width": 18,
+          "primitive_depth": 2048,
+          "allocated_bits": 552960
+        }
+      },
+      {
+        "path": "rv_allonchip_top_all_v1.decoder_body.cross_meta",
+        "instances": 1,
+        "module": "rv_onchip_decoder_body_v1",
+        "module_orig": "rv_onchip_decoder_body_v1",
+        "var": "cross_meta",
+        "dims": [
+          960
+        ],
+        "elem_width": 256,
+        "bits_per_instance": 245760,
+        "total_bits": 245760,
+        "total_bytes": 30720.0,
+        "cls": "rom_readmem",
+        "classification": "ROM ($readmemh, never written)",
+        "writes": [
+          "initial:readmem"
+        ],
+        "reads": 1,
+        "src": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/onchip-all/rv_onchip_decoder_body_v1.sv:36",
+        "bram36_min": 7,
+        "bram36_32k_payload_min": 8,
+        "single_read_port_bram36_rectangular_banking": {
+          "blocks": 8,
+          "primitive_width": 36,
+          "primitive_depth": 1024,
+          "allocated_bits": 294912
+        }
+      },
+      {
+        "path": "rv_allonchip_top_all_v1.decoder_body.ff_down_meta",
+        "instances": 1,
+        "module": "rv_onchip_decoder_body_v1",
+        "module_orig": "rv_onchip_decoder_body_v1",
+        "var": "ff_down_meta",
+        "dims": [
+          960
+        ],
+        "elem_width": 256,
+        "bits_per_instance": 245760,
+        "total_bits": 245760,
+        "total_bytes": 30720.0,
+        "cls": "rom_readmem",
+        "classification": "ROM ($readmemh, never written)",
+        "writes": [
+          "initial:readmem"
+        ],
+        "reads": 1,
+        "src": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/onchip-all/rv_onchip_decoder_body_v1.sv:44",
+        "bram36_min": 7,
+        "bram36_32k_payload_min": 8,
+        "single_read_port_bram36_rectangular_banking": {
+          "blocks": 8,
+          "primitive_width": 36,
+          "primitive_depth": 1024,
+          "allocated_bits": 294912
+        }
+      },
+      {
+        "path": "rv_allonchip_top_all_v1.frontend_rom.conv1_bias",
+        "instances": 1,
+        "module": "rv_onchip_frontend_v1",
+        "module_orig": "rv_onchip_frontend_v1",
+        "var": "conv1_bias",
+        "dims": [
+          640
+        ],
+        "elem_width": 32,
+        "bits_per_instance": 20480,
+        "total_bits": 20480,
+        "total_bytes": 2560.0,
+        "cls": "rom_readmem",
+        "classification": "ROM ($readmemh, never written)",
+        "writes": [
+          "initial:readmem"
+        ],
+        "reads": 1,
+        "src": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/onchip-all/rv_onchip_frontend_v1.sv:27",
+        "bram36_min": 1,
+        "bram36_32k_payload_min": 1,
+        "single_read_port_bram36_rectangular_banking": {
+          "blocks": 1,
+          "primitive_width": 36,
+          "primitive_depth": 1024,
+          "allocated_bits": 36864
+        }
+      },
+      {
+        "path": "rv_allonchip_top_all_v1.frontend_rom.conv2_bias",
+        "instances": 1,
+        "module": "rv_onchip_frontend_v1",
+        "module_orig": "rv_onchip_frontend_v1",
+        "var": "conv2_bias",
+        "dims": [
+          320
+        ],
+        "elem_width": 32,
+        "bits_per_instance": 10240,
+        "total_bits": 10240,
+        "total_bytes": 1280.0,
+        "cls": "rom_readmem",
+        "classification": "ROM ($readmemh, never written)",
+        "writes": [
+          "initial:readmem"
+        ],
+        "reads": 1,
+        "src": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/onchip-all/rv_onchip_frontend_v1.sv:31",
+        "bram36_min": 1,
+        "bram36_32k_payload_min": 1,
+        "single_read_port_bram36_rectangular_banking": {
+          "blocks": 1,
+          "primitive_width": 36,
+          "primitive_depth": 1024,
+          "allocated_bits": 36864
+        }
+      }
+    ],
+    "new_service_native_bits": 229130240,
+    "new_service_bram36_capacity_lower_bound": 6216,
+    "new_service_bram36_per_array_lower_bound": 6223,
+    "new_service_comparison": [
+      {
+        "name": "decoder_uint8",
+        "original_bytes": 11059200,
+        "comparison_bytes": 8294400,
+        "encoding": "K64",
+        "index_bits": 44236800,
+        "codebook_bits": 22118400
+      },
+      {
+        "name": "encoder_ff_uint8",
+        "original_bytes": 4915200,
+        "comparison_bytes": 3686400,
+        "encoding": "K64",
+        "index_bits": 19660800,
+        "codebook_bits": 9830400
+      },
+      {
+        "name": "encoder_qkv_uint8",
+        "original_bytes": 1843200,
+        "comparison_bytes": 1382400,
+        "encoding": "K64",
+        "index_bits": 7372800,
+        "codebook_bits": 3686400
+      },
+      {
+        "name": "encoder_o_uint8",
+        "original_bytes": 614400,
+        "comparison_bytes": 460800,
+        "encoding": "K64",
+        "index_bits": 2457600,
+        "codebook_bits": 1228800
+      },
+      {
+        "name": "positions_uint8",
+        "original_bytes": 1310720,
+        "comparison_bytes": 983040,
+        "encoding": "K64",
+        "index_bits": 5242880,
+        "codebook_bits": 2621440
+      },
+      {
+        "name": "frontend_expanded_fp32",
+        "original_bytes": 8298240,
+        "comparison_bytes": 2090240,
+        "encoding": "affine_int8",
+        "index_bits": null,
+        "codebook_bits": null
+      },
+      {
+        "name": "other_metadata",
+        "original_bytes": 600320,
+        "comparison_bytes": 600320,
+        "encoding": "unchanged",
+        "index_bits": null,
+        "codebook_bits": null
+      }
+    ],
+    "new_service_comparison_bytes": 17497600,
+    "new_service_comparison_bits": 139980800,
+    "new_service_comparison_bram36_lower_bound": 3798,
+    "already_onboard_big5_bits": 70778880,
+    "full_major_rom_original_bits": 299909120,
+    "full_major_rom_comparison_bits": 210759680,
+    "full_k64_model_index_bits": 125829120,
+    "full_k64_model_padded_book_bits": 62914560,
+    "caveats": [
+      "28.6MB includes mixed formats and metadata, not all UINT8 weights.",
+      "K64 comparison retains 8-bit representatives; it does not require 4-bit activations.",
+      "Frontend uses original affine INT8 reconstruction, not a four-bit quantizer.",
+      "Small LUTs, duplication for extra read ports, banking fragmentation, writable state and periphery must be added.",
+      "The v2 RTL is synthesized here; W11 v4 compressed implementation has separate qualification.",
+      "BRAM36 capacity includes parity bits; using only 32k data bits requires more blocks.",
+      "Existing logical storage inventory is v1; v2 changes constants only per retained qualification.",
+      "Rectangular BRAM estimate chooses one 36K primitive mode per array, assumes one read port and usable parity bits; it does not implement clock/latency translation or verify a device placement."
+    ],
+    "small_rom_inventory": [
+      {
+        "name": "Asinh coefficient",
+        "rows": 286,
+        "width": 64,
+        "instances": 1
+      },
+      {
+        "name": "Asinh instruction",
+        "rows": 36,
+        "width": 37,
+        "instances": 1
+      },
+      {
+        "name": "head product_pointer",
+        "rows": 256,
+        "width": 7,
+        "instances": 8
+      },
+      {
+        "name": "embedding dequant LUT",
+        "rows": 256,
+        "width": 32,
+        "instances": 1
+      },
+      {
+        "name": "decoder rotary coefficients",
+        "rows": 1072,
+        "width": 64,
+        "instances": 1
+      }
+    ],
+    "small_rom_unique_payload_bits": 110772,
+    "full_original_logical_rom_bits": 300019892,
+    "full_comparison_logical_rom_bits": 210870452,
+    "inventory_correction": "Earlier inventory case detector omitted the 1072-row, 64-bit paired cosine/sine rotary table. W12 isolates it and adds 68,608 bits. Read-port replication still excluded.",
+    "new_service_rectangular_bram36_blocks": 6633,
+    "new_service_rectangular_bram36_allocated_bits": 244518912
+  },
+  "memory_bits_before_partition_from_frontend": 8169778,
+  "floorplan_assumed_logic_mm2": 63,
+  "GF180_area_to_floorplan_ratio": 19.02064783363027,
+  "constraints": {
+    "process_address_space_limit_bytes": 6000000000,
+    "parallel_module_workers": 2,
+    "conditional_retry_workers": 1,
+    "maximum_W12_CPUs": 4,
+    "memory_launch_ceiling_bytes": 56000000000,
+    "disk_launch_reserve_GiB": 12,
+    "disk_termination_reserve_GiB": 9,
+    "stage_timeout_seconds": 3600,
+    "deadline_UTC": "2026-10-22T06:25:00Z"
+  },
+  "retry_queue": {
+    "profile": "no-post-techmap-merge",
+    "attempted": [
+      "u00242",
+      "u00296",
+      "u00578",
+      "u00624",
+      "u00647",
+      "u00752",
+      "u00894",
+      "u01539",
+      "u01699",
+      "u02009",
+      "u02109",
+      "u02285",
+      "u02581",
+      "u02939",
+      "u03518",
+      "u03525",
+      "u03535",
+      "u04445"
+    ],
+    "records": [
+      {
+        "unit": "u03518",
+        "started_utc": "2026-10-21T10:58:17.740425+00:00",
+        "stages": {},
+        "orchestration_error": "archive moved .ys because suffix comparison omitted dot; files restored byte-for-byte from retained archive before restart"
+      },
+      {
+        "unit": "u03518",
+        "started_utc": "2026-10-21T11:06:31.761270+00:00",
+        "stages": {
+          "generic": {
+            "exit_code": 0,
+            "wall_seconds": 158.0490075107664,
+            "peak_rss_kib": 1694552,
+            "user_seconds": 84.704216,
+            "system_seconds": 2.494963,
+            "guard_reason": null,
+            "cpu": 31,
+            "script_sha256": "3edec3a2d9886059b4706e1d5b9ae0c0e4d8d90aae8342232bf91b7abdb1a833",
+            "retry": "no-post-techmap-merge"
+          },
+          "gf180": {
+            "exit_code": 0,
+            "wall_seconds": 72.02132139541209,
+            "peak_rss_kib": 590208,
+            "user_seconds": 46.021098,
+            "system_seconds": 1.325535,
+            "guard_reason": null,
+            "cpu": 31,
+            "script_sha256": "fcf235f6adb9d8d56dd487d45b34481fc86599260ca705245021bd666f6b5af3",
+            "retry": "no-post-techmap-merge"
+          },
+          "fpga": {
+            "exit_code": -6,
+            "wall_seconds": 220.05557790584862,
+            "peak_rss_kib": 4756436,
+            "user_seconds": 153.186964,
+            "system_seconds": 5.003332,
+            "guard_reason": null,
+            "cpu": 31,
+            "script_sha256": "efdb9c06416561846759c9fc07e054c2409e280b2064e49b929ad45585a055f3",
+            "retry": "no-post-techmap-merge"
+          }
+        },
+        "finished_utc": "2026-10-21T11:14:08.287999+00:00"
+      },
+      {
+        "unit": "u01539",
+        "started_utc": "2026-10-21T11:14:10.409086+00:00",
+        "stages": {
+          "generic": {
+            "exit_code": 0,
+            "wall_seconds": 82.01850987970829,
+            "peak_rss_kib": 1704812,
+            "user_seconds": 76.24043,
+            "system_seconds": 2.342688,
+            "guard_reason": null,
+            "cpu": 31,
+            "script_sha256": "f499d303070271b49270c4cb339685b9626c4158105313f2cc243a29ff893c89",
+            "retry": "no-post-techmap-merge"
+          },
+          "gf180": {
+            "exit_code": 0,
+            "wall_seconds": 44.01056880131364,
+            "peak_rss_kib": 588924,
+            "user_seconds": 41.511091,
+            "system_seconds": 1.251933,
+            "guard_reason": null,
+            "cpu": 31,
+            "script_sha256": "fcf235f6adb9d8d56dd487d45b34481fc86599260ca705245021bd666f6b5af3",
+            "retry": "no-post-techmap-merge"
+          },
+          "fpga": {
+            "exit_code": 0,
+            "wall_seconds": 112.03259078599513,
+            "peak_rss_kib": 1701316,
+            "user_seconds": 106.465679,
+            "system_seconds": 2.074712,
+            "guard_reason": null,
+            "cpu": 31,
+            "script_sha256": "d03ebf7d4c9ac58f33ffc57b3decda03b7f73145e2f2d7d6823db1aea21877d0",
+            "retry": "no-post-techmap-merge"
+          }
+        },
+        "finished_utc": "2026-10-21T11:18:15.446236+00:00"
+      },
+      {
+        "unit": "u03518",
+        "started_utc": "2026-10-21T11:30:52.896958+00:00",
+        "stages": {
+          "fpga": {
+            "exit_code": 0,
+            "wall_seconds": 108.04566619545221,
+            "peak_rss_kib": 1701300,
+            "user_seconds": 102.277473,
+            "system_seconds": 2.100663,
+            "guard_reason": null,
+            "cpu": 31,
+            "script_sha256": "f393b56e6c0b5a6e88dde5724410d09d42e67ca3d9e2994e80fd03d2b46d78b8",
+            "retry": "no-post-techmap-merge"
+          }
+        },
+        "finished_utc": "2026-10-21T11:32:45.342008+00:00"
+      },
+      {
+        "unit": "u03535",
+        "started_utc": "2026-10-21T11:32:47.071435+00:00",
+        "stages": {
+          "fpga": {
+            "exit_code": 0,
+            "wall_seconds": 124.05021384172142,
+            "peak_rss_kib": 1701344,
+            "user_seconds": 102.120144,
+            "system_seconds": 2.059521,
+            "guard_reason": null,
+            "cpu": 31,
+            "script_sha256": "4c84d45fd44a9f8aaf7236f488a254347c042ca93eaca0a9c6e575e9b1e00b21",
+            "retry": "no-post-techmap-merge"
+          }
+        },
+        "finished_utc": "2026-10-21T11:34:54.080127+00:00"
+      },
+      {
+        "unit": "u00578",
+        "started_utc": "2026-10-21T11:34:56.051899+00:00",
+        "stages": {
+          "fpga": {
+            "exit_code": 0,
+            "wall_seconds": 114.0397825948894,
+            "peak_rss_kib": 1701864,
+            "user_seconds": 102.103393,
+            "system_seconds": 2.052096,
+            "guard_reason": null,
+            "cpu": 31,
+            "script_sha256": "00407c8aaf61134311e4fc1acf4a3692b2cfbdff5d2de98bf2d211234a284278",
+            "retry": "no-post-techmap-merge"
+          }
+        },
+        "finished_utc": "2026-10-21T11:36:54.124705+00:00"
+      },
+      {
+        "unit": "u03525",
+        "started_utc": "2026-10-21T12:21:58.143722+00:00",
+        "stages": {
+          "generic": {
+            "exit_code": 0,
+            "wall_seconds": 76.02505016885698,
+            "peak_rss_kib": 1704812,
+            "user_seconds": 72.199385,
+            "system_seconds": 2.474621,
+            "guard_reason": null,
+            "cpu": 31,
+            "script_sha256": "bdebeef3df074143c749d949468cd9b07210b642487d93f3fb94b97e401348db",
+            "retry": "no-post-techmap-merge"
+          },
+          "gf180": {
+            "exit_code": 0,
+            "wall_seconds": 46.01888721622527,
+            "peak_rss_kib": 589212,
+            "user_seconds": 42.958458,
+            "system_seconds": 1.288868,
+            "guard_reason": null,
+            "cpu": 31,
+            "script_sha256": "fcf235f6adb9d8d56dd487d45b34481fc86599260ca705245021bd666f6b5af3",
+            "retry": "no-post-techmap-merge"
+          },
+          "fpga": {
+            "exit_code": 0,
+            "wall_seconds": 106.03164304047823,
+            "peak_rss_kib": 1701336,
+            "user_seconds": 102.692238,
+            "system_seconds": 2.079526,
+            "guard_reason": null,
+            "cpu": 31,
+            "script_sha256": "42bca63cb7859b704b026b273316f7f8015d83f6ed11cb235ad89d75fd219f54",
+            "retry": "no-post-techmap-merge"
+          }
+        },
+        "finished_utc": "2026-10-21T12:25:56.077618+00:00"
+      },
+      {
+        "unit": "u02285",
+        "started_utc": "2026-10-21T12:25:57.968041+00:00",
+        "stages": {
+          "generic": {
+            "exit_code": 0,
+            "wall_seconds": 76.0242179185152,
+            "peak_rss_kib": 1704864,
+            "user_seconds": 71.848028,
+            "system_seconds": 2.389836,
+            "guard_reason": null,
+            "cpu": 31,
+            "script_sha256": "76c15dd20fcd9ae860c28d0ef072ab3da3740571b0965606f16ca66ba27d1bca",
+            "retry": "no-post-techmap-merge"
+          },
+          "gf180": {
+            "exit_code": 0,
+            "wall_seconds": 44.015213407576084,
+            "peak_rss_kib": 590324,
+            "user_seconds": 41.676464,
+            "system_seconds": 1.281873,
+            "guard_reason": null,
+            "cpu": 31,
+            "script_sha256": "fcf235f6adb9d8d56dd487d45b34481fc86599260ca705245021bd666f6b5af3",
+            "retry": "no-post-techmap-merge"
+          },
+          "fpga": {
+            "exit_code": 0,
+            "wall_seconds": 106.02964064851403,
+            "peak_rss_kib": 1711144,
+            "user_seconds": 102.872942,
+            "system_seconds": 2.01265,
+            "guard_reason": null,
+            "cpu": 31,
+            "script_sha256": "c14f0567d2db503f8d586315a0dec54507eb9336c9960eca3be2a802030dbfb6",
+            "retry": "no-post-techmap-merge"
+          }
+        },
+        "finished_utc": "2026-10-21T12:29:52.828365+00:00"
+      },
+      {
+        "unit": "u00624",
+        "started_utc": "2026-10-21T12:29:54.960921+00:00",
+        "stages": {
+          "generic": {
+            "exit_code": 0,
+            "wall_seconds": 76.02767927572131,
+            "peak_rss_kib": 1704812,
+            "user_seconds": 71.99966,
+            "system_seconds": 2.318707,
+            "guard_reason": null,
+            "cpu": 31,
+            "script_sha256": "17e8310330f3e4cbdd7bd03f1a5c17518a35395706dab0851a4eb4ddee604027",
+            "retry": "no-post-techmap-merge"
+          },
+          "gf180": {
+            "exit_code": 0,
+            "wall_seconds": 44.0127277225256,
+            "peak_rss_kib": 589736,
+            "user_seconds": 41.731398,
+            "system_seconds": 1.163786,
+            "guard_reason": null,
+            "cpu": 31,
+            "script_sha256": "fcf235f6adb9d8d56dd487d45b34481fc86599260ca705245021bd666f6b5af3",
+            "retry": "no-post-techmap-merge"
+          },
+          "fpga": {
+            "exit_code": 0,
+            "wall_seconds": 106.03256491012871,
+            "peak_rss_kib": 1711700,
+            "user_seconds": 103.575221,
+            "system_seconds": 2.055769,
+            "guard_reason": null,
+            "cpu": 31,
+            "script_sha256": "5856494078e09cb718a571ef639df7ce9933d0ac1511b36b13d50c24325336b9",
+            "retry": "no-post-techmap-merge"
+          }
+        },
+        "finished_utc": "2026-10-21T12:33:48.325232+00:00"
+      },
+      {
+        "unit": "u00242",
+        "started_utc": "2026-10-21T12:33:50.374579+00:00",
+        "stages": {
+          "generic": {
+            "exit_code": 0,
+            "wall_seconds": 74.02379474788904,
+            "peak_rss_kib": 1695004,
+            "user_seconds": 71.370132,
+            "system_seconds": 2.2539730000000002,
+            "guard_reason": null,
+            "cpu": 31,
+            "script_sha256": "029995cdb4bd0602eaba81e88f7c31a88beb824709a18491e46070380b9d405b",
+            "retry": "no-post-techmap-merge"
+          },
+          "gf180": {
+            "exit_code": 0,
+            "wall_seconds": 42.01217102073133,
+            "peak_rss_kib": 590032,
+            "user_seconds": 40.778012,
+            "system_seconds": 1.179797,
+            "guard_reason": null,
+            "cpu": 31,
+            "script_sha256": "fcf235f6adb9d8d56dd487d45b34481fc86599260ca705245021bd666f6b5af3",
+            "retry": "no-post-techmap-merge"
+          },
+          "fpga": {
+            "exit_code": 0,
+            "wall_seconds": 106.03180472180247,
+            "peak_rss_kib": 1701880,
+            "user_seconds": 101.694003,
+            "system_seconds": 1.973534,
+            "guard_reason": null,
+            "cpu": 31,
+            "script_sha256": "53fe34560fab6668f5a25613f5fc3e82b3e40ef4aaa8ac895c95e09f0f07233f",
+            "retry": "no-post-techmap-merge"
+          }
+        },
+        "finished_utc": "2026-10-21T12:37:41.638979+00:00"
+      },
+      {
+        "unit": "u00752",
+        "started_utc": "2026-10-21T12:47:44.474725+00:00",
+        "stages": {
+          "generic": {
+            "exit_code": -6,
+            "wall_seconds": 56.02389175072312,
+            "peak_rss_kib": 4415032,
+            "user_seconds": 50.016618,
+            "system_seconds": 5.299661,
+            "guard_reason": null,
+            "cpu": 31,
+            "script_sha256": "bfdb7b5c3a519876c4f4099e8c3ee2b6f8d29603c67f19fb3c55d6d00180de79",
+            "retry": "no-post-techmap-merge"
+          },
+          "fpga": {
+            "exit_code": -6,
+            "wall_seconds": 58.018403546884656,
+            "peak_rss_kib": 4434096,
+            "user_seconds": 52.705029,
+            "system_seconds": 4.378673,
+            "guard_reason": null,
+            "cpu": 31,
+            "script_sha256": "6dc721f22deef0ad1af63a690a8326a5240a3ea82cef3ef044231bfe4d47aa76",
+            "retry": "no-post-techmap-merge"
+          }
+        },
+        "finished_utc": "2026-10-21T12:49:44.791878+00:00"
+      },
+      {
+        "unit": "u01699",
+        "started_utc": "2026-10-21T13:24:50.623128+00:00",
+        "stages": {
+          "generic": {
+            "exit_code": -6,
+            "wall_seconds": 20.00749759376049,
+            "peak_rss_kib": 3396884,
+            "user_seconds": 12.629717,
+            "system_seconds": 5.545997,
+            "guard_reason": null,
+            "cpu": 31,
+            "script_sha256": "77d3da348f60ef858d165658c256191490773ec3653a29c66f65471384b16072",
+            "retry": "no-post-techmap-merge"
+          }
+        },
+        "finished_utc": "2026-10-21T13:25:15.952227+00:00"
+      },
+      {
+        "unit": "u00647",
+        "started_utc": "2026-10-21T13:25:19.075031+00:00",
+        "stages": {
+          "generic": {
+            "exit_code": -6,
+            "wall_seconds": 16.00600690767169,
+            "peak_rss_kib": 3480452,
+            "user_seconds": 10.717654,
+            "system_seconds": 4.919923,
+            "guard_reason": null,
+            "cpu": 31,
+            "script_sha256": "c2f3b5869ab0d42b78015364512a0be55675e1b98e14433d9bec9ded1ebfd0e4",
+            "retry": "no-post-techmap-merge"
+          }
+        },
+        "finished_utc": "2026-10-21T13:25:40.445750+00:00"
+      },
+      {
+        "unit": "u00894",
+        "started_utc": "2026-10-21T13:25:43.562853+00:00",
+        "stages": {
+          "generic": {
+            "exit_code": -6,
+            "wall_seconds": 20.00703702494502,
+            "peak_rss_kib": 3389352,
+            "user_seconds": 12.631661,
+            "system_seconds": 5.828228,
+            "guard_reason": null,
+            "cpu": 31,
+            "script_sha256": "ceb6ff08d41a8e18d31b5ab4eb450a1e90c4649b652536d8756e071c0a5f3ae8",
+            "retry": "no-post-techmap-merge"
+          }
+        },
+        "finished_utc": "2026-10-21T13:26:08.852481+00:00"
+      },
+      {
+        "unit": "u02581",
+        "started_utc": "2026-10-21T13:26:11.977366+00:00",
+        "stages": {
+          "generic": {
+            "exit_code": -6,
+            "wall_seconds": 4.0031637120991945,
+            "peak_rss_kib": 414344,
+            "user_seconds": 2.468779,
+            "system_seconds": 1.218551,
+            "guard_reason": null,
+            "cpu": 31,
+            "script_sha256": "6e476f52a65a3b0b6dcd4512c2477dfbc92d7b3bfe22443c0a861fbd4adbb465",
+            "retry": "no-post-techmap-merge"
+          }
+        },
+        "finished_utc": "2026-10-21T13:26:23.398260+00:00"
+      },
+      {
+        "unit": "u02109",
+        "started_utc": "2026-10-21T13:41:28.040351+00:00",
+        "stages": {
+          "generic": {
+            "exit_code": -6,
+            "wall_seconds": 6.015079293400049,
+            "peak_rss_kib": 468996,
+            "user_seconds": 3.566242,
+            "system_seconds": 1.873505,
+            "guard_reason": null,
+            "cpu": 31,
+            "script_sha256": "70bcbb28e9ba6443595727061fb6ab6762f82fe475799c257b9cbe0440c296ef",
+            "retry": "no-post-techmap-merge"
+          }
+        },
+        "finished_utc": "2026-10-21T13:41:39.919718+00:00"
+      },
+      {
+        "unit": "u02939",
+        "started_utc": "2026-10-21T13:56:45.017798+00:00",
+        "stages": {
+          "generic": {
+            "exit_code": -6,
+            "wall_seconds": 10.005591353401542,
+            "peak_rss_kib": 872408,
+            "user_seconds": 6.11915,
+            "system_seconds": 2.6516640000000002,
+            "guard_reason": null,
+            "cpu": 31,
+            "script_sha256": "107bf46c9191ca706b06ed8043a0b439b3ffcd8cd37df6e3ef6682f677e65e8a",
+            "retry": "no-post-techmap-merge"
+          }
+        },
+        "finished_utc": "2026-10-21T13:57:00.457810+00:00"
+      },
+      {
+        "unit": "u02009",
+        "started_utc": "2026-10-21T14:02:04.209182+00:00",
+        "stages": {
+          "generic": {
+            "exit_code": -6,
+            "wall_seconds": 10.00261501967907,
+            "peak_rss_kib": 719176,
+            "user_seconds": 7.127609,
+            "system_seconds": 1.167333,
+            "guard_reason": null,
+            "cpu": 31,
+            "script_sha256": "4f105a1d1cf6877e7fbf8e9c5745510d49b48e9c0a292eaafee8ae2a5a06e0e8",
+            "retry": "no-post-techmap-merge"
+          },
+          "fpga": {
+            "exit_code": -6,
+            "wall_seconds": 10.002463793382049,
+            "peak_rss_kib": 717212,
+            "user_seconds": 7.8243089999999995,
+            "system_seconds": 1.119751,
+            "guard_reason": null,
+            "cpu": 31,
+            "script_sha256": "eef57d6181d1e44bb573a5dbbda1b420c3fcbf11a6d1a3802b19523147f340c5",
+            "retry": "no-post-techmap-merge"
+          }
+        },
+        "finished_utc": "2026-10-21T14:02:32.236986+00:00"
+      },
+      {
+        "unit": "u00296",
+        "started_utc": "2026-10-21T14:02:35.415018+00:00",
+        "stages": {
+          "generic": {
+            "exit_code": -6,
+            "wall_seconds": 10.003948077559471,
+            "peak_rss_kib": 729008,
+            "user_seconds": 8.323146,
+            "system_seconds": 0.871653,
+            "guard_reason": null,
+            "cpu": 31,
+            "script_sha256": "11a9c51a90a94a857d249da0733d07e4ff9398b04724ebf0324a09ab13a348b5",
+            "retry": "no-post-techmap-merge"
+          },
+          "fpga": {
+            "exit_code": -6,
+            "wall_seconds": 12.003523452207446,
+            "peak_rss_kib": 706504,
+            "user_seconds": 9.21168,
+            "system_seconds": 1.694456,
+            "guard_reason": null,
+            "cpu": 31,
+            "script_sha256": "688bf7987458205c606fa2afe2bda703b125e4ef4012a64f69607dad274634e5",
+            "retry": "no-post-techmap-merge"
+          }
+        },
+        "finished_utc": "2026-10-21T14:03:05.556407+00:00"
+      },
+      {
+        "unit": "u04445",
+        "started_utc": "2026-10-21T14:03:08.784616+00:00",
+        "stages": {
+          "generic": {
+            "exit_code": -6,
+            "wall_seconds": 10.002642622217536,
+            "peak_rss_kib": 730600,
+            "user_seconds": 8.432937,
+            "system_seconds": 0.9067029999999999,
+            "guard_reason": null,
+            "cpu": 31,
+            "script_sha256": "7c339d52a6ef9a71eb0b5e0e9847c7eea9e7da71ca7bf51e332a453b4d04df8c",
+            "retry": "no-post-techmap-merge"
+          },
+          "fpga": {
+            "exit_code": -6,
+            "wall_seconds": 12.00318326242268,
+            "peak_rss_kib": 706640,
+            "user_seconds": 8.917587,
+            "system_seconds": 1.686842,
+            "guard_reason": null,
+            "cpu": 31,
+            "script_sha256": "a053362366852c3b7ec7e008a8379f5145c8109815594479ae955fba752aa4dd",
+            "retry": "no-post-techmap-merge"
+          }
+        },
+        "finished_utc": "2026-10-21T14:03:38.885675+00:00"
+      }
+    ],
+    "deadline_utc": "2026-10-22T06:20:00+00:00"
+  },
+  "limitations": [
+    "Per-module tool results are a compositional synthesizability result, not a successful monolithic synth command, equivalence test, timing closure, placement or routing.",
+    "ECP5 primitive sums are not Xilinx resource estimates.",
+    "ROM service handshakes/control inside the existing black boxes remain excluded.",
+    "Only fully passing unit sets have complete totals; partial sums are explicitly labeled.",
+    "Guard termination and tool crashes are resource/tool failures, not identified unsupported RTL constructs."
+  ],
+  "fpga-crash": {
+    "cause": "SIGSEGV, not OOM",
+    "metrics": {
+      "stage": "fpga",
+      "exit_code": -11,
+      "wall_seconds": 11666.333518389612,
+      "peak_rss_kib": 15860460,
+      "user_seconds": 9444.852127,
+      "system_seconds": 1223.025308,
+      "cpus": [
+        22,
+        27,
+        31,
+        33
+      ]
+    },
+    "shell_exit": 245,
+    "last_logged_stage": "2.10.6. Executing OPT_DFF pass (perform DFF optimizations).",
+    "last_log_tail": "ream.encoder.layer_owner.prefix.normalized_codes.quantizer.bank.lanes[28].value_lane.divider.d.divSqrtRecFNToRaw.\nChanging const-value async load to async reset on $driver$cycleNum ($aldff) from module divSqrtRecFNToRaw_small$rv_allonchip_top_all_v2.original.sole_qualified_neural_parent.sole_neural_parent.existing_parent.qualified_child.qualified_child.upstream.encoder.layer_owner.prefix.normalized_codes.quantizer.bank.lanes[29].value_lane.divider.d.divSqrtRecFNToRaw.\nChanging const-value async load to async reset on $driver$cycleNum ($aldff) from module divSqrtRecFNToRaw_small$rv_allonchip_top_all_v2.original.sole_qualified_neural_parent.sole_neural_parent.existing_parent.qualified_child.qualified_child.upstream.encoder.layer_owner.prefix.normalized_codes.quantizer.bank.lanes[2].value_lane.divider.d.divSqrtRecFNToRaw.\nChanging const-value async load to async reset on $driver$cycleNum ($aldff) from module divSqrtRecFNToRaw_small$rv_allonchip_top_all_v2.original.sole_qualified_neural_parent.sole_neural_parent.existing_parent.qualified_child.qualified_child.upstream.encoder.layer_owner.prefix.normalized_codes.quantizer.bank.lanes[30].value_lane.divider.d.divSqrtRecFNToRaw.\nChanging const-value async load to async reset on $driver$cycleNum ($aldff) from module divSqrtRecFNToRaw_small$rv_allonchip_top_all_v2.original.sole_qualified_neural_parent.sole_neural_parent.existing_parent.qualified_child.qualified_child.upstream.encoder.layer_owner.prefix.normalized_codes.quantizer.bank.lanes[31].value_lane.divider.d.divSqrtRecFNToRaw.\nChanging const-value async load to async reset on $driver$cycleNum ($aldff) from module divSqrtRecFNToRaw_small$rv_allonchip_top_all_v2.original.sole_qualified_neural_parent.sole_neural_parent.existing_parent.qualified_child.qualified_child.upstream.encoder.layer_owner.prefix.normalized_codes.quantizer.bank.lanes[3].value_lane.divider.d.divSqrtRecFNToRaw.\nChanging const-value async load to async reset on $driver$cycleNum ($aldff) from module divSqrtRecFNToRaw_small$rv_allonchip_top_all_v2.original.sole_qualified_neural_parent.sole_neural_parent.existing_parent.qualified_child.qualified_child.upstream.encoder.layer_owner.prefix.normalized_codes.quantizer.bank.lanes[4].value_lane.divider.d.divSqrtRecFNToRaw.\nChanging const-value async load to async reset on $driver$cycleNum ($aldff) from module divSqrtRecFNToRaw_small$rv_allonchip_top_all_v2.original.sole_qualified_neural_parent.sole_neural_parent.existing_parent.qualified_child.qualified_",
+    "memory_events_at_record": "low 0\nhigh 0\nmax 32100239\noom 1\noom_kill 1\noom_group_kill 0\n",
+    "core": {
+      "path": "/workspace/rv/overnight-20261014/finish-1023/w12-synth/core.14467",
+      "bytes": 13725421568,
+      "mtime_ns": 1792546068247303118
+    },
+    "recorded_utc": "2026-10-21T01:35:50.865873+00:00",
+    "unsupported_construct_diagnostic": null,
+    "retry": "synth_xilinx -flatten, default ABC (ABC9 already off); target xcup matching UltraScale+ resource comparison"
+  },
+  "core-diagnostic": {
+    "registers": {
+      "rip": "0x5c3f033f659b",
+      "rsp": "0x7ffd35f8db90",
+      "rbp": "0x7ffd35f8dc40"
+    },
+    "instruction_mapping": {
+      "start": 101425706692608,
+      "end": 101425728958464,
+      "file_offset": 2039808,
+      "path": "/nix/store/f1q0w7rd0a4ny4hqvfxlhs4cmariidcy-yosys-0.62/bin/yosys"
+    },
+    "note": "Single fault instruction from Linux x86_64 ELF core; not a full backtrace and not a source-level RTL diagnosis.",
+    "image_file_offset": 2528667,
+    "image_virtual_address": 2528667,
+    "symbolizer": {
+      "tool": "/usr/bin/addr2line",
+      "exit": 0,
+      "stdout": "Yosys::CellTypes::setup_type(Yosys::RTLIL::IdString, Yosys::hashlib::pool<Yosys::RTLIL::IdString, Yosys::hashlib::hash_ops<Yosys::RTLIL::IdString> > const&, Yosys::hashlib::pool<Yosys::RTLIL::IdString, Yosys::hashlib::hash_ops<Yosys::RTLIL::IdString> > const&, bool, bool, bool)\n??:?\n",
+      "stderr": ""
+    }
+  },
+  "generic-priority-stall": {
+    "utc": "2026-10-21T05:29:05.357937+00:00",
+    "original_pid": 27968,
+    "controller_pid": 25759,
+    "memory_current_bytes": 23338573824,
+    "expected_additional_peak_bytes": 12000000000,
+    "ceiling_bytes": 56000000000,
+    "original_proc_stat": "27968 (.yosys-wrapped) R 27967 25758 25758 0 -1 4194560 7224904 0 7 0 1372369 3012 0 0 20 0 1 0 1169369554 11868307456 2611047 18446744073709551615 108774791368704 108774813633605 140725634909744 0 0 0 0 16781317 0 0 0 0 17 33 0 0 0 0 0 108774817874248 108774818032968 108775700455424 140725634914350 140725634914463 140725634914463 140725634916257 0\n",
+    "original_last_log": "e_qualified_neural_parent.sole_neural_parent.existing_parent.qualified_child.qualified_child.downstream.decoder.producer.token.h.head.head.tiles[7].core.lane_31..\nFinding unused cells or wires in module \\taalas_shared_fp32_fma_pipeline$rv_allonchip_top_all_v2.original.sole_qualified_neural_parent.sole_neural_parent.existing_parent.qualified_child.qualified_child.downstream.decoder.producer.token.h.head.head.tiles[7].core.lane_4..\nFinding unused cells or wires in module \\taalas_shared_fp32_fma_pipeline$rv_allonchip_top_all_v2.original.sole_qualified_neural_parent.sole_neural_parent.existing_parent.qualified_child.qualified_child.downstream.decoder.producer.token.h.head.head.tiles[7].core.lane_5..\nFinding unused cells or wires in module \\taalas_shared_fp32_fma_pipeline$rv_allonchip_top_all_v2.original.sole_qualified_neural_parent.sole_neural_parent.existing_parent.qualified_child.qualified_child.downstream.decoder.producer.token.h.head.head.tiles[7].core.lane_6..\nFinding unused cells or wires in module \\taalas_shared_fp32_fma_pipeline$rv_allonchip_top_all_v2.original.sole_qualified_neural_parent.sole_neural_parent.existing_parent.qualified_child.qualified_child.downstream.decoder.producer.token.h.head.head.tiles[7].core.lane_7..\nFinding unused cells or wires in module \\taalas_shared_fp32_fma_pipeline$rv_allonchip_top_all_v2.original.sole_qualified_neural_parent.sole_neural_parent.existing_parent.qualified_child.qualified_child.downstream.decoder.producer.token.h.head.head.tiles[7].core.lane_8..\nFinding unused cells or wires in module \\taalas_shared_fp32_fma_pipeline$rv_allonchip_top_all_v2.original.sole_qualified_neural_parent.sole_neural_parent.existing_parent.qualified_child.qualified_child.downstream.decoder.producer.token.h.head.head.tiles[7].core.lane_9..\n\n3. Executing MEMORY pass.\n\n3.1. Executing OPT_MEM pass (optimize memories).\nPerformed a total of 0 transformations.\n\n3.2. Executing OPT_MEM_PRIORITY pass (removing unnecessary memory write priority relations).\n",
+    "reason": "lead guidance 3: OPT_MEM_PRIORITY has made no logged progress for approximately 3.8 hours; leave original synthesis alive until replacement passes"
+  },
+  "frontend-summary": {
+    "stage": "read_slang --keep-hierarchy --no-proc; hierarchy -check; stat",
+    "status": "frontend_checkpoint_written",
+    "source_sha256": "34abf94954301e3f0b2e35b7275080652cd6f74b983785f6744f0935069c6a39",
+    "modules": 30528,
+    "design": {
+      "num_wires": 1559795,
+      "num_wire_bits": 30332347,
+      "num_pub_wires": 620094,
+      "num_pub_wire_bits": 10249220,
+      "num_ports": 151651,
+      "num_port_bits": 2278439,
+      "num_memories": 311,
+      "num_memory_bits": 8169778,
+      "num_processes": 6562,
+      "num_cells": 917142,
+      "num_submodules": 1,
+      "num_cells_by_type": {
+        "$add": 36807,
+        "$aldff": 209,
+        "$and": 21158,
+        "$bmux": 1135,
+        "$bwmux": 48,
+        "$demux": 57,
+        "$dff": 28495,
+        "$div": 28,
+        "$eq": 46643,
+        "$eqx": 119,
+        "$ge": 2502,
+        "$gt": 1176,
+        "$le": 2781,
+        "$logic_and": 104349,
+        "$logic_not": 58016,
+        "$logic_or": 59039,
+        "$lt": 5817,
+        "$memrd_v2": 50352,
+        "$memwr_v2": 53365,
+        "$mod": 28,
+        "$mul": 1215,
+        "$mux": 217641,
+        "$ne": 3994,
+        "$neg": 842,
+        "$nex": 13,
+        "$not": 18154,
+        "$or": 116434,
+        "$reduce_and": 1426,
+        "$reduce_or": 32651,
+        "$reduce_xor": 52,
+        "$shift": 32,
+        "$shiftx": 42,
+        "$shl": 14099,
+        "$shr": 21479,
+        "$sshl": 512,
+        "$sshr": 4695,
+        "$sub": 5500,
+        "$xor": 5963,
+        "rv_decoder_learned_norm_readout_v1": 1,
+        "rv_onchip_decoder_body_v1": 1,
+        "rv_onchip_decoder_self_v1": 1,
+        "rv_onchip_encoder_O_v1": 1,
+        "rv_onchip_encoder_head_v1": 1,
+        "rv_onchip_encoder_memory_v1": 1,
+        "rv_onchip_frontend_v1": 1,
+        "rv_producer_metadata_rom_service_v1": 1,
+        "rv_source_KV_book_index_service_v1": 1,
+        "rv_source_position_immutable_rom_v1": 1,
+        "rv_tied_book_loader_v3": 1,
+        "rv_tied_index_service_v1": 1,
+        "taalas_decoder_rotary_coefficients": 1,
+        "taalas_embedding_dq_lut": 1,
+        "w12_asinh_coefficient": 3,
+        "w12_asinh_program": 1,
+        "w12_product_pointer": 256,
+        "rv_pcm_encoder_greedy_frontend_history_producer_metadata_KV_tables_onboard_v1$rv_allonchip_top_all_v2.original": 1
+      }
+    },
+    "not_final_synthesis": true
+  },
+  "ecp5-device-reference": {
+    "source": "https://www.latticesemi.com/-/media/LatticeSemi/Documents/DataSheets/ECP5/FPGA-DS-02012-3-4-ECP5-ECP5G-Family-Data-Sheet.ashx?document_id=50461",
+    "maximum_ECP5_BRAM_blocks": 208,
+    "block_bits": 18432,
+    "maximum_ECP5_BRAM_bits": 3833856,
+    "maximum_ECP5_18x18_multipliers": 156,
+    "new_service_native_BRAM_blocks_lower_bound": 12432,
+    "new_service_comparison_BRAM_blocks_lower_bound": 7595,
+    "full_original_BRAM_blocks_lower_bound": 16278,
+    "full_comparison_BRAM_blocks_lower_bound": 11441,
+    "conclusion": "A single ECP5 cannot contain the weight storage in either encoding; ECP5 mapping is a primitive-count view only."
+  },
+  "per_module_wall_seconds_as_of_update": 24.68839674629271,
+  "per_module_wall_origin": "Root connectivity start inferred from its metrics file completion timestamp minus measured stage wall time; elapsed includes queue holds.",
+  "partition_audit": {
+    "status": "pass",
+    "updated_utc": "2026-10-21T10:46:57.415285+00:00",
+    "errors": [],
+    "units_audited": 4474,
+    "original_reachable_modules": 30545,
+    "counts_from_original_hierarchy": {
+      "MEMORY_COUNT": 311,
+      "MEMORY_BITS": 8169778,
+      "$mux": 474560,
+      "$dff": 28422,
+      "$nex": 13,
+      "$logic_or": 51568,
+      "$logic_and": 96871,
+      "$logic_not": 82119,
+      "$eqx": 119,
+      "$ge": 2498,
+      "$le": 2780,
+      "$shl": 4787,
+      "$sub": 5497,
+      "$add": 36660,
+      "$not": 19237,
+      "$sshr": 2139,
+      "$reduce_or": 29375,
+      "$lt": 5816,
+      "$and": 16614,
+      "$eq": 61089,
+      "$or": 107286,
+      "$mul": 1215,
+      "$xor": 2915,
+      "$aldff": 209,
+      "$reduce_bool": 1341,
+      "$gt": 1175,
+      "$shr": 1149,
+      "$pmux": 1550,
+      "$neg": 842,
+      "$ne": 2039,
+      "$memrd_v2": 50352,
+      "$memwr_v2": 53365,
+      "$reduce_and": 1406,
+      "$bmux": 1135,
+      "$div": 28,
+      "$mod": 28,
+      "$demux": 32,
+      "$bwmux": 22,
+      "$shiftx": 42,
+      "$shift": 32,
+      "$reduce_xor": 51
+    },
+    "counts_from_partition_multiplicities": {
+      "MEMORY_COUNT": 311,
+      "MEMORY_BITS": 8169778,
+      "$mux": 474560,
+      "$dff": 28422,
+      "$nex": 13,
+      "$logic_or": 51568,
+      "$logic_and": 96871,
+      "$logic_not": 82119,
+      "$eqx": 119,
+      "$ge": 2498,
+      "$le": 2780,
+      "$shl": 4787,
+      "$sub": 5497,
+      "$add": 36660,
+      "$not": 19237,
+      "$sshr": 2139,
+      "$reduce_or": 29375,
+      "$lt": 5816,
+      "$and": 16614,
+      "$eq": 61089,
+      "$or": 107286,
+      "$mul": 1215,
+      "$xor": 2915,
+      "$aldff": 209,
+      "$reduce_bool": 1341,
+      "$gt": 1175,
+      "$shr": 1149,
+      "$pmux": 1550,
+      "$neg": 842,
+      "$ne": 2039,
+      "$memrd_v2": 50352,
+      "$memwr_v2": 53365,
+      "$reduce_and": 1406,
+      "$bmux": 1135,
+      "$div": 28,
+      "$mod": 28,
+      "$demux": 32,
+      "$bwmux": 22,
+      "$shiftx": 42,
+      "$shift": 32,
+      "$reduce_xor": 51
+    },
+    "checks": [
+      "all generated input SHA256 pins",
+      "all unit and child-stub ports and parameters exactly match original declarations",
+      "direct memory annotations",
+      "original hierarchy primitive and memory counts equal multiplicity-weighted partition counts"
+    ]
+  },
+  "frontend_compatibility": {
+    "status": "process_lowering_passed",
+    "flags": [
+      "--allow-use-before-declare"
+    ],
+    "ordering_patch": "declaration-order.patch",
+    "observed_tool_errors_in_completed_per_unit_stages": [],
+    "note": "Tool ERROR lines are preserved, but are not automatically classified as unsupported RTL; allocation failures and guards are resource failures. Earlier pre-W12 strict declaration-order diagnostics were not retained in the available synth directory."
+  }
+}

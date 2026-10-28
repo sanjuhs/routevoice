@@ -1,0 +1,138 @@
+[
+  {
+    "name": "final_pitch_sram_bitcell_large_macro_lossless_baseline_whole_29x31mm_pdn40_pads48",
+    "command": [
+      "/Library/Frameworks/Python.framework/Versions/3.14/bin/python3",
+      "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/floorplan/make_floorplan.py",
+      "--blocks",
+      "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/floorplan/blocks_final.json",
+      "--scenario",
+      "final_pitch",
+      "--memory",
+      "sram_bitcell_large_macro",
+      "--levers",
+      "lossless",
+      "--partition",
+      "whole",
+      "--die-mm",
+      "29",
+      "--height-mm",
+      "31",
+      "--pdn-width-um",
+      "40",
+      "--supply-pad-pairs",
+      "48"
+    ],
+    "memory": "sram_bitcell_large_macro",
+    "partition": "whole",
+    "minimum_rectangle": [
+      899,
+      29,
+      31
+    ],
+    "reticle26x33_pass": false,
+    "search": "integer-mm width16..49 height16..54, width<=height, aspect<=33/26, deterministic shelf packer/700um margin/30um halo"
+  },
+  {
+    "name": "final_pitch_sram_dense_custom_lossless_baseline_whole_25x31mm_pdn40_pads48",
+    "command": [
+      "/Library/Frameworks/Python.framework/Versions/3.14/bin/python3",
+      "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/floorplan/make_floorplan.py",
+      "--blocks",
+      "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/floorplan/blocks_final.json",
+      "--scenario",
+      "final_pitch",
+      "--memory",
+      "sram_dense_custom",
+      "--levers",
+      "lossless",
+      "--partition",
+      "whole",
+      "--die-mm",
+      "25",
+      "--height-mm",
+      "31",
+      "--pdn-width-um",
+      "40",
+      "--supply-pad-pairs",
+      "48"
+    ],
+    "memory": "sram_dense_custom",
+    "partition": "whole",
+    "minimum_rectangle": [
+      775,
+      25,
+      31
+    ],
+    "reticle26x33_pass": true,
+    "search": "integer-mm width16..49 height16..54, width<=height, aspect<=33/26, deterministic shelf packer/700um margin/30um halo"
+  },
+  {
+    "name": "final_pitch_sram_open_macro_lossless_baseline_encoder_25x29mm_pdn40_pads32",
+    "command": [
+      "/Library/Frameworks/Python.framework/Versions/3.14/bin/python3",
+      "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/floorplan/make_floorplan.py",
+      "--blocks",
+      "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/floorplan/blocks_final.json",
+      "--scenario",
+      "final_pitch",
+      "--memory",
+      "sram_open_macro",
+      "--levers",
+      "lossless",
+      "--partition",
+      "encoder",
+      "--die-mm",
+      "25",
+      "--height-mm",
+      "29",
+      "--pdn-width-um",
+      "40",
+      "--supply-pad-pairs",
+      "32"
+    ],
+    "memory": "sram_open_macro",
+    "partition": "encoder",
+    "minimum_rectangle": [
+      725,
+      25,
+      29
+    ],
+    "reticle26x33_pass": true,
+    "search": "integer-mm width16..49 height16..54, width<=height, aspect<=33/26, deterministic shelf packer/700um margin/30um halo"
+  },
+  {
+    "name": "final_pitch_sram_open_macro_lossless_baseline_decoder_25x29mm_pdn40_pads32",
+    "command": [
+      "/Library/Frameworks/Python.framework/Versions/3.14/bin/python3",
+      "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/floorplan/make_floorplan.py",
+      "--blocks",
+      "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/floorplan/blocks_final.json",
+      "--scenario",
+      "final_pitch",
+      "--memory",
+      "sram_open_macro",
+      "--levers",
+      "lossless",
+      "--partition",
+      "decoder",
+      "--die-mm",
+      "25",
+      "--height-mm",
+      "29",
+      "--pdn-width-um",
+      "40",
+      "--supply-pad-pairs",
+      "32"
+    ],
+    "memory": "sram_open_macro",
+    "partition": "decoder",
+    "minimum_rectangle": [
+      725,
+      25,
+      29
+    ],
+    "reticle26x33_pass": true,
+    "search": "integer-mm width16..49 height16..54, width<=height, aspect<=33/26, deterministic shelf packer/700um margin/30um halo"
+  }
+]

@@ -1,0 +1,1261 @@
+{
+  "status": "partial_in_progress",
+  "updated_utc": "2026-10-14T02:12:23.254804+00:00",
+  "lineage": "buf-v4 synthesis through placement and original STAMidPNR; buf-v4-physical resumes RepairDesignPostGPL from the identical placement state while read-only STA runs concurrently.",
+  "scope": "1280x320 ARRAY-PORT engine only. Custom index array, sense/read circuits, pads, upstream quantizer and recognizer excluded.",
+  "run": "buf-v4-physical",
+  "flow_exit": null,
+  "latest_completed_stage": "26-openroad-stamidpnr",
+  "attempt_history": [
+    {
+      "run": "buf-v1",
+      "status": "interrupted_synthesis_console_bottleneck",
+      "evidence": "evidence/restart-console-bottleneck.json"
+    },
+    {
+      "run": "buf-v2",
+      "status": "synthesis_complete_fanout_failed_flow_stopped_before_placement",
+      "max_fanout": 11359,
+      "row_bit6_fanout": 4068,
+      "buffers": 6643,
+      "evidence": "evidence/buf-v2-synthesis-fanout.json"
+    },
+    {
+      "run": "buf-v3",
+      "status": "fanout_failed_identical_to_v2_invalid_ABC_driving_cell",
+      "evidence": "evidence/buf-v3-synthesis-fanout.json"
+    },
+    {
+      "run": "buf-v4",
+      "change": "ABC PI buffering with bare driving cell; ten preserved row-register/decode domains, 32 lanes each"
+    }
+  ],
+  "serial_full_replay_pass": true,
+  "sharded_full_replay": {
+    "passed": true,
+    "vectors": 54,
+    "outputs": 17280,
+    "shards": [
+      {
+        "first": 0,
+        "last": 7,
+        "exit": 0,
+        "pass": true,
+        "log": "/workspace/rv/overnight-20261014/engine-buffered/logs/gate-shard-00-07.log",
+        "vectors": [
+          [
+            0,
+            4163,
+            1280
+          ],
+          [
+            1,
+            5592,
+            1280
+          ],
+          [
+            2,
+            5670,
+            1280
+          ],
+          [
+            3,
+            5574,
+            1280
+          ],
+          [
+            4,
+            5582,
+            1280
+          ],
+          [
+            5,
+            5688,
+            1280
+          ],
+          [
+            6,
+            5692,
+            1280
+          ]
+        ]
+      },
+      {
+        "first": 7,
+        "last": 14,
+        "exit": 0,
+        "pass": true,
+        "log": "/workspace/rv/overnight-20261014/engine-buffered/logs/gate-shard-07-14.log",
+        "vectors": [
+          [
+            7,
+            5691,
+            1280
+          ],
+          [
+            8,
+            5576,
+            1280
+          ],
+          [
+            9,
+            5459,
+            1280
+          ],
+          [
+            10,
+            5680,
+            1280
+          ],
+          [
+            11,
+            5576,
+            1280
+          ],
+          [
+            12,
+            5558,
+            1280
+          ],
+          [
+            13,
+            5554,
+            1280
+          ]
+        ]
+      },
+      {
+        "first": 14,
+        "last": 21,
+        "exit": 0,
+        "pass": true,
+        "log": "/workspace/rv/overnight-20261014/engine-buffered/logs/gate-shard-14-21.log",
+        "vectors": [
+          [
+            14,
+            5538,
+            1280
+          ],
+          [
+            15,
+            5583,
+            1280
+          ],
+          [
+            16,
+            5561,
+            1280
+          ],
+          [
+            17,
+            5603,
+            1280
+          ],
+          [
+            18,
+            5604,
+            1280
+          ],
+          [
+            19,
+            5738,
+            1280
+          ],
+          [
+            20,
+            5587,
+            1280
+          ]
+        ]
+      },
+      {
+        "first": 21,
+        "last": 28,
+        "exit": 0,
+        "pass": true,
+        "log": "/workspace/rv/overnight-20261014/engine-buffered/logs/gate-shard-21-28.log",
+        "vectors": [
+          [
+            21,
+            5515,
+            1280
+          ],
+          [
+            22,
+            5617,
+            1280
+          ],
+          [
+            23,
+            5668,
+            1280
+          ],
+          [
+            24,
+            5468,
+            1280
+          ],
+          [
+            25,
+            5585,
+            1280
+          ],
+          [
+            26,
+            5477,
+            1280
+          ],
+          [
+            27,
+            5647,
+            1280
+          ]
+        ]
+      },
+      {
+        "first": 28,
+        "last": 35,
+        "exit": 0,
+        "pass": true,
+        "log": "/workspace/rv/overnight-20261014/engine-buffered/logs/gate-shard-28-35.log",
+        "vectors": [
+          [
+            28,
+            5676,
+            1280
+          ],
+          [
+            29,
+            5614,
+            1280
+          ],
+          [
+            30,
+            5638,
+            1280
+          ],
+          [
+            31,
+            5668,
+            1280
+          ],
+          [
+            32,
+            5706,
+            1280
+          ],
+          [
+            33,
+            5578,
+            1280
+          ],
+          [
+            34,
+            5557,
+            1280
+          ]
+        ]
+      },
+      {
+        "first": 35,
+        "last": 42,
+        "exit": 0,
+        "pass": true,
+        "log": "/workspace/rv/overnight-20261014/engine-buffered/logs/gate-shard-35-42.log",
+        "vectors": [
+          [
+            35,
+            5621,
+            1280
+          ],
+          [
+            36,
+            5634,
+            1280
+          ],
+          [
+            37,
+            5604,
+            1280
+          ],
+          [
+            38,
+            5587,
+            1280
+          ],
+          [
+            39,
+            5531,
+            1280
+          ],
+          [
+            40,
+            5637,
+            1280
+          ],
+          [
+            41,
+            5453,
+            1280
+          ]
+        ]
+      },
+      {
+        "first": 42,
+        "last": 49,
+        "exit": 0,
+        "pass": true,
+        "log": "/workspace/rv/overnight-20261014/engine-buffered/logs/gate-shard-42-49.log",
+        "vectors": [
+          [
+            42,
+            5603,
+            1280
+          ],
+          [
+            43,
+            5583,
+            1280
+          ],
+          [
+            44,
+            5561,
+            1280
+          ],
+          [
+            45,
+            5687,
+            1280
+          ],
+          [
+            46,
+            5662,
+            1280
+          ],
+          [
+            47,
+            5637,
+            1280
+          ],
+          [
+            48,
+            5550,
+            1280
+          ]
+        ]
+      },
+      {
+        "first": 49,
+        "last": 54,
+        "exit": 0,
+        "pass": true,
+        "log": "/workspace/rv/overnight-20261014/engine-buffered/logs/gate-shard-49-54.log",
+        "vectors": [
+          [
+            49,
+            5678,
+            1280
+          ],
+          [
+            50,
+            5478,
+            1280
+          ],
+          [
+            51,
+            5608,
+            1280
+          ],
+          [
+            52,
+            5536,
+            1280
+          ],
+          [
+            53,
+            5619,
+            1280
+          ]
+        ]
+      }
+    ],
+    "same_stall_cycles_as_reference": true,
+    "aborts_per_shard": 4,
+    "netlist": "/workspace/rv/overnight-20261014/engine-buffered/runs/buf-v4/01-yosys-synthesis/rv_k64_array_port.nl.v"
+  },
+  "rtl_regression_pass": true,
+  "steps": {
+    "rtl": "passed",
+    "configuration": "complete",
+    "synthesis": "buf-v4/01-yosys-synthesis",
+    "routing": null,
+    "extraction": null,
+    "sta": "buf-v4/26-openroad-stamidpnr",
+    "gate_replay": "54 vectors / 17280 outputs passed (serial)",
+    "activity": "vector0 / 320 outputs passed",
+    "power": "pending"
+  },
+  "area": {
+    "design__die__area": 16266600,
+    "design__core__area": 16083600,
+    "design__instance__area": 6902640,
+    "design__instance__area__stdcell": 6902640,
+    "design__instance__utilization": 0.429172
+  },
+  "area_units": "square micrometres; divide by 1e6 for square millimetres",
+  "timing_corners": {
+    "nom_tt_025C_3v30": {
+      "setup_wns_ns": -171.658,
+      "worst_setup_slack_ns": -171.658,
+      "worst_hold_slack_ns": -177.617,
+      "hold_wns_ns": -177.617,
+      "mhz_from_requested_wns_formula": 5.217627231840049,
+      "source_stage": "buf-v4/26-openroad-stamidpnr",
+      "post_route": false
+    },
+    "nom_ss_125C_3v00": {
+      "setup_wns_ns": -60.51570438268323,
+      "worst_setup_slack_ns": -60.51570438268323,
+      "worst_hold_slack_ns": 2.020295099508737,
+      "hold_wns_ns": 0,
+      "mhz_from_requested_wns_formula": 12.419937298779606,
+      "source_stage": "buf-v4/07-openroad-staprepnr",
+      "post_route": false
+    },
+    "nom_ff_n40C_3v60": {
+      "setup_wns_ns": -2.5759892725807436,
+      "worst_setup_slack_ns": -2.5759892725807436,
+      "worst_hold_slack_ns": 0.37401699462840776,
+      "hold_wns_ns": 0,
+      "mhz_from_requested_wns_formula": 44.29484741182668,
+      "source_stage": "buf-v4/07-openroad-staprepnr",
+      "post_route": false
+    },
+    "min_tt_025C_3v30": {
+      "setup_wns_ns": null,
+      "worst_setup_slack_ns": null,
+      "worst_hold_slack_ns": null,
+      "hold_wns_ns": null,
+      "mhz_from_requested_wns_formula": null,
+      "source_stage": null,
+      "post_route": false
+    },
+    "min_ss_125C_3v00": {
+      "setup_wns_ns": null,
+      "worst_setup_slack_ns": null,
+      "worst_hold_slack_ns": null,
+      "hold_wns_ns": null,
+      "mhz_from_requested_wns_formula": null,
+      "source_stage": null,
+      "post_route": false
+    },
+    "min_ff_n40C_3v60": {
+      "setup_wns_ns": null,
+      "worst_setup_slack_ns": null,
+      "worst_hold_slack_ns": null,
+      "hold_wns_ns": null,
+      "mhz_from_requested_wns_formula": null,
+      "source_stage": null,
+      "post_route": false
+    },
+    "max_tt_025C_3v30": {
+      "setup_wns_ns": null,
+      "worst_setup_slack_ns": null,
+      "worst_hold_slack_ns": null,
+      "hold_wns_ns": null,
+      "mhz_from_requested_wns_formula": null,
+      "source_stage": null,
+      "post_route": false
+    },
+    "max_ss_125C_3v00": {
+      "setup_wns_ns": null,
+      "worst_setup_slack_ns": null,
+      "worst_hold_slack_ns": null,
+      "hold_wns_ns": null,
+      "mhz_from_requested_wns_formula": null,
+      "source_stage": null,
+      "post_route": false
+    },
+    "max_ff_n40C_3v60": {
+      "setup_wns_ns": null,
+      "worst_setup_slack_ns": null,
+      "worst_hold_slack_ns": null,
+      "hold_wns_ns": null,
+      "mhz_from_requested_wns_formula": null,
+      "source_stage": null,
+      "post_route": false
+    }
+  },
+  "timing_note": "Each corner identifies its last fresh STA source; missing corners are pending. Before post-PNR STA these are early diagnostics. Pre-CTS propagated-clock results include an unsynthesized clock network. Frequency formula does not certify hold, electrical or physical signoff.",
+  "signoff": {
+    "design__max_slew_violation__count__corner:nom_tt_025C_3v30": 355092,
+    "design__max_fanout_violation__count__corner:nom_tt_025C_3v30": 1,
+    "design__max_cap_violation__count__corner:nom_tt_025C_3v30": 10496,
+    "design__max_slew_violation__count__corner:nom_ss_125C_3v00": 381753,
+    "design__max_fanout_violation__count__corner:nom_ss_125C_3v00": 0,
+    "design__max_cap_violation__count__corner:nom_ss_125C_3v00": 2,
+    "design__max_slew_violation__count__corner:nom_ff_n40C_3v60": 12,
+    "design__max_fanout_violation__count__corner:nom_ff_n40C_3v60": 0,
+    "design__max_cap_violation__count__corner:nom_ff_n40C_3v60": 2,
+    "design__max_slew_violation__count": 355092,
+    "design__max_fanout_violation__count": 1,
+    "design__max_cap_violation__count": 10496
+  },
+  "signoff_stages": {
+    "magic-drc": null,
+    "klayout-drc": null,
+    "netgen-lvs": null,
+    "checkantennas": null
+  },
+  "supplemental_klayout": {
+    "exit": null,
+    "log": "logs/supplemental-klayout-drc.log",
+    "executed": false
+  },
+  "klayout_note": "W2b input enables KLayout DRC but resolved runset can be null; skipped execution is not a pass.",
+  "activity_receipt": {
+    "updated_utc": "2026-10-14T02:06:34.474210+00:00",
+    "variant": "array_port_buf_v4",
+    "status": "all_54_gate_vectors_passed_and_one_vector_trace_complete",
+    "vectors": 1,
+    "fp32_outputs": 320,
+    "cycles_excluding_start": 4163,
+    "clock_period_ns": 20,
+    "trace_duration_ps": 83320000,
+    "trace_duration_us": 83.32,
+    "initial_reset_included": true,
+    "activity_scope": "tb/dut",
+    "trace_provenance": "Completed lead-labelled repeat of the same W9 activity executable; original W9 pass and hash preserved separately; frozen-activity-provenance.json records replacement",
+    "gate_verification": "original serial 54-vector pass",
+    "activity": "Zero-delay mapped standard cells, saved real activation vector0; no SDF glitch timing, not long-stream/idle/peak characterization.",
+    "activation_statistics": {
+      "samples": 1280,
+      "min": -1,
+      "max": 11,
+      "zero_count": 565,
+      "mean_absolute": 0.746875
+    },
+    "artifacts": {
+      "evidence/array_port-mapped-speech-w9-frozen.saif": {
+        "bytes": 370949150,
+        "sha256": "673cc9d43e541b450e3bc37ed2d3849c11b7aac149b976af860508eca3bb05fa"
+      },
+      "logs/lead-gate-activity.log": {
+        "bytes": 387,
+        "sha256": "0a498c247d34538e3df5f9f2d86eaef61d5a7ac1f8d77ce33059be73eae4a98e"
+      },
+      "tb/activity_array_port.sv": {
+        "bytes": 3001,
+        "sha256": "e176aeee7ba2843d84fb5a0e567e4fef8ca766b87e03332cf2b150f933cccb21"
+      },
+      "runs/buf-v4/01-yosys-synthesis/rv_k64_array_port.nl.v": {
+        "bytes": 49027107,
+        "sha256": "b789d37648f9c435ff91abeeee334bfad2c7e41693c066b01b0eb03f13a36b44"
+      },
+      "vectors/inputs.hex": {
+        "bytes": 276480,
+        "sha256": "a6914fe441e732dc9408b8feb9a5f9363842842b27364377e0a8168809884d55"
+      },
+      "vectors/activation-scales.hex": {
+        "bytes": 486,
+        "sha256": "10ded5f83eb5d1d24ad6c3b4734ade8d359a692b06570c43483807fecce24eae"
+      },
+      "vectors/expected.hex": {
+        "bytes": 155520,
+        "sha256": "fda601d8ea804b285aaef12616f07d6fefbe66292bfb21f2f4752abf8f1fcecd"
+      },
+      "evidence/gate-activity-inputs.sha256": {
+        "bytes": 702,
+        "sha256": "9925484e33125a6ed97b30c8626a251665181ec81f7bfd62dbe5173e48faeb98"
+      }
+    },
+    "annotation_coverage_pending": true,
+    "power_computed": false,
+    "placed_annotation": {
+      "annotated_pins": 1299526,
+      "unannotated_pins": 0,
+      "coverage_fraction": 1.0,
+      "stage": "buf-v4/23-openroad-globalplacement",
+      "routed": false,
+      "report": "/workspace/rv/overnight-20261014/engine-buffered/evidence/placed-saif-annotation.rpt"
+    }
+  },
+  "activity_file_status": "frozen_complete",
+  "repair_progress": {
+    "iteration": 151000,
+    "area_change_percent": 26.3,
+    "resized_cells": 30139,
+    "inserted_buffers": 23829,
+    "repaired_nets": 19309,
+    "remaining_nets": 191596,
+    "source": "/workspace/rv/overnight-20261014/engine-buffered/runs/buf-v4-physical/01-openroad-repairdesignpostgpl/openroad-repairdesignpostgpl.log"
+  },
+  "synthesis_fanout": {
+    "netlist_json": "runs/buf-v4/01-yosys-synthesis/rv_k64_array_port.nl.v.json",
+    "sha256": "9cc138f121deecf5911c747b4beed512442fd744f4e071bd7e4ed82133afad69",
+    "method": "Mapped cell input-pin loads; excludes clock and constant nodes from max signal fanout.",
+    "max_signal_fanout": 16,
+    "max_nonclock_nontie_fanout": 16,
+    "max_tie_cell_fanout": 0,
+    "signal_nets_over_16": 0,
+    "clock_loads": 11784,
+    "cells": 340582,
+    "buffers": 19045,
+    "top_signal_nets": [
+      {
+        "bit": 1392,
+        "loads": 16,
+        "names": [
+          "$abc$2168572$new_n24929"
+        ],
+        "drivers": [
+          "$abc$2168572$auto$blifparse.cc:397:parse_blif$2168574/Z"
+        ]
+      },
+      {
+        "bit": 1393,
+        "loads": 16,
+        "names": [
+          "$abc$2168572$new_n24930"
+        ],
+        "drivers": [
+          "$abc$2168572$auto$blifparse.cc:397:parse_blif$2168575/Z"
+        ]
+      },
+      {
+        "bit": 1412,
+        "loads": 16,
+        "names": [
+          "$abc$2168572$new_n24942"
+        ],
+        "drivers": [
+          "$abc$2168572$auto$blifparse.cc:397:parse_blif$2168587/Z"
+        ]
+      },
+      {
+        "bit": 1430,
+        "loads": 16,
+        "names": [
+          "$abc$2168572$new_n24967"
+        ],
+        "drivers": [
+          "$abc$2168572$auto$blifparse.cc:397:parse_blif$2168612/Z"
+        ]
+      },
+      {
+        "bit": 1431,
+        "loads": 16,
+        "names": [
+          "$abc$2168572$new_n24968"
+        ],
+        "drivers": [
+          "$abc$2168572$auto$blifparse.cc:397:parse_blif$2168613/Z"
+        ]
+      },
+      {
+        "bit": 1441,
+        "loads": 16,
+        "names": [
+          "$abc$2168572$new_n24976"
+        ],
+        "drivers": [
+          "$abc$2168572$auto$blifparse.cc:397:parse_blif$2168621/Z"
+        ]
+      },
+      {
+        "bit": 1442,
+        "loads": 16,
+        "names": [
+          "$abc$2168572$new_n24977"
+        ],
+        "drivers": [
+          "$abc$2168572$auto$blifparse.cc:397:parse_blif$2168622/Z"
+        ]
+      },
+      {
+        "bit": 1452,
+        "loads": 16,
+        "names": [
+          "$abc$2168572$new_n24987"
+        ],
+        "drivers": [
+          "$abc$2168572$auto$blifparse.cc:397:parse_blif$2168632/Z"
+        ]
+      },
+      {
+        "bit": 1462,
+        "loads": 16,
+        "names": [
+          "$abc$2168572$new_n24996"
+        ],
+        "drivers": [
+          "$abc$2168572$auto$blifparse.cc:397:parse_blif$2168641/Z"
+        ]
+      },
+      {
+        "bit": 1466,
+        "loads": 16,
+        "names": [
+          "$abc$2168572$new_n25000"
+        ],
+        "drivers": [
+          "$abc$2168572$auto$blifparse.cc:397:parse_blif$2168645/Z"
+        ]
+      },
+      {
+        "bit": 1467,
+        "loads": 16,
+        "names": [
+          "$abc$2168572$new_n25001"
+        ],
+        "drivers": [
+          "$abc$2168572$auto$blifparse.cc:397:parse_blif$2168646/Z"
+        ]
+      },
+      {
+        "bit": 1474,
+        "loads": 16,
+        "names": [
+          "$abc$2168572$new_n25007"
+        ],
+        "drivers": [
+          "$abc$2168572$auto$blifparse.cc:397:parse_blif$2168652/Z"
+        ]
+      },
+      {
+        "bit": 1475,
+        "loads": 16,
+        "names": [
+          "$abc$2168572$new_n25008"
+        ],
+        "drivers": [
+          "$abc$2168572$auto$blifparse.cc:397:parse_blif$2168653/ZN"
+        ]
+      },
+      {
+        "bit": 1482,
+        "loads": 16,
+        "names": [
+          "$abc$2168572$new_n25012"
+        ],
+        "drivers": [
+          "$abc$2168572$auto$blifparse.cc:397:parse_blif$2168657/Z"
+        ]
+      },
+      {
+        "bit": 1478,
+        "loads": 16,
+        "names": [
+          "$abc$2168572$new_n25010"
+        ],
+        "drivers": [
+          "$abc$2168572$auto$blifparse.cc:397:parse_blif$2168655/Z"
+        ]
+      },
+      {
+        "bit": 1476,
+        "loads": 16,
+        "names": [
+          "$abc$2168572$new_n25009"
+        ],
+        "drivers": [
+          "$abc$2168572$auto$blifparse.cc:397:parse_blif$2168654/Z"
+        ]
+      },
+      {
+        "bit": 1496,
+        "loads": 16,
+        "names": [
+          "$abc$2168572$new_n25021"
+        ],
+        "drivers": [
+          "$abc$2168572$auto$blifparse.cc:397:parse_blif$2168666/Z"
+        ]
+      },
+      {
+        "bit": 1498,
+        "loads": 16,
+        "names": [
+          "$abc$2168572$new_n25023"
+        ],
+        "drivers": [
+          "$abc$2168572$auto$blifparse.cc:397:parse_blif$2168668/Z"
+        ]
+      },
+      {
+        "bit": 1470,
+        "loads": 16,
+        "names": [
+          "$abc$2168572$new_n25004"
+        ],
+        "drivers": [
+          "$abc$2168572$auto$blifparse.cc:397:parse_blif$2168649/Z"
+        ]
+      },
+      {
+        "bit": 1465,
+        "loads": 16,
+        "names": [
+          "$abc$2168572$new_n24999"
+        ],
+        "drivers": [
+          "$abc$2168572$auto$blifparse.cc:397:parse_blif$2168644/Z"
+        ]
+      },
+      {
+        "bit": 1506,
+        "loads": 16,
+        "names": [
+          "$abc$2168572$new_n25030"
+        ],
+        "drivers": [
+          "$abc$2168572$auto$blifparse.cc:397:parse_blif$2168675/Z"
+        ]
+      },
+      {
+        "bit": 1509,
+        "loads": 16,
+        "names": [
+          "$abc$2168572$new_n25033"
+        ],
+        "drivers": [
+          "$abc$2168572$auto$blifparse.cc:397:parse_blif$2168678/Z"
+        ]
+      },
+      {
+        "bit": 1511,
+        "loads": 16,
+        "names": [
+          "$abc$2168572$new_n25035"
+        ],
+        "drivers": [
+          "$abc$2168572$auto$blifparse.cc:397:parse_blif$2168680/Z"
+        ]
+      },
+      {
+        "bit": 1514,
+        "loads": 16,
+        "names": [
+          "$abc$2168572$new_n25039"
+        ],
+        "drivers": [
+          "$abc$2168572$auto$blifparse.cc:397:parse_blif$2168684/Z"
+        ]
+      },
+      {
+        "bit": 1515,
+        "loads": 16,
+        "names": [
+          "$abc$2168572$new_n25040"
+        ],
+        "drivers": [
+          "$abc$2168572$auto$blifparse.cc:397:parse_blif$2168685/Z"
+        ]
+      },
+      {
+        "bit": 1537,
+        "loads": 16,
+        "names": [
+          "$abc$2168572$new_n25062"
+        ],
+        "drivers": [
+          "$abc$2168572$auto$blifparse.cc:397:parse_blif$2168707/Z"
+        ]
+      },
+      {
+        "bit": 1554,
+        "loads": 16,
+        "names": [
+          "$abc$2168572$new_n25079"
+        ],
+        "drivers": [
+          "$abc$2168572$auto$blifparse.cc:397:parse_blif$2168724/Z"
+        ]
+      },
+      {
+        "bit": 1562,
+        "loads": 16,
+        "names": [
+          "$abc$2168572$new_n25087"
+        ],
+        "drivers": [
+          "$abc$2168572$auto$blifparse.cc:397:parse_blif$2168732/Z"
+        ]
+      },
+      {
+        "bit": 1563,
+        "loads": 16,
+        "names": [
+          "$abc$2168572$new_n25088"
+        ],
+        "drivers": [
+          "$abc$2168572$auto$blifparse.cc:397:parse_blif$2168733/Z"
+        ]
+      },
+      {
+        "bit": 1569,
+        "loads": 16,
+        "names": [
+          "$abc$2168572$new_n25094"
+        ],
+        "drivers": [
+          "$abc$2168572$auto$blifparse.cc:397:parse_blif$2168739/Z"
+        ]
+      },
+      {
+        "bit": 1574,
+        "loads": 16,
+        "names": [
+          "$abc$2168572$new_n25099"
+        ],
+        "drivers": [
+          "$abc$2168572$auto$blifparse.cc:397:parse_blif$2168744/Z"
+        ]
+      },
+      {
+        "bit": 1593,
+        "loads": 16,
+        "names": [
+          "$abc$2168572$new_n25118"
+        ],
+        "drivers": [
+          "$abc$2168572$auto$blifparse.cc:397:parse_blif$2168763/Z"
+        ]
+      },
+      {
+        "bit": 1604,
+        "loads": 16,
+        "names": [
+          "$abc$2168572$new_n25129"
+        ],
+        "drivers": [
+          "$abc$2168572$auto$blifparse.cc:397:parse_blif$2168774/Z"
+        ]
+      },
+      {
+        "bit": 1605,
+        "loads": 16,
+        "names": [
+          "$abc$2168572$new_n25130"
+        ],
+        "drivers": [
+          "$abc$2168572$auto$blifparse.cc:397:parse_blif$2168775/Z"
+        ]
+      },
+      {
+        "bit": 1599,
+        "loads": 16,
+        "names": [
+          "$abc$2168572$new_n25124"
+        ],
+        "drivers": [
+          "$abc$2168572$auto$blifparse.cc:397:parse_blif$2168769/Z"
+        ]
+      },
+      {
+        "bit": 1606,
+        "loads": 16,
+        "names": [
+          "$abc$2168572$new_n25131"
+        ],
+        "drivers": [
+          "$abc$2168572$auto$blifparse.cc:397:parse_blif$2168776/Z"
+        ]
+      },
+      {
+        "bit": 1608,
+        "loads": 16,
+        "names": [
+          "$abc$2168572$new_n25133"
+        ],
+        "drivers": [
+          "$abc$2168572$auto$blifparse.cc:397:parse_blif$2168778/ZN"
+        ]
+      },
+      {
+        "bit": 1609,
+        "loads": 16,
+        "names": [
+          "$abc$2168572$new_n25134"
+        ],
+        "drivers": [
+          "$abc$2168572$auto$blifparse.cc:397:parse_blif$2168779/Z"
+        ]
+      },
+      {
+        "bit": 1613,
+        "loads": 16,
+        "names": [
+          "$abc$2168572$new_n25138"
+        ],
+        "drivers": [
+          "$abc$2168572$auto$blifparse.cc:397:parse_blif$2168783/Z"
+        ]
+      },
+      {
+        "bit": 1610,
+        "loads": 16,
+        "names": [
+          "$abc$2168572$new_n25135"
+        ],
+        "drivers": [
+          "$abc$2168572$auto$blifparse.cc:397:parse_blif$2168780/Z"
+        ]
+      }
+    ],
+    "duplicated_row_nets": {
+      "0": {
+        "0": 341883,
+        "10": 32529,
+        "1": 341886,
+        "2": 341889,
+        "3": 341892,
+        "4": 341895,
+        "5": 341898,
+        "6": 32381,
+        "7": 32379,
+        "8": 32432,
+        "9": 32430
+      },
+      "1": {
+        "0": 341855,
+        "10": 46087,
+        "1": 341858,
+        "2": 341861,
+        "3": 341864,
+        "4": 341867,
+        "5": 341870,
+        "6": 46095,
+        "7": 46093,
+        "8": 46150,
+        "9": 46154
+      },
+      "2": {
+        "0": 341825,
+        "10": 59848,
+        "1": 341828,
+        "2": 341832,
+        "3": 341835,
+        "4": 341839,
+        "5": 341842,
+        "6": 59858,
+        "7": 59855,
+        "8": 59846,
+        "9": 59850
+      },
+      "3": {
+        "0": 341797,
+        "10": 73489,
+        "1": 341800,
+        "2": 341803,
+        "3": 341806,
+        "4": 341809,
+        "5": 341812,
+        "6": 73504,
+        "7": 73498,
+        "8": 73495,
+        "9": 73491
+      },
+      "4": {
+        "0": 341767,
+        "10": 87231,
+        "1": 341770,
+        "2": 341773,
+        "3": 341776,
+        "4": 341779,
+        "5": 341782,
+        "6": 87239,
+        "7": 87237,
+        "8": 87295,
+        "9": 87293
+      },
+      "5": {
+        "0": 341737,
+        "10": 100975,
+        "1": 341740,
+        "2": 341743,
+        "3": 341747,
+        "4": 341750,
+        "5": 341754,
+        "6": 100930,
+        "7": 100958,
+        "8": 100981,
+        "9": 100978
+      },
+      "6": {
+        "0": 341709,
+        "10": 114899,
+        "1": 341712,
+        "2": 341715,
+        "3": 341718,
+        "4": 341721,
+        "5": 341724,
+        "6": 114768,
+        "7": 114766,
+        "8": 114761,
+        "9": 114759
+      },
+      "7": {
+        "0": 341679,
+        "10": 128683,
+        "1": 341682,
+        "2": 341685,
+        "3": 341688,
+        "4": 341691,
+        "5": 341694,
+        "6": 128502,
+        "7": 128500,
+        "8": 128492,
+        "9": 128490
+      },
+      "8": {
+        "0": 341648,
+        "10": 142069,
+        "1": 341651,
+        "2": 341654,
+        "3": 341657,
+        "4": 341662,
+        "5": 341665,
+        "6": 142077,
+        "7": 142074,
+        "8": 142179,
+        "9": 142177
+      },
+      "9": {
+        "0": 341616,
+        "10": 155867,
+        "1": 341623,
+        "2": 341626,
+        "3": 341629,
+        "4": 341632,
+        "5": 341635,
+        "6": 155881,
+        "7": 155878,
+        "8": 155873,
+        "9": 155870
+      }
+    },
+    "duplicated_row_bit6_distinct": 10,
+    "duplicated_row_decode_fanout": {
+      "0": {
+        "10": 1,
+        "6": 1,
+        "7": 1,
+        "8": 1,
+        "9": 1
+      },
+      "1": {
+        "10": 1,
+        "6": 5,
+        "7": 4,
+        "8": 1,
+        "9": 1
+      },
+      "2": {
+        "10": 5,
+        "6": 1,
+        "7": 5,
+        "8": 5,
+        "9": 1
+      },
+      "3": {
+        "10": 1,
+        "6": 3,
+        "7": 1,
+        "8": 1,
+        "9": 1
+      },
+      "4": {
+        "10": 1,
+        "6": 3,
+        "7": 2,
+        "8": 1,
+        "9": 1
+      },
+      "5": {
+        "10": 1,
+        "6": 5,
+        "7": 2,
+        "8": 4,
+        "9": 1
+      },
+      "6": {
+        "10": 1,
+        "6": 4,
+        "7": 1,
+        "8": 1,
+        "9": 3
+      },
+      "7": {
+        "10": 1,
+        "6": 1,
+        "7": 1,
+        "8": 3,
+        "9": 1
+      },
+      "8": {
+        "10": 3,
+        "6": 2,
+        "7": 1,
+        "8": 1,
+        "9": 1
+      },
+      "9": {
+        "10": 1,
+        "6": 1,
+        "7": 1,
+        "8": 1,
+        "9": 1
+      }
+    }
+  },
+  "power": null,
+  "separate_diagnostic": {
+    "run": "buf-v4-idealprects",
+    "declared_deviation": "Pre-CTS ideal clock; CTS restores propagated clock; original requested-settings run continues separately.",
+    "latest_completed_stage": null,
+    "flow_exit": null,
+    "completed_stages": [],
+    "stopped": {
+      "status": "stopped_redundant_diagnostic",
+      "stopped_owned_pids": [
+        43610,
+        43612,
+        43651,
+        43655
+      ],
+      "reason": "Pinned repair_design.tcl explicitly executes unset_propagated_clock before all repairs. The ideal-input-SDC diagnostic cannot change this repair clock state and is redundant. DESIGN_REPAIR_REMOVE_BUFFERS=false preserves synthesis buffers. Main requested-settings repair remains running.",
+      "source": "/nix/store/1v4pl3wcjvysadks22gj14b8qj9qz20d-python3-3.13.9-env/lib/python3.13/site-packages/librelane/scripts/openroad/repair_design.tcl"
+    },
+    "metrics": {},
+    "evidence": "evidence/ideal-prects-deviation.json"
+  },
+  "completed_stages": [
+    "buf-v4/01-yosys-synthesis",
+    "buf-v4/02-checker-yosysunmappedcells",
+    "buf-v4/03-checker-yosyssynthchecks",
+    "buf-v4/04-checker-netlistassignstatements",
+    "buf-v4/05-openroad-checksdcfiles",
+    "buf-v4/06-openroad-checkmacroinstances",
+    "buf-v4/07-openroad-staprepnr",
+    "buf-v4/08-openroad-floorplan",
+    "buf-v4/09-openroad-dumprcvalues",
+    "buf-v4/10-odb-checkmacroantennaproperties",
+    "buf-v4/11-odb-setpowerconnections",
+    "buf-v4/12-odb-manualmacroplacement",
+    "buf-v4/13-openroad-cutrows",
+    "buf-v4/14-openroad-tapendcapinsertion",
+    "buf-v4/15-odb-addpdnobstructions",
+    "buf-v4/16-openroad-generatepdn",
+    "buf-v4/17-odb-removepdnobstructions",
+    "buf-v4/18-odb-addroutingobstructions",
+    "buf-v4/19-openroad-globalplacementskipio",
+    "buf-v4/20-openroad-ioplacement",
+    "buf-v4/21-odb-customioplacement",
+    "buf-v4/22-odb-applydeftemplate",
+    "buf-v4/23-openroad-globalplacement",
+    "buf-v4/24-odb-writeverilogheader",
+    "buf-v4/25-checker-powergridviolations",
+    "buf-v4/26-openroad-stamidpnr"
+  ]
+}

@@ -1,0 +1,1665 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2026  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.68+post (git sha1 c12172fbae8af5e20f6fb52e3d4e92d56ed587b6, Release, AppleClang clang++ 21.0.0.21000101)
+
+-- Executing script file `/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/build/die2_tile.ys' --
+
+1. Executing Verilog-2005 frontend: /Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv
+Parsing SystemVerilog input from `/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv' to AST representation.
+Generating RTLIL representation for module `\die2_tile'.
+Successfully finished Verilog frontend.
+
+2. Executing HIERARCHY pass (managing design hierarchy).
+
+2.1. Analyzing design hierarchy..
+Top module:  \die2_tile
+
+2.2. Analyzing design hierarchy..
+Top module:  \die2_tile
+Removed 0 unused modules.
+
+3. Executing SYNTH pass.
+
+3.1. Executing HIERARCHY pass (managing design hierarchy).
+
+3.1.1. Analyzing design hierarchy..
+Top module:  \die2_tile
+
+3.1.2. Analyzing design hierarchy..
+Top module:  \die2_tile
+Removed 0 unused modules.
+
+3.2. Executing PROC pass (convert processes to netlists).
+
+3.2.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+3.2.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Marked 1 switch rules as full_case in process $proc$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:25$364 in module die2_tile.
+Removed a total of 0 dead cases.
+
+3.2.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 0 redundant assignments.
+Promoted 0 assignments to connections.
+
+3.2.4. Executing PROC_INIT pass (extract init attributes).
+
+3.2.5. Executing PROC_ARST pass (detect async resets in processes).
+
+3.2.6. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+<suppressed ~3 debug messages>
+
+3.2.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `\die2_tile.$proc$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:25$364'.
+     1/9: $0\out_data[167:0] [167:147]
+     2/9: $0\out_data[167:0] [146:126]
+     3/9: $0\out_data[167:0] [125:105]
+     4/9: $0\out_data[167:0] [104:84]
+     5/9: $0\out_data[167:0] [83:63]
+     6/9: $0\out_data[167:0] [62:42]
+     7/9: $0\out_data[167:0] [41:21]
+     8/9: $0\out_data[167:0] [20:0]
+     9/9: $0\out_valid[0:0]
+
+3.2.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+
+3.2.9. Executing PROC_DFF pass (convert process syncs to FFs).
+Creating register for signal `\die2_tile.\out_valid' using process `\die2_tile.$proc$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:25$364'.
+  created $dff cell `$procdff$427' with positive edge clock.
+Creating register for signal `\die2_tile.\out_data' using process `\die2_tile.$proc$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:25$364'.
+  created $dff cell `$procdff$428' with positive edge clock.
+
+3.2.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+3.2.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Found and cleaned up 3 empty switches in `\die2_tile.$proc$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:25$364'.
+Removing empty process `die2_tile.$proc$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:25$364'.
+Cleaned up 3 empty switches.
+
+3.2.12. Executing OPT_EXPR pass (perform const folding).
+Optimizing module die2_tile.
+<suppressed ~177 debug messages>
+
+3.3. Executing OPT_EXPR pass (perform const folding).
+Optimizing module die2_tile.
+
+3.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \die2_tile..
+Removed 1 unused cells and 213 unused wires.
+<suppressed ~2 debug messages>
+
+3.5. Executing CHECK pass (checking for obvious problems).
+Checking module die2_tile...
+Found and reported 0 problems.
+
+3.6. Executing OPT pass (performing simple optimizations).
+
+3.6.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module die2_tile.
+
+3.6.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\die2_tile'.
+Computing hashes of 223 cells of `\die2_tile'.
+Finding duplicate cells in `\die2_tile'.
+Computing hashes of 205 cells of `\die2_tile'.
+Finding duplicate cells in `\die2_tile'.
+Computing hashes of 200 cells of `\die2_tile'.
+Finding duplicate cells in `\die2_tile'.
+Computing hashes of 199 cells of `\die2_tile'.
+Finding duplicate cells in `\die2_tile'.
+<suppressed ~72 debug messages>
+Removed a total of 24 cells.
+
+3.6.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \die2_tile..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~35 debug messages>
+
+3.6.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \die2_tile.
+Performed a total of 0 changes.
+
+3.6.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\die2_tile'.
+Computing hashes of 199 cells of `\die2_tile'.
+Finding duplicate cells in `\die2_tile'.
+Removed a total of 0 cells.
+
+3.6.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+3.6.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \die2_tile..
+Removed 0 unused cells and 24 unused wires.
+<suppressed ~1 debug messages>
+
+3.6.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module die2_tile.
+
+3.6.9. Rerunning OPT passes. (Maybe there is more to do..)
+
+3.6.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \die2_tile..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~35 debug messages>
+
+3.6.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \die2_tile.
+Performed a total of 0 changes.
+
+3.6.12. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\die2_tile'.
+Computing hashes of 199 cells of `\die2_tile'.
+Finding duplicate cells in `\die2_tile'.
+Removed a total of 0 cells.
+
+3.6.13. Executing OPT_DFF pass (perform DFF optimizations).
+
+3.6.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \die2_tile..
+
+3.6.15. Executing OPT_EXPR pass (perform const folding).
+Optimizing module die2_tile.
+
+3.6.16. Finished fast OPT passes. (There is nothing left to do.)
+
+3.7. Executing FSM pass (extract and optimize FSM).
+
+3.7.1. Executing FSM_DETECT pass (finding FSMs in design).
+
+3.7.2. Executing FSM_EXTRACT pass (extracting FSM from design).
+
+3.7.3. Executing FSM_OPT pass (simple optimizations of FSMs).
+
+3.7.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \die2_tile..
+
+3.7.5. Executing FSM_OPT pass (simple optimizations of FSMs).
+
+3.7.6. Executing FSM_RECODE pass (re-assigning FSM state encoding).
+
+3.7.7. Executing FSM_INFO pass (dumping all available information on FSM cells).
+
+3.7.8. Executing FSM_MAP pass (mapping FSMs to basic logic).
+
+3.8. Executing OPT pass (performing simple optimizations).
+
+3.8.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module die2_tile.
+
+3.8.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\die2_tile'.
+Computing hashes of 199 cells of `\die2_tile'.
+Finding duplicate cells in `\die2_tile'.
+Removed a total of 0 cells.
+
+3.8.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \die2_tile..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~35 debug messages>
+
+3.8.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \die2_tile.
+Performed a total of 0 changes.
+
+3.8.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\die2_tile'.
+Computing hashes of 199 cells of `\die2_tile'.
+Finding duplicate cells in `\die2_tile'.
+Removed a total of 0 cells.
+
+3.8.6. Executing OPT_DFF pass (perform DFF optimizations).
+Adding SRST signal on $procdff$428 ($dff) from module die2_tile (D = { $procmux$368_Y $procmux$375_Y $procmux$382_Y $procmux$389_Y $procmux$396_Y $procmux$403_Y $procmux$410_Y $procmux$417_Y }, Q = \out_data, rval = 168'000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000).
+Adding EN signal on $auto$ff.cc:337:slice$429 ($sdff) from module die2_tile (D = { \y7 \y6 \y5 \y4 \y3 \y2 \y1 \y0 }, Q = \out_data).
+Adding SRST signal on $procdff$427 ($dff) from module die2_tile (D = $procmux$422_Y, Q = \out_valid, rval = 1'0).
+Adding EN signal on $auto$ff.cc:337:slice$433 ($sdff) from module die2_tile (D = \in_valid, Q = \out_valid).
+
+3.8.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \die2_tile..
+Removed 26 unused cells and 19 unused wires.
+<suppressed ~27 debug messages>
+
+3.8.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module die2_tile.
+
+3.8.9. Rerunning OPT passes. (Maybe there is more to do..)
+
+3.8.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \die2_tile..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+3.8.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \die2_tile.
+Performed a total of 0 changes.
+
+3.8.12. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\die2_tile'.
+Computing hashes of 174 cells of `\die2_tile'.
+Finding duplicate cells in `\die2_tile'.
+Removed a total of 0 cells.
+
+3.8.13. Executing OPT_DFF pass (perform DFF optimizations).
+
+3.8.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \die2_tile..
+
+3.8.15. Executing OPT_EXPR pass (perform const folding).
+Optimizing module die2_tile.
+
+3.8.16. Finished fast OPT passes. (There is nothing left to do.)
+
+3.9. Executing WREDUCE pass (reducing word size of cells).
+Converting cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:17$5 ($add) from unsigned to signed.
+Removed top 12 bits (of 21) from port A of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:17$5 ($add).
+Removed top 9 bits (of 21) from port B of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:17$5 ($add).
+Removed top 8 bits (of 21) from port Y of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:17$5 ($add).
+Removed top 8 bits (of 21) from port A of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:17$10 ($add).
+Converting cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:17$21 ($add) from unsigned to signed.
+Removed top 11 bits (of 21) from port A of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:17$21 ($add).
+Removed top 7 bits (of 21) from port B of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:17$21 ($add).
+Removed top 6 bits (of 21) from port Y of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:17$21 ($add).
+Converting cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:17$22 ($add) from unsigned to signed.
+Removed top 12 bits (of 21) from port A of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:17$22 ($add).
+Removed top 6 bits (of 21) from port B of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:17$22 ($add).
+Removed top 5 bits (of 21) from port Y of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:17$22 ($add).
+Removed top 5 bits (of 21) from port A of cell die2_tile.$neg$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:17$23 ($neg).
+Converting cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:17$29 ($add) from unsigned to signed.
+Removed top 10 bits (of 21) from port A of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:17$29 ($add).
+Removed top 8 bits (of 21) from port B of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:17$29 ($add).
+Removed top 7 bits (of 21) from port Y of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:17$29 ($add).
+Converting cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:17$30 ($add) from unsigned to signed.
+Removed top 12 bits (of 21) from port A of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:17$30 ($add).
+Removed top 7 bits (of 21) from port B of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:17$30 ($add).
+Removed top 6 bits (of 21) from port Y of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:17$30 ($add).
+Removed top 6 bits (of 21) from port A of cell die2_tile.$neg$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:17$31 ($neg).
+Removed top 10 bits (of 21) from port A of cell die2_tile.$neg$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:17$33 ($neg).
+Converting cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:17$37 ($add) from unsigned to signed.
+Removed top 12 bits (of 21) from port A of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:17$37 ($add).
+Removed top 10 bits (of 21) from port B of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:17$37 ($add).
+Removed top 9 bits (of 21) from port Y of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:17$37 ($add).
+Converting cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:17$40 ($add) from unsigned to signed.
+Removed top 12 bits (of 21) from port A of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:17$40 ($add).
+Removed top 11 bits (of 21) from port B of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:17$40 ($add).
+Removed top 10 bits (of 21) from port Y of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:17$40 ($add).
+Converting cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:17$43 ($add) from unsigned to signed.
+Removed top 10 bits (of 21) from port A of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:17$43 ($add).
+Removed top 8 bits (of 21) from port B of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:17$43 ($add).
+Removed top 7 bits (of 21) from port Y of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:17$43 ($add).
+Converting cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:17$44 ($add) from unsigned to signed.
+Removed top 10 bits (of 21) from port A of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:17$44 ($add).
+Removed top 7 bits (of 21) from port B of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:17$44 ($add).
+Removed top 6 bits (of 21) from port Y of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:17$44 ($add).
+Removed top 6 bits (of 21) from port A of cell die2_tile.$neg$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:17$45 ($neg).
+Removed top 9 bits (of 21) from port A of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:17$46 ($add).
+Converting cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:18$51 ($add) from unsigned to signed.
+Removed top 9 bits (of 21) from port A of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:18$51 ($add).
+Removed top 7 bits (of 21) from port B of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:18$51 ($add).
+Removed top 6 bits (of 21) from port Y of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:18$51 ($add).
+Removed top 6 bits (of 21) from port A of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:18$56 ($add).
+Converting cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:18$60 ($add) from unsigned to signed.
+Removed top 10 bits (of 21) from port A of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:18$60 ($add).
+Removed top 7 bits (of 21) from port B of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:18$60 ($add).
+Removed top 6 bits (of 21) from port Y of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:18$60 ($add).
+Converting cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:18$61 ($add) from unsigned to signed.
+Removed top 11 bits (of 21) from port A of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:18$61 ($add).
+Removed top 6 bits (of 21) from port B of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:18$61 ($add).
+Removed top 5 bits (of 21) from port Y of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:18$61 ($add).
+Removed top 5 bits (of 21) from port A of cell die2_tile.$neg$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:18$62 ($neg).
+Removed top 9 bits (of 21) from port A of cell die2_tile.$neg$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:18$64 ($neg).
+Converting cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:18$77 ($add) from unsigned to signed.
+Removed top 9 bits (of 21) from port A of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:18$77 ($add).
+Removed top 8 bits (of 21) from port B of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:18$77 ($add).
+Removed top 7 bits (of 21) from port Y of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:18$77 ($add).
+Removed top 7 bits (of 21) from port B of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:18$78 ($add).
+Converting cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:18$87 ($add) from unsigned to signed.
+Removed top 11 bits (of 21) from port A of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:18$87 ($add).
+Removed top 9 bits (of 21) from port B of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:18$87 ($add).
+Removed top 8 bits (of 21) from port Y of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:18$87 ($add).
+Removed top 8 bits (of 21) from port A of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:18$91 ($add).
+Converting cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:19$97 ($add) from unsigned to signed.
+Removed top 12 bits (of 21) from port A of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:19$97 ($add).
+Removed top 11 bits (of 21) from port B of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:19$97 ($add).
+Removed top 10 bits (of 21) from port Y of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:19$97 ($add).
+Converting cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:19$100 ($add) from unsigned to signed.
+Removed top 9 bits (of 21) from port A of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:19$100 ($add).
+Removed top 6 bits (of 21) from port B of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:19$100 ($add).
+Removed top 5 bits (of 21) from port Y of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:19$100 ($add).
+Converting cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:19$101 ($add) from unsigned to signed.
+Removed top 10 bits (of 21) from port A of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:19$101 ($add).
+Removed top 5 bits (of 21) from port B of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:19$101 ($add).
+Removed top 4 bits (of 21) from port Y of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:19$101 ($add).
+Converting cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:19$104 ($add) from unsigned to signed.
+Removed top 12 bits (of 21) from port A of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:19$104 ($add).
+Removed top 8 bits (of 21) from port B of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:19$104 ($add).
+Removed top 7 bits (of 21) from port Y of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:19$104 ($add).
+Converting cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:19$105 ($add) from unsigned to signed.
+Removed top 4 bits (of 21) from port A of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:19$105 ($add).
+Removed top 7 bits (of 21) from port B of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:19$105 ($add).
+Removed top 3 bits (of 21) from port Y of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:19$105 ($add).
+Converting cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:19$111 ($add) from unsigned to signed.
+Removed top 9 bits (of 21) from port A of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:19$111 ($add).
+Removed top 7 bits (of 21) from port B of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:19$111 ($add).
+Removed top 6 bits (of 21) from port Y of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:19$111 ($add).
+Removed top 6 bits (of 21) from port B of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:19$112 ($add).
+Converting cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:19$116 ($add) from unsigned to signed.
+Removed top 12 bits (of 21) from port A of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:19$116 ($add).
+Removed top 7 bits (of 21) from port B of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:19$116 ($add).
+Removed top 6 bits (of 21) from port Y of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:19$116 ($add).
+Removed top 6 bits (of 21) from port B of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:19$117 ($add).
+Removed top 3 bits (of 21) from port A of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:19$118 ($add).
+Converting cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:19$121 ($add) from unsigned to signed.
+Removed top 12 bits (of 21) from port A of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:19$121 ($add).
+Removed top 11 bits (of 21) from port B of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:19$121 ($add).
+Removed top 10 bits (of 21) from port Y of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:19$121 ($add).
+Removed top 10 bits (of 21) from port A of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:19$125 ($add).
+Converting cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:19$130 ($add) from unsigned to signed.
+Removed top 11 bits (of 21) from port A of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:19$130 ($add).
+Removed top 10 bits (of 21) from port B of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:19$130 ($add).
+Removed top 9 bits (of 21) from port Y of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:19$130 ($add).
+Converting cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:19$131 ($add) from unsigned to signed.
+Removed top 12 bits (of 21) from port A of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:19$131 ($add).
+Removed top 9 bits (of 21) from port B of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:19$131 ($add).
+Removed top 8 bits (of 21) from port Y of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:19$131 ($add).
+Removed top 8 bits (of 21) from port A of cell die2_tile.$neg$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:19$132 ($neg).
+Removed top 10 bits (of 21) from port A of cell die2_tile.$neg$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:19$135 ($neg).
+Converting cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:20$144 ($add) from unsigned to signed.
+Removed top 12 bits (of 21) from port A of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:20$144 ($add).
+Removed top 10 bits (of 21) from port B of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:20$144 ($add).
+Removed top 9 bits (of 21) from port Y of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:20$144 ($add).
+Removed top 9 bits (of 21) from port A of cell die2_tile.$neg$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:20$145 ($neg).
+Converting cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:20$149 ($add) from unsigned to signed.
+Removed top 10 bits (of 21) from port A of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:20$149 ($add).
+Removed top 9 bits (of 21) from port B of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:20$149 ($add).
+Removed top 8 bits (of 21) from port Y of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:20$149 ($add).
+Converting cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:20$150 ($add) from unsigned to signed.
+Removed top 11 bits (of 21) from port A of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:20$150 ($add).
+Removed top 8 bits (of 21) from port B of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:20$150 ($add).
+Removed top 7 bits (of 21) from port Y of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:20$150 ($add).
+Converting cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:20$153 ($add) from unsigned to signed.
+Removed top 12 bits (of 21) from port A of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:20$153 ($add).
+Removed top 11 bits (of 21) from port B of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:20$153 ($add).
+Removed top 10 bits (of 21) from port Y of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:20$153 ($add).
+Removed top 10 bits (of 21) from port A of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:20$157 ($add).
+Removed top 7 bits (of 21) from port A of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:20$158 ($add).
+Converting cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:20$162 ($add) from unsigned to signed.
+Removed top 11 bits (of 21) from port A of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:20$162 ($add).
+Removed top 8 bits (of 21) from port B of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:20$162 ($add).
+Removed top 7 bits (of 21) from port Y of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:20$162 ($add).
+Converting cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:20$165 ($add) from unsigned to signed.
+Removed top 12 bits (of 21) from port A of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:20$165 ($add).
+Removed top 10 bits (of 21) from port B of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:20$165 ($add).
+Removed top 9 bits (of 21) from port Y of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:20$165 ($add).
+Converting cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:20$168 ($add) from unsigned to signed.
+Removed top 9 bits (of 21) from port A of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:20$168 ($add).
+Removed top 8 bits (of 21) from port B of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:20$168 ($add).
+Removed top 7 bits (of 21) from port Y of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:20$168 ($add).
+Converting cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:20$169 ($add) from unsigned to signed.
+Removed top 9 bits (of 21) from port A of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:20$169 ($add).
+Removed top 7 bits (of 21) from port B of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:20$169 ($add).
+Removed top 6 bits (of 21) from port Y of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:20$169 ($add).
+Removed top 6 bits (of 21) from port A of cell die2_tile.$neg$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:20$170 ($neg).
+Removed top 7 bits (of 21) from port A of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:20$171 ($add).
+Converting cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:20$175 ($add) from unsigned to signed.
+Removed top 10 bits (of 21) from port A of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:20$175 ($add).
+Removed top 9 bits (of 21) from port B of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:20$175 ($add).
+Removed top 8 bits (of 21) from port Y of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:20$175 ($add).
+Converting cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:20$176 ($add) from unsigned to signed.
+Removed top 12 bits (of 21) from port A of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:20$176 ($add).
+Removed top 8 bits (of 21) from port B of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:20$176 ($add).
+Removed top 7 bits (of 21) from port Y of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:20$176 ($add).
+Removed top 7 bits (of 21) from port A of cell die2_tile.$neg$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:20$177 ($neg).
+Converting cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:20$181 ($add) from unsigned to signed.
+Removed top 9 bits (of 21) from port A of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:20$181 ($add).
+Removed top 7 bits (of 21) from port B of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:20$181 ($add).
+Removed top 6 bits (of 21) from port Y of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:20$181 ($add).
+Converting cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:20$182 ($add) from unsigned to signed.
+Removed top 11 bits (of 21) from port A of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:20$182 ($add).
+Removed top 6 bits (of 21) from port B of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:20$182 ($add).
+Removed top 5 bits (of 21) from port Y of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:20$182 ($add).
+Removed top 5 bits (of 21) from port A of cell die2_tile.$neg$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:20$183 ($neg).
+Converting cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:21$189 ($add) from unsigned to signed.
+Removed top 9 bits (of 21) from port A of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:21$189 ($add).
+Removed top 8 bits (of 21) from port B of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:21$189 ($add).
+Removed top 7 bits (of 21) from port Y of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:21$189 ($add).
+Removed top 7 bits (of 21) from port A of cell die2_tile.$neg$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:21$190 ($neg).
+Removed top 9 bits (of 21) from port B of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:21$192 ($add).
+Converting cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:21$196 ($add) from unsigned to signed.
+Removed top 10 bits (of 21) from port A of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:21$196 ($add).
+Removed top 9 bits (of 21) from port B of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:21$196 ($add).
+Removed top 8 bits (of 21) from port Y of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:21$196 ($add).
+Converting cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:21$197 ($add) from unsigned to signed.
+Removed top 11 bits (of 21) from port A of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:21$197 ($add).
+Removed top 8 bits (of 21) from port B of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:21$197 ($add).
+Removed top 7 bits (of 21) from port Y of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:21$197 ($add).
+Converting cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:21$200 ($add) from unsigned to signed.
+Removed top 12 bits (of 21) from port A of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:21$200 ($add).
+Removed top 8 bits (of 21) from port B of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:21$200 ($add).
+Removed top 7 bits (of 21) from port Y of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:21$200 ($add).
+Converting cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:21$201 ($add) from unsigned to signed.
+Removed top 7 bits (of 21) from port A of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:21$201 ($add).
+Removed top 7 bits (of 21) from port B of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:21$201 ($add).
+Removed top 6 bits (of 21) from port Y of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:21$201 ($add).
+Removed top 6 bits (of 21) from port B of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:21$202 ($add).
+Removed top 12 bits (of 21) from port A of cell die2_tile.$neg$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:21$204 ($neg).
+Converting cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:21$207 ($add) from unsigned to signed.
+Removed top 12 bits (of 21) from port A of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:21$207 ($add).
+Removed top 9 bits (of 21) from port B of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:21$207 ($add).
+Removed top 8 bits (of 21) from port Y of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:21$207 ($add).
+Removed top 8 bits (of 21) from port B of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:21$208 ($add).
+Converting cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:21$211 ($add) from unsigned to signed.
+Removed top 12 bits (of 21) from port A of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:21$211 ($add).
+Removed top 7 bits (of 21) from port B of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:21$211 ($add).
+Removed top 6 bits (of 21) from port Y of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:21$211 ($add).
+Converting cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:21$214 ($add) from unsigned to signed.
+Removed top 12 bits (of 21) from port A of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:21$214 ($add).
+Removed top 10 bits (of 21) from port B of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:21$214 ($add).
+Removed top 9 bits (of 21) from port Y of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:21$214 ($add).
+Removed top 9 bits (of 21) from port A of cell die2_tile.$neg$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:21$215 ($neg).
+Removed top 6 bits (of 21) from port A of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:21$216 ($add).
+Converting cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:22$222 ($add) from unsigned to signed.
+Removed top 8 bits (of 21) from port A of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:22$222 ($add).
+Removed top 7 bits (of 21) from port B of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:22$222 ($add).
+Removed top 6 bits (of 21) from port Y of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:22$222 ($add).
+Converting cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:22$223 ($add) from unsigned to signed.
+Removed top 12 bits (of 21) from port A of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:22$223 ($add).
+Removed top 6 bits (of 21) from port B of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:22$223 ($add).
+Removed top 5 bits (of 21) from port Y of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:22$223 ($add).
+Removed top 5 bits (of 21) from port A of cell die2_tile.$neg$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:22$224 ($neg).
+Removed top 7 bits (of 21) from port B of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:22$228 ($add).
+Converting cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:22$233 ($add) from unsigned to signed.
+Removed top 12 bits (of 21) from port A of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:22$233 ($add).
+Removed top 8 bits (of 21) from port B of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:22$233 ($add).
+Removed top 7 bits (of 21) from port Y of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:22$233 ($add).
+Removed top 7 bits (of 21) from port A of cell die2_tile.$neg$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:22$234 ($neg).
+Converting cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:22$238 ($add) from unsigned to signed.
+Removed top 8 bits (of 21) from port A of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:22$238 ($add).
+Removed top 7 bits (of 21) from port B of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:22$238 ($add).
+Removed top 6 bits (of 21) from port Y of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:22$238 ($add).
+Converting cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:22$239 ($add) from unsigned to signed.
+Removed top 12 bits (of 21) from port A of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:22$239 ($add).
+Removed top 6 bits (of 21) from port B of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:22$239 ($add).
+Removed top 5 bits (of 21) from port Y of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:22$239 ($add).
+Removed top 5 bits (of 21) from port A of cell die2_tile.$neg$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:22$240 ($neg).
+Converting cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:22$246 ($add) from unsigned to signed.
+Removed top 10 bits (of 21) from port A of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:22$246 ($add).
+Removed top 7 bits (of 21) from port B of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:22$246 ($add).
+Removed top 6 bits (of 21) from port Y of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:22$246 ($add).
+Converting cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:22$247 ($add) from unsigned to signed.
+Removed top 12 bits (of 21) from port A of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:22$247 ($add).
+Removed top 6 bits (of 21) from port B of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:22$247 ($add).
+Removed top 5 bits (of 21) from port Y of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:22$247 ($add).
+Removed top 5 bits (of 21) from port A of cell die2_tile.$neg$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:22$248 ($neg).
+Converting cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:22$252 ($add) from unsigned to signed.
+Removed top 8 bits (of 21) from port A of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:22$252 ($add).
+Removed top 7 bits (of 21) from port B of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:22$252 ($add).
+Removed top 6 bits (of 21) from port Y of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:22$252 ($add).
+Converting cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:22$253 ($add) from unsigned to signed.
+Removed top 9 bits (of 21) from port A of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:22$253 ($add).
+Removed top 6 bits (of 21) from port B of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:22$253 ($add).
+Removed top 5 bits (of 21) from port Y of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:22$253 ($add).
+Removed top 5 bits (of 21) from port A of cell die2_tile.$neg$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:22$254 ($neg).
+Removed top 11 bits (of 21) from port A of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:22$260 ($add).
+Converting cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:22$263 ($add) from unsigned to signed.
+Removed top 9 bits (of 21) from port A of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:22$263 ($add).
+Removed top 8 bits (of 21) from port B of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:22$263 ($add).
+Removed top 7 bits (of 21) from port Y of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:22$263 ($add).
+Removed top 7 bits (of 21) from port A of cell die2_tile.$neg$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:22$264 ($neg).
+Converting cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:23$270 ($add) from unsigned to signed.
+Removed top 10 bits (of 21) from port A of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:23$270 ($add).
+Removed top 7 bits (of 21) from port B of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:23$270 ($add).
+Removed top 6 bits (of 21) from port Y of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:23$270 ($add).
+Removed top 6 bits (of 21) from port A of cell die2_tile.$neg$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:23$271 ($neg).
+Converting cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:23$274 ($add) from unsigned to signed.
+Removed top 12 bits (of 21) from port A of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:23$274 ($add).
+Removed top 11 bits (of 21) from port B of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:23$274 ($add).
+Removed top 10 bits (of 21) from port Y of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:23$274 ($add).
+Converting cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:23$277 ($add) from unsigned to signed.
+Removed top 9 bits (of 21) from port A of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:23$277 ($add).
+Removed top 8 bits (of 21) from port B of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:23$277 ($add).
+Removed top 7 bits (of 21) from port Y of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:23$277 ($add).
+Converting cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:23$278 ($add) from unsigned to signed.
+Removed top 10 bits (of 21) from port A of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:23$278 ($add).
+Removed top 7 bits (of 21) from port B of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:23$278 ($add).
+Removed top 6 bits (of 21) from port Y of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:23$278 ($add).
+Removed top 6 bits (of 21) from port B of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:23$279 ($add).
+Converting cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:23$289 ($add) from unsigned to signed.
+Removed top 9 bits (of 21) from port A of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:23$289 ($add).
+Removed top 7 bits (of 21) from port B of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:23$289 ($add).
+Removed top 6 bits (of 21) from port Y of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:23$289 ($add).
+Removed top 6 bits (of 21) from port B of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:23$290 ($add).
+Converting cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:23$294 ($add) from unsigned to signed.
+Removed top 12 bits (of 21) from port A of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:23$294 ($add).
+Removed top 7 bits (of 21) from port B of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:23$294 ($add).
+Removed top 6 bits (of 21) from port Y of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:23$294 ($add).
+Removed top 6 bits (of 21) from port A of cell die2_tile.$neg$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:23$295 ($neg).
+Converting cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:23$298 ($add) from unsigned to signed.
+Removed top 12 bits (of 21) from port A of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:23$298 ($add).
+Removed top 11 bits (of 21) from port B of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:23$298 ($add).
+Removed top 10 bits (of 21) from port Y of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:23$298 ($add).
+Removed top 10 bits (of 21) from port B of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:23$299 ($add).
+Converting cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:23$302 ($add) from unsigned to signed.
+Removed top 9 bits (of 21) from port A of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:23$302 ($add).
+Removed top 8 bits (of 21) from port B of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:23$302 ($add).
+Removed top 7 bits (of 21) from port Y of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:23$302 ($add).
+Converting cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:23$306 ($add) from unsigned to signed.
+Removed top 8 bits (of 21) from port A of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:23$306 ($add).
+Removed top 7 bits (of 21) from port B of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:23$306 ($add).
+Removed top 6 bits (of 21) from port Y of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:23$306 ($add).
+Converting cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:23$307 ($add) from unsigned to signed.
+Removed top 11 bits (of 21) from port A of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:23$307 ($add).
+Removed top 6 bits (of 21) from port B of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:23$307 ($add).
+Removed top 5 bits (of 21) from port Y of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:23$307 ($add).
+Removed top 5 bits (of 21) from port A of cell die2_tile.$neg$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:23$308 ($neg).
+Removed top 7 bits (of 21) from port A of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:23$309 ($add).
+Converting cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:24$315 ($add) from unsigned to signed.
+Removed top 11 bits (of 21) from port A of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:24$315 ($add).
+Removed top 7 bits (of 21) from port B of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:24$315 ($add).
+Removed top 6 bits (of 21) from port Y of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:24$315 ($add).
+Converting cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:24$316 ($add) from unsigned to signed.
+Removed top 12 bits (of 21) from port A of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:24$316 ($add).
+Removed top 6 bits (of 21) from port B of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:24$316 ($add).
+Removed top 5 bits (of 21) from port Y of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:24$316 ($add).
+Removed top 5 bits (of 21) from port A of cell die2_tile.$neg$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:24$317 ($neg).
+Converting cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:24$321 ($add) from unsigned to signed.
+Removed top 11 bits (of 21) from port A of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:24$321 ($add).
+Removed top 9 bits (of 21) from port B of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:24$321 ($add).
+Removed top 8 bits (of 21) from port Y of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:24$321 ($add).
+Converting cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:24$322 ($add) from unsigned to signed.
+Removed top 12 bits (of 21) from port A of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:24$322 ($add).
+Removed top 8 bits (of 21) from port B of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:24$322 ($add).
+Removed top 7 bits (of 21) from port Y of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:24$322 ($add).
+Removed top 7 bits (of 21) from port B of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:24$323 ($add).
+Converting cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:24$327 ($add) from unsigned to signed.
+Removed top 11 bits (of 21) from port A of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:24$327 ($add).
+Removed top 10 bits (of 21) from port B of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:24$327 ($add).
+Removed top 9 bits (of 21) from port Y of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:24$327 ($add).
+Converting cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:24$328 ($add) from unsigned to signed.
+Removed top 12 bits (of 21) from port A of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:24$328 ($add).
+Removed top 9 bits (of 21) from port B of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:24$328 ($add).
+Removed top 8 bits (of 21) from port Y of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:24$328 ($add).
+Converting cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:24$331 ($add) from unsigned to signed.
+Removed top 12 bits (of 21) from port A of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:24$331 ($add).
+Removed top 11 bits (of 21) from port B of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:24$331 ($add).
+Removed top 10 bits (of 21) from port Y of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:24$331 ($add).
+Converting cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:24$334 ($add) from unsigned to signed.
+Removed top 9 bits (of 21) from port A of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:24$334 ($add).
+Removed top 6 bits (of 21) from port B of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:24$334 ($add).
+Removed top 5 bits (of 21) from port Y of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:24$334 ($add).
+Converting cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:24$335 ($add) from unsigned to signed.
+Removed top 10 bits (of 21) from port A of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:24$335 ($add).
+Removed top 5 bits (of 21) from port B of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:24$335 ($add).
+Removed top 4 bits (of 21) from port Y of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:24$335 ($add).
+Removed top 4 bits (of 21) from port A of cell die2_tile.$neg$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:24$336 ($neg).
+Removed top 8 bits (of 21) from port A of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:24$337 ($add).
+Converting cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:24$344 ($add) from unsigned to signed.
+Removed top 10 bits (of 21) from port A of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:24$344 ($add).
+Removed top 9 bits (of 21) from port B of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:24$344 ($add).
+Removed top 8 bits (of 21) from port Y of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:24$344 ($add).
+Converting cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:24$345 ($add) from unsigned to signed.
+Removed top 10 bits (of 21) from port A of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:24$345 ($add).
+Removed top 8 bits (of 21) from port B of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:24$345 ($add).
+Removed top 7 bits (of 21) from port Y of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:24$345 ($add).
+Removed top 7 bits (of 21) from port A of cell die2_tile.$neg$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:24$346 ($neg).
+Converting cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:24$349 ($add) from unsigned to signed.
+Removed top 12 bits (of 21) from port A of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:24$349 ($add).
+Removed top 10 bits (of 21) from port B of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:24$349 ($add).
+Removed top 9 bits (of 21) from port Y of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:24$349 ($add).
+Removed top 9 bits (of 21) from port B of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:24$350 ($add).
+Converting cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:24$354 ($add) from unsigned to signed.
+Removed top 10 bits (of 21) from port A of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:24$354 ($add).
+Removed top 7 bits (of 21) from port B of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:24$354 ($add).
+Removed top 6 bits (of 21) from port Y of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:24$354 ($add).
+Converting cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:24$355 ($add) from unsigned to signed.
+Removed top 11 bits (of 21) from port A of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:24$355 ($add).
+Removed top 6 bits (of 21) from port B of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:24$355 ($add).
+Removed top 5 bits (of 21) from port Y of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:24$355 ($add).
+Converting cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:24$359 ($add) from unsigned to signed.
+Removed top 11 bits (of 21) from port A of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:24$359 ($add).
+Removed top 10 bits (of 21) from port B of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:24$359 ($add).
+Removed top 9 bits (of 21) from port Y of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:24$359 ($add).
+Converting cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:24$360 ($add) from unsigned to signed.
+Removed top 12 bits (of 21) from port A of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:24$360 ($add).
+Removed top 9 bits (of 21) from port B of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:24$360 ($add).
+Removed top 8 bits (of 21) from port Y of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:24$360 ($add).
+Converting cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:24$361 ($add) from unsigned to signed.
+Removed top 5 bits (of 21) from port A of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:24$361 ($add).
+Removed top 8 bits (of 21) from port B of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:24$361 ($add).
+Removed top 4 bits (of 21) from port Y of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:24$361 ($add).
+Removed top 4 bits (of 21) from port B of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:24$362 ($add).
+Removed top 10 bits (of 21) from port A of cell die2_tile.$neg$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:18$55 ($neg).
+Removed top 6 bits (of 21) from port B of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:18$91 ($add).
+Removed top 5 bits (of 21) from port Y of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:18$91 ($add).
+Removed top 10 bits (of 21) from port A of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:19$112 ($add).
+Removed top 5 bits (of 21) from port Y of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:19$112 ($add).
+Removed top 6 bits (of 21) from port B of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:19$125 ($add).
+Removed top 5 bits (of 21) from port Y of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:19$125 ($add).
+Removed top 9 bits (of 21) from port B of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:19$139 ($add).
+Removed top 8 bits (of 21) from port B of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:20$157 ($add).
+Removed top 7 bits (of 21) from port Y of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:20$157 ($add).
+Removed top 7 bits (of 21) from port B of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:20$158 ($add).
+Removed top 6 bits (of 21) from port Y of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:20$158 ($add).
+Removed top 7 bits (of 21) from port B of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:22$260 ($add).
+Removed top 6 bits (of 21) from port Y of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:22$260 ($add).
+Removed top 5 bits (of 21) from port A of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:23$290 ($add).
+Removed top 4 bits (of 21) from port Y of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:23$290 ($add).
+Removed top 7 bits (of 21) from port A of cell die2_tile.$add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:17$24 ($add).
+Removed top 5 bits (of 21) from port A of cell die2_tile.$neg$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:19$113 ($neg).
+
+3.10. Executing PEEPOPT pass (run peephole optimizers).
+
+3.11. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \die2_tile..
+
+3.12. Executing ALUMACC pass (create $alu and $macc cells).
+Extracting $alu and $macc cells in module die2_tile:
+  creating $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:23$311 ($add).
+  creating $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:23$278 ($add).
+  creating $macc model for $neg$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:22$248 ($neg).
+  creating $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:20$171 ($add).
+  creating $macc model for $neg$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:20$170 ($neg).
+  creating $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:20$169 ($add).
+  creating $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:20$168 ($add).
+  creating $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:22$247 ($add).
+  creating $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:24$315 ($add).
+  creating $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:20$165 ($add).
+  creating $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:24$316 ($add).
+  creating $macc model for $neg$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:24$317 ($neg).
+  creating $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:20$162 ($add).
+  creating $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:22$246 ($add).
+  creating $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:23$279 ($add).
+  creating $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:20$159 ($add).
+  creating $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:20$158 ($add).
+  creating $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:20$157 ($add).
+  creating $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:22$223 ($add).
+  creating $macc model for $neg$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:22$264 ($neg).
+  creating $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:24$321 ($add).
+  creating $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:20$153 ($add).
+  creating $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:24$322 ($add).
+  creating $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:24$323 ($add).
+  creating $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:20$150 ($add).
+  creating $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:20$149 ($add).
+  creating $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:22$263 ($add).
+  creating $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:22$242 ($add).
+  creating $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:22$241 ($add).
+  creating $macc model for $neg$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:20$145 ($neg).
+  creating $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:20$144 ($add).
+  creating $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:24$327 ($add).
+  creating $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:24$328 ($add).
+  creating $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:19$141 ($add).
+  creating $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:19$140 ($add).
+  creating $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:19$139 ($add).
+  creating $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:22$222 ($add).
+  creating $macc model for $neg$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:22$240 ($neg).
+  creating $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:22$239 ($add).
+  creating $macc model for $neg$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:19$135 ($neg).
+  creating $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:24$331 ($add).
+  creating $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:19$133 ($add).
+  creating $macc model for $neg$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:19$132 ($neg).
+  creating $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:19$131 ($add).
+  creating $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:19$130 ($add).
+  creating $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:22$238 ($add).
+  creating $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:23$290 ($add).
+  creating $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:24$334 ($add).
+  creating $macc model for $neg$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:19$126 ($neg).
+  creating $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:19$125 ($add).
+  creating $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:23$291 ($add).
+  creating $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:24$335 ($add).
+  creating $macc model for $neg$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:24$336 ($neg).
+  creating $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:19$121 ($add).
+  creating $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:24$337 ($add).
+  creating $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:24$338 ($add).
+  creating $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:19$118 ($add).
+  creating $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:19$117 ($add).
+  creating $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:19$116 ($add).
+  creating $macc model for $neg$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:23$271 ($neg).
+  creating $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:23$270 ($add).
+  creating $macc model for $neg$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:19$113 ($neg).
+  creating $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:19$112 ($add).
+  creating $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:19$111 ($add).
+  creating $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:22$267 ($add).
+  creating $macc model for $neg$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:22$234 ($neg).
+  creating $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:21$218 ($add).
+  creating $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:22$233 ($add).
+  creating $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:24$344 ($add).
+  creating $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:19$105 ($add).
+  creating $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:19$104 ($add).
+  creating $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:24$345 ($add).
+  creating $macc model for $neg$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:24$346 ($neg).
+  creating $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:19$101 ($add).
+  creating $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:19$100 ($add).
+  creating $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:21$217 ($add).
+  creating $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:21$216 ($add).
+  creating $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:19$97 ($add).
+  creating $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:24$349 ($add).
+  creating $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:24$350 ($add).
+  creating $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:18$94 ($add).
+  creating $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:18$93 ($add).
+  creating $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:18$92 ($add).
+  creating $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:18$91 ($add).
+  creating $macc model for $neg$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:21$215 ($neg).
+  creating $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:23$298 ($add).
+  creating $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:22$260 ($add).
+  creating $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:18$87 ($add).
+  creating $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:22$228 ($add).
+  creating $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:24$354 ($add).
+  creating $macc model for $neg$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:18$84 ($neg).
+  creating $macc model for $neg$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:21$204 ($neg).
+  creating $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:21$214 ($add).
+  creating $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:24$355 ($add).
+  creating $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:23$274 ($add).
+  creating $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:23$294 ($add).
+  creating $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:18$78 ($add).
+  creating $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:18$77 ($add).
+  creating $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:23$289 ($add).
+  creating $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:24$359 ($add).
+  creating $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:21$200 ($add).
+  creating $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:23$299 ($add).
+  creating $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:21$211 ($add).
+  creating $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:24$360 ($add).
+  creating $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:24$361 ($add).
+  creating $macc model for $neg$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:23$295 ($neg).
+  creating $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:24$362 ($add).
+  creating $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:24$363 ($add).
+  creating $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:18$66 ($add).
+  creating $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:18$65 ($add).
+  creating $macc model for $neg$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:18$64 ($neg).
+  creating $macc model for $neg$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:22$224 ($neg).
+  creating $macc model for $neg$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:18$62 ($neg).
+  creating $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:18$61 ($add).
+  creating $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:18$60 ($add).
+  creating $macc model for $neg$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:22$254 ($neg).
+  creating $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:22$253 ($add).
+  creating $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:18$56 ($add).
+  creating $macc model for $neg$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:18$55 ($neg).
+  creating $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:22$266 ($add).
+  creating $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:21$197 ($add).
+  creating $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:21$196 ($add).
+  creating $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:18$51 ($add).
+  creating $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:23$302 ($add).
+  creating $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:22$252 ($add).
+  creating $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:17$48 ($add).
+  creating $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:17$47 ($add).
+  creating $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:17$46 ($add).
+  creating $macc model for $neg$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:17$45 ($neg).
+  creating $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:17$44 ($add).
+  creating $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:17$43 ($add).
+  creating $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:22$265 ($add).
+  creating $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:21$192 ($add).
+  creating $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:17$40 ($add).
+  creating $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:23$277 ($add).
+  creating $macc model for $neg$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:21$190 ($neg).
+  creating $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:17$37 ($add).
+  creating $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:21$189 ($add).
+  creating $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:23$306 ($add).
+  creating $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:17$34 ($add).
+  creating $macc model for $neg$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:17$33 ($neg).
+  creating $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:23$307 ($add).
+  creating $macc model for $neg$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:17$31 ($neg).
+  creating $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:17$30 ($add).
+  creating $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:17$29 ($add).
+  creating $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:20$186 ($add).
+  creating $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:20$185 ($add).
+  creating $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:20$184 ($add).
+  creating $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:17$25 ($add).
+  creating $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:17$24 ($add).
+  creating $macc model for $neg$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:17$23 ($neg).
+  creating $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:17$22 ($add).
+  creating $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:17$21 ($add).
+  creating $macc model for $neg$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:20$183 ($neg).
+  creating $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:20$182 ($add).
+  creating $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:20$181 ($add).
+  creating $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:21$202 ($add).
+  creating $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:21$208 ($add).
+  creating $macc model for $neg$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:23$308 ($neg).
+  creating $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:23$309 ($add).
+  creating $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:21$207 ($add).
+  creating $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:23$310 ($add).
+  creating $macc model for $neg$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:20$177 ($neg).
+  creating $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:17$10 ($add).
+  creating $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:21$201 ($add).
+  creating $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:22$255 ($add).
+  creating $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:20$176 ($add).
+  creating $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:20$175 ($add).
+  creating $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:17$5 ($add).
+  merging $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:20$175 into $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:20$176.
+  merging $macc model for $neg$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:22$248 into $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:22$255.
+  merging $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:22$247 into $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:22$255.
+  merging $macc model for $neg$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:22$254 into $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:22$255.
+  merging $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:22$253 into $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:22$255.
+  merging $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:22$252 into $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:22$255.
+  merging $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:21$197 into $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:21$201.
+  merging $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:21$200 into $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:21$201.
+  merging $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:17$5 into $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:17$10.
+  merging $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:20$176 into $neg$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:20$177.
+  merging $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:23$299 into $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:23$310.
+  merging $macc model for $neg$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:23$295 into $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:23$310.
+  merging $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:23$294 into $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:23$310.
+  merging $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:23$309 into $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:23$310.
+  merging $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:23$298 into $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:23$310.
+  merging $macc model for $neg$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:23$308 into $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:23$310.
+  merging $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:23$307 into $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:23$310.
+  merging $macc model for $neg$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:21$204 into $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:21$208.
+  merging $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:21$207 into $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:21$208.
+  merging $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:21$192 into $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:21$202.
+  merging $macc model for $neg$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:21$190 into $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:21$202.
+  merging $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:21$189 into $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:21$202.
+  merging $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:21$201 into $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:21$202.
+  merging $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:20$181 into $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:20$182.
+  merging $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:20$182 into $neg$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:20$183.
+  merging $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:17$21 into $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:17$22.
+  merging $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:17$22 into $neg$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:17$23.
+  merging $macc model for $neg$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:17$23 into $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:17$24.
+  merging $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:17$10 into $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:17$25.
+  merging $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:17$24 into $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:17$25.
+  merging $macc model for $neg$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:20$177 into $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:20$184.
+  merging $macc model for $neg$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:20$183 into $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:20$184.
+  merging $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:20$171 into $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:20$185.
+  merging $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:20$162 into $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:20$185.
+  merging $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:20$184 into $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:20$185.
+  merging $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:20$159 into $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:20$186.
+  merging $macc model for $neg$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:20$145 into $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:20$186.
+  merging $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:20$144 into $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:20$186.
+  merging $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:20$185 into $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:20$186.
+  merging $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:17$29 into $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:17$30.
+  merging $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:17$30 into $neg$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:17$31.
+  merging $macc model for $neg$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:17$31 into $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:17$34.
+  merging $macc model for $neg$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:17$33 into $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:17$34.
+  merging $macc model for $neg$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:22$264 into $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:22$265.
+  merging $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:22$263 into $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:22$265.
+  merging $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:17$40 into $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:17$44.
+  merging $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:17$43 into $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:17$44.
+  merging $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:17$44 into $neg$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:17$45.
+  merging $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:17$37 into $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:17$46.
+  merging $macc model for $neg$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:17$45 into $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:17$46.
+  merging $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:17$34 into $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:17$47.
+  merging $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:17$46 into $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:17$47.
+  merging $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:17$25 into $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:17$48.
+  merging $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:17$47 into $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:17$48.
+  merging $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:22$255 into $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:22$266.
+  merging $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:22$265 into $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:22$266.
+  merging $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:18$51 into $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:18$56.
+  merging $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:18$60 into $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:18$61.
+  merging $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:18$61 into $neg$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:18$62.
+  merging $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:22$223 into $neg$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:22$224.
+  merging $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:22$222 into $neg$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:22$224.
+  merging $macc model for $neg$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:18$62 into $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:18$65.
+  merging $macc model for $neg$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:18$64 into $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:18$65.
+  merging $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:18$56 into $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:18$66.
+  merging $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:18$65 into $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:18$66.
+  merging $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:24$338 into $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:24$363.
+  merging $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:24$323 into $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:24$363.
+  merging $macc model for $neg$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:24$317 into $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:24$363.
+  merging $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:24$316 into $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:24$363.
+  merging $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:24$362 into $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:24$363.
+  merging $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:24$350 into $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:24$363.
+  merging $macc model for $neg$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:24$346 into $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:24$363.
+  merging $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:24$345 into $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:24$363.
+  merging $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:24$337 into $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:24$363.
+  merging $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:24$328 into $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:24$363.
+  merging $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:24$322 into $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:24$363.
+  merging $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:24$315 into $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:24$363.
+  merging $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:24$361 into $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:24$363.
+  merging $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:24$355 into $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:24$363.
+  merging $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:24$349 into $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:24$363.
+  merging $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:24$344 into $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:24$363.
+  merging $macc model for $neg$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:24$336 into $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:24$363.
+  merging $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:24$335 into $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:24$363.
+  merging $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:24$331 into $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:24$363.
+  merging $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:24$327 into $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:24$363.
+  merging $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:24$321 into $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:24$363.
+  merging $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:24$360 into $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:24$363.
+  merging $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:24$354 into $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:24$363.
+  merging $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:24$334 into $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:24$363.
+  merging $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:24$359 into $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:24$363.
+  merging $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:18$77 into $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:18$78.
+  merging $macc model for $neg$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:22$224 into $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:22$228.
+  merging $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:18$87 into $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:18$91.
+  merging $macc model for $neg$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:18$84 into $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:18$92.
+  merging $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:18$78 into $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:18$93.
+  merging $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:18$92 into $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:18$93.
+  merging $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:18$66 into $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:18$94.
+  merging $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:18$93 into $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:18$94.
+  merging $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:21$211 into $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:21$216.
+  merging $macc model for $neg$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:21$215 into $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:21$216.
+  merging $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:21$208 into $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:21$217.
+  merging $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:21$216 into $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:21$217.
+  merging $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:19$97 into $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:19$101.
+  merging $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:19$100 into $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:19$101.
+  merging $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:19$101 into $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:19$105.
+  merging $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:21$202 into $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:21$218.
+  merging $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:21$217 into $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:21$218.
+  merging $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:22$233 into $neg$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:22$234.
+  merging $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:22$242 into $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:22$267.
+  merging $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:22$228 into $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:22$267.
+  merging $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:22$266 into $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:22$267.
+  merging $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:22$241 into $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:22$267.
+  merging $macc model for $neg$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:22$234 into $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:22$267.
+  merging $macc model for $neg$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:22$240 into $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:22$267.
+  merging $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:22$239 into $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:22$267.
+  merging $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:22$238 into $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:22$267.
+  merging $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:19$111 into $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:19$112.
+  merging $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:23$270 into $neg$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:23$271.
+  merging $macc model for $neg$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:19$113 into $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:19$117.
+  merging $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:19$116 into $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:19$117.
+  merging $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:19$105 into $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:19$118.
+  merging $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:19$117 into $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:19$118.
+  merging $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:23$279 into $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:23$291.
+  merging $macc model for $neg$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:23$271 into $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:23$291.
+  merging $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:23$278 into $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:23$291.
+  merging $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:23$277 into $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:23$291.
+  merging $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:23$289 into $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:23$290.
+  merging $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:19$130 into $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:19$131.
+  merging $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:19$131 into $neg$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:19$132.
+  merging $macc model for $neg$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:19$126 into $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:19$133.
+  merging $macc model for $neg$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:19$132 into $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:19$133.
+  merging $macc model for $neg$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:19$135 into $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:19$139.
+  merging $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:19$133 into $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:19$140.
+  merging $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:19$139 into $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:19$140.
+  merging $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:19$118 into $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:19$141.
+  merging $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:19$140 into $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:19$141.
+  merging $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:20$149 into $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:20$150.
+  merging $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:20$150 into $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:20$158.
+  merging $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:20$165 into $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:20$169.
+  merging $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:20$168 into $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:20$169.
+  merging $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:20$169 into $neg$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:20$170.
+  merging $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:23$291 into $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:23$311.
+  merging $macc model for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:23$310 into $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:23$311.
+  creating $alu model for $macc $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:21$214.
+  creating $alu model for $macc $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:22$260.
+  creating $alu model for $macc $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:20$153.
+  creating $alu model for $macc $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:21$196.
+  creating $alu model for $macc $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:20$157.
+  creating $alu model for $macc $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:23$306.
+  creating $alu model for $macc $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:23$302.
+  creating $alu model for $macc $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:22$246.
+  creating $alu model for $macc $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:19$104.
+  creating $alu model for $macc $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:23$274.
+  creating $alu model for $macc $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:19$125.
+  creating $alu model for $macc $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:19$121.
+  creating $macc cell for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:20$158: $auto$alumacc.cc:399:replace_macc$435
+  creating $macc cell for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:22$267: $auto$alumacc.cc:399:replace_macc$436
+  creating $macc cell for $neg$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:18$55: $auto$alumacc.cc:399:replace_macc$437
+  creating $macc cell for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:17$48: $auto$alumacc.cc:399:replace_macc$438
+  creating $macc cell for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:19$112: $auto$alumacc.cc:399:replace_macc$439
+  creating $macc cell for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:23$290: $auto$alumacc.cc:399:replace_macc$440
+  creating $macc cell for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:18$91: $auto$alumacc.cc:399:replace_macc$441
+  creating $macc cell for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:18$94: $auto$alumacc.cc:399:replace_macc$442
+  creating $macc cell for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:19$141: $auto$alumacc.cc:399:replace_macc$443
+  creating $macc cell for $neg$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:20$170: $auto$alumacc.cc:399:replace_macc$444
+  creating $macc cell for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:20$186: $auto$alumacc.cc:399:replace_macc$445
+  creating $macc cell for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:24$363: $auto$alumacc.cc:399:replace_macc$446
+  creating $macc cell for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:21$218: $auto$alumacc.cc:399:replace_macc$447
+  creating $macc cell for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:23$311: $auto$alumacc.cc:399:replace_macc$448
+  creating $alu cell for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:19$121: $auto$alumacc.cc:548:replace_alu$449
+  creating $alu cell for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:19$125: $auto$alumacc.cc:548:replace_alu$452
+  creating $alu cell for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:23$274: $auto$alumacc.cc:548:replace_alu$455
+  creating $alu cell for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:19$104: $auto$alumacc.cc:548:replace_alu$458
+  creating $alu cell for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:22$246: $auto$alumacc.cc:548:replace_alu$461
+  creating $alu cell for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:23$302: $auto$alumacc.cc:548:replace_alu$464
+  creating $alu cell for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:23$306: $auto$alumacc.cc:548:replace_alu$467
+  creating $alu cell for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:20$157: $auto$alumacc.cc:548:replace_alu$470
+  creating $alu cell for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:21$196: $auto$alumacc.cc:548:replace_alu$473
+  creating $alu cell for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:20$153: $auto$alumacc.cc:548:replace_alu$476
+  creating $alu cell for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:22$260: $auto$alumacc.cc:548:replace_alu$479
+  creating $alu cell for $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:21$214: $auto$alumacc.cc:548:replace_alu$482
+  created 12 $alu and 14 $macc cells.
+
+3.13. Executing SHARE pass (SAT-based resource sharing).
+
+3.14. Executing OPT pass (performing simple optimizations).
+
+3.14.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module die2_tile.
+
+3.14.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\die2_tile'.
+Computing hashes of 174 cells of `\die2_tile'.
+Finding duplicate cells in `\die2_tile'.
+Removed a total of 0 cells.
+
+3.14.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \die2_tile..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+3.14.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \die2_tile.
+Performed a total of 0 changes.
+
+3.14.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\die2_tile'.
+Computing hashes of 174 cells of `\die2_tile'.
+Finding duplicate cells in `\die2_tile'.
+Removed a total of 0 cells.
+
+3.14.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+3.14.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \die2_tile..
+Removed 143 unused cells and 143 unused wires.
+<suppressed ~144 debug messages>
+
+3.14.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module die2_tile.
+
+3.14.9. Rerunning OPT passes. (Maybe there is more to do..)
+
+3.14.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \die2_tile..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+3.14.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \die2_tile.
+Performed a total of 0 changes.
+
+3.14.12. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\die2_tile'.
+Computing hashes of 31 cells of `\die2_tile'.
+Finding duplicate cells in `\die2_tile'.
+Removed a total of 0 cells.
+
+3.14.13. Executing OPT_DFF pass (perform DFF optimizations).
+
+3.14.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \die2_tile..
+
+3.14.15. Executing OPT_EXPR pass (perform const folding).
+Optimizing module die2_tile.
+
+3.14.16. Finished fast OPT passes. (There is nothing left to do.)
+
+3.15. Executing MEMORY pass.
+
+3.15.1. Executing OPT_MEM pass (optimize memories).
+Performed a total of 0 transformations.
+
+3.15.2. Executing OPT_MEM_PRIORITY pass (removing unnecessary memory write priority relations).
+Performed a total of 0 transformations.
+
+3.15.3. Executing OPT_MEM_FEEDBACK pass (finding memory read-to-write feedback paths).
+
+3.15.4. Executing MEMORY_BMUX2ROM pass (converting muxes to ROMs).
+
+3.15.5. Executing MEMORY_DFF pass (merging $dff cells to $memrd).
+
+3.15.6. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \die2_tile..
+
+3.15.7. Executing MEMORY_SHARE pass (consolidating $memrd/$memwr cells).
+
+3.15.8. Executing OPT_MEM_WIDEN pass (optimize memories where all ports are wide).
+Performed a total of 0 transformations.
+
+3.15.9. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \die2_tile..
+
+3.15.10. Executing MEMORY_COLLECT pass (generating $mem cells).
+
+3.16. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \die2_tile..
+
+3.17. Executing OPT pass (performing simple optimizations).
+
+3.17.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module die2_tile.
+<suppressed ~13 debug messages>
+
+3.17.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\die2_tile'.
+Computing hashes of 31 cells of `\die2_tile'.
+Finding duplicate cells in `\die2_tile'.
+Computing hashes of 30 cells of `\die2_tile'.
+Finding duplicate cells in `\die2_tile'.
+<suppressed ~5 debug messages>
+Removed a total of 1 cells.
+
+3.17.3. Executing OPT_DFF pass (perform DFF optimizations).
+
+3.17.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \die2_tile..
+Removed 0 unused cells and 3 unused wires.
+<suppressed ~1 debug messages>
+
+3.17.5. Finished fast OPT passes.
+
+3.18. Executing MEMORY_MAP pass (converting memories to logic and flip-flops).
+
+3.19. Executing OPT pass (performing simple optimizations).
+
+3.19.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module die2_tile.
+
+3.19.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\die2_tile'.
+Computing hashes of 30 cells of `\die2_tile'.
+Finding duplicate cells in `\die2_tile'.
+Removed a total of 0 cells.
+
+3.19.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \die2_tile..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+3.19.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \die2_tile.
+Performed a total of 0 changes.
+
+3.19.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\die2_tile'.
+Computing hashes of 30 cells of `\die2_tile'.
+Finding duplicate cells in `\die2_tile'.
+Removed a total of 0 cells.
+
+3.19.6. Executing OPT_SHARE pass.
+
+3.19.7. Executing OPT_DFF pass (perform DFF optimizations).
+
+3.19.8. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \die2_tile..
+
+3.19.9. Executing OPT_EXPR pass (perform const folding).
+Optimizing module die2_tile.
+
+3.19.10. Finished fast OPT passes. (There is nothing left to do.)
+
+3.20. Executing TECHMAP pass (map to technology primitives).
+
+3.20.1. Executing Verilog-2005 frontend: /opt/homebrew/bin/../share/yosys/techmap.v
+Parsing Verilog input from `/opt/homebrew/bin/../share/yosys/techmap.v' to AST representation.
+Generating RTLIL representation for module `\_90_simplemap_bool_ops'.
+Generating RTLIL representation for module `\_90_simplemap_reduce_ops'.
+Generating RTLIL representation for module `\_90_simplemap_logic_ops'.
+Generating RTLIL representation for module `\_90_simplemap_compare_ops'.
+Generating RTLIL representation for module `\_90_simplemap_various'.
+Generating RTLIL representation for module `\_90_simplemap_registers'.
+Generating RTLIL representation for module `\_90_shift_ops_shr_shl_sshl_sshr'.
+Generating RTLIL representation for module `\_90_shift_shiftx'.
+Generating RTLIL representation for module `\_90_fa'.
+Generating RTLIL representation for module `\_90_lcu_brent_kung'.
+Generating RTLIL representation for module `\_90_alu'.
+Generating RTLIL representation for module `\_90_macc'.
+Generating RTLIL representation for module `\_90_alumacc'.
+Generating RTLIL representation for module `$__div_mod_u'.
+Generating RTLIL representation for module `$__div_mod_trunc'.
+Generating RTLIL representation for module `\_90_div'.
+Generating RTLIL representation for module `\_90_mod'.
+Generating RTLIL representation for module `$__div_mod_floor'.
+Generating RTLIL representation for module `\_90_divfloor'.
+Generating RTLIL representation for module `\_90_modfloor'.
+Generating RTLIL representation for module `\_90_pow'.
+Generating RTLIL representation for module `\_90_demux'.
+Generating RTLIL representation for module `\_90_lut'.
+Generating RTLIL representation for module `$connect'.
+Generating RTLIL representation for module `$input_port'.
+Successfully finished Verilog frontend.
+
+3.20.2. Continuing TECHMAP pass.
+Using template $paramod$af3f4c812abaf2dfafdf0ed5cfc0047db1491143\_90_alu for cells of type $alu.
+Using template $paramod$2ee99f7d34604d49220c508e2a022c99f49ec060\_90_alu for cells of type $alu.
+Using template $paramod$4e22beadc7f2e859ff49a0437cd51ef750dc4456\_90_alu for cells of type $alu.
+Using template $paramod$662d771705129698b103ff4d8f50cb492c85880c\_90_alu for cells of type $alu.
+Using template $paramod$f53435588cb9b9b6e56cb8f0924b4ca6736334ef\_90_alu for cells of type $alu.
+Using template $paramod$108e88038e72d0cc3fa10867cc9903ae65886b2e\_90_alu for cells of type $alu.
+Using template $paramod$a4a79d29dd89b3bc9d2a7578a7bfeec04af9c806\_90_alu for cells of type $alu.
+Using extmapper maccmap for cells of type $macc_v2.
+  sub { \in_data [8:0] 2'00 } (11 bits, signed)
+  sub \in_data [44:36] (9 bits, signed)
+  add $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:23$290_Y [16:0] (17 bits, signed)
+  add { $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:17$8_Y [10:1] \in_data [9] } (11 bits, signed)
+  sub { \in_data [8:0] 5'00000 } (14 bits, signed)
+  add { \in_data [17:9] 3'000 } (12 bits, signed)
+  add { \in_data [17:9] 4'0000 } (13 bits, signed)
+  add { $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:18$82_Y [13:4] \in_data [54] 3'000 } (14 bits, signed)
+  add \in_data [53:45] (9 bits, signed)
+  sub { \in_data [44:36] 5'00000 } (14 bits, signed)
+  sub { \in_data [71:63] 1'0 } (10 bits, signed)
+  add { \in_data [53:45] 1'0 } (10 bits, signed)
+  sub { $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:18$90_Y [14:5] \in_data [63] 4'0000 } (15 bits, signed)
+  sub { \in_data [8:0] 3'000 } (12 bits, signed)
+  sub \in_data [44:36] (9 bits, signed)
+  add { \in_data [26:18] 1'0 } (10 bits, signed)
+  add { \in_data [17:9] 3'000 } (12 bits, signed)
+  sub { \in_data [8:0] 4'0000 } (13 bits, signed)
+  add \in_data [35:27] (9 bits, signed)
+  add { $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:17$13_Y [10:1] \in_data [18] 2'00 } (13 bits, signed)
+  add { \in_data [35:27] 4'0000 } (13 bits, signed)
+  add \in_data [62:54] (9 bits, signed)
+  add \in_data [53:45] (9 bits, signed)
+  add { \in_data [53:45] 3'000 } (12 bits, signed)
+  sub { $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:19$138_Y [11:2] \in_data [64:63] } (12 bits, signed)
+  add { \in_data [62:54] 5'00000 } (14 bits, signed)
+  sub \in_data [8:0] (9 bits, signed)
+  sub { $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:19$121_Y [10:1] \in_data [36] } (11 bits, signed)
+  add \in_data [26:18] (9 bits, signed)
+  add \in_data [17:9] (9 bits, signed)
+  sub { \in_data [8:0] 1'0 } (10 bits, signed)
+  add { \in_data [62:54] 1'0 } (10 bits, signed)
+  add \in_data [53:45] (9 bits, signed)
+  sub { \in_data [44:36] 2'00 } (11 bits, signed)
+  sub \in_data [35:27] (9 bits, signed)
+  add { \in_data [26:18] 1'0 } (10 bits, signed)
+  add { \in_data [17:9] 1'0 } (10 bits, signed)
+  sub { \in_data [8:0] 5'00000 } (14 bits, signed)
+  add \in_data [71:63] (9 bits, signed)
+  add { \in_data [62:54] 2'00 } (11 bits, signed)
+  add { \in_data [53:45] 2'00 } (11 bits, signed)
+  sub { \in_data [44:36] 3'000 } (12 bits, signed)
+  sub { \in_data [35:27] 3'000 } (12 bits, signed)
+  sub { \in_data [35:27] 1'0 } (10 bits, signed)
+  add { \in_data [26:18] 2'00 } (11 bits, signed)
+  add { \in_data [17:9] 3'000 } (12 bits, signed)
+  add { \in_data [71:63] 1'0 } (10 bits, signed)
+  add { \in_data [62:54] 5'00000 } (14 bits, signed)
+  sub { \in_data [35:27] 6'000000 } (15 bits, signed)
+  add { \in_data [71:63] 2'00 } (11 bits, signed)
+  sub \in_data [8:0] (9 bits, signed)
+  add { \in_data [35:27] 1'0 } (10 bits, signed)
+  add $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:20$158_Y [14:0] (15 bits, signed)
+  sub { \in_data [8:0] 2'00 } (11 bits, signed)
+  sub \in_data [62:54] (9 bits, signed)
+  add $neg$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:18$74_Y (21 bits, signed)
+  add { \in_data [35:27] 4'0000 } (13 bits, signed)
+  sub { \in_data [71:63] 1'0 } (10 bits, signed)
+  sub { \in_data [62:54] 2'00 } (11 bits, signed)
+  sub { \in_data [62:54] 3'000 } (12 bits, signed)
+  sub { \in_data [71:63] 3'000 } (12 bits, signed)
+  sub { \in_data [71:63] 5'00000 } (14 bits, signed)
+  sub \in_data [44:36] (9 bits, signed)
+  sub { \in_data [44:36] 3'000 } (12 bits, signed)
+  sub { \in_data [44:36] 2'00 } (11 bits, signed)
+  sub { \in_data [44:36] 4'0000 } (13 bits, signed)
+  add \in_data [8:0] (9 bits, signed)
+  sub { $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:19$125_Y [15:2] $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:19$121_Y [1] \in_data [36] } (16 bits, signed)
+  sub $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:19$112_Y [15:0] (16 bits, signed)
+  add { $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:19$104_Y [13:4] \in_data [12:9] } (14 bits, signed)
+  add { \in_data [8:0] 3'000 } (12 bits, signed)
+  add { \in_data [8:0] 1'0 } (10 bits, signed)
+  add { \in_data [8:0] 6'000000 } (15 bits, signed)
+  add \in_data [35:27] (9 bits, signed)
+  add { \in_data [35:27] 5'00000 } (14 bits, signed)
+  sub { \in_data [62:54] 2'00 } (11 bits, signed)
+  sub \in_data [53:45] (9 bits, signed)
+  sub { \in_data [53:45] 1'0 } (10 bits, signed)
+  sub { \in_data [53:45] 2'00 } (11 bits, signed)
+  add { $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:19$138_Y [11:2] \in_data [64:63] } (12 bits, signed)
+  add { \in_data [8:0] 3'000 } (12 bits, signed)
+  add $neg$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:18$74_Y (21 bits, signed)
+  sub { \in_data [26:18] 1'0 } (10 bits, signed)
+  add $neg$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:17$9_Y (21 bits, signed)
+  add { \in_data [8:0] 5'00000 } (14 bits, signed)
+  sub { \in_data [35:27] 3'000 } (12 bits, signed)
+  sub { \in_data [26:18] 2'00 } (11 bits, signed)
+  sub { \in_data [26:18] 5'00000 } (14 bits, signed)
+  sub { $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:18$83_Y [14:3] \in_data [55:54] 1'0 } (15 bits, signed)
+  add { \in_data [53:45] 3'000 } (12 bits, signed)
+  add { \in_data [53:45] 4'0000 } (13 bits, signed)
+  add $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:18$91_Y [15:0] (16 bits, signed)
+  add { \in_data [71:63] 1'0 } (10 bits, signed)
+  add { $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:18$90_Y [14:5] \in_data [63] 4'0000 } (15 bits, signed)
+  add { \in_data [71:63] 3'000 } (12 bits, signed)
+  add $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:19$112_Y [15:0] (16 bits, signed)
+  add { \in_data [35:27] 3'000 } (12 bits, signed)
+  add { \in_data [35:27] 5'00000 } (14 bits, signed)
+  add { $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:17$13_Y [10:1] \in_data [18] } (11 bits, signed)
+  add { \in_data [26:18] 3'000 } (12 bits, signed)
+  add { \in_data [26:18] 5'00000 } (14 bits, signed)
+  add \in_data [8:0] (9 bits, signed)
+  sub \in_data [44:36] (9 bits, signed)
+  add { $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:17$17_Y [13:2] $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:17$13_Y [1] \in_data [18] } (14 bits, signed)
+  add $neg$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:17$9_Y (21 bits, signed)
+  add { \in_data [8:0] 3'000 } (12 bits, signed)
+  sub \in_data [35:27] (9 bits, signed)
+  sub { \in_data [35:27] 1'0 } (10 bits, signed)
+  sub { \in_data [35:27] 5'00000 } (14 bits, signed)
+  add \in_data [62:54] (9 bits, signed)
+  sub { \in_data [53:45] 2'00 } (11 bits, signed)
+  sub { \in_data [44:36] 2'00 } (11 bits, signed)
+  sub { \in_data [44:36] 4'0000 } (13 bits, signed)
+  sub \in_data [71:63] (9 bits, signed)
+  add { \in_data [62:54] 2'00 } (11 bits, signed)
+  sub { \in_data [71:63] 2'00 } (11 bits, signed)
+  sub { \in_data [71:63] 1'0 } (10 bits, signed)
+  sub { \in_data [71:63] 4'0000 } (13 bits, signed)
+  packed 8 (1) bits / 1 words into adder tree
+  sub { $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:17$8_Y [10:1] \in_data [9] } (11 bits, signed)
+  sub \in_data [8:0] (9 bits, signed)
+  sub \in_data [44:36] (9 bits, signed)
+  sub \in_data [26:18] (9 bits, signed)
+  add { $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:19$104_Y [13:4] \in_data [12:9] } (14 bits, signed)
+  sub { \in_data [8:0] 4'0000 } (13 bits, signed)
+  sub { \in_data [8:0] 5'00000 } (14 bits, signed)
+  add { $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:18$83_Y [14:3] \in_data [55:54] 1'0 } (15 bits, signed)
+  sub { \in_data [53:45] 3'000 } (12 bits, signed)
+  sub { $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:19$124_Y [14:5] \in_data [38:36] 2'00 } (15 bits, signed)
+  sub { \in_data [53:45] 4'0000 } (13 bits, signed)
+  sub { \in_data [53:45] 5'00000 } (14 bits, signed)
+  sub { \in_data [71:63] 3'000 } (12 bits, signed)
+  sub { \in_data [71:63] 4'0000 } (13 bits, signed)
+  sub \in_data [35:27] (9 bits, signed)
+  sub { $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:17$13_Y [10:1] \in_data [18] 2'00 } (13 bits, signed)
+  sub { \in_data [35:27] 4'0000 } (13 bits, signed)
+  sub { \in_data [35:27] 5'00000 } (14 bits, signed)
+  packed 14 (3) bits / 1 words into adder tree
+  add { \in_data [17:9] 1'0 } (10 bits, signed)
+  add { $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:17$17_Y [13:2] $add$/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/rtl/die2_tile.sv:17$13_Y [1] \in_data [18] } (14 bits, signed)
+  add { \in_data [17:9] 2'00 } (11 bits, signed)
+  add { \in_data [17:9] 3'000 } (12 bits, signed)
+Using extmapper simplemap for cells of type $sdffe.
+Using extmapper simplemap for cells of type $reduce_and.
+Using extmapper simplemap for cells of type $logic_not.
+Using extmapper simplemap for cells of type $logic_or.
+Using template $paramod\_90_fa\WIDTH=32'00000000000000000000000000001111 for cells of type $fa.
+Using template $paramod$67e8f4b8dba01cd3d8fc718acd02276257d102de\_90_alu for cells of type $alu.
+Using template $paramod\_90_fa\WIDTH=32'00000000000000000000000000010101 for cells of type $fa.
+Using template $paramod$950cc9f9d9b07c09d0ee4a231126f2c8a3c4f78a\_90_alu for cells of type $alu.
+Using extmapper simplemap for cells of type $not.
+Using template $paramod\_90_fa\WIDTH=32'00000000000000000000000000010000 for cells of type $fa.
+Using template $paramod$6df0329addda9228fcc2546de2aaf14ad26c98e1\_90_alu for cells of type $alu.
+Using template $paramod\_90_fa\WIDTH=32'00000000000000000000000000010001 for cells of type $fa.
+Using template $paramod$3bb72ad0665cdca279bbc49ed6a39f403f16497f\_90_alu for cells of type $alu.
+Using template $paramod\_90_fa\WIDTH=32'00000000000000000000000000010010 for cells of type $fa.
+Using template $paramod\_90_fa\WIDTH=32'00000000000000000000000000010100 for cells of type $fa.
+Using template $paramod\_90_fa\WIDTH=32'00000000000000000000000000000111 for cells of type $fa.
+Using template $paramod\_90_fa\WIDTH=32'00000000000000000000000000001000 for cells of type $fa.
+Using template $paramod\_90_fa\WIDTH=32'00000000000000000000000000001001 for cells of type $fa.
+Using template $paramod\_90_fa\WIDTH=32'00000000000000000000000000001100 for cells of type $fa.
+Using template $paramod\_90_fa\WIDTH=32'00000000000000000000000000010011 for cells of type $fa.
+Using extmapper simplemap for cells of type $mux.
+Using extmapper simplemap for cells of type $pos.
+Using template $paramod\_90_fa\WIDTH=32'00000000000000000000000000001010 for cells of type $fa.
+Using template $paramod\_90_lcu_brent_kung\WIDTH=32'00000000000000000000000000001010 for cells of type $lcu.
+Using extmapper simplemap for cells of type $xor.
+Using template $paramod\_90_lcu_brent_kung\WIDTH=32'00000000000000000000000000001100 for cells of type $lcu.
+Using template $paramod\_90_fa\WIDTH=32'00000000000000000000000000001110 for cells of type $fa.
+Using template $paramod\_90_lcu_brent_kung\WIDTH=32'00000000000000000000000000001110 for cells of type $lcu.
+Using extmapper simplemap for cells of type $and.
+Using extmapper simplemap for cells of type $or.
+Using template $paramod\_90_lcu_brent_kung\WIDTH=32'00000000000000000000000000001111 for cells of type $lcu.
+Using template $paramod\_90_lcu_brent_kung\WIDTH=32'00000000000000000000000000010101 for cells of type $lcu.
+Using template $paramod\_90_lcu_brent_kung\WIDTH=32'00000000000000000000000000010000 for cells of type $lcu.
+Using template $paramod\_90_lcu_brent_kung\WIDTH=32'00000000000000000000000000010001 for cells of type $lcu.
+No more expansions possible.
+<suppressed ~3894 debug messages>
+
+3.21. Executing OPT pass (performing simple optimizations).
+
+3.21.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module die2_tile.
+<suppressed ~4485 debug messages>
+
+3.21.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\die2_tile'.
+Computing hashes of 13490 cells of `\die2_tile'.
+Finding duplicate cells in `\die2_tile'.
+Computing hashes of 12049 cells of `\die2_tile'.
+Finding duplicate cells in `\die2_tile'.
+Computing hashes of 11531 cells of `\die2_tile'.
+Finding duplicate cells in `\die2_tile'.
+Computing hashes of 11120 cells of `\die2_tile'.
+Finding duplicate cells in `\die2_tile'.
+Computing hashes of 10928 cells of `\die2_tile'.
+Finding duplicate cells in `\die2_tile'.
+Computing hashes of 10678 cells of `\die2_tile'.
+Finding duplicate cells in `\die2_tile'.
+Computing hashes of 10460 cells of `\die2_tile'.
+Finding duplicate cells in `\die2_tile'.
+Computing hashes of 10351 cells of `\die2_tile'.
+Finding duplicate cells in `\die2_tile'.
+Computing hashes of 10225 cells of `\die2_tile'.
+Finding duplicate cells in `\die2_tile'.
+Computing hashes of 10122 cells of `\die2_tile'.
+Finding duplicate cells in `\die2_tile'.
+Computing hashes of 10076 cells of `\die2_tile'.
+Finding duplicate cells in `\die2_tile'.
+Computing hashes of 10009 cells of `\die2_tile'.
+Finding duplicate cells in `\die2_tile'.
+Computing hashes of 9971 cells of `\die2_tile'.
+Finding duplicate cells in `\die2_tile'.
+Computing hashes of 9952 cells of `\die2_tile'.
+Finding duplicate cells in `\die2_tile'.
+Computing hashes of 9930 cells of `\die2_tile'.
+Finding duplicate cells in `\die2_tile'.
+Computing hashes of 9908 cells of `\die2_tile'.
+Finding duplicate cells in `\die2_tile'.
+Computing hashes of 9897 cells of `\die2_tile'.
+Finding duplicate cells in `\die2_tile'.
+Computing hashes of 9883 cells of `\die2_tile'.
+Finding duplicate cells in `\die2_tile'.
+Computing hashes of 9877 cells of `\die2_tile'.
+Finding duplicate cells in `\die2_tile'.
+Computing hashes of 9874 cells of `\die2_tile'.
+Finding duplicate cells in `\die2_tile'.
+Computing hashes of 9871 cells of `\die2_tile'.
+Finding duplicate cells in `\die2_tile'.
+<suppressed ~10857 debug messages>
+Removed a total of 3619 cells.
+
+3.21.3. Executing OPT_DFF pass (perform DFF optimizations).
+
+3.21.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \die2_tile..
+Removed 322 unused cells and 2586 unused wires.
+<suppressed ~323 debug messages>
+
+3.21.5. Finished fast OPT passes.
+
+3.22. Executing HIERARCHY pass (managing design hierarchy).
+Attribute `top' found on module `die2_tile'. Setting top module to die2_tile.
+
+3.22.1. Analyzing design hierarchy..
+Top module:  \die2_tile
+
+3.22.2. Analyzing design hierarchy..
+Top module:  \die2_tile
+Removed 0 unused modules.
+
+3.23. Printing statistics.
+
+=== die2_tile ===
+
+        +----------Local Count, excluding submodules.
+        | 
+     1547 wires
+    14892 wire bits
+       24 public wires
+      582 public wire bits
+        8 ports
+      246 port bits
+     9549 cells
+     3811   $_AND_
+      195   $_NOT_
+     1893   $_OR_
+      169   $_SDFFE_PN0P_
+     3481   $_XOR_
+
+3.24. Executing CHECK pass (checking for obvious problems).
+Checking module die2_tile...
+Found and reported 0 problems.
+
+4. Executing Liberty frontend: routing-voice-chip-design/pdks/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__tt_025C_3v30.lib
+Imported 229 cell types from liberty file.
+
+5. Executing DFFLIBMAP pass (mapping DFF cells to sequential cells from liberty file).
+  cell gf180mcu_fd_sc_mcu7t5v0__dffnq_1 (noninv, pins=3, area=65.86) is a direct match for cell type $_DFF_N_.
+  cell gf180mcu_fd_sc_mcu7t5v0__dffq_1 (noninv, pins=3, area=63.66) is a direct match for cell type $_DFF_P_.
+  cell gf180mcu_fd_sc_mcu7t5v0__dffnrnq_1 (noninv, pins=4, area=74.64) is a direct match for cell type $_DFF_NN0_.
+  cell gf180mcu_fd_sc_mcu7t5v0__dffnsnq_1 (noninv, pins=4, area=79.03) is a direct match for cell type $_DFF_NN1_.
+  cell gf180mcu_fd_sc_mcu7t5v0__dffrnq_1 (noninv, pins=4, area=74.64) is a direct match for cell type $_DFF_PN0_.
+  cell gf180mcu_fd_sc_mcu7t5v0__dffsnq_1 (noninv, pins=4, area=79.03) is a direct match for cell type $_DFF_PN1_.
+  cell gf180mcu_fd_sc_mcu7t5v0__dffnrsnq_1 (noninv, pins=5, area=94.39) is a direct match for cell type $_DFFSR_NNN_.
+  cell gf180mcu_fd_sc_mcu7t5v0__dffrsnq_1 (noninv, pins=5, area=85.61) is a direct match for cell type $_DFFSR_PNN_.
+  final dff cell mappings:
+    \gf180mcu_fd_sc_mcu7t5v0__dffnq_1 _DFF_N_ (.CLKN( C), .D( D), .Q( Q));
+    \gf180mcu_fd_sc_mcu7t5v0__dffq_1 _DFF_P_ (.CLK( C), .D( D), .Q( Q));
+    \gf180mcu_fd_sc_mcu7t5v0__dffnrnq_1 _DFF_NN0_ (.CLKN( C), .D( D), .Q( Q), .RN( R));
+    \gf180mcu_fd_sc_mcu7t5v0__dffnsnq_1 _DFF_NN1_ (.CLKN( C), .D( D), .Q( Q), .SETN( R));
+    unmapped dff cell: $_DFF_NP0_
+    unmapped dff cell: $_DFF_NP1_
+    \gf180mcu_fd_sc_mcu7t5v0__dffrnq_1 _DFF_PN0_ (.CLK( C), .D( D), .Q( Q), .RN( R));
+    \gf180mcu_fd_sc_mcu7t5v0__dffsnq_1 _DFF_PN1_ (.CLK( C), .D( D), .Q( Q), .SETN( R));
+    unmapped dff cell: $_DFF_PP0_
+    unmapped dff cell: $_DFF_PP1_
+    unmapped dff cell: $_DFFE_NN_
+    unmapped dff cell: $_DFFE_NP_
+    unmapped dff cell: $_DFFE_PN_
+    unmapped dff cell: $_DFFE_PP_
+    \gf180mcu_fd_sc_mcu7t5v0__dffnrsnq_1 _DFFSR_NNN_ (.CLKN( C), .D( D), .Q( Q), .RN( R), .SETN( S));
+    unmapped dff cell: $_DFFSR_NNP_
+    unmapped dff cell: $_DFFSR_NPN_
+    unmapped dff cell: $_DFFSR_NPP_
+    \gf180mcu_fd_sc_mcu7t5v0__dffrsnq_1 _DFFSR_PNN_ (.CLK( C), .D( D), .Q( Q), .RN( R), .SETN( S));
+    unmapped dff cell: $_DFFSR_PNP_
+    unmapped dff cell: $_DFFSR_PPN_
+    unmapped dff cell: $_DFFSR_PPP_
+
+5.1. Executing DFFLEGALIZE pass (convert FFs to types supported by the target).
+<suppressed ~12 debug messages>
+Mapping DFF cells in module `\die2_tile':
+  mapped 169 $_DFF_P_ cells to \gf180mcu_fd_sc_mcu7t5v0__dffq_1 cells.
+
+6. Executing ABC pass (technology mapping using ABC).
+
+6.1. Extracting gate netlist of module `\die2_tile' to `<abc-temp-dir>/input.blif'..
+ABC: using cached merged SCL: /var/folders/ks/tlksp68x77j0xg2t8665h46h0000gn/T/yosys-liberty-scl-cache/yosys_merged_4c8be397.scl (1 files)
+
+6.1.1. Executed ABC.
+Extracted 9718 gates and 9963 wires to a netlist network with 244 inputs and 170 outputs.
+Running ABC script: <abc-temp-dir>/abc.script
+ABC: ======== ABC command line "source <abc-temp-dir>/abc.script"
+ABC: + read_blif <abc-temp-dir>/input.blif 
+ABC: + read_scl /var/folders/ks/tlksp68x77j0xg2t8665h46h0000gn/T/yosys-liberty-scl-cache/yosys_merged_4c8be397.scl 
+ABC: Warning: Detected 6 multi-output cells (for example, "gf180mcu_fd_sc_mcu7t5v0__addf_1").
+ABC: + strash 
+ABC: + &get -n 
+ABC: + &fraig -x 
+ABC: + &put 
+ABC: + scorr 
+ABC: Warning: The network is combinational (run "fraig" or "fraig_sweep").
+ABC: + dc2 
+ABC: + dretime 
+ABC: + strash 
+ABC: + &get -n 
+ABC: + &dch -f 
+ABC: + &nf 
+ABC: + &put 
+ABC: + write_blif <abc-temp-dir>/output.blif 
+
+6.1.2. Re-integrating ABC results.
+ABC RESULTS:   gf180mcu_fd_sc_mcu7t5v0__and2_1 cells:      302
+ABC RESULTS:   gf180mcu_fd_sc_mcu7t5v0__and3_1 cells:       40
+ABC RESULTS:   gf180mcu_fd_sc_mcu7t5v0__and4_1 cells:        2
+ABC RESULTS:   gf180mcu_fd_sc_mcu7t5v0__aoi211_1 cells:       11
+ABC RESULTS:   gf180mcu_fd_sc_mcu7t5v0__aoi21_1 cells:      761
+ABC RESULTS:   gf180mcu_fd_sc_mcu7t5v0__aoi221_1 cells:        5
+ABC RESULTS:   gf180mcu_fd_sc_mcu7t5v0__aoi22_1 cells:        8
+ABC RESULTS:   gf180mcu_fd_sc_mcu7t5v0__clkinv_1 cells:      501
+ABC RESULTS:   gf180mcu_fd_sc_mcu7t5v0__mux2_1 cells:       14
+ABC RESULTS:   gf180mcu_fd_sc_mcu7t5v0__nand2_1 cells:     1169
+ABC RESULTS:   gf180mcu_fd_sc_mcu7t5v0__nand3_1 cells:       73
+ABC RESULTS:   gf180mcu_fd_sc_mcu7t5v0__nand4_1 cells:        4
+ABC RESULTS:   gf180mcu_fd_sc_mcu7t5v0__nor2_1 cells:      918
+ABC RESULTS:   gf180mcu_fd_sc_mcu7t5v0__nor3_1 cells:       43
+ABC RESULTS:   gf180mcu_fd_sc_mcu7t5v0__nor4_1 cells:        4
+ABC RESULTS:   gf180mcu_fd_sc_mcu7t5v0__oai211_1 cells:       79
+ABC RESULTS:   gf180mcu_fd_sc_mcu7t5v0__oai21_1 cells:      691
+ABC RESULTS:   gf180mcu_fd_sc_mcu7t5v0__oai221_1 cells:        2
+ABC RESULTS:   gf180mcu_fd_sc_mcu7t5v0__oai22_1 cells:        6
+ABC RESULTS:   gf180mcu_fd_sc_mcu7t5v0__oai31_1 cells:       20
+ABC RESULTS:   gf180mcu_fd_sc_mcu7t5v0__oai32_1 cells:       26
+ABC RESULTS:   gf180mcu_fd_sc_mcu7t5v0__oai33_1 cells:        2
+ABC RESULTS:   gf180mcu_fd_sc_mcu7t5v0__or2_1 cells:      241
+ABC RESULTS:   gf180mcu_fd_sc_mcu7t5v0__or3_1 cells:       47
+ABC RESULTS:   gf180mcu_fd_sc_mcu7t5v0__or4_1 cells:        3
+ABC RESULTS:   gf180mcu_fd_sc_mcu7t5v0__xnor2_1 cells:      483
+ABC RESULTS:   gf180mcu_fd_sc_mcu7t5v0__xnor3_1 cells:      147
+ABC RESULTS:   gf180mcu_fd_sc_mcu7t5v0__xor2_1 cells:     1202
+ABC RESULTS:   gf180mcu_fd_sc_mcu7t5v0__xor3_1 cells:      469
+ABC RESULTS:        internal signals:     9549
+ABC RESULTS:           input signals:      244
+ABC RESULTS:          output signals:      170
+Removing temp directory.
+Removing global temp directory.
+
+7. Printing statistics.
+
+=== die2_tile ===
+
+        +----------Local Count, excluding submodules.
+        |        +-Local Area, excluding submodules.
+        |        | 
+     9402        - wires
+    22747        - wire bits
+       24        - public wires
+      582        - public wire bits
+        8        - ports
+      246        - port bits
+     7442  1.6E+05 cells
+      302  5.3E+03   gf180mcu_fd_sc_mcu7t5v0__and2_1
+       40   878.08   gf180mcu_fd_sc_mcu7t5v0__and3_1
+        2   48.294   gf180mcu_fd_sc_mcu7t5v0__and4_1
+       11  241.472   gf180mcu_fd_sc_mcu7t5v0__aoi211_1
+      761 1.34E+04   gf180mcu_fd_sc_mcu7t5v0__aoi21_1
+        5  120.736   gf180mcu_fd_sc_mcu7t5v0__aoi221_1
+        8  158.054   gf180mcu_fd_sc_mcu7t5v0__aoi22_1
+      501  4.4E+03   gf180mcu_fd_sc_mcu7t5v0__clkinv_1
+      169 1.08E+04   gf180mcu_fd_sc_mcu7t5v0__dffq_1
+       14  399.526   gf180mcu_fd_sc_mcu7t5v0__mux2_1
+     1169 1.28E+04   gf180mcu_fd_sc_mcu7t5v0__nand2_1
+       73 1.12E+03   gf180mcu_fd_sc_mcu7t5v0__nand3_1
+        4   79.027   gf180mcu_fd_sc_mcu7t5v0__nand4_1
+      918 1.21E+04   gf180mcu_fd_sc_mcu7t5v0__nor2_1
+       43  755.149   gf180mcu_fd_sc_mcu7t5v0__nor3_1
+        4   87.808   gf180mcu_fd_sc_mcu7t5v0__nor4_1
+       79 1.73E+03   gf180mcu_fd_sc_mcu7t5v0__oai211_1
+      691 1.21E+04   gf180mcu_fd_sc_mcu7t5v0__oai21_1
+        2   52.685   gf180mcu_fd_sc_mcu7t5v0__oai221_1
+        6  131.712   gf180mcu_fd_sc_mcu7t5v0__oai22_1
+       20  482.944   gf180mcu_fd_sc_mcu7t5v0__oai31_1
+       26  684.902   gf180mcu_fd_sc_mcu7t5v0__oai32_1
+        2   65.856   gf180mcu_fd_sc_mcu7t5v0__oai33_1
+      241 4.23E+03   gf180mcu_fd_sc_mcu7t5v0__or2_1
+       47 1.03E+03   gf180mcu_fd_sc_mcu7t5v0__or3_1
+        3   79.027   gf180mcu_fd_sc_mcu7t5v0__or4_1
+      483 1.38E+04   gf180mcu_fd_sc_mcu7t5v0__xnor2_1
+      147 7.74E+03   gf180mcu_fd_sc_mcu7t5v0__xnor3_1
+     1202 3.17E+04   gf180mcu_fd_sc_mcu7t5v0__xor2_1
+      469 2.37E+04   gf180mcu_fd_sc_mcu7t5v0__xor3_1
+
+   Chip area for module '\die2_tile': 160139.840000
+     of which used for sequential elements: 10758.675200 (6.72%)
+
+8. Executing CHECK pass (checking for obvious problems).
+Checking module die2_tile...
+Found and reported 0 problems.
+
+9. Executing JSON backend.
+
+10. Executing Verilog backend.
+
+10.1. Executing BMUXMAP pass.
+
+10.2. Executing DEMUXMAP pass.
+Dumping module `\die2_tile'.
+
+End of script. Logfile hash: 0c078a4005, time: 1.27s, user: 0.68s, system: 0.05s, MEM: 112.20 MB peak
+Yosys 0.68+post (git sha1 c12172fbae8af5e20f6fb52e3d4e92d56ed587b6, Release, AppleClang clang++ 21.0.0.21000101)
+Time spent: 51% 1x abc (0 sec), 7% 29x opt_expr (0 sec), ...

@@ -1,0 +1,103 @@
+{
+  "scope": "Independent gztrace/header-derived recomputation of retained SS60ns case; no simulator rerun",
+  "checks": {
+    "capture_checks": 320,
+    "capture_fails": 0,
+    "20ns_checks": 160,
+    "20ns_fails": 12
+  },
+  "fail20": [
+    {
+      "cycle": 0,
+      "row": 0,
+      "global_bit": 273,
+      "out_v": 1.4921561559341356,
+      "raw_v": 1.219808144305
+    },
+    {
+      "cycle": 0,
+      "row": 0,
+      "global_bit": 285,
+      "out_v": 2.78924595134963,
+      "raw_v": 0.9745342218112519
+    },
+    {
+      "cycle": 0,
+      "row": 0,
+      "global_bit": 287,
+      "out_v": 2.7878575361491205,
+      "raw_v": 0.976639057947293
+    },
+    {
+      "cycle": 1,
+      "row": 1,
+      "global_bit": 275,
+      "out_v": 2.2085866789610593,
+      "raw_v": 1.134334560501505
+    },
+    {
+      "cycle": 2,
+      "row": 1279,
+      "global_bit": 275,
+      "out_v": 2.7813692967707486,
+      "raw_v": 0.9826277988607514
+    },
+    {
+      "cycle": 3,
+      "row": 1274,
+      "global_bit": 278,
+      "out_v": 2.474926431112003,
+      "raw_v": 1.0970921883551996
+    },
+    {
+      "cycle": 5,
+      "row": 0,
+      "global_bit": 273,
+      "out_v": 1.4795367103110588,
+      "raw_v": 1.221330209113449
+    },
+    {
+      "cycle": 5,
+      "row": 0,
+      "global_bit": 285,
+      "out_v": 2.802549511708651,
+      "raw_v": 0.9599655581391189
+    },
+    {
+      "cycle": 5,
+      "row": 0,
+      "global_bit": 287,
+      "out_v": 2.793892376661401,
+      "raw_v": 0.970239400286029
+    },
+    {
+      "cycle": 6,
+      "row": 1,
+      "global_bit": 275,
+      "out_v": 2.211241655477972,
+      "raw_v": 1.134031302720003
+    },
+    {
+      "cycle": 7,
+      "row": 1279,
+      "global_bit": 275,
+      "out_v": 2.782162819321901,
+      "raw_v": 0.9818252514733785
+    },
+    {
+      "cycle": 8,
+      "row": 1274,
+      "global_bit": 278,
+      "out_v": 2.4758233347650376,
+      "raw_v": 1.0968718902789019
+    }
+  ],
+  "max_settle": {
+    "cycle": 5,
+    "row": 0,
+    "global_bit": 273,
+    "settle_ns": 23.37632100000002
+  },
+  "max_trace_step_ns": 0.20000000000004547,
+  "energy_recalculation_matches": true
+}

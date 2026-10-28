@@ -1,0 +1,1583 @@
+{
+  "source_only_current_service_ledger": true,
+  "context": "Currentqualified F64 learned fulltables:138RTL157modules690ports, root73448 reaped0+independentclosed3a83559e/all18/fiveEOS. Exactrepeatedcase, zero newcorpus. Whole-Wall702 remainsopen.",
+  "top": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/experiments/chip-integration-20261012-frontend-learned-norm-connected-source-v3/rv_pcm_encoder_greedy_frontend_history_producer_metadata_KV_tables_onboard_v1.sv",
+  "FRAMES": 64,
+  "history_cap66": true,
+  "services": [
+    {
+      "service": "frontend immutable scalar regions0,1,4,5,8",
+      "native_bytes": 8298240,
+      "requests": 55720960,
+      "bytes_per_response": 4,
+      "transport_bytes": 222883840,
+      "traffic_equation": "16*(linear409600+Conv1weights2048000+Conv1bias640+Conv2weights1024000+Conv2bias320)",
+      "proof": "Exact front::Services::check_complete service[phase][region] arrays; same16chunk variant.",
+      "status": "Still host serviced; largest traffic. NativeFP32 coefficients, not declared4bitindices."
+    },
+    {
+      "service": "encoder immutable memory regions4..12",
+      "native_bytes": 5146880,
+      "requests": 1947520,
+      "bytes_per_response": 32,
+      "transport_bytes": 62320640,
+      "proof": "enc::Services::logical/actual/sizes and check_layer rd[] plus final learned RV_WORDS.",
+      "status": "Still host serviced; retained norm/learned/FF weights+metadata. Not mutable mirror data."
+    },
+    {
+      "service": "encoder QKV head/O fixed rows",
+      "native_bytes": 2457600,
+      "head_requests": 368640,
+      "head_response_bytes": 40,
+      "O_requests": 15360,
+      "O_response_bytes": 320,
+      "transport_bytes": 19660800,
+      "proof": "Actual uint8packed g.weights routing role*25600+row*80+head*10; head/O heldN+3 provider.",
+      "status": "Still host serviced; preserve current packed coefficient/row order."
+    },
+    {
+      "service": "producer source fixed coefficient rows",
+      "native_bytes": 1228800,
+      "requests": 153600,
+      "bytes_per_response": 320,
+      "transport_bytes": 49152000,
+      "proof": "SessionServices fixed vector80uint32 captures weights[layer][role][row*320+j], SOURCE_SUMMARY fixed153600.",
+      "status": "Onboardfunctional book/index reconstruction closedall18/fullT5;153600rows49,152,000bytechecks. Arithmeticselectors/sharedproducts physicalreadout separate.",
+      "logical_pointer_bytes": 614400,
+      "logical_book_bytes": 307200,
+      "books": 19200,
+      "book_entries": 16,
+      "orientation": "W[input k][output n]. Each local book spans64input k for oneoutput n. Prior35..62 contiguous-output diversity is acrossdifferent books.",
+      "arithmetic": "Selected core already shares signed activation*0..15 products, then resolvedUINT8 low/high digit selection, high<<4+low and unchanged zero/scale/FP32 order.",
+      "physical_fixed_routing_complete": false
+    },
+    {
+      "service": "producer immutable metadata region5",
+      "native_bytes": 19200,
+      "unique_packet_words": 960,
+      "requests": 4800,
+      "bytes_per_response": 32,
+      "transport_bytes": 153600,
+      "status": "Actualonboard4800immutable256-bit metadata packets closedall18/fullT5.",
+      "logical_ROM_payload_bytes": 30720,
+      "native_tuple_bytes": 19200,
+      "padding_bytes": 11520
+    },
+    {
+      "service": "producer fixed positions",
+      "native_bytes": 1310720,
+      "requests": 2560,
+      "bytes_per_response": 8,
+      "transport_bytes": 20480,
+      "proof": "SessionServices fullpositions shape and2560 originalsetup positionoffers.",
+      "status": "Still host source_position_* payload/ready/idle queue; full word<163840/generation0 bounds preserved; no source position storage backend yet.",
+      "queue_schedule": "mode0 capture delay2; acceptedN->PREN+3, countdown retained underwarm, position selectors captured."
+    },
+    {
+      "service": "decoder body cross/FF fixed service",
+      "native_bytes": 8908800,
+      "requests": 1392000,
+      "bytes_per_response": 32,
+      "transport_bytes": 44544000,
+      "proof": "prod::Harness role4..7; 2*(80+3200)+8*(160+3200)+(160+12800)=46400 perlayer;5*6=1392000 packets.",
+      "status": "Still host serviced; distinctmetadata formats/address maps, no blanket commonROM."
+    },
+    {
+      "service": "compact decoder fixed self service",
+      "native_bytes": 2519040,
+      "requests": 787200,
+      "bytes_per_response": 32,
+      "transport_bytes": 25190400,
+      "proof": "CompactServices4roles metadata80/coeff3200; roles1/2 reconstruction repeated1+position.",
+      "status": "Still host serviced; previous history mutable storage is onboard, fixedimages remainexternal."
+    },
+    {
+      "service": "decoder learned normalizers",
+      "native_bytes": 30720,
+      "requests": 9600,
+      "bytes_per_response": 16,
+      "transport_bytes": 153600,
+      "proof": "prod::Harness learned offers fourFP32/layer,index; no currentexportedindependentoffer count line; derive from320rows each6layers5tokens.",
+      "status": "Actualonboard1920\u00d7128 readout;9600offers/ACK/native rows38400words/0hostlearnedresponsefeeds measured. InitialPOR plusretainedowner warmcontract; no transparentwarmrestart claim.",
+      "measured": {
+        "offers": 9600,
+        "ACKs": 9600,
+        "native_rows": 9600,
+        "native_words": 38400,
+        "owner": 0,
+        "idle": 1,
+        "fault": 0,
+        "host_response_feeds": 0
+      }
+    },
+    {
+      "service": "embedding/head shared index image",
+      "native_bytes": 5242880,
+      "embedding_requests": 1600,
+      "head_requests": 204800,
+      "bytes_per_response": 128,
+      "transport_bytes": 26419200,
+      "proof": "indices[group*320+row]*32uint32; fullhead128groups*320rows/token; source-derived cache/schedule counts, independently instrument beforeadoption.",
+      "status": "Actualonboardtwoqueue206400indexACK/6604800nativewordchecks;one shared5,242,880B image. Closedall18/fullT5.",
+      "queue_schedule": "Actual capture delay2 decremented on capture edge: PRE N+2. Two independently captured queues; producer-enabled ACK/warm fence/POR.",
+      "sharing": "Tied embedding/head use SAME 128groups*320rows*32uint32 image; vocabulary group stores256 packed fourbit choices for each inputrow. Do not sum two copies.",
+      "image_count_once": true
+    },
+    {
+      "service": "embedding/head shared book pages",
+      "native_bytes": 2621440,
+      "head_page_starts": 25600,
+      "head_beats": 409600,
+      "embedding_page_requests": 25,
+      "embedding_beats": 400,
+      "bytes_per_beat": 32,
+      "transport_bytes": 13120000,
+      "proof": "prod::Harness table_drive 8lane/5page16beat actualready phases; embedding320dim/64 group5pages/token, source-derived prediction requiringactualcounter evidence.",
+      "status": "Actualonboard400embeddingbeats409600headbeats25600commits3280000nativewordchecks;one shared2,621,440B image. Closedall18/fullT5.",
+      "sharing": "SAME native655360uint32 pages for embedding/head. Embedded sequential16beat response and8head lanes/start16beats/commit remain distinct control protocols.",
+      "image_count_once": true
+    }
+  ],
+  "mutable_backends": [
+    {
+      "name": "encoder owner2 region0/1/2",
+      "module": "rv_encoder_bank_consumer_edge_v1",
+      "FRAMES": 64,
+      "arrays": [
+        {
+          "name": "bank0",
+          "packets": 2560,
+          "bits": 256,
+          "bytes": 81920
+        },
+        {
+          "name": "bank1",
+          "packets": 2560,
+          "bits": 256,
+          "bytes": 81920
+        },
+        {
+          "name": "bank2",
+          "packets": 640,
+          "bits": 256,
+          "bytes": 20480
+        }
+      ],
+      "bytes": 184320,
+      "alias": "Client3 READONLY owner2/region0; no additional bank allocation.",
+      "schedule": "Accepted N \u2192 reply valid lowhalf PRE N+6 (alias N+2); same dueedge write commit before/independent ACK; held envelope; warm fence retains pending and due write. Bank-only fault warm recovery distinct from sticky router/orphan fault POR.",
+      "lease": "Actual retained encoder/source publication and matching finalrelease remain in parent; no bank-generated publication."
+    },
+    {
+      "name": "producer mutable regions0/1/2",
+      "module": "rv_producer_mutable_storage_v1",
+      "FRAMES": 64,
+      "arrays": [
+        {
+          "name": "bankA",
+          "packets": 2560,
+          "bits": 256,
+          "bytes": 81920
+        },
+        {
+          "name": "bankB",
+          "packets": 2560,
+          "bits": 256,
+          "bytes": 81920
+        },
+        {
+          "name": "bankCodes",
+          "packets": 640,
+          "bits": 256,
+          "bytes": 20480
+        }
+      ],
+      "bytes": 184320,
+      "captured_bus_bits": 424,
+      "service_fields": 25,
+      "schedule": "mode0 PRE N+3; accepted-edge writes; retained countdown through warm/off fence; matching held replies only. Region5immutablemetadata goes to separate queue backend.",
+      "lease": "Actual source session/generation/epoch/layer/role/tag/word captured; producer session/drain/finalsource/KVrelease remains outside payload storage."
+    },
+    {
+      "name": "compact committed/shadow history",
+      "module": "rv_compact_history_storage_v1",
+      "arrays": [
+        {
+          "name": "committed",
+          "packets": 4356,
+          "bits": 256,
+          "bytes": 139392
+        },
+        {
+          "name": "shadow",
+          "packets": 66,
+          "bits": 256,
+          "bytes": 2112
+        }
+      ],
+      "bytes": 141504,
+      "captured_bus_bits": 368,
+      "service_fields": 27,
+      "schedule": "mode0 PRE N+1; writes at accepted edge; warm blocks acceptance/ACK but visible heldresponse unchanged; initial POR controls only, no data seed/clear.",
+      "lease": "Shadow oneposition6layers11packets; committed66positions\u00d76layers\u00d711. Observer actual initialized-read/writeACK and committed-prefix/session checks remain; atomic publish not inferred from isolated storage."
+    }
+  ],
+  "existing_book_cache_payload": {
+    "module": "taalas_book_page_cache",
+    "instances": 9,
+    "columns": 32,
+    "representatives_per_column": 16,
+    "value_bits": 8,
+    "banks_per_cache": 2,
+    "bytes_each": 1024,
+    "total_bytes": 9216,
+    "scope": "Eight head lanes+one embedding realdoublebuffer cache. Metadata reset invalidates tags/valid; uninitializedpayload unavailable until complete16beats then matchingcommit. Counts represent existing register payload only; additional scratch/control/arithmetic excluded."
+  },
+  "remaining_frontend_mutable": {
+    "service": "frontend mutable scalar regions2,3,6,7 and copyclient1->backingowner0",
+    "native_words": {
+      "region2": 6400,
+      "region3": 5120,
+      "region6": 7680,
+      "region7": 1280
+    },
+    "capacity_bytes": 81920,
+    "copy_read_region": 3,
+    "copy_active_words": 1280,
+    "queue_schedule": "Originalfrontend host captures delay0 atacceptedN; due atPREN+1. Before subsequentposedge it applies due write even ifreplyACKheld; repeats samepayload untilACK. Notencoder N+6/N+2 and notacceptedrequest-edge mutation.",
+    "status": "Actualonboard4scalarregions/copyalias closed:29344000requests/replies430080initialized duewriteACKs28913920readchecks20480aliasACKs/0hostmutablefeeds. Observer mirrors comparisononly.",
+    "source": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/experiments/chip-integration-20261012-history-producer-metadata-KV-connected-source-v1/frontend_services.hpp",
+    "measured": {
+      "requests": 29344000,
+      "replies": 29344000,
+      "initialized_reads": 28913920,
+      "due_writes": 430080,
+      "write_ACKs": 430080,
+      "alias_ACKs": 20480,
+      "serialized_values": 20480,
+      "idle": 1,
+      "fault": 0,
+      "need_clock": 0,
+      "host_mutable_response_feeds": 0
+    }
+  },
+  "current_images": [
+    {
+      "service": "frontend immutable scalar regions0,1,4,5,8",
+      "role": "linear_weights.bin",
+      "path": "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/frontend/shared/linear_weights.bin",
+      "bytes": 102400,
+      "sha256": "1b14d3d00a9d640726adb7983f7f85111d5a70468c5c583b14621d15fb2d919f"
+    },
+    {
+      "service": "frontend immutable scalar regions0,1,4,5,8",
+      "role": "conv1_weights.bin",
+      "path": "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/frontend/shared/conv1_weights.bin",
+      "bytes": 4096000,
+      "sha256": "f78e8257037f675b95bac352e500ad6678b2b932c15763c034d861a633b8f521"
+    },
+    {
+      "service": "frontend immutable scalar regions0,1,4,5,8",
+      "role": "conv1_bias.bin",
+      "path": "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/frontend/shared/conv1_bias.bin",
+      "bytes": 2560,
+      "sha256": "7ad3904e16f8466edca6996a3dabde88f2eefc1a0ad023d48c2d39a5b4973ee2"
+    },
+    {
+      "service": "frontend immutable scalar regions0,1,4,5,8",
+      "role": "conv2_weights.bin",
+      "path": "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/frontend/shared/conv2_weights.bin",
+      "bytes": 4096000,
+      "sha256": "13ef6595619a6c8b2fe5a6dc7b4078a44d48a0f113c8156c8bf54d7e0fa87997"
+    },
+    {
+      "service": "frontend immutable scalar regions0,1,4,5,8",
+      "role": "conv2_bias.bin",
+      "path": "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/frontend/shared/conv2_bias.bin",
+      "bytes": 1280,
+      "sha256": "355244333061a76f48ac524104bb0e6bcf433546bac68adbd8231addfca062a5"
+    },
+    {
+      "service": "encoder QKV head/O fixed rows",
+      "role": "layer0:sharedQ/K/V/O roles",
+      "path": "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/blobs/a1ca9fd44d2abe93d9aaa781dcfa760d99899dad5a5dd47936ea918735e22afe.bin",
+      "bytes": 409600,
+      "sha256": "a1ca9fd44d2abe93d9aaa781dcfa760d99899dad5a5dd47936ea918735e22afe"
+    },
+    {
+      "service": "encoder immutable memory regions4..12",
+      "role": "layer0:logical7",
+      "path": "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/blobs/d8f94b4e696815810c5642f9b04c764ea8b43bb77fce56022d2c3fe0d40148e7.bin",
+      "bytes": 10240,
+      "sha256": "d8f94b4e696815810c5642f9b04c764ea8b43bb77fce56022d2c3fe0d40148e7"
+    },
+    {
+      "service": "encoder immutable memory regions4..12",
+      "role": "layer0:logical15",
+      "path": "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/blobs/04ccc843b95d47608f5f48315a8300079e9f7bff0868b27d1bc4bcd2c221d8c6.bin",
+      "bytes": 409600,
+      "sha256": "04ccc843b95d47608f5f48315a8300079e9f7bff0868b27d1bc4bcd2c221d8c6"
+    },
+    {
+      "service": "encoder immutable memory regions4..12",
+      "role": "layer0:logical16",
+      "path": "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/blobs/604de1960c5058fa46e515068745ca2c3074fbf5d25ed358e39741062bf5081e.bin",
+      "bytes": 20480,
+      "sha256": "604de1960c5058fa46e515068745ca2c3074fbf5d25ed358e39741062bf5081e"
+    },
+    {
+      "service": "encoder immutable memory regions4..12",
+      "role": "layer0:logical17",
+      "path": "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/blobs/3bdff3a2320a13083aafdb04a166061bd014226698421d6533a59fd9ee67f8a0.bin",
+      "bytes": 409600,
+      "sha256": "3bdff3a2320a13083aafdb04a166061bd014226698421d6533a59fd9ee67f8a0"
+    },
+    {
+      "service": "encoder immutable memory regions4..12",
+      "role": "layer0:logical18",
+      "path": "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/blobs/c3cd342f6ec1eba4f2784fabe87802291c2d61b424a672f7277ca41029d278ec.bin",
+      "bytes": 5120,
+      "sha256": "c3cd342f6ec1eba4f2784fabe87802291c2d61b424a672f7277ca41029d278ec"
+    },
+    {
+      "service": "encoder immutable memory regions4..12",
+      "role": "layer0:logical21",
+      "path": "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/blobs/1c9718a5fc5a55377c4ce7b89040463eaf5cca262c8e6ea9664a9ee07b8af961.bin",
+      "bytes": 1280,
+      "sha256": "1c9718a5fc5a55377c4ce7b89040463eaf5cca262c8e6ea9664a9ee07b8af961"
+    },
+    {
+      "service": "encoder immutable memory regions4..12",
+      "role": "layer0:logical20",
+      "path": "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/blobs/ae21dd6d5f54cf0f5f31bd525ead2010c44860b883670977cfd22594263ad012.bin",
+      "bytes": 1280,
+      "sha256": "ae21dd6d5f54cf0f5f31bd525ead2010c44860b883670977cfd22594263ad012"
+    },
+    {
+      "service": "encoder QKV head/O fixed rows",
+      "role": "layer1:sharedQ/K/V/O roles",
+      "path": "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/blobs/75304a94acf49d94e873042e8bdddad11e9e31375abd083c2f111f687cff051b.bin",
+      "bytes": 409600,
+      "sha256": "75304a94acf49d94e873042e8bdddad11e9e31375abd083c2f111f687cff051b"
+    },
+    {
+      "service": "encoder immutable memory regions4..12",
+      "role": "layer1:logical7",
+      "path": "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/blobs/67b5015ccd9e5feca53f8ed63c316b5b7aca5a2b907ba516dfe18f049b372953.bin",
+      "bytes": 10240,
+      "sha256": "67b5015ccd9e5feca53f8ed63c316b5b7aca5a2b907ba516dfe18f049b372953"
+    },
+    {
+      "service": "encoder immutable memory regions4..12",
+      "role": "layer1:logical15",
+      "path": "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/blobs/ad3a261720cc779b01522b13a25621d19742f1788e1a2395e860eaa2273ce554.bin",
+      "bytes": 409600,
+      "sha256": "ad3a261720cc779b01522b13a25621d19742f1788e1a2395e860eaa2273ce554"
+    },
+    {
+      "service": "encoder immutable memory regions4..12",
+      "role": "layer1:logical16",
+      "path": "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/blobs/fb16d40bca9cdb04768f84f9057dc79ed21939cce5385705373f01347651529d.bin",
+      "bytes": 20480,
+      "sha256": "fb16d40bca9cdb04768f84f9057dc79ed21939cce5385705373f01347651529d"
+    },
+    {
+      "service": "encoder immutable memory regions4..12",
+      "role": "layer1:logical17",
+      "path": "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/blobs/817d9cac3aaf884b5dd5e9ec14abf89f6cc83274ecc22b0a13e52d0dac76bde3.bin",
+      "bytes": 409600,
+      "sha256": "817d9cac3aaf884b5dd5e9ec14abf89f6cc83274ecc22b0a13e52d0dac76bde3"
+    },
+    {
+      "service": "encoder immutable memory regions4..12",
+      "role": "layer1:logical18",
+      "path": "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/blobs/b7d245cc39d1ba82884ed261fc32b396b9c7097938f79fae9cdf6ec85d004170.bin",
+      "bytes": 5120,
+      "sha256": "b7d245cc39d1ba82884ed261fc32b396b9c7097938f79fae9cdf6ec85d004170"
+    },
+    {
+      "service": "encoder immutable memory regions4..12",
+      "role": "layer1:logical21",
+      "path": "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/blobs/0317789614b43091c31a0346e360d44f0d1581ac57baa45954116fdbd9c93607.bin",
+      "bytes": 1280,
+      "sha256": "0317789614b43091c31a0346e360d44f0d1581ac57baa45954116fdbd9c93607"
+    },
+    {
+      "service": "encoder immutable memory regions4..12",
+      "role": "layer1:logical20",
+      "path": "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/blobs/f3083765b8ae59e442bbf30aa1126afa6ada098bd4baec108ea4405a5dcff19d.bin",
+      "bytes": 1280,
+      "sha256": "f3083765b8ae59e442bbf30aa1126afa6ada098bd4baec108ea4405a5dcff19d"
+    },
+    {
+      "service": "encoder QKV head/O fixed rows",
+      "role": "layer2:sharedQ/K/V/O roles",
+      "path": "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/blobs/1f4285738198c3c74d73face83830878c19fc3387f08a398d84382fbaa4b94a5.bin",
+      "bytes": 409600,
+      "sha256": "1f4285738198c3c74d73face83830878c19fc3387f08a398d84382fbaa4b94a5"
+    },
+    {
+      "service": "encoder immutable memory regions4..12",
+      "role": "layer2:logical7",
+      "path": "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/blobs/3fb5af1abc32ea004abd95d53825dfbee14a6db371b2dc5b4b21f4a7a256038f.bin",
+      "bytes": 10240,
+      "sha256": "3fb5af1abc32ea004abd95d53825dfbee14a6db371b2dc5b4b21f4a7a256038f"
+    },
+    {
+      "service": "encoder immutable memory regions4..12",
+      "role": "layer2:logical15",
+      "path": "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/blobs/b617833ed4fd3ced6e89f9a65381b1e8857ea2c81b612134a400518c71859042.bin",
+      "bytes": 409600,
+      "sha256": "b617833ed4fd3ced6e89f9a65381b1e8857ea2c81b612134a400518c71859042"
+    },
+    {
+      "service": "encoder immutable memory regions4..12",
+      "role": "layer2:logical16",
+      "path": "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/blobs/2bec0589777649c0bf9fd7c5481b4820b7287c5b45c598d579f7cf3f7c1ed9f3.bin",
+      "bytes": 20480,
+      "sha256": "2bec0589777649c0bf9fd7c5481b4820b7287c5b45c598d579f7cf3f7c1ed9f3"
+    },
+    {
+      "service": "encoder immutable memory regions4..12",
+      "role": "layer2:logical17",
+      "path": "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/blobs/faf5d54355ba27429d1f8bf48197bdf0f5f1d60f3390fd93c89543dfdc304bc4.bin",
+      "bytes": 409600,
+      "sha256": "faf5d54355ba27429d1f8bf48197bdf0f5f1d60f3390fd93c89543dfdc304bc4"
+    },
+    {
+      "service": "encoder immutable memory regions4..12",
+      "role": "layer2:logical18",
+      "path": "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/blobs/9236fbd08c4b48841dcdf0045b2e0b603c2dc512bb1aa578429323c662cb3f26.bin",
+      "bytes": 5120,
+      "sha256": "9236fbd08c4b48841dcdf0045b2e0b603c2dc512bb1aa578429323c662cb3f26"
+    },
+    {
+      "service": "encoder immutable memory regions4..12",
+      "role": "layer2:logical21",
+      "path": "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/blobs/8f622966172e0230938028d194470c05dd3387e8bd77da8e89aa15350e5c38a0.bin",
+      "bytes": 1280,
+      "sha256": "8f622966172e0230938028d194470c05dd3387e8bd77da8e89aa15350e5c38a0"
+    },
+    {
+      "service": "encoder immutable memory regions4..12",
+      "role": "layer2:logical20",
+      "path": "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/blobs/7cf4d980cdd247d4962f628fe03b490f2f0196536fb58dc58bd81d839e6c31ed.bin",
+      "bytes": 1280,
+      "sha256": "7cf4d980cdd247d4962f628fe03b490f2f0196536fb58dc58bd81d839e6c31ed"
+    },
+    {
+      "service": "encoder QKV head/O fixed rows",
+      "role": "layer3:sharedQ/K/V/O roles",
+      "path": "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/blobs/bba39bb532d5a93636b0d79d600979bcd7b20ec8fd457f25f6583460b3159626.bin",
+      "bytes": 409600,
+      "sha256": "bba39bb532d5a93636b0d79d600979bcd7b20ec8fd457f25f6583460b3159626"
+    },
+    {
+      "service": "encoder immutable memory regions4..12",
+      "role": "layer3:logical7",
+      "path": "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/blobs/bb7c6cc708a7341b2f5767f0396530ea38515dbcbe0c5bc6616e95dc55fa9145.bin",
+      "bytes": 10240,
+      "sha256": "bb7c6cc708a7341b2f5767f0396530ea38515dbcbe0c5bc6616e95dc55fa9145"
+    },
+    {
+      "service": "encoder immutable memory regions4..12",
+      "role": "layer3:logical15",
+      "path": "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/blobs/b05f82952dcb7758395c7e95d303d31f0f251cf3b58b0a020cbfd9ddc616786b.bin",
+      "bytes": 409600,
+      "sha256": "b05f82952dcb7758395c7e95d303d31f0f251cf3b58b0a020cbfd9ddc616786b"
+    },
+    {
+      "service": "encoder immutable memory regions4..12",
+      "role": "layer3:logical16",
+      "path": "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/blobs/cda61efca3a18480bdd536bd4d75ba41369ffc3bbfa32a479e1833e53ebb5b02.bin",
+      "bytes": 20480,
+      "sha256": "cda61efca3a18480bdd536bd4d75ba41369ffc3bbfa32a479e1833e53ebb5b02"
+    },
+    {
+      "service": "encoder immutable memory regions4..12",
+      "role": "layer3:logical17",
+      "path": "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/blobs/e7a1a820b64645572ec9ad93a921c2d357fa0b3028052cd2205ca31f5e62003e.bin",
+      "bytes": 409600,
+      "sha256": "e7a1a820b64645572ec9ad93a921c2d357fa0b3028052cd2205ca31f5e62003e"
+    },
+    {
+      "service": "encoder immutable memory regions4..12",
+      "role": "layer3:logical18",
+      "path": "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/blobs/722a990357346bef9529334ca13ccaa1a503feb310dfa117d09d20561dbfecf3.bin",
+      "bytes": 5120,
+      "sha256": "722a990357346bef9529334ca13ccaa1a503feb310dfa117d09d20561dbfecf3"
+    },
+    {
+      "service": "encoder immutable memory regions4..12",
+      "role": "layer3:logical21",
+      "path": "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/blobs/b2e782aa684fd83b76ad3557eb9fb9ecf3f2d3e4f8fb53033cdcc9e858087f7f.bin",
+      "bytes": 1280,
+      "sha256": "b2e782aa684fd83b76ad3557eb9fb9ecf3f2d3e4f8fb53033cdcc9e858087f7f"
+    },
+    {
+      "service": "encoder immutable memory regions4..12",
+      "role": "layer3:logical20",
+      "path": "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/blobs/c165e59404d6054b0c73ea104ec61c11ee580d4c613b4b6357a81a8568ed14ee.bin",
+      "bytes": 1280,
+      "sha256": "c165e59404d6054b0c73ea104ec61c11ee580d4c613b4b6357a81a8568ed14ee"
+    },
+    {
+      "service": "encoder QKV head/O fixed rows",
+      "role": "layer4:sharedQ/K/V/O roles",
+      "path": "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/blobs/647f5983449c14a034cc6028d6a99cde601247cfc0d2ed8e9114472e933f5209.bin",
+      "bytes": 409600,
+      "sha256": "647f5983449c14a034cc6028d6a99cde601247cfc0d2ed8e9114472e933f5209"
+    },
+    {
+      "service": "encoder immutable memory regions4..12",
+      "role": "layer4:logical7",
+      "path": "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/blobs/1ad26c81b839c76308f05c04cd8e4327747f289f828aef768be8d126cf921e2e.bin",
+      "bytes": 10240,
+      "sha256": "1ad26c81b839c76308f05c04cd8e4327747f289f828aef768be8d126cf921e2e"
+    },
+    {
+      "service": "encoder immutable memory regions4..12",
+      "role": "layer4:logical15",
+      "path": "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/blobs/9b2b2936f2fdb6f3776d1e3f25441598beb76942a8d793f05d03590a652e0b4f.bin",
+      "bytes": 409600,
+      "sha256": "9b2b2936f2fdb6f3776d1e3f25441598beb76942a8d793f05d03590a652e0b4f"
+    },
+    {
+      "service": "encoder immutable memory regions4..12",
+      "role": "layer4:logical16",
+      "path": "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/blobs/b9c443065d36b802db7c13ce2478dc0e50f0a3ba52657ebc31afeb54a51e66b5.bin",
+      "bytes": 20480,
+      "sha256": "b9c443065d36b802db7c13ce2478dc0e50f0a3ba52657ebc31afeb54a51e66b5"
+    },
+    {
+      "service": "encoder immutable memory regions4..12",
+      "role": "layer4:logical17",
+      "path": "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/blobs/cc20a9c005aabe5d21ace899b8ae7e4b300a38014996853c6ea6402caa319fa4.bin",
+      "bytes": 409600,
+      "sha256": "cc20a9c005aabe5d21ace899b8ae7e4b300a38014996853c6ea6402caa319fa4"
+    },
+    {
+      "service": "encoder immutable memory regions4..12",
+      "role": "layer4:logical18",
+      "path": "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/blobs/b49102388d657411598d93d201b605f2d4427a27f447d1b9dd2915bde711630a.bin",
+      "bytes": 5120,
+      "sha256": "b49102388d657411598d93d201b605f2d4427a27f447d1b9dd2915bde711630a"
+    },
+    {
+      "service": "encoder immutable memory regions4..12",
+      "role": "layer4:logical21",
+      "path": "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/blobs/45218900600550bd2316f9b2d2f69d92e00e88b045514657edb4723fe03b93da.bin",
+      "bytes": 1280,
+      "sha256": "45218900600550bd2316f9b2d2f69d92e00e88b045514657edb4723fe03b93da"
+    },
+    {
+      "service": "encoder immutable memory regions4..12",
+      "role": "layer4:logical20",
+      "path": "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/blobs/31a5128269ed01f3c408d26ee591af3ba394dbfa90067ad59f7f078f7f24e2ba.bin",
+      "bytes": 1280,
+      "sha256": "31a5128269ed01f3c408d26ee591af3ba394dbfa90067ad59f7f078f7f24e2ba"
+    },
+    {
+      "service": "encoder QKV head/O fixed rows",
+      "role": "layer5:sharedQ/K/V/O roles",
+      "path": "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/blobs/e01a719a417d3b45aae9a294295e262c31433c586291d30c286953432433e2e4.bin",
+      "bytes": 409600,
+      "sha256": "e01a719a417d3b45aae9a294295e262c31433c586291d30c286953432433e2e4"
+    },
+    {
+      "service": "encoder immutable memory regions4..12",
+      "role": "layer5:logical7",
+      "path": "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/blobs/c158bd73fe121c843ff6fd8bae0e402687a797613aba92c0eaef03f7391747bb.bin",
+      "bytes": 10240,
+      "sha256": "c158bd73fe121c843ff6fd8bae0e402687a797613aba92c0eaef03f7391747bb"
+    },
+    {
+      "service": "encoder immutable memory regions4..12",
+      "role": "layer5:logical15",
+      "path": "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/blobs/bb33a60c97a68e644d152b4843c5e61accc082fab600c1ea724962df4d5f6a0d.bin",
+      "bytes": 409600,
+      "sha256": "bb33a60c97a68e644d152b4843c5e61accc082fab600c1ea724962df4d5f6a0d"
+    },
+    {
+      "service": "encoder immutable memory regions4..12",
+      "role": "layer5:logical16",
+      "path": "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/blobs/ebef85f94a742753d2ef4960a14cd59d75a12789f65b0b3d7345ddfd245b7a14.bin",
+      "bytes": 20480,
+      "sha256": "ebef85f94a742753d2ef4960a14cd59d75a12789f65b0b3d7345ddfd245b7a14"
+    },
+    {
+      "service": "encoder immutable memory regions4..12",
+      "role": "layer5:logical17",
+      "path": "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/blobs/aa40a0856ec88f1fee727ac6e694b080f62908c1d0bb3e5c8bf5303748532823.bin",
+      "bytes": 409600,
+      "sha256": "aa40a0856ec88f1fee727ac6e694b080f62908c1d0bb3e5c8bf5303748532823"
+    },
+    {
+      "service": "encoder immutable memory regions4..12",
+      "role": "layer5:logical18",
+      "path": "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/blobs/164357bca42af5074276172aef4fa944fba42819b9a8ab96d45d8f6a7b39e92b.bin",
+      "bytes": 5120,
+      "sha256": "164357bca42af5074276172aef4fa944fba42819b9a8ab96d45d8f6a7b39e92b"
+    },
+    {
+      "service": "encoder immutable memory regions4..12",
+      "role": "layer5:logical21",
+      "path": "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/blobs/fb93b814fe1ca1ad66ed0423104dc62ba70c8900dc995e5f1e133d64927a4e25.bin",
+      "bytes": 1280,
+      "sha256": "fb93b814fe1ca1ad66ed0423104dc62ba70c8900dc995e5f1e133d64927a4e25"
+    },
+    {
+      "service": "encoder immutable memory regions4..12",
+      "role": "layer5:logical20",
+      "path": "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/blobs/f5da59bfaa90887fd42315d6ba7391880f21495ab01f45c2bc0363271d888ccf.bin",
+      "bytes": 1280,
+      "sha256": "f5da59bfaa90887fd42315d6ba7391880f21495ab01f45c2bc0363271d888ccf"
+    },
+    {
+      "service": "encoder immutable memory regions4..12",
+      "role": "finallearned320",
+      "path": "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/blobs/2cf770f86f43c7ec1e050ae5c5e2dcc757998bbc764f15dbe7272888a45e08e9.bin",
+      "bytes": 1280,
+      "sha256": "2cf770f86f43c7ec1e050ae5c5e2dcc757998bbc764f15dbe7272888a45e08e9"
+    },
+    {
+      "service": "producer fixed positions",
+      "role": "full frozen positions",
+      "path": "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/blobs/954bd3f6743402976b17fe2322396dc7be680423e8865f6538b6c807940d5f15.bin",
+      "bytes": 1310720,
+      "sha256": "954bd3f6743402976b17fe2322396dc7be680423e8865f6538b6c807940d5f15"
+    },
+    {
+      "service": "producer source fixed coefficient rows",
+      "role": "layer0:role0:native comparison dense",
+      "path": "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/blobs/9a154266927c2d60fb35b270f5282f39b42844d79e5f51fc0ef3338f7da4b8be.bin",
+      "bytes": 102400,
+      "sha256": "9a154266927c2d60fb35b270f5282f39b42844d79e5f51fc0ef3338f7da4b8be"
+    },
+    {
+      "service": "producer immutable metadata region5",
+      "role": "layer0:role0:native40bit metadata",
+      "path": "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/blobs/9f9aead101b9a30ef7d3d34da90642e6e9b2952696f149b2ab7c892e978da838.bin",
+      "bytes": 1600,
+      "sha256": "9f9aead101b9a30ef7d3d34da90642e6e9b2952696f149b2ab7c892e978da838"
+    },
+    {
+      "service": "producer source fixed coefficient rows",
+      "role": "layer0:role1:native comparison dense",
+      "path": "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/blobs/cb1ad8f93352bc6c0ef19d4b223c2184267fd42b9e0c33970a7f25db1dbfc721.bin",
+      "bytes": 102400,
+      "sha256": "cb1ad8f93352bc6c0ef19d4b223c2184267fd42b9e0c33970a7f25db1dbfc721"
+    },
+    {
+      "service": "producer immutable metadata region5",
+      "role": "layer0:role1:native40bit metadata",
+      "path": "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/blobs/1a35a2e1f763b45b5a61f76bbfb205b7a52e65c55afcdf6c173a7631c634a08a.bin",
+      "bytes": 1600,
+      "sha256": "1a35a2e1f763b45b5a61f76bbfb205b7a52e65c55afcdf6c173a7631c634a08a"
+    },
+    {
+      "service": "producer source fixed coefficient rows",
+      "role": "layer1:role0:native comparison dense",
+      "path": "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/blobs/994a415d157ec4907d683694d69c359fae29df32ebe41c19e7ed08a3ff57d083.bin",
+      "bytes": 102400,
+      "sha256": "994a415d157ec4907d683694d69c359fae29df32ebe41c19e7ed08a3ff57d083"
+    },
+    {
+      "service": "producer immutable metadata region5",
+      "role": "layer1:role0:native40bit metadata",
+      "path": "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/blobs/2d69d0b3a515d788c6edfde1ca3e5960eb8d29630c11b273e9ac0607b61a80d9.bin",
+      "bytes": 1600,
+      "sha256": "2d69d0b3a515d788c6edfde1ca3e5960eb8d29630c11b273e9ac0607b61a80d9"
+    },
+    {
+      "service": "producer source fixed coefficient rows",
+      "role": "layer1:role1:native comparison dense",
+      "path": "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/blobs/4bcdce10a9f0161acf1a5a68eea0fae9817b64192815b484af5a6bdd2a40df45.bin",
+      "bytes": 102400,
+      "sha256": "4bcdce10a9f0161acf1a5a68eea0fae9817b64192815b484af5a6bdd2a40df45"
+    },
+    {
+      "service": "producer immutable metadata region5",
+      "role": "layer1:role1:native40bit metadata",
+      "path": "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/blobs/79e6a5ed40d602a7c6ef824b20e729b7fbe0eab894d2086c6e34b06dc256b54f.bin",
+      "bytes": 1600,
+      "sha256": "79e6a5ed40d602a7c6ef824b20e729b7fbe0eab894d2086c6e34b06dc256b54f"
+    },
+    {
+      "service": "producer source fixed coefficient rows",
+      "role": "layer2:role0:native comparison dense",
+      "path": "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/blobs/9ba8e640f65b11c475ab6a3fc4463d855685a4e4caeb707aafad3410129813f1.bin",
+      "bytes": 102400,
+      "sha256": "9ba8e640f65b11c475ab6a3fc4463d855685a4e4caeb707aafad3410129813f1"
+    },
+    {
+      "service": "producer immutable metadata region5",
+      "role": "layer2:role0:native40bit metadata",
+      "path": "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/blobs/9d4c987cc77d7a3df11ad8fa03adaa349fe7fb6aa6c4bb5752aadb0b6b25aaac.bin",
+      "bytes": 1600,
+      "sha256": "9d4c987cc77d7a3df11ad8fa03adaa349fe7fb6aa6c4bb5752aadb0b6b25aaac"
+    },
+    {
+      "service": "producer source fixed coefficient rows",
+      "role": "layer2:role1:native comparison dense",
+      "path": "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/blobs/e96b7f7f8dbb7f499b28284407873fd9896596a703578f5b2e1f76e3c661ff75.bin",
+      "bytes": 102400,
+      "sha256": "e96b7f7f8dbb7f499b28284407873fd9896596a703578f5b2e1f76e3c661ff75"
+    },
+    {
+      "service": "producer immutable metadata region5",
+      "role": "layer2:role1:native40bit metadata",
+      "path": "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/blobs/fd0ab2a4aa7b26c99925082e133af168be7cb4827e1e211bc4eac300e0834bef.bin",
+      "bytes": 1600,
+      "sha256": "fd0ab2a4aa7b26c99925082e133af168be7cb4827e1e211bc4eac300e0834bef"
+    },
+    {
+      "service": "producer source fixed coefficient rows",
+      "role": "layer3:role0:native comparison dense",
+      "path": "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/blobs/4a1308d817f9f29db163d6f70c0bedaa434d88e1539b989c83494dc3c2ae2a90.bin",
+      "bytes": 102400,
+      "sha256": "4a1308d817f9f29db163d6f70c0bedaa434d88e1539b989c83494dc3c2ae2a90"
+    },
+    {
+      "service": "producer immutable metadata region5",
+      "role": "layer3:role0:native40bit metadata",
+      "path": "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/blobs/a04e3158fc18b92f36a3954e2493c511f81d187c61dceed2bc441e3d9c7bbd2d.bin",
+      "bytes": 1600,
+      "sha256": "a04e3158fc18b92f36a3954e2493c511f81d187c61dceed2bc441e3d9c7bbd2d"
+    },
+    {
+      "service": "producer source fixed coefficient rows",
+      "role": "layer3:role1:native comparison dense",
+      "path": "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/blobs/787c39111a7c48e8e83a77b4c5d9efd97de1cef927ec7add1ef2d6da2c6a3e1e.bin",
+      "bytes": 102400,
+      "sha256": "787c39111a7c48e8e83a77b4c5d9efd97de1cef927ec7add1ef2d6da2c6a3e1e"
+    },
+    {
+      "service": "producer immutable metadata region5",
+      "role": "layer3:role1:native40bit metadata",
+      "path": "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/blobs/c75e2a7df115d3f3fffe5d379a483611a9b4f7e092019cd0c1d8a00669cb6f81.bin",
+      "bytes": 1600,
+      "sha256": "c75e2a7df115d3f3fffe5d379a483611a9b4f7e092019cd0c1d8a00669cb6f81"
+    },
+    {
+      "service": "producer source fixed coefficient rows",
+      "role": "layer4:role0:native comparison dense",
+      "path": "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/blobs/fa9f13cc189efaa1249b2f747f792542ecfafdffd0d41f10df8a6aa6b26340c9.bin",
+      "bytes": 102400,
+      "sha256": "fa9f13cc189efaa1249b2f747f792542ecfafdffd0d41f10df8a6aa6b26340c9"
+    },
+    {
+      "service": "producer immutable metadata region5",
+      "role": "layer4:role0:native40bit metadata",
+      "path": "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/blobs/16f16a1d64f2323fced555a5bcda082fd1460e4cc754ecae3fb06772c4b33c8d.bin",
+      "bytes": 1600,
+      "sha256": "16f16a1d64f2323fced555a5bcda082fd1460e4cc754ecae3fb06772c4b33c8d"
+    },
+    {
+      "service": "producer source fixed coefficient rows",
+      "role": "layer4:role1:native comparison dense",
+      "path": "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/blobs/7d724d8f0cbbbaf2d26f7484194b0bfe098808de8967fbf83e212f99a7deeca8.bin",
+      "bytes": 102400,
+      "sha256": "7d724d8f0cbbbaf2d26f7484194b0bfe098808de8967fbf83e212f99a7deeca8"
+    },
+    {
+      "service": "producer immutable metadata region5",
+      "role": "layer4:role1:native40bit metadata",
+      "path": "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/blobs/65d6c4ad57e21680d57c5a86a01670c24fe3f9c13c9a56b8bb9c017064ab3661.bin",
+      "bytes": 1600,
+      "sha256": "65d6c4ad57e21680d57c5a86a01670c24fe3f9c13c9a56b8bb9c017064ab3661"
+    },
+    {
+      "service": "producer source fixed coefficient rows",
+      "role": "layer5:role0:native comparison dense",
+      "path": "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/blobs/46746dfe8ef881b8988a62d69c5e8ad193160287bb14cdd58b9b14d87f29c6ff.bin",
+      "bytes": 102400,
+      "sha256": "46746dfe8ef881b8988a62d69c5e8ad193160287bb14cdd58b9b14d87f29c6ff"
+    },
+    {
+      "service": "producer immutable metadata region5",
+      "role": "layer5:role0:native40bit metadata",
+      "path": "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/blobs/1dfbc6d2c71574c90c573e3cb7386582460e5a5e8ed0fde7ddbac6d65258f68f.bin",
+      "bytes": 1600,
+      "sha256": "1dfbc6d2c71574c90c573e3cb7386582460e5a5e8ed0fde7ddbac6d65258f68f"
+    },
+    {
+      "service": "producer source fixed coefficient rows",
+      "role": "layer5:role1:native comparison dense",
+      "path": "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/blobs/15d9258a6dccda451da2d09d5fdece007959960b8f200a7ebbe47e06859bbc0d.bin",
+      "bytes": 102400,
+      "sha256": "15d9258a6dccda451da2d09d5fdece007959960b8f200a7ebbe47e06859bbc0d"
+    },
+    {
+      "service": "producer immutable metadata region5",
+      "role": "layer5:role1:native40bit metadata",
+      "path": "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/blobs/a1391c04d57ca61abdd4cc4961a52e82543e11938a0190245664606903301af6.bin",
+      "bytes": 1600,
+      "sha256": "a1391c04d57ca61abdd4cc4961a52e82543e11938a0190245664606903301af6"
+    },
+    {
+      "service": "decoder body cross/FF fixed service",
+      "role": "coefficients.bin",
+      "path": "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/cross/coefficients.bin",
+      "bytes": 1228800,
+      "sha256": "f25cb6ca33ef3ee3f92a3b4914c5887333fcfe57dcd440b30f1d8f100a9b4ffc"
+    },
+    {
+      "service": "decoder body cross/FF fixed service",
+      "role": "metadata.bin",
+      "path": "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/cross/metadata.bin",
+      "bytes": 30720,
+      "sha256": "f3a64081de38cbc690725ab8777619994bd87bee54e633f5d3af016c623ff647"
+    },
+    {
+      "service": "decoder body cross/FF fixed service",
+      "role": "up-weights.bin",
+      "path": "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/ff/up-weights.bin",
+      "bytes": 4915200,
+      "sha256": "8d0e7c9cafed76969a965e7a544784922c4fdafd7302e29977ad3bb14545726c"
+    },
+    {
+      "service": "decoder body cross/FF fixed service",
+      "role": "down-weights.bin",
+      "path": "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/ff/down-weights.bin",
+      "bytes": 2457600,
+      "sha256": "25ca57095b7291bf9a86a13afb6736d3c23092eb147eb8f610a93671023cfded"
+    },
+    {
+      "service": "decoder body cross/FF fixed service",
+      "role": "up-metadata.bin",
+      "path": "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/ff/up-metadata.bin",
+      "bytes": 245760,
+      "sha256": "5c5291e55efed87c03ae96239b79b4896480b481aded1e409ad0f306c9f8a8d3"
+    },
+    {
+      "service": "decoder body cross/FF fixed service",
+      "role": "down-metadata.bin",
+      "path": "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/ff/down-metadata.bin",
+      "bytes": 30720,
+      "sha256": "a2068fafd2d22cfb2fd80445f1a292ed3bc1da972f67a5bb0e1371d7853cca0b"
+    },
+    {
+      "service": "compact decoder fixed self service",
+      "role": "coefficients.bin",
+      "path": "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/self/coefficients.bin",
+      "bytes": 2457600,
+      "sha256": "49a95bb8d8f49971e678a260b3ddb19fc94fc9a797c54b38ecba56a0fecd98d3"
+    },
+    {
+      "service": "compact decoder fixed self service",
+      "role": "metadata.bin",
+      "path": "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/self/metadata.bin",
+      "bytes": 61440,
+      "sha256": "bf619c5d7578c78192dbf7564ec7ea5332d6df053e1c33d1a20c1ba05b214a21"
+    },
+    {
+      "service": "decoder learned normalizers",
+      "role": "learned.bin",
+      "path": "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/decoder/learned.bin",
+      "bytes": 30720,
+      "sha256": "f6b4aa30a3c42743a935b7be1b5b9b657cfc92a4bb7056f1ff6e0ddce307c84e"
+    },
+    {
+      "service": "embedding/head shared index image",
+      "role": "indices.bin",
+      "path": "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/head/indices.bin",
+      "bytes": 5242880,
+      "sha256": "b3cc3a45be1e316e00e4683984b3d8b3f9d01e2c54e3b277d16f4da7d841e55d"
+    },
+    {
+      "service": "embedding/head shared book pages",
+      "role": "pages.bin",
+      "path": "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/head/pages.bin",
+      "bytes": 2621440,
+      "sha256": "e85284ed8e21fd7b63b8279eb5b94d730ba6739b2c9fff0a67a53c460d8a9196"
+    },
+    {
+      "path": "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/head/indices.bin",
+      "bytes": 5242880,
+      "sha256": "b3cc3a45be1e316e00e4683984b3d8b3f9d01e2c54e3b277d16f4da7d841e55d",
+      "service": "tied index",
+      "embedding_and_head_shared_once": true
+    },
+    {
+      "path": "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/head/pages.bin",
+      "bytes": 2621440,
+      "sha256": "e85284ed8e21fd7b63b8279eb5b94d730ba6739b2c9fff0a67a53c460d8a9196",
+      "service": "tied book",
+      "embedding_and_head_shared_once": true
+    },
+    {
+      "service": "producer fixed positions",
+      "role": "native source_position word image",
+      "path": "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/blobs/954bd3f6743402976b17fe2322396dc7be680423e8865f6538b6c807940d5f15.bin",
+      "bytes": 1310720,
+      "sha256": "954bd3f6743402976b17fe2322396dc7be680423e8865f6538b6c807940d5f15"
+    }
+  ],
+  "remaining_host_services": [
+    "frontend immutable scalar regions0,1,4,5,8",
+    "encoder immutable memory regions4..12",
+    "encoder QKV head/O fixed rows",
+    "producer fixed positions",
+    "decoder body cross/FF fixed service",
+    "compact decoder fixed self service"
+  ],
+  "arithmetic_routing_proposal": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/experiments/chip-integration-20261012-Q8-shared-products-shiftadd-source-v1/proposal.md",
+  "initial_POR": "Separate bank/history/producer/metadata/KV/tablePOR input authority at initial reset only; payload reset/seed not implied. Warmreset actualparentfence and retainedclockneed have distinct live response semantics.",
+  "ports_actual_inventory": "actual-module-ports.json",
+  "native_capacity_not_physical_area": true,
+  "control_payloads_not_weight_product_fabric": true,
+  "physical_limits": "Finite isolatedarray/sourceRC tests do not prove actualfrontend187.6MHz demand, fullmacro/decoder/clock/network/180nm/subW. OriginalFP32frontend read+FMA order unchanged. Q8helperSOURCE candidate no area/power/cycleclaim.",
+  "current_closed_peer": {
+    "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/experiments/chip-integration-20261012-learned-fulltables-v3-numerical-closed-peer-v1/review.json",
+    "sha256": "3a83559e9e4580f1e294d196beab3345d1ba719bb8642f1623f2db9e899d0006"
+  },
+  "current_measured_conservation": {
+    "producer_statistics": {
+      "jobs": 5,
+      "faults": 0,
+      "resets": 0,
+      "starts": 5,
+      "epochs": 5,
+      "layer_releases": 30,
+      "checks": 10556970,
+      "logits": 163840,
+      "body_requests": 1392000,
+      "body_replies": 1392000,
+      "body_extras": 0,
+      "compact_fixed_requests": 787200,
+      "compact_fixed_replies": 787200,
+      "compact_fixed_extras": 0,
+      "compact_memory_requests": 1650,
+      "compact_memory_replies": 1650,
+      "compact_memory_extras": 0,
+      "packet_checks": 5280,
+      "prefix_checks": 2640,
+      "fixed_drain_waits": 0,
+      "memory_drain_waits": 0,
+      "terminal_preoffers": 0,
+      "terminal_orphans": 0,
+      "clocks": 312578648
+    },
+    "whole": {
+      "tokens": 5,
+      "logits": 163840,
+      "actual_encoded_packets": 2560,
+      "actual_encoded_ACKs": 2560,
+      "host_encoded_feeds": 0,
+      "frames": 64,
+      "chunks": 16,
+      "features": 20480,
+      "encoded_values": 20480,
+      "encoder_layers": 6,
+      "source_packets": 2560,
+      "source_host_feeds": 0,
+      "common_clocks": 312578649,
+      "encoder_clocks": 55302920,
+      "frontend_checks": 368640,
+      "encoder_write_checks": 849920,
+      "encoder_read_checks": 1935360
+    },
+    "conservation": {
+      "frontend_requests": 85064960,
+      "frontend_replies": 85064960,
+      "copier_requests": 20480,
+      "copier_replies": 20480,
+      "encoder_requests": 2295680,
+      "encoder_replies": 2295680,
+      "head_requests": 368640,
+      "head_replies": 368640,
+      "O_requests": 15360,
+      "O_replies": 15360,
+      "flags": 1
+    },
+    "onboard_learned_conservation": {
+      "offers": 9600,
+      "ACKs": 9600,
+      "native_rows": 9600,
+      "native_words": 38400,
+      "owner": 0,
+      "idle": 1,
+      "fault": 0,
+      "host_response_feeds": 0
+    },
+    "onboard_frontend_conservation": {
+      "requests": 29344000,
+      "replies": 29344000,
+      "initialized_reads": 28913920,
+      "due_writes": 430080,
+      "write_ACKs": 430080,
+      "alias_ACKs": 20480,
+      "serialized_values": 20480,
+      "idle": 1,
+      "fault": 0,
+      "need_clock": 0,
+      "host_mutable_response_feeds": 0
+    },
+    "onboard_conservation": {
+      "mutable_requests": 348160,
+      "mutable_replies": 348160,
+      "mutable_response_packets": 348160,
+      "mutable_response_checks": 2785280,
+      "alias_requests": 2560,
+      "alias_replies": 2560,
+      "alias_serialized_values": 20480,
+      "bank_idle": 1,
+      "bank_fault": 0,
+      "router_fault": 0
+    },
+    "onboard_history_conservation": {
+      "requests": 1650,
+      "replies": 1650,
+      "initialized_reads": 990,
+      "initialized_commit_packets": 330,
+      "published_prefix": 5,
+      "idle": 1,
+      "fault": 0
+    },
+    "onboard_producer_conservation": {
+      "requests": 363840,
+      "replies": 363840,
+      "initialized_reads": 199680,
+      "initialized_write_ACKs": 159360,
+      "idle": 1,
+      "fault": 0
+    },
+    "onboard_metadata_conservation": {
+      "requests": 4800,
+      "replies": 4800,
+      "actual_packet_checks": 4800,
+      "idle": 1,
+      "fault": 0,
+      "need_clock": 0,
+      "host_response_feeds": 0
+    },
+    "onboard_KV_book_conservation": {
+      "requests": 153600,
+      "replies": 153600,
+      "row_checks": 153600,
+      "byte_checks": 49152000,
+      "idle": 1,
+      "fault": 0,
+      "need_clock": 0,
+      "host_response_feeds": 0
+    },
+    "onboard_tied_table_conservation": {
+      "index_requests": 206400,
+      "index_replies": 206400,
+      "index_packet_checks": 206400,
+      "index_word_checks": 6604800,
+      "embedding_requests": 25,
+      "embedding_beats": 400,
+      "head_starts": 25600,
+      "head_beats": 409600,
+      "head_commits": 25600,
+      "book_word_checks": 3280000,
+      "idle": 1,
+      "fault": 0,
+      "need_clock": 0,
+      "owner": 0,
+      "host_response_feeds": 0
+    },
+    "source_conservation": {
+      "setups": 1,
+      "requests": 363840,
+      "replies": 363840,
+      "extras": 0,
+      "fixed_requests": 153600,
+      "fixed_replies": 153600,
+      "position_requests": 2560,
+      "position_replies": 2560,
+      "fresh_offers": 2560,
+      "fresh_retired": 2560,
+      "encoded_writes": 2560,
+      "adapter_writes": 2560,
+      "code_writes": 640,
+      "KV_writes": 153600,
+      "code_reads": 38400,
+      "packets": 153600,
+      "scalars": 1228800,
+      "K_checks": 614400,
+      "V_checks": 614400,
+      "holds": 0,
+      "stale_waits": 0,
+      "late_refusals": 0,
+      "code_invariance": 30,
+      "source_releases": 1
+    },
+    "control_scope": {
+      "host_token_starts": 0,
+      "host_winner_feedback": 0,
+      "host_source_release": 0,
+      "host_encoder_release": 0,
+      "history_cap": 66,
+      "old_wrong_release_test_rerun": 0,
+      "connected_negative_suite_required": 1,
+      "host_encoder_mutable_reply_feeds": 0,
+      "host_encoded_alias_reply_feeds": 0
+    },
+    "actual_outputs": {
+      "actual-frontend-features.bin": {
+        "path": "/Users/sanju/.local/state/routevoice-internal-runs/20261012/frontend-learned-fulltables-numerical-run-v3/actual/actual-frontend-features.bin",
+        "bytes": 81920,
+        "sha256": "4a5a44a877b36db4ef695fe237076798720c52be88387e7c1d5cf34491e40294"
+      },
+      "actual-encoded.bin": {
+        "path": "/Users/sanju/.local/state/routevoice-internal-runs/20261012/frontend-learned-fulltables-numerical-run-v3/actual/actual-encoded.bin",
+        "bytes": 81920,
+        "sha256": "45af702c1fd64ef05d6abd95bb3b5406371091ffda8c8502d3dac006178b2b37"
+      },
+      "actual-adapter.bin": {
+        "path": "/Users/sanju/.local/state/routevoice-internal-runs/20261012/frontend-learned-fulltables-numerical-run-v3/actual/actual-adapter.bin",
+        "bytes": 81920,
+        "sha256": "bf057ae0550a7c89c3ad6ef5bae97629c761f0d6d1fd62f00617d9b0d235108c"
+      },
+      "actual-codes.bin": {
+        "path": "/Users/sanju/.local/state/routevoice-internal-runs/20261012/frontend-learned-fulltables-numerical-run-v3/actual/actual-codes.bin",
+        "bytes": 20480,
+        "sha256": "61ca856debf4453d04e5add275d987ecbce12d47a39135c72e38a53d3c07f638"
+      },
+      "actual-layer0-k_cross.bin": {
+        "path": "/Users/sanju/.local/state/routevoice-internal-runs/20261012/frontend-learned-fulltables-numerical-run-v3/actual/actual-layer0-k_cross.bin",
+        "bytes": 81920,
+        "sha256": "07e3fe48e10a178af8ba19db17de2c5bb7f6ebbc7372a5bf2b4f63a5a89821c8"
+      },
+      "actual-layer0-v_cross.bin": {
+        "path": "/Users/sanju/.local/state/routevoice-internal-runs/20261012/frontend-learned-fulltables-numerical-run-v3/actual/actual-layer0-v_cross.bin",
+        "bytes": 81920,
+        "sha256": "e7682674e16dbcb4eeec611dd3ed1ac7d876d9066a76319996afdf90c311f984"
+      },
+      "actual-layer1-k_cross.bin": {
+        "path": "/Users/sanju/.local/state/routevoice-internal-runs/20261012/frontend-learned-fulltables-numerical-run-v3/actual/actual-layer1-k_cross.bin",
+        "bytes": 81920,
+        "sha256": "dd93c06393dce87aef0ed4cd94944df7d6c33610b543af8ed4edad969d1ae614"
+      },
+      "actual-layer1-v_cross.bin": {
+        "path": "/Users/sanju/.local/state/routevoice-internal-runs/20261012/frontend-learned-fulltables-numerical-run-v3/actual/actual-layer1-v_cross.bin",
+        "bytes": 81920,
+        "sha256": "94b6b2ad276a811f2684436a4263f205c54bc567ce0461bd3219a38221f6cf56"
+      },
+      "actual-layer2-k_cross.bin": {
+        "path": "/Users/sanju/.local/state/routevoice-internal-runs/20261012/frontend-learned-fulltables-numerical-run-v3/actual/actual-layer2-k_cross.bin",
+        "bytes": 81920,
+        "sha256": "38c209060c473988b05d74ea39c00aba54c04957ad3cfdf0ab8fb4ac3092d7b4"
+      },
+      "actual-layer2-v_cross.bin": {
+        "path": "/Users/sanju/.local/state/routevoice-internal-runs/20261012/frontend-learned-fulltables-numerical-run-v3/actual/actual-layer2-v_cross.bin",
+        "bytes": 81920,
+        "sha256": "3d777bbc3181072c7f081d082b4896f69c591fdd39a51c7c6e5e56cc2dad4aaa"
+      },
+      "actual-layer3-k_cross.bin": {
+        "path": "/Users/sanju/.local/state/routevoice-internal-runs/20261012/frontend-learned-fulltables-numerical-run-v3/actual/actual-layer3-k_cross.bin",
+        "bytes": 81920,
+        "sha256": "d257af09908047949d6449788cd2034aaa0660f14f4c62bd213c56bea5188f73"
+      },
+      "actual-layer3-v_cross.bin": {
+        "path": "/Users/sanju/.local/state/routevoice-internal-runs/20261012/frontend-learned-fulltables-numerical-run-v3/actual/actual-layer3-v_cross.bin",
+        "bytes": 81920,
+        "sha256": "819dc71ef8571c942e45b7fbf153d46d8dbf83c21dd733d8c8e580e65da0278d"
+      },
+      "actual-layer4-k_cross.bin": {
+        "path": "/Users/sanju/.local/state/routevoice-internal-runs/20261012/frontend-learned-fulltables-numerical-run-v3/actual/actual-layer4-k_cross.bin",
+        "bytes": 81920,
+        "sha256": "1863cfa983f4b2c62fdece75669c8480bd1624f5d7528bdf350ddf8e6239bae8"
+      },
+      "actual-layer4-v_cross.bin": {
+        "path": "/Users/sanju/.local/state/routevoice-internal-runs/20261012/frontend-learned-fulltables-numerical-run-v3/actual/actual-layer4-v_cross.bin",
+        "bytes": 81920,
+        "sha256": "93fc37979e89ee1766870a9de5e620d5638fa1e115c76f52467f0100c9228cee"
+      },
+      "actual-layer5-k_cross.bin": {
+        "path": "/Users/sanju/.local/state/routevoice-internal-runs/20261012/frontend-learned-fulltables-numerical-run-v3/actual/actual-layer5-k_cross.bin",
+        "bytes": 81920,
+        "sha256": "9f70c21b0ec089327f37c416b87bb6d2826c291203c70296ae55d420c7d14c04"
+      },
+      "actual-layer5-v_cross.bin": {
+        "path": "/Users/sanju/.local/state/routevoice-internal-runs/20261012/frontend-learned-fulltables-numerical-run-v3/actual/actual-layer5-v_cross.bin",
+        "bytes": 81920,
+        "sha256": "392a6dd463829d656f0206ce370cf0f20685f99d18d51b1ba097137c84a14a45"
+      },
+      "actual-winning-tokens.bin": {
+        "path": "/Users/sanju/.local/state/routevoice-internal-runs/20261012/frontend-learned-fulltables-numerical-run-v3/actual/actual-winning-tokens.bin",
+        "bytes": 20,
+        "sha256": "db5ba30fbd619dd81f27fe55489118a962fa204058eecb7fb1b77bc8a416f537"
+      },
+      "actual-final-rows.bin": {
+        "path": "/Users/sanju/.local/state/routevoice-internal-runs/20261012/frontend-learned-fulltables-numerical-run-v3/actual/actual-final-rows.bin",
+        "bytes": 6400,
+        "sha256": "42699492fd8558a4189feef339ec607312e7043cdc4cce4992b18c2415f90d77"
+      }
+    }
+  },
+  "current_header_pins": {
+    "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/experiments/chip-integration-20261012-frontend-learned-norm-connected-source-v3/frontend_services.hpp": "014708029a0dd6ae7bc0a3e20931ca04c3853389c62cb802d1eb13169d0ca422",
+    "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/experiments/chip-integration-20261012-frontend-learned-norm-connected-source-v3/encoder_services.hpp": "e2e45e12f1f4e62236548229735b1d9a019455a155dda73d47e21591554ba921",
+    "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/experiments/chip-integration-20261012-frontend-learned-norm-connected-source-v3/producer_services.hpp": "4ee34abb82f760a0321b9954f04c20ffebf39c6171beba1d43e486d3b6ad146a",
+    "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/experiments/chip-integration-20261012-frontend-learned-norm-connected-source-v3/taalas_decoder_token_compact_services.hpp": "4ff7c5b39f1f823c1e589f88d5268bf5013d2b38f21456f7e82954830e8a65f3",
+    "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/experiments/chip-integration-20261012-frontend-learned-norm-connected-source-v3/taalas_adapter_session_compact_token_services_f500_v1.hpp": "1bb64dcb65a808c79d10d827f14217b297ac0faaf6e8adb78d4e594f4016ddaf",
+    "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/experiments/chip-integration-20261012-frontend-learned-norm-connected-source-v3/learned_observer.hpp": "70badf2fb73624174684bd4626efa4a5742feffad4d233ed41b3e96a7b2157ef"
+  },
+  "remaining_host_native_bytes_inventory_sum": 28641280,
+  "unique_native_images": {
+    "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/frontend/shared/linear_weights.bin": {
+      "bytes": 102400,
+      "sha256": "1b14d3d00a9d640726adb7983f7f85111d5a70468c5c583b14621d15fb2d919f"
+    },
+    "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/frontend/shared/conv1_weights.bin": {
+      "bytes": 4096000,
+      "sha256": "f78e8257037f675b95bac352e500ad6678b2b932c15763c034d861a633b8f521"
+    },
+    "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/frontend/shared/conv1_bias.bin": {
+      "bytes": 2560,
+      "sha256": "7ad3904e16f8466edca6996a3dabde88f2eefc1a0ad023d48c2d39a5b4973ee2"
+    },
+    "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/frontend/shared/conv2_weights.bin": {
+      "bytes": 4096000,
+      "sha256": "13ef6595619a6c8b2fe5a6dc7b4078a44d48a0f113c8156c8bf54d7e0fa87997"
+    },
+    "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/frontend/shared/conv2_bias.bin": {
+      "bytes": 1280,
+      "sha256": "355244333061a76f48ac524104bb0e6bcf433546bac68adbd8231addfca062a5"
+    },
+    "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/blobs/a1ca9fd44d2abe93d9aaa781dcfa760d99899dad5a5dd47936ea918735e22afe.bin": {
+      "bytes": 409600,
+      "sha256": "a1ca9fd44d2abe93d9aaa781dcfa760d99899dad5a5dd47936ea918735e22afe"
+    },
+    "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/blobs/d8f94b4e696815810c5642f9b04c764ea8b43bb77fce56022d2c3fe0d40148e7.bin": {
+      "bytes": 10240,
+      "sha256": "d8f94b4e696815810c5642f9b04c764ea8b43bb77fce56022d2c3fe0d40148e7"
+    },
+    "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/blobs/04ccc843b95d47608f5f48315a8300079e9f7bff0868b27d1bc4bcd2c221d8c6.bin": {
+      "bytes": 409600,
+      "sha256": "04ccc843b95d47608f5f48315a8300079e9f7bff0868b27d1bc4bcd2c221d8c6"
+    },
+    "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/blobs/604de1960c5058fa46e515068745ca2c3074fbf5d25ed358e39741062bf5081e.bin": {
+      "bytes": 20480,
+      "sha256": "604de1960c5058fa46e515068745ca2c3074fbf5d25ed358e39741062bf5081e"
+    },
+    "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/blobs/3bdff3a2320a13083aafdb04a166061bd014226698421d6533a59fd9ee67f8a0.bin": {
+      "bytes": 409600,
+      "sha256": "3bdff3a2320a13083aafdb04a166061bd014226698421d6533a59fd9ee67f8a0"
+    },
+    "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/blobs/c3cd342f6ec1eba4f2784fabe87802291c2d61b424a672f7277ca41029d278ec.bin": {
+      "bytes": 5120,
+      "sha256": "c3cd342f6ec1eba4f2784fabe87802291c2d61b424a672f7277ca41029d278ec"
+    },
+    "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/blobs/1c9718a5fc5a55377c4ce7b89040463eaf5cca262c8e6ea9664a9ee07b8af961.bin": {
+      "bytes": 1280,
+      "sha256": "1c9718a5fc5a55377c4ce7b89040463eaf5cca262c8e6ea9664a9ee07b8af961"
+    },
+    "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/blobs/ae21dd6d5f54cf0f5f31bd525ead2010c44860b883670977cfd22594263ad012.bin": {
+      "bytes": 1280,
+      "sha256": "ae21dd6d5f54cf0f5f31bd525ead2010c44860b883670977cfd22594263ad012"
+    },
+    "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/blobs/75304a94acf49d94e873042e8bdddad11e9e31375abd083c2f111f687cff051b.bin": {
+      "bytes": 409600,
+      "sha256": "75304a94acf49d94e873042e8bdddad11e9e31375abd083c2f111f687cff051b"
+    },
+    "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/blobs/67b5015ccd9e5feca53f8ed63c316b5b7aca5a2b907ba516dfe18f049b372953.bin": {
+      "bytes": 10240,
+      "sha256": "67b5015ccd9e5feca53f8ed63c316b5b7aca5a2b907ba516dfe18f049b372953"
+    },
+    "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/blobs/ad3a261720cc779b01522b13a25621d19742f1788e1a2395e860eaa2273ce554.bin": {
+      "bytes": 409600,
+      "sha256": "ad3a261720cc779b01522b13a25621d19742f1788e1a2395e860eaa2273ce554"
+    },
+    "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/blobs/fb16d40bca9cdb04768f84f9057dc79ed21939cce5385705373f01347651529d.bin": {
+      "bytes": 20480,
+      "sha256": "fb16d40bca9cdb04768f84f9057dc79ed21939cce5385705373f01347651529d"
+    },
+    "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/blobs/817d9cac3aaf884b5dd5e9ec14abf89f6cc83274ecc22b0a13e52d0dac76bde3.bin": {
+      "bytes": 409600,
+      "sha256": "817d9cac3aaf884b5dd5e9ec14abf89f6cc83274ecc22b0a13e52d0dac76bde3"
+    },
+    "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/blobs/b7d245cc39d1ba82884ed261fc32b396b9c7097938f79fae9cdf6ec85d004170.bin": {
+      "bytes": 5120,
+      "sha256": "b7d245cc39d1ba82884ed261fc32b396b9c7097938f79fae9cdf6ec85d004170"
+    },
+    "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/blobs/0317789614b43091c31a0346e360d44f0d1581ac57baa45954116fdbd9c93607.bin": {
+      "bytes": 1280,
+      "sha256": "0317789614b43091c31a0346e360d44f0d1581ac57baa45954116fdbd9c93607"
+    },
+    "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/blobs/f3083765b8ae59e442bbf30aa1126afa6ada098bd4baec108ea4405a5dcff19d.bin": {
+      "bytes": 1280,
+      "sha256": "f3083765b8ae59e442bbf30aa1126afa6ada098bd4baec108ea4405a5dcff19d"
+    },
+    "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/blobs/1f4285738198c3c74d73face83830878c19fc3387f08a398d84382fbaa4b94a5.bin": {
+      "bytes": 409600,
+      "sha256": "1f4285738198c3c74d73face83830878c19fc3387f08a398d84382fbaa4b94a5"
+    },
+    "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/blobs/3fb5af1abc32ea004abd95d53825dfbee14a6db371b2dc5b4b21f4a7a256038f.bin": {
+      "bytes": 10240,
+      "sha256": "3fb5af1abc32ea004abd95d53825dfbee14a6db371b2dc5b4b21f4a7a256038f"
+    },
+    "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/blobs/b617833ed4fd3ced6e89f9a65381b1e8857ea2c81b612134a400518c71859042.bin": {
+      "bytes": 409600,
+      "sha256": "b617833ed4fd3ced6e89f9a65381b1e8857ea2c81b612134a400518c71859042"
+    },
+    "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/blobs/2bec0589777649c0bf9fd7c5481b4820b7287c5b45c598d579f7cf3f7c1ed9f3.bin": {
+      "bytes": 20480,
+      "sha256": "2bec0589777649c0bf9fd7c5481b4820b7287c5b45c598d579f7cf3f7c1ed9f3"
+    },
+    "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/blobs/faf5d54355ba27429d1f8bf48197bdf0f5f1d60f3390fd93c89543dfdc304bc4.bin": {
+      "bytes": 409600,
+      "sha256": "faf5d54355ba27429d1f8bf48197bdf0f5f1d60f3390fd93c89543dfdc304bc4"
+    },
+    "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/blobs/9236fbd08c4b48841dcdf0045b2e0b603c2dc512bb1aa578429323c662cb3f26.bin": {
+      "bytes": 5120,
+      "sha256": "9236fbd08c4b48841dcdf0045b2e0b603c2dc512bb1aa578429323c662cb3f26"
+    },
+    "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/blobs/8f622966172e0230938028d194470c05dd3387e8bd77da8e89aa15350e5c38a0.bin": {
+      "bytes": 1280,
+      "sha256": "8f622966172e0230938028d194470c05dd3387e8bd77da8e89aa15350e5c38a0"
+    },
+    "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/blobs/7cf4d980cdd247d4962f628fe03b490f2f0196536fb58dc58bd81d839e6c31ed.bin": {
+      "bytes": 1280,
+      "sha256": "7cf4d980cdd247d4962f628fe03b490f2f0196536fb58dc58bd81d839e6c31ed"
+    },
+    "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/blobs/bba39bb532d5a93636b0d79d600979bcd7b20ec8fd457f25f6583460b3159626.bin": {
+      "bytes": 409600,
+      "sha256": "bba39bb532d5a93636b0d79d600979bcd7b20ec8fd457f25f6583460b3159626"
+    },
+    "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/blobs/bb7c6cc708a7341b2f5767f0396530ea38515dbcbe0c5bc6616e95dc55fa9145.bin": {
+      "bytes": 10240,
+      "sha256": "bb7c6cc708a7341b2f5767f0396530ea38515dbcbe0c5bc6616e95dc55fa9145"
+    },
+    "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/blobs/b05f82952dcb7758395c7e95d303d31f0f251cf3b58b0a020cbfd9ddc616786b.bin": {
+      "bytes": 409600,
+      "sha256": "b05f82952dcb7758395c7e95d303d31f0f251cf3b58b0a020cbfd9ddc616786b"
+    },
+    "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/blobs/cda61efca3a18480bdd536bd4d75ba41369ffc3bbfa32a479e1833e53ebb5b02.bin": {
+      "bytes": 20480,
+      "sha256": "cda61efca3a18480bdd536bd4d75ba41369ffc3bbfa32a479e1833e53ebb5b02"
+    },
+    "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/blobs/e7a1a820b64645572ec9ad93a921c2d357fa0b3028052cd2205ca31f5e62003e.bin": {
+      "bytes": 409600,
+      "sha256": "e7a1a820b64645572ec9ad93a921c2d357fa0b3028052cd2205ca31f5e62003e"
+    },
+    "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/blobs/722a990357346bef9529334ca13ccaa1a503feb310dfa117d09d20561dbfecf3.bin": {
+      "bytes": 5120,
+      "sha256": "722a990357346bef9529334ca13ccaa1a503feb310dfa117d09d20561dbfecf3"
+    },
+    "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/blobs/b2e782aa684fd83b76ad3557eb9fb9ecf3f2d3e4f8fb53033cdcc9e858087f7f.bin": {
+      "bytes": 1280,
+      "sha256": "b2e782aa684fd83b76ad3557eb9fb9ecf3f2d3e4f8fb53033cdcc9e858087f7f"
+    },
+    "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/blobs/c165e59404d6054b0c73ea104ec61c11ee580d4c613b4b6357a81a8568ed14ee.bin": {
+      "bytes": 1280,
+      "sha256": "c165e59404d6054b0c73ea104ec61c11ee580d4c613b4b6357a81a8568ed14ee"
+    },
+    "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/blobs/647f5983449c14a034cc6028d6a99cde601247cfc0d2ed8e9114472e933f5209.bin": {
+      "bytes": 409600,
+      "sha256": "647f5983449c14a034cc6028d6a99cde601247cfc0d2ed8e9114472e933f5209"
+    },
+    "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/blobs/1ad26c81b839c76308f05c04cd8e4327747f289f828aef768be8d126cf921e2e.bin": {
+      "bytes": 10240,
+      "sha256": "1ad26c81b839c76308f05c04cd8e4327747f289f828aef768be8d126cf921e2e"
+    },
+    "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/blobs/9b2b2936f2fdb6f3776d1e3f25441598beb76942a8d793f05d03590a652e0b4f.bin": {
+      "bytes": 409600,
+      "sha256": "9b2b2936f2fdb6f3776d1e3f25441598beb76942a8d793f05d03590a652e0b4f"
+    },
+    "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/blobs/b9c443065d36b802db7c13ce2478dc0e50f0a3ba52657ebc31afeb54a51e66b5.bin": {
+      "bytes": 20480,
+      "sha256": "b9c443065d36b802db7c13ce2478dc0e50f0a3ba52657ebc31afeb54a51e66b5"
+    },
+    "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/blobs/cc20a9c005aabe5d21ace899b8ae7e4b300a38014996853c6ea6402caa319fa4.bin": {
+      "bytes": 409600,
+      "sha256": "cc20a9c005aabe5d21ace899b8ae7e4b300a38014996853c6ea6402caa319fa4"
+    },
+    "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/blobs/b49102388d657411598d93d201b605f2d4427a27f447d1b9dd2915bde711630a.bin": {
+      "bytes": 5120,
+      "sha256": "b49102388d657411598d93d201b605f2d4427a27f447d1b9dd2915bde711630a"
+    },
+    "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/blobs/45218900600550bd2316f9b2d2f69d92e00e88b045514657edb4723fe03b93da.bin": {
+      "bytes": 1280,
+      "sha256": "45218900600550bd2316f9b2d2f69d92e00e88b045514657edb4723fe03b93da"
+    },
+    "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/blobs/31a5128269ed01f3c408d26ee591af3ba394dbfa90067ad59f7f078f7f24e2ba.bin": {
+      "bytes": 1280,
+      "sha256": "31a5128269ed01f3c408d26ee591af3ba394dbfa90067ad59f7f078f7f24e2ba"
+    },
+    "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/blobs/e01a719a417d3b45aae9a294295e262c31433c586291d30c286953432433e2e4.bin": {
+      "bytes": 409600,
+      "sha256": "e01a719a417d3b45aae9a294295e262c31433c586291d30c286953432433e2e4"
+    },
+    "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/blobs/c158bd73fe121c843ff6fd8bae0e402687a797613aba92c0eaef03f7391747bb.bin": {
+      "bytes": 10240,
+      "sha256": "c158bd73fe121c843ff6fd8bae0e402687a797613aba92c0eaef03f7391747bb"
+    },
+    "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/blobs/bb33a60c97a68e644d152b4843c5e61accc082fab600c1ea724962df4d5f6a0d.bin": {
+      "bytes": 409600,
+      "sha256": "bb33a60c97a68e644d152b4843c5e61accc082fab600c1ea724962df4d5f6a0d"
+    },
+    "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/blobs/ebef85f94a742753d2ef4960a14cd59d75a12789f65b0b3d7345ddfd245b7a14.bin": {
+      "bytes": 20480,
+      "sha256": "ebef85f94a742753d2ef4960a14cd59d75a12789f65b0b3d7345ddfd245b7a14"
+    },
+    "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/blobs/aa40a0856ec88f1fee727ac6e694b080f62908c1d0bb3e5c8bf5303748532823.bin": {
+      "bytes": 409600,
+      "sha256": "aa40a0856ec88f1fee727ac6e694b080f62908c1d0bb3e5c8bf5303748532823"
+    },
+    "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/blobs/164357bca42af5074276172aef4fa944fba42819b9a8ab96d45d8f6a7b39e92b.bin": {
+      "bytes": 5120,
+      "sha256": "164357bca42af5074276172aef4fa944fba42819b9a8ab96d45d8f6a7b39e92b"
+    },
+    "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/blobs/fb93b814fe1ca1ad66ed0423104dc62ba70c8900dc995e5f1e133d64927a4e25.bin": {
+      "bytes": 1280,
+      "sha256": "fb93b814fe1ca1ad66ed0423104dc62ba70c8900dc995e5f1e133d64927a4e25"
+    },
+    "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/blobs/f5da59bfaa90887fd42315d6ba7391880f21495ab01f45c2bc0363271d888ccf.bin": {
+      "bytes": 1280,
+      "sha256": "f5da59bfaa90887fd42315d6ba7391880f21495ab01f45c2bc0363271d888ccf"
+    },
+    "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/blobs/2cf770f86f43c7ec1e050ae5c5e2dcc757998bbc764f15dbe7272888a45e08e9.bin": {
+      "bytes": 1280,
+      "sha256": "2cf770f86f43c7ec1e050ae5c5e2dcc757998bbc764f15dbe7272888a45e08e9"
+    },
+    "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/blobs/954bd3f6743402976b17fe2322396dc7be680423e8865f6538b6c807940d5f15.bin": {
+      "bytes": 1310720,
+      "sha256": "954bd3f6743402976b17fe2322396dc7be680423e8865f6538b6c807940d5f15"
+    },
+    "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/blobs/9a154266927c2d60fb35b270f5282f39b42844d79e5f51fc0ef3338f7da4b8be.bin": {
+      "bytes": 102400,
+      "sha256": "9a154266927c2d60fb35b270f5282f39b42844d79e5f51fc0ef3338f7da4b8be"
+    },
+    "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/blobs/9f9aead101b9a30ef7d3d34da90642e6e9b2952696f149b2ab7c892e978da838.bin": {
+      "bytes": 1600,
+      "sha256": "9f9aead101b9a30ef7d3d34da90642e6e9b2952696f149b2ab7c892e978da838"
+    },
+    "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/blobs/cb1ad8f93352bc6c0ef19d4b223c2184267fd42b9e0c33970a7f25db1dbfc721.bin": {
+      "bytes": 102400,
+      "sha256": "cb1ad8f93352bc6c0ef19d4b223c2184267fd42b9e0c33970a7f25db1dbfc721"
+    },
+    "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/blobs/1a35a2e1f763b45b5a61f76bbfb205b7a52e65c55afcdf6c173a7631c634a08a.bin": {
+      "bytes": 1600,
+      "sha256": "1a35a2e1f763b45b5a61f76bbfb205b7a52e65c55afcdf6c173a7631c634a08a"
+    },
+    "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/blobs/994a415d157ec4907d683694d69c359fae29df32ebe41c19e7ed08a3ff57d083.bin": {
+      "bytes": 102400,
+      "sha256": "994a415d157ec4907d683694d69c359fae29df32ebe41c19e7ed08a3ff57d083"
+    },
+    "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/blobs/2d69d0b3a515d788c6edfde1ca3e5960eb8d29630c11b273e9ac0607b61a80d9.bin": {
+      "bytes": 1600,
+      "sha256": "2d69d0b3a515d788c6edfde1ca3e5960eb8d29630c11b273e9ac0607b61a80d9"
+    },
+    "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/blobs/4bcdce10a9f0161acf1a5a68eea0fae9817b64192815b484af5a6bdd2a40df45.bin": {
+      "bytes": 102400,
+      "sha256": "4bcdce10a9f0161acf1a5a68eea0fae9817b64192815b484af5a6bdd2a40df45"
+    },
+    "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/blobs/79e6a5ed40d602a7c6ef824b20e729b7fbe0eab894d2086c6e34b06dc256b54f.bin": {
+      "bytes": 1600,
+      "sha256": "79e6a5ed40d602a7c6ef824b20e729b7fbe0eab894d2086c6e34b06dc256b54f"
+    },
+    "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/blobs/9ba8e640f65b11c475ab6a3fc4463d855685a4e4caeb707aafad3410129813f1.bin": {
+      "bytes": 102400,
+      "sha256": "9ba8e640f65b11c475ab6a3fc4463d855685a4e4caeb707aafad3410129813f1"
+    },
+    "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/blobs/9d4c987cc77d7a3df11ad8fa03adaa349fe7fb6aa6c4bb5752aadb0b6b25aaac.bin": {
+      "bytes": 1600,
+      "sha256": "9d4c987cc77d7a3df11ad8fa03adaa349fe7fb6aa6c4bb5752aadb0b6b25aaac"
+    },
+    "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/blobs/e96b7f7f8dbb7f499b28284407873fd9896596a703578f5b2e1f76e3c661ff75.bin": {
+      "bytes": 102400,
+      "sha256": "e96b7f7f8dbb7f499b28284407873fd9896596a703578f5b2e1f76e3c661ff75"
+    },
+    "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/blobs/fd0ab2a4aa7b26c99925082e133af168be7cb4827e1e211bc4eac300e0834bef.bin": {
+      "bytes": 1600,
+      "sha256": "fd0ab2a4aa7b26c99925082e133af168be7cb4827e1e211bc4eac300e0834bef"
+    },
+    "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/blobs/4a1308d817f9f29db163d6f70c0bedaa434d88e1539b989c83494dc3c2ae2a90.bin": {
+      "bytes": 102400,
+      "sha256": "4a1308d817f9f29db163d6f70c0bedaa434d88e1539b989c83494dc3c2ae2a90"
+    },
+    "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/blobs/a04e3158fc18b92f36a3954e2493c511f81d187c61dceed2bc441e3d9c7bbd2d.bin": {
+      "bytes": 1600,
+      "sha256": "a04e3158fc18b92f36a3954e2493c511f81d187c61dceed2bc441e3d9c7bbd2d"
+    },
+    "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/blobs/787c39111a7c48e8e83a77b4c5d9efd97de1cef927ec7add1ef2d6da2c6a3e1e.bin": {
+      "bytes": 102400,
+      "sha256": "787c39111a7c48e8e83a77b4c5d9efd97de1cef927ec7add1ef2d6da2c6a3e1e"
+    },
+    "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/blobs/c75e2a7df115d3f3fffe5d379a483611a9b4f7e092019cd0c1d8a00669cb6f81.bin": {
+      "bytes": 1600,
+      "sha256": "c75e2a7df115d3f3fffe5d379a483611a9b4f7e092019cd0c1d8a00669cb6f81"
+    },
+    "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/blobs/fa9f13cc189efaa1249b2f747f792542ecfafdffd0d41f10df8a6aa6b26340c9.bin": {
+      "bytes": 102400,
+      "sha256": "fa9f13cc189efaa1249b2f747f792542ecfafdffd0d41f10df8a6aa6b26340c9"
+    },
+    "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/blobs/16f16a1d64f2323fced555a5bcda082fd1460e4cc754ecae3fb06772c4b33c8d.bin": {
+      "bytes": 1600,
+      "sha256": "16f16a1d64f2323fced555a5bcda082fd1460e4cc754ecae3fb06772c4b33c8d"
+    },
+    "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/blobs/7d724d8f0cbbbaf2d26f7484194b0bfe098808de8967fbf83e212f99a7deeca8.bin": {
+      "bytes": 102400,
+      "sha256": "7d724d8f0cbbbaf2d26f7484194b0bfe098808de8967fbf83e212f99a7deeca8"
+    },
+    "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/blobs/65d6c4ad57e21680d57c5a86a01670c24fe3f9c13c9a56b8bb9c017064ab3661.bin": {
+      "bytes": 1600,
+      "sha256": "65d6c4ad57e21680d57c5a86a01670c24fe3f9c13c9a56b8bb9c017064ab3661"
+    },
+    "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/blobs/46746dfe8ef881b8988a62d69c5e8ad193160287bb14cdd58b9b14d87f29c6ff.bin": {
+      "bytes": 102400,
+      "sha256": "46746dfe8ef881b8988a62d69c5e8ad193160287bb14cdd58b9b14d87f29c6ff"
+    },
+    "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/blobs/1dfbc6d2c71574c90c573e3cb7386582460e5a5e8ed0fde7ddbac6d65258f68f.bin": {
+      "bytes": 1600,
+      "sha256": "1dfbc6d2c71574c90c573e3cb7386582460e5a5e8ed0fde7ddbac6d65258f68f"
+    },
+    "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/blobs/15d9258a6dccda451da2d09d5fdece007959960b8f200a7ebbe47e06859bbc0d.bin": {
+      "bytes": 102400,
+      "sha256": "15d9258a6dccda451da2d09d5fdece007959960b8f200a7ebbe47e06859bbc0d"
+    },
+    "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/blobs/a1391c04d57ca61abdd4cc4961a52e82543e11938a0190245664606903301af6.bin": {
+      "bytes": 1600,
+      "sha256": "a1391c04d57ca61abdd4cc4961a52e82543e11938a0190245664606903301af6"
+    },
+    "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/cross/coefficients.bin": {
+      "bytes": 1228800,
+      "sha256": "f25cb6ca33ef3ee3f92a3b4914c5887333fcfe57dcd440b30f1d8f100a9b4ffc"
+    },
+    "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/cross/metadata.bin": {
+      "bytes": 30720,
+      "sha256": "f3a64081de38cbc690725ab8777619994bd87bee54e633f5d3af016c623ff647"
+    },
+    "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/ff/up-weights.bin": {
+      "bytes": 4915200,
+      "sha256": "8d0e7c9cafed76969a965e7a544784922c4fdafd7302e29977ad3bb14545726c"
+    },
+    "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/ff/down-weights.bin": {
+      "bytes": 2457600,
+      "sha256": "25ca57095b7291bf9a86a13afb6736d3c23092eb147eb8f610a93671023cfded"
+    },
+    "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/ff/up-metadata.bin": {
+      "bytes": 245760,
+      "sha256": "5c5291e55efed87c03ae96239b79b4896480b481aded1e409ad0f306c9f8a8d3"
+    },
+    "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/ff/down-metadata.bin": {
+      "bytes": 30720,
+      "sha256": "a2068fafd2d22cfb2fd80445f1a292ed3bc1da972f67a5bb0e1371d7853cca0b"
+    },
+    "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/self/coefficients.bin": {
+      "bytes": 2457600,
+      "sha256": "49a95bb8d8f49971e678a260b3ddb19fc94fc9a797c54b38ecba56a0fecd98d3"
+    },
+    "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/self/metadata.bin": {
+      "bytes": 61440,
+      "sha256": "bf619c5d7578c78192dbf7564ec7ea5332d6df053e1c33d1a20c1ba05b214a21"
+    },
+    "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/decoder/learned.bin": {
+      "bytes": 30720,
+      "sha256": "f6b4aa30a3c42743a935b7be1b5b9b657cfc92a4bb7056f1ff6e0ddce307c84e"
+    },
+    "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/head/indices.bin": {
+      "bytes": 5242880,
+      "sha256": "b3cc3a45be1e316e00e4683984b3d8b3f9d01e2c54e3b277d16f4da7d841e55d"
+    },
+    "/Users/sanju/.local/state/routevoice-internal-runs/20261012/voice-e2e-onboard-numerical-fixture-v3/head/pages.bin": {
+      "bytes": 2621440,
+      "sha256": "e85284ed8e21fd7b63b8279eb5b94d730ba6739b2c9fff0a67a53c460d8a9196"
+    }
+  }
+}

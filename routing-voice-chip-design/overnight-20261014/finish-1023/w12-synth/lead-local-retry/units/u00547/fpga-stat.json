@@ -1,0 +1,59 @@
+{
+   "creator": "Yosys 0.62 (git sha1 7326bb7d6641500ecb285c291a54a662cb1e76cf, clang++ 21.1.2 -fPIC -O3)",
+   "invocation": "stat -json ",
+   "modules": {
+      "\\u00547": {
+         "num_wires":         659015,
+         "num_wire_bits":     968175,
+         "num_pub_wires":     95,
+         "num_pub_wire_bits": 166727,
+         "num_ports":         41,
+         "num_port_bits":     440,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         884761,
+         "num_submodules":       0,
+         "num_cells_by_type": {
+            "CCU2C": 190,
+            "DP16KD": 1,
+            "L6MUX21": 84057,
+            "LUT4": 489656,
+            "MULT18X18D": 3,
+            "PFUMX": 144731,
+            "TRELLIS_DPR16X4": 30,
+            "TRELLIS_FF": 166090,
+            "u01069": 1,
+            "u01282": 1,
+            "u02430": 1
+         }
+      }
+   },
+      "design": {
+         "num_wires":         659015,
+         "num_wire_bits":     968175,
+         "num_pub_wires":     95,
+         "num_pub_wire_bits": 166727,
+         "num_ports":         41,
+         "num_port_bits":     440,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         884761,
+         "num_submodules":       0,
+         "num_cells_by_type": {
+            "CCU2C": 190,
+            "DP16KD": 1,
+            "L6MUX21": 84057,
+            "LUT4": 489656,
+            "MULT18X18D": 3,
+            "PFUMX": 144731,
+            "TRELLIS_DPR16X4": 30,
+            "TRELLIS_FF": 166090,
+            "u01069": 1,
+            "u01282": 1,
+            "u02430": 1
+         }
+      }
+}
+

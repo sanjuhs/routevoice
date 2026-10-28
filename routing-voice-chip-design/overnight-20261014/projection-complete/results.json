@@ -1,0 +1,315 @@
+{
+  "status": "partial_failure",
+  "last_completed_stage": 2,
+  "stage1": {
+    "status": "pass_provisional_views",
+    "pins": 2563,
+    "full_bank_timing_qualified": false
+  },
+  "stage2": {
+    "status": "pass_guarded_protocol_variant",
+    "vectors": 54,
+    "outputs": 17280,
+    "integer_checks": 17280,
+    "reset_aborts": 11,
+    "unstalled_cycles": 11843,
+    "clock_target_ns": 20,
+    "derived_unstalled_us": 236.86,
+    "requested_60ns_protocol_implemented": false,
+    "sampled_analog_protocol": {
+      "protocol_pass": true,
+      "failures": {
+        "output": 0,
+        "raw": 0,
+        "precharge": 0,
+        "phase": 0
+      },
+      "maximum_sampled_settled_ns": 23.374847000000045,
+      "energy_pj_per_sampled_read": {
+        "pr": 91.1605910813323,
+        "pw": 1.1204051391393863,
+        "pp": 7.844668545249869,
+        "pa": 0.13475901555280007
+      },
+      "samples_checked": 320,
+      "maximum_observed_endpoint_voltage_difference_v": 0.000676396453015082,
+      "full_bank_timing_proven": false,
+      "full_row_energy_pj": null,
+      "reset_abort_qualified": false,
+      "wall_seconds": 504.54595708847046,
+      "status": "sampled_SS_120ns_protocol_pass",
+      "protocol": {
+        "period_ns": 120.0,
+        "pc_off_ns": 20.0,
+        "wl_start_ns": 40.0,
+        "wl_fall_start_ns": 100.0,
+        "wl_fall_end_ns": 100.2,
+        "pc_on_start_ns": 120.0,
+        "sample_ns": [
+          80.0,
+          99.5
+        ],
+        "edge_ns": 0.2,
+        "phase_family": "W8 synchronous20ns; capture80 WLoff100 PCon120"
+      },
+      "scope": "New eight-row pitch-matched W6 layout.16fullheight active columns,112ideal legal-state BL aggressors also driving their real receivers, all128physicalpre2receivers; extracted stockbuf4WL/buf20PC. GeometryR signaljoin+arrayWL/BL/one2umgroundstrap. Groundendpoint/global supply and input phases ideal. No full320lane WL/PC rail load, simultaneous allarraycurrent, decoder/latch/mux.",
+      "source_energy_sum_pj_per_sampled_read": 100.26042378127435,
+      "corners_measured": [
+        "ss_2.97V_125C"
+      ],
+      "real_row_sequence": [
+        0,
+        1,
+        1279,
+        1274,
+        546,
+        0,
+        1,
+        1279,
+        1274,
+        546
+      ],
+      "output_load_fF": 10,
+      "parent_cadence_evidence": "Nine-clock parent RTL schedule evaluated at target20ns; not measured full-bank or silicon cadence",
+      "full_bank_MHz": null,
+      "full_bank_energy_projection_pJ": null,
+      "20ns_capture_probe_failures": 12,
+      "result_file": "ss-120ns/result.json",
+      "input_loads_file": "input_loads.json",
+      "postprocessing_failure": "ss-120ns/postprocess-original-failure.json",
+      "corrected_analyzer": "analyze_saved.py",
+      "minimum_target_derived_parent_row_cadence_ns": 180
+    },
+    "mapped_controller_review": "protocol/guarded-rtl-review.md",
+    "verification_level": "RTL simulation with behavioral real-index bank; not gate-level54-vector or physical timing validation",
+    "target_derived_row_cadence_ns": 180,
+    "row_cadence_cycles": 9,
+    "physical_row_cadence_proven": false,
+    "requested_stage2_timing_protocol_satisfied": false
+  },
+  "stage3": {
+    "status": "failed_global_routing",
+    "routed_area_mm2": null,
+    "mapped_instances": 325605,
+    "mapped_standard_cell_area_mm2": 6.434728294383,
+    "synthesis_check_errors": 0,
+    "unmapped_cells": 0,
+    "netlist_sha256": "ff2d3d39a70e0c5928022359d667de8f02eb3fa3f1a67b721607d7eeae4647f8",
+    "floorplan_die_area_mm2": 20.25,
+    "pre_cts_geometry_area_mm2": {
+      "macro": 2.2678854,
+      "tap": 0.5044876927999999,
+      "endcap": 0.015111756799999999,
+      "other_standard_cells": 6.434728294399998
+    },
+    "pre_cts_total_instance_area_mm2": 9.222213143999998,
+    "macro_location_um": [
+      500,
+      1200
+    ],
+    "macro_pdn_contacts_per_supply": 16,
+    "macro_pdn_audit": "physical-audit-v3/RESULTS.md",
+    "physical_geometry_audit": "physical-audit-v3/physical-area.json",
+    "latest_known_boundary": "GRT-0116 unresolved congestion after50repairiterations; no detailedrouting or extractedRC/signoff",
+    "achieved_MHz": null,
+    "postplacement_tt_timing": {
+      "worst_setup_slack_ns": -23971.457031,
+      "source": "evidence/post-placement-tt-worst-setup.rpt",
+      "extracted_route": false,
+      "timing_qualified": false,
+      "path_issue": "Unbuffered high-fanout engine NOR,4477loads,29.191011pF versus0.1829pF characterized maximum",
+      "achieved_MHz": null,
+      "worst_hold_slack_ns": -203.091,
+      "capacitance_violation_count": 3559,
+      "slew_violation_count": 637195,
+      "clock_tree_not_yet_inserted_in_this_report": true
+    },
+    "routed_drc_count": null,
+    "routed_lvs_error_count": null,
+    "routed_antenna_violation_count": null,
+    "postroute_slack_by_corner": {
+      "nom_tt_025C_3v30": {
+        "setup_slack_ns": null,
+        "hold_slack_ns": null,
+        "reason": "Detailedroute/extractionnotrun"
+      },
+      "nom_ss_125C_3v00": {
+        "setup_slack_ns": null,
+        "hold_slack_ns": null,
+        "reason": "Detailedroute/extractionnotrun"
+      },
+      "nom_ff_n40C_3v60": {
+        "setup_slack_ns": null,
+        "hold_slack_ns": null,
+        "reason": "Detailedroute/extractionnotrun"
+      },
+      "min_tt_025C_3v30": {
+        "setup_slack_ns": null,
+        "hold_slack_ns": null,
+        "reason": "Detailedroute/extractionnotrun"
+      },
+      "min_ss_125C_3v00": {
+        "setup_slack_ns": null,
+        "hold_slack_ns": null,
+        "reason": "Detailedroute/extractionnotrun"
+      },
+      "min_ff_n40C_3v60": {
+        "setup_slack_ns": null,
+        "hold_slack_ns": null,
+        "reason": "Detailedroute/extractionnotrun"
+      },
+      "max_tt_025C_3v30": {
+        "setup_slack_ns": null,
+        "hold_slack_ns": null,
+        "reason": "Detailedroute/extractionnotrun"
+      },
+      "max_ss_125C_3v00": {
+        "setup_slack_ns": null,
+        "hold_slack_ns": null,
+        "reason": "Detailedroute/extractionnotrun"
+      },
+      "max_ff_n40C_3v60": {
+        "setup_slack_ns": null,
+        "hold_slack_ns": null,
+        "reason": "Detailedroute/extractionnotrun"
+      }
+    },
+    "final_die_area_mm2": null,
+    "placed_def_receipt": "evidence/placed-complete-def.json",
+    "placed_def_gzip": "evidence/placed-complete.def.gz",
+    "placed_render": "evidence/placed-complete.png",
+    "placed_render_limit": "DEF+LEF abstract; some LEFPIN/LEFOBS display mappings omitted; not a transistor-fabric or routed view",
+    "post_cts_instance_count": 446077,
+    "post_cts_instance_area_mm2_rounded": 9.32275,
+    "post_cts_standard_cell_area_mm2_including_taps_endcaps_rounded": 7.05487,
+    "post_cts_tt_timing": {
+      "source_stage": "31-openroad-stamidpnr-1",
+      "worst_setup_slack_ns": -24623.166016,
+      "worst_hold_slack_ns": -1.543987,
+      "worst_register_to_register_hold_slack_ns": 0.834701,
+      "capacitance_violation_count": 3586,
+      "slew_violation_count": 631187,
+      "extracted_route": false,
+      "timing_qualified": false,
+      "worst_hold_startpoint": "activation_scale[24] input,4ns external delay assumption",
+      "achieved_MHz": null
+    },
+    "post_cts_exact_geometry": {
+      "source": "evidence/post-cts-exact-area.json",
+      "groups": {
+        "logic_and_clock": {
+          "count": 327727,
+          "area_um2": 6535268.454399998
+        },
+        "macro": {
+          "count": 1,
+          "area_um2": 2267885.4
+        },
+        "endcap": {
+          "count": 3442,
+          "area_um2": 15111.7568
+        },
+        "tap": {
+          "count": 114907,
+          "area_um2": 504487.69279999996
+        }
+      },
+      "total_instance_area_mm2": 9.322753303999997,
+      "instance_count": 446077
+    },
+    "flow_exit_code": 2,
+    "last_completed_physical_step": "32-openroad-stamidpnr-2",
+    "last_saved_geometry_step": "30-openroad-cts",
+    "global_routing_attempt": {
+      "extra_iterations": 50,
+      "overflow_by_layer": {
+        "Metal1": 0,
+        "Metal2": 4,
+        "Metal3": 73,
+        "Metal4": 12,
+        "Metal5": 11
+      },
+      "total_overflow": 100,
+      "resource_usage_percent": 61.48,
+      "candidate_wirelength_um": 60267790,
+      "candidate_routed_nets": 328257,
+      "candidate_vias": 3342223,
+      "qualified_route": false,
+      "source": "runs/complete-v3/33-openroad-globalrouting/openroad-globalrouting.log",
+      "archive": "evidence/physical-reports-failed-global-route.tar.gz",
+      "local_log": "evidence/global-route-failure.log"
+    },
+    "retained_checkpoint": {
+      "def": "evidence/final-cts.def.gz",
+      "netlist": "evidence/final-cts.nl.v.gz",
+      "receipt": "evidence/final-cts-checkpoint.json",
+      "png": "evidence/final-cts.png",
+      "scope": "CTS,unrouted"
+    }
+  },
+  "stage4": {
+    "status": "not_qualified_gate_startup_failure_and_no_postroute_design",
+    "gate_vcd": null,
+    "complete_array_row_energy_pj": null,
+    "complete_projection_energy_nj": null,
+    "real_time_power_W": null,
+    "logic_activity_power_W": null,
+    "gate_activity_pin_coverage": null,
+    "full_array_internal_and_leakage_power_known": false,
+    "rejected_trace": "gate-activity-audit/initial-speech-rejection.json",
+    "reason": "Initial mapped simulation could not load four W2b vector files on pod; stopped and rejected regardless of any numerical PASS",
+    "correction": "Exact hashed source vectors staged under W8; only four generated C++ readmem file-path literals changed, affected translation unit rebuilt normally",
+    "corrected_trace_qualified": false,
+    "real_time_invocation_calendar_established": false,
+    "pod_gate_v2": {
+      "exit_code": 124,
+      "qualified": false,
+      "reason": "Mapped controller entered all-zero one-hot state after reset; zero activations transferred; flop D7 was1beforeclock butQ7missedtransition",
+      "diagnostic_scope": "Simulator/cell-model scheduling under investigation; not yet attributed to synthesizedlogic",
+      "evidence": "gate-activity-audit/live-v2-progress-3.json"
+    },
+    "harness_rtl_crosscheck": {
+      "result": "PASS",
+      "vectors": 1,
+      "outputs": 320,
+      "cycles": 11843,
+      "receipt": "sim-gate-harness-rtl/result.json"
+    },
+    "native_retry": {
+      "status": "stopped_before_compilation_completed",
+      "tool": "Verilator5.050",
+      "unchanged_mapped_design": true,
+      "trace_leaf_depth": 3,
+      "workspace": "gate-native",
+      "power_qualified": false,
+      "stop_reason": "22.5GiB free-space guard",
+      "receipt": "gate-native/receipt.json",
+      "trace_produced": false
+    },
+    "diagnostic_receipt": "gate-activity-audit/diagnosis-results.json",
+    "native_second_retry": {
+      "status": "stopped_before_compilation_completed",
+      "workspace": "gate-native-v2",
+      "reason": "Free-space recovered; same unchangeddesign and boundedguards",
+      "qualified": false,
+      "stop_reason": "22.5GiB free-space guard",
+      "receipt": "gate-native-v2/receipt.json",
+      "trace_produced": false
+    },
+    "full_design_simulation_root_cause": "unresolved;2FFandexact8FFreducedprobespassboth5.044and5.050",
+    "native_generated_outputs_archived_losslessly": [
+      "gate-native/partial-generated-build.tar.gz",
+      "gate-native-v2/partial-generated-build.tar.gz"
+    ]
+  },
+  "requested_complete_projection_goal_satisfied": false,
+  "last_completed_stage_scope": "Stage2 guarded integration variant; the requested60ns protocol and complete physical goal are not satisfied",
+  "updated_utc": "2026-10-14T00:26:32.698322+00:00",
+  "finalized_ist": "2026-10-14T05:56:32.698441+05:30",
+  "local_storage": {
+    "free_gib_at_final_report": 22.460006713867188,
+    "required_minimum_gib": 22,
+    "native_build_guard_gib": 22.5,
+    "free_gib_after_lossless_archive": 24.819446563720703
+  }
+}

@@ -1,0 +1,70 @@
+
+===========================================================================
+report_checks -path_delay max (Setup)
+============================================================================
+======================= nom_tt_025C_3v30 Corner ===================================
+
+Startpoint: engine._612502_ (rising edge-triggered flip-flop clocked by clk)
+Endpoint: engine._612918_ (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: max
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                                  0.000000    0.000000   clock clk (rise edge)
+                                  0.000000    0.000000   clock source latency
+ 12973   60.789074  342.353699  213.821777  213.821777 ^ clk (in)
+                                                         clk (net)
+                    348.816345    0.000000  213.821777 ^ engine._612502_/CLK (gf180mcu_fd_sc_mcu7t5v0__dffq_1)
+  4069   25.516180  565.822021  396.144653  609.966370 ^ engine._612502_/Q (gf180mcu_fd_sc_mcu7t5v0__dffq_1)
+                                                         array_row[6] (net)
+                    566.772705   14.342447  624.308838 ^ engine._331496_/A2 (gf180mcu_fd_sc_mcu7t5v0__nor2_1)
+  4477   29.191011 14521.935547 12934.019531 13558.329102 v engine._331496_/ZN (gf180mcu_fd_sc_mcu7t5v0__nor2_1)
+                                                         engine._257248_ (net)
+                   14521.935547    0.014552 13558.343750 v engine._332384_/A1 (gf180mcu_fd_sc_mcu7t5v0__nor2_1)
+   167    2.740933    0.000000 10457.253906 24015.597656 ^ engine._332384_/ZN (gf180mcu_fd_sc_mcu7t5v0__nor2_1)
+                                                         engine._258122_ (net)
+                      0.000000    0.249202 24015.847656 ^ engine._349905_/A1 (gf180mcu_fd_sc_mcu7t5v0__nor2_1)
+     1    0.004169    0.329016    0.101863 24015.949219 v engine._349905_/ZN (gf180mcu_fd_sc_mcu7t5v0__nor2_1)
+                                                         engine._275278_ (net)
+                      0.329016    0.000000 24015.949219 v engine._349908_/C (gf180mcu_fd_sc_mcu7t5v0__aoi221_1)
+     1    0.004531 1549.802979    0.745786 24016.695312 ^ engine._349908_/ZN (gf180mcu_fd_sc_mcu7t5v0__aoi221_1)
+                                                         engine._275281_ (net)
+                   1549.802979    0.000000 24016.695312 ^ engine._349909_/B (gf180mcu_fd_sc_mcu7t5v0__oai211_1)
+     1    0.004300  175.792404  -69.123421 23947.570312 v engine._349909_/ZN (gf180mcu_fd_sc_mcu7t5v0__oai211_1)
+                                                         engine._275282_ (net)
+                    175.792404    0.000000 23947.570312 v engine._349910_/B (gf180mcu_fd_sc_mcu7t5v0__aoi21_1)
+     1    0.005350  846.189209   21.973392 23969.544922 ^ engine._349910_/ZN (gf180mcu_fd_sc_mcu7t5v0__aoi21_1)
+                                                         engine._275283_ (net)
+                    846.189209    0.000000 23969.544922 ^ engine._349911_/B (gf180mcu_fd_sc_mcu7t5v0__aoi21_1)
+     1    0.167379  222.316330  129.322876 24098.867188 v engine._349911_/ZN (gf180mcu_fd_sc_mcu7t5v0__aoi21_1)
+                                                         engine._275284_ (net)
+                    222.316330    0.070941 24098.937500 v engine._349912_/A2 (gf180mcu_fd_sc_mcu7t5v0__aoi21_1)
+     1    0.002588   85.990692   44.787159 24143.724609 ^ engine._349912_/ZN (gf180mcu_fd_sc_mcu7t5v0__aoi21_1)
+                                                         engine._000771_ (net)
+                     85.990692    0.000000 24143.724609 ^ engine._612918_/D (gf180mcu_fd_sc_mcu7t5v0__dffq_1)
+                                           24143.724609   data arrival time
+
+                                 20.000000   20.000000   clock clk (rise edge)
+                                  0.000000   20.000000   clock source latency
+ 12973   60.789074  342.353699  206.361786  226.361786 ^ clk (in)
+                                                         clk (net)
+                    356.390381    0.000000  226.361786 ^ engine._612918_/CLK (gf180mcu_fd_sc_mcu7t5v0__dffq_1)
+                                 -0.250000  226.111786   clock uncertainty
+                                  0.000000  226.111786   clock reconvergence pessimism
+                                -53.843082  172.268707   library setup time
+                                            172.268707   data required time
+---------------------------------------------------------------------------------------------
+                                            172.268707   data required time
+                                           -24143.724609   data arrival time
+---------------------------------------------------------------------------------------------
+                                           -23971.457031   slack (VIOLATED)
+
+
+Startpoint: engine._612502_ (rising edge-triggered flip-flop clocked by clk)
+Endpoint: engine._612831_ (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: max
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------

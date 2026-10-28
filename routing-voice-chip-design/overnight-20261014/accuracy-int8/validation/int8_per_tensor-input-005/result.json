@@ -1,0 +1,61 @@
+{
+  "case_id": "int8_per_tensor-input-005",
+  "model": "int8_per_tensor",
+  "id": "2086-149220-0012",
+  "role": "validation",
+  "condition": "white_noise_10db",
+  "seed": null,
+  "reference": "THE CHICKEN CREPT THROUGH THE PALES OF THE COOP AND RAN WITH SOME SHOW OF LIVELINESS TO HER FEET WHILE CHANTICLEER AND THE LADIES OF HIS HOUSEHOLD REGARDED HER WITH QUEER SIDELONG GLANCES AND THEN CROAKED ONE TO ANOTHER AS IF COMMUNICATING THEIR SAGE OPINIONS OF HER CHARACTER",
+  "input_float32_sha256": "20d6e24f64bf216983d258d3a9dc7da39411f96dd09f5ac7f30ddf868d30a8a4",
+  "hypothesis": "  ",
+  "normalized_tokens": [],
+  "edits": 48,
+  "reference_words": 48,
+  "hypothesis_words": 0,
+  "exact": false,
+  "lines": [
+    {
+      "text": "",
+      "start_time": 0.2239999771118164,
+      "duration": 4.927999973297119,
+      "is_complete": true,
+      "samples": 78848,
+      "input_float32_sha256": "0fb1171f62e62026d79797435934dbbe0cd6961fa79bba2004d49976caffa52d"
+    },
+    {
+      "text": "",
+      "start_time": 5.184000015258789,
+      "duration": 4.928000450134277,
+      "is_complete": true,
+      "samples": 78848,
+      "input_float32_sha256": "41580402aeb830f7a541035bcd025623b8f62ab7a2ef305a8ed461af9d75e5d5"
+    },
+    {
+      "text": "",
+      "start_time": 9.920000076293945,
+      "duration": 5.055999755859375,
+      "is_complete": true,
+      "samples": 80896,
+      "input_float32_sha256": "71389f686fbe49a6eae25e876b52f7c528711bcb66edd7c2a9497bdc7d11cb3e"
+    }
+  ],
+  "request_sha256": "22621f6afa62d72acfd0f5fa0de410c12dba935297e152654c3e114c4167011b",
+  "worker_sha256": "4682e8a57db08e02a34f53b01f334f34faa3ca9a6546698f1e4650db359004b6",
+  "native_library_sha256": "1453a6c1c9072f3d05e9e5ae6ff423fae839e56631c5efb12bbd5c0280d04399",
+  "native_api_version": 30000,
+  "load_seconds": 0.040354249998927116,
+  "compute_seconds": 0.2959372920449823,
+  "audio_seconds": 14.995,
+  "process_cpu_seconds": 0.295135,
+  "voluntary_context_switches": 0,
+  "involuntary_context_switches": 75,
+  "system_load_average": [
+    9.29833984375,
+    8.64697265625,
+    9.77685546875
+  ],
+  "options": null,
+  "flags": 0,
+  "process_id": 80494,
+  "isolation": "One audio clip/condition in a fresh native process; no previous utterance or VAD state."
+}

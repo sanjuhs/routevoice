@@ -1,0 +1,12 @@
+{
+  "expected_devices": 87040,
+  "extracted_devices": 87040,
+  "exact_device_tuples_and_dimensions_match": true,
+  "bijection_nodes": 43761,
+  "scope": "full64x320 array plus1280 physical readouts and actual join/common rail metal; excludes decoder/phase control/bank mux",
+  "independent_netgen_lvs": {
+    "unique_match": true,
+    "property_errors": false,
+    "qualification": "bijective hierarchical label prefix normalization plus existing-node port declarations; no node merging or device changes"
+  }
+}

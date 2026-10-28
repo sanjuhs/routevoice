@@ -1,0 +1,8 @@
+{
+  "reason": "Disk headroom approaching the existing 22 GiB supervisor guard. Stop leaf OpenROAD below 22.35 GiB to allow LibreLane to flush routing logs; not a tool-reported routing violation.",
+  "threshold_free_gib": 22.35,
+  "signals": [],
+  "action_unix": 1791944557.693714,
+  "free_bytes": 24018046976,
+  "already_finished": true
+}

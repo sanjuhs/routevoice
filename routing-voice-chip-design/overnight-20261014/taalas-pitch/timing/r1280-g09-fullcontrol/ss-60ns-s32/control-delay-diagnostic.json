@@ -1,0 +1,67 @@
+{
+  "diagnostic_source": "overnight-20261014/taalas-pitch/timing/r1280-g09-fullcontrol/ss-60ns-s32/result.json",
+  "failed_protocol_preserved": true,
+  "trace_sha256": "b871e872105dad9b797af9740c1d9b8378964efc6fae4fbd54c96266ec465d60",
+  "definition": "Last violation before next opposing source command; threshold90%forPCrise,10%forPCfall andWLfall; all observed ten globalcontrol nodes. These are observations of failed60ns protocol, not qualified guarded-protocol delays.",
+  "cycles": [
+    {
+      "cycle": 0,
+      "pc_rise_all90_delay_ns": 21.553378000000002,
+      "pc_fall_all10_delay_ns": 11.957439399999998,
+      "wl_fall_all10_delay_ns": 7.060854300000003
+    },
+    {
+      "cycle": 1,
+      "pc_rise_all90_delay_ns": 20.965491799999995,
+      "pc_fall_all10_delay_ns": 11.96228699999999,
+      "wl_fall_all10_delay_ns": 7.064707999999996
+    },
+    {
+      "cycle": 2,
+      "pc_rise_all90_delay_ns": 20.96687800000001,
+      "pc_fall_all10_delay_ns": 12.068056999999982,
+      "wl_fall_all10_delay_ns": 6.863663999999972
+    },
+    {
+      "cycle": 3,
+      "pc_rise_all90_delay_ns": 20.965745999999996,
+      "pc_fall_all10_delay_ns": 12.105345999999969,
+      "wl_fall_all10_delay_ns": 7.064782000000008
+    },
+    {
+      "cycle": 4,
+      "pc_rise_all90_delay_ns": 20.967093000000034,
+      "pc_fall_all10_delay_ns": 11.99423999999999,
+      "wl_fall_all10_delay_ns": 7.125652000000002
+    },
+    {
+      "cycle": 5,
+      "pc_rise_all90_delay_ns": 20.96556099999998,
+      "pc_fall_all10_delay_ns": 12.072727999999984,
+      "wl_fall_all10_delay_ns": 7.059383999999966
+    },
+    {
+      "cycle": 6,
+      "pc_rise_all90_delay_ns": 20.96548899999999,
+      "pc_fall_all10_delay_ns": 11.962255000000027,
+      "wl_fall_all10_delay_ns": 7.064705999999944
+    },
+    {
+      "cycle": 7,
+      "pc_rise_all90_delay_ns": 20.96687800000001,
+      "pc_fall_all10_delay_ns": 12.06538599999999,
+      "wl_fall_all10_delay_ns": 6.863663999999972
+    },
+    {
+      "cycle": 8,
+      "pc_rise_all90_delay_ns": 20.965745999999967,
+      "pc_fall_all10_delay_ns": 12.104827999999998,
+      "wl_fall_all10_delay_ns": 7.0647820000000365
+    }
+  ],
+  "maxima": {
+    "pc_rise_all90_delay_ns": 21.553378000000002,
+    "pc_fall_all10_delay_ns": 12.105345999999969,
+    "wl_fall_all10_delay_ns": 7.125652000000002
+  }
+}

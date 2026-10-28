@@ -1,0 +1,51 @@
+\section{Future Scope: Local LLMs and Multi-Purpose Transformer Silicon}
+\label{sec:future}
+
+RouteVoice is one model on one engine. This section sets out what the same techniques imply for local language models and for silicon that serves more than one transformer. Unlike the rest of the paper, these are projections, not measurements.
+
+\subsection{From recognizer to voice assistant}
+A useful local voice device chains speech-to-text, a small language model, and text-to-speech. All three are transformer stacks built from the same few operators: dense projections, attention, normalisation and elementwise activations.
+
+The projection engine here is model-agnostic below the index fabric. It consumes a stream of signed activations and a fixed table of 4-bit selections, and emits FP32 results. A second model needs a second index fabric, not a second engine design.
+
+The open question is \emph{state}, not weights. A recognizer's mutable state is its audio window and decoder cache. An autoregressive LLM adds a key/value cache that grows with context, which belongs in SRAM or external DRAM, never in metal.
+For scale, a 0.5\,B-parameter LM such as Qwen2.5-0.5B~\cite{qwen2024qwen25} (24 layers, two key/value heads of dimension 64) keeps 6,144 key/value values per token. At 8 bits, a 2,048-token context needs about \SI{12.6}{MB}, roughly twelve times all of RouteVoice's mutable state (8.17\,Mbit).
+
+\subsection{Hardwired weights at larger scale}
+Fixed-index storage has a clear scaling trade:
+\begin{itemize}
+\item \textbf{Benefits:} no weight fetch energy, no DRAM bandwidth wall, and silicon that cannot be repurposed by tampering with weights.
+\item \textbf{Cost:} a mask set per model.
+\end{itemize}
+Commercial hardwired-LLM efforts~\cite{taalas2026hc1} accept that cost at the frontier for throughput.
+
+Our results suggest a complementary point at the low end, and they let us size it.
+
+\paragraph{Throughput.} A dense decoder-only LM of $N$ parameters needs about $N$ multiply-accumulates per generated token. One of our engines sustains \SI{0.66}{GMAC/s} at \SI{6.67}{MHz}. A 0.5\,B-parameter model would therefore generate about 1.3 tokens/s per engine, and ten engines about 13 tokens/s, which is enough for a spoken reply.
+
+\paragraph{Area.} The binding constraint is index area, not compute. At our measured \SI{5.54}{\micro m^2} per selection, 0.5\,B selections need about \SI{2800}{mm^2} at \SI{180}{nm}, several reticles.
+
+\paragraph{Node scaling.} Ideal area scaling to \SI{28}{nm} is $(180/28)^2\approx41\times$, which would bring the same banks to roughly \SI{70}{mm^2}. Peripheral circuits scale worse than this, so the figure is an optimistic bound. \Cref{fig:scaling} plots the measured points and a conservative 20--40$\times$ band.
+
+\begin{figure*}[t]
+\centering
+\includegraphics[width=0.8\textwidth]{figures/scaling-area.pdf}
+\caption{Weight-array area against model size. Filled points are measured GF180 layout: one $1280\times320$ bank (\SI{2.27}{mm^2}) and all 98 RouteVoice matrices (\num{31457280} four-bit weights, \SI{174.7}{mm^2}, i.e.\ \SI{5.55}{\micro m^2} per weight including readout). The dashed line extends that density linearly; the shaded band assumes a 20--40$\times$ area reduction at \SI{28}{nm}. Both are projections, not measurements. Weights only: compute engines, activation and KV memory, and I/O are excluded.}
+\label{fig:scaling}
+\end{figure*}
+
+\paragraph{Where this leaves the low end.} A speech model of tens of millions of parameters (this work) fits a mature node today. A sub-billion-parameter assistant LM needs a mid-range node to become a single affordable die.
+
+\subsection{Making hardwired silicon multi-purpose}
+Hardwiring trades flexibility for efficiency. Several mechanisms can recover flexibility without returning to fully programmable weights:
+\begin{enumerate}
+\item \textbf{Mutable codebooks over fixed indices.} The 4-bit indices are fixed; the 16-entry books (\SI{4.9}{MB} for the services we converted, about half the index bytes) could instead live in SRAM. Then one die could be re-tuned after fabrication: recalibrated, rescaled, or fine-tuned within the span its fixed indices allow. At open-SRAM density that costs far more area than the books do as ROM, so it suits a model family whose indices are shared and whose books differ. Whether book-only fine-tuning recovers useful accuracy is an experiment we have not run.
+\item \textbf{Low-rank adapters in SRAM.} A fixed base model plus small SRAM-resident adapters (LoRA-style) on selected projections supports task or speaker adaptation. Our 160-SRAM bridge and producer adapter work is a first step toward this partition.
+\item \textbf{Shared backbones.} Distilling several tasks onto one shared encoder lets one fixed fabric serve many heads: transcription, keyword spotting, intent, language identification. Only the small task heads stay mutable.
+\item \textbf{Family dies.} A mask set can hold several small models whose index fabrics share one engine and I/O ring, selected at run time. Area grows linearly in model bytes, but NRE is paid once.
+\end{enumerate}
+
+\subsection{Economics}
+The economic case rests on volume. At mature nodes, mask sets cost far less than at leading edge, and multi-project shuttles cost less still~\cite{waferspace}. AI-assisted design also shortens the model-to-GDS loop, which this work demonstrates in miniature.
+For scale, a wafer.space GF180 shuttle slot of about \SI{20}{mm^2} costs \$8,000 for 1,000 dies~\cite{waferspace}. That fits one engine or test structure, not our two \SI{725}{mm^2} dies. A full recognizer at this node therefore needs a dedicated mask set, or a newer node where it shrinks to tens of mm\textsuperscript{2}. We do not have a verified full-mask quotation and give none.
+Against this stand the costs of a fixed model: it cannot follow a fast-moving model frontier, and long-context state must still live in memory. The natural first markets are therefore products whose model can stay fixed for the life of the device: appliance voice control, wearables, toys, industrial sensors.

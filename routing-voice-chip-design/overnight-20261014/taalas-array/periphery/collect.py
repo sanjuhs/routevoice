@@ -1,0 +1,23 @@
+from pathlib import Path
+import json,hashlib
+P=Path(__file__).resolve().parent
+D=json.loads((P/'drc.json').read_text())
+F=json.loads((P/'functional.json').read_text())
+blocks={}
+for tag,name,count in [('decoderb-v1','w5_row_decoder',200),('mux128b-v1','w5_bank_mux128',10),('bankdec-v1','w5_bank_decoder',1)]:
+ path=P/'runs'/tag/'final/metrics.json';j=json.loads(path.read_text());timingpath=path
+ if name=='w5_bank_mux128':
+  timingpath=P/'runs/mux128b-poststa/final/metrics.json';j.update(json.loads(timingpath.read_text()))
+ corners={}
+ for k,v in j.items():
+  if '__corner:' not in k:continue
+  metric,corner=k.split('__corner:',1)
+  names={'timing__setup__ws':'setup_slack_ns','timing__hold__ws':'hold_slack_ns','design__max_slew_violation__count':'max_slew_violations','design__max_cap_violation__count':'max_cap_violations'}
+  if metric in names:corners.setdefault(corner,{})[names[metric]]=v
+ block=dict(run=tag,physical_metrics=str(path.relative_to(P)),timing_metrics=str(timingpath.relative_to(P)),outline_area_um2=j['design__die__area'],dimensions_um=[450,450] if 'mux' in name else [120,120],cell_area_excluding_fill_um2=j['design__instance__area__stdcell'],magic_drc_markers=j['magic__drc_error__count'],netgen_lvs_errors=j['design__lvs_error__count'],netgen_lvs_counts={k:v for k,v in j.items() if k.startswith('design__lvs_')},klayout=D[name],gate_functional=F[name],extracted_sta=corners,sta_load_ff=10 if 'mux' in name else 100,planned_replication_count=count,artifact_sha256={str(f.relative_to(P)):hashlib.sha256(f.read_bytes()).hexdigest() for f in (P/'handoff-v2').glob(name+'.*')})
+ blocks[name]=block
+area=sum(b['outline_area_um2']*b['planned_replication_count'] for b in blocks.values())
+res=dict(status='physical isolated periphery macros verified; full connected macro and 20ns timing unqualified',blocks=blocks,scope='Decoder and bank selection only. No array cells, analog readout or output capture within these macros.',planned200subbank_ledger=dict(wordline_decoders=200,bank_mux128=10,bank_enable_decoder=1,outline_area_um2=area,outline_area_mm2=area/1e6,outline_um2_per_projection_selection=area/409600,cell_area_excluding_fill_um2=sum(b['cell_area_excluding_fill_um2']*b['planned_replication_count'] for b in blocks.values()),qualification='Arithmetic sum of physically routed isolated outlines; not a connected complete projection area or a lower bound.'),capture_owner='W2b index_latch is unused RTL state and absent from synthesized netlist. Live capture is320 representative_latch registers after book decode; no1280 physical index-output capture bank exists in W2b. Separate standalone W5 latch strip now exists; see latch-results.json.',timing_contract=dict(period_ns=20,input_delay_ns=4,output_delay_ns=4,uncertainty_ns=.25,nominal_voltage=3.3,slow_voltage=3.0,fast_voltage=3.6,qualification='Nine RC/PVT combinations from Liberty+OpenRCX, not ngspice2.97V125C simulation. Setup/slack and electrical violations retained. No full bank-to-array-to-engine extracted timing.'),preserved_failures=['runs/mux128-v1: post-placement detailed legalization failed after adding2566 input buffers and1078 repair buffers.','runs/mux128b-v1: physical implementation completed with deferred timing failure; actual extracted timing separately in mux128b-poststa.','runs/decoder-v1: first arbitrary pin placement and no final multicorner STA; preserved, not final handoff.','runs/decoderb-v1: physical implementation completed, slow extracted setup and max-RC slew fail.'],limitations=['KLayout scope excludes density and antenna. Magic and Netgen are open-flow checks, not foundry signoff.','No characterized autonomous precharge/evaluate nonoverlap controller.','Output drivers characterized by declared STA pin loads, not parent-array extracted load.','Long tile/mux/address/power routes absent; power continuity, IR/EM and integrated signal timing unverified.','Standalone128-bit transparent latch strip is physically verified separately (latch-results.json); ten copies and capture_gate control are not integrated. W2b captures mapped representatives, not raw indices.','Only1280 row reads occur per4160-cycle projection.','No complete recognizer or die-count/power claim.'])
+res['output_latch_strip']={'results':'latch-results.json','report':'LATCH-RESULTS.md','status':'Standalone128-bit strip verified; ten-copy integration and capture_gate control unqualified'}
+(P/'results.json').write_text(json.dumps(res,indent=2)+'\n')
+print('W5-STATUS: physical decoder, bank decoder and mux128 isolated periphery complete; see results.json for retained timing failures and scope')

@@ -1,0 +1,32 @@
+{
+  "mode": "verilator",
+  "command": [
+    "/nix/store/k7giqrc3r5hpj3bxp7iy41swyafvqsyh-devshell-dir/bin/verilator",
+    "--binary",
+    "--timing",
+    "--trace",
+    "--trace-underscore",
+    "--top-module",
+    "tb",
+    "-Wno-fatal",
+    "-j",
+    "1",
+    "--Mdir",
+    "/workspace/rv/overnight-20261014/projection-complete/gate-activity-audit/udp-cascade/pod-verilator-5.044/obj",
+    "-o",
+    "sim",
+    "/workspace/rv/pdks/ciel/gf180mcu/versions/54435919abffb937387ec956209f9cf5fd2dfbee/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/verilog/primitives.v",
+    "/workspace/rv/pdks/ciel/gf180mcu/versions/54435919abffb937387ec956209f9cf5fd2dfbee/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/verilog/gf180mcu_fd_sc_mcu7t5v0.v",
+    "/workspace/rv/overnight-20261014/projection-complete/gate-activity-audit/udp-cascade/tb.sv"
+  ],
+  "simulation_command": [
+    "/workspace/rv/overnight-20261014/projection-complete/gate-activity-audit/udp-cascade/pod-verilator-5.044/obj/sim"
+  ],
+  "sources_sha256": {
+    "/workspace/rv/pdks/ciel/gf180mcu/versions/54435919abffb937387ec956209f9cf5fd2dfbee/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/verilog/primitives.v": "ccc0f447f71ce35c635e08d49eb0ed77aa2ec91cf31d8e3e45a246114d3cae92",
+    "/workspace/rv/pdks/ciel/gf180mcu/versions/54435919abffb937387ec956209f9cf5fd2dfbee/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/verilog/gf180mcu_fd_sc_mcu7t5v0.v": "9a21c5f98200acfe77d8ba52067164e0802284dc1c1e117f0e64fb6ac42eb64b",
+    "/workspace/rv/overnight-20261014/projection-complete/gate-activity-audit/udp-cascade/tb.sv": "aec434a78dfaad1372729428c619349215e492979d45d828cbaef0c3a4d787fc"
+  },
+  "scope": "Tiny exact-cell cascade diagnostic; not projection correctness evidence",
+  "compile_exit": 1
+}

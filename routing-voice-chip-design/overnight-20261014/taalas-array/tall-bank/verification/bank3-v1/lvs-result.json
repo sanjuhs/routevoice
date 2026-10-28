@@ -1,0 +1,111 @@
+{
+  "pass_all10": true,
+  "full_extraction_devices": 414720,
+  "scope": "Full-bank414720-device independent monolithic Netgen plus exact graph/W/L equality and10 disjoint partition Netgen comparisons/shared-net audit.",
+  "partitions": [
+    {
+      "group": 0,
+      "returncode": 0,
+      "status": "finished",
+      "elapsed_seconds": 1.5932517920155078,
+      "unique_match": true,
+      "property_errors": false
+    },
+    {
+      "group": 1,
+      "returncode": 0,
+      "status": "finished",
+      "elapsed_seconds": 1.5747595839202404,
+      "unique_match": true,
+      "property_errors": false
+    },
+    {
+      "group": 2,
+      "returncode": 0,
+      "status": "finished",
+      "elapsed_seconds": 1.5466542500071228,
+      "unique_match": true,
+      "property_errors": false
+    },
+    {
+      "group": 3,
+      "returncode": 0,
+      "status": "finished",
+      "elapsed_seconds": 1.6429637500550598,
+      "unique_match": true,
+      "property_errors": false
+    },
+    {
+      "group": 4,
+      "returncode": 0,
+      "status": "finished",
+      "elapsed_seconds": 1.5920827090740204,
+      "unique_match": true,
+      "property_errors": false
+    },
+    {
+      "group": 5,
+      "returncode": 0,
+      "status": "finished",
+      "elapsed_seconds": 1.5489245830103755,
+      "unique_match": true,
+      "property_errors": false
+    },
+    {
+      "group": 6,
+      "returncode": 0,
+      "status": "finished",
+      "elapsed_seconds": 1.635257750051096,
+      "unique_match": true,
+      "property_errors": false
+    },
+    {
+      "group": 7,
+      "returncode": 0,
+      "status": "finished",
+      "elapsed_seconds": 1.6095869580749422,
+      "unique_match": true,
+      "property_errors": false
+    },
+    {
+      "group": 8,
+      "returncode": 0,
+      "status": "finished",
+      "elapsed_seconds": 1.583354250062257,
+      "unique_match": true,
+      "property_errors": false
+    },
+    {
+      "group": 9,
+      "returncode": 0,
+      "status": "finished",
+      "elapsed_seconds": 1.5913225410040468,
+      "unique_match": true,
+      "property_errors": false
+    }
+  ],
+  "input": {
+    "gds": "overnight-20261014/taalas-array/tall-bank/r320/bank3.gds",
+    "gds_sha256": "b60d10a5818a504068a1bcc04d8cee7ca213d42a4f375877c2ce97f78bb84610",
+    "top": "TALL_BANK_R320_B03",
+    "bank": 3,
+    "row_mapping": "logical_row=bank+4*local_row"
+  },
+  "partition_scope": "Ten disjoint Netgen comparisons of actual full-bank extraction plus exact full graph/W/L equality and shared-net audit. Not a monolithic Netgen comparison.",
+  "monolithic_netgen": {
+    "returncode": 0,
+    "status": "finished",
+    "elapsed_seconds": 42.267227167030796,
+    "unique_match": true,
+    "property_errors": false,
+    "pass": true
+  },
+  "negative_width_control": {
+    "returncode": 0,
+    "status": "finished",
+    "elapsed_seconds": 1.4216843750327826,
+    "unique_match": true,
+    "property_errors": true,
+    "pass": false
+  }
+}

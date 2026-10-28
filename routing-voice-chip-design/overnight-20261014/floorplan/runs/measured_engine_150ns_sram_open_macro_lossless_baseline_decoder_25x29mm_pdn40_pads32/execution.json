@@ -1,0 +1,16 @@
+{
+  "command": [
+    "nice",
+    "-n",
+    "10",
+    "openroad",
+    "-exit",
+    "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/overnight-20261014/floorplan/runs/measured_engine_150ns_sram_open_macro_lossless_baseline_decoder_25x29mm_pdn40_pads32/floorplan.tcl"
+  ],
+  "exit_code": 0,
+  "elapsed_s": 32.074674129486084,
+  "minimum_free_gib": 44.89936828613281,
+  "stop_reason": null,
+  "threads": 4,
+  "nice": 10
+}
