@@ -79,9 +79,9 @@ The broader bet is that small, fixed AI models, built straight into cheap chips,
 
 ## Explainer video
 
-[![Speech → Silicon explainer: The Mission, Anatomy of Moonshine, Four-Bit Codebooks, Fabric and Die Budget](docs/media/explainer-poster.jpg)](docs/media/speech-to-silicon-explainer.mp4)
+[![Speech → Silicon explainer: The Mission, Anatomy of Moonshine, Four-Bit Codebooks, Fabric and Die Budget](docs/media/explainer-poster.jpg)](https://github.com/sanjuhs/routevoice/raw/main/docs/media/speech-to-silicon-explainer.mp4)
 
-**[▶ Watch: Speech → Silicon (5 min, vertical)](docs/media/speech-to-silicon-explainer.mp4)**
+**[▶ Speech → Silicon (5 min, vertical, MP4 15 MB)](https://github.com/sanjuhs/routevoice/raw/main/docs/media/speech-to-silicon-explainer.mp4)**
 
 Eight chapters: the mission, inside Moonshine, the Taalas trick, four-bit codebooks, the RTL engine, synthesis, the weight fabric and die budget, and an honest scorecard. I made it on 29 Sep 2026, before the engine was routed, so its scorecard shows the project at that date. The tables above are current.
 
