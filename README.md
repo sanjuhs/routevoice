@@ -502,7 +502,14 @@ The helmet is a concept explored through Blender models, renders and an interact
 
 The implementation uses **Verilator, Yosys, OpenROAD through LibreLane, Magic, KLayout and Netgen**, with the open **GF180MCU-D PDK**. AI coding agents, including Claude and Codex, were used under the author's direction. The [lab log](OVERNIGHT-PROGRESS.md) preserves the work history and evidence trail.
 
-**Author: Sanjay Prasad H S.**
+### Authors and contributors
+
+| Contributor | Role |
+|---|---|
+| **Sanjay Prasad H S** | Project author and lead: product vision, research direction, design decisions and milestone ownership. |
+| **Codex — OpenAI AI coding assistant** | AI contributor to implementation and verification under the project lead’s direction; milestone documentation, website captures, artifact checks, repository presentation and publication. |
+
+Claude also contributed to the AI-assisted engineering work, as recorded in the lab log. See [AUTHORS.md](AUTHORS.md) for the attribution record.
 
 This repository's own code and documents are licensed under [Apache-2.0](LICENSE). Moonshine is MIT-licensed by its authors; the PDK, third-party tools and other included materials retain their respective licenses and notices. Technical inspiration from public patent disclosures does not imply affiliation with Taalas.
 
