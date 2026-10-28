@@ -8,7 +8,7 @@ What it does not show: no chip has been fabricated, and the full two-die chip is
 
 | Folder | What it is |
 |---|---|
-| [`demo/`](demo/) | The three audio clips the hardware model transcribes bit-exactly, their simulation logs, and `replay.py` for screen recording |
+| [`demo/`](demo/) | The three audio clips the hardware model transcribes bit-exactly, their simulation logs, a rendered demo animation (MP4 and GIF), and `replay.py` for a terminal replay |
 | [`figures/layout/`](figures/layout/) | 1920×1080 zoom sequences rendered from the GDS: one weight bank and the routed engine, from full die down to transistors |
 | [`figures/signoff-table.png`](figures/signoff-table.png), [`.md`](figures/signoff-table.md) | Engine signoff results, read from the final run's metrics |
 | [`figures/scaling-area.png`](figures/scaling-area.png), [`scaling-energy.png`](figures/scaling-energy.png), [`scaling-data.csv`](figures/scaling-data.csv) | Area and compute energy against model size: measured points plus labelled projections |
@@ -16,6 +16,10 @@ What it does not show: no chip has been fabricated, and the full two-die chip is
 | [`../../paper/`](../../paper/) | Research paper (LaTeX, PDF, and `make-arxiv.sh` for the arXiv source bundle) |
 
 ## The demo
+
+![Demo: three recordings go through the hardware model and come out as bit-exact text](demo/routevoice-demo.gif)
+
+[`demo/routevoice-demo.mp4`](demo/routevoice-demo.mp4) is the same animation at 1080p with the clip audio (34 s). It is made by `scripts/make_demo_video.py` from the logs: the progress bars and clock counter follow the logged clock milestones, and the reply counters are the logged totals.
 
 | Clip | Audio | RTL text | Tokens | Clocks | Check |
 |---|---|---|---|---:|---|
@@ -65,6 +69,7 @@ pip install klayout matplotlib numpy soundfile
 python scripts/render_gds.py <bank.gds> figures/layout weight-bank --zooms 1,8,64,400 --cx 0.43 --cy 0.6
 python scripts/render_gds.py <engine.gds> figures/layout engine --zooms 1,6,40,300
 python scripts/make_figures.py       # signoff table, scaling charts, paper figure
+python scripts/make_demo_video.py    # demo/routevoice-demo.mp4 and .gif (needs pillow and ffmpeg)
 ```
 
 The bank GDS (`W13_ENC0_B00`, 159 MB, SHA-256 in `../overnight-20261014/finish-1023/w13-arrays/GDS-LOCATIONS.json`) is too large for git and is not in this repository. The engine GDS is `runs/pipe2-ant/final/gds/rv_k64_array_port.gds` in the engine HF dataset (978 MB). `extract_clips.py` needs the original segment `.npy` files, which are in the private working archive.
