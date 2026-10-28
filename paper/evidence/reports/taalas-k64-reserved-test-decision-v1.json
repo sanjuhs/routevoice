@@ -1,0 +1,487 @@
+{
+  "schema_version": 1,
+  "candidate": "codebook-4bit-optimal-rectangular-k64",
+  "protocol_sha256": "5ca9f77789f76bab38a08c347309baae8add20021f883112b3909362c2372bb0",
+  "scores_sha256": "245c1af107e41411cd2ffb0bb200a041d1e1a2b3b8d6d669f361596eaa8d16fb",
+  "candidate_manifest_sha256": "a9ac4a4c9f51b65ebadf5b26b7c7fe0d3100d047ec4ad863f1b9d147b78870cc",
+  "integrity_passed": true,
+  "test_accuracy_gates": {
+    "clean": {
+      "candidate_edits": 39,
+      "reference_edits": 37,
+      "reference_words": 869,
+      "candidate_wer": 0.04487917146144994,
+      "delta_percentage_points": 0.23014959723820483,
+      "absolute_ceiling": 0.15,
+      "retention_limit": 0.02,
+      "pass": true
+    },
+    "other": {
+      "candidate_edits": 107,
+      "reference_edits": 100,
+      "reference_words": 785,
+      "candidate_wer": 0.13630573248407643,
+      "delta_percentage_points": 0.89171974522293,
+      "absolute_ceiling": 0.35,
+      "retention_limit": 0.02,
+      "pass": true
+    },
+    "white_noise_10db": {
+      "candidate_edits": 137,
+      "reference_edits": 121,
+      "reference_words": 869,
+      "candidate_wer": 0.15765247410817032,
+      "delta_percentage_points": 1.8411967779056386,
+      "absolute_ceiling": 0.4,
+      "retention_limit": 0.02,
+      "pass": true
+    }
+  },
+  "passes_frozen_test_accuracy_gates": true,
+  "paired_uncertainty": {
+    "clean": {
+      "speakers": [
+        "121",
+        "1284",
+        "1320",
+        "1580",
+        "2094",
+        "2300",
+        "237",
+        "260",
+        "2961",
+        "3570",
+        "3729",
+        "4077",
+        "4970",
+        "6829",
+        "6930",
+        "7021",
+        "7127",
+        "8455",
+        "8463",
+        "908"
+      ],
+      "speaker_count": 20,
+      "resamples": 10000,
+      "seed": 14244884795486395414,
+      "original_wer_percentile95": [
+        0.025958968652838706,
+        0.06241340693628629
+      ],
+      "candidate_wer_percentile95": [
+        0.02980085038271015,
+        0.06241157338392736
+      ],
+      "paired_delta_wer_percentile95": [
+        -0.008325817144619179,
+        0.01477377654662973
+      ],
+      "cluster_sufficient_statistics_original_errors_candidate_errors_words": [
+        [
+          0,
+          0,
+          21
+        ],
+        [
+          0,
+          0,
+          49
+        ],
+        [
+          0,
+          0,
+          36
+        ],
+        [
+          0,
+          0,
+          14
+        ],
+        [
+          2,
+          2,
+          18
+        ],
+        [
+          3,
+          3,
+          61
+        ],
+        [
+          4,
+          4,
+          30
+        ],
+        [
+          1,
+          1,
+          10
+        ],
+        [
+          2,
+          5,
+          51
+        ],
+        [
+          2,
+          2,
+          73
+        ],
+        [
+          0,
+          0,
+          61
+        ],
+        [
+          5,
+          3,
+          96
+        ],
+        [
+          0,
+          2,
+          32
+        ],
+        [
+          2,
+          2,
+          36
+        ],
+        [
+          1,
+          3,
+          80
+        ],
+        [
+          1,
+          1,
+          22
+        ],
+        [
+          1,
+          0,
+          40
+        ],
+        [
+          2,
+          2,
+          27
+        ],
+        [
+          8,
+          6,
+          62
+        ],
+        [
+          3,
+          3,
+          50
+        ]
+      ],
+      "scope": "Paired speaker-cluster percentile95% interval for micro-WER; both clips per resampled speaker retained. Marginal intervals, not simultaneous or a replacement acceptance gate."
+    },
+    "other": {
+      "speakers": [
+        "1688",
+        "2033",
+        "2414",
+        "3331",
+        "367",
+        "3764",
+        "4198",
+        "4294",
+        "4350",
+        "533",
+        "5442",
+        "5764",
+        "6128",
+        "6938",
+        "7105",
+        "7902",
+        "7975",
+        "8188",
+        "8280",
+        "8461"
+      ],
+      "speaker_count": 20,
+      "resamples": 10000,
+      "seed": 818018059960213850,
+      "original_wer_percentile95": [
+        0.09837793531236154,
+        0.1641991924629879
+      ],
+      "candidate_wer_percentile95": [
+        0.10686909642784334,
+        0.16942719391365887
+      ],
+      "paired_delta_wer_percentile95": [
+        -0.015060447268526152,
+        0.03191554707512152
+      ],
+      "cluster_sufficient_statistics_original_errors_candidate_errors_words": [
+        [
+          6,
+          11,
+          32
+        ],
+        [
+          4,
+          4,
+          46
+        ],
+        [
+          3,
+          2,
+          22
+        ],
+        [
+          6,
+          11,
+          65
+        ],
+        [
+          7,
+          7,
+          43
+        ],
+        [
+          0,
+          1,
+          15
+        ],
+        [
+          8,
+          8,
+          22
+        ],
+        [
+          2,
+          2,
+          49
+        ],
+        [
+          6,
+          7,
+          61
+        ],
+        [
+          3,
+          1,
+          31
+        ],
+        [
+          8,
+          8,
+          52
+        ],
+        [
+          3,
+          3,
+          16
+        ],
+        [
+          8,
+          8,
+          53
+        ],
+        [
+          8,
+          5,
+          23
+        ],
+        [
+          6,
+          6,
+          44
+        ],
+        [
+          4,
+          3,
+          24
+        ],
+        [
+          3,
+          7,
+          57
+        ],
+        [
+          4,
+          5,
+          49
+        ],
+        [
+          1,
+          1,
+          40
+        ],
+        [
+          10,
+          7,
+          41
+        ]
+      ],
+      "scope": "Paired speaker-cluster percentile95% interval for micro-WER; both clips per resampled speaker retained. Marginal intervals, not simultaneous or a replacement acceptance gate."
+    },
+    "white_noise_10db": {
+      "speakers": [
+        "121",
+        "1284",
+        "1320",
+        "1580",
+        "2094",
+        "2300",
+        "237",
+        "260",
+        "2961",
+        "3570",
+        "3729",
+        "4077",
+        "4970",
+        "6829",
+        "6930",
+        "7021",
+        "7127",
+        "8455",
+        "8463",
+        "908"
+      ],
+      "speaker_count": 20,
+      "resamples": 10000,
+      "seed": 14244884795486395414,
+      "original_wer_percentile95": [
+        0.0945273631840796,
+        0.18411174499321784
+      ],
+      "candidate_wer_percentile95": [
+        0.09534350838091517,
+        0.22150591465137873
+      ],
+      "paired_delta_wer_percentile95": [
+        -0.007694049159120323,
+        0.044832295558322965
+      ],
+      "cluster_sufficient_statistics_original_errors_candidate_errors_words": [
+        [
+          3,
+          0,
+          21
+        ],
+        [
+          1,
+          1,
+          49
+        ],
+        [
+          2,
+          2,
+          36
+        ],
+        [
+          0,
+          0,
+          14
+        ],
+        [
+          3,
+          2,
+          18
+        ],
+        [
+          14,
+          17,
+          61
+        ],
+        [
+          7,
+          6,
+          30
+        ],
+        [
+          3,
+          2,
+          10
+        ],
+        [
+          14,
+          17,
+          51
+        ],
+        [
+          20,
+          28,
+          73
+        ],
+        [
+          3,
+          3,
+          61
+        ],
+        [
+          16,
+          15,
+          96
+        ],
+        [
+          4,
+          3,
+          32
+        ],
+        [
+          3,
+          3,
+          36
+        ],
+        [
+          2,
+          1,
+          80
+        ],
+        [
+          4,
+          4,
+          22
+        ],
+        [
+          2,
+          0,
+          40
+        ],
+        [
+          0,
+          4,
+          27
+        ],
+        [
+          9,
+          13,
+          62
+        ],
+        [
+          11,
+          16,
+          50
+        ]
+      ],
+      "scope": "Paired speaker-cluster percentile95% interval for micro-WER; both clips per resampled speaker retained. Marginal intervals, not simultaneous or a replacement acceptance gate."
+    }
+  },
+  "host_aggregate_RTF": {
+    "original": 0.02310678545296181,
+    "k64": 0.023204972817445945
+  },
+  "RTF_limit": 1.0,
+  "live_streaming_latency_checked": false,
+  "candidate_development_validation_exposures": 13,
+  "candidate_reserved_test_runs": 1,
+  "original_historical_test_exposure_preserved": true,
+  "no_test_driven_model_changes_or_reselection": true,
+  "physical_fit_power_or_product_generalization_proven": false,
+  "limits": [
+    "Bounded human read speech and synthetic white noise; not general-product, road/helmet or continuous-stream proof.",
+    "Upstream source-model training overlap unknown. Test speakers are disjoint only within this project.",
+    "Aggregate host RTF is recorded from inference compute; fresh-process load time is separate. Live streaming latency, FPGA/ASIC timing and power remain unmeasured.",
+    "Four-bit indices intoUINT8representatives retain originalINT8frontend/floating operators. Model quality does not prove die fit or sub-watt operation.",
+    "Marginal95% descriptive intervals; not simultaneous coverage, not a gate change, not a p-value or a correction for unknown pretraining overlap and all prior development exploration."
+  ]
+}

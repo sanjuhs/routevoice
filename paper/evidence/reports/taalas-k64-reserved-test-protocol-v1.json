@@ -1,0 +1,2635 @@
+{
+  "schema_version": 1,
+  "status": "Frozen before the first candidate reserved-test inference",
+  "candidate": "codebook-4bit-optimal-rectangular-k64",
+  "candidate_count": 1,
+  "candidate_manifest_sha256": "a9ac4a4c9f51b65ebadf5b26b7c7fe0d3100d047ec4ad863f1b9d147b78870cc",
+  "packed_exports": [
+    {
+      "file": "adapter.ort-000.indices.bin",
+      "sha256": "b306b19b9d312043702f9149045d1fb2cb016a05ae0d8ef873836a1c3cb835e5"
+    },
+    {
+      "file": "cross_kv.ort-001.indices.bin",
+      "sha256": "de35fedb470a0af8760dd5c9bd2d216dc18b672ebdaaffd2d109d80913aa3006"
+    },
+    {
+      "file": "cross_kv.ort-002.indices.bin",
+      "sha256": "de98a1b14a3e7f51a0012130fac4fcd2c3c5205d77e500af21388ee7ac8c0316"
+    },
+    {
+      "file": "cross_kv.ort-003.indices.bin",
+      "sha256": "1f757ffb2f16c6a9e8831c370b076c1fbca1be3e5302f2cf29a0a47308f1beaf"
+    },
+    {
+      "file": "cross_kv.ort-004.indices.bin",
+      "sha256": "756d9a1d78d67c652317d583c6f9cab2abb089d4734b9ca9d8aac8f9d9189438"
+    },
+    {
+      "file": "cross_kv.ort-005.indices.bin",
+      "sha256": "4adb268dcc2d5a4f770cea1e4c6462da073f3afa3786c48b2906b08a09eb6a47"
+    },
+    {
+      "file": "cross_kv.ort-006.indices.bin",
+      "sha256": "38036a90e93578860a182657c35525c934bdd67bb66906bd6355c7f0391f4b1c"
+    },
+    {
+      "file": "cross_kv.ort-007.indices.bin",
+      "sha256": "590962591e882137edeca202575249f14297e0184ac7df7fdd6d89c3d729fcdb"
+    },
+    {
+      "file": "cross_kv.ort-008.indices.bin",
+      "sha256": "4bc015a4586ffe5101310f2eb0dce3f96f623c15280f4d59edcda121f7e74804"
+    },
+    {
+      "file": "cross_kv.ort-009.indices.bin",
+      "sha256": "8c8447b897f889d44c3aadd4b1f9651b089af1174c5c4ce98d0bc46bba6abbc9"
+    },
+    {
+      "file": "cross_kv.ort-010.indices.bin",
+      "sha256": "6bac75a64129087ade66e033a5070cc861f3ef3446efd488d0035790a44349b8"
+    },
+    {
+      "file": "cross_kv.ort-011.indices.bin",
+      "sha256": "4035ad07e7c2d667b6c149b312440061c3f74121aac1ddeea3031dc0165663a3"
+    },
+    {
+      "file": "cross_kv.ort-012.indices.bin",
+      "sha256": "130e010fc6f68fddae204db64e18b4176a52210d093d4564b115a061ba61eb96"
+    },
+    {
+      "file": "decoder_kv.ort-013.indices.bin",
+      "sha256": "c221d8688ab4aacbe94e87bc8048a025b62248df2851a9ccb71524d38c8688b3"
+    },
+    {
+      "file": "decoder_kv.ort-014.indices.bin",
+      "sha256": "e4665960989202f4254dc76f42e5663072b1514e9df42a2faf756368bd3f4fbc"
+    },
+    {
+      "file": "decoder_kv.ort-015.indices.bin",
+      "sha256": "68b156fe451e6c493aea0633169ffea46d75faefa2b00667bf56718290c0dd38"
+    },
+    {
+      "file": "decoder_kv.ort-016.indices.bin",
+      "sha256": "de7e8bf792675913d264c8bd72122a5e3740e4ee8ddae3dcd1a19fbdb63449d6"
+    },
+    {
+      "file": "decoder_kv.ort-017.indices.bin",
+      "sha256": "505bec01802840058be404dc07d8ee6e0f7a7942accedae4d7e755a50abbb93d"
+    },
+    {
+      "file": "decoder_kv.ort-018.indices.bin",
+      "sha256": "1cb67966bcc8724a660447526c895c2bf73a3df691afb34030c3f2f1792edfa7"
+    },
+    {
+      "file": "decoder_kv.ort-019.indices.bin",
+      "sha256": "817e8f4ab5ad416465334c75a370280e23f9d9da4c1b4a234d674a2f292d6bef"
+    },
+    {
+      "file": "decoder_kv.ort-020.indices.bin",
+      "sha256": "bdcb9d7793f17673e12f0b39b41141783d243ee6c96811316c8de95815624926"
+    },
+    {
+      "file": "decoder_kv.ort-021.indices.bin",
+      "sha256": "6fc1624503f1d0dc3933589fb36fc3ca23bdce6c51a064b4dc1007b80f086425"
+    },
+    {
+      "file": "decoder_kv.ort-022.indices.bin",
+      "sha256": "37808ac0814eed717686c0e7d01cee3809ae9452c18e22958f6bbee50d211f36"
+    },
+    {
+      "file": "decoder_kv.ort-023.indices.bin",
+      "sha256": "99e16a23096bb442f6898df7a13f75b3c42d3e9364ef0c04ea8942438ba4bb93"
+    },
+    {
+      "file": "decoder_kv.ort-024.indices.bin",
+      "sha256": "c8cd1c35a6a57dc6f218a6f1626ea437a00f13953ec01437638d6183a8b032c2"
+    },
+    {
+      "file": "decoder_kv.ort-025.indices.bin",
+      "sha256": "64aa29f11e93136b46bbacf51978e7ed550239ed08c38331925fd82f18db6d3e"
+    },
+    {
+      "file": "decoder_kv.ort-026.indices.bin",
+      "sha256": "9f0f17b8f228e43e4533b4a5f5b8f97c5ebe6993fdbc54c065a062f0a28bedf6"
+    },
+    {
+      "file": "decoder_kv.ort-027.indices.bin",
+      "sha256": "2a81b536fa894c90789acf331afd4f65606795312c3126b86ce671d1bd288989"
+    },
+    {
+      "file": "decoder_kv.ort-028.indices.bin",
+      "sha256": "8c40cb73c9b4e3dbf384812b8f43e6156e49e4dde3a4b95a26855bdbadaf128f"
+    },
+    {
+      "file": "decoder_kv.ort-029.indices.bin",
+      "sha256": "bfe912ef451757234114c1508797ce79aea37cd248c0cff023b7cf4dc4cb206d"
+    },
+    {
+      "file": "decoder_kv.ort-030.indices.bin",
+      "sha256": "b8ba0455ba2b24cf5f95ad53556f5e34c6cf393f8c63271973d2a970068e8212"
+    },
+    {
+      "file": "decoder_kv.ort-031.indices.bin",
+      "sha256": "9fbb2a527f7cec0a81703729dec150c265e8885bac55ec69f2737252a8587987"
+    },
+    {
+      "file": "decoder_kv.ort-032.indices.bin",
+      "sha256": "95c41d992dac879cc00b01e7cad97698e126bc144c1dae53c1022110670a9c47"
+    },
+    {
+      "file": "decoder_kv.ort-033.indices.bin",
+      "sha256": "43fcfd7c97cfe32abd64e44cadfd1fcfdd9acbb3144447c09f03086b93a97981"
+    },
+    {
+      "file": "decoder_kv.ort-034.indices.bin",
+      "sha256": "141670fe6d99696aa803b1e8543bbd72024849283581095a21c5689d0913717c"
+    },
+    {
+      "file": "decoder_kv.ort-035.indices.bin",
+      "sha256": "3358d04b8a3985b4d3927e9297d1d27cb999a868660560857a22077b7ef23436"
+    },
+    {
+      "file": "decoder_kv.ort-036.indices.bin",
+      "sha256": "7ea8ce332c93f56b1e50614de4a2d491d7f06a112e42d568e18e24d6cb45448d"
+    },
+    {
+      "file": "decoder_kv.ort-037.indices.bin",
+      "sha256": "1fde44a27ff1cd16487a60b2c80bd87da62d28815e837c0c785af8bec353f14d"
+    },
+    {
+      "file": "decoder_kv.ort-038.indices.bin",
+      "sha256": "40290dbf489a35f0bc7e8f30529ddcbddea425de2a936c4f7fc5541449d091ac"
+    },
+    {
+      "file": "decoder_kv.ort-039.indices.bin",
+      "sha256": "4276c5cbd22ff2162a0ec4b635b0bd5a26c51118498b6283fb4a301b6fe78360"
+    },
+    {
+      "file": "decoder_kv.ort-040.indices.bin",
+      "sha256": "427bfaf00c8444900ae470b1c5a7eb46d9ddd5bf1c6cbe1a9978dff75ed3ae2a"
+    },
+    {
+      "file": "decoder_kv.ort-041.indices.bin",
+      "sha256": "af9945d7ea542ef2e5c3b20f2b9a894b2d664b7477aab7ab40cf34992686a389"
+    },
+    {
+      "file": "decoder_kv.ort-042.indices.bin",
+      "sha256": "574259d65d6877f49a0b66b953066f63039bee4c2ddab13bf04c24b750133c8c"
+    },
+    {
+      "file": "decoder_kv.ort-043.indices.bin",
+      "sha256": "cc94f8272bf8f7b8cdf67862c54037024fe17db53fe7aba63d20dac258dadd38"
+    },
+    {
+      "file": "decoder_kv.ort-044.indices.bin",
+      "sha256": "d31480183b522398652e41bc2da3b7b6d34bc1f65218aef63eeecb2ad7594bd6"
+    },
+    {
+      "file": "decoder_kv.ort-045.indices.bin",
+      "sha256": "d11161d450e7afd5ab187237a7b47b28ae3e4f54def95bde49c8cac2c2ce8706"
+    },
+    {
+      "file": "decoder_kv.ort-046.indices.bin",
+      "sha256": "6e633803a74b5380e61fca0978438c2f5038fc932f78d93506e2b0f99a5e550e"
+    },
+    {
+      "file": "decoder_kv.ort-047.indices.bin",
+      "sha256": "78fb84403b814b00d3e341ace51ee5c112a5eb275760e250d3547c778caf2301"
+    },
+    {
+      "file": "decoder_kv.ort-048.indices.bin",
+      "sha256": "e67e5095f569da7584ce5c29e9329b086f586cfb595ff074c11274a2b981fb2e"
+    },
+    {
+      "file": "decoder_kv.ort-049.indices.bin",
+      "sha256": "0f37872f4fa945a598993d438b6eeb26e701982a7c6c617a32d10d427709768e"
+    },
+    {
+      "file": "decoder_kv.ort-050.indices.bin",
+      "sha256": "9c546152d96c5907063e40f5ac94a6159ce0e3faf1f221581121ea8b3033d004"
+    },
+    {
+      "file": "decoder_kv.ort-051.indices.bin",
+      "sha256": "4a0ddd8ef4d07e1e2211c54ff9aa3ff385536ee5d901ee35b3ae79028922236b"
+    },
+    {
+      "file": "decoder_kv.ort-052.indices.bin",
+      "sha256": "1b0ec8ba170f578c07837b359ac0cbdf17edc1d1ade4815c124b7bf84570f838"
+    },
+    {
+      "file": "decoder_kv.ort-053.indices.bin",
+      "sha256": "9a22c26bf79e2bfc0ebe47462933d68510ec2eda28dd5d6ca2249f8b52e17282"
+    },
+    {
+      "file": "decoder_kv.ort-054.indices.bin",
+      "sha256": "a6ac692e914944d539eec3a1e0edd5eb02683671abb88931f35f1ce977befb0a"
+    },
+    {
+      "file": "decoder_kv.ort-055.indices.bin",
+      "sha256": "b1edca7d0c238ec507c13f9e5235d1193ce219d744a452748d7207bd02fafe6f"
+    },
+    {
+      "file": "decoder_kv.ort-056.indices.bin",
+      "sha256": "52fd307d2e368c918b72ef1f3482edcee2cc1f99770b613cd2fe27ce07166d7d"
+    },
+    {
+      "file": "decoder_kv.ort-057.indices.bin",
+      "sha256": "6f348fc8de2f1dc1e3ad530e5cb3eaedf56e50414c095ab8d859561c55a6ceae"
+    },
+    {
+      "file": "decoder_kv.ort-058.indices.bin",
+      "sha256": "cde98159acb50b0935095c600a731904a5b82769b55ffd82904e42b5fbdcce9d"
+    },
+    {
+      "file": "decoder_kv.ort-059.indices.bin",
+      "sha256": "3c811370726203f0150de226d24ab0106ef6bec61813509188b2185e0796fa55"
+    },
+    {
+      "file": "decoder_kv.ort-060.indices.bin",
+      "sha256": "7cd49c52ce07d25a230fdbbe5c378614da5b62653a5961e9d04916e7bc135c3f"
+    },
+    {
+      "file": "decoder_kv.ort-061.indices.bin",
+      "sha256": "8cc28e64a3963988917218494fd4acd0d5a96f367f1f93909ba82bd29e8d211e"
+    },
+    {
+      "file": "encoder.ort-062.indices.bin",
+      "sha256": "187cf937435974a580b60b7fc31d1ac87d3ff9c722c55d446ff251c1f1dd0863"
+    },
+    {
+      "file": "encoder.ort-063.indices.bin",
+      "sha256": "46a856dff127b650ec787c060312cd6f9ea699e3b7191f5821464abede4ba51c"
+    },
+    {
+      "file": "encoder.ort-064.indices.bin",
+      "sha256": "ffaa96eb360ecd62568768def0a5c72cdf68dec2be61e136e65594895c568dc5"
+    },
+    {
+      "file": "encoder.ort-065.indices.bin",
+      "sha256": "b6ef17a1a8370918291bde0140561b4af3b64ea79006439935c8e21d394a970b"
+    },
+    {
+      "file": "encoder.ort-066.indices.bin",
+      "sha256": "2266d92fc34cbd73b8985f4f77c26602a2d711b210c744cfa855bd7487e729e0"
+    },
+    {
+      "file": "encoder.ort-067.indices.bin",
+      "sha256": "5a365d0dedc253ed958dd94027a35a54428e3d2b0ac00a736d8fd8b7f8903464"
+    },
+    {
+      "file": "encoder.ort-068.indices.bin",
+      "sha256": "a3fff6a10d4623aa19ebc1349f1f834684e46fbd100627a4cf8d38051e163210"
+    },
+    {
+      "file": "encoder.ort-069.indices.bin",
+      "sha256": "06cde76c87772ea24840d9adcfcfc3b9682fa68ddf011a93bf0b6d684c147092"
+    },
+    {
+      "file": "encoder.ort-070.indices.bin",
+      "sha256": "2b7f857f2cf3368b663d47ce61af27206f9dec246f3b37c65a04aa9068d190d7"
+    },
+    {
+      "file": "encoder.ort-071.indices.bin",
+      "sha256": "4562e85d595e9f8e06111f0a21d4185e3500326fa4e477aee302dc316f39b7eb"
+    },
+    {
+      "file": "encoder.ort-072.indices.bin",
+      "sha256": "9b289ff711a05dd398777788ba66fc8b238343d92d2d209475b4b3ecfaf143c5"
+    },
+    {
+      "file": "encoder.ort-073.indices.bin",
+      "sha256": "d39f245051f7922c76ea13559c85244ff026db71d0451ac20c77d0e19effad62"
+    },
+    {
+      "file": "encoder.ort-074.indices.bin",
+      "sha256": "ad065e8d8260862731c00c7e209c3fded5c4f0ee5e53f46827e8d5fbabc13a07"
+    },
+    {
+      "file": "encoder.ort-075.indices.bin",
+      "sha256": "2f0cd054776057230a9a392ff2c0efe322cc3db3ce1f210d2877db454d808ca1"
+    },
+    {
+      "file": "encoder.ort-076.indices.bin",
+      "sha256": "e2d232429927033aa44a3471615922cd221cc4494c6fd8331f4d47a22bad9094"
+    },
+    {
+      "file": "encoder.ort-077.indices.bin",
+      "sha256": "f05a57a9ae841cea6b5417a08cda71ab99fb037d816b4f08874fceae39d7c069"
+    },
+    {
+      "file": "encoder.ort-078.indices.bin",
+      "sha256": "2c444f3bb874033b2a837e3c887516f61ad6a9e011aa28b6a32f3a49be9c7b98"
+    },
+    {
+      "file": "encoder.ort-079.indices.bin",
+      "sha256": "8011d676adbff11498f8885f2f7e5b3b9385eefe33076420df8cfedb18437acf"
+    },
+    {
+      "file": "encoder.ort-080.indices.bin",
+      "sha256": "51f6a552b5efc5fabcc61bf2599c86fbc97c069808a6d196af7424aee1ac4c2b"
+    },
+    {
+      "file": "encoder.ort-081.indices.bin",
+      "sha256": "78ebdc57f99ac2b83f92408364ee110a3ac58e3357d2c168aa1dbf933481fd5d"
+    },
+    {
+      "file": "encoder.ort-082.indices.bin",
+      "sha256": "dc5bae5477d262867032d31defc6155ed5794e5da55ca83b901dce8d37224548"
+    },
+    {
+      "file": "encoder.ort-083.indices.bin",
+      "sha256": "0a54bf1aebdc7eb3004b62122a883df576c8beff77d44b2954ff201ff099d004"
+    },
+    {
+      "file": "encoder.ort-084.indices.bin",
+      "sha256": "b70bc4da9789881218887705dc3b2ff3cd5083047ec6669b4617599e38a6c55e"
+    },
+    {
+      "file": "encoder.ort-085.indices.bin",
+      "sha256": "f99c9df34399b4cfcd5f259cbc6d40be1d195b1aca588def1e7f22fc5e628732"
+    },
+    {
+      "file": "encoder.ort-086.indices.bin",
+      "sha256": "8fb5711eee1068dfea20d304e8ed00742c96bf5ac0fe72931eb45780032f623d"
+    },
+    {
+      "file": "encoder.ort-087.indices.bin",
+      "sha256": "ef68dbfe111763fa364de16989c1b988f61ade4ae8bec98528ef49a2f0dd5db0"
+    },
+    {
+      "file": "encoder.ort-088.indices.bin",
+      "sha256": "17459420ff9ac265230c570dc3fa0de442f359f9dc7375d9a41817703b9a7976"
+    },
+    {
+      "file": "encoder.ort-089.indices.bin",
+      "sha256": "f940fe4f34515abb1441e3733ee239913703327ca50ff8416563c673d5e7d190"
+    },
+    {
+      "file": "encoder.ort-090.indices.bin",
+      "sha256": "0a5a11e149ff43cd8990d3df498f7d92a82622b87c568a992b4ebcd80ae91993"
+    },
+    {
+      "file": "encoder.ort-091.indices.bin",
+      "sha256": "61c297aa61db532d4d2198ab668436ffd5a1c9300612ea274a1a84c2433d4cb5"
+    },
+    {
+      "file": "encoder.ort-092.indices.bin",
+      "sha256": "93a053c449475064c609d4c419b0014674facbab07806d40c6d7846ab4114248"
+    },
+    {
+      "file": "encoder.ort-093.indices.bin",
+      "sha256": "7f566c15d8fda6b884581be45c73b7f8fdf7d51660bb02863e1183da34fed761"
+    },
+    {
+      "file": "encoder.ort-094.indices.bin",
+      "sha256": "375fdde96702f87d79e448eced4e4dedaae6f017e9551c48686cbc486357c547"
+    },
+    {
+      "file": "encoder.ort-095.indices.bin",
+      "sha256": "864fcdc7ec80be2dbb99d76361db338345fb02a1a26d7aaa4a1b40696b921907"
+    },
+    {
+      "file": "encoder.ort-096.indices.bin",
+      "sha256": "f277f76ac720bdee51efffb783f1c2865812c80aef70da119858f25de4597eff"
+    },
+    {
+      "file": "encoder.ort-097.indices.bin",
+      "sha256": "ca170bb64742ef9a57067253280ee05ba65a66e5a8eb6a59aba81905b40d6790"
+    }
+  ],
+  "models": {
+    "original": {
+      "directory": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/models/artifacts",
+      "files": [
+        {
+          "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/models/artifacts/adapter.ort",
+          "sha256": "22ecc949e146c49667fda28d102d4e30749a107dc88a396292aa8f277ef1347c"
+        },
+        {
+          "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/models/artifacts/cross_kv.ort",
+          "sha256": "143a36667b8d05fd9d04e8c337b7ee121f37ef299aea6b3d82bdb3d3401950b4"
+        },
+        {
+          "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/models/artifacts/decoder_kv.ort",
+          "sha256": "8852553f312adb6c9aa4d17418015049b30f412209ee569d336548c0044627de"
+        },
+        {
+          "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/models/artifacts/encoder.ort",
+          "sha256": "a8414e1a5dedf9f2093d7680601dd8a9b0433e7020260eafe0e370ead91134ca"
+        },
+        {
+          "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/models/artifacts/frontend.model.ort",
+          "sha256": "5121b561417b638afce0c6c31b760e37c93cf97f80d9b0031aad1fe7b6f25d61"
+        },
+        {
+          "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/models/artifacts/frontend.weights.ort",
+          "sha256": "217da24ac6f522ebf02da8ef288e77d1ac68d50d4a6821433182e4fbf4204bbd"
+        },
+        {
+          "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/models/artifacts/streaming_config.json",
+          "sha256": "74fe5ddebd63b17caf59e8a3b18c17547ff7bce1642050edbb1c3962674f8950"
+        },
+        {
+          "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/models/artifacts/tokenizer.bin",
+          "sha256": "6884b35fd6377d4c4d32336a0bc152f36b64d1e45b6503683cdc238250a8472d"
+        }
+      ]
+    },
+    "k64": {
+      "directory": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/models/candidates/codebook-4bit-optimal-rectangular-k64",
+      "candidate_name": "codebook-4bit-optimal-rectangular-k64",
+      "files": [
+        {
+          "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/models/candidates/codebook-4bit-optimal-rectangular-k64/adapter.ort",
+          "sha256": "45df26581a00156f97a75d8f3a6efe9c4206a0ab9dd5b09b69419d489586d050"
+        },
+        {
+          "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/models/candidates/codebook-4bit-optimal-rectangular-k64/cross_kv.ort",
+          "sha256": "a71065382d252270cee8fb57835a66cf5327297bcfe4f9a4180c5e71f636ed95"
+        },
+        {
+          "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/models/candidates/codebook-4bit-optimal-rectangular-k64/decoder_kv.ort",
+          "sha256": "d4e358b41d3dea5d4e1eed95f01da79e36f631e32c2c114e27f269fa74e2d5f7"
+        },
+        {
+          "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/models/candidates/codebook-4bit-optimal-rectangular-k64/encoder.ort",
+          "sha256": "34c9568cface06242b3b215c4bce01f3b48144e53342addc1c3d5c3603e72ffc"
+        },
+        {
+          "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/models/candidates/codebook-4bit-optimal-rectangular-k64/frontend.model.ort",
+          "sha256": "5121b561417b638afce0c6c31b760e37c93cf97f80d9b0031aad1fe7b6f25d61"
+        },
+        {
+          "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/models/candidates/codebook-4bit-optimal-rectangular-k64/frontend.weights.ort",
+          "sha256": "217da24ac6f522ebf02da8ef288e77d1ac68d50d4a6821433182e4fbf4204bbd"
+        },
+        {
+          "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/models/candidates/codebook-4bit-optimal-rectangular-k64/streaming_config.json",
+          "sha256": "74fe5ddebd63b17caf59e8a3b18c17547ff7bce1642050edbb1c3962674f8950"
+        },
+        {
+          "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/models/candidates/codebook-4bit-optimal-rectangular-k64/tokenizer.bin",
+          "sha256": "6884b35fd6377d4c4d32336a0bc152f36b64d1e45b6503683cdc238250a8472d"
+        }
+      ],
+      "ideal_payload_bytes": 25987246,
+      "representative_bytes": 7765892
+    }
+  },
+  "inputs": [
+    {
+      "input_index": 0,
+      "id": "237-126133-0010",
+      "role": "test",
+      "speaker": "237",
+      "condition": "clean",
+      "seed": null,
+      "partitions": [
+        "test"
+      ],
+      "reference": "OH YOU ARE THE DEAREST AND BEST MISTER KING I EVER SAW BUT HOW DID YOU MAKE MAMMY LET HER COME",
+      "source_path": "data/librispeech/LibriSpeech/test-clean/237/126133/237-126133-0010.flac",
+      "source_sha256": "0b637c683002566eace1f983c067793473e9dcff957a6fc2e8a006f8e35243a7",
+      "signal_file": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/build/taalas-k64-reserved-test-v1/inputs/input-000.npy",
+      "signal_file_sha256": "e42ad0938a7e888c3d98484e413669800882491d81848d34a4f5f5c6d70b0415",
+      "input_float32_sha256": "f68fefb48e19f39a195b8c4bd96ef4ef253e533e7d09c7bd623e9594808511fd"
+    },
+    {
+      "input_index": 1,
+      "id": "237-126133-0010",
+      "role": "test",
+      "speaker": "237",
+      "condition": "white_noise_10db",
+      "seed": null,
+      "partitions": [
+        "test"
+      ],
+      "reference": "OH YOU ARE THE DEAREST AND BEST MISTER KING I EVER SAW BUT HOW DID YOU MAKE MAMMY LET HER COME",
+      "source_path": "data/librispeech/LibriSpeech/test-clean/237/126133/237-126133-0010.flac",
+      "source_sha256": "0b637c683002566eace1f983c067793473e9dcff957a6fc2e8a006f8e35243a7",
+      "signal_file": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/build/taalas-k64-reserved-test-v1/inputs/input-001.npy",
+      "signal_file_sha256": "e225ef9f084a95f93b945711440ebce7ee7615e337b80bca92f9c943df47d80f",
+      "input_float32_sha256": "6f50811064bb9fef670b9e2dc7ebf58c40075c890d31c1ab37dc633e54037073"
+    },
+    {
+      "input_index": 2,
+      "id": "237-134500-0026",
+      "role": "test",
+      "speaker": "237",
+      "condition": "clean",
+      "seed": null,
+      "partitions": [
+        "test"
+      ],
+      "reference": "SURELY YOU ARE NOT THINKING OF GOING OFF THERE",
+      "source_path": "data/librispeech/LibriSpeech/test-clean/237/134500/237-134500-0026.flac",
+      "source_sha256": "f238d447677b90751ecea18cdffea8c3f3e0fb6f5e42583bbdc78e051bdd0442",
+      "signal_file": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/build/taalas-k64-reserved-test-v1/inputs/input-002.npy",
+      "signal_file_sha256": "6d888a0b91b03988d7dca4e1131250234153eac5adbf0b6939d24ac1ad50997f",
+      "input_float32_sha256": "8c8449227fa2eb7d5a24e3c85a18e21591011422efd9247c44c29768493e47ba"
+    },
+    {
+      "input_index": 3,
+      "id": "237-134500-0026",
+      "role": "test",
+      "speaker": "237",
+      "condition": "white_noise_10db",
+      "seed": null,
+      "partitions": [
+        "test"
+      ],
+      "reference": "SURELY YOU ARE NOT THINKING OF GOING OFF THERE",
+      "source_path": "data/librispeech/LibriSpeech/test-clean/237/134500/237-134500-0026.flac",
+      "source_sha256": "f238d447677b90751ecea18cdffea8c3f3e0fb6f5e42583bbdc78e051bdd0442",
+      "signal_file": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/build/taalas-k64-reserved-test-v1/inputs/input-003.npy",
+      "signal_file_sha256": "4dc8d2fdd9139ee2f51153d54c5a416cb590aa44d9f8c5c4e56e8e840202cc13",
+      "input_float32_sha256": "cd06342ccd1814f37b61e56f715d74235465680ff6c3357de5e1d95a28736448"
+    },
+    {
+      "input_index": 4,
+      "id": "260-123286-0011",
+      "role": "test",
+      "speaker": "260",
+      "condition": "clean",
+      "seed": null,
+      "partitions": [
+        "test"
+      ],
+      "reference": "NOTHING NEW WEATHER UNCHANGED THE WIND FRESHENS",
+      "source_path": "data/librispeech/LibriSpeech/test-clean/260/123286/260-123286-0011.flac",
+      "source_sha256": "74bd87692b3a14a2866ac51228b3c78cbb3c170119f4408e37f8664655b88ac2",
+      "signal_file": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/build/taalas-k64-reserved-test-v1/inputs/input-004.npy",
+      "signal_file_sha256": "70ea336e12de8666da48e1c2b510753a5734ee08bb10a3e9e2d964b0816955a9",
+      "input_float32_sha256": "b696aab4d23a7187f997e7721d13191a0831bc69fc7f0e1672db8a05c2420f65"
+    },
+    {
+      "input_index": 5,
+      "id": "260-123286-0011",
+      "role": "test",
+      "speaker": "260",
+      "condition": "white_noise_10db",
+      "seed": null,
+      "partitions": [
+        "test"
+      ],
+      "reference": "NOTHING NEW WEATHER UNCHANGED THE WIND FRESHENS",
+      "source_path": "data/librispeech/LibriSpeech/test-clean/260/123286/260-123286-0011.flac",
+      "source_sha256": "74bd87692b3a14a2866ac51228b3c78cbb3c170119f4408e37f8664655b88ac2",
+      "signal_file": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/build/taalas-k64-reserved-test-v1/inputs/input-005.npy",
+      "signal_file_sha256": "66be33db7a272c663171d4ae6bad4cbd73a4dc1ae40b56b55e4b7db31b6598ab",
+      "input_float32_sha256": "ced59096e7e08f31059be8cb56917e95bea3f9d01b0e44238726de5d25aa30b1"
+    },
+    {
+      "input_index": 6,
+      "id": "260-123286-0010",
+      "role": "test",
+      "speaker": "260",
+      "condition": "clean",
+      "seed": null,
+      "partitions": [
+        "test"
+      ],
+      "reference": "SUNDAY AUGUST SIXTEENTH",
+      "source_path": "data/librispeech/LibriSpeech/test-clean/260/123286/260-123286-0010.flac",
+      "source_sha256": "a63c9f7c7b5f2db68a243cb837bdb48c99e5c141f5ebaec5f0152879f2ea96fb",
+      "signal_file": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/build/taalas-k64-reserved-test-v1/inputs/input-006.npy",
+      "signal_file_sha256": "2560ec09b55a4940445be67e72637e6f7bd0d2165e1208662e336188c0eb3e56",
+      "input_float32_sha256": "7a0230611f226f600ec5718aef7e9ad70cf9567cb322edf37c61712c9b22dd9f"
+    },
+    {
+      "input_index": 7,
+      "id": "260-123286-0010",
+      "role": "test",
+      "speaker": "260",
+      "condition": "white_noise_10db",
+      "seed": null,
+      "partitions": [
+        "test"
+      ],
+      "reference": "SUNDAY AUGUST SIXTEENTH",
+      "source_path": "data/librispeech/LibriSpeech/test-clean/260/123286/260-123286-0010.flac",
+      "source_sha256": "a63c9f7c7b5f2db68a243cb837bdb48c99e5c141f5ebaec5f0152879f2ea96fb",
+      "signal_file": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/build/taalas-k64-reserved-test-v1/inputs/input-007.npy",
+      "signal_file_sha256": "0dd88a985005c028c95cfcf0bcbb92556ca7167c53bf41e0e4fe31a5e341a9dd",
+      "input_float32_sha256": "10296eece76e21c6ff80ad0e0752e8cda94356fc31a2268d968c7ee3e996084b"
+    },
+    {
+      "input_index": 8,
+      "id": "8463-287645-0002",
+      "role": "test",
+      "speaker": "8463",
+      "condition": "clean",
+      "seed": null,
+      "partitions": [
+        "test"
+      ],
+      "reference": "FROM THE MANNER IN WHICH HE EXPRESSED HIMSELF WITH REGARD TO ROBERT HOLLAN NO MAN IN THE WHOLE RANGE OF HIS RECOLLECTIONS WILL BE LONGER REMEMBERED THAN HE HIS ENTHRALMENT WHILE UNDER HOLLAN WILL HARDLY EVER BE FORGOTTEN",
+      "source_path": "data/librispeech/LibriSpeech/test-clean/8463/287645/8463-287645-0002.flac",
+      "source_sha256": "642ea69d357b7dc380dfd40051b103471eed41af9d241689c1b14647969c1506",
+      "signal_file": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/build/taalas-k64-reserved-test-v1/inputs/input-008.npy",
+      "signal_file_sha256": "887fa5d46c62f496e22085f7f0070487fc442240daa901ac01f1f3539983f5e5",
+      "input_float32_sha256": "97bc1260a7eb1ba32fb39e7c5a3a59613847654a512e223df55147e497b254fa"
+    },
+    {
+      "input_index": 9,
+      "id": "8463-287645-0002",
+      "role": "test",
+      "speaker": "8463",
+      "condition": "white_noise_10db",
+      "seed": null,
+      "partitions": [
+        "test"
+      ],
+      "reference": "FROM THE MANNER IN WHICH HE EXPRESSED HIMSELF WITH REGARD TO ROBERT HOLLAN NO MAN IN THE WHOLE RANGE OF HIS RECOLLECTIONS WILL BE LONGER REMEMBERED THAN HE HIS ENTHRALMENT WHILE UNDER HOLLAN WILL HARDLY EVER BE FORGOTTEN",
+      "source_path": "data/librispeech/LibriSpeech/test-clean/8463/287645/8463-287645-0002.flac",
+      "source_sha256": "642ea69d357b7dc380dfd40051b103471eed41af9d241689c1b14647969c1506",
+      "signal_file": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/build/taalas-k64-reserved-test-v1/inputs/input-009.npy",
+      "signal_file_sha256": "44bcf2d35ec8c3bee9a742bb9aac3e54759045a5589d1c26e2188d8c790066df",
+      "input_float32_sha256": "e3637be2860388f8db78f8f44a9ade3089b2e83e48c8b61d848250eea0d54135"
+    },
+    {
+      "input_index": 10,
+      "id": "8463-294828-0010",
+      "role": "test",
+      "speaker": "8463",
+      "condition": "clean",
+      "seed": null,
+      "partitions": [
+        "test"
+      ],
+      "reference": "NEVER DID HE OBJECT TO BUCKLING UP HIS SUITCASE FOR ANY COUNTRY WHATEVER CHINA OR THE CONGO NO MATTER HOW FAR OFF IT WAS",
+      "source_path": "data/librispeech/LibriSpeech/test-clean/8463/294828/8463-294828-0010.flac",
+      "source_sha256": "6a7d08bf5b2bdd516fe2fe3eb4687909c39470971957af11369ae219d6338980",
+      "signal_file": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/build/taalas-k64-reserved-test-v1/inputs/input-010.npy",
+      "signal_file_sha256": "1edee41d7e687e94f1584c2b985c609935f7374adad6a291958a607c5af5d7ab",
+      "input_float32_sha256": "aceccd363c1c32bb0a5d9352beafee38dfd6851fdb5cbe60c8d6ecf7e6ded1cd"
+    },
+    {
+      "input_index": 11,
+      "id": "8463-294828-0010",
+      "role": "test",
+      "speaker": "8463",
+      "condition": "white_noise_10db",
+      "seed": null,
+      "partitions": [
+        "test"
+      ],
+      "reference": "NEVER DID HE OBJECT TO BUCKLING UP HIS SUITCASE FOR ANY COUNTRY WHATEVER CHINA OR THE CONGO NO MATTER HOW FAR OFF IT WAS",
+      "source_path": "data/librispeech/LibriSpeech/test-clean/8463/294828/8463-294828-0010.flac",
+      "source_sha256": "6a7d08bf5b2bdd516fe2fe3eb4687909c39470971957af11369ae219d6338980",
+      "signal_file": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/build/taalas-k64-reserved-test-v1/inputs/input-011.npy",
+      "signal_file_sha256": "933945cf7b44d761aef74bef255ac681846dc8ab8c168802c8addf9bf941f4f9",
+      "input_float32_sha256": "4aa50117b868827c494c56e26b95607faad531af55595272756141dd53dac7fb"
+    },
+    {
+      "input_index": 12,
+      "id": "6930-75918-0005",
+      "role": "test",
+      "speaker": "6930",
+      "condition": "clean",
+      "seed": null,
+      "partitions": [
+        "test"
+      ],
+      "reference": "THE COUNT HAD THROWN HIMSELF BACK ON HIS SEAT LEANING HIS SHOULDERS AGAINST THE PARTITION OF THE TENT AND REMAINED THUS HIS FACE BURIED IN HIS HANDS WITH HEAVING CHEST AND RESTLESS LIMBS",
+      "source_path": "data/librispeech/LibriSpeech/test-clean/6930/75918/6930-75918-0005.flac",
+      "source_sha256": "ccc0da025ef4f4596a4e70fbde291527d140364166d19d9bb516a48407b3491e",
+      "signal_file": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/build/taalas-k64-reserved-test-v1/inputs/input-012.npy",
+      "signal_file_sha256": "dee7f3caca85887508145ac06bb46d9bb0b01f6d7380a420bcc7cfebe0e574a5",
+      "input_float32_sha256": "390af71704a72b3600acb9f1dc4c792be1d0ca027ecaefb46a9e2fb8a4fb1fc9"
+    },
+    {
+      "input_index": 13,
+      "id": "6930-75918-0005",
+      "role": "test",
+      "speaker": "6930",
+      "condition": "white_noise_10db",
+      "seed": null,
+      "partitions": [
+        "test"
+      ],
+      "reference": "THE COUNT HAD THROWN HIMSELF BACK ON HIS SEAT LEANING HIS SHOULDERS AGAINST THE PARTITION OF THE TENT AND REMAINED THUS HIS FACE BURIED IN HIS HANDS WITH HEAVING CHEST AND RESTLESS LIMBS",
+      "source_path": "data/librispeech/LibriSpeech/test-clean/6930/75918/6930-75918-0005.flac",
+      "source_sha256": "ccc0da025ef4f4596a4e70fbde291527d140364166d19d9bb516a48407b3491e",
+      "signal_file": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/build/taalas-k64-reserved-test-v1/inputs/input-013.npy",
+      "signal_file_sha256": "61c8dcb560c6ee9f859fc9c01581b1c3f9d9f2acb15c62ea3cb299ba364612a1",
+      "input_float32_sha256": "2a64addae4ecb053f409e16afd5bed3b0cfc91bd9fbe56fc9dbb6b57150827c3"
+    },
+    {
+      "input_index": 14,
+      "id": "6930-81414-0001",
+      "role": "test",
+      "speaker": "6930",
+      "condition": "clean",
+      "seed": null,
+      "partitions": [
+        "test"
+      ],
+      "reference": "I HEARD A NOISE BEHIND I TURNED AND SAW KAFFAR HIS BLACK EYES SHINING WHILE IN HIS HAND HE HELD A GLEAMING KNIFE HE LIFTED IT ABOVE HIS HEAD AS IF TO STRIKE BUT I HAD THE STRENGTH OF TEN MEN AND I HURLED HIM FROM ME",
+      "source_path": "data/librispeech/LibriSpeech/test-clean/6930/81414/6930-81414-0001.flac",
+      "source_sha256": "06e4c0f398e3d5c165828eb65f901578f225515f66710dc82679bdd0c48170ac",
+      "signal_file": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/build/taalas-k64-reserved-test-v1/inputs/input-014.npy",
+      "signal_file_sha256": "254c505ffc8d8e3ac5a5a62074334cd0e175c3de46ff4db3994bcd43a9bdb64f",
+      "input_float32_sha256": "c2522c8fefdc2b65df4563c57660dcfaac4703e151d6376fb612ddcaf6c99aa2"
+    },
+    {
+      "input_index": 15,
+      "id": "6930-81414-0001",
+      "role": "test",
+      "speaker": "6930",
+      "condition": "white_noise_10db",
+      "seed": null,
+      "partitions": [
+        "test"
+      ],
+      "reference": "I HEARD A NOISE BEHIND I TURNED AND SAW KAFFAR HIS BLACK EYES SHINING WHILE IN HIS HAND HE HELD A GLEAMING KNIFE HE LIFTED IT ABOVE HIS HEAD AS IF TO STRIKE BUT I HAD THE STRENGTH OF TEN MEN AND I HURLED HIM FROM ME",
+      "source_path": "data/librispeech/LibriSpeech/test-clean/6930/81414/6930-81414-0001.flac",
+      "source_sha256": "06e4c0f398e3d5c165828eb65f901578f225515f66710dc82679bdd0c48170ac",
+      "signal_file": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/build/taalas-k64-reserved-test-v1/inputs/input-015.npy",
+      "signal_file_sha256": "52ee4c9dfcc91143245c94380bda9e89a4ae09ffd70b2c91070b905ee03e4448",
+      "input_float32_sha256": "2286be7a4d2350a09f2395337ab578369cb774b2deab24da4eae7d315e5e3826"
+    },
+    {
+      "input_index": 16,
+      "id": "2094-142345-0053",
+      "role": "test",
+      "speaker": "2094",
+      "condition": "clean",
+      "seed": null,
+      "partitions": [
+        "test"
+      ],
+      "reference": "FOR IF HE'S ANYWHERE ON THE FARM WE CAN SEND FOR HIM IN A MINUTE",
+      "source_path": "data/librispeech/LibriSpeech/test-clean/2094/142345/2094-142345-0053.flac",
+      "source_sha256": "41167c43cf7e66d8dc66354ac0dce53d157519b2ec8c7f7fe2c3f96235bf5594",
+      "signal_file": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/build/taalas-k64-reserved-test-v1/inputs/input-016.npy",
+      "signal_file_sha256": "64b28aca4a3c9e50990d35ac9f8f9a2a71bb52e2119e599623984c3d7a6787c5",
+      "input_float32_sha256": "123a9bcf1f9c1efb6cf77cd858a3612e9a870ccbb1cc808f52921a3401529a26"
+    },
+    {
+      "input_index": 17,
+      "id": "2094-142345-0053",
+      "role": "test",
+      "speaker": "2094",
+      "condition": "white_noise_10db",
+      "seed": null,
+      "partitions": [
+        "test"
+      ],
+      "reference": "FOR IF HE'S ANYWHERE ON THE FARM WE CAN SEND FOR HIM IN A MINUTE",
+      "source_path": "data/librispeech/LibriSpeech/test-clean/2094/142345/2094-142345-0053.flac",
+      "source_sha256": "41167c43cf7e66d8dc66354ac0dce53d157519b2ec8c7f7fe2c3f96235bf5594",
+      "signal_file": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/build/taalas-k64-reserved-test-v1/inputs/input-017.npy",
+      "signal_file_sha256": "05034f475686458c18151c76904885589af3fda4310f14214a283d50db12a24d",
+      "input_float32_sha256": "408022d6bdc6a0a549af2c4b3cb5b7f7b04efa82529e182d9b7c34cd2dfb6fc6"
+    },
+    {
+      "input_index": 18,
+      "id": "2094-142345-0022",
+      "role": "test",
+      "speaker": "2094",
+      "condition": "clean",
+      "seed": null,
+      "partitions": [
+        "test"
+      ],
+      "reference": "MISTER OTTLEY'S INDEED",
+      "source_path": "data/librispeech/LibriSpeech/test-clean/2094/142345/2094-142345-0022.flac",
+      "source_sha256": "a9cbf495202093f921248e1552aa1d740f8dc5d3f20f6b2e1c537d367ad89234",
+      "signal_file": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/build/taalas-k64-reserved-test-v1/inputs/input-018.npy",
+      "signal_file_sha256": "e65f77e1147c7e558c9de6ebc640fd8780fa2aa70c14d45ea4e73cf197d1f6df",
+      "input_float32_sha256": "179fe26b74111382ba05fa0535261d88ef1bc1601873d66cbb64095fcfa17edf"
+    },
+    {
+      "input_index": 19,
+      "id": "2094-142345-0022",
+      "role": "test",
+      "speaker": "2094",
+      "condition": "white_noise_10db",
+      "seed": null,
+      "partitions": [
+        "test"
+      ],
+      "reference": "MISTER OTTLEY'S INDEED",
+      "source_path": "data/librispeech/LibriSpeech/test-clean/2094/142345/2094-142345-0022.flac",
+      "source_sha256": "a9cbf495202093f921248e1552aa1d740f8dc5d3f20f6b2e1c537d367ad89234",
+      "signal_file": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/build/taalas-k64-reserved-test-v1/inputs/input-019.npy",
+      "signal_file_sha256": "ab1f98c7f615dd365fe7000efd07575b4741c06c2b9388079211aefe969756e7",
+      "input_float32_sha256": "6e9f8c18982dc4b4c3041e3242b9d702d6f395cf8208f917c8540c7661020195"
+    },
+    {
+      "input_index": 20,
+      "id": "3570-5695-0001",
+      "role": "test",
+      "speaker": "3570",
+      "condition": "clean",
+      "seed": null,
+      "partitions": [
+        "test"
+      ],
+      "reference": "THE DEPENDENT WHO WAS FIRST DELEGATED FOR THESE DUTIES WAS THE WIFE OR THE CHIEF WIFE AND AS WOULD BE EXPECTED IN THE LATER DEVELOPMENT OF THE INSTITUTION WHEN THE NUMBER OF PERSONS BY WHOM THESE DUTIES ARE CUSTOMARILY PERFORMED GRADUALLY NARROWS THE WIFE REMAINS THE LAST",
+      "source_path": "data/librispeech/LibriSpeech/test-clean/3570/5695/3570-5695-0001.flac",
+      "source_sha256": "2293848fb573ea04a8190222eb30c7bb10dae9c8851ea6de2f888f5b44f7e446",
+      "signal_file": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/build/taalas-k64-reserved-test-v1/inputs/input-020.npy",
+      "signal_file_sha256": "20c7439b3ffb5328e26b454088e07c7d545fb4b34f561e8b7af39ecdddaa9019",
+      "input_float32_sha256": "174f097b063cc17093786b50e7b4d1d8c3192997f2898059a2cbab4b6da9481a"
+    },
+    {
+      "input_index": 21,
+      "id": "3570-5695-0001",
+      "role": "test",
+      "speaker": "3570",
+      "condition": "white_noise_10db",
+      "seed": null,
+      "partitions": [
+        "test"
+      ],
+      "reference": "THE DEPENDENT WHO WAS FIRST DELEGATED FOR THESE DUTIES WAS THE WIFE OR THE CHIEF WIFE AND AS WOULD BE EXPECTED IN THE LATER DEVELOPMENT OF THE INSTITUTION WHEN THE NUMBER OF PERSONS BY WHOM THESE DUTIES ARE CUSTOMARILY PERFORMED GRADUALLY NARROWS THE WIFE REMAINS THE LAST",
+      "source_path": "data/librispeech/LibriSpeech/test-clean/3570/5695/3570-5695-0001.flac",
+      "source_sha256": "2293848fb573ea04a8190222eb30c7bb10dae9c8851ea6de2f888f5b44f7e446",
+      "signal_file": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/build/taalas-k64-reserved-test-v1/inputs/input-021.npy",
+      "signal_file_sha256": "5c6742a01ca30b8fa7ca5e7d48afd9d17179a726d842fadc9e87068ff8c8035f",
+      "input_float32_sha256": "a46d38ec87c1faffc808a1e847cdc21c57b95d58f8336202c51b9ffd5fbf4e03"
+    },
+    {
+      "input_index": 22,
+      "id": "3570-5695-0015",
+      "role": "test",
+      "speaker": "3570",
+      "condition": "clean",
+      "seed": null,
+      "partitions": [
+        "test"
+      ],
+      "reference": "THE RESULT IS A GREAT MOBILITY OF THE LABOR EMPLOYED IN PRINTING PERHAPS GREATER THAN IN ANY OTHER EQUALLY WELL DEFINED AND CONSIDERABLE BODY OF WORKMEN",
+      "source_path": "data/librispeech/LibriSpeech/test-clean/3570/5695/3570-5695-0015.flac",
+      "source_sha256": "f799116577e4adde85e3b21b22fab9fe08cbc2bf4a9659672eecf39a195d104c",
+      "signal_file": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/build/taalas-k64-reserved-test-v1/inputs/input-022.npy",
+      "signal_file_sha256": "b0a81b70e8d283ea5231f7c27ad1b952804e99cbb46e2be9221a851e7e713650",
+      "input_float32_sha256": "92b2e9ebaed0680a1aecf6e2bce7c45aaffe798b935cf0c31dcf9f735356a578"
+    },
+    {
+      "input_index": 23,
+      "id": "3570-5695-0015",
+      "role": "test",
+      "speaker": "3570",
+      "condition": "white_noise_10db",
+      "seed": null,
+      "partitions": [
+        "test"
+      ],
+      "reference": "THE RESULT IS A GREAT MOBILITY OF THE LABOR EMPLOYED IN PRINTING PERHAPS GREATER THAN IN ANY OTHER EQUALLY WELL DEFINED AND CONSIDERABLE BODY OF WORKMEN",
+      "source_path": "data/librispeech/LibriSpeech/test-clean/3570/5695/3570-5695-0015.flac",
+      "source_sha256": "f799116577e4adde85e3b21b22fab9fe08cbc2bf4a9659672eecf39a195d104c",
+      "signal_file": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/build/taalas-k64-reserved-test-v1/inputs/input-023.npy",
+      "signal_file_sha256": "879a53772ed302583be47c646bf4054073c9006eb3dcf3d4d2e6dbe2b4f46858",
+      "input_float32_sha256": "591ddb9d6710d66de39985ebff12c27e66aa675e0683e2edbe9613651b7d8d40"
+    },
+    {
+      "input_index": 24,
+      "id": "6829-68769-0004",
+      "role": "test",
+      "speaker": "6829",
+      "condition": "clean",
+      "seed": null,
+      "partitions": [
+        "test"
+      ],
+      "reference": "BUT THEY COULD NOT HAVE PROVEN A CASE AGAINST LUCY IF SHE WAS INNOCENT AND ALL THEIR THREATS OF ARRESTING HER WERE PROBABLY MERE BLUFF",
+      "source_path": "data/librispeech/LibriSpeech/test-clean/6829/68769/6829-68769-0004.flac",
+      "source_sha256": "a471183f3b10b77d22f9e53071339bfeba2f7dd131f39e6cffe96c8b17e4e58e",
+      "signal_file": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/build/taalas-k64-reserved-test-v1/inputs/input-024.npy",
+      "signal_file_sha256": "684f8d333bf60075c7cffa6b1800ba3f73e28762c010ab16ae65a2b30d6a55fd",
+      "input_float32_sha256": "8f86459b966296cd6d721a5c1ab08ba68436d4df49b07d561cefd4639d8635bf"
+    },
+    {
+      "input_index": 25,
+      "id": "6829-68769-0004",
+      "role": "test",
+      "speaker": "6829",
+      "condition": "white_noise_10db",
+      "seed": null,
+      "partitions": [
+        "test"
+      ],
+      "reference": "BUT THEY COULD NOT HAVE PROVEN A CASE AGAINST LUCY IF SHE WAS INNOCENT AND ALL THEIR THREATS OF ARRESTING HER WERE PROBABLY MERE BLUFF",
+      "source_path": "data/librispeech/LibriSpeech/test-clean/6829/68769/6829-68769-0004.flac",
+      "source_sha256": "a471183f3b10b77d22f9e53071339bfeba2f7dd131f39e6cffe96c8b17e4e58e",
+      "signal_file": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/build/taalas-k64-reserved-test-v1/inputs/input-025.npy",
+      "signal_file_sha256": "d784305df0e8e554baf36f82d4360509865ab1863382b103bcf453065d9311b4",
+      "input_float32_sha256": "105e966d7098cccdc278187389808ba22e4a0216a68d676110d64a4d3999aeab"
+    },
+    {
+      "input_index": 26,
+      "id": "6829-68769-0051",
+      "role": "test",
+      "speaker": "6829",
+      "condition": "clean",
+      "seed": null,
+      "partitions": [
+        "test"
+      ],
+      "reference": "THERE WAS A GRIM SMILE OF AMUSEMENT ON HIS SHREWD FACE",
+      "source_path": "data/librispeech/LibriSpeech/test-clean/6829/68769/6829-68769-0051.flac",
+      "source_sha256": "47c549b6e7a6e9e8a0a0e43cea5b8bdf499744ed3407560fcf1dbaa235537b9d",
+      "signal_file": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/build/taalas-k64-reserved-test-v1/inputs/input-026.npy",
+      "signal_file_sha256": "07a9d06a8ffb790ce1c3f3ae9ffb1062e86cefb44a90aa033f928fd5f3fee2e9",
+      "input_float32_sha256": "69c5f06b4e4cc2ac8b57a4f3155662e7ff6d66b2adb5505089a479a3287f1801"
+    },
+    {
+      "input_index": 27,
+      "id": "6829-68769-0051",
+      "role": "test",
+      "speaker": "6829",
+      "condition": "white_noise_10db",
+      "seed": null,
+      "partitions": [
+        "test"
+      ],
+      "reference": "THERE WAS A GRIM SMILE OF AMUSEMENT ON HIS SHREWD FACE",
+      "source_path": "data/librispeech/LibriSpeech/test-clean/6829/68769/6829-68769-0051.flac",
+      "source_sha256": "47c549b6e7a6e9e8a0a0e43cea5b8bdf499744ed3407560fcf1dbaa235537b9d",
+      "signal_file": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/build/taalas-k64-reserved-test-v1/inputs/input-027.npy",
+      "signal_file_sha256": "5779d8460629acc3fff84db806116322c76d9057f3fecaf8ec565bd8a8e93d70",
+      "input_float32_sha256": "2a0f1f5a443c1d549a4c9ebfb6f1cddd56fabbd507d05b33d220de5ce559e0d0"
+    },
+    {
+      "input_index": 28,
+      "id": "7127-75947-0015",
+      "role": "test",
+      "speaker": "7127",
+      "condition": "clean",
+      "seed": null,
+      "partitions": [
+        "test"
+      ],
+      "reference": "THERE CANNOT BE A DOUBT HE RECEIVED YOU KINDLY FOR IN FACT YOU RETURNED WITHOUT HIS PERMISSION",
+      "source_path": "data/librispeech/LibriSpeech/test-clean/7127/75947/7127-75947-0015.flac",
+      "source_sha256": "d796af65014071cec7095cd68337691d532f4f14dc036f87afb769472a3c5704",
+      "signal_file": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/build/taalas-k64-reserved-test-v1/inputs/input-028.npy",
+      "signal_file_sha256": "04134e6777f2929f5960704debaedfca6a753425b71275ea02b37c01acd7fab4",
+      "input_float32_sha256": "0acf402a0e9812288c9912c571cd30c840ae6154d5a0ced9fa8463fa0a726263"
+    },
+    {
+      "input_index": 29,
+      "id": "7127-75947-0015",
+      "role": "test",
+      "speaker": "7127",
+      "condition": "white_noise_10db",
+      "seed": null,
+      "partitions": [
+        "test"
+      ],
+      "reference": "THERE CANNOT BE A DOUBT HE RECEIVED YOU KINDLY FOR IN FACT YOU RETURNED WITHOUT HIS PERMISSION",
+      "source_path": "data/librispeech/LibriSpeech/test-clean/7127/75947/7127-75947-0015.flac",
+      "source_sha256": "d796af65014071cec7095cd68337691d532f4f14dc036f87afb769472a3c5704",
+      "signal_file": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/build/taalas-k64-reserved-test-v1/inputs/input-029.npy",
+      "signal_file_sha256": "769a4d255b836e451fb8260d51cfaaca4921c910d29b838d3ca6503747d1a212",
+      "input_float32_sha256": "42efb5c97f6cd2c75f821e3d9792c6b29c5fdfb32c2c83d89541a37e0e315405"
+    },
+    {
+      "input_index": 30,
+      "id": "7127-75946-0029",
+      "role": "test",
+      "speaker": "7127",
+      "condition": "clean",
+      "seed": null,
+      "partitions": [
+        "test"
+      ],
+      "reference": "THE KING WHO HAD FROM THIS MOMENT BECOME IN REALITY THE PRINCIPAL DANCER IN THE QUADRILLE CAST A LOOK UPON HIS VANQUISHED RIVAL",
+      "source_path": "data/librispeech/LibriSpeech/test-clean/7127/75946/7127-75946-0029.flac",
+      "source_sha256": "e26b6b1a8cceb2a05b3aae15719c785d4d24a2a09d91dd6292da8a4b4e32401a",
+      "signal_file": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/build/taalas-k64-reserved-test-v1/inputs/input-030.npy",
+      "signal_file_sha256": "3aaca0c1a8bea7a6a943cf5c69a7b483a0fd3559337b56e23e6ccc22769f837d",
+      "input_float32_sha256": "8083369cecf22bae7b5368a135b3780a8b7e57df20f56abb5368ed4514742d42"
+    },
+    {
+      "input_index": 31,
+      "id": "7127-75946-0029",
+      "role": "test",
+      "speaker": "7127",
+      "condition": "white_noise_10db",
+      "seed": null,
+      "partitions": [
+        "test"
+      ],
+      "reference": "THE KING WHO HAD FROM THIS MOMENT BECOME IN REALITY THE PRINCIPAL DANCER IN THE QUADRILLE CAST A LOOK UPON HIS VANQUISHED RIVAL",
+      "source_path": "data/librispeech/LibriSpeech/test-clean/7127/75946/7127-75946-0029.flac",
+      "source_sha256": "e26b6b1a8cceb2a05b3aae15719c785d4d24a2a09d91dd6292da8a4b4e32401a",
+      "signal_file": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/build/taalas-k64-reserved-test-v1/inputs/input-031.npy",
+      "signal_file_sha256": "970ad2a286d10b468bac9851b7c964ce3b605740cde48b55338c401804a96196",
+      "input_float32_sha256": "ebca25aac6dd897df5b5e1e2569ebf972a014f7cbf2b66e10cf2aa8b2ed89be3"
+    },
+    {
+      "input_index": 32,
+      "id": "2300-131720-0023",
+      "role": "test",
+      "speaker": "2300",
+      "condition": "clean",
+      "seed": null,
+      "partitions": [
+        "test"
+      ],
+      "reference": "I THINK HE WAS PERHAPS MORE APPRECIATIVE THAN I WAS OF THE DISCIPLINE OF THE EDISON CONSTRUCTION DEPARTMENT AND THOUGHT IT WOULD BE WELL FOR US TO WAIT UNTIL THE MORNING OF THE FOURTH BEFORE WE STARTED UP",
+      "source_path": "data/librispeech/LibriSpeech/test-clean/2300/131720/2300-131720-0023.flac",
+      "source_sha256": "6dc954c710d3f1804fcb2fafa08339c966edd439e76670ef2b13329a3930c04b",
+      "signal_file": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/build/taalas-k64-reserved-test-v1/inputs/input-032.npy",
+      "signal_file_sha256": "3b345f48123b50d6e645398170d908a46e1a5936fb4a361846c55de7d5365762",
+      "input_float32_sha256": "57d93f89811d59af804ec2ecc0847ff1957f882c5a65e3e6ec5b3adeec6e5992"
+    },
+    {
+      "input_index": 33,
+      "id": "2300-131720-0023",
+      "role": "test",
+      "speaker": "2300",
+      "condition": "white_noise_10db",
+      "seed": null,
+      "partitions": [
+        "test"
+      ],
+      "reference": "I THINK HE WAS PERHAPS MORE APPRECIATIVE THAN I WAS OF THE DISCIPLINE OF THE EDISON CONSTRUCTION DEPARTMENT AND THOUGHT IT WOULD BE WELL FOR US TO WAIT UNTIL THE MORNING OF THE FOURTH BEFORE WE STARTED UP",
+      "source_path": "data/librispeech/LibriSpeech/test-clean/2300/131720/2300-131720-0023.flac",
+      "source_sha256": "6dc954c710d3f1804fcb2fafa08339c966edd439e76670ef2b13329a3930c04b",
+      "signal_file": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/build/taalas-k64-reserved-test-v1/inputs/input-033.npy",
+      "signal_file_sha256": "5f5be9fdc5677909fee76ae25e68ac9bf68e808e39f963bba6c9cee946be00e5",
+      "input_float32_sha256": "97e0400507668275dd854ad0c503d76660840a4ee5a2e4f910dbde3c68b98ca7"
+    },
+    {
+      "input_index": 34,
+      "id": "2300-131720-0015",
+      "role": "test",
+      "speaker": "2300",
+      "condition": "clean",
+      "seed": null,
+      "partitions": [
+        "test"
+      ],
+      "reference": "HE OBTAINED THE DESIRED SPEED AND LOAD WITH A FRICTION BRAKE ALSO REGULATOR OF SPEED BUT WAITED FOR AN INDICATOR TO VERIFY IT",
+      "source_path": "data/librispeech/LibriSpeech/test-clean/2300/131720/2300-131720-0015.flac",
+      "source_sha256": "424b2297f9e7c551aad9c66236d96f4721c4304a3459291cca2c97b1169607d8",
+      "signal_file": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/build/taalas-k64-reserved-test-v1/inputs/input-034.npy",
+      "signal_file_sha256": "fdcbf51edb543e7816d5798c70855cdc3ec1f2c2f54e35b977b8cab0b76f6652",
+      "input_float32_sha256": "bc423c3a124186921726e858389a5462ced19f00fb93f089d29d9a04a9e4b8a4"
+    },
+    {
+      "input_index": 35,
+      "id": "2300-131720-0015",
+      "role": "test",
+      "speaker": "2300",
+      "condition": "white_noise_10db",
+      "seed": null,
+      "partitions": [
+        "test"
+      ],
+      "reference": "HE OBTAINED THE DESIRED SPEED AND LOAD WITH A FRICTION BRAKE ALSO REGULATOR OF SPEED BUT WAITED FOR AN INDICATOR TO VERIFY IT",
+      "source_path": "data/librispeech/LibriSpeech/test-clean/2300/131720/2300-131720-0015.flac",
+      "source_sha256": "424b2297f9e7c551aad9c66236d96f4721c4304a3459291cca2c97b1169607d8",
+      "signal_file": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/build/taalas-k64-reserved-test-v1/inputs/input-035.npy",
+      "signal_file_sha256": "c864cfc9cd4b590323fec6c19dec8ca63d099e81bba56f82780d2803e8cc1d66",
+      "input_float32_sha256": "83ae8934ecd878b4c7c49c1cf0e3e5d81610f7670d4ba02ad9127be840bdd472"
+    },
+    {
+      "input_index": 36,
+      "id": "4970-29095-0023",
+      "role": "test",
+      "speaker": "4970",
+      "condition": "clean",
+      "seed": null,
+      "partitions": [
+        "test"
+      ],
+      "reference": "I HAVE NOTHING TO WEAR REPLIED THAT DEMURE PERSON",
+      "source_path": "data/librispeech/LibriSpeech/test-clean/4970/29095/4970-29095-0023.flac",
+      "source_sha256": "b64dec7367fdc90bb16416aff18692b0df00720dd84c3d243c79ddc4a07e84c0",
+      "signal_file": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/build/taalas-k64-reserved-test-v1/inputs/input-036.npy",
+      "signal_file_sha256": "ba5dd4394253b51adda9f2e8b0706f68c8ef05a1145e81fef6e9d8810392a5c5",
+      "input_float32_sha256": "5985a84f8827d9322feffdb4d6e47acffa935de505c6d3c57e12b2d620abdf04"
+    },
+    {
+      "input_index": 37,
+      "id": "4970-29095-0023",
+      "role": "test",
+      "speaker": "4970",
+      "condition": "white_noise_10db",
+      "seed": null,
+      "partitions": [
+        "test"
+      ],
+      "reference": "I HAVE NOTHING TO WEAR REPLIED THAT DEMURE PERSON",
+      "source_path": "data/librispeech/LibriSpeech/test-clean/4970/29095/4970-29095-0023.flac",
+      "source_sha256": "b64dec7367fdc90bb16416aff18692b0df00720dd84c3d243c79ddc4a07e84c0",
+      "signal_file": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/build/taalas-k64-reserved-test-v1/inputs/input-037.npy",
+      "signal_file_sha256": "1e62d8a0e30cb97e3408d95d9fc97a9f8328bf4f78a3dba70f302bdfe207cc03",
+      "input_float32_sha256": "c085a482abcf309454313b652f30da5b997ddb7eec9c601225de4c14801946d4"
+    },
+    {
+      "input_index": 38,
+      "id": "4970-29093-0019",
+      "role": "test",
+      "speaker": "4970",
+      "condition": "clean",
+      "seed": null,
+      "partitions": [
+        "test"
+      ],
+      "reference": "THE NIGHT WAS SPENT IN PACKING UP AND WRITING LETTERS FOR PHILIP WOULD NOT TAKE SUCH AN IMPORTANT STEP WITHOUT INFORMING HIS FRIENDS",
+      "source_path": "data/librispeech/LibriSpeech/test-clean/4970/29093/4970-29093-0019.flac",
+      "source_sha256": "b3d96731286b3ddec2cef7c5082af045c84c3159975f2b587397c0e2bc631a17",
+      "signal_file": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/build/taalas-k64-reserved-test-v1/inputs/input-038.npy",
+      "signal_file_sha256": "1f23a322f9c76db30500379b5496fecbc806aede184d1c0cd95130642ff683a1",
+      "input_float32_sha256": "c3ae120813455169836844a0f651b635c461e384d8840b8f283aa12d799669e6"
+    },
+    {
+      "input_index": 39,
+      "id": "4970-29093-0019",
+      "role": "test",
+      "speaker": "4970",
+      "condition": "white_noise_10db",
+      "seed": null,
+      "partitions": [
+        "test"
+      ],
+      "reference": "THE NIGHT WAS SPENT IN PACKING UP AND WRITING LETTERS FOR PHILIP WOULD NOT TAKE SUCH AN IMPORTANT STEP WITHOUT INFORMING HIS FRIENDS",
+      "source_path": "data/librispeech/LibriSpeech/test-clean/4970/29093/4970-29093-0019.flac",
+      "source_sha256": "b3d96731286b3ddec2cef7c5082af045c84c3159975f2b587397c0e2bc631a17",
+      "signal_file": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/build/taalas-k64-reserved-test-v1/inputs/input-039.npy",
+      "signal_file_sha256": "776ca43c537d44578bdf5318d7285fc62c06a284acc3a72cbe7d86512bec17ea",
+      "input_float32_sha256": "ca286d37c577f9f6e576bdff8a4348f6d7c14da49530a5ab1c9cf2ac4d389731"
+    },
+    {
+      "input_index": 40,
+      "id": "4077-13751-0003",
+      "role": "test",
+      "speaker": "4077",
+      "condition": "clean",
+      "seed": null,
+      "partitions": [
+        "test"
+      ],
+      "reference": "IN PLACE OF A SINGLE HAMLET IN THE SMALLEST CORNER OF WHICH THE MEMBERS COULD HAVE CONGREGATED THERE NOW ARE ABOUT SEVENTY STAKES OF ZION AND ABOUT SEVEN HUNDRED ORGANIZED WARDS EACH WARD AND STAKE WITH ITS FULL COMPLEMENT OF OFFICERS AND PRIESTHOOD ORGANIZATIONS",
+      "source_path": "data/librispeech/LibriSpeech/test-clean/4077/13751/4077-13751-0003.flac",
+      "source_sha256": "626c4cac3e1471d920ab07e40d3a27aa1e08743592bb5e6d412df903534004b9",
+      "signal_file": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/build/taalas-k64-reserved-test-v1/inputs/input-040.npy",
+      "signal_file_sha256": "189cc82847eb308a3f1268ce7b2c56e75103ee0541c82a11028f56d56e0992a8",
+      "input_float32_sha256": "ba8aff72ed82d141123a2be3de0a3d5e1782ef5b15b518a4737d76b6fc1604a7"
+    },
+    {
+      "input_index": 41,
+      "id": "4077-13751-0003",
+      "role": "test",
+      "speaker": "4077",
+      "condition": "white_noise_10db",
+      "seed": null,
+      "partitions": [
+        "test"
+      ],
+      "reference": "IN PLACE OF A SINGLE HAMLET IN THE SMALLEST CORNER OF WHICH THE MEMBERS COULD HAVE CONGREGATED THERE NOW ARE ABOUT SEVENTY STAKES OF ZION AND ABOUT SEVEN HUNDRED ORGANIZED WARDS EACH WARD AND STAKE WITH ITS FULL COMPLEMENT OF OFFICERS AND PRIESTHOOD ORGANIZATIONS",
+      "source_path": "data/librispeech/LibriSpeech/test-clean/4077/13751/4077-13751-0003.flac",
+      "source_sha256": "626c4cac3e1471d920ab07e40d3a27aa1e08743592bb5e6d412df903534004b9",
+      "signal_file": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/build/taalas-k64-reserved-test-v1/inputs/input-041.npy",
+      "signal_file_sha256": "2d0bafed28a49a12503c8fbd2df117c913ec7c48b13467489070fceee08d844a",
+      "input_float32_sha256": "1b127cbec7c85015b287abbba2502148d753ceb900b7b11d97a9626a807ff66b"
+    },
+    {
+      "input_index": 42,
+      "id": "4077-13751-0021",
+      "role": "test",
+      "speaker": "4077",
+      "condition": "clean",
+      "seed": null,
+      "partitions": [
+        "test"
+      ],
+      "reference": "IT WILL BE OBSERVED THAT AN ORGANIZED MOB AIDED BY MANY OF THE CIVIL AND MILITARY OFFICERS OF MISSOURI WITH GOVERNOR BOGGS AT THEIR HEAD HAVE BEEN THE PROMINENT ACTORS IN THIS BUSINESS INCITED TOO IT APPEARS AGAINST THE MORMONS BY POLITICAL HATRED AND BY THE ADDITIONAL MOTIVES OF PLUNDER AND REVENGE",
+      "source_path": "data/librispeech/LibriSpeech/test-clean/4077/13751/4077-13751-0021.flac",
+      "source_sha256": "f5f9fedc52ce0a945bddc9a8f7a0f3f2ad2297a0b803d9c6a0d4031dff63d6e3",
+      "signal_file": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/build/taalas-k64-reserved-test-v1/inputs/input-042.npy",
+      "signal_file_sha256": "ffe4ecb5fe2b534c4d060ae2615f870b48606bb5feb879800af86da8cd5b545f",
+      "input_float32_sha256": "6f1c183c7eac16b5107fd8c5c2e30cd36bd3e910277c36f5b165ec062e080f3b"
+    },
+    {
+      "input_index": 43,
+      "id": "4077-13751-0021",
+      "role": "test",
+      "speaker": "4077",
+      "condition": "white_noise_10db",
+      "seed": null,
+      "partitions": [
+        "test"
+      ],
+      "reference": "IT WILL BE OBSERVED THAT AN ORGANIZED MOB AIDED BY MANY OF THE CIVIL AND MILITARY OFFICERS OF MISSOURI WITH GOVERNOR BOGGS AT THEIR HEAD HAVE BEEN THE PROMINENT ACTORS IN THIS BUSINESS INCITED TOO IT APPEARS AGAINST THE MORMONS BY POLITICAL HATRED AND BY THE ADDITIONAL MOTIVES OF PLUNDER AND REVENGE",
+      "source_path": "data/librispeech/LibriSpeech/test-clean/4077/13751/4077-13751-0021.flac",
+      "source_sha256": "f5f9fedc52ce0a945bddc9a8f7a0f3f2ad2297a0b803d9c6a0d4031dff63d6e3",
+      "signal_file": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/build/taalas-k64-reserved-test-v1/inputs/input-043.npy",
+      "signal_file_sha256": "cbbfba64c0e2e5440ac8a47f837e9942561c2031587e902f564ee6dd01a8e56b",
+      "input_float32_sha256": "0b9f652aafecb8d4e5172a6c7e602e0f937b280ba4e6d901f8bd7491a2230dc4"
+    },
+    {
+      "input_index": 44,
+      "id": "7021-79759-0001",
+      "role": "test",
+      "speaker": "7021",
+      "condition": "clean",
+      "seed": null,
+      "partitions": [
+        "test"
+      ],
+      "reference": "THAT IS COMPARATIVELY NOTHING",
+      "source_path": "data/librispeech/LibriSpeech/test-clean/7021/79759/7021-79759-0001.flac",
+      "source_sha256": "0ae0a45b169068ed82cb077f1618348f53f4b8832d300390ef12c910af3960e8",
+      "signal_file": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/build/taalas-k64-reserved-test-v1/inputs/input-044.npy",
+      "signal_file_sha256": "46f3dd8b86a17b82000e4237c4cbcd60b3ba17476ad5def730ed20bfdca613f8",
+      "input_float32_sha256": "78e94a4629ec55f4f897830798d20d302c6ae8e2f5e5aecee45d1bdb4f2a44aa"
+    },
+    {
+      "input_index": 45,
+      "id": "7021-79759-0001",
+      "role": "test",
+      "speaker": "7021",
+      "condition": "white_noise_10db",
+      "seed": null,
+      "partitions": [
+        "test"
+      ],
+      "reference": "THAT IS COMPARATIVELY NOTHING",
+      "source_path": "data/librispeech/LibriSpeech/test-clean/7021/79759/7021-79759-0001.flac",
+      "source_sha256": "0ae0a45b169068ed82cb077f1618348f53f4b8832d300390ef12c910af3960e8",
+      "signal_file": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/build/taalas-k64-reserved-test-v1/inputs/input-045.npy",
+      "signal_file_sha256": "ebe13f02634217ec8ce4f1f5266719c932a028f28bdc39d5de3177feb6fec587",
+      "input_float32_sha256": "3ba4d053bef11bea0629a252422a39e1352347723d6347fbf2327fdbf9303d09"
+    },
+    {
+      "input_index": 46,
+      "id": "7021-79740-0007",
+      "role": "test",
+      "speaker": "7021",
+      "condition": "clean",
+      "seed": null,
+      "partitions": [
+        "test"
+      ],
+      "reference": "THEN TURNING TO JANE SHE ASKED IN A SOMEWHAT ALTERED TONE HAS SHE BEEN A GOOD GIRL JANE",
+      "source_path": "data/librispeech/LibriSpeech/test-clean/7021/79740/7021-79740-0007.flac",
+      "source_sha256": "8212cf056eb5dad6c63c971e39cda69a1f3f356f78ad4bd3462d714cc096b8cb",
+      "signal_file": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/build/taalas-k64-reserved-test-v1/inputs/input-046.npy",
+      "signal_file_sha256": "0f3b62afc141623d10ef1cf695a253a0dabe700b5a2e959b5071dfa60c6b9176",
+      "input_float32_sha256": "0327c6d32dc93201b446ec0bf6ef9da75bf503bf061473d3cd6bd7039c163c83"
+    },
+    {
+      "input_index": 47,
+      "id": "7021-79740-0007",
+      "role": "test",
+      "speaker": "7021",
+      "condition": "white_noise_10db",
+      "seed": null,
+      "partitions": [
+        "test"
+      ],
+      "reference": "THEN TURNING TO JANE SHE ASKED IN A SOMEWHAT ALTERED TONE HAS SHE BEEN A GOOD GIRL JANE",
+      "source_path": "data/librispeech/LibriSpeech/test-clean/7021/79740/7021-79740-0007.flac",
+      "source_sha256": "8212cf056eb5dad6c63c971e39cda69a1f3f356f78ad4bd3462d714cc096b8cb",
+      "signal_file": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/build/taalas-k64-reserved-test-v1/inputs/input-047.npy",
+      "signal_file_sha256": "436f7cf1d7d7dd4424b367a49030f0c2a785cf0351b639fcfb676be568f4c542",
+      "input_float32_sha256": "f7b045ea90483372dcc3046082e78089145bfdf7f643963294d62445dfbe62f1"
+    },
+    {
+      "input_index": 48,
+      "id": "2961-960-0002",
+      "role": "test",
+      "speaker": "2961",
+      "condition": "clean",
+      "seed": null,
+      "partitions": [
+        "test"
+      ],
+      "reference": "IN THE SUPPOSED DEPTHS OF THIS DIALOGUE THE NEO PLATONISTS FOUND HIDDEN MEANINGS AND CONNECTIONS WITH THE JEWISH AND CHRISTIAN SCRIPTURES AND OUT OF THEM THEY ELICITED DOCTRINES QUITE AT VARIANCE WITH THE SPIRIT OF PLATO",
+      "source_path": "data/librispeech/LibriSpeech/test-clean/2961/960/2961-960-0002.flac",
+      "source_sha256": "753bea25c30c610c8715e13e9528363fba527c81bbea8997d1c4fa89a3fe3082",
+      "signal_file": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/build/taalas-k64-reserved-test-v1/inputs/input-048.npy",
+      "signal_file_sha256": "f91a1361a9530f929a627cbfd68aa3e8b8bdbaf4b287c31053772ff4e019ada1",
+      "input_float32_sha256": "2a24f064991cfeed09d5b1f7dd85fe41bddc8f956ead1091f78252c945408750"
+    },
+    {
+      "input_index": 49,
+      "id": "2961-960-0002",
+      "role": "test",
+      "speaker": "2961",
+      "condition": "white_noise_10db",
+      "seed": null,
+      "partitions": [
+        "test"
+      ],
+      "reference": "IN THE SUPPOSED DEPTHS OF THIS DIALOGUE THE NEO PLATONISTS FOUND HIDDEN MEANINGS AND CONNECTIONS WITH THE JEWISH AND CHRISTIAN SCRIPTURES AND OUT OF THEM THEY ELICITED DOCTRINES QUITE AT VARIANCE WITH THE SPIRIT OF PLATO",
+      "source_path": "data/librispeech/LibriSpeech/test-clean/2961/960/2961-960-0002.flac",
+      "source_sha256": "753bea25c30c610c8715e13e9528363fba527c81bbea8997d1c4fa89a3fe3082",
+      "signal_file": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/build/taalas-k64-reserved-test-v1/inputs/input-049.npy",
+      "signal_file_sha256": "f6b0c00cf05837b20bf438eedb80865997cf4dc377c79219572c32b1b57eab1d",
+      "input_float32_sha256": "7b589e118bee191d42c7727e2e9881c003e17e923bd1a48eb342ae3de5b482ad"
+    },
+    {
+      "input_index": 50,
+      "id": "2961-960-0001",
+      "role": "test",
+      "speaker": "2961",
+      "condition": "clean",
+      "seed": null,
+      "partitions": [
+        "test"
+      ],
+      "reference": "THE INFLUENCE WITH THE TIMAEUS HAS EXERCISED UPON POSTERITY IS DUE PARTLY TO A MISUNDERSTANDING",
+      "source_path": "data/librispeech/LibriSpeech/test-clean/2961/960/2961-960-0001.flac",
+      "source_sha256": "73a2c08a15dc492ae512877618f9bd2ba6dd8b3c1bd5a5e8d59ef63d7ef3d5fb",
+      "signal_file": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/build/taalas-k64-reserved-test-v1/inputs/input-050.npy",
+      "signal_file_sha256": "4d9baa264408b9049b8e94b1527fa33ac5052488647c76f19a434047af4e0123",
+      "input_float32_sha256": "c53d91dd4c704abbbe75834e3815a63518bc6573fd74ea04ad20020a14560ace"
+    },
+    {
+      "input_index": 51,
+      "id": "2961-960-0001",
+      "role": "test",
+      "speaker": "2961",
+      "condition": "white_noise_10db",
+      "seed": null,
+      "partitions": [
+        "test"
+      ],
+      "reference": "THE INFLUENCE WITH THE TIMAEUS HAS EXERCISED UPON POSTERITY IS DUE PARTLY TO A MISUNDERSTANDING",
+      "source_path": "data/librispeech/LibriSpeech/test-clean/2961/960/2961-960-0001.flac",
+      "source_sha256": "73a2c08a15dc492ae512877618f9bd2ba6dd8b3c1bd5a5e8d59ef63d7ef3d5fb",
+      "signal_file": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/build/taalas-k64-reserved-test-v1/inputs/input-051.npy",
+      "signal_file_sha256": "7aa2fc8d88dda13c88fb7bf9c4f2cd465e52a623ae499827a181a033ce399d32",
+      "input_float32_sha256": "04365c18053e8cc715ed06247b3a6aec8cdeac6566c8917eaaad78fb39df5ae2"
+    },
+    {
+      "input_index": 52,
+      "id": "3729-6852-0034",
+      "role": "test",
+      "speaker": "3729",
+      "condition": "clean",
+      "seed": null,
+      "partitions": [
+        "test"
+      ],
+      "reference": "LET A MAN RUN AND EVERYBODY WILL RUN AFTER HIM THE CROWD WILL NOT STOP UNLESS THE MAN IS PROVED TO BE MAD BUT TO PROVE IT IS INDEED A DIFFICULT TASK BECAUSE WE HAVE A CROWD OF MEN WHO MAD FROM THEIR BIRTH ARE STILL CONSIDERED WISE",
+      "source_path": "data/librispeech/LibriSpeech/test-clean/3729/6852/3729-6852-0034.flac",
+      "source_sha256": "7c5a6acfbb2631e29aa1fd9477bb1bfe790e56dfeadf0c4980a8b8448d58ff3f",
+      "signal_file": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/build/taalas-k64-reserved-test-v1/inputs/input-052.npy",
+      "signal_file_sha256": "19a955c7c47e4c9d67a65217967b97e74791b4f60ae5cd6c31c955c124493116",
+      "input_float32_sha256": "66102237e3493789f1968be0c2fb1faab2e1936d0e3e9197ce157b118d6e16e6"
+    },
+    {
+      "input_index": 53,
+      "id": "3729-6852-0034",
+      "role": "test",
+      "speaker": "3729",
+      "condition": "white_noise_10db",
+      "seed": null,
+      "partitions": [
+        "test"
+      ],
+      "reference": "LET A MAN RUN AND EVERYBODY WILL RUN AFTER HIM THE CROWD WILL NOT STOP UNLESS THE MAN IS PROVED TO BE MAD BUT TO PROVE IT IS INDEED A DIFFICULT TASK BECAUSE WE HAVE A CROWD OF MEN WHO MAD FROM THEIR BIRTH ARE STILL CONSIDERED WISE",
+      "source_path": "data/librispeech/LibriSpeech/test-clean/3729/6852/3729-6852-0034.flac",
+      "source_sha256": "7c5a6acfbb2631e29aa1fd9477bb1bfe790e56dfeadf0c4980a8b8448d58ff3f",
+      "signal_file": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/build/taalas-k64-reserved-test-v1/inputs/input-053.npy",
+      "signal_file_sha256": "31b89b2f7f7d1e0d39d44ee3688e6bd9318b5c7a3c37a4b670e434e119d17ef8",
+      "input_float32_sha256": "93a170eb5ed608530a1f6b700df78773dec4a169ac8a5597cb3bbdf2956f820e"
+    },
+    {
+      "input_index": 54,
+      "id": "3729-6852-0038",
+      "role": "test",
+      "speaker": "3729",
+      "condition": "clean",
+      "seed": null,
+      "partitions": [
+        "test"
+      ],
+      "reference": "WHAT SIR I SAID TO HIM AM I FORTUNATE ENOUGH TO SEE YOU",
+      "source_path": "data/librispeech/LibriSpeech/test-clean/3729/6852/3729-6852-0038.flac",
+      "source_sha256": "a7247aa79c226e944a0203fe3e1845fdfebeed16bd4fae4e8d744a29ec8ff974",
+      "signal_file": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/build/taalas-k64-reserved-test-v1/inputs/input-054.npy",
+      "signal_file_sha256": "36c39d5f021dc0944636426fc77e202f40ba6f469da7210289869cdf08668a86",
+      "input_float32_sha256": "e9c9c20d225f94bee208d0d780046dcf8bfd0ec0b0a5367789be0bc693f2ee03"
+    },
+    {
+      "input_index": 55,
+      "id": "3729-6852-0038",
+      "role": "test",
+      "speaker": "3729",
+      "condition": "white_noise_10db",
+      "seed": null,
+      "partitions": [
+        "test"
+      ],
+      "reference": "WHAT SIR I SAID TO HIM AM I FORTUNATE ENOUGH TO SEE YOU",
+      "source_path": "data/librispeech/LibriSpeech/test-clean/3729/6852/3729-6852-0038.flac",
+      "source_sha256": "a7247aa79c226e944a0203fe3e1845fdfebeed16bd4fae4e8d744a29ec8ff974",
+      "signal_file": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/build/taalas-k64-reserved-test-v1/inputs/input-055.npy",
+      "signal_file_sha256": "16d9752d249d136cd6400f9067b91747c1bd72e16688c854fb1aa5971c3a6060",
+      "input_float32_sha256": "513334725251a50419adef5094a7126c5e0aaff1ce82cb44a8466bc479ed2987"
+    },
+    {
+      "input_index": 56,
+      "id": "1284-1181-0012",
+      "role": "test",
+      "speaker": "1284",
+      "condition": "clean",
+      "seed": null,
+      "partitions": [
+        "test"
+      ],
+      "reference": "NO ONE SAW HIM DO THIS FOR ALL WERE LOOKING AT THE POWDER OF LIFE BUT SOON THE WOMAN REMEMBERED WHAT SHE HAD BEEN DOING AND CAME BACK TO THE CUPBOARD",
+      "source_path": "data/librispeech/LibriSpeech/test-clean/1284/1181/1284-1181-0012.flac",
+      "source_sha256": "0fa2d091d94f1fe5d34c900fd1a4e47f9b1200bff6beeb0adc3eeb976d23ebfe",
+      "signal_file": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/build/taalas-k64-reserved-test-v1/inputs/input-056.npy",
+      "signal_file_sha256": "9eeca0619204897cb397c7cdfc884a9c6e160b46c8b933ebd8222b45b3d75aba",
+      "input_float32_sha256": "ff41c408bb3b7cfbb0425db19931301c208b7d918e630f562c84a4ccc2edb75c"
+    },
+    {
+      "input_index": 57,
+      "id": "1284-1181-0012",
+      "role": "test",
+      "speaker": "1284",
+      "condition": "white_noise_10db",
+      "seed": null,
+      "partitions": [
+        "test"
+      ],
+      "reference": "NO ONE SAW HIM DO THIS FOR ALL WERE LOOKING AT THE POWDER OF LIFE BUT SOON THE WOMAN REMEMBERED WHAT SHE HAD BEEN DOING AND CAME BACK TO THE CUPBOARD",
+      "source_path": "data/librispeech/LibriSpeech/test-clean/1284/1181/1284-1181-0012.flac",
+      "source_sha256": "0fa2d091d94f1fe5d34c900fd1a4e47f9b1200bff6beeb0adc3eeb976d23ebfe",
+      "signal_file": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/build/taalas-k64-reserved-test-v1/inputs/input-057.npy",
+      "signal_file_sha256": "12e9f1082a43810ea60cf789d1c47185ae2325e3f7288dc43713548d20bf5590",
+      "input_float32_sha256": "92471f322767e55e3c933807778e8a8c192f016ee63eece64b099034815fc748"
+    },
+    {
+      "input_index": 58,
+      "id": "1284-1181-0009",
+      "role": "test",
+      "speaker": "1284",
+      "condition": "clean",
+      "seed": null,
+      "partitions": [
+        "test"
+      ],
+      "reference": "SHE RAN TO HER HUSBAND'S SIDE AT ONCE AND HELPED HIM LIFT THE FOUR KETTLES FROM THE FIRE",
+      "source_path": "data/librispeech/LibriSpeech/test-clean/1284/1181/1284-1181-0009.flac",
+      "source_sha256": "ed4238566ddaf7eb27371759c586894077eaeac1457efa5c211b2d14d0a12396",
+      "signal_file": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/build/taalas-k64-reserved-test-v1/inputs/input-058.npy",
+      "signal_file_sha256": "e9f144ec7d64d6feb5434a13fc79a8409b039b0cb1b65788a50f0ad1cd2de5bb",
+      "input_float32_sha256": "49c064aac613219f3ffa50ce5cc34906f74f1f6b0b8856f7f1e04d34d34b8230"
+    },
+    {
+      "input_index": 59,
+      "id": "1284-1181-0009",
+      "role": "test",
+      "speaker": "1284",
+      "condition": "white_noise_10db",
+      "seed": null,
+      "partitions": [
+        "test"
+      ],
+      "reference": "SHE RAN TO HER HUSBAND'S SIDE AT ONCE AND HELPED HIM LIFT THE FOUR KETTLES FROM THE FIRE",
+      "source_path": "data/librispeech/LibriSpeech/test-clean/1284/1181/1284-1181-0009.flac",
+      "source_sha256": "ed4238566ddaf7eb27371759c586894077eaeac1457efa5c211b2d14d0a12396",
+      "signal_file": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/build/taalas-k64-reserved-test-v1/inputs/input-059.npy",
+      "signal_file_sha256": "6cf33f2ed516e81aa2035e2ec320d671b64412f1b1b1d00983afbf736ab2612b",
+      "input_float32_sha256": "fd1bc1c7410625ebb2ff6e09b6b166173025d717c13342db4296e8e9ca5087be"
+    },
+    {
+      "input_index": 60,
+      "id": "8455-210777-0028",
+      "role": "test",
+      "speaker": "8455",
+      "condition": "clean",
+      "seed": null,
+      "partitions": [
+        "test"
+      ],
+      "reference": "JACK WOULD BECOME EVA'S HAPPY HUSBAND AND WOULD REMAIN AMIDST THE HURRIED DUTIES OF THE EAGER WORLD",
+      "source_path": "data/librispeech/LibriSpeech/test-clean/8455/210777/8455-210777-0028.flac",
+      "source_sha256": "61e1697bdc0de5142e0cd76c4a14ed38086b66b9a0ab7722bd1c02aa3cebd261",
+      "signal_file": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/build/taalas-k64-reserved-test-v1/inputs/input-060.npy",
+      "signal_file_sha256": "04fa68625c424613c4b7942400d4fc3f29b71aa03ba5955043694d8a379ac3cf",
+      "input_float32_sha256": "57614ed6593aac79a71af07111da94728147a36cc1a5411048737511fe811c02"
+    },
+    {
+      "input_index": 61,
+      "id": "8455-210777-0028",
+      "role": "test",
+      "speaker": "8455",
+      "condition": "white_noise_10db",
+      "seed": null,
+      "partitions": [
+        "test"
+      ],
+      "reference": "JACK WOULD BECOME EVA'S HAPPY HUSBAND AND WOULD REMAIN AMIDST THE HURRIED DUTIES OF THE EAGER WORLD",
+      "source_path": "data/librispeech/LibriSpeech/test-clean/8455/210777/8455-210777-0028.flac",
+      "source_sha256": "61e1697bdc0de5142e0cd76c4a14ed38086b66b9a0ab7722bd1c02aa3cebd261",
+      "signal_file": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/build/taalas-k64-reserved-test-v1/inputs/input-061.npy",
+      "signal_file_sha256": "8b3ec689347ec7cc3efd505f27d6861018c7c1d1f62e98a4c9b9ef27c4fc9271",
+      "input_float32_sha256": "3a90489173f39cf35c4094fddac975068ad9d4ca7bd8cd34c3b712b0534d1125"
+    },
+    {
+      "input_index": 62,
+      "id": "8455-210777-0009",
+      "role": "test",
+      "speaker": "8455",
+      "condition": "clean",
+      "seed": null,
+      "partitions": [
+        "test"
+      ],
+      "reference": "NO DOUBT IN PROCESS OF TIME THE LADIES WILL FOLLOW",
+      "source_path": "data/librispeech/LibriSpeech/test-clean/8455/210777/8455-210777-0009.flac",
+      "source_sha256": "b8abe78e623d105a9b04ec473e5e934b19698f221881563048a7627db2a2f756",
+      "signal_file": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/build/taalas-k64-reserved-test-v1/inputs/input-062.npy",
+      "signal_file_sha256": "1a4cf941bd3c3b8f563d1d56a959fa673b9047bbcc484e5866f710849c918693",
+      "input_float32_sha256": "9c6f2eafd9fcdebe4cb4eb67a0a450404e133e1b759a959fe13531bcc67cdb1e"
+    },
+    {
+      "input_index": 63,
+      "id": "8455-210777-0009",
+      "role": "test",
+      "speaker": "8455",
+      "condition": "white_noise_10db",
+      "seed": null,
+      "partitions": [
+        "test"
+      ],
+      "reference": "NO DOUBT IN PROCESS OF TIME THE LADIES WILL FOLLOW",
+      "source_path": "data/librispeech/LibriSpeech/test-clean/8455/210777/8455-210777-0009.flac",
+      "source_sha256": "b8abe78e623d105a9b04ec473e5e934b19698f221881563048a7627db2a2f756",
+      "signal_file": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/build/taalas-k64-reserved-test-v1/inputs/input-063.npy",
+      "signal_file_sha256": "05ff02e1f739432920326352052b176a7abb85d036cef1371b23eef8a03aa89c",
+      "input_float32_sha256": "1a144c09f80112f00d25ce11cad46b0cc5ff685b35137b050ad7976232425249"
+    },
+    {
+      "input_index": 64,
+      "id": "908-157963-0000",
+      "role": "test",
+      "speaker": "908",
+      "condition": "clean",
+      "seed": null,
+      "partitions": [
+        "test"
+      ],
+      "reference": "TO FADE AWAY LIKE MORNING BEAUTY FROM HER MORTAL DAY DOWN BY THE RIVER OF ADONA HER SOFT VOICE IS HEARD AND THUS HER GENTLE LAMENTATION FALLS LIKE MORNING DEW",
+      "source_path": "data/librispeech/LibriSpeech/test-clean/908/157963/908-157963-0000.flac",
+      "source_sha256": "1f11115c9c3be561851f6e41eed9b176b42d084d07dd75d8436f42c8d2b5da22",
+      "signal_file": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/build/taalas-k64-reserved-test-v1/inputs/input-064.npy",
+      "signal_file_sha256": "0850764a8c3db1a7007745a0079528111f5003157c497a15286c37ae4f3df0ef",
+      "input_float32_sha256": "5114ae0cab2e84817b98f33dd783fecf3a26e02f74c9943ac9a123e75256799f"
+    },
+    {
+      "input_index": 65,
+      "id": "908-157963-0000",
+      "role": "test",
+      "speaker": "908",
+      "condition": "white_noise_10db",
+      "seed": null,
+      "partitions": [
+        "test"
+      ],
+      "reference": "TO FADE AWAY LIKE MORNING BEAUTY FROM HER MORTAL DAY DOWN BY THE RIVER OF ADONA HER SOFT VOICE IS HEARD AND THUS HER GENTLE LAMENTATION FALLS LIKE MORNING DEW",
+      "source_path": "data/librispeech/LibriSpeech/test-clean/908/157963/908-157963-0000.flac",
+      "source_sha256": "1f11115c9c3be561851f6e41eed9b176b42d084d07dd75d8436f42c8d2b5da22",
+      "signal_file": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/build/taalas-k64-reserved-test-v1/inputs/input-065.npy",
+      "signal_file_sha256": "6e08d3e2e62bbb3644406b0401ec02e794b45b8aa9cbce54903df9e261d7f8dc",
+      "input_float32_sha256": "ecd117a103c742296393760cdf4fd7a4c423b21b44668bafc6f629c16aba5175"
+    },
+    {
+      "input_index": 66,
+      "id": "908-31957-0009",
+      "role": "test",
+      "speaker": "908",
+      "condition": "clean",
+      "seed": null,
+      "partitions": [
+        "test"
+      ],
+      "reference": "AND THOUGH I HAVE GROWN SERENE AND STRONG SINCE THEN I THINK THAT GOD HAS WILLED A STILL RENEWABLE FEAR",
+      "source_path": "data/librispeech/LibriSpeech/test-clean/908/31957/908-31957-0009.flac",
+      "source_sha256": "31cf3909b3a6638e11d5820a600f98f3aed42bd2df377f9d0986e79c68348cdb",
+      "signal_file": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/build/taalas-k64-reserved-test-v1/inputs/input-066.npy",
+      "signal_file_sha256": "d1eb36da55ec702f2185e247ef692b3d38c6fa36fc8f8f8a0ef81ae088f71b80",
+      "input_float32_sha256": "416c713d0b1812221a2d2d583785d90423006b2b07f980a6b188e15e9c43deaf"
+    },
+    {
+      "input_index": 67,
+      "id": "908-31957-0009",
+      "role": "test",
+      "speaker": "908",
+      "condition": "white_noise_10db",
+      "seed": null,
+      "partitions": [
+        "test"
+      ],
+      "reference": "AND THOUGH I HAVE GROWN SERENE AND STRONG SINCE THEN I THINK THAT GOD HAS WILLED A STILL RENEWABLE FEAR",
+      "source_path": "data/librispeech/LibriSpeech/test-clean/908/31957/908-31957-0009.flac",
+      "source_sha256": "31cf3909b3a6638e11d5820a600f98f3aed42bd2df377f9d0986e79c68348cdb",
+      "signal_file": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/build/taalas-k64-reserved-test-v1/inputs/input-067.npy",
+      "signal_file_sha256": "144dd2522764d638581851d4c3ba94d1243a89dbc178aa4179fc64aa3bebe26a",
+      "input_float32_sha256": "d69918439a21ad6f327635bf213c666bc276888ef12e54129693bab668689389"
+    },
+    {
+      "input_index": 68,
+      "id": "1320-122617-0000",
+      "role": "test",
+      "speaker": "1320",
+      "condition": "clean",
+      "seed": null,
+      "partitions": [
+        "test"
+      ],
+      "reference": "NOTWITHSTANDING THE HIGH RESOLUTION OF HAWKEYE HE FULLY COMPREHENDED ALL THE DIFFICULTIES AND DANGER HE WAS ABOUT TO INCUR",
+      "source_path": "data/librispeech/LibriSpeech/test-clean/1320/122617/1320-122617-0000.flac",
+      "source_sha256": "8948a7773a0bf478d4aab72401532da7e5496eafd3c89d432ede3b599be6e0a9",
+      "signal_file": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/build/taalas-k64-reserved-test-v1/inputs/input-068.npy",
+      "signal_file_sha256": "00434202ee684526b9830766f6042dedabe12b6270c814d69e67bbe344bd1028",
+      "input_float32_sha256": "910e7e572c7982078a51d41aeceff74d8b44645c5039b9d0628f5451d400d394"
+    },
+    {
+      "input_index": 69,
+      "id": "1320-122617-0000",
+      "role": "test",
+      "speaker": "1320",
+      "condition": "white_noise_10db",
+      "seed": null,
+      "partitions": [
+        "test"
+      ],
+      "reference": "NOTWITHSTANDING THE HIGH RESOLUTION OF HAWKEYE HE FULLY COMPREHENDED ALL THE DIFFICULTIES AND DANGER HE WAS ABOUT TO INCUR",
+      "source_path": "data/librispeech/LibriSpeech/test-clean/1320/122617/1320-122617-0000.flac",
+      "source_sha256": "8948a7773a0bf478d4aab72401532da7e5496eafd3c89d432ede3b599be6e0a9",
+      "signal_file": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/build/taalas-k64-reserved-test-v1/inputs/input-069.npy",
+      "signal_file_sha256": "f9010c4ab4aa6e13070e035f55d748e212428e56f539e76b9e9928fc2ba8e584",
+      "input_float32_sha256": "f9e9114a68a53e695c6e71a497f7956e91eba50d7c060343ad75091afa9ddf2e"
+    },
+    {
+      "input_index": 70,
+      "id": "1320-122617-0006",
+      "role": "test",
+      "speaker": "1320",
+      "condition": "clean",
+      "seed": null,
+      "partitions": [
+        "test"
+      ],
+      "reference": "CAN THESE THINGS BE RETURNED DAVID BREATHING MORE FREELY AS THE TRUTH BEGAN TO DAWN UPON HIM",
+      "source_path": "data/librispeech/LibriSpeech/test-clean/1320/122617/1320-122617-0006.flac",
+      "source_sha256": "38c4ad9f4e7e6d5e211b02c4fb35568b53b137ef64b0216311e74d5f37304da4",
+      "signal_file": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/build/taalas-k64-reserved-test-v1/inputs/input-070.npy",
+      "signal_file_sha256": "0bf07541225b96931f6e21141937b422e6540ae0a26b0634d934293c3c41b281",
+      "input_float32_sha256": "49b41c7df0df509ebbef4aa3ba3de6f0d48f8d90d35de0f027f3143589f5292a"
+    },
+    {
+      "input_index": 71,
+      "id": "1320-122617-0006",
+      "role": "test",
+      "speaker": "1320",
+      "condition": "white_noise_10db",
+      "seed": null,
+      "partitions": [
+        "test"
+      ],
+      "reference": "CAN THESE THINGS BE RETURNED DAVID BREATHING MORE FREELY AS THE TRUTH BEGAN TO DAWN UPON HIM",
+      "source_path": "data/librispeech/LibriSpeech/test-clean/1320/122617/1320-122617-0006.flac",
+      "source_sha256": "38c4ad9f4e7e6d5e211b02c4fb35568b53b137ef64b0216311e74d5f37304da4",
+      "signal_file": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/build/taalas-k64-reserved-test-v1/inputs/input-071.npy",
+      "signal_file_sha256": "be258e341976e5312134f48294685a231427bb2cb23c349bb68c5fd472afe732",
+      "input_float32_sha256": "8bd2ad0415a37d190cfdc7cf52cec166c24151503626e714a020680d0e3322a2"
+    },
+    {
+      "input_index": 72,
+      "id": "1580-141083-0011",
+      "role": "test",
+      "speaker": "1580",
+      "condition": "clean",
+      "seed": null,
+      "partitions": [
+        "test"
+      ],
+      "reference": "A BROKEN TIP OF LEAD WAS LYING THERE ALSO",
+      "source_path": "data/librispeech/LibriSpeech/test-clean/1580/141083/1580-141083-0011.flac",
+      "source_sha256": "96d244d3e586741ffe47322597c07eb33106fe9ab339dd50b58c481a0775aa5b",
+      "signal_file": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/build/taalas-k64-reserved-test-v1/inputs/input-072.npy",
+      "signal_file_sha256": "6bef81081c01dbe94a8b8963727e2b9cf25ce33872be4dded952f0289eb0a260",
+      "input_float32_sha256": "1209b889ef0d06076ca0073f7ff7a2963b8a2c833ea33629c702d971d10f1649"
+    },
+    {
+      "input_index": 73,
+      "id": "1580-141083-0011",
+      "role": "test",
+      "speaker": "1580",
+      "condition": "white_noise_10db",
+      "seed": null,
+      "partitions": [
+        "test"
+      ],
+      "reference": "A BROKEN TIP OF LEAD WAS LYING THERE ALSO",
+      "source_path": "data/librispeech/LibriSpeech/test-clean/1580/141083/1580-141083-0011.flac",
+      "source_sha256": "96d244d3e586741ffe47322597c07eb33106fe9ab339dd50b58c481a0775aa5b",
+      "signal_file": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/build/taalas-k64-reserved-test-v1/inputs/input-073.npy",
+      "signal_file_sha256": "974e1ec64c5d1cf6dc0cd9c8988b1dc21e03e09ca86f71779d3079467ee9d593",
+      "input_float32_sha256": "e81a175702aee11bb4329da428a0378ae8e68f99b9e221933fdcb3b0694d921c"
+    },
+    {
+      "input_index": 74,
+      "id": "1580-141084-0044",
+      "role": "test",
+      "speaker": "1580",
+      "condition": "clean",
+      "seed": null,
+      "partitions": [
+        "test"
+      ],
+      "reference": "GLOVES SAID THE YOUNG MAN",
+      "source_path": "data/librispeech/LibriSpeech/test-clean/1580/141084/1580-141084-0044.flac",
+      "source_sha256": "d7cd08dd4ec2b390905b83b1ba00c9e2e1d4ef087c36523d58d2701a98ec5fda",
+      "signal_file": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/build/taalas-k64-reserved-test-v1/inputs/input-074.npy",
+      "signal_file_sha256": "ff7cc990d8a90cbb95b0a7d1662e47ae53f70cf96d4bc45e78eea0abe0cfa6e6",
+      "input_float32_sha256": "0547d4c8a828063ba8a1555e4234494211c83ad2ede71fa450272a09af28c75f"
+    },
+    {
+      "input_index": 75,
+      "id": "1580-141084-0044",
+      "role": "test",
+      "speaker": "1580",
+      "condition": "white_noise_10db",
+      "seed": null,
+      "partitions": [
+        "test"
+      ],
+      "reference": "GLOVES SAID THE YOUNG MAN",
+      "source_path": "data/librispeech/LibriSpeech/test-clean/1580/141084/1580-141084-0044.flac",
+      "source_sha256": "d7cd08dd4ec2b390905b83b1ba00c9e2e1d4ef087c36523d58d2701a98ec5fda",
+      "signal_file": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/build/taalas-k64-reserved-test-v1/inputs/input-075.npy",
+      "signal_file_sha256": "d2b8624c682206e22d545ae405fa4ad4b144ec8b557adf801cf8cf0ac868301d",
+      "input_float32_sha256": "c625149626c203cf003fcc4ce6772494903e2b667aa9b9b06f465809058ad2ab"
+    },
+    {
+      "input_index": 76,
+      "id": "121-127105-0030",
+      "role": "test",
+      "speaker": "121",
+      "condition": "clean",
+      "seed": null,
+      "partitions": [
+        "test"
+      ],
+      "reference": "I DON'T ANTICIPATE",
+      "source_path": "data/librispeech/LibriSpeech/test-clean/121/127105/121-127105-0030.flac",
+      "source_sha256": "667fa44443db2f14d61e7af1e382311afba9befb2ed8ab15e3be83d01c16da93",
+      "signal_file": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/build/taalas-k64-reserved-test-v1/inputs/input-076.npy",
+      "signal_file_sha256": "4932edc7fb37efb97a6761c3f9b6a307318e3b4b82bbfd29a38af04b20bf18a4",
+      "input_float32_sha256": "cb3aba96165adc0beaf38b308710b85dc00e482ba26dc7ebd30fce3562f1b070"
+    },
+    {
+      "input_index": 77,
+      "id": "121-127105-0030",
+      "role": "test",
+      "speaker": "121",
+      "condition": "white_noise_10db",
+      "seed": null,
+      "partitions": [
+        "test"
+      ],
+      "reference": "I DON'T ANTICIPATE",
+      "source_path": "data/librispeech/LibriSpeech/test-clean/121/127105/121-127105-0030.flac",
+      "source_sha256": "667fa44443db2f14d61e7af1e382311afba9befb2ed8ab15e3be83d01c16da93",
+      "signal_file": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/build/taalas-k64-reserved-test-v1/inputs/input-077.npy",
+      "signal_file_sha256": "c3f0b613433ff3c56534ed77d23c222d0c5f9edb71c91891885c6d508df1d355",
+      "input_float32_sha256": "841ac7872fd618871816ed7eea8d60b2988fba4ef0c9b7c355718f78ff3c6f27"
+    },
+    {
+      "input_index": 78,
+      "id": "121-127105-0003",
+      "role": "test",
+      "speaker": "121",
+      "condition": "clean",
+      "seed": null,
+      "partitions": [
+        "test"
+      ],
+      "reference": "THERE WAS A UNANIMOUS GROAN AT THIS AND MUCH REPROACH AFTER WHICH IN HIS PREOCCUPIED WAY HE EXPLAINED",
+      "source_path": "data/librispeech/LibriSpeech/test-clean/121/127105/121-127105-0003.flac",
+      "source_sha256": "c93960a366e788e184b9fe5efa656412a72c5ac0b7b24a07bcc7b7c0130e3601",
+      "signal_file": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/build/taalas-k64-reserved-test-v1/inputs/input-078.npy",
+      "signal_file_sha256": "c37ba753fe2e7cd19ba4772c0b840b962917d4550e37d89fbcb7aa2424f892a7",
+      "input_float32_sha256": "3a3f8fdbc37d57cfa0a7265ce6d0de7e7d4e76b0673a9a244f3344936c26bff0"
+    },
+    {
+      "input_index": 79,
+      "id": "121-127105-0003",
+      "role": "test",
+      "speaker": "121",
+      "condition": "white_noise_10db",
+      "seed": null,
+      "partitions": [
+        "test"
+      ],
+      "reference": "THERE WAS A UNANIMOUS GROAN AT THIS AND MUCH REPROACH AFTER WHICH IN HIS PREOCCUPIED WAY HE EXPLAINED",
+      "source_path": "data/librispeech/LibriSpeech/test-clean/121/127105/121-127105-0003.flac",
+      "source_sha256": "c93960a366e788e184b9fe5efa656412a72c5ac0b7b24a07bcc7b7c0130e3601",
+      "signal_file": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/build/taalas-k64-reserved-test-v1/inputs/input-079.npy",
+      "signal_file_sha256": "90e85589734f09b7e3eacf2b2509787b0839c13c109f6f7a1a3f46bf222e1b97",
+      "input_float32_sha256": "0db49dd93ca20c1be909727bfdd22f05237716ce6aeaaa690c04a14a4b6b57f3"
+    },
+    {
+      "input_index": 80,
+      "id": "2414-128291-0003",
+      "role": "test",
+      "speaker": "2414",
+      "condition": "other",
+      "seed": null,
+      "partitions": [
+        "test"
+      ],
+      "reference": "WHAT DO I HERE SEEK",
+      "source_path": "data/librispeech/LibriSpeech/test-other/2414/128291/2414-128291-0003.flac",
+      "source_sha256": "8e3e02c717c38e63ed8ed5cd9a16a69a01e380f275597ccfa1f354a7c6c743c0",
+      "signal_file": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/build/taalas-k64-reserved-test-v1/inputs/input-080.npy",
+      "signal_file_sha256": "7099ec6ff6dea24df9adbd7add52f1b0055a48da1db96c91777eee66312db3d1",
+      "input_float32_sha256": "0bb79eb5a97f47964caea6aa68077910f0b4c82ed6415c91aba1c6c5e8d033fd"
+    },
+    {
+      "input_index": 81,
+      "id": "2414-159411-0017",
+      "role": "test",
+      "speaker": "2414",
+      "condition": "other",
+      "seed": null,
+      "partitions": [
+        "test"
+      ],
+      "reference": "THEN THE TIGER BEGAN TO ROAR AND SAID THE JUDGMENT OF ALL IS AGAINST YOU O BRAHMAN",
+      "source_path": "data/librispeech/LibriSpeech/test-other/2414/159411/2414-159411-0017.flac",
+      "source_sha256": "b54c23bc348071f700aa4afe20334b04e24df71d91b1c9e99d82c454463459fd",
+      "signal_file": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/build/taalas-k64-reserved-test-v1/inputs/input-081.npy",
+      "signal_file_sha256": "c1887822be31d964399c1259a04baa2ea5dd1b09898e81ff4c0c2f27b0511709",
+      "input_float32_sha256": "a691c2c89fd5a03f18d3a7b75aebde240b63b7a4615d52e159a329aa94790317"
+    },
+    {
+      "input_index": 82,
+      "id": "7105-2340-0000",
+      "role": "test",
+      "speaker": "7105",
+      "condition": "other",
+      "seed": null,
+      "partitions": [
+        "test"
+      ],
+      "reference": "WITH THAT NOTORIOUS FAILING OF HIS HE WAS NOT THE SORT OF PERSON ONE WANTED IN ONE'S HOUSE",
+      "source_path": "data/librispeech/LibriSpeech/test-other/7105/2340/7105-2340-0000.flac",
+      "source_sha256": "f882ef707d1f5a38ea97871531e10cc6e3a1bf27159261dc80dda9feb36b7b03",
+      "signal_file": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/build/taalas-k64-reserved-test-v1/inputs/input-082.npy",
+      "signal_file_sha256": "c38645dac8a451ce8f1a4db1f69bb0bb9117f4e6c747a0f421b3d83c8b578b67",
+      "input_float32_sha256": "bea943a90be6cf51d545be55345c797453ed90199cd6c35e35d42fe71a9e957d"
+    },
+    {
+      "input_index": 83,
+      "id": "7105-2340-0028",
+      "role": "test",
+      "speaker": "7105",
+      "condition": "other",
+      "seed": null,
+      "partitions": [
+        "test"
+      ],
+      "reference": "LADY ERNESTINE PIGEONCOTE HIS MOTHER MOVED IN CIRCLES WHICH WERE ENTIRELY BEYOND THEIR COMPASS OR AMBITIONS AND THE SON WOULD PROBABLY ONE DAY BE AN AMBASSADOR",
+      "source_path": "data/librispeech/LibriSpeech/test-other/7105/2340/7105-2340-0028.flac",
+      "source_sha256": "bc4ba1da4761b0d078b9abb06fb7174be6418985b0f373d02a6d48ad75c3347e",
+      "signal_file": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/build/taalas-k64-reserved-test-v1/inputs/input-083.npy",
+      "signal_file_sha256": "268337da953dfb24dbdccdbc6f8c908fcb6fea905c41a0b6a57b7792fb6d9e90",
+      "input_float32_sha256": "b589a511c7cd79dd51a004251edee945f3e6c34e1babb6f3eb48c41e51c84186"
+    },
+    {
+      "input_index": 84,
+      "id": "6938-70848-0009",
+      "role": "test",
+      "speaker": "6938",
+      "condition": "other",
+      "seed": null,
+      "partitions": [
+        "test"
+      ],
+      "reference": "WE KNOW WHAT THE PEASANTS WILL SAY AREN'T THEY WORKINGMEN LIKE OURSELVES",
+      "source_path": "data/librispeech/LibriSpeech/test-other/6938/70848/6938-70848-0009.flac",
+      "source_sha256": "f31a41e20cfd68a418e00ea2c02a5e4e9b576af4434f978cd8261012b7ab109e",
+      "signal_file": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/build/taalas-k64-reserved-test-v1/inputs/input-084.npy",
+      "signal_file_sha256": "a910211987bdd4b8388c4552de1cb00d5c7368ceb842b60a4f4cceaddc28d878",
+      "input_float32_sha256": "17aa83b7435b41ad6f0edc2bac4974aebe127373fce2b42fc3f5ccd6ea1f1759"
+    },
+    {
+      "input_index": 85,
+      "id": "6938-70848-0008",
+      "role": "test",
+      "speaker": "6938",
+      "condition": "other",
+      "seed": null,
+      "partitions": [
+        "test"
+      ],
+      "reference": "THE PEASANTS ARE THE PEOPLE OF RUSSIA WAIT UNTIL THE PEASANTS",
+      "source_path": "data/librispeech/LibriSpeech/test-other/6938/70848/6938-70848-0008.flac",
+      "source_sha256": "97c7c816cdafbb260bc6c1424742762d17318fa12c99bf51721383944c8bfbdb",
+      "signal_file": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/build/taalas-k64-reserved-test-v1/inputs/input-085.npy",
+      "signal_file_sha256": "8884752cb52e20335cad07d00749be7f91c2b2a71276837de826a9acbe05fb3f",
+      "input_float32_sha256": "b1c53f6085199234eaf3e4b654b00e1698ffa30c12624cc1044a9a93deaeb43c"
+    },
+    {
+      "input_index": 86,
+      "id": "3764-168670-0038",
+      "role": "test",
+      "speaker": "3764",
+      "condition": "other",
+      "seed": null,
+      "partitions": [
+        "test"
+      ],
+      "reference": "I SHALL BE HUNGRY I WILL BRING YOU SOMETHING",
+      "source_path": "data/librispeech/LibriSpeech/test-other/3764/168670/3764-168670-0038.flac",
+      "source_sha256": "e106b3c383f7fbf148a99b65f39d1ceffe9a672ecf206e4da8238e5c4b84fcf8",
+      "signal_file": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/build/taalas-k64-reserved-test-v1/inputs/input-086.npy",
+      "signal_file_sha256": "6054b3a2ddac9affb1192417976d467a0700823b5e7d9062bfa17c73689b21b5",
+      "input_float32_sha256": "bc49b4c105bd66f11870d19f52c5488c242859b2f90eba54cf723c5e76e36723"
+    },
+    {
+      "input_index": 87,
+      "id": "3764-168670-0037",
+      "role": "test",
+      "speaker": "3764",
+      "condition": "other",
+      "seed": null,
+      "partitions": [
+        "test"
+      ],
+      "reference": "ABOUT THREE O'CLOCK IN THE AFTERNOON",
+      "source_path": "data/librispeech/LibriSpeech/test-other/3764/168670/3764-168670-0037.flac",
+      "source_sha256": "5be2ba26fec3c99ac715545347d38859bef22c36175a78f7987c19f5ada9e621",
+      "signal_file": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/build/taalas-k64-reserved-test-v1/inputs/input-087.npy",
+      "signal_file_sha256": "ee375f9971d2a26989d026828f85aaa3861db8af51b712d2c21371380e876def",
+      "input_float32_sha256": "f93be7961af7509fedd15f0dd7f56e18600b6b59c21d1737a5935518382fe7f5"
+    },
+    {
+      "input_index": 88,
+      "id": "3331-159605-0036",
+      "role": "test",
+      "speaker": "3331",
+      "condition": "other",
+      "seed": null,
+      "partitions": [
+        "test"
+      ],
+      "reference": "MINNIE SAID THE OTHER DAY SHE WISHED SHE WAS A PIGEON SO SHE COULD PADDLE IN THE PUDDLES AND NOT FUSS ABOUT RUBBERS",
+      "source_path": "data/librispeech/LibriSpeech/test-other/3331/159605/3331-159605-0036.flac",
+      "source_sha256": "d765dbe4f0551c68ea028348a44a0dfea027faceb8b99a576cc1f5cb97b11f03",
+      "signal_file": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/build/taalas-k64-reserved-test-v1/inputs/input-088.npy",
+      "signal_file_sha256": "726b602ec7c63ff3110309d87cea20bd953705dede7b0c77493a86e526543d8c",
+      "input_float32_sha256": "617b48539d4cded60ae4c6d323e23cbc510004b1b6acd27d8543d69cd4e4a3dc"
+    },
+    {
+      "input_index": 89,
+      "id": "3331-159605-0024",
+      "role": "test",
+      "speaker": "3331",
+      "condition": "other",
+      "seed": null,
+      "partitions": [
+        "test"
+      ],
+      "reference": "BUT I KNOW HER BETTER AND I ASSURE YOU THAT SHE DOES IMPROVE SHE TRIES TO MEND HER FAULTS THOUGH SHE WON'T OWN IT AND WILL SURPRISE YOU SOME DAY BY THE AMOUNT OF HEART AND SENSE AND GOODNESS SHE HAS GOT",
+      "source_path": "data/librispeech/LibriSpeech/test-other/3331/159605/3331-159605-0024.flac",
+      "source_sha256": "60edb27df118cfe7b95c22894404d2c644f697183f5c48a98ef135aaec1ccecc",
+      "signal_file": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/build/taalas-k64-reserved-test-v1/inputs/input-089.npy",
+      "signal_file_sha256": "b4ff1412f7c428e77175c6c72243da68387882103fefd588a95534fa4e996ed5",
+      "input_float32_sha256": "f4b79739cffcc2cbca7bb15447c262b95dc388107aa2415ae0761d39632775b0"
+    },
+    {
+      "input_index": 90,
+      "id": "8280-266249-0055",
+      "role": "test",
+      "speaker": "8280",
+      "condition": "other",
+      "seed": null,
+      "partitions": [
+        "test"
+      ],
+      "reference": "WHAT CAN IT HAVE BEEN THEY ASKED EACH OTHER",
+      "source_path": "data/librispeech/LibriSpeech/test-other/8280/266249/8280-266249-0055.flac",
+      "source_sha256": "05c9301a6d6e7cc3355643dbc67361a0da58f0582783cbb3801ba70ad34d34a2",
+      "signal_file": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/build/taalas-k64-reserved-test-v1/inputs/input-090.npy",
+      "signal_file_sha256": "4bdbd18d3df6cb770c67c282475c3a468afcf5adc784f0c0fae2677754368379",
+      "input_float32_sha256": "d31b495584de1de5a228b6c941f9127f2533c9d2f924ec9052fbffc862a9563c"
+    },
+    {
+      "input_index": 91,
+      "id": "8280-266249-0023",
+      "role": "test",
+      "speaker": "8280",
+      "condition": "other",
+      "seed": null,
+      "partitions": [
+        "test"
+      ],
+      "reference": "NO SIR WHAT KNOW YE NOT THAT YOUR BODY IS THE TEMPLE OF THE HOLY GHOST WHICH IS IN YOU WHICH YE HAVE OF GOD AND YE ARE NOT YOUR OWN",
+      "source_path": "data/librispeech/LibriSpeech/test-other/8280/266249/8280-266249-0023.flac",
+      "source_sha256": "f0512144731cdc50be21377fecb2e7dfd5495f6793f51e8d5f9558d41f7c1665",
+      "signal_file": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/build/taalas-k64-reserved-test-v1/inputs/input-091.npy",
+      "signal_file_sha256": "7bf01c8878750ba40a95550b5d88eea3c1aff667bdf548d25d2d0e4fc24246ee",
+      "input_float32_sha256": "19839629c538fa36999731c617d9cc2741ec14bbb506a21aaee67a9b9695ecf9"
+    },
+    {
+      "input_index": 92,
+      "id": "4350-9170-0026",
+      "role": "test",
+      "speaker": "4350",
+      "condition": "other",
+      "seed": null,
+      "partitions": [
+        "test"
+      ],
+      "reference": "THE MEANING OF CAPRIVI'S SPEECH PUT INTO PLAIN LANGUAGE IS THAT FUNDS ARE NEEDED NOT TO RESIST FOREIGN FOES BUT TO BUY UNDER OFFICERS TO BE READY TO ACT AGAINST THE ENSLAVED TOILING MASSES",
+      "source_path": "data/librispeech/LibriSpeech/test-other/4350/9170/4350-9170-0026.flac",
+      "source_sha256": "9def06761c8ed38293c3b6f38700564d35a15192ae4a871ef10b04da2d6c379a",
+      "signal_file": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/build/taalas-k64-reserved-test-v1/inputs/input-092.npy",
+      "signal_file_sha256": "b29a6acd176673fc84aa196488c5fc152c4022e5a869b9e56d35753c13ecbcc4",
+      "input_float32_sha256": "7bdcd6b62cff93cbd5acd12754f6f522ab0a51020a8173c22bdbe5093af865b6"
+    },
+    {
+      "input_index": 93,
+      "id": "4350-9170-0041",
+      "role": "test",
+      "speaker": "4350",
+      "condition": "other",
+      "seed": null,
+      "partitions": [
+        "test"
+      ],
+      "reference": "BUT THE FATAL SIGNIFICANCE OF UNIVERSAL MILITARY SERVICE AS THE MANIFESTATION OF THE CONTRADICTION INHERENT IN THE SOCIAL CONCEPTION OF LIFE IS NOT ONLY APPARENT IN THAT",
+      "source_path": "data/librispeech/LibriSpeech/test-other/4350/9170/4350-9170-0041.flac",
+      "source_sha256": "b907197af4f45e995ba449f5ac5a8f007c52f9123de1b2f60904b3f06cec6ae4",
+      "signal_file": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/build/taalas-k64-reserved-test-v1/inputs/input-093.npy",
+      "signal_file_sha256": "887129a2379e4a02bb996dc480af65329e5eff04c26c6fa8de693503f636af57",
+      "input_float32_sha256": "0f3e73253ffa446b8d31fa4215629cbfb318a3352541fd6151d93e5468eab8d3"
+    },
+    {
+      "input_index": 94,
+      "id": "5442-41168-0012",
+      "role": "test",
+      "speaker": "5442",
+      "condition": "other",
+      "seed": null,
+      "partitions": [
+        "test"
+      ],
+      "reference": "HE PARTICULARLY LIKED THE WAY ONE GRAY WHISKERED WAITER WHO SHOWED HIS SCORN FOR THE OTHER YOUNGER ONES AND WAS JEERED AT BY THEM WAS TEACHING THEM HOW TO FOLD UP NAPKINS PROPERLY",
+      "source_path": "data/librispeech/LibriSpeech/test-other/5442/41168/5442-41168-0012.flac",
+      "source_sha256": "2fde6dcebb9c223bbc8f7a489f6634283ec3f58d16f265e3961a41a1f9b7a4e8",
+      "signal_file": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/build/taalas-k64-reserved-test-v1/inputs/input-094.npy",
+      "signal_file_sha256": "21c7f7e3ed8dbb8a0d5ddafb2a9af78ff64529142ccd7e8240d35e46538914cb",
+      "input_float32_sha256": "a3459a434b1ecb9569d2fa72dc7cf868898488c5180a72f66e1079a301243da7"
+    },
+    {
+      "input_index": 95,
+      "id": "5442-32873-0008",
+      "role": "test",
+      "speaker": "5442",
+      "condition": "other",
+      "seed": null,
+      "partitions": [
+        "test"
+      ],
+      "reference": "THERE WAS NOTHING VERY BROTHERLY IN HIS LOOK AS HE PEERED INTO HER PALE SHARP FEATURES DURING THE PROCESS",
+      "source_path": "data/librispeech/LibriSpeech/test-other/5442/32873/5442-32873-0008.flac",
+      "source_sha256": "0578cc24c426dfee579a56cc049d1fbda0b1fe91443b9cf58c456a4602ae691c",
+      "signal_file": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/build/taalas-k64-reserved-test-v1/inputs/input-095.npy",
+      "signal_file_sha256": "c45d52d173d73e876f4af13db7b73a019ca85b603a0986bac82e35ecc1672041",
+      "input_float32_sha256": "6176e9204ebd02c45dec9022b08129382f0ad93deb09f454212e402cb3dc97c9"
+    },
+    {
+      "input_index": 96,
+      "id": "2033-164914-0014",
+      "role": "test",
+      "speaker": "2033",
+      "condition": "other",
+      "seed": null,
+      "partitions": [
+        "test"
+      ],
+      "reference": "BUT THE EUNUCH SAID I WILL NOT LEAVE THEE TILL THOU SHOW ME WHO IT WAS THAT RECITED THE VERSES FOR I DREAD RETURNING TO MY LADY WITHOUT HIM",
+      "source_path": "data/librispeech/LibriSpeech/test-other/2033/164914/2033-164914-0014.flac",
+      "source_sha256": "90146584e399688ae7be65b77a4984384f026e19100b194e0f534f4d6cdb5eca",
+      "signal_file": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/build/taalas-k64-reserved-test-v1/inputs/input-096.npy",
+      "signal_file_sha256": "e6d0bd44dc2622c5297f0215a8bd778efe2334681ee07fcda67e5aeaf39e771e",
+      "input_float32_sha256": "3423e7c069512645c819209a33975864ff04bcb3d8462e81001a764c6eb198a0"
+    },
+    {
+      "input_index": 97,
+      "id": "2033-164916-0010",
+      "role": "test",
+      "speaker": "2033",
+      "condition": "other",
+      "seed": null,
+      "partitions": [
+        "test"
+      ],
+      "reference": "HE THEN REPAIRED TO THE HEART OF THE ENCAMPMENT AND ORDERED THE HOST TO HALT TEN DAYS",
+      "source_path": "data/librispeech/LibriSpeech/test-other/2033/164916/2033-164916-0010.flac",
+      "source_sha256": "4a0c884e63b717729116891d321e39b4866fd2b69311dba926a143015dce6754",
+      "signal_file": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/build/taalas-k64-reserved-test-v1/inputs/input-097.npy",
+      "signal_file_sha256": "389a7438e47aff4e04786f26eae03e177229c80b103d54daf56fb75a12b308c4",
+      "input_float32_sha256": "5955e99fa44cb9cea6126001759dc790ea108fe9a4c75bd44690cb3decf44a4e"
+    },
+    {
+      "input_index": 98,
+      "id": "7975-280076-0020",
+      "role": "test",
+      "speaker": "7975",
+      "condition": "other",
+      "seed": null,
+      "partitions": [
+        "test"
+      ],
+      "reference": "WE WERE NOT ON GOOD TERMS AT THE TIME NOR HAVE WE BEEN FOR SEVERAL YEARS",
+      "source_path": "data/librispeech/LibriSpeech/test-other/7975/280076/7975-280076-0020.flac",
+      "source_sha256": "61f37c59394c150d38bef3c853c11a3dad342c16d00a733efd10148560b81811",
+      "signal_file": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/build/taalas-k64-reserved-test-v1/inputs/input-098.npy",
+      "signal_file_sha256": "6485a4df9bbb13dc4c0fde31a5e6df51ed0e29f3738082b4cb769aa6c3a3d951",
+      "input_float32_sha256": "a9025d5dba33c9295d99d41eade47c4d2e04e1a7cbab547d4cf0f8f249759dc5"
+    },
+    {
+      "input_index": 99,
+      "id": "7975-280076-0000",
+      "role": "test",
+      "speaker": "7975",
+      "condition": "other",
+      "seed": null,
+      "partitions": [
+        "test"
+      ],
+      "reference": "ALTHOUGH EVERY BOOK PURPORTING TO NARRATE THE LIVES OF THE YOUNGER BROTHERS HAS TOLD OF THE LIBERTY ROBBERY AND IMPLIED THAT WE HAD A PART IN IT THE YOUNGERS WERE NOT SUSPECTED AT THAT TIME NOR FOR A LONG TIME AFTERWARD",
+      "source_path": "data/librispeech/LibriSpeech/test-other/7975/280076/7975-280076-0000.flac",
+      "source_sha256": "2bf201846f1fe3dd13459f8c4b056957820ab4aa67bf00fceb9085963dd7b436",
+      "signal_file": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/build/taalas-k64-reserved-test-v1/inputs/input-099.npy",
+      "signal_file_sha256": "75dd9f0631627c926e0511a5f948276e80f6d39a6f2cd27c06443947899f51c1",
+      "input_float32_sha256": "673ce79c8d964c4da981d7afaa94cfe3927a7ccaee8e26062f6d06a97b4f2aec"
+    },
+    {
+      "input_index": 100,
+      "id": "1688-142285-0005",
+      "role": "test",
+      "speaker": "1688",
+      "condition": "other",
+      "seed": null,
+      "partitions": [
+        "test"
+      ],
+      "reference": "YOU WHO WERE ALWAYS ACCUSING PEOPLE OF BEING SHOPPY AT HELSTONE",
+      "source_path": "data/librispeech/LibriSpeech/test-other/1688/142285/1688-142285-0005.flac",
+      "source_sha256": "b7e70bfc9b4ffa2ce31e5e705a8b65f2f5205275a138764d2b7cb1672958edd7",
+      "signal_file": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/build/taalas-k64-reserved-test-v1/inputs/input-100.npy",
+      "signal_file_sha256": "05b93bb185cea8871f0b042846cf6e25fca5f519bbc0df9730f64615e97af544",
+      "input_float32_sha256": "91a75de748e9550a5a57d23d75588886ce871c5f55b007c6614c3d59c0865eab"
+    },
+    {
+      "input_index": 101,
+      "id": "1688-142285-0033",
+      "role": "test",
+      "speaker": "1688",
+      "condition": "other",
+      "seed": null,
+      "partitions": [
+        "test"
+      ],
+      "reference": "SHE LAY AWAKE VERY LONG THIS NIGHT PLANNING HOW TO LESSEN THE EVIL INFLUENCE OF THEIR MILTON LIFE ON HER MOTHER",
+      "source_path": "data/librispeech/LibriSpeech/test-other/1688/142285/1688-142285-0033.flac",
+      "source_sha256": "a0d2fd65246cbe8c93f673ce21fc2f81618a0969b3be1047bf41f0cd8a2fd6b8",
+      "signal_file": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/build/taalas-k64-reserved-test-v1/inputs/input-101.npy",
+      "signal_file_sha256": "b7e539a9a71110c5022f877d2e875ecbe7fafb859db3fb001853bbe5b5631efe",
+      "input_float32_sha256": "d362203fcb6960138fb5c0bc2ee2f4dbbfd355b746d1a18ff8ae8955bbed33e9"
+    },
+    {
+      "input_index": 102,
+      "id": "533-131556-0017",
+      "role": "test",
+      "speaker": "533",
+      "condition": "other",
+      "seed": null,
+      "partitions": [
+        "test"
+      ],
+      "reference": "SHE PAUSED IN EVIDENT DISCONCERTION AND PERPLEXITY MINGLED WITH ANGER SHE DARED NOT SHOW",
+      "source_path": "data/librispeech/LibriSpeech/test-other/533/131556/533-131556-0017.flac",
+      "source_sha256": "f88fb5c8570b8a6e7bfb9e61eeb99bb1cb2caffba7d716a924516917d0b95a63",
+      "signal_file": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/build/taalas-k64-reserved-test-v1/inputs/input-102.npy",
+      "signal_file_sha256": "ac7817474ec2ffb014256fe34f6ba806ceaa6f46041533fa1588c55e273ebc5e",
+      "input_float32_sha256": "f9011af517b656fa676a4229e3afa5c19bb9fe175d0a69d5535ecf1d09789372"
+    },
+    {
+      "input_index": 103,
+      "id": "533-1066-0007",
+      "role": "test",
+      "speaker": "533",
+      "condition": "other",
+      "seed": null,
+      "partitions": [
+        "test"
+      ],
+      "reference": "I MEAN HE PERSISTED DO YOU FEEL AS THOUGH YOU COULD GO THROUGH WITH SOMETHING RATHER UNUSUAL",
+      "source_path": "data/librispeech/LibriSpeech/test-other/533/1066/533-1066-0007.flac",
+      "source_sha256": "344fed42890599410bb577c79ba8a91a161ae11ebcbfa7bfff07852849967225",
+      "signal_file": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/build/taalas-k64-reserved-test-v1/inputs/input-103.npy",
+      "signal_file_sha256": "fac5b64448eec8f6a474edbc5d792c245678382e869fc9e13cb13eaff3916b49",
+      "input_float32_sha256": "16bc9f93713d72389cdcb68b323e33b96842cf535150b019509c586e9f67c0cd"
+    },
+    {
+      "input_index": 104,
+      "id": "4294-35475-0016",
+      "role": "test",
+      "speaker": "4294",
+      "condition": "other",
+      "seed": null,
+      "partitions": [
+        "test"
+      ],
+      "reference": "THE PRINCE SPENT ALL THE FOLLOWING TIME UNTIL MIDNIGHT TRYING TO THINK OF A SUITABLE VERSE TO SAY TO THE SCISSORS",
+      "source_path": "data/librispeech/LibriSpeech/test-other/4294/35475/4294-35475-0016.flac",
+      "source_sha256": "3bca2a9651aaee4a738dcf918ca05534bc246290b4c51111be91ce1f1ea2176d",
+      "signal_file": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/build/taalas-k64-reserved-test-v1/inputs/input-104.npy",
+      "signal_file_sha256": "dba23aa0cb7c4ec70d85a631b477254064509008cfe54bbcde158d1f4048da89",
+      "input_float32_sha256": "9a64e36be351d5d188f388fd9397f8e2d917a05158e64156e5aeaa8c67895054"
+    },
+    {
+      "input_index": 105,
+      "id": "4294-14317-0006",
+      "role": "test",
+      "speaker": "4294",
+      "condition": "other",
+      "seed": null,
+      "partitions": [
+        "test"
+      ],
+      "reference": "THEN I THANKED HIM AND SAID I HAD NO GREATER DESIRE THAN TO SHOW THOSE ENVIOUS FOLK THAT I HAD IT IN ME TO EXECUTE THE PROMISED WORK",
+      "source_path": "data/librispeech/LibriSpeech/test-other/4294/14317/4294-14317-0006.flac",
+      "source_sha256": "c3eb0df2d851079aca200d08927b345122ff0e0bc2339267ce302baaf0e0ed8a",
+      "signal_file": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/build/taalas-k64-reserved-test-v1/inputs/input-105.npy",
+      "signal_file_sha256": "47f9a51382354af5bf55428b64910b9013d6438d26ee755dda4e16935bacabdf",
+      "input_float32_sha256": "cbcd6d19eaebb632576d56b54232aeba99dcc5c84f753f584d8a7c5207c78824"
+    },
+    {
+      "input_index": 106,
+      "id": "8461-281231-0011",
+      "role": "test",
+      "speaker": "8461",
+      "condition": "other",
+      "seed": null,
+      "partitions": [
+        "test"
+      ],
+      "reference": "TWO OF THE FOREMOST INSTANTLY FELL AND THE REST GAVE WAY NOTWITHSTANDING ALL THEIR LEADERS EFFORTS TO STOP THEM",
+      "source_path": "data/librispeech/LibriSpeech/test-other/8461/281231/8461-281231-0011.flac",
+      "source_sha256": "4c0b1d2c184806ae59432d798191de23543fb280310fd83476d62dd1b09aa5c2",
+      "signal_file": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/build/taalas-k64-reserved-test-v1/inputs/input-106.npy",
+      "signal_file_sha256": "122e4b86fb7c674dc35bacef8d6e8beeedb6aaec00ae1db491f7a287791f3246",
+      "input_float32_sha256": "45adfb2091dc937c4574fe6894b43832071128ea6e4fb1a29b4643a76d04fef1"
+    },
+    {
+      "input_index": 107,
+      "id": "8461-281231-0037",
+      "role": "test",
+      "speaker": "8461",
+      "condition": "other",
+      "seed": null,
+      "partitions": [
+        "test"
+      ],
+      "reference": "AT HIS FEET WAS PLACED A TABLE OCCUPIED BY TWO SCRIBES WHOSE DUTY IT WAS TO RECORD THE PROCEEDINGS OF THE DAY",
+      "source_path": "data/librispeech/LibriSpeech/test-other/8461/281231/8461-281231-0037.flac",
+      "source_sha256": "732f69b658f69a0b2641c69de18842de1c22423b0e49ec3a675eaded58f77460",
+      "signal_file": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/build/taalas-k64-reserved-test-v1/inputs/input-107.npy",
+      "signal_file_sha256": "c33db5d6f8df5c3f12aa0521f23b230054eb248c288cb8aa43f6ce0de9258706",
+      "input_float32_sha256": "f4b8869750bc9f60df507bd577c97fc8349f9be705f1dcfc650d15be061d5592"
+    },
+    {
+      "input_index": 108,
+      "id": "7902-96594-0003",
+      "role": "test",
+      "speaker": "7902",
+      "condition": "other",
+      "seed": null,
+      "partitions": [
+        "test"
+      ],
+      "reference": "THAT'S RIGHT OF COURSE WELL ARMED",
+      "source_path": "data/librispeech/LibriSpeech/test-other/7902/96594/7902-96594-0003.flac",
+      "source_sha256": "0d1a41d4c69e8d2b0e9b91f7b431c88516a2d09f92bb1f8d71578973f5ddb1ac",
+      "signal_file": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/build/taalas-k64-reserved-test-v1/inputs/input-108.npy",
+      "signal_file_sha256": "71e57d21f46a26f86f18b190abd78a57e1835b31f9eb2b4483edd17de5e41219",
+      "input_float32_sha256": "16a811b0fd81636294e941c94e91fce61549dbaffa1b6ff3b0e83fabf876f738"
+    },
+    {
+      "input_index": 109,
+      "id": "7902-96591-0013",
+      "role": "test",
+      "speaker": "7902",
+      "condition": "other",
+      "seed": null,
+      "partitions": [
+        "test"
+      ],
+      "reference": "NO HE THOUGHT TO HIMSELF I DON'T BELIEVE THEY WOULD KILL ME BUT THEY WOULD KNOCK ME ABOUT",
+      "source_path": "data/librispeech/LibriSpeech/test-other/7902/96591/7902-96591-0013.flac",
+      "source_sha256": "97753c3aa91c1cd9ee58cacfd68f119c151386ab00bce46d3a3e830103d3ff10",
+      "signal_file": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/build/taalas-k64-reserved-test-v1/inputs/input-109.npy",
+      "signal_file_sha256": "fd6f24329aac89c3f6211210ad556fb120a22b57bd4ec42515a34e6b05a528c5",
+      "input_float32_sha256": "ef904efe47f92a22eb91bce50e3e90623ee2a37c23330a9baa8f15908cb11c24"
+    },
+    {
+      "input_index": 110,
+      "id": "5764-299665-0081",
+      "role": "test",
+      "speaker": "5764",
+      "condition": "other",
+      "seed": null,
+      "partitions": [
+        "test"
+      ],
+      "reference": "WE KNOW THE PATHS THAT LIFE HAS TRAVELED",
+      "source_path": "data/librispeech/LibriSpeech/test-other/5764/299665/5764-299665-0081.flac",
+      "source_sha256": "ced8bc9c56c80e920d3a19a771c1a712d812421101b4d0af0616cd5a0c7aead3",
+      "signal_file": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/build/taalas-k64-reserved-test-v1/inputs/input-110.npy",
+      "signal_file_sha256": "817276273419b67b0c8bb2e9e10c0bdad1a537099f6fd1e21cb2f2fcb892c297",
+      "input_float32_sha256": "133a04a74352d51a2e6009c14e6db6017daa81e51de893218d81b930e4126820"
+    },
+    {
+      "input_index": 111,
+      "id": "5764-299665-0048",
+      "role": "test",
+      "speaker": "5764",
+      "condition": "other",
+      "seed": null,
+      "partitions": [
+        "test"
+      ],
+      "reference": "COULD THESE COUNTRIES HAVE BEEN WORSE WITHOUT RELIGION",
+      "source_path": "data/librispeech/LibriSpeech/test-other/5764/299665/5764-299665-0048.flac",
+      "source_sha256": "a9d0145091cdb3c057b8f7db69e2f3be9fda08975067a51010f51335767316ea",
+      "signal_file": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/build/taalas-k64-reserved-test-v1/inputs/input-111.npy",
+      "signal_file_sha256": "2b1ba5ee43eb390d57174eb830ddbbd94f0ed67a066131c8e9c71f234bf23bba",
+      "input_float32_sha256": "c084f020205aca53858259f361136aa028ce8c865ffe105b4cd9180dd196605b"
+    },
+    {
+      "input_index": 112,
+      "id": "8188-269288-0056",
+      "role": "test",
+      "speaker": "8188",
+      "condition": "other",
+      "seed": null,
+      "partitions": [
+        "test"
+      ],
+      "reference": "THERE WAS NO REPLY BUT THE SOUND OF HURRYING STEPS CAME QUICKER AND QUICKER NOW AND THEN THEY WERE INTERRUPTED BY A GROAN",
+      "source_path": "data/librispeech/LibriSpeech/test-other/8188/269288/8188-269288-0056.flac",
+      "source_sha256": "6968b54159830d32821b069c0ff5c17b0da6130a64622b721ab4844296e667a3",
+      "signal_file": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/build/taalas-k64-reserved-test-v1/inputs/input-112.npy",
+      "signal_file_sha256": "46d8db46fe72ce030fd211118f21d899d356c35a43a7c7ce3d7ef9851f81cee9",
+      "input_float32_sha256": "a5211f8bebfef2e4e3a2010d2a39dee71946762c4ccff9041c9fd44d2bb24649"
+    },
+    {
+      "input_index": 113,
+      "id": "8188-269288-0014",
+      "role": "test",
+      "speaker": "8188",
+      "condition": "other",
+      "seed": null,
+      "partitions": [
+        "test"
+      ],
+      "reference": "THESE LETTERS HAVE JUST COME FOR YOU AND ANNIE COLCHESTER SHE SAID AND AS I WAS COMING UPSTAIRS I THOUGHT I WOULD LEAVE THEM WITH YOU",
+      "source_path": "data/librispeech/LibriSpeech/test-other/8188/269288/8188-269288-0014.flac",
+      "source_sha256": "3ddf95834ddb62f0c0080ef052f8460bb1545e6b61731ca62d72692a22e663e8",
+      "signal_file": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/build/taalas-k64-reserved-test-v1/inputs/input-113.npy",
+      "signal_file_sha256": "679421ebb517b47f205381fed2c2523eac86a532a9750c3112d554566a7bb637",
+      "input_float32_sha256": "5191afa896c0d357bbb712be963c9f9b2a737c4d094b2a18d467789f73d87e9e"
+    },
+    {
+      "input_index": 114,
+      "id": "6128-63240-0016",
+      "role": "test",
+      "speaker": "6128",
+      "condition": "other",
+      "seed": null,
+      "partitions": [
+        "test"
+      ],
+      "reference": "SHE HATES IT SHE WOULD LIKE TO ABOLISH IT",
+      "source_path": "data/librispeech/LibriSpeech/test-other/6128/63240/6128-63240-0016.flac",
+      "source_sha256": "3e1a27b580ea73d9791a56109ba04cbecb66e349287b3c4c41400a1dfb6f6f3d",
+      "signal_file": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/build/taalas-k64-reserved-test-v1/inputs/input-114.npy",
+      "signal_file_sha256": "6e99bdeb718f427ab281e3a0e061462359646be9ca022b31888a8f5dc8c0eb4e",
+      "input_float32_sha256": "2a5382f551a426bcfe9cda6e1fd807f328c207d100d999e446960478e5480d32"
+    },
+    {
+      "input_index": 115,
+      "id": "6128-63240-0000",
+      "role": "test",
+      "speaker": "6128",
+      "condition": "other",
+      "seed": null,
+      "partitions": [
+        "test"
+      ],
+      "reference": "THE GENTLEMAN HAD NOT EVEN NEEDED TO SIT DOWN TO BECOME INTERESTED APPARENTLY HE HAD TAKEN UP THE VOLUME FROM A TABLE AS SOON AS HE CAME IN AND STANDING THERE AFTER A SINGLE GLANCE ROUND THE APARTMENT HAD LOST HIMSELF IN ITS PAGES",
+      "source_path": "data/librispeech/LibriSpeech/test-other/6128/63240/6128-63240-0000.flac",
+      "source_sha256": "9f718079c1e03aea57dd97220b5a41115faba89d715d95f996f0b6491b52ad97",
+      "signal_file": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/build/taalas-k64-reserved-test-v1/inputs/input-115.npy",
+      "signal_file_sha256": "8afb4767d655a56902b01e6de41a24cbe7743d7888f9eaedc27d8ae2fa58f466",
+      "input_float32_sha256": "4eeff84dc81b30ab257d689339c2b8818c866eeeaccab3eb418f6652c47dfb6f"
+    },
+    {
+      "input_index": 116,
+      "id": "4198-12259-0005",
+      "role": "test",
+      "speaker": "4198",
+      "condition": "other",
+      "seed": null,
+      "partitions": [
+        "test"
+      ],
+      "reference": "WHICH WAS FIRST THIRST OR DRINKING",
+      "source_path": "data/librispeech/LibriSpeech/test-other/4198/12259/4198-12259-0005.flac",
+      "source_sha256": "c913a9d06266963e45c212e5c686bc78e3f87190e18a4bc8af64ec102b3949f9",
+      "signal_file": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/build/taalas-k64-reserved-test-v1/inputs/input-116.npy",
+      "signal_file_sha256": "11ce6c738ad53024f6df9d26d838e9812bb6362e66554795d9d42e63379fa024",
+      "input_float32_sha256": "c10191e7d7be27aa9b651131e5bde811406ce971fa9984d831f4d451a189f7e3"
+    },
+    {
+      "input_index": 117,
+      "id": "4198-61336-0019",
+      "role": "test",
+      "speaker": "4198",
+      "condition": "other",
+      "seed": null,
+      "partitions": [
+        "test"
+      ],
+      "reference": "THUS WAS URARTU CRIPPLED AND HUMILIATED IT NEVER REGAINED ITS FORMER PRESTIGE AMONG THE NORTHERN STATES",
+      "source_path": "data/librispeech/LibriSpeech/test-other/4198/61336/4198-61336-0019.flac",
+      "source_sha256": "31270cc4d9999bcc4f68bba223ef50fc77e1e76800e392259de12f451e632922",
+      "signal_file": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/build/taalas-k64-reserved-test-v1/inputs/input-117.npy",
+      "signal_file_sha256": "28a36e9f5678d900aa3523fb91d529f6b9abca2d698c962317644499b6ddc5ed",
+      "input_float32_sha256": "2a8f9610b7a01d287e01f4ad7a8f96ba80a401762a3d5eb5101fc30b68977925"
+    },
+    {
+      "input_index": 118,
+      "id": "367-293981-0013",
+      "role": "test",
+      "speaker": "367",
+      "condition": "other",
+      "seed": null,
+      "partitions": [
+        "test"
+      ],
+      "reference": "DON QUIXOTE CONSENTED AND HE TAKING IT WITH BOTH HANDS IN GOOD FAITH AND WITH A BETTER WILL GULPED DOWN AND DRAINED OFF VERY LITTLE LESS THAN HIS MASTER",
+      "source_path": "data/librispeech/LibriSpeech/test-other/367/293981/367-293981-0013.flac",
+      "source_sha256": "ccae3d590754f8026b3153a4d05d4cc0eba84aa20988a8e083b1b368cd283c4d",
+      "signal_file": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/build/taalas-k64-reserved-test-v1/inputs/input-118.npy",
+      "signal_file_sha256": "651e9b448d699f0108e4c1a66777004f65773969cbf229eeb4cdbd867473da5e",
+      "input_float32_sha256": "5d523ffc9cc160a3847c44d9770d02ef00040e11404e248d867e2c65b89db5b0"
+    },
+    {
+      "input_index": 119,
+      "id": "367-293981-0001",
+      "role": "test",
+      "speaker": "367",
+      "condition": "other",
+      "seed": null,
+      "partitions": [
+        "test"
+      ],
+      "reference": "I SAY SO CONTINUED DON QUIXOTE BECAUSE I HATE TAKING AWAY ANYONE'S GOOD NAME",
+      "source_path": "data/librispeech/LibriSpeech/test-other/367/293981/367-293981-0001.flac",
+      "source_sha256": "d7cb52759a206e14989ace1e17861a62acbf38b5337eb740ce94728ed544190b",
+      "signal_file": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/build/taalas-k64-reserved-test-v1/inputs/input-119.npy",
+      "signal_file_sha256": "90eba2ca19b46d9b60aa0917fcf83e9c30e2bafad7e7ac212cd30d3f0be59e6f",
+      "input_float32_sha256": "03738c595712c2c2145331688dcc9c71809ec09cdea5b4cdd032854a98f960ea"
+    }
+  ],
+  "expected_calls": 240,
+  "workers": 2,
+  "maximum_seconds_per_process": 45,
+  "native_library_sha256": "1453a6c1c9072f3d05e9e5ae6ff423fae839e56631c5efb12bbd5c0280d04399",
+  "BLAS_environment": {
+    "VECLIB_MAXIMUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1"
+  },
+  "inference_contract": "One fresh process/native controller per independent clip/condition, original defaults, flags0, no explicit native single-thread override, original model and candidate byte hashes fixed; exact returned PCM/crops must match across models.",
+  "gate_limits": {
+    "clean_max_wer": 0.15,
+    "other_max_wer": 0.35,
+    "white_noise_10db_max_wer": 0.4,
+    "candidate_max_absolute_wer_increase": 0.02,
+    "selection": "validation only; final test once for a preselected candidate; failed candidates remain reported"
+  },
+  "performance_contract": {
+    "aggregate_rtf_max": 1.0,
+    "stream_simulated_end_of_audio_p95_seconds_max": 0.5,
+    "first_text": "record supplied audio position and compute time; not live-microphone latency",
+    "host_measurements": "CPU software only, not FPGA/ASIC performance"
+  },
+  "test_contract_audit": {
+    "manifest_role": "80reservedtestclips/40project-held-outspeakers,40test-clean+40test-other;40deterministicnoisyclean variants",
+    "threshold_location": "reports/stt-requirements.json:pilot_accuracy_limits; the contract provides shared pilot limits and explicitly says final test once for a preselected candidate. The data manifest defines roles/inputs but no separate test-specific threshold override.",
+    "callable_gate": "scripts/evaluate_stt_isolated.py:gate, pinned; exact rational comparisons against unchanged clean15%,other35%,noise40%,and +2pp candidate-relative ceiling each condition.",
+    "historical_input_hashes_match_all120_test_conditions": true,
+    "selection_before_test": "K64passed unchanged corrected development gates; candidate choice and allfiles fixed before test inference."
+  },
+  "uncertainty": {
+    "method": "Paired speaker-cluster percentile bootstrap of micro-WER and candidate-minus-original WER. Resample20speakers with replacement within each clean/other source stratum, keep both utterances and original/candidate pairing; clean/noisy conditions reuse identical speaker draws.",
+    "resamples": 10000,
+    "base_seed": 20260919,
+    "interval_percentiles": [
+      2.5,
+      97.5
+    ],
+    "numpy_quantile_method": "linear",
+    "scope": "Marginal95% descriptive intervals; not simultaneous coverage, not a gate change, not a p-value or a correction for unknown pretraining overlap and all prior development exploration."
+  },
+  "integrity_gate": "All240processes exit0 with complete result/closemarker, request/model/source hashes match, no cross-model returned PCM/crop mismatch; otherwise report failure without replacing or rerunning inconvenient rows.",
+  "post_test_policy": "Exactly one candidate reserved test. No fitting, candidate reselection, gate/noise changes, favorable reruns or test-driven recovery from these results. Preserve failures and all predictions.",
+  "history": {
+    "candidate_development_validation_exposures": 13,
+    "prior_candidate_test_runs": 0,
+    "original_historical_test_exists": true,
+    "test_not_claimed_never_evaluated": true
+  },
+  "limits": [
+    "Bounded human read speech and synthetic white noise; not general-product, road/helmet or continuous-stream proof.",
+    "Upstream source-model training overlap unknown. Test speakers are disjoint only within this project.",
+    "Aggregate host RTF is recorded from inference compute; fresh-process load time is separate. Live streaming latency, FPGA/ASIC timing and power remain unmeasured.",
+    "Four-bit indices intoUINT8representatives retain originalINT8frontend/floating operators. Model quality does not prove die fit or sub-watt operation."
+  ],
+  "pinned_files": [
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/scripts/evaluate_reserved_k64_test.py",
+      "sha256": "1eb0e94fc7a279e65e866ce38107534935574a83d0cb6533339e5842d02b6864"
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/scripts/isolate_native_worker.py",
+      "sha256": "b57746863b286ac93098f270e4a77e67a0eccbb56f278581d8321d71a651d85d"
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/scripts/evaluate_stt_isolated.py",
+      "sha256": "820ec44d26c6380c24d1fa04d7fce886db33fbea8889b03a51f519771ebb8851"
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/scripts/audit_native_reproducibility.py",
+      "sha256": "2b3239a1f356dd67e9fd6d3070302417c405abcd2eab21a6054df2cc635dcd94"
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/scripts/stt_metrics.py",
+      "sha256": "01323aec2c75147de123dcac16ddc8db1c0c71913239d6bd652646f2845a6c86"
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/reports/stt-evaluation-manifest.json",
+      "sha256": "eeecdc726dce5475292a668b9a6382add0266b6b1bc79efbc9532fbac8fb0658"
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/reports/stt-requirements.json",
+      "sha256": "461ffe79a48d251ef43558c9a91313b0d1e0dce9926cc6df83cef9ea9b6b7263"
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/reports/taalas-isolated-k64-validation-decision-v1.json",
+      "sha256": "d56298677705577cdd8521449ccfa0126bafdbdbd43bfa2e92d6b7ea2317eceb"
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/reports/taalas-isolated-k64-validation-protocol-v1.json",
+      "sha256": "1c9b55d3c2566fd5106a9c4eefe77811ce36c166ceb49c84776517558ee564aa"
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/models/candidates/codebook-4bit-optimal-rectangular-k64/candidate.json",
+      "sha256": "a9ac4a4c9f51b65ebadf5b26b7c7fe0d3100d047ec4ad863f1b9d147b78870cc"
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/reports/taalas-isolated-k64-calibration-export-audit-v1.json",
+      "sha256": "49d34f71b5533c96843af24272cdef5854ab6ec3f688a31fcc7b1043c071efb1"
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/reports/stt-baseline-pilot-v1.json",
+      "sha256": "d75444292cdd8bee02dd2f3dad6e6b7f13973310a7dc355f9e93131d32b47a51"
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/reports/taalas-native-isolation-verification-v1.json",
+      "sha256": "41689cb1cb52b3f9bd775cb0f8a91ab76b8cadd742857bfcff3725b20c06e2b2"
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/tests/test_reserved_test_intervals.py",
+      "sha256": "d68f87fde737d72c2e7cd61eef37fd59b8cec6e08ba335cf66540b7edfde4130"
+    }
+  ]
+}

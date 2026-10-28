@@ -1,0 +1,698 @@
+{
+  "schema_version": 1,
+  "candidate": "codebook-4bit-optimal-rectangular-k64",
+  "candidate_manifest_sha256": "a9ac4a4c9f51b65ebadf5b26b7c7fe0d3100d047ec4ad863f1b9d147b78870cc",
+  "model_files": [
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/models/candidates/codebook-4bit-optimal-rectangular-k64/adapter.ort",
+      "sha256": "45df26581a00156f97a75d8f3a6efe9c4206a0ab9dd5b09b69419d489586d050"
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/models/candidates/codebook-4bit-optimal-rectangular-k64/cross_kv.ort",
+      "sha256": "a71065382d252270cee8fb57835a66cf5327297bcfe4f9a4180c5e71f636ed95"
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/models/candidates/codebook-4bit-optimal-rectangular-k64/decoder_kv.ort",
+      "sha256": "d4e358b41d3dea5d4e1eed95f01da79e36f631e32c2c114e27f269fa74e2d5f7"
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/models/candidates/codebook-4bit-optimal-rectangular-k64/encoder.ort",
+      "sha256": "34c9568cface06242b3b215c4bce01f3b48144e53342addc1c3d5c3603e72ffc"
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/models/candidates/codebook-4bit-optimal-rectangular-k64/frontend.model.ort",
+      "sha256": "5121b561417b638afce0c6c31b760e37c93cf97f80d9b0031aad1fe7b6f25d61"
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/models/candidates/codebook-4bit-optimal-rectangular-k64/frontend.weights.ort",
+      "sha256": "217da24ac6f522ebf02da8ef288e77d1ac68d50d4a6821433182e4fbf4204bbd"
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/models/candidates/codebook-4bit-optimal-rectangular-k64/streaming_config.json",
+      "sha256": "74fe5ddebd63b17caf59e8a3b18c17547ff7bce1642050edbb1c3962674f8950"
+    },
+    {
+      "path": "/Users/sanju/Desktop/coding/llm-hardware/route-voice-llm-hardware-v1/routing-voice-chip-design/models/candidates/codebook-4bit-optimal-rectangular-k64/tokenizer.bin",
+      "sha256": "6884b35fd6377d4c4d32336a0bc152f36b64d1e45b6503683cdc238250a8472d"
+    }
+  ],
+  "export": {
+    "passed": true,
+    "candidate": "codebook-4bit-optimal-rectangular-k64",
+    "protocol_sha256": "c56e57879b3ce93a9021083da1a52d82ddea0c7f556921746bd43ae853b0fd01",
+    "decoded_records": 98,
+    "four_bit_positions": 31457280,
+    "local_books": 491520,
+    "representative_bytes": 7765892,
+    "packed_index_bytes": 15728640,
+    "unchanged_source_initializers": 386,
+    "exact_tied_transpose": true,
+    "scale_zero_point_bias_and_all_nonquantized_source_initializers_preserved": true,
+    "ideal_payload_bytes": 25987246,
+    "no_model_files_changed": true,
+    "no_parameter_removal_or_precision_exemptions": true
+  },
+  "calibration_selection": {
+    "candidate": "k64",
+    "selected_candidate": "k64",
+    "legacy_gates": {
+      "clean": {
+        "candidate_edits": 15,
+        "reference_edits": 17,
+        "reference_words": 268,
+        "candidate_wer": 0.055970149253731345,
+        "delta_percentage_points": -0.7462686567164178,
+        "absolute_ceiling": 0.15,
+        "retention_limit": 0.02,
+        "pass": true
+      },
+      "white_noise_10db": {
+        "candidate_edits": 44,
+        "reference_edits": 45,
+        "reference_words": 268,
+        "candidate_wer": 0.16417910447761194,
+        "delta_percentage_points": -0.3731343283582089,
+        "absolute_ceiling": 0.4,
+        "retention_limit": 0.02,
+        "pass": true
+      }
+    },
+    "eligible": true,
+    "strictly_improves_K128": true,
+    "rank_K128": [
+      "9/134",
+      "5/134",
+      "4517252"
+    ],
+    "rank_K64": [
+      "2/67",
+      "7/402",
+      "7765892"
+    ],
+    "validation_authorized": true,
+    "candidate_test_calls": 0,
+    "prior_development_validation_exposures": 12,
+    "protocol_sha256": "c56e57879b3ce93a9021083da1a52d82ddea0c7f556921746bd43ae853b0fd01",
+    "scores_sha256": "df333e4d433fd9a4417237e93e5cb62cc182ea02a2ba150d4a00bf00fda6c5b6",
+    "export_audit_sha256": "49d34f71b5533c96843af24272cdef5854ab6ec3f688a31fcc7b1043c071efb1",
+    "decision": "One isolated K64 development validation permitted."
+  },
+  "development_validation": {
+    "candidate": "k64",
+    "validation_gates": {
+      "clean": {
+        "candidate_edits": 22,
+        "reference_edits": 16,
+        "reference_words": 330,
+        "candidate_wer": 0.06666666666666667,
+        "delta_percentage_points": 1.8181818181818181,
+        "absolute_ceiling": 0.15,
+        "retention_limit": 0.02,
+        "pass": true
+      },
+      "other": {
+        "candidate_edits": 59,
+        "reference_edits": 62,
+        "reference_words": 325,
+        "candidate_wer": 0.18153846153846154,
+        "delta_percentage_points": -0.9230769230769231,
+        "absolute_ceiling": 0.35,
+        "retention_limit": 0.02,
+        "pass": true
+      },
+      "white_noise_10db": {
+        "candidate_edits": 64,
+        "reference_edits": 58,
+        "reference_words": 330,
+        "candidate_wer": 0.19393939393939394,
+        "delta_percentage_points": 1.8181818181818181,
+        "absolute_ceiling": 0.4,
+        "retention_limit": 0.02,
+        "pass": true
+      }
+    },
+    "candidate_passes_frozen_accuracy_gates": true,
+    "candidate_validation_runs_in_this_protocol": 1,
+    "total_development_candidate_validation_exposures": 13,
+    "candidate_test_calls": 0,
+    "protocol_sha256": "1c9b55d3c2566fd5106a9c4eefe77811ce36c166ceb49c84776517558ee564aa",
+    "scores_sha256": "c921a7a7ee69755f636090d8d5e5286fec269690dd779cf76a55a84a54606d4b"
+  },
+  "reserved_test": {
+    "schema_version": 1,
+    "candidate": "codebook-4bit-optimal-rectangular-k64",
+    "protocol_sha256": "5ca9f77789f76bab38a08c347309baae8add20021f883112b3909362c2372bb0",
+    "scores_sha256": "245c1af107e41411cd2ffb0bb200a041d1e1a2b3b8d6d669f361596eaa8d16fb",
+    "candidate_manifest_sha256": "a9ac4a4c9f51b65ebadf5b26b7c7fe0d3100d047ec4ad863f1b9d147b78870cc",
+    "integrity_passed": true,
+    "test_accuracy_gates": {
+      "clean": {
+        "candidate_edits": 39,
+        "reference_edits": 37,
+        "reference_words": 869,
+        "candidate_wer": 0.04487917146144994,
+        "delta_percentage_points": 0.23014959723820483,
+        "absolute_ceiling": 0.15,
+        "retention_limit": 0.02,
+        "pass": true
+      },
+      "other": {
+        "candidate_edits": 107,
+        "reference_edits": 100,
+        "reference_words": 785,
+        "candidate_wer": 0.13630573248407643,
+        "delta_percentage_points": 0.89171974522293,
+        "absolute_ceiling": 0.35,
+        "retention_limit": 0.02,
+        "pass": true
+      },
+      "white_noise_10db": {
+        "candidate_edits": 137,
+        "reference_edits": 121,
+        "reference_words": 869,
+        "candidate_wer": 0.15765247410817032,
+        "delta_percentage_points": 1.8411967779056386,
+        "absolute_ceiling": 0.4,
+        "retention_limit": 0.02,
+        "pass": true
+      }
+    },
+    "passes_frozen_test_accuracy_gates": true,
+    "paired_uncertainty": {
+      "clean": {
+        "speakers": [
+          "121",
+          "1284",
+          "1320",
+          "1580",
+          "2094",
+          "2300",
+          "237",
+          "260",
+          "2961",
+          "3570",
+          "3729",
+          "4077",
+          "4970",
+          "6829",
+          "6930",
+          "7021",
+          "7127",
+          "8455",
+          "8463",
+          "908"
+        ],
+        "speaker_count": 20,
+        "resamples": 10000,
+        "seed": 14244884795486395414,
+        "original_wer_percentile95": [
+          0.025958968652838706,
+          0.06241340693628629
+        ],
+        "candidate_wer_percentile95": [
+          0.02980085038271015,
+          0.06241157338392736
+        ],
+        "paired_delta_wer_percentile95": [
+          -0.008325817144619179,
+          0.01477377654662973
+        ],
+        "cluster_sufficient_statistics_original_errors_candidate_errors_words": [
+          [
+            0,
+            0,
+            21
+          ],
+          [
+            0,
+            0,
+            49
+          ],
+          [
+            0,
+            0,
+            36
+          ],
+          [
+            0,
+            0,
+            14
+          ],
+          [
+            2,
+            2,
+            18
+          ],
+          [
+            3,
+            3,
+            61
+          ],
+          [
+            4,
+            4,
+            30
+          ],
+          [
+            1,
+            1,
+            10
+          ],
+          [
+            2,
+            5,
+            51
+          ],
+          [
+            2,
+            2,
+            73
+          ],
+          [
+            0,
+            0,
+            61
+          ],
+          [
+            5,
+            3,
+            96
+          ],
+          [
+            0,
+            2,
+            32
+          ],
+          [
+            2,
+            2,
+            36
+          ],
+          [
+            1,
+            3,
+            80
+          ],
+          [
+            1,
+            1,
+            22
+          ],
+          [
+            1,
+            0,
+            40
+          ],
+          [
+            2,
+            2,
+            27
+          ],
+          [
+            8,
+            6,
+            62
+          ],
+          [
+            3,
+            3,
+            50
+          ]
+        ],
+        "scope": "Paired speaker-cluster percentile95% interval for micro-WER; both clips per resampled speaker retained. Marginal intervals, not simultaneous or a replacement acceptance gate."
+      },
+      "other": {
+        "speakers": [
+          "1688",
+          "2033",
+          "2414",
+          "3331",
+          "367",
+          "3764",
+          "4198",
+          "4294",
+          "4350",
+          "533",
+          "5442",
+          "5764",
+          "6128",
+          "6938",
+          "7105",
+          "7902",
+          "7975",
+          "8188",
+          "8280",
+          "8461"
+        ],
+        "speaker_count": 20,
+        "resamples": 10000,
+        "seed": 818018059960213850,
+        "original_wer_percentile95": [
+          0.09837793531236154,
+          0.1641991924629879
+        ],
+        "candidate_wer_percentile95": [
+          0.10686909642784334,
+          0.16942719391365887
+        ],
+        "paired_delta_wer_percentile95": [
+          -0.015060447268526152,
+          0.03191554707512152
+        ],
+        "cluster_sufficient_statistics_original_errors_candidate_errors_words": [
+          [
+            6,
+            11,
+            32
+          ],
+          [
+            4,
+            4,
+            46
+          ],
+          [
+            3,
+            2,
+            22
+          ],
+          [
+            6,
+            11,
+            65
+          ],
+          [
+            7,
+            7,
+            43
+          ],
+          [
+            0,
+            1,
+            15
+          ],
+          [
+            8,
+            8,
+            22
+          ],
+          [
+            2,
+            2,
+            49
+          ],
+          [
+            6,
+            7,
+            61
+          ],
+          [
+            3,
+            1,
+            31
+          ],
+          [
+            8,
+            8,
+            52
+          ],
+          [
+            3,
+            3,
+            16
+          ],
+          [
+            8,
+            8,
+            53
+          ],
+          [
+            8,
+            5,
+            23
+          ],
+          [
+            6,
+            6,
+            44
+          ],
+          [
+            4,
+            3,
+            24
+          ],
+          [
+            3,
+            7,
+            57
+          ],
+          [
+            4,
+            5,
+            49
+          ],
+          [
+            1,
+            1,
+            40
+          ],
+          [
+            10,
+            7,
+            41
+          ]
+        ],
+        "scope": "Paired speaker-cluster percentile95% interval for micro-WER; both clips per resampled speaker retained. Marginal intervals, not simultaneous or a replacement acceptance gate."
+      },
+      "white_noise_10db": {
+        "speakers": [
+          "121",
+          "1284",
+          "1320",
+          "1580",
+          "2094",
+          "2300",
+          "237",
+          "260",
+          "2961",
+          "3570",
+          "3729",
+          "4077",
+          "4970",
+          "6829",
+          "6930",
+          "7021",
+          "7127",
+          "8455",
+          "8463",
+          "908"
+        ],
+        "speaker_count": 20,
+        "resamples": 10000,
+        "seed": 14244884795486395414,
+        "original_wer_percentile95": [
+          0.0945273631840796,
+          0.18411174499321784
+        ],
+        "candidate_wer_percentile95": [
+          0.09534350838091517,
+          0.22150591465137873
+        ],
+        "paired_delta_wer_percentile95": [
+          -0.007694049159120323,
+          0.044832295558322965
+        ],
+        "cluster_sufficient_statistics_original_errors_candidate_errors_words": [
+          [
+            3,
+            0,
+            21
+          ],
+          [
+            1,
+            1,
+            49
+          ],
+          [
+            2,
+            2,
+            36
+          ],
+          [
+            0,
+            0,
+            14
+          ],
+          [
+            3,
+            2,
+            18
+          ],
+          [
+            14,
+            17,
+            61
+          ],
+          [
+            7,
+            6,
+            30
+          ],
+          [
+            3,
+            2,
+            10
+          ],
+          [
+            14,
+            17,
+            51
+          ],
+          [
+            20,
+            28,
+            73
+          ],
+          [
+            3,
+            3,
+            61
+          ],
+          [
+            16,
+            15,
+            96
+          ],
+          [
+            4,
+            3,
+            32
+          ],
+          [
+            3,
+            3,
+            36
+          ],
+          [
+            2,
+            1,
+            80
+          ],
+          [
+            4,
+            4,
+            22
+          ],
+          [
+            2,
+            0,
+            40
+          ],
+          [
+            0,
+            4,
+            27
+          ],
+          [
+            9,
+            13,
+            62
+          ],
+          [
+            11,
+            16,
+            50
+          ]
+        ],
+        "scope": "Paired speaker-cluster percentile95% interval for micro-WER; both clips per resampled speaker retained. Marginal intervals, not simultaneous or a replacement acceptance gate."
+      }
+    },
+    "host_aggregate_RTF": {
+      "original": 0.02310678545296181,
+      "k64": 0.023204972817445945
+    },
+    "RTF_limit": 1.0,
+    "live_streaming_latency_checked": false,
+    "candidate_development_validation_exposures": 13,
+    "candidate_reserved_test_runs": 1,
+    "original_historical_test_exposure_preserved": true,
+    "no_test_driven_model_changes_or_reselection": true,
+    "physical_fit_power_or_product_generalization_proven": false,
+    "limits": [
+      "Bounded human read speech and synthetic white noise; not general-product, road/helmet or continuous-stream proof.",
+      "Upstream source-model training overlap unknown. Test speakers are disjoint only within this project.",
+      "Aggregate host RTF is recorded from inference compute; fresh-process load time is separate. Live streaming latency, FPGA/ASIC timing and power remain unmeasured.",
+      "Four-bit indices intoUINT8representatives retain originalINT8frontend/floating operators. Model quality does not prove die fit or sub-watt operation.",
+      "Marginal95% descriptive intervals; not simultaneous coverage, not a gate change, not a p-value or a correction for unknown pretraining overlap and all prior development exploration."
+    ]
+  },
+  "test_edit_margins": {
+    "clean": {
+      "maximum_passing_candidate_edits": 54,
+      "additional_edits_allowed": 15,
+      "one_edit_percentage_points": 0.11507479861910241
+    },
+    "other": {
+      "maximum_passing_candidate_edits": 115,
+      "additional_edits_allowed": 8,
+      "one_edit_percentage_points": 0.12738853503184713
+    },
+    "white_noise_10db": {
+      "maximum_passing_candidate_edits": 138,
+      "additional_edits_allowed": 1,
+      "one_edit_percentage_points": 0.11507479861910241
+    }
+  },
+  "post_test_audit": {
+    "pinned_files_and_model_hashes_unchanged": true,
+    "packed_export_hashes_rechecked": 98,
+    "all_reference_and_hypothesis_scores_independently_recounted": true,
+    "unique_model_input_pairs": 240,
+    "missing_or_replaced_rows": 0,
+    "process_failures": 0,
+    "cross_model_PCM_or_crop_differences": 0
+  },
+  "elapsed_test_seconds": 41.272159167099744,
+  "candidate_development_exposures": 13,
+  "candidate_reserved_test_runs": 1,
+  "historical_original_test_exposure_preserved": true,
+  "candidate_fit_or_reselection_after_test": false,
+  "conclusion": "The frozen K64 candidate passes the declared small-pilot development and reserved-test point-estimate gates. Paired intervals do not establish population-wide <=2pp retention for other/noisy speech. This is not an ASIC fit, power, continuous-stream or product validation.",
+  "artifacts": [
+    {
+      "path": "reports/taalas-k64-reserved-test-protocol-v1.json",
+      "sha256": "5ca9f77789f76bab38a08c347309baae8add20021f883112b3909362c2372bb0"
+    },
+    {
+      "path": "reports/taalas-k64-reserved-test-scores-v1.json",
+      "sha256": "245c1af107e41411cd2ffb0bb200a041d1e1a2b3b8d6d669f361596eaa8d16fb"
+    },
+    {
+      "path": "reports/taalas-k64-reserved-test-decision-v1.json",
+      "sha256": "8ca29f9f55ab19108dea5bb06009d521c9beda0666face6f2bfddfb0ca370b56"
+    },
+    {
+      "path": "reports/taalas-isolated-k64-calibration-decision-v1.json",
+      "sha256": "d1618aa85b3d8c89501ed24c7b3490ed13b1f3055672ee38d0494f4d631d4281"
+    },
+    {
+      "path": "reports/taalas-isolated-k64-validation-decision-v1.json",
+      "sha256": "d56298677705577cdd8521449ccfa0126bafdbdbd43bfa2e92d6b7ea2317eceb"
+    },
+    {
+      "path": "reports/taalas-isolated-k64-calibration-export-audit-v1.json",
+      "sha256": "49d34f71b5533c96843af24272cdef5854ab6ec3f688a31fcc7b1043c071efb1"
+    },
+    {
+      "path": "scripts/evaluate_reserved_k64_test.py",
+      "sha256": "1eb0e94fc7a279e65e866ce38107534935574a83d0cb6533339e5842d02b6864"
+    },
+    {
+      "path": "tests/test_reserved_test_intervals.py",
+      "sha256": "d68f87fde737d72c2e7cd61eef37fd59b8cec6e08ba335cf66540b7edfde4130"
+    },
+    {
+      "path": "scripts/summarize_k64_quality.py",
+      "sha256": "4f2dc8eab0b8e567ffa8a254fa91e87b06801fe89e5d457a4acc9f5c08e9e14a"
+    }
+  ]
+}

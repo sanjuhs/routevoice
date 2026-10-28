@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "contract": "stt-pilot-v1",
+  "status": "Frozen before pilot measurements; assistant-selected engineering defaults, not validated product requirements",
+  "task": "General English speech-to-text; no command-only substitution",
+  "input": {"sample_rate": 16000, "channels": 1, "format": "float32 PCM", "pilot_utterance_seconds": [2, 20], "stream_chunk_ms": [160, 320], "long_continuous_stream": "not covered by this bounded pilot"},
+  "data": {"corpus": "LibriSpeech SLR12", "license": "CC BY 4.0", "calibration_speakers": 8, "validation_speakers": 16, "test_speakers": 40, "utterances_per_speaker": 2, "split_selection": "hash-ranked before inference", "training": "not selected; must exclude manifest speakers", "upstream_pretraining_overlap": "unknown"},
+  "normalization": "NFKC, lowercase, ASCII alphanumeric words retaining internal apostrophes; punctuation/hyphens split words; no number expansion",
+  "pilot_accuracy_limits": {"clean_max_wer": 0.15, "other_max_wer": 0.35, "white_noise_10db_max_wer": 0.40, "candidate_max_absolute_wer_increase": 0.02, "selection": "validation only; final test once for a preselected candidate; failed candidates remain reported"},
+  "performance": {"aggregate_rtf_max": 1.0, "stream_simulated_end_of_audio_p95_seconds_max": 0.5, "first_text": "record supplied audio position and compute time; not live-microphone latency", "host_measurements": "CPU software only, not FPGA/ASIC performance"},
+  "hardware": {"desired_die_count": 1, "die_fit_status": "hypothesis", "process": "GF180MCU-D research", "power_target_watts": 1.0, "power_comparison": "strictly less than target at continuous real-time STT, including required memory and attributable IO/regulator costs", "power_measured": false, "area_limit_mm2": null, "area_limit_status": "needs actual foundry/package choice; report density requirements rather than invent a die size", "physical_operating_point": "not selected; match library, voltage, clock and loads before physical comparison"},
+  "limitations": ["Small read-speech sample; not general-product accuracy or road/helmet robustness", "No statistical guarantee from these point estimates", "A reference may fail a pilot threshold; do not relax it after observing results", "M2 needs a smaller trained candidate passing accuracy, not only a packed-weight estimate"]
+}

@@ -19,6 +19,6 @@
 \draw[->] (fp.east) -- ++(6mm,0) node[right,align=left]{FP32\\out};
 \node[below=2mm of corr,font=\scriptsize,text=blue!60!black] {shaded: added for slow-corner closure (\S\ref{sec:closure})};
 \end{tikzpicture}}
-\caption{The $1280\times320$ projection engine. The index array sits outside the engine's physical top. One projection takes 4,165 cycles: 1,280 rows of LOAD/INDEX/ACCUM, one PREP cycle, and 320 output cycles.}
+\caption{The $1280\times320$ projection engine. The index array sits outside the engine's physical top. One projection takes 4,165 cycles: 1,280 rows of LOAD/INDEX/ACCUM, one PREP cycle, 320 output cycles and four pipeline-fill cycles.}
 \label{fig:engine}
 \end{figure*}

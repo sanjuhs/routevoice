@@ -20,6 +20,8 @@ The starting point is **Moonshine Tiny Streaming English**, a roughly 34-million
 
 > **Release snapshot · 28 October 2026.** The complete recognizer matches the frozen K64 reference on three recorded RTL demonstrations. One 1280 × 320 projection engine passes the recorded open-flow DRC, LVS and antenna checks, with setup and hold met in all nine checked corners. No chip has been fabricated; full-chip integration and real-time operation remain open.
 
+**Paper reviewed · 28 October 2026:** [Read the corrected paper](paper/RouteVoice-paper-draft.pdf) · [Corrections and evidence](paper/REVIEW-2026-10-28.md) · [Reproduce / locate artifacts](paper/ARTIFACTS.md). Storage, power and integration claims now explicitly distinguish their measured or simulated scope.
+
 ## Inside the silicon
 
 <table>
@@ -432,19 +434,20 @@ This is a **research snapshot**, not a portable one-command tapeout flow. Some s
 | [`docs/milestone-evidence/`](docs/milestone-evidence/) | Product tool catalog, dated browser checks, fit score and asset provenance |
 | [`OVERNIGHT-PROGRESS.md`](OVERNIGHT-PROGRESS.md) | Chronological lab log, including integration work and unresolved items |
 
-Large artifacts live in public Hugging Face datasets:
+Public evidence and large run archives live in Hugging Face datasets:
 
 | Archive | Contents |
 |---|---|
-| [**routevoice-engine-fix2-20261024**](https://huggingface.co/datasets/sanjuhs/routevoice-engine-fix2-20261024) | Approximately 97 GB of engine runs: fix 2, antenna close-out, final GDS and checksum manifests |
-| [**routevoice-pod-final-20261022**](https://huggingface.co/datasets/sanjuhs/routevoice-pod-final-20261022) | Approximately 53 GB of cloud workspace, with archive and restoration metadata |
+| [**Paper evidence supplement**](https://huggingface.co/datasets/sanjuhs/routevoice-v1-paper-evidence-20261028) | Frozen quality protocol/scores, storage accounting and W13–W15 reports, with SHA-256 manifest; [artifact index](paper/ARTIFACTS.md) |
+| [**routevoice-engine-fix2-20261024**](https://huggingface.co/datasets/sanjuhs/routevoice-engine-fix2-20261024) | Approximately 97 GB uncompressed of engine runs: fix 2, antenna close-out, final GDS and checksum manifests |
+| [**routevoice-pod-final-20261022**](https://huggingface.co/datasets/sanjuhs/routevoice-pod-final-20261022) | Approximately 53 GB uncompressed of cloud workspace, with archive and restoration metadata |
 
 The public repository was extracted from the larger working project on 28 October 2026. Some historical documents refer to files outside this curated snapshot. Use the release package and archive manifests to locate available evidence.
 
 ## What remains to be built
 
 - **SRAM-backed mutable state.** The full recognizer synthesis is about 1,198 mm² of GF180 logic with approximately 8.17 M mutable bits implemented as flip-flops. Mapping state into SRAM is a major area task.
-- **Complete chip integration.** The two-die study is partly integrated. Full-chip DRC/LVS, timing, drivers and power integrity still need closure; assumed-load IR-drop checks expose unresolved limits.
+- **Complete chip integration.** The two-die study is partly integrated. Full-chip DRC/LVS, timing, drivers and power integrity still need closure. The six local READY leaves retain density failures, and the partial two-die assembly has 14 real scalar nets versus 1,368 synthetic test nets; [reviewed W14/W15 evidence](paper/ARTIFACTS.md) records the limits and failed assumed-load IR screens.
 - **Real-time scheduling.** The engine's throughput alone does not establish real-time recognition. The streaming controller reprocesses frames and regenerates cross-attention state; scheduling and reuse need further work.
 - **Electrical closure.** The final engine still reports worst-corner max-slew, max-capacitance and max-fanout violations. Passing setup/hold and the listed physical checks does not close those items.
 - **Broader validation.** Live streaming, road/wind/helmet acoustics and more held-out speakers need evaluation. The short RTL examples establish implementation agreement, not field reliability.

@@ -17,12 +17,12 @@ Three rules governed the work:
 \item \textbf{Choose the representation in software.} Search quantization candidates against pre-registered WER gates, ending with one reserved test (\cref{sec:representation}).
 \item \textbf{Write a numerical contract for one projection.} Fix bit widths, cycle counts and an exact integer and FP32 oracle. Bound accumulators on the actual matrix.
 \item \textbf{Build and verify the RTL engine.} The bench uses 54 vectors: one captured from speech and 53 integer fixtures, giving \num{17280} integer and \num{17280} FP32 outputs. It also exercises stalls and four mid-vector resets.
-\item \textbf{Connect the whole recognizer.} Move every weight on chip, first as byte ROMs, then as index$+$book services. Require identical tokens, hashes and clock counts on every change.
+\item \textbf{Connect the whole recognizer.} Move every weight on chip, first as byte ROMs, then with eligible services converted to index$+$book storage. Require identical tokens, hashes and clock counts on every change.
 \item \textbf{Lay out the weight banks.} Generate pitch-matched mask-programmed banks. Then run DRC, read the bit pattern back from GDS against the packed model, and run LVS against a source-derived netlist. Include planted-error negative controls.
 \item \textbf{Implement the engine physically.} Synthesize, audit fanout, run short global-route diagnostics, then do the full route, signoff (DRC, LVS, antenna, XOR) and all-corner extracted timing.
-\item \textbf{Measure power from real activity.} Run a gate-level simulation of one real projection, rescale its switching trace to the clock period, and annotate it on the routed database with extracted parasitics.
+\item \textbf{Estimate power from real activity.} Run a gate-level simulation of one real projection, rescale its switching trace to the clock period, and annotate it on the routed database with extracted parasitics.
 \item \textbf{Check whole-design synthesizability} for both silicon and FPGA.
-\item \textbf{Floorplan the chip} with abstract macros, power grids and IR-drop screens, then integrate the real banks and logic macros.
+\item \textbf{Floorplan the chip} with abstract macros, power grids and IR-drop screens, then attempt partial integration of real banks and logic macros while recording unresolved stubs and connectivity.
 \end{enumerate}
 
 \subsection{Open toolchain}
@@ -63,6 +63,6 @@ The human set goals and budgets and approved spending. The lead enforced the evi
 \item \textbf{Verify process state, not worker reports.} Workers sometimes reported jobs as ``continuing'' after their processes had exited. One such case left a rented server idle for about 21 billed hours.
 \item \textbf{Publish a shared resource schedule.} A container's real memory limit (\SI{64}{GB}) was far below what the operating system reported (\SI{755}{GB}). After one out-of-memory kill, the lead published a priority order and a memory ceiling for all workers.
 \item \textbf{Keep a verified external backup before tearing down cloud machines.} A 53\,GB checksum-verified backup let the rented server be deleted while results were still being produced; routed power and every later closure run started from the restored data.
-\item \textbf{Have the lead do the critical-path engineering.} Timing closure (\cref{sec:closure}) ran as short, verified iterations by the lead after the workers had exited. This was faster than delegating.
+\item \textbf{Have the lead do the critical-path engineering.} Timing closure (\cref{sec:closure}) ran as short, verified iterations by the lead after the workers had exited. This was the recorded working practice, not a controlled comparison of delegation strategies.
 \end{itemize}
 \Cref{sec:efficiency} quantifies where time and money went.

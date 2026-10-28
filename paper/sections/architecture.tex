@@ -2,7 +2,7 @@
 \label{sec:architecture}
 
 \subsection{The projection engine}
-The unit of physical work is one $1280\times320$ projection: the decoder feed-forward output matrix, the largest shape in the model. \input{figures/engine}
+The unit of physical work is one $1280\times320$ projection: a decoder feed-forward output matrix. The tied $32768\times320$ embedding/output matrix is larger; this engine is one selected projection shape. \input{figures/engine}
 The engine (\cref{fig:engine}) is a five-state machine:
 \begin{description}
 \item[LOAD] accepts one signed 9-bit activation, adds it to a running activation sum, and registers its 16 partial products.
@@ -28,7 +28,7 @@ The full recognizer RTL connects:
 \item an adapter that produces cross-attention keys and values;
 \item a greedy six-layer decoder that ends at the end-of-sequence token.
 \end{itemize}
-Everything runs on one common clock. Each weight service answers lookups through index and book ROMs. The top level has no weight inputs: its 31 runtime inputs are audio, clocks, resets, handshakes and configuration.
+Everything runs on one common clock. Converted services answer through index and book ROMs, alongside the affine INT8 frontend and unchanged tables. These are behavioral RTL storage services, not an integrated physical bank implementation. The top level has no weight inputs: its 31 runtime inputs are audio, clocks, resets, handshakes and configuration.
 
 \paragraph{Throughput.}
 A dense one-pass estimate of the workload is about 0.6\,GMAC/s:
@@ -40,11 +40,8 @@ A dense one-pass estimate of the workload is about 0.6\,GMAC/s:
 One engine at \SI{150}{ns} sustains 0.66\,GMAC/s. However, the native streaming controller re-processes encoder frames and regenerates cross-attention keys and values. Measured on real traces, that controller needs 10--90 engine-equivalents at a \SI{120}{ns} clock. Real-time operation therefore depends as much on scheduling as on raw MAC rate, and we treat it as open (\cref{sec:limitations}).
 
 \subsection{Chip plan}
-All 98 matrices map to 81 pitch-matched index banks (\SI{174.7}{mm^2}) plus four bank-driver control strips (\SI{56.6}{mm^2}). Abstract floorplans with power grids give two candidate chips:
-\begin{itemize}
-\item \textbf{One die} of $25\times31$\,mm, which needs a denser SRAM than the open GF180 macro (we assumed \SI{12}{\micro m^2}/bit);
-\item \textbf{Two dies} of $25\times29$\,mm, built only from existing open parts, with no change to the numerics.
-\end{itemize}
-The two-die variant routes and passes IR drop at the measured engine power, but fails an earlier, more pessimistic assumed-load IR screen.
+The 81 index-bank layouts total \SI{174.7}{mm^2}. Driver/control shapes tiled over the banks add an estimated \SI{56.6}{mm^2}; a proposed capture-strip allocation adds \SI{6.8}{mm^2}. Their combined \SI{238.1}{mm^2} is an unplaced estimate, not a qualified array service. Capture timing and integration remain open.
 
-About 1.09\,MB of mutable state (activation banks, key/value caches, history and scratch) dominates the remaining area. Synthesized as flip-flops, it alone puts the logic at \SI{1198}{mm^2} (\cref{sec:results}). Mapping it onto SRAM macros is the largest open area item.
+Abstract floorplans explored a $25\times31$\,mm die assuming a denser \SI{12}{\micro m^2}/bit SRAM, and two $25\times29$\,mm dies using open macro area estimates. A low-load abstract IR screen and the later partial two-die assembly are different experiments: the latter fails its assumed-load IR screen and lacks complete recognizer connectivity (\cref{sec:results}). No full-chip timing or power claim follows from the floorplan.
+
+The W12 synthesis inventory contains \num{8169778} mutable bits (\SI{1.02}{MB}, decimal). Earlier floorplanning used a different inventory of arrays and registers, about \SI{1.09}{MB}. With state inferred as flip-flops, the \emph{whole composed logic estimate} is \SI{1198}{mm^2}, not the area of memory alone. SRAM mapping and datapath scheduling remain major open items.

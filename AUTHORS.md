@@ -6,7 +6,7 @@ Product vision, research direction, architecture and design decisions, review, a
 
 ## Codex — OpenAI AI coding assistant
 
-AI contributor working under Sanjay’s direction. Contributions include implementation and verification assistance during the project, and preparation of the public Version 1 milestone: the README and full-stack report, live website screenshots, design-artifact packaging, provenance and link checks, next-phase handoff, and GitHub publication.
+AI contributor working under Sanjay’s direction. Contributions include implementation and verification assistance during the project, and preparation of the public Version 1 milestone: the README and full-stack report, live website screenshots, design-artifact packaging, provenance and link checks, next-phase handoff, and GitHub publication. Codex also assisted with the 28 October paper evidence review, correction of numerical and scope claims, public evidence packaging, PDF rebuild and verification.
 
 Codex is credited as an AI contributor. The accompanying attribution commit includes a Git co-author trailer for the OpenAI Codex bot identity.
 

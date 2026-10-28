@@ -1,3 +1,5 @@
+> Historical research notes. For reviewed claims and corrected accounting, see [the 28 October review](../REVIEW-2026-10-28.md) and [artifact index](../ARTIFACTS.md). Earlier estimates below are retained as history.
+
 # RouteVoice: results and engineering history (paper notes)
 
 Compiled 24 Oct 2026 from repository files only. No builds or simulations were run to write this.

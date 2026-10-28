@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "candidate": "codebook-4bit-optimal-rectangular-k64",
+  "protocol_sha256": "c56e57879b3ce93a9021083da1a52d82ddea0c7f556921746bd43ae853b0fd01",
+  "decoded_records": 98,
+  "four_bit_positions": 31457280,
+  "local_books": 491520,
+  "representative_bytes": 7765892,
+  "packed_index_bytes": 15728640,
+  "unchanged_source_initializers": 386,
+  "exact_tied_transpose": true,
+  "scale_zero_point_bias_and_all_nonquantized_source_initializers_preserved": true,
+  "ideal_payload_bytes": 25987246,
+  "no_model_files_changed": true,
+  "no_parameter_removal_or_precision_exemptions": true
+}

@@ -20,6 +20,6 @@
 \draw[->] (pp) -- node[right]{two selections} (add);
 \node[below=1mm of add] {$a\cdot w$ \;(17-bit, no multiplier)};
 \end{tikzpicture}
-\caption{K64 weight representation. Each weight is a fixed 4-bit index into a 16-entry UINT8 book shared by 64 weights of one output column. The selected value's two nibbles select two entries from a 16-entry table of partial products of the current activation $a$. That table is computed once and shared by all 320 lanes.}
+\caption{K64 weight representation. Each eligible weight is a fixed 4-bit index into a 16-entry UINT8 book shared by 64 weights of one output column. The selected value's two nibbles select two entries from a 16-entry table of partial products of the current activation $a$. The final engine uses local partial-product register copies across ten 32-lane groups.}
 \label{fig:k64}
 \end{figure}

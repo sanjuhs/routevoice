@@ -1,0 +1,45 @@
+{
+  "candidate": "k64",
+  "selected_candidate": "k64",
+  "legacy_gates": {
+    "clean": {
+      "candidate_edits": 15,
+      "reference_edits": 17,
+      "reference_words": 268,
+      "candidate_wer": 0.055970149253731345,
+      "delta_percentage_points": -0.7462686567164178,
+      "absolute_ceiling": 0.15,
+      "retention_limit": 0.02,
+      "pass": true
+    },
+    "white_noise_10db": {
+      "candidate_edits": 44,
+      "reference_edits": 45,
+      "reference_words": 268,
+      "candidate_wer": 0.16417910447761194,
+      "delta_percentage_points": -0.3731343283582089,
+      "absolute_ceiling": 0.4,
+      "retention_limit": 0.02,
+      "pass": true
+    }
+  },
+  "eligible": true,
+  "strictly_improves_K128": true,
+  "rank_K128": [
+    "9/134",
+    "5/134",
+    "4517252"
+  ],
+  "rank_K64": [
+    "2/67",
+    "7/402",
+    "7765892"
+  ],
+  "validation_authorized": true,
+  "candidate_test_calls": 0,
+  "prior_development_validation_exposures": 12,
+  "protocol_sha256": "c56e57879b3ce93a9021083da1a52d82ddea0c7f556921746bd43ae853b0fd01",
+  "scores_sha256": "df333e4d433fd9a4417237e93e5cb62cc182ea02a2ba150d4a00bf00fda6c5b6",
+  "export_audit_sha256": "49d34f71b5533c96843af24272cdef5854ab6ec3f688a31fcc7b1043c071efb1",
+  "decision": "One isolated K64 development validation permitted."
+}

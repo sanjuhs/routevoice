@@ -5,23 +5,22 @@ We separate improvements to the \emph{design}, which change area or energy, from
 
 \subsection{Design}
 \paragraph{Map mutable state to SRAM.}
-The full-recognizer synthesis puts 8.17\,M mutable bits into flip-flops. At \SI{1198}{mm^2}, that is the single largest gap between our RTL and a manufacturable chip. Open GF180 SRAM macros and a bridge design that replays the full clip with 160 macros already exist. Integrating them is engineering work, not research.
+The full-recognizer synthesis infers 8.17\,M mutable bits as flip-flops; the entire composed logic estimate is \SI{1198}{mm^2}. A bridge using 160 open GF180 SRAM macros passes an untimed, mapped protocol replay of deterministic feature words: 20,480 values, 2,560 packets and 511 held cycles over 163,158 clocks. It includes reset and malformed-response cases plus explicit macro pin checks, but no neural arithmetic, extracted timing or physical implementation. Mapping the remaining state, preserving behavior and qualifying the physical memory interfaces remain substantial work.
 
 \paragraph{Time-share datapaths.}
 The RTL instantiates separate arithmetic for each service. A small number of projection engines, scheduled over all matrices, would replace most of that logic. The scheduling question is the one raised in \cref{sec:architecture}: how many engine-equivalents real-time streaming really needs.
 
 \paragraph{Lower the activity, not just the clock.}
-Combinational logic draws 75\% of engine power (\SI{142}{mW} of \SI{188}{mW}). The 320 accumulators and partial-product selectors toggle on every accumulation cycle. Three changes would each cut that activity:
+Combinational logic draws 75\% of engine power (\SI{142}{mW} of \SI{188}{mW}). The 320 accumulators and partial-product selectors toggle on every accumulation cycle. Candidate changes to evaluate are:
 \begin{itemize}
 \item gate the clock of lanes whose selected product is zero;
 \item narrow the accumulators to the bound proven on the actual matrix;
 \item operand-isolate the FP32 stage outside the output phase.
 \end{itemize}
-We have not yet measured these savings; the real-speech activity trace makes them straightforward to evaluate.
+Savings and timing consequences have not been measured. Each proposal requires functional checks, implementation and activity-based comparison.
 
 \paragraph{Voltage and node.}
-GF180's \SI{3.3}{V} 7-track library is the least energy-efficient option we could have chosen. The engine meets \SI{150}{ns} with $+67$\,ns of slack at TT. A lower supply (where the library supports it), or the 9-track 5\,V cells avoided, would trade that slack for energy. First-order $CV^2$ scaling~\cite{horowitz2014energy} suggests that moving to \SI{28}{nm} at about \SI{0.9}{V} would cut energy per operation by one to two orders of magnitude. Real gains are smaller, because wire capacitance scales worse than transistors. Index density would rise by a similar factor.
-The whole model's index banks (\SI{175}{mm^2} here) would then fit in a few tens of mm\textsuperscript{2}.
+The current implementation uses the GF180 \SI{3.3}{V} 7-track library. Typical-corner timing slack alone does not establish operation at a lower supply; that requires characterized libraries and renewed timing, noise and reliability checks. A newer process could improve density and energy, but $CV^2$ intuition~\cite{horowitz2014energy} is not a validated migration model for these arrays and long wires. The area scenarios in \cref{sec:future} are assumptions, not demonstrated energy savings.
 
 \subsection{Flow}
 The project's own history shows where the time went and what would have saved it.
@@ -34,10 +33,10 @@ The project's own history shows where the time went and what would have saved it
 \item \textbf{Calibrate pre-route timing once.} Estimated slow-corner slack after global routing was 72\,ns optimistic for die-spanning paths. One calibration against a routed result was enough to stop a doomed run early (fix~1) and to predict that fix~2 would close.
 \item \textbf{Check that repair loops converged, not just stopped.} The last 11 antenna violations remained only because the router's post-route repair loop ends after three rounds by default, while it was still halving the count each round. Raising the limit to ten cleared them with no design change. Read iteration logs, not just final counts.
 \item \textbf{Signoff dominates wall time.} KLayout DRC takes about 2 hours on every run, comparable to detailed routing. Run signoff only on candidates that already meet timing, and parallelise or tile the DRC deck.
-\item \textbf{Most of the work fits on a laptop.} Every engine flow (4--9.5 hours) ran on the laptop at zero cloud cost. Whole-design synthesis needed big memory only when attempted flat; per-module synthesis under 6\,GB per process completed every unit.
+\item \textbf{Most of the work fits on a laptop.} The initial routing work used rented compute; later closure and power runs after 22 October ran locally. Those local engine runs took roughly 4--9.5 hours and incurred no additional cloud charges, excluding laptop, electricity and human effort. Whole-design synthesis needed big memory only when attempted flat; per-module synthesis under 6\,GB per process completed every unit.
 \item \textbf{Bill only for active compute.} Roughly 21 of the 47 rented hours were idle. An idle-CPU auto-stop, plus checking worker process state rather than worker reports, would have saved over a third of the cloud spend (about \$13 of \$34.82).
 \item \textbf{Check format compatibility early.} An activity-file syntax mismatch between simulator and timing analyser, and a cell-name format bug in a buffering script, each cost a full run cycle.
 \end{enumerate}
 
 In aggregate, the engine went from its first RTL contract (13--14 October) to a routed, all-corner-closed layout clean on DRC, LVS and antenna checks (24 October) in eleven calendar days, including a five-day pause. The final timing fix, including the abandoned first attempt, took about seven hours from diagnosis to all-corner routed timing.
-With the practices above applied from the start, we estimate the same result could be reached in two to three days.
+A two-to-three-day rerun is a retrospective planning estimate, not a measured replication or evidence of an agent speedup against a human-only baseline.

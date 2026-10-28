@@ -1,0 +1,9 @@
+# Frontend encoder bridge SRAM
+
+**Exact powered mapped positive replay passed; physical work has not started; not READY.** The full F64 feature bank uses 160 open GF180 512 × 8 SRAM macros for 20,480 × 32 mutable bits. Original and candidate outputs match across 163,158 clocks and 326,315 output snapshots: all 20,480 values, 2,560 packets, 511 held cycles, three malformed-response cases and a pending-copy reset. Official GF180 standard-cell and SRAM models were used. Active macro pins pass 163,840 explicit checks for 5 ns setup and 10 ns hold. This is untimed simulation with deterministic feature words; it does not execute neural arithmetic or establish extracted timing.
+
+The RTL candidate also passed this trace, and a corrupted read address was detected. The actual mapped SRAM data-pin corruption test is prepared but has not executed. Extended tests for encoder phase/layer pauses and reset between read issue and capture are prepared but have not executed. Arbitrary asynchronous reset timing is not qualified.
+
+Mapping contains 6,495 standard cells plus 160 SRAM macros. Standard-cell area is 0.134381 mm² and bare SRAM area is 33.504044 mm². A 60 mm² regular-grid outline is planned; these are not routed area results. All non-clock nets have fanout ≤16 after 197 graph-verified identity buffers; the clock needs CTS. The 66 intentional command latches are proven low-phase enabled through clock buffers/inverters. Physical latch timing remains pending.
+
+The exact gate receipt is [run-20261021T050800-mapped/results.json](run-20261021T050800-mapped/results.json); structured summary and proof hashes are in [results.json](results.json). Source, driver, failures, interrupted attempts, positive/negative RTL receipts, PDK models and mapping provenance are retained. SRAM payload is not reset; original publication/state reset behavior is preserved. Further runs are held for internal disk headroom. No signoff GDS/LEF/Liberty package is published.

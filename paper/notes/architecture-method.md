@@ -1,3 +1,5 @@
+> Historical research notes. For reviewed claims and corrected accounting, see [the 28 October review](../REVIEW-2026-10-28.md) and [artifact index](../ARTIFACTS.md). Earlier estimates below are retained as history.
+
 # RouteVoice — architecture and method notes for the paper
 
 Compiled 24 Oct 2026 from the repo, read-only. Paths are relative to the repo root

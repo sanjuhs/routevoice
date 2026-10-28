@@ -1,3 +1,5 @@
+> Historical research notes. For reviewed claims and corrected accounting, see [the 28 October review](../REVIEW-2026-10-28.md) and [artifact index](../ARTIFACTS.md). Earlier estimates below are retained as history.
+
 # RouteVoice related-work notes
 
 Compiled 2026-10-24. BibTeX keys refer to `paper/refs.bib`.

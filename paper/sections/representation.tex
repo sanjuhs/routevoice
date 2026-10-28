@@ -12,7 +12,7 @@ We use Moonshine Tiny Streaming (English)~\cite{jeffries2024moonshine}, a 34\,M-
 The released model is already integer-quantized (UINT8 weights with per-column zero points and FP32 scales). Our representation starts from those integer weights.
 
 \subsection{K64: four-bit indices into local codebooks}
-Each weight matrix is partitioned into groups of 64 consecutive input rows for one output column. A group stores:
+Each eligible weight matrix is partitioned into groups of 64 consecutive input rows for one output column. A group stores:
 \begin{itemize}
 \item a book of 16 UINT8 representative values;
 \item one 4-bit index per weight, selecting a representative.
@@ -20,10 +20,10 @@ Each weight matrix is partitioned into groups of 64 consecutive input rows for o
 \input{figures/k64}
 We call this format K64 (\cref{fig:k64}). Across the model it yields 98 packed matrices, \num{31457280} four-bit selections (\SI{15.7}{MB} of indices) and \num{491520} books.
 
-Because the books hold UINT8 values, the representation slots into the existing integer pipeline unchanged. Zero-point correction, FP32 scaling and bias are applied exactly as in the source graph. The integer weights the chip computes with are \emph{defined} by the books, and our hardware is bit-exact with respect to this frozen K64 model, not the original weights. In the selected $1280\times320$ projection, \num{291832} of the \num{409600} weights differ from the original.
+Because the books hold UINT8 values, the representation slots into the existing integer pipeline unchanged. Zero-point correction, FP32 scaling and bias are applied exactly as in the source graph. The tied embedding uses feature blocks within vocabulary rows and an exact transpose alias for the output table. Frontend INT8 weights and floating operators remain; this is not W4A4 inference. The integer weights the chip computes with are \emph{defined} by the books, and our hardware is bit-exact with respect to this frozen K64 model, not the original weights. In the selected $1280\times320$ projection, \num{291832} of the \num{409600} weights differ from the original.
 
 \paragraph{Accuracy.}
-Accuracy was settled before any hardware work, under a pre-registered protocol. Candidates were tuned on calibration data, checked once on a development split, and then evaluated once on a reserved LibriSpeech-derived test set~\cite{panayotov2015librispeech}: 80 utterances from 40 held-out speakers, plus a \SI{10}{dB} white-noise copy of the clean set. The gates were an absolute WER ceiling and at most $+2$ points over the original model in each condition.
+Quantization was selected using recorded calibration and development gates. K64 was the thirteenth recorded candidate development-validation exposure; the selected candidate then received one reserved LibriSpeech-derived test~\cite{panayotov2015librispeech}: 80 utterances from 40 held-out speakers, plus a \SI{10}{dB} white-noise copy of the clean set. There were 40 clean and 40 other utterances, two per speaker, with a noisy copy of the 40 clean utterances: 120 conditions per model. Absolute WER ceilings were 15\%, 35\% and 40\%, respectively, together with at most $+2$ percentage points over the original. Each evaluation used a fresh process to avoid a native VAD call-order crop effect. The original model had historical test exposure; upstream training-data overlap is unknown.
 
 \begin{table}[t]
 \centering\small
@@ -40,19 +40,19 @@ noise (10\,dB) & 15.77\% & $+1.84$ & $[-0.77, +4.48]$\\
 \end{tabular}
 \end{table}
 
-K64 passes all three gates (\cref{tab:wer}). The paired speaker-cluster bootstrap intervals for ``other'' and ``noise'' extend beyond $+2$ points, so we read this as a point-estimate pass on a small test, not a population guarantee. Coarser alternatives failed the same gates: per-tensor 4-bit, 32-column grouped, and K128 (books shared by 128 rows). The per-tensor and grouped candidates lost up to $+9.4$ points on noisy speech.
+K64 passes all three gates by point estimate (\cref{tab:wer}). Original/K64 error counts were 37/39 out of 869 reference words (clean), 100/107 out of 785 (other), and 121/137 out of 869 (noise). The noisy gate allows 138 errors, leaving one error of margin. These three conditions share speakers and, for clean/noise, source audio. The paired speaker-cluster bootstrap intervals for ``other'' and ``noise'' extend beyond $+2$ points, so we read this as a point-estimate pass on a small test, not a population guarantee. On development evaluation, coarser alternatives failed the gates: per-tensor 4-bit, 32-column grouped, and K128 (books shared by 128 rows). The per-tensor and grouped candidates lost up to $+9.4$ points on noisy speech.
 
 \subsection{Shared partial products}
 \label{sec:shared}
-The engine never multiplies a weight. Write each 8-bit representative as $w = 16h + \ell$ with $h,\ell\in[0,15]$. Then
+The integer projection core replaces general weight multipliers with shared radix-16 products. FP32 affine and other recognizer operations remain. Write each 8-bit representative as $w = 16h + \ell$ with $h,\ell\in[0,15]$. Then
 \begin{equation}
 a\cdot w = 16\,(a\cdot h) + a\cdot \ell .
 \end{equation}
-For each input activation $a$ (signed 9-bit), the engine forms the 16 products $a\cdot 0,\dots,a\cdot 15$ once, as 13-bit values. Every one of the 320 output lanes then needs only two selections from this table, a shift and an add to obtain $a\cdot w$; the result fits in 17 bits.
+For each input activation $a$ (signed 9-bit), the engine forms the 16 products $a\cdot 0,\dots,a\cdot 15$ as 13-bit values. The final physical implementation replicates partial-product registers locally in ten 32-lane groups. Each lane then needs only two selections from this table, a shift and an add to obtain $a\cdot w$; the result fits in 17 bits.
 
 The fixed index picks the book entry, the book entry's nibbles pick two partial products, and the multiply becomes wiring plus a small adder. This mirrors the shared-product idea described in hardwired-weight patents~\cite{taalas2026patent566,taalas2025patent802}. We implement it independently from the public documents, and make no claim about any production implementation.
 
 \subsection{What is fixed, and what is not}
 In a fabricated RouteVoice, every 4-bit index is fixed by the mask. Our physical bank uses four mask-programmed access transistors per selection, with the bit pattern set by Via1 positions, followed by a precharged read path per bit. We read the bit pattern back from the GDS and checked it against the packed model.
 
-The books, zero points, scales and biases are fixed constants in the current RTL. Activations, attention state, the audio window and decoder caches are mutable and need SRAM. The measured index bank costs \SI{5.54}{\micro m^2} per selection, including readout and local wiring, against about \SI{51}{\micro m^2} per bit for the open GF180 SRAM macro. Storing every weight in open SRAM would take roughly \SI{6400}{mm^2}; the 81 index banks need \SI{174.7}{mm^2}.
+The books, zero points, scales and biases are fixed constants in the current RTL. Activations, attention state, the audio window and decoder caches are mutable and need SRAM. The measured index bank costs \SI{5.54}{\micro m^2} per selection, for the bank layout, including its local read path but excluding the separately designed driver/control and proposed capture strips, against about \SI{51}{\micro m^2} per bit for the open GF180 SRAM macro. Storing the same 31.46\,M four-bit indices alone in open SRAM would take roughly \SI{6400}{mm^2}; the 81 index banks need \SI{174.7}{mm^2}.

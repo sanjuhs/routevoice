@@ -1,0 +1,132 @@
+{
+  "snapshot_date": "2026-10-28",
+  "source": "Local RouteVoice research workspace, routing-voice-chip-design subtree",
+  "purpose": "Byte-preserved report and evaluation snapshots supporting the paper review; not an independent flow rerun",
+  "files": [
+    {
+      "path": "docs/TAALAS-K64-QUALITY-RESULT.md",
+      "bytes": 8854,
+      "sha256": "bd7f7e995fc032be952b4f5bbdc22010774b94ebcea2ed9d7aa095c0baa5d0f6"
+    },
+    {
+      "path": "reports/taalas-k64-quality-summary-v1.json",
+      "bytes": 19084,
+      "sha256": "5489f74b2c11a06acf4ecebb4f8bfc8e02916c0d3aa60dbc639b518edd62948b"
+    },
+    {
+      "path": "reports/taalas-k64-reserved-test-protocol-v1.json",
+      "bytes": 135143,
+      "sha256": "5ca9f77789f76bab38a08c347309baae8add20021f883112b3909362c2372bb0"
+    },
+    {
+      "path": "reports/taalas-k64-reserved-test-scores-v1.json",
+      "bytes": 830406,
+      "sha256": "245c1af107e41411cd2ffb0bb200a041d1e1a2b3b8d6d669f361596eaa8d16fb"
+    },
+    {
+      "path": "reports/taalas-k64-reserved-test-decision-v1.json",
+      "bytes": 9337,
+      "sha256": "8ca29f9f55ab19108dea5bb06009d521c9beda0666face6f2bfddfb0ca370b56"
+    },
+    {
+      "path": "reports/taalas-isolated-k64-calibration-decision-v1.json",
+      "bytes": 1294,
+      "sha256": "d1618aa85b3d8c89501ed24c7b3490ed13b1f3055672ee38d0494f4d631d4281"
+    },
+    {
+      "path": "reports/taalas-isolated-k64-validation-decision-v1.json",
+      "bytes": 1295,
+      "sha256": "d56298677705577cdd8521449ccfa0126bafdbdbd43bfa2e92d6b7ea2317eceb"
+    },
+    {
+      "path": "reports/taalas-isolated-k64-calibration-export-audit-v1.json",
+      "bytes": 600,
+      "sha256": "49d34f71b5533c96843af24272cdef5854ab6ec3f688a31fcc7b1043c071efb1"
+    },
+    {
+      "path": "scripts/evaluate_reserved_k64_test.py",
+      "bytes": 13671,
+      "sha256": "1eb0e94fc7a279e65e866ce38107534935574a83d0cb6533339e5842d02b6864"
+    },
+    {
+      "path": "tests/test_reserved_test_intervals.py",
+      "bytes": 1089,
+      "sha256": "d68f87fde737d72c2e7cd61eef37fd59b8cec6e08ba335cf66540b7edfde4130"
+    },
+    {
+      "path": "scripts/summarize_k64_quality.py",
+      "bytes": 5008,
+      "sha256": "4f2dc8eab0b8e567ffa8a254fa91e87b06801fe89e5d457a4acc9f5c08e9e14a"
+    },
+    {
+      "path": "reports/stt-requirements.json",
+      "bytes": 2348,
+      "sha256": "461ffe79a48d251ef43558c9a91313b0d1e0dce9926cc6df83cef9ea9b6b7263"
+    },
+    {
+      "path": "overnight-20261014/finish-1023/w11-taalas-e2e/RESULTS.md",
+      "bytes": 7016,
+      "sha256": "a746e4759c3e726dfdc9b571dca789bc813944ae5121e5f778401f3dd7833fbf"
+    },
+    {
+      "path": "overnight-20261014/finish-1023/w11-taalas-e2e/results.json",
+      "bytes": 80845,
+      "sha256": "e198d2f95314f90b7715d1bb06ea18e39646c36848796832ba05f77292c6b991"
+    },
+    {
+      "path": "overnight-20261014/finish-1023/w12-synth/RESULTS.md",
+      "bytes": 6787,
+      "sha256": "2734f48e1f1fb150111e6e8b8fcf577bd877db87a60a3b286534275c3c31ac0a"
+    },
+    {
+      "path": "overnight-20261014/finish-1023/w13-arrays/RESULTS.md",
+      "bytes": 10432,
+      "sha256": "bfbf01ac61d78c3f41b6dc72bde33bad2eb3aef131a90e32c4fa3ac726ebf171"
+    },
+    {
+      "path": "overnight-20261014/finish-1023/w13-arrays/DRIVERS-RESULTS.md",
+      "bytes": 11806,
+      "sha256": "1edc128285b53d9b976d0d604e0501044fc13b948179c22b6747abd34715ee33"
+    },
+    {
+      "path": "overnight-20261014/finish-1023/w14-blocks/RESULTS.md",
+      "bytes": 13947,
+      "sha256": "90aa80fa12c0e005184317d0b86559c26a59664fc957bb230b9ba4c355c1c3c5"
+    },
+    {
+      "path": "overnight-20261014/finish-1023/w14-blocks/physical-audit/RESULTS.md",
+      "bytes": 3052,
+      "sha256": "0b179203fed30e4ac3c7ac15746c238063167cafcfb0c1f4bb1102fb703c58a0"
+    },
+    {
+      "path": "overnight-20261014/finish-1023/w14-blocks/physical-audit/results.json",
+      "bytes": 73630,
+      "sha256": "54dfed09371535b3b18f5de7c2a3e1710d2be8f0308787bcc27eb7dfe4b1305d"
+    },
+    {
+      "path": "overnight-20261014/finish-1023/w14-blocks/bridge-sram/RESULTS.md",
+      "bytes": 1971,
+      "sha256": "dc2ee1afcc00bd2c1e29c035244b62379c344cb3522c0397a52a6fe2304635da"
+    },
+    {
+      "path": "overnight-20261014/finish-1023/w14-blocks/bridge-sram/results.json",
+      "bytes": 2375,
+      "sha256": "bc2a3502ccbf64cc058bed846270f09bf4b1d460a851dd5db895aa1c4a818785"
+    },
+    {
+      "path": "overnight-20261014/finish-1023/w15-chip/RESULTS.md",
+      "bytes": 4154,
+      "sha256": "c3236aaffbe2207328149808954b3ca81226552386f1ccb1b3b7a006009aee13"
+    },
+    {
+      "path": "overnight-20261014/finish-1023/w15-chip/TOPLEVEL.md",
+      "bytes": 8569,
+      "sha256": "252f8b52383c59748de2c606da13641f2523e3c0284f1e145eefe3223b888046"
+    },
+    {
+      "path": "overnight-20261014/finish-1023/w15-chip/results.json",
+      "bytes": 3476396,
+      "sha256": "39a085bc7d51bf54103fa5e142f414ac25b0a8c3403c03a05f60e0bb32a0e4e1"
+    }
+  ]
+}

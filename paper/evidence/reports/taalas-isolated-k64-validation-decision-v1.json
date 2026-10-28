@@ -1,0 +1,41 @@
+{
+  "candidate": "k64",
+  "validation_gates": {
+    "clean": {
+      "candidate_edits": 22,
+      "reference_edits": 16,
+      "reference_words": 330,
+      "candidate_wer": 0.06666666666666667,
+      "delta_percentage_points": 1.8181818181818181,
+      "absolute_ceiling": 0.15,
+      "retention_limit": 0.02,
+      "pass": true
+    },
+    "other": {
+      "candidate_edits": 59,
+      "reference_edits": 62,
+      "reference_words": 325,
+      "candidate_wer": 0.18153846153846154,
+      "delta_percentage_points": -0.9230769230769231,
+      "absolute_ceiling": 0.35,
+      "retention_limit": 0.02,
+      "pass": true
+    },
+    "white_noise_10db": {
+      "candidate_edits": 64,
+      "reference_edits": 58,
+      "reference_words": 330,
+      "candidate_wer": 0.19393939393939394,
+      "delta_percentage_points": 1.8181818181818181,
+      "absolute_ceiling": 0.4,
+      "retention_limit": 0.02,
+      "pass": true
+    }
+  },
+  "candidate_passes_frozen_accuracy_gates": true,
+  "candidate_validation_runs_in_this_protocol": 1,
+  "total_development_candidate_validation_exposures": 13,
+  "candidate_test_calls": 0,
+  "protocol_sha256": "1c9b55d3c2566fd5106a9c4eefe77811ce36c166ceb49c84776517558ee564aa",
+  "scores_sha256": "c921a7a7ee69755f636090d8d5e5286fec269690dd779cf76a55a84a54606d4b"
+}

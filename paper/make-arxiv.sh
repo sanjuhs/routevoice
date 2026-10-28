@@ -3,6 +3,7 @@
 # arXiv does not run BibTeX, so the generated main.bbl is included.
 set -eu
 cd "$(dirname "$0")"
+mkdir -p build
 tectonic -X compile --keep-intermediates --outdir build main.tex
 rm -rf build/arxiv-src && mkdir -p build/arxiv-src/sections build/arxiv-src/figures
 cp main.tex refs.bib build/main.bbl build/arxiv-src/

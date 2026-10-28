@@ -1,8 +1,8 @@
 \section{Conclusion}
 \label{sec:conclusion}
 
-RouteVoice shows that a real speech transformer can be expressed entirely as fixed 4-bit indices and small codebooks, without leaving the accuracy envelope of its source model. It also shows that the resulting arithmetic engine can be carried through an all-open-source flow to a routed, DRC-clean layout that closes timing in every corner of a 180\,nm process.
+RouteVoice establishes a concrete open 180\,nm research milestone: codebook quantization with a small reserved-test point-estimate pass, a full recognizer checked against frozen K64 software on three clips, separately generated index banks, and a routed projection engine that meets setup and hold across nine corners. The recognizer retains INT8 and FP32 components. Its engine passes the reported geometric, equivalence and antenna checks while electrical-limit violations remain.
 
-The most transferable lessons are methodological. The fixes that mattered were all at RTL: local register copies against congestion, and pipelining a die-wide select against slow-corner timing. They were found fastest by short, calibrated experiments, not by long tool sweeps. AI coding agents made it possible to run many workstreams in parallel at very low cost. They were reliable only when every claim was checked against the tools' own outputs.
+The most transferable implementation lessons concern local register copies for congestion and pipelining wide selects for slow-corner timing. The recorded AI-assisted workflow combined parallel implementation with direct inspection of tool evidence; it is an experience report rather than a controlled productivity study.
 
-The open work is concrete: mapping mutable state to SRAM, scheduling for real time, full-chip signoff, and silicon. Fixed-model silicon at mature nodes, built quickly with open tools and agents, is a credible path to private, low-power voice and language interfaces for everyday devices.
+The next phase requires qualified SRAM and array interfaces, a real-time schedule, complete connectivity, density and electrical closure, full-chip verification, and fabrication. Current power estimates exclude the array and complete recognizer. These boundaries make the milestone reproducible and provide concrete targets for further work without claiming a finished voice chip.

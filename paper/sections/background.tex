@@ -31,12 +31,12 @@ Our datapath combines these known pieces: per-group 16-entry books, radix-16 par
 \paragraph{Speech recognition hardware.}
 Moonshine~\cite{jeffries2024moonshine} is an encoder--decoder ASR transformer whose encoder cost scales with audio length. It reports lower compute than Whisper~\cite{radford2022whisper} tiny at equal error rate, and later variants add streaming encoders~\cite{kudlur2026moonshinev2}.
 
-Dedicated ASR chips have used WFST and DNN--HMM decoders~\cite{price2015wfst,price2018speech} or attention accelerators within an SoC~\cite{tambe2021sm6}, and identified memory bandwidth as the dominant power cost. Always-on keyword-spotting chips reach sub-microwatt power~\cite{shan2020kws,giraldo2018laika}, but only by restricting the task to a few words. RouteVoice targets open-vocabulary transcription and removes weight fetch altogether.
+Dedicated ASR chips have used WFST and DNN--HMM decoders~\cite{price2015wfst,price2018speech} or attention accelerators within an SoC~\cite{tambe2021sm6}, and identified memory bandwidth as the dominant power cost. Always-on keyword-spotting chips reach sub-microwatt power~\cite{shan2020kws,giraldo2018laika}, but only by restricting the task to a few words. RouteVoice targets open-vocabulary transcription with locally stored fixed coefficients. This avoids off-chip fixed-weight traffic in the proposed architecture, while local array/book reads and mutable state still consume energy.
 
 \paragraph{Transformer accelerators and energy references.}
 Programmable transformer processors at 12--28\,nm report efficiencies in the tens of TOPS/W~\cite{tu2022trancim,wang2022transformer28nm,tambe2023transformer12nm}. Groq~\cite{abts2020tsp} and Cerebras~\cite{lie2023cerebras} keep weights in on-chip SRAM at scale. Microcontroller NPUs~\cite{arm2024ethosu55,st2024stm32n6} are the commercial baseline for edge voice.
 
-Energy per operation is strongly node- and voltage-dependent~\cite{horowitz2014energy,sze2017tutorial}. Our \SI{180}{nm}, \SI{3.3}{V} figures should be compared with these only after normalisation (\cref{sec:results}).
+Energy per operation is strongly node- and voltage-dependent~\cite{horowitz2014energy,sze2017tutorial}. Our \SI{180}{nm}, \SI{3.3}{V} estimate cannot establish relative efficiency without a matched workload, precision and physical scope (\cref{sec:results}).
 
 \paragraph{Open silicon and AI-driven design.}
 Our flow builds on the following open tools:
@@ -47,4 +47,4 @@ Our flow builds on the following open tools:
 \end{itemize}
 Low-cost shuttles such as Tiny Tapeout~\cite{venn2024tinytapeout} and wafer.space~\cite{waferspace} make fabrication on open nodes affordable.
 
-LLMs have been applied to RTL generation~\cite{liu2023verilogeval,liu2024rtlcoder,chang2023chipgpt}, domain assistance~\cite{liu2023chipnemo}, and flow orchestration~\cite{he2024chateda,jiang2024iicpilot,wang2025mcp4eda,lu2025autoeda}. One accumulator CPU designed through conversation reached tape-out~\cite{blocklove2023chipchat}. Recent studies evaluate coding agents on complete RTL-to-GDS flows~\cite{deng2026rtl2gds} and use them to improve OpenROAD itself~\cite{ghose2026audopeda}. These studies use benchmark-scale designs. We contribute an experience report: a multi-agent team carrying a $10^7$-parameter-class accelerator through physical design, with its failure modes and costs recorded.
+LLMs have been applied to RTL generation~\cite{liu2023verilogeval,liu2024rtlcoder,chang2023chipgpt}, domain assistance~\cite{liu2023chipnemo}, and flow orchestration~\cite{he2024chateda,jiang2024iicpilot,wang2025mcp4eda,lu2025autoeda}. One accumulator CPU designed through conversation reached tape-out~\cite{blocklove2023chipchat}. Recent studies evaluate coding agents on complete RTL-to-GDS flows~\cite{deng2026rtl2gds} and use them to improve OpenROAD itself~\cite{ghose2026audopeda}. These studies use benchmark-scale designs. We contribute an experience report: an agent-assisted effort implementing a $10^7$-parameter-class recognizer at RTL and selected components through physical design, with failure modes and costs recorded.

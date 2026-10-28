@@ -2,24 +2,17 @@
 \sloppy
 \label{app:artifacts}
 
-All paths are relative to the RouteVoice repository root, \url{https://github.com/sanjuhs/routevoice}. \path{FIN} denotes \path{routing-voice-chip-design/overnight-20261014/finish-1023}.
+The public repository is \url{https://github.com/sanjuhs/routevoice}. The \href{https://github.com/sanjuhs/routevoice/blob/main/paper/ARTIFACTS.md}{paper artifact index} maps each claim to a public report and gives pinned archive revisions, checksums, extraction paths and scope limits. The \href{https://github.com/sanjuhs/routevoice/blob/main/paper/REVIEW-2026-10-28.md}{28 October correction ledger} records this evidence review. Neither is a new experimental run.
 
-\begin{itemize}
-\item \textbf{Release package (demo clips, simulation logs, layout renders, signoff table, scaling data):} \path{routing-voice-chip-design/release-v1/}.
-\item \textbf{Bit-exact recognizer with index$+$codebook weights:} \path{FIN/w11-taalas-e2e/RESULTS.md}, \path{results.json}.
-\item \textbf{K64 accuracy:} \path{routing-voice-chip-design/docs/TAALAS-K64-QUALITY-RESULT.md}.
-\item \textbf{Engine contract and bench:} \path{routing-voice-chip-design/overnight-20261014/fabric-k64/CONTRACT.md}, \path{RESULTS.md}.
-\item \textbf{Engine routing history:}
-  \begin{itemize}
-  \item first route: \path{FIN/w10-route/RESULTS.md};
-  \item closure passes: \path{FIN/w10-route/closure-lead/};
-  \item first-route power: \path{FIN/w10-route/routed-power-lead/}.
-  \end{itemize}
-\item \textbf{Final engine (fix~2):} \path{FIN/w10-route/pipe2/} (README, generator \path{make_engine.py}, bench, flow configuration, \path{evidence/}; antenna close-out in \path{evidence-ant/}).
-\item \textbf{Final engine run backup (fix~2 and antenna close-out, checksum manifests):} Hugging Face dataset \path{sanjuhs/routevoice-engine-fix2-20261024}.
-\item \textbf{Full-recognizer synthesis:} \path{FIN/w12-synth/RESULTS.md}.
-\item \textbf{Weight banks:} \path{FIN/w13-arrays/RESULTS.md}, \path{DRIVERS-RESULTS.md}.
-\item \textbf{Logic macros and two-die integration:} \path{FIN/w14-blocks/}, \path{FIN/w15-chip/}.
-\item \textbf{Chronological lab log:} \path{OVERNIGHT-PROGRESS.md}.
-\item \textbf{Cloud run backup (53\,GB, checksum manifest):} Hugging Face dataset \path{sanjuhs/routevoice-pod-final-20261022}.
-\end{itemize}
+\paragraph{Compact evidence supplement.}
+Quality, storage, synthesis, arrays, macro-density, SRAM-protocol and partial-integration reports are preserved under \path{paper/evidence/}, with a SHA-256 manifest. The same bundle is public at \href{https://huggingface.co/datasets/sanjuhs/routevoice-v1-paper-evidence-20261028/tree/239114fc57b384999c2bd8576ab7f0a06706928f}{Hugging Face: RouteVoice v1 paper evidence}. The frozen K64 quality summary hashes to
+\begin{quote}\scriptsize\ttfamily
+5489f74b2c11a06acf4ecebb4f8bfc8e02916c0d3aa60dbc639b518edd62948b
+\end{quote}
+Original source paths inside reports can refer beyond the supplement; the artifact index distinguishes included snapshots from archived dependencies.
+
+\paragraph{Engine and release.}
+The generator, bench, configurations and final metrics are in the repository's \path{routing-voice-chip-design/overnight-20261014/finish-1023/w10-route/pipe2/} subtree. The \path{release-v1/} directory under \path{routing-voice-chip-design/} contains demo clips, logs, layout renders and result tables.
+
+\paragraph{Large run archives.}
+The \href{https://huggingface.co/datasets/sanjuhs/routevoice-engine-fix2-20261024/tree/c5bbf9ea0998d27ce27dd4f96c6504378d1b20e9}{24 October final-engine archive} contains fix~2 and its antenna close-out (about 97\,GB uncompressed). Restore both streams into the documented layout. The \href{https://huggingface.co/datasets/sanjuhs/routevoice-pod-final-20261022/tree/c2cee6c32d3fc353e1eac52b2664bfd198475551}{22 October cloud archive} contains about 53\,GB uncompressed and predates final engine closure; its failures remain historical evidence. Both publish archive and file manifests. Full simulation/physical reruns require restored inputs, tools and PDKs; this review checked source records and did not repeat those flows.
