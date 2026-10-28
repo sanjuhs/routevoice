@@ -20,6 +20,39 @@ The starting point is **Moonshine Tiny Streaming English**, a roughly 34-million
 
 > **Release snapshot · 28 October 2026.** The complete recognizer matches the frozen K64 reference on three recorded RTL demonstrations. One 1280 × 320 projection engine passes the recorded open-flow DRC, LVS and antenna checks, with setup and hold met in all nine checked corners. No chip has been fabricated; full-chip integration and real-time operation remain open.
 
+## Inside the silicon
+
+<table>
+<tr>
+<td width="50%"><img src="routing-voice-chip-design/release-v1/figures/layout/weight-bank-zoom0400.png" alt="10-micrometre GDS window showing the Via1 patterns that encode weight selections" width="100%"></td>
+<td width="50%"><img src="routing-voice-chip-design/release-v1/figures/layout/engine-zoom0300.png" alt="30-micrometre GDS window showing routed standard cells in the projection engine" width="100%"></td>
+</tr>
+<tr>
+<td><b>The model, encoded in metal.</b> The regular cell grid carries an irregular pattern of Via1 connections: the fixed four-bit selections.</td>
+<td><b>The compute engine.</b> Standard cells and routing implement the shared-product selection and accumulation datapath.</td>
+</tr>
+<tr>
+<td><img src="routing-voice-chip-design/release-v1/figures/layout/weight-bank-zoom0008.png" alt="Zoomed-out layout of one 409,600-selection weight bank" width="100%"></td>
+<td><img src="routing-voice-chip-design/release-v1/figures/layout/engine-zoom0040.png" alt="Wider view of the projection engine routing" width="100%"></td>
+</tr>
+<tr>
+<td>One bank: 409,600 four-bit selections in approximately 2.27 mm².</td>
+<td>The routed engine: 22.84 mm², with 68.9 metres of wire.</td>
+</tr>
+</table>
+
+<table>
+<tr>
+<td width="50%"><img src="routing-voice-chip-design/release-v1/figures/layout/weight-bank-zoom0001.png" alt="Full layout view of one hardwired weight bank" width="100%"></td>
+<td width="50%"><img src="routing-voice-chip-design/release-v1/figures/layout/engine-zoom0001.png" alt="Full die view of the routed projection engine" width="100%"></td>
+</tr>
+<tr><td><b>Full bank.</b> A physical macro that stores a slice of the model.</td><td><b>Full engine.</b> The die-scale view connects the close-ups to the implemented block.</td></tr>
+</table>
+
+These are renders of layout data, not microscope photographs. Explore the [full zoom sequences](routing-voice-chip-design/release-v1/figures/layout/).
+
+![Projection-engine signoff table, including remaining slew, capacitance and fanout warnings](routing-voice-chip-design/release-v1/figures/signoff-table.png)
+
 ## A milestone across the whole stack
 
 **This repository records the first RouteVoice milestone before implementation continues in a separate next-phase repository.** It brings together the product design, interactive experience, model work, hardware architecture, verification and physical-design evidence that led here.
@@ -311,39 +344,6 @@ The reserved software evaluation used **80 utterances from 40 held-out speakers*
 | Noise, 10 dB | 15.77% | +1.84 percentage points |
 
 The point estimates passed the declared gates. Confidence intervals for “other” and noisy speech extend beyond the +2-point degradation gate, so this small test does not establish a population guarantee or real-road helmet accuracy. See the [paper’s quality results and evaluation details](paper/sections/representation.tex).
-
-## Inside the silicon
-
-<table>
-<tr>
-<td width="50%"><img src="routing-voice-chip-design/release-v1/figures/layout/weight-bank-zoom0400.png" alt="10-micrometre GDS window showing the Via1 patterns that encode weight selections" width="100%"></td>
-<td width="50%"><img src="routing-voice-chip-design/release-v1/figures/layout/engine-zoom0300.png" alt="30-micrometre GDS window showing routed standard cells in the projection engine" width="100%"></td>
-</tr>
-<tr>
-<td><b>The model, encoded in metal.</b> The regular cell grid carries an irregular pattern of Via1 connections: the fixed four-bit selections.</td>
-<td><b>The compute engine.</b> Standard cells and routing implement the shared-product selection and accumulation datapath.</td>
-</tr>
-<tr>
-<td><img src="routing-voice-chip-design/release-v1/figures/layout/weight-bank-zoom0008.png" alt="Zoomed-out layout of one 409,600-selection weight bank" width="100%"></td>
-<td><img src="routing-voice-chip-design/release-v1/figures/layout/engine-zoom0040.png" alt="Wider view of the projection engine routing" width="100%"></td>
-</tr>
-<tr>
-<td>One bank: 409,600 four-bit selections in approximately 2.27 mm².</td>
-<td>The routed engine: 22.84 mm², with 68.9 metres of wire.</td>
-</tr>
-</table>
-
-<table>
-<tr>
-<td width="50%"><img src="routing-voice-chip-design/release-v1/figures/layout/weight-bank-zoom0001.png" alt="Full layout view of one hardwired weight bank" width="100%"></td>
-<td width="50%"><img src="routing-voice-chip-design/release-v1/figures/layout/engine-zoom0001.png" alt="Full die view of the routed projection engine" width="100%"></td>
-</tr>
-<tr><td><b>Full bank.</b> A physical macro that stores a slice of the model.</td><td><b>Full engine.</b> The die-scale view connects the close-ups to the implemented block.</td></tr>
-</table>
-
-These are renders of layout data, not microscope photographs. Explore the [full zoom sequences](routing-voice-chip-design/release-v1/figures/layout/).
-
-![Projection-engine signoff table, including remaining slew, capacitance and fanout warnings](routing-voice-chip-design/release-v1/figures/signoff-table.png)
 
 ## From a speech model to larger local models
 
